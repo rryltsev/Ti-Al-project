@@ -106,19 +106,24 @@ def assemble(row, folder, tag):
             return target
         raise ValueError(f"Existing file differs from the catalog: {target}")
     cache = folder / ".parts" / target.name
+
     def fetch(part):
         return fetch_object(part, cache, row.get("tag", tag))
 
     with ThreadPoolExecutor(max_workers=3) as workers:
         parts = list(workers.map(fetch, row["parts"]))
-    with tempfile.NamedTemporaryFile(dir=folder, prefix=target.name, suffix=".assembling", delete=False) as out:
-        assembling = Path(out.name)
-        for part in parts:
-            with part.open("rb") as src:
-                shutil.copyfileobj(src, out, BLOCK)
-    if not matches(assembling, row):
-        raise ValueError(f"Assembled file differs from the catalog: {assembling}")
-    os.replace(assembling, target)
+    output = tempfile.NamedTemporaryFile(dir=folder, prefix=target.name, suffix=".assembling", delete=False)
+    assembling = Path(output.name)
+    try:
+        with output:
+            for part in parts:
+                with part.open("rb") as src:
+                    shutil.copyfileobj(src, output, BLOCK)
+        if not matches(assembling, row):
+            raise ValueError(f"Assembled file differs from the catalog: {target.name}")
+        os.replace(assembling, target)
+    finally:
+        assembling.unlink(missing_ok=True)
     for part in parts:
         part.unlink()
     if not any(cache.iterdir()):
