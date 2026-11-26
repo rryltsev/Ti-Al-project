@@ -17,6 +17,8 @@ $env:OPENBLAS_NUM_THREADS='1'
 .\blind_pilot\.venv-local\Scripts\python.exe phase_reproduction/solvus_cage2304/analysis/direct/run.py --mode scout
 .\blind_pilot\.venv-local\Scripts\python.exe phase_reproduction/solvus_cage2304/analysis/direct/run.py --mode final --require-all
 .\blind_pilot\.venv-local\Scripts\python.exe phase_reproduction/solvus_cage2304/analysis/direct/field_control.py
+.\blind_pilot\.venv-local\Scripts\python.exe phase_reproduction/solvus_cage2304/analysis/direct/repeat_1243.py
+.\blind_pilot\.venv-local\Scripts\python.exe phase_reproduction/solvus_cage2304/analysis/direct/leave_field_out.py
 .\blind_pilot\.venv-local\Scripts\python.exe phase_reproduction/solvus_cage2304/analysis/direct/export_tables.py
 ~~~
 

@@ -1,0 +1,463 @@
+{
+  "account": "u3129",
+  "N": 2304,
+  "p_GPa": 0.0,
+  "axial_free": true,
+  "nuclear_statistics": "classical",
+  "potential_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "jobs": 71,
+  "trajectories": 944,
+  "production_frames": 998400,
+  "allocated_CPU_h": 920.3055555555555,
+  "primary_direct_T": {
+    "35": {
+      "T_K": 1262.7221813251467,
+      "T_interval95": [
+        1260.7941835175172,
+        1264.0766984312227
+      ],
+      "x_atpct": 27.259668867828648,
+      "x_interval95": [
+        27.187168787574688,
+        27.31030726375805
+      ],
+      "source_T_K": [
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0,
+        1254.0,
+        1262.0,
+        1269.0
+      ]
+    },
+    "40": {
+      "T_K": 1243.4877328570813,
+      "T_interval95": [
+        1243.141136390858,
+        1243.924697612232
+      ],
+      "x_atpct": 27.20265858450813,
+      "x_interval95": [
+        27.16872724594847,
+        27.24676487348681
+      ],
+      "source_T_K": [
+        1239.0,
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0
+      ]
+    }
+  },
+  "primary_direct_T35_minus_T40": {
+    "T_K": 19.234448468065466,
+    "interval95": [
+      17.318262891461995,
+      20.604105280275736
+    ],
+    "fraction_both_temperatures_bracketed": 0.9918
+  },
+  "pooled_wall_results": {
+    "35": {
+      "T_vertex_K": 1261.6490348069872,
+      "T_conditional_025_50_975": [
+        1260.9410891766815,
+        1261.6143503763399,
+        1262.310384824793
+      ],
+      "vertex": {
+        "T_K": 1261.6490348069872,
+        "mu_eV": 3.542980519960429,
+        "x_atpct": 27.210985054304658,
+        "latent_meV_atom": 25.644889016333536,
+        "jump_Q": 0.627824340013041,
+        "phases": [
+          {
+            "x_atpct": 27.210985054304658,
+            "mean_Q": 0.12902795631496317,
+            "semigrand_meV_atom": 13.442506846620219,
+            "effective_frames": 644.6065568368693
+          },
+          {
+            "x_atpct": 27.210985054304665,
+            "mean_Q": 0.7568522963280041,
+            "semigrand_meV_atom": -12.202382169713317,
+            "effective_frames": 734.4186646554517
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0875,
+            0.7925
+          ],
+          "Q_valley": 0.3925,
+          "lower_barrier": 2.1258991933241553
+        }
+      },
+      "observable_order": [
+        "T_K",
+        "mu_eV",
+        "x_atpct",
+        "latent_meV_atom",
+        "jump_Q"
+      ],
+      "q_cut": 0.37,
+      "intervals": [
+        [
+          1260.9410891766815,
+          1261.6143503763399,
+          1262.310384824793
+        ],
+        [
+          3.5418395641404685,
+          3.54290824118055,
+          3.543805613953334
+        ],
+        [
+          27.161659554252118,
+          27.209415836854298,
+          27.245265014814823
+        ],
+        [
+          25.154495809642707,
+          25.68926699416483,
+          26.170072136939726
+        ],
+        [
+          0.6203909392819594,
+          0.6283117788192326,
+          0.6356267478351104
+        ]
+      ],
+      "divider_comparison": [
+        {
+          "cut": 0.32,
+          "T_K": 1261.7406698291531
+        },
+        {
+          "cut": 0.37,
+          "T_K": 1261.6490348069872
+        },
+        {
+          "cut": 0.42,
+          "T_K": 1261.562062687885
+        },
+        {
+          "cut": 0.47,
+          "T_K": 1261.4697798101681
+        }
+      ],
+      "direct_fields_1243_eV": [
+        3.458,
+        3.482,
+        3.51,
+        3.522,
+        3.533,
+        3.545,
+        3.557,
+        3.568,
+        3.58,
+        3.6,
+        3.624
+      ],
+      "direct_Smax_1243": 8.972718338388637,
+      "direct_Smax_interval95": [
+        8.565997009677508,
+        9.258794984435223
+      ],
+      "direct_both_contacts_fraction": 1.0,
+      "pooled_1243_Smax": 9.020860868853056,
+      "pooled_1243_Smax_025_50_975": [
+        8.764071980344829,
+        9.04478903822837,
+        9.408309272409856
+      ],
+      "pooled_both_contacts_count": 64,
+      "pooled_draws": 64,
+      "all_sources_stride4": {
+        "T_K": 1261.7434545848043,
+        "x_atpct": 27.232755525884887
+      }
+    },
+    "40": {
+      "T_vertex_K": 1244.5355908930878,
+      "T_conditional_025_50_975": [
+        1243.9201963198227,
+        1244.5415188501543,
+        1245.222214778462
+      ],
+      "vertex": {
+        "T_K": 1244.5355908930878,
+        "mu_eV": 3.545437190944135,
+        "x_atpct": 27.214574270426553,
+        "latent_meV_atom": 26.882390436186895,
+        "jump_Q": 0.6331494976008752,
+        "phases": [
+          {
+            "x_atpct": 27.214574270426553,
+            "mean_Q": 0.1254489710504951,
+            "semigrand_meV_atom": 11.97595310911506,
+            "effective_frames": 985.8478431721659
+          },
+          {
+            "x_atpct": 27.214574270426564,
+            "mean_Q": 0.7585984686513704,
+            "semigrand_meV_atom": -14.906437327071833,
+            "effective_frames": 1153.7789410456833
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0875,
+            0.7925
+          ],
+          "Q_valley": 0.40750000000000003,
+          "lower_barrier": 2.2870355201574255
+        }
+      },
+      "observable_order": [
+        "T_K",
+        "mu_eV",
+        "x_atpct",
+        "latent_meV_atom",
+        "jump_Q"
+      ],
+      "q_cut": 0.37,
+      "intervals": [
+        [
+          1243.9201963198227,
+          1244.5415188501543,
+          1245.222214778462
+        ],
+        [
+          3.5444494225193033,
+          3.545482920729855,
+          3.5466485107022954
+        ],
+        [
+          27.177120015964363,
+          27.21564767217027,
+          27.26428368684304
+        ],
+        [
+          26.35381797454133,
+          26.85165044008707,
+          27.20454329978167
+        ],
+        [
+          0.6256518651082486,
+          0.6319982634927339,
+          0.6396862755963305
+        ]
+      ],
+      "divider_comparison": [
+        {
+          "cut": 0.32,
+          "T_K": 1244.6227402772379
+        },
+        {
+          "cut": 0.37,
+          "T_K": 1244.5355908930878
+        },
+        {
+          "cut": 0.42,
+          "T_K": 1244.4676301770985
+        },
+        {
+          "cut": 0.47,
+          "T_K": 1244.3944764884473
+        }
+      ],
+      "direct_fields_1243_eV": [
+        3.51,
+        3.522,
+        3.53,
+        3.533,
+        3.545,
+        3.557,
+        3.56,
+        3.568,
+        3.58
+      ],
+      "direct_Smax_1243": 0.4935610934746509,
+      "direct_Smax_interval95": [
+        0.09241313141193962,
+        0.7719128494825772
+      ],
+      "direct_both_contacts_fraction": 1.0,
+      "pooled_1243_Smax": 0.6312649123523306,
+      "pooled_1243_Smax_025_50_975": [
+        0.30880880324096033,
+        0.6605555341533675,
+        0.9743798143234287
+      ],
+      "pooled_both_contacts_count": 64,
+      "pooled_draws": 64,
+      "all_sources_stride4": {
+        "T_K": 1244.1981910654456,
+        "x_atpct": 27.214741124986872
+      }
+    }
+  },
+  "pooled_T35_minus_T40": {
+    "N": 2304,
+    "pressure_GPa": 0,
+    "free_axial": true,
+    "definition": "value(W=0.35) minus value(W=0.40)",
+    "sources": [
+      "analysis\\W35_all.json",
+      "analysis\\W40_all.json"
+    ],
+    "cut_Q": 0.37,
+    "by_observable": {
+      "T_K": {
+        "central": 17.113443913899346,
+        "independent_block_025_50_975": [
+          16.077853082706895,
+          17.04892918852636,
+          18.027959645117306
+        ]
+      },
+      "mu_eV": {
+        "central": -0.002456670983705944,
+        "independent_block_025_50_975": [
+          -0.0042493890785815225,
+          -0.002599942759867746,
+          -0.000989296358516245
+        ]
+      },
+      "x_atpct": {
+        "central": -0.0035892161218953333,
+        "independent_block_025_50_975": [
+          -0.07580775656226502,
+          -0.008826326325218403,
+          0.05280551807746381
+        ]
+      },
+      "latent_meV_atom": {
+        "central": -1.2375014198533592,
+        "independent_block_025_50_975": [
+          -1.8108662038083114,
+          -1.1932841903325837,
+          -0.508527578591452
+        ]
+      },
+      "jump_Q": {
+        "central": -0.0053251575878342505,
+        "independent_block_025_50_975": [
+          -0.01577758889138936,
+          -0.004131133007750087,
+          0.007360842050760735
+        ]
+      }
+    },
+    "temperatures_bracketed": [
+      true,
+      true
+    ],
+    "source_T_K": [
+      [
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0,
+        1254.0,
+        1262.0,
+        1269.0
+      ],
+      [
+        1239.0,
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0
+      ]
+    ],
+    "note": "Each wall was simulated independently. Percentiles are taken over the product of the two block-bootstrap distributions. They quantify finite-trajectory uncertainty at the given cell, basin divider and ensemble."
+  },
+  "common_field_1243_cage_effect": {
+    "mu_eV": 3.545,
+    "delta_S": 8.353094105937425,
+    "delta_S_interval_95": [
+      7.864696056507441,
+      8.840303828945299
+    ],
+    "delta_ordered_minus_disordered_meV_atom": -0.388337130344557,
+    "delta_free_energy_interval_95_meV_atom": [
+      -0.4109876145016023,
+      -0.3656314006381593
+    ]
+  },
+  "files": [
+    {
+      "path": "analysis/direct/final_summary.csv",
+      "sha256": "27d6cc11f177f98a6b99c52f95a5358889f776100d73892fd8b71ea82c161ed0"
+    },
+    {
+      "path": "analysis/direct/matched_cage_effects.json",
+      "sha256": "54d281103863a6f3a79ca69264cd70c36221c8b42556d3fbc852532deba17a91"
+    },
+    {
+      "path": "analysis/direct/direct_temperature_zeros.json",
+      "sha256": "4a6cf80c1f40481b196fec282cbe8978235e27ac44e4c935f18a6863cd224c53"
+    },
+    {
+      "path": "analysis/wall_shift.json",
+      "sha256": "60ae1e164006d76fd56cef8d6415e18b0d92b86859b56d73fd1aebd25ef6e813"
+    },
+    {
+      "path": "analysis/wall_shift_local.json",
+      "sha256": "cca8d427cce17de9e06e984fecb9d397c634545b0f2e8b66aa30b595459604aa"
+    },
+    {
+      "path": "atomistic/series_summary.csv",
+      "sha256": "34d9147c1186f59796f75a05cbb825ab3db1b82916bd4f00c2e4a2d784286fea"
+    },
+    {
+      "path": "atomistic/provenance.json",
+      "sha256": "46edbe04a40da59880173b2961c046ffffc948298a55a21a298874f81f10190f"
+    },
+    {
+      "path": "atomistic/slurm_accounting.csv",
+      "sha256": "f648abc03f06d84241b1a079db8e84e3ce5deb5b11a4d3c93ba8e32fcd28eff6"
+    },
+    {
+      "path": "analysis/W35_all.json",
+      "sha256": "cfa80f40190da46f6a70bdab3b7d04c7b7f87da544481f2c039431d3f91c6c47"
+    },
+    {
+      "path": "analysis/direct/final_T1243_W0p35.json",
+      "sha256": "cbc310716cd2369a04b356b48ed5879ff62c561c6e2b858457f9881c249c411f"
+    },
+    {
+      "path": "analysis/contacts_W35_1243.json",
+      "sha256": "dcb2b07b41b51f49152aa884892503b94da6b8a5275b9030e6476979c1780519"
+    },
+    {
+      "path": "analysis/W40_all.json",
+      "sha256": "8ab50fff1da2011c1e6b9b28c825df05a3e9f845fc5acd5d7114f9a4b1c7a046"
+    },
+    {
+      "path": "analysis/direct/final_T1243_W0p40.json",
+      "sha256": "bddc79cf2aaf2c83f5c54a27f6a550c9020398720404e21b0f00efaf1fe07465"
+    },
+    {
+      "path": "analysis/contacts_W40_1243.json",
+      "sha256": "ffdacd8f26fb03204d809d76034bf2970684a8738656c039a442271f005c9e6a"
+    },
+    {
+      "path": "contacts_1243.csv",
+      "sha256": "1ee01abf9df6228dd62f03803a134580f6a337d374cf24e21879602d97fc7a8e"
+    },
+    {
+      "path": "analysis/W35_all_stride4.json",
+      "sha256": "691ae8cec4fb84d1e5c091ea13550883871a87657fd04613ad280b907f31c0f8"
+    },
+    {
+      "path": "analysis/W40_all_stride4.json",
+      "sha256": "8926ced2e1cff73f17b4d6e84bc4fa7e5a9e1ccc035221e0ea89bb9b5e32ec60"
+    }
+  ]
+}

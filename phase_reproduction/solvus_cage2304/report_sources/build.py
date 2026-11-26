@@ -26,13 +26,13 @@ def tabular(head, rows, columns):
 def pooled_table(diff):
     rows = []
     for name in diff["sources"]:
-        result = json.loads((STUDY / name).read_text(encoding="utf8"))
+        result = json.loads((STUDY / name.replace("\\","/")).read_text(encoding="utf8"))
         central = result["central"]
         bounds = result["interval_95"][result["bootstrap_columns"].index("T_K")]
         rows.append([n(result["W"]), n(central["T_K"], 1), interval(bounds, 1),
                      n(central["mu_eV"], 4), n(central["x_atpct"]),
                      n(central["jump_Q"]), n(central["latent_meV_atom"], 1)])
-    return (r"\subsection*{Вершина на 2304 атомах}"+ "\n" +
+    return (r"\subsection*{Совместное перевзвешивание всех исходных температур}"+ "\n" +
             tabular(r"\(w\) & \(T_*\), К & 95\% для \(T_*\), К & \(\Delta\mu_*\), эВ & \(x_*\), ат.\% Al & \(\Delta Q\) & \(\ell\), мэВ/атом",
                     rows, "rrrrrrr")+"\n"+
             r"{\small \(\Delta Q=\langle Q\rangle_{\alpha_2}-\langle Q\rangle_\alpha\). "
@@ -180,7 +180,10 @@ def geometry_note(path):
     return (r"\subsection*{Проверка по новым траекториям}"+"\n"+
             f"Для {frame_count:,} продуктивных кадров наименьший сохранённый зазор до более строгой геометрической границы ".replace(",",r"\,")+
             r"\(h_{0{,}40}\) равен "+n(min_clear,5)+r"~\AA. Нижняя граница зазора среди всех интервалов между записями равна "+
-            n(min_lower,5)+r"~\AA.")
+            n(min_lower,5)+r"~\AA. Он положителен во всех интервалах при обеих стенках. Таким образом, "
+            r"в этой серии термодинамическое различие связано с областью атомных смещений. "
+            r"Для отделения ошибки исходного короткодействующего MTP от выбора этой области требуется "
+            r"независимая проверка потенциала при сближении атомов и повтор на другой крупной ячейке.")
 
 
 def main(args):

@@ -75,6 +75,25 @@ def write_report():
     entry,=[r for r in effects if r["cut_Q"]==.37 and r["T_K"]==1243.]
     shared,=[r for r in entry["matched_fields"] if abs(r["mu_eV"]-3.545)<1e-9]
     paths.append(HERE/"contacts_1243.csv")
+    direct_analysis=read(DIRECT/"direct_temperature_zeros.json")
+    direct_roots={}
+    for r in direct_analysis["records"]:
+        if r["cut_Q"]==.37:
+            w=str(round(100*r["W"]))
+            apex,=r["weighted_monotone_crossings"]
+            direct_roots[w]=dict(T_K=apex,T_interval95=r["conditional_interpolated_T_interval_95"],
+                                 x_atpct=r["interpolated_x_pct"],x_interval95=r["conditional_x_pct_interval_95"],
+                                 source_T_K=r["usable_T"])
+    comparison,=[r for r in direct_analysis["W35_minus_W40"] if r["cut_Q"]==.37]
+    direct_shift=dict(T_K=direct_roots["35"]["T_K"]-direct_roots["40"]["T_K"],
+                      interval95=comparison["conditional_W35_minus_W40_interval_95"],
+                      fraction_both_temperatures_bracketed=comparison["fraction_both_T_bracketed"])
+    for tag in ("35","40"):
+        check=AN/f"W{tag}_all_stride4.json"
+        if check.is_file():
+            q=read(check)
+            paths.append(check)
+            wall_specs[tag]["all_sources_stride4"]={"T_K":q["central"]["T_K"],"x_atpct":q["central"]["x_atpct"]}
     for p in (HERE/"report").glob("TiAl_solvus_cage2304.*"):
         if p.suffix in [".tex",".pdf"]:
             paths.append(p)
@@ -83,7 +102,8 @@ def write_report():
            jobs=len(jobs),trajectories=sum(int(j["windows"]) for j in jobs),
            production_frames=sum(int(j["production_records"]) for j in jobs),
            allocated_CPU_h=sum(float(j["allocated_cpu_hours"]) for j in jobs),
-           wall_results=wall_specs,shift_positive_if_tighter_wall_raises_T=read(AN/"wall_shift.json"),
+           primary_direct_T=direct_roots,primary_direct_T35_minus_T40=direct_shift,
+           pooled_wall_results=wall_specs,pooled_T35_minus_T40=read(AN/"wall_shift.json"),
            common_field_1243_cage_effect=shared,
            files=[dict(path=p.relative_to(HERE).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in paths])
     (HERE/"results.json").write_text(json.dumps(z,indent=2,allow_nan=False)+"\n",encoding="utf8")

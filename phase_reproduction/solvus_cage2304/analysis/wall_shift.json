@@ -1,0 +1,76 @@
+{
+  "N": 2304,
+  "pressure_GPa": 0,
+  "free_axial": true,
+  "definition": "value(W=0.35) minus value(W=0.40)",
+  "sources": [
+    "analysis\\W35_all.json",
+    "analysis\\W40_all.json"
+  ],
+  "cut_Q": 0.37,
+  "by_observable": {
+    "T_K": {
+      "central": 17.113443913899346,
+      "independent_block_025_50_975": [
+        16.077853082706895,
+        17.04892918852636,
+        18.027959645117306
+      ]
+    },
+    "mu_eV": {
+      "central": -0.002456670983705944,
+      "independent_block_025_50_975": [
+        -0.0042493890785815225,
+        -0.002599942759867746,
+        -0.000989296358516245
+      ]
+    },
+    "x_atpct": {
+      "central": -0.0035892161218953333,
+      "independent_block_025_50_975": [
+        -0.07580775656226502,
+        -0.008826326325218403,
+        0.05280551807746381
+      ]
+    },
+    "latent_meV_atom": {
+      "central": -1.2375014198533592,
+      "independent_block_025_50_975": [
+        -1.8108662038083114,
+        -1.1932841903325837,
+        -0.508527578591452
+      ]
+    },
+    "jump_Q": {
+      "central": -0.0053251575878342505,
+      "independent_block_025_50_975": [
+        -0.01577758889138936,
+        -0.004131133007750087,
+        0.007360842050760735
+      ]
+    }
+  },
+  "temperatures_bracketed": [
+    true,
+    true
+  ],
+  "source_T_K": [
+    [
+      1242.0,
+      1243.0,
+      1244.0,
+      1245.0,
+      1254.0,
+      1262.0,
+      1269.0
+    ],
+    [
+      1239.0,
+      1242.0,
+      1243.0,
+      1244.0,
+      1245.0
+    ]
+  ],
+  "note": "Each wall was simulated independently. Percentiles are taken over the product of the two block-bootstrap distributions. They quantify finite-trajectory uncertainty at the given cell, basin divider and ensemble."
+}

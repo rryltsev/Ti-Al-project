@@ -57,3 +57,15 @@ python tools/restore_research.py --edition ../TiAl-manuscript-2026-11-03
 | GRACE, PBE, N200 против N694 | Full N694 дал средние RMSE сил 0,07216 эВ/Å, напряжений 0,06565 ГПа и ветвей TiAl 0,20221 ТГц. Для DOS Ti₃Al наименьшее среднее W₁ у radial N200, 0,23170 ТГц. Сравнение основано на seed 10/20/30 и 50 эпохах. | [Итоговый отчёт и парные изменения](../research/tial_fm/reports/30_grace_pbe_n694_results.md) · [машиночитаемые результаты](../research/tial_fm/runs/grace-pbe-n694-20261110-01/collected-final/comparison/summary.json) |
 
 В последнем отчёте предложены контроль покрытия Ti₃Al в train и сравнение при одинаковом числе обновлений. Серии 50 эпох получили соответственно 10 000 и 34 700 обновлений. Эти вопросы остаются открытыми.
+
+## Продолжить обучение с финального шага
+
+Для 24 случаев DPA4 скопированы с UMT и сверены по исходным журналам файлы `checkpoints/model.ckpt-10000.pt` (N200) или `checkpoints/model.ckpt-34700.pt` (N694). Они содержат состояние обучения и оптимизатора. Таблица указывает шаг, функционал и маску в имени случая, точный путь внутри ZIP, путь на UMT, размер и SHA-256. [Чекпойнты для рестарта DPA4](dpa4-training-restarts.csv).
+
+```sh
+python tools/release_assets.py --list --group dpa4-restart
+python tools/release_assets.py --get --name "dpa4-final-training-PBE-N694.zip"
+python -m zipfile -e downloads/dpa4-final-training-PBE-N694.zip .
+```
+
+Выберите конфигурацию и протокол соответствующего запуска. Для продолжения обучения используйте checkpoint из подкаталога `checkpoints`; соседний `merged` содержит объединённые веса для экспорта. Для GRACE аналогичные команды, версии TensorFlow и контрольные суммы сохранены в [руководстве по Adam](grace-optimizers.md).
