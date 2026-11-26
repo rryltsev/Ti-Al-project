@@ -1,5 +1,7 @@
 """List, download and verify selected archives from the Ti–Al project release."""
 import argparse
+from concurrent.futures import ThreadPoolExecutor
+from contextlib import contextmanager
 import fnmatch
 import hashlib
 from http.client import IncompleteRead
@@ -74,7 +76,28 @@ def fetch_object(row, folder, tag):
     return target
 
 
-def download(row, folder, tag):
+@contextmanager
+def archive_lock(folder, name):
+    locks = folder / ".parts" / ".locks"
+    locks.mkdir(parents=True, exist_ok=True)
+    with (locks / (name + ".lock")).open("a+b") as lock:
+        if os.name == "nt":
+            import msvcrt
+            lock.seek(0)
+            while True:
+                try:
+                    msvcrt.locking(lock.fileno(), msvcrt.LK_NBLCK, 1)
+                    break
+                except PermissionError:
+                    time.sleep(0.5)
+        else:
+            import fcntl
+            fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+        # Closing the file releases the OS lock, including on process exit.
+        yield
+
+
+def assemble(row, folder, tag):
     target = local_path(folder, row["name"])
     if "parts" not in row:
         return fetch_object(row, folder, tag)
@@ -83,7 +106,11 @@ def download(row, folder, tag):
             return target
         raise ValueError(f"Existing file differs from the catalog: {target}")
     cache = folder / ".parts" / target.name
-    parts = [fetch_object(part, cache, row.get("tag", tag)) for part in row["parts"]]
+    def fetch(part):
+        return fetch_object(part, cache, row.get("tag", tag))
+
+    with ThreadPoolExecutor(max_workers=3) as workers:
+        parts = list(workers.map(fetch, row["parts"]))
     with tempfile.NamedTemporaryFile(dir=folder, prefix=target.name, suffix=".assembling", delete=False) as out:
         assembling = Path(out.name)
         for part in parts:
@@ -92,7 +119,19 @@ def download(row, folder, tag):
     if not matches(assembling, row):
         raise ValueError(f"Assembled file differs from the catalog: {assembling}")
     os.replace(assembling, target)
+    for part in parts:
+        part.unlink()
+    if not any(cache.iterdir()):
+        cache.rmdir()
     return target
+
+
+def download(row, folder, tag):
+    target = local_path(folder, row["name"])
+    if matches(target, row):
+        return target
+    with archive_lock(folder, target.name):
+        return assemble(row, folder, tag)
 
 
 def main():
