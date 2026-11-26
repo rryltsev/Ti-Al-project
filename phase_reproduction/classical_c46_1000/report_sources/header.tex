@@ -1,0 +1,43 @@
+% !TeX program = xelatex
+% Компиляция: xelatex C46_classical_1000K.tex
+% Исходник самодостаточен; данные таблиц включены в текст.
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[russian]{babel}
+\IfFontExistsTF{Cambria}{\setmainfont{Cambria}}{\setmainfont{DejaVu Serif}}
+\IfFontExistsTF{Calibri}{\setsansfont{Calibri}}{\setsansfont{DejaVu Sans}}
+\IfFontExistsTF{Consolas}{\setmonofont[Scale=MatchLowercase]{Consolas}}{\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}}
+\usepackage[a4paper,left=23mm,right=21mm,top=20mm,bottom=19mm,headheight=15pt,headsep=6mm,footskip=10mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,xcolor,titlesec,fancyhdr,caption,hyperref}
+\definecolor{ink}{HTML}{213542}
+\definecolor{teal}{HTML}{006D70}
+\definecolor{muted}{HTML}{526673}
+\hypersetup{unicode=true,colorlinks=true,linkcolor=teal,urlcolor=teal,
+ pdftitle={Классическая статистика колебаний в C46 для Ti–Al при 1000 К},
+ pdfsubject={Равновесные составы фаз α и α₂ при фиксированном отношении осей}}
+\urlstyle{same}
+\captionsetup{font=small,labelfont={bf,color=teal},labelsep=period,singlelinecheck=false}
+\titleformat{\section}{\sffamily\bfseries\Large\color{ink}}{\color{teal}\thesection}{.5em}{}
+\titleformat{\subsection}{\sffamily\bfseries\large\color{ink}}{\thesubsection}{.5em}{}
+\titlespacing*{\section}{0pt}{12pt plus 2pt}{5pt}
+\titlespacing*{\subsection}{0pt}{9pt plus 2pt}{4pt}
+\setlength{\parindent}{1.1em}
+\setlength{\parskip}{2.4pt plus .6pt}
+\setlength{\emergencystretch}{2em}
+\brokenpenalty=10000 \widowpenalty=8000 \clubpenalty=8000
+\renewcommand{\arraystretch}{1.16}
+\raggedbottom
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{muted}Ti--Al\enspace/\enspace Классические колебания в C46}
+\fancyhead[R]{\small\sffamily\color{muted}\(1000\) К}
+\fancyfoot[R]{\small\sffamily\color{muted}\thepage}
+\renewcommand{\headrulewidth}{.25pt}
+\begin{document}
+\thispagestyle{plain}
+\noindent{\sffamily\small\color{teal}\bfseries ДОПОЛНЕНИЕ К НАУЧНОМУ ОТЧЁТУ\hfill 25 ноября 2026 г.\par}
+\vspace{3mm}
+\noindent{\sffamily\bfseries\fontsize{23}{26}\selectfont\color{ink}
+Классические колебания в модели C46\par}
+\vspace{1mm}
+\noindent{\sffamily\large\color{muted}Границы \(\alpha/\alpha_2\) в Ti--Al при 1000~К и нулевом давлении\par}
+\vspace{2mm}\noindent{\color{teal}\rule{\linewidth}{1pt}}\par\vspace{1mm}

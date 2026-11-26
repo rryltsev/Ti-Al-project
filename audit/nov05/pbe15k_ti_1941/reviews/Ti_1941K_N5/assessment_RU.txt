@@ -1,0 +1,15 @@
+1941 K, N=5. Новый полностью проанализированный пакет. Ошибки ниже: формальные SE.
+
+40ps: 2.826782 +/- 0.128056 мПа·с; neff=116.078; cost Z=1.255; cutoff Z=2.432.
+first20ps: 2.659636 +/- 0.153193 мПа·с; neff=59.343; cost Z=1.439; cutoff Z=1.362.
+second20ps: 2.905564 +/- 0.187009 мПа·с; neff=73.035; cost Z=2.777; cutoff Z=3.262.
+Это первые 5 новых реплик: предыдущей накопленной оценки и сравнения новых5 с прежними пока нет; эти критерии ещё не оцениваются.
+5k отдельно: 3.049946 +/- 0.117315; разница40 -7.317%.
+Исторического результата15k при1941K до этого запуска нет; старые5k не переименованы.
+[{"id": "Ti_1941K", "flags": {"minimum_replicas": false, "precision": false, "last_three_stability": false, "duration_stability": false, "spectral_points": true, "cost": true, "cutoff": false, "new_batch_consistency": false, "window_fit_diagnostics": false}, "passed": false, "last_three_relative_range": null, "max_20_40_relative_difference": 0.059129677531474134}]
+Последовательных полных прохождений 0/2; stop=False; review hold=False.
+All seven diagnostics visually inspected. Full40 main cutoff near2.8THz and a small lower-frequency shoulder; cutoff Z2.432 fails. First20 main cutoff near2.8THz passes. Second20 main cutoff near3.5THz with secondary high-frequency weight around7THz; cost Z2.777 and cutoff Z3.262 fail. This preliminary spectral fit does not establish physical drift. No previous accumulated estimate/new5-vs-old contrast at N5.
+Formal estimator SE; model, protocol and cutoff bias are not included.
+Windows and accumulated estimates are correlated; these stopping criteria are a heuristic.
+5k and historical 15k references remain separate; agreement with 5k is not a stop criterion.
+Fixed article profile is unchanged; only complete analyzed batches are plotted.

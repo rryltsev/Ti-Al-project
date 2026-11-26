@@ -1,0 +1,200 @@
+{
+  "date": "2026-10-31",
+  "supersedes": "scheduler-overrides-12.json",
+  "cpu_vasp_partition": "apollo",
+  "reason": "PBEsol reference and r2SCAN first displacement independently accepted. Sequential cutoff diagnostic and opposite r2SCAN displacement queued after durable checkpoint archival.",
+  "requested_walltime": "20:00:00",
+  "observed_partition_max_walltime": "20:00:00",
+  "memory_GiB_per_node": 240,
+  "scientific_changes": [],
+  "jobs": {
+    "PBE_old": {
+      "job_id": "20959336",
+      "partition": "v100",
+      "action": "Cancelled by explicit user request; no new checkpoint assumed"
+    },
+    "PBE": {
+      "job_id": "20972819",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4,
+      "memory_GiB_per_node": 240,
+      "walltime": "20:00:00",
+      "target": "PBE/production-05/force-002",
+      "policy": "execution-policy-06.json",
+      "driver": "production_step_v6.py",
+      "launcher": "launch_v12.sbatch",
+      "guard": "checkpoint_guard_v2.py",
+      "state_at_observation": "RUNNING at2026-10-31T21:24:44+05:00"
+    },
+    "r2SCAN": {
+      "job_id": "20972837",
+      "step": "force-002",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4,
+      "memory_GiB_per_node": 240,
+      "walltime": "20:00:00",
+      "target": "r2SCAN/production-05/force-002",
+      "policy": "execution-policy-08.json",
+      "driver": "production_step_v8.py",
+      "launcher": "launch_v13.sbatch",
+      "guard": "checkpoint_guard_v2.py",
+      "seed_parent": "20968910",
+      "seed_source": "r2SCAN/production-02/force-001-restart-04",
+      "ISTART": 1,
+      "ICHARG": 1,
+      "LWAVE": true,
+      "state_at_observation": "PENDING / Priority"
+    },
+    "PBEsol": {
+      "job_id": "20972836",
+      "step": "check-cutoff",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4,
+      "memory_GiB_per_node": 320,
+      "walltime": "20:00:00",
+      "target": "PBEsol/production-05/check-cutoff",
+      "policy": "execution-policy-07.json",
+      "driver": "production_step_v7.py",
+      "launcher": "launch_v13.sbatch",
+      "guard": "checkpoint_guard_v5.py",
+      "state_at_observation": "PENDING / Priority",
+      "ENCUT_eV": 650,
+      "reason_more_memory": "Basis expansion estimate from650/550 cutoffs and measured rank peak; selects385600MB nodes automatically."
+    },
+    "PBE_softstop_continuation": {
+      "job_id": "20959747",
+      "action": "Cancelled before start; required clean checkpoint from interrupted run"
+    },
+    "r2SCAN_previous": {
+      "job_id": "20959337",
+      "state": "COMPLETED",
+      "scientific_state": "checkpointed_needs_review; no EDIFF",
+      "SCF_steps": 9,
+      "elapsed": "15:19:14",
+      "end_local": "2026-10-26T00:36:19+05:00"
+    },
+    "PBEsol_completed": {
+      "job_id": "20959338",
+      "state": "COMPLETED",
+      "step": "force-001",
+      "accepted": true,
+      "SCF_steps": 25,
+      "end_local": "2026-10-28T08:41:39+05:00",
+      "report": "results/PBEsol-force001-validation-20261028.json"
+    },
+    "PBE_checkpoint": {
+      "job_id": "20959753",
+      "state": "COMPLETED",
+      "end_local": "2026-10-28T09:34:14+05:00",
+      "SCF_steps": 16,
+      "EDIFF": false,
+      "density_audit": "PBE-stopped-checkpoint-audit-20261028.json"
+    },
+    "r2SCAN_checkpoint": {
+      "job_id": "20960773",
+      "state": "COMPLETED",
+      "end_local": "2026-10-28T19:13:22+05:00",
+      "SCF_steps": 9,
+      "EDIFF": false,
+      "WAVECAR_bytes": 25201037952,
+      "wavecar_audit": "r2SCAN-wavecar-header-audit-20261028.json"
+    },
+    "PBE_node_failure": {
+      "job_id": "20964089",
+      "state": "NODE_FAIL",
+      "elapsed": "04:31:47",
+      "nodes": [
+        "apollo20",
+        "apollo22"
+      ],
+      "audit": "PBE-node-failure-audit-20261029.json",
+      "new_checkpoint": false
+    },
+    "PBEsol_completed_002": {
+      "job_id": "20962927",
+      "state": "COMPLETED",
+      "step": "force-002",
+      "accepted": true,
+      "SCF_steps": 27,
+      "report": "results/PBEsol-force002-validation-20261029.json"
+    },
+    "r2SCAN_completed_checkpoint": {
+      "job_id": "20964090",
+      "state": "COMPLETED",
+      "SCF_steps": 13,
+      "EDIFF": false,
+      "last_energy_change_eV": -5.0888e-08,
+      "last_band_energy_change_eV": -2.8157e-07,
+      "end_local": "2026-10-29T22:31:22+05:00",
+      "WAVECAR_bytes": 25201037952
+    },
+    "PBE_completed_001": {
+      "job_id": "20968908",
+      "state": "COMPLETED",
+      "step": "force-001",
+      "accepted": true,
+      "report": "results/PBE-force001-validation-20261031.json",
+      "elapsed": "09:04:39",
+      "SCF_steps": 24,
+      "end_local": "2026-10-31T19:31:36+05:00"
+    },
+    "PBEsol_completed_reference": {
+      "job_id": "20968907",
+      "step": "force-000",
+      "state": "COMPLETED",
+      "accepted": true,
+      "SCF_steps": 28,
+      "elapsed": "11:09:00",
+      "end_local": "2026-10-31T20:55:40+05:00",
+      "report": "results/PBEsol-force000-validation-20261031.json"
+    },
+    "r2SCAN_completed_force001": {
+      "job_id": "20968910",
+      "step": "force-001",
+      "state": "COMPLETED",
+      "accepted": true,
+      "SCF_steps": 10,
+      "elapsed": "08:18:35",
+      "end_local": "2026-10-31T20:44:37+05:00",
+      "report": "results/r2SCAN-force001-validation-20261031.json",
+      "new_WAVECAR_bytes": 25201037952,
+      "new_WAVECAR_sha256": "d80676dd9f8d682f70dc1efdc2b66b2845e23e30f04e7480cefc4fffacc6e795"
+    }
+  },
+  "restart_gate": "All currentforceaudits positive. New r2SCAN reads converged first-displacement guess for opposite frozen geometry with self-consistency retained. Policy08 only permitsforce002; review nextstepresource/seed plans before expansion. PBEsol policy07 onlycutoff; kmesh/smearing review pending.",
+  "provenance": "runs/alpha-ti-xc-phonons-20261021-01/production-restart-source-manifest-20261029.json",
+  "forbidden_vasp_nodes": [
+    "tesla-a101"
+  ],
+  "checkpoint_guard": "New cutoff PBEsol v5 >=6h; new r2SCAN v2 >=8h; dynamic2*maxSCF+3h. Completed previous jobs never hitSTOPCAR.",
+  "storage_archive": {
+    "source": "r2SCAN/production-02/force-001-restart-02/WAVECAR",
+    "archive": "/home/u3129/tial-phonons-archive/alpha-ti-xc-phonons-20261021-01/r2SCAN/force-001-restart-02/WAVECAR",
+    "old_path_preserved": "symlink",
+    "bytes": 25201037952,
+    "SHA256_verified": true,
+    "audit": "r2SCAN-old-wavecar-archive-20261029-attempt02-result.json"
+  },
+  "additional_storage_archives": [
+    {
+      "source": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-03/WAVECAR",
+      "archive": "/home1/u3129/tial-phonons-archive/alpha-ti-xc-phonons-20261021-01/r2SCAN/force-001-restart-03/WAVECAR",
+      "bytes": 25201037952,
+      "sha256": "dd986de4213079fc680296be62f57c6e008a5545305625b5897b57a937c2ce78",
+      "source_sha256": "dd986de4213079fc680296be62f57c6e008a5545305625b5897b57a937c2ce78",
+      "archive_verified": true,
+      "state": "archived_with_original_path_preserved",
+      "epoch": 1793463772.4601066
+    }
+  ],
+  "storage_caution": "Main-home archive reached EDQUOT at15.12GB incomplete copy; original preserved, incomplete copy removed. Superseded restart03 successfully archived on Lustre/home1 with full SHA256/fsync and original symlink. Lustre user/group inherit defaults; no unlimited quota claim. Before further large files recheck filesystem/quota and actual writability. home6~67.55/100GiB after archival."
+}

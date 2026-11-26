@@ -1,0 +1,172 @@
+{
+  "unix": 1793540649.2316566,
+  "clock": {
+    "returncode": 0,
+    "stdout": "2026-11-01T18:44:09+05:00\n",
+    "stderr": ""
+  },
+  "source": "testset\\dft\\scf-check-20261101\\snapshot-1793540649.json",
+  "targets": {
+    "TiAl-test-032": {
+      "last_complete": [
+        {
+          "n": 19,
+          "dE_eV": 0.1624566,
+          "deps_eV": -0.3019496
+        },
+        {
+          "n": 20,
+          "dE_eV": 0.02272139,
+          "deps_eV": -0.1527872
+        },
+        {
+          "n": 21,
+          "dE_eV": 0.1593954,
+          "deps_eV": -0.1390564
+        },
+        {
+          "n": 22,
+          "dE_eV": 0.1091602,
+          "deps_eV": -0.1053273
+        },
+        {
+          "n": 23,
+          "dE_eV": 0.002789066,
+          "deps_eV": -0.0467732
+        },
+        {
+          "n": 24,
+          "dE_eV": 0.02075074,
+          "deps_eV": -0.02394066
+        }
+      ],
+      "iteration_in_progress": 25,
+      "last_loops_min": [
+        18.287418333333335,
+        18.288958333333333,
+        18.276045,
+        18.257833333333334,
+        18.273685,
+        18.30507833333333
+      ],
+      "converged": false,
+      "outcar_age_s": 381.01807284355164,
+      "warnings": [],
+      "slurm": {
+        "JobState": "RUNNING",
+        "RunTime": "09:40:47",
+        "TimeLimit": "20:00:00",
+        "EndTime": "2026-11-02T05:03:22"
+      },
+      "oszicar_tail": [
+        "DAV:  19    -0.318539864266E+04    0.16246E+00   -0.30195E+00 16552   0.330E+00    0.685E+00",
+        "DAV:  20    -0.318537592127E+04    0.22721E-01   -0.15279E+00 16640   0.277E+00    0.562E+00",
+        "DAV:  21    -0.318521652587E+04    0.15940E+00   -0.13906E+00 16608   0.270E+00    0.385E+00",
+        "DAV:  22    -0.318510736569E+04    0.10916E+00   -0.10533E+00 16568   0.219E+00    0.209E+00",
+        "DAV:  23    -0.318510457662E+04    0.27891E-02   -0.46773E-01 16600   0.140E+00    0.168E+00",
+        "DAV:  24    -0.318508382588E+04    0.20751E-01   -0.23941E-01 16656   0.104E+00    0.115E+00"
+      ],
+      "conditional_loglinear_estimates": [
+        {
+          "window": 5,
+          "extra_iterations": 22.359374185432443,
+          "extra_hours": 6.812801318211158
+        },
+        {
+          "window": 8,
+          "extra_iterations": 18.094705935645273,
+          "extra_hours": 5.5133759750451246
+        },
+        {
+          "window": 10,
+          "extra_iterations": 20.794640658044116,
+          "extra_hours": 6.336034010251988
+        }
+      ]
+    },
+    "TiAl-test-040": {
+      "last_complete": [
+        {
+          "n": 30,
+          "dE_eV": 0.0003761241,
+          "deps_eV": -0.000168844
+        },
+        {
+          "n": 31,
+          "dE_eV": 6.814353e-05,
+          "deps_eV": -4.436997e-05
+        },
+        {
+          "n": 32,
+          "dE_eV": -6.944174e-08,
+          "deps_eV": -9.184158e-06
+        },
+        {
+          "n": 33,
+          "dE_eV": 4.562724e-06,
+          "deps_eV": -3.580398e-06
+        },
+        {
+          "n": 34,
+          "dE_eV": -1.107206e-05,
+          "deps_eV": -4.633524e-06
+        },
+        {
+          "n": 35,
+          "dE_eV": -3.676978e-07,
+          "deps_eV": -3.816244e-06
+        }
+      ],
+      "iteration_in_progress": 36,
+      "last_loops_min": [
+        16.20094166666667,
+        16.00747,
+        16.190781666666666,
+        15.954896666666667,
+        15.679063333333334,
+        15.305964999999999
+      ],
+      "converged": false,
+      "outcar_age_s": 268.4758791923523,
+      "warnings": [],
+      "slurm": {
+        "JobState": "RUNNING",
+        "RunTime": "09:21:31",
+        "TimeLimit": "20:00:00",
+        "EndTime": "2026-11-02T05:22:38"
+      },
+      "oszicar_tail": [
+        "DAV:  30    -0.264035799631E+04    0.37612E-03   -0.16884E-03 15160   0.870E-02    0.100E-01",
+        "DAV:  31    -0.264035792817E+04    0.68144E-04   -0.44370E-04 14872   0.439E-02    0.600E-02",
+        "DAV:  32    -0.264035792824E+04   -0.69442E-07   -0.91842E-05 14880   0.190E-02    0.496E-02",
+        "DAV:  33    -0.264035792367E+04    0.45627E-05   -0.35804E-05 14752   0.134E-02    0.323E-02",
+        "DAV:  34    -0.264035793475E+04   -0.11072E-04   -0.46335E-05 14376   0.149E-02    0.334E-02",
+        "DAV:  35    -0.264035793511E+04   -0.36770E-06   -0.38162E-05 13784   0.139E-02    0.176E-02"
+      ],
+      "conditional_loglinear_estimates": [
+        {
+          "window": 5,
+          "extra_iterations": 1.6338665532489927,
+          "extra_hours": 0.43518534882789306
+        },
+        {
+          "window": 8,
+          "extra_iterations": 0.5470861303683279,
+          "extra_hours": 0.14571806247566915
+        },
+        {
+          "window": 10,
+          "extra_iterations": 0.9808794854437721,
+          "extra_hours": 0.2612602480797098
+        }
+      ]
+    }
+  },
+  "accounting": {
+    "returncode": 0,
+    "stdout": "JobID|State|ExitCode|Elapsed|Start|End|Timelimit\n20957372_31|RUNNING|0:0|09:40:47|2026-11-01T09:03:22|Unknown|20:00:00\n20957372_39|RUNNING|0:0|09:21:31|2026-11-01T09:22:38|Unknown|20:00:00\n",
+    "stderr": ""
+  },
+  "DFT_modified": false,
+  "interpretation": "040 close to convergence with10h38 margin; no warning or current timeout concern.032 slower, step24 and~0.024eV residual, recent18.3min loops. Residual decreases; scenario forecasts are conditional on recent rate. Reassess032 next monitoring; no current intervention indicated. Neither has reached both EDIFF criteria."
+}

@@ -1,0 +1,19 @@
+{
+  "key": "CPU-benchmark",
+  "job_id": "20989429",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=4",
+    "--mem=40G",
+    "--time=00:45:00",
+    "--job-name=TiAl-GRACE-fp-CPU",
+    "--output=CPU-benchmark-%j.log",
+    "cpu.sbatch"
+  ],
+  "utc": "2026-11-07T16:34:14.409221+00:00"
+}

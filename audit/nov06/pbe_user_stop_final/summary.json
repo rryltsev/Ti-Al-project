@@ -1,0 +1,527 @@
+{
+  "unix": 1793940598.666213,
+  "reason": "User requested current five-replica batch completion then stop; no PBE restarts",
+  "total_new_40ps_replicas": 155,
+  "points": [
+    {
+      "T": 1873,
+      "N": 40,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 3.1447531738969294,
+          "eta_std_mPa_s": 0.06507653054894712,
+          "relative_std": 0.02069368467106284,
+          "neff": 55.79299702979156,
+          "tau_exp_ps": 0.17322718858173408,
+          "tau_int_ps": 0.11906299519170965,
+          "cost_z": 0.5295246294044252,
+          "criterion_z": 2.211365814741847
+        },
+        "first20ps": {
+          "eta_mPa_s": 3.0647936241310085,
+          "eta_std_mPa_s": 0.08024958058262979,
+          "relative_std": 0.026184334224260777,
+          "neff": 32.96916810137229,
+          "tau_exp_ps": 0.1580607611024352,
+          "tau_int_ps": 0.11694651802674078,
+          "cost_z": 0.4313910498388969,
+          "criterion_z": 0.17646755509652512
+        },
+        "second20ps": {
+          "eta_mPa_s": 3.159107828012596,
+          "eta_std_mPa_s": 0.09088457602651914,
+          "relative_std": 0.028769064234092603,
+          "neff": 25.941102805735813,
+          "tau_exp_ps": 0.17528549331898235,
+          "tau_int_ps": 0.11868169760461586,
+          "cost_z": -0.06676161102374019,
+          "criterion_z": 1.2167580843843921
+        }
+      },
+      "checks": {
+        "id": "Ti_1873K",
+        "flags": {
+          "minimum_replicas": true,
+          "precision": true,
+          "last_three_stability": true,
+          "duration_stability": true,
+          "spectral_points": false,
+          "cost": true,
+          "cutoff": false,
+          "new_batch_consistency": true,
+          "window_fit_diagnostics": false
+        },
+        "passed": false,
+        "last_three_relative_range": 0.0066442841099666715,
+        "max_20_40_relative_difference": 0.02542633565954444
+      },
+      "pass_streak": 0,
+      "stop_rule_met": false,
+      "previous_N": 35,
+      "previous40": {
+        "eta_mPa_s": 3.165204854341662,
+        "eta_std_mPa_s": 0.06919610843957313,
+        "relative_std": 0.02186149447630788,
+        "neff": 58.56981651857808,
+        "tau_exp_ps": 0.17189782222407474,
+        "tau_int_ps": 0.11940481175688662,
+        "cost_z": 0.8211531451831187,
+        "criterion_z": 2.7755630334546
+      },
+      "new5": {
+        "eta_mPa_s": 2.9351250903100614,
+        "eta_std_mPa_s": 0.15233903335022828,
+        "relative_std": 0.05190205823021173,
+        "neff": 73.16505314542452,
+        "tau_exp_ps": 0.1552247444888589,
+        "tau_int_ps": 0.11401720581406898,
+        "cost_z": 0.2812636022223626,
+        "criterion_z": 0.5469946760491206
+      },
+      "new5_z": 1.3751054271023029,
+      "baseline5k": {
+        "system": "AlTi",
+        "T": 1873,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 3.258926589110574,
+        "eta_std_mPa_s": 0.153054157067472,
+        "eta_pa_s": 0.003258926589110574,
+        "eta_std_pa_s": 0.000153054157067472,
+        "neff": 31.772578928949294,
+        "n_replicas": 15,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.1750319452838669,
+        "tau_exp_std_ps": 0.03580746698177719,
+        "tau_int_ps": 0.12135813144302879,
+        "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+        "tdm_mPa_s": 3.417918622117348,
+        "tdm_delta_pct": 4.878662610505935
+      },
+      "historical15k": {
+        "eta_mPa_s": 3.215525521,
+        "eta_std_mPa_s": 0.109345597,
+        "n_replicas": 25
+      },
+      "final": {
+        "status": "requested_pause",
+        "completed": {
+          "Ti_2100K": 45,
+          "Ti_1873K": 40,
+          "Ti_2000K": 35
+        },
+        "unix": 1793938681.7898424,
+        "job_id": "20962153"
+      },
+      "root": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\pbe15k_ti_temperature",
+      "batch": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\pbe15k_ti_temperature\\collected\\analysis\\Ti_1873K\\batch_0040",
+      "raw_new5_verified": true,
+      "change_from_previous_pct": -0.6461408150780334,
+      "change_from_5k_pct": -3.503405556760475,
+      "change_from_historical15k_pct": -2.200957406211501
+    },
+    {
+      "T": 1941,
+      "N": 35,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 3.009994949844677,
+          "eta_std_mPa_s": 0.06895842794028612,
+          "relative_std": 0.022909815162262825,
+          "neff": 44.67607838489024,
+          "tau_exp_ps": 0.17727619359771585,
+          "tau_int_ps": 0.11461266711684662,
+          "cost_z": -0.42953732308710113,
+          "criterion_z": 0.3840176371009494
+        },
+        "first20ps": {
+          "eta_mPa_s": 2.7369895971880434,
+          "eta_std_mPa_s": 0.0771069340612297,
+          "relative_std": 0.0281721692111832,
+          "neff": 40.554941716409154,
+          "tau_exp_ps": 0.1269341197571016,
+          "tau_int_ps": 0.10548133202460466,
+          "cost_z": 1.313632092669276,
+          "criterion_z": 3.7948617263238735
+        },
+        "second20ps": {
+          "eta_mPa_s": 3.1094862710272424,
+          "eta_std_mPa_s": 0.09322907470176559,
+          "relative_std": 0.029982147073756543,
+          "neff": 29.900376763927397,
+          "tau_exp_ps": 0.16251640964746836,
+          "tau_int_ps": 0.1169994306233491,
+          "cost_z": 0.11704129923075261,
+          "criterion_z": 2.3403915748076063
+        }
+      },
+      "checks": {
+        "id": "Ti_1941K",
+        "flags": {
+          "minimum_replicas": true,
+          "precision": true,
+          "last_three_stability": false,
+          "duration_stability": false,
+          "spectral_points": false,
+          "cost": true,
+          "cutoff": true,
+          "new_batch_consistency": true,
+          "window_fit_diagnostics": false
+        },
+        "passed": false,
+        "last_three_relative_range": 0.05455645711379458,
+        "max_20_40_relative_difference": 0.09069960488495876
+      },
+      "pass_streak": 0,
+      "stop_rule_met": false,
+      "previous_N": 30,
+      "previous40": {
+        "eta_mPa_s": 2.8903198013575175,
+        "eta_std_mPa_s": 0.07181757207647443,
+        "relative_std": 0.024847621374888464,
+        "neff": 64.39289181037192,
+        "tau_exp_ps": 0.14469895874220307,
+        "tau_int_ps": 0.11030484179741876,
+        "cost_z": 0.2719059270794649,
+        "criterion_z": 3.2920741737987678
+      },
+      "new5": {
+        "eta_mPa_s": 3.4090201557807602,
+        "eta_std_mPa_s": 0.2162764877983407,
+        "relative_std": 0.0634424197907998,
+        "neff": 52.94834041340213,
+        "tau_exp_ps": 0.21818021365964338,
+        "tau_int_ps": 0.12807124373815126,
+        "cost_z": -0.7443350957873685,
+        "criterion_z": -0.41796930088108714
+      },
+      "new5_z": 2.27611214744962,
+      "baseline5k": {
+        "system": "AlTi",
+        "T": 1941,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 3.0499461632467466,
+        "eta_std_mPa_s": 0.11731537846801683,
+        "eta_pa_s": 0.0030499461632467464,
+        "eta_std_pa_s": 0.00011731537846801684,
+        "neff": 40.223775902483005,
+        "n_replicas": 15,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.1338574215180308,
+        "tau_exp_std_ps": 0.014531659929036045,
+        "tau_int_ps": 0.11239821145580972,
+        "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json",
+        "tdm_mPa_s": 3.373958735063438,
+        "tdm_delta_pct": 10.623550530864833
+      },
+      "historical15k": null,
+      "final": {
+        "status": "requested_pause",
+        "completed": {
+          "Ti_1941K": 35
+        },
+        "unix": 1793938670.4680834,
+        "job_id": "20987437"
+      },
+      "root": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov05\\pbe15k_ti_1941",
+      "batch": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov05\\pbe15k_ti_1941\\collected\\analysis\\Ti_1941K\\batch_0035",
+      "raw_new5_verified": true,
+      "change_from_previous_pct": 4.140550413520017,
+      "change_from_5k_pct": -1.3098989707916897,
+      "change_from_historical15k_pct": null
+    },
+    {
+      "T": 2000,
+      "N": 35,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 2.832111498906028,
+          "eta_std_mPa_s": 0.056813078633071674,
+          "relative_std": 0.020060325539802054,
+          "neff": 63.205813364685405,
+          "tau_exp_ps": 0.14599547314000025,
+          "tau_int_ps": 0.10939301778746735,
+          "cost_z": -1.1428338726565586,
+          "criterion_z": 1.6036112537485356
+        },
+        "first20ps": {
+          "eta_mPa_s": 2.8678340607348525,
+          "eta_std_mPa_s": 0.07590054097394174,
+          "relative_std": 0.026466155072617074,
+          "neff": 35.35639928783897,
+          "tau_exp_ps": 0.13860027415976023,
+          "tau_int_ps": 0.1093480809592461,
+          "cost_z": -1.4520555016271883,
+          "criterion_z": -0.37978958191448114
+        },
+        "second20ps": {
+          "eta_mPa_s": 2.770302171220606,
+          "eta_std_mPa_s": 0.07752844865795694,
+          "relative_std": 0.027985556761050943,
+          "neff": 32.14292807640952,
+          "tau_exp_ps": 0.1457202585563637,
+          "tau_int_ps": 0.10841764737400415,
+          "cost_z": -0.5450663063051027,
+          "criterion_z": 1.0240942998744689
+        }
+      },
+      "checks": {
+        "id": "Ti_2000K",
+        "flags": {
+          "minimum_replicas": true,
+          "precision": true,
+          "last_three_stability": true,
+          "duration_stability": true,
+          "spectral_points": true,
+          "cost": true,
+          "cutoff": true,
+          "new_batch_consistency": true,
+          "window_fit_diagnostics": true
+        },
+        "passed": true,
+        "last_three_relative_range": 0.010177459682965606,
+        "max_20_40_relative_difference": 0.021824468319590173
+      },
+      "pass_streak": 2,
+      "stop_rule_met": true,
+      "previous_N": 30,
+      "previous40": {
+        "eta_mPa_s": 2.8032877983082485,
+        "eta_std_mPa_s": 0.059714386053586636,
+        "relative_std": 0.02130155387171577,
+        "neff": 61.3322546647902,
+        "tau_exp_ps": 0.14347924059850303,
+        "tau_int_ps": 0.1085002761517535,
+        "cost_z": -1.4814052110608047,
+        "criterion_z": 0.48763862039882294
+      },
+      "new5": {
+        "eta_mPa_s": 2.9724984290487027,
+        "eta_std_mPa_s": 0.1567623658155571,
+        "relative_std": 0.052737577346921,
+        "neff": 79.62406681215617,
+        "tau_exp_ps": 0.14849627265484056,
+        "tau_int_ps": 0.11343182838164502,
+        "cost_z": 1.696794024899585,
+        "criterion_z": 1.6468062815596418
+      },
+      "new5_z": 1.008703876687293,
+      "baseline5k": {
+        "system": "AlTi",
+        "T": 2000,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 2.838944702377819,
+        "eta_std_mPa_s": 0.0691135418479619,
+        "eta_pa_s": 0.002838944702377819,
+        "eta_std_pa_s": 6.91135418479619e-05,
+        "neff": 30.060308957083702,
+        "n_replicas": 50,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.1446401279271391,
+        "tau_exp_std_ps": 0.018203994213941758,
+        "tau_int_ps": 0.10799337148954315,
+        "source": "results-scripts-logs\\stacie_pipline_wsl2_22.10.2026\\results\\summary.json",
+        "result_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipline_wsl2_22.10.2026\\results\\AlTi\\2000\\pbe\\c_Ti_1.00\\result.json",
+        "updated_on": "2026-10-22",
+        "previous_estimate": {
+          "system": "AlTi",
+          "T": 2000,
+          "dft": "pbe",
+          "c_Ti": 1.0,
+          "eta_mPa_s": 2.5989330599548257,
+          "eta_std_mPa_s": 0.09228608431886295,
+          "eta_pa_s": 0.0025989330599548257,
+          "eta_std_pa_s": 9.228608431886296e-05,
+          "neff": 46.29196943376038,
+          "n_replicas": 15,
+          "n_steps": 20001,
+          "timestep_ps": 0.001,
+          "block_size": 1,
+          "tau_exp_ps": 0.11008708566173753,
+          "tau_exp_std_ps": 0.011331198699203383,
+          "tau_int_ps": 0.10103074271851778,
+          "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+          "tdm_mPa_s": 2.31481378462869,
+          "tdm_delta_pct": -10.932150569937116
+        },
+        "tdm_comparison_status": "not matched to updated trajectory set"
+      },
+      "historical15k": {
+        "eta_mPa_s": 2.724022913,
+        "eta_std_mPa_s": 0.092030484,
+        "n_replicas": 20
+      },
+      "final": {
+        "status": "requested_pause",
+        "completed": {
+          "Ti_2100K": 45,
+          "Ti_1873K": 40,
+          "Ti_2000K": 35
+        },
+        "unix": 1793938681.7898424,
+        "job_id": "20962153"
+      },
+      "root": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\pbe15k_ti_temperature",
+      "batch": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\pbe15k_ti_temperature\\collected\\analysis\\Ti_2000K\\batch_0035",
+      "raw_new5_verified": true,
+      "change_from_previous_pct": 1.0282105396090424,
+      "change_from_5k_pct": -0.24069519445264476,
+      "change_from_historical15k_pct": 3.967976384860439
+    },
+    {
+      "T": 2100,
+      "N": 45,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 2.575790573871692,
+          "eta_std_mPa_s": 0.042286238581642266,
+          "relative_std": 0.016416799956714443,
+          "neff": 59.8503442375663,
+          "tau_exp_ps": 0.1223822049081431,
+          "tau_int_ps": 0.101347767333059,
+          "cost_z": 0.5825097987031025,
+          "criterion_z": 2.4379182349974444
+        },
+        "first20ps": {
+          "eta_mPa_s": 2.6086097487666007,
+          "eta_std_mPa_s": 0.06076354231129329,
+          "relative_std": 0.023293458264511745,
+          "neff": 33.9959732747173,
+          "tau_exp_ps": 0.12603772919421152,
+          "tau_int_ps": 0.10228189744381695,
+          "cost_z": 1.187972109830251,
+          "criterion_z": 2.8329747310455518
+        },
+        "second20ps": {
+          "eta_mPa_s": 2.5357656675844895,
+          "eta_std_mPa_s": 0.05733536614002992,
+          "relative_std": 0.02261067214252736,
+          "neff": 31.376551568918913,
+          "tau_exp_ps": 0.11960199867741063,
+          "tau_int_ps": 0.10012256322585338,
+          "cost_z": -0.061722905951045404,
+          "criterion_z": -0.26811737439052796
+        }
+      },
+      "checks": {
+        "id": "Ti_2100K",
+        "flags": {
+          "minimum_replicas": true,
+          "precision": true,
+          "last_three_stability": true,
+          "duration_stability": true,
+          "spectral_points": false,
+          "cost": true,
+          "cutoff": false,
+          "new_batch_consistency": true,
+          "window_fit_diagnostics": false
+        },
+        "passed": false,
+        "last_three_relative_range": 0.010128980065619747,
+        "max_20_40_relative_difference": 0.015538882195317849
+      },
+      "pass_streak": 0,
+      "stop_rule_met": false,
+      "previous_N": 40,
+      "previous40": {
+        "eta_mPa_s": 2.5645199323540675,
+        "eta_std_mPa_s": 0.04470237604307486,
+        "relative_std": 0.0174310893353209,
+        "neff": 59.74034391870835,
+        "tau_exp_ps": 0.12237023662107706,
+        "tau_int_ps": 0.10091815155414283,
+        "cost_z": 1.0905119100402842,
+        "criterion_z": 3.5424786458680853
+      },
+      "new5": {
+        "eta_mPa_s": 2.6105016681910915,
+        "eta_std_mPa_s": 0.10780375286696889,
+        "relative_std": 0.04129618233175461,
+        "neff": 116.0713932076727,
+        "tau_exp_ps": 0.10935181747637149,
+        "tau_int_ps": 0.10260093718107473,
+        "cost_z": -0.3505124314272162,
+        "criterion_z": -0.15949427309626596
+      },
+      "new5_z": 0.39400123277667587,
+      "baseline5k": {
+        "system": "AlTi",
+        "T": 2100,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 2.645916914015038,
+        "eta_std_mPa_s": 0.10829949824318905,
+        "eta_pa_s": 0.002645916914015038,
+        "eta_std_pa_s": 0.00010829949824318904,
+        "neff": 42.17620073532606,
+        "n_replicas": 15,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.13041804780115154,
+        "tau_exp_std_ps": 0.020532118116156618,
+        "tau_int_ps": 0.10274485554673696,
+        "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json"
+      },
+      "historical15k": null,
+      "final": {
+        "status": "requested_pause",
+        "completed": {
+          "Ti_2100K": 45,
+          "Ti_1873K": 40,
+          "Ti_2000K": 35
+        },
+        "unix": 1793938681.7898424,
+        "job_id": "20962153"
+      },
+      "root": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\pbe15k_ti_temperature",
+      "batch": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\pbe15k_ti_temperature\\collected\\analysis\\Ti_2100K\\batch_0045",
+      "raw_new5_verified": true,
+      "change_from_previous_pct": 0.43948348287075056,
+      "change_from_5k_pct": -2.650360628177595,
+      "change_from_historical15k_pct": null
+    }
+  ],
+  "article_changed": false,
+  "qa_visual_review": "complete",
+  "visual_qa": {
+    "1873": {
+      "status": "reviewed",
+      "image": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\qa_Ti_1873K_N40.png",
+      "observations": "Inspected convergence, full40/first20/second20/new5 spectra and extras. Accumulated estimates stable; chosen full40 cutoff criterion exceeds2 and neff55.79<60. Both20ps windows/new5 spectra not a proof of physical drift. New5 has broad uncertainty and passes its own cost/cutoff."
+    },
+    "1941": {
+      "status": "reviewed",
+      "image": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\qa_Ti_1941K_N35.png",
+      "observations": "Inspected all requested panels. Accumulated/window separation remains; full40 at latest batch uses lower frequency cutoff than first20 and has neff44.68. First20 cutoffZ3.79 and second20Z2.34 fail. New5 broad eta3.409+/-0.216 and low-frequency support require caution; do not label the trend physical drift."
+    },
+    "2000": {
+      "status": "reviewed",
+      "image": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\qa_Ti_2000K_N35.png",
+      "observations": "Inspected all requested panels; new40/halves stable within prescribed duration threshold, fullneff63.21 and all cost/cutoff tests pass; streak2. Formal heuristic success does not rule out systematic model/protocol error."
+    },
+    "2100": {
+      "status": "reviewed",
+      "image": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\qa_Ti_2100K_N45.png",
+      "observations": "Inspected all requested panels; means stable and new5 agrees broadly. Full40/first20 cutoff sensitivity remains; fullneff59.85 just below60, cutoffZ2.44/first20Z2.83 fail. No physical drift established."
+    }
+  },
+  "visual_reviewed_unix": 1793940954.4280884,
+  "article_profile_observation": {
+    "observed_unix": 1793941202.294991,
+    "version": "2026-11-06-krp-1873K",
+    "sha256": "b9760c8037aad413313249af27a2cf31d6ba9cb3a68ebca9f959d798ff69acd1",
+    "write_performed_by_this_workflow": false,
+    "temperature_selection_preserved": true,
+    "action": "Preserved concurrent profile update; no article rebuild"
+  },
+  "article_changed_by_this_workflow": false
+}

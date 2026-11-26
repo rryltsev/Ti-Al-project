@@ -1,0 +1,1852 @@
+{
+  "unix": 1792639714.8272376,
+  "common_ids": [
+    "TiAl-test-001",
+    "TiAl-test-002",
+    "TiAl-test-003",
+    "TiAl-test-004",
+    "TiAl-test-005",
+    "TiAl-test-006"
+  ],
+  "validated_counts": {
+    "PBE": 16,
+    "PBEsol": 9,
+    "r2SCAN": 6
+  },
+  "coverage": {
+    "liquid": {
+      "completed": 6,
+      "planned": 25,
+      "composition_bins_ready": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_bins_planned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_range": [
+        0.0,
+        1.0
+      ]
+    },
+    "POSCAR_alpha-Ti-hcp_orthogonal": {
+      "completed": 0,
+      "planned": 8,
+      "composition_bins_ready": [],
+      "composition_bins_planned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_range": [
+        0.0,
+        0.390625
+      ]
+    },
+    "POSCAR_beta-Ti-bcc": {
+      "completed": 0,
+      "planned": 9,
+      "composition_bins_ready": [],
+      "composition_bins_planned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_range": [
+        0.0,
+        0.6
+      ]
+    },
+    "POSCAR_gamma_AlTi_L1_0": {
+      "completed": 0,
+      "planned": 8,
+      "composition_bins_ready": [],
+      "composition_bins_planned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_range": [
+        0.352,
+        0.648
+      ]
+    }
+  },
+  "models": {
+    "PBE": {
+      "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBE/model_frozen.pt2",
+      "sha256": "660ebda9c96dedd5fc297148d6463fea535b0663e028c49e3bb78a4f21ca60bc",
+      "article_run": "TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047",
+      "checkpoint_sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac",
+      "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBE/checkpoint.pt"
+    },
+    "PBEsol": {
+      "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBEsol/model_frozen.pt2",
+      "sha256": "a7c63464cd92745e8cc1dd153e2e8678da63a7fd523479e682eb7c02a3d05a3f",
+      "article_run": "TiAl_tune_sol_Neo_DPA4_shard_20260920_040140",
+      "checkpoint_sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+      "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBEsol/checkpoint.pt"
+    },
+    "r2SCAN": {
+      "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+      "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a",
+      "article_run": "TiAl_tune_scan_Neo_DPA4_shard_20260919_153828",
+      "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/checkpoint.pt"
+    }
+  },
+  "metrics": {
+    "PBE": {
+      "all": {
+        "n_structures": 6,
+        "energy_meV_atom": {
+          "n_structures": 6,
+          "n_values": 6,
+          "mae": 3.879486706648505,
+          "rmse": 5.392578646361398,
+          "bias": 3.443672695438845,
+          "max_abs": 10.159453187592149,
+          "p95_abs": 9.596878193705027,
+          "equal_structure_mae": 3.879486706648505,
+          "equal_structure_rmse": 5.392578646361398,
+          "mae_ci95": [
+            1.145718972690794,
+            6.93406914018387
+          ],
+          "rmse_ci95": [
+            1.2774178608247648,
+            7.934954500560415
+          ],
+          "r2": 0.99998287780633
+        },
+        "force_eV_A": {
+          "n_structures": 6,
+          "n_values": 3888,
+          "mae": 0.04573294539928067,
+          "rmse": 0.0645264687875232,
+          "bias": 2.8292181790361406e-11,
+          "max_abs": 0.3222669191007028,
+          "p95_abs": 0.1366670677441932,
+          "equal_structure_mae": 0.04573294539928068,
+          "equal_structure_rmse": 0.06452646878752322,
+          "mae_ci95": [
+            0.029368171893477645,
+            0.06380639648635957
+          ],
+          "rmse_ci95": [
+            0.04110026446964745,
+            0.08589452288609845
+          ],
+          "r2": 0.9913786469004618
+        },
+        "stress_GPa": {
+          "n_structures": 6,
+          "n_values": 36,
+          "mae": 0.1089435122250528,
+          "rmse": 0.15567505243424348,
+          "bias": 0.02213446427693949,
+          "max_abs": 0.46783283786675867,
+          "p95_abs": 0.31530245186736694,
+          "equal_structure_mae": 0.10894351222505282,
+          "equal_structure_rmse": 0.15567505243424348,
+          "mae_ci95": [
+            0.05631582751707939,
+            0.1796398680214716
+          ],
+          "rmse_ci95": [
+            0.0758901663861473,
+            0.22804490255205087
+          ]
+        },
+        "force_Al_eV_A": {
+          "n_structures": 5,
+          "n_values": 2046,
+          "mae": 0.02641458428319218,
+          "rmse": 0.03410118264688218,
+          "bias": -0.00041069661100442457,
+          "max_abs": 0.12135310362096252,
+          "p95_abs": 0.06931849609606115,
+          "equal_structure_mae": 0.027690665716570445,
+          "equal_structure_rmse": 0.035573316748404894,
+          "mae_ci95": [
+            0.020793250141033243,
+            0.034075795953201045
+          ],
+          "rmse_ci95": [
+            0.026801324922738106,
+            0.042656963899512707
+          ]
+        },
+        "force_Ti_eV_A": {
+          "n_structures": 5,
+          "n_values": 1842,
+          "mae": 0.06719079927741155,
+          "rmse": 0.08658390742226857,
+          "bias": 0.0004561809859473703,
+          "max_abs": 0.3222669191007028,
+          "p95_abs": 0.17517085300103485,
+          "equal_structure_mae": 0.06198985182015938,
+          "equal_structure_rmse": 0.0804557904592779,
+          "mae_ci95": [
+            0.05166550719927091,
+            0.08024484549400661
+          ],
+          "rmse_ci95": [
+            0.06566518352521711,
+            0.10158815799664869
+          ]
+        }
+      },
+      "solid": null,
+      "liquid": {
+        "n_structures": 6,
+        "energy_meV_atom": {
+          "n_structures": 6,
+          "n_values": 6,
+          "mae": 3.879486706648505,
+          "rmse": 5.392578646361398,
+          "bias": 3.443672695438845,
+          "max_abs": 10.159453187592149,
+          "p95_abs": 9.596878193705027,
+          "equal_structure_mae": 3.879486706648505,
+          "equal_structure_rmse": 5.392578646361398,
+          "mae_ci95": [
+            1.145718972690794,
+            6.93406914018387
+          ],
+          "rmse_ci95": [
+            1.2774178608247648,
+            7.934954500560415
+          ],
+          "r2": 0.99998287780633
+        },
+        "force_eV_A": {
+          "n_structures": 6,
+          "n_values": 3888,
+          "mae": 0.04573294539928067,
+          "rmse": 0.0645264687875232,
+          "bias": 2.8292181790361406e-11,
+          "max_abs": 0.3222669191007028,
+          "p95_abs": 0.1366670677441932,
+          "equal_structure_mae": 0.04573294539928068,
+          "equal_structure_rmse": 0.06452646878752322,
+          "mae_ci95": [
+            0.029368171893477645,
+            0.06380639648635957
+          ],
+          "rmse_ci95": [
+            0.04110026446964745,
+            0.08589452288609845
+          ],
+          "r2": 0.9913786469004618
+        },
+        "stress_GPa": {
+          "n_structures": 6,
+          "n_values": 36,
+          "mae": 0.1089435122250528,
+          "rmse": 0.15567505243424348,
+          "bias": 0.02213446427693949,
+          "max_abs": 0.46783283786675867,
+          "p95_abs": 0.31530245186736694,
+          "equal_structure_mae": 0.10894351222505282,
+          "equal_structure_rmse": 0.15567505243424348,
+          "mae_ci95": [
+            0.05631582751707939,
+            0.1796398680214716
+          ],
+          "rmse_ci95": [
+            0.0758901663861473,
+            0.22804490255205087
+          ]
+        },
+        "force_Al_eV_A": {
+          "n_structures": 5,
+          "n_values": 2046,
+          "mae": 0.02641458428319218,
+          "rmse": 0.03410118264688218,
+          "bias": -0.00041069661100442457,
+          "max_abs": 0.12135310362096252,
+          "p95_abs": 0.06931849609606115,
+          "equal_structure_mae": 0.027690665716570445,
+          "equal_structure_rmse": 0.035573316748404894,
+          "mae_ci95": [
+            0.020793250141033243,
+            0.034075795953201045
+          ],
+          "rmse_ci95": [
+            0.026801324922738106,
+            0.042656963899512707
+          ]
+        },
+        "force_Ti_eV_A": {
+          "n_structures": 5,
+          "n_values": 1842,
+          "mae": 0.06719079927741155,
+          "rmse": 0.08658390742226857,
+          "bias": 0.0004561809859473703,
+          "max_abs": 0.3222669191007028,
+          "p95_abs": 0.17517085300103485,
+          "equal_structure_mae": 0.06198985182015938,
+          "equal_structure_rmse": 0.0804557904592779,
+          "mae_ci95": [
+            0.05166550719927091,
+            0.08024484549400661
+          ],
+          "rmse_ci95": [
+            0.06566518352521711,
+            0.10158815799664869
+          ]
+        }
+      },
+      "POSCAR_alpha-Ti-hcp_orthogonal": null,
+      "POSCAR_beta-Ti-bcc": null,
+      "POSCAR_gamma_AlTi_L1_0": null,
+      "composition_bins": {
+        "0": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 7.9091532120436625,
+            "rmse": 7.9091532120436625,
+            "bias": 7.9091532120436625,
+            "max_abs": 7.9091532120436625,
+            "p95_abs": 7.9091532120436625,
+            "equal_structure_mae": 7.9091532120436625,
+            "equal_structure_rmse": 7.9091532120436625,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.0866809801874421,
+            "rmse": 0.10816654192241039,
+            "bias": 1.851851864583576e-10,
+            "max_abs": 0.3222669191007028,
+            "p95_abs": 0.2205648831032649,
+            "equal_structure_mae": 0.0866809801874421,
+            "equal_structure_rmse": 0.10816654192241039,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9856673057829118
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.14839168857714,
+            "rmse": 0.17169038071901266,
+            "bias": 0.0729141493782804,
+            "max_abs": 0.26044708308719144,
+            "p95_abs": 0.2540123638649052,
+            "equal_structure_mae": 0.14839168857714,
+            "equal_structure_rmse": 0.17169038071901266,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": null,
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.0866809801874421,
+            "rmse": 0.10816654192241039,
+            "bias": 1.851851864583576e-10,
+            "max_abs": 0.3222669191007028,
+            "p95_abs": 0.2205648831032649,
+            "equal_structure_mae": 0.0866809801874421,
+            "equal_structure_rmse": 0.10816654192241039,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "1": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 10.159453187592149,
+            "rmse": 10.159453187592149,
+            "bias": 10.159453187592149,
+            "max_abs": 10.159453187592149,
+            "p95_abs": 10.159453187592149,
+            "equal_structure_mae": 10.159453187592149,
+            "equal_structure_rmse": 10.159453187592149,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.045984716306943146,
+            "rmse": 0.05926608111699801,
+            "bias": 6.172839605722157e-11,
+            "max_abs": 0.27120730903766477,
+            "p95_abs": 0.12185580982962001,
+            "equal_structure_mae": 0.045984716306943146,
+            "equal_structure_rmse": 0.05926608111699801,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9874024204387315
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.07011269776998681,
+            "rmse": 0.08874692887411777,
+            "bias": 0.057096071667062744,
+            "max_abs": 0.15615240817237996,
+            "p95_abs": 0.1504873353729077,
+            "equal_structure_mae": 0.07011269776998681,
+            "equal_structure_rmse": 0.08874692887411777,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 162,
+            "mae": 0.0283415215842202,
+            "rmse": 0.03618923594543399,
+            "bias": -0.0026269158786934744,
+            "max_abs": 0.11850359017716738,
+            "p95_abs": 0.07107230047236389,
+            "equal_structure_mae": 0.0283415215842202,
+            "equal_structure_rmse": 0.03618923594543399,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 486,
+            "mae": 0.05186578121451745,
+            "rmse": 0.06516699748991577,
+            "bias": 0.0008756387085356857,
+            "max_abs": 0.27120730903766477,
+            "p95_abs": 0.1261308312228601,
+            "equal_structure_mae": 0.05186578121451745,
+            "equal_structure_rmse": 0.06516699748991577,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "2": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 0.73503238235606,
+            "rmse": 0.73503238235606,
+            "bias": -0.73503238235606,
+            "max_abs": 0.73503238235606,
+            "p95_abs": 0.73503238235606,
+            "equal_structure_mae": 0.73503238235606,
+            "equal_structure_rmse": 0.73503238235606,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.04557889354357577,
+            "rmse": 0.06038874840362574,
+            "bias": 1.5432099099970751e-10,
+            "max_abs": 0.19780840684602574,
+            "p95_abs": 0.12812101967682737,
+            "equal_structure_mae": 0.04557889354357577,
+            "equal_structure_rmse": 0.06038874840362574,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9935759416404272
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.06860977139822792,
+            "rmse": 0.08306995532520801,
+            "bias": 0.024832105990955342,
+            "max_abs": 0.1379906892838001,
+            "p95_abs": 0.13389566427650945,
+            "equal_structure_mae": 0.06860977139822792,
+            "equal_structure_rmse": 0.08306995532520801,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 294,
+            "mae": 0.028799040885163427,
+            "rmse": 0.036624839449354143,
+            "bias": 0.0011755232481963428,
+            "max_abs": 0.10994166186219534,
+            "p95_abs": 0.07513044092964022,
+            "equal_structure_mae": 0.028799040885163427,
+            "equal_structure_rmse": 0.036624839449354143,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 354,
+            "mae": 0.05951470337852839,
+            "rmse": 0.0745752874589862,
+            "bias": -0.0009762817372026064,
+            "max_abs": 0.19780840684602574,
+            "p95_abs": 0.14790305416774288,
+            "equal_structure_mae": 0.05951470337852839,
+            "equal_structure_rmse": 0.0745752874589862,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "3": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 0.5724096512729204,
+            "rmse": 0.5724096512729204,
+            "bias": -0.5724096512729204,
+            "max_abs": 0.5724096512729204,
+            "p95_abs": 0.5724096512729204,
+            "equal_structure_mae": 0.5724096512729204,
+            "equal_structure_rmse": 0.5724096512729204,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.04978655870167897,
+            "rmse": 0.06554544043649628,
+            "bias": -4.6296300683693845e-11,
+            "max_abs": 0.3044216053272879,
+            "p95_abs": 0.1247678771667858,
+            "equal_structure_mae": 0.04978655870167897,
+            "equal_structure_rmse": 0.06554544043649628,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9941916033095914
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.07534349992561312,
+            "rmse": 0.10447235220522556,
+            "bias": -0.07480152405103978,
+            "max_abs": 0.18195121439699236,
+            "p95_abs": 0.17891337017288667,
+            "equal_structure_mae": 0.07534349992561312,
+            "equal_structure_rmse": 0.10447235220522556,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 423,
+            "mae": 0.038105666976313166,
+            "rmse": 0.04670240744227548,
+            "bias": -0.0015672296382643574,
+            "max_abs": 0.12135310362096252,
+            "p95_abs": 0.09187401784695987,
+            "equal_structure_mae": 0.038105666976313166,
+            "equal_structure_rmse": 0.04670240744227548,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 225,
+            "mae": 0.07174663514536668,
+            "rmse": 0.09095369028302829,
+            "bias": 0.0029463915866036476,
+            "max_abs": 0.3044216053272879,
+            "p95_abs": 0.17763150164590047,
+            "equal_structure_mae": 0.07174663514536668,
+            "equal_structure_rmse": 0.09095369028302829,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "4": {
+          "n_structures": 2,
+          "energy_meV_atom": {
+            "n_structures": 2,
+            "n_values": 2,
+            "mae": 1.9504359033131191,
+            "rmse": 1.9801903606368565,
+            "bias": 1.9504359033131191,
+            "max_abs": 2.2924207734846824,
+            "p95_abs": 2.258222286467526,
+            "equal_structure_mae": 1.9504359033131191,
+            "equal_structure_rmse": 1.9801903606368565,
+            "mae_ci95": [
+              1.6084510331415558,
+              2.2924207734846824
+            ],
+            "rmse_ci95": [
+              1.6084510331415558,
+              2.2924207734846824
+            ],
+            "r2": 0.9999677414289205
+          },
+          "force_eV_A": {
+            "n_structures": 2,
+            "n_values": 1296,
+            "mae": 0.023183261828022033,
+            "rmse": 0.030220160381220645,
+            "bias": -9.259259158012068e-11,
+            "max_abs": 0.13428294245859074,
+            "p95_abs": 0.06041849396297966,
+            "equal_structure_mae": 0.023183261828022036,
+            "equal_structure_rmse": 0.03022016038122064,
+            "mae_ci95": [
+              0.018936537545467765,
+              0.027429986110576305
+            ],
+            "rmse_ci95": [
+              0.023975038531704112,
+              0.03537956633901408
+            ],
+            "r2": 0.9963116979291406
+          },
+          "stress_GPa": {
+            "n_structures": 2,
+            "n_values": 12,
+            "mae": 0.1456017078396745,
+            "rmse": 0.21241426227230456,
+            "bias": 0.02638299133818911,
+            "max_abs": 0.46783283786675867,
+            "p95_abs": 0.4407102698312097,
+            "equal_structure_mae": 0.1456017078396745,
+            "equal_structure_rmse": 0.21241426227230453,
+            "mae_ci95": [
+              0.027628398884857273,
+              0.2635750167944917
+            ],
+            "rmse_ci95": [
+              0.03133831049496932,
+              0.2987600172859408
+            ]
+          },
+          "force_Al_eV_A": {
+            "n_structures": 2,
+            "n_values": 1167,
+            "mae": 0.02130873847090746,
+            "rmse": 0.02699030681295425,
+            "bias": -8.345380612734486e-05,
+            "max_abs": 0.09030653927402654,
+            "p95_abs": 0.05275641549875754,
+            "equal_structure_mae": 0.021603549568577712,
+            "equal_structure_rmse": 0.02734181594647796,
+            "mae_ci95": [
+              0.018936537545467765,
+              0.02427056159168766
+            ],
+            "rmse_ci95": [
+              0.023975038531704112,
+              0.030337226733923063
+            ]
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 129,
+            "mae": 0.04014115917494225,
+            "rmse": 0.05084176888289258,
+            "bias": 0.0007549648972915734,
+            "max_abs": 0.13428294245859074,
+            "p95_abs": 0.10423233957736248,
+            "equal_structure_mae": 0.04014115917494225,
+            "equal_structure_rmse": 0.05084176888289258,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        }
+      }
+    },
+    "PBEsol": {
+      "all": {
+        "n_structures": 6,
+        "energy_meV_atom": {
+          "n_structures": 6,
+          "n_values": 6,
+          "mae": 1.645641122063927,
+          "rmse": 2.2015961276714733,
+          "bias": -1.645641122063927,
+          "max_abs": 4.52004652878113,
+          "p95_abs": 3.9118768131143344,
+          "equal_structure_mae": 1.645641122063927,
+          "equal_structure_rmse": 2.2015961276714733,
+          "mae_ci95": [
+            0.6556876730544244,
+            2.9619544887375207
+          ],
+          "rmse_ci95": [
+            0.8770511938314256,
+            3.3829588055088355
+          ],
+          "r2": 0.9999974105239025
+        },
+        "force_eV_A": {
+          "n_structures": 6,
+          "n_values": 3888,
+          "mae": 0.04385442531565453,
+          "rmse": 0.061897457428563125,
+          "bias": 7.716049457181239e-12,
+          "max_abs": 0.31736305673782117,
+          "p95_abs": 0.13570794022616406,
+          "equal_structure_mae": 0.043854425315654526,
+          "equal_structure_rmse": 0.061897457428563125,
+          "mae_ci95": [
+            0.02797263783275535,
+            0.061027077181330776
+          ],
+          "rmse_ci95": [
+            0.039202931501273484,
+            0.08218853397647191
+          ],
+          "r2": 0.9915959570177103
+        },
+        "stress_GPa": {
+          "n_structures": 6,
+          "n_values": 36,
+          "mae": 0.07826889733420948,
+          "rmse": 0.13152831698530384,
+          "bias": 0.018682190618920746,
+          "max_abs": 0.4923450961729259,
+          "p95_abs": 0.3020084284080627,
+          "equal_structure_mae": 0.07826889733420948,
+          "equal_structure_rmse": 0.13152831698530384,
+          "mae_ci95": [
+            0.03614929487354473,
+            0.14744090410368488
+          ],
+          "rmse_ci95": [
+            0.042646613454266624,
+            0.21377510735845326
+          ]
+        },
+        "force_Al_eV_A": {
+          "n_structures": 5,
+          "n_values": 2046,
+          "mae": 0.02521062826950723,
+          "rmse": 0.032504012709271515,
+          "bias": -0.00014374319702593495,
+          "max_abs": 0.1235515343873938,
+          "p95_abs": 0.06579786302654214,
+          "equal_structure_mae": 0.026658947544254408,
+          "equal_structure_rmse": 0.03408876448907049,
+          "mae_ci95": [
+            0.019480376652107865,
+            0.03281865779158259
+          ],
+          "rmse_ci95": [
+            0.024900206089945306,
+            0.04103916742680688
+          ]
+        },
+        "force_Ti_eV_A": {
+          "n_structures": 5,
+          "n_values": 1842,
+          "mae": 0.0645630077024175,
+          "rmse": 0.08314676627546559,
+          "bias": 0.00015966265532848208,
+          "max_abs": 0.31736305673782117,
+          "p95_abs": 0.16961530659069962,
+          "equal_structure_mae": 0.05997379497231452,
+          "equal_structure_rmse": 0.07763921718752212,
+          "mae_ci95": [
+            0.04964592604315219,
+            0.0767051368284821
+          ],
+          "rmse_ci95": [
+            0.06343331962043806,
+            0.09710926877758878
+          ]
+        }
+      },
+      "solid": null,
+      "liquid": {
+        "n_structures": 6,
+        "energy_meV_atom": {
+          "n_structures": 6,
+          "n_values": 6,
+          "mae": 1.645641122063927,
+          "rmse": 2.2015961276714733,
+          "bias": -1.645641122063927,
+          "max_abs": 4.52004652878113,
+          "p95_abs": 3.9118768131143344,
+          "equal_structure_mae": 1.645641122063927,
+          "equal_structure_rmse": 2.2015961276714733,
+          "mae_ci95": [
+            0.6556876730544244,
+            2.9619544887375207
+          ],
+          "rmse_ci95": [
+            0.8770511938314256,
+            3.3829588055088355
+          ],
+          "r2": 0.9999974105239025
+        },
+        "force_eV_A": {
+          "n_structures": 6,
+          "n_values": 3888,
+          "mae": 0.04385442531565453,
+          "rmse": 0.061897457428563125,
+          "bias": 7.716049457181239e-12,
+          "max_abs": 0.31736305673782117,
+          "p95_abs": 0.13570794022616406,
+          "equal_structure_mae": 0.043854425315654526,
+          "equal_structure_rmse": 0.061897457428563125,
+          "mae_ci95": [
+            0.02797263783275535,
+            0.061027077181330776
+          ],
+          "rmse_ci95": [
+            0.039202931501273484,
+            0.08218853397647191
+          ],
+          "r2": 0.9915959570177103
+        },
+        "stress_GPa": {
+          "n_structures": 6,
+          "n_values": 36,
+          "mae": 0.07826889733420948,
+          "rmse": 0.13152831698530384,
+          "bias": 0.018682190618920746,
+          "max_abs": 0.4923450961729259,
+          "p95_abs": 0.3020084284080627,
+          "equal_structure_mae": 0.07826889733420948,
+          "equal_structure_rmse": 0.13152831698530384,
+          "mae_ci95": [
+            0.03614929487354473,
+            0.14744090410368488
+          ],
+          "rmse_ci95": [
+            0.042646613454266624,
+            0.21377510735845326
+          ]
+        },
+        "force_Al_eV_A": {
+          "n_structures": 5,
+          "n_values": 2046,
+          "mae": 0.02521062826950723,
+          "rmse": 0.032504012709271515,
+          "bias": -0.00014374319702593495,
+          "max_abs": 0.1235515343873938,
+          "p95_abs": 0.06579786302654214,
+          "equal_structure_mae": 0.026658947544254408,
+          "equal_structure_rmse": 0.03408876448907049,
+          "mae_ci95": [
+            0.019480376652107865,
+            0.03281865779158259
+          ],
+          "rmse_ci95": [
+            0.024900206089945306,
+            0.04103916742680688
+          ]
+        },
+        "force_Ti_eV_A": {
+          "n_structures": 5,
+          "n_values": 1842,
+          "mae": 0.0645630077024175,
+          "rmse": 0.08314676627546559,
+          "bias": 0.00015966265532848208,
+          "max_abs": 0.31736305673782117,
+          "p95_abs": 0.16961530659069962,
+          "equal_structure_mae": 0.05997379497231452,
+          "equal_structure_rmse": 0.07763921718752212,
+          "mae_ci95": [
+            0.04964592604315219,
+            0.0767051368284821
+          ],
+          "rmse_ci95": [
+            0.06343331962043806,
+            0.09710926877758878
+          ]
+        }
+      },
+      "POSCAR_alpha-Ti-hcp_orthogonal": null,
+      "POSCAR_beta-Ti-bcc": null,
+      "POSCAR_gamma_AlTi_L1_0": null,
+      "composition_bins": {
+        "0": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 4.52004652878113,
+            "rmse": 4.52004652878113,
+            "bias": -4.52004652878113,
+            "max_abs": 4.52004652878113,
+            "p95_abs": 4.52004652878113,
+            "equal_structure_mae": 4.52004652878113,
+            "equal_structure_rmse": 4.52004652878113,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.08238645125704909,
+            "rmse": 0.10304831028174173,
+            "bias": 2.1604938354464945e-10,
+            "max_abs": 0.31736305673782117,
+            "p95_abs": 0.20188415529379872,
+            "equal_structure_mae": 0.08238645125704909,
+            "equal_structure_rmse": 0.10304831028174173,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9855193125829823
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.07631170352751258,
+            "rmse": 0.09514132021809099,
+            "bias": -0.0017151694769698782,
+            "max_abs": 0.1608701156584047,
+            "p95_abs": 0.15574504045323107,
+            "equal_structure_mae": 0.07631170352751258,
+            "equal_structure_rmse": 0.09514132021809099,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": null,
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.08238645125704909,
+            "rmse": 0.10304831028174173,
+            "bias": 2.1604938354464945e-10,
+            "max_abs": 0.31736305673782117,
+            "p95_abs": 0.20188415529379872,
+            "equal_structure_mae": 0.08238645125704909,
+            "equal_structure_rmse": 0.10304831028174173,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "1": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 0.23484850489730036,
+            "rmse": 0.23484850489730036,
+            "bias": -0.23484850489730036,
+            "max_abs": 0.23484850489730036,
+            "p95_abs": 0.23484850489730036,
+            "equal_structure_mae": 0.23484850489730036,
+            "equal_structure_rmse": 0.23484850489730036,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.044126245593125536,
+            "rmse": 0.05673591407015198,
+            "bias": -7.716049472886554e-11,
+            "max_abs": 0.26753366369070547,
+            "p95_abs": 0.11231341441990615,
+            "equal_structure_mae": 0.044126245593125536,
+            "equal_structure_rmse": 0.05673591407015198,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.987631109738209
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.036061417249949025,
+            "rmse": 0.04097019857209745,
+            "bias": 0.004773602802928117,
+            "max_abs": 0.0683050277061561,
+            "p95_abs": 0.06303724622326667,
+            "equal_structure_mae": 0.036061417249949025,
+            "equal_structure_rmse": 0.04097019857209745,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 162,
+            "mae": 0.028052435696516394,
+            "rmse": 0.03547260761716832,
+            "bias": -0.0014924014117712963,
+            "max_abs": 0.11481968881793647,
+            "p95_abs": 0.0680596885123604,
+            "equal_structure_mae": 0.028052435696516394,
+            "equal_structure_rmse": 0.03547260761716832,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 486,
+            "mae": 0.04948418222532859,
+            "rmse": 0.062229547886142454,
+            "bias": 0.0004974670343764395,
+            "max_abs": 0.26753366369070547,
+            "p95_abs": 0.1233282407584419,
+            "equal_structure_mae": 0.04948418222532859,
+            "equal_structure_rmse": 0.062229547886142454,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "2": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 1.8893711750704867,
+            "rmse": 1.8893711750704867,
+            "bias": -1.8893711750704867,
+            "max_abs": 1.8893711750704867,
+            "p95_abs": 1.8893711750704867,
+            "equal_structure_mae": 1.8893711750704867,
+            "equal_structure_rmse": 1.8893711750704867,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.04434403160531739,
+            "rmse": 0.058479757712722964,
+            "bias": 1.388888904434257e-10,
+            "max_abs": 0.19783581055633181,
+            "p95_abs": 0.12688017432078463,
+            "equal_structure_mae": 0.04434403160531739,
+            "equal_structure_rmse": 0.058479757712722964,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9936053770799834
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.03834712696976506,
+            "rmse": 0.046324305199092294,
+            "bias": -0.02255555996738805,
+            "max_abs": 0.0863022457733269,
+            "p95_abs": 0.0784036341024045,
+            "equal_structure_mae": 0.03834712696976506,
+            "equal_structure_rmse": 0.046324305199092294,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 294,
+            "mae": 0.02821609044388337,
+            "rmse": 0.03484385523808494,
+            "bias": 0.00153340102945703,
+            "max_abs": 0.10358607492596783,
+            "p95_abs": 0.06661874950492816,
+            "equal_structure_mae": 0.02821609044388337,
+            "equal_structure_rmse": 0.03484385523808494,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 354,
+            "mae": 0.057738423417355814,
+            "rmse": 0.07246935583417662,
+            "bias": -0.0012735022956507514,
+            "max_abs": 0.19783581055633181,
+            "p95_abs": 0.14280370501966277,
+            "equal_structure_mae": 0.057738423417355814,
+            "equal_structure_rmse": 0.07246935583417662,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "3": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 2.0873676661139484,
+            "rmse": 2.0873676661139484,
+            "bias": -2.0873676661139484,
+            "max_abs": 2.0873676661139484,
+            "p95_abs": 2.0873676661139484,
+            "equal_structure_mae": 2.0873676661139484,
+            "equal_structure_rmse": 2.0873676661139484,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.04834932565985904,
+            "rmse": 0.06404349052798226,
+            "bias": -1.5432099014305393e-11,
+            "max_abs": 0.2907955472596711,
+            "p95_abs": 0.12464378306012865,
+            "equal_structure_mae": 0.04834932565985904,
+            "equal_structure_rmse": 0.06404349052798226,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9942913500088256
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.044358794874683354,
+            "rmse": 0.051735759687159794,
+            "bias": -0.012528738017017566,
+            "max_abs": 0.09549017057299736,
+            "p95_abs": 0.08342415081790724,
+            "equal_structure_mae": 0.044358794874683354,
+            "equal_structure_rmse": 0.051735759687159794,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 423,
+            "mae": 0.03624349320414171,
+            "rmse": 0.04484084541921927,
+            "bias": -0.000989722886942347,
+            "max_abs": 0.1235515343873938,
+            "p95_abs": 0.08544095092898749,
+            "equal_structure_mae": 0.03624349320414171,
+            "equal_structure_rmse": 0.04484084541921927,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 225,
+            "mae": 0.07110829067660764,
+            "rmse": 0.08962365273671308,
+            "bias": 0.0018606789830071652,
+            "max_abs": 0.2907955472596711,
+            "p95_abs": 0.17101998025823545,
+            "equal_structure_mae": 0.07110829067660764,
+            "equal_structure_rmse": 0.08962365273671308,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "4": {
+          "n_structures": 2,
+          "energy_meV_atom": {
+            "n_structures": 2,
+            "n_values": 2,
+            "mae": 0.5711064287603485,
+            "rmse": 0.5785116260474354,
+            "bias": -0.5711064287603485,
+            "max_abs": 0.6633731535350407,
+            "p95_abs": 0.6541464810575714,
+            "equal_structure_mae": 0.5711064287603485,
+            "equal_structure_rmse": 0.5785116260474354,
+            "mae_ci95": [
+              0.47883970398565623,
+              0.6633731535350407
+            ],
+            "rmse_ci95": [
+              0.47883970398565623,
+              0.6633731535350407
+            ],
+            "r2": 0.9999970434219514
+          },
+          "force_eV_A": {
+            "n_structures": 2,
+            "n_values": 1296,
+            "mae": 0.021960248889288065,
+            "rmse": 0.028534211731537154,
+            "bias": -1.0802469133328978e-10,
+            "max_abs": 0.1197174880062079,
+            "p95_abs": 0.05740295407916561,
+            "equal_structure_mae": 0.02196024888928806,
+            "equal_structure_rmse": 0.028534211731537154,
+            "mae_ci95": [
+              0.017392959714723304,
+              0.026527538063852822
+            ],
+            "rmse_ci95": [
+              0.021839992490456702,
+              0.033932539048782955
+            ],
+            "r2": 0.9966663117392115
+          },
+          "stress_GPa": {
+            "n_structures": 2,
+            "n_values": 12,
+            "mae": 0.1372671706916734,
+            "rmse": 0.2100538394643797,
+            "bias": 0.07205950418598595,
+            "max_abs": 0.4923450961729259,
+            "p95_abs": 0.4495676730811107,
+            "equal_structure_mae": 0.13726717069167343,
+            "equal_structure_rmse": 0.2100538394643797,
+            "mae_ci95": [
+              0.029892615758385976,
+              0.24464172562496087
+            ],
+            "rmse_ci95": [
+              0.03373071262075589,
+              0.29513974651603736
+            ]
+          },
+          "force_Al_eV_A": {
+            "n_structures": 2,
+            "n_values": 1167,
+            "mae": 0.02005991657302697,
+            "rmse": 0.025356164228548927,
+            "bias": -7.240503332636441e-05,
+            "max_abs": 0.09127179646944017,
+            "p95_abs": 0.051902475647765754,
+            "equal_structure_mae": 0.020391359188365286,
+            "equal_structure_rmse": 0.025759636692236576,
+            "mae_ci95": [
+              0.017392959714723304,
+              0.02338975866200727
+            ],
+            "rmse_ci95": [
+              0.021839992490456702,
+              0.029157031622729306
+            ]
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 129,
+            "mae": 0.039151627285231465,
+            "rmse": 0.04861648568673887,
+            "bias": 0.0006550118906346307,
+            "max_abs": 0.1197174880062079,
+            "p95_abs": 0.09571631895650763,
+            "equal_structure_mae": 0.039151627285231465,
+            "equal_structure_rmse": 0.04861648568673887,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        }
+      }
+    },
+    "r2SCAN": {
+      "all": {
+        "n_structures": 6,
+        "energy_meV_atom": {
+          "n_structures": 6,
+          "n_values": 6,
+          "mae": 1.6531434693960456,
+          "rmse": 1.9607114363891698,
+          "bias": -1.6515286476714113,
+          "max_abs": 3.3641070992285194,
+          "p95_abs": 3.0441271085366317,
+          "equal_structure_mae": 1.6531434693960456,
+          "equal_structure_rmse": 1.9607114363891698,
+          "mae_ci95": [
+            0.8275641896221172,
+            2.4551663537028308
+          ],
+          "rmse_ci95": [
+            1.1918968961033491,
+            2.6476006482488263
+          ],
+          "r2": 0.9999990554688386
+        },
+        "force_eV_A": {
+          "n_structures": 6,
+          "n_values": 3888,
+          "mae": 0.05102248442893781,
+          "rmse": 0.07175152926046414,
+          "bias": 4.115226267464079e-11,
+          "max_abs": 0.38578938452694955,
+          "p95_abs": 0.15377814818416122,
+          "equal_structure_mae": 0.051022484428937816,
+          "equal_structure_rmse": 0.07175152926046414,
+          "mae_ci95": [
+            0.033281946831103366,
+            0.07033987544041746
+          ],
+          "rmse_ci95": [
+            0.04634830405377078,
+            0.09442585673564921
+          ],
+          "r2": 0.9902031740626128
+        },
+        "stress_GPa": {
+          "n_structures": 6,
+          "n_values": 36,
+          "mae": 0.08378160771722906,
+          "rmse": 0.1312893080194359,
+          "bias": 0.013378146505871626,
+          "max_abs": 0.48803799836492523,
+          "p95_abs": 0.27891652247843546,
+          "equal_structure_mae": 0.08378160771722908,
+          "equal_structure_rmse": 0.13128930801943586,
+          "mae_ci95": [
+            0.0453803638906598,
+            0.1454789009806332
+          ],
+          "rmse_ci95": [
+            0.053965883968348574,
+            0.20823637461479377
+          ]
+        },
+        "force_Al_eV_A": {
+          "n_structures": 5,
+          "n_values": 2046,
+          "mae": 0.029516144372187032,
+          "rmse": 0.03814218653917485,
+          "bias": 0.00013160853156443737,
+          "max_abs": 0.15781862030372684,
+          "p95_abs": 0.07859722921713935,
+          "equal_structure_mae": 0.03110267508141739,
+          "equal_structure_rmse": 0.039997187232975344,
+          "mae_ci95": [
+            0.02319365959257168,
+            0.037783825721884746
+          ],
+          "rmse_ci95": [
+            0.02950167624267512,
+            0.047766545190549285
+          ]
+        },
+        "force_Ti_eV_A": {
+          "n_structures": 5,
+          "n_values": 1842,
+          "mae": 0.0749106341336675,
+          "rmse": 0.09618099970214539,
+          "bias": -0.00014618398240002248,
+          "max_abs": 0.38578938452694955,
+          "p95_abs": 0.19206950269311684,
+          "equal_structure_mae": 0.0696222425326047,
+          "equal_structure_rmse": 0.08980625080333605,
+          "mae_ci95": [
+            0.05967057439344549,
+            0.08788957030322753
+          ],
+          "rmse_ci95": [
+            0.07498465841681756,
+            0.1113593698978932
+          ]
+        }
+      },
+      "solid": null,
+      "liquid": {
+        "n_structures": 6,
+        "energy_meV_atom": {
+          "n_structures": 6,
+          "n_values": 6,
+          "mae": 1.6531434693960456,
+          "rmse": 1.9607114363891698,
+          "bias": -1.6515286476714113,
+          "max_abs": 3.3641070992285194,
+          "p95_abs": 3.0441271085366317,
+          "equal_structure_mae": 1.6531434693960456,
+          "equal_structure_rmse": 1.9607114363891698,
+          "mae_ci95": [
+            0.8275641896221172,
+            2.4551663537028308
+          ],
+          "rmse_ci95": [
+            1.1918968961033491,
+            2.6476006482488263
+          ],
+          "r2": 0.9999990554688386
+        },
+        "force_eV_A": {
+          "n_structures": 6,
+          "n_values": 3888,
+          "mae": 0.05102248442893781,
+          "rmse": 0.07175152926046414,
+          "bias": 4.115226267464079e-11,
+          "max_abs": 0.38578938452694955,
+          "p95_abs": 0.15377814818416122,
+          "equal_structure_mae": 0.051022484428937816,
+          "equal_structure_rmse": 0.07175152926046414,
+          "mae_ci95": [
+            0.033281946831103366,
+            0.07033987544041746
+          ],
+          "rmse_ci95": [
+            0.04634830405377078,
+            0.09442585673564921
+          ],
+          "r2": 0.9902031740626128
+        },
+        "stress_GPa": {
+          "n_structures": 6,
+          "n_values": 36,
+          "mae": 0.08378160771722906,
+          "rmse": 0.1312893080194359,
+          "bias": 0.013378146505871626,
+          "max_abs": 0.48803799836492523,
+          "p95_abs": 0.27891652247843546,
+          "equal_structure_mae": 0.08378160771722908,
+          "equal_structure_rmse": 0.13128930801943586,
+          "mae_ci95": [
+            0.0453803638906598,
+            0.1454789009806332
+          ],
+          "rmse_ci95": [
+            0.053965883968348574,
+            0.20823637461479377
+          ]
+        },
+        "force_Al_eV_A": {
+          "n_structures": 5,
+          "n_values": 2046,
+          "mae": 0.029516144372187032,
+          "rmse": 0.03814218653917485,
+          "bias": 0.00013160853156443737,
+          "max_abs": 0.15781862030372684,
+          "p95_abs": 0.07859722921713935,
+          "equal_structure_mae": 0.03110267508141739,
+          "equal_structure_rmse": 0.039997187232975344,
+          "mae_ci95": [
+            0.02319365959257168,
+            0.037783825721884746
+          ],
+          "rmse_ci95": [
+            0.02950167624267512,
+            0.047766545190549285
+          ]
+        },
+        "force_Ti_eV_A": {
+          "n_structures": 5,
+          "n_values": 1842,
+          "mae": 0.0749106341336675,
+          "rmse": 0.09618099970214539,
+          "bias": -0.00014618398240002248,
+          "max_abs": 0.38578938452694955,
+          "p95_abs": 0.19206950269311684,
+          "equal_structure_mae": 0.0696222425326047,
+          "equal_structure_rmse": 0.08980625080333605,
+          "mae_ci95": [
+            0.05967057439344549,
+            0.08788957030322753
+          ],
+          "rmse_ci95": [
+            0.07498465841681756,
+            0.1113593698978932
+          ]
+        }
+      },
+      "POSCAR_alpha-Ti-hcp_orthogonal": null,
+      "POSCAR_beta-Ti-bcc": null,
+      "POSCAR_gamma_AlTi_L1_0": null,
+      "composition_bins": {
+        "0": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 3.3641070992285194,
+            "rmse": 3.3641070992285194,
+            "bias": -3.3641070992285194,
+            "max_abs": 3.3641070992285194,
+            "p95_abs": 3.3641070992285194,
+            "equal_structure_mae": 3.3641070992285194,
+            "equal_structure_rmse": 3.3641070992285194,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.09447283598598392,
+            "rmse": 0.1184209806561298,
+            "bias": 4.629629464428619e-11,
+            "max_abs": 0.38578938452694955,
+            "p95_abs": 0.23776567005948643,
+            "equal_structure_mae": 0.09447283598598392,
+            "equal_structure_rmse": 0.1184209806561298,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9842600641482355
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.0771435486483625,
+            "rmse": 0.09654076463472637,
+            "bias": -0.01879329660631936,
+            "max_abs": 0.15705264994324664,
+            "p95_abs": 0.15529648802807292,
+            "equal_structure_mae": 0.0771435486483625,
+            "equal_structure_rmse": 0.09654076463472637,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": null,
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.09447283598598392,
+            "rmse": 0.1184209806561298,
+            "bias": 4.629629464428619e-11,
+            "max_abs": 0.38578938452694955,
+            "p95_abs": 0.23776567005948643,
+            "equal_structure_mae": 0.09447283598598392,
+            "equal_structure_rmse": 0.1184209806561298,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "1": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 0.004844465173903245,
+            "rmse": 0.004844465173903245,
+            "bias": 0.004844465173903245,
+            "max_abs": 0.004844465173903245,
+            "p95_abs": 0.004844465173903245,
+            "equal_structure_mae": 0.004844465173903245,
+            "equal_structure_rmse": 0.004844465173903245,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.05337836661930733,
+            "rmse": 0.06904209325619458,
+            "bias": -7.716049387221198e-11,
+            "max_abs": 0.3276322498553286,
+            "p95_abs": 0.1402173886401735,
+            "equal_structure_mae": 0.05337836661930733,
+            "equal_structure_rmse": 0.06904209325619458,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9851615505784592
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.03927446937973564,
+            "rmse": 0.0459058676229215,
+            "bias": 0.003327529531972027,
+            "max_abs": 0.07528768932217389,
+            "p95_abs": 0.07085320519721483,
+            "equal_structure_mae": 0.03927446937973564,
+            "equal_structure_rmse": 0.0459058676229215,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 162,
+            "mae": 0.03241783044418243,
+            "rmse": 0.041693979147284545,
+            "bias": -0.00027124482861739125,
+            "max_abs": 0.14050258925521764,
+            "p95_abs": 0.08171199863971418,
+            "equal_structure_mae": 0.03241783044418243,
+            "equal_structure_rmse": 0.041693979147284545,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 486,
+            "mae": 0.06036521201101562,
+            "rmse": 0.07600187424806067,
+            "bias": 9.041483999180499e-05,
+            "max_abs": 0.3276322498553286,
+            "p95_abs": 0.1463180280611588,
+            "equal_structure_mae": 0.06036521201101562,
+            "equal_structure_rmse": 0.07600187424806067,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "2": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 2.0841871364609688,
+            "rmse": 2.0841871364609688,
+            "bias": -2.0841871364609688,
+            "max_abs": 2.0841871364609688,
+            "p95_abs": 2.0841871364609688,
+            "equal_structure_mae": 2.0841871364609688,
+            "equal_structure_rmse": 2.0841871364609688,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.0512031137914753,
+            "rmse": 0.06665089780487717,
+            "bias": -1.543210072761253e-11,
+            "max_abs": 0.2275918309741723,
+            "p95_abs": 0.1354766962348739,
+            "equal_structure_mae": 0.0512031137914753,
+            "equal_structure_rmse": 0.06665089780487717,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9929455505494126
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.06338756971745248,
+            "rmse": 0.06988904246847331,
+            "bias": -0.019856702431632196,
+            "max_abs": 0.10226597905298718,
+            "p95_abs": 0.09766654963606541,
+            "equal_structure_mae": 0.06338756971745248,
+            "equal_structure_rmse": 0.06988904246847331,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 294,
+            "mae": 0.033051814840222786,
+            "rmse": 0.04123558880171297,
+            "bias": 0.0023651494299674657,
+            "max_abs": 0.11744256163150979,
+            "p95_abs": 0.08152271290102098,
+            "equal_structure_mae": 0.033051814840222786,
+            "equal_structure_rmse": 0.04123558880171297,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 354,
+            "mae": 0.06627792139505792,
+            "rmse": 0.08197298437133178,
+            "bias": -0.001964276673475808,
+            "max_abs": 0.2275918309741723,
+            "p95_abs": 0.16133528695675675,
+            "equal_structure_mae": 0.06627792139505792,
+            "equal_structure_rmse": 0.08197298437133178,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "3": {
+          "n_structures": 1,
+          "energy_meV_atom": {
+            "n_structures": 1,
+            "n_values": 1,
+            "mae": 1.911777170052531,
+            "rmse": 1.911777170052531,
+            "bias": -1.911777170052531,
+            "max_abs": 1.911777170052531,
+            "p95_abs": 1.911777170052531,
+            "equal_structure_mae": 1.911777170052531,
+            "equal_structure_rmse": 1.911777170052531,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": null
+          },
+          "force_eV_A": {
+            "n_structures": 1,
+            "n_values": 648,
+            "mae": 0.05451259022177967,
+            "rmse": 0.07295299200894859,
+            "bias": 2.160493816600116e-10,
+            "max_abs": 0.301464705506192,
+            "p95_abs": 0.14587132323681906,
+            "equal_structure_mae": 0.05451259022177967,
+            "equal_structure_rmse": 0.07295299200894859,
+            "mae_ci95": null,
+            "rmse_ci95": null,
+            "r2": 0.9933132869425904
+          },
+          "stress_GPa": {
+            "n_structures": 1,
+            "n_values": 6,
+            "mae": 0.055879815046698145,
+            "rmse": 0.06493263669930445,
+            "bias": -0.031422526397353,
+            "max_abs": 0.10782465038896838,
+            "p95_abs": 0.0989712547957251,
+            "equal_structure_mae": 0.055879815046698145,
+            "equal_structure_rmse": 0.06493263669930445,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Al_eV_A": {
+            "n_structures": 1,
+            "n_values": 423,
+            "mae": 0.04148334542541213,
+            "rmse": 0.05188158851407881,
+            "bias": -0.0012642032178648798,
+            "max_abs": 0.15781862030372684,
+            "p95_abs": 0.09976910197899944,
+            "equal_structure_mae": 0.04148334542541213,
+            "equal_structure_rmse": 0.05188158851407881,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 225,
+            "mae": 0.07900757043895063,
+            "rmse": 0.10132801141701707,
+            "bias": 0.0023767026718081938,
+            "max_abs": 0.301464705506192,
+            "p95_abs": 0.2073937467721296,
+            "equal_structure_mae": 0.07900757043895063,
+            "equal_structure_rmse": 0.10132801141701707,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        },
+        "4": {
+          "n_structures": 2,
+          "energy_meV_atom": {
+            "n_structures": 2,
+            "n_values": 2,
+            "mae": 1.2769724727301757,
+            "rmse": 1.3693735810723284,
+            "bias": -1.2769724727301757,
+            "max_abs": 1.7714674761712956,
+            "p95_abs": 1.7220179758271836,
+            "equal_structure_mae": 1.2769724727301757,
+            "equal_structure_rmse": 1.3693735810723284,
+            "mae_ci95": [
+              0.7824774692890557,
+              1.7714674761712956
+            ],
+            "rmse_ci95": [
+              0.7824774692890557,
+              1.7714674761712956
+            ],
+            "r2": 0.9999935759208564
+          },
+          "force_eV_A": {
+            "n_structures": 2,
+            "n_values": 1296,
+            "mae": 0.026283999977540325,
+            "rmse": 0.034167756622882184,
+            "bias": 3.85802471074367e-11,
+            "max_abs": 0.14488127023405276,
+            "p95_abs": 0.06789115444775465,
+            "equal_structure_mae": 0.02628399997754033,
+            "equal_structure_rmse": 0.034167756622882184,
+            "mae_ci95": [
+              0.02070398850914228,
+              0.031864011445938374
+            ],
+            "rmse_ci95": [
+              0.02593229383693661,
+              0.040772384301580866
+            ],
+            "r2": 0.9954678686373953
+          },
+          "stress_GPa": {
+            "n_structures": 2,
+            "n_values": 12,
+            "mae": 0.1335021217555628,
+            "rmse": 0.2035842588671569,
+            "bias": 0.07350693746928115,
+            "max_abs": 0.48803799836492523,
+            "p95_abs": 0.4410692035947362,
+            "equal_structure_mae": 0.1335021217555628,
+            "equal_structure_rmse": 0.20358425886715686,
+            "mae_ci95": [
+              0.033479052574791286,
+              0.2335251909363343
+            ],
+            "rmse_ci95": [
+              0.037187326254409,
+              0.2854999188844495
+            ]
+          },
+          "force_Al_eV_A": {
+            "n_structures": 2,
+            "n_values": 1167,
+            "mae": 0.02388487932781686,
+            "rmse": 0.030087807763522666,
+            "bias": 0.0001307769893429865,
+            "max_abs": 0.0953268505309526,
+            "p95_abs": 0.06072391513316025,
+            "equal_structure_mae": 0.024280192348634808,
+            "equal_structure_rmse": 0.030564800220564826,
+            "mae_ci95": [
+              0.02070398850914228,
+              0.02785639618812733
+            ],
+            "rmse_ci95": [
+              0.02593229383693661,
+              0.03458222319922273
+            ]
+          },
+          "force_Ti_eV_A": {
+            "n_structures": 1,
+            "n_values": 129,
+            "mae": 0.04798767283201536,
+            "rmse": 0.059490031127166595,
+            "bias": -0.0011830751671570946,
+            "max_abs": 0.14488127023405276,
+            "p95_abs": 0.11607039691548211,
+            "equal_structure_mae": 0.04798767283201536,
+            "equal_structure_rmse": 0.059490031127166595,
+            "mae_ci95": null,
+            "rmse_ci95": null
+          }
+        }
+      }
+    }
+  },
+  "analysis_sha256": "e543ef3985b63e03d5b4da048691c521ecb2fd9e696a7978138220e0e07e6fdc",
+  "manifest_sha256": "71f2f057f45141fb6456cbbe16e306c8abf80f2100728def25e24d5dd298d088",
+  "uncertainty": "2000 paired structure-bootstrap resamples; descriptive 95% percentile intervals, conditional on current subset. Unknown trajectory correlations and optional stopping are not covered.",
+  "energy_definition": "Raw VASP TOTEN versus raw model energy, no fitted offset; meV/atom errors.",
+  "force_definition": "All Cartesian components pooled; bootstrap samples whole structures. Equal-structure metrics and Al/Ti are also reported.",
+  "pending_predictions": [],
+  "fingerprint": "c4d724270e8d091b",
+  "readiness": {
+    "candidate_for_discussion": false,
+    "automatic_stop": false,
+    "reasons": [
+      "Fewer than 30 common structures (screening threshold, not a statistical guarantee).",
+      "liquid: 6 structures; screening minimum 12.",
+      "POSCAR_alpha-Ti-hcp_orthogonal: 0 structures; screening minimum 4.",
+      "POSCAR_alpha-Ti-hcp_orthogonal: composition coverage insufficient.",
+      "POSCAR_beta-Ti-bcc: 0 structures; screening minimum 4.",
+      "POSCAR_beta-Ti-bcc: composition coverage insufficient.",
+      "POSCAR_gamma_AlTi_L1_0: 0 structures; screening minimum 4.",
+      "POSCAR_gamma_AlTi_L1_0: composition coverage insufficient.",
+      "PBE energy_meV_atom: RMSE bootstrap interval too wide for screening.",
+      "PBE force_eV_A: RMSE bootstrap interval too wide for screening.",
+      "PBEsol energy_meV_atom: RMSE bootstrap interval too wide for screening.",
+      "PBEsol force_eV_A: RMSE bootstrap interval too wide for screening.",
+      "r2SCAN energy_meV_atom: RMSE bootstrap interval too wide for screening.",
+      "r2SCAN force_eV_A: RMSE bootstrap interval too wide for screening.",
+      "Need three comparable checkpoints separated by at least five new structures."
+    ],
+    "qualification": "Heuristic discussion trigger only. Do not stop because errors look small. Report adaptive stopping, completion-order bias, coverage and uncertainty. Full fixed Test50 remains the preferred final benchmark."
+  }
+}

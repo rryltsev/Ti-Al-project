@@ -1,0 +1,18 @@
+{
+  "remote": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=apollo",
+    "--mem=16G",
+    "--time=00:30:00",
+    "--dependency=afterany:20991808",
+    "--job-name=TiAl-GRA-PBE-compare",
+    "--output=post-%j.log",
+    "post.sbatch"
+  ]
+}

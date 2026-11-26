@@ -1,0 +1,42 @@
+{
+  "max_absolute_energy_error_eV_cell": {
+    "8_construct": 3.339550858072471e-13,
+    "8_flip": 4.405364961712621e-13,
+    "8_committed": 4.902744876744691e-13,
+    "8_displace": 4.192202140984591e-13,
+    "8_flip+displace": 4.902744876744691e-13,
+    "8_volume": 4.121147867408581e-13,
+    "128_construct": 3.410605131648481e-13,
+    "128_flip": 1.0231815394945443e-12,
+    "128_committed": 7.958078640513122e-13,
+    "128_displace": 7.958078640513122e-13,
+    "128_flip+displace": 6.821210263296962e-13,
+    "128_volume": 3.410605131648481e-13,
+    "432_construct": 0,
+    "432_flip": 9.094947017729282e-13,
+    "432_committed": 1.3642420526593924e-12,
+    "432_displace": 1.3642420526593924e-12,
+    "432_flip+displace": 1.3642420526593924e-12,
+    "432_volume": 4.547473508864641e-13
+  },
+  "primary_MLIP_frames": 123,
+  "platform": "Linux-4.18.0-553.el8_10.x86_64-x86_64-with-glibc2.28",
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "native_flags": "-std=c++17 -O3 -march=native",
+  "performance": [
+    {
+      "sites": 128,
+      "sweeps": 8,
+      "wall_seconds": 1.063912108540535,
+      "seconds_per_sweep": 0.13298901356756687,
+      "site_move_attempts_per_second": 1924.9710418367433
+    },
+    {
+      "sites": 432,
+      "sweeps": 8,
+      "wall_seconds": 3.484126154333353,
+      "seconds_per_sweep": 0.43551576929166913,
+      "site_move_attempts_per_second": 1983.8546866057814
+    }
+  ]
+}

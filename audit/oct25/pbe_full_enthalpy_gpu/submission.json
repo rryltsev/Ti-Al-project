@@ -1,0 +1,23 @@
+{
+  "job_id": "20960642",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=v100",
+    "--nodelist=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=2",
+    "--cpus-per-task=4",
+    "--gres=gpu:a100:2",
+    "--mem=32G",
+    "--time=24:00:00",
+    "--no-requeue",
+    "--job-name=pbe-full-H-15k20k",
+    "--chdir=/home6/u3129/tial-testsets/pbe-full-enthalpy-gpu-20261025-01",
+    "--output=/home6/u3129/tial-testsets/pbe-full-enthalpy-gpu-20261025-01/allocation-%j.log",
+    "/home6/u3129/tial-testsets/pbe-full-enthalpy-gpu-20261025-01/gpu_enthalpy_job.sbatch"
+  ],
+  "unix": 1792941950.265722
+}

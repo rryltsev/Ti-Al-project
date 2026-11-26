@@ -1,0 +1,234 @@
+{
+  "N": 768,
+  "shape": "8x8x6",
+  "W": 0.4,
+  "free_axial": 1,
+  "pressure_GPa": 0.0,
+  "source_T_K": [
+    1225.0,
+    1240.0,
+    1245.0,
+    1250.0
+  ],
+  "source_umbrellas": 168,
+  "raw_trajectories": 168,
+  "retained_frames": 34501,
+  "thinning_stride": 4,
+  "T_reference": 1245.0,
+  "configuration_field_reference_eV": 3.545,
+  "Q_divider": 0.37,
+  "search_bounds": [
+    1200.0,
+    1280.0,
+    3.47,
+    3.62
+  ],
+  "gradient_error": 3.047525384934813e-10,
+  "source_overlap_from_rows_to_columns": [
+    [
+      0.6075148177948904,
+      0.1326250955047624,
+      0.10796449225211217,
+      0.1518955944482376
+    ],
+    [
+      0.17033246774514085,
+      0.2602242768149174,
+      0.2574408975144049,
+      0.3120023579255371
+    ],
+    [
+      0.13427801098648334,
+      0.2592232391794605,
+      0.2810888685543767,
+      0.3254098812796788
+    ],
+    [
+      0.14974598584767007,
+      0.24997597454637013,
+      0.2601495952665271,
+      0.34012844433943407
+    ]
+  ],
+  "central": {
+    "T_K": 1244.015113203494,
+    "mu_eV": 3.544228429194989,
+    "x_atpct": 27.161322941239092,
+    "latent_meV_atom": 27.31556395379767,
+    "jump_Q": 0.5855853773069948,
+    "phases": [
+      {
+        "x_atpct": 27.161322941239092,
+        "mean_Q": 0.17731637135909828,
+        "semigrand_meV_atom": 14.3013714240753,
+        "effective_frames": 512.362258183057
+      },
+      {
+        "x_atpct": 27.161322941239103,
+        "mean_Q": 0.7629017486660931,
+        "semigrand_meV_atom": -13.01419252972237,
+        "effective_frames": 551.182276000239
+      }
+    ],
+    "profile": {
+      "Q_modes": [
+        0.1275,
+        0.8225
+      ],
+      "Q_valley": 0.41250000000000003,
+      "lower_barrier": 0.955619131064508
+    }
+  },
+  "divider_sensitivity": [
+    {
+      "cut": 0.32,
+      "estimate": {
+        "T_K": 1244.7126087772979,
+        "mu_eV": 3.5449938691995633,
+        "x_atpct": 27.19239989769891,
+        "latent_meV_atom": 26.869061339959035,
+        "jump_Q": 0.5875621038188845,
+        "phases": [
+          {
+            "x_atpct": 27.19239989769891,
+            "mean_Q": 0.16158982373929207,
+            "semigrand_meV_atom": 14.835892595007076,
+            "effective_frames": 449.1680086312344
+          },
+          {
+            "x_atpct": 27.19239989769891,
+            "mean_Q": 0.7491519275581766,
+            "semigrand_meV_atom": -12.03316874495196,
+            "effective_frames": 581.4929633826408
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.1275,
+            0.8225
+          ],
+          "Q_valley": 0.41250000000000003,
+          "lower_barrier": 0.9822230142100203
+        }
+      }
+    },
+    {
+      "cut": 0.37,
+      "estimate": {
+        "T_K": 1244.015113203494,
+        "mu_eV": 3.544228429194989,
+        "x_atpct": 27.161322941239092,
+        "latent_meV_atom": 27.31556395379767,
+        "jump_Q": 0.5855853773069948,
+        "phases": [
+          {
+            "x_atpct": 27.161322941239092,
+            "mean_Q": 0.17731637135909828,
+            "semigrand_meV_atom": 14.3013714240753,
+            "effective_frames": 512.362258183057
+          },
+          {
+            "x_atpct": 27.161322941239103,
+            "mean_Q": 0.7629017486660931,
+            "semigrand_meV_atom": -13.01419252972237,
+            "effective_frames": 551.182276000239
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.1275,
+            0.8225
+          ],
+          "Q_valley": 0.41250000000000003,
+          "lower_barrier": 0.955619131064508
+        }
+      }
+    },
+    {
+      "cut": 0.42,
+      "estimate": {
+        "T_K": 1243.4678752263064,
+        "mu_eV": 3.5437321853123835,
+        "x_atpct": 27.14098407857128,
+        "latent_meV_atom": 27.541023632839398,
+        "jump_Q": 0.580063317225836,
+        "phases": [
+          {
+            "x_atpct": 27.14098407857128,
+            "mean_Q": 0.1924130655158764,
+            "semigrand_meV_atom": 13.803181320036087,
+            "effective_frames": 567.0705648864969
+          },
+          {
+            "x_atpct": 27.14098407857128,
+            "mean_Q": 0.7724763827417124,
+            "semigrand_meV_atom": -13.73784231280331,
+            "effective_frames": 528.7621770243094
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.1275,
+            0.8275000000000001
+          ],
+          "Q_valley": 0.40750000000000003,
+          "lower_barrier": 0.9347316916968689
+        }
+      }
+    },
+    {
+      "cut": 0.47,
+      "estimate": {
+        "T_K": 1242.8947178814412,
+        "mu_eV": 3.543078705317998,
+        "x_atpct": 27.115299154284482,
+        "latent_meV_atom": 27.559904437258368,
+        "jump_Q": 0.5704513874739616,
+        "phases": [
+          {
+            "x_atpct": 27.115299154284482,
+            "mean_Q": 0.21095270681944547,
+            "semigrand_meV_atom": 13.114371051457129,
+            "effective_frames": 625.5569763464488
+          },
+          {
+            "x_atpct": 27.11529915428447,
+            "mean_Q": 0.7814040942934071,
+            "semigrand_meV_atom": -14.44553338580124,
+            "effective_frames": 507.06760210832454
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.1325,
+            0.8275000000000001
+          ],
+          "Q_valley": 0.40750000000000003,
+          "lower_barrier": 0.9142049243310493
+        }
+      }
+    }
+  ],
+  "bootstrap_columns": [
+    "T_K",
+    "mu_eV",
+    "x_atpct",
+    "latent_meV_atom",
+    "jump_Q"
+  ],
+  "draws": 0,
+  "seed": 6213129,
+  "resolved": 0,
+  "min_blocks": 2,
+  "one_block_runs": 0,
+  "interval_95": null,
+  "replicates": [],
+  "manifests": [
+    "solvus_closure/atomistic/series/zc228l/windows.csv",
+    "solvus_closure/atomistic/series/zc228r/windows.csv",
+    "solvus_closure/atomistic/series/zc408a/windows.csv",
+    "solvus_closure/atomistic/series/zc458a/windows.csv",
+    "solvus_closure/atomistic/series/zc508l/windows.csv",
+    "solvus_closure/atomistic/series/zc508r/windows.csv"
+  ]
+}

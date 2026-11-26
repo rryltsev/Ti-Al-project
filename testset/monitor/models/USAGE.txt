@@ -1,0 +1,77 @@
+TiAl DPA4 article potentials
+===========================
+
+ACTIVE PBE VERSION,2026-10-29
+The user replaced15k with PBE checkpoint20k for Test50 and future monitoring.
+model_registry.json selects the original model.ckpt-20000.pt copy,
+SHA2563b0b4b69f8fca7be5bae4a5f24498aac904efad08f126f4a57de035e0379c67e.
+Direct Linux CPU DeepPot predictions/PBE-20000 cover all50 fixed geometries.
+Provenance and derivative checks: models/PBE-20000, runs/pbe20k-comparison-20261029-01.
+Activation: runs/pbe20k-switch-20261029-01. No re-export or new inference at switch.
+Historical15k predictions/PBE-15000 and models/PBE-15000 are preserved; separate
+history and last figures: results/model-history/PBE-15000. Historical5k original
+export models/PBE/model_frozen.pt2 remains archived and is not the active model.
+No20k CPU LAMMPS export is claimed. PBEsol/r2SCAN retain verified exports below.
+Switches5k->15k->20k followed Test50 inspection; disclose adaptive selection.
+
+Source checkpoints were supplied by Roman Ryltsev in:
+C:\Users\Roman Ryltsev\Desktop\STARTUPS\Ti-Al-X\TiAl-Project\DPA4-checkpoints
+PBE: pbe_checkpoint.pt
+PBEsol: pbesol_checkpoint.pt
+r2SCAN: scan_checkpoint.pt
+
+The source-manifest.json in ../runs/model-export-20261022-01 pins their
+SHA256 hashes before inference. No training, checkpoint selection or test-set
+energy correction is performed. The checkpoints retain the full 118-element
+foundation type map and LoRA rank 16. Al index is 12; Ti index is 21 (zero-based).
+Always resolve element indices from get_type_map() rather than assuming 0/1.
+
+Artifacts after successful export and collection:
+PBE/model_frozen.pt2
+PBEsol/model_frozen.pt2
+r2SCAN/model_frozen.pt2
+Each directory also contains checkpoint-metadata.json.
+The authoritative remote paths and SHA256 are in ../model_registry.json.
+Run manifests and numerical checks are retained in ../runs/.
+
+Runtime: Linux CPU, DeePMD-kit 3.2.0, PyTorch 2.11.0+cu130, Python 3.12.
+Cluster environment: /home/u3129/miniconda3/envs/lammps_deepmd_dpa4
+These .pt2 files contain CPU AOTInductor exports. They have not been validated
+as Windows or CUDA artifacts. For a GPU deployment, export the same original
+checkpoints on a compatible GPU and repeat equivalence checks; do not change
+the trained weights or refit offsets. Checkpoints themselves are preserved.
+
+Python use in a compute-node Slurm allocation, with CUDA_VISIBLE_DEVICES="":
+
+    import numpy as np
+    from deepmd.infer import DeepPot
+    dp = DeepPot("PBE/model_frozen.pt2")
+    names = dp.get_type_map()
+    atom_types = [names.index(symbol) for symbol in symbols]
+    energy, forces, virial = dp.eval(
+        np.asarray(positions_A).reshape(1, -1),
+        np.asarray(cell_A).reshape(1, 9), atom_types)[:3]
+
+Coordinates and cell are in angstrom. Outputs: total energy eV, Cartesian
+forces eV/angstrom, virial eV. ASE tensile-positive stress = -virial/volume.
+Check the recorded verification.json before using any outputs: status and all
+model checks must pass. The source/export comparison uses identical atom order
+and geometries, and finite differences independently verify force/virial signs.
+
+The testset monitor uses the complete, fixed 50-geometry prediction cache;
+only structures with all three validated DFT labels enter reported metrics.
+
+Validated native LAMMPS setup (Slurm compute node):
+    source /home6/u3129/mlip-research/software/lammps-deepmd-mpi-a33449868448/activate-lammps.sh
+    export CUDA_VISIBLE_DEVICES=""
+    /home6/u3129/mlip-research/software/lammps-deepmd-mpi-a33449868448/build/lmp -in in.lammps
+In the LAMMPS input, load $DEEPMD_LMP_PLUGIN using its expanded path, then:
+    units metal
+    pair_style deepmd /absolute/path/to/model_frozen.pt2
+    pair_coeff * * Al Ti
+The pair_coeff order must match LAMMPS atom types (the smoke test uses 1=Al,
+2=Ti), independently of the 118-element internal model type map.
+The native build passed energy, force and stress comparisons for all three
+models. Do not use the bundled site-packages/lammps/lmp in this environment:
+that executable segfaulted before producing output. Multi-rank scaling and
+long MD trajectories were not tested in this export task.

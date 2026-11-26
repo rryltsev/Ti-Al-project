@@ -1,0 +1,65 @@
+{
+  "seed": 10,
+  "cutoff": 6.0,
+  "data": {
+    "filename": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/data/PBE/train.extxyz",
+    "test_filename": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/data/PBE/validation.extxyz",
+    "reference_energy": 0,
+    "save_dataset": false,
+    "stress_units": "eV/A3",
+    "max_workers": 1
+  },
+  "potential": {
+    "filename": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/aligned/PBE/model.yaml",
+    "checkpoint_name": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/aligned/PBE/checkpoint",
+    "param_dtype": "float64",
+    "reduce_elements": false
+  },
+  "fit": {
+    "loss": {
+      "energy": {
+        "weight": 16,
+        "type": "huber",
+        "delta": 0.01
+      },
+      "forces": {
+        "weight": 32,
+        "type": "huber",
+        "delta": 0.01
+      },
+      "stress": {
+        "weight": 128,
+        "type": "huber",
+        "delta": 0.01
+      }
+    },
+    "maxiter": 50,
+    "optimizer": "Adam",
+    "opt_params": {
+      "learning_rate": 0.001,
+      "use_ema": false,
+      "clipnorm": 1.0
+    },
+    "scheduler": "cosine_decay",
+    "scheduler_params": {
+      "minimum_learning_rate": 0.0001
+    },
+    "compute_convex_hull": false,
+    "batch_size": 1,
+    "test_batch_size": 1,
+    "jit_compile": true,
+    "eval_init_stats": true,
+    "reset_epoch_and_step": true,
+    "train_max_n_buckets": 1,
+    "test_max_n_buckets": 1,
+    "auto_bucket_max_padding": 0.3,
+    "checkpoint_freq": 5,
+    "train_shuffle": true,
+    "trainable_variable_names": [
+      "I2/reducing_",
+      "rho/reducing_",
+      "I1/reducing_"
+    ],
+    "reset_optimizer": true
+  }
+}

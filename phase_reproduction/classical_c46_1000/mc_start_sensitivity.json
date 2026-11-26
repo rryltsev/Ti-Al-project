@@ -1,0 +1,135 @@
+{
+  "columns": [
+    "Al_at_percent_alpha",
+    "Al_at_percent_alpha2",
+    "field_eV"
+  ],
+  "quantum_random_draws": 384,
+  "classical_ordered_draws": 320,
+  "results": {
+    "quantum": {
+      "random_quantum_source_minus_ordered_classical_source": [
+        -0.0548072256244545,
+        0.16173659029305298,
+        0.00036245108198107445
+      ],
+      "interval_95": [
+        [
+          -0.13813592101582425,
+          0.033805995059073224
+        ],
+        [
+          0.02716794790296993,
+          0.2784029108035768
+        ],
+        [
+          -0.00013175114526612353,
+          0.0008639549135693091
+        ]
+      ],
+      "combined_se": [
+        0.04368815627085719,
+        0.06437792427063616,
+        0.00025243144477834296
+      ],
+      "observed_in_combined_se": [
+        -1.2545099244898656,
+        2.5122989305019225,
+        1.4358396684665748
+      ],
+      "random_source_se": [
+        0.027615571724756826,
+        0.04401652560055242,
+        0.0001635311936919906
+      ],
+      "ordered_source_se": [
+        0.03385314160697128,
+        0.04697938491989521,
+        0.0001922997217953117
+      ]
+    },
+    "classical": {
+      "random_quantum_source_minus_ordered_classical_source": [
+        -0.03722037797989408,
+        0.17994557657335264,
+        0.00034245768247798125
+      ],
+      "interval_95": [
+        [
+          -0.1181865085618988,
+          0.04516716065014366
+        ],
+        [
+          0.049423519712040245,
+          0.29379428781987715
+        ],
+        [
+          -0.00013984234551710494,
+          0.0008239539287762326
+        ]
+      ],
+      "combined_se": [
+        0.04143654018246301,
+        0.06269146824391024,
+        0.00024436806922972977
+      ],
+      "observed_in_combined_se": [
+        -0.898250139031798,
+        2.870335974159168,
+        1.40140110595234
+      ],
+      "random_source_se": [
+        0.026417122725824346,
+        0.044998617207447605,
+        0.00016777811720163375
+      ],
+      "ordered_source_se": [
+        0.03192369792460777,
+        0.04365025360745121,
+        0.0001776689524012027
+      ]
+    },
+    "classical_minus_quantum": {
+      "random_quantum_source_minus_ordered_classical_source": [
+        0.01758684764456042,
+        0.018208986280299655,
+        -1.99933995030932e-05
+      ],
+      "interval_95": [
+        [
+          -0.0026159286762847955,
+          0.03844297606596153
+        ],
+        [
+          -0.011794280281742875,
+          0.05012555430856736
+        ],
+        [
+          -0.00015068292752604684,
+          0.00010993203437916762
+        ]
+      ],
+      "combined_se": [
+        0.010497397326291881,
+        0.01578688569051675,
+        6.605206417984168e-05
+      ],
+      "observed_in_combined_se": [
+        1.6753531468711997,
+        1.1534248513142698,
+        -0.3026915169321075
+      ],
+      "random_source_se": [
+        0.007109503633004667,
+        0.011437804143166303,
+        4.3771645077000664e-05
+      ],
+      "ordered_source_se": [
+        0.007723361231894658,
+        0.010881286513460172,
+        4.9466334710295725e-05
+      ]
+    }
+  },
+  "convention": "Difference between independent estimates of the same target. The random-start chains sampled the quantum Hamiltonian; the ordered-start chains sampled the classical one. Values from the alternate ensemble are obtained by one-sided exact Boltzmann weights, independently inside each window. Percentiles use the empirical product of block bootstrap distributions. Their conditional uncertainty may underestimate mixing or initialization sensitivity. These two runs confound initialization and sampled Hamiltonian."
+}

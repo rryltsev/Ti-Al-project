@@ -1,0 +1,16 @@
+2100 K N=40: новый полный пакет. Все ошибки ниже — формальные SE.
+
+40ps: 2.564520 +/- 0.044702 мПа·с; neff=59.740; costZ=1.091; cutoffZ=3.542.
+first20ps: 2.583260 +/- 0.062246 мПа·с; neff=35.141; costZ=0.230; cutoffZ=2.916.
+second20ps: 2.533207 +/- 0.060998 мПа·с; neff=31.648; costZ=0.404; cutoffZ=-0.048.
+Прежние35: 2.549700+/-0.047598; изменение40 +0.5812%; изменениеSE -6.083%.
+Новые5: 2.551394+/-0.114437; против прежнихZ=0.014; costZ=2.535; cutoffZ=4.255.
+Отдельные5k: 2.645917+/-0.108299; отличие -3.076%. Исторического15k при этойT нет.
+[{"id": "Ti_2100K", "flags": {"minimum_replicas": true, "precision": true, "last_three_stability": true, "duration_stability": true, "spectral_points": false, "cost": true, "cutoff": false, "new_batch_consistency": true, "window_fit_diagnostics": false}, "passed": false, "last_three_relative_range": 0.005778660431283835, "max_20_40_relative_difference": 0.012210061492891389}]
+Полных прохождений 0/2; stop=False; review hold=False.
+All9source diagnostic figures inspected. Full40 cutoff weightnear1.5THz failsZ3.542;first20near1.7THz failsZ2.916;second20near1.5THz passes. New5 main cutoffnear3.4THz with smaller modesnear1.3and7THz, failscost2.535andcutoff4.255. New5Z0.014doesnotvalidate this failedfit. Fullneff59.740fails. No physicaldrift conclusion;keep officialresults unchanged and do not replace with posthocfits.
+Formal SE excludes model, protocol and cutoff systematics.
+Accumulated estimates and windows20/40ps are correlated; stopping is a heuristic.
+Historical15k and5k remain separate; agreement with5k is not a stop criterion.
+Fixed article profile and the earlier preview snapshot remain unchanged.
+Не проходятneff59.7403<60,cutoff40Z3.5425,first20Z2.9157,new5cost2.5348/cutoff4.2548. SE1.7431%,размах0.5779%,20/40=1.2210%,новыйZ0.0137формальнопроходят. Новыйпакетfitплохой;Zнеподтверждаетнадёжность. Полныхпрохождений0/2. ПриN>=50устойчивойстатистикеи плохойдиагностике—reviewhold;сейчасN40.

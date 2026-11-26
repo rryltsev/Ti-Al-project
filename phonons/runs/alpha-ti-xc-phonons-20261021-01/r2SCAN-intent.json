@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-21T01:25:53.895023+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--job-name=ti-ph-r2SCAN",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-%j.out",
+    "--ntasks=16",
+    "--cpus-per-task=1",
+    "--mem=32G",
+    "--time=12:00:00",
+    "--dependency=afterok:20957235",
+    "--kill-on-invalid-dep=yes",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/production.sbatch",
+    "r2SCAN"
+  ],
+  "state": "submission_intent"
+}

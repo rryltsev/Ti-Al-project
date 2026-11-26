@@ -1,0 +1,262 @@
+{
+  "checked_utc": "2026-11-02T18:57:50.580247+00:00",
+  "results": {
+    "PBEsol": {
+      "path": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/production-04/force-000",
+      "exists": true,
+      "status.json": {
+        "xc": "PBEsol",
+        "step": "force-000",
+        "job_id": "20968907",
+        "state": "validated",
+        "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/recovery-01/force-000",
+        "resources": {
+          "nodes": 2,
+          "ranks": 64,
+          "ranks_per_node": 32,
+          "memory_GiB_per_node": 240,
+          "KPAR": 8,
+          "NCORE": 4,
+          "NBANDS": 576
+        },
+        "cumulative_budget": null,
+        "wall_seconds": 40137.629997201264,
+        "quality": {
+          "energy_eV": -797.63150699,
+          "free_energy_eV": -797.86171042,
+          "max_force_eV_A": 2.973785466371103e-06,
+          "stress_kbar_ASE_tension_positive": [
+            [
+              0.15964361,
+              5.103e-05,
+              -4.9e-07
+            ],
+            [
+              5.103e-05,
+              0.15970375,
+              3.6e-07
+            ],
+            [
+              -4.9e-07,
+              3.6e-07,
+              0.20490801000000003
+            ]
+          ],
+          "max_stress_kbar": 0.20490801000000003,
+          "force_drift_eV_A": [
+            -2.0833333333333243e-10,
+            4.166666666666307e-10,
+            4.411629933616147e-24
+          ],
+          "ionic_steps": 1,
+          "scf_steps": [
+            28
+          ],
+          "volume_A3": 1603.6734178611127,
+          "outputs": {
+            "OUTCAR": "801e591503509e97022ae94d62b42a0e1d9f0c92c43ad0628a878eaa3e50bddc",
+            "vasprun.xml": "0012b105a3c94967c7b93a7853c22224a9f77e8325adac30e9b83ab00632f91c",
+            "CONTCAR": "c9d66dc1d8869d1d8b6cd054254959bddd6a7651f91ed0ed68642d475d6115ed"
+          }
+        }
+      },
+      "validation.json": {
+        "energy_eV": -797.63150699,
+        "free_energy_eV": -797.86171042,
+        "max_force_eV_A": 2.973785466371103e-06,
+        "stress_kbar_ASE_tension_positive": [
+          [
+            0.15964361,
+            5.103e-05,
+            -4.9e-07
+          ],
+          [
+            5.103e-05,
+            0.15970375,
+            3.6e-07
+          ],
+          [
+            -4.9e-07,
+            3.6e-07,
+            0.20490801000000003
+          ]
+        ],
+        "max_stress_kbar": 0.20490801000000003,
+        "force_drift_eV_A": [
+          -2.0833333333333243e-10,
+          4.166666666666307e-10,
+          4.411629933616147e-24
+        ],
+        "ionic_steps": 1,
+        "scf_steps": [
+          28
+        ],
+        "volume_A3": 1603.6734178611127,
+        "outputs": {
+          "OUTCAR": "801e591503509e97022ae94d62b42a0e1d9f0c92c43ad0628a878eaa3e50bddc",
+          "vasprun.xml": "0012b105a3c94967c7b93a7853c22224a9f77e8325adac30e9b83ab00632f91c",
+          "CONTCAR": "c9d66dc1d8869d1d8b6cd054254959bddd6a7651f91ed0ed68642d475d6115ed"
+        }
+      },
+      "OUTCAR_tail": [
+        "                   Maximum memory used (kb):     6981860.",
+        "                   Average memory used (kb):          N/A",
+        "  ",
+        "                          Minor page faults:     27018409",
+        "                          Major page faults:           50",
+        "                 Voluntary context switches:         8266"
+      ],
+      "EDIFF_reached": true,
+      "normal_end": true,
+      "OSZICAR_tail": [
+        "DAV:  24    -0.797861710353E+03   -0.93118E-07   -0.30490E-09 83656   0.277E-04    0.170E-04",
+        "DAV:  25    -0.797861710367E+03   -0.13926E-07   -0.17853E-10 81648   0.145E-04    0.112E-04",
+        "DAV:  26    -0.797861710395E+03   -0.28042E-07    0.45618E-11 80552   0.954E-05    0.804E-05",
+        "DAV:  27    -0.797861710413E+03   -0.17855E-07    0.13159E-09 79800   0.619E-05    0.488E-05",
+        "DAV:  28    -0.797861710422E+03   -0.87166E-08    0.19781E-09 79080   0.416E-05",
+        "   1 F= -.79786171E+03 E0= -.79763151E+03  d E =-.460407E+00"
+      ],
+      "vasp.stdout_tail": [
+        "DAV:  24    -0.797861710353E+03   -0.93118E-07   -0.30490E-09 83656   0.277E-04    0.170E-04",
+        "DAV:  25    -0.797861710367E+03   -0.13926E-07   -0.17853E-10 81648   0.145E-04    0.112E-04",
+        "DAV:  26    -0.797861710395E+03   -0.28042E-07    0.45618E-11 80552   0.954E-05    0.804E-05",
+        "DAV:  27    -0.797861710413E+03   -0.17855E-07    0.13159E-09 79800   0.619E-05    0.488E-05",
+        "DAV:  28    -0.797861710422E+03   -0.87166E-08    0.19781E-09 79080   0.416E-05",
+        "   1 F= -.79786171E+03 E0= -.79763151E+03  d E =-.460407E+00"
+      ],
+      "CHGCAR_bytes": 127578746,
+      "WAVECAR_bytes": 0
+    },
+    "PBE": {
+      "path": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-06/force-000",
+      "exists": true,
+      "status.json": {
+        "xc": "PBE",
+        "step": "force-000",
+        "job_id": "20973061",
+        "state": "validated",
+        "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/recovery-01/force-000",
+        "resources": {
+          "nodes": 2,
+          "ranks": 64,
+          "ranks_per_node": 32,
+          "memory_GiB_per_node": 240,
+          "KPAR": 8,
+          "NCORE": 4,
+          "NBANDS": 576
+        },
+        "cumulative_budget": null,
+        "wall_seconds": 36174.56859847717,
+        "quality": {
+          "energy_eV": -749.03064152,
+          "free_energy_eV": -749.2655437,
+          "max_force_eV_A": 3.3062667768950527e-06,
+          "stress_kbar_ASE_tension_positive": [
+            [
+              0.18255251,
+              0.00014238,
+              -6.1e-07
+            ],
+            [
+              0.00014238,
+              0.18271602,
+              2.5e-07
+            ],
+            [
+              -6.1e-07,
+              2.5e-07,
+              0.20347794
+            ]
+          ],
+          "max_stress_kbar": 0.20347794,
+          "force_drift_eV_A": [
+            -3.124999999999915e-10,
+            1.764651973446459e-23,
+            -2.0833333333334678e-10
+          ],
+          "ionic_steps": 1,
+          "scf_steps": [
+            28
+          ],
+          "volume_A3": 1666.3161722975638,
+          "outputs": {
+            "OUTCAR": "13e35b47477d1c0a59a9a56cb81aebfc627b414cbd86e0d06c970581c63f649a",
+            "vasprun.xml": "1a21abc0c102c295045ddd2bd0a0653cd7ebd2b410c5a0c7ff49f55d2a9384c1",
+            "CONTCAR": "97a62eacd20ac5fbe3af9d4f32958bac56ec15296c05f54d54383cf0c314d131"
+          }
+        }
+      },
+      "validation.json": {
+        "energy_eV": -749.03064152,
+        "free_energy_eV": -749.2655437,
+        "max_force_eV_A": 3.3062667768950527e-06,
+        "stress_kbar_ASE_tension_positive": [
+          [
+            0.18255251,
+            0.00014238,
+            -6.1e-07
+          ],
+          [
+            0.00014238,
+            0.18271602,
+            2.5e-07
+          ],
+          [
+            -6.1e-07,
+            2.5e-07,
+            0.20347794
+          ]
+        ],
+        "max_stress_kbar": 0.20347794,
+        "force_drift_eV_A": [
+          -3.124999999999915e-10,
+          1.764651973446459e-23,
+          -2.0833333333334678e-10
+        ],
+        "ionic_steps": 1,
+        "scf_steps": [
+          28
+        ],
+        "volume_A3": 1666.3161722975638,
+        "outputs": {
+          "OUTCAR": "13e35b47477d1c0a59a9a56cb81aebfc627b414cbd86e0d06c970581c63f649a",
+          "vasprun.xml": "1a21abc0c102c295045ddd2bd0a0653cd7ebd2b410c5a0c7ff49f55d2a9384c1",
+          "CONTCAR": "97a62eacd20ac5fbe3af9d4f32958bac56ec15296c05f54d54383cf0c314d131"
+        }
+      },
+      "OUTCAR_tail": [
+        "                   Maximum memory used (kb):     7256096.",
+        "                   Average memory used (kb):          N/A",
+        "  ",
+        "                          Minor page faults:     26318130",
+        "                          Major page faults:           64",
+        "                 Voluntary context switches:         4392"
+      ],
+      "EDIFF_reached": true,
+      "normal_end": true,
+      "OSZICAR_tail": [
+        "DAV:  24    -0.749265543545E+03   -0.54616E-06   -0.69256E-09 85008   0.348E-04    0.219E-04",
+        "DAV:  25    -0.749265543652E+03   -0.10696E-06   -0.90928E-10 82520   0.235E-04    0.106E-04",
+        "DAV:  26    -0.749265543676E+03   -0.23138E-07   -0.52575E-11 81608   0.987E-05    0.818E-05",
+        "DAV:  27    -0.749265543697E+03   -0.21173E-07    0.14667E-09 80416   0.730E-05    0.453E-05",
+        "DAV:  28    -0.749265543704E+03   -0.68831E-08    0.18978E-09 79528   0.456E-05",
+        "   1 F= -.74926554E+03 E0= -.74903064E+03  d E =-.469804E+00"
+      ],
+      "vasp.stdout_tail": [
+        "DAV:  24    -0.749265543545E+03   -0.54616E-06   -0.69256E-09 85008   0.348E-04    0.219E-04",
+        "DAV:  25    -0.749265543652E+03   -0.10696E-06   -0.90928E-10 82520   0.235E-04    0.106E-04",
+        "DAV:  26    -0.749265543676E+03   -0.23138E-07   -0.52575E-11 81608   0.987E-05    0.818E-05",
+        "DAV:  27    -0.749265543697E+03   -0.21173E-07    0.14667E-09 80416   0.730E-05    0.453E-05",
+        "DAV:  28    -0.749265543704E+03   -0.68831E-08    0.18978E-09 79528   0.456E-05",
+        "   1 F= -.74926554E+03 E0= -.74903064E+03  d E =-.469804E+00"
+      ],
+      "CHGCAR_bytes": 127578746,
+      "WAVECAR_bytes": 0
+    },
+    "r2SCAN": {
+      "path": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-06/force-000",
+      "exists": false
+    }
+  },
+  "r2SCAN_scheduler": "JobId=20973063 JobName=ti2-r2SCAN-force-000 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=892 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=Priority Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-01T15:15:33 EligibleTime=2026-11-01T15:15:33 AccrueTime=2026-11-01T15:15:33 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-02T23:57:51 Scheduler=Main Partition=apollo AllocNode:Sid=umt:3416833 ReqNodeList=(null) ExcNodeList=tesla-a101 NodeList= NumNodes=2-2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v15.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production06-force-000-20973063.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production06-force-000-20973063.out Power= \n"
+}

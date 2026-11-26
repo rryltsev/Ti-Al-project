@@ -1,0 +1,27 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:30:00",
+    "--array=0-2%3",
+    "--no-requeue",
+    "--dependency=afterok:20960400",
+    "--kill-on-invalid-dep=yes",
+    "--job-name=pbe-ti-size9",
+    "--chdir=/home6/u3129/tial-phonons/pbe-checkpoints-20261025-01",
+    "--output=/home6/u3129/tial-phonons/pbe-checkpoints-20261025-01/size9-%A_%a.out",
+    "/home6/u3129/tial-phonons/pbe-checkpoints-20261025-01/size9.sbatch"
+  ],
+  "files": {
+    "phonon_checkpoint_size9.py": "20770e0da239a63a7b6f04dfc5d013c4870c95dd864050dfec6fbe5045d7f174",
+    "size9.sbatch": "9d4f30c6077bbc44abed6d0cd402d1833f0bdcc89b3f3b78602475043cccb287"
+  },
+  "unix": 1792905309.513442
+}

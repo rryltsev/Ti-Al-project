@@ -1,0 +1,28 @@
+{
+  "status": "staged",
+  "unix": 1793940304.2115521,
+  "same_native_checkpoint": {
+    "functional": "r2SCAN",
+    "step": 23200,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\output_model\\ckpt\\model.ckpt-23200.pt",
+    "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+    "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt",
+    "article_checkpoint": true
+  },
+  "physical_protocol_changed": false,
+  "data_changed": false,
+  "completed_replicas": 0,
+  "code_changes": {
+    "workflow.py": {
+      "before": "931ffb454a5ab6be0a46d5a4ecf96a249d3b67edc336692c0f707f7f88f98f6f",
+      "after": "f88634040f153de7676a1acf4094c34a06d9b73997d3922d2fdab1aace9ded70"
+    },
+    "bootstrap_gpu.py": {
+      "before": null,
+      "after": "30a2cbec151e88264964140e865cf899760b55108ee32fef1792f2ea389e5708"
+    }
+  },
+  "dispatcher_before": "f8de4e6facfc44a19cc864a4405e1e8e87d6d1c3b53beb20bf5b725597d55263",
+  "dispatcher_after": "e47c2f181277365242832b262575f3d5aacd087aed982a058d035719bdb07cb7",
+  "method": "freeze_sezm_to_pt2 on cuda:0 within same20988268; validate same-checkpoint E/F/virial on all4initialstructures before MD"
+}

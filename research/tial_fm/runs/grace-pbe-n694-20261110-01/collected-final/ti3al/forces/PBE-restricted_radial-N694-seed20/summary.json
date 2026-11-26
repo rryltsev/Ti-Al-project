@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-restricted_radial-N694-seed20",
+    "backend": "GRACE",
+    "method": "restricted_radial",
+    "N": 694,
+    "seed": 20,
+    "XC": "PBE",
+    "model": "/home6/u3129/tial-fm-research/grace-pbe-n694-20261110-01/cases/PBE-restricted_radial-N694-seed20"
+  },
+  "job_id": "20991889",
+  "structures": 25,
+  "seconds": 0.4214490223675966,
+  "geometry_sha256": "d01b28dd6035a16a7e6ec7c3f7461b194ed28df1c2c5f3310ef690ff574ed628",
+  "predictions_sha256": "004f1403c9452bd56e08531d3e733e74be0042e01314523ab6c3e6ed9a4aa7ea",
+  "max_residual_force_eV_A": 0.09096238566994456,
+  "residual_stress_GPa": [
+    [
+      -1.2241793692528347,
+      3.278147286991564e-15,
+      -8.446246836381326e-16
+    ],
+    [
+      3.278147286991564e-15,
+      -1.2243694508865877,
+      -1.0035144756096626e-16
+    ],
+    [
+      -8.446246836381326e-16,
+      -1.0035144756096626e-16,
+      -0.26352836006577823
+    ]
+  ],
+  "checkpoint_hashes": {
+    "checkpoint.index": "7dd4855c2d0376097db42313e2f5091660eb29045e7547f15b0515c654fba3ba",
+    "checkpoint.data-00000-of-00001": "0ed255038655bc64cb29b4d40fa266c92cdd7cd2adac0757cfdfc10fc4213719"
+  }
+}

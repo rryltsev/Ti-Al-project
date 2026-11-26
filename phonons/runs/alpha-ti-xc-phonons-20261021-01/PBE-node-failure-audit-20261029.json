@@ -1,0 +1,23 @@
+{
+  "job_id": "20964089",
+  "state": "NODE_FAIL",
+  "start_local": "2026-10-29T08:42:28+05:00",
+  "end_local": "2026-10-29T13:14:15+05:00",
+  "nodes": [
+    "apollo20",
+    "apollo22"
+  ],
+  "completed_SCF_steps": 7,
+  "new_clean_checkpoint": false,
+  "last_durable_checkpoint_job": "20959753",
+  "recovery_job": "20968908",
+  "excluded_nodes_in_recovery": [
+    "tesla-a101",
+    "apollo22"
+  ],
+  "node_reboot_evidence": {
+    "apollo22_boot": "2026-10-29T13:13:26+05:00",
+    "apollo22_slurmd_start": "2026-10-29T13:14:15+05:00"
+  },
+  "cause_assessment": "NODE_FAIL is confirmed by scheduler; reboot of apollo22 coincides with failure. Exact hardware/root cause requires Slurm administrator logs. Stale status.json running must not override terminal scheduler state."
+}

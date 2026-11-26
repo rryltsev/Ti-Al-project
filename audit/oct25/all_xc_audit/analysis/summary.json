@@ -1,0 +1,130 @@
+{
+  "status": "complete",
+  "models": 15,
+  "main_tasks": 63,
+  "extra_tasks": 10,
+  "new_cpu_core_hours": 21.214444444444446,
+  "test_common": 20,
+  "test_additional_PBE": 12,
+  "test_additional_PBEsol": 11,
+  "new_train_validation_predictions": 9955,
+  "liquid_frames_per_checkpoint": 250,
+  "checkpoint_changes": [
+    {
+      "key": "PBE-15000",
+      "baseline": "PBE-5000",
+      "max_mixing_energy_change_kJ_mol": 0.7652387979763887,
+      "max_pressure_change_GPa": 0.08830114593443229,
+      "max_relative_force_change_percent": 2.1585795201088054,
+      "max_equilibrium_volume_change_percent": 0.19229185324288744,
+      "bcc_hcp_gap_change_meV_atom": -9.113073348999023,
+      "DOS_fixed_vs_article": {
+        "L2_relative": 0.1274795592740619,
+        "TV": 0.04949962718323017,
+        "W1_THz": 0.07730912818554142,
+        "mean_THz": 5.364313125000001,
+        "peak_THz": 6.9135
+      },
+      "DOS_equilibrium_vs_article": {
+        "L2_relative": 0.1251498814583589,
+        "TV": 0.05022825440068826,
+        "W1_THz": 0.08214453281762749,
+        "mean_THz": 5.487346784722222,
+        "peak_THz": 7.0805
+      }
+    },
+    {
+      "key": "PBE-20000",
+      "baseline": "PBE-5000",
+      "max_mixing_energy_change_kJ_mol": 0.7169472935313792,
+      "max_pressure_change_GPa": 0.15548795037331212,
+      "max_relative_force_change_percent": 2.3235060805963816,
+      "max_equilibrium_volume_change_percent": 0.20442499729376173,
+      "bcc_hcp_gap_change_meV_atom": 0.9853839874267578,
+      "DOS_fixed_vs_article": {
+        "L2_relative": 0.15602761645050375,
+        "TV": 0.057374596118060714,
+        "W1_THz": 0.05245925000000032,
+        "mean_THz": 5.492148374999999,
+        "peak_THz": 7.0375000000000005
+      },
+      "DOS_equilibrium_vs_article": {
+        "L2_relative": 0.14192136635594835,
+        "TV": 0.05086873860688601,
+        "W1_THz": 0.042967548196878105,
+        "mean_THz": 5.609786069444445,
+        "peak_THz": 7.1915000000000004
+      }
+    },
+    {
+      "key": "PBE-23400",
+      "baseline": "PBE-5000",
+      "max_mixing_energy_change_kJ_mol": 0.7411893500000551,
+      "max_pressure_change_GPa": 0.14375439552646774,
+      "max_relative_force_change_percent": 2.3241066325240665,
+      "max_equilibrium_volume_change_percent": 0.19296196614747574,
+      "bcc_hcp_gap_change_meV_atom": -0.027477741241455078,
+      "DOS_fixed_vs_article": {
+        "L2_relative": 0.14885980850351166,
+        "TV": 0.053058842018579466,
+        "W1_THz": 0.04245062291543214,
+        "mean_THz": 5.4794629652777775,
+        "peak_THz": 7.024500000000001
+      },
+      "DOS_equilibrium_vs_article": {
+        "L2_relative": 0.13732906423946095,
+        "TV": 0.048622554995473174,
+        "W1_THz": 0.03818126278881625,
+        "mean_THz": 5.597167416666666,
+        "peak_THz": 7.1785000000000005
+      }
+    },
+    {
+      "key": "PBEsol-20000",
+      "baseline": "PBEsol-23100",
+      "max_mixing_energy_change_kJ_mol": 0.036202691531289674,
+      "max_pressure_change_GPa": 0.060654137426426995,
+      "max_relative_force_change_percent": 0.3289021873217423,
+      "max_equilibrium_volume_change_percent": 0.06001528735761763,
+      "bcc_hcp_gap_change_meV_atom": 2.1152496337890625,
+      "DOS_fixed_vs_article": {
+        "L2_relative": 0.02345148758470016,
+        "TV": 0.008696070338974522,
+        "W1_THz": 0.01849707941302517,
+        "mean_THz": 5.327306506944446,
+        "peak_THz": 6.809500000000001
+      },
+      "DOS_equilibrium_vs_article": {
+        "L2_relative": 0.027877366117014416,
+        "TV": 0.010137257431864298,
+        "W1_THz": 0.02082545711028725,
+        "mean_THz": 5.659065972222223,
+        "peak_THz": 7.3895
+      }
+    },
+    {
+      "key": "r2SCAN-20000",
+      "baseline": "r2SCAN-23200",
+      "max_mixing_energy_change_kJ_mol": 0.0035597469196151648,
+      "max_pressure_change_GPa": 0.03959024464854108,
+      "max_relative_force_change_percent": 0.38101571873015866,
+      "max_equilibrium_volume_change_percent": 0.08135289461512762,
+      "bcc_hcp_gap_change_meV_atom": -3.0840039253234863,
+      "DOS_fixed_vs_article": {
+        "L2_relative": 0.019225811926773334,
+        "TV": 0.006258685689924361,
+        "W1_THz": 0.007157625963089862,
+        "mean_THz": 5.798268291666667,
+        "peak_THz": 7.604500000000001
+      },
+      "DOS_equilibrium_vs_article": {
+        "L2_relative": 0.020512850096555527,
+        "TV": 0.006397899555172788,
+        "W1_THz": 0.007820522025980834,
+        "mean_THz": 5.9083753055555555,
+        "peak_THz": 7.7795
+      }
+    }
+  ],
+  "recommendation": "Prioritize PBE sensitivity MD comparing 15k/20k to article 5k. PBEsol 20k is an energy-accuracy candidate, but no blanket property rerun is justified by the small paired changes. Retain r2SCAN final unless subsequent same-functional DFT evidence changes the assessment. No automatic model substitution."
+}

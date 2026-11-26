@@ -1,0 +1,473 @@
+{
+  "energy_convention": "H=N*J0/2 + J1*sum_i s_i + sum_a J_a*sum_C product_i(s_i); spin Ti=-1 Al=+1; representatives in coordinate basis from original lat.in; exact source files retained",
+  "original_lat_in": "1 0 0\n0.5 0.8660254037844386 0\n0 0 1.6000000000000001\n1 0 0\n0 1 0\n0 0 1\n0 0 0 Ti,Al\n0.33333333333333331 0.33333333333333331 0.5 Ti,Al\n",
+  "reference_volume_A3_atom": 17.288329847774033,
+  "orbits": [
+    {
+      "index": 0,
+      "name": "empty",
+      "order": 0,
+      "native_multiplicity_per_primitive_cell": 1,
+      "multiplicity_per_atom": 0.5,
+      "representative_fractional_sites": [],
+      "J_static_eV": -12.103178879517705,
+      "delta_J_vibrational_1000K_eV": -0.6699942224609892
+    },
+    {
+      "index": 1,
+      "name": "point",
+      "order": 1,
+      "native_multiplicity_per_primitive_cell": 2,
+      "multiplicity_per_atom": 1.0,
+      "representative_fractional_sites": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "J_static_eV": 2.082704391231822,
+      "delta_J_vibrational_1000K_eV": 0.010945987790312639
+    },
+    {
+      "index": 2,
+      "name": "p1",
+      "order": 2,
+      "native_multiplicity_per_primitive_cell": 6,
+      "multiplicity_per_atom": 3.0,
+      "representative_fractional_sites": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.33333333333333,
+          1.33333333333333,
+          0.5
+        ]
+      ],
+      "J_static_eV": 0.049157661094112966,
+      "delta_J_vibrational_1000K_eV": -0.005460885756863404
+    },
+    {
+      "index": 3,
+      "name": "p2",
+      "order": 2,
+      "native_multiplicity_per_primitive_cell": 6,
+      "multiplicity_per_atom": 3.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          0.5
+        ]
+      ],
+      "J_static_eV": 0.03559367210837004,
+      "delta_J_vibrational_1000K_eV": -0.0036995320694775333
+    },
+    {
+      "index": 4,
+      "name": "p3",
+      "order": 2,
+      "native_multiplicity_per_primitive_cell": 6,
+      "multiplicity_per_atom": 3.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          1.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "J_static_eV": -0.00866629013537479,
+      "delta_J_vibrational_1000K_eV": 0.0015545140801754998
+    },
+    {
+      "index": 5,
+      "name": "p4",
+      "order": 2,
+      "native_multiplicity_per_primitive_cell": 2,
+      "multiplicity_per_atom": 1.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.33333333333333,
+          0.33333333333333,
+          -0.5
+        ]
+      ],
+      "J_static_eV": 0.02259929158934458,
+      "delta_J_vibrational_1000K_eV": -0.007683555831978271
+    },
+    {
+      "index": 6,
+      "name": "p5",
+      "order": 2,
+      "native_multiplicity_per_primitive_cell": 12,
+      "multiplicity_per_atom": 6.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "J_static_eV": 0.002466345785437146,
+      "delta_J_vibrational_1000K_eV": 0.00023689813085748255
+    },
+    {
+      "index": 7,
+      "name": "p6",
+      "order": 2,
+      "native_multiplicity_per_primitive_cell": 6,
+      "multiplicity_per_atom": 3.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          1.33333333333333,
+          -1.66666666666667,
+          0.5
+        ]
+      ],
+      "J_static_eV": 0.008391885328573242,
+      "delta_J_vibrational_1000K_eV": -0.001070211239604147
+    },
+    {
+      "index": 8,
+      "name": "p7",
+      "order": 2,
+      "native_multiplicity_per_primitive_cell": 12,
+      "multiplicity_per_atom": 6.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          -0.5
+        ]
+      ],
+      "J_static_eV": -0.004803671848814926,
+      "delta_J_vibrational_1000K_eV": 0.0014569192980440344
+    },
+    {
+      "index": 9,
+      "name": "t112",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 12,
+      "multiplicity_per_atom": 6.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          0.5
+        ]
+      ],
+      "J_static_eV": -0.00030782845868172727,
+      "delta_J_vibrational_1000K_eV": 0.001261024847272808
+    },
+    {
+      "index": 10,
+      "name": "t114",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 6,
+      "multiplicity_per_atom": 3.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          -0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.33333333333333,
+          0.33333333333333,
+          -0.5
+        ]
+      ],
+      "J_static_eV": 0.004293731578849003,
+      "delta_J_vibrational_1000K_eV": -0.001626970472713745
+    },
+    {
+      "index": 11,
+      "name": "t117",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 12,
+      "multiplicity_per_atom": 6.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          -0.5
+        ]
+      ],
+      "J_static_eV": -0.004359792831788624,
+      "delta_J_vibrational_1000K_eV": 0.001277282549863712
+    },
+    {
+      "index": 12,
+      "name": "t123",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 24,
+      "multiplicity_per_atom": 12.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "J_static_eV": 0.0015697536480158297,
+      "delta_J_vibrational_1000K_eV": -0.00047166335469799535
+    },
+    {
+      "index": 13,
+      "name": "t125",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 24,
+      "multiplicity_per_atom": 12.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "J_static_eV": 0.0007412831090727066,
+      "delta_J_vibrational_1000K_eV": 0.00010965195877717896
+    },
+    {
+      "index": 14,
+      "name": "t136",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 12,
+      "multiplicity_per_atom": 6.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          1.0,
+          -1.0,
+          0.0
+        ],
+        [
+          1.33333333333333,
+          -1.66666666666667,
+          0.5
+        ]
+      ],
+      "J_static_eV": 0.001305358152706263,
+      "delta_J_vibrational_1000K_eV": -0.00012366425933303888
+    },
+    {
+      "index": 15,
+      "name": "t222_capped",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 2,
+      "multiplicity_per_atom": 1.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          -0.66666666666667,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          0.5
+        ]
+      ],
+      "J_static_eV": 0.004106936221605931,
+      "delta_J_vibrational_1000K_eV": -0.0003799462895857117
+    },
+    {
+      "index": 16,
+      "name": "t222_uncapped",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 2,
+      "multiplicity_per_atom": 1.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          1.33333333333333,
+          -0.66666666666667,
+          0.5
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          0.5
+        ]
+      ],
+      "J_static_eV": -0.008825283808960848,
+      "delta_J_vibrational_1000K_eV": 0.0026007126975127626
+    },
+    {
+      "index": 17,
+      "name": "t226",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 12,
+      "multiplicity_per_atom": 6.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          0.5
+        ],
+        [
+          1.33333333333333,
+          -1.66666666666667,
+          0.5
+        ]
+      ],
+      "J_static_eV": 0.0017743407113442388,
+      "delta_J_vibrational_1000K_eV": -0.00015616019658172445
+    },
+    {
+      "index": 18,
+      "name": "t247",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 24,
+      "multiplicity_per_atom": 12.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          0.5
+        ],
+        [
+          0.33333333333333,
+          -0.66666666666667,
+          -0.5
+        ]
+      ],
+      "J_static_eV": -1.806087160834309e-05,
+      "delta_J_vibrational_1000K_eV": -0.00011776611688280963
+    },
+    {
+      "index": 19,
+      "name": "t334",
+      "order": 3,
+      "native_multiplicity_per_primitive_cell": 6,
+      "multiplicity_per_atom": 3.0,
+      "representative_fractional_sites": [
+        [
+          0.33333333333333,
+          0.33333333333333,
+          0.5
+        ],
+        [
+          1.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.33333333333333,
+          0.33333333333333,
+          -0.5
+        ]
+      ],
+      "J_static_eV": -0.0007264846558283245,
+      "delta_J_vibrational_1000K_eV": 0.0002051576046536354
+    }
+  ],
+  "physical_reference_cell": {
+    "a_A": 2.9446246338677957,
+    "axial_c_A": 4.6046064979104635,
+    "axes_convention": "positive60degree basal vectors, basis[0,0,0] and[1/3,1/3,1/2]",
+    "use": "MTP referencecell for energy/phonons"
+  },
+  "geometry_metric_note": "The original normalized ATAT lat.in uses c/a1.6 for geometric embedding enumeration. Do not use that metric as the physical MTP energy cell. Isotropic volume changes preserve the physical referencec/a."
+}

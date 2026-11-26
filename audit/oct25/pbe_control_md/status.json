@@ -1,0 +1,65 @@
+{
+  "logs": {
+    "production-20960536_5.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nequilibration 0 2000.0 2.038\nequilibration 1000 1940.3 2.0947\n",
+    "production-20960536_6.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nequilibration 0 2000.0 3.7865\nequilibration 1000 2019.2 3.7432\n",
+    "production-20960536_0.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nequilibration 0 2000.0 4.2429\nslurmstepd: error: *** JOB 20960537 ON apollo16 CANCELLED AT 2026-10-25T13:49:17 ***\n",
+    "preflight-20960534_4294967294.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\nYou can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nbenchmark 0 2000.0 3.7865\nYou can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\nbenchmark 0 2000.0 3.7865\n{\"status\": \"passed\", \"checks\": [{\"composition\": \"Ti\", \"E_match\": true}, {\"composition\": \"Al\", \"E_match\": true}, {\"composition\": \"Al0.3Ti0.7\", \"E_match\": true}, {\"composition\": \"Al0.5Ti0.5\", \"E_match\": true}], \"benchmarks\": [{\"checkpoint\": 15000, \"seconds_200_steps\": 110.99384727701545, \"projected_60ps_hours\": 9.24948727308462}, {\"checkpoint\": 20000, \"seconds_200_steps\": 110.96245526708663, \"projected_60ps_hours\": 9.246871272257218}], \"versions\": {\"ase\": \"3.29.0\", \"deepmd-kit\": \"3.2.0\", \"torch\": \"2.11.0\", \"numpy\": \"2.5.3\"}, \"protocol_sha256\": \"a2468d0677bb716f450dd535c8f1f60de2b8621785181d164eb92edf13a2d5c5\"}\n",
+    "production-20960536_4.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nequilibration 0 2000.0 4.2429\nequilibration 1000 2084.0 4.2088\n",
+    "production-20960536_1.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nequilibration 0 2000.0 2.038\nslurmstepd: error: *** JOB 20960538 ON apollo16 CANCELLED AT 2026-10-25T13:49:17 ***\n",
+    "production-20960536_7.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nequilibration 0 2000.0 3.2853\nequilibration 1000 1827.1 3.3351\nequilibration 2000 2004.4 3.2599\n",
+    "production-20960536_2.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nequilibration 0 2000.0 3.7865\nslurmstepd: error: *** JOB 20960539 ON apollo16 CANCELLED AT 2026-10-25T13:49:17 ***\n",
+    "production-20960536_3.out": "You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.\n/misc/home6/u3129/tial-testsets/pbe-control-md-20261025-01/control_md_worker.py:46: DeprecationWarning: Use thermalize_momenta\n  MaxwellBoltzmannDistribution(a,temperature_K=cfg['T_K'],force_temp=True,rng=np.random.RandomState(seed));Stationary(a)\nequilibration 0 2000.0 3.2853\nslurmstepd: error: *** JOB 20960540 ON apollo14 CANCELLED AT 2026-10-25T13:49:17 ***\n"
+  },
+  "preflight": {
+    "status": "passed",
+    "checks": [
+      {
+        "composition": "Ti",
+        "E_match": true
+      },
+      {
+        "composition": "Al",
+        "E_match": true
+      },
+      {
+        "composition": "Al0.3Ti0.7",
+        "E_match": true
+      },
+      {
+        "composition": "Al0.5Ti0.5",
+        "E_match": true
+      }
+    ],
+    "benchmarks": [
+      {
+        "checkpoint": 15000,
+        "seconds_200_steps": 110.99384727701545,
+        "projected_60ps_hours": 9.24948727308462
+      },
+      {
+        "checkpoint": 20000,
+        "seconds_200_steps": 110.96245526708663,
+        "projected_60ps_hours": 9.246871272257218
+      }
+    ],
+    "versions": {
+      "ase": "3.29.0",
+      "deepmd-kit": "3.2.0",
+      "torch": "2.11.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_sha256": "a2468d0677bb716f450dd535c8f1f60de2b8621785181d164eb92edf13a2d5c5"
+  },
+  "progress": {
+    "results/7/equilibration-thermo.jsonl": "{\"step\": 2470, \"time_ps\": 2.47, \"Epot_eV_atom\": -5.592713254146079, \"Ekin_eV_atom\": 0.24353941621461123, \"H_external_eV_atom\": -5.349162276503041, \"H_instantaneous_eV_atom\": -5.265622050906623, \"H_legacy_eV_atom\": -5.432725624956312, \"T_K\": 1884.105685359759, \"P_GPa\": 0.7226770252158796, \"V_A3_atom\": 18.52345032793568, \"rho_g_cm3\": 3.3549074296844394}",
+    "results/4/equilibration-thermo.jsonl": "{\"step\": 1480, \"time_ps\": 1.48, \"Epot_eV_atom\": -7.351244825405116, \"Ekin_eV_atom\": 0.2473340325699066, \"H_external_eV_atom\": -7.103899183074287, \"H_instantaneous_eV_atom\": -7.077156589743212, \"H_legacy_eV_atom\": -7.130664995927208, \"T_K\": 1913.4621581636147, \"P_GPa\": 0.23044577116672565, \"V_A3_atom\": 18.600887525560665, \"rho_g_cm3\": 4.273184459167164}",
+    "results/6/equilibration-thermo.jsonl": "{\"step\": 1280, \"time_ps\": 1.28, \"Epot_eV_atom\": -6.331787300826882, \"Ekin_eV_atom\": 0.2843378237024127, \"H_external_eV_atom\": -6.0474378024444935, \"H_instantaneous_eV_atom\": -6.066439320904591, \"H_legacy_eV_atom\": -6.028459633344347, \"T_K\": 2199.73636517404, \"P_GPa\": -0.16265836682737722, \"V_A3_atom\": 18.7048993117235, \"rho_g_cm3\": 3.6931867382054846}",
+    "results/2/equilibration-thermo.jsonl": "{\"step\": 180, \"time_ps\": 0.18, \"Epot_eV_atom\": -6.340378360086952, \"Ekin_eV_atom\": 0.24746745418782887, \"H_external_eV_atom\": -6.092899412256182, \"H_instantaneous_eV_atom\": -6.033848446779698, \"H_legacy_eV_atom\": -6.151973365018548, \"T_K\": 1914.4943542359572, \"P_GPa\": 0.5138706624459598, \"V_A3_atom\": 18.414846007685806, \"rho_g_cm3\": 3.751358336023767}",
+    "results/0/equilibration-thermo.jsonl": "{\"step\": 210, \"time_ps\": 0.21, \"Epot_eV_atom\": -7.353000245374675, \"Ekin_eV_atom\": 0.2678335308273101, \"H_external_eV_atom\": -7.085155118482176, \"H_instantaneous_eV_atom\": -7.0708336973751535, \"H_legacy_eV_atom\": -7.099499731719577, \"T_K\": 2072.053411333742, \"P_GPa\": 0.1236024197844018, \"V_A3_atom\": 18.578944537573978, \"rho_g_cm3\": 4.278231378547475}",
+    "results/3/equilibration-thermo.jsonl": "{\"step\": 350, \"time_ps\": 0.35000000000000003, \"Epot_eV_atom\": -5.618649118743638, \"Ekin_eV_atom\": 0.24868573827321602, \"H_external_eV_atom\": -5.369951884362768, \"H_instantaneous_eV_atom\": -5.31346792529264, \"H_legacy_eV_atom\": -5.426458835648203, \"T_K\": 1923.9194239324308, \"P_GPa\": 0.49143115984048985, \"V_A3_atom\": 18.41879491253175, \"rho_g_cm3\": 3.373969981407433}",
+    "results/1/equilibration-thermo.jsonl": "{\"step\": 230, \"time_ps\": 0.23, \"Epot_eV_atom\": -3.3297408602857206, \"Ekin_eV_atom\": 0.2562745531860161, \"H_external_eV_atom\": -3.0734527936943605, \"H_instantaneous_eV_atom\": -3.109304025568171, \"H_legacy_eV_atom\": -3.0376285886312377, \"T_K\": 1982.6291373110234, \"P_GPa\": -0.26520123948515306, \"V_A3_atom\": 21.650862109263976, \"rho_g_cm3\": 2.069381742404209}",
+    "results/5/equilibration-thermo.jsonl": "{\"step\": 1620, \"time_ps\": 1.62, \"Epot_eV_atom\": -3.3470577959441754, \"Ekin_eV_atom\": 0.2619982798631196, \"H_external_eV_atom\": -3.085046405262288, \"H_instantaneous_eV_atom\": -3.0272208185803673, \"H_legacy_eV_atom\": -3.1428982135817445, \"T_K\": 2026.9098789724585, \"P_GPa\": 0.4411524446011239, \"V_A3_atom\": 21.005847309066574, \"rho_g_cm3\": 2.1329250897145973}",
+    "preflight/15000/benchmark-thermo.jsonl": "{\"step\": 200, \"time_ps\": 0.2, \"Epot_eV_atom\": -6.376307075479899, \"Ekin_eV_atom\": 0.25499817850368406, \"H_external_eV_atom\": -6.121297462434751, \"H_instantaneous_eV_atom\": -6.090396245581137, \"H_legacy_eV_atom\": -6.152221548371292, \"T_K\": 1972.754658538717, \"P_GPa\": 0.2703444776829355, \"V_A3_atom\": 18.320155002470553, \"rho_g_cm3\": 3.770747904054867}",
+    "preflight/20000/benchmark-thermo.jsonl": "{\"step\": 200, \"time_ps\": 0.2, \"Epot_eV_atom\": -6.378136639008199, \"Ekin_eV_atom\": 0.25479268002303557, \"H_external_eV_atom\": -6.123332522825593, \"H_instantaneous_eV_atom\": -6.088000257796315, \"H_legacy_eV_atom\": -6.158687660174011, \"T_K\": 1971.164850770674, \"P_GPa\": 0.309052186393245, \"V_A3_atom\": 18.322747493932937, \"rho_g_cm3\": 3.7702143797157204}"
+  }
+}

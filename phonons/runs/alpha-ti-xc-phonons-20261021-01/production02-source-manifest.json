@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-21T13:48:55.401926+00:00",
+  "policy": {
+    "revision": "production-02",
+    "authorization": "User: \u0420\u0491\u0420\u00b0\u0420\u0406\u0420\u00b0\u0420\u2116 \u0420\u0405\u0420\u00b5 \u0420\u0491\u0421\u0453\u0420\u0458\u0420\u00b0\u0421\u201a\u0421\u040a \u0420\u0455 \u0420\u00bb\u0420\u0451\u0420\u0458\u0420\u0451\u0421\u201a\u0420\u00b0\u0421\u2026, \u0420\u0456\u0420\u00bb\u0420\u00b0\u0420\u0406\u0420\u0405\u0420\u0455\u0420\u00b5 - \u0420\u0406\u0421\u2039\u0420\u0457\u0420\u0455\u0420\u00bb\u0420\u0405\u0420\u0451\u0421\u201a\u0421\u040a \u0420\u00b7\u0420\u00b0\u0420\u0491\u0420\u00b0\u0421\u2021\u0421\u0453. \u0420\u045b\u0421\u201a\u0420\u0458\u0420\u00b5\u0420\u0405\u0420\u0451 \u0420\u0406\u0420\u0455\u0420\u0455\u0420\u00b1\u0421\u2030\u0420\u00b5 \u0420\u00bb\u0420\u0451\u0420\u0458\u0420\u0451\u0421\u201a\u0421\u2039 \u0420\u0457\u0420\u0455 \u0421\u0402\u0420\u00b5\u0421\u0403\u0421\u0453\u0421\u0402\u0421\u0403\u0420\u00b0\u0420\u0458",
+    "authorized_local_date": "2026-10-21",
+    "maximum_cumulative_CPU_hours": null,
+    "agent_imposed_elapsed_deadline": null,
+    "partition": "apollo",
+    "account": "imet-2026-2",
+    "qos": "normal",
+    "scheduler_max_walltime_per_job": "20:00:00",
+    "standard": {
+      "nodes": 1,
+      "ranks": 32,
+      "ranks_per_node": 32,
+      "memory_GiB_per_node": 300,
+      "KPAR": 4,
+      "NCORE": 4,
+      "NBANDS": 576
+    },
+    "dense_kmesh": {
+      "nodes": 2,
+      "ranks": 64,
+      "ranks_per_node": 32,
+      "memory_GiB_per_node": 300,
+      "KPAR": 4,
+      "NCORE": 4,
+      "NBANDS": 576
+    },
+    "steps": [
+      "force-001",
+      "force-002",
+      "force-000",
+      "check-cutoff",
+      "check-kmesh",
+      "check-smearing"
+    ],
+    "continuation": "Each calculation is a separate Slurm job. Submit subsequent steps after validating completed steps. No cumulative budget gate. Do not repeat failed settings unchanged.",
+    "checkpoint_policy": "Keep CHGCAR for charge-density restart. WAVECAR disabled to respect the real 100 GiB storage quota; inspect storage before enabling wavefunction checkpoints.",
+    "scientific_settings_source": "Original immutable remote protocol.json; local protocol.json now records the new resource authorization. Physical settings unchanged."
+  },
+  "files": {
+    "execution-policy-02.json": "a90db9e0963e7d5d810cd42dc99415c1edac4029ded2be01c95f78a7f9352598",
+    "production_step.py": "b405856136c1173c2a87882990f28587053d7d5b476a7c72f932874d23b3f6ec",
+    "production-step.sbatch": "307ecdc49a5b6e91da9315f7abd1d7cd3da2f9d6d3785f29df353af7ef1da7ee"
+  }
+}

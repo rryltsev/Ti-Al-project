@@ -1,0 +1,6 @@
+{
+  "job_id": "20988440",
+  "remote_root": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02",
+  "utc": "2026-11-06T09:51:36.490070+00:00",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && test ! -e baseline-submission.txt && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=24G --time=00:45:00 --job-name=TiAl-FM-B0-H0 --output=baseline-%j.log baseline.sbatch | tee baseline-submission.txt"
+}

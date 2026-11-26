@@ -1,0 +1,20 @@
+{
+  "key": "prepare-v2",
+  "job_id": "20991462",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=apollo",
+    "--mem=8G",
+    "--time=00:05:00",
+    "--job-name=Ti3Al-PBE-prepare",
+    "--output=prepare-%j.log",
+    "cpu.sbatch",
+    "prepare"
+  ],
+  "utc": "2026-11-09T17:02:35.249539+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "revision": "production-04",
+  "authorization": "Uncapped cumulative compute authorized 2026-10-21; Apollo-only required 2026-10-24; normal job walltime 20h.",
+  "authorized_local_date": "2026-10-21",
+  "maximum_cumulative_CPU_hours": null,
+  "agent_imposed_elapsed_deadline": null,
+  "partition": "apollo",
+  "account": "imet-2026-2",
+  "qos": "normal",
+  "scheduler_max_walltime_per_job": "20:00:00",
+  "standard": {
+    "nodes": 2,
+    "ranks": 64,
+    "ranks_per_node": 32,
+    "memory_GiB_per_node": 240,
+    "KPAR": 8,
+    "NCORE": 4,
+    "NBANDS": 576
+  },
+  "dense_kmesh": {
+    "nodes": 2,
+    "ranks": 64,
+    "ranks_per_node": 32,
+    "memory_GiB_per_node": 240,
+    "KPAR": 4,
+    "NCORE": 4,
+    "NBANDS": 576
+  },
+  "steps": [
+    "force-002",
+    "force-000",
+    "check-cutoff",
+    "check-kmesh",
+    "check-smearing"
+  ],
+  "continuation": "Each calculation is a separate Slurm job. Submit subsequent steps after validating completed steps. No cumulative budget gate. Do not repeat failed settings unchanged.",
+  "checkpoint_policy": "Minimum 8h reserve; max(8h, 2*recent SCF maximum + 3h finalization). Preserve densities; no wavefunction storage change.",
+  "scientific_settings_source": "Original immutable remote protocol.json; local protocol.json now records the new resource authorization. Physical settings unchanged.",
+  "reason": "Continue PBEsol after independently validated production-03 force-001; reuse successful 64 MPI / KPAR8 layout"
+}

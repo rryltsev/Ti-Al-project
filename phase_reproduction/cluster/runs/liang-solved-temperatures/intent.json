@@ -1,0 +1,27 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/liang-solved-temperatures",
+  "utc": "2026-11-25T17:14:55.065512+00:00",
+  "job_name": "ta-liang-solved-temperatures",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=4G",
+    "--time=15",
+    "--job-name=ta-liang-solved-temperatures",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "2347db6a149fb6aa37f36aaf49261676ada487717cc9b2d7baff8c29be83b6a8",
+    "liang.py": "4d6c71d2db602866867a64755b6a107760c6545d40560e8903b4d6e691d4803b",
+    "Liang2024.tdb": "badf3611150a5037baf39fb270bfb4005e1e15bc67136b66947cf630cfacec1e"
+  }
+}

@@ -1,0 +1,10 @@
+r2SCAN 1941 K: 15 legacy20ps + 5 new40ps = 20 replica clusters, 25 windows.
+Combined20ps eta=3.650366953, formalSE=0.142143066, clusterSE=0.135147700, adoptedSE=0.142143066 mPa s.
+Previous=3.559972048 +/- 0.171550590; mean change 2.539%; SE change -17.142%.
+New5 matched20ps=3.738258176 +/- 0.230028052, Z vs previous=0.621306.
+40ps 3.708738105 +/- 0.220839870 mPa s
+first20ps 2.837093881 +/- 0.260925497 mPa s
+second20ps 4.345289520 +/- 0.415391937 mPa s
+Combined adopted precision 3.894% > 3%; last-three stability unavailable (only baseline and first block). Combined costZ 0.586 and cutoffZ 0.011 pass. First20 cutoffZ 4.480 fails; max20/40 difference 23.50%. Correlated windows and adaptive fits do not establish physical drift. New40 and new_batch40 are identical at Nnew5. Different preparations/common reservoir limit independence; errors exclude model systematics.
+All five new raw SHA, protocol/checkpoint/GPU identity and preflight checked by fresh collector; one A100, 512Ti, dt1fs/40ps; own V/(kB*T), bar to Pa and five shear channels verified in analysis code.
+No PBE restart, new sbatch, article/profile mutation, or finite-plan extension.

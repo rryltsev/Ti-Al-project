@@ -1,0 +1,30 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--nodelist=apollo31",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:20:00",
+    "--array=3-7%4",
+    "--no-requeue",
+    "--job-name=pbe-train-retry",
+    "--chdir=/home6/u3129/tial-testsets/pbe-train-diagnostic-20261025-01",
+    "--output=/home6/u3129/tial-testsets/pbe-train-diagnostic-20261025-01/inference-%A_%a.out",
+    "/home6/u3129/tial-testsets/pbe-train-diagnostic-20261025-01/job.sbatch"
+  ],
+  "unix": 1792899150.2329798,
+  "reason": "CPU ISA incompatibility of frozen AOT export on apollo11; unchanged inputs on validated apollo31",
+  "failed_tasks": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

@@ -1,0 +1,55 @@
+\section*{Расчётные данные и воспроизведение}
+\label{sec:archive}
+Данные организованы относительно каталога проекта
+\nolinkurl{phase_reproduction/}. Исходный файл потенциала —
+\nolinkurl{inputs/fitted.mtp}, тип 0 соответствует Ti, тип 1 — Al.
+Его SHA-256 по реестру запусков и независимой проверке энергии равен
+\begin{center}
+{\small\ttfamily 704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661}.
+\end{center}
+\begin{itemize}
+\item Кластерные функции и энергии. \nolinkurl{atomistic/atat/output/design.csv}
+описывает выборку для независимой подгонки. В \nolinkurl{author_comparison/}
+файл \nolinkurl{cells/orbit_mapping.csv} сопоставляет орбиты, а
+\nolinkurl{eci/matched_ECI.csv} и \nolinkurl{eci/cross_validation.csv}
+содержат коэффициенты и результаты переноса между выборками.
+\item Решёточное равновесие. В том же каталоге
+\nolinkurl{thermo/mfa_1000K.csv} и \nolinkurl{mc/mc_same_windows.csv}
+содержат результаты среднего поля и две обработки окон MC.
+Рисунок~\ref{fig:ce-temp} использует столбцы
+\texttt{author\_alpha} и \texttt{author\_alpha2} для обеих подгонок,
+одну процедуру определения границ и наибольшую доступную ячейку
+при каждой из показанных температур. Перестановки вкладов и зависимость
+от пути сравнения приведены в \nolinkurl{qha/qha_attribution.csv}
+и \nolinkurl{qha/qha_swaps.csv}.
+\item Малые ячейки. \nolinkurl{alloy_ti/targeted_comparison.json} содержит
+оценки с дополнительной выборкой для четырёх наиболее весомых классов;
+\nolinkurl{alloy_ti/cage_sensitivity.json} — независимые оценки при двух
+ограничениях. Геометрию короткой связи и независимый пересчёт энергии
+сохраняет \nolinkurl{cluster/runs/alloy-ti-geometry-01/outputs/}.
+Кривые на рис.~\ref{fig:ti-integrand} получены из трёх записей
+\texttt{samples\_*.npz} в архиве
+\nolinkurl{cluster/runs/alloy-ti-n8-01/outputs/draws.tar.gz}.
+Для каждой записи применены её логарифмические веса и условие \(W<0{,}40\).
+\item Атомистическая бинодаль. В \nolinkurl{solvus_1000/series/} каждой
+серии соответствует каталог с \texttt{windows.csv}, записями измерений и
+конечными состояниями. В \nolinkurl{solvus_1000/run_provenance.json}
+проверяются номера заданий UMT, хеши полученных архивов и состав серий.
+В \nolinkurl{solvus_1000/summary_statistics.json} приведены результаты
+для десяти ансамблей и попарные изменения границ.
+\item Сравнение с C46. \nolinkurl{solvus_1000/c46_reference.json}
+содержит тринадцать исходных пар «состав — химический потенциал»,
+результат общей касательной, условные интервалы и хеши авторских файлов.
+\end{itemize}
+
+Для повторения основного анализа нужны Python, NumPy и SciPy. Следующие
+команды PowerShell запускаются из \nolinkurl{phase_reproduction/solvus_1000/}.
+Они восстанавливают обе изотермы для 1400 атомов со свободным \(c/a\) и
+их условные статистические интервалы из завершённых траекторий.
+{\small
+\begin{verbatim}
+$m = 's1400w35a','s1400w35b','s1400w40a','s1400w40b' |
+     ForEach-Object { "series/$_/windows.csv" }
+python analysis.py @m --bootstrap 192 --seed 26713 --output replay.json
+\end{verbatim}
+}

@@ -1,0 +1,258 @@
+{
+  "ranking": [
+    "15000",
+    "5000",
+    "23400",
+    "20000",
+    "10000"
+  ],
+  "improvement_15k_vs_5k_percent": {
+    "L2_relative": 20.419227156430797,
+    "TV": 22.491613446291115,
+    "W1_THz": 42.99768024351872,
+    "test_energy_RMSE": 47.25056488850655
+  },
+  "checkpoints": {
+    "5000": {
+      "DOS": {
+        "L2_relative": 0.24906831825882922,
+        "TV": 0.10656349953127212,
+        "W1_THz": 0.1449365210663069,
+        "mean_THz": 5.439689124999999,
+        "main_peak_THz": 6.7365,
+        "integral": 3.0
+      },
+      "errors": {
+        "train": {
+          "n": 850,
+          "energy_mae_meV_atom": 3.6057801649613745,
+          "energy_rmse_meV_atom": 5.214218463246466,
+          "energy_bias_meV_atom": 2.689696213908708,
+          "energy_n_positive": 602,
+          "energy_centered_rmse_diagnostic_meV_atom": 4.46694621182587,
+          "force_rmse_eV_A": 0.06298155033971345,
+          "force_mae_eV_A": 0.04635431474031752,
+          "stress_rmse_GPa": 0.08146422615854661,
+          "stress_mae_GPa": 0.05904481948278155
+        },
+        "validation": {
+          "n": 149,
+          "energy_mae_meV_atom": 4.3411622908715275,
+          "energy_rmse_meV_atom": 6.070802745752471,
+          "energy_bias_meV_atom": 3.747412276712545,
+          "energy_n_positive": 118,
+          "energy_centered_rmse_diagnostic_meV_atom": 4.776143549578451,
+          "force_rmse_eV_A": 0.06669461847234645,
+          "force_mae_eV_A": 0.0489855515998006,
+          "stress_rmse_GPa": 0.07631579764536056,
+          "stress_mae_GPa": 0.056938222541800504
+        },
+        "test20": {
+          "n": 20,
+          "energy_mae_meV_atom": 4.339665217775858,
+          "energy_rmse_meV_atom": 6.405515531492637,
+          "energy_bias_meV_atom": 4.1664703125310805,
+          "energy_n_positive": 17,
+          "energy_centered_rmse_diagnostic_meV_atom": 4.86530105532952,
+          "force_rmse_eV_A": 0.0675423106035919,
+          "force_mae_eV_A": 0.048939952155631745,
+          "stress_rmse_GPa": 0.11220398026054712,
+          "stress_mae_GPa": 0.07869299318642084
+        }
+      }
+    },
+    "10000": {
+      "DOS": {
+        "L2_relative": 0.3415137655180634,
+        "TV": 0.14615353660711333,
+        "W1_THz": 0.24140597382353873,
+        "mean_THz": 5.542072604166666,
+        "main_peak_THz": 7.027500000000001,
+        "integral": 3.0
+      },
+      "errors": {
+        "train": {
+          "n": 850,
+          "energy_mae_meV_atom": 3.0437002969020153,
+          "energy_rmse_meV_atom": 3.3224069826798237,
+          "energy_bias_meV_atom": -3.0036713429747732,
+          "energy_n_positive": 25,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.419981204788208,
+          "force_rmse_eV_A": 0.06101589089227174,
+          "force_mae_eV_A": 0.044831498510520755,
+          "stress_rmse_GPa": 0.07559942859958706,
+          "stress_mae_GPa": 0.05397554932810661
+        },
+        "validation": {
+          "n": 149,
+          "energy_mae_meV_atom": 3.034711682982229,
+          "energy_rmse_meV_atom": 3.343643484271344,
+          "energy_bias_meV_atom": -3.0138414240048377,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.4480026315109749,
+          "force_rmse_eV_A": 0.06543256035583253,
+          "force_mae_eV_A": 0.04802952130161353,
+          "stress_rmse_GPa": 0.07387451981759559,
+          "stress_mae_GPa": 0.05591835327988936
+        },
+        "test20": {
+          "n": 20,
+          "energy_mae_meV_atom": 3.1498200123085636,
+          "energy_rmse_meV_atom": 3.394799129286018,
+          "energy_bias_meV_atom": -3.016012007904868,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.5583108471594345,
+          "force_rmse_eV_A": 0.0662690871806004,
+          "force_mae_eV_A": 0.047956468334540786,
+          "stress_rmse_GPa": 0.08860774048845549,
+          "stress_mae_GPa": 0.05805271851132843
+        }
+      }
+    },
+    "15000": {
+      "DOS": {
+        "L2_relative": 0.19821049257885687,
+        "TV": 0.08259564914185814,
+        "W1_THz": 0.0826171791821361,
+        "mean_THz": 5.364313125000001,
+        "main_peak_THz": 6.9135,
+        "integral": 3.0
+      },
+      "errors": {
+        "train": {
+          "n": 850,
+          "energy_mae_meV_atom": 2.9255228806303624,
+          "energy_rmse_meV_atom": 3.3217854300919325,
+          "energy_bias_meV_atom": 2.8205832226930414,
+          "energy_n_positive": 791,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.7545850584778095,
+          "force_rmse_eV_A": 0.059894503817121296,
+          "force_mae_eV_A": 0.043987025264932055,
+          "stress_rmse_GPa": 0.0648621128374075,
+          "stress_mae_GPa": 0.04625105739829176
+        },
+        "validation": {
+          "n": 149,
+          "energy_mae_meV_atom": 3.013788957517278,
+          "energy_rmse_meV_atom": 3.512015123993327,
+          "energy_bias_meV_atom": 2.9049181608993044,
+          "energy_n_positive": 139,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.9737529505070466,
+          "force_rmse_eV_A": 0.06487057631124228,
+          "force_mae_eV_A": 0.0476144732142883,
+          "stress_rmse_GPa": 0.060230069219418966,
+          "stress_mae_GPa": 0.045981246379172516
+        },
+        "test20": {
+          "n": 20,
+          "energy_mae_meV_atom": 2.7027673494546947,
+          "energy_rmse_meV_atom": 3.378873258841343,
+          "energy_bias_meV_atom": 2.5179645914622615,
+          "energy_n_positive": 18,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.253139768291219,
+          "force_rmse_eV_A": 0.06552410723535425,
+          "force_mae_eV_A": 0.04753470084028602,
+          "stress_rmse_GPa": 0.09614712337740064,
+          "stress_mae_GPa": 0.06391591083566305
+        }
+      }
+    },
+    "20000": {
+      "DOS": {
+        "L2_relative": 0.31125039630257717,
+        "TV": 0.13190428401146026,
+        "W1_THz": 0.19148174465687004,
+        "mean_THz": 5.492148374999999,
+        "main_peak_THz": 7.0375000000000005,
+        "integral": 3.0
+      },
+      "errors": {
+        "train": {
+          "n": 850,
+          "energy_mae_meV_atom": 0.9631942229897906,
+          "energy_rmse_meV_atom": 1.2017313754964096,
+          "energy_bias_meV_atom": 0.513488630074436,
+          "energy_n_positive": 564,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0865025198483307,
+          "force_rmse_eV_A": 0.05956101915965734,
+          "force_mae_eV_A": 0.04373753829474871,
+          "stress_rmse_GPa": 0.06194740301979701,
+          "stress_mae_GPa": 0.04419777355779997
+        },
+        "validation": {
+          "n": 149,
+          "energy_mae_meV_atom": 0.9746583467896706,
+          "energy_rmse_meV_atom": 1.2210256681716054,
+          "energy_bias_meV_atom": 0.4084252782095683,
+          "energy_n_positive": 96,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.1506921718919236,
+          "force_rmse_eV_A": 0.06472130698549088,
+          "force_mae_eV_A": 0.04750768100121931,
+          "stress_rmse_GPa": 0.056616607914070076,
+          "stress_mae_GPa": 0.04380055706866164
+        },
+        "test20": {
+          "n": 20,
+          "energy_mae_meV_atom": 0.9197531398951787,
+          "energy_rmse_meV_atom": 1.2279303953512646,
+          "energy_bias_meV_atom": 0.05389296817113034,
+          "energy_n_positive": 9,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.2267471637665273,
+          "force_rmse_eV_A": 0.06537624101363339,
+          "force_mae_eV_A": 0.04741963728439906,
+          "stress_rmse_GPa": 0.08880170849651861,
+          "stress_mae_GPa": 0.05702297631647835
+        }
+      }
+    },
+    "23400": {
+      "DOS": {
+        "L2_relative": 0.30183261178582016,
+        "TV": 0.12741514770959383,
+        "W1_THz": 0.17879633493464858,
+        "mean_THz": 5.4794629652777775,
+        "main_peak_THz": 7.024500000000001,
+        "integral": 3.0
+      },
+      "errors": {
+        "train": {
+          "n": 850,
+          "energy_mae_meV_atom": 0.9713163808327561,
+          "energy_rmse_meV_atom": 1.2006701082588076,
+          "energy_bias_meV_atom": 0.6334713460973811,
+          "energy_n_positive": 613,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0199621377971777,
+          "force_rmse_eV_A": 0.05949420338047832,
+          "force_mae_eV_A": 0.04368298771612391,
+          "stress_rmse_GPa": 0.06363692182004979,
+          "stress_mae_GPa": 0.04532911611494844
+        },
+        "validation": {
+          "n": 149,
+          "energy_mae_meV_atom": 0.9943520795959916,
+          "energy_rmse_meV_atom": 1.2332184460230418,
+          "energy_bias_meV_atom": 0.5524592906217677,
+          "energy_n_positive": 105,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.1025499842715427,
+          "force_rmse_eV_A": 0.064683857603403,
+          "force_mae_eV_A": 0.04746922656411317,
+          "stress_rmse_GPa": 0.057518304830371576,
+          "stress_mae_GPa": 0.04439561704949751
+        },
+        "test20": {
+          "n": 20,
+          "energy_mae_meV_atom": 0.9878185507185551,
+          "energy_rmse_meV_atom": 1.3407547174508543,
+          "energy_bias_meV_atom": 0.31660130062971037,
+          "energy_n_positive": 11,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.3028379902375797,
+          "force_rmse_eV_A": 0.06540398519929387,
+          "force_mae_eV_A": 0.04743850149056298,
+          "stress_rmse_GPa": 0.08922210371175605,
+          "stress_mae_GPa": 0.05844236418141302
+        }
+      }
+    }
+  },
+  "interpretation": "15k improves DOS and E/F over 5k. Later models remain more accurate in energies. MD properties not recalculated."
+}

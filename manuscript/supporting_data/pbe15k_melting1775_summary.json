@@ -1,0 +1,216 @@
+{
+  "15k": {
+    "duration_ps": 100.0,
+    "initial_fraction": 0.48842592592592593,
+    "final_fraction": 0.0007716049382716049,
+    "mean_last10_fraction": 0.00018371546149323925,
+    "source_sha256": "8a7ae25ce3b5a2f5b3140e919a1cf91ba97c7aaeba2d67e67238efb8ed7a8d16",
+    "thresholds": {
+      "0.2": {
+        "initial": 0.5563271604938271,
+        "final": 0.007716049382716049,
+        "last10_mean": 0.012088477366255143
+      },
+      "0.25": {
+        "initial": 0.48842592592592593,
+        "final": 0.0007716049382716049,
+        "last10_mean": 0.00018371546149323925
+      },
+      "0.3": {
+        "initial": 0.3402777777777778,
+        "final": 0.0,
+        "last10_mean": 0.0
+      },
+      "0.35": {
+        "initial": 0.08950617283950617,
+        "final": 0.0,
+        "last10_mean": 0.0
+      }
+    },
+    "windows": {
+      "0-25": {
+        "mean_fraction": 0.14660493827160492,
+        "fraction_range": [
+          0.0,
+          0.48842592592592593
+        ],
+        "descriptive_fraction_slope_per_ps": -0.02110664208703425,
+        "descriptive_width_slope_per_ps": -0.02611989459815548
+      },
+      "5-25": {
+        "mean_fraction": 0.0836156278229449,
+        "fraction_range": [
+          0.0,
+          0.32021604938271603
+        ],
+        "descriptive_fraction_slope_per_ps": -0.017214586828407968,
+        "descriptive_width_slope_per_ps": -0.02605311355311359
+      },
+      "25-50": {
+        "mean_fraction": 0.0001664245945291697,
+        "fraction_range": [
+          0.0,
+          0.0015432098765432098
+        ],
+        "descriptive_fraction_slope_per_ps": -6.982850120105032e-07,
+        "descriptive_width_slope_per_ps": null
+      },
+      "50-75": {
+        "mean_fraction": 0.00018155410312273057,
+        "fraction_range": [
+          0.0,
+          0.0030864197530864196
+        ],
+        "descriptive_fraction_slope_per_ps": -7.960449136919723e-06,
+        "descriptive_width_slope_per_ps": null
+      },
+      "75-100": {
+        "mean_fraction": 0.00013616557734204792,
+        "fraction_range": [
+          0.0,
+          0.0015432098765432098
+        ],
+        "descriptive_fraction_slope_per_ps": 6.284565108094515e-06,
+        "descriptive_width_slope_per_ps": null
+      },
+      "50-100": {
+        "mean_fraction": 0.00016043270993766043,
+        "fraction_range": [
+          0.0,
+          0.0030864197530864196
+        ],
+        "descriptive_fraction_slope_per_ps": -1.56388187838392e-06,
+        "descriptive_width_slope_per_ps": null
+      }
+    },
+    "snapshots": {
+      "0": {
+        "fraction": 0.48842592592592593,
+        "slab_width_Lz": 0.4777777777777778,
+        "bonds_fraction": 0.36419753086419754,
+        "Lz_A": 60.39351166577561
+      },
+      "10": {
+        "fraction": 0.16820987654320987,
+        "slab_width_Lz": 0.1622222222222222,
+        "bonds_fraction": 0.11033950617283951,
+        "Lz_A": 60.264893311228114
+      },
+      "25": {
+        "fraction": 0.0,
+        "slab_width_Lz": null,
+        "bonds_fraction": 0.0,
+        "Lz_A": 54.85734410112522
+      },
+      "50": {
+        "fraction": 0.0,
+        "slab_width_Lz": null,
+        "bonds_fraction": 0.0,
+        "Lz_A": 54.8560529406263
+      },
+      "75": {
+        "fraction": 0.0,
+        "slab_width_Lz": null,
+        "bonds_fraction": 0.0,
+        "Lz_A": 54.26161191987773
+      },
+      "100": {
+        "fraction": 0.0007716049382716049,
+        "slab_width_Lz": null,
+        "bonds_fraction": 0.0007716049382716049,
+        "Lz_A": 56.18958609637623
+      }
+    },
+    "first_persistent_solid_ps": null,
+    "first_persistent_liquid_ps": 12.0,
+    "last_resolved_interface_ps": 11.0,
+    "end_qbar4_median": 0.031038107537851117
+  },
+  "5k": {
+    "duration_ps": 50.0,
+    "initial_fraction": 0.5,
+    "final_fraction": 0.24074074074074073,
+    "mean_last10_fraction": 0.20105820105820107,
+    "source_sha256": "13bd3cf6c58f1ec73f11cde8b403c8d48cc524dc29b461570425ebaa44439cc9",
+    "thresholds": {
+      "0.2": {
+        "initial": 0.5740740740740741,
+        "final": 0.30864197530864196,
+        "last10_mean": 0.28942533803644915
+      },
+      "0.25": {
+        "initial": 0.5,
+        "final": 0.24074074074074073,
+        "last10_mean": 0.20105820105820107
+      },
+      "0.3": {
+        "initial": 0.35108024691358025,
+        "final": 0.13734567901234568,
+        "last10_mean": 0.10460758377425046
+      },
+      "0.35": {
+        "initial": 0.08719135802469136,
+        "final": 0.02700617283950617,
+        "last10_mean": 0.022707231040564373
+      }
+    },
+    "windows": {
+      "0-25": {
+        "mean_fraction": 0.451797385620915,
+        "fraction_range": [
+          0.3533950617283951,
+          0.5424382716049383
+        ],
+        "descriptive_fraction_slope_per_ps": 0.001135551086531471,
+        "descriptive_width_slope_per_ps": 0.001446254399195572
+      },
+      "5-25": {
+        "mean_fraction": 0.4549269798253538,
+        "fraction_range": [
+          0.3533950617283951,
+          0.5424382716049383
+        ],
+        "descriptive_fraction_slope_per_ps": 0.0013886200369940184,
+        "descriptive_width_slope_per_ps": 0.0017311265969802536
+      },
+      "25-50": {
+        "mean_fraction": 0.26007625272331153,
+        "fraction_range": [
+          0.12114197530864197,
+          0.4984567901234568
+        ],
+        "descriptive_fraction_slope_per_ps": -0.010681665828724644,
+        "descriptive_width_slope_per_ps": -0.011132604550265912
+      }
+    },
+    "snapshots": {
+      "0": {
+        "fraction": 0.5,
+        "slab_width_Lz": 0.4875,
+        "bonds_fraction": 0.3765432098765432,
+        "Lz_A": 59.356222172150666
+      },
+      "10": {
+        "fraction": 0.4645061728395062,
+        "slab_width_Lz": 0.45305555555555554,
+        "bonds_fraction": 0.32253086419753085,
+        "Lz_A": 59.51109010038227
+      },
+      "25": {
+        "fraction": 0.4984567901234568,
+        "slab_width_Lz": 0.51,
+        "bonds_fraction": 0.3472222222222222,
+        "Lz_A": 60.26379866135467
+      },
+      "50": {
+        "fraction": 0.24074074074074073,
+        "slab_width_Lz": 0.23944444444444443,
+        "bonds_fraction": 0.1712962962962963,
+        "Lz_A": 61.432366910944296
+      }
+    },
+    "first_persistent_solid_ps": null,
+    "first_persistent_liquid_ps": null,
+    "last_resolved_interface_ps": 50.0
+  }
+}

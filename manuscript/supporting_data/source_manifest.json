@@ -1,0 +1,158 @@
+{
+  "figures": [
+    {
+      "output": "figures/supporting/checkpoint_comparison.png",
+      "source": "audit/oct25/pbe_checkpoint_sweep/checkpoint_comparison.png",
+      "sha256": "446a475672215357c924c9c637c6101397ee85c7ba688b06ebb4e6d9cb4f42b4"
+    },
+    {
+      "output": "figures/supporting/fixed_composition_volume.png",
+      "source": "audit/oct25/pbe_checkpoint_sweep/fixed_composition_volume.png",
+      "sha256": "b2de42c327c536a67003e3046faf43d3adfeb8e5a457181bf9ff99236a56d940"
+    },
+    {
+      "output": "figures/supporting/train_test_residuals.png",
+      "source": "audit/oct25/pbe_train_comparison/train_test_residuals.png",
+      "sha256": "bf7eab84d4cbebde7cbf703d0190ba1ec69f3ebdb9caf10e27e494d341d2276f"
+    },
+    {
+      "output": "figures/supporting/checkpoint_phonons.pdf",
+      "source": "audit/oct25/pbe_checkpoint_phonons/checkpoint_phonons.pdf",
+      "sha256": "37666da6dd607a3bb4c45346c51ecf5a8dae9393079838e3fc000aabb0139ac3"
+    },
+    {
+      "output": "figures/supporting/checkpoint_phonon_dos.pdf",
+      "source": "audit/oct25/pbe_checkpoint_phonons/checkpoint_phonon_dos.pdf",
+      "sha256": "30a9568b94aaeeb500ea5700e47c4dc5064fa7403b11ad96d3e389ea6146c5b2"
+    },
+    {
+      "output": "figures/supporting/checkpoint_dos_vs_dft.pdf",
+      "source": "audit/oct25/pbe_checkpoint_phonons/dft_dos_comparison/checkpoint_dos_vs_dft.pdf",
+      "sha256": "236d027f046242dee8ce1259b650dd29b327e66105bfe4aa8989349c6671ee8a"
+    },
+    {
+      "output": "figures/supporting/dos_at_dft_geometry.pdf",
+      "source": "audit/oct25/pbe_phonons_dft_geometry/dos_at_dft_geometry.pdf",
+      "sha256": "82d56521be411559fcbaa6be8fa16f927505c749988099fa43d7de53f6cdf7e4"
+    },
+    {
+      "output": "figures/supporting/dos_geometry_effect.pdf",
+      "source": "audit/oct25/pbe_phonons_dft_geometry/dos_geometry_effect.pdf",
+      "sha256": "7c91dea7fbbe0138409c62eb0ce1f10735fa67a364ea3a191bf57adfd15590d3"
+    }
+  ],
+  "analyses": [
+    {
+      "output": "supporting_data/checkpoint_errors.json",
+      "source": "audit/oct25/pbe_checkpoint_sweep/analysis.json",
+      "sha256": "0667684ffd7a8d0b7c33ba3d472361c19b8cecbdb41aea2bbb064552ee83948e"
+    },
+    {
+      "output": "supporting_data/training_bias.json",
+      "source": "audit/oct25/pbe_train_comparison/analysis.json",
+      "sha256": "d6d766258a85636545d5f6a155e168337d4c219f03720f7e1be3406fa6f10f90"
+    },
+    {
+      "output": "supporting_data/phonon_comparisons.json",
+      "source": "audit/oct25/pbe_checkpoint_phonons/analysis.json",
+      "sha256": "9be4f5c8c9eee15de39e0e75c95e7cd50d5771caf184a3ade2a7c54858613ca5"
+    },
+    {
+      "output": "supporting_data/phonon_convergence.json",
+      "source": "audit/oct25/pbe_checkpoint_phonons/convergence-of-comparisons.json",
+      "sha256": "c00f874edccb3488f87a149a2a457231e8003b66cfcc67f2dcebfed333a2b7a3"
+    },
+    {
+      "output": "supporting_data/dft_dos_own_cells.json",
+      "source": "audit/oct25/pbe_checkpoint_phonons/dft_dos_comparison/analysis.json",
+      "sha256": "3dfccb2fe17e065d61c9460d3daee2a51eb4e4749835b6b3e009fef159613c56"
+    },
+    {
+      "output": "supporting_data/dft_dos_identical_geometry.json",
+      "source": "audit/oct25/pbe_phonons_dft_geometry/analysis.json",
+      "sha256": "dec0c6591bea0ba913efbe1fa39055ef67ffc2234ccc0c25629c0a8550e1f5bf"
+    },
+    {
+      "output": "supporting_data/checkpoint_identity.json",
+      "source": "audit/oct25/pbe_train_comparison/checkpoint_stage_audit.json",
+      "sha256": "bdeb052c5f4c23f12e74be7ccc1a7b23024d582235ced1c8cfe07d8480688da7"
+    },
+    {
+      "output": "supporting_data/test009_sensitivity.json",
+      "source": "audit/oct25/pbe_energy_diagnostic/sensitivity.json",
+      "sha256": "ceed99d2ef70470da7f8e980f799718252cca6f3d8d41004f557ae830c190429"
+    },
+    {
+      "output": "supporting_data/POSCAR-DFT",
+      "source": "audit/oct25/pbe_phonons_dft_geometry/POSCAR-DFT",
+      "sha256": "bb123213ff83623624614ed5cc62020e8db2666b8fc118f3e1df7751f8eddcfe"
+    },
+    {
+      "output": "supporting_data/POSCAR-test009",
+      "source": "audit/oct25/pbe_energy_diagnostic/TiAl-test-009/POSCAR",
+      "sha256": "1bb641a7519d5bf24d63e641cf5d481057698fc8df984b1c57bdc8cd32221711"
+    }
+  ],
+  "learning_curve": {
+    "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-finetune\\lcurve_pbe.out",
+    "sha256": "da2d1608b9cdc6eb62f1ee0b5b7ad23769f76a98d90dd7c2229154da6660120e"
+  },
+  "revision_oct26": {
+    "source_manifest": "supporting_data/revision_oct26_sources.json",
+    "parity_manifest": "supporting_data/test23_parity_sources.json",
+    "notes": "revision_oct26_pbe15k_notes_ru.txt",
+    "selected_PBE_step": 15000,
+    "temperature_panel_removed": true,
+    "current_build": "build/revision-oct26-enthalpy2000",
+    "figure6_sha256": "d2dd8c5ceb296f5b91cba7b944252b14c308ed379cb90962fa5914f92ceea4dc"
+  },
+  "revision_oct27": {
+    "source_manifest": "supporting_data/revision_oct27_sources.json",
+    "notes": "revision_oct27_pbe15k_notes_ru.txt",
+    "current_build": "build/revision-oct27-pbe15k",
+    "selected_PBE_step": 15000,
+    "temperature_enthalpy_panel_removed": true
+  },
+  "revision_oct29": {
+    "source_manifest": "supporting_data/revision_oct29_sources.json",
+    "parity_manifest": "supporting_data/test30_parity_sources.json",
+    "notes": "revision_oct29_notes_ru.txt",
+    "current_build": "build/revision-oct29",
+    "PBE_benchmark_step": 20000,
+    "PBE_updated_property_step": 15000,
+    "benchmark_completed": 30,
+    "benchmark_design": 50,
+    "viscosity_alloy_replicas": 15,
+    "r2SCAN_enthalpy_production_ps": 60,
+    "temperature_enthalpy_panel_removed": true,
+    "verification": "../audit/oct29/manuscript_revision/verification.json",
+    "PDF_sha256": {
+      "main": "3b882a0e39494d79187e8692cc719079febcc2ba560f13450bd11bc14068f6ab",
+      "supporting_materials": "8db105b86930032ba56974c4d2d8b24cd0a90ad1ffd1975034a7065ae047d027"
+    }
+  },
+  "live_ti_viscosity_temperature": {
+    "updated_unix": 1793251669.0369873,
+    "protocol": "../../audit/oct29/pbe15k_ti_temperature/protocol.json",
+    "data": "viscosity_temperature_current.json",
+    "updater": "../../audit/oct29/pbe15k_ti_temperature/update_figure.py",
+    "figure": "../figures/viscosity.pdf",
+    "build": "../build/ti-temperature/main.pdf",
+    "historical_15k_points": 2,
+    "new_15k_points": 0,
+    "notes": "Historical 5k and 15k retained separately from new40ps campaign. Composition panel frozen at N15."
+  },
+  "revision_nov01_phonons": {
+    "source_manifest": "supporting_data/revision_nov01_phonons_sources.json",
+    "notes": "revision_nov01_phonons_notes_ru.txt",
+    "current_build": "build/revision-nov01-phonons",
+    "source_thread": "01a15c09-6430-7c61-8706-69838a8cbe0c",
+    "PBE_phonon_step": 15000,
+    "figure2_panels": 6,
+    "figure2_page": 10,
+    "PDF_sha256": {
+      "main": "6b7fef434fe82c9b67ae8b10ab407a6710b3b24d11af20983ef4625e0ea6a1f1",
+      "supporting_materials": "417d02adc35a05b8294bde2ccd8c47c2581490f4f37c729ff3c8e5f1ada9e3f7"
+    }
+  }
+}

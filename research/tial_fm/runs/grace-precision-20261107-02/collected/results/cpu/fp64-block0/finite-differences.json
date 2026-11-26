@@ -1,0 +1,56 @@
+{
+  "force_finite_difference": [
+    {
+      "h_A": 0.01,
+      "analytic": 0.8092035899357595,
+      "finite_difference": 0.8092641178109261,
+      "absolute_error_eV_A": 6.052787516663827e-05
+    },
+    {
+      "h_A": 0.001,
+      "analytic": 0.8092035899357595,
+      "finite_difference": 0.8092041951499596,
+      "absolute_error_eV_A": 6.05214200088966e-07
+    },
+    {
+      "h_A": 0.0001,
+      "analytic": 0.8092035899357595,
+      "finite_difference": 0.8092035960771682,
+      "absolute_error_eV_A": 6.1414087149103125e-09
+    },
+    {
+      "h_A": 1e-05,
+      "analytic": 0.8092035899357595,
+      "finite_difference": 0.8092035841400501,
+      "absolute_error_eV_A": 5.795709356881673e-09
+    }
+  ],
+  "hydrostatic_stress_finite_difference": [
+    {
+      "h": 0.001,
+      "analytic_trace_eV_A3": 0.12028059640270938,
+      "finite_difference_trace_eV_A3": 0.1202756366932325,
+      "absolute_error_GPa": 0.0007946330569815489
+    },
+    {
+      "h": 0.0001,
+      "analytic_trace_eV_A3": 0.12028059640270938,
+      "finite_difference_trace_eV_A3": 0.12028054695421664,
+      "absolute_error_GPa": 7.92252190096899e-06
+    },
+    {
+      "h": 1e-05,
+      "analytic_trace_eV_A3": 0.12028059640270938,
+      "finite_difference_trace_eV_A3": 0.12028059591049457,
+      "absolute_error_GPa": 7.886150619176794e-08
+    }
+  ],
+  "component": {
+    "geometry_id": "PBE-tial-selected-0004",
+    "component": [
+      96,
+      2
+    ],
+    "selection": "Largest absolute DFT force component; fixed before model predictions"
+  }
+}

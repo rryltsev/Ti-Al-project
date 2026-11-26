@@ -1,0 +1,30 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/s1400w40j",
+  "utc": "2026-11-25T05:37:30.743219+00:00",
+  "job_name": "ta-s1400w40j",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=12",
+    "--mem=4G",
+    "--time=90",
+    "--job-name=ta-s1400w40j",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "a064277d4dd6a4208db2931e1a885c16d9eb7180d1b1f6d7e47da61f72dc8e80",
+    "run_windows.py": "19a48d7a2e631fa7fb7a68b77e903e08e01571bdc823a55b5d6ecb8d54380a0e",
+    "sgmc.cpp": "39da5b7a7c2bc1f1623bd7588f5a30f1b164a2eebf0e70355c308e18806acaf9",
+    "engine.hpp": "f99c4754ec26fa82a220ebe74efa70df3e6b24d692d89f84103ac4d488237f47",
+    "fitted.mtp": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+    "windows.csv": "32cf912c926a54640c9ed2869f39d03283a0c6f608870db17d0daae1a561dbe1"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-31T16:13:15.117037+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--exclude=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=2",
+    "--ntasks=64",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=320G",
+    "--time=20:00:00",
+    "--job-name=ti2-PBEsol-check-cutoff",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol-production05-check-cutoff-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v13.sbatch",
+    "production_step_v7.py",
+    "PBEsol",
+    "check-cutoff"
+  ],
+  "state": "submitted",
+  "source_input_hashes": {
+    "POSCAR": "1516de61aa37a89e26e364fcf881eaf2acfa8ca53ea697e9be54920252e3278e",
+    "INCAR": "f7b3a0173c78d872b993d7306e3a8d5b184959a00592ae0f442481ce09960334",
+    "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba"
+  },
+  "policy_sha256": "ebe252ed303d5c940f56900e46e35c042eef59c57e2f3d177b2703a819d8425c",
+  "source_hashes": {
+    "execution-policy-07.json": "ebe252ed303d5c940f56900e46e35c042eef59c57e2f3d177b2703a819d8425c",
+    "launch_v13.sbatch": "246b519e537132d119490a748b028c11fb114e5629a29094f9209a7217ac7a33",
+    "production_step_v7.py": "5058d9d72ad2ba9c5c4e6ddc486ce08c6658ed6aa87ee813f64c7e3ed59b95d3",
+    "checkpoint_guard_v5.py": "d45566f7a3f512537c35ad095782af43fe349da47f0c9b23aa5494e4ab7d3c81"
+  },
+  "placement_policy_sha256": "625441b09f22e15e7f6a41895676c8c619975b9ba181d4cf21764d550bac5f7e",
+  "job_id": "20972836"
+}

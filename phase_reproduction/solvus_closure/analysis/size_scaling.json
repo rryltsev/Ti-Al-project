@@ -1,0 +1,548 @@
+{
+  "note": "The slope of S_N with N estimates beta times the bulk ordered free-energy advantage if both restricted basins are pure phases and their finite-volume offsets are N-independent. These assumptions and the infinite-size limit are not established by the fit. Only interior field maxima are used. Bootstrap quantifies independent isotherm statistics.",
+  "by_cut": {
+    "0.42": [
+      {
+        "sizes": [
+          768,
+          1400
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1225.0,
+            "delta_S": 2.5092713100964374,
+            "ordered_advantage_meV_atom": 0.4191210953669973,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.1642775951229385,
+            "locally_predicted_zero_K": 1240.2745802506945,
+            "delta_S_interval_95": [
+              1.4122669148052864,
+              3.8652764934474777
+            ],
+            "positive_diff_bootstrap_fraction": 1.0,
+            "ordered_advantage_interval_95_meV_atom": [
+              0.23588954048217806,
+              0.6456132947089536
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1233.4617871269775,
+              1249.0201218748527
+            ]
+          },
+          {
+            "T_K": 1240.0,
+            "delta_S": -0.018265211037178375,
+            "ordered_advantage_meV_atom": -0.0030881770436291334,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.15099670139094762,
+            "locally_predicted_zero_K": 1239.8790356950256,
+            "delta_S_interval_95": [
+              -0.9165242116275802,
+              1.0565296189705102
+            ],
+            "positive_diff_bootstrap_fraction": 0.55145,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.1549606530424093,
+              0.1786319637138448
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1233.5859930083604,
+              1246.487998128373
+            ]
+          },
+          {
+            "T_K": 1245.0,
+            "delta_S": -0.6333227295587278,
+            "ordered_advantage_meV_atom": -0.1075103404075651,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.12249892971626264,
+            "locally_predicted_zero_K": 1239.8299733636395,
+            "delta_S_interval_95": [
+              -1.3960872193743654,
+              0.08004739249656012
+            ],
+            "positive_diff_bootstrap_fraction": 0.03775,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.2369941977262809,
+              0.013588526061648521
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1232.3622846695523,
+              1245.6132733790364
+            ]
+          },
+          {
+            "T_K": 1250.0,
+            "delta_S": -1.244242241281228,
+            "ordered_advantage_meV_atom": -0.21206586336943373,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": false,
+            "local_d_delta_S_dT": -0.10317037178935307,
+            "locally_predicted_zero_K": 1237.9399267473646,
+            "delta_S_interval_95": [
+              -1.981238227310229,
+              -0.4832707126151945
+            ],
+            "positive_diff_bootstrap_fraction": 0.0,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.3376778100560449,
+              -0.08236757884571663
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1227.3441077601599,
+              1245.7148306892182
+            ]
+          }
+        ],
+        "direct_sign_crossings": [
+          {
+            "bracket_K": [
+              1225.0,
+              1240.0
+            ],
+            "interpolated_K": 1239.891602687729,
+            "fraction_bracketing": 0.44855,
+            "fraction_negative_slope": 0.999675,
+            "conditional_zero_interval_95_K": [
+              1235.832252131331,
+              1252.6394941587741
+            ]
+          }
+        ]
+      },
+      {
+        "sizes": [
+          768,
+          2304
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1245.0,
+            "delta_S": -0.4756663762715414,
+            "ordered_advantage_meV_atom": -0.033224119329305156,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.3156718949975793,
+            "locally_predicted_zero_K": 1243.4931620970717,
+            "delta_S_interval_95": [
+              -1.4704162556744405,
+              0.45136038126853206
+            ],
+            "positive_diff_bootstrap_fraction": 0.1769,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.10270493686185851,
+              0.031526405724388765
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1240.2066711861448,
+              1246.3968564775998
+            ]
+          }
+        ],
+        "direct_sign_crossings": []
+      },
+      {
+        "sizes": [
+          1400,
+          2304
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1245.0,
+            "delta_S": 0.1576563532871864,
+            "ordered_advantage_meV_atom": 0.01871049540682348,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.19317296528131667,
+            "locally_predicted_zero_K": 1245.8161408769472,
+            "delta_S_interval_95": [
+              -0.8887102771239381,
+              1.1867107006069322
+            ],
+            "positive_diff_bootstrap_fraction": 0.61755,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.10547123037810191,
+              0.14083761707013243
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1240.1539880979242,
+              1250.8740288636222
+            ]
+          }
+        ],
+        "direct_sign_crossings": []
+      }
+    ],
+    "0.47": [
+      {
+        "sizes": [
+          768,
+          1400
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1225.0,
+            "delta_S": 2.5484854158389396,
+            "ordered_advantage_meV_atom": 0.42567098851187335,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.16165994346888418,
+            "locally_predicted_zero_K": 1240.7644829087142,
+            "delta_S_interval_95": [
+              1.5195049524156445,
+              3.801437268766364
+            ],
+            "positive_diff_bootstrap_fraction": 1.0,
+            "ordered_advantage_interval_95_meV_atom": [
+              0.25380140342318985,
+              0.6349502923990519
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1234.082941297853,
+              1249.7791091048628
+            ]
+          },
+          {
+            "T_K": 1240.0,
+            "delta_S": 0.0448288060386961,
+            "ordered_advantage_meV_atom": 0.007579397216939607,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.15134040838409896,
+            "locally_predicted_zero_K": 1240.2962117422396,
+            "delta_S_interval_95": [
+              -0.8240724066476766,
+              1.1006482114560647
+            ],
+            "positive_diff_bootstrap_fraction": 0.6052,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.1393294325106633,
+              0.18609128209969825
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1234.27537276684,
+              1246.8536034541926
+            ]
+          },
+          {
+            "T_K": 1245.0,
+            "delta_S": -0.5979037988804734,
+            "ordered_advantage_meV_atom": -0.10149776401267672,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.1239096764909122,
+            "locally_predicted_zero_K": 1240.1746803331835,
+            "delta_S_interval_95": [
+              -1.3602652241737587,
+              0.10586128062571021
+            ],
+            "positive_diff_bootstrap_fraction": 0.04265,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.23091319870579924,
+              0.017970588745458104
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1233.0424716400546,
+              1245.7977423388595
+            ]
+          },
+          {
+            "T_K": 1250.0,
+            "delta_S": -1.2207050963764206,
+            "ordered_advantage_meV_atom": -0.20805424506080789,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": false,
+            "local_d_delta_S_dT": -0.10697677126802554,
+            "locally_predicted_zero_K": 1238.5890639443774,
+            "delta_S_interval_95": [
+              -1.9914212593779868,
+              -0.45251264578206474
+            ],
+            "positive_diff_bootstrap_fraction": 0.00065,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.33941338325515447,
+              -0.0771252427618478
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1229.0821951851087,
+              1246.1616106733034
+            ]
+          }
+        ],
+        "direct_sign_crossings": [
+          {
+            "bracket_K": [
+              1240.0,
+              1245.0
+            ],
+            "interpolated_K": 1240.348736050541,
+            "fraction_bracketing": 0.579375,
+            "fraction_negative_slope": 0.8875,
+            "conditional_zero_interval_95_K": [
+              1212.9644319387085,
+              1244.8748246409384
+            ]
+          }
+        ]
+      },
+      {
+        "sizes": [
+          768,
+          2304
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1245.0,
+            "delta_S": -0.40338359236349586,
+            "ordered_advantage_meV_atom": -0.02817534573963202,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.3159951279529585,
+            "locally_predicted_zero_K": 1243.7234499627364,
+            "delta_S_interval_95": [
+              -1.402300823426794,
+              0.5194799564117014
+            ],
+            "positive_diff_bootstrap_fraction": 0.220725,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.09794724247340525,
+              0.03628438948384255
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1240.4915585739188,
+              1246.6144136246537
+            ]
+          }
+        ],
+        "direct_sign_crossings": []
+      },
+      {
+        "sizes": [
+          1400,
+          2304
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1245.0,
+            "delta_S": 0.19452020651697755,
+            "ordered_advantage_meV_atom": 0.02308545995568242,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.1920854514620463,
+            "locally_predicted_zero_K": 1246.0126753746126,
+            "delta_S_interval_95": [
+              -0.852356737857451,
+              1.2315941297730082
+            ],
+            "positive_diff_bootstrap_fraction": 0.64525,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.1011568293705615,
+              0.14616433672173182
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1240.3500660889408,
+              1251.2407858962804
+            ]
+          }
+        ],
+        "direct_sign_crossings": []
+      }
+    ],
+    "0.5": [
+      {
+        "sizes": [
+          768,
+          1400
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1225.0,
+            "delta_S": 2.5562791667269664,
+            "ordered_advantage_meV_atom": 0.4269727709839655,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.1576891665008134,
+            "locally_predicted_zero_K": 1241.2108737299577,
+            "delta_S_interval_95": [
+              1.5597224197747153,
+              3.7433217213502985
+            ],
+            "positive_diff_bootstrap_fraction": 1.0,
+            "ordered_advantage_interval_95_meV_atom": [
+              0.26051888706260246,
+              0.6252433102194573
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1234.4214577949715,
+              1251.1322849913236
+            ]
+          },
+          {
+            "T_K": 1240.0,
+            "delta_S": 0.09017227613644252,
+            "ordered_advantage_meV_atom": 0.015245810878918093,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.15154398375197278,
+            "locally_predicted_zero_K": 1240.5950237937786,
+            "delta_S_interval_95": [
+              -0.7736849843458584,
+              1.1400516377571437
+            ],
+            "positive_diff_bootstrap_fraction": 0.637775,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.13081021636126372,
+              0.19275338725116015
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1234.6496133871665,
+              1247.1619474505571
+            ]
+          },
+          {
+            "T_K": 1245.0,
+            "delta_S": -0.5769304157578645,
+            "ordered_advantage_meV_atom": -0.09793740615124162,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.12462395797431511,
+            "locally_predicted_zero_K": 1240.3706299724747,
+            "delta_S_interval_95": [
+              -1.3442436067700307,
+              0.12682558344648953
+            ],
+            "positive_diff_bootstrap_fraction": 0.0517,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.2281934328414749,
+              0.021529405171073636
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1233.2976154287317,
+              1246.0171173137574
+            ]
+          },
+          {
+            "T_K": 1250.0,
+            "delta_S": -1.2064443946143373,
+            "ordered_advantage_meV_atom": -0.20562368296357825,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": false,
+            "local_d_delta_S_dT": -0.10903425136948311,
+            "locally_predicted_zero_K": 1238.9351797305778,
+            "delta_S_interval_95": [
+              -1.9734994282184462,
+              -0.43177282548275286
+            ],
+            "positive_diff_bootstrap_fraction": 0.000575,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.33635882645591286,
+              -0.07359039419942355
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1230.0128422138237,
+              1246.2980051733662
+            ]
+          }
+        ],
+        "direct_sign_crossings": [
+          {
+            "bracket_K": [
+              1240.0,
+              1245.0
+            ],
+            "interpolated_K": 1240.6758500395224,
+            "fraction_bracketing": 0.60375,
+            "fraction_negative_slope": 0.8955,
+            "conditional_zero_interval_95_K": [
+              1217.845306483145,
+              1245.198360966551
+            ]
+          }
+        ]
+      },
+      {
+        "sizes": [
+          768,
+          2304
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1245.0,
+            "delta_S": -0.3595407139147464,
+            "ordered_advantage_meV_atom": -0.025113029170739355,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.3160038387433529,
+            "locally_predicted_zero_K": 1243.8622267522303,
+            "delta_S_interval_95": [
+              -1.3558107702238105,
+              0.5581639419649697
+            ],
+            "positive_diff_bootstrap_fraction": 0.24505,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.09470002729845685,
+              0.03898637014984868
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1240.6763554652455,
+              1246.7328910287408
+            ]
+          }
+        ],
+        "direct_sign_crossings": []
+      },
+      {
+        "sizes": [
+          1400,
+          2304
+        ],
+        "common_temperatures": [
+          {
+            "T_K": 1245.0,
+            "delta_S": 0.21738970184311812,
+            "ordered_advantage_meV_atom": 0.02579958836430204,
+            "both_dividers_separate_modes": true,
+            "both_mu_within_sampled_range": true,
+            "local_d_delta_S_dT": -0.19137988076903784,
+            "locally_predicted_zero_K": 1246.135906768097,
+            "delta_S_interval_95": [
+              -0.8337489277773846,
+              1.247335646082325
+            ],
+            "positive_diff_bootstrap_fraction": 0.659075,
+            "ordered_advantage_interval_95_meV_atom": [
+              -0.09894847342565445,
+              0.14803252384176113
+            ],
+            "locally_negative_slope_fraction": 1.0,
+            "conditional_local_zero_interval_95_K": [
+              1240.4848530444042,
+              1251.3946911713513
+            ]
+          }
+        ],
+        "direct_sign_crossings": []
+      }
+    ]
+  }
+}

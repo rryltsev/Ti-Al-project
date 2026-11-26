@@ -1,0 +1,21 @@
+{
+  "key": "N200-aggregate",
+  "job_id": "20988586",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=1",
+    "--mem=8G",
+    "--time=00:10:00",
+    "--dependency=afterany:20988585",
+    "--job-name=TiAl-N200-3seeds",
+    "--output=N200-aggregate-%j.log",
+    "aggregate.sbatch",
+    "N200"
+  ],
+  "utc": "2026-11-06T14:15:49.747452+00:00"
+}

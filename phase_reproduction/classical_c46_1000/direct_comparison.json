@@ -1,0 +1,109 @@
+{
+  "phase_order": [
+    "alpha",
+    "alpha2"
+  ],
+  "composition": "Al atomic percent",
+  "difference_units": "percentage points",
+  "paired_ce": 5120,
+  "direct_atoms": 1400,
+  "T_K": 1000,
+  "pressure_GPa": 0,
+  "fixed_ca": 1.5637438022142225,
+  "direct_W_max": 0.4,
+  "direct": {
+    "value": [
+      16.082655166053264,
+      22.159180822546386
+    ],
+    "conditional_95": [
+      [
+        16.033440501458163,
+        16.144810482580535
+      ],
+      [
+        22.06480206741526,
+        22.241244104470166
+      ]
+    ]
+  },
+  "sampling": "Cartesian product of bootstrap draws from independent MTP and CE runs; CE statistics use the same bootstrap blocks for paired differences. Intervals condition on the chosen cell, cage, window grid and sample.",
+  "source_mc": "paired5120.json",
+  "source_direct": "analysis1400_fixed.json",
+  "direct_minus_quantum": {
+    "value": [
+      1.139240564164254,
+      0.22801825721280267
+    ],
+    "conditional_95": [
+      [
+        1.0699812209077073,
+        1.2132870057583136
+      ],
+      [
+        0.11858740498467979,
+        0.3303986955669722
+      ]
+    ]
+  },
+  "direct_minus_classical": {
+    "value": [
+      1.1865833678765068,
+      0.23696520543915867
+    ],
+    "conditional_95": [
+      [
+        1.1183619993323997,
+        1.2589507722605333
+      ],
+      [
+        0.128024945587061,
+        0.33731731555982813
+      ]
+    ]
+  },
+  "classical_minus_quantum": {
+    "value": [
+      -0.047342803712252746,
+      -0.008946948226356
+    ],
+    "conditional_95": [
+      [
+        -0.05846437070523027,
+        -0.03622511623832323
+      ],
+      [
+        -0.02304477201903694,
+        0.005383878424228781
+      ]
+    ]
+  },
+  "width_classical_minus_quantum": {
+    "value": [
+      0.038395855485896746
+    ],
+    "conditional_95": [
+      [
+        0.02048106896037143,
+        0.055110629460714836
+      ]
+    ]
+  },
+  "direct_minus_classical_25_windows": {
+    "value": [
+      1.1869422389072959,
+      0.2384439136741321
+    ],
+    "conditional_95": [
+      [
+        1.1231648066795943,
+        1.256675406250112
+      ],
+      [
+        0.13141545355086687,
+        0.3363563769011359
+      ]
+    ]
+  },
+  "source_25_windows": "dense_grid.json"
+}

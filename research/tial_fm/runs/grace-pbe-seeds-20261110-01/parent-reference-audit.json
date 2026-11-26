@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "cases": {
+    "PBE-full-N200-seed10": {
+      "status": "PASS",
+      "Ti3Al_W1_THz": 0.2832613408873361
+    },
+    "PBE-restricted-N200-seed10": {
+      "status": "PASS",
+      "Ti3Al_W1_THz": 0.2772974031753378
+    },
+    "PBE-restricted_mlp-N200-seed10": {
+      "status": "PASS",
+      "Ti3Al_W1_THz": 0.26747288432215965
+    },
+    "PBE-restricted_radial-N200-seed10": {
+      "status": "PASS",
+      "Ti3Al_W1_THz": 0.2317144583830851
+    }
+  },
+  "same_train200_validation149": true,
+  "same_Ti3Al_geometry": true,
+  "seed10_checkpoint_links_verified": true
+}

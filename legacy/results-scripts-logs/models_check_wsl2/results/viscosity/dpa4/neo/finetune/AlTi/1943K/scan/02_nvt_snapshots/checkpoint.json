@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "version": 1,
+    "params_hash": "4617b1a0fb8c",
+    "params_snapshot": {
+      "T": 1943.0,
+      "P": 1.0,
+      "timestep": 0.001,
+      "seed": 1,
+      "equil_steps": 5000,
+      "run_steps": 1000,
+      "n_snapshots": 50,
+      "elements": [
+        "Al",
+        "Ti"
+      ],
+      "masses": [
+        26.98,
+        47.88
+      ]
+    },
+    "created_at": "2026-10-03T06:46:27.921001",
+    "updated_at": "2026-10-03T09:47:40.550021"
+  },
+  "cases": {
+    "c_Ti_0.00": {
+      "status": "completed",
+      "c_Ti": 0.0,
+      "input_data": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/01_generate_liquid/c_Ti_0.00/data.lammps",
+      "output_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_0.00",
+      "n_snapshots": 51,
+      "first_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_0.00/data.0",
+      "last_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_0.00/data.50",
+      "T": 1943.0,
+      "P": 1.0,
+      "completed_at": "2026-10-03T07:42:54.044770"
+    },
+    "c_Ti_0.50": {
+      "status": "completed",
+      "c_Ti": 0.5,
+      "input_data": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/01_generate_liquid/c_Ti_0.50/data.lammps",
+      "output_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_0.50",
+      "n_snapshots": 51,
+      "first_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_0.50/data.0",
+      "last_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_0.50/data.50",
+      "T": 1943.0,
+      "P": 1.0,
+      "completed_at": "2026-10-03T08:45:19.943298"
+    },
+    "c_Ti_1.00": {
+      "status": "completed",
+      "c_Ti": 1.0,
+      "input_data": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/01_generate_liquid/c_Ti_1.00/data.lammps",
+      "output_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_1.00",
+      "n_snapshots": 51,
+      "first_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_1.00/data.0",
+      "last_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1943K/scan/02_nvt_snapshots/c_Ti_1.00/data.50",
+      "T": 1943.0,
+      "P": 1.0,
+      "completed_at": "2026-10-03T09:47:40.550010"
+    }
+  }
+}

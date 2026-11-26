@@ -1,0 +1,805 @@
+#models_check/scripts/liquid_md_calculator.py
+"""
+Liquid MD Calculator: Generate, relax, melt, equilibrate, and production MD
+for liquid metals and alloys using ML potentials.
+"""
+import argparse
+import sys
+import json
+import logging
+from pathlib import Path
+import shutil
+from typing import Dict, List, Optional
+from datetime import datetime
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from ase.io import read
+from ase.io import write
+from pymatgen.core import Composition
+
+import numpy as np
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from utils import (
+    CalculatorFactory,
+    LiquidStructureManager,
+    MDRunner,
+    TrajectoryAnalyzer,
+    CheckpointManager,
+    get_bulk_modulus,
+)
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+
+class MixingEnthalpyCalculator:
+    """
+    Orchestrator for mixing enthalpy calculations via liquid MD.
+    """
+
+    def __init__(self, args):
+        self.args = args
+
+        # Parse temperature
+        self.T_measure = float(args.T_measure)
+
+        # Output structure: <workdir>/<family>/<variant>/<use_type>/<system>/<T>K/
+        self.output_base = (
+            Path(args.workdir)
+            / args.family
+            / args.variant
+            / args.use_type
+            / args.system
+            / f"{int(self.T_measure)}K"
+        )
+
+        if args.dft_method:
+            self.output_base = self.output_base / args.dft_method
+
+        # Force clear
+        if self.args.force_clear and self.output_base.exists():
+            workdir_resolved = Path(self.args.workdir).resolve()
+            target_resolved = self.output_base.resolve()
+            if workdir_resolved not in target_resolved.parents:
+                raise RuntimeError(
+                    f"Refusing to remove {target_resolved}: not inside {workdir_resolved}"
+                )
+            logger.warning(f"FORCE CLEAR: removing contents of {self.output_base}")
+            for item in self.output_base.iterdir():
+                if item.name in (".cache", ".triton", ".numba_cache"):
+                    logger.info(f"  Skipping cache dir: {item.name}")
+                    continue
+                if item.is_dir():
+                    shutil.rmtree(item)
+                else:
+                    item.unlink()
+
+        self.output_base.mkdir(parents=True, exist_ok=True)
+
+        # Initial structures directory (inside T-folder)
+        self.initial_dir = self.output_base / "initial_structures"
+        self.initial_dir.mkdir(parents=True, exist_ok=True)
+
+        # Cache for relaxed structures (inside T-folder)
+        self.cache_dir = self.output_base / "cache"
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+
+        # Generate compositions from step
+        step = float(args.step)
+        self.compositions = []
+        self.tasks = {}
+
+        for x in np.arange(0, 1.001, step):
+            x = round(x, 2)
+            if x == 0:
+                comp = "Ti"
+            elif x == 1:
+                comp = "Al"
+            else:
+                comp = f"Al{x:.1f}Ti{1-x:.1f}"
+            self.compositions.append(comp)
+            self.tasks[comp] = self.T_measure
+
+        logger.info(f"Tasks: {self.tasks}")
+
+        # Factories
+        self._calculator = None
+        self._structure_manager = None
+        self._md_runner = None
+
+        # Checkpoint
+        self.checkpoint = CheckpointManager(self.output_base / "checkpoint.json")
+    
+    @property
+    def calculator(self):
+        if self._calculator is None:
+            factory = CalculatorFactory()
+            factory.configure(
+                model_path=self.args.model_path,
+                model_name=self.args.model_name,
+                device='cuda' if self.args.device != 'cpu' else 'cpu',
+                dtype=self.args.dtype
+            )
+            if self.args.calculator == "grace":
+                self._calculator = factory.calculator("grace")
+            elif self.args.calculator == "mace":
+                self._calculator = factory.calculator("mace")
+            elif self.args.calculator == "deepmd":
+                self._calculator = factory.calculator("deepmd")
+            else:
+                raise ValueError(f"Unknown calculator: {self.args.calculator}")
+        return self._calculator
+    
+    @property
+    def structure_manager(self):
+        if self._structure_manager is None:
+            self._structure_manager = LiquidStructureManager(
+                output_dir=self.initial_dir,
+                n_atoms=self.args.n_atoms,
+                r_min=self.args.r_min,
+                seed=self.args.seed,
+            )
+        return self._structure_manager
+    
+    @property
+    def md_runner(self):
+        if self._md_runner is None:
+            self._md_runner = MDRunner(
+                calculator=self.calculator,
+                relax_fmax=self.args.relax_fmax,
+                relax_steps=self.args.relax_steps,
+                md_timestep=self.args.md_timestep,
+                md_ttime=self.args.md_ttime,
+                md_pressure=self.args.md_pressure,
+                melt_steps=self.args.melt_steps,
+                equil_steps=self.args.equil_steps,
+                prod_steps=self.args.prod_steps,
+                log_interval=self.args.log_interval,
+            )
+        return self._md_runner
+
+    def _compute_mixing_enthalpy(self):
+        """
+        Compute mixing enthalpy from summary.json.
+        Writes mixing_enthalpy.json, mixing_enthalpy.csv, mixing_enthalpy.png.
+        Works for any binary system (SYSTEM_NAME via pymatgen).
+        """
+        summary_path = self.output_base / "summary.json"
+        if not summary_path.exists():
+            logger.warning(f"summary.json not found: {summary_path}. Skipping finalization.")
+            return
+
+        with open(summary_path, 'r', encoding='utf-8') as f:
+            summary = json.load(f)
+
+        logger.info(f"\n{'='*60}")
+        logger.info("COMPUTING MIXING ENTHALPY")
+        logger.info(f"{'='*60}")
+
+        # --- System elements from SYSTEM_NAME (order preserved) ---
+        elements_system = [str(el) for el in Composition(self.args.system).elements]
+        if len(elements_system) != 2:
+            logger.error(
+                f"SYSTEM_NAME='{self.args.system}' is not binary: {elements_system}"
+            )
+            return
+        el_x, el_y = elements_system[0], elements_system[1]
+        x_col = f"x_{el_x}"
+
+        logger.info(f"System elements: x-axis = {el_x}, y-axis = {el_y}")
+
+        # --- Check pure references exist ---
+        if el_x not in summary or el_y not in summary:
+            missing = [el for el in (el_x, el_y) if el not in summary]
+            logger.error(f"Missing pure reference(s): {missing}. Cannot compute mixing enthalpy.")
+            return
+
+        H_x = summary[el_x]["H_kJ_per_mol"]
+        H_y = summary[el_y]["H_kJ_per_mol"]
+        E_x = summary[el_x]["E_pot_eV_per_atom"]
+        E_y = summary[el_y]["E_pot_eV_per_atom"]
+
+        logger.info(f"Reference enthalpies:")
+        logger.info(f"  H_{el_x} = {H_x:.2f} kJ/mol, E_{el_x} = {E_x:.6f} eV/atom")
+        logger.info(f"  H_{el_y} = {H_y:.2f} kJ/mol, E_{el_y} = {E_y:.6f} eV/atom")
+
+        # --- Compute per-composition ---
+        points = []
+        expected_compositions = set(self.tasks.keys())
+        present_compositions = set(summary.keys())
+        missing_compositions = sorted(expected_compositions - present_compositions)
+
+        for comp, data in summary.items():
+            counts = data.get("counts", {})
+            elements = list(counts.keys())
+
+            # Pure component
+            if len(elements) == 1:
+                el = elements[0]
+                if el not in (el_x, el_y):
+                    logger.error(f"Pure composition '{comp}' has unknown element: {el}")
+                    return
+                x = 1.0 if el == el_x else 0.0
+                H = data["H_kJ_per_mol"]
+                E = data["E_pot_eV_per_atom"]
+                dH_mix_kJ = 0.0
+                dH_mix_eV = 0.0
+
+            # Binary alloy
+            elif len(elements) == 2:
+                if set(elements) != {el_x, el_y}:
+                    logger.error(
+                        f"Composition '{comp}' has elements {elements}, "
+                        f"expected {sorted((el_x, el_y))}"
+                    )
+                    return
+                n_x = counts[el_x]
+                n_y = counts[el_y]
+                n_total = n_x + n_y
+                x = n_x / n_total
+                H = data["H_kJ_per_mol"]
+                E = data["E_pot_eV_per_atom"]
+                dH_mix_kJ = H - (x * H_x + (1 - x) * H_y)
+                dH_mix_eV = E - (x * E_x + (1 - x) * E_y)
+
+            else:
+                logger.error(
+                    f"Composition '{comp}' has {len(elements)} elements: {elements}. "
+                    f"Only binary supported."
+                )
+                return
+
+            points.append({
+                x_col: round(x, 2),
+                "composition": comp,
+                "H_kJ_per_mol": round(H, 2),
+                "dH_mix_kJ_per_mol": round(dH_mix_kJ, 2),
+                "E_pot_eV_per_atom": round(E, 6),
+                "dH_mix_eV_per_atom": round(dH_mix_eV, 6),
+                "T_average_K": round(data["T_average_K"], 1),
+                "n_frames": data["n_frames"],
+            })
+
+        points.sort(key=lambda p: p[x_col])
+        status = "complete" if not missing_compositions else "partial"
+
+        # --- Write JSON ---
+        final = {
+            "metadata": {
+                "calculator": self.args.calculator,
+                "model_type": "-".join([self.args.family, self.args.variant, self.args.use_type]),
+                "family": self.args.family,
+                "variant": self.args.variant,
+                "use_type": self.args.use_type,
+                "dft_method": self.args.dft_method,
+                "system": self.args.system,
+                "x_element": el_x,
+                "y_element": el_y,
+                "T_measure_K": self.T_measure,
+                "n_atoms": self.args.n_atoms,
+                "step": self.args.step,
+                "seed": self.args.seed,
+                "r_min": self.args.r_min,
+                "timestamp": datetime.now().isoformat(timespec="seconds"),
+            },
+            "reference": {
+                f"H_{el_x}_kJ_per_mol": round(H_x, 2),
+                f"H_{el_y}_kJ_per_mol": round(H_y, 2),
+                f"E_{el_x}_eV_per_atom": round(E_x, 6),
+                f"E_{el_y}_eV_per_atom": round(E_y, 6),
+                "source": "this_calculation",
+            },
+            "points": points,
+            "status": status,
+            "missing_compositions": missing_compositions,
+            "n_compositions": len(points),
+        }
+
+        json_path = self.output_base / f"mixing_enthalpy_{self.args.dft_method}.json"
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(final, f, indent=2, ensure_ascii=False)
+        logger.info(f"Saved: {json_path}")
+
+        # --- Write CSV (pandas, ';') ---
+        csv_path = self.output_base / f"mixing_enthalpy_{self.args.dft_method}.csv"
+        df = pd.DataFrame(points)
+        df = df[[
+            x_col, "composition", "H_kJ_per_mol",
+            "dH_mix_kJ_per_mol", "E_pot_eV_per_atom",
+            "dH_mix_eV_per_atom", "T_average_K", "n_frames",
+        ]]
+        df.to_csv(csv_path, sep=';', index=False, encoding='utf-8')
+        logger.info(f"Saved: {csv_path}")
+
+        # --- Plot ---
+        if not points:
+            logger.error("No valid points. Skipping plot.")
+            return
+
+        x_vals = [p[x_col] for p in points]
+        y_vals = [p["dH_mix_kJ_per_mol"] for p in points]
+
+        fig, ax = plt.subplots(figsize=(7, 5))
+        ax.axhline(0, color='black', linewidth=0.8, alpha=0.5)
+        ax.plot(x_vals, y_vals, '-', color='steelblue', linewidth=1.5, zorder=2)
+        ax.plot(x_vals, y_vals, 'o', color='black', markersize=6, zorder=3)
+
+        ax.set_xlabel(f"x({el_x})")
+        ax.set_ylabel(r"$\Delta H_{mix}$, kJ/mol")
+        ax.set_title(
+            f"{final['metadata']['model_type']} | {self.args.system} | {self.args.dft_method} | T = {int(self.T_measure)} K"
+        )
+        ax.set_xlim(-0.02, 1.02)
+        ax.grid(True, alpha=0.3)
+
+        png_path = self.output_base / f"mixing_enthalpy_{self.args.dft_method}.png"
+        fig.tight_layout()
+        fig.savefig(png_path, dpi=150)
+        plt.close(fig)
+        logger.info(f"Saved: {png_path}")
+
+        logger.info(f"{'='*60}")
+        logger.info(f"Mixing enthalpy: status={status}, points={len(points)}")
+        if missing_compositions:
+            logger.info(f"Missing: {missing_compositions}")
+        logger.info(f"{'='*60}")
+    
+    def _compute_density(self):
+        """
+        Build density vs composition artifacts from summary.json:
+        density_vs_composition.json / .csv / .png.
+
+        Points with missing density are kept with null values.
+        """
+        summary_path = self.output_base / "summary.json"
+        if not summary_path.exists():
+            logger.warning(f"summary.json not found: {summary_path}. Skipping density finalization.")
+            return
+
+        with open(summary_path, 'r', encoding='utf-8') as f:
+            summary = json.load(f)
+
+        logger.info(f"\n{'='*60}")
+        logger.info("COMPUTING DENSITY VS COMPOSITION")
+        logger.info(f"{'='*60}")
+
+        # --- System elements from SYSTEM_NAME (order preserved) ---
+        elements_system = [str(el) for el in Composition(self.args.system).elements]
+        if len(elements_system) != 2:
+            logger.error(
+                f"SYSTEM_NAME='{self.args.system}' is not binary: {elements_system}"
+            )
+            return
+        el_x, el_y = elements_system[0], elements_system[1]
+        x_col = f"x_{el_x}"
+
+        logger.info(f"System elements: x-axis = {el_x}, y-axis = {el_y}")
+
+        # --- Compute per-composition ---
+        points = []
+        missing_density = []
+        expected_compositions = set(self.tasks.keys())
+        present_compositions = set(summary.keys())
+        missing_compositions = sorted(expected_compositions - present_compositions)
+
+        for comp, data in summary.items():
+            counts = data.get("counts", {})
+            elements = list(counts.keys())
+
+            # Determine x
+            if len(elements) == 1:
+                el = elements[0]
+                if el not in (el_x, el_y):
+                    logger.error(f"Pure composition '{comp}' has unknown element: {el}")
+                    return
+                x = 1.0 if el == el_x else 0.0
+            elif len(elements) == 2:
+                if set(elements) != {el_x, el_y}:
+                    logger.error(
+                        f"Composition '{comp}' has elements {elements}, "
+                        f"expected {sorted((el_x, el_y))}"
+                    )
+                    return
+                n_x = counts[el_x]
+                n_y = counts[el_y]
+                n_total = n_x + n_y
+                x = n_x / n_total
+            else:
+                logger.error(
+                    f"Composition '{comp}' has {len(elements)} elements: {elements}. "
+                    f"Only binary supported."
+                )
+                return
+
+            has_density = "density_g_cm3" in data
+            if not has_density:
+                missing_density.append(comp)
+
+            points.append({
+                x_col: round(x, 2),
+                "composition": comp,
+                "density_g_cm3": data.get("density_g_cm3"),
+                "density_kg_m3": data.get("density_kg_m3"),
+                "density_atoms_A3": data.get("density_atoms_A3"),
+                "V_average_A3": data.get("V_average_A3"),
+                "mass_total_amu": data.get("mass_total_amu"),
+                "T_average_K": data.get("T_average_K"),
+                "n_frames": data.get("n_frames"),
+            })
+
+        points.sort(key=lambda p: p[x_col])
+        status = "complete" if not missing_density else "partial"
+
+        # --- Write JSON ---
+        final = {
+            "metadata": {
+                "calculator": self.args.calculator,
+                "model_type": "-".join([self.args.family, self.args.variant, self.args.use_type]),
+                "family": self.args.family,
+                "variant": self.args.variant,
+                "use_type": self.args.use_type,
+                "dft_method": self.args.dft_method,
+                "system": self.args.system,
+                "x_element": el_x,
+                "y_element": el_y,
+                "T_measure_K": self.T_measure,
+                "n_atoms": self.args.n_atoms,
+                "step": self.args.step,
+                "seed": self.args.seed,
+                "r_min": self.args.r_min,
+                "timestamp": datetime.now().isoformat(timespec="seconds"),
+            },
+            "points": points,
+            "status": status,
+            "missing_density": missing_density,
+            "missing_compositions": missing_compositions,
+            "n_compositions": len(points),
+        }
+
+        json_path = self.output_base / f"density_vs_composition_{self.args.dft_method}.json"
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(final, f, indent=2, ensure_ascii=False)
+        logger.info(f"Saved: {json_path}")
+
+        # --- Write CSV ---
+        csv_path = self.output_base / f"density_vs_composition_{self.args.dft_method}.csv"
+        df = pd.DataFrame(points)
+        df = df[[
+            x_col, "composition", "density_g_cm3", "density_kg_m3",
+            "density_atoms_A3", "V_average_A3", "mass_total_amu",
+            "T_average_K", "n_frames",
+        ]]
+        df.to_csv(csv_path, sep=';', index=False, encoding='utf-8')
+        logger.info(f"Saved: {csv_path}")
+
+        # --- Plot (skip null points) ---
+        if not points:
+            logger.error("No valid points. Skipping plot.")
+            return
+
+        x_vals = [p[x_col] for p in points]
+        y_vals = [p["density_g_cm3"] for p in points]
+
+        # Filter out None for plotting
+        x_plot = [x for x, y in zip(x_vals, y_vals) if y is not None]
+        y_plot = [y for y in y_vals if y is not None]
+
+        if not x_plot:
+            logger.warning("No valid density points. Skipping plot.")
+            return
+
+        fig, ax = plt.subplots(figsize=(7, 5))
+        ax.plot(x_plot, y_plot, '-', color='darkred', linewidth=1.5, zorder=2)
+        ax.plot(x_plot, y_plot, 'o', color='black', markersize=6, zorder=3)
+
+        ax.set_xlabel(f"x({el_x})")
+        ax.set_ylabel(r"$\rho$, g/cm$^3$")
+        ax.set_title(
+            f"{final['metadata']['model_type']} | {self.args.system} | {self.args.dft_method} | T = {int(self.T_measure)} K"
+        )
+        ax.set_xlim(-0.02, 1.02)
+        ax.grid(True, alpha=0.3)
+
+        png_path = self.output_base / f"density_vs_composition_{self.args.dft_method}.png"
+        fig.tight_layout()
+        fig.savefig(png_path, dpi=150)
+        plt.close(fig)
+        logger.info(f"Saved: {png_path}")
+
+        logger.info(f"{'='*60}")
+        logger.info(f"Density: status={status}, points={len(points)}")
+        if missing_density:
+            logger.info(f"Missing density for: {missing_density}")
+        logger.info(f"{'='*60}")
+
+    def _backfill_density(self, all_results: Dict, summary_path: Path) -> None:
+        """
+        Add density fields to summary entries that lack them, by re-reading
+        existing production trajectories. Does not re-run MD.
+
+        Idempotent: entries that already have 'density_g_cm3' are skipped.
+        Missing/broken trajectories produce a warning and are left untouched.
+        """
+        logger.info(f"\n{'='*60}")
+        logger.info("BACKFILL DENSITY FROM EXISTING TRAJECTORIES")
+        logger.info(f"{'='*60}")
+
+        n_filled = 0
+        n_skipped = 0
+        n_missing = 0
+
+        for comp, entry in all_results.items():
+            if "density_g_cm3" in entry:
+                n_skipped += 1
+                continue
+
+            traj_path_str = entry.get("trajectory_path")
+            if not traj_path_str:
+                logger.warning(f"  {comp}: no trajectory_path in summary, skipping")
+                n_missing += 1
+                continue
+
+            traj_path = Path(traj_path_str)
+            if not traj_path.exists():
+                logger.warning(f"  {comp}: trajectory not found: {traj_path}, skipping")
+                n_missing += 1
+                continue
+
+            try:
+                density_result = TrajectoryAnalyzer.average_from_trajectory(
+                    traj_path, properties=["density"]
+                )
+            except Exception as e:
+                logger.warning(f"  {comp}: failed to analyze {traj_path}: {e}, skipping")
+                n_missing += 1
+                continue
+
+            # Merge only density fields; do not touch energy fields
+            for key in (
+                "density_g_cm3",
+                "density_kg_m3",
+                "density_atoms_A3",
+                "V_average_A3",
+                "mass_total_amu",
+            ):
+                if key in density_result:
+                    entry[key] = density_result[key]
+
+            n_filled += 1
+            logger.info(
+                f"  {comp}: rho = {entry['density_g_cm3']} g/cm3 "
+                f"(V = {entry['V_average_A3']} A3)"
+            )
+
+        logger.info(
+            f"Backfill done: filled={n_filled}, "
+            f"already_had={n_skipped}, missing={n_missing}"
+        )
+
+        if n_filled > 0:
+            with open(summary_path, 'w', encoding='utf-8') as f:
+                json.dump(all_results, f, indent=2, ensure_ascii=False)
+            logger.info(f"Updated summary: {summary_path}")
+        else:
+            logger.info("Nothing to update in summary.")
+
+        logger.info(f"{'='*60}")
+
+    def run_composition(self, composition: str, T_measure: float) -> Dict:
+        
+        """Run MD for one composition at given temperature."""
+        logger.info(f"\n{'='*60}")
+        logger.info(f"COMPOSITION: {composition} | T_measure = {T_measure} K")
+        logger.info(f"{'='*60}")
+        
+        # Check if already done
+        if self.checkpoint.is_completed(composition, T_measure):
+            logger.info(f"Already completed! Loading from checkpoint...")
+            return self.checkpoint.load_result(composition, T_measure)
+        
+        # Step 1: Generate/load structure
+        logger.info("\nStep 1: Loading structure...")
+        
+        # Determine if pure element or alloy
+        
+        comp = Composition(composition)
+        elements = [str(el) for el in comp.elements]
+        
+        if len(elements) == 1:
+            struct_path = self.structure_manager.generate_pure(composition)
+            counts = {composition: self.args.n_atoms}
+        else:
+            # Сплав — генерируем напрямую
+            struct_path = self.structure_manager.generate_alloy(composition)
+            counts = dict(comp.get_el_amt_dict())
+            counts = {k: int(v * self.args.n_atoms) for k, v in counts.items()}
+        
+        logger.info(f"  Structure: {struct_path}")
+        logger.info(f"  Composition: {counts}")
+        
+        # Step 2: Bulk modulus
+        B = get_bulk_modulus(composition, counts)
+        logger.info(f"\nStep 2: Bulk modulus = {B:.1f} GPa")
+        
+        # Step 3: Determine temperatures
+        T_melt = T_measure * self.args.melt_factor
+        T_equil = T_measure * self.args.equil_factor
+        T_prod = T_measure * self.args.equil_factor
+        
+        logger.info(f"\nStep 3: Temperatures")
+        logger.info(f"  T_melt = {T_melt:.0f} K ({self.args.melt_factor}×T_measure)")
+        logger.info(f"  T_equil = {T_equil:.0f} K ({self.args.equil_factor}×T_measure)")
+        logger.info(f"  T_prod = {T_prod:.0f} K")
+        
+        # Step 4: Load structure
+        
+        atoms = read(str(struct_path))
+
+        # Step 5: Relax (with caching)
+        relax_cache = self.cache_dir / f"{composition}_relaxed.traj"
+
+        if self.checkpoint.is_relax_done(composition) and relax_cache.exists():
+            logger.info(f"\nStep 5: Loading relaxed structure from cache...")
+            atoms = read(str(relax_cache))
+            atoms.calc = self.calculator
+        else:
+            logger.info(f"\nStep 5: Relax...")
+            self.md_runner.relax(atoms)
+            
+            write(str(relax_cache), atoms, format='traj')
+            self.checkpoint.mark_relax_done(composition, str(relax_cache))
+            logger.info(f"  Relax cached: {relax_cache}")
+
+        # Step 6: Melt
+        logger.info(f"\nStep 6: Melt at {T_melt:.0f} K...")
+        self.md_runner.melt(atoms, T_melt, B)
+
+        # Step 7: Equilibrate
+        logger.info(f"\nStep 7: Equilibrate at {T_equil:.0f} K...")
+        self.md_runner.equilibrate(atoms, T_equil, B)
+
+        # Step 8: Production
+        traj_path = self.output_base / f"{composition}_{int(T_prod)}K.traj"
+        logger.info(f"\nStep 8: Production at {T_prod:.0f} K...")
+        self.md_runner.production(atoms, T_prod, B, traj_path)
+
+        # Step 9: Analyze
+        logger.info(f"\nStep 9: Analyzing trajectory...")
+        result = TrajectoryAnalyzer.average_from_trajectory(traj_path, properties=["energy", "density"])
+        
+        result.update({
+            "composition": composition,
+            "T_measure_K": T_measure,
+            "T_melt_K": T_melt,
+            "T_prod_K": T_prod,
+            "bulk_modulus_GPa": B,
+            "n_atoms": self.args.n_atoms,
+            "counts": counts,
+            "trajectory_path": str(traj_path),
+            "calculator": self.args.calculator,
+            "model_type": "-".join([self.args.family, self.args.variant, self.args.use_type])
+        })
+        
+        logger.info(f"\n{'='*60}")
+        logger.info(f"RESULTS: {composition}")
+        logger.info(f"{'='*60}")
+        logger.info(f"  E_pot = {result['E_pot_eV_per_atom']:.6f} eV/atom")
+        logger.info(f"  H     = {result['H_kJ_per_mol']:.2f} kJ/mol")
+        logger.info(f"  T_avg = {result['T_average_K']:.1f} K")
+        logger.info(f"  Frames: {result['n_frames']}")
+        
+        # Save checkpoint
+        self.checkpoint.mark_completed(composition, T_measure, result)
+        
+        return result
+    
+    def run(self):
+        """Main execution."""
+        logger.info("=" * 60)
+        logger.info("MIXING ENTHALPY CALCULATOR")
+        logger.info("=" * 60)
+        logger.info(f"Calculator: {self.args.calculator}")
+        logger.info(f"Mode: {self.args.family}-{self.args.variant}-{self.args.use_type}")
+        logger.info(f"System: {self.args.system}")
+        logger.info(f"Device: {self.args.device}, dtype: {self.args.dtype}, GPU: {self.args.gpu_name}")
+        logger.info(f"T_measure: {self.T_measure} K")
+        logger.info(f"Tasks: {len(self.tasks)}")
+        logger.info(f"Output: {self.output_base}")
+        logger.info("=" * 60)
+        
+        # Load existing summary if present
+        summary_path = self.output_base / "summary.json"
+        if summary_path.exists():
+            with open(summary_path, 'r', encoding='utf-8') as f:
+                all_results = json.load(f)
+            logger.info(f"Loaded existing summary: {len(all_results)} results")
+        else:
+            all_results = {}
+        
+        for composition, T_measure in self.tasks.items():
+            # Skip if already in summary
+            if composition in all_results:
+                logger.info(f"Skipping {composition} (already in summary)")
+                continue
+            
+            try:
+                result = self.run_composition(composition, T_measure)
+                if result:
+                    all_results[composition] = result
+                    # Save after each composition
+                    with open(summary_path, 'w', encoding='utf-8') as f:
+                        json.dump(all_results, f, indent=2, ensure_ascii=False)
+            except Exception as e:
+                logger.error(f"Failed {composition}: {e}")
+                import traceback
+                traceback.print_exc()
+        
+                logger.info(f"\n{'='*60}")
+        logger.info(f"ALL DONE! {len(all_results)} results")
+        logger.info(f"Results: {summary_path}")
+        logger.info(f"{'='*60}")
+
+        # Backfill density for compositions that lack it (e.g. old runs)
+        self._backfill_density(all_results, summary_path)
+
+        # Finalization
+        self._compute_mixing_enthalpy()
+        self._compute_density()
+
+def main():
+    parser = argparse.ArgumentParser(description="Mixing Enthalpy Calculator")
+
+    # Calculator
+    parser.add_argument("--calculator", required=True, choices=["grace", "deepmd"])
+    parser.add_argument("--model-path", required=True)
+    parser.add_argument("--model-name", default=None)
+    parser.add_argument("--device", default="cuda")
+    parser.add_argument("--dtype", default="float32")
+    parser.add_argument("--gpu-name", default="unknown")
+
+    # Mode: <family>-<variant>-<use_type>
+    parser.add_argument("--family", required=True)
+    parser.add_argument("--variant", required=True)
+    parser.add_argument("--use-type", required=True, choices=["fit", "finetune", "pretrained"])
+    parser.add_argument("--dft-method", default="", help="DFT method: pbe, scan, sol, or '' (flat JSON)")
+
+    # System
+    parser.add_argument("--system", required=True, help="Base system: AlTi")
+    parser.add_argument("--step", type=float, default=0.1, help="Step in Al fraction")
+    parser.add_argument("--T-measure", required=True, help="Measurement temperature: 2000")
+    parser.add_argument("--n-atoms", type=int, default=200)
+    parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument("--r-min", type=float, default=2.0)
+
+    # Output
+    parser.add_argument("--workdir", default="models_check/results/mixing_enthalpy")
+
+    # MD parameters
+    parser.add_argument("--relax-fmax", type=float, default=0.001)
+    parser.add_argument("--relax-steps", type=int, default=10000)
+    parser.add_argument("--md-timestep", type=float, default=1.0)
+    parser.add_argument("--md-ttime", type=float, default=25.0)
+    parser.add_argument("--md-pressure", type=float, default=1.0)
+    parser.add_argument("--melt-steps", type=int, default=10000)
+    parser.add_argument("--equil-steps", type=int, default=30000)
+    parser.add_argument("--prod-steps", type=int, default=30000)
+    parser.add_argument("--log-interval", type=int, default=100)
+
+    # Temperature factors
+    parser.add_argument("--melt-factor", type=float, default=1.5)
+    parser.add_argument("--equil-factor", type=float, default=1.0)
+
+    parser.add_argument("--force-clear", action="store_true", default=False,
+                    help="Remove output directory before running")
+
+    args = parser.parse_args()
+
+    calculator = MixingEnthalpyCalculator(args)
+    calculator.run()
+
+
+if __name__ == "__main__":
+    main()

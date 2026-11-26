@@ -1,0 +1,77 @@
+{
+  "checked_unix": 1793245521.7301648,
+  "new_ids": [
+    "TiAl-test-029"
+  ],
+  "common_count": 30,
+  "fingerprint": "9be7c27ae9e8c28b",
+  "models_and_analysis_unchanged": true,
+  "analysis_mode": "monitor-raw",
+  "visual_QA": [
+    "parity",
+    "coverage",
+    "energy_residuals",
+    "convergence"
+  ],
+  "cache_files_verified": 300,
+  "history20k_counts": [
+    29,
+    30
+  ],
+  "history15k_preserved_hash_verified": true,
+  "validated_counts": {
+    "PBE": 38,
+    "PBEsol": 37,
+    "r2SCAN": 30
+  },
+  "queues": {
+    "PBE": {
+      "running": 0,
+      "pending": 12,
+      "pending_reason_counts": {
+        "(Priority)": 12
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "PBEsol": {
+      "running": 0,
+      "pending": 13,
+      "pending_reason_counts": {
+        "(Priority)": 13
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "r2SCAN": {
+      "running": 0,
+      "pending": 20,
+      "pending_reason_counts": {
+        "(Resources)": 2,
+        "(JobArrayTaskLimit)": 18
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    }
+  },
+  "new_scheduler_errors": [],
+  "readiness": {
+    "candidate_for_discussion": false,
+    "automatic_stop": false,
+    "reasons": [
+      "POSCAR_beta-Ti-bcc: 3 structures; screening minimum 4.",
+      "POSCAR_gamma_AlTi_L1_0: 3 structures; screening minimum 4.",
+      "Need three comparable checkpoints separated by at least five new structures."
+    ],
+    "qualification": "Heuristic discussion trigger based on fine-tuned models only. The pretrained baseline does not change the stopping rule. Report adaptive stopping, completion-order bias, coverage and uncertainty. Full fixed Test50 remains preferred."
+  },
+  "completed_r2SCAN029_elapsed": "11:30:10",
+  "artifacts_sha256": {
+    "convergence.pdf": "05efa90e2e3886288bdbd9fb9b0dee3447af8224789b7d32a577e73c525aec19",
+    "convergence.png": "d7d8fee5baa7bf510909fd0f51002718c5fcfd19c6612d9937e7bb84cd40d710",
+    "coverage.pdf": "6392aea78adce7fdde03f9cb22d9bd9f05b1ddc8d4f8a8367d9d8413b1801c82",
+    "coverage.png": "cf50d6d1bad5b988a3222fd4f047460fefbf0c34ead5d3629ee0c57118e81ea5",
+    "energy_residuals.pdf": "2ccfb1752c04b1a2796556b61bcd5907c4f3be4b18163fbb3eb1670d9dfde5ee",
+    "energy_residuals.png": "182d479df2dc9c97cb0c314ce64f2cb251a74eaba94f18d0cb2f5fdde530c6e8",
+    "metrics.json": "5a0b7f0e545f3a7a903bd55e74f0ec8a6cf9f90c667e05ba8036cbb17be782e6",
+    "parity.pdf": "09e26d24b0bd05d9f2e3d8caca5fea067d96766b4985dc6900e2c13561191f16",
+    "parity.png": "f861e3fcdcfa00d009584bf8e858a38cce9bc08e27f4e2b5d8d35cd33f124f80"
+  }
+}

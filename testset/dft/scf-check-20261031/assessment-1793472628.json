@@ -1,0 +1,121 @@
+{
+  "unix": 1793472628.9758046,
+  "checked_local": "2026-10-31T23:50:28+05:00",
+  "snapshot": "snapshot-1793472628.json",
+  "targets": {
+    "TiAl-test-031": {
+      "latest_complete": {
+        "n": 30,
+        "dE_eV": 0.0002549981,
+        "deps_eV": -0.0001032601
+      },
+      "iteration_in_progress": 31,
+      "elapsed": "06:37:53",
+      "remaining": "13:22:07",
+      "deadline_local": "2026-11-01T13:12:36",
+      "recent_median_step_minutes": 13.412893333333333,
+      "additional20_steps_hours": 4.470964444444444,
+      "conditional_loglinear_estimates": [
+        {
+          "window": 5,
+          "additional_steps_loglinear_fit": 14.541738992558386
+        },
+        {
+          "window": 8,
+          "additional_steps_loglinear_fit": 5.9481190941139985
+        },
+        {
+          "window": 10,
+          "additional_steps_loglinear_fit": 6.477146055597309
+        }
+      ],
+      "warnings_outcar": [],
+      "issues_slurm_stdout_tail": [
+        "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications.",
+        "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications."
+      ]
+    },
+    "TiAl-test-039": {
+      "latest_complete": {
+        "n": 27,
+        "dE_eV": 0.0008432473,
+        "deps_eV": -0.0004391799
+      },
+      "iteration_in_progress": 28,
+      "elapsed": "05:46:26",
+      "remaining": "14:13:34",
+      "deadline_local": "2026-11-01T14:04:03",
+      "recent_median_step_minutes": 12.969354166666665,
+      "additional20_steps_hours": 4.323118055555555,
+      "conditional_loglinear_estimates": [
+        {
+          "window": 5,
+          "additional_steps_loglinear_fit": 13.769669152002159
+        },
+        {
+          "window": 8,
+          "additional_steps_loglinear_fit": 10.704670934062747
+        },
+        {
+          "window": 10,
+          "additional_steps_loglinear_fit": 9.630802125949863
+        }
+      ],
+      "warnings_outcar": [],
+      "issues_slurm_stdout_tail": [
+        "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications.",
+        "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications."
+      ]
+    },
+    "TiAl-test-048": {
+      "latest_complete": {
+        "n": 24,
+        "dE_eV": 0.007427361,
+        "deps_eV": -0.003358987
+      },
+      "iteration_in_progress": 25,
+      "elapsed": "05:27:53",
+      "remaining": "14:32:07",
+      "deadline_local": "2026-11-01T14:22:36",
+      "recent_median_step_minutes": 13.604114166666665,
+      "additional20_steps_hours": 4.534704722222221,
+      "conditional_loglinear_estimates": [
+        {
+          "window": 5,
+          "additional_steps_loglinear_fit": 25.260553421596732
+        },
+        {
+          "window": 8,
+          "additional_steps_loglinear_fit": 13.805062613086214
+        },
+        {
+          "window": 10,
+          "additional_steps_loglinear_fit": 14.48655664934622
+        }
+      ],
+      "warnings_outcar": [],
+      "issues_slurm_stdout_tail": [
+        "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications.",
+        "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications."
+      ]
+    }
+  },
+  "interpretation": "All three running and making progress. Both absolute dE and deps must be below1e-6eV; none converged yet. Damped oscillations in dE; deps decreases steadily. Step time stable near13min;13-14.5h remains. Current timeout risk low. Loglinear extrapolations are descriptive scenarios on recent iterations and do not guarantee a remaining iteration count. No intervention indicated.",
+  "DFT_modified": false,
+  "conditional_remaining_hours_ranges": {
+    "TiAl-test-031": [
+      1.5,
+      3.5
+    ],
+    "TiAl-test-039": [
+      2,
+      3
+    ],
+    "TiAl-test-048": [
+      3,
+      6
+    ]
+  },
+  "forecast_method": "Linear fit of log absolute dE and deps over recent5/8/10OSZICAR iterations, take later threshold crossing and multiply by median recent iteration duration. Rounded ranges describe sensitivity to window, not probabilistic confidence intervals or guaranteed finish times.",
+  "startup_warning_note": "All three Slurm stdout tails contain Intel vars.sh UMF/DPC++ environment setup warnings. OUTCAR has no VASP numerical warnings/errors; the computations are progressing. Do not describe Slurm output as entirely warning-free."
+}

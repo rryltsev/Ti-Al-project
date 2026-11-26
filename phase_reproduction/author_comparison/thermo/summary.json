@@ -1,0 +1,65 @@
+{
+  "static": {
+    "temperatures_considered": 49,
+    "resolved_temperatures": 49,
+    "max_abs_deviation_grid_pp": {
+      "alpha": 0.0,
+      "alpha2": 0.0
+    }
+  },
+  "HA": {
+    "temperatures_considered": 49,
+    "resolved_temperatures": 47,
+    "max_abs_deviation_grid_pp": {
+      "alpha": 0.0,
+      "alpha2": 0.0
+    }
+  },
+  "QHA": {
+    "temperatures_considered": 49,
+    "resolved_temperatures": 43,
+    "max_abs_deviation_grid_pp": {
+      "alpha": 0.0,
+      "alpha2": 0.0
+    }
+  },
+  "author_QHA_spline": {
+    "shared_resolved_temperatures": 43,
+    "temperatures_with_grid_difference": [
+      600,
+      625,
+      925,
+      1075,
+      1100,
+      1150,
+      1225,
+      1650
+    ],
+    "max_abs_difference_pp": [
+      0.04999999999999716,
+      0.05000000000000071
+    ],
+    "status_disagreements": []
+  },
+  "ours_QHA_spline": {
+    "shared_resolved_temperatures": 42,
+    "temperatures_with_grid_difference": [
+      600,
+      700,
+      775,
+      800,
+      875,
+      950,
+      1025,
+      1050,
+      1175,
+      1275
+    ],
+    "max_abs_difference_pp": [
+      0.05000000000000071,
+      0.05000000000000071
+    ],
+    "status_disagreements": []
+  },
+  "max_refined_difference_pp": 2.6025068322610423e-08
+}

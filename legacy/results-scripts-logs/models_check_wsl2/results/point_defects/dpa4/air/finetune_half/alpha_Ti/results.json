@@ -1,0 +1,75 @@
+{
+  "system": "alpha_Ti",
+  "calculator": "deepmd",
+  "family": "dpa4",
+  "variant": "air",
+  "use_type": "finetune_half",
+  "e_per_atom_eV": -7.889989,
+  "properties": [
+    {
+      "property": "σ_basal",
+      "type": "surface_energy",
+      "miller": [
+        0,
+        0,
+        1
+      ],
+      "value": 1.8606,
+      "unit": "J/m2",
+      "E_slab_eV": -1120.404753,
+      "n_atoms": 144,
+      "surface_area_A2": 67.8293
+    },
+    {
+      "property": "σ_prism",
+      "type": "surface_energy",
+      "miller": [
+        1,
+        0,
+        0
+      ],
+      "value": 2.001,
+      "unit": "J/m2",
+      "E_slab_eV": -1105.121744,
+      "n_atoms": 144,
+      "surface_area_A2": 124.254
+    },
+    {
+      "property": "σ_pyr.I",
+      "type": "surface_energy",
+      "miller": [
+        1,
+        0,
+        1
+      ],
+      "value": 1.8462,
+      "unit": "J/m2",
+      "E_slab_eV": -1813.632518,
+      "n_atoms": 234,
+      "surface_area_A2": 141.5622
+    },
+    {
+      "property": "σ_pyr.II",
+      "type": "surface_energy",
+      "miller": [
+        1,
+        1,
+        0
+      ],
+      "value": 1.983,
+      "unit": "J/m2",
+      "E_slab_eV": -1082.885756,
+      "n_atoms": 144,
+      "surface_area_A2": 215.2142
+    },
+    {
+      "property": "Evf-Ti",
+      "type": "vacancy_formation_energy",
+      "element": "Ti",
+      "value": 2.3305,
+      "unit": "eV",
+      "E_perfect_eV": -946.798677,
+      "E_vac_eV": -936.57816
+    }
+  ]
+}

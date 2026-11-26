@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "step": 3000,
+  "checkpoint": "checkpoints/model.ckpt-3000.pt",
+  "checkpoint_sha256": "b17d6956410f9075ca70375286cd9d363be67f886ff752a0ca73aef1edf0782e",
+  "merged": "/misc/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-02/training-plan01/cases/r2SCAN-lora16-N200-seed20/merged/03000.pt",
+  "merged_sha256": "4c371fd166276a3debd7a282a47686312874e37152349e863eb439db522e6a81",
+  "live_vs_merged": [
+    {
+      "id": "tial-selected-0070",
+      "energy_delta_eV_atom": 1.655684577094184e-09,
+      "force_max_eV_A": 4.988973389963292e-07,
+      "virial_max_eV": 2.6205841976434385e-06
+    },
+    {
+      "id": "tial-selected-0687",
+      "energy_delta_eV_atom": 7.159076631069184e-09,
+      "force_max_eV_A": 1.9783225866376597e-06,
+      "virial_max_eV": 1.3820543841802646e-05
+    },
+    {
+      "id": "tial-selected-0299",
+      "energy_delta_eV_atom": -6.984919309616089e-09,
+      "force_max_eV_A": 9.82549264727517e-07,
+      "virial_max_eV": 1.3380825521380757e-05
+    }
+  ],
+  "exposures": {
+    "steps": 3000,
+    "frames": 3000,
+    "atoms": 660530
+  },
+  "seconds": 849.4552712887526
+}

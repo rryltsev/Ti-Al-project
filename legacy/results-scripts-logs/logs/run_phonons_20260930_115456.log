@@ -1,0 +1,85 @@
+Using GPU device(s): 1, GPU: RTX 3050
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4c
+  Variant:   neo
+  Use type:  finetune
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/finetune_deepmd_dpa4c/run_fits/TiAl_pbe_Neo_DPA4C_20260930_112531/output_model
+  Name:      model_frozen.pt2
+  Full path: /home/katkoff/finetune_deepmd_dpa4c/run_fits/TiAl_pbe_Neo_DPA4C_20260930_112531/output_model/model_frozen.pt2
+==========================================
+Model found: /home/katkoff/finetune_deepmd_dpa4c/run_fits/TiAl_pbe_Neo_DPA4C_20260930_112531/output_model/model_frozen.pt2
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe
+==========================================
+Activated: ase_deepmd_dpa4
+Python: /home/katkoff/miniconda3/envs/ase_deepmd_dpa4/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe/.triton
+==========================================
+==========================================
+Phonon calculation (WSL2)
+==========================================
+Date:          Wed Sep 30 11:54:56 +05 2026
+System:        alpha2_AlTi3
+Mode:          dpa4c-neo-finetune
+Model path:    /home/katkoff/finetune_deepmd_dpa4c/run_fits/TiAl_pbe_Neo_DPA4C_20260930_112531/output_model/model_frozen.pt2
+DFT method:    pbe
+CIF file:      /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Supercell:     5,5,5
+Delta:         0.01
+Kpts DOS:      50,50,50
+DOS width:     0.0002
+DOS npts:      1000
+Band path:     GMKGALHA
+Band npoints:  200
+Use THz:       true
+Fmax:          0.0001
+Max steps:     1000
+Pressure:      0.0
+Workdir:       /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe
+Log file:      /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260930_115456.log
+==========================================
+/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py:91: UserWarning: Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  structure = parser.parse_structures(primitive=False)[0]
+W0930 11:54:58.891000 915536 site-packages/torch/_inductor/package/package.py:120] Loading outdated pt2 file. Please regenerate your package.
+Output directory: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe
+==================================================
+PHONON CALCULATION WORKFLOW
+==================================================
+Loading structure from /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Loaded 8 atoms
+Setting up calculator: deepmd
+Calculator ready
+Starting relaxation...
+Relaxation finished: 4 steps, 2.46 sec, converged=True
+Starting phonon calculation...
+Phonons done: 0.96 sec, displacements=49, atoms_per_call=1000
+Computing DOS...
+DOS saved to /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe/phonon_dos.dat
+Computing band structure...
+Using standard band path: GMKGALHA
+WARNING, 3 imaginary frequencies at q = ( 0.00,  0.00,  0.00) ; (omega_q = 2.471e-05*i)
+WARNING, 3 imaginary frequencies at q = ( 0.00,  0.00,  0.00) ; (omega_q = 2.471e-05*i)
+Band structure saved to /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe/phonon_bands.dat
+Metrics saved to /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe/metrics.json
+==================================================
+CALCULATION COMPLETED
+Results saved in: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe
+==================================================
+==========================================
+Phonon calculation finished
+==========================================
+Exit code: 0
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4c/neo/finetune/alpha2_AlTi3/pbe
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260930_115456.log
+==========================================
+✅ SUCCESS!
+==========================================

@@ -1,0 +1,93 @@
+{
+  "temperature_K": 2100,
+  "n_replicas": 5,
+  "review_unix": 1793296905.9633787,
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 2.5131161789810563,
+      "eta_std_mPa_s": 0.10718500688988737,
+      "relative_std": 0.0426502394860812,
+      "neff": 119.61700004091752,
+      "tau_exp_ps": 0.10548021899669993,
+      "tau_int_ps": 0.099162413240433,
+      "cost_z": 0.44485751754489156,
+      "criterion_z": 2.688034438641025
+    },
+    "first20ps": {
+      "eta_mPa_s": 2.6267838323691923,
+      "eta_std_mPa_s": 0.1655726168709744,
+      "relative_std": 0.06303244859004573,
+      "neff": 64.40583041853283,
+      "tau_exp_ps": 0.10925950094276102,
+      "tau_int_ps": 0.10222335012673177,
+      "cost_z": 1.40813936018492,
+      "criterion_z": 3.7627509829343198
+    },
+    "second20ps": {
+      "eta_mPa_s": 2.187941457731324,
+      "eta_std_mPa_s": 0.09659642777905728,
+      "relative_std": 0.04414945721592482,
+      "neff": 139.08768153525492,
+      "tau_exp_ps": 0.07692927934616185,
+      "tau_int_ps": 0.0875516598618326,
+      "cost_z": -0.05962440244007586,
+      "criterion_z": 3.5849010623808826
+    }
+  },
+  "delta_vs_5k_percent": {
+    "40ps": -5.019081828705785,
+    "first20ps": -0.7231172507534356,
+    "second20ps": -17.308761807972296
+  },
+  "baseline_5k": {
+    "system": "AlTi",
+    "T": 2100,
+    "dft": "pbe",
+    "c_Ti": 1.0,
+    "eta_mPa_s": 2.645916914015038,
+    "eta_std_mPa_s": 0.10829949824318905,
+    "eta_pa_s": 0.002645916914015038,
+    "eta_std_pa_s": 0.00010829949824318904,
+    "neff": 42.17620073532606,
+    "n_replicas": 15,
+    "n_steps": 20001,
+    "timestep_ps": 0.001,
+    "block_size": 1,
+    "tau_exp_ps": 0.13041804780115154,
+    "tau_exp_std_ps": 0.020532118116156618,
+    "tau_int_ps": 0.10274485554673696,
+    "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json"
+  },
+  "checks": [
+    {
+      "id": "Ti_2100K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": false,
+        "new_batch_consistency": false,
+        "window_fit_diagnostics": false
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.1293910420733413
+    }
+  ],
+  "images_reviewed": [
+    "convergence.png",
+    "40ps/spectrum.png",
+    "40ps/extras.png",
+    "first20ps/spectrum.png",
+    "first20ps/extras.png",
+    "second20ps/spectrum.png",
+    "second20ps/extras.png",
+    "figure7_current.png"
+  ],
+  "assessment": "Preliminary: all three cutoff criterion Z values exceed2; second20ps selects a much higher cutoff and yields lower eta. Duration difference12.94% and full error4.27% exceed3%. Insufficient N and no previous batches. This does not establish physical drift. GPU preflight and2100K production commands verified; no failure files.",
+  "historical_15k_2100": null,
+  "new_batch_vs_previous": "not available: first five replicas"
+}

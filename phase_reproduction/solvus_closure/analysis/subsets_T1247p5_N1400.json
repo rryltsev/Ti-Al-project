@@ -1,0 +1,114 @@
+{
+  "T_K": 1247.5,
+  "N": 1400,
+  "cut_Q": 0.47,
+  "pooled_S": -1.4103813721009801,
+  "evaluations": {
+    "3.533": {
+      "mu_eval": 3.547713652233444,
+      "direct_fields": [
+        3.533
+      ],
+      "runs": 4,
+      "n_bias_windows": 4,
+      "BC_tree_min": null,
+      "S_at_common_mu": 2.2765453781485796,
+      "conditional_low_high": [
+        {
+          "x_pct": 27.33961123966018,
+          "Q": 0.28675749053143307,
+          "time_ESS": 0.26012114069261427
+        },
+        {
+          "x_pct": 27.382068746125604,
+          "Q": 0.7297137219587974,
+          "time_ESS": 1.8668654987281177
+        }
+      ],
+      "range_Q0": [
+        0.075,
+        0.81
+      ]
+    },
+    "3.545": {
+      "mu_eval": 3.547713652233444,
+      "direct_fields": [
+        3.545
+      ],
+      "runs": 16,
+      "n_bias_windows": 16,
+      "BC_tree_min": 0.4862089874205632,
+      "S_at_common_mu": -0.9345001989546586,
+      "conditional_low_high": [
+        {
+          "x_pct": 27.314288795100595,
+          "Q": 0.17060858231779386,
+          "time_ESS": 73.92073795093847
+        },
+        {
+          "x_pct": 27.32512567292146,
+          "Q": 0.7493273742463479,
+          "time_ESS": 128.2319971339242
+        }
+      ],
+      "range_Q0": [
+        0.02,
+        0.93
+      ]
+    },
+    "3.557": {
+      "mu_eval": 3.547713652233444,
+      "direct_fields": [
+        3.557
+      ],
+      "runs": 4,
+      "n_bias_windows": 4,
+      "BC_tree_min": null,
+      "S_at_common_mu": 0.4958382688414036,
+      "conditional_low_high": [
+        {
+          "x_pct": 27.30369524175888,
+          "Q": 0.1266895190428815,
+          "time_ESS": 4.135643898192
+        },
+        {
+          "x_pct": 27.261730092869715,
+          "Q": 0.8126088310052739,
+          "time_ESS": 0.16645621997182977
+        }
+      ],
+      "range_Q0": [
+        0.075,
+        0.81
+      ]
+    },
+    "all_except_nearest_field": {
+      "mu_eval": 3.547713652233444,
+      "direct_fields": [
+        3.533,
+        3.557
+      ],
+      "runs": 8,
+      "n_bias_windows": 8,
+      "BC_tree_min": null,
+      "S_at_common_mu": 2.1151229361635053,
+      "conditional_low_high": [
+        {
+          "x_pct": 27.362583109690714,
+          "Q": 0.1975823157770792,
+          "time_ESS": 2.0846594191637013
+        },
+        {
+          "x_pct": 27.290014411295253,
+          "Q": 0.7931938553664218,
+          "time_ESS": 0.6424458443533825
+        }
+      ],
+      "range_Q0": [
+        0.075,
+        0.81
+      ]
+    }
+  },
+  "note": "All estimates use the same target field and cutoff. Each individual field group has independent seeds and its own MBAR normalization. Marginally overlapping Q windows or very small effective counts limit the evidential value of the individual reconstruction."
+}

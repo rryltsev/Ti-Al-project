@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-29T18:17:31.804040+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--exclude=tesla-a101,apollo22",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=2",
+    "--ntasks=64",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=240G",
+    "--time=20:00:00",
+    "--job-name=ti7-r2SCAN-f001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-wave-next-20261029-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v11.sbatch",
+    "restart_step_v7.py",
+    "r2SCAN",
+    "force-001",
+    "20964090"
+  ],
+  "parent_job": "20964090",
+  "source_hashes": {
+    "restart_step_v7.py": "069612466a3b8cdcfd1e394e653b1c916ebfc0980cbcaa284d64e4d484112772",
+    "wavecar_check.py": "9481d96ef44db1d508c5443fa2ec7321094a506c7d7c81620edebe9e1abfe9e6",
+    "launch_v11.sbatch": "2b77402ff6b83e50a54b219d4d0df93836f8965a5dce0d4696d22931b4fff8c2"
+  },
+  "scientific_changes": [],
+  "source": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-03",
+  "storage_checks": {
+    "wavecar": {
+      "bytes": 25201037952,
+      "record_bytes": 389952,
+      "spins": 1,
+      "precision_tag": 45200,
+      "nkpts": 112,
+      "nbands": 576,
+      "encut_eV": 550.0,
+      "min_plane_waves": 48605,
+      "max_plane_waves": 48743,
+      "record_extent_complete": true,
+      "band_headers_finite": true,
+      "sampled_coefficients_finite": true,
+      "full_coefficient_scan": false
+    },
+    "quota": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 69475212  104857600 104857600          353803       0       0        \n",
+    "free_bytes": 36231565312,
+    "required_bytes": 30260863996
+  },
+  "parent_scheduler": "20964090|COMPLETED|2026-10-29T22:31:22|0:0\n",
+  "archive": {
+    "source": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-02/WAVECAR",
+    "archive": "/home/u3129/tial-phonons-archive/alpha-ti-xc-phonons-20261021-01/r2SCAN/force-001-restart-02/WAVECAR",
+    "bytes": 25201037952,
+    "sha256": "fd52422587d211c7a25bee4c7f0c7886c482fd124f9a370620aad68a46152ea8",
+    "source_sha256": "fd52422587d211c7a25bee4c7f0c7886c482fd124f9a370620aad68a46152ea8",
+    "archive_verified": true,
+    "state": "archived_with_original_path_preserved",
+    "epoch": 1793297778.6190066
+  },
+  "job_id": "20968910",
+  "state": "submitted"
+}

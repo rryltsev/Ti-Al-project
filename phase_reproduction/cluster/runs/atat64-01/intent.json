@@ -1,0 +1,28 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/atat64-01",
+  "utc": "2026-11-24T18:34:01.035930+00:00",
+  "job_name": "ta-atat64-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=1G",
+    "--time=5",
+    "--job-name=ta-atat64-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "01ee73cc8e4259001baaf722bcb8cf76d60c69772f423488ee6ca77afb58d846",
+    "generate.py": "6bbd00f5d9f8f55b5a062742055b1f07fc0156e79452027a17d870aa132c0f96",
+    "clusters.full.out": "c146100b887e5a977a6c538e3310c90b24177e57ba0fc0a881de4e1f6fd38465",
+    "lat.in": "0bc8e7ccdb44b73ed2d249823253f5288de493d080fef75c0682b6fecc03b54d"
+  }
+}

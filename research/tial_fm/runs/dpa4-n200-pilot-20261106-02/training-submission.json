@@ -1,0 +1,16 @@
+{
+  "job_id": "20988454",
+  "remote_root": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02",
+  "dependency_afterok": "20988446",
+  "utc": "2026-11-06T10:36:30.794850+00:00",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01 && test ! -e submission.txt && sbatch --parsable --dependency=afterok:20988446 --account=imet-2026-2 --partition=v100 --gres=gpu:1 --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=40G --time=04:00:00 --array=0-3%1 --job-name=TiAl-N200-pilot --output=pilot-%A_%a.log train-v3.sbatch | tee submission.txt",
+  "gate_policy": "Numerical B0, H0, backend/runtime masks and all four zero-step initializations passed at submission. Array cannot start until bulk B0 continuation succeeds; actual observer rechecks B0 and H0 summary PASS before constructing trainer.",
+  "cases": [
+    "PBE-lora16",
+    "PBE-full",
+    "r2SCAN-lora16",
+    "r2SCAN-full"
+  ],
+  "max_simultaneous_new_GPUs": 1,
+  "optimizer_steps_executed_at_submission": 0
+}

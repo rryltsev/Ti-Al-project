@@ -1,0 +1,74 @@
+{
+  "run_id": "r2scan-ti-temperature-20261106-01",
+  "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01",
+  "created_unix": 1793931149.6809618,
+  "temperatures_K": [
+    1873,
+    1941,
+    2000,
+    2100
+  ],
+  "functional": "r2SCAN",
+  "checkpoint": {
+    "functional": "r2SCAN",
+    "step": 23200,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\output_model\\ckpt\\model.ckpt-23200.pt",
+    "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+    "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt",
+    "article_checkpoint": true
+  },
+  "frozen_model": {
+    "path": "/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+    "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+  },
+  "runs": {
+    "Ti_1873K": {
+      "temperature_K": 1873,
+      "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\Ti_1873K",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K",
+      "protocol_sha256": "d3b8a70920b0103c0d3025802c7df7248c6a00b71e7d766cbc1af33951dfb951",
+      "legacy_replicas": 30,
+      "job_id": "20988268"
+    },
+    "Ti_1941K": {
+      "temperature_K": 1941,
+      "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\Ti_1941K",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1941K",
+      "protocol_sha256": "2982d45bbb10ff6784202c2770367ca222934935355d0d0f91c205219a13ccaf",
+      "legacy_replicas": 15,
+      "job_id": "20988269"
+    },
+    "Ti_2000K": {
+      "temperature_K": 2000,
+      "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\Ti_2000K",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K",
+      "protocol_sha256": "ecf769fcb4fb05173d99ebd43269d35d8975e58782e8a71f9e7419f70cb8762d",
+      "legacy_replicas": 15,
+      "job_id": "20988270"
+    },
+    "Ti_2100K": {
+      "temperature_K": 2100,
+      "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\Ti_2100K",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K",
+      "protocol_sha256": "b8ba5d5cd445cd3bb2958607c753fb3ae3833ed476fbf96398e3293f9d497ff9",
+      "legacy_replicas": 15,
+      "job_id": "20988271"
+    }
+  },
+  "execution_mode": "single_job_sequential_refinement_v2",
+  "active_campaign": {
+    "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition",
+    "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02",
+    "job_id": "20988268",
+    "registry": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\registry.json",
+    "protocol": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\protocol.json",
+    "submission": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\submission.json"
+  },
+  "superseded_job_ids": [
+    "20988269",
+    "20988270",
+    "20988271"
+  ],
+  "transition_receipt": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\transition-receipt.json",
+  "dataset_confirmed_by_user": true
+}

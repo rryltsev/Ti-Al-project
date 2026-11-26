@@ -1,0 +1,25 @@
+{
+  "id": "DPA4-PBEsol-checkpoints-20261102-01-5000",
+  "model": {
+    "functional": "PBEsol",
+    "step": 5000,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_sol_Neo_DPA4_shard_20260920_040140\\output_model\\ckpt\\model.ckpt-5000.pt",
+    "sha256": "c9d6c10f84a285baf528cc498ed1d17d13aaef87b48596bf1b0b5af69062eba3",
+    "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/PBEsol-5000.pt",
+    "article_checkpoint": false
+  },
+  "geometry": "Exact DFT-PBEsol equilibrium; no relaxation",
+  "supercell": [
+    4,
+    4,
+    3
+  ],
+  "displacement_A": 0.01,
+  "input_hashes": {
+    "force000/POSCAR": "5dd85e46e4186282f30edc44a8a345b75cc260a34471ac2f324c8c1b010ed8a6",
+    "force001/POSCAR": "1516de61aa37a89e26e364fcf881eaf2acfa8ca53ea697e9be54920252e3278e",
+    "force002/POSCAR": "5fd360b8f9ced9309871956f6425d408d09a0209f167a4ce72ef9c951e8b1d43",
+    "phonopy_disp.yaml": "c851dcc95d540bacdf2f1ac9096004c8ad7c19de745cfef0452511a501a8626a",
+    "worker.py": "a8f283cf12058ed65f5a62710d118890f1898af7fb5bf6f185c937dc049d0d55"
+  }
+}

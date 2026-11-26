@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-full-N694-seed10",
+    "backend": "GRACE",
+    "method": "full",
+    "N": 694,
+    "seed": 10,
+    "XC": "PBE",
+    "model": "/home6/u3129/tial-fm-research/grace-pbe-n694-20261110-01/cases/PBE-full-N694-seed10"
+  },
+  "job_id": "20991852",
+  "structures": 25,
+  "seconds": 0.4126793462783098,
+  "geometry_sha256": "d01b28dd6035a16a7e6ec7c3f7461b194ed28df1c2c5f3310ef690ff574ed628",
+  "predictions_sha256": "91b0c356a1d7da87226c068718d5c748eb58bcc1c2513dddfd6b6ec16c7b906c",
+  "max_residual_force_eV_A": 0.1570185440026887,
+  "residual_stress_GPa": [
+    [
+      -0.8924072607229786,
+      8.998179797966639e-15,
+      4.599441346544286e-16
+    ],
+    [
+      8.998179797966639e-15,
+      -0.8925881256715771,
+      -1.254393094512078e-15
+    ],
+    [
+      4.599441346544286e-16,
+      -1.254393094512078e-15,
+      -0.34292754848787266
+    ]
+  ],
+  "checkpoint_hashes": {
+    "checkpoint.index": "e4392cd6a2c96efbe9c660209953769bb0c84919717c0642381bbc93f13a68fb",
+    "checkpoint.data-00000-of-00001": "5384c0430f3cbb3c276a660361d2d65765c399109cd7365d5651c674327c4290"
+  }
+}

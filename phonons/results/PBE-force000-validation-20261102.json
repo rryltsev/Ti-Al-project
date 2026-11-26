@@ -1,0 +1,61 @@
+{
+  "job_id": "20973061",
+  "functional": "PBE",
+  "step": "force-000",
+  "accepted": true,
+  "scientific_scope": "One reference supercell; DOS and convergence diagnostics remain incomplete",
+  "scheduler_state": "COMPLETED",
+  "exit_code": "0:0",
+  "end_local": "2026-11-02T13:50:11+05:00",
+  "elapsed": "10:02:58",
+  "scf_iterations": 28,
+  "final_energy_change_eV": -6.8831e-09,
+  "final_band_energy_change_eV": 1.8978e-10,
+  "ediff_eV": 1e-08,
+  "EDIFF_reached": true,
+  "normal_termination": true,
+  "checkpoint_requested": false,
+  "supercell": [
+    4,
+    4,
+    3
+  ],
+  "atoms": 96,
+  "kmesh": [
+    6,
+    6,
+    6
+  ],
+  "encut_eV": 550,
+  "displaced_atom_1based": null,
+  "displacement_A": [
+    0,
+    0,
+    0
+  ],
+  "displacement_norm_A": 0,
+  "forces_XML_OUTCAR_max_component_difference_eV_A": 5e-07,
+  "forces_NPY_XML_identical": true,
+  "force_sum_eV_A": [
+    -2.9999999999999183e-08,
+    1.6940658945086007e-21,
+    -2.000000000000129e-08
+  ],
+  "max_force_eV_A": 3.3062667768950527e-06,
+  "equilibrium_max_force_eV_A": 2.3685438564654023e-07,
+  "equilibrium_max_stress_kbar": 0.00872395,
+  "input_hashes": {
+    "POSCAR": "c45bffe17f4d0428d7b91e7eae65b6211eb6231c603acb9b729c3e23738a56f9",
+    "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba",
+    "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "INCAR": "68e0e03511bf885119fd71d7288614f62e47c3e46636d71e78bfe367d76f7f0e"
+  },
+  "output_hashes": {
+    "OUTCAR": "13e35b47477d1c0a59a9a56cb81aebfc627b414cbd86e0d06c970581c63f649a",
+    "vasprun.xml": "1a21abc0c102c295045ddd2bd0a0653cd7ebd2b410c5a0c7ff49f55d2a9384c1",
+    "forces.npy": "51300cdfbb3bb5bf6759b8615915560831169d1be01e402454285dcc38d9c22d",
+    "CONTCAR": "97a62eacd20ac5fbe3af9d4f32958bac56ec15296c05f54d54383cf0c314d131"
+  },
+  "reference_supercell_max_stress_kbar": 0.20347794,
+  "stress_note": "Primitive equilibrium gate passed; supercell stress is recorded separately for cutoff/kmesh diagnostics. Electronic convergence does not establish stress or force convergence."
+}

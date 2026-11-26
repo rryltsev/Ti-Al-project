@@ -1,0 +1,242 @@
+Using GPU device(s): 0, GPU: RTX 5060 Ti
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   neo
+  Use type:  finetune
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model
+  Name:      model_frozen.pt2
+  Full path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2
+==========================================
+Model found: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan
+==========================================
+Activated: lammps_deepmd_dpa4_env
+Python: /home/katkoff/miniconda3/envs/lammps_deepmd_dpa4_env/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan/.triton
+==========================================
+==========================================
+Melting point calculation
+==========================================
+Date:            Wed Sep 23 18:04:41 +05 2026
+System:          beta_Ti
+Mode:            dpa4-neo-finetune
+Calculator:      deepmd
+Engine:          lammps
+LAMMPS mode:     native
+DFT method:      scan
+Conda env:       lammps_deepmd_dpa4_env
+Model path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2
+Tm estimate:     1900 K
+T range:         ±100 K, step 50 K
+T overheat:      1.5
+Supercell:       1,1,3
+N atoms min:     1000
+MD timestep:     0.001
+Force clear:     true
+Workdir:         /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan
+Log file:        /home/katkoff/deepmd_check_pipline/logs/run_melting_20260923_180441.log
+==========================================
+WARNING:__main__:FORCE CLEAR: removing contents of /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan
+INFO:__main__:  Skipping cache dir: .triton
+INFO:__main__:  Skipping cache dir: .cache
+INFO:__main__:MeltingCalculator initialized
+INFO:__main__:  System: beta_Ti
+INFO:__main__:  Mode: dpa4-neo-finetune
+INFO:__main__:  DFT method: scan
+INFO:__main__:  Calculator: deepmd
+INFO:__main__:  Engine: lammps
+INFO:__main__:  LAMMPS mode: native
+INFO:__main__:  Device: cuda, dtype: float32, GPU: RTX 5060 Ti
+INFO:__main__:  Force clear: True
+INFO:__main__:  Tm estimate: 1900.0 K
+INFO:__main__:  T overheat factor: 1.5
+INFO:__main__:  Temperature range: [np.float64(2000.0), np.float64(1950.0), np.float64(1900.0), np.float64(1850.0), np.float64(1800.0)]
+INFO:__main__:  Output: /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan
+INFO:utils.structure:Loaded 7 structures from /home/katkoff/deepmd_check_pipline/models_check/utils/structures_config.json
+INFO:__main__:============================================================
+INFO:__main__:MELTING POINT CALCULATOR
+INFO:__main__:============================================================
+INFO:__main__:System:       beta_Ti
+INFO:__main__:Tm estimate:  1900.0 K
+INFO:__main__:T range:      1800 - 2000 K
+INFO:__main__:T step:       50.0 K
+INFO:__main__:T overheat:   x1.5
+INFO:__main__:Output:       /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan
+INFO:__main__:============================================================
+INFO:__main__:
+[1/3] Creating bulk structure...
+INFO:utils.structure:Configured for: beta_Ti
+INFO:utils.structure:Creating conventional cell for 'beta_Ti' (Im-3m, cubic)
+INFO:utils.structure:Generated bulk: Ti2, 2 atoms
+INFO:utils.structure:      Supercell: [ 6  6 18] → 1296 atoms (≥ 1000)
+INFO:utils.structure:Created supercell [ 6  6 18] → 1296 atoms (target was 1000)
+INFO:utils.structure:LAMMPS data written → /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan/data/Ti_1296atoms.data (1296 atoms)
+INFO:__main__:      Bulk: Ti, 1296 atoms
+INFO:__main__:      Data file: /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan/data/Ti_1296atoms.data
+INFO:__main__:
+[2/3] Temperature scan (5 points)...
+INFO:__main__:      Per T: minimize -> equilibrate -> overheat -> cool -> melt
+INFO:utils.melting.temperature_scan_manager_lammps:
+============================================================
+INFO:utils.melting.temperature_scan_manager_lammps:TEMPERATURE SCAN: 5 points
+INFO:utils.melting.temperature_scan_manager_lammps:  T_max = 2000 K
+INFO:utils.melting.temperature_scan_manager_lammps:  T_min = 1800 K
+INFO:utils.melting.temperature_scan_manager_lammps:  Data:  /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan/data/Ti_1296atoms.data
+INFO:utils.melting.temperature_scan_manager_lammps:============================================================
+INFO:utils.lammps_cash_manager:    Cache: new run 001
+INFO:utils.melting.temperature_scan_manager_lammps:
+  T = 2000 K: Run ID = 001
+INFO:utils.melting.temperature_scan_manager_lammps:    Skip stages: <none>
+INFO:utils.melting.temperature_scan_manager_lammps:    Input:       /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan/data/Ti_1296atoms.data
+INFO:utils.melting.temperature_point_runner_lammps:
+==================================================
+INFO:utils.melting.temperature_point_runner_lammps:TEMPERATURE POINT: T = 2000 K
+INFO:utils.melting.temperature_point_runner_lammps:==================================================
+INFO:utils.melting.temperature_point_runner_lammps:  Mode:        native
+INFO:utils.melting.temperature_point_runner_lammps:  T_melt:      3000 K (x1.5)
+INFO:utils.melting.temperature_point_runner_lammps:  Equil:       5000 steps
+INFO:utils.melting.temperature_point_runner_lammps:  Heat:        20000 steps
+INFO:utils.melting.temperature_point_runner_lammps:  Cool:        10000 steps
+INFO:utils.melting.temperature_point_runner_lammps:  Melt:        50000 steps
+INFO:utils.melting.temperature_point_runner_lammps:  Skip stages: <none>
+INFO:utils.melting.temperature_point_runner_lammps:  Input:       /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan/data/Ti_1296atoms.data
+INFO:utils.melting.temperature_point_runner_lammps:==================================================
+LAMMPS (22 Jul 2025 - Update 2)
+  using 8 OpenMP thread(s) per MPI task
+Loaded 1 plugins from /home/katkoff/miniconda3/envs/lammps_deepmd_dpa4_env/lib/python3.13/site-packages/deepmd/lib
+Reading data file ...
+  triclinic box = (0 0 0) to (19.509816 19.509816 58.529447) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  1296 atoms
+  read_data CPU = 0.005 seconds
+INFO:utils.structure:LAMMPS data read → /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan/data/Ti_1296atoms.data (1296 atoms)
+Summary of lammps deepmd module ...
+  >>> Info of deepmd-kit:
+  installed to:       /tmp/tmp5ljxgvlu/wheel/platlib
+  source:             v3.2.0
+  source branch:      HEAD
+  source commit:      8cfd46e3
+  source commit at:   2026-08-19 09:50:00 +0000
+  support model ver.: 1.1 
+  build variant:      cuda
+  set tf intra_op_parallelism_threads: 8
+  set tf inter_op_parallelism_threads: 1
+  >>> Info of lammps module:
+  use deepmd-kit at:  /tmp/tmp5ljxgvlu/wheel/platlib
+  source:             v3.2.0
+  source branch:      HEAD
+  source commit:      8cfd46e3
+  source commit at:   2026-08-19 09:50:00 +0000
+  build with inc:     /tmp/build-env-vl3prgbs/lib/python3.11/site-packages/torch/include;/tmp/build-env-vl3prgbs/lib/python3.11/site-packages/torch/include/torch/csrc/api/include
+  build with lib:     /tmp/build-env-vl3prgbs/lib/python3.11/site-packages/tensorflow;/tmp/build-env-vl3prgbs/lib/python3.11/site-packages/torch/lib
+load model from: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2 to gpu 0
+WARNING: This .pt2 uses the deprecated edge_vec lower schema (pt-backend SeZM/DPA4 freeze). Support will be removed in a future release; refreeze the checkpoint with the pt_expt backend (graph schema).
+  >>> Info of model(s):
+  using   1 model(s): /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2 
+  rcut in model:      6
+  ntypes in model:    118
+684 atoms in group liquid
+612 atoms in group solid
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- USER-DEEPMD package:
+The log file lists these citations in BibTeX format.
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Switching to 'neigh_modify every 1 delay 0 check yes' setting during minimization
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 5 5 15
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair deepmd, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 0
+Per MPI rank memory allocation (min/avg/max) = 11.92 | 11.92 | 11.92 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -16569.883      0             -16569.883     -3066.433     
+         2   0             -16569.883      0             -16569.883     -3066.1195    
+Loop time of 1.17021 on 8 procs for 2 steps with 1296 atoms
+
+98.6% CPU use with 1 MPI tasks x 8 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -16569.8826310518  -16569.8828531387  -16569.8828688743
+  Force two-norm initial, final = 1.6327571e-05 6.520542e-05
+  Force max component initial, final = 1.1831999e-06 3.6163762e-06
+  Final line search alpha, max atom move = 0.5 1.8081881e-06
+  Iterations, force evaluations = 2 5
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.1699     | 1.1699     | 1.1699     |   0.0 | 99.98
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 8.8525e-05 | 8.8525e-05 | 8.8525e-05 |   0.0 |  0.01
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0001886  |            |       |  0.02
+
+Nlocal:           1296 ave        1296 max        1296 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3687 ave        3687 max        3687 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       176256 ave      176256 max      176256 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 176256
+Ave neighs/atom = 136
+Neighbor list builds = 0
+Dangerous builds = 0
+INFO:utils.melting.temperature_point_runner_lammps:  --- EQUIL: 2000 K ---
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 10.8 | 10.8 | 10.8 Mbytes
+   Step         TotEng         PotEng         KinEng         Press           Pxx            Pyy            Pzz            Temp       c_LiquidTemp   c_SolidTemp  
+         0  -16235.099     -16569.883      334.78378      12984.907      13051.528      13255.099      12648.093      2000           2015.0757      1986.4211    
+       500  -16002.342     -16333.741      331.39956      9910.3724      8350.3466      12846.253      8534.5179      1979.7827      1990.1243      1971.4626    
+      1000  -15975.167     -16309.595      334.42846      855.4896       1430.0189      769.42616      367.02372      1997.8774      2031.2534      1963.8381    
+      1500  -15958.82      -16293.814      334.99419     -1533.0819     -1560.6279     -2243.2612     -795.35662      2001.257       1990.2453      2016.8417    
+      2000  -15975.652     -16306.453      330.80109     -3011.906      -3308.6234     -957.90528     -4769.1894      1976.2074      2106.2534      1834.0713    
+      2500  -15978.496     -16313.59       335.09311     -5545.6038     -6092.5043     -6341.6283     -4202.6789      2001.848       2063.0034      1936.7623    
+      3000  -15949.493     -16303.978      354.48485     -3747.6543     -3143.3213     -1836.1142     -6263.5275      2117.6943      2132.2915      2104.843     
+/home/katkoff/deepmd_check_pipline/run_melting_calculator_lammps.sh: line 347: 607430 Killed                     python "${ROOT_DIR}/models_check/scripts/melting_calculator_lammps.py" --calculator "${CALCULATOR}" --engine "${ENGINE}" --lammps-mode "${LAMMPS_MODE}" --model-path "${MODEL_PATH}" --model-name "${MODEL_NAME}" --system "${SYSTEM_NAME}" --family "${FAMILY}" --variant "${VARIANT}" --use-type "${USE_TYPE}" --dft-method "${DFT_METHOD}" --device "${DEVICE}" --dtype "${DTYPE}" --gpu-name "${GPU_NAME}" --workdir "${WORKDIR_BASE}" --n-atoms-min "${N_ATOMS_MIN}" --supercell "${SUPERCELL}" --T-melt-estimate "${T_MELT_ESTIMATE}" --T-delta "${T_DELTA}" --T-step "${T_STEP}" --T-overheat-factor "${T_OVERHEAT_FACTOR}" --md-timestep "${MD_TIMESTEP}" --Tdamp-mult "${TDAMP_MULT}" --Pdamp-mult "${PDAMP_MULT}" --equil-steps "${EQUIL_STEPS}" --heat-steps "${HEAT_STEPS}" --cool-steps "${COOL_STEPS}" --melt-steps "${MELT_STEPS}" --min-tol-energy "${MIN_TOL_ENERGY}" --min-tol-force "${MIN_TOL_FORCE}" --min-max-iter "${MIN_MAX_ITER}" --min-max-eval "${MIN_MAX_EVAL}" --log-interval "${LOG_INTERVAL}" $([ "$FORCE_CLEAR" == "true" ] && echo "--force-clear")
+==========================================
+Melting calculation finished
+==========================================
+Exit code: 137
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/scan
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_melting_20260923_180441.log
+==========================================
+❌ ERROR: Calculation failed with code 137
+Check log: tail -100 /home/katkoff/deepmd_check_pipline/logs/run_melting_20260923_180441.log
+==========================================

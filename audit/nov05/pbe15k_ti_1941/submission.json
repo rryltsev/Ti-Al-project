@@ -1,0 +1,32 @@
+{
+  "unix": 1793880459.6749334,
+  "remote": "/home6/u3129/tial-testsets/pbe15k-ti-1941-20261105-01",
+  "run_id": "pbe15k-ti-1941-20261105-01",
+  "args": [
+    "sbatch",
+    "--parsable",
+    "--partition=v100",
+    "--nodelist=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=6",
+    "--gres=gpu:a100:1",
+    "--mem=32G",
+    "--time=20:00:00",
+    "--requeue",
+    "--job-name=Ti1941-visc-PBE15k",
+    "--comment=pbe15k-ti-1941-20261105-01",
+    "--chdir=/home6/u3129/tial-testsets/pbe15k-ti-1941-20261105-01",
+    "--output=/home6/u3129/tial-testsets/pbe15k-ti-1941-20261105-01/allocation-%j.log",
+    "--open-mode=append",
+    "/home6/u3129/tial-testsets/pbe15k-ti-1941-20261105-01/job.sbatch"
+  ],
+  "status": "submitted",
+  "returncode": 0,
+  "stdout": "20987437\n",
+  "stderr": "",
+  "job_id": "20987437",
+  "new_sbatch_created": true
+}

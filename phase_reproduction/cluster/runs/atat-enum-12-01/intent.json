@@ -1,0 +1,26 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/atat-enum-12-01",
+  "utc": "2026-11-24T18:31:22.702210+00:00",
+  "job_name": "ta-atat-enum-12-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=3G",
+    "--time=25",
+    "--job-name=ta-atat-enum-12-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "d53e76ecec7cebfa8011b4287ed207ac9861ba93fe1af3ab96dcac4688442a3c",
+    "lat.in": "0bc8e7ccdb44b73ed2d249823253f5288de493d080fef75c0682b6fecc03b54d"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-21T12:00:42.267117+00:00",
+  "reason": "Confirmed OOM in all force-000 steps; MPI ranks remained alive until explicit cancellation.",
+  "prior_accounting": "20957235|COMPLETED|46\n20957236|FAILED|32\n20957237|FAILED|32\n20957238|FAILED|32\n20957239|CANCELLED by 13129|605792\n20957240|CANCELLED by 13129|605744\n20957241|CANCELLED by 13129|605696\n",
+  "used_CPU_seconds": 1817374,
+  "reserved_CPU_seconds": 230400,
+  "total_worst_case_CPU_hours": 568.8261111111111,
+  "memory_GiB_per_job": 192,
+  "walltime": "01:20:00",
+  "ranks": 16,
+  "files": {
+    "recover_forces.py": "f84289d22750f9981224fed6fbce9fa072967458cad3c20afc54e5c7dfc2ef1b",
+    "recovery.sbatch": "bc7a2c477fadeed98edb97e68c155d003bd219fcfbb0fc83c0c92f5eb29b86c7"
+  }
+}

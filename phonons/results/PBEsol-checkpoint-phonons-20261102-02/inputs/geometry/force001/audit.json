@@ -1,0 +1,58 @@
+{
+  "job_id": "20959338",
+  "functional": "PBEsol",
+  "step": "force-001",
+  "accepted": true,
+  "scientific_scope": "One displaced supercell; DOS and convergence diagnostics remain incomplete",
+  "scheduler_state": "COMPLETED",
+  "exit_code": "0:0",
+  "end_local": "2026-10-28T08:41:39+05:00",
+  "elapsed": "08:31:00",
+  "scf_iterations": 25,
+  "final_energy_change_eV": -5.6752e-10,
+  "final_band_energy_change_eV": -1.4822e-09,
+  "ediff_eV": 1e-08,
+  "EDIFF_reached": true,
+  "normal_termination": true,
+  "supercell": [
+    4,
+    4,
+    3
+  ],
+  "atoms": 96,
+  "kmesh": [
+    6,
+    6,
+    6
+  ],
+  "encut_eV": 550,
+  "displaced_atom_1based": 1,
+  "displacement_A": [
+    0.006442349035585012,
+    0.0,
+    0.007648276858462505
+  ],
+  "displacement_norm_A": 0.01,
+  "forces_XML_OUTCAR_max_component_difference_eV_A": 5.000000000000664e-07,
+  "forces_NPY_XML_identical": true,
+  "force_sum_eV_A": [
+    -3.9999999998027724e-08,
+    5.000000000057042e-08,
+    3.0000000005026006e-08
+  ],
+  "max_force_eV_A": 0.06680325585860393,
+  "equilibrium_max_force_eV_A": 3.028200785945344e-07,
+  "equilibrium_max_stress_kbar": 0.00982509,
+  "input_hashes": {
+    "POSCAR": "1516de61aa37a89e26e364fcf881eaf2acfa8ca53ea697e9be54920252e3278e",
+    "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba",
+    "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "INCAR": "7025a8b56b4414ec80a9cde6a7faa108250bc8a815d22f59f4a6b4faa3f1f001"
+  },
+  "output_hashes": {
+    "OUTCAR": "14ef10cbb6b79968f9a09922402b8ae7250c61bd7aa4b14b21ea3cfdd26b27a6",
+    "vasprun.xml": "2fb21c978e6cfb2033842e6a1d461781efcea71fbe300483d1cf3359590ea332",
+    "forces.npy": "c08f66c2ffeafdbb8d6b2905d1516fc0a17c41271ef7bfff51450e53372ddcc5",
+    "CONTCAR": "15fbcdb3939ba8e714dbcf9903e1e08c6b38d51afd27e4ccabe49d76b529cb2e"
+  }
+}

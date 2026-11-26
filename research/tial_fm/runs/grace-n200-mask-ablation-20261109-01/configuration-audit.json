@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "cases": {
+    "PBE-restricted_mlp-N200-seed10": {
+      "parent": "PBE-restricted-N200-seed10",
+      "extra_patterns": [
+        "LinMLPOut2ScalarTarget_"
+      ],
+      "extra_parameters": 1088,
+      "only_scientific_change": "trainable_variable_names",
+      "input_sha256": "2d6bdbd18ca0d37887588c98d1f998b5f539d12e46ceb14c2c6d33bf0a5101c3"
+    },
+    "PBE-restricted_radial-N200-seed10": {
+      "parent": "PBE-restricted-N200-seed10",
+      "extra_patterns": [
+        "R_Linear_",
+        "R1_Linear_"
+      ],
+      "extra_parameters": 33152,
+      "only_scientific_change": "trainable_variable_names",
+      "input_sha256": "1fa4920898b3be287a02b20768d56c95a159bcff1d2cfe7bcbf56dae3cd887a9"
+    },
+    "r2SCAN-restricted_mlp-N200-seed10": {
+      "parent": "r2SCAN-restricted-N200-seed10",
+      "extra_patterns": [
+        "LinMLPOut2ScalarTarget_"
+      ],
+      "extra_parameters": 1088,
+      "only_scientific_change": "trainable_variable_names",
+      "input_sha256": "c8fe39611f48bb9531599efc64923c7ce3746498140bda6ee9740ef79895790d"
+    },
+    "r2SCAN-restricted_radial-N200-seed10": {
+      "parent": "r2SCAN-restricted-N200-seed10",
+      "extra_patterns": [
+        "R_Linear_",
+        "R1_Linear_"
+      ],
+      "extra_parameters": 33152,
+      "only_scientific_change": "trainable_variable_names",
+      "input_sha256": "7cbe1acdcec772b515c096280de561e96228b8185ea5afe8e19560cb0679e445"
+    }
+  },
+  "source_baseline": "Reused B0/H0 PASS; identical source checkpoint, alignment and data; no new DFT.",
+  "test_access": false
+}

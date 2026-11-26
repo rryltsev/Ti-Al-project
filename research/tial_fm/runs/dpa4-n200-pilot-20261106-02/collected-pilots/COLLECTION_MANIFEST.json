@@ -1,0 +1,2844 @@
+{
+  "utc": "2026-11-06T13:37:04.440513+00:00",
+  "remote_root": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02",
+  "cases": [
+    "PBE-lora16",
+    "PBE-full",
+    "r2SCAN-lora16",
+    "r2SCAN-full"
+  ],
+  "accounting": "JobID|State|ElapsedRaw|AllocCPUS|TotalCPU|MaxRSS|ExitCode|AllocTRES\n20988454_0|COMPLETED|2553|4|45:07.795||0:0|billing=16544,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_0.batch|COMPLETED|2553|4|45:07.794|3221596K|0:0|cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_0.extern|COMPLETED|2553|4|00:00:00|0|0:0|billing=16544,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_1|COMPLETED|2407|4|42:47.516||0:0|billing=16544,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_1.batch|COMPLETED|2407|4|42:47.515|3168872K|0:0|cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_1.extern|COMPLETED|2407|4|00:00:00|0|0:0|billing=16544,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_2|COMPLETED|2553|4|45:11.089||0:0|billing=16544,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_2.batch|COMPLETED|2553|4|45:11.088|3115332K|0:0|cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_2.extern|COMPLETED|2553|4|00:00.001|0|0:0|billing=16544,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_3|COMPLETED|2398|4|42:45.273||0:0|billing=16544,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_3.batch|COMPLETED|2398|4|42:45.272|3254352K|0:0|cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988454_3.extern|COMPLETED|2398|4|00:00:00|0|0:0|billing=16544,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=40G,node=1\n20988460_0|COMPLETED|3|1|00:00.883||0:0|billing=176,cpu=1,mem=4G,node=1\n20988460_0.batch|COMPLETED|3|1|00:00.882|0|0:0|cpu=1,mem=4G,node=1\n20988460_0.extern|COMPLETED|3|1|00:00.001|0|0:0|billing=176,cpu=1,mem=4G,node=1\n20988460_1|COMPLETED|2|1|00:00.741||0:0|billing=176,cpu=1,mem=4G,node=1\n20988460_1.batch|COMPLETED|2|1|00:00.740|0|0:0|cpu=1,mem=4G,node=1\n20988460_1.extern|COMPLETED|2|1|00:00.001|0|0:0|billing=176,cpu=1,mem=4G,node=1\n20988460_2|COMPLETED|4|1|00:00.629||0:0|billing=176,cpu=1,mem=4G,node=1\n20988460_2.batch|COMPLETED|4|1|00:00.628|0|0:0|cpu=1,mem=4G,node=1\n20988460_2.extern|COMPLETED|4|1|00:00:00|0|0:0|billing=176,cpu=1,mem=4G,node=1\n20988460_3|COMPLETED|1|1|00:00.564||0:0|billing=176,cpu=1,mem=4G,node=1\n20988460_3.batch|COMPLETED|1|1|00:00.563|0|0:0|cpu=1,mem=4G,node=1\n20988460_3.extern|COMPLETED|1|1|00:00:00|0|0:0|billing=176,cpu=1,mem=4G,node=1\n20988469_0|COMPLETED|102|4|05:35.590||0:0|billing=704,cpu=4,mem=12G,node=1\n20988469_0.batch|COMPLETED|102|4|05:35.588|2340720K|0:0|cpu=4,mem=12G,node=1\n20988469_0.extern|COMPLETED|102|4|00:00.002|0|0:0|billing=704,cpu=4,mem=12G,node=1\n20988469_1|COMPLETED|57|4|03:00.751||0:0|billing=704,cpu=4,mem=12G,node=1\n20988469_1.batch|COMPLETED|57|4|03:00.750|2290056K|0:0|cpu=4,mem=12G,node=1\n20988469_1.extern|COMPLETED|57|4|00:00:00|0|0:0|billing=704,cpu=4,mem=12G,node=1\n20988469_2|COMPLETED|102|4|04:16.355||0:0|billing=704,cpu=4,mem=12G,node=1\n20988469_2.batch|COMPLETED|102|4|04:16.353|2322836K|0:0|cpu=4,mem=12G,node=1\n20988469_2.extern|COMPLETED|102|4|00:00.002|0|0:0|billing=704,cpu=4,mem=12G,node=1\n20988469_3|COMPLETED|86|4|04:13.618||0:0|billing=704,cpu=4,mem=12G,node=1\n20988469_3.batch|COMPLETED|86|4|04:13.616|1862516K|0:0|cpu=4,mem=12G,node=1\n20988469_3.extern|COMPLETED|86|4|00:00.002|0|0:0|billing=704,cpu=4,mem=12G,node=1\n",
+  "final_artifacts": {
+    "PBE-lora16": {
+      "merged/10000.pt": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-lora16/merged/10000.pt",
+        "bytes": 4574299,
+        "sha256": "43eb4a388b321d882bbb429a5931a1e6447afca6f5ccd0bec05152d8063975c8",
+        "collected": true
+      },
+      "checkpoints/model.ckpt-10000.pt": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-lora16/checkpoints/model.ckpt-10000.pt",
+        "bytes": 7089113,
+        "sha256": "6a034313673a283c6943494b640e5f5c20cded86f409dd9a1954dcbd70d9c0be",
+        "collected": false
+      },
+      "evaluation/final.pt2": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-lora16/evaluation/final.pt2",
+        "bytes": 22705032,
+        "sha256": "578cb924b4dcf3d93a19d394c067e5384776dd1a87fa5ff6e16434030478e797",
+        "collected": false
+      }
+    },
+    "PBE-full": {
+      "merged/10000.pt": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-full/merged/10000.pt",
+        "bytes": 4573147,
+        "sha256": "4060086208e4735e78bd52f3637f0f7fd4a350b883878b6a3d5bfcc564facf73",
+        "collected": true
+      },
+      "checkpoints/model.ckpt-10000.pt": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-full/checkpoints/model.ckpt-10000.pt",
+        "bytes": 9147379,
+        "sha256": "5e4126201631b751b99098cd4af504ab91629a652c6df271c1fd6c6f35ef3ac6",
+        "collected": false
+      },
+      "evaluation/final.pt2": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-full/evaluation/final.pt2",
+        "bytes": 22691656,
+        "sha256": "a8ffb8f88d9fe87ed23a34fc5593b94b8cbc86850a5c16bc1f01933e47ce94b5",
+        "collected": false
+      }
+    },
+    "r2SCAN-lora16": {
+      "merged/10000.pt": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/r2SCAN-lora16/merged/10000.pt",
+        "bytes": 4574299,
+        "sha256": "a9a16d1abb76fbca781337601b34abf1abbf873860f0953ddbc3857aebf13c56",
+        "collected": true
+      },
+      "checkpoints/model.ckpt-10000.pt": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/r2SCAN-lora16/checkpoints/model.ckpt-10000.pt",
+        "bytes": 7089113,
+        "sha256": "bb930dc4a9c959ceceb3e2d3882781ff1553659d133f8dfbc6a8c7832d4d24ce",
+        "collected": false
+      },
+      "evaluation/final.pt2": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/r2SCAN-lora16/evaluation/final.pt2",
+        "bytes": 22732744,
+        "sha256": "e48ca36d902ce6f399977cd9c0129cce633142170314a7229ed7924808ae2aeb",
+        "collected": false
+      }
+    },
+    "r2SCAN-full": {
+      "merged/10000.pt": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/r2SCAN-full/merged/10000.pt",
+        "bytes": 4573147,
+        "sha256": "0e43c963fdf0daa29553800e15d2ff70c4946e88a1a72da42db824d54ce060a6",
+        "collected": true
+      },
+      "checkpoints/model.ckpt-10000.pt": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/r2SCAN-full/checkpoints/model.ckpt-10000.pt",
+        "bytes": 9147379,
+        "sha256": "46d7d3352889bd7eec6e2662125242d738a7fb1f31b7b2a517172ec45ecf4b0e",
+        "collected": false
+      },
+      "evaluation/final.pt2": {
+        "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/r2SCAN-full/evaluation/final.pt2",
+        "bytes": 22700808,
+        "sha256": "b85808eb48f6f9f20424bd785d1da340fc2bec9f5335475fba78e76a2c742594",
+        "collected": false
+      }
+    }
+  },
+  "files": {
+    "FILES_SHA256.json": {
+      "bytes": 423890,
+      "sha256": "063df5799edc9155c95adb9143d2954474921b3bd7d865a45d572047fc840f07"
+    },
+    "analyze_predictions.py": {
+      "bytes": 6190,
+      "sha256": "c00d634c8ae4f70d1c40c5b986cf80b650aa4af33c2f81b85176eceeb8c42486"
+    },
+    "baseline-20988440.log": {
+      "bytes": 1044,
+      "sha256": "b7e4606ec9021bf06a60523b7e096f4c110d1a9593e83b6f63eb09ecad768811"
+    },
+    "baseline-continuation-20988446.log": {
+      "bytes": 724,
+      "sha256": "1b373062feac9fa9cbefed927225a7c9e339805de80b416842c50ce18e2d1249"
+    },
+    "baseline-continuation-inputs.json": {
+      "bytes": 197,
+      "sha256": "5fe2a3e2d5e6adeea5bd03d5f13a3cf8bd6105c57ac7348a870e35981963877d"
+    },
+    "baseline-continuation.sbatch": {
+      "bytes": 796,
+      "sha256": "f0ea0bfba164e3e5f69a7fc1aa6da794c9d57e4f1fdf2902794be3b23aa0341d"
+    },
+    "baseline-submission.txt": {
+      "bytes": 9,
+      "sha256": "cb0c5f9dde8b84ff9b1858d3778eef7fff5d6aef27bcf436ff8c467b7de2d9bb"
+    },
+    "baseline.sbatch": {
+      "bytes": 931,
+      "sha256": "8d206726a2d7e26a2923f70705f1a676bd74cef2a208eca60a59f7e18d23fe9e"
+    },
+    "baseline_worker.py": {
+      "bytes": 6071,
+      "sha256": "ee6a45f509e812826172ebd89530a07718ab972b62bf9870c86a21cfcc56eb34"
+    },
+    "build_pbesol_phonons.py": {
+      "bytes": 14923,
+      "sha256": "84a7df7a420ea24edafc04895328d0ea9d10d2cf77efcd2fc98a8f1b3c9a5290"
+    },
+    "check_phonon_projection.py": {
+      "bytes": 1636,
+      "sha256": "617f4a7b7fc223956ab6593e2fc590f41227c9860d6f071d5ba7857606b93a6a"
+    },
+    "checkpoint1000-QC-20988473.log": {
+      "bytes": 438,
+      "sha256": "194438903eae8ebe7a393805cbdcefb1b98cb271564c27c81019a69256357379"
+    },
+    "checkpoint1000-QC.sbatch": {
+      "bytes": 831,
+      "sha256": "099abb29b4fbcf3de9e81b6d8f53b05aff155f4fc22b7eb1cd9e08da0cd929f3"
+    },
+    "harmonic-early-20988449.log": {
+      "bytes": 7960,
+      "sha256": "502da6d995c858e62dd626978a4bae180aa3ee590a2c7333d9ec97d669b085e1"
+    },
+    "harmonic-early-inputs.json": {
+      "bytes": 189,
+      "sha256": "e4b5d604a62744f6a83294c4e598878cd62e2e5b3b9e01dfa56c0a113ee218fb"
+    },
+    "harmonic-early.sbatch": {
+      "bytes": 901,
+      "sha256": "6ba8590d3351a4fdcd393a1f9d11023689f9b2bf72c35356812e6f4a07deda8f"
+    },
+    "harmonic-modes-inputs.json": {
+      "bytes": 200,
+      "sha256": "91078ffe8958a47fcf1ee799705e6498ddfb747274bcae670dcb0946a43227f4"
+    },
+    "harmonic-modes.sbatch": {
+      "bytes": 348,
+      "sha256": "ab6197690d3e1dca7d611ddea8a7317e525406bb656423066266594050148307"
+    },
+    "harmonic-v2-submission.txt": {
+      "bytes": 9,
+      "sha256": "a1421aae1e806b7db914eff358084d3e16af06b793eae749bac102266b2a751e"
+    },
+    "harmonic-v2.sbatch": {
+      "bytes": 658,
+      "sha256": "7712bb4800debf73e444c2cb3b011faf45f13e0a9093ba8de5ffeccab506c05f"
+    },
+    "harmonic_early.py": {
+      "bytes": 1615,
+      "sha256": "e592a088f155db11c80b3ad2311cc28332d764f8907433a4e2106f9facc20c35"
+    },
+    "harmonic_mode_diagnostics.py": {
+      "bytes": 4541,
+      "sha256": "591edbac506415e4dbc78f6e9f744796a33d079ad4726cf730dafe32d9fbf9a8"
+    },
+    "harmonic_worker.py": {
+      "bytes": 4294,
+      "sha256": "e7f66e396aba1025a6082d73556f79a04f9d2b6e124a60189beb62aa373b1ca1"
+    },
+    "launcher-correction02.json": {
+      "bytes": 529,
+      "sha256": "d6a1a78d58e6191b309eeb272a2280c9e9706e89e965325bc228f0f4d5aeb642"
+    },
+    "pilot-QC-20988469_0.log": {
+      "bytes": 438,
+      "sha256": "16182487da6f83d21e94864b5eff253ada0641909b16f8d6e697d7a2b8c30b11"
+    },
+    "pilot-QC-20988469_1.log": {
+      "bytes": 436,
+      "sha256": "a6033cba7c244ed4216fcffdaada817b95a061eee19295d669ed31d4b74bf2a6"
+    },
+    "pilot-QC-20988469_2.log": {
+      "bytes": 441,
+      "sha256": "94683f4ae61a1acbf138e2f0b7478581bac0de029c4757ed86975eadac14696a"
+    },
+    "pilot-QC-20988469_3.log": {
+      "bytes": 439,
+      "sha256": "c2436852e350862b6207dccc416f963575a2c92624148c9ef2e1849ef2ab3a9c"
+    },
+    "pilot-analysis-inputs.json": {
+      "bytes": 194,
+      "sha256": "a7b64a0a3f0d6f0311b86b0f735122e23b390f7d06e30ca822510bc642a6e041"
+    },
+    "pilot-analysis.sbatch": {
+      "bytes": 518,
+      "sha256": "aca6b9adc55b8da6efec37eab9452f723f3a0b9f434cd5ca84e6f8ec6052b942"
+    },
+    "pilot-metrics-20988460_0.log": {
+      "bytes": 444,
+      "sha256": "04d547bd81715340e299a5568230480300c81b1f463ede6990030e908b2a0191"
+    },
+    "pilot-metrics-20988460_1.log": {
+      "bytes": 444,
+      "sha256": "3e741c985f89dc680a74ed437e5c530c3a1e5d44741ed8f95bc5503ff96c30ae"
+    },
+    "pilot-metrics-20988460_2.log": {
+      "bytes": 446,
+      "sha256": "412aecf05c23a76b81aebc883b2aab045c8f9d01477fa59e78fbe8ceab885a69"
+    },
+    "pilot-metrics-20988460_3.log": {
+      "bytes": 448,
+      "sha256": "c0387a46362303e8e626fadca9e01c7ac7b59eef7c8a3621f4cd241c75a681d8"
+    },
+    "probes.json": {
+      "bytes": 69461,
+      "sha256": "8a9748576ecc40def7ca0fe68c77f2d9a81b8e84a701cea86497207ab9d9c719"
+    },
+    "projection-20988452.log": {
+      "bytes": 5782,
+      "sha256": "03d1cc4fdca29fa93e7fabfed5c50ed0b000f4108a77034f16c0d6a63bf97716"
+    },
+    "projection-check-inputs.json": {
+      "bytes": 200,
+      "sha256": "af97b2b853ee5ef32d345dc727936d9a858180ce26414ceadf8af0ae17886987"
+    },
+    "projection-check.sbatch": {
+      "bytes": 342,
+      "sha256": "57336cf890bb2a0a6b5402c61ec0dd180547538e4c299e71d7d8326f6d3fcf29"
+    },
+    "protocol.json": {
+      "bytes": 1766,
+      "sha256": "eeaaf1061914ca3ff34c74084fa0b30606be04bcc5f39e151ca820dd772f01c0"
+    },
+    "resume_baseline.py": {
+      "bytes": 4397,
+      "sha256": "07e3d0627f70fb92bc4128dacaf6bf3d882def22908662f78775c9f0719b2721"
+    },
+    "runtime-mask-20988445.log": {
+      "bytes": 1007,
+      "sha256": "d376b86f5feb51e19a5309089cf1d952a49195d5e3785d46965ead6c31d16119"
+    },
+    "runtime-mask-inputs.json": {
+      "bytes": 195,
+      "sha256": "0fe8a8565a3da29e6bfc86b7dba5cc182e3aa233158eb64057bb73f06c5747e7"
+    },
+    "runtime-mask.sbatch": {
+      "bytes": 803,
+      "sha256": "a5db2ba28862ae2b05221952e087b396bbb5573e96c0a35c730e3a3b9851a5b5"
+    },
+    "runtime_mask_preflight.py": {
+      "bytes": 2246,
+      "sha256": "a428a347465a8fc1e249e19760ffb9bbf6f50fd19bb76d121421490c2af31b77"
+    },
+    "splits.json": {
+      "bytes": 31153,
+      "sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c"
+    },
+    "subsets.json": {
+      "bytes": 68340,
+      "sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c"
+    },
+    "trained-QC-inputs.json": {
+      "bytes": 289,
+      "sha256": "892002b4a2c519caf354f6af488e0b156b0f08acf14d8d10d82afc980df25533"
+    },
+    "trained-QC.sbatch": {
+      "bytes": 916,
+      "sha256": "4882682b520fb2d0b10afa3646cf60069628bfe7c62e006038163b379298e145"
+    },
+    "trained_numerical_qc.py": {
+      "bytes": 2969,
+      "sha256": "7bc94cac045e50360e1ad79cec1141773cb42ace84964ba14ec85ee2ccbd4f3e"
+    },
+    "trainer-zero-20988447.log": {
+      "bytes": 82,
+      "sha256": "521287fab31d2f56cd2b5249fd6691380f00113dc5fbd5d19c451fb0b1bbe483"
+    },
+    "trainer-zero-inputs.json": {
+      "bytes": 195,
+      "sha256": "62f7201ae5686800a5773a0f2d3f71ebfdefb0f04324b7f52b912a9b48569c91"
+    },
+    "trainer-zero.sbatch": {
+      "bytes": 803,
+      "sha256": "6f7465b6ecab16982dd9e550ea1f3059a9abbc13020b28a2da83ce1e1e4d659b"
+    },
+    "trainer_zero_preflight.py": {
+      "bytes": 3844,
+      "sha256": "13b130e633a969b407932b5f035598666b59818d103a8b8d380427395dcbbebd"
+    },
+    "training-plan01/FILES_SHA256.json": {
+      "bytes": 1375,
+      "sha256": "1c648372cbc8f7577517e06d8bc31506ebf2f1cbc7a901a4f810fbd595407e23"
+    },
+    "training-plan01/cases/PBE-full/attempt.json": {
+      "bytes": 75,
+      "sha256": "719d80c7f96f7382d4bfeea14003a80e38ccb9ce274c27521fe91477974136d9"
+    },
+    "training-plan01/cases/PBE-full/case.json": {
+      "bytes": 875,
+      "sha256": "70ed0042f7c51a071018ae4b050f68d06508151d0c704d1228371923b68ed436"
+    },
+    "training-plan01/cases/PBE-full/checkpoint": {
+      "bytes": 31,
+      "sha256": "1ea09e8fa51f7f96f75536192cb92ad1457c04d0cbdedfdbc54544760b0a4ae5"
+    },
+    "training-plan01/cases/PBE-full/checks/01000.json": {
+      "bytes": 1111,
+      "sha256": "4b84204efe24534fab45c9bef71e5a978b97f7188e5f862d8f6c1c4250e9e7c9"
+    },
+    "training-plan01/cases/PBE-full/checks/02000.json": {
+      "bytes": 1113,
+      "sha256": "dcf482e543398cb2b456fd1cae5494ed10074b4d1a1f0d4956903a2b3dbb0d39"
+    },
+    "training-plan01/cases/PBE-full/checks/03000.json": {
+      "bytes": 1111,
+      "sha256": "c484260848e2b9570ae19af44ad6e9db63e09dc95f98fc399ff1973cbc1776cd"
+    },
+    "training-plan01/cases/PBE-full/checks/04000.json": {
+      "bytes": 1114,
+      "sha256": "af4f798b08b6217b2210d8280d01aa5ef9e1677373ef459ce57c2683c7926ef3"
+    },
+    "training-plan01/cases/PBE-full/checks/05000.json": {
+      "bytes": 1112,
+      "sha256": "4d40f9fe2f03ac73b1a2ffd011f511c8419994090d740e95f4dfebef039bc658"
+    },
+    "training-plan01/cases/PBE-full/checks/06000.json": {
+      "bytes": 1114,
+      "sha256": "7630f99eeac402f594b8e644a291e45ad3c4b4736c34e993e868b7cff74d0661"
+    },
+    "training-plan01/cases/PBE-full/checks/07000.json": {
+      "bytes": 1114,
+      "sha256": "154bc8c85b7534c977842803ff97fe05e865ac27ab4be957121a0fa03d2cfe6a"
+    },
+    "training-plan01/cases/PBE-full/checks/08000.json": {
+      "bytes": 1117,
+      "sha256": "d2be7b36652fd79c806185fee270e029687e52fc56a547c274d143f81e7afaac"
+    },
+    "training-plan01/cases/PBE-full/checks/09000.json": {
+      "bytes": 1115,
+      "sha256": "ec833a8e66d6e3ee4c5e5d0188e686117fcc32f6a22b9040b2122f29b2cfdd7c"
+    },
+    "training-plan01/cases/PBE-full/checks/10000.json": {
+      "bytes": 1120,
+      "sha256": "70f0db4a875242abc73e02601dd2e404c3bc846b474cf85a56ebfe1ba81dff7d"
+    },
+    "training-plan01/cases/PBE-full/evaluate.log": {
+      "bytes": 476,
+      "sha256": "e12471e07db0af0f5680cae54201c3513862801465ad60431fc4424360d76135"
+    },
+    "training-plan01/cases/PBE-full/evaluation/freeze.log": {
+      "bytes": 3473,
+      "sha256": "f1d379dd46d790e587b9815979c8c06867e6f3a1a4120cb2caa0f33b2ba8a365"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonic_forces/force000/forces.npy": {
+      "bytes": 2432,
+      "sha256": "b29b6ae6c7ceeccba126dbe2b8f4b6de2dff1f9458495ac10c524f80cc5243b9"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonic_forces/force000/prediction.json": {
+      "bytes": 354,
+      "sha256": "37609999e491b70692b37eed4e92494f20e4fa64edde8c980fd3ddaa43d5c595"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonic_forces/force001/forces.npy": {
+      "bytes": 2432,
+      "sha256": "8a167f21b0de4e337c49d9e168a47dc496bdaee545a4ddb9f7fe323bc4f589eb"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonic_forces/force001/prediction.json": {
+      "bytes": 348,
+      "sha256": "acf7dd9f99e4a611d06603fb05078d0fb30d93dd56d2506147dbccf29e197463"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonic_forces/force002/forces.npy": {
+      "bytes": 2432,
+      "sha256": "401b6b9444b9704753b8aa06a18aaa801a7907f5bd40168bc2c6c9519d6e9765"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonic_forces/force002/prediction.json": {
+      "bytes": 346,
+      "sha256": "f9def6b9d782619d22a7624c3188ef43ce767e16499141d17d0ef7cb87517981"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/bands.npz": {
+      "bytes": 325947,
+      "sha256": "b76804737c8ea31d6326325616b161ddbf6e7111f8ce85341d2217e699ec4cdf"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/dos.npz": {
+      "bytes": 50307,
+      "sha256": "f9633edbbace159a440e1851b517344d0775525cc7e6e8dd29513eeaca0db3f7"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/force_constants_ASR.npy": {
+      "bytes": 663680,
+      "sha256": "9078333d422aff7cf2914aea17f6b215dd88cec5d3b21dfd9c5acf2be8025d6b"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/force_constants_central.npy": {
+      "bytes": 663680,
+      "sha256": "90c5d78555407ae811e2ba0e44245d884a5e1faeaa841c3d2eb13438928e97a3"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/force_constants_raw.npy": {
+      "bytes": 663680,
+      "sha256": "f8e55f28e982fa8abb1375551b4b8a4f338f8a26680341247932261310b18d5e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/forces_central.npy": {
+      "bytes": 4736,
+      "sha256": "d71727d60348869d4010194ec8302038af93233bf57b9c0fd1be211bacf419ae"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/mesh50.npz": {
+      "bytes": 290293,
+      "sha256": "34558b24a7b050ff0928d0eb9de3547cbb39142e8549fab6e9c837ca30fdcc39"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/phonopy_params.yaml": {
+      "bytes": 2322501,
+      "sha256": "b7c669ef656801e1f6dbab6036cac7e3093cdd182134dd574aa960e38a78abfa"
+    },
+    "training-plan01/cases/PBE-full/evaluation/harmonics/summary.json": {
+      "bytes": 1359,
+      "sha256": "9160d34fb05261981cf3b7fec4a1c529f69529c774966f72c40788a84a566f56"
+    },
+    "training-plan01/cases/PBE-full/evaluation/metrics/metrics.json": {
+      "bytes": 47273,
+      "sha256": "585639fa6b976ed28d564dcf69074812143dc5cf41db528d06099c879a32d94a"
+    },
+    "training-plan01/cases/PBE-full/evaluation/metrics/per_structure.jsonl": {
+      "bytes": 140129,
+      "sha256": "b656e455a0cb5de2a09e47665531d226606b336837fd8c28321d74d6247f068f"
+    },
+    "training-plan01/cases/PBE-full/evaluation/numerical-QC/summary.json": {
+      "bytes": 5613,
+      "sha256": "17183cb8ba05769879d338222a735dc9cba3b47a6277b514188548a08f06af6b"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti0-Al216.npz": {
+      "bytes": 20822,
+      "sha256": "52b203bd92d0299c1b01f5a62c1589ff5f22576fc354fbafa46842f1949ec46c"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti10-Al206.npz": {
+      "bytes": 15796,
+      "sha256": "726c0221d4fda19c4b21fc88c6fc767ace10acb10baf18e653e556473b005666"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti100-Al116.npz": {
+      "bytes": 15728,
+      "sha256": "1680e96c1cb9392934212048eaad1eaf942ba4af3715ee255881a580e5ed243a"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti100-Al150.npz": {
+      "bytes": 11996,
+      "sha256": "783f2f91be14f97da66447dd89452bde351848b7045070335a0ac368e432ab24"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti103-Al113.npz": {
+      "bytes": 15769,
+      "sha256": "33422295057f1a2b28382718db30107aa6360f439c944415082348acde23f059"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti105-Al111.npz": {
+      "bytes": 15777,
+      "sha256": "ff89e042b06eb02352f6962ea2028e460b3edfd0ae90ee67116976553c89345b"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti108-Al108.npz": {
+      "bytes": 15788,
+      "sha256": "952bb350a7d0804fec6da73a50fe0472e6d72f73347a5b9331007d72b4734f7b"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti110-Al140.npz": {
+      "bytes": 6625,
+      "sha256": "b792c2479a2041115b59bcc32a5fae261f21166a6f6af0c493590a8055b46c3d"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti115-Al101.npz": {
+      "bytes": 15776,
+      "sha256": "76080c3285d6f34ba709cef7ea065135ad8054206f21dcb5324b0a4543b6cbaf"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti115-Al135.npz": {
+      "bytes": 6564,
+      "sha256": "f9e3bb9c668644f436bdf9d1d7cafa20ed83d750c9d702b4b1e565366b4e7dac"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti118-Al98.npz": {
+      "bytes": 15740,
+      "sha256": "b594af923ef0e227fb2b88a86e8bfc53e59f3d4fe590f65251565cf78e7575c1"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti122-Al128.npz": {
+      "bytes": 6546,
+      "sha256": "7e65c9e0c52ddf165c3cb3389445adb64221c58df094cd2279465175f06e9868"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti125-Al125.npz": {
+      "bytes": 6627,
+      "sha256": "df48e618e60fdd0f548161887a7f16a813564fdab8350661efed3cd919e2b70b"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti126-Al90.npz": {
+      "bytes": 15682,
+      "sha256": "13d1065095c2097c7fc360bee7ae3146a1e1cbdbcd3f8ea3b23ac24008747ef5"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti129-Al87.npz": {
+      "bytes": 15776,
+      "sha256": "a71b4d6c8aef2b479b92bf8be8bd75b90518f72938348a0090e98a86ea86b378"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti13-Al203.npz": {
+      "bytes": 10860,
+      "sha256": "d1ff3d05498a105eddb00ca9eb794e1082329c7a552a9a5505b0c902d79ac480"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti130-Al120.npz": {
+      "bytes": 6553,
+      "sha256": "0056c71cab7a0423d85c76388b663eec59450c64703b0184e748b04fa92960f6"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti132-Al118.npz": {
+      "bytes": 6357,
+      "sha256": "3e9b66165b1b15452d6365baeb5df66455c89fe927a835807f3e3966a138054f"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti132-Al84.npz": {
+      "bytes": 15551,
+      "sha256": "6ae91afd480f681944dc4ce726cfcda9106c510dac6a33a9649888d7d0c28787"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti134-Al82.npz": {
+      "bytes": 10746,
+      "sha256": "062e92fea25f951626e1c53c1cfaede2f4bad7594b694c1200b751e77e407971"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti135-Al81.npz": {
+      "bytes": 15825,
+      "sha256": "501f7ad716e6b24f24f9fb3dab7cc59e63fba43a342463459982a0f60ba9d762"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti137-Al79.npz": {
+      "bytes": 10709,
+      "sha256": "4d43033822612891d720e5f3b74edeb9016e5701094e0ae47b2024c35ba292ff"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti140-Al76.npz": {
+      "bytes": 15649,
+      "sha256": "bc2cfc05d5d469f70a735561522748965e93e747c6a8b3952f38abbc9aae19e6"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti143-Al73.npz": {
+      "bytes": 15723,
+      "sha256": "b0a49dc5f378611de98a1ad5958902f1bba491b4514653b1eccf199de9601e2e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti145-Al105.npz": {
+      "bytes": 6478,
+      "sha256": "969067096874f3e10f8d560d2bce00b32de1485c477c75c3c2f77665dee9523e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti148-Al102.npz": {
+      "bytes": 12368,
+      "sha256": "2caba9095c876719e9101239f5bd6d33bc61184063b73f61723222952dc172b0"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti148-Al68.npz": {
+      "bytes": 15844,
+      "sha256": "984d7e9c77ced182d9ce4eca6677c3b3640652b48f6bba4d104aa7ffe327a0b5"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti152-Al98.npz": {
+      "bytes": 6475,
+      "sha256": "adb507e283c183ee1afd4a964d83ddc81cade932249c7e879112bdd8b26afb85"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti155-Al95.npz": {
+      "bytes": 12358,
+      "sha256": "63cff59c23a2966e2618703ea60b62791ef9ccfd4ca22833979a5a3344592bb9"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti156-Al60.npz": {
+      "bytes": 15582,
+      "sha256": "71576e6cf887bfbf1346fcba54656d162f0663afb2b0d10b8cef137e521bc340"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti157-Al59.npz": {
+      "bytes": 10856,
+      "sha256": "6e0175a4a116a22b8697484a664dc64b431e289e46b9b2d63b5d466b3840b0a3"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti159-Al57.npz": {
+      "bytes": 15764,
+      "sha256": "13184df689c50d785ff89d94b745b428fca7f3953add5db8bc715ed6684288b0"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti162-Al54.npz": {
+      "bytes": 20784,
+      "sha256": "452e6c739eed193e6517c0838c130c272f5e2561038ee85bbb6d050c9479ac48"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti162-Al88.npz": {
+      "bytes": 6614,
+      "sha256": "c4c4acb857ef5097853e9694ebad3f74056d9c170373d637053591015913efa3"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti165-Al51.npz": {
+      "bytes": 10858,
+      "sha256": "a086686ee6339b109ce864f754b00c14d8d684551c26de43168250479607304e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti172-Al44.npz": {
+      "bytes": 15810,
+      "sha256": "39552abad0c0681b900339c13b3de5b3b5face93cdd2b7e4a9f984702d75b7e4"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti172-Al84.npz": {
+      "bytes": 6707,
+      "sha256": "aebffbdc1dc82095ae2fec4bb09d31adb52a4a352d81c207aef05c44403212fa"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti175-Al41.npz": {
+      "bytes": 15827,
+      "sha256": "e43cde4c113c2613c1ec81b4d27f6525a65e2db11e5e34119fad5d784efd6b6e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti175-Al75.npz": {
+      "bytes": 6554,
+      "sha256": "0335e43176ace76dea85a46019fe25733216117996ca0fd195e5e8dda16468c3"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti177-Al39.npz": {
+      "bytes": 10705,
+      "sha256": "ea8bedea9726f923431e8395e13863411278d8901e7198689f3d8c89c3841888"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti180-Al36.npz": {
+      "bytes": 20864,
+      "sha256": "6e40a6b8459450732d3c9f779b36bede5b6fd99958c6e34d7197d1ab57308b62"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti182-Al68.npz": {
+      "bytes": 6592,
+      "sha256": "4fc5156e9d0eb7381204f135b96f4bd7d4520e6c9701586cca9cd8facbf4be18"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti183-Al33.npz": {
+      "bytes": 20692,
+      "sha256": "1a0324a29a3ae8c65ae2bcb334625877ec6506a7f93496937c8f2557c4c85e31"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti186-Al30.npz": {
+      "bytes": 20791,
+      "sha256": "bf8946b78e06e670299e494808a59de47595028d4f396b6e4b940d47dd8e4efe"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti189-Al27.npz": {
+      "bytes": 10815,
+      "sha256": "3ea381e60cf96e0ecf4180a0601deb5d2aae684a87d395d5be9111fbff68b35e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti191-Al25.npz": {
+      "bytes": 15736,
+      "sha256": "2eaba4b9904b2f2890113769cc3ecf39ac491a0ab3c43c1dac9cab69607e589a"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti205-Al11.npz": {
+      "bytes": 20740,
+      "sha256": "09e0263b6d888283b3acdbbd089968b199b3a4b443acffd05f760e0219f07a3b"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti208-Al8.npz": {
+      "bytes": 20842,
+      "sha256": "62f19a487bf16b829655af5d03c22dd3fd243bd6e067f6da3ffa4cfe5397748e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti21-Al195.npz": {
+      "bytes": 15757,
+      "sha256": "4e8693b2312ba449d3d042e5aa56f7c64fc3ffa1232c11a93b529b1f816b55b6"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti211-Al5.npz": {
+      "bytes": 10765,
+      "sha256": "f1c751bd8d754af8aba08e9ad94fdf306bad01cf2256d02f3146f3f08202a565"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti213-Al3.npz": {
+      "bytes": 20863,
+      "sha256": "5c34f2f1bb525c4cd33defd98c7a311a216878b90eb979bb02ca8893809328e1"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti216-Al0.npz": {
+      "bytes": 20724,
+      "sha256": "06807fe0144e50d5373d0faddeda79b3b4842de7ce4b18ad4b7854600a419b07"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti225-Al31.npz": {
+      "bytes": 6725,
+      "sha256": "dae0ae88f18b7b6c48b0e9e4fa62e6dab3c244d746ef927bd8e928dc92459373"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti228-Al22.npz": {
+      "bytes": 5949,
+      "sha256": "a6c21d88801bf59a4b508ff85cc3e136508f6e39b818b3eba529b7c0f23f02b7"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti242-Al8.npz": {
+      "bytes": 6173,
+      "sha256": "924c95216dacbbe014c169b6a3b31b3fa8a1af2868eccbf60315e22e40ab0b11"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti256-Al0.npz": {
+      "bytes": 6739,
+      "sha256": "610f453a96bc856007f574c48e95c211cd89a8de4b9866d48155b913155ddddb"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti26-Al190.npz": {
+      "bytes": 10768,
+      "sha256": "1cea4e735c769ef81ab1738cbe64737ce0dd1f325bcbf2940ca4af44b16d45d0"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti27-Al189.npz": {
+      "bytes": 10816,
+      "sha256": "58bb159554a3afff8fd0c3c58fd4abd8eb2ea6e99ad2b75a8c21954a9b6273ca"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti29-Al187.npz": {
+      "bytes": 10791,
+      "sha256": "a000beb3308fde630625e96aff0a9f167010352b5f5b976f6f4a6fc849aa6326"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti3-Al213.npz": {
+      "bytes": 15764,
+      "sha256": "a107fe6b7f2f12feeb7901c702fc0b2ac08980e6955f01decaba8b2be2c79445"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti32-Al184.npz": {
+      "bytes": 15833,
+      "sha256": "d9fd84733105e52a8ed7d11c60cb9b347a939b0ce5bc665eb651492427bb7945"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti37-Al179.npz": {
+      "bytes": 10823,
+      "sha256": "a4f6d123e307fbad96c5567ba23e4b81b1eabfa34d6bdb10a731bcc94e73caf0"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti38-Al178.npz": {
+      "bytes": 5884,
+      "sha256": "c5260708274c7f56941dfb1de139f1c2f19cf830f974ecd8aa18100907110ebe"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti40-Al176.npz": {
+      "bytes": 10835,
+      "sha256": "ef8d083bf065eed6b561c8f8e8fa6bf2a87af355d2a748f731ea5a41d70c2bce"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti43-Al173.npz": {
+      "bytes": 15781,
+      "sha256": "1165aceafe062e33bf8a7c7240cf19a57d4ae5ffc37a9e33b79be201d2da9d10"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti46-Al170.npz": {
+      "bytes": 15797,
+      "sha256": "e9a259161e7cf03a384306521bf171f5e2f6f153b39f82e0dc43fb2cb5c860e5"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti49-Al167.npz": {
+      "bytes": 10733,
+      "sha256": "bb16a7aca8e977b7aeda6f370c0a6e0b368295f4964082b178a1e8b7218f92f6"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti5-Al211.npz": {
+      "bytes": 5799,
+      "sha256": "3389d6db3ad8ac1de3a9e13106642b95182aafe25cbcf14dfe8849f5ace001b1"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti51-Al165.npz": {
+      "bytes": 15869,
+      "sha256": "0c633e5ba8a17fdfed6093dc73fb90dcadebf7bba5fe099445e15bb1b401a425"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti54-Al162.npz": {
+      "bytes": 15753,
+      "sha256": "ca4e545a8f21ea246912881a9b7bf5f9f034244ad6c26dca32d6e7dcfeeff401"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti59-Al157.npz": {
+      "bytes": 15860,
+      "sha256": "a74358a2c3d9962fb45c8c1245ec7d21981c53c1301706ec3d375d18eec4f16f"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti61-Al155.npz": {
+      "bytes": 10789,
+      "sha256": "6448b24b42a75a67f200b1c9ec04496d92e4600070cdc044c6893fde0c737ffc"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti64-Al152.npz": {
+      "bytes": 20802,
+      "sha256": "f83e5704d93404e86238ea767c44dff18fd94d2ce9d1a7c9bde0ed46ddfe66b1"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti67-Al149.npz": {
+      "bytes": 15806,
+      "sha256": "435cf07140bb857d3a5bb30c75bddebe7ec8bb2a7c15ec30de083396c8c12c3a"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti72-Al144.npz": {
+      "bytes": 15847,
+      "sha256": "0b1eae18ef738830b6a0e63e43ba46b8aad0ee4b994d25054a4a80b3f32d25cb"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti78-Al138.npz": {
+      "bytes": 10703,
+      "sha256": "a3a43e19e658f74907582367728cf0753a745c335e7457ed6d89218b174886a8"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti80-Al136.npz": {
+      "bytes": 10884,
+      "sha256": "54e38bacc270464cc33fa39bdfa814118aef6c1216e1c5eb1a9d338f931e0faa"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti83-Al133.npz": {
+      "bytes": 10812,
+      "sha256": "ecbb9aa23a1cda139355dfdce72c511084db3edc174a2062e34f700e4dd6dd49"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti89-Al127.npz": {
+      "bytes": 15753,
+      "sha256": "b90ea966c75c29010943c2fd0ecc75087464e00f1205b4496e03bc8899436738"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti91-Al125.npz": {
+      "bytes": 10707,
+      "sha256": "52921e1a5c2157c304e82ca29c0ad3322c7432c01f478545c8db2b53d7a4acff"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti94-Al122.npz": {
+      "bytes": 15789,
+      "sha256": "74a0118a1c07a2c9cfa65cedb7ba71b5a585d2899a23e997a584e7b0694e831e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti95-Al155.npz": {
+      "bytes": 12392,
+      "sha256": "91889327b6a67397a1b30bbc4baeb0997382d76bd55c2eacac6786adb0947191"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/train/fixed-species-Ti97-Al119.npz": {
+      "bytes": 15679,
+      "sha256": "e954766ef8c1569789c6e608986dcd21b52d1d02a247c64aab0f8e7375134feb"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti102-Al148.npz": {
+      "bytes": 23763,
+      "sha256": "6cfe3500c00e38280e9950ad83fa9d8a693bfeea0040873122e268a7d4968429"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti108-Al142.npz": {
+      "bytes": 17579,
+      "sha256": "9adca7f6cb64a42edb6b9324b581db9fe167dafc9165b70127149ce40ce46365"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti111-Al105.npz": {
+      "bytes": 35793,
+      "sha256": "21e4a1393729cd54813fd6edde0476a0bff59cdd8769566c856b0113b91fdd94"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti118-Al132.npz": {
+      "bytes": 18233,
+      "sha256": "5a08729a87de4b329782bc07c7fcbfd94c86ba57a940f88f845f7a3e39cbfc49"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti123-Al93.npz": {
+      "bytes": 35862,
+      "sha256": "c641998907a8013e264808360beec886dc203d5bf80d854b83a1ed981ac360fa"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti124-Al92.npz": {
+      "bytes": 30746,
+      "sha256": "a7cfa5f4e0981f4afacdd156c7f193f672c922ba2ff2b9bac6a221062c46922b"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti145-Al71.npz": {
+      "bytes": 20932,
+      "sha256": "9fcff885710c16070020777c68c1301c113360dc8a7129e4d2bcf22eaca79bd9"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti15-Al201.npz": {
+      "bytes": 30786,
+      "sha256": "f33c1ef53a7bd5fb6702b34b6818c852075d0dc3ff5d8e1b54dd72e0c22f8602"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti167-Al49.npz": {
+      "bytes": 45500,
+      "sha256": "8c718deacd307c3783696e9199cb2f46251b8de57a497cc768eb7fbbd4369391"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti168-Al82.npz": {
+      "bytes": 17527,
+      "sha256": "93aeda2cc0b38c6362906694a1cfbdd53084d06ac90e0e64dab86ff79aae018e"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti169-Al47.npz": {
+      "bytes": 70423,
+      "sha256": "00c543f75d3875da7d900e26b30ff04190e56319d72139dd5db35efa291c2046"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti18-Al198.npz": {
+      "bytes": 55861,
+      "sha256": "7f1a07a6859caa935d4c22ae1b9a42c92fb8efd7d080604bcff070ea322968fb"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti188-Al28.npz": {
+      "bytes": 40258,
+      "sha256": "5b1a8f38655dfd9ea3bad5a1277a2fd701f491e7ed2858bda14eefe0a35502ea"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti194-Al22.npz": {
+      "bytes": 70522,
+      "sha256": "bceb7487f01be19e06832bfea688d814b63cde141872b191477e8d6bc4040e39"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti195-Al61.npz": {
+      "bytes": 6770,
+      "sha256": "0fd764ee6cae74421ad59e0b0c49bf569a8b47c36432b83954638b75cefe9ce4"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti197-Al19.npz": {
+      "bytes": 45639,
+      "sha256": "624a06941497dc67f31dd506629a794a3aaa8fa4e22b80d551082707f6fcab69"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti218-Al38.npz": {
+      "bytes": 6749,
+      "sha256": "88f8377651c64df321eadb24b31ef7cd091444559d51bbe8d97ca4df6f36d5fb"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti250-Al0.npz": {
+      "bytes": 5862,
+      "sha256": "b6b9030fa3a0135145195a9bf94266039c58f8f32e37a5985fa4bda58113158d"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti35-Al181.npz": {
+      "bytes": 40897,
+      "sha256": "e5b3622e44eeb7477378d0a94a48a35c5e7a0ca7decb71fba82d5b4ca9dc2873"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti57-Al159.npz": {
+      "bytes": 40850,
+      "sha256": "6c87738e26163abf58be970615f7847896f42405b03f0c91fe81c27aa19db932"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti69-Al147.npz": {
+      "bytes": 25823,
+      "sha256": "188a95d6f7c1ddc106bcea6db3c3547a40eae4e50862d1f62ed3955b4066e453"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti75-Al141.npz": {
+      "bytes": 70957,
+      "sha256": "9b873622dccd06b8e433ede5b365f2211e5196ba3036bb97ebd396f0d103a4a1"
+    },
+    "training-plan01/cases/PBE-full/evaluation/predictions/PBE/validation/fixed-species-Ti92-Al124.npz": {
+      "bytes": 15877,
+      "sha256": "7a7ca6214afbc0594fc3b7c4de0e14bf7dbc47c3b8eccb8b7488594dcf8f8198"
+    },
+    "training-plan01/cases/PBE-full/evaluation/summary.json": {
+      "bytes": 941,
+      "sha256": "bbf9eb173d2eabe2f82a8a7b475596cc59d3eb606e3189abc5e78bf948a9a680"
+    },
+    "training-plan01/cases/PBE-full/hardware.txt": {
+      "bytes": 106,
+      "sha256": "cfa521dbaa599b36dc217dd89d690fd1614fa7c342049e228b239052e1e2f34f"
+    },
+    "training-plan01/cases/PBE-full/harmonics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-plan01/cases/PBE-full/input.json": {
+      "bytes": 15892,
+      "sha256": "62b4a621e6050ca9fe9612f363a8a0cf4c90ec8d86c4390d854380eee4e40488"
+    },
+    "training-plan01/cases/PBE-full/input_v2_compat.json": {
+      "bytes": 17629,
+      "sha256": "d4e165ccea175f5de7689b23829b9713efaa774511af4c8092c0ab20c77c718e"
+    },
+    "training-plan01/cases/PBE-full/lcurve.out": {
+      "bytes": 12621,
+      "sha256": "c4b9adeb8d650514d8f83a9e40977e5f5b30cb8b8420bdd78e9eb2416e89e766"
+    },
+    "training-plan01/cases/PBE-full/merged/10000.pt": {
+      "bytes": 4573147,
+      "sha256": "4060086208e4735e78bd52f3637f0f7fd4a350b883878b6a3d5bfcc564facf73"
+    },
+    "training-plan01/cases/PBE-full/out.json": {
+      "bytes": 21238,
+      "sha256": "d28a09254f2fdcf515acdd0f56df044f71dbc0710ff181e5e11b3d8a3cc6b41b"
+    },
+    "training-plan01/cases/PBE-full/parameter-inventory.json": {
+      "bytes": 27555,
+      "sha256": "32de32579ffee70b54f52a566d42c9bb80199ad421a21de30231b832862fd40e"
+    },
+    "training-plan01/cases/PBE-full/parameter-update-check.json": {
+      "bytes": 19907,
+      "sha256": "5259c1e7349a43de20d7e82f24af847d7674561fdd327806b32e401ee62a0d8e"
+    },
+    "training-plan01/cases/PBE-full/progress.json": {
+      "bytes": 211,
+      "sha256": "00dcb36b629f5b146cceb220b7864091cec5151f938543b52e71e5b1489b3e79"
+    },
+    "training-plan01/cases/PBE-full/train.log": {
+      "bytes": 64343,
+      "sha256": "f4ab4f143013505ea9492256a155d53aaa6661ff1eeb86f0ed1cd04d879c9978"
+    },
+    "training-plan01/cases/PBE-full/training-exposures.jsonl": {
+      "bytes": 747612,
+      "sha256": "20c202ea358a1e4f093254e8b8f93f55135adad83208aa92ac8991345100ecb8"
+    },
+    "training-plan01/cases/PBE-full/training-summary.json": {
+      "bytes": 1408,
+      "sha256": "b2611a17673ecb23ca0159945ae385a3b5113808d6f6ecf4c4eb8c4d66a23a3f"
+    },
+    "training-plan01/cases/PBE-full/zero-step.json": {
+      "bytes": 1687,
+      "sha256": "c7305a23870374a7c77c47b87e39a65da23df963d10c0f70d5aec1de6ed54e62"
+    },
+    "training-plan01/cases/PBE-lora16/attempt.json": {
+      "bytes": 75,
+      "sha256": "87c634cda17b2f4372f7ca8ef66e049fd4c71e3c4552ce5841003ab1717eab68"
+    },
+    "training-plan01/cases/PBE-lora16/case.json": {
+      "bytes": 879,
+      "sha256": "73994757b81a71c1394987996234c949c28905a42e2b16c380e508aa905f7ded"
+    },
+    "training-plan01/cases/PBE-lora16/checkpoint": {
+      "bytes": 31,
+      "sha256": "1ea09e8fa51f7f96f75536192cb92ad1457c04d0cbdedfdbc54544760b0a4ae5"
+    },
+    "training-plan01/cases/PBE-lora16/checks/01000.json": {
+      "bytes": 1114,
+      "sha256": "85dd50ab2f86d4b06592869522d3ee05d4484412813d92373a14c4814eadd773"
+    },
+    "training-plan01/cases/PBE-lora16/checks/02000.json": {
+      "bytes": 1113,
+      "sha256": "2030b114cd2b453a7ac103306d3b180885820d4a0aa0ecbc5788302c97c4e926"
+    },
+    "training-plan01/cases/PBE-lora16/checks/03000.json": {
+      "bytes": 1120,
+      "sha256": "b559ae0160832cb8ee1bd0685677a3aeb267b378a0a8851205e5b2d64703118d"
+    },
+    "training-plan01/cases/PBE-lora16/checks/04000.json": {
+      "bytes": 1111,
+      "sha256": "271a29de992362a459d50b560ddb134b281ec637c42097bff5babb438af32913"
+    },
+    "training-plan01/cases/PBE-lora16/checks/05000.json": {
+      "bytes": 1114,
+      "sha256": "4eb23e6f04e66e818953dfd9bdb04697eabc59b5a0cdcf22c6702d46d05729c5"
+    },
+    "training-plan01/cases/PBE-lora16/checks/06000.json": {
+      "bytes": 1117,
+      "sha256": "71c6b6fab2fb6de94fe527ef991e02b9c6f602e78223e2da02acd095c9eea917"
+    },
+    "training-plan01/cases/PBE-lora16/checks/07000.json": {
+      "bytes": 1117,
+      "sha256": "0967b0a5234ed1a73b08c20eea23d1df32aef6af8d6487e8826b5b7dcb0d872b"
+    },
+    "training-plan01/cases/PBE-lora16/checks/08000.json": {
+      "bytes": 1122,
+      "sha256": "2f964fd92d877788d75b258ac8c56bbf329aeb8cf08a6c5f542e68bc80e9e084"
+    },
+    "training-plan01/cases/PBE-lora16/checks/09000.json": {
+      "bytes": 1114,
+      "sha256": "aa571380ee6d78832417176393cf962a84e56f8891728903e483f3e3b3d93396"
+    },
+    "training-plan01/cases/PBE-lora16/checks/10000.json": {
+      "bytes": 1100,
+      "sha256": "359fc2d1b4c1097f107aa0b5f270c1f4bf067fb2a7ef4eb86166a3aa148a30a3"
+    },
+    "training-plan01/cases/PBE-lora16/evaluate.log": {
+      "bytes": 476,
+      "sha256": "4fff60954e82f2117231f9475037e3407637e6a5fb4ad29532a2bdd80dd4fe6d"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/freeze.log": {
+      "bytes": 3479,
+      "sha256": "a47ee71cf0a7dcded6784b70c1a9a4920e217aabca6c9cf5a8b45f9ae8ff4621"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonic_forces/force000/forces.npy": {
+      "bytes": 2432,
+      "sha256": "3bc3350cea5319c2cbc38fe3b3064a995a4e79768bdc7eb5756b4876cda82b84"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonic_forces/force000/prediction.json": {
+      "bytes": 355,
+      "sha256": "37e3c054cc0c94b44434c7c9de91f5a8d851be4a3cf25117890e72e8d72be451"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonic_forces/force001/forces.npy": {
+      "bytes": 2432,
+      "sha256": "cc2d375b3de25632b5a76c63d2419f7fa54f092c6d486f1d530e6eedcfaca920"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonic_forces/force001/prediction.json": {
+      "bytes": 356,
+      "sha256": "fdf0238c5e443e551670184ba3119ddeb4956302e695abd27f6624bcde4131fe"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonic_forces/force002/forces.npy": {
+      "bytes": 2432,
+      "sha256": "4e257999740cb2c30ec8a4adb89a08eaecfb0bb70451ced96e878ba20e5c3786"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonic_forces/force002/prediction.json": {
+      "bytes": 349,
+      "sha256": "898a5410cfa4987ac7c171a66bee5b492073cb654b7ebdd4d3a9cb946863b316"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/bands.npz": {
+      "bytes": 326194,
+      "sha256": "b3b0147796104f65e405fda2b2ba486a8abaecb76a9e7b28f98b7a6fced37e76"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/dos.npz": {
+      "bytes": 49792,
+      "sha256": "b575f6378a6de55d38e2dc5a1a9f90256bc6608a5e249b5319cef3efe2ac4d58"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/force_constants_ASR.npy": {
+      "bytes": 663680,
+      "sha256": "7c02dcb2bac6efe8a79b55972a34cb9f7cb079cdfb5b5787a2ae017fb5cbda97"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/force_constants_central.npy": {
+      "bytes": 663680,
+      "sha256": "60a80f095fc76f40f80bf43505079d2bc522dc35aefe4d00ac5722a02f1f2d57"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/force_constants_raw.npy": {
+      "bytes": 663680,
+      "sha256": "5a02c24f5b307bc6f4bf5686d59eb181dbe4bd5cdb46d793efa4998250ac530f"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/forces_central.npy": {
+      "bytes": 4736,
+      "sha256": "1e5910fcb1135419d1c9eaa9e1c2ee348905be1180fdb8e6ca9c69bde7c55a5f"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/mesh50.npz": {
+      "bytes": 290268,
+      "sha256": "b5bc27579f59d58f0cca0a9e7fba921bed4f5683c51596841b7f93c6d12d0f3c"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/phonopy_params.yaml": {
+      "bytes": 2322501,
+      "sha256": "554446b686a914a0bf2ecc55c4b1ee271a8964a3ea2acf8f8b3d34138618ae2a"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/summary.json": {
+      "bytes": 1330,
+      "sha256": "c4641fda15586fdf1ea406a62970619a237ad5b93b6cb27414e2c67635000688"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/metrics/metrics.json": {
+      "bytes": 47279,
+      "sha256": "f8a430681cee55d92f5e00577d49e0ce04e26637c91be983cb859fb55e507358"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/metrics/per_structure.jsonl": {
+      "bytes": 140296,
+      "sha256": "8d02e1bfae59208577831c32dbf1c554416081e1ad34f2a5cb289bf8ef449b94"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/numerical-QC/summary.json": {
+      "bytes": 5614,
+      "sha256": "262a681111d5ba80616713f48e923a3e25e4c12c6e83756e4a1065dcf62e11d5"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti0-Al216.npz": {
+      "bytes": 20776,
+      "sha256": "9aa3724bf7270e4d4b759f2d1b2ee71c82fee210337bc8c47ccc163dc6c8c104"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti10-Al206.npz": {
+      "bytes": 15819,
+      "sha256": "704239a85540054e19cae35f54ed5fbeda461a52302fa3bb37a05ae3b655f624"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti100-Al116.npz": {
+      "bytes": 15750,
+      "sha256": "9e1e9ad8c781664d75c8ec31a9db54058e29234bd3451446c004400728539ce0"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti100-Al150.npz": {
+      "bytes": 12042,
+      "sha256": "c6e64f2cf75e779a0d3707875aeae41334fd4c03d1b19475fb695adc0ba58a30"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti103-Al113.npz": {
+      "bytes": 15795,
+      "sha256": "c607f3803fd3dba4bd21c8a2f12b75743a29ca8c1b8cdb5ede95772f6a850a85"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti105-Al111.npz": {
+      "bytes": 15793,
+      "sha256": "f599fefd645ea71278c50e2bbcc480544f1efd27071b6091dff3a60f9da57fbd"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti108-Al108.npz": {
+      "bytes": 15794,
+      "sha256": "e0500f4e35d3e558bb69325f5bbc5d565c0f0ce2fb542446a6a8606cc5845f63"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti110-Al140.npz": {
+      "bytes": 6629,
+      "sha256": "4c740cef55411271b5fa688d6742c5a23e27aa96af76bc2bd6460c2534f5e8d4"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti115-Al101.npz": {
+      "bytes": 15759,
+      "sha256": "a5551f473318c14ab1ed4e30ae48e81a9d6fed47d44350fbcc5cafaf156405c7"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti115-Al135.npz": {
+      "bytes": 6578,
+      "sha256": "61a96494156fa6e51df8e9eda2b7df41ae501712c1d62b920b451a41731bda30"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti118-Al98.npz": {
+      "bytes": 15732,
+      "sha256": "397df252ac9341b7d3b1f85c01ccf5669c88b3c1b3ebc05161167e16e784c8ff"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti122-Al128.npz": {
+      "bytes": 6539,
+      "sha256": "3c67310106d3ce4f907b00a5e7959f453476ade2b7435edd5f5011fa74f109ea"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti125-Al125.npz": {
+      "bytes": 6628,
+      "sha256": "5b6e6ca870b250bd0d70b579d8a4a42ad70cd327a95ee95f7e1fdf4de31c9f17"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti126-Al90.npz": {
+      "bytes": 15702,
+      "sha256": "b7b18e3bc37ef2f6a3dd313f89e2344a78eeaf22d9d6d7176b24d8a094cab11a"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti129-Al87.npz": {
+      "bytes": 15795,
+      "sha256": "905365cbdef4abf2549be47684b6f12634f948379523d591d0e4d2f8d6d96434"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti13-Al203.npz": {
+      "bytes": 10855,
+      "sha256": "99dfbe21ac174759c93cd2674374c063d66499eaef75c602f04e355a19ce4095"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti130-Al120.npz": {
+      "bytes": 6571,
+      "sha256": "b12dc1f433a37d889505a0a9e5d0c628f38ff0ecd450adc9eabc09d35161cadb"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti132-Al118.npz": {
+      "bytes": 6340,
+      "sha256": "dbf574c55ebd73e38ef35dbe2806f2a5f28f432ffbc0aa3c86756cbcc827387d"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti132-Al84.npz": {
+      "bytes": 15545,
+      "sha256": "fd2a621c553fc5efeb519d734ca9011b71f0acec926911353d2bff6ad568ca30"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti134-Al82.npz": {
+      "bytes": 10761,
+      "sha256": "29ce085527f6a0aaf4c699a100788074b026fae19481b07265bfb7a107f5eaf2"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti135-Al81.npz": {
+      "bytes": 15794,
+      "sha256": "f90275202783921815aff718d061b53b781756ba0a4210f4678e439618ab909d"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti137-Al79.npz": {
+      "bytes": 10691,
+      "sha256": "602f40f67673d96db349d4c88f989f73f9c2c18da9d0dbf95bd6f21950230b81"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti140-Al76.npz": {
+      "bytes": 15646,
+      "sha256": "4575be5ddb08f6cf4a2c570e9714e25b37e24af9cd9e3af0e9c5db3196c9b213"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti143-Al73.npz": {
+      "bytes": 15729,
+      "sha256": "bc37ab079e8ffd657c10dc482a9da62d54b3839e497380a660ada64916736eee"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti145-Al105.npz": {
+      "bytes": 6487,
+      "sha256": "1317be324bec99ede2364ede550755f645c3de8956e2b4fb73460ee8ca319caa"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti148-Al102.npz": {
+      "bytes": 12370,
+      "sha256": "67de732440b5c2582d0da0addc259fb4b02ba61dbbded91906348be4996cd0ee"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti148-Al68.npz": {
+      "bytes": 15806,
+      "sha256": "8bbc903afb7c5ade7b42d273144a2d5b02a60863aa804588d91879ef094082a9"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti152-Al98.npz": {
+      "bytes": 6488,
+      "sha256": "c9de83b532f50ea67e23a54ba88d55c5cd183c25381a3389fe51a9b1de988456"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti155-Al95.npz": {
+      "bytes": 12343,
+      "sha256": "f2bb0bdccc52595224ed3fb9b3ce676c7fb7979fea53831c0237d934a8ba75eb"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti156-Al60.npz": {
+      "bytes": 15523,
+      "sha256": "d342403ddb357ba2b4071ff60f9453f25beab96b9c415d07547bbd82b031ac60"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti157-Al59.npz": {
+      "bytes": 10860,
+      "sha256": "707b878632c50db0b4bb66def839801f4ecbb2b04adcb365fd53a68c593f8faa"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti159-Al57.npz": {
+      "bytes": 15728,
+      "sha256": "807114e6537074b8bf47cdcd0d00d5c8254b27fb8f25c3c1b7dee1ef744c8b21"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti162-Al54.npz": {
+      "bytes": 20790,
+      "sha256": "86b5babd28b967b61ecf5624aa3748f23421863c008dbc0ab6f21711a20cdbd3"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti162-Al88.npz": {
+      "bytes": 6604,
+      "sha256": "defaee18dfd2ab52790fafbce0ce975902e75e09f1219ba5f215894b1a2361ce"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti165-Al51.npz": {
+      "bytes": 10866,
+      "sha256": "bf2c878daae9d1ee14e2fa4f109be9f233b387602db6d0f1d320b304a4ffcaf7"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti172-Al44.npz": {
+      "bytes": 15793,
+      "sha256": "4b1f1bbd8b16cd9d53ce5091468d2fc54dddeea2a8b87596872c7e5f85508139"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti172-Al84.npz": {
+      "bytes": 6711,
+      "sha256": "f8ad16abffa9229c9949666ff62fc34b0c0390c411832ba3e9febd8d21ecef80"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti175-Al41.npz": {
+      "bytes": 15794,
+      "sha256": "3e95b1d1026156c2029655e96163ac35840a8d10dcf59ebaf46823621f1a1ba7"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti175-Al75.npz": {
+      "bytes": 6548,
+      "sha256": "5768372bb10ed45a122c5e0825a08c2c357d320751e94a6c614baf7518115a58"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti177-Al39.npz": {
+      "bytes": 10683,
+      "sha256": "49a236b9c0284855b2e5140a061490ec7e5a42d82199e2bf7d7ef9dc002e0f53"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti180-Al36.npz": {
+      "bytes": 20855,
+      "sha256": "01f4d99cabb86d891feca3e0c21ed9496d1fd8749a7f892d75cc9732ba5bc81b"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti182-Al68.npz": {
+      "bytes": 6600,
+      "sha256": "abd2f4504e52fc8d6893847ffeb42f56c637f71de6faa3e25de085c94d4efa30"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti183-Al33.npz": {
+      "bytes": 20628,
+      "sha256": "c66120f14e450e4400b8779642b14e8422b8df7b40a26fe40b6552decc58d556"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti186-Al30.npz": {
+      "bytes": 20743,
+      "sha256": "b0d0a84c810164982cf6f86407b6d430ef9ba2725cbaa740d146fc937037e61e"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti189-Al27.npz": {
+      "bytes": 10800,
+      "sha256": "718b1b2012755b6d9f5b2102082f5e2aabd1efd9688934dca9dfffae2dae69a7"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti191-Al25.npz": {
+      "bytes": 15699,
+      "sha256": "20d4b0693e9701334561e15ea777d64a4097af7f872e315ad5cda142d5f94dc4"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti205-Al11.npz": {
+      "bytes": 20686,
+      "sha256": "0addb8b63823828042610062880e932e2ed718e74b1d8ca403982014ba5a1650"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti208-Al8.npz": {
+      "bytes": 20811,
+      "sha256": "6e98ba6e497d827d6f3f1c4391e95e9007320bde7977b5836727fe494162204b"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti21-Al195.npz": {
+      "bytes": 15750,
+      "sha256": "914e2c1f41808e010ff11bbacdf9e72637f4b5e8549894514d0b66192df757c8"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti211-Al5.npz": {
+      "bytes": 10741,
+      "sha256": "6a72443e9b74e78daa81d1d07d7a60ffa8427d11f2c27daf21188b86c01f488f"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti213-Al3.npz": {
+      "bytes": 20795,
+      "sha256": "a78ac5b82be53bf3560f0cd04895cae7a82d94f337ed66b3f403b3b57a516ee5"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti216-Al0.npz": {
+      "bytes": 20661,
+      "sha256": "38c75b0668f399e845cd24a75de8c98c2f6da7b0c81f71f8f7282f8bf91cb004"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti225-Al31.npz": {
+      "bytes": 6718,
+      "sha256": "7403bef2b33ace04af23a8ec0b4095207d4954a431b58e9507cb8aebd820c961"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti228-Al22.npz": {
+      "bytes": 5922,
+      "sha256": "0a1911e856ac827e175eb8bc5fa012ac6d8a927fb22487c8a7333eb889958452"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti242-Al8.npz": {
+      "bytes": 6128,
+      "sha256": "e750a41a84cde29a64efbc7e6d604802378e40e12c29acd6340d8dbc29577e95"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti256-Al0.npz": {
+      "bytes": 6739,
+      "sha256": "4bee1a70cf3f906f974d1cb5b6362f491b720707e29c63f8431d7cbe2aeaa4b7"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti26-Al190.npz": {
+      "bytes": 10768,
+      "sha256": "baf1236dce713b63df433336276c4ea6f928d17caf3b88e776ce4c45f6a0bc84"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti27-Al189.npz": {
+      "bytes": 10823,
+      "sha256": "5d9b9f9af4bf1ce5f0adaf1699043ef189dd48916ddc2f5fd162caecdd591d61"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti29-Al187.npz": {
+      "bytes": 10782,
+      "sha256": "89abcb9b94cf3bd4c5c2d0f33b28ba45cb023a025ff800db8ccb49e3a1bf6dc7"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti3-Al213.npz": {
+      "bytes": 15753,
+      "sha256": "d796d21b9df6371b91e7cb9f8220ec9e648178472311efaf2a8f65262e2b0c79"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti32-Al184.npz": {
+      "bytes": 15833,
+      "sha256": "ee35cac2032142955c876f85319dbd72ba8288ee54807a84276b82add5f97a06"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti37-Al179.npz": {
+      "bytes": 10820,
+      "sha256": "a2581ff8c3b2a6b57e4bfa0eff85d81ffc39e89e4c3e645510f5e105e2389ebe"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti38-Al178.npz": {
+      "bytes": 5874,
+      "sha256": "dd8a6400c3cd5b7c6ea002e31b433a9da944cef623862961a8b6611be6315f18"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti40-Al176.npz": {
+      "bytes": 10837,
+      "sha256": "6b314b1e9081f19d15d0a8a1419bb0c5bceb8b9a0891a35214ee7cb2229615fa"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti43-Al173.npz": {
+      "bytes": 15790,
+      "sha256": "46d874d2304b42a1c1e4e13d53e0f68c05be6a1671789e653d07f23692cd9af0"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti46-Al170.npz": {
+      "bytes": 15785,
+      "sha256": "5cac46c1e5a33777055ca226c96a9c7225f5655272795ccf7d8974cf4b9ddbb7"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti49-Al167.npz": {
+      "bytes": 10732,
+      "sha256": "3d9c624c9d22038b6df5a12d1364f4270c1c0dbbfa896ad0a2482a22316fd461"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti5-Al211.npz": {
+      "bytes": 5795,
+      "sha256": "a509ce2a13e4e32a6d34771634e71e230144d778990ad46c637a0a711b91769b"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti51-Al165.npz": {
+      "bytes": 15875,
+      "sha256": "ae5095f5a267d33751f29e58af33df61e01b5af889279386e647f8c3effe6920"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti54-Al162.npz": {
+      "bytes": 15791,
+      "sha256": "9c0d2eead163413f0768473924642ca01b7be64572eb564d9deb226d09950b4b"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti59-Al157.npz": {
+      "bytes": 15863,
+      "sha256": "f24fb4ccfc2e41d6e0928ab22496f4079bc4fa324684fb383a5b1323f548435b"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti61-Al155.npz": {
+      "bytes": 10807,
+      "sha256": "4cb50e80983706a036cf2578c0a41a5803839272116f9d020401236558ec42a4"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti64-Al152.npz": {
+      "bytes": 20827,
+      "sha256": "1b8f481ab2970a02c1a0705b2e5d9827ac7d5a6d70e38ccc9322cf256505d00f"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti67-Al149.npz": {
+      "bytes": 15813,
+      "sha256": "09f0a40ef18f628e5092874fa73ba0093fe3d4d3f3cac78d177da42526f1c4f5"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti72-Al144.npz": {
+      "bytes": 15853,
+      "sha256": "cbdb8a91793ccfdb7dc2d81f9679e91c1299840d2305a60a32b74f59cba28318"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti78-Al138.npz": {
+      "bytes": 10698,
+      "sha256": "6b24dd617f1cace8a21b3654cecdfbf80174e41040dcbbbdd3c17c0ff14efe8e"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti80-Al136.npz": {
+      "bytes": 10874,
+      "sha256": "88065a57bdf55209fafc8029a24a755efa3972acac0c8a59bbab46768046b608"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti83-Al133.npz": {
+      "bytes": 10824,
+      "sha256": "53ca77b3a62c034749866286d17c9d89670a0a4787f9454146f9eaaab786581c"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti89-Al127.npz": {
+      "bytes": 15757,
+      "sha256": "b3c4e621be6a0b7d8897e33ef2567b23356f2e645ce48cc6a17c2bb049b99b20"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti91-Al125.npz": {
+      "bytes": 10713,
+      "sha256": "79cae5b691d9951b3664fd6f0673e4332a55314332eacb73476e9f8e1a693ab6"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti94-Al122.npz": {
+      "bytes": 15796,
+      "sha256": "b33d7b1f431edbf82fda0789cc6e983052240e269fee1206797c48becb0ee1b0"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti95-Al155.npz": {
+      "bytes": 12415,
+      "sha256": "3bcc59a7adca16fd0b8af96b699fc3947434414937025c542774f40614a3910a"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/train/fixed-species-Ti97-Al119.npz": {
+      "bytes": 15692,
+      "sha256": "376245b260f3a9a0b88b2519cb6f9a397080ef7cf4681e027de7e54fe454b3a2"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti102-Al148.npz": {
+      "bytes": 23807,
+      "sha256": "686cb7343b04624bdf0df059802f2f1fbf458d3c6840784e83cab14f5b702637"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti108-Al142.npz": {
+      "bytes": 17673,
+      "sha256": "74eb25d4f4d3799e517518d18b11f737b53c45ba63cb19dcec44825b84a7d3bd"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti111-Al105.npz": {
+      "bytes": 35806,
+      "sha256": "cfb80aed97ab8c595be821b348af168526632fd4092d0da9e6fdbe7854361847"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti118-Al132.npz": {
+      "bytes": 18252,
+      "sha256": "6437eadd78cb7c222265c610d78445a5d1a28a1162980b56c0c35f2e6baee13a"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti123-Al93.npz": {
+      "bytes": 35861,
+      "sha256": "377335dbf949eefda64df61dab365fde7bb8c9f103e3b8a43dc3db92c376fb7c"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti124-Al92.npz": {
+      "bytes": 30746,
+      "sha256": "b9cdbf1918efeadf3c7fab33648017b44e06b51be5be9bbce57242e70636c029"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti145-Al71.npz": {
+      "bytes": 20903,
+      "sha256": "43558e123c892043cfa63096cf6bd9e6c04f2017307cc385b48c9375c910774d"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti15-Al201.npz": {
+      "bytes": 30804,
+      "sha256": "d8ae0e01836407d0024950d02343f729797ab52209cdcedb44ad357a139aa879"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti167-Al49.npz": {
+      "bytes": 45459,
+      "sha256": "aa31a9f8f44fe74987a2554346f7a125b1edf229afe0b1c1a07b12ba6c3c4c4b"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti168-Al82.npz": {
+      "bytes": 17495,
+      "sha256": "f08531b2b958b144e400904d3ca1d2fe3454186d7972d486606e0f1c712351ef"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti169-Al47.npz": {
+      "bytes": 70303,
+      "sha256": "3e66e3005b00b0aa7f5a01bcd36307a77f0901a974b61a14e8e9fb63c52440c5"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti18-Al198.npz": {
+      "bytes": 55826,
+      "sha256": "2d4a7a683506fd5f3ed63cfd6fb22039a1f3a816599eb965418c6b536b4d2a87"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti188-Al28.npz": {
+      "bytes": 40173,
+      "sha256": "81be17354ab9f9f6785bcdf522d8d59f653c16b8582cb4ae7225b2afa7e732c2"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti194-Al22.npz": {
+      "bytes": 70326,
+      "sha256": "4fc2a2fdfa9cc7c6611a67ff8352870043ceda4b126f84eade55ad7c4bf09eea"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti195-Al61.npz": {
+      "bytes": 6762,
+      "sha256": "f3a08cee40cfac72bc10f90a4c8dc3e307ecfb7211ddc5d65c86501a31112f95"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti197-Al19.npz": {
+      "bytes": 45516,
+      "sha256": "773e1513dbd0bbd1e81ec6a981aa306f12022471e73189c92119c85251d66120"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti218-Al38.npz": {
+      "bytes": 6732,
+      "sha256": "29d9aabef26f1e3a092beaed2a7dea9a23922eec17c4bf82617e1586b659d710"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti250-Al0.npz": {
+      "bytes": 5822,
+      "sha256": "b16db7523410ffcf3ebe83780ba264538bb3c55ad884e32691e013a87063e4a6"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti35-Al181.npz": {
+      "bytes": 40887,
+      "sha256": "4e763ace7c39900764fc0ea403a0e51e892146f1ed5c75b23dec60ec06ef8c0c"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti57-Al159.npz": {
+      "bytes": 40850,
+      "sha256": "d7cd44a75f9a3a7dc509b9db1fbb97d5def7d097f3cc48c7d6d6125e44c05d94"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti69-Al147.npz": {
+      "bytes": 25821,
+      "sha256": "41716287dba5bc4d1337afb139e8599b422d90a18cb7b1c86dbcab70228a7beb"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti75-Al141.npz": {
+      "bytes": 70966,
+      "sha256": "3e6c240801988a1e33fb47a585668b464505ff033ef4b6a19225b746023310df"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/predictions/PBE/validation/fixed-species-Ti92-Al124.npz": {
+      "bytes": 15859,
+      "sha256": "2e792099eafe9b66f689fbefa959bd838274d53aba23fee469274f26d4b88f0e"
+    },
+    "training-plan01/cases/PBE-lora16/evaluation/summary.json": {
+      "bytes": 941,
+      "sha256": "936dae4b7c0c7ced474b01305ded198acd9fddccbe97e75541a86effa3a069ed"
+    },
+    "training-plan01/cases/PBE-lora16/hardware.txt": {
+      "bytes": 106,
+      "sha256": "cfa521dbaa599b36dc217dd89d690fd1614fa7c342049e228b239052e1e2f34f"
+    },
+    "training-plan01/cases/PBE-lora16/harmonics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-plan01/cases/PBE-lora16/input.json": {
+      "bytes": 15955,
+      "sha256": "4bdede956acbbed78ada8cd04da67f922fe80778a4ea42c9da8ca1d9a9793ce3"
+    },
+    "training-plan01/cases/PBE-lora16/input_v2_compat.json": {
+      "bytes": 17708,
+      "sha256": "d12ed4d8c0425f5cd284f818affa792feaefa0adfdff644044e20aa9bbd83360"
+    },
+    "training-plan01/cases/PBE-lora16/lcurve.out": {
+      "bytes": 12621,
+      "sha256": "d3b03c16c9a1403269153ac72da4d082d0103cd8a984cffdf368471067d70edb"
+    },
+    "training-plan01/cases/PBE-lora16/merged/10000.pt": {
+      "bytes": 4574299,
+      "sha256": "43eb4a388b321d882bbb429a5931a1e6447afca6f5ccd0bec05152d8063975c8"
+    },
+    "training-plan01/cases/PBE-lora16/numerical-check-step01000/summary.json": {
+      "bytes": 5615,
+      "sha256": "8f3871d274d708fc66cb2a097ce066e0c8389bea0c5e2758b41e9bc073c25c50"
+    },
+    "training-plan01/cases/PBE-lora16/out.json": {
+      "bytes": 21295,
+      "sha256": "b8f83fe3dc82dbd14cc64bfc21285e77ed76567171d2fa12a8f030bc86f4fc36"
+    },
+    "training-plan01/cases/PBE-lora16/parameter-inventory.json": {
+      "bytes": 40454,
+      "sha256": "d4c5d28c744d33d30d05c3acba18cc5a08ab210c5d65aced08f3b24f9e13fb6c"
+    },
+    "training-plan01/cases/PBE-lora16/parameter-update-check.json": {
+      "bytes": 24833,
+      "sha256": "6ab0bb316e31cdc432bd3be93d87f51abcbbbe0e3bd4883f675b047d045da461"
+    },
+    "training-plan01/cases/PBE-lora16/progress.json": {
+      "bytes": 211,
+      "sha256": "c2337a0a1f39b1bb6b0105bd2ec7daa664b9fb0ae43bf2b6e54e5dddd988ea18"
+    },
+    "training-plan01/cases/PBE-lora16/train.log": {
+      "bytes": 64421,
+      "sha256": "1befb42d720694fcef4aca76734aa9c65f611c7a1f4cd8212517a7d6d5e88823"
+    },
+    "training-plan01/cases/PBE-lora16/training-exposures.jsonl": {
+      "bytes": 747612,
+      "sha256": "20c202ea358a1e4f093254e8b8f93f55135adad83208aa92ac8991345100ecb8"
+    },
+    "training-plan01/cases/PBE-lora16/training-summary.json": {
+      "bytes": 1413,
+      "sha256": "3e25dc7985edfd719fc460b57f459c69de5390c6453241e60283036d53e52a48"
+    },
+    "training-plan01/cases/PBE-lora16/zero-step.json": {
+      "bytes": 1692,
+      "sha256": "d6c9fcd2038bffbe99b7af271eca02c4af6f627653e7713e8394ec9f0e05a827"
+    },
+    "training-plan01/cases/r2SCAN-full/attempt.json": {
+      "bytes": 75,
+      "sha256": "3000306eb69cd7bf4633ef3deb13e94fa8048c6e7d3ed19117fc29a26fca37e4"
+    },
+    "training-plan01/cases/r2SCAN-full/case.json": {
+      "bytes": 881,
+      "sha256": "e9fbace3cf652079b1c7368abf0cbbf8e1f4b518f0f1ab92de5c00835e4c8860"
+    },
+    "training-plan01/cases/r2SCAN-full/checkpoint": {
+      "bytes": 31,
+      "sha256": "1ea09e8fa51f7f96f75536192cb92ad1457c04d0cbdedfdbc54544760b0a4ae5"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/01000.json": {
+      "bytes": 1119,
+      "sha256": "a7b8b9f8f8f30879ec2b4d1249963d6768bd7fcdd43822c33bec1f616c490178"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/02000.json": {
+      "bytes": 1119,
+      "sha256": "afa61a38a117906bf7f50257bbe0ebbd8f91b859cc983e5fce3ebe3ca439b4fe"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/03000.json": {
+      "bytes": 1117,
+      "sha256": "cdc6cfd7f239e4cc561f9d3ae97596e303a0b853aca3182e7cec1125c4e94d62"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/04000.json": {
+      "bytes": 1117,
+      "sha256": "ab3a066451acf59d80cea4369506087b4b535a08f433d934ce8c9ce960c6b207"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/05000.json": {
+      "bytes": 1118,
+      "sha256": "72f8e9a3c1d558d8d43718ab085b8773d44345a470523ee2ee79fb185e1db95c"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/06000.json": {
+      "bytes": 1117,
+      "sha256": "2c647b65bb6fc4123b5ccff81f8e9174f22c2c27ef5ae44cc396349afd7e83f6"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/07000.json": {
+      "bytes": 1115,
+      "sha256": "38fd6bd0ba9b17cb2eecde3e19361acb1061926e9020b15c501b32812e42657d"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/08000.json": {
+      "bytes": 1118,
+      "sha256": "dce2b803e662cba9cb38ee05c43c84d8d4bd6b743f42e8447d3751272fbdcd26"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/09000.json": {
+      "bytes": 1116,
+      "sha256": "b04d4ed74a6aa90e70e51baf30cabec19a1318a8371e622e60754ef34190a165"
+    },
+    "training-plan01/cases/r2SCAN-full/checks/10000.json": {
+      "bytes": 1122,
+      "sha256": "9b4813930040d4ea2ea1c3a321d1d1b7a236465ba18911565b198ddee6ee24e9"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluate.log": {
+      "bytes": 476,
+      "sha256": "a33d73931bc684da7c6aa363e9279eedcb48f8933f8911da9641f19499b825f7"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/freeze.log": {
+      "bytes": 3482,
+      "sha256": "dbdad9cdb7c22c43e22e525c9184437900efca1fbc01386446eb68e9a2340db9"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonic_forces/force000/forces.npy": {
+      "bytes": 2432,
+      "sha256": "1f7598e6260599eb2599f1cb2491af6b3cbfc8cb6fdbdaf8341ef7b3831675eb"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonic_forces/force000/prediction.json": {
+      "bytes": 356,
+      "sha256": "0896974f375920f71cb4a285330aff897fdf0895eec0a3c6505073c1505a1363"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonic_forces/force001/forces.npy": {
+      "bytes": 2432,
+      "sha256": "d7653a51105b323ac7f7d1449735923cc52c39173527f1b508dafc41039ba482"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonic_forces/force001/prediction.json": {
+      "bytes": 351,
+      "sha256": "7ca420b1f47c55dd9ddf55fd875946ac49a3ea9bf6f26398a2f2f886a70fd023"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonic_forces/force002/forces.npy": {
+      "bytes": 2432,
+      "sha256": "4b8a1e1b215a6de2a04186a4726fbc335a2d224ca58674493db7b42eb8e7807a"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonic_forces/force002/prediction.json": {
+      "bytes": 346,
+      "sha256": "67d6fdeff2bd2b98de000c9a9509cea27480a34c1c8d308093911f2fb97dc438"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/bands.npz": {
+      "bytes": 325588,
+      "sha256": "1042e69a043fdae9b731d21ad89252650d68e24892cb09f0d293ce3e8fdc440f"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/dos.npz": {
+      "bytes": 52417,
+      "sha256": "35f98a5b25a32a75494b57ac0374bef0341c0a608ccf3f5225f581e2ae54caea"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/force_constants_ASR.npy": {
+      "bytes": 663680,
+      "sha256": "9e54909ce612643f49cf88b1c2d1134a4c7036bdf85efd91c2b6f81c427d624f"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/force_constants_central.npy": {
+      "bytes": 663680,
+      "sha256": "841fdc11d83087863f9bcce3434fa58ffd473257a2071e7271656d1f94cf6c2c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/force_constants_raw.npy": {
+      "bytes": 663680,
+      "sha256": "4c90c4c1ed49811502b96bd7735ba96771550d55eea8892b2c147131a89e152c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/forces_central.npy": {
+      "bytes": 4736,
+      "sha256": "95a2241c6c828c912250ae1165b5ede5c23b1035f62b7fec7e564321ea94d751"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/mesh50.npz": {
+      "bytes": 290259,
+      "sha256": "55422381d631c7d0d2b0bd76ae275de4215f37951e27807e953d5e0c374c63ba"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/phonopy_params.yaml": {
+      "bytes": 2322501,
+      "sha256": "6e9d4d3ffcc6ba6b6bda28552d1947c08f9c72f428a01db183d09b0c8fe11c99"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/summary.json": {
+      "bytes": 1343,
+      "sha256": "07a6d3ea0c39037c3f49ff5a8abb0b17bae3d14fbdeb2b2d31b30b90993d81ad"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/metrics/metrics.json": {
+      "bytes": 47226,
+      "sha256": "921774ffaf60a5a2576bf2c9af37696155b0a7307557c7460a95ab923ee4f65d"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/metrics/per_structure.jsonl": {
+      "bytes": 141094,
+      "sha256": "66de87c8c89acfb03a0c504ef92135e7cf7060e8131f41e12e4d45c6b7f12d37"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/numerical-QC/summary.json": {
+      "bytes": 5593,
+      "sha256": "1a87ded38ba76bab038f1344af3fa498086330f844dd6984aea843e471ff8dcb"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti0-Al216.npz": {
+      "bytes": 20811,
+      "sha256": "f3dbfca8bb974b4b39b8188e25a69a07ffaab45818fb231f3664f331cde7ed6d"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti10-Al206.npz": {
+      "bytes": 15790,
+      "sha256": "c2c42fc838d413693ab2c46bcb54da54468ad0a02a1ff73b70b4247b8e1c725d"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti100-Al116.npz": {
+      "bytes": 15724,
+      "sha256": "a35d5a2d8a12e6286daba3f77223dfab2f39f3562710727935f528987a6e1096"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti100-Al150.npz": {
+      "bytes": 11996,
+      "sha256": "4e5fe406aeaaf40ac50b16c8abeb5374901297f94ba8c9682cd3c646a105c9ea"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti103-Al113.npz": {
+      "bytes": 15775,
+      "sha256": "e5fd5e34cb6fee55df1975d95af05c010e3c1796815695612367e6307b1e4800"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti105-Al111.npz": {
+      "bytes": 15762,
+      "sha256": "d9a9624601a9fb2771877d7f9c6ac3ae2fcc02318381b698227fffa908904537"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti108-Al108.npz": {
+      "bytes": 15798,
+      "sha256": "23c9942f04d9edc11c2512e3c61fe32f22fd14e400e777aa4574060a9e324d1c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti110-Al140.npz": {
+      "bytes": 6618,
+      "sha256": "1e8053c7e68c9d1f550d5252a6398fd643b35a4685fa18343c5298beb2f55348"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti115-Al101.npz": {
+      "bytes": 15752,
+      "sha256": "b2c32c442a2f79e492863444ab5894c0a6244ddeb6002d6ae702c6ae594e4120"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti115-Al135.npz": {
+      "bytes": 6562,
+      "sha256": "dd59ea33f2e6328c90331057d7c124750e41a5b4346d187d4894c4748ad48dc9"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti118-Al98.npz": {
+      "bytes": 15739,
+      "sha256": "ef3fa9423e6eef753514d9912e8d46f3090078e39218b21355407b2755f6752f"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti122-Al128.npz": {
+      "bytes": 6542,
+      "sha256": "1d2812b14d96d2ae840de7a31dec3a005b3577d1a04d304ed5811c540cc2a7ff"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti125-Al125.npz": {
+      "bytes": 6632,
+      "sha256": "d6dec6d70e51d1ffaa84b9724add2b9d43abca15474e46b38940ab4512df8b87"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti126-Al90.npz": {
+      "bytes": 15693,
+      "sha256": "1a49265425bffcc6600ef64112a47b60976d3e0ec4f61dbad6b05c8c85ff436b"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti129-Al87.npz": {
+      "bytes": 15799,
+      "sha256": "f39d47846777010b8b6a0cd74d761e789ef278be18eff9d1777917b775783f14"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti13-Al203.npz": {
+      "bytes": 10842,
+      "sha256": "9498fbc4fdfdb0095579808959b9c574a05eba05f48fb870e15e46b1b6eacd95"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti130-Al120.npz": {
+      "bytes": 6566,
+      "sha256": "621d8fc3501aed18ec4d55a87bedbd927ec12924119839c5774af61a3f90f1de"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti132-Al118.npz": {
+      "bytes": 6352,
+      "sha256": "692e3d806de088b181ecc72712fc7369af329673f84dbd35bde5ccee6039658b"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti132-Al84.npz": {
+      "bytes": 15551,
+      "sha256": "fe36ae15047b6dc78968b7c158a4c112fcfd826133e1e3573acde9ca9e728acd"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti134-Al82.npz": {
+      "bytes": 10767,
+      "sha256": "798eb90fd35e5690a07879a5ea2be476d083f5681b52ad892697ad0c85d68585"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti135-Al81.npz": {
+      "bytes": 15823,
+      "sha256": "e6fa7be326f512506b03260b0270637609214eba2e70250d6b7f2bcd1d5b28a1"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti137-Al79.npz": {
+      "bytes": 10687,
+      "sha256": "4b91541a5126378af17f18f8411eaf1a587306bdf0cb298d5082c3c38eea3811"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti140-Al76.npz": {
+      "bytes": 15659,
+      "sha256": "83b55f4ad5a1ba5c7839c4a4abad122c4eb5dbb4b48f29abfc7468d720ac15ce"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti143-Al73.npz": {
+      "bytes": 15716,
+      "sha256": "75fd7afc74325927f4a1093cbabbf6a0f6499e2cfe48de88b9cb7094bbdf39fa"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti145-Al105.npz": {
+      "bytes": 6491,
+      "sha256": "bfe11469112f080d5b90b31250b7272576ada73f56710bb623c71b020641e40b"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti148-Al102.npz": {
+      "bytes": 12358,
+      "sha256": "d81e53f87a54611cc7494bcdb3b5c34e7c5b793614fc5c2f71346025303b7a2f"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti148-Al68.npz": {
+      "bytes": 15836,
+      "sha256": "841bef6658eaf02efd1fc6123fcd33e05955ba5adca1f40e53848596f62bbc24"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti152-Al98.npz": {
+      "bytes": 6481,
+      "sha256": "e75688b0efcedb135c35cf7d6ff60d8b4631a80c30a16091f42fe790c76d3275"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti155-Al95.npz": {
+      "bytes": 12371,
+      "sha256": "39706be3d3f359d7490acf50bd01cbc3bf0347bb952eb77977c9c6421b33754d"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti156-Al60.npz": {
+      "bytes": 15565,
+      "sha256": "a5427079c7018f5c78211a45a68dc6e1fc2905e3370396b81ff49dcc26f126e1"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti157-Al59.npz": {
+      "bytes": 10852,
+      "sha256": "d22bd0e32d1f0105af81a98a05fc04949622de2618173200befd0d8b80e549d5"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti159-Al57.npz": {
+      "bytes": 15765,
+      "sha256": "a60017ed2be678890c0adefec00051d633760d5b8b67bafef48060a5c00deac3"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti162-Al54.npz": {
+      "bytes": 20804,
+      "sha256": "3b06d36127d949c2a83442207162f9454a45679008b6cdcee2fac5451458f485"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti162-Al88.npz": {
+      "bytes": 6601,
+      "sha256": "d8405dfc9272603c2d5d1ba4f3552ebb6f5858aece47b260767b2d241656c2ae"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti165-Al51.npz": {
+      "bytes": 10860,
+      "sha256": "144379ed34f79ef685b1c3ff425a945580954f765a21f707d2a2dead243f04b2"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti172-Al44.npz": {
+      "bytes": 15823,
+      "sha256": "2d96cc089ef06540f9772d9d213a8f5f4014f9971edd07de6acdace254afff44"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti172-Al84.npz": {
+      "bytes": 6713,
+      "sha256": "b7f0af94dc17d2926a7bedbdb3496bc7daee17f03e4f0da99929784e5c239d61"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti175-Al41.npz": {
+      "bytes": 15815,
+      "sha256": "56bf7e3de5670051bf6242900f0bdddc5ded85c483f45ee10f65bdaccb67b857"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti175-Al75.npz": {
+      "bytes": 6545,
+      "sha256": "887ea36efdebebc8e047ac40ded5590c1718e0dc4b71a727adac46171227fe64"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti177-Al39.npz": {
+      "bytes": 10696,
+      "sha256": "627bef3c8b6600759292392ddcf259485a81ea6dc64a5389d61fe4697d21efac"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti180-Al36.npz": {
+      "bytes": 20849,
+      "sha256": "f371d3d1f0333caf6da0274de917e65aec831d42b5ec1091949aa519f6e78c17"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti182-Al68.npz": {
+      "bytes": 6582,
+      "sha256": "17b13855ff3eef73af7c6d6e822ae6b1300670ef289112d611837e074a6a7203"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti183-Al33.npz": {
+      "bytes": 20678,
+      "sha256": "b566ffff01de48aba37ad21d1fb8c5ea0e2c16b19d38e48e8c3c805410c9b9a7"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti186-Al30.npz": {
+      "bytes": 20799,
+      "sha256": "ab7896f05edc63ea9a07b1fb3bfc40975a9d412f0c4900f3a4f49c4ff2933f76"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti189-Al27.npz": {
+      "bytes": 10811,
+      "sha256": "369a86b22237db1d12813f5375910a6f641f64239ef67020d346fb0c53163b55"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti191-Al25.npz": {
+      "bytes": 15741,
+      "sha256": "b9d0573621e9b45bb281549771b719fb220d9933f2d5c89229e5719373f56781"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti205-Al11.npz": {
+      "bytes": 20742,
+      "sha256": "21165b601cafee26af8f21bf2cd09adfd8adff8e4d5481cad5fe045fee118a1c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti208-Al8.npz": {
+      "bytes": 20826,
+      "sha256": "f2c165680667b1a34b492debe3b0c0fcc8c52b48014c89bad506742580eaedc8"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti21-Al195.npz": {
+      "bytes": 15733,
+      "sha256": "cd275311a690299709ad95b6908b1f3b0e716ab6d12c6c567e9fb7456e83623c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti211-Al5.npz": {
+      "bytes": 10771,
+      "sha256": "90dedc1cb23dd7b9c249b2b862689c678010d2d0f3d598677f0990e2763db507"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti213-Al3.npz": {
+      "bytes": 20858,
+      "sha256": "7e45bdef6bbc34dd9466d851242536510990cb4a194216f5b2530a18449c10fe"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti216-Al0.npz": {
+      "bytes": 20706,
+      "sha256": "a4fbef81c02d868531378be492aaa2fab35f84c1aaabc44ea6f4c902815387a7"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti225-Al31.npz": {
+      "bytes": 6733,
+      "sha256": "42d7b4008c717e8894b404fb87cb5a6164db9db966c6fc236bfa0ac8c6f46b89"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti228-Al22.npz": {
+      "bytes": 5992,
+      "sha256": "11f75c60ff57c11d6c89c153df95d38ffa3c50345af20a0edd2da0e65d3ffd0f"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti242-Al8.npz": {
+      "bytes": 6165,
+      "sha256": "a057ed298a99c51dfba5dc92a6f5c678ce6c4fcc57d59ef0b0bd810970dfe798"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti256-Al0.npz": {
+      "bytes": 6740,
+      "sha256": "75016228e54c632beb413faa772c1f28a0a14fb6425df98df6e71410130a244a"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti26-Al190.npz": {
+      "bytes": 10764,
+      "sha256": "f4a94c3103706572b1e9ef7454e987e9c7b0776efe246df581a54fd0a65e17b3"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti27-Al189.npz": {
+      "bytes": 10813,
+      "sha256": "b7a9aaf53da894730869758225701956e7412fa0546c2e7f907fb3a81913a036"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti29-Al187.npz": {
+      "bytes": 10789,
+      "sha256": "ab71020e865fb0ad5f3944c9a47e3da059fbaf1f0fc507cae14209dc56c08103"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti3-Al213.npz": {
+      "bytes": 15758,
+      "sha256": "f755b5a7d4462279880fe80ba20970e306b3c86e747b9674e5b72b3768b43d99"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti32-Al184.npz": {
+      "bytes": 15826,
+      "sha256": "eb2130e865c58f16726b259a3e99ce936637dc2fc5b88abe4fc8a51663be685e"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti37-Al179.npz": {
+      "bytes": 10827,
+      "sha256": "78e079d78fa1ec97cff96b5754150efc5e04e2bc03b3ec6be3ea54f56c99a4c8"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti38-Al178.npz": {
+      "bytes": 5885,
+      "sha256": "3fe3f5fb6371468627af2d48a2eba68a82d81a3fd30a82623067f311f9b30c00"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti40-Al176.npz": {
+      "bytes": 10837,
+      "sha256": "6f6bf205a0f2ef665dbf293787729f78014c24f08df92cbe21766572a7e2f3d7"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti43-Al173.npz": {
+      "bytes": 15765,
+      "sha256": "741db7c943d0f721a6f8884b5b59c84c5e0854fd08b2e2138ffc3f43098d2b0e"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti46-Al170.npz": {
+      "bytes": 15782,
+      "sha256": "fa25f7c2e10bf0c514e4c47f02a0e9deaf34b45b3bb7e0569bc739ccd631d29c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti49-Al167.npz": {
+      "bytes": 10743,
+      "sha256": "c8f6f5736fcbf64cc3271cd711342ca104f0b38729eecf5cdfb0d5a4bc4e11e3"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti5-Al211.npz": {
+      "bytes": 5837,
+      "sha256": "9bfde21cd3c984f53043d4f1cb4229a0c94416b7917e56ec6b6cb815dad4b32d"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti51-Al165.npz": {
+      "bytes": 15866,
+      "sha256": "8b6f10735f32989cf3efac3da8489896fb2bfbd63c5dc8e2e29b957df7b348f4"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti54-Al162.npz": {
+      "bytes": 15773,
+      "sha256": "0bf3ba1c40c74a4c3000b54321efd0738d33c100b148bce23eba7b5287b684b8"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti59-Al157.npz": {
+      "bytes": 15851,
+      "sha256": "8f601a89195f90aa64e00de05bbb4342f036af5468896b787a718365554537f7"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti61-Al155.npz": {
+      "bytes": 10801,
+      "sha256": "8b51b68d205700a7c65640fb72fdea3aff8a7d0089e96cb85ad6fdd5a278488f"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti64-Al152.npz": {
+      "bytes": 20815,
+      "sha256": "3c608da01192fe20acf0862ed46db1bfe770ca50cfbbd7e60aa2e0835945eb15"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti67-Al149.npz": {
+      "bytes": 15796,
+      "sha256": "d0f2fe625a18e4c6801f3726c7a3c6f69802a26f899ee09aede7fea14d81d950"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti72-Al144.npz": {
+      "bytes": 15838,
+      "sha256": "97c19081387e99648fb259e0d5478c9fd6c75976cb0164e5be2779ddd3fefe4e"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti78-Al138.npz": {
+      "bytes": 10697,
+      "sha256": "c3140c4a45de82707e97859ba478dc3f1493caf6560a060f880a5ff153368aa4"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti80-Al136.npz": {
+      "bytes": 10875,
+      "sha256": "7a352783c5ae25ec91392d427a690f1c2909ad92d1b5b7e08da8d384e34c9e33"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti83-Al133.npz": {
+      "bytes": 10813,
+      "sha256": "98108e18f755334930e7e16326190431b4801e008b58d46e476de032eda3c26c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti89-Al127.npz": {
+      "bytes": 15754,
+      "sha256": "c5f0e7c861de60a94b1c320a522af596a93bdb8f33223dbf051ea6ef8e2cf0e5"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti91-Al125.npz": {
+      "bytes": 10710,
+      "sha256": "953f59aeb1300194d3479a5a2175dfa6825ab9c2e357c656fddd6ed8e19dd1d7"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti94-Al122.npz": {
+      "bytes": 15797,
+      "sha256": "6b823fb02f4826ebdd4ba2ebf1b73263e126297ab60aeae76bfa4c2a51c4e18d"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti95-Al155.npz": {
+      "bytes": 12400,
+      "sha256": "9099a76702fa1e1ec5d3f86d9929c4cf4a0671bd73f61acaf6d52e313b6c7aeb"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/train/fixed-species-Ti97-Al119.npz": {
+      "bytes": 15665,
+      "sha256": "655817cad3746dd40062cb9e92ae3fd7d70f6f4bfe5bff6c2a2d10782a5f0e2b"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti102-Al148.npz": {
+      "bytes": 23746,
+      "sha256": "4f74dd357cff0b691eee535f9bafdd1a1b4a421e826014214a871920b6491c74"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti108-Al142.npz": {
+      "bytes": 17603,
+      "sha256": "82e33231b07a12d8d14be4809f54568731ef3c39c9c2b11668550c9488c0c6f9"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti111-Al105.npz": {
+      "bytes": 35814,
+      "sha256": "8aa0c92c720ac2078303ff6899a0bb0812adff77b2c02bc6134e9dcd0f1530a0"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti118-Al132.npz": {
+      "bytes": 18224,
+      "sha256": "652f8964d387d7c11686997e269b321ce3117bf2f57d4e8f78fc68b331666015"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti123-Al93.npz": {
+      "bytes": 35851,
+      "sha256": "7522522cd9d10bd0d62863e3cf7233130e282f359c7dd1dbc776c1ec75b0cf7d"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti124-Al92.npz": {
+      "bytes": 30737,
+      "sha256": "095ef13b02f13504ba7faaaef22be5f0b3ee57e2aeffd4fdee7b7bd670f7e4d1"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti145-Al71.npz": {
+      "bytes": 20924,
+      "sha256": "2e9e3d30fd54a51845173a93717671d7ef1d27cdf00882f03b993f44a286dad9"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti15-Al201.npz": {
+      "bytes": 30742,
+      "sha256": "900b6475bbfab43a687e4489c5d79bcfb472b78d5bbebc072ab1fe8aac3b015b"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti167-Al49.npz": {
+      "bytes": 45497,
+      "sha256": "2b7a423e0432b600ddf78e6853203a8bdd349fda82927267e0bc847fc90145aa"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti168-Al82.npz": {
+      "bytes": 17505,
+      "sha256": "03f86e0dab9daa76a133dc9b4b48edb1dfa3bca7bba55543113360bf17aa7989"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti169-Al47.npz": {
+      "bytes": 70453,
+      "sha256": "a9e9a8fe99292818cfbd5ed194fdde8753812f3fd9bd6be02424394e24dc35cc"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti18-Al198.npz": {
+      "bytes": 55800,
+      "sha256": "85a83955f5e52145169102664909edacc26a45e5e9cb909e012e03979da2ae0c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti188-Al28.npz": {
+      "bytes": 40262,
+      "sha256": "d6bba1c1eb98eb9471ac81139a445d2db1d3cc292eb062e99cac9ec45a38d212"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti194-Al22.npz": {
+      "bytes": 70470,
+      "sha256": "a636272f73a5303888d3a1897b9a7745c7d60d667cf81a270f937cadf0f178b6"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti195-Al61.npz": {
+      "bytes": 6762,
+      "sha256": "a24151d3e4a427de77d14161d466cac683057e6bd0e8d16e6c3117d917117102"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti197-Al19.npz": {
+      "bytes": 45601,
+      "sha256": "e9a2187554e2f809b946217f5648a71e19eb1503bef28b2b8cab090e23981492"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti218-Al38.npz": {
+      "bytes": 6742,
+      "sha256": "e5a497bbf487c44d4c95ea8c2a1a7ec6695d2494bf7fe4dc0d7a1270ede07e7a"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti250-Al0.npz": {
+      "bytes": 5838,
+      "sha256": "d16414806a34cd811bfb43cab25c52e66cdcd879521136cbffa7196d3b389b51"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti35-Al181.npz": {
+      "bytes": 40863,
+      "sha256": "518031cb979e35633e6ca2796992a28ff5b7fc7c318f13258ec6b1dcd2c3a89c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti57-Al159.npz": {
+      "bytes": 40839,
+      "sha256": "a296941aa7d363fe660530c847eaf65bdad8994622616eaf1ec9146df4e9b524"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti69-Al147.npz": {
+      "bytes": 25824,
+      "sha256": "7668fcb98d2d00ad695adb85df59b9d894a2ebd9a39d7879f31fe7f0c5c8d96c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti75-Al141.npz": {
+      "bytes": 71026,
+      "sha256": "2cdadb5fd0a605a4ca2008ba2be73fca04ac9554b5648e5f345775e564ac26c9"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/predictions/r2SCAN/validation/fixed-species-Ti92-Al124.npz": {
+      "bytes": 15865,
+      "sha256": "3194d4bcd80ebe1f56cf096cb33a070c7cb6170ed0a3dadb01857497ce0a0d7c"
+    },
+    "training-plan01/cases/r2SCAN-full/evaluation/summary.json": {
+      "bytes": 944,
+      "sha256": "ecfba6d659de3e5081521a09686ea592f8fab5a43db2c27ca03ad4f989623352"
+    },
+    "training-plan01/cases/r2SCAN-full/hardware.txt": {
+      "bytes": 106,
+      "sha256": "cfa521dbaa599b36dc217dd89d690fd1614fa7c342049e228b239052e1e2f34f"
+    },
+    "training-plan01/cases/r2SCAN-full/harmonics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-plan01/cases/r2SCAN-full/input.json": {
+      "bytes": 16210,
+      "sha256": "f4b2b11fc339d333c99efe102b7ed2993a5ae0ae0e86900420a2a1bf7fd0a960"
+    },
+    "training-plan01/cases/r2SCAN-full/input_v2_compat.json": {
+      "bytes": 17947,
+      "sha256": "70d17b11c4c6fadce2a04161509d3d40bf9073b3c10690450028cd91b4ea43a6"
+    },
+    "training-plan01/cases/r2SCAN-full/lcurve.out": {
+      "bytes": 12621,
+      "sha256": "d509e7d6dc4561f4976bda06fd85f88466020fdd48d99885c64456f39d6c9c59"
+    },
+    "training-plan01/cases/r2SCAN-full/merged/10000.pt": {
+      "bytes": 4573147,
+      "sha256": "0e43c963fdf0daa29553800e15d2ff70c4946e88a1a72da42db824d54ce060a6"
+    },
+    "training-plan01/cases/r2SCAN-full/out.json": {
+      "bytes": 21556,
+      "sha256": "845656aecd8e869a8a00ba63a2f9ac1ef66a4630cff8ed679e0c0708dab1c3e0"
+    },
+    "training-plan01/cases/r2SCAN-full/parameter-inventory.json": {
+      "bytes": 27555,
+      "sha256": "32de32579ffee70b54f52a566d42c9bb80199ad421a21de30231b832862fd40e"
+    },
+    "training-plan01/cases/r2SCAN-full/parameter-update-check.json": {
+      "bytes": 19907,
+      "sha256": "809fa827a394dc0c7842ea6ac4307f373f5633acd27dbd9b1151937be8c26861"
+    },
+    "training-plan01/cases/r2SCAN-full/progress.json": {
+      "bytes": 211,
+      "sha256": "830a5eaf72f3496f10ff01d60dd8c1eec2cc5e7ee10d978b52f10db5c74e7db5"
+    },
+    "training-plan01/cases/r2SCAN-full/train.log": {
+      "bytes": 64341,
+      "sha256": "dc121a3a6a907a5c4fd41d63132b03bd590a177f14001a84b1a7a38c2687c744"
+    },
+    "training-plan01/cases/r2SCAN-full/training-exposures.jsonl": {
+      "bytes": 747612,
+      "sha256": "20c202ea358a1e4f093254e8b8f93f55135adad83208aa92ac8991345100ecb8"
+    },
+    "training-plan01/cases/r2SCAN-full/training-summary.json": {
+      "bytes": 1417,
+      "sha256": "a2c79aad02c63bb29e07ecd2c03f4b004a4f363d63a8b6a02e3980bc8cd71b3e"
+    },
+    "training-plan01/cases/r2SCAN-full/zero-step.json": {
+      "bytes": 1673,
+      "sha256": "0fec16c42bbc66106dec54aade205040499fb155c1ac655e03851a9c0d41e425"
+    },
+    "training-plan01/cases/r2SCAN-lora16/attempt.json": {
+      "bytes": 75,
+      "sha256": "00b3963c2a167b7a8505e49e11d42b4d84031f5678d2764c592575cb5337b7f7"
+    },
+    "training-plan01/cases/r2SCAN-lora16/case.json": {
+      "bytes": 885,
+      "sha256": "edb09c7bd27c1afda251d95dd9f23ee793959544098ccdcd0cd3d527ab2083fa"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checkpoint": {
+      "bytes": 31,
+      "sha256": "1ea09e8fa51f7f96f75536192cb92ad1457c04d0cbdedfdbc54544760b0a4ae5"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/01000.json": {
+      "bytes": 1114,
+      "sha256": "7de4d7238dcf36ced8a247370a3a3c92e68f677349dacc33536984c4c7c8f2f0"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/02000.json": {
+      "bytes": 1116,
+      "sha256": "32a7e3fc7ec4c18562688dc4c38a245c367d6059c11108e56fcc33d35f69e639"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/03000.json": {
+      "bytes": 1122,
+      "sha256": "619d8cef379e001b82c519b0833ef5851d36e88d08bfcc879e974b376eb8bad9"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/04000.json": {
+      "bytes": 1123,
+      "sha256": "5ca5d33ad356ea4ae5af0bb831223d1d91a01a81be26bcf3c56c87cd9369b5a2"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/05000.json": {
+      "bytes": 1118,
+      "sha256": "667b347d3c82e5942d8ebfdc77cda29163df64311e09ee89a97f2e82c7d04e88"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/06000.json": {
+      "bytes": 1118,
+      "sha256": "9aa6443d179bf4384c6a605caea284f07e47562e13bc1d7ecc835139833d6776"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/07000.json": {
+      "bytes": 1121,
+      "sha256": "2461b3d1050bc30335eba22730e68edc8d8224171648a4975bccedfd726285da"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/08000.json": {
+      "bytes": 1121,
+      "sha256": "04fbc5322a9f85c29ee47b858570d39ea46bd5b1598621720f0e68d15abe692a"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/09000.json": {
+      "bytes": 1116,
+      "sha256": "2b910b918f0c51b66d4c44c48ea68076303d8c4932446fbe7d4ef0e38cd4c294"
+    },
+    "training-plan01/cases/r2SCAN-lora16/checks/10000.json": {
+      "bytes": 1125,
+      "sha256": "88a9cab5dde96c668c2dde468be02f350748ed484b74161d3ca11176cdf5803e"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluate.log": {
+      "bytes": 476,
+      "sha256": "809b6f535980a892227284cd00ca1bf40b36b08c3cf784bddd7ab4fbcc463a50"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/freeze.log": {
+      "bytes": 3488,
+      "sha256": "f602f744d59920a63fd4e883c57a9a5da37c03eb3fcc6c53f85d78e1868cf0a2"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonic_forces/force000/forces.npy": {
+      "bytes": 2432,
+      "sha256": "c18ca91952cb0ecb6d752fd05cf7a348d83369e1659422ca3a55226c54be84c1"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonic_forces/force000/prediction.json": {
+      "bytes": 353,
+      "sha256": "0848bd809d80266aff328d7d981e1a1c4114a39f3bd0f400b0a45f608e6ced63"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonic_forces/force001/forces.npy": {
+      "bytes": 2432,
+      "sha256": "21da4e59c730618dc85492eb640537cf0f0fb7f58fd75059ff468522d1bd8314"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonic_forces/force001/prediction.json": {
+      "bytes": 353,
+      "sha256": "a0feac0d0160e679d632000d8599f7a6c2a1929241eff26f815f20960d95711e"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonic_forces/force002/forces.npy": {
+      "bytes": 2432,
+      "sha256": "87dcc3a88e85f45542fcdcb608d2cc87a433f607e3f1604972c56925741c09df"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonic_forces/force002/prediction.json": {
+      "bytes": 346,
+      "sha256": "f99f0385895a89b7dbc1ed4ba1b50a76598cc8e355c6d213248ae9398bd1f0ec"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/bands.npz": {
+      "bytes": 326221,
+      "sha256": "fded8a8d9ef1f870b4bbcfc4b5bedb3cece5f8ce9c034b5fbfcd74a87466c3cf"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/dos.npz": {
+      "bytes": 51911,
+      "sha256": "878d55717be1ccc8948a349f62c264e1925bbaf004e141bbcf151c829c5c34cf"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/force_constants_ASR.npy": {
+      "bytes": 663680,
+      "sha256": "c80d8c977bcf8dab64ac6b2281ed5d2cd2ab547d22830e053037f407b525d71a"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/force_constants_central.npy": {
+      "bytes": 663680,
+      "sha256": "9763b3b79d2ca6e75f43485e8d5305da25dc272f3144aac982fda183a02048a9"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/force_constants_raw.npy": {
+      "bytes": 663680,
+      "sha256": "3cbbdea8dd0ddb785121d3ed962aaa09b52c3c92f88aaef327ea0f2b8bb8d338"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/forces_central.npy": {
+      "bytes": 4736,
+      "sha256": "7dd37b21eb5e49f4ef1011f109cc3e4cec0e16b250d19fbc827c90bd6c07d658"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/mesh50.npz": {
+      "bytes": 290199,
+      "sha256": "4a4fd5f9bcb02092f882861fc120fdb63fcf06fb0fbd3ea28645a2f0ca4bd56d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/phonopy_params.yaml": {
+      "bytes": 2322501,
+      "sha256": "55632d5b58ad4cb1caad3f639d572b139186fcac642e77362ca428a976d688f5"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/summary.json": {
+      "bytes": 1345,
+      "sha256": "8ab61ed3447ac1a2f65d9cafaad3f6d6363f38cc5bddd8d7448504122e02e4f9"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/metrics/metrics.json": {
+      "bytes": 47212,
+      "sha256": "92cef342f234a669745a71afb0d2a6f3a29ec2ab192e47e72782eccacf067665"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/metrics/per_structure.jsonl": {
+      "bytes": 141088,
+      "sha256": "770b9679543c714de48e7a36df9ff971da25bf9e56e1d78fcc0e13e21b31b7ce"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/numerical-QC/summary.json": {
+      "bytes": 5611,
+      "sha256": "fb0a761525ae81391271f9ae2bb014ff03945cfc88fac7f18b9a8b98beebae9d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti0-Al216.npz": {
+      "bytes": 20823,
+      "sha256": "d5fc66048f1ef10bdb8910644d308b8e834ed78d3aba9418fea3ef290859b34d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti10-Al206.npz": {
+      "bytes": 15803,
+      "sha256": "e844de50727dbdae601fc7f3e6dcbbf59883764e90705f862878f542ec8015c0"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti100-Al116.npz": {
+      "bytes": 15727,
+      "sha256": "d537f28e2376b36f5a0d2aa48ca84bbf21c6a6469825b3996ffb069701f638e1"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti100-Al150.npz": {
+      "bytes": 12029,
+      "sha256": "e9bb9fbf4d349651d3cfa23c477507d80ec051fd87e40266a5fb924a61c9199f"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti103-Al113.npz": {
+      "bytes": 15781,
+      "sha256": "2bb039c410c012c7944d9e27f725e6294d882a56542b0acd10275da3c6451cf7"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti105-Al111.npz": {
+      "bytes": 15793,
+      "sha256": "50dbbf5a7edf324f7395fe137456162b2dd2bd6d262f8369a45dba3b58413b1d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti108-Al108.npz": {
+      "bytes": 15800,
+      "sha256": "5a135ec13b3f70a8f95547a66a5f1bdd78eb9b975bcadd452c0c2f4103a40285"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti110-Al140.npz": {
+      "bytes": 6613,
+      "sha256": "1a3691b7835a72ff76a49b4deddf8c3f514a2fc3c02663ac3a49d7d1e9bbe859"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti115-Al101.npz": {
+      "bytes": 15774,
+      "sha256": "55fffac3ee3ca27e0840674914757743050cc5464ad8df3f830981005e05bc08"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti115-Al135.npz": {
+      "bytes": 6558,
+      "sha256": "5cc4c999a0050b07e6fe8fe9febc3e1c960a4450c59f082c0c66dc9a12db9d79"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti118-Al98.npz": {
+      "bytes": 15743,
+      "sha256": "3e1eba04bcbe05591758a190b6d5dd9334e6ad67023f3baefa8db56679c714e7"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti122-Al128.npz": {
+      "bytes": 6544,
+      "sha256": "5a0cdf76f857e6c35e486758567ce110c7bf77e5973447199d3ce50f7ef4891c"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti125-Al125.npz": {
+      "bytes": 6636,
+      "sha256": "5813974b854cfee883620606ef6f21d100a17f6d3509080897178f85206ec287"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti126-Al90.npz": {
+      "bytes": 15701,
+      "sha256": "c8d269cbfe1b474f9a3cadf6d8dacbcf59a31a7d4e9799d2f64576117bdb7630"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti129-Al87.npz": {
+      "bytes": 15804,
+      "sha256": "e931e69c38c5b5c088b357c92690c5903325b5a6c19a71d6489fc450d026ef72"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti13-Al203.npz": {
+      "bytes": 10854,
+      "sha256": "37e4085ebf5714a87169c22dc121f9b1fb83bdd0ec5fc82df8a1a2a00ed4c17f"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti130-Al120.npz": {
+      "bytes": 6573,
+      "sha256": "3c6688fb79cd911d62680a69e471f5a23384546ee9685be635d6e1ab2cbfa25c"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti132-Al118.npz": {
+      "bytes": 6346,
+      "sha256": "b1553eedfa289be3ed7095242fc843047a203f72b02d898b33c842fef1bfde7f"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti132-Al84.npz": {
+      "bytes": 15546,
+      "sha256": "1580c9ce88b94aeba9be5e75c674ff84241af323c31fcf86a96a329ef53f221b"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti134-Al82.npz": {
+      "bytes": 10765,
+      "sha256": "4dbb3820cacc6a864cb162527d898308a43336b9b9f170a756171ba6f58b61d2"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti135-Al81.npz": {
+      "bytes": 15819,
+      "sha256": "b64547f11c8e0265dc29b8da6125fae195ad2d156a7d05890c7017150392e0d7"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti137-Al79.npz": {
+      "bytes": 10687,
+      "sha256": "8ed655bd45e6a3de776f1f73c51679e8583d1ede2510be0b79c37c1665080bb2"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti140-Al76.npz": {
+      "bytes": 15671,
+      "sha256": "d9c7522333921a7f70d9aa335007a8dd445a7c93bdeef45471516a584cc6e365"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti143-Al73.npz": {
+      "bytes": 15729,
+      "sha256": "d551859b3869f4b0305740bcf64c9aa7739f8caeaa7f773db47813b58a0cca25"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti145-Al105.npz": {
+      "bytes": 6484,
+      "sha256": "d996af00f3096cd11780fc103d82ee84d08104344d061c2f6e93cf45e78920d4"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti148-Al102.npz": {
+      "bytes": 12372,
+      "sha256": "2715ef4e4fcbef405b867e7582f56cb5c8a9f72dcde3eae6dae4c85e3ddd5d7a"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti148-Al68.npz": {
+      "bytes": 15839,
+      "sha256": "48d6c5560c9450fc3c6ca0c5f7ee973a3ac7bbddfaf6f5da7382934c1a0625a6"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti152-Al98.npz": {
+      "bytes": 6487,
+      "sha256": "539b4c4048811ab818add298406e6a9b52d8e4c76b840c93fde12a843b1b9a55"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti155-Al95.npz": {
+      "bytes": 12362,
+      "sha256": "51c3c06d8c76a4d188de0e22731c1494f5fa0d449d7d5a5f39e3ca90dcbd78a5"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti156-Al60.npz": {
+      "bytes": 15524,
+      "sha256": "731aa272265823af82fa182b404eb443f0e7129f087554c0bd95f1c2d36dc10d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti157-Al59.npz": {
+      "bytes": 10857,
+      "sha256": "d48a830ea8dd571982e3a8894402cead1dc76df2f287a701db20bf505065bf1d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti159-Al57.npz": {
+      "bytes": 15734,
+      "sha256": "4f95bf7f660ed7337e3c86dca6a1875b1d3602446c0e5fe4f49aac3a0a8bafe8"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti162-Al54.npz": {
+      "bytes": 20778,
+      "sha256": "18089cf56e5a24ebfe3bab87bb380a41008796c372e54d0f822552282deb72b6"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti162-Al88.npz": {
+      "bytes": 6605,
+      "sha256": "65d93c011b85422b22306a7dad82a34ed23834c227dd90d64b8b1be5678a7cf2"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti165-Al51.npz": {
+      "bytes": 10854,
+      "sha256": "baa562fd68d1e6e595fac318fc02dbbfcde8136d7842444d41576c29f10a0515"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti172-Al44.npz": {
+      "bytes": 15807,
+      "sha256": "322a9e379e0e4d10055252ebb07958496138caa4da23246b59615721248b13d4"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti172-Al84.npz": {
+      "bytes": 6702,
+      "sha256": "1050240b66660cceaa15e6c66784e0d411c1fadd3203c0029b0e13689518a666"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti175-Al41.npz": {
+      "bytes": 15773,
+      "sha256": "760fa591956281a2c2474aa512b182459444cf976a401366c11389698554ecd6"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti175-Al75.npz": {
+      "bytes": 6547,
+      "sha256": "94411ddb233a58b78550396aa07b07cc45a9958cc0bdcb7e0c39eb04ea929c51"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti177-Al39.npz": {
+      "bytes": 10676,
+      "sha256": "3dae0c5a703b244ced3c27c3cbfeb31c504b51717013b327a002c48be2a209bf"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti180-Al36.npz": {
+      "bytes": 20850,
+      "sha256": "b58b1ef49708c2924a04c874d240930cd4114ede68e8cd47141d45438170dca3"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti182-Al68.npz": {
+      "bytes": 6597,
+      "sha256": "86afef95e0712fabea0e0c25a0a29a47f9c161cc294dcb4876f784ca06c1dbc3"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti183-Al33.npz": {
+      "bytes": 20634,
+      "sha256": "cdef895975b9485d2eb0f200e75ccb62f7474fc22e15dc5550ed8b0529286212"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti186-Al30.npz": {
+      "bytes": 20762,
+      "sha256": "7e2617ec2a6ea8673f7276fe2359464552588749d3d6fcf056d8a880f35a749d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti189-Al27.npz": {
+      "bytes": 10801,
+      "sha256": "eef29a78ed4066fcafee30adf710fe90e8f3ba4395628c27438eb5a1f7365861"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti191-Al25.npz": {
+      "bytes": 15706,
+      "sha256": "b4f0d46a6e8c986790a67861bffdd8d7d0e7f94bd7d00c2130fa2b15bc142f93"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti205-Al11.npz": {
+      "bytes": 20705,
+      "sha256": "4d79da453f9ad40006eb5222c34b8511cf2ea257b1f18c90371bce18e50a4695"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti208-Al8.npz": {
+      "bytes": 20802,
+      "sha256": "90935aee1ee6bc15c003aa5213231f59537ce3b1e1df714126181d2358915722"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti21-Al195.npz": {
+      "bytes": 15770,
+      "sha256": "a27d801016524eb99101ce0a775303328d4dd44365e961d428a183617f6bdeba"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti211-Al5.npz": {
+      "bytes": 10728,
+      "sha256": "96417329cd252d7e09346482b75867d5179b443aa5f59767b09e4419e4521adc"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti213-Al3.npz": {
+      "bytes": 20797,
+      "sha256": "352ebc6bda2dbc65ca30118be71778d4f974270ddd83b5f687fd9b3688f5b98b"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti216-Al0.npz": {
+      "bytes": 20645,
+      "sha256": "567700cfed9dad28528919e7139abcc10d64755c5c86b65d24ca975bf325052d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti225-Al31.npz": {
+      "bytes": 6714,
+      "sha256": "366e23fddd9bd260a42ad42b1514831220ce3a6ec2b7840b65af3190e2275730"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti228-Al22.npz": {
+      "bytes": 5941,
+      "sha256": "32248d36c33673d7e28d922f28b7134a00b02d9a004968e89236547844c6ac1a"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti242-Al8.npz": {
+      "bytes": 6143,
+      "sha256": "378a333a0d237c9a67896067a9dabc184111df272371280db58abdbda7720c26"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti256-Al0.npz": {
+      "bytes": 6744,
+      "sha256": "82a491f900c7dfe6c090e7bc7bc6ec0fb865de6d9a3702de94f42e531c798716"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti26-Al190.npz": {
+      "bytes": 10770,
+      "sha256": "8e541289c3bda1fe26d11ecc44b33364bcd50d3fbab6a9a9be48c1570772d93e"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti27-Al189.npz": {
+      "bytes": 10809,
+      "sha256": "4c237c834d3ff102a2574bdb9603c53c59761c598d48acdd4d183a8ac8448e71"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti29-Al187.npz": {
+      "bytes": 10771,
+      "sha256": "89c7c7c5eb01574ea8f176e9ce99f3c15e289a179c92c0b0e7d859e78d8197f0"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti3-Al213.npz": {
+      "bytes": 15767,
+      "sha256": "b81f36e62bafc3d9aa93840711baa98b39568baf5add6868233c2cd97071b012"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti32-Al184.npz": {
+      "bytes": 15834,
+      "sha256": "177edf0b2f33376c89f0b6d4c52ceb7a75cdb43b45c21cd6b53e12f3d2551953"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti37-Al179.npz": {
+      "bytes": 10818,
+      "sha256": "e05a5f2cd5eb9e7cec3fb6159dd6d8f7659bb46f9e2a5992a44c454ee335f616"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti38-Al178.npz": {
+      "bytes": 5884,
+      "sha256": "6b5e403b12d076a84f045acf33168f79b7077988f40a05b2413dbed8f58db9e3"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti40-Al176.npz": {
+      "bytes": 10835,
+      "sha256": "650acb666454c49cf9f53300c91551748b5e188301486e99dc8c4720c18859d5"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti43-Al173.npz": {
+      "bytes": 15775,
+      "sha256": "662d55cd1e3c82eae9a5002ed6db45bf6c7afa81dc07dd26465d2bde2a4f4337"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti46-Al170.npz": {
+      "bytes": 15781,
+      "sha256": "d27c14016c0888eec1b4dbde45f9a4752b230587785379523f137f91c5c8aae7"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti49-Al167.npz": {
+      "bytes": 10748,
+      "sha256": "f98ef4340d302446eeaf0be0cb10fb2b70834f254b3d70b89a92faed8018baf1"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti5-Al211.npz": {
+      "bytes": 5813,
+      "sha256": "67b95772b3e78990272c40ec098517eaf2351e0e0826f683c694cd79d5fcda2b"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti51-Al165.npz": {
+      "bytes": 15859,
+      "sha256": "b5b89ab3c345724536f78ea19ec3b90e65e1ef3c3f2ed64364e3e5787fe9602c"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti54-Al162.npz": {
+      "bytes": 15772,
+      "sha256": "31c7bb2b1d926c7318714093c00381f710e14763ad64fbed6f5ac4e63ca2b4f3"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti59-Al157.npz": {
+      "bytes": 15855,
+      "sha256": "94bfe3eb81ec725761b47437373b5cf57552a314f2c7be3157a8834065f971f4"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti61-Al155.npz": {
+      "bytes": 10802,
+      "sha256": "e6a868a75e3a404c60376c588d1e90a2d8cd984d3af4abf4ac988aa63eb01e47"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti64-Al152.npz": {
+      "bytes": 20828,
+      "sha256": "59c51b4c80c1749f2873a60b259eef43d123ae51b5b18b7ef43ceb05cd037f38"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti67-Al149.npz": {
+      "bytes": 15801,
+      "sha256": "9acff0c903bc0650e41a6b07092ea2bd1bd48b877a30b472103e6a0f5112a69a"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti72-Al144.npz": {
+      "bytes": 15853,
+      "sha256": "36938afd70331505565ad397e39a5f45fff0e12c6c4b4d33ece00c3696f6636e"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti78-Al138.npz": {
+      "bytes": 10727,
+      "sha256": "86a84d72efadb4d03908f8cdacfdeb2be2398edfc160a9260acc21cfb1b81e93"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti80-Al136.npz": {
+      "bytes": 10878,
+      "sha256": "5991ab6ef7d2b1526e5d55a9214e03ed1a6476ed3d5d4ef89e39cc0bd5029408"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti83-Al133.npz": {
+      "bytes": 10827,
+      "sha256": "70a7891e9c5b769726754b4dfb2755ca41bf2650d473498010a3eefd5175fd38"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti89-Al127.npz": {
+      "bytes": 15749,
+      "sha256": "5ae3e0432fabbed9b3a9aba7a1210ccfbe5bc000ada8c466c8579fb255a174ee"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti91-Al125.npz": {
+      "bytes": 10714,
+      "sha256": "2199195f7923b9c94b84aad441f7e21679f684a511f758e254286ba4a20cab4b"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti94-Al122.npz": {
+      "bytes": 15815,
+      "sha256": "dcffd7131ea8bfe95f0e8fdb497fc2c0c975274d320864d89a94423292ac0071"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti95-Al155.npz": {
+      "bytes": 12416,
+      "sha256": "b50eb26d8f6bad775d985d541ba95f3a3fc010dc7737083a6999fc863094d4d7"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/train/fixed-species-Ti97-Al119.npz": {
+      "bytes": 15669,
+      "sha256": "8bf2bb758d972d701ee7454b03dbb7f2662c5fadd0035e9c6034553ea646fe72"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti102-Al148.npz": {
+      "bytes": 23782,
+      "sha256": "c2e5ef947cf7bf55c388a487517490ac67ce50f3fce9c6afd19e7abeeba798ad"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti108-Al142.npz": {
+      "bytes": 17623,
+      "sha256": "70d9550190b26c1077a27104022b69bafb4dcb8774aa73c01304052ef342aced"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti111-Al105.npz": {
+      "bytes": 35814,
+      "sha256": "aac513b8697f6287a9c9c55f72c72d168938042f2ecc3f0f01d674c497184dd0"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti118-Al132.npz": {
+      "bytes": 18254,
+      "sha256": "e96615ec54575d3e66b60eb451842d29e8a82d192790d079ff0047ee9b1290c3"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti123-Al93.npz": {
+      "bytes": 35847,
+      "sha256": "c8cc019f632b61348683c63d95e9df246e1d311f157e37f4db0cc8c22c11b256"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti124-Al92.npz": {
+      "bytes": 30748,
+      "sha256": "8fc8a29d4579adc1bb7a38c6da63a5c2872922d5243e3661bdbc5dde97a44257"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti145-Al71.npz": {
+      "bytes": 20919,
+      "sha256": "a55def5792447d758e1a155d02f0c9932de163ac7251ac29226c0201744462eb"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti15-Al201.npz": {
+      "bytes": 30815,
+      "sha256": "20101a7e126a9b3086d7534570b4b278dd2e3f69026a7dc0ee084fac0bfb159c"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti167-Al49.npz": {
+      "bytes": 45451,
+      "sha256": "511f54d6c830aff4c68193b5817031a401dde45fe17d3ce2e70e9d988afd526d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti168-Al82.npz": {
+      "bytes": 17512,
+      "sha256": "fe0875825b6a08ff74232cb7f71a6f2271d2808729adc49acc12935a799bdcd7"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti169-Al47.npz": {
+      "bytes": 70356,
+      "sha256": "7eb696a5aff1d98ec4f95f7b1bf7b1d05c1ce16b947665920241d7ab14c86167"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti18-Al198.npz": {
+      "bytes": 55828,
+      "sha256": "991758072ee6379179edff9d0211f3aa0620696e76b063dca95e5ebfb4169ee6"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti188-Al28.npz": {
+      "bytes": 40166,
+      "sha256": "a314989bd758258909be31ef80258445e5ae96a89f327b5195255f4b06208e03"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti194-Al22.npz": {
+      "bytes": 70289,
+      "sha256": "f9e57dff197b7fbe499e9ae1b1765d2952347b179f909bd0c0d5b58fa32ac8b3"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti195-Al61.npz": {
+      "bytes": 6767,
+      "sha256": "8229cfd07de4c0794259dbadacd1c0ca95a79a73beed79dc76d8ebc41d1bc8f8"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti197-Al19.npz": {
+      "bytes": 45509,
+      "sha256": "947b6fc86a4f3aee3d31e9928f64a8b61f4037aa8cc888031e6a290e0056bbfb"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti218-Al38.npz": {
+      "bytes": 6744,
+      "sha256": "c37ce713f9dff7591238c07724ecec3aa2ba72c92a9af3b055ca6ce486bbcdfa"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti250-Al0.npz": {
+      "bytes": 5797,
+      "sha256": "2d35abc0a97a3b4402300fa8fb2d9826e65bdcae41b6f52e54e3cf980df678b8"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti35-Al181.npz": {
+      "bytes": 40906,
+      "sha256": "0829c17ae1b236eaf5bee9754acbbe68686d721628105ab79432b9d4f1baaa33"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti57-Al159.npz": {
+      "bytes": 40863,
+      "sha256": "c32816d1dd30d7b0f2f5da1a139fbafc4073aa491b9a5a87fa8f89a95ad1ebd9"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti69-Al147.npz": {
+      "bytes": 25831,
+      "sha256": "76f701c40c5220af15993343d445f47d8f7169248e2cd670ce39c8b99a5e5ca4"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti75-Al141.npz": {
+      "bytes": 70995,
+      "sha256": "19efc96642cf816794cfd935cccee90ade2890ec35051e87b00812b168d13f20"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/predictions/r2SCAN/validation/fixed-species-Ti92-Al124.npz": {
+      "bytes": 15880,
+      "sha256": "2a828a04ee5c0ea1f613c9aaeb61085d4e254f62cd22f83a6e4c7952c73b4ed1"
+    },
+    "training-plan01/cases/r2SCAN-lora16/evaluation/summary.json": {
+      "bytes": 940,
+      "sha256": "ffd12818e476d4e7af2d06e8fd8cc3e01a873b27c337804c578e537be0fdc78c"
+    },
+    "training-plan01/cases/r2SCAN-lora16/hardware.txt": {
+      "bytes": 106,
+      "sha256": "cfa521dbaa599b36dc217dd89d690fd1614fa7c342049e228b239052e1e2f34f"
+    },
+    "training-plan01/cases/r2SCAN-lora16/harmonics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-plan01/cases/r2SCAN-lora16/input.json": {
+      "bytes": 16273,
+      "sha256": "799895520cf03a5b8d26a5a109a786005d909ce04658a42d2797700a03502c6e"
+    },
+    "training-plan01/cases/r2SCAN-lora16/input_v2_compat.json": {
+      "bytes": 18026,
+      "sha256": "4c682ac981d523f3a59a50c34928d9f65aa70f8a8d002299aaafa67a76883c05"
+    },
+    "training-plan01/cases/r2SCAN-lora16/lcurve.out": {
+      "bytes": 12621,
+      "sha256": "f930ff7071c85e3ba9462de7649a0e7a1b09754ffe06b0ee835dc61698639291"
+    },
+    "training-plan01/cases/r2SCAN-lora16/merged/10000.pt": {
+      "bytes": 4574299,
+      "sha256": "a9a16d1abb76fbca781337601b34abf1abbf873860f0953ddbc3857aebf13c56"
+    },
+    "training-plan01/cases/r2SCAN-lora16/out.json": {
+      "bytes": 21613,
+      "sha256": "e9255813bad78aa6eb3112d2f594b7cd2c50c37f26dbe046f6d928f13b083fe8"
+    },
+    "training-plan01/cases/r2SCAN-lora16/parameter-inventory.json": {
+      "bytes": 40454,
+      "sha256": "d4c5d28c744d33d30d05c3acba18cc5a08ab210c5d65aced08f3b24f9e13fb6c"
+    },
+    "training-plan01/cases/r2SCAN-lora16/parameter-update-check.json": {
+      "bytes": 24833,
+      "sha256": "4f7526ee05a4d19bc0b8d59282a79abe9e7f5eb4b9037117fedc3f7fcba7e284"
+    },
+    "training-plan01/cases/r2SCAN-lora16/progress.json": {
+      "bytes": 210,
+      "sha256": "6f28077a8b18ff0186651be7ff00d440c62cc5a85fcb90d0cbf493d68c30ff4d"
+    },
+    "training-plan01/cases/r2SCAN-lora16/train.log": {
+      "bytes": 64420,
+      "sha256": "c4fc9ca325bc91ea0f685e29cf7c518f3f310fedea4faf879c3c57e9b359e9cf"
+    },
+    "training-plan01/cases/r2SCAN-lora16/training-exposures.jsonl": {
+      "bytes": 747612,
+      "sha256": "20c202ea358a1e4f093254e8b8f93f55135adad83208aa92ac8991345100ecb8"
+    },
+    "training-plan01/cases/r2SCAN-lora16/training-summary.json": {
+      "bytes": 1424,
+      "sha256": "bab12e52f6df0e6beb230b72314dde9e74fc2528473fbe0950a33dfa5516fdfe"
+    },
+    "training-plan01/cases/r2SCAN-lora16/zero-step.json": {
+      "bytes": 1676,
+      "sha256": "172e9a3d6467543f592eb5c24cdd3916be80bbe6371d979bedf2d3113aae2bc7"
+    },
+    "training-plan01/evaluate_pilot.py": {
+      "bytes": 2575,
+      "sha256": "663f5fa9a6b4c5b2edbd2d47ee07dc8c30f89032e69e49d7d433f5766bb1d41b"
+    },
+    "training-plan01/evaluate_pilot_harmonics.py": {
+      "bytes": 1046,
+      "sha256": "68b82b058014e412d90deb98bd1f869a66d208dc1de5e0cb6dadd9ed613f6e98"
+    },
+    "training-plan01/guards-v3.json": {
+      "bytes": 413,
+      "sha256": "1b8c8878c71c14681d31eafb8d7b97337a6a9ff7071d3aeb6ee20700fc7b0341"
+    },
+    "training-plan01/historical-recipe.json": {
+      "bytes": 26865,
+      "sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89"
+    },
+    "training-plan01/pilot-20988454_0.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-plan01/pilot-20988454_1.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-plan01/pilot-20988454_2.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-plan01/pilot-20988454_3.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "training-plan01/plan.json": {
+      "bytes": 4534,
+      "sha256": "4502a835c8243e6b85077e620f8970bf07c7fa018e6fe3f8bd925ebee58f6bd7"
+    },
+    "training-plan01/submission.txt": {
+      "bytes": 9,
+      "sha256": "adbbff227423ee4a99ab7e005a0b2181f4fc9fd4f706c72ad55d009668cdf6a0"
+    },
+    "training-plan01/train-v2.sbatch": {
+      "bytes": 1602,
+      "sha256": "c23c680daf18d8f5c3961f72cad6cf9bf39d62e398d57ea3b740c0e896424e5a"
+    },
+    "training-plan01/train-v3.sbatch": {
+      "bytes": 1602,
+      "sha256": "57f2e260855b4d018424f0a8cec5b253ed7c216bc8725bd1864fc26473c1079d"
+    },
+    "training-plan01/train.sbatch": {
+      "bytes": 1642,
+      "sha256": "306e5070a74d465d572c122be9825765b095412849b5b1e4c7b52846e864e396"
+    },
+    "training-plan01/train_observer.py": {
+      "bytes": 7858,
+      "sha256": "6f5ce5806ad01be2d33565ab7bb96f16eb4eb79dad110fcd97e289c2067d32c9"
+    },
+    "training-plan01/train_observer_v2.py": {
+      "bytes": 7921,
+      "sha256": "e26ec93d8e9b280c8c985ae751a617b5e4f2a778f402c72c0ca9faefce96dbc8"
+    },
+    "training-plan01/train_observer_v3.py": {
+      "bytes": 8617,
+      "sha256": "ec176532931bbec48fdbf5c2e4a0b6bdf0e5142894329bdf2d17e69ff738ca7d"
+    }
+  },
+  "scope": "Finished pilot outputs and final merged weights; no test predictions or test labels."
+}

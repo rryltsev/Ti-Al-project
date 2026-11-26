@@ -1,0 +1,91 @@
+{
+  "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phase_reproduction\\atomistic\\atat\\qha_fit\\grid.npz",
+  "sha256": "4e8bc92ffb059707445d40fb2b16b6d6e50343486b19f9d4e0f500af292d7011",
+  "qha_measure": "flat dv at zero pressure, symmetric \u00b10.045 A\u00b3/atom once per sweep, natural cubic interpolation",
+  "N": 5120,
+  "n_windows": 8,
+  "sections": [
+    [
+      1600,
+      "static"
+    ],
+    [
+      1625,
+      "static"
+    ],
+    [
+      1650,
+      "static"
+    ],
+    [
+      1200,
+      "HA"
+    ],
+    [
+      1225,
+      "HA"
+    ],
+    [
+      1200,
+      "QHA"
+    ],
+    [
+      1225,
+      "QHA"
+    ]
+  ],
+  "c0_range": [
+    0.02,
+    0.36
+  ],
+  "c0_step": 0.005,
+  "kappa_eV": 100,
+  "protocol": "5120 sites, one random start per window, 10000 equilibration + 40000 production sweeps, stride 10",
+  "c0_provenance": "S3 states 0.005 spacing for static 1600 and 1650 K. Applied this spacing at other temperatures and used the main window range.",
+  "starts": [
+    "random",
+    "ordered"
+  ],
+  "equil": 50000,
+  "production": 400000,
+  "selection": [
+    {
+      "model": "atat_static",
+      "T_K": "1600",
+      "c0": "0.250",
+      "start_dependence": "false",
+      "tau_order": "217.65970833788955",
+      "tau_c": "77.40622872244467",
+      "diagnostics_sha256": "1624e7b9f8ea44d860ec6651a7b94312f68d9d9761c27d74462d36da483290f3"
+    },
+    {
+      "model": "atat_static",
+      "T_K": "1625",
+      "c0": "0.260",
+      "start_dependence": "false",
+      "tau_order": "216.5924355772286",
+      "tau_c": "50.162397212000904",
+      "diagnostics_sha256": "5527a0690fbefbbc94cc41593b924cb6bff8b06cbc749cea836fc8edd34191cf"
+    },
+    {
+      "model": "atat_static",
+      "T_K": "1650",
+      "c0": "0.280",
+      "start_dependence": "false",
+      "tau_order": "353.9654742224428",
+      "tau_c": "2.2525164346490056",
+      "diagnostics_sha256": "15df5b0fed74b788edbb7a5133b4d8d76164e720b1ee2d6e7aeaa0c08bc1ad8a"
+    },
+    {
+      "model": "atat_QHA",
+      "T_K": "1200",
+      "c0": "0.250",
+      "start_dependence": "false",
+      "tau_order": "215.56639561630763",
+      "tau_c": "79.23685999524014",
+      "diagnostics_sha256": "6d88c89df500aaae46d5bd13da14b255c204e593e53b9d67162053d04d3a338c"
+    }
+  ],
+  "window_rule": "one measured slow centre per isotherm",
+  "baseline_sha256": "7fa15b2b03749b7c79aa96f224d61f93779db5b70ffc80055233bba710654e90"
+}

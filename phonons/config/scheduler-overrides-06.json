@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-24",
+  "supersedes": "scheduler-overrides-05.json",
+  "cpu_vasp_partition": "apollo",
+  "reason": "User explicitly requested immediate PBE cancellation and prohibited ALL VASP on A100. Last clean original CHGCAR retained; unsaved iterations discarded.",
+  "requested_walltime": "2-00:00:00",
+  "observed_partition_max_walltime": "3-07:00:00",
+  "memory_GiB_per_node": 240,
+  "scientific_changes": [],
+  "jobs": {
+    "PBE_old": {
+      "job_id": "20959336",
+      "partition": "v100",
+      "action": "Cancelled by explicit user request; no new checkpoint assumed"
+    },
+    "PBE": {
+      "job_id": "20959753",
+      "partition": "apollo",
+      "nodes": 1,
+      "ranks": 32,
+      "KPAR": 4,
+      "NCORE": 4,
+      "target": "PBE/production-02/force-001-restart-03",
+      "checkpoint_parent": "20958089",
+      "dependency": null
+    },
+    "r2SCAN": {
+      "job_id": "20959337",
+      "partition": "apollo",
+      "nodes": 1,
+      "ranks": 32,
+      "KPAR": 4,
+      "NCORE": 4
+    },
+    "PBEsol": {
+      "job_id": "20959338",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4
+    },
+    "PBE_softstop_continuation": {
+      "job_id": "20959747",
+      "action": "Cancelled before start; required clean checkpoint from interrupted run"
+    }
+  },
+  "restart_gate": "restart_step_v4.py validates original clean 20958089 checkpoint; does not read cancelled 20959336 outputs. launch_v6.sbatch rejects allocations outside Apollo.",
+  "provenance": "runs/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-apollo-forced-stop-20261024-submission.json",
+  "forbidden_vasp_nodes": [
+    "tesla-a101"
+  ]
+}

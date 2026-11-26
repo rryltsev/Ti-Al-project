@@ -1,0 +1,20 @@
+{
+  "remote": "/home6/u3129/tial-fm-research/grace-pbe-n694-20261110-01",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=v100",
+    "--gres=gpu:a100:1",
+    "--mem=32G",
+    "--time=01:30:00",
+    "--array=0-5%1",
+    "--job-name=TiAl-GRA694-PBE",
+    "--output=train-%A_%a.log",
+    "--dependency=afterany:20991845",
+    "train.sbatch"
+  ]
+}

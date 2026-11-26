@@ -1,0 +1,308 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-10T02:11:30.069457+00:00",
+  "inputs": {
+    "backend-manifest.json": "1497ce9988eed77bee3f46380139b8981b72dc953b798f1a5708634066160a23",
+    "build_pbesol_phonons.py": "84a7df7a420ea24edafc04895328d0ea9d10d2cf77efcd2fc98a8f1b3c9a5290",
+    "data-preflight.json": "0b2d6cce303aa0fea03030fa9baacf7545cf491491e4388d712a4eac33d6298e",
+    "gate.sbatch": "6283f34447cf506a1e0924886e6c23b5e39cc0e5e226758d0b8e3ea44fd735a2",
+    "grace_mask_aggregate.py": "d33e21cd14ab55904c14e681d3fcf1e20a12ebbb94b4f464e627c4b81d7ede92",
+    "grace_optimizer_gate.py": "2616c85b37fdf14829caa19bdc00f99c780ce86d43324ec1776fce6c01f07260",
+    "grace_pack_optimizer.py": "902abffcbe39a5a064a3b47b8a6ae71528254f679422e256d25ca4c97dc700a5",
+    "grace_pbe_seed_aggregate.py": "dda93412686be4368570c7001c369ee25b41cb5867e1f4308e89a884fba107e9",
+    "grace_pbe_seed_post.py": "b200c336e27989c43a5e2610466f8d7816bd10f9a2cb25bab296a7df763f16b9",
+    "grace_pilot_common.py": "513c4763a322df6c72a3abf2f382c866fbdfd1cf7b9d9b6211e8f1572043ca1c",
+    "grace_pilot_evaluate.py": "ca2713dacaf0ef37c5ddccba641d8bff7494b7c3a196ce524df129044aa709e7",
+    "grace_pilot_harmonics.py": "33c58fafb71ed79c1f70548b9fe4214d5430588683e5432b232cc11efb87a916",
+    "grace_pilot_train.py": "a41673204dc0fdf2af61b4684527d4ec3ae88cd818316d95ab80bfca1bf0031a",
+    "grace_storage_guard.py": "34f285f130ddab2cf727044a0833120bde72dcd864e5483957c1211dd6e76ba6",
+    "harmonic_worker.py": "e7f66e396aba1025a6082d73556f79a04f9d2b6e124a60189beb62aa373b1ca1",
+    "membership.json": "acd2e9030cb8f291ef4eb62c932d8b6a6da1e85c66e8f22961b5fc0629fd613a",
+    "plan.json": "0c7a039ac4a2c5f3d46ada5aecf1b38ed485829b31aeeb492f10e0e944c4c841",
+    "post.sbatch": "109a45fc55e4b0112bf6c95730e4df34e1b52769134eb43fbe36abe0ba7704b8",
+    "probes.json": "8a9748576ecc40def7ca0fe68c77f2d9a81b8e84a701cea86497207ab9d9c719",
+    "reference_figure.npz": "b2031d942f0f8cbdb8fa8f2c95089ce90bf81b1a3beca201f58013eac2a4fcc6",
+    "smoke.sbatch": "69fe24438408475863054029a2bc630ced15b94365f40a75387915e79be8f51b",
+    "STORAGE_POLICY.json": "d945a7b610dbd5359eebee8573aa64711a21dd8007358a407fd524f2dafa6449",
+    "train.sbatch": "8df7e0a27b1f5bf52ed68a1ff44742e9363a4026b629ddb5497f5844f79bbb87",
+    "TRAINING_FILES_SHA256.json": "8c8b63ffb529b2d0379eebf95199bea30dd55b9ef99b10b3cdb46156cf7a74d6",
+    "aligned/PBE/alignment-checks.json": "ef9f28466aa17ef2e310876476e2f31e6904f8c4e3740ea135ee7c3294b0c28b",
+    "aligned/PBE/alignment.json": "61e6f1b9f939a7de4a5c5ecb85e4ecf621deab27feeffa34b13e39d79fb31a85",
+    "aligned/PBE/model.yaml": "0898f8e5c94016c7277e23561204ca907fb423ebfd582de0b6dc3285209cf60e",
+    "baseline/numerical-QC.json": "31992f8a9fde9c512e8527bb2298eac2ee2e92cb30553261b77cf67778294af2",
+    "baseline/summary.json": "a58b07e62cf409d42bf1d8e247c052f3c9ab27224dbbe8c0476cabed8798efa8",
+    "baseline/harmonics/summary.json": "69bd8f52daacedb9de6c55a603bc8447274b74b993ac457db3731eb64debb2f6",
+    "cases/PBE-full-N200-seed20/input.yaml": "3b5dc8d4438b632152b23c3cbb867050908871fd5f6411d7d2b6a68625e348c8",
+    "cases/PBE-full-N200-seed30/input.yaml": "14927bb9b3138db244c3b6198a401159c393ca1673d38fd9a4d2ae0c03ca0f72",
+    "cases/PBE-restricted-N200-seed20/input.yaml": "363406e4250c306cc1f214b2225e7c14eee8694a655f2b57c184805a2b1d37e9",
+    "cases/PBE-restricted-N200-seed30/input.yaml": "de9db28c69446e7e6ccb8710fd7f07205cf8ca082bd35f060f6c81183cc9fba2",
+    "cases/PBE-restricted_mlp-N200-seed20/input.yaml": "20697cf0fface5f04118f2ce0a29ff7557e24fbd385d3e4c9a39cff01c425db5",
+    "cases/PBE-restricted_mlp-N200-seed30/input.yaml": "b0049bcb09dae3cc83259ccf0a6bf03e21025daf22d8815d1487e14cce8e59e6",
+    "cases/PBE-restricted_radial-N200-seed20/input.yaml": "d225db302984525b9cc607193bf47349c75cc1f150601e67480e00bf419aa20f",
+    "cases/PBE-restricted_radial-N200-seed30/input.yaml": "fc378769601a3e182a10b034f06414f49728211d21a89eefdf9167ec7f2bbbb7",
+    "data/PBE/train.extxyz": "063202481e768ede1970b03951c24ba20c233c2ed34c921b41192174551473d1",
+    "data/PBE/validation.extxyz": "5e9f38bfbea8434260474076ef6c354ad71b4442aa386766c8a7244c68f096ba",
+    "harmonic_inputs/PBE/phonopy_disp.yaml": "6146c0af082f27471ca212fc44b7f0cb01099e173752abb6f1b584f915c401be",
+    "harmonic_inputs/PBE/reference-status.json": "05e0f64ccc4926ae6c53f4c6a7e048e9fe488597abdd70c0f89bdda4b0aa9754",
+    "harmonic_inputs/PBE/force000/POSCAR": "c45bffe17f4d0428d7b91e7eae65b6211eb6231c603acb9b729c3e23738a56f9",
+    "harmonic_inputs/PBE/force001/audit.json": "be8f522e1a62fe257e76fc2dbea1b0dad7a495d18ef13fcc9b84cbb6b57f2364",
+    "harmonic_inputs/PBE/force001/forces.npy": "7a5ab58e1b8ccd49de5c303d21164e1e2b1e0e364edbec9bbb2fa23bb142418d",
+    "harmonic_inputs/PBE/force001/INCAR": "2b267eae9e3a2ced932fb44ba084a02b83a1dfe852641e9f1decf2dce37ecab0",
+    "harmonic_inputs/PBE/force001/KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "harmonic_inputs/PBE/force001/POSCAR": "e3c4a0a7de184e3d29d1c805a71436cd3a70266f06b2a2eaaa48e1489c1257b4",
+    "harmonic_inputs/PBE/force002/audit.json": "62e0d49e0ae0cde6e1384a74db83c612bf8d9a0e1c12ec07315885bba9d099e3",
+    "harmonic_inputs/PBE/force002/forces.npy": "5375dce3884e23b8895de5d0956affed9422507843dd7d49d56285fe56d7b5f1",
+    "harmonic_inputs/PBE/force002/INCAR": "68e0e03511bf885119fd71d7288614f62e47c3e46636d71e78bfe367d76f7f0e",
+    "harmonic_inputs/PBE/force002/KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "harmonic_inputs/PBE/force002/POSCAR": "79ee0e26d830db1c4daed9a5486d447fc762c09efb28812fa523cc2d91854786",
+    "ti3al/ASR_FILES_SHA256.json": "59ea0382d07c61fedb760e5092d660d583b3293eff9fc891e8bd4b5f6720a271",
+    "ti3al/FILES_SHA256.json": "05963e33522489b848bf18f4ba99480c62e5332366d6aa3a3e5011d7647dea14",
+    "ti3al/models.json": "a2493ce6e1ea41539cbfc9db6d997a634f9314032d7c0e5b6e65fc61d40161e8",
+    "ti3al/overlap-candidates.json": "6aece61d32943904033a9c9384f6f14ea18769a98b7d23697a07a87e959f29a3",
+    "ti3al/ti3al_asr_sensitivity.py": "332d1a4dc227397ce96c4ba3bf8fce818fcdc6bdf42b986d5f3b8b9dce13b992",
+    "ti3al/ti3al_phonon_worker.py": "f18fe14d902ff9ea18e4d590478245a62dee97e4f813fdcc949c6b2ca118faa9",
+    "ti3al/prepared/overlap-screen.json": "637d13afc3327d3f2940a5b5b9503ed34c9c41b988034c0d0c5509a1fc478b4a",
+    "ti3al/prepared/structures.json": "d01b28dd6035a16a7e6ec7c3f7461b194ed28df1c2c5f3310ef690ff574ed628",
+    "ti3al/prepared/summary.json": "865b371d2f7cac5354e2319a58b8e1926748282a19dc5d31fee80fcf873efbc5",
+    "ti3al/source/DFT_Ti_Ti3Al_reference.json": "8b160e60b0b4a691107cac0a31ca3629b029fba2dcefc68649e0b39a0311f6ee",
+    "ti3al/source/manifest.json": "3452543f951a44b6ad8160174d45bdf9aa225d6a0bae1e363bd0b911e5198254",
+    "ti3al/source/README_RU.txt": "252b1cf9bb5981435ec0215d60335d34ef81666a7a542959415d6e07ecf80c19",
+    "ti3al/source/Ti3Al_D019/band.conf": "46feb338ebf9b003e7417e7b6987304e56fe079b962595bc96b733b61f72dd49",
+    "ti3al/source/Ti3Al_D019/force_run_INCAR": "1862c64c3aa31f9d67fada16724dfa81be384641e3fb24a5ec40625fecca4a57",
+    "ti3al/source/Ti3Al_D019/force_run_KPOINTS": "ae0328d0fe577e11c870ceba601e027b40e25d6a0dff5219ea89b3b5572c956d",
+    "ti3al/source/Ti3Al_D019/force_run_POSCAR": "0fdfe4b983c97b014535306b3b2a89a9e4691511f9364d5d54d54f2475cc474c",
+    "ti3al/source/Ti3Al_D019/mesh.conf": "03f0d0b9e11412c8604731d0b45c8bccc1985c400c05a3f3d8f576c6b257ef21",
+    "ti3al/source/Ti3Al_D019/phonopy.yaml": "da27071f6257150b40eaa48ee6fc01b2f0ff5f6295ff6194e0dfd6193527d80e",
+    "ti3al/source/Ti3Al_D019/phonopy_disp.yaml": "5631d1e373cff70a8156ba2706a5557831b0433e9fbeb248a9152e20a87aa59d",
+    "ti3al/source/Ti3Al_D019/projected_dos.dat": "7808c979af2d551c1971f7b3a0a2f5634eadf1f84cc960840c725081ff98ed67",
+    "ti3al/source/Ti3Al_D019/SPOSCAR": "5f4b99522a244b0fafd5596483445eb0c9cefc824866241f1f67e4058a6cb692",
+    "ti3al/source/Ti3Al_D019/total_dos.dat": "34ea9c621d4495d476e277b17f9966acad6fd1602852e0952f4a971af9b4387e"
+  },
+  "cases": {
+    "PBE-full-N200-seed20": {
+      "checkpoint": {
+        "checkpoint.index": "152d11b99e23ab2667c52f325b9af0b6c32125ee41ed127ea5c5fe4c736243c9",
+        "checkpoint.data-00000-of-00001": "e59f188ccc7205a894d053f56466f61c19dd8578513610a69d7217218248fd9a"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "22cbf34a3823165cb3345ea54b5cd45f731ebb121334c92e29dc819e6418443b",
+        "fingerprint.pb": "a973917150fff598dce6a07c931c5fa6b179d8644864d01c3b5d3d37284706a1",
+        "variables/variables.data-00000-of-00001": "b00c98cc8a529fbb52fc9486699af2ca5c901c87902c7295787e0c79c04dcc1c",
+        "variables/variables.index": "429803f645fe50807ab960f157f079a6874008c6c40a1599d4d7efed8f3eecf7"
+      },
+      "job_id": "20991809",
+      "training_summary_sha256": "de2e802649e15ee511bf816c8ec92cec9e4f5442049f04e33dbbe1214ae1c84f",
+      "model_yaml_sha256": "16d78c5a5655240f5bdeccb3e55e5c966505a840b68ae267398c43e873e3deda",
+      "optimizer_archive": {
+        "status": "PASS",
+        "archive_sha256": "4404f95982db9a2387e6f457212a951576955e29257c459dfdd3d5b50249fb38",
+        "files": {
+          "checkpoint.data-00000-of-00001": "e37b0941a8b90ce230a2eb56bd35103410b7011a4eeaf8da7f21ed9825490d4b",
+          "checkpoint.index": "6c3cab3d14fa178c11ec428c2c56457e0ff576d715152c341750310ca67d5b22"
+        },
+        "bytes": 186136550,
+        "restore": "Extract optimizer-final.tar.gz here to restore native optimizer checkpoint files; contains full Adam state.",
+        "final_model_preserved": true
+      }
+    },
+    "PBE-restricted-N200-seed20": {
+      "checkpoint": {
+        "checkpoint.index": "74be92765a0393d63909cb9fb11897a691b11734d8a04a0820ef27243243c9d9",
+        "checkpoint.data-00000-of-00001": "cef55ec0b1940f68516f45c215146e9da6e47987b8cfca6a2c7380ddf58b4e1a"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "4c3e45981f54e62378b0cba477504f069a37f42a9d6d0e5daae9980556be6a24",
+        "fingerprint.pb": "eeed6396b885c3bcb78082d8fe8f34c0af4e767e6df7992e789a5e2de8cee544",
+        "variables/variables.data-00000-of-00001": "20fe69c459126f22ff6dfb0f72dedf34f30ee137d34377836bd16b7d8646756b",
+        "variables/variables.index": "4a7706d6e1dcac05d9f62f08822ecccebddd87f37fcb2335c4fee6a562f2e66c"
+      },
+      "job_id": "20991818",
+      "training_summary_sha256": "665b0eb41aa03f7528d72ad91004c99cb88f5826e9377d5b84e36ec93d0e1676",
+      "model_yaml_sha256": "83d6fe806ddb56ffd6595419bddf22ead03376f3828d3b3c449759166901e832",
+      "optimizer_archive": {
+        "status": "PASS",
+        "archive_sha256": "76c1a052ba1494440a301856ba46809c27ced0f9dc161b63d74c55772ca39acb",
+        "files": {
+          "checkpoint.data-00000-of-00001": "b23395c23c5399c14c41557a2fcda63c0e8b2121953d36927aaa99f0621d6d6f",
+          "checkpoint.index": "f1f82cc1213807b31a835f0513e02486f36505de0a36da69e791221a90fa162e"
+        },
+        "bytes": 177882951,
+        "restore": "Extract optimizer-final.tar.gz here to restore native optimizer checkpoint files; contains full Adam state.",
+        "final_model_preserved": true
+      }
+    },
+    "PBE-restricted_mlp-N200-seed20": {
+      "checkpoint": {
+        "checkpoint.index": "6cd8ba076f03654e9a3e49b42989e602adfc03491ca1767ed6fa85417a4682da",
+        "checkpoint.data-00000-of-00001": "439956af92e8d96970ea4967b2f39e83eedc914131297d6159f7c9a22cb2c465"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "116cc93d73f3f1db7d6c3accbd8e1a618334ca7debba82fb00fd848c55d99bcd",
+        "fingerprint.pb": "f657f1823b6e2c1ae727c91f3daa17834dd5752a1c0a97e4faf441f533bf2bdf",
+        "variables/variables.data-00000-of-00001": "72beef4e208aa566a0cf07e957ef6eaa466bc97176dbff7ee3695a3c4ba85f00",
+        "variables/variables.index": "850d659ab3e351b73da3892b6923ed7f84c782586cefe66e7d7ea33daebb1126"
+      },
+      "job_id": "20991819",
+      "training_summary_sha256": "cea19b279b7c0c1a10451a62a0925ba23af9b61da273cf12daaa1e805391c0b1",
+      "model_yaml_sha256": "aba058986e10de57abad5396780308c9a5d78ffd6fe340dea114db96b27b3e00",
+      "optimizer_archive": {
+        "status": "PASS",
+        "archive_sha256": "3f0fec9f968e5e5514333d272d15a0399481aa4331ed19d99cdc84bc333651bf",
+        "files": {
+          "checkpoint.data-00000-of-00001": "8c732c4c91bad8897539ba5d3638391d25efca980c021842289dedc291e662f9",
+          "checkpoint.index": "8e8deb017c1a2436c40860f69a8178c3b6a1c413a7140da948f2f168b8b06d1a"
+        },
+        "bytes": 177907943,
+        "restore": "Extract optimizer-final.tar.gz here to restore native optimizer checkpoint files; contains full Adam state.",
+        "final_model_preserved": true
+      }
+    },
+    "PBE-restricted_radial-N200-seed20": {
+      "checkpoint": {
+        "checkpoint.index": "84b7b7571e44d744a60e2f6c981179bdd9b48e2e6b43521c64a65a5feb507f19",
+        "checkpoint.data-00000-of-00001": "ee97b1f8d34095b197066a73e20a088a9b587b633def4571353e045b672f72ae"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "1114085a6bc077013c5652da903b5e62727c53e375041b18a95b86aa0d3faa98",
+        "fingerprint.pb": "5f8964b13a73e5c0f5ef9877ba75cf3d19cc6e885c9696cef2b420fb15003ccc",
+        "variables/variables.data-00000-of-00001": "3548271086a4a9c209fc6f1591e4d638ee55aac61462952b707ccd48cbad2671",
+        "variables/variables.index": "1ce33fea6b63a2e2380e59b02d37f04327337ba9e82b4e3d76a5b98620697d64"
+      },
+      "job_id": "20991820",
+      "training_summary_sha256": "ea653aeed01ce3d577da37707dd396c2817d7a890999114c999d54490b126f6e",
+      "model_yaml_sha256": "497d2f09dbab71c0df9b50100bd132ae9f22b46e9b31bf944d9988695270848b",
+      "optimizer_archive": {
+        "status": "PASS",
+        "archive_sha256": "867005e3434b8a82bc381a9e5ca8666d5ec0acabf146a39ccb6e10136d14f95a",
+        "files": {
+          "checkpoint.data-00000-of-00001": "e9127acfa88b51346ccc0f1e21c5d3b986e1cc6769793eb5060159ab1ad011b1",
+          "checkpoint.index": "ea267ff7af56dc52d90dc60ab620d4816623f484653b47f9bc8b774143def922"
+        },
+        "bytes": 178399898,
+        "restore": "Extract optimizer-final.tar.gz here to restore native optimizer checkpoint files; contains full Adam state.",
+        "final_model_preserved": true
+      }
+    },
+    "PBE-full-N200-seed30": {
+      "checkpoint": {
+        "checkpoint.index": "660faffb753f67f3a8eb9b47c595aa92970dfe554937b985571bccdeafdfe517",
+        "checkpoint.data-00000-of-00001": "b5175d0d550248375924dfcda1928a450a8190ebc17bfb355f98b2c609c1aa16"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "06a447641f18da455fbb7cc2cce35b5e30e8eef80d232185a3e629e2a303fbd2",
+        "fingerprint.pb": "12673e5aebc19196854f9a45ea33778e1f974f0b1f8edd468e97e42d3c9e918f",
+        "variables/variables.data-00000-of-00001": "02b92183e790063a52f2982065a6e8439a25ecfc5977270982df459c01b769ac",
+        "variables/variables.index": "405e2ca23d3d38050f3097e54c7336e4652a154e4f4afc7f1221a82b1c53f28b"
+      },
+      "job_id": "20991821",
+      "training_summary_sha256": "7591b2fbb8dfb75510fc4e8b6ed0107aa80d0cf224cf3c7a75f172b6cf763daa",
+      "model_yaml_sha256": "b8be67d45abfb6fe082a9c8db8bae09d8964600c2970f35301b989d342dc2446",
+      "optimizer_archive": {
+        "status": "PASS",
+        "archive_sha256": "5baf3f39732aa54bd3b19e6b94d55b24981d8d5fe7092f45b028ca439da6738c",
+        "files": {
+          "checkpoint.data-00000-of-00001": "f190ed2253c813fd31a6cb5816b5f6c93839eaafc2352d9f098c1b454a814df8",
+          "checkpoint.index": "28f4ce5d62d580231db460bb6065d97416931945c736e45b37f27ad5b8de4b77"
+        },
+        "bytes": 186136727,
+        "restore": "Extract optimizer-final.tar.gz here to restore native optimizer checkpoint files; contains full Adam state.",
+        "final_model_preserved": true
+      }
+    },
+    "PBE-restricted-N200-seed30": {
+      "checkpoint": {
+        "checkpoint.index": "ae22b8488645a96e2cef9dc8305a1118fa6b7ed12a89f2791fc2560f63bbe519",
+        "checkpoint.data-00000-of-00001": "eece92e6ffcf64c087c440def408d2f4950715e5127186ff061949baf06269db"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "cab3a905c649f37fd6f03438a6ec1b18a381773af4d2ef9f2b590c5ad484d535",
+        "fingerprint.pb": "dd5b1d383e5a47129f7a53b98b73992cf64de485613c16280d77a7ac3477b82b",
+        "variables/variables.data-00000-of-00001": "451b59f93ad221d86805a7569ccfcfe19a713857faaf2c1524c5139fea466d71",
+        "variables/variables.index": "1a77cbbf59c18d18f6568eebbddc0564be04cfc7f29a5188691cadf6a435684d"
+      },
+      "job_id": "20991822",
+      "training_summary_sha256": "5fff0f5a35ab1ded72b67d5241061734db68ca7e2b2ba833f82e1c864c38c70f",
+      "model_yaml_sha256": "85e6393f37b049f4b23685250f34042ac8b3dfbfc5d390fd921525179327a6f5",
+      "optimizer_archive": {
+        "status": "PASS",
+        "archive_sha256": "d0d9d314e05b92c7b5ecd44c34231cf0d6679ac107ebcefa0b45b32de2bb94e7",
+        "files": {
+          "checkpoint.data-00000-of-00001": "fbd3c760b7ef5ddf4e7f1d9e068f1577249228115eb17caefc8b824ac0a7081a",
+          "checkpoint.index": "c1c8d0422b42dca52c183f34cde1fa4d8b454309b31cf1a39baf26ec756f6412"
+        },
+        "bytes": 177886450,
+        "restore": "Extract optimizer-final.tar.gz here to restore native optimizer checkpoint files; contains full Adam state.",
+        "final_model_preserved": true
+      }
+    },
+    "PBE-restricted_mlp-N200-seed30": {
+      "checkpoint": {
+        "checkpoint.index": "7d6dd8ed5aadb3f311c87a1b59c0c22640346166a14d756ffb84ba28af50161c",
+        "checkpoint.data-00000-of-00001": "3111b3a9dd2c7fe67e4b0d4f63cb0e635007efd51ea9f48773ba842cbd21d602"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "116cc93d73f3f1db7d6c3accbd8e1a618334ca7debba82fb00fd848c55d99bcd",
+        "fingerprint.pb": "aaffb0fc176383d6055601fcaabce81375894f622fa6b2ff502ac8baf8454f71",
+        "variables/variables.data-00000-of-00001": "e66014ecaf87a1b78cb3fa8f4ba228ac416db5a39c1a6b14e290aed8ff0718c3",
+        "variables/variables.index": "f8431d6aafc954ed6396132af6d4d4131c5ece47cf81e478966f98b25d85b461"
+      },
+      "job_id": "20991823",
+      "training_summary_sha256": "69adf148806446d70d328b54bddf1e1594fabea6985e714dd0d8c52ec87a95b2",
+      "model_yaml_sha256": "9f43842103a31032245f689085042ef25c84f79dafa256ff815e135996ab52c2",
+      "optimizer_archive": {
+        "status": "PASS",
+        "archive_sha256": "6f5221026499945f3698886e3fac0b6cb5ec7c7328e94b9a1697a8bcc2c61a7b",
+        "files": {
+          "checkpoint.data-00000-of-00001": "e21a3ffe71122bbcbf08b685f6b6a28ad38606fa053e8c32ed0ad8d0d85db218",
+          "checkpoint.index": "0d925edcd801108291f570107b18d54c4681057105134b915da46cfdc34e7123"
+        },
+        "bytes": 177908101,
+        "restore": "Extract optimizer-final.tar.gz here to restore native optimizer checkpoint files; contains full Adam state.",
+        "final_model_preserved": true
+      }
+    },
+    "PBE-restricted_radial-N200-seed30": {
+      "checkpoint": {
+        "checkpoint.index": "97ada8125f57ca0fc17f2d338540b07a376d905085dd84a3604a4de07fcb52b3",
+        "checkpoint.data-00000-of-00001": "1a6dfc0a277c5bd4b21651c5e5a13e53b2e2d926568ecec7df7cf2603ab0b5c7"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "c330c0929b32bf3116744a356f4da571b632207f5e6c9b59b6c71260b7364d76",
+        "fingerprint.pb": "454d855f7f87cda4986dfca8aaa81b85d33cdd0ecbf6acc7af2fca5ce3f3055e",
+        "variables/variables.data-00000-of-00001": "6243d8f6b249ea35afe2197f44d5c022b03d1b17526de5daaa9a53478a2ab2b8",
+        "variables/variables.index": "dd7e1f9f120687d38d4ef4bdbc947b263a5f478642ef0e0155a4d487aebe084d"
+      },
+      "job_id": "20991808",
+      "training_summary_sha256": "50e331a95dd328e3c081f323a33f226281d8c15135e880e61d01b461efca6aca",
+      "model_yaml_sha256": "78e526dc1bee1efbf7d730db64e72e97d1efded343005ba7ec793945d936b93c",
+      "optimizer_archive": {
+        "status": "PASS",
+        "archive_sha256": "8d9022f6803cc5292b21c3e69476d81bb4a4e843d2db18e8e9546bc215ed3f95",
+        "files": {
+          "checkpoint.data-00000-of-00001": "dba136e2a28c37ec9f84ed3c7d1f8386eb77dbe58a2f663af3d9ef757c10f878",
+          "checkpoint.index": "3710a55d553a5758c6ba4db624c6029ef594e008f28f5e5dbfc5cf0cc23abb2a"
+        },
+        "bytes": 178397560,
+        "restore": "Extract optimizer-final.tar.gz here to restore native optimizer checkpoint files; contains full Adam state.",
+        "final_model_preserved": true
+      }
+    }
+  },
+  "accounting": "JobID|State|ElapsedRaw|ExitCode|NodeList\n20991808_0|COMPLETED|766|0:0|tesla-a101\n20991808_1|COMPLETED|661|0:0|tesla-a101\n20991808_2|COMPLETED|665|0:0|tesla-a101\n20991808_3|COMPLETED|723|0:0|tesla-a101\n20991808_4|COMPLETED|761|0:0|tesla-a101\n20991808_5|COMPLETED|664|0:0|tesla-a101\n20991808_6|COMPLETED|662|0:0|tesla-a101\n20991808_7|COMPLETED|721|0:0|tesla-a101\n20991810|COMPLETED|167|0:0|apollo13\n"
+}

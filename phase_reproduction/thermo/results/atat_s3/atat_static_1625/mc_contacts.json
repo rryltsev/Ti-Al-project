@@ -1,0 +1,96 @@
+[
+  {
+    "model": "atat_static",
+    "T_K": 1625.0,
+    "N": 5120,
+    "windows": 69,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 24.351969468847514,
+        "alpha2_at_pct": 25.541819896008523,
+        "window_edge": false,
+        "order_left": 0.08578633925191662,
+        "order_right": 0.7599727661749324,
+        "order_direction": "rising",
+        "order_se_left": 0.008918805978880983,
+        "order_se_right": 0.002544154751992622,
+        "bootstrap_midpoint_match": {
+          "resolved": 300,
+          "alpha_95": [
+            24.223243765984503,
+            24.534539890353624
+          ],
+          "alpha2_95": [
+            25.44127942035024,
+            25.612707827289327
+          ],
+          "width_95": [
+            1.0423296129181296,
+            1.2649318328074761
+          ]
+        }
+      }
+    ],
+    "min_width_at_pct": 0.5,
+    "largest_unthresholded_interior_width_at_pct": 1.1898504271610086,
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "baseline_interior_candidates": 1,
+      "draws_without_interior_contact": 0,
+      "draws_with_one_interior_contact": 217,
+      "draws_with_multiple_interior_contacts": 83,
+      "draws_invalid": 0,
+      "alpha_95": [
+        24.223243765984503,
+        24.534539890353624
+      ],
+      "alpha2_95": [
+        25.44127942035024,
+        25.612707827289327
+      ],
+      "width_95": [
+        1.0423296129181296,
+        1.2649318328074761
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 1,
+      "offset_gradient_max_abs": 9.53282989834459e-10,
+      "status": "connected",
+      "contacts": [
+        {
+          "alpha_at_pct": 24.21875,
+          "alpha2_at_pct": 25.56640625,
+          "window_edge": false,
+          "order_left": 0.07848698034280135,
+          "order_right": 0.7615390452590027,
+          "order_direction": "rising",
+          "order_se_left": 0.006315749821311733,
+          "order_se_right": 0.0024446105129364484
+        },
+        {
+          "alpha_at_pct": 30.019531249999996,
+          "alpha2_at_pct": 30.64453125,
+          "window_edge": false,
+          "order_left": 0.6268328763558094,
+          "order_right": 0.23743559588441776,
+          "order_direction": "falling",
+          "order_se_left": 0.021793059798010002,
+          "order_se_right": 0.025545356815354865
+        },
+        {
+          "alpha_at_pct": 33.65234375,
+          "alpha2_at_pct": 34.27734375,
+          "window_edge": true,
+          "order_left": 0.06896258003819293,
+          "order_right": 0.06815592447916964,
+          "order_direction": "uncertain",
+          "order_se_left": 0.0009130889980676556,
+          "order_se_right": 0.0006593591965758119
+        }
+      ]
+    }
+  }
+]

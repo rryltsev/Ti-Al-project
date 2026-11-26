@@ -1,0 +1,152 @@
+{
+  "temperature_K": 1873,
+  "checkpoint5k": [
+    {
+      "x_Al": 0.0,
+      "eta_mPa_s": 3.258926589110574,
+      "eta_std_mPa_s": 0.153054157067472,
+      "n_replicas": 15,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.1,
+      "eta_mPa_s": 3.7279878546445047,
+      "eta_std_mPa_s": 0.10750205504490475,
+      "n_replicas": 50,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.2,
+      "eta_mPa_s": 4.058941731552027,
+      "eta_std_mPa_s": 0.1133640085616111,
+      "n_replicas": 50,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.3,
+      "eta_mPa_s": 4.3712074197192505,
+      "eta_std_mPa_s": 0.12228789061782401,
+      "n_replicas": 50,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.4,
+      "eta_mPa_s": 5.021249388066642,
+      "eta_std_mPa_s": 0.19270801500069862,
+      "n_replicas": 50,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.45,
+      "eta_mPa_s": 4.8829928969516745,
+      "eta_std_mPa_s": 0.15516837775697043,
+      "n_replicas": 50,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.5,
+      "eta_mPa_s": 4.484495674429517,
+      "eta_std_mPa_s": 0.20727519684602377,
+      "n_replicas": 15,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.6,
+      "eta_mPa_s": 3.9683504856930587,
+      "eta_std_mPa_s": 0.10680179818722738,
+      "n_replicas": 50,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.7,
+      "eta_mPa_s": 2.977910792256131,
+      "eta_std_mPa_s": 0.08166105908013405,
+      "n_replicas": 50,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.8,
+      "eta_mPa_s": 1.7613482567937695,
+      "eta_std_mPa_s": 0.03631777320585242,
+      "n_replicas": 50,
+      "production_ps": 20
+    },
+    {
+      "x_Al": 0.9,
+      "eta_mPa_s": 0.951324789528036,
+      "eta_std_mPa_s": 0.009342534656696088,
+      "n_replicas": 50,
+      "production_ps": 20
+    }
+  ],
+  "checkpoint15k": [
+    {
+      "x_Al": 0,
+      "eta_mPa_s": 3.2,
+      "eta_std_mPa_s": 0.08408915114466135,
+      "kind": "exploratory_pooled_old_new",
+      "cutoff_THz": 1.25
+    },
+    {
+      "x_Al": 0.2,
+      "eta_mPa_s": 3.9845816478019174,
+      "eta_std_mPa_s": 0.1346205933454519,
+      "n_replicas": 15,
+      "production_ps": 40
+    },
+    {
+      "x_Al": 0.45,
+      "eta_mPa_s": 4.725292400281263,
+      "eta_std_mPa_s": 0.17473671234363014,
+      "n_replicas": 15,
+      "production_ps": 40
+    },
+    {
+      "x_Al": 0.8,
+      "eta_mPa_s": 1.8256282004559772,
+      "eta_std_mPa_s": 0.054141628310926136,
+      "n_replicas": 15,
+      "production_ps": 40
+    }
+  ],
+  "comparison": [
+    {
+      "x_Al": 0,
+      "eta5": 3.258926589110574,
+      "se5": 0.153054157067472,
+      "eta15": 3.2,
+      "se15": 0.08408915114466135,
+      "delta_pct": -1.8081594506446308
+    },
+    {
+      "x_Al": 0.2,
+      "eta5": 4.058941731552027,
+      "se5": 0.1133640085616111,
+      "eta15": 3.9845816478019174,
+      "se15": 0.1346205933454519,
+      "delta_pct": -1.8320066822362646
+    },
+    {
+      "x_Al": 0.45,
+      "eta5": 4.8829928969516745,
+      "se5": 0.15516837775697043,
+      "eta15": 4.725292400281263,
+      "se15": 0.17473671234363014,
+      "delta_pct": -3.229586853768718
+    },
+    {
+      "x_Al": 0.8,
+      "eta5": 1.7613482567937695,
+      "se5": 0.03631777320585242,
+      "eta15": 1.8256282004559772,
+      "se15": 0.054141628310926136,
+      "delta_pct": 3.6494738286009465
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\viscosity\\viscosity_merged.json": "27a2eac348c018fbde2c19576714533de78d04409c56d34beab2a83f25a38554",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\supporting_data\\pbe15k_viscosity_N15.json": "848ae40b1e16b0164a9072dd6edd28f4da3ebab971af4c881e7c6653bc8100c5",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\temperature_plot\\plot_data.json": "b4ecd9483d0ef1e8a9fb95c39f8f83d1ae48090e4cbca8cc59b23806129cb883"
+  },
+  "note": "Original composition series remains stopped. Saved N15 alloy results; pure-Ti endpoint uses the separately requested exploratory pooled estimate. No official article data modified."
+}

@@ -1,0 +1,135 @@
+{
+  "unix": 1792984604.9579754,
+  "stages": [
+    {
+      "path": "T1700K/cool",
+      "summary": {
+        "status": "completed",
+        "temperature_K": 1700,
+        "stage": "cool",
+        "steps": 10000,
+        "final_T_K": 1687.7238965839645,
+        "final_volume_A3": 23732.1942251037,
+        "wall_seconds": 865.5018699187785,
+        "device": {
+          "name": "NVIDIA A100-PCIE-40GB",
+          "visible": "0",
+          "job": "20960770"
+        }
+      },
+      "last_complete_step": 10000
+    },
+    {
+      "path": "T1700K/equil",
+      "summary": {
+        "status": "completed",
+        "temperature_K": 1700,
+        "stage": "equil",
+        "steps": 10000,
+        "final_T_K": 1696.7115750884088,
+        "final_volume_A3": 23493.037430165805,
+        "wall_seconds": 901.1868169233203,
+        "device": {
+          "name": "NVIDIA A100-PCIE-40GB",
+          "visible": "0",
+          "job": "20960770"
+        }
+      },
+      "last_complete_step": 10000
+    },
+    {
+      "path": "T1700K/heat",
+      "summary": {
+        "status": "completed",
+        "temperature_K": 1700,
+        "stage": "heat",
+        "steps": 20000,
+        "final_T_K": 2557.6400424567796,
+        "final_volume_A3": 24431.142110860488,
+        "wall_seconds": 1742.7785214558244,
+        "device": {
+          "name": "NVIDIA A100-PCIE-40GB",
+          "visible": "0",
+          "job": "20960770"
+        }
+      },
+      "last_complete_step": 20000
+    },
+    {
+      "path": "T1700K/melt",
+      "last_complete_step": 8000
+    },
+    {
+      "path": "T1850K/cool",
+      "summary": {
+        "status": "completed",
+        "temperature_K": 1850,
+        "stage": "cool",
+        "steps": 10000,
+        "final_T_K": 1866.4741391697746,
+        "final_volume_A3": 23755.890824595066,
+        "wall_seconds": 859.7994706798345,
+        "device": {
+          "name": "NVIDIA A100-PCIE-40GB",
+          "visible": "0",
+          "job": "20960770"
+        }
+      },
+      "last_complete_step": 10000
+    },
+    {
+      "path": "T1850K/equil",
+      "summary": {
+        "status": "completed",
+        "temperature_K": 1850,
+        "stage": "equil",
+        "steps": 10000,
+        "final_T_K": 1870.0108952114635,
+        "final_volume_A3": 23717.13224301535,
+        "wall_seconds": 893.4979356564581,
+        "device": {
+          "name": "NVIDIA A100-PCIE-40GB",
+          "visible": "0",
+          "job": "20960770"
+        }
+      },
+      "last_complete_step": 10000
+    },
+    {
+      "path": "T1850K/heat",
+      "summary": {
+        "status": "completed",
+        "temperature_K": 1850,
+        "stage": "heat",
+        "steps": 20000,
+        "final_T_K": 2712.2123233945185,
+        "final_volume_A3": 24670.370341421018,
+        "wall_seconds": 1725.8153523877263,
+        "device": {
+          "name": "NVIDIA A100-PCIE-40GB",
+          "visible": "0",
+          "job": "20960770"
+        }
+      },
+      "last_complete_step": 20000
+    },
+    {
+      "path": "T1850K/melt",
+      "last_complete_step": 8600
+    }
+  ],
+  "dumps": {
+    "T1700K/melt": {
+      "sha256": "537e1e53b6932046f867867a117f1d9343ed4389c38e629eec78736f9ca3e6cc",
+      "frames": 17,
+      "last_sampled_step": 8000,
+      "local_file": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting\\attempt2\\snapshots\\20261026T031644Z\\T1700K_melt.lammpstrj"
+    },
+    "T1850K/melt": {
+      "sha256": "ca4781793d6635f10244ffe05957080831ba3bd3d9185df4b8652cdc31924ad9",
+      "frames": 18,
+      "last_sampled_step": 8500,
+      "local_file": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting\\attempt2\\snapshots\\20261026T031644Z\\T1850K_melt.lammpstrj"
+    }
+  }
+}

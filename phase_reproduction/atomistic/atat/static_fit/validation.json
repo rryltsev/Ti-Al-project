@@ -1,0 +1,36 @@
+{
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "observables": [
+    "static"
+  ],
+  "phonon_mask_applied": false,
+  "volumes": [
+    {
+      "ratio": 1.0,
+      "excluded_unstable": [],
+      "condition_number": 104.26700649147105,
+      "train": 39,
+      "control": 7,
+      "loo_rmse": [
+        0.008166454745687094
+      ],
+      "control_rmse": [
+        0.0023201732569939825
+      ],
+      "groups": {
+        "seven": {
+          "count": 7,
+          "rmse_static_eV_atom": 0.0023201732569939825
+        },
+        "small_controls": {
+          "count": 5,
+          "rmse_static_eV_atom": 0.002377307514805103
+        },
+        "22Al_64": {
+          "count": 2,
+          "rmse_static_eV_atom": 0.002170768584804284
+        }
+      }
+    }
+  ]
+}

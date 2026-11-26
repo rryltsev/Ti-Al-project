@@ -1,0 +1,20 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:20:00",
+    "--no-requeue",
+    "--job-name=test50-PBE15k",
+    "--chdir=/home6/u3129/tial-testsets/pbe15k-test50-20261026-01",
+    "--output=/home6/u3129/tial-testsets/pbe15k-test50-20261026-01/inference-%j.out",
+    "/home6/u3129/tial-testsets/pbe15k-test50-20261026-01/job.sbatch"
+  ],
+  "unix": 1792983166.9480517
+}

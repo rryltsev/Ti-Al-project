@@ -1,0 +1,108 @@
+{
+  "run_id": "r2scan-sequential-1941-20261106-02",
+  "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1941K",
+  "checkpoint": {
+    "functional": "r2SCAN",
+    "step": 23200,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\output_model\\ckpt\\model.ckpt-23200.pt",
+    "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+    "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt",
+    "article_checkpoint": true
+  },
+  "frozen_model": {
+    "path": "/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+    "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+  },
+  "states": [
+    {
+      "id": "Ti_1941K",
+      "temperature_K": 1941,
+      "x_Al": 0.0,
+      "c_Ti": 1.0,
+      "actual_x_Al": 0.0,
+      "counts": {
+        "Al": 0,
+        "Ti": 512
+      },
+      "initial_file": "initial.data",
+      "initial_sha256": "fc9d77e352683a8e74576626b57df59ae28b0d159c8538d36ff726d8a6bfc12f",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1941K\\scan\\03_stress_autocorr\\c_Ti_1.00\\visc1\\mol.data",
+      "seed": 611194100
+    }
+  ],
+  "pressure_bar": 1,
+  "atoms": 512,
+  "dt_ps": 0.001,
+  "initial_npt_steps": 20000,
+  "reservoir_spacing_steps": 5000,
+  "nvt_equil_steps": 1000,
+  "production_steps": 40000,
+  "matched_window_steps": 20000,
+  "preparation_Tdamp_ps": 0.1,
+  "preparation_Pdamp_ps": 0.5,
+  "production_Tdamp_ps": 0.2,
+  "masses": [
+    26.98,
+    47.88
+  ],
+  "elements": [
+    "Al",
+    "Ti"
+  ],
+  "batch_size": 5,
+  "allocation": {
+    "partition": "v100",
+    "node": null,
+    "account": "imet-2026-2",
+    "qos": "normal",
+    "gpu": "a100:1",
+    "cpus": 6,
+    "md_threads": 4,
+    "analysis_threads": 2,
+    "memory": "32G",
+    "walltime": "20:00:00"
+  },
+  "convergence": {
+    "max_relative_std": 0.03,
+    "max_last_three_range": 0.02,
+    "max_cost_z": 2,
+    "max_criterion_z": 2,
+    "max_new_batch_z": 2.5,
+    "required_consecutive_passes": 2,
+    "interpretation": "Diagnostic reference for accumulated legacy+new estimates; no automatic new-replica quota or mandatory recalculation. The current sampling plan is finite and ends for assessment."
+  },
+  "duration_policy": "Primary refinement starts from verified legacy20ps spectra and adds two20ps windows per new40ps trajectory. Own volume and temperature for every replica; never temporal concatenation. Separate new40/first20/second20 diagnostics do not enforce a new30-replica series.",
+  "restart_policy": "Only inherited single ID20988268 can requeue before20h; no new sbatch. All other previous temperature jobs superseded.",
+  "preparation_note": "New independent seeded reservoir from archived pureTi configuration,20psNPT then5psNPT+1psNVT+40psNVT per newreplica;legacy preparation remains separately identified.",
+  "scheduling": {
+    "batch_size": 5,
+    "policy": "Single job round-robin; external versioned plan specifies which five-replica blocks to add to existing statistics. No compulsory new replica quota."
+  },
+  "functional": "r2SCAN",
+  "legacy": {
+    "manifest": "legacy/manifest.json",
+    "sha256": "c830e8dbc7b8f18f6bbc68cfc47fed5f368901c271fb08a11b9e0d6e226f8a62",
+    "n_replicas": 15,
+    "duration_ps": 20
+  },
+  "pooling": {
+    "version": "r2scan-sequential-refinement-v2",
+    "primary": "Pooled20ps spectrum;old20ps+two20pswindows from each new40ps",
+    "weight": "Equal-length20ps channels pooled without temporal concatenation;ownV/(kB*T),fivechannels",
+    "uncertainty": "max(formalSE,delete-one-whole-replica cluster jackknifeSE);both halves removed together for newreplicas",
+    "required_model_pressure_max_error_bar": 20,
+    "additional_stop_gates": [
+      "pooled20cost/cutoffZ<2",
+      "pooled20conservativeSE<=3%",
+      "pooled20last3range<=2%"
+    ],
+    "legacy_model_validation": "All archived zero-step pressures must match checkpoint23200 before submission",
+    "extension_policy": "No Nnew>=30 requirement. Primary statistics start with all verified legacy replicas. Each added block is analyzed immediately; new40ps windows are additional diagnostics. Extension beyond the current plan requires a new recorded sampling decision."
+  },
+  "previous_model_audit": {
+    "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\Ti_1941K\\prequeue-validation.json",
+    "sha256": "72d93164760b4eea7805178188483684661572999af90991b1c3cbea4eface4e",
+    "same_legacy_manifest_sha256": "c830e8dbc7b8f18f6bbc68cfc47fed5f368901c271fb08a11b9e0d6e226f8a62",
+    "same_checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309"
+  }
+}

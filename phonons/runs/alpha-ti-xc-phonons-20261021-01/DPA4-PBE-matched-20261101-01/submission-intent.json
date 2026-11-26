@@ -1,0 +1,20 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=12G",
+    "--time=00:15:00",
+    "--no-requeue",
+    "--job-name=ti-DPA4-PBE",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/DPA4-PBE-matched-20261101-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/DPA4-PBE-matched-20261101-01/run-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/DPA4-PBE-matched-20261101-01/job.sbatch"
+  ],
+  "utc": "2026-11-01T10:01:41.473475+00:00"
+}

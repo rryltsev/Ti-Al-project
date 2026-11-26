@@ -1,0 +1,20 @@
+{
+  "key": "postprocess",
+  "job_id": "20991810",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=apollo",
+    "--mem=16G",
+    "--time=00:30:00",
+    "--dependency=afterany:20991808",
+    "--job-name=TiAl-GRA-PBE-compare",
+    "--output=post-%j.log",
+    "post.sbatch"
+  ],
+  "utc": "2026-11-09T20:06:10.873490+00:00"
+}

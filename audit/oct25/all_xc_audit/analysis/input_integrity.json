@@ -1,0 +1,172 @@
+{
+  "functionals": {
+    "PBE": {
+      "counts": {
+        "train": 850,
+        "validation": 149,
+        "test": 20
+      },
+      "unique_geometry_counts": {
+        "train": 850,
+        "validation": 149,
+        "test": 20
+      },
+      "exact_overlap_train_validation": [],
+      "exact_overlap_test_training": [],
+      "coverage": {
+        "train": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            15.939878871338324,
+            22.148690715771618
+          ]
+        },
+        "validation": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            16.005777204405902,
+            21.75073400513943
+          ]
+        },
+        "test": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            15.661585308819431,
+            22.56291479776198
+          ]
+        }
+      }
+    },
+    "PBEsol": {
+      "counts": {
+        "train": 849,
+        "validation": 149,
+        "test": 20
+      },
+      "unique_geometry_counts": {
+        "train": 849,
+        "validation": 149,
+        "test": 20
+      },
+      "exact_overlap_train_validation": [],
+      "exact_overlap_test_training": [],
+      "coverage": {
+        "train": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            15.95526220556645,
+            22.148693210549222
+          ]
+        },
+        "validation": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            15.939878020414904,
+            21.833090819747056
+          ]
+        },
+        "test": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            15.661585308819431,
+            22.56291479776198
+          ]
+        }
+      }
+    },
+    "r2SCAN": {
+      "counts": {
+        "train": 845,
+        "validation": 148,
+        "test": 20
+      },
+      "unique_geometry_counts": {
+        "train": 845,
+        "validation": 148,
+        "test": 20
+      },
+      "exact_overlap_train_validation": [],
+      "exact_overlap_test_training": [],
+      "coverage": {
+        "train": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            15.95526220556645,
+            22.148693210549222
+          ]
+        },
+        "validation": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            15.939878020414904,
+            21.833090819747056
+          ]
+        },
+        "test": {
+          "x_Ti_range": [
+            0.0,
+            1.0
+          ],
+          "V_A3_atom_range": [
+            15.661585308819431,
+            22.56291479776198
+          ]
+        }
+      }
+    }
+  },
+  "exact_geometry_common_counts": {
+    "train": 0,
+    "validation": 0,
+    "test": 20
+  },
+  "pairwise_exact_geometry_matching": {
+    "PBE/PBEsol": {
+      "identical_geometries": 0,
+      "different_split": 0
+    },
+    "PBE/r2SCAN": {
+      "identical_geometries": 0,
+      "different_split": 0
+    },
+    "PBEsol/r2SCAN": {
+      "identical_geometries": 992,
+      "different_split": 153
+    }
+  },
+  "shared_settings": {
+    "learning_rate": true,
+    "loss": true,
+    "optimizer": true,
+    "training": true,
+    "training_data": true,
+    "validation_data": true,
+    "validating": true,
+    "model_fields": true
+  },
+  "overlap_scope": "Geometry fingerprint rounds coordinates/cell to 1e-8 \u00c5 and preserves atom ordering. Absence of identical geometry does not establish trajectory-level independence."
+}

@@ -1,0 +1,5640 @@
+{
+  "available_curves": [
+    "DFT",
+    "PBE-5000/fixed/MP40",
+    "PBE-5000/fixed/MP50",
+    "PBE-5000/fixed/Gamma40",
+    "PBE-10000/fixed/MP40",
+    "PBE-10000/fixed/MP50",
+    "PBE-10000/fixed/Gamma40",
+    "PBE-15000/fixed/MP40",
+    "PBE-15000/fixed/MP50",
+    "PBE-15000/fixed/Gamma40",
+    "PBE-20000/fixed/MP40",
+    "PBE-20000/fixed/MP50",
+    "PBE-20000/fixed/Gamma40",
+    "PBE-23400/fixed/MP40",
+    "PBE-23400/fixed/MP50",
+    "PBE-23400/fixed/Gamma40",
+    "PBE-5000/equilibrium/MP40",
+    "PBE-5000/equilibrium/MP50",
+    "PBE-5000/equilibrium/Gamma40",
+    "PBE-15000/equilibrium/MP40",
+    "PBE-15000/equilibrium/MP50",
+    "PBE-15000/equilibrium/Gamma40",
+    "PBE-10000/equilibrium/MP40",
+    "PBE-10000/equilibrium/MP50",
+    "PBE-10000/equilibrium/Gamma40",
+    "PBE-20000/equilibrium/MP40",
+    "PBE-20000/equilibrium/MP50",
+    "PBE-20000/equilibrium/Gamma40",
+    "PBE-23400/equilibrium/MP40",
+    "PBE-23400/equilibrium/MP50",
+    "PBE-23400/equilibrium/Gamma40",
+    "PBEsol-5000/fixed/MP40",
+    "PBEsol-5000/fixed/MP50",
+    "PBEsol-5000/fixed/Gamma40",
+    "PBEsol-5000/equilibrium/MP40",
+    "PBEsol-5000/equilibrium/MP50",
+    "PBEsol-5000/equilibrium/Gamma40",
+    "PBEsol-10000/fixed/MP40",
+    "PBEsol-10000/fixed/MP50",
+    "PBEsol-10000/fixed/Gamma40",
+    "PBEsol-10000/equilibrium/MP40",
+    "PBEsol-10000/equilibrium/MP50",
+    "PBEsol-10000/equilibrium/Gamma40",
+    "PBEsol-15000/fixed/MP40",
+    "PBEsol-15000/fixed/MP50",
+    "PBEsol-15000/fixed/Gamma40",
+    "PBEsol-15000/equilibrium/MP40",
+    "PBEsol-15000/equilibrium/MP50",
+    "PBEsol-15000/equilibrium/Gamma40",
+    "PBEsol-20000/fixed/MP40",
+    "PBEsol-20000/fixed/MP50",
+    "PBEsol-20000/fixed/Gamma40",
+    "PBEsol-20000/equilibrium/MP40",
+    "PBEsol-20000/equilibrium/MP50",
+    "PBEsol-20000/equilibrium/Gamma40",
+    "PBEsol-23100/fixed/MP40",
+    "PBEsol-23100/fixed/MP50",
+    "PBEsol-23100/fixed/Gamma40",
+    "PBEsol-23100/equilibrium/MP40",
+    "PBEsol-23100/equilibrium/MP50",
+    "PBEsol-23100/equilibrium/Gamma40",
+    "r2SCAN-5000/fixed/MP40",
+    "r2SCAN-5000/fixed/MP50",
+    "r2SCAN-5000/fixed/Gamma40",
+    "r2SCAN-5000/equilibrium/MP40",
+    "r2SCAN-5000/equilibrium/MP50",
+    "r2SCAN-5000/equilibrium/Gamma40",
+    "r2SCAN-10000/fixed/MP40",
+    "r2SCAN-10000/fixed/MP50",
+    "r2SCAN-10000/fixed/Gamma40",
+    "r2SCAN-10000/equilibrium/MP40",
+    "r2SCAN-10000/equilibrium/MP50",
+    "r2SCAN-10000/equilibrium/Gamma40",
+    "r2SCAN-15000/fixed/MP40",
+    "r2SCAN-15000/fixed/MP50",
+    "r2SCAN-15000/fixed/Gamma40",
+    "r2SCAN-15000/equilibrium/MP40",
+    "r2SCAN-15000/equilibrium/MP50",
+    "r2SCAN-15000/equilibrium/Gamma40",
+    "r2SCAN-20000/fixed/MP40",
+    "r2SCAN-20000/fixed/MP50",
+    "r2SCAN-20000/fixed/Gamma40",
+    "r2SCAN-20000/equilibrium/MP40",
+    "r2SCAN-20000/equilibrium/MP50",
+    "r2SCAN-20000/equilibrium/Gamma40",
+    "r2SCAN-23200/fixed/MP40",
+    "r2SCAN-23200/fixed/MP50",
+    "r2SCAN-23200/fixed/Gamma40",
+    "r2SCAN-23200/equilibrium/MP40",
+    "r2SCAN-23200/equilibrium/MP50",
+    "r2SCAN-23200/equilibrium/Gamma40"
+  ],
+  "source_hashes": {
+    "PBE-10000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\10\\equilibrium\\results.npz",
+      "sha256": "907673823ac2ba2b992687b526a350c7b6a5fb86e144b7ee181e6c904ea7096d"
+    },
+    "PBE-20000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\11\\equilibrium\\results.npz",
+      "sha256": "2921d2a07cc1fdf76fb202f8acf70aeca2f8b7e4fbdd0184e137ed5fd323609f"
+    },
+    "PBE-23400/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\12\\equilibrium\\results.npz",
+      "sha256": "ef6ecc3e823377bb0fa894e0a0ada438f62ade8eeed1e72ffab7d3a3f3860133"
+    },
+    "PBEsol-5000/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\13\\fixed\\results.npz",
+      "sha256": "44e8e619c0c4b9aa2d3ac048f564b151e2a7537932b37a5227214c00a30dc34e"
+    },
+    "PBEsol-5000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\13\\equilibrium\\results.npz",
+      "sha256": "6c1853f507aca46f9c7b40e4ddce5b88d1bf119c59fff9a226b808cef21d6a0a"
+    },
+    "PBEsol-10000/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\14\\fixed\\results.npz",
+      "sha256": "9e3900281c9b78398095f0213c2bc717d201bb2e9ffdfbac25412f111439c41c"
+    },
+    "PBEsol-10000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\14\\equilibrium\\results.npz",
+      "sha256": "ad2aba341ee69d7eb1cfca05cde011d5cfadd811b7bd0e39be60e418feabd368"
+    },
+    "PBEsol-15000/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\15\\fixed\\results.npz",
+      "sha256": "aee6d05eef5946fc4b9646637fe7b4da29b7c72b126fe157c48d2549df157a5c"
+    },
+    "PBEsol-15000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\15\\equilibrium\\results.npz",
+      "sha256": "289b09c4ae1742b8a269f47710e1b8073dfc5df894e05891cbcc5bea7b38cda0"
+    },
+    "PBEsol-20000/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\16\\fixed\\results.npz",
+      "sha256": "2b749b3d6002dba29b73e114dae75ba5770a020a6a1a6bd1509a081f44eb1088"
+    },
+    "PBEsol-20000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\16\\equilibrium\\results.npz",
+      "sha256": "0c5aa29dc5ac36460170e55394cb75b6c26daafdf9c84fbf75987ad48b7524a2"
+    },
+    "PBEsol-23100/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\17\\fixed\\results.npz",
+      "sha256": "5553c0a37ec6c33a9492f8fa0695a49826bd67ac792e6f87b564767e8f968792"
+    },
+    "PBEsol-23100/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\17\\equilibrium\\results.npz",
+      "sha256": "8929353c3c94a3df51318e6b54502e5f1d8449f69403fe2caf117220365f3092"
+    },
+    "r2SCAN-5000/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\18\\fixed\\results.npz",
+      "sha256": "4323e4bf91927f403acc41185285e4ec91bed92ae2eda172024558e8660752d1"
+    },
+    "r2SCAN-5000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\18\\equilibrium\\results.npz",
+      "sha256": "5ab2eac68903ec6f1d3cf24784529c24d113ce7e16abe19712d05146090e9156"
+    },
+    "r2SCAN-10000/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\19\\fixed\\results.npz",
+      "sha256": "f7feba01268756f9478ba3a692eb9d54c2ff95ca63bc13594b12a1eca256d755"
+    },
+    "r2SCAN-10000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\19\\equilibrium\\results.npz",
+      "sha256": "c8008ff3c7965dbd580076ccad142a7a4af66362b2727f20b87587dfb1ac79d2"
+    },
+    "r2SCAN-15000/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\20\\fixed\\results.npz",
+      "sha256": "b3a1ce063cb78c03eb1d869c912fa4a8e55b879985015327e74154f3e5cfc08b"
+    },
+    "r2SCAN-15000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\20\\equilibrium\\results.npz",
+      "sha256": "5300c25be8bba22442175a03ea3f6be11312da952648a5c7366b77fa4ab914d5"
+    },
+    "r2SCAN-20000/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\21\\fixed\\results.npz",
+      "sha256": "6b74337cb5f5ce479190d030dbd7594337b6848997e9b58721ac0e835b8fd721"
+    },
+    "r2SCAN-20000/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\21\\equilibrium\\results.npz",
+      "sha256": "a217280795aea3e95dd2f01a8654141e9c40b1e93dc2eb2af0e53bcaeafaf4cb"
+    },
+    "r2SCAN-23200/fixed": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\22\\fixed\\results.npz",
+      "sha256": "ce7a2720cac9dbaf32376dbd546d48ff8439badda3643af76137f1f2ed054501"
+    },
+    "r2SCAN-23200/equilibrium": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\results\\22\\equilibrium\\results.npz",
+      "sha256": "0a74c79373a92fda68e0f941b43273f2ef13b08aa661539493cd3b65af324d0c"
+    }
+  },
+  "frequency": {
+    "PBE-10000/equilibrium/MP40": {
+      "min_THz": 0.22483659159052052,
+      "max_THz": 8.496657386680466,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.5310000001918525
+    },
+    "PBE-10000/equilibrium/MP50": {
+      "min_THz": 0.1654626025728903,
+      "max_THz": 8.497746518029581,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 9.125
+    },
+    "PBE-10000/equilibrium/Gamma40": {
+      "min_THz": -0.0002768228111243559,
+      "max_THz": 8.493670568962612,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 4.015999999828637
+    },
+    "PBE-20000/equilibrium/MP40": {
+      "min_THz": 0.22467429418878967,
+      "max_THz": 8.49656332903094,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.8590000001713634
+    },
+    "PBE-20000/equilibrium/MP50": {
+      "min_THz": 0.16421696238179648,
+      "max_THz": 8.497702270753878,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 9.281999999890104
+    },
+    "PBE-20000/equilibrium/Gamma40": {
+      "min_THz": -0.00020804334054532814,
+      "max_THz": 8.493305644691556,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.577999999979511
+    },
+    "PBE-23400/equilibrium/MP40": {
+      "min_THz": 0.22437489838455674,
+      "max_THz": 8.502545059716027,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.593000000109896
+    },
+    "PBE-23400/equilibrium/MP50": {
+      "min_THz": 0.16442411887196584,
+      "max_THz": 8.503709119422624,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 9.0
+    },
+    "PBE-23400/equilibrium/Gamma40": {
+      "min_THz": -0.0008455813286419079,
+      "max_THz": 8.499237822035964,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.672000000020489
+    },
+    "PBEsol-5000/fixed/MP40": {
+      "min_THz": 0.19339456833893565,
+      "max_THz": 7.706780192959907,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.2339999999385327
+    },
+    "PBEsol-5000/fixed/MP50": {
+      "min_THz": 0.14280478164836868,
+      "max_THz": 7.707659878090339,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.281000000191852
+    },
+    "PBEsol-5000/fixed/Gamma40": {
+      "min_THz": -0.0003837013288092414,
+      "max_THz": 7.704211907230415,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.172000000020489
+    },
+    "PBEsol-5000/equilibrium/MP40": {
+      "min_THz": 0.2063741654767519,
+      "max_THz": 8.424717940958462,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.344000000040978
+    },
+    "PBEsol-5000/equilibrium/MP50": {
+      "min_THz": 0.1536700974117842,
+      "max_THz": 8.425726306640211,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.516000000061467
+    },
+    "PBEsol-5000/equilibrium/Gamma40": {
+      "min_THz": -0.0007018941732084045,
+      "max_THz": 8.422047976017645,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.4369999999180436
+    },
+    "PBEsol-10000/fixed/MP40": {
+      "min_THz": 0.2164675652798112,
+      "max_THz": 8.041905426882863,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.3590000001713634
+    },
+    "PBEsol-10000/fixed/MP50": {
+      "min_THz": 0.15784307186731858,
+      "max_THz": 8.043043680101153,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.593999999808148
+    },
+    "PBEsol-10000/fixed/Gamma40": {
+      "min_THz": -0.00036283201492533516,
+      "max_THz": 8.038917376991089,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.1560000001918525
+    },
+    "PBEsol-10000/equilibrium/MP40": {
+      "min_THz": 0.22694736265869234,
+      "max_THz": 8.708786449569226,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.1880000000819564
+    },
+    "PBEsol-10000/equilibrium/MP50": {
+      "min_THz": 0.16443504373700782,
+      "max_THz": 8.710128318298752,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.077999999979511
+    },
+    "PBEsol-10000/equilibrium/Gamma40": {
+      "min_THz": -0.0005888632914442781,
+      "max_THz": 8.70565887326991,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.140000000130385
+    },
+    "PBEsol-15000/fixed/MP40": {
+      "min_THz": 0.20816729250135668,
+      "max_THz": 8.048433075217698,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.140000000130385
+    },
+    "PBEsol-15000/fixed/MP50": {
+      "min_THz": 0.15226198057979,
+      "max_THz": 8.049591740156279,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.140999999828637
+    },
+    "PBEsol-15000/fixed/Gamma40": {
+      "min_THz": -0.0009084383172435276,
+      "max_THz": 8.045200589285974,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.172000000020489
+    },
+    "PBEsol-15000/equilibrium/MP40": {
+      "min_THz": 0.21511198851555655,
+      "max_THz": 8.687292916107753,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.219000000040978
+    },
+    "PBEsol-15000/equilibrium/MP50": {
+      "min_THz": 0.15720218564693691,
+      "max_THz": 8.688581193968195,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 9.561999999918044
+    },
+    "PBEsol-15000/equilibrium/Gamma40": {
+      "min_THz": -0.00033650485588293603,
+      "max_THz": 8.683981893439073,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.4060000001918525
+    },
+    "PBEsol-20000/fixed/MP40": {
+      "min_THz": 0.21649683823845928,
+      "max_THz": 8.11424014850827,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.4060000001918525
+    },
+    "PBEsol-20000/fixed/MP50": {
+      "min_THz": 0.15577439338582863,
+      "max_THz": 8.115438805487848,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 9.875
+    },
+    "PBEsol-20000/fixed/Gamma40": {
+      "min_THz": -0.0002836930479728145,
+      "max_THz": 8.11102266111637,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.484999999869615
+    },
+    "PBEsol-20000/equilibrium/MP40": {
+      "min_THz": 0.22452603166195956,
+      "max_THz": 8.773138381782402,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.3909999998286366
+    },
+    "PBEsol-20000/equilibrium/MP50": {
+      "min_THz": 0.16218990322447802,
+      "max_THz": 8.774479159896117,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.766000000061467
+    },
+    "PBEsol-20000/equilibrium/Gamma40": {
+      "min_THz": -0.0003636668702200956,
+      "max_THz": 8.769800569757464,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.343000000109896
+    },
+    "PBEsol-23100/fixed/MP40": {
+      "min_THz": 0.21520268778334034,
+      "max_THz": 8.120447267845924,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.3119999999180436
+    },
+    "PBEsol-23100/fixed/MP50": {
+      "min_THz": 0.15493677048108007,
+      "max_THz": 8.121665785831985,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.327999999979511
+    },
+    "PBEsol-23100/fixed/Gamma40": {
+      "min_THz": -0.0011316319889315162,
+      "max_THz": 8.117265135534312,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.125
+    },
+    "PBEsol-23100/equilibrium/MP40": {
+      "min_THz": 0.22342063940205434,
+      "max_THz": 8.77679636037337,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.1879999998491257
+    },
+    "PBEsol-23100/equilibrium/MP50": {
+      "min_THz": 0.16096618927640516,
+      "max_THz": 8.778147149986566,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.422000000020489
+    },
+    "PBEsol-23100/equilibrium/Gamma40": {
+      "min_THz": -0.0003433361423179294,
+      "max_THz": 8.773500747117154,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.5
+    },
+    "r2SCAN-5000/fixed/MP40": {
+      "min_THz": 0.23008834422849353,
+      "max_THz": 8.459731014269021,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.3909999998286366
+    },
+    "r2SCAN-5000/fixed/MP50": {
+      "min_THz": 0.16891161106631128,
+      "max_THz": 8.460454637600444,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.891000000061467
+    },
+    "r2SCAN-5000/fixed/Gamma40": {
+      "min_THz": -0.0003635234345514732,
+      "max_THz": 8.45692334294254,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.405999999959022
+    },
+    "r2SCAN-5000/equilibrium/MP40": {
+      "min_THz": 0.2366535372693042,
+      "max_THz": 8.6939474385812,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.359999999869615
+    },
+    "r2SCAN-5000/equilibrium/MP50": {
+      "min_THz": 0.1716534391109948,
+      "max_THz": 8.694717849866942,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 10.875
+    },
+    "r2SCAN-5000/equilibrium/Gamma40": {
+      "min_THz": -0.0008874954077918842,
+      "max_THz": 8.691005572186706,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 4.672000000020489
+    },
+    "r2SCAN-10000/fixed/MP40": {
+      "min_THz": 0.22576958159119193,
+      "max_THz": 8.790252114396308,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.327999999979511
+    },
+    "r2SCAN-10000/fixed/MP50": {
+      "min_THz": 0.16587717762247237,
+      "max_THz": 8.791286934707122,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.890999999828637
+    },
+    "r2SCAN-10000/fixed/Gamma40": {
+      "min_THz": -0.0004320223525234797,
+      "max_THz": 8.78701799321867,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.4380000000819564
+    },
+    "r2SCAN-10000/equilibrium/MP40": {
+      "min_THz": 0.23330891718516683,
+      "max_THz": 9.007811253272584,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.297000000020489
+    },
+    "r2SCAN-10000/equilibrium/MP50": {
+      "min_THz": 0.16958983532685357,
+      "max_THz": 9.008898099507148,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.218999999808148
+    },
+    "r2SCAN-10000/equilibrium/Gamma40": {
+      "min_THz": -0.0006498442444081324,
+      "max_THz": 9.004479734164695,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.202999999979511
+    },
+    "r2SCAN-15000/fixed/MP40": {
+      "min_THz": 0.2335292266192592,
+      "max_THz": 8.868574076923348,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.202999999979511
+    },
+    "r2SCAN-15000/fixed/MP50": {
+      "min_THz": 0.16819148112220256,
+      "max_THz": 8.869699649805536,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.233999999938533
+    },
+    "r2SCAN-15000/fixed/Gamma40": {
+      "min_THz": -0.0007996015402710877,
+      "max_THz": 8.865275427857666,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.1100000001024455
+    },
+    "r2SCAN-15000/equilibrium/MP40": {
+      "min_THz": 0.2374492450974649,
+      "max_THz": 9.089106063942193,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.125
+    },
+    "r2SCAN-15000/equilibrium/MP50": {
+      "min_THz": 0.17115167336288065,
+      "max_THz": 9.090281786114145,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 8.359999999869615
+    },
+    "r2SCAN-15000/equilibrium/Gamma40": {
+      "min_THz": -0.0007242329049473126,
+      "max_THz": 9.0857345349591,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.375
+    },
+    "r2SCAN-20000/fixed/MP40": {
+      "min_THz": 0.23380731976628563,
+      "max_THz": 8.869041977116707,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 4.030999999959022
+    },
+    "r2SCAN-20000/fixed/MP50": {
+      "min_THz": 0.1684595241785903,
+      "max_THz": 8.87019543384375,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 9.766000000061467
+    },
+    "r2SCAN-20000/fixed/Gamma40": {
+      "min_THz": -0.0012368909038668,
+      "max_THz": 8.865701589008665,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.75
+    },
+    "r2SCAN-20000/equilibrium/MP40": {
+      "min_THz": 0.2373391036079626,
+      "max_THz": 9.081673440711194,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.6879999998491257
+    },
+    "r2SCAN-20000/equilibrium/MP50": {
+      "min_THz": 0.17118641318334377,
+      "max_THz": 9.082875202009308,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 9.812000000150874
+    },
+    "r2SCAN-20000/equilibrium/Gamma40": {
+      "min_THz": -0.0005312619201461369,
+      "max_THz": 9.078259480540716,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.656999999890104
+    },
+    "r2SCAN-23200/fixed/MP40": {
+      "min_THz": 0.23342438402999266,
+      "max_THz": 8.838121112071768,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.780999999959022
+    },
+    "r2SCAN-23200/fixed/MP50": {
+      "min_THz": 0.16800880759026843,
+      "max_THz": 8.839233033620228,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 10.141000000061467
+    },
+    "r2SCAN-23200/fixed/Gamma40": {
+      "min_THz": -0.0007973779496483144,
+      "max_THz": 8.834819639884445,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.405999999959022
+    },
+    "r2SCAN-23200/equilibrium/MP40": {
+      "min_THz": 0.2365741749964645,
+      "max_THz": 9.054769768494223,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.4370000001508743
+    },
+    "r2SCAN-23200/equilibrium/MP50": {
+      "min_THz": 0.17055973572703698,
+      "max_THz": 9.055942967950811,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 9.343999999808148
+    },
+    "r2SCAN-23200/equilibrium/Gamma40": {
+      "min_THz": -0.0003575466528202339,
+      "max_THz": 9.051398749376624,
+      "imaginary_below_minus_0p01_THz": 0,
+      "seconds": 3.9850000001024455
+    }
+  },
+  "width_checks": {
+    "0.05": {
+      "PBE-5000/fixed/MP40": {
+        "L2_relative": 0.24906831825882922,
+        "TV": 0.10656349953127212,
+        "W1_THz": 0.1449365210663069,
+        "mean_THz": 5.439689124999999,
+        "peak_THz": 6.7365
+      },
+      "PBE-5000/fixed/MP50": {
+        "L2_relative": 0.24908741073370375,
+        "TV": 0.10652249510998334,
+        "W1_THz": 0.14493786198972808,
+        "mean_THz": 5.4396894080000004,
+        "peak_THz": 6.7365
+      },
+      "PBE-5000/fixed/Gamma40": {
+        "L2_relative": 0.24954924658901642,
+        "TV": 0.10664138848304294,
+        "W1_THz": 0.14493933577633916,
+        "mean_THz": 5.439688663194445,
+        "peak_THz": 6.7345
+      },
+      "PBE-10000/fixed/MP40": {
+        "L2_relative": 0.3415137655180634,
+        "TV": 0.14615353660711333,
+        "W1_THz": 0.24140597382353873,
+        "mean_THz": 5.542072604166666,
+        "peak_THz": 7.027500000000001
+      },
+      "PBE-10000/fixed/MP50": {
+        "L2_relative": 0.3414642761043681,
+        "TV": 0.1460461033825352,
+        "W1_THz": 0.2414051691459309,
+        "mean_THz": 5.542071704,
+        "peak_THz": 7.0255
+      },
+      "PBE-10000/fixed/Gamma40": {
+        "L2_relative": 0.34155037037276886,
+        "TV": 0.1462397433593339,
+        "W1_THz": 0.24140756558524543,
+        "mean_THz": 5.5420709375,
+        "peak_THz": 7.0235
+      },
+      "PBE-15000/fixed/MP40": {
+        "L2_relative": 0.19821049257885687,
+        "TV": 0.08259564914185814,
+        "W1_THz": 0.0826171791821361,
+        "mean_THz": 5.364313125000001,
+        "peak_THz": 6.9135
+      },
+      "PBE-15000/fixed/MP50": {
+        "L2_relative": 0.1981704052414785,
+        "TV": 0.08256063122958596,
+        "W1_THz": 0.08261191203896784,
+        "mean_THz": 5.36431408,
+        "peak_THz": 6.9125000000000005
+      },
+      "PBE-15000/fixed/Gamma40": {
+        "L2_relative": 0.1983941560777301,
+        "TV": 0.08260144623138187,
+        "W1_THz": 0.08263164362240748,
+        "mean_THz": 5.3643145937500005,
+        "peak_THz": 6.9105
+      },
+      "PBE-20000/fixed/MP40": {
+        "L2_relative": 0.31125039630257717,
+        "TV": 0.13190428401146026,
+        "W1_THz": 0.19148174465687004,
+        "mean_THz": 5.492148374999999,
+        "peak_THz": 7.0375000000000005
+      },
+      "PBE-20000/fixed/MP50": {
+        "L2_relative": 0.31114878516570804,
+        "TV": 0.13186869609579893,
+        "W1_THz": 0.19148154971262682,
+        "mean_THz": 5.492148072000001,
+        "peak_THz": 7.0385
+      },
+      "PBE-20000/fixed/Gamma40": {
+        "L2_relative": 0.3111310142204138,
+        "TV": 0.13194305289988673,
+        "W1_THz": 0.19148194857726694,
+        "mean_THz": 5.492145298611112,
+        "peak_THz": 7.0385
+      },
+      "PBE-23400/fixed/MP40": {
+        "L2_relative": 0.30183261178582016,
+        "TV": 0.12741514770959383,
+        "W1_THz": 0.17879633493464858,
+        "mean_THz": 5.4794629652777775,
+        "peak_THz": 7.024500000000001
+      },
+      "PBE-23400/fixed/MP50": {
+        "L2_relative": 0.3017405245667857,
+        "TV": 0.12743969951886772,
+        "W1_THz": 0.17879513463991423,
+        "mean_THz": 5.4794616640000005,
+        "peak_THz": 7.024500000000001
+      },
+      "PBE-23400/fixed/Gamma40": {
+        "L2_relative": 0.3017347501554763,
+        "TV": 0.12759740246425844,
+        "W1_THz": 0.1787977910988072,
+        "mean_THz": 5.47946113888889,
+        "peak_THz": 7.024500000000001
+      },
+      "PBE-5000/equilibrium/MP40": {
+        "L2_relative": 0.3133685949382539,
+        "TV": 0.13266613006838196,
+        "W1_THz": 0.2672173071568704,
+        "mean_THz": 5.5678839374999995,
+        "peak_THz": 6.9235
+      },
+      "PBE-5000/equilibrium/MP50": {
+        "L2_relative": 0.3133113559430218,
+        "TV": 0.13248120547813275,
+        "W1_THz": 0.26721785100690415,
+        "mean_THz": 5.567884349333334,
+        "peak_THz": 6.9205
+      },
+      "PBE-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.3135978726737112,
+        "TV": 0.132322996639824,
+        "W1_THz": 0.26722112418451593,
+        "mean_THz": 5.567884444444445,
+        "peak_THz": 6.9145
+      },
+      "PBE-15000/equilibrium/MP40": {
+        "L2_relative": 0.28173127650770147,
+        "TV": 0.11988216762560298,
+        "W1_THz": 0.1866801543790927,
+        "mean_THz": 5.487346784722222,
+        "peak_THz": 7.0805
+      },
+      "PBE-15000/equilibrium/MP50": {
+        "L2_relative": 0.2816457143390708,
+        "TV": 0.1199478852275429,
+        "W1_THz": 0.18667915487986442,
+        "mean_THz": 5.487345632,
+        "peak_THz": 7.0805
+      },
+      "PBE-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.28194676113592315,
+        "TV": 0.12013369458770069,
+        "W1_THz": 0.18668183305984212,
+        "mean_THz": 5.487345125000001,
+        "peak_THz": 7.0785
+      },
+      "PBE-10000/equilibrium/MP40": {
+        "L2_relative": 0.4084519810425721,
+        "TV": 0.18061634857218256,
+        "W1_THz": 0.36400660576798183,
+        "mean_THz": 5.664673236111112,
+        "peak_THz": 7.200500000000001
+      },
+      "PBE-10000/equilibrium/MP50": {
+        "L2_relative": 0.40844902299124164,
+        "TV": 0.18059436074036844,
+        "W1_THz": 0.3640051860592073,
+        "mean_THz": 5.664671757333332,
+        "peak_THz": 7.1995000000000005
+      },
+      "PBE-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.40857685397099974,
+        "TV": 0.18084943811372817,
+        "W1_THz": 0.3640073970201868,
+        "mean_THz": 5.66467078125,
+        "peak_THz": 7.197500000000001
+      },
+      "PBE-20000/equilibrium/MP40": {
+        "L2_relative": 0.37502938816625286,
+        "TV": 0.1656281760834531,
+        "W1_THz": 0.30911943910131473,
+        "mean_THz": 5.609786069444445,
+        "peak_THz": 7.1915000000000004
+      },
+      "PBE-20000/equilibrium/MP50": {
+        "L2_relative": 0.37501187032295197,
+        "TV": 0.16553501135855733,
+        "W1_THz": 0.30911937602775486,
+        "mean_THz": 5.609785944,
+        "peak_THz": 7.1915000000000004
+      },
+      "PBE-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.3750626484603369,
+        "TV": 0.1653465444728339,
+        "W1_THz": 0.30911999262013434,
+        "mean_THz": 5.609783343750001,
+        "peak_THz": 7.1915000000000004
+      },
+      "PBE-23400/equilibrium/MP40": {
+        "L2_relative": 0.36863654498678916,
+        "TV": 0.16254424057919598,
+        "W1_THz": 0.29650078632353705,
+        "mean_THz": 5.597167416666666,
+        "peak_THz": 7.1785000000000005
+      },
+      "PBE-23400/equilibrium/MP50": {
+        "L2_relative": 0.3686102316482176,
+        "TV": 0.1624771423592526,
+        "W1_THz": 0.2965013463924594,
+        "mean_THz": 5.597167912,
+        "peak_THz": 7.1785000000000005
+      },
+      "PBE-23400/equilibrium/Gamma40": {
+        "L2_relative": 0.36868792985987664,
+        "TV": 0.16234651389076804,
+        "W1_THz": 0.29650541879406556,
+        "mean_THz": 5.597168770833333,
+        "peak_THz": 7.1785000000000005
+      },
+      "PBEsol-5000/fixed/MP40": {
+        "L2_relative": 0.31255741497105555,
+        "TV": 0.12560361639391499,
+        "W1_THz": 0.19624419769161267,
+        "mean_THz": 5.134620854166667,
+        "peak_THz": 6.4785
+      },
+      "PBEsol-5000/fixed/MP50": {
+        "L2_relative": 0.31253963716588135,
+        "TV": 0.12570723298054914,
+        "W1_THz": 0.19625089568209836,
+        "mean_THz": 5.134619525333333,
+        "peak_THz": 6.4805
+      },
+      "PBEsol-5000/fixed/Gamma40": {
+        "L2_relative": 0.3127162333538284,
+        "TV": 0.1261095633052262,
+        "W1_THz": 0.19625752869714602,
+        "mean_THz": 5.134619979166667,
+        "peak_THz": 6.4815
+      },
+      "PBEsol-5000/equilibrium/MP40": {
+        "L2_relative": 0.30804066235737043,
+        "TV": 0.11991597165910746,
+        "W1_THz": 0.2114691335457592,
+        "mean_THz": 5.512135763888889,
+        "peak_THz": 7.1415
+      },
+      "PBEsol-5000/equilibrium/MP50": {
+        "L2_relative": 0.3080239974415777,
+        "TV": 0.11998249963403848,
+        "W1_THz": 0.21146767510904318,
+        "mean_THz": 5.5121340960000005,
+        "peak_THz": 7.1385
+      },
+      "PBEsol-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.3082878825601996,
+        "TV": 0.12009501526340505,
+        "W1_THz": 0.21147160467029624,
+        "mean_THz": 5.5121347881944445,
+        "peak_THz": 7.1185
+      },
+      "PBEsol-10000/fixed/MP40": {
+        "L2_relative": 0.2956237590752935,
+        "TV": 0.13403997174342455,
+        "W1_THz": 0.16562339987214444,
+        "mean_THz": 5.340739736111111,
+        "peak_THz": 6.7035
+      },
+      "PBEsol-10000/fixed/MP50": {
+        "L2_relative": 0.29562173061910496,
+        "TV": 0.13421660900819465,
+        "W1_THz": 0.16562763460699767,
+        "mean_THz": 5.340739874666667,
+        "peak_THz": 6.7045
+      },
+      "PBEsol-10000/fixed/Gamma40": {
+        "L2_relative": 0.29583309033276506,
+        "TV": 0.13454216868893226,
+        "W1_THz": 0.16563126383446802,
+        "mean_THz": 5.340741371527777,
+        "peak_THz": 6.7075000000000005
+      },
+      "PBEsol-10000/equilibrium/MP40": {
+        "L2_relative": 0.38675190562509276,
+        "TV": 0.1708393322189279,
+        "W1_THz": 0.3617686196568707,
+        "mean_THz": 5.66243525,
+        "peak_THz": 7.2985
+      },
+      "PBEsol-10000/equilibrium/MP50": {
+        "L2_relative": 0.3867725844505719,
+        "TV": 0.170817279253669,
+        "W1_THz": 0.36176702272844563,
+        "mean_THz": 5.662433602666667,
+        "peak_THz": 7.2995
+      },
+      "PBEsol-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.3872015148152129,
+        "TV": 0.1710282566576048,
+        "W1_THz": 0.36176919175173583,
+        "mean_THz": 5.662432517361111,
+        "peak_THz": 7.3135
+      },
+      "PBEsol-15000/fixed/MP40": {
+        "L2_relative": 0.2608606087674342,
+        "TV": 0.11882276180057061,
+        "W1_THz": 0.15695896172319102,
+        "mean_THz": 5.240302909722223,
+        "peak_THz": 6.7205
+      },
+      "PBEsol-15000/fixed/MP50": {
+        "L2_relative": 0.26078407972897266,
+        "TV": 0.11872909958660982,
+        "W1_THz": 0.15695536797203002,
+        "mean_THz": 5.240303784,
+        "peak_THz": 6.7195
+      },
+      "PBEsol-15000/fixed/Gamma40": {
+        "L2_relative": 0.2608243953178853,
+        "TV": 0.11864289922298998,
+        "W1_THz": 0.15695277003038022,
+        "mean_THz": 5.240302017361112,
+        "peak_THz": 6.7165
+      },
+      "PBEsol-15000/equilibrium/MP40": {
+        "L2_relative": 0.3348005296287474,
+        "TV": 0.14078150485943874,
+        "W1_THz": 0.25396581410131536,
+        "mean_THz": 5.554632444444444,
+        "peak_THz": 7.2855
+      },
+      "PBEsol-15000/equilibrium/MP50": {
+        "L2_relative": 0.33476958036997745,
+        "TV": 0.14072504807165115,
+        "W1_THz": 0.2539639505443453,
+        "mean_THz": 5.55463044,
+        "peak_THz": 7.2855
+      },
+      "PBEsol-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.3349872427850424,
+        "TV": 0.1407770363487875,
+        "W1_THz": 0.2539661894991719,
+        "mean_THz": 5.554629374999999,
+        "peak_THz": 7.2865
+      },
+      "PBEsol-20000/fixed/MP40": {
+        "L2_relative": 0.25023130730203275,
+        "TV": 0.11273990907647272,
+        "W1_THz": 0.14207806408480744,
+        "mean_THz": 5.327306506944446,
+        "peak_THz": 6.809500000000001
+      },
+      "PBEsol-20000/fixed/MP50": {
+        "L2_relative": 0.2502018333370011,
+        "TV": 0.11283006334953657,
+        "W1_THz": 0.14207540679646294,
+        "mean_THz": 5.327306210666667,
+        "peak_THz": 6.809500000000001
+      },
+      "PBEsol-20000/fixed/Gamma40": {
+        "L2_relative": 0.2502812616001052,
+        "TV": 0.11281478635677485,
+        "W1_THz": 0.14208283480144235,
+        "mean_THz": 5.327304569444445,
+        "peak_THz": 6.8075
+      },
+      "PBEsol-20000/equilibrium/MP40": {
+        "L2_relative": 0.3884012643087613,
+        "TV": 0.1684435429645437,
+        "W1_THz": 0.35839934187909245,
+        "mean_THz": 5.659065972222223,
+        "peak_THz": 7.3895
+      },
+      "PBEsol-20000/equilibrium/MP50": {
+        "L2_relative": 0.3884377367373903,
+        "TV": 0.16851098708730156,
+        "W1_THz": 0.3583991262307572,
+        "mean_THz": 5.659065690666667,
+        "peak_THz": 7.3895
+      },
+      "PBEsol-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.38873683379173934,
+        "TV": 0.168883628200525,
+        "W1_THz": 0.3584022264326804,
+        "mean_THz": 5.659065503472222,
+        "peak_THz": 7.3905
+      },
+      "PBEsol-23100/fixed/MP40": {
+        "L2_relative": 0.24844986505469793,
+        "TV": 0.11324753517237193,
+        "W1_THz": 0.1439142606425975,
+        "mean_THz": 5.308868590277778,
+        "peak_THz": 6.8045
+      },
+      "PBEsol-23100/fixed/MP50": {
+        "L2_relative": 0.248405566674954,
+        "TV": 0.1132940374281783,
+        "W1_THz": 0.14391180992611716,
+        "mean_THz": 5.308868874666667,
+        "peak_THz": 6.8045
+      },
+      "PBEsol-23100/fixed/Gamma40": {
+        "L2_relative": 0.24845668333353182,
+        "TV": 0.11324311839440375,
+        "W1_THz": 0.14391683965550492,
+        "mean_THz": 5.308866708333333,
+        "peak_THz": 6.8025
+      },
+      "PBEsol-23100/equilibrium/MP40": {
+        "L2_relative": 0.37712542474475247,
+        "TV": 0.16298682019537541,
+        "W1_THz": 0.3376032585457601,
+        "mean_THz": 5.638269888888889,
+        "peak_THz": 7.3805000000000005
+      },
+      "PBEsol-23100/equilibrium/MP50": {
+        "L2_relative": 0.37713488404075846,
+        "TV": 0.16303615834495624,
+        "W1_THz": 0.3376035019114553,
+        "mean_THz": 5.6382700560000005,
+        "peak_THz": 7.3805000000000005
+      },
+      "PBEsol-23100/equilibrium/Gamma40": {
+        "L2_relative": 0.37737289195742435,
+        "TV": 0.1632715716037675,
+        "W1_THz": 0.33760606039656305,
+        "mean_THz": 5.638269322916667,
+        "peak_THz": 7.3815
+      },
+      "r2SCAN-5000/fixed/MP40": {
+        "L2_relative": 0.451871207113321,
+        "TV": 0.2055750472406313,
+        "W1_THz": 0.4427813557679814,
+        "mean_THz": 5.743447986111112,
+        "peak_THz": 7.3955
+      },
+      "r2SCAN-5000/fixed/MP50": {
+        "L2_relative": 0.45182191300646146,
+        "TV": 0.20549860337291853,
+        "W1_THz": 0.4427838484128168,
+        "mean_THz": 5.743450445333334,
+        "peak_THz": 7.3765
+      },
+      "r2SCAN-5000/fixed/Gamma40": {
+        "L2_relative": 0.451847250088401,
+        "TV": 0.20580170495841127,
+        "W1_THz": 0.4427841667174145,
+        "mean_THz": 5.743447586805555,
+        "peak_THz": 7.367500000000001
+      },
+      "r2SCAN-5000/equilibrium/MP40": {
+        "L2_relative": 0.5229223816871436,
+        "TV": 0.22617581222843816,
+        "W1_THz": 0.5562068696568707,
+        "mean_THz": 5.856873500000001,
+        "peak_THz": 7.6675
+      },
+      "r2SCAN-5000/equilibrium/MP50": {
+        "L2_relative": 0.5229634272215823,
+        "TV": 0.22630457781069582,
+        "W1_THz": 0.5562061599330526,
+        "mean_THz": 5.856872778666666,
+        "peak_THz": 7.6755
+      },
+      "r2SCAN-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.5232416876444617,
+        "TV": 0.22651422629882267,
+        "W1_THz": 0.5562087909477247,
+        "mean_THz": 5.856872197916666,
+        "peak_THz": 7.6735
+      },
+      "r2SCAN-10000/fixed/MP40": {
+        "L2_relative": 0.45350082078548415,
+        "TV": 0.20078029185756804,
+        "W1_THz": 0.4534177099346502,
+        "mean_THz": 5.754084340277778,
+        "peak_THz": 7.5605
+      },
+      "r2SCAN-10000/fixed/MP50": {
+        "L2_relative": 0.45348590025898095,
+        "TV": 0.20076773465904457,
+        "W1_THz": 0.45341663103372637,
+        "mean_THz": 5.754083208,
+        "peak_THz": 7.5605
+      },
+      "r2SCAN-10000/fixed/Gamma40": {
+        "L2_relative": 0.4536734433373775,
+        "TV": 0.20106639978400298,
+        "W1_THz": 0.453417431355974,
+        "mean_THz": 5.754080819444445,
+        "peak_THz": 7.5645
+      },
+      "r2SCAN-10000/equilibrium/MP40": {
+        "L2_relative": 0.5274994856273925,
+        "TV": 0.22886247451876335,
+        "W1_THz": 0.5628561335457622,
+        "mean_THz": 5.86352276388889,
+        "peak_THz": 7.7495
+      },
+      "r2SCAN-10000/equilibrium/MP50": {
+        "L2_relative": 0.5274962349963732,
+        "TV": 0.2287651912461216,
+        "W1_THz": 0.5628548701230218,
+        "mean_THz": 5.863521480000001,
+        "peak_THz": 7.7505
+      },
+      "r2SCAN-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.5276010340925508,
+        "TV": 0.22914723738635748,
+        "W1_THz": 0.5628581619704021,
+        "mean_THz": 5.863521548611111,
+        "peak_THz": 7.7515
+      },
+      "r2SCAN-15000/fixed/MP40": {
+        "L2_relative": 0.5011037465021988,
+        "TV": 0.2236330136100712,
+        "W1_THz": 0.5280006891013154,
+        "mean_THz": 5.8286673194444445,
+        "peak_THz": 7.6245
+      },
+      "r2SCAN-15000/fixed/MP50": {
+        "L2_relative": 0.5011332296046355,
+        "TV": 0.2236655570211928,
+        "W1_THz": 0.5280010179902916,
+        "mean_THz": 5.828667624,
+        "peak_THz": 7.6245
+      },
+      "r2SCAN-15000/fixed/Gamma40": {
+        "L2_relative": 0.5012173052346536,
+        "TV": 0.22402854222596513,
+        "W1_THz": 0.5280023744291881,
+        "mean_THz": 5.828665781250001,
+        "peak_THz": 7.6245
+      },
+      "r2SCAN-15000/equilibrium/MP40": {
+        "L2_relative": 0.5642878885249298,
+        "TV": 0.2512233821046067,
+        "W1_THz": 0.6446324321568708,
+        "mean_THz": 5.9452990625,
+        "peak_THz": 7.8025
+      },
+      "r2SCAN-15000/equilibrium/MP50": {
+        "L2_relative": 0.5642931317960914,
+        "TV": 0.25118361283442164,
+        "W1_THz": 0.6446302870340892,
+        "mean_THz": 5.945296909333334,
+        "peak_THz": 7.8025
+      },
+      "r2SCAN-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.5644779119741672,
+        "TV": 0.2513398492590282,
+        "W1_THz": 0.6446318776735266,
+        "mean_THz": 5.945295281249999,
+        "peak_THz": 7.8035000000000005
+      },
+      "r2SCAN-20000/fixed/MP40": {
+        "L2_relative": 0.4863366384494479,
+        "TV": 0.21810742341716866,
+        "W1_THz": 0.49760166132354433,
+        "mean_THz": 5.798268291666667,
+        "peak_THz": 7.604500000000001
+      },
+      "r2SCAN-20000/fixed/MP50": {
+        "L2_relative": 0.4863466744262927,
+        "TV": 0.2181392702043331,
+        "W1_THz": 0.49760187669620226,
+        "mean_THz": 5.798268482666667,
+        "peak_THz": 7.604500000000001
+      },
+      "r2SCAN-20000/fixed/Gamma40": {
+        "L2_relative": 0.4864622375878183,
+        "TV": 0.21851288700783422,
+        "W1_THz": 0.4976027320466211,
+        "mean_THz": 5.79826613888889,
+        "peak_THz": 7.604500000000001
+      },
+      "r2SCAN-20000/equilibrium/MP40": {
+        "L2_relative": 0.5522304361359992,
+        "TV": 0.24571264585113153,
+        "W1_THz": 0.6077086752124286,
+        "mean_THz": 5.9083753055555555,
+        "peak_THz": 7.7795
+      },
+      "r2SCAN-20000/equilibrium/MP50": {
+        "L2_relative": 0.5522789004007806,
+        "TV": 0.2456085645198444,
+        "W1_THz": 0.6077090874832946,
+        "mean_THz": 5.908375709333334,
+        "peak_THz": 7.7795
+      },
+      "r2SCAN-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.5525599185094981,
+        "TV": 0.24563377100412348,
+        "W1_THz": 0.607710966243669,
+        "mean_THz": 5.908374378472223,
+        "peak_THz": 7.7795
+      },
+      "r2SCAN-23200/fixed/MP40": {
+        "L2_relative": 0.4937481759656059,
+        "TV": 0.2201468863640663,
+        "W1_THz": 0.5038492654902056,
+        "mean_THz": 5.804515895833333,
+        "peak_THz": 7.620500000000001
+      },
+      "r2SCAN-23200/fixed/MP50": {
+        "L2_relative": 0.4937601265795545,
+        "TV": 0.22022472212779842,
+        "W1_THz": 0.5038477289943407,
+        "mean_THz": 5.804514336,
+        "peak_THz": 7.6195
+      },
+      "r2SCAN-23200/fixed/Gamma40": {
+        "L2_relative": 0.49387441471921273,
+        "TV": 0.22068058800715915,
+        "W1_THz": 0.5038493380516282,
+        "mean_THz": 5.804512753472222,
+        "peak_THz": 7.6195
+      },
+      "r2SCAN-23200/equilibrium/MP40": {
+        "L2_relative": 0.5589075117471443,
+        "TV": 0.24823147951500973,
+        "W1_THz": 0.6149918349346479,
+        "mean_THz": 5.915658465277778,
+        "peak_THz": 7.7955
+      },
+      "r2SCAN-23200/equilibrium/MP50": {
+        "L2_relative": 0.5589559021995736,
+        "TV": 0.24819630800819825,
+        "W1_THz": 0.6149937406145982,
+        "mean_THz": 5.915660362666667,
+        "peak_THz": 7.7955
+      },
+      "r2SCAN-23200/equilibrium/Gamma40": {
+        "L2_relative": 0.5592378037002579,
+        "TV": 0.2483682574171881,
+        "W1_THz": 0.6149948863520036,
+        "mean_THz": 5.9156582986111115,
+        "peak_THz": 7.7945
+      }
+    },
+    "0.1": {
+      "PBE-5000/fixed/MP40": {
+        "L2_relative": 0.22870184393662998,
+        "TV": 0.09783287862913953,
+        "W1_THz": 0.14473507492276266,
+        "mean_THz": 5.439689124999999,
+        "peak_THz": 6.7645
+      },
+      "PBE-5000/fixed/MP50": {
+        "L2_relative": 0.2287085639722117,
+        "TV": 0.09783629912873645,
+        "W1_THz": 0.1447362532800561,
+        "mean_THz": 5.4396894080000004,
+        "peak_THz": 6.7645
+      },
+      "PBE-5000/fixed/Gamma40": {
+        "L2_relative": 0.22870709054087332,
+        "TV": 0.09784132200863951,
+        "W1_THz": 0.14473758953466284,
+        "mean_THz": 5.439688663194445,
+        "peak_THz": 6.7645
+      },
+      "PBE-10000/fixed/MP40": {
+        "L2_relative": 0.31541093057747793,
+        "TV": 0.13697298934938698,
+        "W1_THz": 0.24140597382353685,
+        "mean_THz": 5.542072604166666,
+        "peak_THz": 7.0295
+      },
+      "PBE-10000/fixed/MP50": {
+        "L2_relative": 0.31541071950669214,
+        "TV": 0.13697268288675457,
+        "W1_THz": 0.24140507964213254,
+        "mean_THz": 5.542071704,
+        "peak_THz": 7.0305
+      },
+      "PBE-10000/fixed/Gamma40": {
+        "L2_relative": 0.3154058252216208,
+        "TV": 0.13697448735378773,
+        "W1_THz": 0.24140669346466184,
+        "mean_THz": 5.542070937500001,
+        "peak_THz": 7.0295
+      },
+      "PBE-15000/fixed/MP40": {
+        "L2_relative": 0.17916173083226153,
+        "TV": 0.07554299163062156,
+        "W1_THz": 0.08198191594471994,
+        "mean_THz": 5.364313125000001,
+        "peak_THz": 6.9145
+      },
+      "PBE-15000/fixed/MP50": {
+        "L2_relative": 0.17915451535450203,
+        "TV": 0.07553565919649123,
+        "W1_THz": 0.08197898049823112,
+        "mean_THz": 5.36431408,
+        "peak_THz": 6.9145
+      },
+      "PBE-15000/fixed/Gamma40": {
+        "L2_relative": 0.17915662573917104,
+        "TV": 0.07553519186146052,
+        "W1_THz": 0.0819839740845895,
+        "mean_THz": 5.3643145937500005,
+        "peak_THz": 6.9135
+      },
+      "PBE-20000/fixed/MP40": {
+        "L2_relative": 0.2822983463186548,
+        "TV": 0.12153805576404651,
+        "W1_THz": 0.1914817446568704,
+        "mean_THz": 5.492148375,
+        "peak_THz": 7.0305
+      },
+      "PBE-20000/fixed/MP50": {
+        "L2_relative": 0.2822953103264122,
+        "TV": 0.12154191593075317,
+        "W1_THz": 0.19148145002692796,
+        "mean_THz": 5.492148072000001,
+        "peak_THz": 7.0305
+      },
+      "PBE-20000/fixed/Gamma40": {
+        "L2_relative": 0.28228553129039785,
+        "TV": 0.12155537137219863,
+        "W1_THz": 0.19148110722825018,
+        "mean_THz": 5.492145298611112,
+        "peak_THz": 7.0305
+      },
+      "PBE-23400/fixed/MP40": {
+        "L2_relative": 0.27313463320229203,
+        "TV": 0.11719732308496407,
+        "W1_THz": 0.17879633493464817,
+        "mean_THz": 5.479462965277778,
+        "peak_THz": 7.0155
+      },
+      "PBE-23400/fixed/MP50": {
+        "L2_relative": 0.27312968931158005,
+        "TV": 0.11720260311439328,
+        "W1_THz": 0.17879504103446814,
+        "mean_THz": 5.4794616640000005,
+        "peak_THz": 7.0155
+      },
+      "PBE-23400/fixed/Gamma40": {
+        "L2_relative": 0.2731239427566876,
+        "TV": 0.11721791947331299,
+        "W1_THz": 0.1787969590121197,
+        "mean_THz": 5.4794611388888885,
+        "peak_THz": 7.0155
+      },
+      "PBE-5000/equilibrium/MP40": {
+        "L2_relative": 0.28781431030458765,
+        "TV": 0.12649796048049616,
+        "W1_THz": 0.2672173071568701,
+        "mean_THz": 5.5678839374999995,
+        "peak_THz": 6.9495000000000005
+      },
+      "PBE-5000/equilibrium/MP50": {
+        "L2_relative": 0.2878128122468465,
+        "TV": 0.12648505117247966,
+        "W1_THz": 0.2672177330699849,
+        "mean_THz": 5.567884349333333,
+        "peak_THz": 6.9495000000000005
+      },
+      "PBE-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.2878085456489243,
+        "TV": 0.12645355431392669,
+        "W1_THz": 0.2672203318266595,
+        "mean_THz": 5.567884444444445,
+        "peak_THz": 6.9495000000000005
+      },
+      "PBE-15000/equilibrium/MP40": {
+        "L2_relative": 0.24417512174253167,
+        "TV": 0.10859147301758612,
+        "W1_THz": 0.18668015437909302,
+        "mean_THz": 5.487346784722224,
+        "peak_THz": 7.072500000000001
+      },
+      "PBE-15000/equilibrium/MP50": {
+        "L2_relative": 0.24417690935954525,
+        "TV": 0.10860805740799331,
+        "W1_THz": 0.18667902357203772,
+        "mean_THz": 5.487345632,
+        "peak_THz": 7.072500000000001
+      },
+      "PBE-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.24417440213432548,
+        "TV": 0.10866567992734416,
+        "W1_THz": 0.18668108798493055,
+        "mean_THz": 5.487345125000001,
+        "peak_THz": 7.072500000000001
+      },
+      "PBE-10000/equilibrium/MP40": {
+        "L2_relative": 0.3800952185228472,
+        "TV": 0.17174400291503422,
+        "W1_THz": 0.3640066057679876,
+        "mean_THz": 5.66467323611111,
+        "peak_THz": 7.1915000000000004
+      },
+      "PBE-10000/equilibrium/MP50": {
+        "L2_relative": 0.38009600519937736,
+        "TV": 0.17173898947436794,
+        "W1_THz": 0.3640051288246555,
+        "mean_THz": 5.664671757333333,
+        "peak_THz": 7.1915000000000004
+      },
+      "PBE-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.380096978907302,
+        "TV": 0.17174172614174715,
+        "W1_THz": 0.36400649914929323,
+        "mean_THz": 5.664670781250001,
+        "peak_THz": 7.1915000000000004
+      },
+      "PBE-20000/equilibrium/MP40": {
+        "L2_relative": 0.34368640427259955,
+        "TV": 0.15496712783996472,
+        "W1_THz": 0.3091194391013167,
+        "mean_THz": 5.609786069444445,
+        "peak_THz": 7.1835
+      },
+      "PBE-20000/equilibrium/MP50": {
+        "L2_relative": 0.3436878813667422,
+        "TV": 0.15496430421524365,
+        "W1_THz": 0.3091193158675836,
+        "mean_THz": 5.609785943999999,
+        "peak_THz": 7.1835
+      },
+      "PBE-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.34368527696192114,
+        "TV": 0.15495915416758715,
+        "W1_THz": 0.309119124873971,
+        "mean_THz": 5.609783343749999,
+        "peak_THz": 7.1835
+      },
+      "PBE-23400/equilibrium/MP40": {
+        "L2_relative": 0.33625285903213925,
+        "TV": 0.15148977745779202,
+        "W1_THz": 0.29650078632354165,
+        "mean_THz": 5.597167416666666,
+        "peak_THz": 7.1695
+      },
+      "PBE-23400/equilibrium/MP50": {
+        "L2_relative": 0.3362554604574471,
+        "TV": 0.15148951128356417,
+        "W1_THz": 0.29650128411949284,
+        "mean_THz": 5.597167912,
+        "peak_THz": 7.1695
+      },
+      "PBE-23400/equilibrium/Gamma40": {
+        "L2_relative": 0.33625389806128725,
+        "TV": 0.151487745743672,
+        "W1_THz": 0.29650455919762303,
+        "mean_THz": 5.597168770833333,
+        "peak_THz": 7.1695
+      },
+      "PBEsol-5000/fixed/MP40": {
+        "L2_relative": 0.28429220672249816,
+        "TV": 0.11690390481412076,
+        "W1_THz": 0.19603104777472158,
+        "mean_THz": 5.134620854166666,
+        "peak_THz": 6.5095
+      },
+      "PBEsol-5000/fixed/MP50": {
+        "L2_relative": 0.2842916984254334,
+        "TV": 0.11690742676856286,
+        "W1_THz": 0.19603257116506784,
+        "mean_THz": 5.134619525333333,
+        "peak_THz": 6.5095
+      },
+      "PBEsol-5000/fixed/Gamma40": {
+        "L2_relative": 0.2842920970993168,
+        "TV": 0.11693407087410077,
+        "W1_THz": 0.1960368481557459,
+        "mean_THz": 5.134619979166667,
+        "peak_THz": 6.5095
+      },
+      "PBEsol-5000/equilibrium/MP40": {
+        "L2_relative": 0.2808847177239399,
+        "TV": 0.11283873852486759,
+        "W1_THz": 0.2114691335457592,
+        "mean_THz": 5.512135763888889,
+        "peak_THz": 7.1915000000000004
+      },
+      "PBEsol-5000/equilibrium/MP50": {
+        "L2_relative": 0.28088269768674934,
+        "TV": 0.11284418048287455,
+        "W1_THz": 0.21146751959804638,
+        "mean_THz": 5.512134096,
+        "peak_THz": 7.1915000000000004
+      },
+      "PBEsol-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.28088488401849726,
+        "TV": 0.11285713458976321,
+        "W1_THz": 0.21147098360330707,
+        "mean_THz": 5.512134788194445,
+        "peak_THz": 7.1925
+      },
+      "PBEsol-10000/fixed/MP40": {
+        "L2_relative": 0.2761481440819874,
+        "TV": 0.12729363659695775,
+        "W1_THz": 0.1652151779413683,
+        "mean_THz": 5.340739736111111,
+        "peak_THz": 6.710500000000001
+      },
+      "PBEsol-10000/fixed/MP50": {
+        "L2_relative": 0.2761461706316043,
+        "TV": 0.1273052583927967,
+        "W1_THz": 0.1652178034793252,
+        "mean_THz": 5.340739874666667,
+        "peak_THz": 6.710500000000001
+      },
+      "PBEsol-10000/fixed/Gamma40": {
+        "L2_relative": 0.27614437546461373,
+        "TV": 0.12733153498076333,
+        "W1_THz": 0.16521647161026573,
+        "mean_THz": 5.340741371527777,
+        "peak_THz": 6.710500000000001
+      },
+      "PBEsol-10000/equilibrium/MP40": {
+        "L2_relative": 0.3641568308172343,
+        "TV": 0.1643345987062,
+        "W1_THz": 0.36176861965687035,
+        "mean_THz": 5.662435250000001,
+        "peak_THz": 7.3125
+      },
+      "PBEsol-10000/equilibrium/MP50": {
+        "L2_relative": 0.36415816753008723,
+        "TV": 0.16433165395005275,
+        "W1_THz": 0.3617669736264411,
+        "mean_THz": 5.662433602666667,
+        "peak_THz": 7.3125
+      },
+      "PBEsol-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.36416407176074156,
+        "TV": 0.16435580833573094,
+        "W1_THz": 0.3617683348398114,
+        "mean_THz": 5.66243251736111,
+        "peak_THz": 7.3125
+      },
+      "PBEsol-15000/fixed/MP40": {
+        "L2_relative": 0.23339341050536447,
+        "TV": 0.10959243740087588,
+        "W1_THz": 0.15670086067692734,
+        "mean_THz": 5.240302909722223,
+        "peak_THz": 6.7235000000000005
+      },
+      "PBEsol-15000/fixed/MP50": {
+        "L2_relative": 0.23338887134450106,
+        "TV": 0.10958953240838101,
+        "W1_THz": 0.15670088056833523,
+        "mean_THz": 5.240303784000001,
+        "peak_THz": 6.7235000000000005
+      },
+      "PBEsol-15000/fixed/Gamma40": {
+        "L2_relative": 0.2333896317596468,
+        "TV": 0.10958919057145253,
+        "W1_THz": 0.15670142447124855,
+        "mean_THz": 5.240302017361111,
+        "peak_THz": 6.7235000000000005
+      },
+      "PBEsol-15000/equilibrium/MP40": {
+        "L2_relative": 0.3062678920196635,
+        "TV": 0.1308760142321218,
+        "W1_THz": 0.2539658141013175,
+        "mean_THz": 5.554632444444444,
+        "peak_THz": 7.277500000000001
+      },
+      "PBEsol-15000/equilibrium/MP50": {
+        "L2_relative": 0.306273625811546,
+        "TV": 0.13087082210666984,
+        "W1_THz": 0.2539638300582312,
+        "mean_THz": 5.5546304399999995,
+        "peak_THz": 7.277500000000001
+      },
+      "PBEsol-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.30628153143822007,
+        "TV": 0.13087137589795342,
+        "W1_THz": 0.2539654876302813,
+        "mean_THz": 5.554629375,
+        "peak_THz": 7.277500000000001
+      },
+      "PBEsol-20000/fixed/MP40": {
+        "L2_relative": 0.23462662325831027,
+        "TV": 0.10713673046232543,
+        "W1_THz": 0.14173872691550113,
+        "mean_THz": 5.327306506944446,
+        "peak_THz": 6.8085
+      },
+      "PBEsol-20000/fixed/MP50": {
+        "L2_relative": 0.23462406462420368,
+        "TV": 0.10714340611438708,
+        "W1_THz": 0.14173571351792053,
+        "mean_THz": 5.327306210666666,
+        "peak_THz": 6.8085
+      },
+      "PBEsol-20000/fixed/Gamma40": {
+        "L2_relative": 0.23463225927181464,
+        "TV": 0.10716891216304962,
+        "W1_THz": 0.14173913956793435,
+        "mean_THz": 5.327304569444443,
+        "peak_THz": 6.8075
+      },
+      "PBEsol-20000/equilibrium/MP40": {
+        "L2_relative": 0.36536867074362034,
+        "TV": 0.16273697906353646,
+        "W1_THz": 0.35839934187909706,
+        "mean_THz": 5.659065972222223,
+        "peak_THz": 7.3805000000000005
+      },
+      "PBEsol-20000/equilibrium/MP50": {
+        "L2_relative": 0.3653715838453061,
+        "TV": 0.1627440594405472,
+        "W1_THz": 0.35839906302357644,
+        "mean_THz": 5.659065690666667,
+        "peak_THz": 7.3805000000000005
+      },
+      "PBEsol-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.3653789606627148,
+        "TV": 0.16279060795367056,
+        "W1_THz": 0.358401409457917,
+        "mean_THz": 5.659065503472222,
+        "peak_THz": 7.3805000000000005
+      },
+      "PBEsol-23100/fixed/MP40": {
+        "L2_relative": 0.23152252158072156,
+        "TV": 0.1070201576546326,
+        "W1_THz": 0.14359687861547457,
+        "mean_THz": 5.308868590277777,
+        "peak_THz": 6.8015
+      },
+      "PBEsol-23100/fixed/MP50": {
+        "L2_relative": 0.23152804180835646,
+        "TV": 0.10702881165670558,
+        "W1_THz": 0.14359699349038665,
+        "mean_THz": 5.308868874666667,
+        "peak_THz": 6.8015
+      },
+      "PBEsol-23100/fixed/Gamma40": {
+        "L2_relative": 0.23152162587736821,
+        "TV": 0.10704144869637124,
+        "W1_THz": 0.1435983703758955,
+        "mean_THz": 5.308866708333333,
+        "peak_THz": 6.8015
+      },
+      "PBEsol-23100/equilibrium/MP40": {
+        "L2_relative": 0.3532250939010711,
+        "TV": 0.15659013304187833,
+        "W1_THz": 0.3376032585457617,
+        "mean_THz": 5.638269888888889,
+        "peak_THz": 7.370500000000001
+      },
+      "PBEsol-23100/equilibrium/MP50": {
+        "L2_relative": 0.3532250688505397,
+        "TV": 0.15659354114452334,
+        "W1_THz": 0.3376034296904754,
+        "mean_THz": 5.6382700560000005,
+        "peak_THz": 7.370500000000001
+      },
+      "PBEsol-23100/equilibrium/Gamma40": {
+        "L2_relative": 0.35323099020745535,
+        "TV": 0.1566294317883068,
+        "W1_THz": 0.33760525943258335,
+        "mean_THz": 5.638269322916668,
+        "peak_THz": 7.370500000000001
+      },
+      "r2SCAN-5000/fixed/MP40": {
+        "L2_relative": 0.4350791364037689,
+        "TV": 0.20031101004998453,
+        "W1_THz": 0.44278135576798183,
+        "mean_THz": 5.743447986111111,
+        "peak_THz": 7.4285000000000005
+      },
+      "r2SCAN-5000/fixed/MP50": {
+        "L2_relative": 0.43508755746800853,
+        "TV": 0.20031252495529378,
+        "W1_THz": 0.4427838153414917,
+        "mean_THz": 5.743450445333333,
+        "peak_THz": 7.4285000000000005
+      },
+      "r2SCAN-5000/fixed/Gamma40": {
+        "L2_relative": 0.4350811193094976,
+        "TV": 0.20032789016938687,
+        "W1_THz": 0.4427832053855114,
+        "mean_THz": 5.743447586805556,
+        "peak_THz": 7.4285000000000005
+      },
+      "r2SCAN-5000/equilibrium/MP40": {
+        "L2_relative": 0.5059415392118504,
+        "TV": 0.22225089254260122,
+        "W1_THz": 0.5562068696568725,
+        "mean_THz": 5.856873500000001,
+        "peak_THz": 7.6455
+      },
+      "r2SCAN-5000/equilibrium/MP50": {
+        "L2_relative": 0.5059482538518351,
+        "TV": 0.22223075916432278,
+        "W1_THz": 0.5562061483448049,
+        "mean_THz": 5.856872778666667,
+        "peak_THz": 7.6455
+      },
+      "r2SCAN-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.5059525056988535,
+        "TV": 0.2221875636602266,
+        "W1_THz": 0.5562078283490357,
+        "mean_THz": 5.856872197916667,
+        "peak_THz": 7.6455
+      },
+      "r2SCAN-10000/fixed/MP40": {
+        "L2_relative": 0.43634099335377524,
+        "TV": 0.19691222800339692,
+        "W1_THz": 0.4534177099346479,
+        "mean_THz": 5.754084340277778,
+        "peak_THz": 7.5655
+      },
+      "r2SCAN-10000/fixed/MP50": {
+        "L2_relative": 0.4363471295309053,
+        "TV": 0.1969033419975979,
+        "W1_THz": 0.4534165789106947,
+        "mean_THz": 5.754083208,
+        "peak_THz": 7.5655
+      },
+      "r2SCAN-10000/fixed/Gamma40": {
+        "L2_relative": 0.43634402575921905,
+        "TV": 0.19691341961746003,
+        "W1_THz": 0.45341651434974295,
+        "mean_THz": 5.754080819444445,
+        "peak_THz": 7.5655
+      },
+      "r2SCAN-10000/equilibrium/MP40": {
+        "L2_relative": 0.5068652124717513,
+        "TV": 0.2226447417533783,
+        "W1_THz": 0.5628561335457603,
+        "mean_THz": 5.86352276388889,
+        "peak_THz": 7.7515
+      },
+      "r2SCAN-10000/equilibrium/MP50": {
+        "L2_relative": 0.5068719465842814,
+        "TV": 0.22264883753998593,
+        "W1_THz": 0.5628548497654318,
+        "mean_THz": 5.863521479999999,
+        "peak_THz": 7.7515
+      },
+      "r2SCAN-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.5068703851103487,
+        "TV": 0.22266804391195205,
+        "W1_THz": 0.5628572395582333,
+        "mean_THz": 5.863521548611111,
+        "peak_THz": 7.7515
+      },
+      "r2SCAN-15000/fixed/MP40": {
+        "L2_relative": 0.4828470826017273,
+        "TV": 0.218670815160154,
+        "W1_THz": 0.5280006891013136,
+        "mean_THz": 5.828667319444444,
+        "peak_THz": 7.6155
+      },
+      "r2SCAN-15000/fixed/MP50": {
+        "L2_relative": 0.48285432045940857,
+        "TV": 0.2186726781937626,
+        "W1_THz": 0.5280009938147523,
+        "mean_THz": 5.828667624000001,
+        "peak_THz": 7.6155
+      },
+      "r2SCAN-15000/fixed/Gamma40": {
+        "L2_relative": 0.4828528135842437,
+        "TV": 0.21869596958371562,
+        "W1_THz": 0.5280014203144708,
+        "mean_THz": 5.828665781250001,
+        "peak_THz": 7.6155
+      },
+      "r2SCAN-15000/equilibrium/MP40": {
+        "L2_relative": 0.5434161771292084,
+        "TV": 0.24469358062827873,
+        "W1_THz": 0.6446324321568704,
+        "mean_THz": 5.9452990625,
+        "peak_THz": 7.7945
+      },
+      "r2SCAN-15000/equilibrium/MP50": {
+        "L2_relative": 0.5434103489018559,
+        "TV": 0.2446923283959202,
+        "W1_THz": 0.6446302789980973,
+        "mean_THz": 5.945296909333334,
+        "peak_THz": 7.7945
+      },
+      "r2SCAN-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.543421315880141,
+        "TV": 0.24470311943891004,
+        "W1_THz": 0.6446309176194018,
+        "mean_THz": 5.945295281250001,
+        "peak_THz": 7.7945
+      },
+      "r2SCAN-20000/fixed/MP40": {
+        "L2_relative": 0.46854443881353913,
+        "TV": 0.21312274758269117,
+        "W1_THz": 0.49760166132353645,
+        "mean_THz": 5.798268291666666,
+        "peak_THz": 7.5975
+      },
+      "r2SCAN-20000/fixed/MP50": {
+        "L2_relative": 0.46854484141230546,
+        "TV": 0.21311264414097114,
+        "W1_THz": 0.49760185248426947,
+        "mean_THz": 5.798268482666668,
+        "peak_THz": 7.5975
+      },
+      "r2SCAN-20000/fixed/Gamma40": {
+        "L2_relative": 0.46854885201847146,
+        "TV": 0.2131239544370654,
+        "W1_THz": 0.49760177866236205,
+        "mean_THz": 5.79826613888889,
+        "peak_THz": 7.5975
+      },
+      "r2SCAN-20000/equilibrium/MP40": {
+        "L2_relative": 0.5311630152122077,
+        "TV": 0.23895638005310665,
+        "W1_THz": 0.6077086752124257,
+        "mean_THz": 5.908375305555556,
+        "peak_THz": 7.7725
+      },
+      "r2SCAN-20000/equilibrium/MP50": {
+        "L2_relative": 0.5311677200414459,
+        "TV": 0.23894401247392577,
+        "W1_THz": 0.6077090789994501,
+        "mean_THz": 5.908375709333333,
+        "peak_THz": 7.7725
+      },
+      "r2SCAN-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.5311803526790786,
+        "TV": 0.23892837442313813,
+        "W1_THz": 0.6077100065428171,
+        "mean_THz": 5.908374378472223,
+        "peak_THz": 7.7725
+      },
+      "r2SCAN-23200/fixed/MP40": {
+        "L2_relative": 0.4753840803979657,
+        "TV": 0.2152658042218933,
+        "W1_THz": 0.5038492654902041,
+        "mean_THz": 5.804515895833334,
+        "peak_THz": 7.6125
+      },
+      "r2SCAN-23200/fixed/MP50": {
+        "L2_relative": 0.4753833599967716,
+        "TV": 0.21526673948874014,
+        "W1_THz": 0.5038477057988517,
+        "mean_THz": 5.804514336,
+        "peak_THz": 7.6125
+      },
+      "r2SCAN-23200/fixed/Gamma40": {
+        "L2_relative": 0.47538696104684247,
+        "TV": 0.21528984687363473,
+        "W1_THz": 0.5038483813748649,
+        "mean_THz": 5.804512753472222,
+        "peak_THz": 7.6125
+      },
+      "r2SCAN-23200/equilibrium/MP40": {
+        "L2_relative": 0.5377992742232186,
+        "TV": 0.24147703371524956,
+        "W1_THz": 0.6149918349346488,
+        "mean_THz": 5.915658465277778,
+        "peak_THz": 7.7895
+      },
+      "r2SCAN-23200/equilibrium/MP50": {
+        "L2_relative": 0.5378034628874694,
+        "TV": 0.24147448325871534,
+        "W1_THz": 0.6149937323321792,
+        "mean_THz": 5.915660362666667,
+        "peak_THz": 7.7895
+      },
+      "r2SCAN-23200/equilibrium/Gamma40": {
+        "L2_relative": 0.5378115068188003,
+        "TV": 0.24147616625867346,
+        "W1_THz": 0.6149939245573156,
+        "mean_THz": 5.9156582986111115,
+        "peak_THz": 7.7885
+      }
+    },
+    "0.15": {
+      "PBE-5000/fixed/MP40": {
+        "L2_relative": 0.21089539141312344,
+        "TV": 0.08978984938009753,
+        "W1_THz": 0.14443060009146091,
+        "mean_THz": 5.439689125,
+        "peak_THz": 6.8005
+      },
+      "PBE-5000/fixed/MP50": {
+        "L2_relative": 0.21090019166468224,
+        "TV": 0.08979208236788297,
+        "W1_THz": 0.1444316613142334,
+        "mean_THz": 5.439689408,
+        "peak_THz": 6.8005
+      },
+      "PBE-5000/fixed/Gamma40": {
+        "L2_relative": 0.21089839347430347,
+        "TV": 0.08979626832418586,
+        "W1_THz": 0.14443224071857777,
+        "mean_THz": 5.439688663194444,
+        "peak_THz": 6.8005
+      },
+      "PBE-10000/fixed/MP40": {
+        "L2_relative": 0.29124659810434805,
+        "TV": 0.12765505575191788,
+        "W1_THz": 0.24140597382353923,
+        "mean_THz": 5.542072604166666,
+        "peak_THz": 7.0265
+      },
+      "PBE-10000/fixed/MP50": {
+        "L2_relative": 0.2912485471196201,
+        "TV": 0.127658081523026,
+        "W1_THz": 0.24140507381916199,
+        "mean_THz": 5.5420717040000005,
+        "peak_THz": 7.0265
+      },
+      "PBE-10000/fixed/Gamma40": {
+        "L2_relative": 0.29124952668523074,
+        "TV": 0.1276608744536222,
+        "W1_THz": 0.241405823516796,
+        "mean_THz": 5.5420709375,
+        "peak_THz": 7.0265
+      },
+      "PBE-15000/fixed/MP40": {
+        "L2_relative": 0.16243209437546688,
+        "TV": 0.06852289361998698,
+        "W1_THz": 0.08142427453184643,
+        "mean_THz": 5.364313125,
+        "peak_THz": 6.9085
+      },
+      "PBE-15000/fixed/MP50": {
+        "L2_relative": 0.16243101295027013,
+        "TV": 0.06852085385956354,
+        "W1_THz": 0.08142097199413693,
+        "mean_THz": 5.364314080000001,
+        "peak_THz": 6.9085
+      },
+      "PBE-15000/fixed/Gamma40": {
+        "L2_relative": 0.16243099484240656,
+        "TV": 0.06852442058038492,
+        "W1_THz": 0.0814232242871526,
+        "mean_THz": 5.36431459375,
+        "peak_THz": 6.9085
+      },
+      "PBE-20000/fixed/MP40": {
+        "L2_relative": 0.2573377988271574,
+        "TV": 0.11168172218332253,
+        "W1_THz": 0.19148174465687148,
+        "mean_THz": 5.492148374999999,
+        "peak_THz": 7.0225
+      },
+      "PBE-20000/fixed/MP50": {
+        "L2_relative": 0.2573380539838604,
+        "TV": 0.11168466456462549,
+        "W1_THz": 0.1914814419662218,
+        "mean_THz": 5.492148072,
+        "peak_THz": 7.0235
+      },
+      "PBE-20000/fixed/Gamma40": {
+        "L2_relative": 0.25733508441867103,
+        "TV": 0.11168870644593464,
+        "W1_THz": 0.1914802478790576,
+        "mean_THz": 5.492145298611111,
+        "peak_THz": 7.0225
+      },
+      "PBE-23400/fixed/MP40": {
+        "L2_relative": 0.2487323939953356,
+        "TV": 0.10719668718264558,
+        "W1_THz": 0.17879633493465064,
+        "mean_THz": 5.4794629652777775,
+        "peak_THz": 7.0055000000000005
+      },
+      "PBE-23400/fixed/MP50": {
+        "L2_relative": 0.24873178914849256,
+        "TV": 0.10719850230932335,
+        "W1_THz": 0.17879503390889692,
+        "mean_THz": 5.4794616640000005,
+        "peak_THz": 7.0055000000000005
+      },
+      "PBE-23400/fixed/Gamma40": {
+        "L2_relative": 0.2487298762666373,
+        "TV": 0.10719974889882111,
+        "W1_THz": 0.17879610065154034,
+        "mean_THz": 5.4794611388888885,
+        "peak_THz": 7.0055000000000005
+      },
+      "PBE-5000/equilibrium/MP40": {
+        "L2_relative": 0.2628488097353227,
+        "TV": 0.11868238114180735,
+        "W1_THz": 0.2672173071568702,
+        "mean_THz": 5.5678839374999995,
+        "peak_THz": 6.979500000000001
+      },
+      "PBE-5000/equilibrium/MP50": {
+        "L2_relative": 0.26284627869258903,
+        "TV": 0.11868051908715221,
+        "W1_THz": 0.2672177198101992,
+        "mean_THz": 5.567884349333333,
+        "peak_THz": 6.979500000000001
+      },
+      "PBE-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.26284364368847163,
+        "TV": 0.11867803266627956,
+        "W1_THz": 0.26721949493462277,
+        "mean_THz": 5.567884444444445,
+        "peak_THz": 6.979500000000001
+      },
+      "PBE-15000/equilibrium/MP40": {
+        "L2_relative": 0.21337468098276108,
+        "TV": 0.09833021706080249,
+        "W1_THz": 0.18668015437909455,
+        "mean_THz": 5.487346784722222,
+        "peak_THz": 7.0655
+      },
+      "PBE-15000/equilibrium/MP50": {
+        "L2_relative": 0.21337804597526466,
+        "TV": 0.09833237653383269,
+        "W1_THz": 0.1866790035963315,
+        "mean_THz": 5.487345632,
+        "peak_THz": 7.0655
+      },
+      "PBE-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.2133738450145258,
+        "TV": 0.09833402790186248,
+        "W1_THz": 0.18668029203636027,
+        "mean_THz": 5.487345124999999,
+        "peak_THz": 7.0655
+      },
+      "PBE-10000/equilibrium/MP40": {
+        "L2_relative": 0.3503268420242192,
+        "TV": 0.16126175006607374,
+        "W1_THz": 0.36400660576798166,
+        "mean_THz": 5.664673236111112,
+        "peak_THz": 7.184500000000001
+      },
+      "PBE-10000/equilibrium/MP50": {
+        "L2_relative": 0.3503245787348471,
+        "TV": 0.16125991945164253,
+        "W1_THz": 0.36400512700798904,
+        "mean_THz": 5.664671757333333,
+        "peak_THz": 7.184500000000001
+      },
+      "PBE-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.3503242717668428,
+        "TV": 0.16126141279872655,
+        "W1_THz": 0.36400560334323084,
+        "mean_THz": 5.664670781249999,
+        "peak_THz": 7.184500000000001
+      },
+      "PBE-20000/equilibrium/MP40": {
+        "L2_relative": 0.3128592448616902,
+        "TV": 0.14443561363859264,
+        "W1_THz": 0.30911943910131645,
+        "mean_THz": 5.609786069444445,
+        "peak_THz": 7.1735
+      },
+      "PBE-20000/equilibrium/MP50": {
+        "L2_relative": 0.3128588588242839,
+        "TV": 0.14443316904037784,
+        "W1_THz": 0.3091193136831557,
+        "mean_THz": 5.609785944,
+        "peak_THz": 7.1735
+      },
+      "PBE-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.3128579229255004,
+        "TV": 0.14443368007558446,
+        "W1_THz": 0.3091182338111213,
+        "mean_THz": 5.609783343749999,
+        "peak_THz": 7.1735
+      },
+      "PBE-23400/equilibrium/MP40": {
+        "L2_relative": 0.3050213884849706,
+        "TV": 0.14061267207935796,
+        "W1_THz": 0.2965007863235387,
+        "mean_THz": 5.597167416666666,
+        "peak_THz": 7.1595
+      },
+      "PBE-23400/equilibrium/MP50": {
+        "L2_relative": 0.3050227251441302,
+        "TV": 0.14061248977690605,
+        "W1_THz": 0.2965012816894007,
+        "mean_THz": 5.597167912,
+        "peak_THz": 7.1595
+      },
+      "PBE-23400/equilibrium/Gamma40": {
+        "L2_relative": 0.30502043990874883,
+        "TV": 0.14061174571665655,
+        "W1_THz": 0.29650367120667637,
+        "mean_THz": 5.597168770833333,
+        "peak_THz": 7.1595
+      },
+      "PBEsol-5000/fixed/MP40": {
+        "L2_relative": 0.2581420434788022,
+        "TV": 0.10924629155810658,
+        "W1_THz": 0.19568005758717408,
+        "mean_THz": 5.134620854166666,
+        "peak_THz": 6.5365
+      },
+      "PBEsol-5000/fixed/MP50": {
+        "L2_relative": 0.25814317850778257,
+        "TV": 0.10924547846878352,
+        "W1_THz": 0.19568100314590378,
+        "mean_THz": 5.134619525333333,
+        "peak_THz": 6.5365
+      },
+      "PBEsol-5000/fixed/Gamma40": {
+        "L2_relative": 0.2581451327645523,
+        "TV": 0.10925130576673878,
+        "W1_THz": 0.19568340536002082,
+        "mean_THz": 5.134619979166667,
+        "peak_THz": 6.5365
+      },
+      "PBEsol-5000/equilibrium/MP40": {
+        "L2_relative": 0.2553385468438243,
+        "TV": 0.1056703781584471,
+        "W1_THz": 0.2114691335457592,
+        "mean_THz": 5.512135763888889,
+        "peak_THz": 7.2045
+      },
+      "PBEsol-5000/equilibrium/MP50": {
+        "L2_relative": 0.25533448149632765,
+        "TV": 0.10566976497436747,
+        "W1_THz": 0.2114674762145231,
+        "mean_THz": 5.5121340960000005,
+        "peak_THz": 7.2045
+      },
+      "PBEsol-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.2553329956658256,
+        "TV": 0.1056748600580831,
+        "W1_THz": 0.21147027257414924,
+        "mean_THz": 5.5121347881944445,
+        "peak_THz": 7.2045
+      },
+      "PBEsol-10000/fixed/MP40": {
+        "L2_relative": 0.2576691853702773,
+        "TV": 0.1197425641118931,
+        "W1_THz": 0.16454503079953436,
+        "mean_THz": 5.340739736111111,
+        "peak_THz": 6.7165
+      },
+      "PBEsol-10000/fixed/MP50": {
+        "L2_relative": 0.2576696060260798,
+        "TV": 0.11974512794607667,
+        "W1_THz": 0.16454718207711666,
+        "mean_THz": 5.340739874666667,
+        "peak_THz": 6.7165
+      },
+      "PBEsol-10000/fixed/Gamma40": {
+        "L2_relative": 0.2576690096447861,
+        "TV": 0.11974846068738898,
+        "W1_THz": 0.16454509328834574,
+        "mean_THz": 5.340741371527778,
+        "peak_THz": 6.7165
+      },
+      "PBEsol-10000/equilibrium/MP40": {
+        "L2_relative": 0.3397339271583836,
+        "TV": 0.15605987965161766,
+        "W1_THz": 0.36176861965687224,
+        "mean_THz": 5.66243525,
+        "peak_THz": 7.3005
+      },
+      "PBEsol-10000/equilibrium/MP50": {
+        "L2_relative": 0.33973276383057627,
+        "TV": 0.15605920131157108,
+        "W1_THz": 0.36176697233317845,
+        "mean_THz": 5.662433602666667,
+        "peak_THz": 7.3005
+      },
+      "PBEsol-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.3397343580119016,
+        "TV": 0.15606317013448545,
+        "W1_THz": 0.36176741680701263,
+        "mean_THz": 5.662432517361111,
+        "peak_THz": 7.3005
+      },
+      "PBEsol-15000/fixed/MP40": {
+        "L2_relative": 0.2121252328380414,
+        "TV": 0.10167824355284966,
+        "W1_THz": 0.15627265448459632,
+        "mean_THz": 5.240302909722223,
+        "peak_THz": 6.7145
+      },
+      "PBEsol-15000/fixed/MP50": {
+        "L2_relative": 0.21212220015128525,
+        "TV": 0.10167758071050259,
+        "W1_THz": 0.15627307055022116,
+        "mean_THz": 5.240303784,
+        "peak_THz": 6.7145
+      },
+      "PBEsol-15000/fixed/Gamma40": {
+        "L2_relative": 0.21212282791893755,
+        "TV": 0.10168200397239516,
+        "W1_THz": 0.1562738761072529,
+        "mean_THz": 5.2403020173611115,
+        "peak_THz": 6.7145
+      },
+      "PBEsol-15000/equilibrium/MP40": {
+        "L2_relative": 0.27941315138422956,
+        "TV": 0.12212844641903994,
+        "W1_THz": 0.25396581410131447,
+        "mean_THz": 5.554632444444445,
+        "peak_THz": 7.2695
+      },
+      "PBEsol-15000/equilibrium/MP50": {
+        "L2_relative": 0.2794123731156953,
+        "TV": 0.1221284148541931,
+        "W1_THz": 0.2539638115037154,
+        "mean_THz": 5.55463044,
+        "peak_THz": 7.2695
+      },
+      "PBEsol-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.27941351073120474,
+        "TV": 0.12213228608713192,
+        "W1_THz": 0.25396467461083355,
+        "mean_THz": 5.554629375,
+        "peak_THz": 7.2695
+      },
+      "PBEsol-20000/fixed/MP40": {
+        "L2_relative": 0.21885639742163027,
+        "TV": 0.1006744596593149,
+        "W1_THz": 0.1411771897742935,
+        "mean_THz": 5.327306506944444,
+        "peak_THz": 6.7945
+      },
+      "PBEsol-20000/fixed/MP50": {
+        "L2_relative": 0.21885483138655576,
+        "TV": 0.1006744685458431,
+        "W1_THz": 0.14117441334632408,
+        "mean_THz": 5.327306210666666,
+        "peak_THz": 6.7945
+      },
+      "PBEsol-20000/fixed/Gamma40": {
+        "L2_relative": 0.21885804393273434,
+        "TV": 0.10068118261503707,
+        "W1_THz": 0.14117700566625838,
+        "mean_THz": 5.327304569444445,
+        "peak_THz": 6.7945
+      },
+      "PBEsol-20000/equilibrium/MP40": {
+        "L2_relative": 0.34249218986415386,
+        "TV": 0.15503821781018717,
+        "W1_THz": 0.35839934187909495,
+        "mean_THz": 5.659065972222223,
+        "peak_THz": 7.3715
+      },
+      "PBEsol-20000/equilibrium/MP50": {
+        "L2_relative": 0.34249253613939845,
+        "TV": 0.15503824420157752,
+        "W1_THz": 0.3583990603634203,
+        "mean_THz": 5.659065690666667,
+        "peak_THz": 7.3715
+      },
+      "PBEsol-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.34249717319079803,
+        "TV": 0.15504582867981465,
+        "W1_THz": 0.358400503123987,
+        "mean_THz": 5.659065503472222,
+        "peak_THz": 7.3715
+      },
+      "PBEsol-23100/fixed/MP40": {
+        "L2_relative": 0.21519080202093788,
+        "TV": 0.10033818280232588,
+        "W1_THz": 0.1430716405326401,
+        "mean_THz": 5.308868590277777,
+        "peak_THz": 6.7875000000000005
+      },
+      "PBEsol-23100/fixed/MP50": {
+        "L2_relative": 0.21519600600227262,
+        "TV": 0.10034054815885059,
+        "W1_THz": 0.14307205636518103,
+        "mean_THz": 5.308868874666667,
+        "peak_THz": 6.7875000000000005
+      },
+      "PBEsol-23100/fixed/Gamma40": {
+        "L2_relative": 0.21518939525987094,
+        "TV": 0.10034238952447083,
+        "W1_THz": 0.14307243834568045,
+        "mean_THz": 5.308866708333333,
+        "peak_THz": 6.7875000000000005
+      },
+      "PBEsol-23100/equilibrium/MP40": {
+        "L2_relative": 0.3301200058735389,
+        "TV": 0.14882230222306328,
+        "W1_THz": 0.33760325854575907,
+        "mean_THz": 5.638269888888889,
+        "peak_THz": 7.3595
+      },
+      "PBEsol-23100/equilibrium/MP50": {
+        "L2_relative": 0.3301193974477482,
+        "TV": 0.14882109139617844,
+        "W1_THz": 0.3376034257438527,
+        "mean_THz": 5.638270056,
+        "peak_THz": 7.3595
+      },
+      "PBEsol-23100/equilibrium/Gamma40": {
+        "L2_relative": 0.33012000529630137,
+        "TV": 0.14882782677573975,
+        "W1_THz": 0.33760436551746703,
+        "mean_THz": 5.638269322916665,
+        "peak_THz": 7.3595
+      },
+      "r2SCAN-5000/fixed/MP40": {
+        "L2_relative": 0.4154970567978642,
+        "TV": 0.19310722971183075,
+        "W1_THz": 0.4427813557679853,
+        "mean_THz": 5.743447986111111,
+        "peak_THz": 7.4365
+      },
+      "r2SCAN-5000/fixed/MP50": {
+        "L2_relative": 0.41550475751809857,
+        "TV": 0.19310957956095037,
+        "W1_THz": 0.4427838149908499,
+        "mean_THz": 5.743450445333334,
+        "peak_THz": 7.4365
+      },
+      "r2SCAN-5000/fixed/Gamma40": {
+        "L2_relative": 0.4155028358632748,
+        "TV": 0.19311467488592365,
+        "W1_THz": 0.4427822692460369,
+        "mean_THz": 5.743447586805556,
+        "peak_THz": 7.4365
+      },
+      "r2SCAN-5000/equilibrium/MP40": {
+        "L2_relative": 0.4855937189557685,
+        "TV": 0.21710899452147225,
+        "W1_THz": 0.5562068696568718,
+        "mean_THz": 5.8568735,
+        "peak_THz": 7.649500000000001
+      },
+      "r2SCAN-5000/equilibrium/MP50": {
+        "L2_relative": 0.48559651078502686,
+        "TV": 0.21711044132266827,
+        "W1_THz": 0.5562061483235412,
+        "mean_THz": 5.856872778666666,
+        "peak_THz": 7.649500000000001
+      },
+      "r2SCAN-5000/equilibrium/Gamma40": {
+        "L2_relative": 0.4855955455182752,
+        "TV": 0.21711313431522375,
+        "W1_THz": 0.5562068748283565,
+        "mean_THz": 5.856872197916666,
+        "peak_THz": 7.649500000000001
+      },
+      "r2SCAN-10000/fixed/MP40": {
+        "L2_relative": 0.4167155434423954,
+        "TV": 0.19133121666133274,
+        "W1_THz": 0.4534177099346503,
+        "mean_THz": 5.754084340277777,
+        "peak_THz": 7.5585
+      },
+      "r2SCAN-10000/fixed/MP50": {
+        "L2_relative": 0.4167204696748344,
+        "TV": 0.19133146895171194,
+        "W1_THz": 0.4534165776647665,
+        "mean_THz": 5.754083208,
+        "peak_THz": 7.5585
+      },
+      "r2SCAN-10000/fixed/Gamma40": {
+        "L2_relative": 0.4167183744336846,
+        "TV": 0.19133506639506778,
+        "W1_THz": 0.45341559634908657,
+        "mean_THz": 5.754080819444444,
+        "peak_THz": 7.5585
+      },
+      "r2SCAN-10000/equilibrium/MP40": {
+        "L2_relative": 0.48428991220641965,
+        "TV": 0.21645180066910313,
+        "W1_THz": 0.5628561335457599,
+        "mean_THz": 5.86352276388889,
+        "peak_THz": 7.7515
+      },
+      "r2SCAN-10000/equilibrium/MP50": {
+        "L2_relative": 0.48429407672973834,
+        "TV": 0.21645103749688333,
+        "W1_THz": 0.5628548496569451,
+        "mean_THz": 5.863521480000001,
+        "peak_THz": 7.7515
+      },
+      "r2SCAN-10000/equilibrium/Gamma40": {
+        "L2_relative": 0.4842915448338088,
+        "TV": 0.21644972586386607,
+        "W1_THz": 0.5628563013997585,
+        "mean_THz": 5.863521548611111,
+        "peak_THz": 7.7515
+      },
+      "r2SCAN-15000/fixed/MP40": {
+        "L2_relative": 0.46264377789351857,
+        "TV": 0.21256105643144763,
+        "W1_THz": 0.5280006891013163,
+        "mean_THz": 5.828667319444445,
+        "peak_THz": 7.6095
+      },
+      "r2SCAN-15000/fixed/MP50": {
+        "L2_relative": 0.46264818971351146,
+        "TV": 0.2125617348148989,
+        "W1_THz": 0.5280009936570076,
+        "mean_THz": 5.8286676239999995,
+        "peak_THz": 7.6095
+      },
+      "r2SCAN-15000/fixed/Gamma40": {
+        "L2_relative": 0.46264581289454043,
+        "TV": 0.2125627468859061,
+        "W1_THz": 0.528000479929923,
+        "mean_THz": 5.82866578125,
+        "peak_THz": 7.6095
+      },
+      "r2SCAN-15000/equilibrium/MP40": {
+        "L2_relative": 0.5208351289175254,
+        "TV": 0.23717345234712717,
+        "W1_THz": 0.6446324321568705,
+        "mean_THz": 5.945299062500001,
+        "peak_THz": 7.793500000000001
+      },
+      "r2SCAN-15000/equilibrium/MP50": {
+        "L2_relative": 0.5208285193090375,
+        "TV": 0.237172803553785,
+        "W1_THz": 0.6446302789902039,
+        "mean_THz": 5.945296909333333,
+        "peak_THz": 7.793500000000001
+      },
+      "r2SCAN-15000/equilibrium/Gamma40": {
+        "L2_relative": 0.5208329058601979,
+        "TV": 0.2371762928938141,
+        "W1_THz": 0.6446299616141257,
+        "mean_THz": 5.945295281249999,
+        "peak_THz": 7.793500000000001
+      },
+      "r2SCAN-20000/fixed/MP40": {
+        "L2_relative": 0.4485233421754378,
+        "TV": 0.20742406973650862,
+        "W1_THz": 0.49760166132353856,
+        "mean_THz": 5.798268291666666,
+        "peak_THz": 7.591500000000001
+      },
+      "r2SCAN-20000/fixed/MP50": {
+        "L2_relative": 0.44852221411495,
+        "TV": 0.20742311346085457,
+        "W1_THz": 0.4976018523236828,
+        "mean_THz": 5.798268482666668,
+        "peak_THz": 7.591500000000001
+      },
+      "r2SCAN-20000/fixed/Gamma40": {
+        "L2_relative": 0.448524805955514,
+        "TV": 0.20742983404705395,
+        "W1_THz": 0.49760084099806196,
+        "mean_THz": 5.798266138888888,
+        "peak_THz": 7.591500000000001
+      },
+      "r2SCAN-20000/equilibrium/MP40": {
+        "L2_relative": 0.5083395779261696,
+        "TV": 0.2315304857580282,
+        "W1_THz": 0.607708675212428,
+        "mean_THz": 5.9083753055555555,
+        "peak_THz": 7.7715000000000005
+      },
+      "r2SCAN-20000/equilibrium/MP50": {
+        "L2_relative": 0.5083393996385493,
+        "TV": 0.23152976730839808,
+        "W1_THz": 0.6077090789902095,
+        "mean_THz": 5.908375709333333,
+        "peak_THz": 7.7715000000000005
+      },
+      "r2SCAN-20000/equilibrium/Gamma40": {
+        "L2_relative": 0.5083442967964489,
+        "TV": 0.23153343888304395,
+        "W1_THz": 0.6077090556845692,
+        "mean_THz": 5.908374378472222,
+        "peak_THz": 7.7715000000000005
+      },
+      "r2SCAN-23200/fixed/MP40": {
+        "L2_relative": 0.45507024697679155,
+        "TV": 0.20967213708587168,
+        "W1_THz": 0.5038492654902046,
+        "mean_THz": 5.804515895833333,
+        "peak_THz": 7.6075
+      },
+      "r2SCAN-23200/fixed/MP50": {
+        "L2_relative": 0.4550682358396357,
+        "TV": 0.20967350660754364,
+        "W1_THz": 0.5038477056569869,
+        "mean_THz": 5.804514336,
+        "peak_THz": 7.6075
+      },
+      "r2SCAN-23200/fixed/Gamma40": {
+        "L2_relative": 0.45507049275556494,
+        "TV": 0.2096778306313835,
+        "W1_THz": 0.5038474425476587,
+        "mean_THz": 5.804512753472222,
+        "peak_THz": 7.6075
+      },
+      "r2SCAN-23200/equilibrium/MP40": {
+        "L2_relative": 0.5147796209662453,
+        "TV": 0.23394438207909635,
+        "W1_THz": 0.6149918349346484,
+        "mean_THz": 5.915658465277778,
+        "peak_THz": 7.7895
+      },
+      "r2SCAN-23200/equilibrium/MP50": {
+        "L2_relative": 0.5147794806595434,
+        "TV": 0.23394545741432782,
+        "W1_THz": 0.6149937323235402,
+        "mean_THz": 5.915660362666667,
+        "peak_THz": 7.7895
+      },
+      "r2SCAN-23200/equilibrium/Gamma40": {
+        "L2_relative": 0.5147799802645375,
+        "TV": 0.23394749087067035,
+        "W1_THz": 0.6149929709943859,
+        "mean_THz": 5.9156582986111115,
+        "peak_THz": 7.7895
+      }
+    }
+  },
+  "vs_article": {
+    "PBE-5000/fixed/MP40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.439689124999999,
+      "peak_THz": 6.7365
+    },
+    "PBE-10000/fixed/MP40/0.05": {
+      "L2_relative": 0.19149926972647902,
+      "TV": 0.07634698086934855,
+      "W1_THz": 0.10238347916666746,
+      "mean_THz": 5.542072604166666,
+      "peak_THz": 7.027500000000001
+    },
+    "PBE-15000/fixed/MP40/0.05": {
+      "L2_relative": 0.1274795592740619,
+      "TV": 0.04949962718323017,
+      "W1_THz": 0.07730912818554142,
+      "mean_THz": 5.364313125000001,
+      "peak_THz": 6.9135
+    },
+    "PBE-20000/fixed/MP40/0.05": {
+      "L2_relative": 0.15602761645050375,
+      "TV": 0.057374596118060714,
+      "W1_THz": 0.05245925000000032,
+      "mean_THz": 5.492148374999999,
+      "peak_THz": 7.0375000000000005
+    },
+    "PBE-23400/fixed/MP40/0.05": {
+      "L2_relative": 0.14885980850351166,
+      "TV": 0.053058842018579466,
+      "W1_THz": 0.04245062291543214,
+      "mean_THz": 5.4794629652777775,
+      "peak_THz": 7.024500000000001
+    },
+    "PBE-5000/fixed/MP50/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.4396894080000004,
+      "peak_THz": 6.7365
+    },
+    "PBE-10000/fixed/MP50/0.05": {
+      "L2_relative": 0.1913406842299994,
+      "TV": 0.07615381244860944,
+      "W1_THz": 0.1023822960000001,
+      "mean_THz": 5.542071704,
+      "peak_THz": 7.0255
+    },
+    "PBE-15000/fixed/MP50/0.05": {
+      "L2_relative": 0.1273110377775093,
+      "TV": 0.04943245398155763,
+      "W1_THz": 0.07730957130076474,
+      "mean_THz": 5.36431408,
+      "peak_THz": 6.9125000000000005
+    },
+    "PBE-20000/fixed/MP50/0.05": {
+      "L2_relative": 0.1558322268076722,
+      "TV": 0.057109911065474805,
+      "W1_THz": 0.05245866400000014,
+      "mean_THz": 5.492148072000001,
+      "peak_THz": 7.0385
+    },
+    "PBE-23400/fixed/MP50/0.05": {
+      "L2_relative": 0.1486979884216524,
+      "TV": 0.052815565307617496,
+      "W1_THz": 0.04243954385833214,
+      "mean_THz": 5.4794616640000005,
+      "peak_THz": 7.024500000000001
+    },
+    "PBE-5000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.439688663194445,
+      "peak_THz": 6.7345
+    },
+    "PBE-10000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.1919566698800458,
+      "TV": 0.07657138971652332,
+      "W1_THz": 0.10238228068461638,
+      "mean_THz": 5.5420709375,
+      "peak_THz": 7.0235
+    },
+    "PBE-15000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.12797588212690864,
+      "TV": 0.04973467106437518,
+      "W1_THz": 0.07730806226655734,
+      "mean_THz": 5.3643145937500005,
+      "peak_THz": 6.9105
+    },
+    "PBE-20000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.15655098257331523,
+      "TV": 0.05813590869808698,
+      "W1_THz": 0.052456641888189354,
+      "mean_THz": 5.492145298611112,
+      "peak_THz": 7.0385
+    },
+    "PBE-23400/fixed/Gamma40/0.05": {
+      "L2_relative": 0.14940181648201986,
+      "TV": 0.054046881268822726,
+      "W1_THz": 0.04242460042884609,
+      "mean_THz": 5.47946113888889,
+      "peak_THz": 7.024500000000001
+    },
+    "PBE-5000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.5678839374999995,
+      "peak_THz": 6.9235
+    },
+    "PBE-10000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.17674447294809034,
+      "TV": 0.06871340648437646,
+      "W1_THz": 0.09678929861111119,
+      "mean_THz": 5.664673236111112,
+      "peak_THz": 7.200500000000001
+    },
+    "PBE-15000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.1251498814583589,
+      "TV": 0.05022825440068826,
+      "W1_THz": 0.08214453281762749,
+      "mean_THz": 5.487346784722222,
+      "peak_THz": 7.0805
+    },
+    "PBE-20000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.14192136635594835,
+      "TV": 0.05086873860688601,
+      "W1_THz": 0.042967548196878105,
+      "mean_THz": 5.609786069444445,
+      "peak_THz": 7.1915000000000004
+    },
+    "PBE-23400/equilibrium/MP40/0.05": {
+      "L2_relative": 0.13732906423946095,
+      "TV": 0.048622554995473174,
+      "W1_THz": 0.03818126278881625,
+      "mean_THz": 5.597167416666666,
+      "peak_THz": 7.1785000000000005
+    },
+    "PBE-5000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.567884349333334,
+      "peak_THz": 6.9205
+    },
+    "PBE-10000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.17672103082807683,
+      "TV": 0.0688371344375139,
+      "W1_THz": 0.09678740799999996,
+      "mean_THz": 5.664671757333332,
+      "peak_THz": 7.1995000000000005
+    },
+    "PBE-15000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.12497338260280773,
+      "TV": 0.05011643936845032,
+      "W1_THz": 0.08214688731938469,
+      "mean_THz": 5.487345632,
+      "peak_THz": 7.0805
+    },
+    "PBE-20000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.14179848545087714,
+      "TV": 0.050822297797061614,
+      "W1_THz": 0.0429468385317906,
+      "mean_THz": 5.609785944,
+      "peak_THz": 7.1915000000000004
+    },
+    "PBE-23400/equilibrium/MP50/0.05": {
+      "L2_relative": 0.13722495213417912,
+      "TV": 0.04840508319539545,
+      "W1_THz": 0.038176820582697,
+      "mean_THz": 5.597167912,
+      "peak_THz": 7.1785000000000005
+    },
+    "PBE-5000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.567884444444445,
+      "peak_THz": 6.9145
+    },
+    "PBE-10000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.17809009810402676,
+      "TV": 0.07004135461670177,
+      "W1_THz": 0.09678633680555554,
+      "mean_THz": 5.66467078125,
+      "peak_THz": 7.197500000000001
+    },
+    "PBE-15000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.1270717264858071,
+      "TV": 0.05101399896577571,
+      "W1_THz": 0.08214704832856022,
+      "mean_THz": 5.487345125000001,
+      "peak_THz": 7.0785
+    },
+    "PBE-20000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.14279430759587608,
+      "TV": 0.05283377963890886,
+      "W1_THz": 0.042954017202129595,
+      "mean_THz": 5.609783343750001,
+      "peak_THz": 7.1915000000000004
+    },
+    "PBE-23400/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.13827606670607392,
+      "TV": 0.05071460850302685,
+      "W1_THz": 0.03817828442965766,
+      "mean_THz": 5.597168770833333,
+      "peak_THz": 7.1785000000000005
+    },
+    "PBEsol-5000/fixed/MP40/0.05": {
+      "L2_relative": 0.2311125037494697,
+      "TV": 0.09528030433152312,
+      "W1_THz": 0.17424773611111094,
+      "mean_THz": 5.134620854166667,
+      "peak_THz": 6.4785
+    },
+    "PBEsol-10000/fixed/MP40/0.05": {
+      "L2_relative": 0.08764261707567014,
+      "TV": 0.0333370199533821,
+      "W1_THz": 0.03833226627240115,
+      "mean_THz": 5.340739736111111,
+      "peak_THz": 6.7035
+    },
+    "PBEsol-15000/fixed/MP40/0.05": {
+      "L2_relative": 0.10534740808624625,
+      "TV": 0.04143319987776753,
+      "W1_THz": 0.06856568055555567,
+      "mean_THz": 5.240302909722223,
+      "peak_THz": 6.7205
+    },
+    "PBEsol-20000/fixed/MP40/0.05": {
+      "L2_relative": 0.02345148758470016,
+      "TV": 0.008696070338974522,
+      "W1_THz": 0.01849707941302517,
+      "mean_THz": 5.327306506944446,
+      "peak_THz": 6.809500000000001
+    },
+    "PBEsol-23100/fixed/MP40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308868590277778,
+      "peak_THz": 6.8045
+    },
+    "PBEsol-5000/fixed/MP50/0.05": {
+      "L2_relative": 0.23100982978066203,
+      "TV": 0.0951964386211933,
+      "W1_THz": 0.17424934933333402,
+      "mean_THz": 5.134619525333333,
+      "peak_THz": 6.4805
+    },
+    "PBEsol-10000/fixed/MP50/0.05": {
+      "L2_relative": 0.08751410816124386,
+      "TV": 0.03333903299838191,
+      "W1_THz": 0.038336070229706996,
+      "mean_THz": 5.340739874666667,
+      "peak_THz": 6.7045
+    },
+    "PBEsol-15000/fixed/MP50/0.05": {
+      "L2_relative": 0.10508724895505676,
+      "TV": 0.041234392837906246,
+      "W1_THz": 0.0685650906666671,
+      "mean_THz": 5.240303784,
+      "peak_THz": 6.7195
+    },
+    "PBEsol-20000/fixed/MP50/0.05": {
+      "L2_relative": 0.023258469966472822,
+      "TV": 0.00860079890841783,
+      "W1_THz": 0.018496714856493984,
+      "mean_THz": 5.327306210666667,
+      "peak_THz": 6.809500000000001
+    },
+    "PBEsol-23100/fixed/MP50/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308868874666667,
+      "peak_THz": 6.8045
+    },
+    "PBEsol-5000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.2311685114889865,
+      "TV": 0.0953587235276176,
+      "W1_THz": 0.17424673539260271,
+      "mean_THz": 5.134619979166667,
+      "peak_THz": 6.4815
+    },
+    "PBEsol-10000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.0880786242787573,
+      "TV": 0.03346708587032113,
+      "W1_THz": 0.03833835947147495,
+      "mean_THz": 5.340741371527777,
+      "peak_THz": 6.7075000000000005
+    },
+    "PBEsol-15000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.10569033664619598,
+      "TV": 0.04228182198921911,
+      "W1_THz": 0.06856469734783623,
+      "mean_THz": 5.240302017361112,
+      "peak_THz": 6.7165
+    },
+    "PBEsol-20000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.023670741174540474,
+      "TV": 0.008855721344287231,
+      "W1_THz": 0.018496744599516547,
+      "mean_THz": 5.327304569444445,
+      "peak_THz": 6.8075
+    },
+    "PBEsol-23100/fixed/Gamma40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308866708333333,
+      "peak_THz": 6.8025
+    },
+    "PBEsol-5000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.19275725488304474,
+      "TV": 0.07443999549382017,
+      "W1_THz": 0.12613412500000012,
+      "mean_THz": 5.512135763888889,
+      "peak_THz": 7.1415
+    },
+    "PBEsol-10000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.08469383856357894,
+      "TV": 0.03282893625515865,
+      "W1_THz": 0.03859463766618465,
+      "mean_THz": 5.66243525,
+      "peak_THz": 7.2985
+    },
+    "PBEsol-15000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.13002866290098244,
+      "TV": 0.04613239097837045,
+      "W1_THz": 0.08363744444444463,
+      "mean_THz": 5.554632444444444,
+      "peak_THz": 7.2855
+    },
+    "PBEsol-20000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.027877366117014416,
+      "TV": 0.010137257431864298,
+      "W1_THz": 0.02082545711028725,
+      "mean_THz": 5.659065972222223,
+      "peak_THz": 7.3895
+    },
+    "PBEsol-23100/equilibrium/MP40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.638269888888889,
+      "peak_THz": 7.3805000000000005
+    },
+    "PBEsol-5000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.1925690418654185,
+      "TV": 0.0739969696540477,
+      "W1_THz": 0.12613596000000027,
+      "mean_THz": 5.5121340960000005,
+      "peak_THz": 7.1385
+    },
+    "PBEsol-10000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.08459194003658635,
+      "TV": 0.032876460448062916,
+      "W1_THz": 0.038594587541553316,
+      "mean_THz": 5.662433602666667,
+      "peak_THz": 7.2995
+    },
+    "PBEsol-15000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.12985134127184517,
+      "TV": 0.045749486668288694,
+      "W1_THz": 0.08363961599999997,
+      "mean_THz": 5.55463044,
+      "peak_THz": 7.2855
+    },
+    "PBEsol-20000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.02765532989469431,
+      "TV": 0.00997391270414959,
+      "W1_THz": 0.020825086826064577,
+      "mean_THz": 5.659065690666667,
+      "peak_THz": 7.3895
+    },
+    "PBEsol-23100/equilibrium/MP50/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.6382700560000005,
+      "peak_THz": 7.3805000000000005
+    },
+    "PBEsol-5000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.1937066262567804,
+      "TV": 0.07472899429063287,
+      "W1_THz": 0.1261345347222222,
+      "mean_THz": 5.5121347881944445,
+      "peak_THz": 7.1185
+    },
+    "PBEsol-10000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.08591159058131108,
+      "TV": 0.03360178151436359,
+      "W1_THz": 0.03859307706105941,
+      "mean_THz": 5.662432517361111,
+      "peak_THz": 7.3135
+    },
+    "PBEsol-15000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.1319586587338161,
+      "TV": 0.0469202240105594,
+      "W1_THz": 0.0836399541230225,
+      "mean_THz": 5.554629374999999,
+      "peak_THz": 7.2865
+    },
+    "PBEsol-20000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.028717203074815727,
+      "TV": 0.010625634698979635,
+      "W1_THz": 0.020825461947536657,
+      "mean_THz": 5.659065503472222,
+      "peak_THz": 7.3905
+    },
+    "PBEsol-23100/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.638269322916667,
+      "peak_THz": 7.3815
+    },
+    "r2SCAN-5000/fixed/MP40/0.05": {
+      "L2_relative": 0.14888036820437142,
+      "TV": 0.05336838731977612,
+      "W1_THz": 0.06144363347870185,
+      "mean_THz": 5.743447986111112,
+      "peak_THz": 7.3955
+    },
+    "r2SCAN-10000/fixed/MP40/0.05": {
+      "L2_relative": 0.08765723025356097,
+      "TV": 0.032922378108770474,
+      "W1_THz": 0.05043155555555616,
+      "mean_THz": 5.754084340277778,
+      "peak_THz": 7.5605
+    },
+    "r2SCAN-15000/fixed/MP40/0.05": {
+      "L2_relative": 0.029649369935595984,
+      "TV": 0.010510837745629501,
+      "W1_THz": 0.024151426843326346,
+      "mean_THz": 5.8286673194444445,
+      "peak_THz": 7.6245
+    },
+    "r2SCAN-20000/fixed/MP40/0.05": {
+      "L2_relative": 0.019225811926773334,
+      "TV": 0.006258685689924361,
+      "W1_THz": 0.007157625963089862,
+      "mean_THz": 5.798268291666667,
+      "peak_THz": 7.604500000000001
+    },
+    "r2SCAN-23200/fixed/MP40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804515895833333,
+      "peak_THz": 7.620500000000001
+    },
+    "r2SCAN-5000/fixed/MP50/0.05": {
+      "L2_relative": 0.14872580766022223,
+      "TV": 0.05339383863872653,
+      "W1_THz": 0.06143968023123579,
+      "mean_THz": 5.743450445333334,
+      "peak_THz": 7.3765
+    },
+    "r2SCAN-10000/fixed/MP50/0.05": {
+      "L2_relative": 0.08750984749130321,
+      "TV": 0.0329132849504941,
+      "W1_THz": 0.05043112800000001,
+      "mean_THz": 5.754083208,
+      "peak_THz": 7.5605
+    },
+    "r2SCAN-15000/fixed/MP50/0.05": {
+      "L2_relative": 0.029523665043107206,
+      "TV": 0.010350747158610065,
+      "W1_THz": 0.02415329292971904,
+      "mean_THz": 5.828667624,
+      "peak_THz": 7.6245
+    },
+    "r2SCAN-20000/fixed/MP50/0.05": {
+      "L2_relative": 0.019112768743177133,
+      "TV": 0.006242855202269547,
+      "W1_THz": 0.007154883760296068,
+      "mean_THz": 5.798268482666667,
+      "peak_THz": 7.604500000000001
+    },
+    "r2SCAN-23200/fixed/MP50/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804514336,
+      "peak_THz": 7.6195
+    },
+    "r2SCAN-5000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.14941002008448936,
+      "TV": 0.05406361316184022,
+      "W1_THz": 0.06144264994093891,
+      "mean_THz": 5.743447586805555,
+      "peak_THz": 7.367500000000001
+    },
+    "r2SCAN-10000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.08936903839719484,
+      "TV": 0.034241765475951036,
+      "W1_THz": 0.05043193402777772,
+      "mean_THz": 5.754080819444445,
+      "peak_THz": 7.5645
+    },
+    "r2SCAN-15000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.0304484936700467,
+      "TV": 0.01129939957057995,
+      "W1_THz": 0.024153135934701378,
+      "mean_THz": 5.828665781250001,
+      "peak_THz": 7.6245
+    },
+    "r2SCAN-20000/fixed/Gamma40/0.05": {
+      "L2_relative": 0.019356490251857112,
+      "TV": 0.006489956237677228,
+      "W1_THz": 0.007155411428418105,
+      "mean_THz": 5.79826613888889,
+      "peak_THz": 7.604500000000001
+    },
+    "r2SCAN-23200/fixed/Gamma40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804512753472222,
+      "peak_THz": 7.6195
+    },
+    "r2SCAN-5000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.14279310263490994,
+      "TV": 0.04857595009541689,
+      "W1_THz": 0.05905323112132624,
+      "mean_THz": 5.856873500000001,
+      "peak_THz": 7.6675
+    },
+    "r2SCAN-10000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.08335503676883992,
+      "TV": 0.0319249467294433,
+      "W1_THz": 0.05213570138888922,
+      "mean_THz": 5.86352276388889,
+      "peak_THz": 7.7495
+    },
+    "r2SCAN-15000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.038351173364917265,
+      "TV": 0.01335064343282365,
+      "W1_THz": 0.02964061296118721,
+      "mean_THz": 5.9452990625,
+      "peak_THz": 7.8025
+    },
+    "r2SCAN-20000/equilibrium/MP40/0.05": {
+      "L2_relative": 0.020512850096555527,
+      "TV": 0.006397899555172788,
+      "W1_THz": 0.007820522025980834,
+      "mean_THz": 5.9083753055555555,
+      "peak_THz": 7.7795
+    },
+    "r2SCAN-23200/equilibrium/MP40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.915658465277778,
+      "peak_THz": 7.7955
+    },
+    "r2SCAN-5000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.14281704468130973,
+      "TV": 0.04872962651922062,
+      "W1_THz": 0.05905475842855293,
+      "mean_THz": 5.856872778666666,
+      "peak_THz": 7.6755
+    },
+    "r2SCAN-10000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.08326816594279494,
+      "TV": 0.03192695327600688,
+      "W1_THz": 0.05213888266666668,
+      "mean_THz": 5.863521480000001,
+      "peak_THz": 7.7505
+    },
+    "r2SCAN-15000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.03830230754297457,
+      "TV": 0.013084988518095263,
+      "W1_THz": 0.0296365466760559,
+      "mean_THz": 5.945296909333334,
+      "peak_THz": 7.8025
+    },
+    "r2SCAN-20000/equilibrium/MP50/0.05": {
+      "L2_relative": 0.020387333981854754,
+      "TV": 0.006282851780971694,
+      "W1_THz": 0.007822803366351971,
+      "mean_THz": 5.908375709333334,
+      "peak_THz": 7.7795
+    },
+    "r2SCAN-23200/equilibrium/MP50/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.915660362666667,
+      "peak_THz": 7.7955
+    },
+    "r2SCAN-5000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.14532348672057427,
+      "TV": 0.05019298191914041,
+      "W1_THz": 0.05905248167307635,
+      "mean_THz": 5.856872197916666,
+      "peak_THz": 7.6735
+    },
+    "r2SCAN-10000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.08651756539664067,
+      "TV": 0.033542732877085465,
+      "W1_THz": 0.052136750000000044,
+      "mean_THz": 5.863521548611111,
+      "peak_THz": 7.7515
+    },
+    "r2SCAN-15000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.04124360112978998,
+      "TV": 0.014472900677848882,
+      "W1_THz": 0.029637042439306694,
+      "mean_THz": 5.945295281249999,
+      "peak_THz": 7.8035000000000005
+    },
+    "r2SCAN-20000/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.02060464770274145,
+      "TV": 0.0066823570609432,
+      "W1_THz": 0.00782176119387084,
+      "mean_THz": 5.908374378472223,
+      "peak_THz": 7.7795
+    },
+    "r2SCAN-23200/equilibrium/Gamma40/0.05": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.9156582986111115,
+      "peak_THz": 7.7945
+    },
+    "PBE-5000/fixed/MP40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.439689124999999,
+      "peak_THz": 6.7645
+    },
+    "PBE-10000/fixed/MP40/0.1": {
+      "L2_relative": 0.16147924468772765,
+      "TV": 0.06758956217001012,
+      "W1_THz": 0.10238347916666785,
+      "mean_THz": 5.542072604166666,
+      "peak_THz": 7.0295
+    },
+    "PBE-15000/fixed/MP40/0.1": {
+      "L2_relative": 0.0997822830640905,
+      "TV": 0.04179195200325025,
+      "W1_THz": 0.07714322394411076,
+      "mean_THz": 5.364313125000001,
+      "peak_THz": 6.9145
+    },
+    "PBE-20000/fixed/MP40/0.1": {
+      "L2_relative": 0.12670341772822913,
+      "TV": 0.049504745299988905,
+      "W1_THz": 0.052459250000000276,
+      "mean_THz": 5.492148375,
+      "peak_THz": 7.0305
+    },
+    "PBE-23400/fixed/MP40/0.1": {
+      "L2_relative": 0.11902917467508309,
+      "TV": 0.04516421642945369,
+      "W1_THz": 0.04217911413249517,
+      "mean_THz": 5.479462965277778,
+      "peak_THz": 7.0155
+    },
+    "PBE-5000/fixed/MP50/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.4396894080000004,
+      "peak_THz": 6.7645
+    },
+    "PBE-10000/fixed/MP50/0.1": {
+      "L2_relative": 0.16148731091170415,
+      "TV": 0.06759639390938793,
+      "W1_THz": 0.10238229600000176,
+      "mean_THz": 5.542071704,
+      "peak_THz": 7.0305
+    },
+    "PBE-15000/fixed/MP50/0.1": {
+      "L2_relative": 0.09980243065416067,
+      "TV": 0.04180614344274939,
+      "W1_THz": 0.07714379814310683,
+      "mean_THz": 5.36431408,
+      "peak_THz": 6.9145
+    },
+    "PBE-20000/fixed/MP50/0.1": {
+      "L2_relative": 0.12670945068843298,
+      "TV": 0.0495041090189898,
+      "W1_THz": 0.05245866400000031,
+      "mean_THz": 5.492148072000001,
+      "peak_THz": 7.0305
+    },
+    "PBE-23400/fixed/MP50/0.1": {
+      "L2_relative": 0.11904171669664734,
+      "TV": 0.04517491331645911,
+      "W1_THz": 0.04217886376899016,
+      "mean_THz": 5.4794616640000005,
+      "peak_THz": 7.0155
+    },
+    "PBE-5000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.439688663194445,
+      "peak_THz": 6.7645
+    },
+    "PBE-10000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.16148654773460125,
+      "TV": 0.06762036758549123,
+      "W1_THz": 0.10238227595583682,
+      "mean_THz": 5.542070937500001,
+      "peak_THz": 7.0295
+    },
+    "PBE-15000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.09980291573961243,
+      "TV": 0.04182344538888569,
+      "W1_THz": 0.07714260096887748,
+      "mean_THz": 5.3643145937500005,
+      "peak_THz": 6.9135
+    },
+    "PBE-20000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.12670108221014068,
+      "TV": 0.04951829387119497,
+      "W1_THz": 0.052456637515667454,
+      "mean_THz": 5.492145298611112,
+      "peak_THz": 7.0305
+    },
+    "PBE-23400/fixed/Gamma40/0.1": {
+      "L2_relative": 0.11903259077102439,
+      "TV": 0.04520127357436413,
+      "W1_THz": 0.042178579987390385,
+      "mean_THz": 5.4794611388888885,
+      "peak_THz": 7.0155
+    },
+    "PBE-5000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.5678839374999995,
+      "peak_THz": 6.9495000000000005
+    },
+    "PBE-10000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.14817052885160853,
+      "TV": 0.06036324398390071,
+      "W1_THz": 0.09678929861111132,
+      "mean_THz": 5.66467323611111,
+      "peak_THz": 7.1915000000000004
+    },
+    "PBE-15000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.098347696108048,
+      "TV": 0.04172105313647471,
+      "W1_THz": 0.0819829291439407,
+      "mean_THz": 5.487346784722224,
+      "peak_THz": 7.072500000000001
+    },
+    "PBE-20000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.11344202840376298,
+      "TV": 0.043097317177139174,
+      "W1_THz": 0.042799892067521356,
+      "mean_THz": 5.609786069444445,
+      "peak_THz": 7.1835
+    },
+    "PBE-23400/equilibrium/MP40/0.1": {
+      "L2_relative": 0.10828701062220625,
+      "TV": 0.0406051263545051,
+      "W1_THz": 0.037857784421796534,
+      "mean_THz": 5.597167416666666,
+      "peak_THz": 7.1695
+    },
+    "PBE-5000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.567884349333333,
+      "peak_THz": 6.9495000000000005
+    },
+    "PBE-10000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.14816526462001217,
+      "TV": 0.06036801928587231,
+      "W1_THz": 0.09678740800000114,
+      "mean_THz": 5.664671757333333,
+      "peak_THz": 7.1915000000000004
+    },
+    "PBE-15000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.09833565447826755,
+      "TV": 0.041723296801807364,
+      "W1_THz": 0.08198496688186005,
+      "mean_THz": 5.487345632,
+      "peak_THz": 7.072500000000001
+    },
+    "PBE-20000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.11342968772528433,
+      "TV": 0.043085702913184816,
+      "W1_THz": 0.04280060970088399,
+      "mean_THz": 5.609785943999999,
+      "peak_THz": 7.1835
+    },
+    "PBE-23400/equilibrium/MP50/0.1": {
+      "L2_relative": 0.1082855078925359,
+      "TV": 0.040603483347712854,
+      "W1_THz": 0.037860518357834126,
+      "mean_THz": 5.597167912,
+      "peak_THz": 7.1695
+    },
+    "PBE-5000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.567884444444445,
+      "peak_THz": 6.9495000000000005
+    },
+    "PBE-10000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.1481705099277008,
+      "TV": 0.06041470882686386,
+      "W1_THz": 0.0967863368055557,
+      "mean_THz": 5.664670781250001,
+      "peak_THz": 7.1915000000000004
+    },
+    "PBE-15000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.09833269846489352,
+      "TV": 0.04177356175185593,
+      "W1_THz": 0.08198480549974113,
+      "mean_THz": 5.487345125000001,
+      "peak_THz": 7.072500000000001
+    },
+    "PBE-20000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.11343266791102827,
+      "TV": 0.04306159947479332,
+      "W1_THz": 0.042799232260338896,
+      "mean_THz": 5.609783343749999,
+      "peak_THz": 7.1835
+    },
+    "PBE-23400/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.10829418137483879,
+      "TV": 0.04058905559709831,
+      "W1_THz": 0.03786060993086454,
+      "mean_THz": 5.597168770833333,
+      "peak_THz": 7.1695
+    },
+    "PBEsol-5000/fixed/MP40/0.1": {
+      "L2_relative": 0.20167089949479403,
+      "TV": 0.08509064488794557,
+      "W1_THz": 0.17424773611111483,
+      "mean_THz": 5.134620854166666,
+      "peak_THz": 6.5095
+    },
+    "PBEsol-10000/fixed/MP40/0.1": {
+      "L2_relative": 0.06964100994493415,
+      "TV": 0.028070281317378334,
+      "W1_THz": 0.038116540015982324,
+      "mean_THz": 5.340739736111111,
+      "peak_THz": 6.710500000000001
+    },
+    "PBEsol-15000/fixed/MP40/0.1": {
+      "L2_relative": 0.08428423101776127,
+      "TV": 0.03501230982242491,
+      "W1_THz": 0.06856568055555701,
+      "mean_THz": 5.240302909722223,
+      "peak_THz": 6.7235000000000005
+    },
+    "PBEsol-20000/fixed/MP40/0.1": {
+      "L2_relative": 0.018990068397931704,
+      "TV": 0.007443576868589927,
+      "W1_THz": 0.01848061772471915,
+      "mean_THz": 5.327306506944446,
+      "peak_THz": 6.8085
+    },
+    "PBEsol-23100/fixed/MP40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308868590277777,
+      "peak_THz": 6.8015
+    },
+    "PBEsol-5000/fixed/MP50/0.1": {
+      "L2_relative": 0.20168069165376792,
+      "TV": 0.08508821813589015,
+      "W1_THz": 0.17424934933333336,
+      "mean_THz": 5.134619525333333,
+      "peak_THz": 6.5095
+    },
+    "PBEsol-10000/fixed/MP50/0.1": {
+      "L2_relative": 0.06963547515010407,
+      "TV": 0.02806228753557108,
+      "W1_THz": 0.03811980021215445,
+      "mean_THz": 5.340739874666667,
+      "peak_THz": 6.710500000000001
+    },
+    "PBEsol-15000/fixed/MP50/0.1": {
+      "L2_relative": 0.08428502431167727,
+      "TV": 0.0350048502663096,
+      "W1_THz": 0.06856509066666762,
+      "mean_THz": 5.240303784000001,
+      "peak_THz": 6.7235000000000005
+    },
+    "PBEsol-20000/fixed/MP50/0.1": {
+      "L2_relative": 0.01898847009448035,
+      "TV": 0.007440852115310251,
+      "W1_THz": 0.018480209292777397,
+      "mean_THz": 5.327306210666666,
+      "peak_THz": 6.8085
+    },
+    "PBEsol-23100/fixed/MP50/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308868874666667,
+      "peak_THz": 6.8015
+    },
+    "PBEsol-5000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.20167232688909317,
+      "TV": 0.08505749349298372,
+      "W1_THz": 0.17424673051894435,
+      "mean_THz": 5.134619979166667,
+      "peak_THz": 6.5095
+    },
+    "PBEsol-10000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.0696517419972329,
+      "TV": 0.028050106772053815,
+      "W1_THz": 0.03812148965304837,
+      "mean_THz": 5.340741371527777,
+      "peak_THz": 6.710500000000001
+    },
+    "PBEsol-15000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.08428940486165998,
+      "TV": 0.03498657223802514,
+      "W1_THz": 0.0685646928164821,
+      "mean_THz": 5.240302017361111,
+      "peak_THz": 6.7235000000000005
+    },
+    "PBEsol-20000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.018994966200775332,
+      "TV": 0.007441390500875684,
+      "W1_THz": 0.01848035655405516,
+      "mean_THz": 5.327304569444443,
+      "peak_THz": 6.8075
+    },
+    "PBEsol-23100/fixed/Gamma40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308866708333333,
+      "peak_THz": 6.8015
+    },
+    "PBEsol-5000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.16228349849758666,
+      "TV": 0.06393363965883025,
+      "W1_THz": 0.12613412500000024,
+      "mean_THz": 5.512135763888889,
+      "peak_THz": 7.1915000000000004
+    },
+    "PBEsol-10000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.067201363830714,
+      "TV": 0.028074730735765288,
+      "W1_THz": 0.03851569153254669,
+      "mean_THz": 5.662435250000001,
+      "peak_THz": 7.3125
+    },
+    "PBEsol-15000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.09650948773832028,
+      "TV": 0.038074900764267235,
+      "W1_THz": 0.08363744444444461,
+      "mean_THz": 5.554632444444444,
+      "peak_THz": 7.277500000000001
+    },
+    "PBEsol-20000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.02277070308538318,
+      "TV": 0.008738552300732949,
+      "W1_THz": 0.02081795938670861,
+      "mean_THz": 5.659065972222223,
+      "peak_THz": 7.3805000000000005
+    },
+    "PBEsol-23100/equilibrium/MP40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.638269888888889,
+      "peak_THz": 7.370500000000001
+    },
+    "PBEsol-5000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.16228049147927767,
+      "TV": 0.06391767579498085,
+      "W1_THz": 0.12613596000000013,
+      "mean_THz": 5.512134096,
+      "peak_THz": 7.1915000000000004
+    },
+    "PBEsol-10000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.06719819298818308,
+      "TV": 0.02807041572256692,
+      "W1_THz": 0.03851553364385728,
+      "mean_THz": 5.662433602666667,
+      "peak_THz": 7.3125
+    },
+    "PBEsol-15000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.09651350852746875,
+      "TV": 0.0380578668971968,
+      "W1_THz": 0.08363961600000018,
+      "mean_THz": 5.5546304399999995,
+      "peak_THz": 7.277500000000001
+    },
+    "PBEsol-20000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.022760205108341463,
+      "TV": 0.00872877866523126,
+      "W1_THz": 0.02081754355297192,
+      "mean_THz": 5.659065690666667,
+      "peak_THz": 7.3805000000000005
+    },
+    "PBEsol-23100/equilibrium/MP50/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.6382700560000005,
+      "peak_THz": 7.370500000000001
+    },
+    "PBEsol-5000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.1622843036773771,
+      "TV": 0.06387235290104287,
+      "W1_THz": 0.12613453472222314,
+      "mean_THz": 5.512134788194445,
+      "peak_THz": 7.1925
+    },
+    "PBEsol-10000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.06720182405859285,
+      "TV": 0.028068339707277873,
+      "W1_THz": 0.03851543422755992,
+      "mean_THz": 5.66243251736111,
+      "peak_THz": 7.3125
+    },
+    "PBEsol-15000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.09651666772043203,
+      "TV": 0.03801344709053788,
+      "W1_THz": 0.08363994941468839,
+      "mean_THz": 5.554629375,
+      "peak_THz": 7.277500000000001
+    },
+    "PBEsol-20000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.02276649716170035,
+      "TV": 0.008707423267895338,
+      "W1_THz": 0.020817989767568143,
+      "mean_THz": 5.659065503472222,
+      "peak_THz": 7.3805000000000005
+    },
+    "PBEsol-23100/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.638269322916668,
+      "peak_THz": 7.370500000000001
+    },
+    "r2SCAN-5000/fixed/MP40/0.1": {
+      "L2_relative": 0.12416827929555818,
+      "TV": 0.046660219641633166,
+      "W1_THz": 0.061417196098524904,
+      "mean_THz": 5.743447986111111,
+      "peak_THz": 7.4285000000000005
+    },
+    "r2SCAN-10000/fixed/MP40/0.1": {
+      "L2_relative": 0.07248140481805232,
+      "TV": 0.029000053037239404,
+      "W1_THz": 0.05043155555555549,
+      "mean_THz": 5.754084340277778,
+      "peak_THz": 7.5655
+    },
+    "r2SCAN-15000/fixed/MP40/0.1": {
+      "L2_relative": 0.02453731957770421,
+      "TV": 0.009034497190985202,
+      "W1_THz": 0.024151423611111396,
+      "mean_THz": 5.828667319444444,
+      "peak_THz": 7.6155
+    },
+    "r2SCAN-20000/fixed/MP40/0.1": {
+      "L2_relative": 0.014236193330127574,
+      "TV": 0.005359868705932718,
+      "W1_THz": 0.007141046560737196,
+      "mean_THz": 5.798268291666666,
+      "peak_THz": 7.5975
+    },
+    "r2SCAN-23200/fixed/MP40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804515895833334,
+      "peak_THz": 7.6125
+    },
+    "r2SCAN-5000/fixed/MP50/0.1": {
+      "L2_relative": 0.12415318038033026,
+      "TV": 0.046656747235719706,
+      "W1_THz": 0.061413122707119364,
+      "mean_THz": 5.743450445333333,
+      "peak_THz": 7.4285000000000005
+    },
+    "r2SCAN-10000/fixed/MP50/0.1": {
+      "L2_relative": 0.07245836647172298,
+      "TV": 0.028992746561112247,
+      "W1_THz": 0.05043112800000016,
+      "mean_THz": 5.754083208,
+      "peak_THz": 7.5655
+    },
+    "r2SCAN-15000/fixed/MP50/0.1": {
+      "L2_relative": 0.024537068873645738,
+      "TV": 0.009021654999060262,
+      "W1_THz": 0.02415328933986209,
+      "mean_THz": 5.828667624000001,
+      "peak_THz": 7.6155
+    },
+    "r2SCAN-20000/fixed/MP50/0.1": {
+      "L2_relative": 0.014220441192272835,
+      "TV": 0.005356135315133148,
+      "W1_THz": 0.007138202793977529,
+      "mean_THz": 5.798268482666668,
+      "peak_THz": 7.5975
+    },
+    "r2SCAN-23200/fixed/MP50/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804514336,
+      "peak_THz": 7.6125
+    },
+    "r2SCAN-5000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.12417403953091981,
+      "TV": 0.04668687800957573,
+      "W1_THz": 0.06141438484078826,
+      "mean_THz": 5.743447586805556,
+      "peak_THz": 7.4285000000000005
+    },
+    "r2SCAN-10000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.0724786565986111,
+      "TV": 0.029013066670772615,
+      "W1_THz": 0.05043193402777864,
+      "mean_THz": 5.754080819444445,
+      "peak_THz": 7.5655
+    },
+    "r2SCAN-15000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.02453372446636567,
+      "TV": 0.009049747746891035,
+      "W1_THz": 0.02415307204878733,
+      "mean_THz": 5.828665781250001,
+      "peak_THz": 7.6155
+    },
+    "r2SCAN-20000/fixed/Gamma40/0.1": {
+      "L2_relative": 0.014231617862822664,
+      "TV": 0.005357329881777796,
+      "W1_THz": 0.007138634179778913,
+      "mean_THz": 5.79826613888889,
+      "peak_THz": 7.5975
+    },
+    "r2SCAN-23200/fixed/Gamma40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804512753472222,
+      "peak_THz": 7.6125
+    },
+    "r2SCAN-5000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.11921687485893605,
+      "TV": 0.04288212520824417,
+      "W1_THz": 0.05903365762444132,
+      "mean_THz": 5.856873500000001,
+      "peak_THz": 7.6455
+    },
+    "r2SCAN-10000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.06917647181372763,
+      "TV": 0.028331671774406587,
+      "W1_THz": 0.052135701388889066,
+      "mean_THz": 5.86352276388889,
+      "peak_THz": 7.7515
+    },
+    "r2SCAN-15000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.03214527083439087,
+      "TV": 0.011436593778135523,
+      "W1_THz": 0.02964059722222341,
+      "mean_THz": 5.9452990625,
+      "peak_THz": 7.7945
+    },
+    "r2SCAN-20000/equilibrium/MP40/0.1": {
+      "L2_relative": 0.014392273067521383,
+      "TV": 0.005335453076843087,
+      "W1_THz": 0.007801597319247679,
+      "mean_THz": 5.908375305555556,
+      "peak_THz": 7.7725
+    },
+    "r2SCAN-23200/equilibrium/MP40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.915658465277778,
+      "peak_THz": 7.7895
+    },
+    "r2SCAN-5000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.11921628143273913,
+      "TV": 0.042882893390153276,
+      "W1_THz": 0.059035223975311246,
+      "mean_THz": 5.856872778666667,
+      "peak_THz": 7.6455
+    },
+    "r2SCAN-10000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.06916799930258348,
+      "TV": 0.02831276773989107,
+      "W1_THz": 0.05213888266666665,
+      "mean_THz": 5.863521479999999,
+      "peak_THz": 7.7515
+    },
+    "r2SCAN-15000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.03214177641422456,
+      "TV": 0.011435068645637803,
+      "W1_THz": 0.029636546666666708,
+      "mean_THz": 5.945296909333334,
+      "peak_THz": 7.7945
+    },
+    "r2SCAN-20000/equilibrium/MP50/0.1": {
+      "L2_relative": 0.014385452264285404,
+      "TV": 0.0053321935160993966,
+      "W1_THz": 0.007804010627495099,
+      "mean_THz": 5.908375709333333,
+      "peak_THz": 7.7725
+    },
+    "r2SCAN-23200/equilibrium/MP50/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.915660362666667,
+      "peak_THz": 7.7895
+    },
+    "r2SCAN-5000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.11924018555309956,
+      "TV": 0.04288700549240845,
+      "W1_THz": 0.059034257724773144,
+      "mean_THz": 5.856872197916667,
+      "peak_THz": 7.6455
+    },
+    "r2SCAN-10000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.06921458587728366,
+      "TV": 0.02830011760490656,
+      "W1_THz": 0.052136750000000044,
+      "mean_THz": 5.863521548611111,
+      "peak_THz": 7.7515
+    },
+    "r2SCAN-15000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.032162075129504454,
+      "TV": 0.011425294706016501,
+      "W1_THz": 0.0296370017594058,
+      "mean_THz": 5.945295281250001,
+      "peak_THz": 7.7945
+    },
+    "r2SCAN-20000/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.01438384001314685,
+      "TV": 0.005326613536451979,
+      "W1_THz": 0.00780313339056308,
+      "mean_THz": 5.908374378472223,
+      "peak_THz": 7.7725
+    },
+    "r2SCAN-23200/equilibrium/Gamma40/0.1": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.9156582986111115,
+      "peak_THz": 7.7885
+    },
+    "PBE-5000/fixed/MP40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.439689125,
+      "peak_THz": 6.8005
+    },
+    "PBE-10000/fixed/MP40/0.15": {
+      "L2_relative": 0.13755055597805266,
+      "TV": 0.05942856442502935,
+      "W1_THz": 0.10238347916666678,
+      "mean_THz": 5.542072604166666,
+      "peak_THz": 7.0265
+    },
+    "PBE-15000/fixed/MP40/0.15": {
+      "L2_relative": 0.08445493455715161,
+      "TV": 0.036541612688091085,
+      "W1_THz": 0.0769250199707227,
+      "mean_THz": 5.364313125,
+      "peak_THz": 6.9085
+    },
+    "PBE-20000/fixed/MP40/0.15": {
+      "L2_relative": 0.10461717147285376,
+      "TV": 0.04198779043106286,
+      "W1_THz": 0.05245925000000021,
+      "mean_THz": 5.492148374999999,
+      "peak_THz": 7.0225
+    },
+    "PBE-23400/fixed/MP40/0.15": {
+      "L2_relative": 0.09767028698998143,
+      "TV": 0.03814259929816659,
+      "W1_THz": 0.04188309406331716,
+      "mean_THz": 5.4794629652777775,
+      "peak_THz": 7.0055000000000005
+    },
+    "PBE-5000/fixed/MP50/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.439689408,
+      "peak_THz": 6.8005
+    },
+    "PBE-10000/fixed/MP50/0.15": {
+      "L2_relative": 0.13755560071576572,
+      "TV": 0.05942905062860013,
+      "W1_THz": 0.10238229600000015,
+      "mean_THz": 5.5420717040000005,
+      "peak_THz": 7.0265
+    },
+    "PBE-15000/fixed/MP50/0.15": {
+      "L2_relative": 0.08446664971827716,
+      "TV": 0.03654755789585684,
+      "W1_THz": 0.07692552760975314,
+      "mean_THz": 5.364314080000001,
+      "peak_THz": 6.9085
+    },
+    "PBE-20000/fixed/MP50/0.15": {
+      "L2_relative": 0.10462471488395625,
+      "TV": 0.04198888413448243,
+      "W1_THz": 0.05245866400000032,
+      "mean_THz": 5.492148072,
+      "peak_THz": 7.0235
+    },
+    "PBE-23400/fixed/MP50/0.15": {
+      "L2_relative": 0.09768253812843433,
+      "TV": 0.038144121037413214,
+      "W1_THz": 0.04188404324226765,
+      "mean_THz": 5.4794616640000005,
+      "peak_THz": 7.0055000000000005
+    },
+    "PBE-5000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.439688663194444,
+      "peak_THz": 6.8005
+    },
+    "PBE-10000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.13755895085065842,
+      "TV": 0.059431034996929484,
+      "W1_THz": 0.10238227444922411,
+      "mean_THz": 5.5420709375,
+      "peak_THz": 7.0265
+    },
+    "PBE-15000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.08446550295625074,
+      "TV": 0.03655014250818421,
+      "W1_THz": 0.07692436704823324,
+      "mean_THz": 5.36431459375,
+      "peak_THz": 6.9085
+    },
+    "PBE-20000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.10462227932739132,
+      "TV": 0.041987682959303566,
+      "W1_THz": 0.05245663567771017,
+      "mean_THz": 5.492145298611111,
+      "peak_THz": 7.0225
+    },
+    "PBE-23400/fixed/Gamma40/0.15": {
+      "L2_relative": 0.0976757033674791,
+      "TV": 0.03814333849589442,
+      "W1_THz": 0.041887451757101374,
+      "mean_THz": 5.4794611388888885,
+      "peak_THz": 7.0055000000000005
+    },
+    "PBE-5000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.5678839374999995,
+      "peak_THz": 6.979500000000001
+    },
+    "PBE-10000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.12543590812883104,
+      "TV": 0.052254169641532,
+      "W1_THz": 0.09678929861111121,
+      "mean_THz": 5.664673236111112,
+      "peak_THz": 7.184500000000001
+    },
+    "PBE-15000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.08494205547834337,
+      "TV": 0.03623179315797745,
+      "W1_THz": 0.08177099414882706,
+      "mean_THz": 5.487346784722222,
+      "peak_THz": 7.0655
+    },
+    "PBE-20000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.0931662982741374,
+      "TV": 0.03640629390200934,
+      "W1_THz": 0.04258328189568946,
+      "mean_THz": 5.609786069444445,
+      "peak_THz": 7.1735
+    },
+    "PBE-23400/equilibrium/MP40/0.15": {
+      "L2_relative": 0.08892134625698382,
+      "TV": 0.03439816235932554,
+      "W1_THz": 0.037322325976089976,
+      "mean_THz": 5.597167416666666,
+      "peak_THz": 7.1595
+    },
+    "PBE-5000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.567884349333333,
+      "peak_THz": 6.979500000000001
+    },
+    "PBE-10000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.12543524085204003,
+      "TV": 0.05225394677031216,
+      "W1_THz": 0.09678740800000017,
+      "mean_THz": 5.664671757333333,
+      "peak_THz": 7.184500000000001
+    },
+    "PBE-15000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.08494152848835029,
+      "TV": 0.03623120562775693,
+      "W1_THz": 0.08177299570439234,
+      "mean_THz": 5.487345632,
+      "peak_THz": 7.0655
+    },
+    "PBE-20000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.09316111039985596,
+      "TV": 0.03640427702839839,
+      "W1_THz": 0.042583888444065014,
+      "mean_THz": 5.609785944,
+      "peak_THz": 7.1735
+    },
+    "PBE-23400/equilibrium/MP50/0.15": {
+      "L2_relative": 0.0889207792802781,
+      "TV": 0.03439948364285863,
+      "W1_THz": 0.03732523575320833,
+      "mean_THz": 5.597167912,
+      "peak_THz": 7.1595
+    },
+    "PBE-5000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.567884444444445,
+      "peak_THz": 6.979500000000001
+    },
+    "PBE-10000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.12543450738716558,
+      "TV": 0.052254553278414106,
+      "W1_THz": 0.09678633680555632,
+      "mean_THz": 5.664670781249999,
+      "peak_THz": 7.184500000000001
+    },
+    "PBE-15000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.08493472593601485,
+      "TV": 0.03623363609957845,
+      "W1_THz": 0.08177290627487088,
+      "mean_THz": 5.487345124999999,
+      "peak_THz": 7.0655
+    },
+    "PBE-20000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.0931599763191867,
+      "TV": 0.036401678763789865,
+      "W1_THz": 0.04258215821054628,
+      "mean_THz": 5.609783343749999,
+      "peak_THz": 7.1735
+    },
+    "PBE-23400/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.08892038842129917,
+      "TV": 0.034399365948625006,
+      "W1_THz": 0.037324939172263906,
+      "mean_THz": 5.597168770833333,
+      "peak_THz": 7.1595
+    },
+    "PBEsol-5000/fixed/MP40/0.15": {
+      "L2_relative": 0.1769688841817293,
+      "TV": 0.07666775311281074,
+      "W1_THz": 0.174247736111112,
+      "mean_THz": 5.134620854166666,
+      "peak_THz": 6.5365
+    },
+    "PBEsol-10000/fixed/MP40/0.15": {
+      "L2_relative": 0.05964786840656381,
+      "TV": 0.024307249377014548,
+      "W1_THz": 0.0378227623358962,
+      "mean_THz": 5.340739736111111,
+      "peak_THz": 6.7165
+    },
+    "PBEsol-15000/fixed/MP40/0.15": {
+      "L2_relative": 0.07140140348463156,
+      "TV": 0.03102006247850972,
+      "W1_THz": 0.06856568055555552,
+      "mean_THz": 5.240302909722223,
+      "peak_THz": 6.7145
+    },
+    "PBEsol-20000/fixed/MP40/0.15": {
+      "L2_relative": 0.016744484524054158,
+      "TV": 0.006700946347785551,
+      "W1_THz": 0.01846359764782808,
+      "mean_THz": 5.327306506944444,
+      "peak_THz": 6.7945
+    },
+    "PBEsol-23100/fixed/MP40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308868590277777,
+      "peak_THz": 6.7875000000000005
+    },
+    "PBEsol-5000/fixed/MP50/0.15": {
+      "L2_relative": 0.17697725641937379,
+      "TV": 0.07666923518088455,
+      "W1_THz": 0.1742493493333332,
+      "mean_THz": 5.134619525333333,
+      "peak_THz": 6.5365
+    },
+    "PBEsol-10000/fixed/MP50/0.15": {
+      "L2_relative": 0.05964551643999269,
+      "TV": 0.02430520199177961,
+      "W1_THz": 0.037825947693051525,
+      "mean_THz": 5.340739874666667,
+      "peak_THz": 6.7165
+    },
+    "PBEsol-15000/fixed/MP50/0.15": {
+      "L2_relative": 0.07140324729101218,
+      "TV": 0.03102079935131853,
+      "W1_THz": 0.06856509066666672,
+      "mean_THz": 5.240303784,
+      "peak_THz": 6.7145
+    },
+    "PBEsol-20000/fixed/MP50/0.15": {
+      "L2_relative": 0.01674113395165775,
+      "TV": 0.006696971954007583,
+      "W1_THz": 0.018463130314123728,
+      "mean_THz": 5.327306210666666,
+      "peak_THz": 6.7945
+    },
+    "PBEsol-23100/fixed/MP50/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308868874666667,
+      "peak_THz": 6.7875000000000005
+    },
+    "PBEsol-5000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.17696995452932332,
+      "TV": 0.07666340610510916,
+      "W1_THz": 0.1742467292467961,
+      "mean_THz": 5.134619979166667,
+      "peak_THz": 6.5365
+    },
+    "PBEsol-10000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.05965470645041674,
+      "TV": 0.024307462529092317,
+      "W1_THz": 0.037827652210136925,
+      "mean_THz": 5.340741371527778,
+      "peak_THz": 6.7165
+    },
+    "PBEsol-15000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.07140094630910107,
+      "TV": 0.031018911226204704,
+      "W1_THz": 0.06856469116597613,
+      "mean_THz": 5.2403020173611115,
+      "peak_THz": 6.7145
+    },
+    "PBEsol-20000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.016744571169252768,
+      "TV": 0.006697895762338658,
+      "W1_THz": 0.018463386073925586,
+      "mean_THz": 5.327304569444445,
+      "peak_THz": 6.7945
+    },
+    "PBEsol-23100/fixed/Gamma40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.308866708333333,
+      "peak_THz": 6.7875000000000005
+    },
+    "PBEsol-5000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.13899479154619293,
+      "TV": 0.05484858341093988,
+      "W1_THz": 0.12613412500000087,
+      "mean_THz": 5.512135763888889,
+      "peak_THz": 7.2045
+    },
+    "PBEsol-10000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.05852647618650135,
+      "TV": 0.02499577310722522,
+      "W1_THz": 0.03838675919737737,
+      "mean_THz": 5.66243525,
+      "peak_THz": 7.3005
+    },
+    "PBEsol-15000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.07996928912993577,
+      "TV": 0.03255683988917063,
+      "W1_THz": 0.0836374444444461,
+      "mean_THz": 5.554632444444445,
+      "peak_THz": 7.2695
+    },
+    "PBEsol-20000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.020034792136414285,
+      "TV": 0.007847859762252496,
+      "W1_THz": 0.020809722009417587,
+      "mean_THz": 5.659065972222223,
+      "peak_THz": 7.3715
+    },
+    "PBEsol-23100/equilibrium/MP40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.638269888888889,
+      "peak_THz": 7.3595
+    },
+    "PBEsol-5000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.13899528539590658,
+      "TV": 0.05484855405297831,
+      "W1_THz": 0.12613596000000055,
+      "mean_THz": 5.5121340960000005,
+      "peak_THz": 7.2045
+    },
+    "PBEsol-10000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.0585270420415349,
+      "TV": 0.024995245231608877,
+      "W1_THz": 0.03838668918870698,
+      "mean_THz": 5.662433602666667,
+      "peak_THz": 7.3005
+    },
+    "PBEsol-15000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.07997093450807487,
+      "TV": 0.032556354039512965,
+      "W1_THz": 0.0836396160000001,
+      "mean_THz": 5.55463044,
+      "peak_THz": 7.2695
+    },
+    "PBEsol-20000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.020032638161169482,
+      "TV": 0.007847893768834158,
+      "W1_THz": 0.02080929117820927,
+      "mean_THz": 5.659065690666667,
+      "peak_THz": 7.3715
+    },
+    "PBEsol-23100/equilibrium/MP50/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.638270056,
+      "peak_THz": 7.3595
+    },
+    "PBEsol-5000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.13899058687430782,
+      "TV": 0.05484498614973486,
+      "W1_THz": 0.12613453472222322,
+      "mean_THz": 5.5121347881944445,
+      "peak_THz": 7.2045
+    },
+    "PBEsol-10000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.05852776119810664,
+      "TV": 0.024996518391886744,
+      "W1_THz": 0.03838653847687316,
+      "mean_THz": 5.662432517361111,
+      "peak_THz": 7.3005
+    },
+    "PBEsol-15000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.07996659207096213,
+      "TV": 0.03255146140187809,
+      "W1_THz": 0.08363994804631872,
+      "mean_THz": 5.554629375,
+      "peak_THz": 7.2695
+    },
+    "PBEsol-20000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.020034141391069262,
+      "TV": 0.007849155415917486,
+      "W1_THz": 0.02080979445961731,
+      "mean_THz": 5.659065503472222,
+      "peak_THz": 7.3715
+    },
+    "PBEsol-23100/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.638269322916665,
+      "peak_THz": 7.3595
+    },
+    "r2SCAN-5000/fixed/MP40/0.15": {
+      "L2_relative": 0.10635812684401436,
+      "TV": 0.04133418596238686,
+      "W1_THz": 0.06138636357452695,
+      "mean_THz": 5.743447986111111,
+      "peak_THz": 7.4365
+    },
+    "r2SCAN-10000/fixed/MP40/0.15": {
+      "L2_relative": 0.06196807432529366,
+      "TV": 0.025708033649087456,
+      "W1_THz": 0.05043155555555562,
+      "mean_THz": 5.754084340277777,
+      "peak_THz": 7.5585
+    },
+    "r2SCAN-15000/fixed/MP40/0.15": {
+      "L2_relative": 0.021753913215493845,
+      "TV": 0.008405481642213164,
+      "W1_THz": 0.024151423611111097,
+      "mean_THz": 5.828667319444445,
+      "peak_THz": 7.6095
+    },
+    "r2SCAN-20000/fixed/MP40/0.15": {
+      "L2_relative": 0.011707587311272404,
+      "TV": 0.004734388728785758,
+      "W1_THz": 0.007106650386445442,
+      "mean_THz": 5.798268291666666,
+      "peak_THz": 7.591500000000001
+    },
+    "r2SCAN-23200/fixed/MP40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804515895833333,
+      "peak_THz": 7.6075
+    },
+    "r2SCAN-5000/fixed/MP50/0.15": {
+      "L2_relative": 0.10634359821149461,
+      "TV": 0.0413290233807316,
+      "W1_THz": 0.06138235640600253,
+      "mean_THz": 5.743450445333334,
+      "peak_THz": 7.4365
+    },
+    "r2SCAN-10000/fixed/MP50/0.15": {
+      "L2_relative": 0.06195362278286845,
+      "TV": 0.025701506181445895,
+      "W1_THz": 0.050431128000000144,
+      "mean_THz": 5.754083208,
+      "peak_THz": 7.5585
+    },
+    "r2SCAN-15000/fixed/MP50/0.15": {
+      "L2_relative": 0.021755522255953792,
+      "TV": 0.008405735923762512,
+      "W1_THz": 0.024153288383977047,
+      "mean_THz": 5.8286676239999995,
+      "peak_THz": 7.6095
+    },
+    "r2SCAN-20000/fixed/MP50/0.15": {
+      "L2_relative": 0.011700935420217879,
+      "TV": 0.0047313501093888995,
+      "W1_THz": 0.007103785505587433,
+      "mean_THz": 5.798268482666668,
+      "peak_THz": 7.591500000000001
+    },
+    "r2SCAN-23200/fixed/MP50/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804514336,
+      "peak_THz": 7.6075
+    },
+    "r2SCAN-5000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.10635612504953382,
+      "TV": 0.04133821279954871,
+      "W1_THz": 0.06138386202592591,
+      "mean_THz": 5.743447586805556,
+      "peak_THz": 7.4365
+    },
+    "r2SCAN-10000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.06196068130336698,
+      "TV": 0.02570377395303574,
+      "W1_THz": 0.05043193402777778,
+      "mean_THz": 5.754080819444444,
+      "peak_THz": 7.5585
+    },
+    "r2SCAN-15000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.02175010056004905,
+      "TV": 0.008403052068248635,
+      "W1_THz": 0.024153065038088013,
+      "mean_THz": 5.82866578125,
+      "peak_THz": 7.6095
+    },
+    "r2SCAN-20000/fixed/Gamma40/0.15": {
+      "L2_relative": 0.011706294039200146,
+      "TV": 0.004733300238893731,
+      "W1_THz": 0.00710413507169046,
+      "mean_THz": 5.798266138888888,
+      "peak_THz": 7.591500000000001
+    },
+    "r2SCAN-23200/fixed/Gamma40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.804512753472222,
+      "peak_THz": 7.6075
+    },
+    "r2SCAN-5000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.10259271544401151,
+      "TV": 0.03785163544337276,
+      "W1_THz": 0.059011413554249346,
+      "mean_THz": 5.8568735,
+      "peak_THz": 7.649500000000001
+    },
+    "r2SCAN-10000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.06013754242644309,
+      "TV": 0.025411110312704342,
+      "W1_THz": 0.05213570138888894,
+      "mean_THz": 5.86352276388889,
+      "peak_THz": 7.7515
+    },
+    "r2SCAN-15000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.028495164545398168,
+      "TV": 0.010763890013901926,
+      "W1_THz": 0.02964059722222214,
+      "mean_THz": 5.945299062500001,
+      "peak_THz": 7.793500000000001
+    },
+    "r2SCAN-20000/equilibrium/MP40/0.15": {
+      "L2_relative": 0.011679080504926557,
+      "TV": 0.004677207955205567,
+      "W1_THz": 0.007774500492539115,
+      "mean_THz": 5.9083753055555555,
+      "peak_THz": 7.7715000000000005
+    },
+    "r2SCAN-23200/equilibrium/MP40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.915658465277778,
+      "peak_THz": 7.7895
+    },
+    "r2SCAN-5000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.10259158971189397,
+      "TV": 0.03784860484334166,
+      "W1_THz": 0.05901295042444138,
+      "mean_THz": 5.856872778666666,
+      "peak_THz": 7.649500000000001
+    },
+    "r2SCAN-10000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.060130747880888305,
+      "TV": 0.025406695730689086,
+      "W1_THz": 0.05213888266666642,
+      "mean_THz": 5.863521480000001,
+      "peak_THz": 7.7515
+    },
+    "r2SCAN-15000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.0284928765353614,
+      "TV": 0.010762999017661902,
+      "W1_THz": 0.02963654666666686,
+      "mean_THz": 5.945296909333333,
+      "peak_THz": 7.793500000000001
+    },
+    "r2SCAN-20000/equilibrium/MP50/0.15": {
+      "L2_relative": 0.0116767510916827,
+      "TV": 0.004676948552503177,
+      "W1_THz": 0.007776904466689081,
+      "mean_THz": 5.908375709333333,
+      "peak_THz": 7.7715000000000005
+    },
+    "r2SCAN-23200/equilibrium/MP50/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.915660362666667,
+      "peak_THz": 7.7895
+    },
+    "r2SCAN-5000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.10259193411314269,
+      "TV": 0.03784727516463916,
+      "W1_THz": 0.05901190894611021,
+      "mean_THz": 5.856872197916666,
+      "peak_THz": 7.649500000000001
+    },
+    "r2SCAN-10000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.06013131711780821,
+      "TV": 0.025403975875834157,
+      "W1_THz": 0.05213675000000069,
+      "mean_THz": 5.863521548611111,
+      "peak_THz": 7.7515
+    },
+    "r2SCAN-15000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.02849051693300982,
+      "TV": 0.010763370838656215,
+      "W1_THz": 0.02963699413064943,
+      "mean_THz": 5.945295281249999,
+      "peak_THz": 7.793500000000001
+    },
+    "r2SCAN-20000/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.011670630562005364,
+      "TV": 0.004676178497204354,
+      "W1_THz": 0.007775966994330818,
+      "mean_THz": 5.908374378472222,
+      "peak_THz": 7.7715000000000005
+    },
+    "r2SCAN-23200/equilibrium/Gamma40/0.15": {
+      "L2_relative": 0.0,
+      "TV": 0.0,
+      "W1_THz": 0.0,
+      "mean_THz": 5.9156582986111115,
+      "peak_THz": 7.7895
+    }
+  },
+  "rankings_against_PBE_DFT": {
+    "PBE/fixed/MP40/0.05": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/fixed/MP50/0.05": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/fixed/Gamma40/0.05": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/MP40/0.05": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/MP50/0.05": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/Gamma40/0.05": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBEsol/fixed/MP40/0.05": {
+      "L2_relative": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/fixed/MP50/0.05": {
+      "L2_relative": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/fixed/Gamma40/0.05": {
+      "L2_relative": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/equilibrium/MP40/0.05": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "PBEsol/equilibrium/MP50/0.05": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "PBEsol/equilibrium/Gamma40/0.05": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "r2SCAN/fixed/MP40/0.05": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/fixed/MP50/0.05": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/fixed/Gamma40/0.05": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/MP40/0.05": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/MP50/0.05": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/Gamma40/0.05": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "PBE/fixed/MP40/0.1": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/fixed/MP50/0.1": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/fixed/Gamma40/0.1": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/MP40/0.1": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/MP50/0.1": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/Gamma40/0.1": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBEsol/fixed/MP40/0.1": {
+      "L2_relative": [
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-20000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/fixed/MP50/0.1": {
+      "L2_relative": [
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-20000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/fixed/Gamma40/0.1": {
+      "L2_relative": [
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-20000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/equilibrium/MP40/0.1": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "PBEsol/equilibrium/MP50/0.1": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "PBEsol/equilibrium/Gamma40/0.1": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "r2SCAN/fixed/MP40/0.1": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/fixed/MP50/0.1": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/fixed/Gamma40/0.1": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/MP40/0.1": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/MP50/0.1": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/Gamma40/0.1": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "PBE/fixed/MP40/0.15": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/fixed/MP50/0.15": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/fixed/Gamma40/0.15": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/MP40/0.15": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/MP50/0.15": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBE/equilibrium/Gamma40/0.15": {
+      "L2_relative": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "TV": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ],
+      "W1_THz": [
+        "PBE-15000",
+        "PBE-5000",
+        "PBE-23400",
+        "PBE-20000",
+        "PBE-10000"
+      ]
+    },
+    "PBEsol/fixed/MP40/0.15": {
+      "L2_relative": [
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/fixed/MP50/0.15": {
+      "L2_relative": [
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/fixed/Gamma40/0.15": {
+      "L2_relative": [
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ],
+      "TV": [
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-15000",
+        "PBEsol-5000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-20000",
+        "PBEsol-23100",
+        "PBEsol-15000",
+        "PBEsol-10000",
+        "PBEsol-5000"
+      ]
+    },
+    "PBEsol/equilibrium/MP40/0.15": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "PBEsol/equilibrium/MP50/0.15": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "PBEsol/equilibrium/Gamma40/0.15": {
+      "L2_relative": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-10000",
+        "PBEsol-20000"
+      ],
+      "TV": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ],
+      "W1_THz": [
+        "PBEsol-5000",
+        "PBEsol-15000",
+        "PBEsol-23100",
+        "PBEsol-20000",
+        "PBEsol-10000"
+      ]
+    },
+    "r2SCAN/fixed/MP40/0.15": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/fixed/MP50/0.15": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/fixed/Gamma40/0.15": {
+      "L2_relative": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/MP40/0.15": {
+      "L2_relative": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/MP50/0.15": {
+      "L2_relative": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    },
+    "r2SCAN/equilibrium/Gamma40/0.15": {
+      "L2_relative": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "TV": [
+        "r2SCAN-10000",
+        "r2SCAN-5000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ],
+      "W1_THz": [
+        "r2SCAN-5000",
+        "r2SCAN-10000",
+        "r2SCAN-20000",
+        "r2SCAN-23200",
+        "r2SCAN-15000"
+      ]
+    }
+  },
+  "limitations": "Only alpha-Ti harmonic DOS. DFT reference is PBE, not PBEsol/r2SCAN. DFT force supercell 4x4x3 versus MLIP 9x9x9; raw DFT q-grid unavailable. DOS was already used for PBE checkpoint development, not an independent blind test."
+}

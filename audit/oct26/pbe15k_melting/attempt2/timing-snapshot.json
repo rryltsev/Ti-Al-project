@@ -1,0 +1,93 @@
+{
+  "unix": 1792981429.302737,
+  "progress": {
+    "progress-1.json": {
+      "status": "running",
+      "temperature_K": 1850,
+      "stage": "heat",
+      "completed_temperatures": [],
+      "unix": 1792981270.272017
+    },
+    "progress-0.json": {
+      "status": "running",
+      "temperature_K": 1700,
+      "stage": "heat",
+      "completed_temperatures": [],
+      "unix": 1792981277.9624703
+    }
+  },
+  "stages": [
+    {
+      "path": "T1700K/equil",
+      "summary": {
+        "status": "completed",
+        "temperature_K": 1700,
+        "stage": "equil",
+        "steps": 10000,
+        "final_T_K": 1696.7115750884088,
+        "final_volume_A3": 23493.037430165805,
+        "wall_seconds": 901.1868169233203,
+        "device": {
+          "name": "NVIDIA A100-PCIE-40GB",
+          "visible": "0",
+          "job": "20960770"
+        }
+      },
+      "last_steps": [
+        9700,
+        9800,
+        9900,
+        10000
+      ],
+      "mtime": 1792981277.9582152,
+      "bytes": 8483317
+    },
+    {
+      "path": "T1700K/heat",
+      "last_steps": [
+        1300,
+        1400,
+        1500,
+        1600
+      ],
+      "mtime": 1792981426.791515,
+      "bytes": 1428281
+    },
+    {
+      "path": "T1850K/equil",
+      "summary": {
+        "status": "completed",
+        "temperature_K": 1850,
+        "stage": "equil",
+        "steps": 10000,
+        "final_T_K": 1870.0108952114635,
+        "final_volume_A3": 23717.13224301535,
+        "wall_seconds": 893.4979356564581,
+        "device": {
+          "name": "NVIDIA A100-PCIE-40GB",
+          "visible": "0",
+          "job": "20960770"
+        }
+      },
+      "last_steps": [
+        9700,
+        9800,
+        9900,
+        10000
+      ],
+      "mtime": 1792981270.2674065,
+      "bytes": 8480538
+    },
+    {
+      "path": "T1850K/heat",
+      "last_steps": [
+        1400,
+        1500,
+        1600,
+        1700
+      ],
+      "mtime": 1792981426.791515,
+      "bytes": 1511343
+    }
+  ]
+}

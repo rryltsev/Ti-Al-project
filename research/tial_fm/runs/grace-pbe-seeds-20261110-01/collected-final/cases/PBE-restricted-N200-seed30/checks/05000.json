@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "steps": 5000,
+  "trainable": 21111690,
+  "changed_tensors": [
+    "0:I1/reducing_A:0",
+    "1:I1/reducing_AA:0",
+    "2:I1/reducing_AAA:0",
+    "3:I1/reducing_AAAA:0",
+    "4:I2/reducing_B:0",
+    "5:I2/reducing_BB:0",
+    "6:I2/reducing_BBB:0",
+    "7:I2/reducing_BBBB:0",
+    "8:rho/reducing_A:0",
+    "9:rho/reducing_AA:0",
+    "10:rho/reducing_AAA:0",
+    "11:rho/reducing_AAAA:0"
+  ],
+  "frozen_changed": [],
+  "optimizer_iterations": 5000,
+  "fresh_optimizer": true,
+  "recent_step_seconds": [
+    0.033566711470484734,
+    0.03345163352787495,
+    0.03370068781077862,
+    0.031766971573233604
+  ],
+  "first5_batch_hashes": [
+    "607d5f04133cbf83e879120a7ae1024102eac924b2be9e7046fa2ee83fd59171",
+    "14f231e39a4a92d4a30dc805ebd8e7281f741fc09d7c235e603d15af24587683",
+    "36c998fdda123b8847926e0f5d3dbc78db17da58aaee47a31fff412958e10e4e",
+    "1249a5eac9e469376544f6c2cec627421c6e253b69577b8a0e875fdcaa40433c",
+    "81e277b42d5981a35a061d582d46fb546c19748ec23fac9400efb3807954f287"
+  ],
+  "GPU_memory": {
+    "current": 832493312,
+    "peak": 2110308864
+  }
+}

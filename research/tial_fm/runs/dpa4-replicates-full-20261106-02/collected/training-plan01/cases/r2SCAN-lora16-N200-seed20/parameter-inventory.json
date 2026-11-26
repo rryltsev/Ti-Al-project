@@ -1,0 +1,1421 @@
+{
+  "parameters": {
+    "atomic_model.descriptor.film_scale_strength_log": {
+      "trainable": true,
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "initial_sha256": "633a0ae1a962feb58aa8db1bdbbcf71e409c7f13f67934208de74f893a040be2",
+      "adapter": false
+    },
+    "atomic_model.descriptor.film_shift_strength_log": {
+      "trainable": true,
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "initial_sha256": "f4569754360bedc3d8ffb66609f25af972c042de3deb21b89381c5b961faef6e",
+      "adapter": false
+    },
+    "atomic_model.descriptor.type_embedding.adam_type_embedding": {
+      "trainable": false,
+      "numel": 3808,
+      "shape": [
+        119,
+        32
+      ],
+      "initial_sha256": "89097e56d2ab1ec7cb2c4d22e8f35036db1657e5b1affcf61770872d8f7b6c4b",
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.rbf_proj_layer1.matrix": {
+      "trainable": true,
+      "numel": 512,
+      "shape": [
+        16,
+        32
+      ],
+      "initial_sha256": "bcf314fd8024923f559b2b5a5a7875568e720d1fa5f963bc10c4e7fabb883f79",
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.rbf_proj_layer2.matrix": {
+      "trainable": true,
+      "numel": 1024,
+      "shape": [
+        32,
+        32
+      ],
+      "initial_sha256": "4f5e50ed5aabe2790bee7d210cb038574b1d5116fb822ac31291d3f9772ddbff",
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.env_type_embed.adam_type_embedding": {
+      "trainable": false,
+      "numel": 952,
+      "shape": [
+        119,
+        8
+      ],
+      "initial_sha256": "9ddfcbfbba084b79d76d309f94a28e353271a9bef2ffa7abc47502cf99ccf46e",
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.g_layer1.matrix": {
+      "trainable": true,
+      "numel": 3072,
+      "shape": [
+        48,
+        64
+      ],
+      "initial_sha256": "9f8b9570b86a12408d3b20e4344a8493f8f99a12ad5d439dab26446daecf147c",
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.g_layer2.matrix": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        64,
+        32
+      ],
+      "initial_sha256": "19c6ff2f352d89261484170cffde8a66dee67c763a716e5c71c14cedce1f4c90",
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.output_proj.matrix": {
+      "trainable": true,
+      "numel": 8192,
+      "shape": [
+        128,
+        64
+      ],
+      "initial_sha256": "12bcc5866fe3a73261db59d8ccead750d6b8bf2d6f35c3e39ee6599a4f0f28e1",
+      "adapter": false
+    },
+    "atomic_model.descriptor.radial_basis.adam_freqs": {
+      "trainable": false,
+      "numel": 16,
+      "shape": [
+        1,
+        16
+      ],
+      "initial_sha256": "ec911389ba411e0ccf0a512dadb5c02b161d63fb1ec7ef215aa6f0ad75fd200c",
+      "adapter": false
+    },
+    "atomic_model.descriptor.radial_embedding.net.0.matrix": {
+      "trainable": true,
+      "numel": 512,
+      "shape": [
+        16,
+        32
+      ],
+      "initial_sha256": "71cced8ec687ab6756fb8e76c70455b59de96d01ad7a6092763db9b124ff52fb",
+      "adapter": false
+    },
+    "atomic_model.descriptor.radial_embedding.net.2.matrix": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        32,
+        128
+      ],
+      "initial_sha256": "14776dfb17835de95293cee5e89bf367c90f7bb8b3f1e6c91a11779baeaa1638",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.post_so2_norm.adam_scale": {
+      "trainable": true,
+      "numel": 128,
+      "shape": [
+        4,
+        1,
+        32
+      ],
+      "initial_sha256": "04f1dc208022740e26a726034f5eb06fcc3dee19b552a5f89ac911942b97f347",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.post_so2_norm.bias": {
+      "trainable": true,
+      "numel": 32,
+      "shape": [
+        1,
+        32
+      ],
+      "initial_sha256": "d2b4a0a76099fdf9296a4a408aa203ac77a05686de5436f75e550c8afce5e5bb",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.adamw_attn_logit_w": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        32,
+        2,
+        1
+      ],
+      "initial_sha256": "9ada03a0d897494bed8fb922cae6609e770b904f2b52121796c479ab68eb9ba1",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.adamw_attn_z_bias_raw": {
+      "trainable": true,
+      "numel": 2,
+      "shape": [
+        2,
+        1
+      ],
+      "initial_sha256": "687484484b62a5ebe2b767b53325107d4749195343ba24e5b9001c434fca5619",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.adamw_attn_gate_w": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        32,
+        2,
+        1
+      ],
+      "initial_sha256": "de5f59a9cb6ceb49e93fc993b180c141deac1b2ccce8852753d34d3fb1301344",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.adamw_focus_compete_w": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        32,
+        2
+      ],
+      "initial_sha256": "bd59ca6ddbcd3920afd6353223f76c76a07d6496aab1146a020edb9b9adb956a",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.0.weight_m0": {
+      "trainable": false,
+      "numel": 32768,
+      "shape": [
+        128,
+        256
+      ],
+      "initial_sha256": "e7bcb0d859062471766e9db4e46388d027c00a564ffa98ab04557dc0e1c60a5e",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.0.A_m0": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        16,
+        128
+      ],
+      "initial_sha256": "9e54c32d1fa44218626b1f9b856ed2f2c9bae423040fb91649a2fee9549ae8d2",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.0.B_m0": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        256,
+        16
+      ],
+      "initial_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.0.weight_m.0": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        96,
+        384
+      ],
+      "initial_sha256": "1f41ee3475b42c5d217c79d723fe35596b5fd38a5a2f073b978082e23a9008cb",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.0.A_m.0": {
+      "trainable": true,
+      "numel": 1536,
+      "shape": [
+        16,
+        96
+      ],
+      "initial_sha256": "44c1a496560e6954a7c93f084e99a2528b29b539747b024b239519193907a3cd",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.0.B_m.0": {
+      "trainable": true,
+      "numel": 6144,
+      "shape": [
+        384,
+        16
+      ],
+      "initial_sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.1.weight_m0": {
+      "trainable": false,
+      "numel": 32768,
+      "shape": [
+        128,
+        256
+      ],
+      "initial_sha256": "ea365c02ea4d1e0d72b89a5539b697f072fec5f419e37c564aeda237dab0116b",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.1.A_m0": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        16,
+        128
+      ],
+      "initial_sha256": "fe9d1fd14db68726b14a3418dd8c1bf97844d9085b1da5ccafb3cc3b258abfe5",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.1.B_m0": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        256,
+        16
+      ],
+      "initial_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.1.weight_m.0": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        96,
+        384
+      ],
+      "initial_sha256": "822d432902211d066aee9eb656a20731ca3b8311a7c9f0e12166592c89f9a4f9",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.1.A_m.0": {
+      "trainable": true,
+      "numel": 1536,
+      "shape": [
+        16,
+        96
+      ],
+      "initial_sha256": "947fec6dfef8fc2ab44f9f9c5180c790fbad00a321a1d50f453e718ab869c737",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.1.B_m.0": {
+      "trainable": true,
+      "numel": 6144,
+      "shape": [
+        384,
+        16
+      ],
+      "initial_sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.2.weight_m0": {
+      "trainable": false,
+      "numel": 32768,
+      "shape": [
+        128,
+        256
+      ],
+      "initial_sha256": "9544c09cf6ea6fc0f9cdb9823e9f96c00d5f70bcfc7508869b5fa6dc7803314e",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.2.A_m0": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        16,
+        128
+      ],
+      "initial_sha256": "274c445762ea64593acd25ee8d888380d9e14e741ae13f0887217d90e2f2693a",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.2.B_m0": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        256,
+        16
+      ],
+      "initial_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.2.weight_m.0": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        96,
+        384
+      ],
+      "initial_sha256": "2397e1a3a36f4abaf238e2a4fe1f32781024fb89bc44efd435ac77016ae88400",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.2.A_m.0": {
+      "trainable": true,
+      "numel": 1536,
+      "shape": [
+        16,
+        96
+      ],
+      "initial_sha256": "3dbe627b2f36fc5fdee73d3c6a600747c406deae58c060c1e5adc0a14373332e",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.2.B_m.0": {
+      "trainable": true,
+      "numel": 6144,
+      "shape": [
+        384,
+        16
+      ],
+      "initial_sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.non_linearities.0.gate_linear.weight": {
+      "trainable": false,
+      "numel": 6144,
+      "shape": [
+        32,
+        192
+      ],
+      "initial_sha256": "bc2687b650517c7f77f17d7714cfd86a575a85b692051032bb344248bc227443",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.non_linearities.1.gate_linear.weight": {
+      "trainable": false,
+      "numel": 6144,
+      "shape": [
+        32,
+        192
+      ],
+      "initial_sha256": "97323b7879aa20f6d33c6e6d55f48b73ce7b4cc87992e9a2dae3b305cf5126ef",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.attn_qk_norm.adam_scale": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        2,
+        32
+      ],
+      "initial_sha256": "de3ac1e675e8bba10b04f09b2b244a083b32085f128ff1290e95737b92cca59c",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.attn_q_proj.weight": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        32,
+        64
+      ],
+      "initial_sha256": "a885605ac550c3b2fbd05fe01936d060ca0e87e2d0b98dbb2b27a15e51a574ec",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.attn_k_proj.weight": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        32,
+        64
+      ],
+      "initial_sha256": "9c4c9cfe206aae219ec6a72039a587c68f133f42748bafbab7703cb76ae4a5f7",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.attn_output_gate_norm.adam_scale": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        2,
+        32
+      ],
+      "initial_sha256": "da0b2410db35fadd890dcc7ae3e25438e10ea70168831adf74c29c4a0127f4ea",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.radial_hidden_proj.weight": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        32,
+        64
+      ],
+      "initial_sha256": "2f1c2337b099d598e7f2f87d0894c2190b77a6589b0699703c834b7f501f160d",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.radial_degree_mixer.weight": {
+      "trainable": false,
+      "numel": 6400,
+      "shape": [
+        256,
+        25
+      ],
+      "initial_sha256": "31843da2302ca67f61ff9a625e667f4f234e30df4d9a84f081ce2480d0fcabb1",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.radial_degree_mixer.channel_basis": {
+      "trainable": false,
+      "numel": 64,
+      "shape": [
+        1,
+        64
+      ],
+      "initial_sha256": "82416b20948b92c16f187bda439098e1b8f6eb28c2815492a65947c5e7094db9",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.message_node_grid_product.residual_scale": {
+      "trainable": false,
+      "numel": 64,
+      "shape": [
+        2,
+        32
+      ],
+      "initial_sha256": "5b3b4f5ac6864ccb56180e817c54c9aea69439bd47c8b1bff26a8468a083d7d3",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.message_node_grid_product.frame_expand.weight": {
+      "trainable": false,
+      "numel": 12288,
+      "shape": [
+        4,
+        32,
+        96
+      ],
+      "initial_sha256": "ff7eaa28cc53d2b86ad93cf608026bc317d3276d0f629c701ac86dc3ca3e6df8",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.message_node_grid_product.frame_contract.weight": {
+      "trainable": false,
+      "numel": 12288,
+      "shape": [
+        4,
+        96,
+        32
+      ],
+      "initial_sha256": "d685a9fa34ec3412203a57596320550f0265b8477d15d6dc70aed876cbcac622",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.message_node_grid_product.scalar_gate.weight": {
+      "trainable": false,
+      "numel": 4096,
+      "shape": [
+        64,
+        64
+      ],
+      "initial_sha256": "36a6c28ef501f9af48b4f37eee73a08c572646aca4b75da20740888884fc0aca",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.pre_focus_mix.weight": {
+      "trainable": false,
+      "numel": 8192,
+      "shape": [
+        4,
+        32,
+        64
+      ],
+      "initial_sha256": "6621ae00688c69b594fee5cd3bdc5410ee59a7724e00e44bd5ac39414d537124",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.pre_focus_mix.A_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        16,
+        32
+      ],
+      "initial_sha256": "4bdf8ea7cf3a0aa2e6511cf948cca03fe9ca64d569ff512267836106c560d1e8",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.pre_focus_mix.B_by_l": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        4,
+        64,
+        16
+      ],
+      "initial_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.post_focus_mix.weight": {
+      "trainable": false,
+      "numel": 8192,
+      "shape": [
+        4,
+        64,
+        32
+      ],
+      "initial_sha256": "05c92978a5077209ccb0ba929bacb717dc911542ca95ec1990b1525767ffc350",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.post_focus_mix.A_by_l": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        4,
+        16,
+        64
+      ],
+      "initial_sha256": "af11cfdbfd6e54c6f3edc68b649242c86f617dea959615d58708a50da0787b61",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.post_focus_mix.B_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        32,
+        16
+      ],
+      "initial_sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.pre_ffn_norms.0.adam_scale": {
+      "trainable": true,
+      "numel": 128,
+      "shape": [
+        4,
+        1,
+        32
+      ],
+      "initial_sha256": "2cea87bfed53487cd7caf4f7dd01a59d91107ba8a3b3f19312e9a37e290e319b",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.pre_ffn_norms.0.bias": {
+      "trainable": true,
+      "numel": 32,
+      "shape": [
+        1,
+        32
+      ],
+      "initial_sha256": "c4a43bda9d37f6bb104f0f9bba88bd1f1db7ca797badd11ef6607df5c2e9f05e",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.so3_linear_1.weight": {
+      "trainable": false,
+      "numel": 73728,
+      "shape": [
+        4,
+        32,
+        576
+      ],
+      "initial_sha256": "40d54935bbf11e955e9370ee193eab899929bd23797401c1dc320dceeed3758a",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.so3_linear_1.A_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        16,
+        32
+      ],
+      "initial_sha256": "b43228578b7d27bfe477c4ff396536a4e69f9cebca824dac1cd3e3019b1cfc67",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.so3_linear_1.B_by_l": {
+      "trainable": true,
+      "numel": 36864,
+      "shape": [
+        4,
+        576,
+        16
+      ],
+      "initial_sha256": "8123c216413f82bbaa0339c27a43d9822c2a043e20662b27c97874429b996e9a",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.scalar_gate.weight": {
+      "trainable": false,
+      "numel": 18432,
+      "shape": [
+        192,
+        96
+      ],
+      "initial_sha256": "83371210b2805c18d153d1d10ef3ffce85527f1b670ef6fad895358be2fdd045",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.grid_op.left_proj.weight": {
+      "trainable": false,
+      "numel": 9216,
+      "shape": [
+        96,
+        96
+      ],
+      "initial_sha256": "5764af5bad9c170c14b793256d81fb419f94b3eafb5a4b7eb51cc22eef9ef5a5",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.grid_op.right_proj.weight": {
+      "trainable": false,
+      "numel": 9216,
+      "shape": [
+        96,
+        96
+      ],
+      "initial_sha256": "2e6a66299fa3232d8da25a729ca01e9906edd405bd0fa78f9f38e2757d82a194",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.grid_op.router.weight": {
+      "trainable": false,
+      "numel": 192,
+      "shape": [
+        192,
+        1
+      ],
+      "initial_sha256": "d34a74b6f24f614c28f08d60cac2ce40cc4ce2605aa02426ab571b45bd77a68c",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.grid_op.out_proj.weight": {
+      "trainable": false,
+      "numel": 9216,
+      "shape": [
+        96,
+        96
+      ],
+      "initial_sha256": "564a5a88b2d873d2db6c555c19cf78361e830f90ab484550c710834855699352",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.so3_linear_2.weight": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        4,
+        288,
+        32
+      ],
+      "initial_sha256": "b4b2d68aedc6e550e4da9023d88e08c1a57fb720a9d460862977b1068bbc164c",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.so3_linear_2.A_by_l": {
+      "trainable": true,
+      "numel": 18432,
+      "shape": [
+        4,
+        16,
+        288
+      ],
+      "initial_sha256": "5ca7feeeb03a70e34382d44e706410e892aa4608f8a801eea69c521acb0bb026",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.so3_linear_2.B_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        32,
+        16
+      ],
+      "initial_sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.post_so2_norm.adam_scale": {
+      "trainable": true,
+      "numel": 128,
+      "shape": [
+        4,
+        1,
+        32
+      ],
+      "initial_sha256": "d49b8eeed9eccea801fb92354f410c06221a84ac0524635d7ae90c8492c94310",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.post_so2_norm.bias": {
+      "trainable": true,
+      "numel": 32,
+      "shape": [
+        1,
+        32
+      ],
+      "initial_sha256": "b6d0fa3c68063812da8af6e25baf42fd1fa2635ed11d3fb0bb602d7bedb44715",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.adamw_attn_logit_w": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        32,
+        2,
+        1
+      ],
+      "initial_sha256": "869a6538657870188c63bef7071280f7ff7e8c77aa7020d8e00424f23d45441b",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.adamw_attn_z_bias_raw": {
+      "trainable": true,
+      "numel": 2,
+      "shape": [
+        2,
+        1
+      ],
+      "initial_sha256": "7744ccadc272606d5903d6fa4f73fdbc9b5f93e7f1f91f4939ff8931f1b9c884",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.adamw_attn_gate_w": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        32,
+        2,
+        1
+      ],
+      "initial_sha256": "75f3da1d3272940ce3cb310192789aeb5eefb86f05ee36c4dafcfb59fa6bc3f4",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.adamw_focus_compete_w": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        32,
+        2
+      ],
+      "initial_sha256": "8f9f408258783eb77f63d9296be2a2cb41b3cfa45fb4d2c75e544cb633c76089",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.0.weight_m0": {
+      "trainable": false,
+      "numel": 32768,
+      "shape": [
+        128,
+        256
+      ],
+      "initial_sha256": "373797ab8736e23f9726551c3febd5e87e80af572824fdf1371401757e2cc32a",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.0.A_m0": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        16,
+        128
+      ],
+      "initial_sha256": "c43c0c59b64696b1c59d36deb202c328f6eb91a5b58a7c149bd10e0750b944e6",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.0.B_m0": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        256,
+        16
+      ],
+      "initial_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.0.weight_m.0": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        96,
+        384
+      ],
+      "initial_sha256": "6e7925211c0850e81e050d881ac19c01c98562de9552510911417c59114e3154",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.0.A_m.0": {
+      "trainable": true,
+      "numel": 1536,
+      "shape": [
+        16,
+        96
+      ],
+      "initial_sha256": "7336ab4d26801af167ad3ef3971df3cb274f73df2afa00ac7d18e37a9f8a25ff",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.0.B_m.0": {
+      "trainable": true,
+      "numel": 6144,
+      "shape": [
+        384,
+        16
+      ],
+      "initial_sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.1.weight_m0": {
+      "trainable": false,
+      "numel": 32768,
+      "shape": [
+        128,
+        256
+      ],
+      "initial_sha256": "6101f8608f5d6b0cfac3142a9ca228132d4ab5995241050fea9049556efa763b",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.1.A_m0": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        16,
+        128
+      ],
+      "initial_sha256": "865be135f676391a7aefeb95960962ddff4e4dc4ee772ff433d0d1d3996aec51",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.1.B_m0": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        256,
+        16
+      ],
+      "initial_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.1.weight_m.0": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        96,
+        384
+      ],
+      "initial_sha256": "a41f5bc06a361b65074d916e42ba773025bf93270dd2adcc28a3e210b8863b0e",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.1.A_m.0": {
+      "trainable": true,
+      "numel": 1536,
+      "shape": [
+        16,
+        96
+      ],
+      "initial_sha256": "c3eb024e7078a8d5ccfe773dac5aa6554ce30bcdf883dc739d42574b75e1f068",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.1.B_m.0": {
+      "trainable": true,
+      "numel": 6144,
+      "shape": [
+        384,
+        16
+      ],
+      "initial_sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.2.weight_m0": {
+      "trainable": false,
+      "numel": 32768,
+      "shape": [
+        128,
+        256
+      ],
+      "initial_sha256": "e61a87513e9e19a996df2b47d454e45f81ad74c3603f9e22ad197df44a30fb22",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.2.A_m0": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        16,
+        128
+      ],
+      "initial_sha256": "2897e241ab6fb5974d7b6414be4ac17c14b19b084cda2a67717e046111b0ff63",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.2.B_m0": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        256,
+        16
+      ],
+      "initial_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.2.weight_m.0": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        96,
+        384
+      ],
+      "initial_sha256": "c8ed088d843a4171756494b94cbd61268d96c7d2e34a64380325aceb3ab14904",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.2.A_m.0": {
+      "trainable": true,
+      "numel": 1536,
+      "shape": [
+        16,
+        96
+      ],
+      "initial_sha256": "0744d25efa8b46641a840b7c6315f4c3a93e95ef31060028cfd012c23b2c6b14",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.2.B_m.0": {
+      "trainable": true,
+      "numel": 6144,
+      "shape": [
+        384,
+        16
+      ],
+      "initial_sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.non_linearities.0.gate_linear.weight": {
+      "trainable": false,
+      "numel": 6144,
+      "shape": [
+        32,
+        192
+      ],
+      "initial_sha256": "7f5604d1514454c7d7511889332d312377df22f358abb68dac133d19c14b9529",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.non_linearities.1.gate_linear.weight": {
+      "trainable": false,
+      "numel": 6144,
+      "shape": [
+        32,
+        192
+      ],
+      "initial_sha256": "0178a14245f49a893bce9f93bb8a8cecc00e78be8966a116010005e4c699f74f",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.attn_qk_norm.adam_scale": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        2,
+        32
+      ],
+      "initial_sha256": "d61f8569bde6db6f7ddafd7916583ded5dbb6de48b5f54847a2c8d83bfe9f9de",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.attn_q_proj.weight": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        32,
+        64
+      ],
+      "initial_sha256": "70ce394b2ab51aef0840b9e15f884617aeb0bf1249a10d62e330eb1e67cd194d",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.attn_k_proj.weight": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        32,
+        64
+      ],
+      "initial_sha256": "eb7e865122693ea900677e7c947d3fd6075ece6e557e4bb13148a5c0c90d96e6",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.attn_output_gate_norm.adam_scale": {
+      "trainable": true,
+      "numel": 64,
+      "shape": [
+        2,
+        32
+      ],
+      "initial_sha256": "da473e9e6d2666c36a230a49759e567764fafe20041524a91c2f47edc85ce487",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.radial_hidden_proj.weight": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        32,
+        64
+      ],
+      "initial_sha256": "e1a52459f96e9e36ed85706942ca9f3a9a2090916426cb13eef55f27281c1409",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.radial_degree_mixer.weight": {
+      "trainable": false,
+      "numel": 6400,
+      "shape": [
+        256,
+        25
+      ],
+      "initial_sha256": "9c7627d2737640f82e20d679f569cdfa302ef0fcb83711e88e1cb7390e85d5fe",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.radial_degree_mixer.channel_basis": {
+      "trainable": false,
+      "numel": 64,
+      "shape": [
+        1,
+        64
+      ],
+      "initial_sha256": "0bd7d6ba80875cd61ce0940ea3ee0b775266e62abae741c4d155376bad4b1ee2",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.message_node_grid_product.residual_scale": {
+      "trainable": false,
+      "numel": 64,
+      "shape": [
+        2,
+        32
+      ],
+      "initial_sha256": "03fa301feb089b59b0246713f94eea2d75fa822ecb60485cb561cf308429db63",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.message_node_grid_product.frame_expand.weight": {
+      "trainable": false,
+      "numel": 12288,
+      "shape": [
+        4,
+        32,
+        96
+      ],
+      "initial_sha256": "df4f2a4236e4511e9bfd501b7cd87269af74b44be2bb4575584db3c5d42cd9d0",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.message_node_grid_product.frame_contract.weight": {
+      "trainable": false,
+      "numel": 12288,
+      "shape": [
+        4,
+        96,
+        32
+      ],
+      "initial_sha256": "dc93a9011cb72dac88ba785039a2b53a843d218f1bd606eb7a519a6b5d2b8a85",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.message_node_grid_product.scalar_gate.weight": {
+      "trainable": false,
+      "numel": 4096,
+      "shape": [
+        64,
+        64
+      ],
+      "initial_sha256": "d26ea020072461b47b8d3189c6962cc1cf26ee91a2efb7c1fb924594c4e534b6",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.pre_focus_mix.weight": {
+      "trainable": false,
+      "numel": 8192,
+      "shape": [
+        4,
+        32,
+        64
+      ],
+      "initial_sha256": "9b5c3c3d2efd8eea4ef4deab4ad67460795a6919e3a515bfcc507f59f1a6fd7a",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.pre_focus_mix.A_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        16,
+        32
+      ],
+      "initial_sha256": "e8531563b0a02d037b56ede883f81dcf3de718bbbdc6b65e2864ad4cbf44520f",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.pre_focus_mix.B_by_l": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        4,
+        64,
+        16
+      ],
+      "initial_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.post_focus_mix.weight": {
+      "trainable": false,
+      "numel": 8192,
+      "shape": [
+        4,
+        64,
+        32
+      ],
+      "initial_sha256": "366dd739bd1b160475f95ec5922539a38efc17ab20955f809ec5fb435dbe1404",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.post_focus_mix.A_by_l": {
+      "trainable": true,
+      "numel": 4096,
+      "shape": [
+        4,
+        16,
+        64
+      ],
+      "initial_sha256": "6c455257a0cfbd2fb44c1ce375cce6f632b88c90864d7b89836782f7385a0e59",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.post_focus_mix.B_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        32,
+        16
+      ],
+      "initial_sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.pre_ffn_norms.0.adam_scale": {
+      "trainable": true,
+      "numel": 128,
+      "shape": [
+        4,
+        1,
+        32
+      ],
+      "initial_sha256": "4b082162f21359b88c1e6645f6e1b1fa13fbf9f0c351816e4837b22f35b9aa4c",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.pre_ffn_norms.0.bias": {
+      "trainable": true,
+      "numel": 32,
+      "shape": [
+        1,
+        32
+      ],
+      "initial_sha256": "db2f27ef5a7bf8735c9a327768a18269c6bbde7db19277f76c32ba121ae73f28",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.so3_linear_1.weight": {
+      "trainable": false,
+      "numel": 73728,
+      "shape": [
+        4,
+        32,
+        576
+      ],
+      "initial_sha256": "6457b5f9866a763bc2c75bc910545fc1f2e0e0716dda971bc7bce017c1802b9c",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.so3_linear_1.A_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        16,
+        32
+      ],
+      "initial_sha256": "d636487e68967abcdb960efdbc1416ef190250bb6657f948a8c417d7c7eba7b2",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.so3_linear_1.B_by_l": {
+      "trainable": true,
+      "numel": 36864,
+      "shape": [
+        4,
+        576,
+        16
+      ],
+      "initial_sha256": "8123c216413f82bbaa0339c27a43d9822c2a043e20662b27c97874429b996e9a",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.scalar_gate.weight": {
+      "trainable": false,
+      "numel": 18432,
+      "shape": [
+        192,
+        96
+      ],
+      "initial_sha256": "7febc4892f9d1e6545a0acfae195563be37e30ff24658ea59b67309240f454e6",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.grid_op.left_proj.weight": {
+      "trainable": false,
+      "numel": 9216,
+      "shape": [
+        96,
+        96
+      ],
+      "initial_sha256": "d981ffd47591a2b626607678fec6d90755e1fecdcacb7e09663c7c5a584e3ff4",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.grid_op.right_proj.weight": {
+      "trainable": false,
+      "numel": 9216,
+      "shape": [
+        96,
+        96
+      ],
+      "initial_sha256": "28721e8ee917336c20e53f2e56acfdfc32f42112a4f97f17df8be0bc2f042346",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.grid_op.router.weight": {
+      "trainable": false,
+      "numel": 192,
+      "shape": [
+        192,
+        1
+      ],
+      "initial_sha256": "c9b7ca742929ee5040b390bee6c54f151abacc6bb1e491d65323d98bfdfb271d",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.grid_op.out_proj.weight": {
+      "trainable": false,
+      "numel": 9216,
+      "shape": [
+        96,
+        96
+      ],
+      "initial_sha256": "aa81d29e59c63eb5e8f4607ac8ad4ea0f37bf2d749c9983470d1af52987dffd8",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.so3_linear_2.weight": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        4,
+        288,
+        32
+      ],
+      "initial_sha256": "244f6c6c382ccf893c7738d09ddc27333871129e796ba6add76172f138c0c236",
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.so3_linear_2.A_by_l": {
+      "trainable": true,
+      "numel": 18432,
+      "shape": [
+        4,
+        16,
+        288
+      ],
+      "initial_sha256": "bfd2874777887c8dca4efe203997086d4deaf48172baa6eb94106e0754efb727",
+      "adapter": true
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.so3_linear_2.B_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        32,
+        16
+      ],
+      "initial_sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "adapter": true
+    },
+    "atomic_model.descriptor.output_ffn.so3_linear_1.weight": {
+      "trainable": false,
+      "numel": 73728,
+      "shape": [
+        4,
+        32,
+        576
+      ],
+      "initial_sha256": "197fb0c70be4b497030be34278eea80eb23241f4aba3ac6833798b41858aaa91",
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.so3_linear_1.A_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        16,
+        32
+      ],
+      "initial_sha256": "20ad433f28ef2a1c2c1b3954b49b9efe4627d026ca3afca98e9417c3a1cf319e",
+      "adapter": true
+    },
+    "atomic_model.descriptor.output_ffn.so3_linear_1.B_by_l": {
+      "trainable": true,
+      "numel": 36864,
+      "shape": [
+        4,
+        576,
+        16
+      ],
+      "initial_sha256": "8123c216413f82bbaa0339c27a43d9822c2a043e20662b27c97874429b996e9a",
+      "adapter": true
+    },
+    "atomic_model.descriptor.output_ffn.act.scalar_gate.weight": {
+      "trainable": false,
+      "numel": 18432,
+      "shape": [
+        192,
+        96
+      ],
+      "initial_sha256": "c6ec478ec357467647d83241f4db9095e57fa0beaac09eff958076f6f3adc967",
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.act.grid_op.left_proj.weight": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        192,
+        192
+      ],
+      "initial_sha256": "4dec3ab852c8ff58925d5dcb976dfd0fe194dcfd77078c2028d2483bcf256861",
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.act.grid_op.right_proj.weight": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        192,
+        192
+      ],
+      "initial_sha256": "11028318d4ccb54dddaf02723a80bf41bc484bb162ab28d20d2125eb46c81cd1",
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.act.grid_op.out_proj.weight": {
+      "trainable": false,
+      "numel": 18432,
+      "shape": [
+        192,
+        96
+      ],
+      "initial_sha256": "1b31c4533be192c4fd14af26ca01d353563336343d6b626645bace007c3386ec",
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.so3_linear_2.weight": {
+      "trainable": false,
+      "numel": 36864,
+      "shape": [
+        4,
+        288,
+        32
+      ],
+      "initial_sha256": "578bf9915e5b1db3ed40303b6b86d1d9f53d328039a9afe7fe4cc2981b766f2b",
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.so3_linear_2.A_by_l": {
+      "trainable": true,
+      "numel": 18432,
+      "shape": [
+        4,
+        16,
+        288
+      ],
+      "initial_sha256": "2c79367c484a62e4e3952d67e40fc2324410794e394f84fdfcc18df1e05ea42c",
+      "adapter": true
+    },
+    "atomic_model.descriptor.output_ffn.so3_linear_2.B_by_l": {
+      "trainable": true,
+      "numel": 2048,
+      "shape": [
+        4,
+        32,
+        16
+      ],
+      "initial_sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "adapter": true
+    },
+    "atomic_model.fitting_net.filter_layers.networks.0.hidden_layers.0.linear.matrix": {
+      "trainable": true,
+      "numel": 6144,
+      "shape": [
+        32,
+        192
+      ],
+      "initial_sha256": "43c774cdaf14fa33b99011e145a4cf928fe462f660813466510a4d83bbc200c5",
+      "adapter": false
+    },
+    "atomic_model.fitting_net.filter_layers.networks.0.hidden_layers.0.linear.bias": {
+      "trainable": true,
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "initial_sha256": "bd54ca19782fd3c8c0fdf78ddb343c7fcd983ec9c88302a0086ac58b6e0a1a34",
+      "adapter": false
+    },
+    "atomic_model.fitting_net.filter_layers.networks.0.output_layer.matrix": {
+      "trainable": true,
+      "numel": 96,
+      "shape": [
+        96,
+        1
+      ],
+      "initial_sha256": "3aaf3c90b0ace26849ea04f802f7aeea1214a79ba728baa9746efe19701214fe",
+      "adapter": false
+    }
+  },
+  "total": 1410382,
+  "trainable": 325158,
+  "adapter_trainable": 285696,
+  "frozen": 1085224,
+  "num_steps": 10000,
+  "optimizer_type": "HybridMuonOptimizer",
+  "seed": 20,
+  "torch_initial_seed": 13545900953510009613
+}

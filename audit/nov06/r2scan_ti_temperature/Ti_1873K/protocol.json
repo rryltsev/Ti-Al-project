@@ -1,0 +1,111 @@
+{
+  "run_id": "r2scan-ti-1873-20261106-01",
+  "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K",
+  "checkpoint": {
+    "functional": "r2SCAN",
+    "step": 23200,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\output_model\\ckpt\\model.ckpt-23200.pt",
+    "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+    "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt",
+    "article_checkpoint": true
+  },
+  "frozen_model": {
+    "path": "/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+    "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+  },
+  "states": [
+    {
+      "id": "Ti_1873K",
+      "temperature_K": 1873,
+      "x_Al": 0.0,
+      "c_Ti": 1.0,
+      "actual_x_Al": 0.0,
+      "counts": {
+        "Al": 0,
+        "Ti": 512
+      },
+      "initial_file": "initial.data",
+      "initial_sha256": "460a94a34b791d227778b61c179ecc6fd21f0fd014a390ba693333ba0e08df48",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\Ti-viscosity-r2SCAN\\scan_1873K_wsl2\\scan\\03_stress_autocorr\\c_Ti_1.00\\visc1\\mol.data",
+      "seed": 611187300
+    }
+  ],
+  "pressure_bar": 1,
+  "atoms": 512,
+  "dt_ps": 0.001,
+  "initial_npt_steps": 20000,
+  "reservoir_spacing_steps": 5000,
+  "nvt_equil_steps": 1000,
+  "production_steps": 40000,
+  "matched_window_steps": 20000,
+  "preparation_Tdamp_ps": 0.1,
+  "preparation_Pdamp_ps": 0.5,
+  "production_Tdamp_ps": 0.2,
+  "masses": [
+    26.98,
+    47.88
+  ],
+  "elements": [
+    "Al",
+    "Ti"
+  ],
+  "batch_size": 5,
+  "allocation": {
+    "partition": "v100",
+    "node": null,
+    "account": "imet-2026-2",
+    "qos": "normal",
+    "gpu": "a100:1",
+    "cpus": 6,
+    "md_threads": 4,
+    "analysis_threads": 2,
+    "memory": "32G",
+    "walltime": "20:00:00"
+  },
+  "convergence": {
+    "min_replicas": 30,
+    "max_relative_std": 0.03,
+    "max_last_three_range": 0.02,
+    "max_20_40_relative_difference": 0.03,
+    "min_neff": 60,
+    "max_cost_z": 2,
+    "max_criterion_z": 2,
+    "required_consecutive_passes": 2,
+    "interpretation": "Operational stopping rule for sampling; nominal uncertainties after sequential inspection are descriptive, not coverage guarantees.",
+    "max_new_batch_z": 2.5,
+    "review_at_or_above_replicas": 50,
+    "window_fit_diagnostics": "Cost and cutoff Z<2 for full40ps, both20ps windows, and the newest5-replica fit are required in addition to the main rule."
+  },
+  "duration_policy": "Primary refinement combines verified legacy20ps spectra with two20ps segments per new40ps replica; trajectories are never joined across boundaries. New40ps/first20/second20 estimates and new5 remain separately reported.",
+  "restart_policy": "One initial guarded sbatch for this temperature;20h allocations continue only by same-ID requeue at a completed-replica boundary. PBE jobs must never be restarted.",
+  "preparation_note": "New independent seeded reservoir from archived pureTi configuration,20psNPT then5psNPT+1psNVT+40psNVT per newreplica;legacy preparation remains separately identified.",
+  "scheduling": {
+    "priority_temperatures_K": [
+      1873
+    ],
+    "initial_replicas_each": 10,
+    "batch_size": 5,
+    "policy": "Independent temperature job;analyze after5,10,and every5;four jobs submitted together,oneA100 each;actual concurrency limited by cluster GPUs."
+  },
+  "functional": "r2SCAN",
+  "legacy": {
+    "manifest": "legacy/manifest.json",
+    "sha256": "7a2f13c3071f9e70055ffac3f195603b53686d13a119ca1f99b3a19ea8f3cae7",
+    "n_replicas": 30,
+    "duration_ps": 20
+  },
+  "pooling": {
+    "version": "r2scan-legacy20-new40-v1",
+    "primary": "Pooled20ps spectrum;old20ps+two20pswindows from each new40ps",
+    "weight": "Equal-length20ps channels pooled without temporal concatenation;ownV/(kB*T),fivechannels",
+    "uncertainty": "max(formalSE,delete-one-whole-replica cluster jackknifeSE);both halves removed together for newreplicas",
+    "required_model_pressure_max_error_bar": 20,
+    "additional_stop_gates": [
+      "pooled20cost/cutoffZ<2",
+      "pooled20conservativeSE<=3%",
+      "pooled20last3range<=2%"
+    ],
+    "new40_stop_rule": "Retain full original heuristic includingNnew>=30,neff40>=60,two consecutive passes;old20ps do not substitute for40ps duration checks",
+    "legacy_model_validation": "All archived zero-step pressures must match checkpoint23200 before submission"
+  }
+}

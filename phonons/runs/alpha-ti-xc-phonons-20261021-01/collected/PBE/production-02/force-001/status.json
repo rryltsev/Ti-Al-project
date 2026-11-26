@@ -1,0 +1,56 @@
+{
+  "xc": "PBE",
+  "step": "force-001",
+  "job_id": "20958089",
+  "state": "validated",
+  "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/recovery-01/force-001",
+  "resources": {
+    "nodes": 1,
+    "ranks": 32,
+    "ranks_per_node": 32,
+    "memory_GiB_per_node": 300,
+    "KPAR": 4,
+    "NCORE": 4,
+    "NBANDS": 576
+  },
+  "cumulative_budget": null,
+  "wall_seconds": 65191.17184167169,
+  "quality": {
+    "energy_eV": -749.03030722,
+    "free_energy_eV": -749.26521315,
+    "max_force_eV_A": 0.06377824356018673,
+    "stress_kbar_ASE_tension_positive": [
+      [
+        0.19357378,
+        0.0168323,
+        -0.0004369500000000001
+      ],
+      [
+        0.0168323,
+        0.19415463,
+        9.76e-06
+      ],
+      [
+        -0.0004369500000000001,
+        9.76e-06,
+        0.21487274
+      ]
+    ],
+    "max_stress_kbar": 0.21487274,
+    "force_drift_eV_A": [
+      -4.166666666822622e-10,
+      4.1666666665515713e-10,
+      1.0416666670218812e-10
+    ],
+    "ionic_steps": 1,
+    "scf_steps": [
+      23
+    ],
+    "volume_A3": 1666.3161722975638,
+    "outputs": {
+      "OUTCAR": "252e5fbbbb25107c8818464954bca28a101faaac3f97db99b198608c78673ab0",
+      "vasprun.xml": "bf9db334dab875053f88d89baed159851a4bb7e0486aa4ce1274e2743ab961d1",
+      "CONTCAR": "4d0d01cb6adedbb35624e4a39834fd2d301d59d7391c33e6a342e05aaf9173e1"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "unix": 1793933221.6551828,
+  "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K",
+  "run_id": "r2scan-ti-2000-20261106-01",
+  "args": [
+    "sbatch",
+    "--parsable",
+    "--partition=v100",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=6",
+    "--gres=gpu:a100:1",
+    "--mem=32G",
+    "--time=20:00:00",
+    "--requeue",
+    "--job-name=Ti2000-visc-r2SCAN",
+    "--comment=r2scan-ti-2000-20261106-01",
+    "--chdir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K",
+    "--output=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K/allocation-%j.log",
+    "--open-mode=append",
+    "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K/job.sbatch"
+  ],
+  "status": "submitted",
+  "returncode": 0,
+  "stdout": "20988270\n",
+  "stderr": "",
+  "job_id": "20988270",
+  "new_sbatch_created": true
+}

@@ -1,0 +1,2419 @@
+{
+  "checked_utc": "2026-11-01T09:58:36.049465+00:00",
+  "job_ids": [
+    "20959753",
+    "20968908",
+    "20959747",
+    "20958709",
+    "20959188",
+    "20959336",
+    "20964089",
+    "20958089",
+    "20972819",
+    "20958710",
+    "20958090",
+    "20959187",
+    "20959338",
+    "20968907",
+    "20962927",
+    "20972836",
+    "20958711",
+    "20959189",
+    "20959337",
+    "20964090",
+    "20958091",
+    "20968910",
+    "20960773",
+    "20972837"
+  ],
+  "accounting": "20958089|COMPLETED|18:06:33|0:0|2086176\n20958090|TIMEOUT|20:00:05|0:0|2304160\n20958091|COMPLETED|17:17:55|0:0|1992800\n20958709|CANCELLED by 13129|00:00:00|0:0|0\n20958710|CANCELLED by 13129|00:00:00|0:0|0\n20958711|CANCELLED by 13129|00:00:00|0:0|0\n20959187|CANCELLED by 13129|00:00:00|0:0|0\n20959188|FAILED|00:00:00|2:0|0\n20959189|FAILED|00:00:00|2:0|0\n20959336|CANCELLED by 13129|06:22:01|0:0|733472\n20959337|COMPLETED|15:19:14|0:0|1764928\n20959338|COMPLETED|08:31:00|0:0|1962240\n20959747|CANCELLED by 13129|00:00:00|0:0|0\n20959753|COMPLETED|13:26:50|0:0|1549120\n20960773|COMPLETED|14:42:34|0:0|1694528\n20962927|COMPLETED|13:40:49|0:0|3151936\n20964089|NODE_FAIL|04:31:47|0:0|1043648\n20964090|COMPLETED|13:48:54|0:0|3182976\n20968907|COMPLETED|11:09:00|0:0|2568960\n20968908|COMPLETED|09:04:39|0:0|2091456\n20968910|COMPLETED|08:18:35|0:0|1914560\n20972819|COMPLETED|11:02:40|0:0|2544640\n20972836|CANCELLED by 13129|00:00:00|0:0|0\n20972837|COMPLETED|12:24:53|0:0|2860352\n",
+  "queue": "",
+  "progress": {
+    "PBE": {
+      "force-001": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 150522,
+            "mtime_epoch": 1792705322.632833,
+            "age_seconds": 821789.9860782623
+          },
+          "vasp.stdout": {
+            "bytes": 5137,
+            "mtime_epoch": 1792705322.9588249,
+            "age_seconds": 821789.6762063503
+          },
+          "OSZICAR": {
+            "bytes": 2240,
+            "mtime_epoch": 1792705312.5150843,
+            "age_seconds": 821800.1221385002
+          },
+          "vasprun.xml": {
+            "bytes": 2418971,
+            "mtime_epoch": 1792705321.822853,
+            "age_seconds": 821790.8153107166
+          }
+        },
+        "status": {
+          "xc": "PBE",
+          "step": "force-001",
+          "job_id": "20958089",
+          "state": "validated",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/recovery-01/force-001",
+          "resources": {
+            "nodes": 1,
+            "ranks": 32,
+            "ranks_per_node": 32,
+            "memory_GiB_per_node": 300,
+            "KPAR": 4,
+            "NCORE": 4,
+            "NBANDS": 576
+          },
+          "cumulative_budget": null,
+          "wall_seconds": 65191.17184167169,
+          "quality": {
+            "energy_eV": -749.03030722,
+            "free_energy_eV": -749.26521315,
+            "max_force_eV_A": 0.06377824356018673,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                0.19357378,
+                0.0168323,
+                -0.0004369500000000001
+              ],
+              [
+                0.0168323,
+                0.19415463,
+                9.76e-06
+              ],
+              [
+                -0.0004369500000000001,
+                9.76e-06,
+                0.21487274
+              ]
+            ],
+            "max_stress_kbar": 0.21487274,
+            "force_drift_eV_A": [
+              -4.166666666822622e-10,
+              4.1666666665515713e-10,
+              1.0416666670218812e-10
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              23
+            ],
+            "volume_A3": 1666.3161722975638,
+            "outputs": {
+              "OUTCAR": "252e5fbbbb25107c8818464954bca28a101faaac3f97db99b198608c78673ab0",
+              "vasprun.xml": "bf9db334dab875053f88d89baed159851a4bb7e0486aa4ce1274e2743ab961d1",
+              "CONTCAR": "4d0d01cb6adedbb35624e4a39834fd2d301d59d7391c33e6a342e05aaf9173e1"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20958089",
+          "checked_epoch": 1792701489.1492538,
+          "deadline_epoch": 1792712130.0,
+          "reserve_seconds": 10800,
+          "state": "stop_requested"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20958089",
+          "checked_epoch": 1792701489.1492538,
+          "deadline_epoch": 1792712130.0,
+          "reserve_seconds": 10800,
+          "state": "stop_requested"
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    62869.946",
+          "                          System time (sec):      690.976",
+          "                         Elapsed time (sec):    65189.648",
+          "  ",
+          "                   Maximum memory used (kb):     7237240.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     41413660",
+          "                          Major page faults:            7",
+          "                 Voluntary context switches:         2603"
+        ],
+        "recent_loop_wall_seconds": [
+          "2725.3593",
+          "2705.7772",
+          "2675.3296",
+          "2736.4655",
+          "2753.3736",
+          "2761.5786",
+          "2782.7999",
+          "2261.9081"
+        ],
+        "ediff_reached": false,
+        "normal_termination": true,
+        "scientific_state": "checkpoint_requested_or_saved_NOT_converged",
+        "vasp.stdout_tail": [
+          "|     might not be reliable so examine the results carefully. If you find     |",
+          "|     spurious results, we suggest increasing NELM, if you were close to      |",
+          "|     convergence or switching to a different ALGO or adjusting the           |",
+          "|     density mixing parameters otherwise.                                    |",
+          "|                                                                             |",
+          " -----------------------------------------------------------------------------",
+          "",
+          " soft stop encountered!  aborting job ...",
+          "   1 F= -.74926521E+03 E0= -.74903031E+03  d E =-.469812E+00",
+          " deleting file STOPCAR"
+        ],
+        "recent_scf_lines": [
+          "DAV:  19    -0.749265222112E+03    0.32377E-04   -0.11464E-05171696   0.949E-03    0.717E-03",
+          "DAV:  20    -0.749265215854E+03    0.62579E-05   -0.44927E-06179280   0.689E-03    0.387E-03",
+          "DAV:  21    -0.749265212566E+03    0.32876E-05   -0.89391E-07178520   0.281E-03    0.168E-03",
+          "DAV:  22    -0.749265212328E+03    0.23835E-06   -0.28927E-07175952   0.152E-03    0.136E-03",
+          "DAV:  23    -0.749265213152E+03   -0.82354E-06   -0.92405E-08137856   0.884E-04    0.837E-04"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:  15    -0.749265725904E+03    0.49188E-03   -0.15153E-03176024   0.102E-01    0.112E-01",
+          "DAV:  16    -0.749265443100E+03    0.28280E-03   -0.91126E-04175688   0.887E-02    0.458E-02",
+          "DAV:  17    -0.749265281147E+03    0.16195E-03   -0.17346E-04175952   0.401E-02    0.293E-02",
+          "DAV:  18    -0.749265254489E+03    0.26658E-04   -0.63223E-05173352   0.235E-02    0.148E-02",
+          "DAV:  19    -0.749265222112E+03    0.32377E-04   -0.11464E-05171696   0.949E-03    0.717E-03",
+          "DAV:  20    -0.749265215854E+03    0.62579E-05   -0.44927E-06179280   0.689E-03    0.387E-03",
+          "DAV:  21    -0.749265212566E+03    0.32876E-05   -0.89391E-07178520   0.281E-03    0.168E-03",
+          "DAV:  22    -0.749265212328E+03    0.23835E-06   -0.28927E-07175952   0.152E-03    0.136E-03",
+          "DAV:  23    -0.749265213152E+03   -0.82354E-06   -0.92405E-08137856   0.884E-04    0.837E-04",
+          "   1 F= -.74926521E+03 E0= -.74903031E+03  d E =-.469812E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "force-001-restart-01": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 86233,
+            "mtime_epoch": 1792806848.6126719,
+            "age_seconds": 720264.0298247337
+          },
+          "vasp.stdout": {
+            "bytes": 2087,
+            "mtime_epoch": 1792811477.362752,
+            "age_seconds": 715635.2823512554
+          },
+          "OSZICAR": {
+            "bytes": 412,
+            "mtime_epoch": 1792806853.7335448,
+            "age_seconds": 720258.9128386974
+          },
+          "vasprun.xml": {
+            "bytes": 50690,
+            "mtime_epoch": 1792806848.6126719,
+            "age_seconds": 720264.03459692
+          }
+        },
+        "status": {
+          "xc": "PBE",
+          "step": "force-001",
+          "job_id": "20959336",
+          "parent_job": "20958089",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001",
+          "state": "running",
+          "parent_scheduler": "20958089|COMPLETED\n",
+          "checkpoint_electrons": 960.0001207787624,
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 37249904  104857600 104857600          223303       0       0        \n"
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20959336",
+          "checked_epoch": 1792811364.211762,
+          "deadline_epoch": 1792961356.0,
+          "reserve_seconds": 28800,
+          "state": "armed"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20959336",
+          "requested_epoch": 1792810886.7456548,
+          "state": "stop_requested",
+          "reason": "Release A100 host memory; relocate CPU-only VASP to apollo",
+          "manual": true
+        },
+        "restart-provenance.json": {
+          "parent_job": "20958089",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "bfb82d8a9eadfc0dcea5eda5ef9402bc7b8a2fbd8bd0bd00c05bc777d505731a",
+              "bytes": 127578746
+            }
+          },
+          "changes": [
+            "ICHARG=1; ISTART=0 (no parent WAVECAR)"
+          ],
+          "driver_sha256": "e12c4e3688c327d8d03713ed72a4a6d25d205a315efa078f7f444e47d6999ec4"
+        },
+        "OUTCAR_tail": [
+          "",
+          "",
+          "--------------------------------------------------------------------------------------------------------",
+          "",
+          "",
+          "",
+          "",
+          "--------------------------------------- Iteration      1(   5)  ---------------------------------------",
+          "",
+          ""
+        ],
+        "recent_loop_wall_seconds": [
+          "3715.1020",
+          "3755.9290",
+          "4969.9780",
+          "4782.3790"
+        ],
+        "ediff_reached": false,
+        "normal_termination": false,
+        "scientific_state": "checkpoint_requested_or_saved_NOT_converged",
+        "vasp.stdout_tail": [
+          " WAVECAR not read",
+          " charge density read from file: CHGCAR, alpha-Ti                                ",
+          " entering main loop",
+          "       N       E                     dE             d eps       ncg     rms          rms(c)",
+          "DAV:   1     0.138071904528E+05    0.13807E+05   -0.49287E+05129984   0.196E+03",
+          "DAV:   2     0.300380936540E+03   -0.13507E+05   -0.13311E+05129024   0.666E+02",
+          "DAV:   3    -0.657073241170E+03   -0.95745E+03   -0.89573E+03187472   0.159E+02",
+          "DAV:   4    -0.744791024222E+03   -0.87718E+02   -0.84347E+02178384   0.400E+01",
+          "srun: Job step aborted: Waiting up to 32 seconds for job step to finish.",
+          "slurmstepd: error: *** STEP 20959336.0 ON tesla-a101 CANCELLED AT 2026-10-24T08:11:17 ***"
+        ],
+        "recent_scf_lines": [
+          "DAV:   1     0.138071904528E+05    0.13807E+05   -0.49287E+05129984   0.196E+03",
+          "DAV:   2     0.300380936540E+03   -0.13507E+05   -0.13311E+05129024   0.666E+02",
+          "DAV:   3    -0.657073241170E+03   -0.95745E+03   -0.89573E+03187472   0.159E+02",
+          "DAV:   4    -0.744791024222E+03   -0.87718E+02   -0.84347E+02178384   0.400E+01"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "       N       E                     dE             d eps       ncg     rms          rms(c)",
+          "DAV:   1     0.138071904528E+05    0.13807E+05   -0.49287E+05129984   0.196E+03",
+          "DAV:   2     0.300380936540E+03   -0.13507E+05   -0.13311E+05129024   0.666E+02",
+          "DAV:   3    -0.657073241170E+03   -0.95745E+03   -0.89573E+03187472   0.159E+02",
+          "DAV:   4    -0.744791024222E+03   -0.87718E+02   -0.84347E+02178384   0.400E+01"
+        ],
+        "scheduler_state": "CANCELLED by 13129",
+        "effective_state": "CANCELLED by 13129",
+        "worker_status_stale": true
+      },
+      "force-001-restart-03": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 136327,
+            "mtime_epoch": 1793162053.9543483,
+            "age_seconds": 365058.69790291786
+          },
+          "vasp.stdout": {
+            "bytes": 4567,
+            "mtime_epoch": 1793162054.445336,
+            "age_seconds": 365058.21012711525
+          },
+          "OSZICAR": {
+            "bytes": 1589,
+            "mtime_epoch": 1793162037.3837602,
+            "age_seconds": 365075.27342534065
+          },
+          "vasprun.xml": {
+            "bytes": 2417011,
+            "mtime_epoch": 1793162052.6633806,
+            "age_seconds": 365059.99464035034
+          }
+        },
+        "status": {
+          "xc": "PBE",
+          "step": "force-001",
+          "job_id": "20959753",
+          "parent_job": "20958089",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001",
+          "state": "checkpointed_needs_review",
+          "parent_scheduler": "20958089|COMPLETED\n",
+          "checkpoint_electrons": 960.0001207787624,
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 42519596  104857600 104857600          347570       0       0        \n"
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20959753",
+          "checked_epoch": 1793156866.864917,
+          "deadline_epoch": 1793185644.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20959753",
+          "checked_epoch": 1793156866.864917,
+          "deadline_epoch": 1793185644.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "restart-provenance.json": {
+          "parent_job": "20958089",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "bfb82d8a9eadfc0dcea5eda5ef9402bc7b8a2fbd8bd0bd00c05bc777d505731a",
+              "bytes": 127578746
+            }
+          },
+          "changes": [
+            "ICHARG=1; ISTART=0 (no parent WAVECAR)"
+          ],
+          "driver_sha256": "cec725d3bd70a625a8aaf8fcce2a5e61b91560dfff55188f310ff9071ee30156"
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    43413.736",
+          "                          System time (sec):      377.110",
+          "                         Elapsed time (sec):    48397.007",
+          "  ",
+          "                   Maximum memory used (kb):     7227880.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     41769808",
+          "                          Major page faults:           57",
+          "                 Voluntary context switches:         2246"
+        ],
+        "recent_loop_wall_seconds": [
+          "2724.1431",
+          "2319.2353",
+          "2287.9570",
+          "2422.2864",
+          "2907.1680",
+          "3639.8238",
+          "4849.8516",
+          "4196.3010"
+        ],
+        "ediff_reached": false,
+        "normal_termination": true,
+        "scientific_state": "checkpoint_requested_or_saved_NOT_converged",
+        "vasp.stdout_tail": [
+          "|     might not be reliable so examine the results carefully. If you find     |",
+          "|     spurious results, we suggest increasing NELM, if you were close to      |",
+          "|     convergence or switching to a different ALGO or adjusting the           |",
+          "|     density mixing parameters otherwise.                                    |",
+          "|                                                                             |",
+          " -----------------------------------------------------------------------------",
+          "",
+          " soft stop encountered!  aborting job ...",
+          "   1 F= -.74926522E+03 E0= -.74903031E+03  d E =-.469818E+00",
+          " deleting file STOPCAR"
+        ],
+        "recent_scf_lines": [
+          "DAV:  12    -0.749265238609E+03    0.20973E-04   -0.21639E-05160040   0.895E-03    0.277E-02",
+          "DAV:  13    -0.749265231117E+03    0.74927E-05   -0.49158E-06173544   0.477E-03    0.205E-02",
+          "DAV:  14    -0.749265224150E+03    0.69661E-05   -0.42990E-06159816   0.479E-03    0.131E-02",
+          "DAV:  15    -0.749265220272E+03    0.38780E-05   -0.22363E-06171216   0.340E-03    0.830E-03",
+          "DAV:  16    -0.749265215298E+03    0.49749E-05   -0.32634E-06157320   0.373E-03    0.178E-03"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:   8    -0.749265080407E+03   -0.21691E-02   -0.22779E-02175072   0.148E-01    0.866E-02",
+          "DAV:   9    -0.749265278744E+03   -0.19834E-03   -0.22329E-03174184   0.517E-02    0.720E-02",
+          "DAV:  10    -0.749265265788E+03    0.12956E-04   -0.29266E-04171336   0.268E-02    0.520E-02",
+          "DAV:  11    -0.749265259582E+03    0.62057E-05   -0.37506E-05172000   0.890E-03    0.443E-02",
+          "DAV:  12    -0.749265238609E+03    0.20973E-04   -0.21639E-05160040   0.895E-03    0.277E-02",
+          "DAV:  13    -0.749265231117E+03    0.74927E-05   -0.49158E-06173544   0.477E-03    0.205E-02",
+          "DAV:  14    -0.749265224150E+03    0.69661E-05   -0.42990E-06159816   0.479E-03    0.131E-02",
+          "DAV:  15    -0.749265220272E+03    0.38780E-05   -0.22363E-06171216   0.340E-03    0.830E-03",
+          "DAV:  16    -0.749265215298E+03    0.49749E-05   -0.32634E-06157320   0.373E-03    0.178E-03",
+          "   1 F= -.74926522E+03 E0= -.74903031E+03  d E =-.469818E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "force-001-restart-04": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 91865,
+            "mtime_epoch": 1793260653.2943766,
+            "age_seconds": 266459.36735773087
+          },
+          "vasp.stdout": {
+            "bytes": 2453,
+            "mtime_epoch": 1793261655.8745139,
+            "age_seconds": 265456.7906422615
+          },
+          "OSZICAR": {
+            "bytes": 691,
+            "mtime_epoch": 1793260653.2943766,
+            "age_seconds": 266459.3721051216
+          },
+          "vasprun.xml": {
+            "bytes": 51530,
+            "mtime_epoch": 1793260653.2943766,
+            "age_seconds": 266459.37294745445
+          }
+        },
+        "status": {
+          "xc": "PBE",
+          "step": "force-001",
+          "job_id": "20964089",
+          "parent_job": "20959753",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03",
+          "resources": {
+            "ranks": 64,
+            "nodes": 2,
+            "ranks_per_node": 32,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576,
+            "memory_GiB_per_node": 240
+          },
+          "state": "running",
+          "parent_scheduler": "20959753|COMPLETED\n",
+          "checkpoint_electrons": 960.0001207789049,
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 68704276  104857600 104857600          352795       0       0        \n",
+          "required_additional_bytes": 4677703534,
+          "scheduler_allocation": "JobId=20964089 JobName=ti6-PBE-f001 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=895 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:06 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-28T21:34:26 EligibleTime=2026-10-28T21:34:26 AccrueTime=2026-10-28T21:34:26 StartTime=2026-10-29T08:42:28 EndTime=2026-10-30T04:42:28 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-29T08:42:28 Scheduler=Main Partition=apollo AllocNode:Sid=umt:2947294 ReqNodeList=(null) ExcNodeList=tesla-a101 NodeList=apollo[20,22] BatchHost=apollo20 NumNodes=2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=cpu=64,mem=480G,node=2,billing=11264 Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v9.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-restart64-20261028-20964089.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-restart64-20261028-20964089.out Power= \n"
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20964089",
+          "checked_epoch": 1793261556.5141687,
+          "deadline_epoch": 1793317348.0,
+          "reserve_seconds": 28800,
+          "state": "armed"
+        },
+        "restart-provenance.json": {
+          "parent_job": "20959753",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "7a074bf21e322f72f2eaa0b7619850e6c43b4483cf2ae1d368dc07289fc7f09d",
+              "bytes": 127578746
+            }
+          },
+          "driver_sha256": "3ab9c91e1ca1ad396fbe905e3a5d94b2188554c3df09c66a9fc3982ec346d327",
+          "changes": [
+            "64 ranks, KPAR8, NCORE4; scientific settings unchanged",
+            "PBE ISTART0/ICHARG1; density-only restart with faster resource layout"
+          ]
+        },
+        "OUTCAR_tail": [
+          "--------------------------------------------------------------------------------------------------------",
+          "",
+          "",
+          "",
+          "",
+          "--------------------------------------- Iteration      1(   8)  ---------------------------------------",
+          "",
+          "",
+          "    POTLOK:  cpu time      1.0819: real time      1.0868",
+          "    SETDIJ:  cpu time      0.5045: real time      0.5060"
+        ],
+        "recent_loop_wall_seconds": [
+          "1717.2968",
+          "1551.9895",
+          "1583.1544",
+          "2517.9800",
+          "2885.4811",
+          "2606.0442",
+          "1928.5770"
+        ],
+        "ediff_reached": false,
+        "normal_termination": false,
+        "vasp.stdout_tail": [
+          "DAV:   1     0.138072010381E+05    0.13807E+05   -0.49286E+05129984   0.196E+03",
+          "DAV:   2     0.300383945381E+03   -0.13507E+05   -0.13311E+05129024   0.666E+02",
+          "DAV:   3    -0.657073147702E+03   -0.95746E+03   -0.89573E+03187472   0.159E+02",
+          "DAV:   4    -0.744791042091E+03   -0.87718E+02   -0.84347E+02178384   0.400E+01",
+          "DAV:   5    -0.748950675741E+03   -0.41596E+01   -0.39893E+01171064   0.730E+00    0.214E-01",
+          "DAV:   6    -0.749241667246E+03   -0.29099E+00   -0.28263E+00176200   0.156E+00    0.314E-01",
+          "DAV:   7    -0.749262905270E+03   -0.21238E-01   -0.21673E-01169648   0.432E-01    0.106E-01",
+          "srun: error: Node failure on apollo22",
+          "srun: Job step aborted: Waiting up to 32 seconds for job step to finish.",
+          "slurmstepd: error: *** STEP 20964089.0 ON apollo20 CANCELLED AT 2026-10-29T13:14:15 DUE TO NODE FAILURE, SEE SLURMCTLD LOG FOR DETAILS ***"
+        ],
+        "recent_scf_lines": [
+          "DAV:   3    -0.657073147702E+03   -0.95746E+03   -0.89573E+03187472   0.159E+02",
+          "DAV:   4    -0.744791042091E+03   -0.87718E+02   -0.84347E+02178384   0.400E+01",
+          "DAV:   5    -0.748950675741E+03   -0.41596E+01   -0.39893E+01171064   0.730E+00    0.214E-01",
+          "DAV:   6    -0.749241667246E+03   -0.29099E+00   -0.28263E+00176200   0.156E+00    0.314E-01",
+          "DAV:   7    -0.749262905270E+03   -0.21238E-01   -0.21673E-01169648   0.432E-01    0.106E-01"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "       N       E                     dE             d eps       ncg     rms          rms(c)",
+          "DAV:   1     0.138072010381E+05    0.13807E+05   -0.49286E+05129984   0.196E+03",
+          "DAV:   2     0.300383945381E+03   -0.13507E+05   -0.13311E+05129024   0.666E+02",
+          "DAV:   3    -0.657073147702E+03   -0.95746E+03   -0.89573E+03187472   0.159E+02",
+          "DAV:   4    -0.744791042091E+03   -0.87718E+02   -0.84347E+02178384   0.400E+01",
+          "DAV:   5    -0.748950675741E+03   -0.41596E+01   -0.39893E+01171064   0.730E+00    0.214E-01",
+          "DAV:   6    -0.749241667246E+03   -0.29099E+00   -0.28263E+00176200   0.156E+00    0.314E-01",
+          "DAV:   7    -0.749262905270E+03   -0.21238E-01   -0.21673E-01169648   0.432E-01    0.106E-01"
+        ],
+        "scheduler_state": "NODE_FAIL",
+        "effective_state": "NODE_FAIL",
+        "worker_status_stale": true
+      },
+      "force-001-restart-05": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 2360440,
+            "mtime_epoch": 1793457093.301734,
+            "age_seconds": 70019.36913084984
+          },
+          "vasp.stdout": {
+            "bytes": 3832,
+            "mtime_epoch": 1793457096.151663,
+            "age_seconds": 70016.53244185448
+          },
+          "OSZICAR": {
+            "bytes": 2320,
+            "mtime_epoch": 1793457093.3157337,
+            "age_seconds": 70019.36992955208
+          },
+          "vasprun.xml": {
+            "bytes": 2419641,
+            "mtime_epoch": 1793457091.5577774,
+            "age_seconds": 70021.12883281708
+          }
+        },
+        "status": {
+          "xc": "PBE",
+          "step": "force-001",
+          "job_id": "20968908",
+          "parent_job": "20959753",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03",
+          "resources": {
+            "ranks": 64,
+            "nodes": 2,
+            "ranks_per_node": 32,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576,
+            "memory_GiB_per_node": 240
+          },
+          "state": "validated",
+          "parent_scheduler": "20959753|COMPLETED\n",
+          "checkpoint_electrons": 960.0001207789049,
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 69901872  104857600 104857600          355518       0       0        \n",
+          "required_additional_bytes": 4677703534,
+          "scheduler_allocation": "JobId=20968908 JobName=ti7-PBE-f001 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=886 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:05 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-29T23:06:09 EligibleTime=2026-10-29T23:06:09 AccrueTime=2026-10-29T23:06:09 StartTime=2026-10-31T10:26:57 EndTime=2026-11-01T06:26:57 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-31T10:26:57 Scheduler=Backfill Partition=apollo AllocNode:Sid=umt:1464331 ReqNodeList=(null) ExcNodeList=apollo22,tesla-a101 NodeList=apollo[23-24] BatchHost=apollo23 NumNodes=2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=cpu=64,mem=480G,node=2,billing=11264 Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v11.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-node-retry-20261029-20968908.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-node-retry-20261029-20968908.out Power= \n",
+          "quality": {
+            "energy_eV": -749.03030705,
+            "free_energy_eV": -749.26521361,
+            "max_force_eV_A": 0.06384069073736123,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                0.18180636,
+                0.01683101,
+                -0.00042702000000000007
+              ],
+              [
+                0.01683101,
+                0.18237408,
+                1.143e-05
+              ],
+              [
+                -0.00042702000000000007,
+                1.143e-05,
+                0.20202552000000001
+              ]
+            ],
+            "max_stress_kbar": 0.20202552000000001,
+            "force_drift_eV_A": [
+              1.0416666666604804e-10,
+              3.124999999800741e-10,
+              -4.1666666655577195e-10
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              24
+            ],
+            "volume_A3": 1666.3161722975638,
+            "outputs": {
+              "OUTCAR": "646fe2a674462358fbf1ed2c1afbd6ec90e621dbd2529867ae1be9139a176204",
+              "vasprun.xml": "ef6389abe305d1a23d416703ac5954a15d8cbc2f3e8acd6de75e6358875e3214",
+              "CONTCAR": "4d0d01cb6adedbb35624e4a39834fd2d301d59d7391c33e6a342e05aaf9173e1"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20968908",
+          "checked_epoch": 1793456829.9346435,
+          "deadline_epoch": 1793496417.0,
+          "reserve_seconds": 28800,
+          "state": "armed"
+        },
+        "restart-provenance.json": {
+          "parent_job": "20959753",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "7a074bf21e322f72f2eaa0b7619850e6c43b4483cf2ae1d368dc07289fc7f09d",
+              "bytes": 127578746
+            }
+          },
+          "driver_sha256": "069612466a3b8cdcfd1e394e653b1c916ebfc0980cbcaa284d64e4d484112772",
+          "changes": [
+            "64 ranks, KPAR8, NCORE4; scientific settings unchanged",
+            "PBE ISTART0/ICHARG1; density-only restart with faster resource layout"
+          ]
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    32220.343",
+          "                          System time (sec):      205.314",
+          "                         Elapsed time (sec):    32668.533",
+          "  ",
+          "                   Maximum memory used (kb):     7271832.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:      5819449",
+          "                          Major page faults:           57",
+          "                 Voluntary context switches:         7230"
+        ],
+        "recent_loop_wall_seconds": [],
+        "ediff_reached": true,
+        "normal_termination": true,
+        "vasp.stdout_tail": [
+          "DAV:  16    -0.749265215025E+03    0.47445E-05   -0.29262E-06157688   0.355E-03    0.146E-03",
+          "DAV:  17    -0.749265214341E+03    0.68395E-06   -0.21437E-07175864   0.102E-03    0.826E-04",
+          "DAV:  18    -0.749265213759E+03    0.58234E-06   -0.61075E-08129536   0.662E-04    0.314E-04",
+          "DAV:  19    -0.749265213716E+03    0.42841E-07   -0.66627E-09 91160   0.285E-04    0.259E-04",
+          "DAV:  20    -0.749265213666E+03    0.50131E-07   -0.27227E-09 89032   0.203E-04    0.149E-04",
+          "DAV:  21    -0.749265213606E+03    0.59663E-07   -0.13324E-09 87040   0.862E-05    0.834E-05",
+          "DAV:  22    -0.749265213588E+03    0.17972E-07   -0.58960E-10 85848   0.630E-05    0.616E-05",
+          "DAV:  23    -0.749265213605E+03   -0.16254E-07   -0.24852E-10 84704   0.369E-05    0.522E-05",
+          "DAV:  24    -0.749265213614E+03   -0.90367E-08   -0.12681E-10 83136   0.227E-05",
+          "   1 F= -.74926521E+03 E0= -.74903031E+03  d E =-.469813E+00"
+        ],
+        "recent_scf_lines": [
+          "DAV:  20    -0.749265213666E+03    0.50131E-07   -0.27227E-09 89032   0.203E-04    0.149E-04",
+          "DAV:  21    -0.749265213606E+03    0.59663E-07   -0.13324E-09 87040   0.862E-05    0.834E-05",
+          "DAV:  22    -0.749265213588E+03    0.17972E-07   -0.58960E-10 85848   0.630E-05    0.616E-05",
+          "DAV:  23    -0.749265213605E+03   -0.16254E-07   -0.24852E-10 84704   0.369E-05    0.522E-05",
+          "DAV:  24    -0.749265213614E+03   -0.90367E-08   -0.12681E-10 83136   0.227E-05"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:  16    -0.749265215025E+03    0.47445E-05   -0.29262E-06157688   0.355E-03    0.146E-03",
+          "DAV:  17    -0.749265214341E+03    0.68395E-06   -0.21437E-07175864   0.102E-03    0.826E-04",
+          "DAV:  18    -0.749265213759E+03    0.58234E-06   -0.61075E-08129536   0.662E-04    0.314E-04",
+          "DAV:  19    -0.749265213716E+03    0.42841E-07   -0.66627E-09 91160   0.285E-04    0.259E-04",
+          "DAV:  20    -0.749265213666E+03    0.50131E-07   -0.27227E-09 89032   0.203E-04    0.149E-04",
+          "DAV:  21    -0.749265213606E+03    0.59663E-07   -0.13324E-09 87040   0.862E-05    0.834E-05",
+          "DAV:  22    -0.749265213588E+03    0.17972E-07   -0.58960E-10 85848   0.630E-05    0.616E-05",
+          "DAV:  23    -0.749265213605E+03   -0.16254E-07   -0.24852E-10 84704   0.369E-05    0.522E-05",
+          "DAV:  24    -0.749265213614E+03   -0.90367E-08   -0.12681E-10 83136   0.227E-05",
+          "   1 F= -.74926521E+03 E0= -.74903031E+03  d E =-.469813E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "production-05/force-002": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 2370836,
+            "mtime_epoch": 1793501315.343544,
+            "age_seconds": 25797.34641647339
+          },
+          "vasp.stdout": {
+            "bytes": 4216,
+            "mtime_epoch": 1793501287.3332436,
+            "age_seconds": 25825.367795944214
+          },
+          "OSZICAR": {
+            "bytes": 2785,
+            "mtime_epoch": 1793501287.3332436,
+            "age_seconds": 25825.36976003647
+          },
+          "vasprun.xml": {
+            "bytes": 2421041,
+            "mtime_epoch": 1793501308.8797054,
+            "age_seconds": 25803.824155569077
+          }
+        },
+        "status": {
+          "xc": "PBE",
+          "step": "force-002",
+          "job_id": "20972819",
+          "state": "validated",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/recovery-01/force-002",
+          "resources": {
+            "nodes": 2,
+            "ranks": 64,
+            "ranks_per_node": 32,
+            "memory_GiB_per_node": 240,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576
+          },
+          "cumulative_budget": null,
+          "wall_seconds": 39754.509483015165,
+          "quality": {
+            "energy_eV": -749.03030704,
+            "free_energy_eV": -749.26521361,
+            "max_force_eV_A": 0.06384409147484989,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                0.18176477,
+                -0.01654628,
+                -0.00042682
+              ],
+              [
+                -0.01654628,
+                0.18233182,
+                -1.198e-05
+              ],
+              [
+                -0.00042682,
+                -1.198e-05,
+                0.20205311000000004
+              ]
+            ],
+            "max_stress_kbar": 0.20205311000000004,
+            "force_drift_eV_A": [
+              3.1250000007042425e-10,
+              4.1666666664612215e-10,
+              1.0416666666604804e-10
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              29
+            ],
+            "volume_A3": 1666.3161722975638,
+            "outputs": {
+              "OUTCAR": "c3a5d076b2e98afebf7a36e4203582e9acbe7a936aa68e870eb50a1b6e36d3aa",
+              "vasprun.xml": "e9749e7f83bc34db71e6508cf45fd0414b8b08280693f6a105799c0d13b82220",
+              "CONTCAR": "051c02936a6ef744924ddf0145785247ac9c8510e5550cac74615b1fec63a658"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20972819",
+          "checked_epoch": 1793501173.1612668,
+          "deadline_epoch": 1793533558.0,
+          "reserve_seconds": 28800,
+          "state": "armed"
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    36123.981",
+          "                          System time (sec):      347.475",
+          "                         Elapsed time (sec):    39745.878",
+          "  ",
+          "                   Maximum memory used (kb):     7231504.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     39050591",
+          "                          Major page faults:          102",
+          "                 Voluntary context switches:         3477"
+        ],
+        "recent_loop_wall_seconds": [],
+        "ediff_reached": true,
+        "normal_termination": true,
+        "vasp.stdout_tail": [
+          "DAV:  21    -0.749265212746E+03    0.36501E-05   -0.83660E-07179056   0.273E-03    0.175E-03",
+          "DAV:  22    -0.749265212547E+03    0.19948E-06   -0.31467E-07175784   0.157E-03    0.146E-03",
+          "DAV:  23    -0.749265213123E+03   -0.57671E-06   -0.11714E-07139736   0.965E-04    0.873E-04",
+          "DAV:  24    -0.749265213261E+03   -0.13749E-06   -0.33529E-08119032   0.539E-04    0.668E-04",
+          "DAV:  25    -0.749265213553E+03   -0.29222E-06   -0.14582E-08 93688   0.424E-04    0.198E-04",
+          "DAV:  26    -0.749265213583E+03   -0.30035E-07   -0.63117E-09 82112   0.153E-04    0.160E-04",
+          "DAV:  27    -0.749265213599E+03   -0.15483E-07   -0.34777E-09 80840   0.123E-04    0.755E-05",
+          "DAV:  28    -0.749265213613E+03   -0.13883E-07   -0.17383E-09 79880   0.618E-05    0.614E-05",
+          "DAV:  29    -0.749265213608E+03    0.44674E-08   -0.80545E-10 79064   0.548E-05",
+          "   1 F= -.74926521E+03 E0= -.74903031E+03  d E =-.469813E+00"
+        ],
+        "recent_scf_lines": [
+          "DAV:  25    -0.749265213553E+03   -0.29222E-06   -0.14582E-08 93688   0.424E-04    0.198E-04",
+          "DAV:  26    -0.749265213583E+03   -0.30035E-07   -0.63117E-09 82112   0.153E-04    0.160E-04",
+          "DAV:  27    -0.749265213599E+03   -0.15483E-07   -0.34777E-09 80840   0.123E-04    0.755E-05",
+          "DAV:  28    -0.749265213613E+03   -0.13883E-07   -0.17383E-09 79880   0.618E-05    0.614E-05",
+          "DAV:  29    -0.749265213608E+03    0.44674E-08   -0.80545E-10 79064   0.548E-05"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:  21    -0.749265212746E+03    0.36501E-05   -0.83660E-07179056   0.273E-03    0.175E-03",
+          "DAV:  22    -0.749265212547E+03    0.19948E-06   -0.31467E-07175784   0.157E-03    0.146E-03",
+          "DAV:  23    -0.749265213123E+03   -0.57671E-06   -0.11714E-07139736   0.965E-04    0.873E-04",
+          "DAV:  24    -0.749265213261E+03   -0.13749E-06   -0.33529E-08119032   0.539E-04    0.668E-04",
+          "DAV:  25    -0.749265213553E+03   -0.29222E-06   -0.14582E-08 93688   0.424E-04    0.198E-04",
+          "DAV:  26    -0.749265213583E+03   -0.30035E-07   -0.63117E-09 82112   0.153E-04    0.160E-04",
+          "DAV:  27    -0.749265213599E+03   -0.15483E-07   -0.34777E-09 80840   0.123E-04    0.755E-05",
+          "DAV:  28    -0.749265213613E+03   -0.13883E-07   -0.17383E-09 79880   0.618E-05    0.614E-05",
+          "DAV:  29    -0.749265213608E+03    0.44674E-08   -0.80545E-10 79064   0.548E-05",
+          "   1 F= -.74926521E+03 E0= -.74903031E+03  d E =-.469813E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      }
+    },
+    "PBEsol": {
+      "force-001": {
+        "files": {
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 109710,
+            "mtime_epoch": 1792710412.5754368,
+            "age_seconds": 816700.1338610649
+          },
+          "vasp.stdout": {
+            "bytes": 5207,
+            "mtime_epoch": 1792712135.3756545,
+            "age_seconds": 814977.3371119499
+          },
+          "OSZICAR": {
+            "bytes": 1435,
+            "mtime_epoch": 1792707949.8565922,
+            "age_seconds": 819162.8578681946
+          },
+          "vasprun.xml": {
+            "bytes": 53765,
+            "mtime_epoch": 1792707949.8565922,
+            "age_seconds": 819162.8587760925
+          }
+        },
+        "status": {
+          "xc": "PBEsol",
+          "step": "force-001",
+          "job_id": "20958090",
+          "state": "running",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/recovery-01/force-001",
+          "resources": {
+            "nodes": 1,
+            "ranks": 32,
+            "ranks_per_node": 32,
+            "memory_GiB_per_node": 300,
+            "KPAR": 4,
+            "NCORE": 4,
+            "NBANDS": 576
+          },
+          "cumulative_budget": null
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20958090",
+          "checked_epoch": 1792698498.2263227,
+          "deadline_epoch": 1792712130.0,
+          "reserve_seconds": 17896.690000000002,
+          "state": "stop_requested"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20958090",
+          "checked_epoch": 1792698498.2263227,
+          "deadline_epoch": 1792712130.0,
+          "reserve_seconds": 17896.690000000002,
+          "state": "stop_requested"
+        },
+        "OUTCAR_tail": [
+          "|     spurious results, we suggest increasing NELM, if you were close to      |",
+          "|     convergence or switching to a different ALGO or adjusting the           |",
+          "|     density mixing parameters otherwise.                                    |",
+          "|                                                                             |",
+          " -----------------------------------------------------------------------------",
+          "",
+          " soft stop encountered!  aborting job ...",
+          "    CHARGE:  cpu time     81.5675: real time    167.2246",
+          "    FORLOC:  cpu time      0.7091: real time      0.9504",
+          "    FORNL :  cpu time   1366.5962: real time   2293.2590"
+        ],
+        "recent_loop_wall_seconds": [
+          "4536.7097",
+          "5177.8787",
+          "5486.0085",
+          "4431.2360",
+          "3784.2695",
+          "4818.2065",
+          "8048.3450",
+          "9542.0110"
+        ],
+        "ediff_reached": false,
+        "normal_termination": false,
+        "scientific_state": "checkpoint_requested_or_saved_NOT_converged",
+        "vasp.stdout_tail": [
+          "|     might not be reliable so examine the results carefully. If you find     |",
+          "|     spurious results, we suggest increasing NELM, if you were close to      |",
+          "|     convergence or switching to a different ALGO or adjusting the           |",
+          "|     density mixing parameters otherwise.                                    |",
+          "|                                                                             |",
+          " -----------------------------------------------------------------------------",
+          "",
+          " soft stop encountered!  aborting job ...",
+          "srun: Job step aborted: Waiting up to 32 seconds for job step to finish.",
+          "slurmstepd: error: *** STEP 20958090.0 ON apollo18 CANCELLED AT 2026-10-23T04:35:35 DUE TO TIME LIMIT ***"
+        ],
+        "recent_scf_lines": [
+          "DAV:  11    -0.797860098761E+03    0.11839E+00   -0.57114E-01183256   0.216E+00    0.460E-01",
+          "DAV:  12    -0.797863527902E+03   -0.34291E-02   -0.49445E-02173920   0.572E-01    0.353E-01",
+          "DAV:  13    -0.797862768115E+03    0.75979E-03   -0.98235E-03179144   0.358E-01    0.265E-01",
+          "DAV:  14    -0.797862257135E+03    0.51098E-03   -0.31296E-03179520   0.181E-01    0.206E-01",
+          "DAV:  15    -0.797861727406E+03    0.52973E-03   -0.18106E-03171608   0.108E-01    0.106E-01"
+        ],
+        "fatal_indicators": [
+          "slurmstepd: error: *** STEP 20958090.0 ON apollo18 CANCELLED AT 2026-10-23T04:35:35 DUE TO TIME LIMIT ***"
+        ],
+        "OSZICAR_tail": [
+          "DAV:   6    -0.804764224904E+03    0.10951E+03   -0.32283E+02138280   0.379E+01    0.248E+01",
+          "DAV:   7    -0.798476357527E+03    0.62879E+01   -0.43840E+01167848   0.118E+01    0.660E+00",
+          "DAV:   8    -0.798399760424E+03    0.76597E-01   -0.36314E+00173704   0.532E+00    0.538E+00",
+          "DAV:   9    -0.798025812353E+03    0.37395E+00   -0.19729E+00181040   0.520E+00    0.321E+00",
+          "DAV:  10    -0.797978493392E+03    0.47319E-01   -0.10893E+00181360   0.316E+00    0.284E+00",
+          "DAV:  11    -0.797860098761E+03    0.11839E+00   -0.57114E-01183256   0.216E+00    0.460E-01",
+          "DAV:  12    -0.797863527902E+03   -0.34291E-02   -0.49445E-02173920   0.572E-01    0.353E-01",
+          "DAV:  13    -0.797862768115E+03    0.75979E-03   -0.98235E-03179144   0.358E-01    0.265E-01",
+          "DAV:  14    -0.797862257135E+03    0.51098E-03   -0.31296E-03179520   0.181E-01    0.206E-01",
+          "DAV:  15    -0.797861727406E+03    0.52973E-03   -0.18106E-03171608   0.108E-01    0.106E-01"
+        ],
+        "scheduler_state": "TIMEOUT",
+        "effective_state": "TIMEOUT",
+        "worker_status_stale": true
+      },
+      "production-03/force-001": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 2363263,
+            "mtime_epoch": 1793158896.3108149,
+            "age_seconds": 368216.4082405567
+          },
+          "vasp.stdout": {
+            "bytes": 4563,
+            "mtime_epoch": 1793158897.755779,
+            "age_seconds": 368214.9747519493
+          },
+          "OSZICAR": {
+            "bytes": 2413,
+            "mtime_epoch": 1793158896.3118148,
+            "age_seconds": 368216.4204571247
+          },
+          "vasprun.xml": {
+            "bytes": 2419927,
+            "mtime_epoch": 1793158890.0149713,
+            "age_seconds": 368222.71832847595
+          }
+        },
+        "status": {
+          "xc": "PBEsol",
+          "step": "force-001",
+          "job_id": "20959338",
+          "state": "validated",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/recovery-01/force-001",
+          "resources": {
+            "nodes": 2,
+            "ranks": 64,
+            "ranks_per_node": 32,
+            "memory_GiB_per_node": 300,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576
+          },
+          "cumulative_budget": null,
+          "wall_seconds": 30655.13152162917,
+          "quality": {
+            "energy_eV": -797.63115857,
+            "free_energy_eV": -797.86136635,
+            "max_force_eV_A": 0.06680325585860393,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                0.16359633,
+                0.0171832,
+                -0.00045575
+              ],
+              [
+                0.0171832,
+                0.16411351,
+                1.71e-05
+              ],
+              [
+                -0.00045575,
+                1.71e-05,
+                0.20860985999999998
+              ]
+            ],
+            "max_stress_kbar": 0.20860985999999998,
+            "force_drift_eV_A": [
+              -4.1666666664612215e-10,
+              5.208333333392752e-10,
+              3.1250000005235423e-10
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              25
+            ],
+            "volume_A3": 1603.6734178611127,
+            "outputs": {
+              "OUTCAR": "14ef10cbb6b79968f9a09922402b8ae7250c61bd7aa4b14b21ea3cfdd26b27a6",
+              "vasprun.xml": "2fb21c978e6cfb2033842e6a1d461781efcea71fbe300483d1cf3359590ea332",
+              "CONTCAR": "15fbcdb3939ba8e714dbcf9903e1e08c6b38d51afd27e4ccabe49d76b529cb2e"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20959338",
+          "checked_epoch": 1793158852.874792,
+          "deadline_epoch": 1793200239.0,
+          "reserve_seconds": 28800,
+          "state": "armed"
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    30002.315",
+          "                          System time (sec):      294.914",
+          "                         Elapsed time (sec):    30646.429",
+          "  ",
+          "                   Maximum memory used (kb):     6969076.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     27339321",
+          "                          Major page faults:           47",
+          "                 Voluntary context switches:         3928"
+        ],
+        "recent_loop_wall_seconds": [],
+        "ediff_reached": true,
+        "normal_termination": true,
+        "vasp.stdout_tail": [
+          "DAV:  17    -0.797861406229E+03    0.14014E-03   -0.19495E-04174232   0.450E-02    0.297E-02",
+          "DAV:  18    -0.797861391000E+03    0.15229E-04   -0.52838E-05173848   0.214E-02    0.192E-02",
+          "DAV:  19    -0.797861372059E+03    0.18941E-04   -0.87703E-06171120   0.854E-03    0.863E-03",
+          "DAV:  20    -0.797861368796E+03    0.32630E-05   -0.39625E-06174128   0.634E-03    0.547E-03",
+          "DAV:  21    -0.797861366698E+03    0.20982E-05   -0.97064E-07173080   0.299E-03    0.200E-03",
+          "DAV:  22    -0.797861366464E+03    0.23381E-06   -0.25785E-07176888   0.141E-03    0.163E-03",
+          "DAV:  23    -0.797861366400E+03    0.64116E-07   -0.12632E-07140712   0.989E-04    0.112E-03",
+          "DAV:  24    -0.797861366352E+03    0.47614E-07   -0.29922E-08114696   0.534E-04    0.848E-04",
+          "DAV:  25    -0.797861366353E+03   -0.56752E-09   -0.14822E-08 92048   0.407E-04",
+          "   1 F= -.79786137E+03 E0= -.79763116E+03  d E =-.460416E+00"
+        ],
+        "recent_scf_lines": [
+          "DAV:  21    -0.797861366698E+03    0.20982E-05   -0.97064E-07173080   0.299E-03    0.200E-03",
+          "DAV:  22    -0.797861366464E+03    0.23381E-06   -0.25785E-07176888   0.141E-03    0.163E-03",
+          "DAV:  23    -0.797861366400E+03    0.64116E-07   -0.12632E-07140712   0.989E-04    0.112E-03",
+          "DAV:  24    -0.797861366352E+03    0.47614E-07   -0.29922E-08114696   0.534E-04    0.848E-04",
+          "DAV:  25    -0.797861366353E+03   -0.56752E-09   -0.14822E-08 92048   0.407E-04"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:  17    -0.797861406229E+03    0.14014E-03   -0.19495E-04174232   0.450E-02    0.297E-02",
+          "DAV:  18    -0.797861391000E+03    0.15229E-04   -0.52838E-05173848   0.214E-02    0.192E-02",
+          "DAV:  19    -0.797861372059E+03    0.18941E-04   -0.87703E-06171120   0.854E-03    0.863E-03",
+          "DAV:  20    -0.797861368796E+03    0.32630E-05   -0.39625E-06174128   0.634E-03    0.547E-03",
+          "DAV:  21    -0.797861366698E+03    0.20982E-05   -0.97064E-07173080   0.299E-03    0.200E-03",
+          "DAV:  22    -0.797861366464E+03    0.23381E-06   -0.25785E-07176888   0.141E-03    0.163E-03",
+          "DAV:  23    -0.797861366400E+03    0.64116E-07   -0.12632E-07140712   0.989E-04    0.112E-03",
+          "DAV:  24    -0.797861366352E+03    0.47614E-07   -0.29922E-08114696   0.534E-04    0.848E-04",
+          "DAV:  25    -0.797861366353E+03   -0.56752E-09   -0.14822E-08 92048   0.407E-04",
+          "   1 F= -.79786137E+03 E0= -.79763116E+03  d E =-.460416E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "production-04/force-000": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 2369472,
+            "mtime_epoch": 1793462138.5620725,
+            "age_seconds": 64974.17388796806
+          },
+          "vasp.stdout": {
+            "bytes": 4842,
+            "mtime_epoch": 1793462125.1124074,
+            "age_seconds": 64987.63329052925
+          },
+          "OSZICAR": {
+            "bytes": 2692,
+            "mtime_epoch": 1793462125.1124074,
+            "age_seconds": 64987.635038137436
+          },
+          "vasprun.xml": {
+            "bytes": 2420767,
+            "mtime_epoch": 1793462135.687144,
+            "age_seconds": 64977.0612885952
+          }
+        },
+        "status": {
+          "xc": "PBEsol",
+          "step": "force-000",
+          "job_id": "20968907",
+          "state": "validated",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/recovery-01/force-000",
+          "resources": {
+            "nodes": 2,
+            "ranks": 64,
+            "ranks_per_node": 32,
+            "memory_GiB_per_node": 240,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576
+          },
+          "cumulative_budget": null,
+          "wall_seconds": 40137.629997201264,
+          "quality": {
+            "energy_eV": -797.63150699,
+            "free_energy_eV": -797.86171042,
+            "max_force_eV_A": 2.973785466371103e-06,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                0.15964361,
+                5.103e-05,
+                -4.9e-07
+              ],
+              [
+                5.103e-05,
+                0.15970375,
+                3.6e-07
+              ],
+              [
+                -4.9e-07,
+                3.6e-07,
+                0.20490801000000003
+              ]
+            ],
+            "max_stress_kbar": 0.20490801000000003,
+            "force_drift_eV_A": [
+              -2.0833333333333243e-10,
+              4.166666666666307e-10,
+              4.411629933616147e-24
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              28
+            ],
+            "volume_A3": 1603.6734178611127,
+            "outputs": {
+              "OUTCAR": "801e591503509e97022ae94d62b42a0e1d9f0c92c43ad0628a878eaa3e50bddc",
+              "vasprun.xml": "0012b105a3c94967c7b93a7853c22224a9f77e8325adac30e9b83ab00632f91c",
+              "CONTCAR": "c9d66dc1d8869d1d8b6cd054254959bddd6a7651f91ed0ed68642d475d6115ed"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20968907",
+          "checked_epoch": 1793461912.3377213,
+          "deadline_epoch": 1793494000.0,
+          "reserve_seconds": 21600,
+          "state": "armed",
+          "guard_revision": "PBEsol-measured-v4",
+          "minimum_reserve_seconds": 21600
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    39521.092",
+          "                          System time (sec):      235.785",
+          "                         Elapsed time (sec):    40133.308",
+          "  ",
+          "                   Maximum memory used (kb):     6981860.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     27018409",
+          "                          Major page faults:           50",
+          "                 Voluntary context switches:         8266"
+        ],
+        "recent_loop_wall_seconds": [],
+        "ediff_reached": true,
+        "normal_termination": true,
+        "vasp.stdout_tail": [
+          "DAV:  20    -0.797861711279E+03    0.12908E-05   -0.49250E-07173888   0.208E-03    0.205E-03",
+          "DAV:  21    -0.797861710885E+03    0.39424E-06   -0.26202E-07173952   0.166E-03    0.136E-03",
+          "DAV:  22    -0.797861710243E+03    0.64143E-06   -0.13180E-07138568   0.983E-04    0.672E-04",
+          "DAV:  23    -0.797861710260E+03   -0.17084E-07   -0.40744E-08123344   0.667E-04    0.335E-04",
+          "DAV:  24    -0.797861710353E+03   -0.93118E-07   -0.30490E-09 83656   0.277E-04    0.170E-04",
+          "DAV:  25    -0.797861710367E+03   -0.13926E-07   -0.17853E-10 81648   0.145E-04    0.112E-04",
+          "DAV:  26    -0.797861710395E+03   -0.28042E-07    0.45618E-11 80552   0.954E-05    0.804E-05",
+          "DAV:  27    -0.797861710413E+03   -0.17855E-07    0.13159E-09 79800   0.619E-05    0.488E-05",
+          "DAV:  28    -0.797861710422E+03   -0.87166E-08    0.19781E-09 79080   0.416E-05",
+          "   1 F= -.79786171E+03 E0= -.79763151E+03  d E =-.460407E+00"
+        ],
+        "recent_scf_lines": [
+          "DAV:  24    -0.797861710353E+03   -0.93118E-07   -0.30490E-09 83656   0.277E-04    0.170E-04",
+          "DAV:  25    -0.797861710367E+03   -0.13926E-07   -0.17853E-10 81648   0.145E-04    0.112E-04",
+          "DAV:  26    -0.797861710395E+03   -0.28042E-07    0.45618E-11 80552   0.954E-05    0.804E-05",
+          "DAV:  27    -0.797861710413E+03   -0.17855E-07    0.13159E-09 79800   0.619E-05    0.488E-05",
+          "DAV:  28    -0.797861710422E+03   -0.87166E-08    0.19781E-09 79080   0.416E-05"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:  20    -0.797861711279E+03    0.12908E-05   -0.49250E-07173888   0.208E-03    0.205E-03",
+          "DAV:  21    -0.797861710885E+03    0.39424E-06   -0.26202E-07173952   0.166E-03    0.136E-03",
+          "DAV:  22    -0.797861710243E+03    0.64143E-06   -0.13180E-07138568   0.983E-04    0.672E-04",
+          "DAV:  23    -0.797861710260E+03   -0.17084E-07   -0.40744E-08123344   0.667E-04    0.335E-04",
+          "DAV:  24    -0.797861710353E+03   -0.93118E-07   -0.30490E-09 83656   0.277E-04    0.170E-04",
+          "DAV:  25    -0.797861710367E+03   -0.13926E-07   -0.17853E-10 81648   0.145E-04    0.112E-04",
+          "DAV:  26    -0.797861710395E+03   -0.28042E-07    0.45618E-11 80552   0.954E-05    0.804E-05",
+          "DAV:  27    -0.797861710413E+03   -0.17855E-07    0.13159E-09 79800   0.619E-05    0.488E-05",
+          "DAV:  28    -0.797861710422E+03   -0.87166E-08    0.19781E-09 79080   0.416E-05",
+          "   1 F= -.79786171E+03 E0= -.79763151E+03  d E =-.460407E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "production-04/force-002": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 2367394,
+            "mtime_epoch": 1793211462.275966,
+            "age_seconds": 315650.47550821304
+          },
+          "vasp.stdout": {
+            "bytes": 4749,
+            "mtime_epoch": 1793211463.442937,
+            "age_seconds": 315649.3187944889
+          },
+          "OSZICAR": {
+            "bytes": 2599,
+            "mtime_epoch": 1793211462.7299545,
+            "age_seconds": 315650.0337715149
+          },
+          "vasprun.xml": {
+            "bytes": 2420487,
+            "mtime_epoch": 1793211451.936223,
+            "age_seconds": 315660.8284752369
+          }
+        },
+        "status": {
+          "xc": "PBEsol",
+          "step": "force-002",
+          "job_id": "20962927",
+          "state": "validated",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/recovery-01/force-002",
+          "resources": {
+            "nodes": 2,
+            "ranks": 64,
+            "ranks_per_node": 32,
+            "memory_GiB_per_node": 240,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576
+          },
+          "cumulative_budget": null,
+          "wall_seconds": 49246.09225025959,
+          "quality": {
+            "energy_eV": -797.63115836,
+            "free_energy_eV": -797.86136637,
+            "max_force_eV_A": 0.06681613150340718,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                0.15965363,
+                -0.01708158,
+                -0.0004530800000000001
+              ],
+              [
+                -0.01708158,
+                0.16016428,
+                -1.613e-05
+              ],
+              [
+                -0.0004530800000000001,
+                -1.613e-05,
+                0.20454856999999999
+              ]
+            ],
+            "max_stress_kbar": 0.20454856999999999,
+            "force_drift_eV_A": [
+              2.0833333335016613e-10,
+              2.0833333335016613e-10,
+              -2.083333332417459e-10
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              27
+            ],
+            "volume_A3": 1603.6734178611127,
+            "outputs": {
+              "OUTCAR": "d7011bd8512e8b7bef5755933cf8bcd2bdf5593c08c91146c4c455c67462e2c4",
+              "vasprun.xml": "a8aa9b3efd252d58082dcd97b6aca3d557064bcd3bd5b881995aad007faf3e9b",
+              "CONTCAR": "970b8cc4db154311b5fcc83d6e50afdf0b985917e9023ff6827417f17507c2a2"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20962927",
+          "checked_epoch": 1793211223.5194948,
+          "deadline_epoch": 1793234215.0,
+          "reserve_seconds": 21600,
+          "state": "armed",
+          "guard_revision": "PBEsol-measured-v3",
+          "minimum_reserve_seconds": 21600
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    41262.123",
+          "                          System time (sec):      242.549",
+          "                         Elapsed time (sec):    49233.998",
+          "  ",
+          "                   Maximum memory used (kb):     6963568.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     40119927",
+          "                          Major page faults:           22",
+          "                 Voluntary context switches:         3572"
+        ],
+        "recent_loop_wall_seconds": [],
+        "ediff_reached": true,
+        "normal_termination": true,
+        "vasp.stdout_tail": [
+          "DAV:  19    -0.797861371747E+03    0.17901E-04   -0.85761E-06171792   0.826E-03    0.786E-03",
+          "DAV:  20    -0.797861368349E+03    0.33980E-05   -0.39704E-06174392   0.641E-03    0.460E-03",
+          "DAV:  21    -0.797861366676E+03    0.16734E-05   -0.76429E-07174624   0.269E-03    0.198E-03",
+          "DAV:  22    -0.797861366466E+03    0.20930E-06   -0.23941E-07176472   0.140E-03    0.157E-03",
+          "DAV:  23    -0.797861366415E+03    0.51266E-07   -0.95977E-08139160   0.877E-04    0.102E-03",
+          "DAV:  24    -0.797861366366E+03    0.48807E-07   -0.17730E-08 97624   0.488E-04    0.761E-04",
+          "DAV:  25    -0.797861366342E+03    0.23952E-07   -0.13830E-08 84784   0.304E-04    0.253E-04",
+          "DAV:  26    -0.797861366367E+03   -0.25175E-07   -0.61345E-09 81384   0.154E-04    0.152E-04",
+          "DAV:  27    -0.797861366370E+03   -0.22847E-08   -0.23379E-09 80248   0.113E-04",
+          "   1 F= -.79786137E+03 E0= -.79763116E+03  d E =-.460416E+00"
+        ],
+        "recent_scf_lines": [
+          "DAV:  23    -0.797861366415E+03    0.51266E-07   -0.95977E-08139160   0.877E-04    0.102E-03",
+          "DAV:  24    -0.797861366366E+03    0.48807E-07   -0.17730E-08 97624   0.488E-04    0.761E-04",
+          "DAV:  25    -0.797861366342E+03    0.23952E-07   -0.13830E-08 84784   0.304E-04    0.253E-04",
+          "DAV:  26    -0.797861366367E+03   -0.25175E-07   -0.61345E-09 81384   0.154E-04    0.152E-04",
+          "DAV:  27    -0.797861366370E+03   -0.22847E-08   -0.23379E-09 80248   0.113E-04"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:  19    -0.797861371747E+03    0.17901E-04   -0.85761E-06171792   0.826E-03    0.786E-03",
+          "DAV:  20    -0.797861368349E+03    0.33980E-05   -0.39704E-06174392   0.641E-03    0.460E-03",
+          "DAV:  21    -0.797861366676E+03    0.16734E-05   -0.76429E-07174624   0.269E-03    0.198E-03",
+          "DAV:  22    -0.797861366466E+03    0.20930E-06   -0.23941E-07176472   0.140E-03    0.157E-03",
+          "DAV:  23    -0.797861366415E+03    0.51266E-07   -0.95977E-08139160   0.877E-04    0.102E-03",
+          "DAV:  24    -0.797861366366E+03    0.48807E-07   -0.17730E-08 97624   0.488E-04    0.761E-04",
+          "DAV:  25    -0.797861366342E+03    0.23952E-07   -0.13830E-08 84784   0.304E-04    0.253E-04",
+          "DAV:  26    -0.797861366367E+03   -0.25175E-07   -0.61345E-09 81384   0.154E-04    0.152E-04",
+          "DAV:  27    -0.797861366370E+03   -0.22847E-08   -0.23379E-09 80248   0.113E-04",
+          "   1 F= -.79786137E+03 E0= -.79763116E+03  d E =-.460416E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      }
+    },
+    "r2SCAN": {
+      "force-001": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "TAUCAR": {
+            "bytes": 127374170
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 125412,
+            "mtime_epoch": 1792702403.9162827,
+            "age_seconds": 824708.8534526825
+          },
+          "vasp.stdout": {
+            "bytes": 4640,
+            "mtime_epoch": 1792702404.3772712,
+            "age_seconds": 824708.3955068588
+          },
+          "OSZICAR": {
+            "bytes": 1031,
+            "mtime_epoch": 1792702389.6106377,
+            "age_seconds": 824723.1639506817
+          },
+          "vasprun.xml": {
+            "bytes": 2415349,
+            "mtime_epoch": 1792702402.734312,
+            "age_seconds": 824710.0410580635
+          }
+        },
+        "status": {
+          "xc": "r2SCAN",
+          "step": "force-001",
+          "job_id": "20958091",
+          "state": "validated",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/recovery-01/force-001",
+          "resources": {
+            "nodes": 1,
+            "ranks": 32,
+            "ranks_per_node": 32,
+            "memory_GiB_per_node": 300,
+            "KPAR": 4,
+            "NCORE": 4,
+            "NBANDS": 576
+          },
+          "cumulative_budget": null,
+          "wall_seconds": 62272.46190966852,
+          "quality": {
+            "energy_eV": -1240.47902662,
+            "free_energy_eV": -1240.67736591,
+            "max_force_eV_A": 0.4494662034663572,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                5.54375937,
+                0.03947634,
+                0.23927109
+              ],
+              [
+                0.03947634,
+                5.22640478,
+                0.02815817
+              ],
+              [
+                0.23927109,
+                0.02815817,
+                8.5297441
+              ]
+            ],
+            "max_stress_kbar": 8.5297441,
+            "force_drift_eV_A": [
+              -2.0833333329595602e-10,
+              -7.228014483236696e-20,
+              -1.0416666805744083e-10
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              10
+            ],
+            "volume_A3": 1661.330009465202,
+            "outputs": {
+              "OUTCAR": "bc73ab7e6851e8f058c6423fdcd1d8a30651990c78328802852bb8872c072866",
+              "vasprun.xml": "1322870ff4fd165e298e421bf863cb9896055df4cc5908c8c45aa3a8d71ee233",
+              "CONTCAR": "330031b3fbfc94fb772cca5174a1413c777f772c8eba4cd6e281b2f1c8d83c16"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20958091",
+          "checked_epoch": 1792694607.7444255,
+          "deadline_epoch": 1792712130.0,
+          "reserve_seconds": 17541.4842,
+          "state": "stop_requested"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20958091",
+          "checked_epoch": 1792694607.7444255,
+          "deadline_epoch": 1792712130.0,
+          "reserve_seconds": 17541.4842,
+          "state": "stop_requested"
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    54618.083",
+          "                          System time (sec):      845.109",
+          "                         Elapsed time (sec):    62270.404",
+          "  ",
+          "                   Maximum memory used (kb):     7200164.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     45082314",
+          "                          Major page faults:           11",
+          "                 Voluntary context switches:         7899"
+        ],
+        "recent_loop_wall_seconds": [
+          "3664.9295",
+          "4058.7581",
+          "5367.2368",
+          "5348.3339",
+          "6570.9384",
+          "7347.9549",
+          "7870.7421",
+          "7703.5650"
+        ],
+        "ediff_reached": false,
+        "normal_termination": true,
+        "scientific_state": "checkpoint_requested_or_saved_NOT_converged",
+        "vasp.stdout_tail": [
+          "|     might not be reliable so examine the results carefully. If you find     |",
+          "|     spurious results, we suggest increasing NELM, if you were close to      |",
+          "|     convergence or switching to a different ALGO or adjusting the           |",
+          "|     density mixing parameters otherwise.                                    |",
+          "|                                                                             |",
+          " -----------------------------------------------------------------------------",
+          "",
+          " soft stop encountered!  aborting job ...",
+          "   1 F= -.12406774E+04 E0= -.12404790E+04  d E =-.396679E+00",
+          " deleting file STOPCAR"
+        ],
+        "recent_scf_lines": [
+          "DAV:   6    -0.124027628703E+04    0.29578E+03   -0.51389E+02129096   0.532E+01    0.175E+01",
+          "DAV:   7    -0.123999814864E+04    0.27814E+00   -0.33299E+01155184   0.117E+01    0.847E+00",
+          "DAV:   8    -0.124073669369E+04   -0.73855E+00   -0.21962E+00175776   0.380E+00    0.413E+00",
+          "DAV:   9    -0.124074663258E+04   -0.99389E-02   -0.18887E+00180616   0.503E+00    0.341E+00",
+          "DAV:  10    -0.124067736591E+04    0.69267E-01   -0.76517E-01179656   0.290E+00    0.179E+00"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:   2    -0.290090317846E+03   -0.14508E+05   -0.14287E+05129024   0.690E+02",
+          "DAV:   3    -0.144052304277E+04   -0.11504E+04   -0.10798E+04183392   0.183E+02",
+          "DAV:   4    -0.153299583639E+04   -0.92473E+02   -0.89732E+02174984   0.461E+01",
+          "DAV:   5    -0.153605543289E+04   -0.30596E+01   -0.29710E+01168120   0.752E+00    0.136E+02",
+          "DAV:   6    -0.124027628703E+04    0.29578E+03   -0.51389E+02129096   0.532E+01    0.175E+01",
+          "DAV:   7    -0.123999814864E+04    0.27814E+00   -0.33299E+01155184   0.117E+01    0.847E+00",
+          "DAV:   8    -0.124073669369E+04   -0.73855E+00   -0.21962E+00175776   0.380E+00    0.413E+00",
+          "DAV:   9    -0.124074663258E+04   -0.99389E-02   -0.18887E+00180616   0.503E+00    0.341E+00",
+          "DAV:  10    -0.124067736591E+04    0.69267E-01   -0.76517E-01179656   0.290E+00    0.179E+00",
+          "   1 F= -.12406774E+04 E0= -.12404790E+04  d E =-.396679E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "force-001-restart-01": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "TAUCAR": {
+            "bytes": 127374170
+          },
+          "WAVECAR": {
+            "bytes": 0
+          },
+          "OUTCAR": {
+            "bytes": 123549,
+            "mtime_epoch": 1792956978.2674372,
+            "age_seconds": 570134.5122711658
+          },
+          "vasp.stdout": {
+            "bytes": 4719,
+            "mtime_epoch": 1792956979.0484178,
+            "age_seconds": 570133.73422122
+          },
+          "OSZICAR": {
+            "bytes": 938,
+            "mtime_epoch": 1792956956.9239671,
+            "age_seconds": 570155.860632658
+          },
+          "vasprun.xml": {
+            "bytes": 2415069,
+            "mtime_epoch": 1792956976.8964713,
+            "age_seconds": 570135.8890662193
+          }
+        },
+        "status": {
+          "xc": "r2SCAN",
+          "step": "force-001",
+          "job_id": "20959337",
+          "parent_job": "20958091",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001",
+          "state": "checkpointed_needs_review",
+          "parent_scheduler": "20958091|COMPLETED\n",
+          "checkpoint_electrons": 960.0000918325962,
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 37629112  104857600 104857600          231566       0       0        \n"
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20959337",
+          "checked_epoch": 1792945052.2788584,
+          "deadline_epoch": 1792973825.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20959337",
+          "checked_epoch": 1792945052.2788584,
+          "deadline_epoch": 1792973825.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "restart-provenance.json": {
+          "parent_job": "20958091",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "dbcc8ed8860f951b06a95876f19ea9d736cd5f3c73cb57c5afa0c8bdb5a1e85c",
+              "bytes": 127578746
+            },
+            "TAUCAR": {
+              "sha256": "2bdaf64e6d60f6ea88e49b1b3c4ab1b44f7723d341a60bb73d55fd57e4473905",
+              "bytes": 127374170
+            }
+          },
+          "changes": [
+            "ICHARG=1; ISTART=0 (no parent WAVECAR)"
+          ],
+          "driver_sha256": "e12c4e3688c327d8d03713ed72a4a6d25d205a315efa078f7f444e47d6999ec4"
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    53063.021",
+          "                          System time (sec):      803.768",
+          "                         Elapsed time (sec):    55136.047",
+          "  ",
+          "                   Maximum memory used (kb):     7194424.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     14405269",
+          "                          Major page faults:           49",
+          "                 Voluntary context switches:         5234"
+        ],
+        "recent_loop_wall_seconds": [
+          "4293.2327",
+          "4541.3323",
+          "5279.1588",
+          "5980.9750",
+          "6332.4071",
+          "6094.0230",
+          "4634.9041",
+          "5629.9277"
+        ],
+        "ediff_reached": false,
+        "normal_termination": true,
+        "scientific_state": "checkpoint_requested_or_saved_NOT_converged",
+        "vasp.stdout_tail": [
+          "|     might not be reliable so examine the results carefully. If you find     |",
+          "|     spurious results, we suggest increasing NELM, if you were close to      |",
+          "|     convergence or switching to a different ALGO or adjusting the           |",
+          "|     density mixing parameters otherwise.                                    |",
+          "|                                                                             |",
+          " -----------------------------------------------------------------------------",
+          "",
+          " soft stop encountered!  aborting job ...",
+          "   1 F= -.12406578E+04 E0= -.12404603E+04  d E =-.395019E+00",
+          " deleting file STOPCAR"
+        ],
+        "recent_scf_lines": [
+          "DAV:   5    -0.124124925822E+04   -0.39705E+01   -0.38227E+01171496   0.748E+00    0.704E+00",
+          "DAV:   6    -0.124845613814E+04   -0.72069E+01   -0.64288E+01182520   0.191E+01    0.218E+01",
+          "DAV:   7    -0.124096030981E+04    0.74958E+01   -0.39670E+01187648   0.123E+01    0.586E+00",
+          "DAV:   8    -0.124071168586E+04    0.24862E+00   -0.33060E+00178264   0.425E+00    0.288E+00",
+          "DAV:   9    -0.124065778237E+04    0.53903E-01   -0.54041E-01173888   0.185E+00    0.148E+00"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:   1     0.139265754394E+05    0.13927E+05   -0.51637E+05129952   0.205E+03",
+          "DAV:   2    -0.122130427095E+03   -0.14049E+05   -0.13837E+05129024   0.694E+02",
+          "DAV:   3    -0.114654428455E+04   -0.10244E+04   -0.96067E+03187440   0.170E+02",
+          "DAV:   4    -0.123727879339E+04   -0.90735E+02   -0.87545E+02177736   0.417E+01",
+          "DAV:   5    -0.124124925822E+04   -0.39705E+01   -0.38227E+01171496   0.748E+00    0.704E+00",
+          "DAV:   6    -0.124845613814E+04   -0.72069E+01   -0.64288E+01182520   0.191E+01    0.218E+01",
+          "DAV:   7    -0.124096030981E+04    0.74958E+01   -0.39670E+01187648   0.123E+01    0.586E+00",
+          "DAV:   8    -0.124071168586E+04    0.24862E+00   -0.33060E+00178264   0.425E+00    0.288E+00",
+          "DAV:   9    -0.124065778237E+04    0.53903E-01   -0.54041E-01173888   0.185E+00    0.148E+00",
+          "   1 F= -.12406578E+04 E0= -.12404603E+04  d E =-.395019E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "force-001-restart-02": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "TAUCAR": {
+            "bytes": 127374170
+          },
+          "WAVECAR": {
+            "bytes": 25201037952
+          },
+          "OUTCAR": {
+            "bytes": 123571,
+            "mtime_epoch": 1793196801.764966,
+            "age_seconds": 330311.0264852047
+          },
+          "vasp.stdout": {
+            "bytes": 4742,
+            "mtime_epoch": 1793196802.3489513,
+            "age_seconds": 330310.44664788246
+          },
+          "OSZICAR": {
+            "bytes": 938,
+            "mtime_epoch": 1793196627.1873066,
+            "age_seconds": 330485.60993885994
+          },
+          "vasprun.xml": {
+            "bytes": 2415069,
+            "mtime_epoch": 1793196800.915987,
+            "age_seconds": 330311.88218188286
+          }
+        },
+        "status": {
+          "xc": "r2SCAN",
+          "step": "force-001",
+          "job_id": "20960773",
+          "parent_job": "20959337",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-01",
+          "state": "checkpointed_needs_review",
+          "parent_scheduler": "20959337|COMPLETED\n",
+          "checkpoint_electrons": 960.0000918301452,
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 42904936  104857600 104857600          350385       0       0        \n",
+          "wavecar_storage_bound_bytes": 50401041888,
+          "quota_required_additional_bytes": 56534609756
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20960773",
+          "checked_epoch": 1793187074.781839,
+          "deadline_epoch": 1793215848.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20960773",
+          "checked_epoch": 1793187074.781839,
+          "deadline_epoch": 1793215848.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "restart-provenance.json": {
+          "parent_job": "20959337",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-01",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "ea41596d3a38ed8b883c7bae2ad637bdb712c85b01044906c061579d1d78418a",
+              "bytes": 127578746
+            },
+            "TAUCAR": {
+              "sha256": "d1e39c7e4677ebe9d3b36ab059dcec6957334d717890d83d791f67555caf47ef",
+              "bytes": 127374170
+            }
+          },
+          "changes": [
+            "ICHARG=1; ISTART=0 (no parent WAVECAR)",
+            "LWAVE=.TRUE.; preserve orbitals for subsequent continuation; scientific settings unchanged"
+          ],
+          "driver_sha256": "e8f8b3789e4c0fa657197a84062d64e2361600d3f76181baa6ebc609de03746a"
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    49658.314",
+          "                          System time (sec):     1043.898",
+          "                         Elapsed time (sec):    52935.881",
+          "  ",
+          "                   Maximum memory used (kb):     7194468.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     38640920",
+          "                          Major page faults:           46",
+          "                 Voluntary context switches:         3107"
+        ],
+        "recent_loop_wall_seconds": [
+          "3661.6070",
+          "4894.0882",
+          "4553.9143",
+          "4924.1095",
+          "6303.9780",
+          "6604.0303",
+          "4886.9623",
+          "4348.8829"
+        ],
+        "ediff_reached": false,
+        "normal_termination": true,
+        "scientific_state": "checkpoint_requested_or_saved_NOT_converged",
+        "vasp.stdout_tail": [
+          "|     spurious results, we suggest increasing NELM, if you were close to      |",
+          "|     convergence or switching to a different ALGO or adjusting the           |",
+          "|     density mixing parameters otherwise.                                    |",
+          "|                                                                             |",
+          " -----------------------------------------------------------------------------",
+          "",
+          " soft stop encountered!  aborting job ...",
+          "   1 F= -.12406406E+04 E0= -.12404429E+04  d E =-.395397E+00",
+          " writing wavefunctions",
+          " deleting file STOPCAR"
+        ],
+        "recent_scf_lines": [
+          "DAV:   5    -0.124061448065E+04   -0.39713E+01   -0.38245E+01171240   0.746E+00    0.416E+00",
+          "DAV:   6    -0.124300363953E+04   -0.23892E+01   -0.21204E+01172336   0.113E+01    0.104E+01",
+          "DAV:   7    -0.124093705167E+04    0.20666E+01   -0.72075E+00184856   0.776E+00    0.461E+00",
+          "DAV:   8    -0.124063068289E+04    0.30637E+00   -0.13395E+00178768   0.323E+00    0.127E+00",
+          "DAV:   9    -0.124064062821E+04   -0.99453E-02   -0.21040E-01174160   0.107E+00    0.647E-01"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:   1     0.139245604320E+05    0.13925E+05   -0.51642E+05129960   0.205E+03",
+          "DAV:   2    -0.121768142105E+03   -0.14046E+05   -0.13835E+05129024   0.694E+02",
+          "DAV:   3    -0.114588782968E+04   -0.10241E+04   -0.96029E+03187416   0.169E+02",
+          "DAV:   4    -0.123664317064E+04   -0.90755E+02   -0.87593E+02177688   0.416E+01",
+          "DAV:   5    -0.124061448065E+04   -0.39713E+01   -0.38245E+01171240   0.746E+00    0.416E+00",
+          "DAV:   6    -0.124300363953E+04   -0.23892E+01   -0.21204E+01172336   0.113E+01    0.104E+01",
+          "DAV:   7    -0.124093705167E+04    0.20666E+01   -0.72075E+00184856   0.776E+00    0.461E+00",
+          "DAV:   8    -0.124063068289E+04    0.30637E+00   -0.13395E+00178768   0.323E+00    0.127E+00",
+          "DAV:   9    -0.124064062821E+04   -0.99453E-02   -0.21040E-01174160   0.107E+00    0.647E-01",
+          "   1 F= -.12406406E+04 E0= -.12404429E+04  d E =-.395397E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "force-001-restart-03": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "TAUCAR": {
+            "bytes": 127374170
+          },
+          "WAVECAR": {
+            "bytes": 25201037952
+          },
+          "OUTCAR": {
+            "bytes": 134009,
+            "mtime_epoch": 1793294976.9918196,
+            "age_seconds": 232135.81975579262
+          },
+          "vasp.stdout": {
+            "bytes": 5240,
+            "mtime_epoch": 1793294979.2887623,
+            "age_seconds": 232133.52651309967
+          },
+          "OSZICAR": {
+            "bytes": 1362,
+            "mtime_epoch": 1793294747.3555434,
+            "age_seconds": 232365.46137022972
+          },
+          "vasprun.xml": {
+            "bytes": 2416189,
+            "mtime_epoch": 1793294976.0228438,
+            "age_seconds": 232136.79495716095
+          }
+        },
+        "status": {
+          "xc": "r2SCAN",
+          "step": "force-001",
+          "job_id": "20964090",
+          "parent_job": "20960773",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-02",
+          "resources": {
+            "ranks": 64,
+            "nodes": 2,
+            "ranks_per_node": 32,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576,
+            "memory_GiB_per_node": 240
+          },
+          "state": "checkpointed_needs_review",
+          "parent_scheduler": "20960773|COMPLETED\n",
+          "checkpoint_electrons": 960.0000918567371,
+          "source_wavecar": {
+            "bytes": 25201037952,
+            "record_bytes": 389952,
+            "spins": 1,
+            "precision_tag": 45200,
+            "nkpts": 112,
+            "nbands": 576,
+            "encut_eV": 550.0,
+            "min_plane_waves": 48605,
+            "max_plane_waves": 48743,
+            "record_extent_complete": true,
+            "band_headers_finite": true,
+            "sampled_coefficients_finite": true,
+            "full_coefficient_scan": false
+          },
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 68829148  104857600 104857600          352806       0       0        \n",
+          "required_additional_bytes": 30260863996,
+          "scheduler_allocation": "JobId=20964090 JobName=ti6-r2SCAN-f001 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=895 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:03:58 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-28T21:34:46 EligibleTime=2026-10-28T21:34:46 AccrueTime=2026-10-28T21:34:46 StartTime=2026-10-29T08:42:28 EndTime=2026-10-30T04:42:28 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-29T08:42:28 Scheduler=Main Partition=apollo AllocNode:Sid=umt:2950159 ReqNodeList=(null) ExcNodeList=tesla-a101 NodeList=apollo[5,30] BatchHost=apollo5 NumNodes=2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=cpu=64,mem=480G,node=2,billing=11264 Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v9.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-restart64-20261028-20964090.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-restart64-20261028-20964090.out Power= \n"
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20964090",
+          "checked_epoch": 1793288796.8657777,
+          "deadline_epoch": 1793317348.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20964090",
+          "checked_epoch": 1793288796.8657777,
+          "deadline_epoch": 1793317348.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "restart-provenance.json": {
+          "parent_job": "20960773",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-02",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "89676572330c1cd9a47b0a3949caf2bf45cc361c9cc3a946d84c49f9637ac162",
+              "bytes": 127578746
+            },
+            "TAUCAR": {
+              "sha256": "c54c9da3cb78350f972377858ca2da544e696b9ea6f56f7557b2100df4ad0ae2",
+              "bytes": 127374170
+            },
+            "WAVECAR": {
+              "sha256": "fd52422587d211c7a25bee4c7f0c7886c482fd124f9a370620aad68a46152ea8",
+              "bytes": 25201037952
+            }
+          },
+          "driver_sha256": "3ab9c91e1ca1ad396fbe905e3a5d94b2188554c3df09c66a9fc3982ec346d327",
+          "changes": [
+            "64 ranks, KPAR8, NCORE4; scientific settings unchanged",
+            "r2SCAN ISTART1/ICHARG1 with WAVECAR+CHGCAR+TAUCAR"
+          ]
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    41439.590",
+          "                          System time (sec):      876.932",
+          "                         Elapsed time (sec):    49389.492",
+          "  ",
+          "                   Maximum memory used (kb):     7208400.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     51963697",
+          "                          Major page faults:           72",
+          "                 Voluntary context switches:         5488"
+        ],
+        "recent_loop_wall_seconds": [
+          "5216.8943",
+          "3101.1964",
+          "2269.6266",
+          "2242.7960",
+          "2207.8340",
+          "2252.7031",
+          "2252.1097",
+          "2231.9342"
+        ],
+        "ediff_reached": false,
+        "normal_termination": true,
+        "scientific_state": "checkpoint_requested_or_saved_NOT_converged",
+        "vasp.stdout_tail": [
+          "|     spurious results, we suggest increasing NELM, if you were close to      |",
+          "|     convergence or switching to a different ALGO or adjusting the           |",
+          "|     density mixing parameters otherwise.                                    |",
+          "|                                                                             |",
+          " -----------------------------------------------------------------------------",
+          "",
+          " soft stop encountered!  aborting job ...",
+          "   1 F= -.12406376E+04 E0= -.12404399E+04  d E =-.395363E+00",
+          " writing wavefunctions",
+          " deleting file STOPCAR"
+        ],
+        "recent_scf_lines": [
+          "DAV:   9    -0.124063757536E+04    0.74647E-05   -0.13524E-04174432   0.331E-02    0.249E-02",
+          "DAV:  10    -0.124063757192E+04    0.34396E-05   -0.22485E-05171216   0.143E-02    0.149E-02",
+          "DAV:  11    -0.124063757418E+04   -0.22628E-05   -0.23699E-05176392   0.148E-02    0.155E-02",
+          "DAV:  12    -0.124063757156E+04    0.26220E-05   -0.17930E-05175144   0.127E-02    0.545E-03",
+          "DAV:  13    -0.124063757161E+04   -0.50888E-07   -0.28157E-06173720   0.465E-03    0.431E-03"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:   5    -0.124063844399E+04   -0.42994E-02   -0.40700E-02166280   0.474E-01    0.321E-01",
+          "DAV:   6    -0.124063776469E+04    0.67929E-03   -0.90899E-03176936   0.224E-01    0.131E-01",
+          "DAV:   7    -0.124063760512E+04    0.15957E-03   -0.18195E-03180032   0.145E-01    0.641E-02",
+          "DAV:   8    -0.124063758282E+04    0.22302E-04   -0.41421E-04175576   0.624E-02    0.384E-02",
+          "DAV:   9    -0.124063757536E+04    0.74647E-05   -0.13524E-04174432   0.331E-02    0.249E-02",
+          "DAV:  10    -0.124063757192E+04    0.34396E-05   -0.22485E-05171216   0.143E-02    0.149E-02",
+          "DAV:  11    -0.124063757418E+04   -0.22628E-05   -0.23699E-05176392   0.148E-02    0.155E-02",
+          "DAV:  12    -0.124063757156E+04    0.26220E-05   -0.17930E-05175144   0.127E-02    0.545E-03",
+          "DAV:  13    -0.124063757161E+04   -0.50888E-07   -0.28157E-06173720   0.465E-03    0.431E-03",
+          "   1 F= -.12406376E+04 E0= -.12404399E+04  d E =-.395363E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "force-001-restart-04": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "TAUCAR": {
+            "bytes": 127374170
+          },
+          "WAVECAR": {
+            "bytes": 25201037952
+          },
+          "OUTCAR": {
+            "bytes": 2336037,
+            "mtime_epoch": 1793461365.574329,
+            "age_seconds": 65747.24749064445
+          },
+          "vasp.stdout": {
+            "bytes": 3482,
+            "mtime_epoch": 1793461058.164986,
+            "age_seconds": 66054.66857337952
+          },
+          "OSZICAR": {
+            "bytes": 1070,
+            "mtime_epoch": 1793461078.2934847,
+            "age_seconds": 66034.54151511192
+          },
+          "vasprun.xml": {
+            "bytes": 2415739,
+            "mtime_epoch": 1793461364.5163553,
+            "age_seconds": 65748.31960988045
+          }
+        },
+        "status": {
+          "xc": "r2SCAN",
+          "step": "force-001",
+          "job_id": "20968910",
+          "parent_job": "20964090",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-03",
+          "resources": {
+            "ranks": 64,
+            "nodes": 2,
+            "ranks_per_node": 32,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576,
+            "memory_GiB_per_node": 240
+          },
+          "state": "validated",
+          "parent_scheduler": "20964090|COMPLETED\n",
+          "checkpoint_electrons": 960.0000918596094,
+          "source_wavecar": {
+            "bytes": 25201037952,
+            "record_bytes": 389952,
+            "spins": 1,
+            "precision_tag": 45200,
+            "nkpts": 112,
+            "nbands": 576,
+            "encut_eV": 550.0,
+            "min_plane_waves": 48605,
+            "max_plane_waves": 48743,
+            "record_extent_complete": true,
+            "band_headers_finite": true,
+            "sampled_coefficients_finite": true,
+            "full_coefficient_scan": false
+          },
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 70067184  104857600 104857600          355618       0       0        \n",
+          "required_additional_bytes": 30260863996,
+          "scheduler_allocation": "JobId=20968910 JobName=ti7-r2SCAN-f001 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=885 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:04:03 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-29T23:17:32 EligibleTime=2026-10-29T23:17:32 AccrueTime=2026-10-29T23:17:32 StartTime=2026-10-31T12:26:02 EndTime=2026-11-01T08:26:02 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-31T12:26:02 Scheduler=Backfill Partition=apollo AllocNode:Sid=umt:1487694 ReqNodeList=(null) ExcNodeList=apollo22,tesla-a101 NodeList=apollo[15-16] BatchHost=apollo15 NumNodes=2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=cpu=64,mem=480G,node=2,billing=11264 Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v11.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-wave-next-20261029-20968910.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-wave-next-20261029-20968910.out Power= \n",
+          "quality": {
+            "energy_eV": -1240.43988937,
+            "free_energy_eV": -1240.63757108,
+            "max_force_eV_A": 0.0709074080782932,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                0.28517245,
+                0.02405683,
+                -0.00045965000000000003
+              ],
+              [
+                0.02405683,
+                0.29061297,
+                2.8570000000000003e-05
+              ],
+              [
+                -0.00045965000000000003,
+                2.8570000000000003e-05,
+                0.20463932
+              ]
+            ],
+            "max_stress_kbar": 0.29061297,
+            "force_drift_eV_A": [
+              5.208333334386604e-10,
+              1.0416666670218812e-10,
+              -3.1249999996200403e-10
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              10
+            ],
+            "volume_A3": 1661.330009465202,
+            "outputs": {
+              "OUTCAR": "534e7754be036d1c1a2ca803d2f9078d5ff6963bfc0fd6bb7370170909c6e607",
+              "vasprun.xml": "01f62d583c8e01ceb63b7bf41cb5db8ce67b6b70f3fe74a2c13d117299671467",
+              "CONTCAR": "330031b3fbfc94fb772cca5174a1413c777f772c8eba4cd6e281b2f1c8d83c16"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20968910",
+          "checked_epoch": 1793461215.6984844,
+          "deadline_epoch": 1793503562.0,
+          "reserve_seconds": 28800,
+          "state": "armed"
+        },
+        "restart-provenance.json": {
+          "parent_job": "20964090",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-03",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "52c8fcf6756e70af30739d4863d5f6b5a1f565cabc0bd5a8cf0b5d418c06280b",
+              "bytes": 127578746
+            },
+            "TAUCAR": {
+              "sha256": "849685e4bf833d6e7749c8167cb415e44b29491bbe5670a40e341455b24a61c7",
+              "bytes": 127374170
+            },
+            "WAVECAR": {
+              "sha256": "dd986de4213079fc680296be62f57c6e008a5545305625b5897b57a937c2ce78",
+              "bytes": 25201037952
+            }
+          },
+          "driver_sha256": "069612466a3b8cdcfd1e394e653b1c916ebfc0980cbcaa284d64e4d484112772",
+          "changes": [
+            "64 ranks, KPAR8, NCORE4; scientific settings unchanged",
+            "r2SCAN ISTART1/ICHARG1 with WAVECAR+CHGCAR+TAUCAR"
+          ]
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    28496.463",
+          "                          System time (sec):      602.440",
+          "                         Elapsed time (sec):    29558.568",
+          "  ",
+          "                   Maximum memory used (kb):     7182988.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     28956627",
+          "                          Major page faults:           96",
+          "                 Voluntary context switches:         4613"
+        ],
+        "recent_loop_wall_seconds": [],
+        "ediff_reached": true,
+        "normal_termination": true,
+        "vasp.stdout_tail": [
+          "DAV:   3    -0.124063757060E+04    0.22877E-04   -0.10940E-04176264   0.315E-02    0.453E-03",
+          "DAV:   4    -0.124063757203E+04   -0.14305E-05   -0.11897E-05173120   0.906E-03    0.741E-03",
+          "DAV:   5    -0.124063757128E+04    0.75149E-06   -0.48190E-06182288   0.816E-03    0.331E-03",
+          "DAV:   6    -0.124063757114E+04    0.13706E-06   -0.10392E-06182168   0.369E-03    0.192E-03",
+          "DAV:   7    -0.124063757112E+04    0.26979E-07   -0.16989E-07172368   0.126E-03    0.125E-03",
+          "DAV:   8    -0.124063757111E+04    0.87020E-08   -0.10708E-07142440   0.105E-03    0.105E-03",
+          "DAV:   9    -0.124063757108E+04    0.26077E-07   -0.87430E-08139520   0.925E-04    0.291E-04",
+          "DAV:  10    -0.124063757108E+04   -0.11496E-08   -0.13536E-08 94024   0.521E-04",
+          "   1 F= -.12406376E+04 E0= -.12404399E+04  d E =-.395363E+00",
+          " writing wavefunctions"
+        ],
+        "recent_scf_lines": [
+          "DAV:   6    -0.124063757114E+04    0.13706E-06   -0.10392E-06182168   0.369E-03    0.192E-03",
+          "DAV:   7    -0.124063757112E+04    0.26979E-07   -0.16989E-07172368   0.126E-03    0.125E-03",
+          "DAV:   8    -0.124063757111E+04    0.87020E-08   -0.10708E-07142440   0.105E-03    0.105E-03",
+          "DAV:   9    -0.124063757108E+04    0.26077E-07   -0.87430E-08139520   0.925E-04    0.291E-04",
+          "DAV:  10    -0.124063757108E+04   -0.11496E-08   -0.13536E-08 94024   0.521E-04"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:   2    -0.124063759348E+04   -0.14893E-04   -0.18085E-04181464   0.410E-02    0.368E-02",
+          "DAV:   3    -0.124063757060E+04    0.22877E-04   -0.10940E-04176264   0.315E-02    0.453E-03",
+          "DAV:   4    -0.124063757203E+04   -0.14305E-05   -0.11897E-05173120   0.906E-03    0.741E-03",
+          "DAV:   5    -0.124063757128E+04    0.75149E-06   -0.48190E-06182288   0.816E-03    0.331E-03",
+          "DAV:   6    -0.124063757114E+04    0.13706E-06   -0.10392E-06182168   0.369E-03    0.192E-03",
+          "DAV:   7    -0.124063757112E+04    0.26979E-07   -0.16989E-07172368   0.126E-03    0.125E-03",
+          "DAV:   8    -0.124063757111E+04    0.87020E-08   -0.10708E-07142440   0.105E-03    0.105E-03",
+          "DAV:   9    -0.124063757108E+04    0.26077E-07   -0.87430E-08139520   0.925E-04    0.291E-04",
+          "DAV:  10    -0.124063757108E+04   -0.11496E-08   -0.13536E-08 94024   0.521E-04",
+          "   1 F= -.12406376E+04 E0= -.12404399E+04  d E =-.395363E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      },
+      "production-05/force-002": {
+        "files": {
+          "CHGCAR": {
+            "bytes": 127578746
+          },
+          "TAUCAR": {
+            "bytes": 127374170
+          },
+          "WAVECAR": {
+            "bytes": 25201037952
+          },
+          "OUTCAR": {
+            "bytes": 2347993,
+            "mtime_epoch": 1793524672.5844023,
+            "age_seconds": 2440.256057024002
+          },
+          "vasp.stdout": {
+            "bytes": 4040,
+            "mtime_epoch": 1793524251.3548927,
+            "age_seconds": 2861.49604511261
+          },
+          "OSZICAR": {
+            "bytes": 1628,
+            "mtime_epoch": 1793524202.8221014,
+            "age_seconds": 2910.030403137207
+          },
+          "vasprun.xml": {
+            "bytes": 2417419,
+            "mtime_epoch": 1793524671.4644303,
+            "age_seconds": 2441.389034986496
+          }
+        },
+        "status": {
+          "xc": "r2SCAN",
+          "step": "force-002",
+          "job_id": "20972837",
+          "parent_job": "20968910",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/recovery-01/force-002",
+          "seed_source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-04",
+          "resources": {
+            "nodes": 2,
+            "ranks": 64,
+            "ranks_per_node": 32,
+            "memory_GiB_per_node": 240,
+            "KPAR": 8,
+            "NCORE": 4,
+            "NBANDS": 576
+          },
+          "state": "validated",
+          "seed_electrons": 960.0000918597315,
+          "wave_header": {
+            "bytes": 25201037952,
+            "record_bytes": 389952,
+            "spins": 1,
+            "precision_tag": 45200,
+            "nkpts": 112,
+            "nbands": 576,
+            "encut_eV": 550.0,
+            "min_plane_waves": 48605,
+            "max_plane_waves": 48743,
+            "record_extent_complete": true,
+            "band_headers_finite": true,
+            "sampled_coefficients_finite": true,
+            "full_coefficient_scan": false
+          },
+          "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 70994240  104857600 104857600          355990       0       0        \n",
+          "required_additional_bytes": 30260863996,
+          "quality": {
+            "energy_eV": -1240.43988961,
+            "free_energy_eV": -1240.6375713,
+            "max_force_eV_A": 0.07099555039411273,
+            "stress_kbar_ASE_tension_positive": [
+              [
+                0.28522406,
+                -0.015414220000000001,
+                -0.00045977
+              ],
+              [
+                -0.015414220000000001,
+                0.29065927,
+                -2.916e-05
+              ],
+              [
+                -0.00045977,
+                -2.916e-05,
+                0.20462311
+              ]
+            ],
+            "max_stress_kbar": 0.29065927,
+            "force_drift_eV_A": [
+              0.0,
+              -1.0416666665701302e-10,
+              -1.0416666662990796e-10
+            ],
+            "ionic_steps": 1,
+            "scf_steps": [
+              16
+            ],
+            "volume_A3": 1661.330009465202,
+            "outputs": {
+              "OUTCAR": "b91b6303a46bd4ce2afef92a3cc52894758b2dd564d6f20d723541ede6c2a33f",
+              "vasprun.xml": "a343fbc76ebd7107d7ca8ac38a94e9f422d672949336f1f81c8a156367c5a6a0",
+              "CONTCAR": "603da43b6a2b22b45397a856b731e4c0b7fbbced7bbf53119415f4b6531c17d0"
+            }
+          }
+        },
+        "checkpoint-guard.json": {
+          "job_id": "20972837",
+          "checked_epoch": 1793523541.4988692,
+          "deadline_epoch": 1793552085.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "checkpoint-request.json": {
+          "job_id": "20972837",
+          "checked_epoch": 1793523541.4988692,
+          "deadline_epoch": 1793552085.0,
+          "reserve_seconds": 28800,
+          "state": "stop_requested"
+        },
+        "restart-provenance.json": {
+          "parent_job": "20968910",
+          "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-04",
+          "checkpoints": {
+            "CHGCAR": {
+              "sha256": "ccb6fb747ded8aba118c32d7ccd5ed2a5ef6df9a2d8ee42ec03304cfe5120cf4",
+              "bytes": 127578746
+            },
+            "TAUCAR": {
+              "sha256": "a979a09324224d6f02d6d087204e139b80bb6a799a812893b02e0004b943f7bb",
+              "bytes": 127374170
+            },
+            "WAVECAR": {
+              "sha256": "d80676dd9f8d682f70dc1efdc2b66b2845e23e30f04e7480cefc4fffacc6e795",
+              "bytes": 25201037952
+            }
+          },
+          "frozen_source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/recovery-01/force-002",
+          "driver_sha256": "3f5d5e6892067987d0103211814b0c0cc54a484223b5563a1bf729d56edf37ec",
+          "policy_sha256": "a6661c042d25c91b5060c72cfa6501ffcf0ae49f87f8f784fe18e28314b4886b",
+          "changes": [
+            "Opposite displacement from frozen phonopy inputs; same scientific settings",
+            "ISTART1/ICHARG1: converged first displacement as initial guess; self-consistency retained",
+            "64 ranks KPAR8 NCORE4 NBANDS576; LWAVE/LCHARG enabled"
+          ]
+        },
+        "OUTCAR_tail": [
+          "                            User time (sec):    42277.448",
+          "                          System time (sec):      970.333",
+          "                         Elapsed time (sec):    44343.362",
+          "  ",
+          "                   Maximum memory used (kb):     7206056.",
+          "                   Average memory used (kb):          N/A",
+          "  ",
+          "                          Minor page faults:     51461987",
+          "                          Major page faults:           97",
+          "                 Voluntary context switches:         3333"
+        ],
+        "recent_loop_wall_seconds": [],
+        "ediff_reached": true,
+        "normal_termination": true,
+        "vasp.stdout_tail": [
+          "DAV:   9    -0.124063757076E+04    0.18114E-05   -0.25058E-05177104   0.158E-02    0.672E-03",
+          "DAV:  10    -0.124063757192E+04   -0.11628E-05   -0.54734E-06180496   0.871E-03    0.747E-03",
+          "DAV:  11    -0.124063757130E+04    0.61739E-06   -0.34807E-06180312   0.713E-03    0.292E-03",
+          "DAV:  12    -0.124063757142E+04   -0.12085E-06   -0.16642E-06174728   0.372E-03    0.283E-03",
+          "DAV:  13    -0.124063757132E+04    0.98036E-07   -0.68817E-07169440   0.245E-03    0.739E-04",
+          "DAV:  14    -0.124063757132E+04    0.49185E-08   -0.11725E-07143272   0.103E-03    0.770E-04",
+          "DAV:  15    -0.124063757130E+04    0.15832E-07   -0.59045E-08130696   0.796E-04    0.238E-04",
+          "DAV:  16    -0.124063757130E+04    0.17608E-08   -0.73762E-09 81520   0.263E-04",
+          "   1 F= -.12406376E+04 E0= -.12404399E+04  d E =-.395363E+00",
+          " writing wavefunctions"
+        ],
+        "recent_scf_lines": [
+          "DAV:  12    -0.124063757142E+04   -0.12085E-06   -0.16642E-06174728   0.372E-03    0.283E-03",
+          "DAV:  13    -0.124063757132E+04    0.98036E-07   -0.68817E-07169440   0.245E-03    0.739E-04",
+          "DAV:  14    -0.124063757132E+04    0.49185E-08   -0.11725E-07143272   0.103E-03    0.770E-04",
+          "DAV:  15    -0.124063757130E+04    0.15832E-07   -0.59045E-08130696   0.796E-04    0.238E-04",
+          "DAV:  16    -0.124063757130E+04    0.17608E-08   -0.73762E-09 81520   0.263E-04"
+        ],
+        "fatal_indicators": [],
+        "OSZICAR_tail": [
+          "DAV:   8    -0.124063757257E+04   -0.66466E-05   -0.78100E-05171584   0.240E-02    0.158E-02",
+          "DAV:   9    -0.124063757076E+04    0.18114E-05   -0.25058E-05177104   0.158E-02    0.672E-03",
+          "DAV:  10    -0.124063757192E+04   -0.11628E-05   -0.54734E-06180496   0.871E-03    0.747E-03",
+          "DAV:  11    -0.124063757130E+04    0.61739E-06   -0.34807E-06180312   0.713E-03    0.292E-03",
+          "DAV:  12    -0.124063757142E+04   -0.12085E-06   -0.16642E-06174728   0.372E-03    0.283E-03",
+          "DAV:  13    -0.124063757132E+04    0.98036E-07   -0.68817E-07169440   0.245E-03    0.739E-04",
+          "DAV:  14    -0.124063757132E+04    0.49185E-08   -0.11725E-07143272   0.103E-03    0.770E-04",
+          "DAV:  15    -0.124063757130E+04    0.15832E-07   -0.59045E-08130696   0.796E-04    0.238E-04",
+          "DAV:  16    -0.124063757130E+04    0.17608E-08   -0.73762E-09 81520   0.263E-04",
+          "   1 F= -.12406376E+04 E0= -.12404399E+04  d E =-.395363E+00"
+        ],
+        "scheduler_state": "COMPLETED",
+        "effective_state": "COMPLETED"
+      }
+    }
+  },
+  "memory": "JobID|MaxRSS|AveCPU\n",
+  "launcher_failures": {
+    "20959188": "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications.\n/home6/u3129/tial-phonons/envs/phonopy-4.8.2/bin/python: can't open file '/misc/home4/u3129/restart_step_v2.py': [Errno 2] No such file or directory\n",
+    "20964089": "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications.\n{\"xc\": \"PBE\", \"step\": \"force-001\", \"job_id\": \"20964089\", \"parent_job\": \"20959753\", \"source\": \"/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03\", \"resources\": {\"ranks\": 64, \"nodes\": 2, \"ranks_per_node\": 32, \"KPAR\": 8, \"NCORE\": 4, \"NBANDS\": 576, \"memory_GiB_per_node\": 240}, \"state\": \"checking_checkpoint\"}\n{\"xc\": \"PBE\", \"step\": \"force-001\", \"job_id\": \"20964089\", \"parent_job\": \"20959753\", \"source\": \"/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03\", \"resources\": {\"ranks\": 64, \"nodes\": 2, \"ranks_per_node\": 32, \"KPAR\": 8, \"NCORE\": 4, \"NBANDS\": 576, \"memory_GiB_per_node\": 240}, \"state\": \"running\", \"parent_scheduler\": \"20959753|COMPLETED\\n\", \"checkpoint_electrons\": 960.0001207789049, \"quota_before_copy\": \"Disk quotas for user u3129 (uid 13129): \\n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\\n   stg06:/home6 68704276  104857600 104857600          352795       0       0        \\n\", \"required_additional_bytes\": 4677703534, \"scheduler_allocation\": \"JobId=20964089 JobName=ti6-PBE-f001 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=895 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:06 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-28T21:34:26 EligibleTime=2026-10-28T21:34:26 AccrueTime=2026-10-28T21:34:26 StartTime=2026-10-29T08:42:28 EndTime=2026-10-30T04:42:28 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-29T08:42:28 Scheduler=Main Partition=apollo AllocNode:Sid=umt:2947294 ReqNodeList=(null) ExcNodeList=tesla-a101 NodeList=apollo[20,22] BatchHost=apollo20 NumNodes=2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=cpu=64,mem=480G,node=2,billing=11264 Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v9.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-restart64-20261028-20964089.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-restart64-20261028-20964089.out Power= \\n\"}\nslurmstepd: error: *** JOB 20964089 ON apollo20 CANCELLED AT 2026-10-29T13:14:15 DUE TO NODE FAILURE, SEE SLURMCTLD LOG FOR DETAILS ***\n",
+    "20958090": "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications.\n{\"xc\": \"PBEsol\", \"step\": \"force-001\", \"job_id\": \"20958090\", \"state\": \"running\", \"source\": \"/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/recovery-01/force-001\", \"resources\": {\"nodes\": 1, \"ranks\": 32, \"ranks_per_node\": 32, \"memory_GiB_per_node\": 300, \"KPAR\": 4, \"NCORE\": 4, \"NBANDS\": 576}, \"cumulative_budget\": null}\nslurmstepd: error: *** JOB 20958090 ON apollo18 CANCELLED AT 2026-10-23T04:35:35 DUE TO TIME LIMIT ***\n",
+    "20959189": "   WARNING: vars.sh does not set up dependencies when invoked directly. Please perform environment setup for UMF before running DPC++ applications.\n/home6/u3129/tial-phonons/envs/phonopy-4.8.2/bin/python: can't open file '/misc/home4/u3129/restart_step_v2.py': [Errno 2] No such file or directory\n"
+  }
+}

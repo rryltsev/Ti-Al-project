@@ -1,0 +1,5 @@
+{
+  "unix": 1793939890.2852068,
+  "job_id": "20988268",
+  "traceback": "Traceback (most recent call last):\n  File \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/workflow.py\", line 53, in <module>\n    try:sys.exit(main())\n                 ^^^^^^\n  File \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/workflow.py\", line 49, in main\n    if r.returncode:raise RuntimeError('Block failed '+sid+';see private logs; completed replicas retained')\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Block failed Ti_1873K;see private logs; completed replicas retained\n"
+}

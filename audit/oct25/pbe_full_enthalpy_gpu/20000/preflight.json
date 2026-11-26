@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "device": {
+    "name": "NVIDIA A100-PCIE-40GB",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "deepmd_device": "cuda:0"
+  },
+  "checks": [
+    {
+      "composition": "Ti",
+      "E_diff_eV_atom": 1.2278556596356793e-07,
+      "F_diff_RMS_eV_A": 1.0067587108940289e-06,
+      "stress_max_diff_GPa": 3.4694657077940686e-06
+    },
+    {
+      "composition": "Al",
+      "E_diff_eV_atom": 6.139278298178397e-08,
+      "F_diff_RMS_eV_A": 5.481328725900968e-07,
+      "stress_max_diff_GPa": 1.3198817949494527e-06
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "E_diff_eV_atom": 1.0810792332449637e-07,
+      "F_diff_RMS_eV_A": 1.0530952454742382e-06,
+      "stress_max_diff_GPa": 3.299878024920892e-06
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "E_diff_eV_atom": 1.232326030731201e-07,
+      "F_diff_RMS_eV_A": 1.078008014811273e-06,
+      "stress_max_diff_GPa": 3.5135018238325888e-06
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "E_diff_eV_atom": 1.8596649169921876e-07,
+      "F_diff_RMS_eV_A": 1.0303840679977148e-06,
+      "stress_max_diff_GPa": 4.010140858611126e-06
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "E_diff_eV_atom": 1.9028782958230294e-07,
+      "F_diff_RMS_eV_A": 9.416086411892988e-07,
+      "stress_max_diff_GPa": 1.2379571187518524e-06
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "E_diff_eV_atom": 2.0138919353485108e-07,
+      "F_diff_RMS_eV_A": 9.79945232841592e-07,
+      "stress_max_diff_GPa": 3.0337060212302795e-06
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "E_diff_eV_atom": 1.9252300148764334e-07,
+      "F_diff_RMS_eV_A": 9.501974734380309e-07,
+      "stress_max_diff_GPa": 1.5859081801916085e-06
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "E_diff_eV_atom": 1.22934579280809e-07,
+      "F_diff_RMS_eV_A": 8.85160309988022e-07,
+      "stress_max_diff_GPa": 1.9208450919688326e-06
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "E_diff_eV_atom": 1.3843178692241054e-07,
+      "F_diff_RMS_eV_A": 7.882086748576476e-07,
+      "stress_max_diff_GPa": 1.767282480144978e-06
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "E_diff_eV_atom": 6.973743381877284e-08,
+      "F_diff_RMS_eV_A": 6.889546373767682e-07,
+      "stress_max_diff_GPa": 1.1201528403347287e-06
+    }
+  ],
+  "seconds_per_100_steps": 5.041659772396088,
+  "projected_series_hours": 9.243042916059494,
+  "protocol_sha256": "acdbe2866f6247b4398b96fc52f0e706985b69e7da63c254b8c150aa7923c32c",
+  "model_sha256": "3b0b4b69f8fca7be5bae4a5f24498aac904efad08f126f4a57de035e0379c67e",
+  "versions": {
+    "ase": "3.29.0",
+    "deepmd-kit": "3.2.0",
+    "torch": "2.11.0",
+    "numpy": "2.5.3"
+  }
+}

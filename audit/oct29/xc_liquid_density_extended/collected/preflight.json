@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "device": {
+    "name": "NVIDIA A100-PCIE-40GB",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "deepmd_device": "cuda:0"
+  },
+  "checks": [
+    {
+      "id": "PBEsol-1873",
+      "E_diff_eV_atom": 7.450580937984342e-08,
+      "F_diff_RMS_eV_A": 1.1213449402689996e-06,
+      "stress_max_diff_GPa": 1.634848577313387e-06,
+      "archived_energy_diff_eV_atom": 7.152557714107388e-08
+    },
+    {
+      "id": "r2SCAN-1873",
+      "E_diff_eV_atom": 8.404254913330078e-08,
+      "F_diff_RMS_eV_A": 1.2931794836392026e-06,
+      "stress_max_diff_GPa": 2.3133880491680678e-06,
+      "archived_energy_diff_eV_atom": 5.245209194981726e-08
+    },
+    {
+      "id": "PBEsol-2500",
+      "E_diff_eV_atom": 5.722046239498013e-08,
+      "F_diff_RMS_eV_A": 1.156011830141165e-06,
+      "stress_max_diff_GPa": 1.7105597632969255e-06,
+      "archived_energy_diff_eV_atom": 3.8743022514609036e-08
+    },
+    {
+      "id": "r2SCAN-2500",
+      "E_diff_eV_atom": 1.0311603546142578e-07,
+      "F_diff_RMS_eV_A": 1.231360619084026e-06,
+      "stress_max_diff_GPa": 2.939334973925021e-06,
+      "archived_energy_diff_eV_atom": 5.9008602875110225e-08
+    },
+    {
+      "id": "PBEsol-2400",
+      "E_diff_eV_atom": 1.2576580388667935e-07,
+      "F_diff_RMS_eV_A": 1.141159048964143e-06,
+      "stress_max_diff_GPa": 1.4959478478549112e-06,
+      "archived_energy_diff_eV_atom": 2.9206279350546537e-08
+    },
+    {
+      "id": "r2SCAN-2400",
+      "E_diff_eV_atom": 7.927417755126954e-08,
+      "F_diff_RMS_eV_A": 1.1406983324546253e-06,
+      "stress_max_diff_GPa": 2.6177478141292635e-06,
+      "archived_energy_diff_eV_atom": 5.8412556427356325e-08
+    },
+    {
+      "id": "PBEsol-2300",
+      "E_diff_eV_atom": 2.384185449955112e-08,
+      "F_diff_RMS_eV_A": 1.0631339564772397e-06,
+      "stress_max_diff_GPa": 2.8322503210773727e-06,
+      "archived_energy_diff_eV_atom": 2.20537151562894e-08
+    },
+    {
+      "id": "r2SCAN-2300",
+      "E_diff_eV_atom": 6.973743438720703e-08,
+      "F_diff_RMS_eV_A": 1.3242150930480551e-06,
+      "stress_max_diff_GPa": 4.535074885640142e-06,
+      "archived_energy_diff_eV_atom": 3.337860562169226e-08
+    },
+    {
+      "id": "PBEsol-2200",
+      "E_diff_eV_atom": 1.4305118156698881e-08,
+      "F_diff_RMS_eV_A": 1.1821562493897538e-06,
+      "stress_max_diff_GPa": 1.6463447169495174e-06,
+      "archived_energy_diff_eV_atom": 4.8875812126425444e-08
+    },
+    {
+      "id": "r2SCAN-2200",
+      "E_diff_eV_atom": 1.0788440704345703e-07,
+      "F_diff_RMS_eV_A": 1.1707186687749945e-06,
+      "stress_max_diff_GPa": 2.6252745619206384e-06,
+      "archived_energy_diff_eV_atom": 6.020069577061804e-08
+    },
+    {
+      "id": "PBEsol-2100",
+      "E_diff_eV_atom": 1.1742115361812466e-07,
+      "F_diff_RMS_eV_A": 1.2288849002882236e-06,
+      "stress_max_diff_GPa": 7.632865774800192e-07,
+      "archived_energy_diff_eV_atom": 9.536743505123013e-08
+    },
+    {
+      "id": "r2SCAN-2100",
+      "E_diff_eV_atom": 6.794929504394531e-08,
+      "F_diff_RMS_eV_A": 1.2267450905851332e-06,
+      "stress_max_diff_GPa": 3.2353651386752533e-06,
+      "archived_energy_diff_eV_atom": 2.3841862457629758e-08
+    },
+    {
+      "id": "PBEsol-2000",
+      "E_diff_eV_atom": 7.629394872310514e-08,
+      "F_diff_RMS_eV_A": 1.124055689191235e-06,
+      "stress_max_diff_GPa": 2.4484324634051687e-06,
+      "archived_energy_diff_eV_atom": 2.6226047111777007e-08
+    },
+    {
+      "id": "r2SCAN-2000",
+      "E_diff_eV_atom": 3.695487976074219e-08,
+      "F_diff_RMS_eV_A": 1.3041491307908025e-06,
+      "stress_max_diff_GPa": 2.013084420158674e-06,
+      "archived_energy_diff_eV_atom": 6.079674221837195e-08
+    }
+  ],
+  "seconds_per_step": {
+    "PBEsol": 0.05459779677912593,
+    "r2SCAN": 0.054496496208012106
+  },
+  "projected_hours": 21.212779191943508,
+  "models_sha256": {
+    "23100": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+    "23200": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309"
+  },
+  "protocol_sha256": "d90b9fb94eb608253a6432284c452dd83ca59b284de8ff0e577795a14060adfc",
+  "versions": {
+    "ase": "3.29.0",
+    "deepmd-kit": "3.2.0",
+    "torch": "2.11.0",
+    "numpy": "2.5.3"
+  }
+}

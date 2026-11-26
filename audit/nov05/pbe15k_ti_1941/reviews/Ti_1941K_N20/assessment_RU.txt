@@ -1,0 +1,16 @@
+1941 K N=20: новый полный пакет. Все ошибки ниже — формальные SE.
+
+40ps: 2.776439 +/- 0.065941 мПа·с; neff=79.523; costZ=-0.084; cutoffZ=2.161.
+first20ps: 2.619649 +/- 0.079450 мПа·с; neff=46.659; costZ=0.639; cutoffZ=0.391.
+second20ps: 2.910431 +/- 0.096043 мПа·с; neff=40.352; costZ=0.084; cutoffZ=2.317.
+Прежние15: 2.815506+/-0.080433; изменение40 -1.3876%; изменениеSE -18.018%.
+Новые5: 2.684694+/-0.106647; против прежнихZ=0.979; costZ=-0.799; cutoffZ=-0.314.
+Отдельные5k: 3.049946+/-0.117315; отличие -8.968%.
+[{"id": "Ti_1941K", "flags": {"minimum_replicas": false, "precision": true, "last_three_stability": true, "duration_stability": false, "spectral_points": true, "cost": true, "cutoff": false, "new_batch_consistency": true, "window_fit_diagnostics": false}, "passed": false, "last_three_relative_range": 0.01488602078220108, "max_20_40_relative_difference": 0.05647133752329747}]
+Полных прохождений 0/2; stop=False; review hold=False.
+All9 diagnostic figures inspected. Full40 main cutoff near2THz fails weighted cutoff2.161. First20 near2.5THz passes. Second20 near2THz fails cutoff2.317. New5 dominant mode near2.7THz passes weighted diagnostics. No dominant detached high-frequency mode visible. Renewed cutoff failures and duration discrepancy do not establish physical drift; keep all official estimates and historical5k separate.
+Formal SE excludes model, protocol and cutoff systematics.
+Accumulated estimates and windows20/40ps are correlated; stopping is a heuristic.
+Historical15k and5k remain separate; agreement with5k is not a stop criterion.
+Fixed article profile and the earlier preview snapshot remain unchanged.
+Исторического15k1941Kнет. Не проходятN20<30,20/40=5.6471%>3%,cutoff40Z2.1613,second20Z2.3170. ПроходятSE2.3750%,размах1.4886%,neff79.5233,всеcost,newbatchZ0.9793. streak0/2.

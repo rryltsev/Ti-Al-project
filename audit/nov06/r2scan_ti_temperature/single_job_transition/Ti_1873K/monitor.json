@@ -1,0 +1,46 @@
+{
+  "temperature_K": 1873,
+  "legacy_replicas": 30,
+  "delivered_batches": [
+    5
+  ],
+  "job_id": "20988268",
+  "mode": "single_job_refinement_v2",
+  "last_checked_unix": 1793978386.0879378,
+  "shared_single_job_id": "20988268",
+  "legacy_dataset_confirmed": true,
+  "current_new_replicas": 5,
+  "gpu_preflight": "passed",
+  "initial_plan_target_new": 5,
+  "current_progress": {
+    "status": "running",
+    "phase": "analysis",
+    "job_id": "20988268",
+    "unix": 1793949733.4287505,
+    "composition": "Ti_1873K",
+    "n_replicas": 5
+  },
+  "last_delivery_unix": 1793953952.6284137,
+  "last_delivered": {
+    "Nold": 30,
+    "Nnew": 5,
+    "Ntotal": 35,
+    "eta_mPa_s": 3.7975305590840596,
+    "adopted_SE": 0.11237431983287847,
+    "formal_SE": 0.11237431983287847,
+    "cluster_SE": 0.10304184578111887,
+    "plot": "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\monitor_current.png",
+    "report": "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\reviews\\Ti_1873K_Nnew5\\report_RU.txt",
+    "runtime_check": "PASS",
+    "visual_qa": "complete",
+    "convergence_not_established": true
+  },
+  "state": "COMPLETED",
+  "final_delivery": {
+    "delivered": true,
+    "unix": 1793978613.0487695,
+    "status": "refinement_cycle_complete_review_required",
+    "summary": "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\final_cycle_v1\\summary.json",
+    "report": "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\final_cycle_v1\\report_RU.txt"
+  }
+}

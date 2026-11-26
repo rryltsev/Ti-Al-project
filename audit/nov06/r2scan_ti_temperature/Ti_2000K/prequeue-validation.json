@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "unix": 1793932792.6758492,
+  "protocol_sha256": "ecf769fcb4fb05173d99ebd43269d35d8975e58782e8a71f9e7419f70cb8762d",
+  "legacy_manifest_sha256": "8f1cc9bc650c2f7e0ac865e6070cc66361e9927a15401aee5736dc16e020cd15",
+  "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+  "frozen_sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a",
+  "checkpoint_internal_step": 23199,
+  "baseline": {
+    "eta_mPa_s": 3.297652830525588,
+    "eta_std_mPa_s": 0.14403026618163328,
+    "relative_std": 0.043676600777492205,
+    "neff": 33.80446759596214,
+    "cost_z": -0.7575778558252809,
+    "criterion_z": -0.09490693543728021,
+    "formal_std_mPa_s": 0.14403026618163328,
+    "cluster_jackknife_std_mPa_s": 0.11483421510159215,
+    "legacy_replicas": 15,
+    "new_40ps_replicas": 0,
+    "replica_clusters": 15,
+    "windows_20ps": 15,
+    "leave_one_replica_out_mPa_s": [
+      3.3004510012063744,
+      3.2826262718205594,
+      3.270085606976477,
+      3.2991612153200465,
+      3.3321144048214473,
+      3.360723991431657,
+      3.263533905959848,
+      3.2995299356512136,
+      3.3314067490932597,
+      3.313775309538706,
+      3.2579751597020357,
+      3.2701760974122123,
+      3.315876799665004,
+      3.3237240594961373,
+      3.252218141482867
+    ],
+    "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+    "pooling_version": "r2scan-legacy20-new40-v1"
+  },
+  "baseline_reference": {
+    "system": "AlTi",
+    "T": 2000,
+    "dft": "scan",
+    "c_Ti": 1.0,
+    "eta_mPa_s": 3.297652830525589,
+    "eta_std_mPa_s": 0.14403026618163317,
+    "eta_pa_s": 0.003297652830525589,
+    "eta_std_pa_s": 0.00014403026618163317,
+    "neff": 33.80446759596216,
+    "n_replicas": 15,
+    "n_steps": 20001,
+    "timestep_ps": 0.001,
+    "block_size": 1,
+    "tau_exp_ps": 0.16242159174986842,
+    "tau_exp_std_ps": 0.024177236810853,
+    "tau_int_ps": 0.11417569704225228,
+    "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+    "tdm_mPa_s": 3.529157863747618,
+    "tdm_delta_pct": 7.02029731811189
+  },
+  "model_pressure_checks": [
+    {
+      "replica": 1,
+      "max_abs_pressure_error_bar": 0.039964712868368224
+    },
+    {
+      "replica": 2,
+      "max_abs_pressure_error_bar": 0.038024169503387384
+    },
+    {
+      "replica": 3,
+      "max_abs_pressure_error_bar": 0.0399376833520364
+    },
+    {
+      "replica": 4,
+      "max_abs_pressure_error_bar": 0.05431042960151444
+    },
+    {
+      "replica": 5,
+      "max_abs_pressure_error_bar": 0.041587732080643036
+    },
+    {
+      "replica": 6,
+      "max_abs_pressure_error_bar": 0.04433996680609198
+    },
+    {
+      "replica": 7,
+      "max_abs_pressure_error_bar": 0.044782381130062276
+    },
+    {
+      "replica": 8,
+      "max_abs_pressure_error_bar": 0.03373057783028344
+    },
+    {
+      "replica": 9,
+      "max_abs_pressure_error_bar": 0.05835169014949315
+    },
+    {
+      "replica": 10,
+      "max_abs_pressure_error_bar": 0.03660930821524744
+    },
+    {
+      "replica": 11,
+      "max_abs_pressure_error_bar": 0.053165569028351456
+    },
+    {
+      "replica": 12,
+      "max_abs_pressure_error_bar": 0.03886745243562473
+    },
+    {
+      "replica": 13,
+      "max_abs_pressure_error_bar": 0.028470779365306953
+    },
+    {
+      "replica": 14,
+      "max_abs_pressure_error_bar": 0.046485811630191165
+    },
+    {
+      "replica": 15,
+      "max_abs_pressure_error_bar": 0.041453749239963145
+    }
+  ],
+  "max_error_bar": 0.05835169014949315,
+  "threshold_bar": 20,
+  "final_cpu_tests": "PASS including CPU analysis walltime deferral",
+  "validated_staging_manifest_sha256": "bad55c06053361a9abfb43f3378e8a56bdeb3c19650f2074df07598c1c1798ef",
+  "technical_code_verified_unix": 1793933150.9433086
+}

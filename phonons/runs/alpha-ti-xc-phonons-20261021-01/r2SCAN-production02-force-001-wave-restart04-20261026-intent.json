@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-26T03:27:41.993190+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--exclude=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=32",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=240G",
+    "--time=20:00:00",
+    "--job-name=ti-r2-wave-f001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-wave-restart04-20261026-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v7.sbatch",
+    "restart_step_v5.py",
+    "r2SCAN",
+    "force-001",
+    "20959337"
+  ],
+  "parent_job": "20959337",
+  "source_checksums": "ea41596d3a38ed8b883c7bae2ad637bdb712c85b01044906c061579d1d78418a  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-01/CHGCAR\nd1e39c7e4677ebe9d3b36ab059dcec6957334d717890d83d791f67555caf47ef  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-01/TAUCAR\ncac7712ab3bcc55134b33c021f7ee8e686b2399548d97ab1f6a5b5383b39ded9  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-01/OUTCAR\nd6a41ee39ba5409bed5e4203b0e5de92c44476ddd85bfb29dc8da02fae32cdac  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-01/vasprun.xml\n",
+  "source_hashes": {
+    "restart_step_v5.py": "e8f8b3789e4c0fa657197a84062d64e2361600d3f76181baa6ebc609de03746a",
+    "launch_v7.sbatch": "fbbf0cff901bd38ee3b4ab8aa6180b5de329522108802c753356c14758e8998d"
+  },
+  "scientific_changes": [],
+  "operational_changes": [
+    "LWAVE=.TRUE. to preserve orbitals; additional quota checked in allocation"
+  ],
+  "parent_scheduler": "20959337|COMPLETED|2026-10-25T09:17:05|2026-10-26T00:36:19|15:19:14|0:0\n"
+}

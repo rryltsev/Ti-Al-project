@@ -1,0 +1,146 @@
+{
+  "models": {
+    "PBE": {
+      "train_infos": {
+        "lr": 8.94910241509068e-05,
+        "step": 4999
+      },
+      "source_checkpoint": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\pbe_checkpoint.pt",
+      "checkpoint_sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac",
+      "metadata_sha256": "7326d9d0e06a37e2092866f23fbba322ee2edf466040e37ed3aec387d3699af4",
+      "frozen_sha256": "660ebda9c96dedd5fc297148d6463fea535b0663e028c49e3bb78a4f21ca60bc"
+    },
+    "PBEsol": {
+      "train_infos": {
+        "lr": 1.0000004605209127e-06,
+        "step": 23099
+      },
+      "source_checkpoint": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\pbesol_checkpoint.pt",
+      "checkpoint_sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+      "metadata_sha256": "974a01b7d4af7fc11cc55a1c1677a79b1e667c13ae35c9eeafb73ff6e65a83ce",
+      "frozen_sha256": "a7c63464cd92745e8cc1dd153e2e8678da63a7fd523479e682eb7c02a3d05a3f"
+    },
+    "r2SCAN": {
+      "train_infos": {
+        "lr": 1.0000004565476681e-06,
+        "step": 23199
+      },
+      "source_checkpoint": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\scan_checkpoint.pt",
+      "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "metadata_sha256": "0160cc64a2d5f20e91748161c54b02306a70e36cae2aaf1d2357a1eb846c7973",
+      "frozen_sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+    }
+  },
+  "training_log": {
+    "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-finetune\\lcurve_pbe.out",
+    "sha256": "da2d1608b9cdc6eb62f1ee0b5b7ad23769f76a98d90dd7c2229154da6660120e",
+    "last_step": 23400,
+    "samples": {
+      "4900": {
+        "energy_mae_validation_meV_atom": 2.32,
+        "energy_mae_training_meV_atom": 2.85,
+        "learning_rate": 9e-05,
+        "line": "   4900      2.32e-03    2.85e-03      9.91e-02    9.40e-02      5.01e-03    5.76e-03      1.41e+00    1.39e+00    9.0e-05"
+      },
+      "5000": {
+        "energy_mae_validation_meV_atom": 4.760000000000001,
+        "energy_mae_training_meV_atom": 2.9,
+        "learning_rate": 8.9e-05,
+        "line": "   5000      4.76e-03    2.90e-03      9.61e-02    9.11e-02      5.87e-03    5.69e-03      1.41e+00    1.37e+00    8.9e-05"
+      },
+      "5100": {
+        "energy_mae_validation_meV_atom": 1.63,
+        "energy_mae_training_meV_atom": 2.8,
+        "learning_rate": 8.9e-05,
+        "line": "   5100      1.63e-03    2.80e-03      9.74e-02    8.96e-02      5.23e-03    6.18e-03      1.40e+00    1.35e+00    8.9e-05"
+      },
+      "23400": {
+        "energy_mae_validation_meV_atom": 1.16,
+        "energy_mae_training_meV_atom": 0.8450000000000001,
+        "learning_rate": 1e-06,
+        "line": "  23400      1.16e-03    8.45e-04      9.27e-02    8.51e-02      4.66e-03    4.76e-03      1.36e+00    1.30e+00    1.0e-06"
+      }
+    },
+    "caveat": "Logged rolling/batch metrics are not identical to full-dataset inference. Author confirms deliberate early-checkpoint selection based on Ti phonons.",
+    "descriptive_window_means": [
+      {
+        "steps": [
+          3000,
+          5000
+        ],
+        "n_logged_rows": 21,
+        "energy_mae_val_meV_atom": 3.666190476190476,
+        "energy_mae_train_meV_atom": 2.9576190476190476,
+        "force_mae_val_eV_A": 0.09852857142857142,
+        "force_mae_train_eV_A": 0.09458571428571429
+      },
+      {
+        "steps": [
+          5001,
+          10000
+        ],
+        "n_logged_rows": 50,
+        "energy_mae_val_meV_atom": 3.1002,
+        "energy_mae_train_meV_atom": 2.5355999999999996,
+        "force_mae_val_eV_A": 0.095726,
+        "force_mae_train_eV_A": 0.091378
+      },
+      {
+        "steps": [
+          10001,
+          15000
+        ],
+        "n_logged_rows": 50,
+        "energy_mae_val_meV_atom": 2.04458,
+        "energy_mae_train_meV_atom": 1.8474,
+        "force_mae_val_eV_A": 0.0944,
+        "force_mae_train_eV_A": 0.088686
+      },
+      {
+        "steps": [
+          15001,
+          20000
+        ],
+        "n_logged_rows": 50,
+        "energy_mae_val_meV_atom": 1.6614,
+        "energy_mae_train_meV_atom": 1.19778,
+        "force_mae_val_eV_A": 0.094086,
+        "force_mae_train_eV_A": 0.08751
+      },
+      {
+        "steps": [
+          20001,
+          23400
+        ],
+        "n_logged_rows": 34,
+        "energy_mae_val_meV_atom": 0.979764705882353,
+        "energy_mae_train_meV_atom": 0.8271764705882353,
+        "force_mae_val_eV_A": 0.09445294117647059,
+        "force_mae_train_eV_A": 0.08647941176470589
+      }
+    ]
+  },
+  "author_clarification": {
+    "source": "Direct user clarification in this chat, 2026-10-25",
+    "PBE_selection": "The approximately 5000-step checkpoint was selected deliberately after comparing it with the final approximately 23400-step checkpoint; Ti phonons were better with the 5000-step model.",
+    "author_learning_curve_observation": "After approximately 5000 steps the train and validation errors diverged, interpreted by the authors as overfitting.",
+    "other_functionals": "For PBEsol and r2SCAN the final checkpoints performed better and the learning curves reached a plateau.",
+    "interpretation": "The PBE 5000-step checkpoint is an intentional property-based choice, not evidence of an accidentally supplied intermediate checkpoint. Current energy diagnostics apply to this selected model.",
+    "limits": "The paired phonon outputs for early and final PBE checkpoints have not been independently inspected in this diagnostic. Exact deployed MD-file identity has not been compared by hash here."
+  },
+  "config": {
+    "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-finetune\\TiAl_tune_pbe_DPA4-shard-Neo-OMat24-v20260805.json",
+    "sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+    "loss": {
+      "type": "ener",
+      "loss_func": "mae",
+      "f_use_norm": true,
+      "start_pref_e": 20,
+      "limit_pref_e": 20,
+      "start_pref_f": 20,
+      "limit_pref_f": 20,
+      "start_pref_v": 5,
+      "limit_pref_v": 5
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "scontrol",
+    "update",
+    "JobId=20960541",
+    "TimeLimit=1-12:00:00"
+  ],
+  "timestamp": "2026-10-25T14:29:32.831638+05:00",
+  "reason": "Current partition maximum is 38h, below original pending 39h request. Reduce to 36h, same as running 20k. MD step count unchanged."
+}

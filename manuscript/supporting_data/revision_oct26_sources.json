@@ -1,0 +1,91 @@
+{
+  "common_structures": 23,
+  "pbe15k_phonons": {
+    "gamma_THz": [
+      -0.00026683460798888615,
+      -2.824617725440622e-05,
+      -2.873411902353189e-07,
+      3.81961758700677,
+      3.8204148010531345,
+      4.996193338834333
+    ],
+    "maximum_THz": 8.337822821374655
+  },
+  "pbe15k_mixing_MAD_kJmol": 3.608217579619506,
+  "pbe15k_enthalpy_minimum": {
+    "x_Al": 0.5,
+    "H": {
+      "mean": -25.00747698807666,
+      "sem": 0.30238400721197395,
+      "df": 4.630514527049604,
+      "ci95": [
+        -25.803810866320184,
+        -24.211143109833138
+      ],
+      "z": -82.70105690657837
+    },
+    "U": {
+      "mean": -25.007418659818455,
+      "sem": 0.30200368774063924,
+      "df": 4.616069312351429,
+      "ci95": [
+        -25.80357266212828,
+        -24.211264657508632
+      ],
+      "z": -82.80501091528004
+    }
+  },
+  "model_identity": {
+    "PBE": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "article_run": "TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047",
+      "checkpoint_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "checkpoint_path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "checkpoint_step": 15000,
+      "artifact_format": "original PyTorch checkpoint; direct CPU DeepPot inference",
+      "prediction_cache": "PBE-15000",
+      "user_selected_date": "2026-10-26"
+    },
+    "PBEsol": {
+      "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBEsol/model_frozen.pt2",
+      "sha256": "a7c63464cd92745e8cc1dd153e2e8678da63a7fd523479e682eb7c02a3d05a3f",
+      "article_run": "TiAl_tune_sol_Neo_DPA4_shard_20260920_040140",
+      "checkpoint_sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+      "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBEsol/checkpoint.pt"
+    },
+    "r2SCAN": {
+      "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+      "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a",
+      "article_run": "TiAl_tune_scan_Neo_DPA4_shard_20260919_153828",
+      "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/checkpoint.pt"
+    }
+  },
+  "frozen_test_directory": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\results\\n23-1a6fdc00d4d0b30a",
+  "source_hashes": {
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\results\\n23-1a6fdc00d4d0b30a\\metrics.json": "7c1138909de0592178042804320fec06f5a830f3e2f70e2b1bc7d95ee746b0cb",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\results\\n23-1a6fdc00d4d0b30a\\parity.pdf": "d0d58f643c65629df803ff8ddc28a113a093671550ca6d03d95579e9e5d12334",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\runs\\pbe15k-switch-20261026-01\\comparison-5k-vs15k.json": "600febba9cd9661d6e82a550b91eb749e0bcb159430b56fcfd23ee9c02f6c11e",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_phonons_15k_equilibrium\\15000\\results.npz": "15762025445fe60c9972a6a8a6112e147af8d4a0cb81d770276473f5a0eed361",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_phonons_15k_equilibrium\\15000\\summary.json": "cfe93ffec20a83a594d9f9ffc2ff6cdf1749a148b7f983af629a5fa0c9d73b49",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\analysis\\dos_curves.npz": "1431e3c8c164c390a2fd6141f7ef36ba515ad3ff4f558ee0177aafd355c8be14",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\all_xc_audit\\analysis\\phonons.json": "82fc451ca4f7739df7317497a0a71936aaf26391bdf5d1f86be74ab72bea675a",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\results\\numerical_summary.json": "f77472d35a9e93c820454d471a94a081f1377b6ef816dade35a2179a537ec23b",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\MD-results\\phonons_DPA4-neo\\finetune\\alpha_Ti\\pbe\\phonon_bands_data_alpha_Ti_dpa4-neo-finetune_pbe.csv": "a5e52223850078582f71e61c4524de37eea63d64d3a918bc67343af3b95315c9",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\phonons\\dpa4\\neo\\finetune\\alpha_Ti\\sol\\phonon_bands.dat": "3d5349cceb47f19682f1052026f5649dba5f8510e7b18c0ae0611a336280d96b",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\phonons\\dpa4\\neo\\finetune\\alpha_Ti\\sol\\phonon_dos.dat": "7cf837a387dfb9a94e10b6810f2ff260e875d9ffd656887caa65040bea69b882",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\phonons\\dpa4\\neo\\finetune\\alpha_Ti\\scan\\phonon_bands.dat": "2acc2cb6d450da60560102a06f91d51f182c3d3a9d81e55dd759cab65ae80481",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\phonons\\dpa4\\neo\\finetune\\alpha_Ti\\scan\\phonon_dos.dat": "69202c17c4239bde1872ca80c63d4db91f178c198954eea2ede97252a3861da0",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_phonons_dft_geometry\\DFT-total_dos.dat": "5e4438aae477df4d656ed7ffd808675642b9d9cceff4a79fd8c0b228e70088da",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\supporting_data\\lcurve_pbe.out": "da2d1608b9cdc6eb62f1ee0b5b7ad23769f76a98d90dd7c2229154da6660120e",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_phonons_five_checkpoints\\checkpoint_tradeoff.png": "1adac08258e3874adc6bf06209a79fb9e5fd4a016763449f929c9603f008cac4",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_phonons_five_checkpoints\\analysis.json": "33087f80283d4c2dd2b34176e2667603d61cfaf641f602bbfffead02919a2ae6",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_full_enthalpy_gpu\\analysis\\statistics.json": "06f5f807aba8ae6ee147780dda2d379af8b413d11edf0eb4bd5b756906e3229f",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct20\\thermo_reprocessed.json": "3f85e6237b3afea7b26df14e56dc5f0fd3b25f13086ce067c4c1ddab4aaa9c52",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct20\\reference_values.json": "a725e49008493f182747e4f283f2b21c50c740a9f2beca48edca46ea489d5a97",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_full_enthalpy_gpu\\analysis\\density_enthalpy_5k_15k_20k.pdf": "d32ec7864203eaa4c7cf769c051a72f69dbbff7ceaadfe6fe706a67459af490a",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_full_enthalpy_gpu\\analysis\\equilibration_window_sensitivity.pdf": "2edcbc3d3a077b578f08cc39a8fda9138dbfb55e54db41e353f2af92a1cca6c0",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_full_enthalpy_gpu\\analysis\\checkpoint_differences_95CI.pdf": "af4c192a04357e7167a5b024e230d02f2038024c7ecd58581290baa81909f853"
+  }
+}

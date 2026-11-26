@@ -1,0 +1,23 @@
+{
+  "offset_eV_atom": {
+    "Al": -0.0013152241802586548,
+    "Ti": 0.0005893083995321611
+  },
+  "alignment": "Equal-structure least squares in E/atom, train200 only",
+  "metrics": {
+    "train": {
+      "structures": 200,
+      "E_raw_RMSE_meV_atom": 1.411622844017403,
+      "E_aligned_RMSE_meV_atom": 1.2666572471994175,
+      "F_RMSE_eV_A": 0.07432583343549566,
+      "stress_RMSE_GPa": 0.08487766725654629
+    },
+    "validation": {
+      "structures": 149,
+      "E_raw_RMSE_meV_atom": 1.402383399742997,
+      "E_aligned_RMSE_meV_atom": 1.2947532584114263,
+      "F_RMSE_eV_A": 0.07817254392821155,
+      "stress_RMSE_GPa": 0.07711019720604821
+    }
+  }
+}

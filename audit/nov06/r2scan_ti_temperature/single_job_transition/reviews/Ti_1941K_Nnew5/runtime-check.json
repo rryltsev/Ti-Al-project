@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "source": "Fresh cluster.py collect: per-replica raw SHA, 40001 samples, temperature, protocol/native/GPU SHA; preflight A100",
+  "checked_unix": 1793959594.2000015,
+  "collected_runtime": "PASS",
+  "batch_protocol_sha256": "63786d8ccd671a68954ead5caa85fc1ba1950fab6de190d6c98b0b051074d394",
+  "sources": [
+    {
+      "replica": 1,
+      "stress_file": "states/Ti_1941K/replicas/replica_0001/attempt_001/production/stress.npz",
+      "sha256": "011e8f6af92e1d05a033f18137d83041753db4a2e9a53513a9a079aa491914c2"
+    },
+    {
+      "replica": 2,
+      "stress_file": "states/Ti_1941K/replicas/replica_0002/attempt_001/production/stress.npz",
+      "sha256": "75601932c8685b1f5396f2743d790db470298682147dcad299e7b88cb96aeea6"
+    },
+    {
+      "replica": 3,
+      "stress_file": "states/Ti_1941K/replicas/replica_0003/attempt_001/production/stress.npz",
+      "sha256": "ec493262f62c8dc8424b84c1d0bde4e5578cf7431e0895887ecb7dfdc961b036"
+    },
+    {
+      "replica": 4,
+      "stress_file": "states/Ti_1941K/replicas/replica_0004/attempt_001/production/stress.npz",
+      "sha256": "851c1bf76166c0221522e2708b07b471cf7bc15e0549624786e2931100945f0f"
+    },
+    {
+      "replica": 5,
+      "stress_file": "states/Ti_1941K/replicas/replica_0005/attempt_001/production/stress.npz",
+      "sha256": "6a0e8f8b9119d794d4889eea0cb4caa42de9702084951d414036cb05e62825e8"
+    }
+  ],
+  "same_new_batch40_full40": true
+}

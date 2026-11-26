@@ -1,0 +1,360 @@
+{
+  "scheduler": "2026-10-31T21:04:01+05:00\n20968907|COMPLETED|2026-10-31T09:46:40|2026-10-31T20:55:40|11:09:00|0:0|apollo[26-27]\n20968910|COMPLETED|2026-10-31T12:26:02|2026-10-31T20:44:37|08:18:35|0:0|apollo[15-16]\n",
+  "detail": {
+    "PBEsol": {
+      "path": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/production-04/force-000",
+      "status": {
+        "xc": "PBEsol",
+        "step": "force-000",
+        "job_id": "20968907",
+        "state": "validated",
+        "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol/recovery-01/force-000",
+        "resources": {
+          "nodes": 2,
+          "ranks": 64,
+          "ranks_per_node": 32,
+          "memory_GiB_per_node": 240,
+          "KPAR": 8,
+          "NCORE": 4,
+          "NBANDS": 576
+        },
+        "cumulative_budget": null,
+        "wall_seconds": 40137.629997201264,
+        "quality": {
+          "energy_eV": -797.63150699,
+          "free_energy_eV": -797.86171042,
+          "max_force_eV_A": 2.973785466371103e-06,
+          "stress_kbar_ASE_tension_positive": [
+            [
+              0.15964361,
+              5.103e-05,
+              -4.9e-07
+            ],
+            [
+              5.103e-05,
+              0.15970375,
+              3.6e-07
+            ],
+            [
+              -4.9e-07,
+              3.6e-07,
+              0.20490801000000003
+            ]
+          ],
+          "max_stress_kbar": 0.20490801000000003,
+          "force_drift_eV_A": [
+            -2.0833333333333243e-10,
+            4.166666666666307e-10,
+            4.411629933616147e-24
+          ],
+          "ionic_steps": 1,
+          "scf_steps": [
+            28
+          ],
+          "volume_A3": 1603.6734178611127,
+          "outputs": {
+            "OUTCAR": "801e591503509e97022ae94d62b42a0e1d9f0c92c43ad0628a878eaa3e50bddc",
+            "vasprun.xml": "0012b105a3c94967c7b93a7853c22224a9f77e8325adac30e9b83ab00632f91c",
+            "CONTCAR": "c9d66dc1d8869d1d8b6cd054254959bddd6a7651f91ed0ed68642d475d6115ed"
+          }
+        }
+      },
+      "scf_lines": [
+        "DAV:   1     0.142635354689E+05    0.14264E+05   -0.47266E+05129936   0.194E+03",
+        "DAV:   2     0.282813904980E+03   -0.13981E+05   -0.13762E+05129024   0.669E+02",
+        "DAV:   3    -0.823147227127E+03   -0.11060E+04   -0.10383E+04183592   0.176E+02",
+        "DAV:   4    -0.911430634259E+03   -0.88283E+02   -0.85698E+02174608   0.443E+01",
+        "DAV:   5    -0.914271094805E+03   -0.28405E+01   -0.27599E+01168536   0.706E+00    0.124E+02",
+        "DAV:   6    -0.804765657040E+03    0.10951E+03   -0.32290E+02138240   0.379E+01    0.248E+01",
+        "DAV:   7    -0.798473378935E+03    0.62923E+01   -0.43779E+01168056   0.118E+01    0.658E+00",
+        "DAV:   8    -0.797978413329E+03    0.49497E+00   -0.27776E+00162040   0.334E+00    0.313E+00",
+        "DAV:   9    -0.798062805864E+03   -0.84393E-01   -0.10424E+00180696   0.324E+00    0.324E+00",
+        "DAV:  10    -0.797864365308E+03    0.19844E+00   -0.48798E-01182536   0.264E+00    0.605E-01",
+        "DAV:  11    -0.797863526699E+03    0.83861E-03   -0.66888E-02176496   0.650E-01    0.299E-01",
+        "DAV:  12    -0.797862944695E+03    0.58200E-03   -0.77546E-03172400   0.234E-01    0.277E-01",
+        "DAV:  13    -0.797862302645E+03    0.64205E-03   -0.27784E-03172976   0.164E-01    0.196E-01",
+        "DAV:  14    -0.797861910479E+03    0.39217E-03   -0.12002E-03164336   0.861E-02    0.817E-02",
+        "DAV:  15    -0.797861842791E+03    0.67688E-04   -0.30819E-04175976   0.587E-02    0.540E-02",
+        "DAV:  16    -0.797861803483E+03    0.39308E-04   -0.19535E-04181568   0.508E-02    0.485E-02",
+        "DAV:  17    -0.797861723330E+03    0.80153E-04   -0.15393E-04177920   0.410E-02    0.942E-03",
+        "DAV:  18    -0.797861718357E+03    0.49729E-05   -0.22732E-05174704   0.121E-02    0.883E-03",
+        "DAV:  19    -0.797861712570E+03    0.57875E-05   -0.46134E-06169288   0.658E-03    0.283E-03",
+        "DAV:  20    -0.797861711279E+03    0.12908E-05   -0.49250E-07173888   0.208E-03    0.205E-03",
+        "DAV:  21    -0.797861710885E+03    0.39424E-06   -0.26202E-07173952   0.166E-03    0.136E-03",
+        "DAV:  22    -0.797861710243E+03    0.64143E-06   -0.13180E-07138568   0.983E-04    0.672E-04",
+        "DAV:  23    -0.797861710260E+03   -0.17084E-07   -0.40744E-08123344   0.667E-04    0.335E-04",
+        "DAV:  24    -0.797861710353E+03   -0.93118E-07   -0.30490E-09 83656   0.277E-04    0.170E-04",
+        "DAV:  25    -0.797861710367E+03   -0.13926E-07   -0.17853E-10 81648   0.145E-04    0.112E-04",
+        "DAV:  26    -0.797861710395E+03   -0.28042E-07    0.45618E-11 80552   0.954E-05    0.804E-05",
+        "DAV:  27    -0.797861710413E+03   -0.17855E-07    0.13159E-09 79800   0.619E-05    0.488E-05",
+        "DAV:  28    -0.797861710422E+03   -0.87166E-08    0.19781E-09 79080   0.416E-05"
+      ],
+      "loop_seconds": [
+        940.8442,
+        1229.5755,
+        1168.0526,
+        1964.3289,
+        1272.1912,
+        969.378,
+        1321.1438,
+        1066.5661,
+        1219.431,
+        1251.4955,
+        1208.4896,
+        1587.6339,
+        1518.5569,
+        1335.5276,
+        1284.5447,
+        1341.3589,
+        1827.6979,
+        1241.8812,
+        1543.4759,
+        1776.4467,
+        1249.9607,
+        3198.6116,
+        1909.1163,
+        1419.4552,
+        712.4999,
+        831.5874,
+        739.6306,
+        632.4618
+      ],
+      "guard": {
+        "job_id": "20968907",
+        "checked_epoch": 1793461912.3377213,
+        "deadline_epoch": 1793494000.0,
+        "reserve_seconds": 21600,
+        "state": "armed",
+        "guard_revision": "PBEsol-measured-v4",
+        "minimum_reserve_seconds": 21600
+      },
+      "seconds_until_softstop": 9755.716820955276,
+      "ediff_reached": true,
+      "normal_termination": true,
+      "stopcar_exists": false,
+      "checkpoint_request": null,
+      "stdout_tail": [
+        "DAV:  22    -0.797861710243E+03    0.64143E-06   -0.13180E-07138568   0.983E-04    0.672E-04",
+        "DAV:  23    -0.797861710260E+03   -0.17084E-07   -0.40744E-08123344   0.667E-04    0.335E-04",
+        "DAV:  24    -0.797861710353E+03   -0.93118E-07   -0.30490E-09 83656   0.277E-04    0.170E-04",
+        "DAV:  25    -0.797861710367E+03   -0.13926E-07   -0.17853E-10 81648   0.145E-04    0.112E-04",
+        "DAV:  26    -0.797861710395E+03   -0.28042E-07    0.45618E-11 80552   0.954E-05    0.804E-05",
+        "DAV:  27    -0.797861710413E+03   -0.17855E-07    0.13159E-09 79800   0.619E-05    0.488E-05",
+        "DAV:  28    -0.797861710422E+03   -0.87166E-08    0.19781E-09 79080   0.416E-05",
+        "   1 F= -.79786171E+03 E0= -.79763151E+03  d E =-.460407E+00"
+      ],
+      "outcar_tail": [
+        "                         Elapsed time (sec):    40133.308",
+        "  ",
+        "                   Maximum memory used (kb):     6981860.",
+        "                   Average memory used (kb):          N/A",
+        "  ",
+        "                          Minor page faults:     27018409",
+        "                          Major page faults:           50",
+        "                 Voluntary context switches:         8266"
+      ],
+      "fatal_indicators": [],
+      "files": {
+        "OUTCAR": {
+          "bytes": 2369472,
+          "mtime_epoch": 1793462138.5620725
+        },
+        "vasp.stdout": {
+          "bytes": 4842,
+          "mtime_epoch": 1793462125.1124074
+        },
+        "CHGCAR": {
+          "bytes": 127578746,
+          "mtime_epoch": 1793462134.9061635
+        },
+        "WAVECAR": {
+          "bytes": 0,
+          "mtime_epoch": 1793422006.5512173
+        },
+        "forces.npy": {
+          "bytes": 2432,
+          "mtime_epoch": 1793462139.5530477
+        },
+        "validation.json": {
+          "bytes": 858,
+          "mtime_epoch": 1793462139.549048
+        },
+        "output-manifest.json": {
+          "bytes": 2182,
+          "mtime_epoch": 1793462140.188032
+        }
+      }
+    },
+    "r2SCAN": {
+      "path": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-04",
+      "status": {
+        "xc": "r2SCAN",
+        "step": "force-001",
+        "job_id": "20968910",
+        "parent_job": "20964090",
+        "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-03",
+        "resources": {
+          "ranks": 64,
+          "nodes": 2,
+          "ranks_per_node": 32,
+          "KPAR": 8,
+          "NCORE": 4,
+          "NBANDS": 576,
+          "memory_GiB_per_node": 240
+        },
+        "state": "validated",
+        "parent_scheduler": "20964090|COMPLETED\n",
+        "checkpoint_electrons": 960.0000918596094,
+        "source_wavecar": {
+          "bytes": 25201037952,
+          "record_bytes": 389952,
+          "spins": 1,
+          "precision_tag": 45200,
+          "nkpts": 112,
+          "nbands": 576,
+          "encut_eV": 550.0,
+          "min_plane_waves": 48605,
+          "max_plane_waves": 48743,
+          "record_extent_complete": true,
+          "band_headers_finite": true,
+          "sampled_coefficients_finite": true,
+          "full_coefficient_scan": false
+        },
+        "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 70067184  104857600 104857600          355618       0       0        \n",
+        "required_additional_bytes": 30260863996,
+        "scheduler_allocation": "JobId=20968910 JobName=ti7-r2SCAN-f001 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=885 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:04:03 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-29T23:17:32 EligibleTime=2026-10-29T23:17:32 AccrueTime=2026-10-29T23:17:32 StartTime=2026-10-31T12:26:02 EndTime=2026-11-01T08:26:02 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-31T12:26:02 Scheduler=Backfill Partition=apollo AllocNode:Sid=umt:1487694 ReqNodeList=(null) ExcNodeList=apollo22,tesla-a101 NodeList=apollo[15-16] BatchHost=apollo15 NumNodes=2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=cpu=64,mem=480G,node=2,billing=11264 Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v11.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-wave-next-20261029-20968910.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-wave-next-20261029-20968910.out Power= \n",
+        "quality": {
+          "energy_eV": -1240.43988937,
+          "free_energy_eV": -1240.63757108,
+          "max_force_eV_A": 0.0709074080782932,
+          "stress_kbar_ASE_tension_positive": [
+            [
+              0.28517245,
+              0.02405683,
+              -0.00045965000000000003
+            ],
+            [
+              0.02405683,
+              0.29061297,
+              2.8570000000000003e-05
+            ],
+            [
+              -0.00045965000000000003,
+              2.8570000000000003e-05,
+              0.20463932
+            ]
+          ],
+          "max_stress_kbar": 0.29061297,
+          "force_drift_eV_A": [
+            5.208333334386604e-10,
+            1.0416666670218812e-10,
+            -3.1249999996200403e-10
+          ],
+          "ionic_steps": 1,
+          "scf_steps": [
+            10
+          ],
+          "volume_A3": 1661.330009465202,
+          "outputs": {
+            "OUTCAR": "534e7754be036d1c1a2ca803d2f9078d5ff6963bfc0fd6bb7370170909c6e607",
+            "vasprun.xml": "01f62d583c8e01ceb63b7bf41cb5db8ce67b6b70f3fe74a2c13d117299671467",
+            "CONTCAR": "330031b3fbfc94fb772cca5174a1413c777f772c8eba4cd6e281b2f1c8d83c16"
+          }
+        }
+      },
+      "scf_lines": [
+        "DAV:   1    -0.124063757859E+04   -0.12406E+04   -0.31364E-05174280   0.174E-02    0.155E-02",
+        "DAV:   2    -0.124063759348E+04   -0.14893E-04   -0.18085E-04181464   0.410E-02    0.368E-02",
+        "DAV:   3    -0.124063757060E+04    0.22877E-04   -0.10940E-04176264   0.315E-02    0.453E-03",
+        "DAV:   4    -0.124063757203E+04   -0.14305E-05   -0.11897E-05173120   0.906E-03    0.741E-03",
+        "DAV:   5    -0.124063757128E+04    0.75149E-06   -0.48190E-06182288   0.816E-03    0.331E-03",
+        "DAV:   6    -0.124063757114E+04    0.13706E-06   -0.10392E-06182168   0.369E-03    0.192E-03",
+        "DAV:   7    -0.124063757112E+04    0.26979E-07   -0.16989E-07172368   0.126E-03    0.125E-03",
+        "DAV:   8    -0.124063757111E+04    0.87020E-08   -0.10708E-07142440   0.105E-03    0.105E-03",
+        "DAV:   9    -0.124063757108E+04    0.26077E-07   -0.87430E-08139520   0.925E-04    0.291E-04",
+        "DAV:  10    -0.124063757108E+04   -0.11496E-08   -0.13536E-08 94024   0.521E-04"
+      ],
+      "loop_seconds": [
+        2296.5639,
+        2557.458,
+        2395.761,
+        2396.1584,
+        2983.036,
+        2418.3108,
+        2448.283,
+        2203.3803,
+        2235.1775,
+        1613.3071
+      ],
+      "guard": {
+        "job_id": "20968910",
+        "checked_epoch": 1793461215.6984844,
+        "deadline_epoch": 1793503562.0,
+        "reserve_seconds": 28800,
+        "state": "armed"
+      },
+      "seconds_until_softstop": 12117.673706769943,
+      "ediff_reached": true,
+      "normal_termination": true,
+      "stopcar_exists": false,
+      "checkpoint_request": null,
+      "stdout_tail": [
+        "DAV:   5    -0.124063757128E+04    0.75149E-06   -0.48190E-06182288   0.816E-03    0.331E-03",
+        "DAV:   6    -0.124063757114E+04    0.13706E-06   -0.10392E-06182168   0.369E-03    0.192E-03",
+        "DAV:   7    -0.124063757112E+04    0.26979E-07   -0.16989E-07172368   0.126E-03    0.125E-03",
+        "DAV:   8    -0.124063757111E+04    0.87020E-08   -0.10708E-07142440   0.105E-03    0.105E-03",
+        "DAV:   9    -0.124063757108E+04    0.26077E-07   -0.87430E-08139520   0.925E-04    0.291E-04",
+        "DAV:  10    -0.124063757108E+04   -0.11496E-08   -0.13536E-08 94024   0.521E-04",
+        "   1 F= -.12406376E+04 E0= -.12404399E+04  d E =-.395363E+00",
+        " writing wavefunctions"
+      ],
+      "outcar_tail": [
+        "                         Elapsed time (sec):    29558.568",
+        "  ",
+        "                   Maximum memory used (kb):     7182988.",
+        "                   Average memory used (kb):          N/A",
+        "  ",
+        "                          Minor page faults:     28956627",
+        "                          Major page faults:           96",
+        "                 Voluntary context switches:         4613"
+      ],
+      "fatal_indicators": [],
+      "files": {
+        "OUTCAR": {
+          "bytes": 2336037,
+          "mtime_epoch": 1793461365.574329
+        },
+        "vasp.stdout": {
+          "bytes": 3482,
+          "mtime_epoch": 1793461058.164986
+        },
+        "CHGCAR": {
+          "bytes": 127578746,
+          "mtime_epoch": 1793461354.5896027
+        },
+        "TAUCAR": {
+          "bytes": 127374170,
+          "mtime_epoch": 1793461362.5814035
+        },
+        "WAVECAR": {
+          "bytes": 25201037952,
+          "mtime_epoch": 1793461321.9324162
+        },
+        "forces.npy": {
+          "bytes": 2432,
+          "mtime_epoch": 1793461477.2725463
+        },
+        "validation.json": {
+          "bytes": 901,
+          "mtime_epoch": 1793461477.2695465
+        },
+        "output-manifest.json": {
+          "bytes": 490,
+          "mtime_epoch": 1793461476.363569
+        }
+      }
+    }
+  },
+  "memory_cpu": "JobID|MaxRSS|AveCPU\n",
+  "quota": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 95440328  104857600 104857600          355862       0       0        \n"
+}

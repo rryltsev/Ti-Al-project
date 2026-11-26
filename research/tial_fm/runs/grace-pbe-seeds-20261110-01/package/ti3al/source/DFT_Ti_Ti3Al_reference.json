@@ -1,0 +1,1128 @@
+{
+  "schema_version": "1.0",
+  "title": "DFT phonon references: hcp Ti and Ti3Al from the IMM D019 directory",
+  "created_at": "2026-10-12T16:06:58+05:00",
+  "scope": "DFT reference curves only; external MLIP curves, models and training information are excluded.",
+  "provenance_basis": "Read-only inspection of primary IMM VASP XML/OUTCAR, FORCE_SETS, Phonopy YAML, DOS files and the recorded Ti DOS-generation script on 2026-10-12.",
+  "units": {
+    "energy": "eV",
+    "force": "eV/angstrom",
+    "length": "angstrom",
+    "frequency": "THz",
+    "mass": "atomic mass unit",
+    "DOS": "modes per THz per primitive cell"
+  },
+  "calculation_method": {
+    "electronic_structure": "VASP PAW, PBE, non-spin-polarized",
+    "functional_evidence": "PAW_PBE atomtype labels; GGA=-- and LMETAGGA=F in actual XML; no explicit METAGGA value in the extracted selected parameters.",
+    "phonons": "Harmonic finite-displacement force constants from static DFT forces, processed with Phonopy.",
+    "not": [
+      "MD velocity-autocorrelation DOS",
+      "temperature-renormalized anharmonic phonons",
+      "electronic DOS"
+    ],
+    "pre_relaxation_protocol": null,
+    "pre_relaxation_protocol_status": "Not recovered; do not infer structural relaxation convergence from convergence of displaced static force calculations."
+  },
+  "systems": [
+    {
+      "id": "Ti_hcp",
+      "composition": {
+        "Ti": 2
+      },
+      "Al_atomic_fraction": 0.0,
+      "structure_label": "hcp Ti",
+      "detected_space_group": {
+        "type": "P6_3/mmc",
+        "number": 194,
+        "Hall_symbol": "-P 6c 2c"
+      },
+      "primitive_cell": {
+        "lattice": [
+          [
+            2.95,
+            0.0,
+            0.0
+          ],
+          [
+            -1.475,
+            2.5547749412,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.68
+          ]
+        ],
+        "points": [
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.3333333333,
+              0.6666666667,
+              0.25
+            ],
+            "mass": 47.867
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.6666666667,
+              0.3333333333,
+              0.75
+            ],
+            "mass": 47.867
+          }
+        ],
+        "reciprocal_lattice": [
+          [
+            0.338983050847458,
+            0.19571195565475,
+            0.0
+          ],
+          [
+            0.0,
+            0.391423911309499,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.213675213675214
+          ]
+        ]
+      },
+      "unit_cell": {
+        "lattice": [
+          [
+            2.95,
+            0.0,
+            0.0
+          ],
+          [
+            -1.475,
+            2.5547749412,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.68
+          ]
+        ],
+        "points": [
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.3333333333,
+              0.6666666667,
+              0.25
+            ],
+            "mass": 47.867,
+            "reduced_to": 1
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.6666666667,
+              0.3333333333,
+              0.75
+            ],
+            "mass": 47.867,
+            "reduced_to": 2
+          }
+        ]
+      },
+      "unit_cell_volume_A3": 35.2712228382072,
+      "supercell_matrix": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "force_supercell_atoms": 96,
+      "source_directories": {
+        "phonopy_result": "/home/u3173/_scratch/TiAl/phonopy/Tipure/02_phonopy_disp",
+        "force_runs": [
+          "/home/u3173/_scratch/TiAl/phonopy/Tipure/03_phonopy_force_calcs/disp-001"
+        ]
+      },
+      "vasp": {
+        "generator": {
+          "program": "vasp",
+          "version": "6.3.2",
+          "subversion": "27Jun22 (build Dec 18 2022 17:18:44) complex                          parallel",
+          "platform": "LinuxIFC",
+          "date": "2026 05 08",
+          "time": "15:04:00"
+        },
+        "PAW_atomtypes": [
+          {
+            "count": 96,
+            "element": "Ti",
+            "VASP_mass_amu": 47.88,
+            "valence_electrons": 10.0,
+            "TITEL": "PAW_PBE Ti_pv 07Sep2000"
+          }
+        ],
+        "runtime_parameters": {
+          "PREC": "accura",
+          "EDIFF": 1e-08,
+          "NBANDS": 576,
+          "NELECT": 960.0,
+          "ISMEAR": 1,
+          "SIGMA": 0.2,
+          "LREAL": false,
+          "ISPIN": 1,
+          "LASPH": true,
+          "LMETAGGA": false,
+          "NELM": 120,
+          "ADDGRID": true,
+          "NSW": 0,
+          "IBRION": -1,
+          "ISIF": 2,
+          "POTIM": 0.5,
+          "ISYM": 2,
+          "GGA": "--",
+          "ENCUT": 500.0
+        },
+        "actual_XML_INCAR": {
+          "PREC": "Accurate",
+          "ADDGRID": true,
+          "NELM": 120,
+          "IBRION": -1,
+          "EDIFF": 1e-08,
+          "NSW": 0,
+          "ISIF": 2,
+          "ENCUT": 500.0,
+          "LREAL": false,
+          "ISMEAR": 1,
+          "SIGMA": 0.2,
+          "LASPH": true
+        },
+        "kpoint_generation": {
+          "grid": [
+            4,
+            4,
+            4
+          ],
+          "centering": "Gamma"
+        },
+        "force_INCAR_text": "SYSTEM = hcp Ti phonopy force disp-001\n\nENCUT  = 500\nPREC   = Accurate\nEDIFF  = 1E-8\n\nISMEAR = 1\nSIGMA  = 0.2\n\nIBRION = -1\nNSW    = 0\nISIF   = 2\n\nLREAL  = .FALSE.\nADDGRID = .TRUE.\nLASPH  = .TRUE.\n\nNELM   = 120\n\nLWAVE  = .FALSE.\nLCHARG = .FALSE.\n\n# Parallelization\nNCORE = 4\n",
+        "force_KPOINTS_text": "Automatic mesh\n0\nGamma\n4 4 4\n0 0 0\n",
+        "OUTCAR_selected_evidence": [
+          " vasp.6.3.2 27Jun22 (build Dec 18 2022 17:18:44) complex                        ",
+          "   TITEL  = PAW_PBE Ti_pv 07Sep2000                                                                 ",
+          "   POMASS =   47.880; ZVAL   =   10.000    mass and valenz                                          ",
+          "   ENMAX  =  222.338; ENMIN  =  166.753 eV                                                          ",
+          "   k-points           NKPTS =     36   k-points in BZ     NKDIM =     36   number of bands    NBANDS=    576",
+          "   number of dos      NEDOS =    301   number of ions     NIONS =     96",
+          "   LCOMPAT=      F    compatible to vasp.4.4",
+          "   GGA_COMPAT  = T    GGA compatible to vasp.4.4-vasp.4.6",
+          "   ZVAL   =  10.00",
+          "------------------------ aborting loop because EDIFF is reached ----------------------------------------",
+          " General timing and accounting informations for this job:"
+        ]
+      },
+      "phonopy": {
+        "version": "2.40.0",
+        "symmetry_tolerance": 1e-05,
+        "frequency_unit_conversion_factor": 15.633302,
+        "configuration_of_actual_result": {
+          "atom_name": "Ti",
+          "dim": "4 4 3",
+          "mesh": "40 40 30",
+          "tprop": ".TRUE.",
+          "tmin": "0",
+          "tmax": "2000",
+          "tstep": "20",
+          "cell_filename": "POSCAR",
+          "dos": ".true."
+        },
+        "independent_displacements": [
+          {
+            "atom_1based": 1,
+            "vector_A": [
+              0.0064339666061343,
+              0,
+              0.0076553297584852
+            ],
+            "amplitude_A": 0.01000000000000002
+          }
+        ],
+        "number_of_displacements": 1,
+        "q_mesh": [
+          40,
+          40,
+          30
+        ],
+        "irreducible_qpoints_in_mesh_file": 6300,
+        "minimum_sampled_frequency_THz": 0.1986658598,
+        "maximum_sampled_frequency_THz": 8.1758741425,
+        "frequency_extrema_scope": "Saved q-mesh only, not a certified full-Brillouin-zone extremum or phonon-stability proof."
+      },
+      "force_provenance_validation": [
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Tipure/03_phonopy_force_calcs/disp-001",
+          "xml_sha256": "7905fe2a35027d05059875cfb65366f8043296312ce6a6e9b77d1c1a7e7bbdf6",
+          "force_sets_matching_entry_1based": 1,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.20000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "500.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Gamma\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.00000000       0.00000000       0.00000000 </v>\n  </generation>\n  ",
+          "scf_steps": 27,
+          "last_delta_e0_eV": 1.0000007932831068e-08,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        }
+      ],
+      "all_force_runs_match_FORCE_SETS": true,
+      "all_force_runs_reached_EDIFF_and_have_timing_footer": true,
+      "source_file_manifest": {
+        "phonopy.yaml": {
+          "bytes": 15467,
+          "sha256": "605424c6a803939d15e97d7fcf4f14ddad4c62e2ae7da40561e432f5e36f3b38"
+        },
+        "phonopy_disp.yaml": {
+          "bytes": 15469,
+          "sha256": "844620636405c2c451061adc038364d3caf4b9f8e57fb84297b3c31ec8ddfcde"
+        },
+        "FORCE_SETS": {
+          "bytes": 4690,
+          "sha256": "bf3b8fa59978eb053b909fa331d8030464e588d3d38aadf19c0b32dde500a58a"
+        },
+        "mesh.conf": {
+          "bytes": 90,
+          "sha256": "b58083bbb7b6cd61a2f40ed4609533a2f58648d6dc94166274ceba0ec3fff461"
+        },
+        "dos.conf": {
+          "bytes": 90,
+          "sha256": "b58083bbb7b6cd61a2f40ed4609533a2f58648d6dc94166274ceba0ec3fff461"
+        },
+        "band.conf": {
+          "bytes": 182,
+          "sha256": "d535a2db0909d01b3667a85424c1dbe56e7e98a87ca23d6cda21276369f2aef2"
+        },
+        "POSCAR": {
+          "bytes": 229,
+          "sha256": "bb123213ff83623624614ed5cc62020e8db2666b8fc118f3e1df7751f8eddcfe"
+        },
+        "SPOSCAR": {
+          "bytes": 6103,
+          "sha256": "cffb906993c266932fd68af684a11766eeb21652c0b66fbbe01dc38f7fdd11f5"
+        },
+        "total_dos.dat": {
+          "bytes": 55334,
+          "sha256": "5e4438aae477df4d656ed7ffd808675642b9d9cceff4a79fd8c0b228e70088da"
+        },
+        "make_total_dos_from_mesh.py": {
+          "bytes": 2115,
+          "sha256": "2912512024fd6d66fec702b35ce8cecf0ca167afc180574d2f422e95073b6c95"
+        },
+        "force_INCAR": {
+          "bytes": 274,
+          "sha256": "e2ca1ab6fde579794984fb563410f1e2b2c759ba70cfc3184968b83a64515c6c"
+        },
+        "force_KPOINTS": {
+          "bytes": 35,
+          "sha256": "54ae1e1e1e0722bd898e7a9654935f266e872a0b19a01695c6196b084ddb5807"
+        },
+        "force_POSCAR": {
+          "bytes": 6103,
+          "sha256": "117937beee545c908b59214787f1c1b607e4903c7e8f3e2b6dc5ebe99f36f61f"
+        }
+      },
+      "DOS_files": [
+        {
+          "filename": "total_dos.dat",
+          "package_path": "Ti_hcp/total_dos.dat",
+          "source_path": "/home/u3173/_scratch/TiAl/phonopy/Tipure/02_phonopy_disp/total_dos.dat",
+          "sha256": "5e4438aae477df4d656ed7ffd808675642b9d9cceff4a79fd8c0b228e70088da",
+          "bytes": 55334,
+          "frequency_unit": "THz",
+          "DOS_unit": "modes per THz per primitive cell",
+          "columns": [
+            "frequency_THz",
+            "total_DOS"
+          ],
+          "number_of_rows": 1101,
+          "raw_data_in_package": true,
+          "trapezoid_integral_of_tabulated_total": 5.999999999999988,
+          "total_DOS_peak_frequency_THz": 6.840000000000007,
+          "comparison_plot_normalization": "Divide total DOS by its own maximum for the supplied JPEG comparison; this is not unit-area normalization.",
+          "per_atom_normalization": "Divide all DOS contributions by primitive atom count (2 for Ti, 8 for Ti3Al). Expected total integral is 3 modes per atom."
+        }
+      ],
+      "limitations": [
+        "The older Desktop phontest/ti dataset with erroneous Al mass is a different reference and is NOT the source used here; this IMM source uses Ti mass 47.867 amu."
+      ],
+      "DOS_processing": {
+        "method": "Weighted Gaussian sum over modes and irreducible q-point weights in mesh.yaml",
+        "gaussian_sigma_THz": 0.05,
+        "frequency_step_THz": 0.01,
+        "frequency_range_THz": [
+          -1.0,
+          10.0
+        ],
+        "weight_normalization": "Each q-point weight divided by sum of q-point weights; all six branches included.",
+        "expected_integral_modes_per_primitive_cell": 6,
+        "source_script_text": "import numpy as np\nimport yaml\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\n\nmesh_file = \"mesh.yaml\"\nout_dat = \"total_dos.dat\"\nout_pdf = \"total_dos_IMM_from_mesh.pdf\"\nout_png = \"total_dos_IMM_from_mesh.png\"\n\nfmin = -1.0\nfmax = 10.0\ndf = 0.01\nsigma = 0.05  # THz\n\nwith open(mesh_file, \"r\") as f:\n    data = yaml.safe_load(f)\n\nfreqs = []\nweights = []\n\nfor q in data[\"phonon\"]:\n    w = float(q.get(\"weight\", 1.0))\n    for band in q[\"band\"]:\n        freqs.append(float(band[\"frequency\"]))\n        weights.append(w)\n\nfreqs = np.array(freqs)\nweights = np.array(weights)\n\n# total q-point weight, not mode weight\nq_weight_total = sum(float(q.get(\"weight\", 1.0)) for q in data[\"phonon\"])\n\ngrid = np.arange(fmin, fmax + 0.5 * df, df)\ndos = np.zeros_like(grid)\n\nnorm = 1.0 / (sigma * np.sqrt(2.0 * np.pi))\n\nfor f, w in zip(freqs, weights):\n    dos += (w / q_weight_total) * norm * np.exp(-0.5 * ((grid - f) / sigma) ** 2)\n\narea = np.trapz(dos, grid)\npeak_freq = grid[np.argmax(dos)]\n\nnonzero = np.where(dos > np.max(dos) * 1e-4)[0]\nfmax_nonzero = grid[nonzero[-1]] if len(nonzero) else grid.max()\n\nnp.savetxt(\n    out_dat,\n    np.column_stack([grid, dos]),\n    header=(\n        \"Frequency(THz) Total_DOS\\n\"\n        f\"Generated from {mesh_file}; sigma={sigma} THz; integral={area:.8f}\"\n    )\n)\n\ndos_norm = dos / area if area > 0 else dos\n\nplt.figure(figsize=(7, 5))\nplt.plot(grid, dos_norm, linewidth=2, label=f\"DFT Ti IMM, max ≈ {fmax_nonzero:.1f} THz\")\nplt.axvline(0, linestyle=\"--\", linewidth=1, alpha=0.5)\nplt.xlabel(\"Frequency, THz\")\nplt.ylabel(\"Normalized phonon DOS, area = 1\")\nplt.xlim(fmin, 9.5)\nplt.grid(True, alpha=0.3)\nplt.legend(frameon=False)\nplt.tight_layout()\nplt.savefig(out_pdf, bbox_inches=\"tight\")\nplt.savefig(out_png, dpi=300, bbox_inches=\"tight\")\n\nprint(\"Read:\", mesh_file)\nprint(\"Number of frequencies:\", len(freqs))\nprint(\"Frequency min:\", freqs.min())\nprint(\"Frequency max:\", freqs.max())\nprint(\"DOS integral:\", area)\nprint(\"DOS peak frequency:\", peak_freq)\nprint(\"DOS max nonzero:\", fmax_nonzero)\nprint(\"Wrote:\", out_dat)\nprint(\"Wrote:\", out_pdf)\nprint(\"Wrote:\", out_png)\n"
+      },
+      "comparison_image": {
+        "filename": "2.jpg",
+        "identification": "Very close match to the preserved Ti total DOS after maximum-height normalization; remote and local source files are byte-identical.",
+        "graphical_match_correlation": 0.9998758147844617,
+        "graphical_match_RMSE_normalized_height": 0.004188164048395892
+      }
+    },
+    {
+      "id": "Ti3Al_IMM_D019_directory",
+      "composition": {
+        "Ti": 6,
+        "Al": 2
+      },
+      "Al_atomic_fraction": 0.25,
+      "structure_label": "Ti3Al, nominal D019 directory label",
+      "detected_space_group": {
+        "type": "Cmcm",
+        "number": 63,
+        "Hall_symbol": "-C 2c 2"
+      },
+      "primitive_cell": {
+        "lattice": [
+          [
+            2.872631400434808,
+            -4.975537480235149,
+            0.0
+          ],
+          [
+            2.872631400434808,
+            4.975537480235149,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.650593076101292
+          ]
+        ],
+        "points": [
+          {
+            "symbol": "Al",
+            "coordinates": [
+              0.333333000000003,
+              0.666666999999997,
+              0.25
+            ],
+            "mass": 26.981539
+          },
+          {
+            "symbol": "Al",
+            "coordinates": [
+              0.666666999999997,
+              0.333333000000003,
+              0.75
+            ],
+            "mass": 26.981539
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.830328047063952,
+              0.660656094127873,
+              0.25
+            ],
+            "mass": 47.867
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.339343905872127,
+              0.169671952936048,
+              0.25
+            ],
+            "mass": 47.867
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.83032804706392,
+              0.16967195293608,
+              0.25
+            ],
+            "mass": 47.867
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.169671952936048,
+              0.339343905872127,
+              0.75
+            ],
+            "mass": 47.867
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.660656094127873,
+              0.830328047063952,
+              0.75
+            ],
+            "mass": 47.867
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.16967195293608,
+              0.83032804706392,
+              0.75
+            ],
+            "mass": 47.867
+          }
+        ],
+        "reciprocal_lattice": [
+          [
+            0.174056441743385,
+            -0.100491655823356,
+            0.0
+          ],
+          [
+            0.174056441743385,
+            0.100491655823356,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.215026338283358
+          ]
+        ]
+      },
+      "unit_cell": {
+        "lattice": [
+          [
+            2.872631400434808,
+            -4.975537480235149,
+            0.0
+          ],
+          [
+            2.872631400434808,
+            4.975537480235149,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.650593076101292
+          ]
+        ],
+        "points": [
+          {
+            "symbol": "Al",
+            "coordinates": [
+              0.333333000000003,
+              0.666666999999997,
+              0.25
+            ],
+            "mass": 26.981539,
+            "reduced_to": 1
+          },
+          {
+            "symbol": "Al",
+            "coordinates": [
+              0.666666999999997,
+              0.333333000000003,
+              0.75
+            ],
+            "mass": 26.981539,
+            "reduced_to": 2
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.830328047063952,
+              0.660656094127873,
+              0.25
+            ],
+            "mass": 47.867,
+            "reduced_to": 3
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.339343905872127,
+              0.169671952936048,
+              0.25
+            ],
+            "mass": 47.867,
+            "reduced_to": 4
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.83032804706392,
+              0.16967195293608,
+              0.25
+            ],
+            "mass": 47.867,
+            "reduced_to": 5
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.169671952936048,
+              0.339343905872127,
+              0.75
+            ],
+            "mass": 47.867,
+            "reduced_to": 6
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.660656094127873,
+              0.830328047063952,
+              0.75
+            ],
+            "mass": 47.867,
+            "reduced_to": 7
+          },
+          {
+            "symbol": "Ti",
+            "coordinates": [
+              0.16967195293608,
+              0.83032804706392,
+              0.75
+            ],
+            "mass": 47.867,
+            "reduced_to": 8
+          }
+        ]
+      },
+      "unit_cell_volume_A3": 132.94078589506415,
+      "supercell_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "force_supercell_atoms": 64,
+      "source_directories": {
+        "phonopy_result": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/thermal",
+        "force_runs": [
+          "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/001",
+          "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/002",
+          "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/003",
+          "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/004",
+          "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/005",
+          "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/006",
+          "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/007",
+          "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/008"
+        ]
+      },
+      "vasp": {
+        "generator": {
+          "program": "vasp",
+          "version": "6.3.2",
+          "subversion": "27Jun22 (build Dec 18 2022 17:18:44) complex                          parallel",
+          "platform": "LinuxIFC",
+          "date": "2025 06 16",
+          "time": "21:14:16"
+        },
+        "PAW_atomtypes": [
+          {
+            "count": 16,
+            "element": "Al",
+            "VASP_mass_amu": 26.982,
+            "valence_electrons": 3.0,
+            "TITEL": "PAW_PBE Al 04Jan2001"
+          },
+          {
+            "count": 48,
+            "element": "Ti",
+            "VASP_mass_amu": 47.88,
+            "valence_electrons": 12.0,
+            "TITEL": "PAW_PBE Ti_sv 07Sep2000"
+          }
+        ],
+        "runtime_parameters": {
+          "PREC": "accura",
+          "EDIFF": 1e-08,
+          "NBANDS": 384,
+          "NELECT": 624.0,
+          "ISMEAR": 1,
+          "SIGMA": 0.05,
+          "LREAL": false,
+          "ISPIN": 1,
+          "LASPH": true,
+          "LMETAGGA": false,
+          "NELM": 200,
+          "ADDGRID": true,
+          "NSW": 0,
+          "IBRION": -1,
+          "ISIF": 2,
+          "POTIM": 0.5,
+          "ISYM": 0,
+          "GGA": "--",
+          "ENCUT": 480.0
+        },
+        "actual_XML_INCAR": {
+          "PREC": "Accurate",
+          "ADDGRID": true,
+          "NELM": 200,
+          "IBRION": -1,
+          "EDIFF": 1e-08,
+          "NSW": 0,
+          "ISYM": 0,
+          "ENCUT": 480.0,
+          "LREAL": false,
+          "ISMEAR": 1,
+          "SIGMA": 0.05,
+          "LASPH": true
+        },
+        "kpoint_generation": {
+          "grid": [
+            4,
+            4,
+            4
+          ],
+          "centering": "Monkhorst-Pack"
+        },
+        "force_INCAR_text": "ISTART = 0\nICHARG = 2\nPREC = Accurate\nEDIFF = 1E-8\nEDIFFG = -1E-3\nIBRION = -1\nNSW = 0\nISYM = 0\nLREAL = .FALSE.\nADDGRID = .TRUE.\nNELM = 200\nNELMIN = 5\nENCUT = 480\nISMEAR = 1\nSIGMA = 0.05\nLWAVE = .FALSE.\nLCHARG = .FALSE.\nNCORE = 4\nLORBIT = 11\nLASPH = .TRUE.\nLMAXMIX = 4\nAMIX = 0.2\nBMIX = 0.0001\n",
+        "force_KPOINTS_text": "Automatic mesh\n0\nMonkhorst-Pack\n4 4 4   \n0.0  0.0  0.0\n",
+        "OUTCAR_selected_evidence": [
+          " vasp.6.3.2 27Jun22 (build Dec 18 2022 17:18:44) complex                        ",
+          "   TITEL  = PAW_PBE Al 04Jan2001                                                                    ",
+          "   POMASS =   26.982; ZVAL   =    3.000    mass and valenz                                          ",
+          "   ENMAX  =  240.300; ENMIN  =  180.225 eV                                                          ",
+          "   TITEL  = PAW_PBE Ti_sv 07Sep2000                                                                 ",
+          "   POMASS =   47.880; ZVAL   =   12.000    mass and valenz                                          ",
+          "   ENMAX  =  274.574; ENMIN  =  205.930 eV                                                          ",
+          "   k-points           NKPTS =     96   k-points in BZ     NKDIM =     96   number of bands    NBANDS=    384",
+          "   number of dos      NEDOS =    301   number of ions     NIONS =     64",
+          "   LCOMPAT=      F    compatible to vasp.4.4",
+          "   GGA_COMPAT  = T    GGA compatible to vasp.4.4-vasp.4.6",
+          "   ZVAL   =   3.00 12.00",
+          "------------------------ aborting loop because EDIFF is reached ----------------------------------------",
+          " General timing and accounting informations for this job:"
+        ]
+      },
+      "phonopy": {
+        "version": "2.40.0",
+        "symmetry_tolerance": 1e-05,
+        "frequency_unit_conversion_factor": 15.633302,
+        "configuration_of_actual_result": {
+          "atom_name": "Ti Al",
+          "dim": "2 2 2",
+          "band": "0.00 0.00 0.00  0.50 0.00 0.00  0.3333 0.3333 0.00  0.00 0.00 0.00  0.00 0.00 0.50  0.50 0.00 0.50",
+          "band_labels": "Γ M K Γ A L",
+          "band_points": "101",
+          "band_connection": ".TRUE.",
+          "dos": ".TRUE.",
+          "mp": "14 14 14"
+        },
+        "independent_displacements": [
+          {
+            "atom_1based": 1,
+            "vector_A": [
+              0.0038863369690203,
+              -0.0067313248916158,
+              0.0062917128166136
+            ],
+            "amplitude_A": 0.010000000000000009
+          },
+          {
+            "atom_1based": 1,
+            "vector_A": [
+              -0.0038863369690203,
+              0.0067313248916158,
+              -0.0062917128166136
+            ],
+            "amplitude_A": 0.010000000000000009
+          },
+          {
+            "atom_1based": 17,
+            "vector_A": [
+              0.0038863369690203,
+              -0.0067313248916158,
+              0.0062917128166136
+            ],
+            "amplitude_A": 0.010000000000000009
+          },
+          {
+            "atom_1based": 17,
+            "vector_A": [
+              -0.0038863369690203,
+              0.0067313248916158,
+              -0.0062917128166136
+            ],
+            "amplitude_A": 0.010000000000000009
+          },
+          {
+            "atom_1based": 17,
+            "vector_A": [
+              0.0050000045648834,
+              0.0086602514023061,
+              0
+            ],
+            "amplitude_A": 0.009999999999999981
+          },
+          {
+            "atom_1based": 17,
+            "vector_A": [
+              -0.0050000045648834,
+              -0.0086602514023061,
+              0
+            ],
+            "amplitude_A": 0.009999999999999981
+          },
+          {
+            "atom_1based": 33,
+            "vector_A": [
+              0.0038863369690203,
+              -0.0067313248916158,
+              0.0062917128166136
+            ],
+            "amplitude_A": 0.010000000000000009
+          },
+          {
+            "atom_1based": 33,
+            "vector_A": [
+              -0.0038863369690203,
+              0.0067313248916158,
+              -0.0062917128166136
+            ],
+            "amplitude_A": 0.010000000000000009
+          }
+        ],
+        "number_of_displacements": 8,
+        "q_mesh": [
+          14,
+          14,
+          14
+        ],
+        "irreducible_qpoints_in_mesh_file": 392,
+        "minimum_sampled_frequency_THz": 0.4170363962,
+        "maximum_sampled_frequency_THz": 9.4975380427,
+        "frequency_extrema_scope": "Saved q-mesh only, not a certified full-Brillouin-zone extremum or phonon-stability proof."
+      },
+      "force_provenance_validation": [
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/001",
+          "xml_sha256": "4e358b352874bb947a06572f0a89d4b359d6874bc56d3a5f958341fd874bc94b",
+          "force_sets_matching_entry_1based": 1,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.05000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "480.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Monkhorst-Pack\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.50000000       0.50000000       0.50000000 </v>\n  </generation>\n  ",
+          "scf_steps": 35,
+          "last_delta_e0_eV": 2.0000015865662135e-08,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        },
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/002",
+          "xml_sha256": "7da099f57978a00b6ac3b039c92e7758984937b19e2fc672bc3b230848be1343",
+          "force_sets_matching_entry_1based": 2,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.05000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "480.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Monkhorst-Pack\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.50000000       0.50000000       0.50000000 </v>\n  </generation>\n  ",
+          "scf_steps": 40,
+          "last_delta_e0_eV": 9.999951089412207e-09,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        },
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/003",
+          "xml_sha256": "a5eeac637d45bc5775e613c9ca9f11dc8aeeb4d634904ad3a8bd4800b4aababc",
+          "force_sets_matching_entry_1based": 3,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.05000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "480.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Monkhorst-Pack\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.50000000       0.50000000       0.50000000 </v>\n  </generation>\n  ",
+          "scf_steps": 39,
+          "last_delta_e0_eV": 1.0000007932831068e-08,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        },
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/004",
+          "xml_sha256": "c5ea9b15139e57bf230d267c973101be3c582143b8c9bc78a82f868df7ad20b5",
+          "force_sets_matching_entry_1based": 4,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.05000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "480.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Monkhorst-Pack\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.50000000       0.50000000       0.50000000 </v>\n  </generation>\n  ",
+          "scf_steps": 39,
+          "last_delta_e0_eV": 1.0000007932831068e-08,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        },
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/005",
+          "xml_sha256": "ccc3dea8897e7ebc76a84775e744bf8404df09ed2c835fe957426bfcdc14f35e",
+          "force_sets_matching_entry_1based": 5,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.05000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "480.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Monkhorst-Pack\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.50000000       0.50000000       0.50000000 </v>\n  </generation>\n  ",
+          "scf_steps": 39,
+          "last_delta_e0_eV": 0,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        },
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/006",
+          "xml_sha256": "c59934db5ed6b4e8ab57cef3f0717e763fd3c432cfc53bc055e3ffd926adad96",
+          "force_sets_matching_entry_1based": 6,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.05000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "480.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Monkhorst-Pack\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.50000000       0.50000000       0.50000000 </v>\n  </generation>\n  ",
+          "scf_steps": 40,
+          "last_delta_e0_eV": 0,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        },
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/007",
+          "xml_sha256": "02e56f8ca720d39254d6a0ec33e91fccd062557c0a403df721d7282ae1d7142c",
+          "force_sets_matching_entry_1based": 7,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.05000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "480.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Monkhorst-Pack\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.50000000       0.50000000       0.50000000 </v>\n  </generation>\n  ",
+          "scf_steps": 39,
+          "last_delta_e0_eV": 1.0000007932831068e-08,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        },
+        {
+          "directory": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/old_runs/008",
+          "xml_sha256": "8951034523770ef2e221ad97e24bea0c119afe04326756eae6e4d6972c01bc13",
+          "force_sets_matching_entry_1based": 8,
+          "force_error_max_eV_A": 0,
+          "parameters": {
+            "EDIFF": "0.00000001",
+            "ISMEAR": "1",
+            "SIGMA": "0.05000000",
+            "ISPIN": "1",
+            "LMETAGGA": "F",
+            "ENCUT": "480.00000000"
+          },
+          "kpoint_generation": "<generation param=\"Monkhorst-Pack\">\n   <v name=\"divisions\" type=\"int\">       4        4        4 </v>\n   <v name=\"usershift\">      0.00000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec1\">      0.25000000       0.00000000       0.00000000 </v>\n   <v name=\"genvec2\">      0.00000000       0.25000000       0.00000000 </v>\n   <v name=\"genvec3\">      0.00000000       0.00000000       0.25000000 </v>\n   <v name=\"shift\">      0.50000000       0.50000000       0.50000000 </v>\n  </generation>\n  ",
+          "scf_steps": 37,
+          "last_delta_e0_eV": 1.0000007932831068e-08,
+          "EDIFF_reached": true,
+          "timing_footer": true
+        }
+      ],
+      "all_force_runs_match_FORCE_SETS": true,
+      "all_force_runs_reached_EDIFF_and_have_timing_footer": true,
+      "source_file_manifest": {
+        "phonopy.yaml": {
+          "bytes": 12684,
+          "sha256": "da27071f6257150b40eaa48ee6fc01b2f0ff5f6295ff6194e0dfd6193527d80e"
+        },
+        "phonopy_disp.yaml": {
+          "bytes": 13604,
+          "sha256": "a0ad099866aec4fe811c8147f7c5fb8a9a6eabaddd8f58a04380cba1376820a9"
+        },
+        "FORCE_SETS": {
+          "bytes": 25148,
+          "sha256": "9652e6bc2730febf0cc73715028773a301eb56bf3ce3ef226027407371b26055"
+        },
+        "mesh.conf": {
+          "bytes": 116,
+          "sha256": "4ee77f056e7b3fc4b8adb82a797b599b4fec366b6397b0573c3fa105a31722d8"
+        },
+        "band.conf": {
+          "bytes": 239,
+          "sha256": "3f3654de4e0865500cd88cdc496ccf163d6292fe9406d31d3df8bd69254f935d"
+        },
+        "SPOSCAR": {
+          "bytes": 2082,
+          "sha256": "5f4b99522a244b0fafd5596483445eb0c9cefc824866241f1f67e4058a6cb692"
+        },
+        "total_dos.dat": {
+          "bytes": 8262,
+          "sha256": "34ea9c621d4495d476e277b17f9966acad6fd1602852e0952f4a971af9b4387e"
+        },
+        "force_INCAR": {
+          "bytes": 293,
+          "sha256": "1862c64c3aa31f9d67fada16724dfa81be384641e3fb24a5ec40625fecca4a57"
+        },
+        "force_KPOINTS": {
+          "bytes": 55,
+          "sha256": "ae0328d0fe577e11c870ceba601e027b40e25d6a0dff5219ea89b3b5572c956d"
+        },
+        "force_POSCAR": {
+          "bytes": 4231,
+          "sha256": "fb5600eb16ac7a92e1e12007c78a97af4596a485ea4497f46b8e507778f8ff5c"
+        }
+      },
+      "DOS_files": [
+        {
+          "filename": "total_dos.dat",
+          "package_path": "Ti3Al_D019/total_dos.dat",
+          "source_path": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/thermal/total_dos.dat",
+          "sha256": "34ea9c621d4495d476e277b17f9966acad6fd1602852e0952f4a971af9b4387e",
+          "bytes": 8262,
+          "frequency_unit": "THz",
+          "DOS_unit": "modes per THz per primitive cell",
+          "columns": [
+            "frequency_THz",
+            "total_DOS"
+          ],
+          "number_of_rows": 201,
+          "raw_data_in_package": true,
+          "trapezoid_integral_of_tabulated_total": 23.899572849131665,
+          "total_DOS_peak_frequency_THz": 9.3704110196,
+          "comparison_plot_normalization": "Divide total DOS by its own maximum for the supplied JPEG comparison; this is not unit-area normalization.",
+          "per_atom_normalization": "Divide all DOS contributions by primitive atom count (2 for Ti, 8 for Ti3Al). Expected total integral is 3 modes per atom."
+        },
+        {
+          "filename": "projected_dos.dat",
+          "package_path": "Ti3Al_D019/projected_dos.dat",
+          "source_path": "/home/u3173/_scratch/TiAl/phonopy/Ti3AlD019/thermal/projected_dos.dat",
+          "sha256": "7808c979af2d551c1971f7b3a0a2f5634eadf1f84cc960840c725081ff98ed67",
+          "bytes": 36402,
+          "frequency_unit": "THz",
+          "DOS_unit": "modes per THz per primitive cell",
+          "columns": [
+            "frequency_THz",
+            "Al_1",
+            "Al_2",
+            "Ti_1",
+            "Ti_2",
+            "Ti_3",
+            "Ti_4",
+            "Ti_5",
+            "Ti_6"
+          ],
+          "number_of_rows": 201,
+          "raw_data_in_package": true,
+          "trapezoid_integral_of_tabulated_total": 24.011836014223434,
+          "total_DOS_peak_frequency_THz": 9.3703256046,
+          "comparison_plot_normalization": "Divide total DOS by its own maximum for the supplied JPEG comparison; this is not unit-area normalization.",
+          "per_atom_normalization": "Divide all DOS contributions by primitive atom count (2 for Ti, 8 for Ti3Al). Expected total integral is 3 modes per atom."
+        }
+      ],
+      "limitations": [
+        "Nominal D019 label is not a crystallographic certification: saved Phonopy geometry is detected as Cmcm (63), not ideal P6_3/mmc. Verify coordinates/symmetry before a publication claim."
+      ],
+      "DOS_processing": {
+        "method": "Phonopy tetrahedron integration, confirmed by DOS header",
+        "gaussian_sigma_THz": null,
+        "expected_integral_modes_per_primitive_cell": 24,
+        "projected_DOS_column_map_zero_based": {
+          "frequency_THz": 0,
+          "Al_contributions": [
+            1,
+            2
+          ],
+          "Ti_contributions": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "total": "sum columns 1 through 8"
+        },
+        "stale_config_warning": "Loose mesh.conf declares MP=40 40 40 and SIGMA=0.1, but saved mesh.yaml and phonopy.yaml describe 14^3 and the actual DOS is tetrahedral. Report actual result metadata, not loose config."
+      },
+      "comparison_image": {
+        "filename": "1.jpg",
+        "identification": "Strong graphical match to sum of all eight atomic contributions in the preserved IMM projected DOS after maximum-height normalization; plotting script unavailable.",
+        "graphical_match_correlation": 0.9984178510010927,
+        "graphical_match_RMSE_normalized_height": 0.010119575939011671
+      }
+    }
+  ],
+  "global_limitations": [
+    "DFT supercell, k-mesh, plane-wave cutoff and q-mesh convergence series have not been established in this audit.",
+    "Matching FORCE_SETS to VASP outputs verifies force provenance, not every later force-constant or DOS-processing operation.",
+    "The original scripts which produced the two externally supplied comparison JPEGs were not found; curve identification is graphical/numerical, not a complete plotting-script provenance chain.",
+    "No MLIP parameters or accuracy claims can be inferred from this DFT-only package."
+  ],
+  "excluded_from_package": [
+    "Licensed POTCAR contents",
+    "VASP executables",
+    "SSH credentials",
+    "External MLIP data"
+  ]
+}

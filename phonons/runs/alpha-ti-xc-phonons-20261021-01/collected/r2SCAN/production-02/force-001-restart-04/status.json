@@ -1,0 +1,75 @@
+{
+  "xc": "r2SCAN",
+  "step": "force-001",
+  "job_id": "20968910",
+  "parent_job": "20964090",
+  "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-03",
+  "resources": {
+    "ranks": 64,
+    "nodes": 2,
+    "ranks_per_node": 32,
+    "KPAR": 8,
+    "NCORE": 4,
+    "NBANDS": 576,
+    "memory_GiB_per_node": 240
+  },
+  "state": "validated",
+  "parent_scheduler": "20964090|COMPLETED\n",
+  "checkpoint_electrons": 960.0000918596094,
+  "source_wavecar": {
+    "bytes": 25201037952,
+    "record_bytes": 389952,
+    "spins": 1,
+    "precision_tag": 45200,
+    "nkpts": 112,
+    "nbands": 576,
+    "encut_eV": 550.0,
+    "min_plane_waves": 48605,
+    "max_plane_waves": 48743,
+    "record_extent_complete": true,
+    "band_headers_finite": true,
+    "sampled_coefficients_finite": true,
+    "full_coefficient_scan": false
+  },
+  "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 70067184  104857600 104857600          355618       0       0        \n",
+  "required_additional_bytes": 30260863996,
+  "scheduler_allocation": "JobId=20968910 JobName=ti7-r2SCAN-f001 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=885 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:04:03 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-29T23:17:32 EligibleTime=2026-10-29T23:17:32 AccrueTime=2026-10-29T23:17:32 StartTime=2026-10-31T12:26:02 EndTime=2026-11-01T08:26:02 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-31T12:26:02 Scheduler=Backfill Partition=apollo AllocNode:Sid=umt:1487694 ReqNodeList=(null) ExcNodeList=apollo22,tesla-a101 NodeList=apollo[15-16] BatchHost=apollo15 NumNodes=2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=cpu=64,mem=480G,node=2,billing=11264 Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v11.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-wave-next-20261029-20968910.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-wave-next-20261029-20968910.out Power= \n",
+  "quality": {
+    "energy_eV": -1240.43988937,
+    "free_energy_eV": -1240.63757108,
+    "max_force_eV_A": 0.0709074080782932,
+    "stress_kbar_ASE_tension_positive": [
+      [
+        0.28517245,
+        0.02405683,
+        -0.00045965000000000003
+      ],
+      [
+        0.02405683,
+        0.29061297,
+        2.8570000000000003e-05
+      ],
+      [
+        -0.00045965000000000003,
+        2.8570000000000003e-05,
+        0.20463932
+      ]
+    ],
+    "max_stress_kbar": 0.29061297,
+    "force_drift_eV_A": [
+      5.208333334386604e-10,
+      1.0416666670218812e-10,
+      -3.1249999996200403e-10
+    ],
+    "ionic_steps": 1,
+    "scf_steps": [
+      10
+    ],
+    "volume_A3": 1661.330009465202,
+    "outputs": {
+      "OUTCAR": "534e7754be036d1c1a2ca803d2f9078d5ff6963bfc0fd6bb7370170909c6e607",
+      "vasprun.xml": "01f62d583c8e01ceb63b7bf41cb5db8ce67b6b70f3fe74a2c13d117299671467",
+      "CONTCAR": "330031b3fbfc94fb772cca5174a1413c777f772c8eba4cd6e281b2f1c8d83c16"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "job_id": "20988452",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=8G --time=00:05:00 --job-name=TiAl-H0-projection --output=projection-%j.log projection-check.sbatch",
+  "reason": "Newly observed imaginary branches require distinguishing model response from force-constant projection artifacts."
+}

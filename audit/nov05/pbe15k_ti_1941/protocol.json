@@ -1,0 +1,90 @@
+{
+  "run_id": "pbe15k-ti-1941-20261105-01",
+  "remote": "/home6/u3129/tial-testsets/pbe15k-ti-1941-20261105-01",
+  "checkpoint": {
+    "functional": "PBE",
+    "step": 15000,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-15000.pt",
+    "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+    "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+    "article_checkpoint": false
+  },
+  "frozen_model": {
+    "path": "/home6/u3129/tial-testsets/pbe15k-melting-20261026-02/model_15000.pt2",
+    "sha256": "1a59af825e47b585d3b49789f65bed0ac1fce0286630f9484f0687cbac3d0f65"
+  },
+  "states": [
+    {
+      "id": "Ti_1941K",
+      "temperature_K": 1941,
+      "x_Al": 0.0,
+      "c_Ti": 1.0,
+      "actual_x_Al": 0.0,
+      "counts": {
+        "Al": 0,
+        "Ti": 512
+      },
+      "initial_file": "initial_Ti_1941K.data",
+      "initial_sha256": "9c3b31099a1ead1f0f9f24b7d185ed7bc8ff15bd830bf9fcdf1eb6aa68868dc8",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1941K\\pbe\\01_generate_liquid\\c_Ti_1.00\\data.lammps",
+      "seed": 511194101
+    }
+  ],
+  "pressure_bar": 1,
+  "atoms": 512,
+  "dt_ps": 0.001,
+  "initial_npt_steps": 20000,
+  "reservoir_spacing_steps": 5000,
+  "nvt_equil_steps": 1000,
+  "production_steps": 40000,
+  "matched_window_steps": 20000,
+  "preparation_Tdamp_ps": 0.1,
+  "preparation_Pdamp_ps": 0.5,
+  "production_Tdamp_ps": 0.2,
+  "masses": [
+    26.98,
+    47.88
+  ],
+  "elements": [
+    "Al",
+    "Ti"
+  ],
+  "batch_size": 5,
+  "allocation": {
+    "partition": "v100",
+    "node": "tesla-a101",
+    "account": "imet-2026-2",
+    "qos": "normal",
+    "gpu": "a100:1",
+    "cpus": 6,
+    "md_threads": 4,
+    "analysis_threads": 2,
+    "memory": "32G",
+    "walltime": "20:00:00"
+  },
+  "convergence": {
+    "min_replicas": 30,
+    "max_relative_std": 0.03,
+    "max_last_three_range": 0.02,
+    "max_20_40_relative_difference": 0.03,
+    "min_neff": 60,
+    "max_cost_z": 2,
+    "max_criterion_z": 2,
+    "required_consecutive_passes": 2,
+    "interpretation": "Operational stopping rule for sampling; nominal uncertainties after sequential inspection are descriptive, not coverage guarantees.",
+    "max_new_batch_z": 2.5,
+    "review_at_or_above_replicas": 50,
+    "window_fit_diagnostics": "Cost and cutoff Z<2 for full40ps, both20ps windows, and the newest5-replica fit are required in addition to the main rule."
+  },
+  "duration_policy": "Only new1941K40ps replicas and first/second20ps fits. Historical5k reference stays separate; no historical15k1941 result is claimed.",
+  "restart_policy": "User authorized separate Slurm job on2026-11-05,oneA100. Exactly one initial sbatch; subsequent walltime continuation by sameID requeue after complete replicas. Never act on existing20962153 or other jobs.",
+  "preparation_note": "Archived 1941K pure-liquid Ti configuration; new20ps NPT preparation under verified15000, then5ps reservoir NPT, fresh velocities,1ps NVT,40ps NVT per replica. Historical5k structure is preparation provenance, not15k viscosity evidence.",
+  "scheduling": {
+    "priority_temperatures_K": [
+      1941
+    ],
+    "initial_replicas_each": 10,
+    "batch_size": 5,
+    "policy": "One independent 1941K campaign; analyze N5,N10 and every subsequent five-replica batch until the same stopping/review rule."
+  }
+}

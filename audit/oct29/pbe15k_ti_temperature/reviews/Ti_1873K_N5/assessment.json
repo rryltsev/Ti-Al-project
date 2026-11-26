@@ -1,0 +1,98 @@
+{
+  "reviewed_unix": 1793314488.0724475,
+  "temperature_K": 1873,
+  "n_replicas": 5,
+  "summary_sha256": "5ed7be52837a138ec32e338490a9eb97ac0a7ca28a425662cbdd62cab3f19c21",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 3.041248854699317,
+      "eta_std_mPa_s": 0.16354383540561793,
+      "relative_std": 0.053775223015016055,
+      "neff": 78.22348363518276,
+      "tau_exp_ps": 0.15246557486468784,
+      "tau_int_ps": 0.11499327983411012,
+      "cost_z": -0.6121325846320458,
+      "criterion_z": 1.091402521627038
+    },
+    "first20ps": {
+      "eta_mPa_s": 3.043876087243219,
+      "eta_std_mPa_s": 0.24275339572596719,
+      "relative_std": 0.07975140536874627,
+      "neff": 45.9081635486029,
+      "tau_exp_ps": 0.14587756157765575,
+      "tau_int_ps": 0.1149239511945345,
+      "cost_z": -0.37279872270584097,
+      "criterion_z": 0.5732464051672848
+    },
+    "second20ps": {
+      "eta_mPa_s": 2.720653651755983,
+      "eta_std_mPa_s": 0.23810683045922593,
+      "relative_std": 0.087518244119587,
+      "neff": 78.07159670609241,
+      "tau_exp_ps": 0.1129065070269761,
+      "tau_int_ps": 0.10302025528867949,
+      "cost_z": -0.2333139598866905,
+      "criterion_z": 4.1013209350097535
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs5k_percent": -6.679430433892208,
+      "vsHistorical15k_percent": -5.419850200030474,
+      "vs40ps_percent": 0.0
+    },
+    "first20ps": {
+      "vs5k_percent": -6.598813934193181,
+      "vsHistorical15k_percent": -5.338145591353793,
+      "vs40ps_percent": 0.08638663488000908
+    },
+    "second20ps": {
+      "vs5k_percent": -16.516878261485978,
+      "vsHistorical15k_percent": -15.390077487639275,
+      "vs40ps_percent": -10.54156428034334
+    }
+  },
+  "previous_new_ensemble": null,
+  "new_batch_comparison": "First new batch consists of all5 replicas; no prior new replicas exist for independent comparison. No historical pooling.",
+  "checks": [
+    {
+      "id": "Ti_1873K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": false,
+        "window_fit_diagnostics": false
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.10541564280343341
+    }
+  ],
+  "pass_streak": 0,
+  "review_required": false,
+  "visual_review": {
+    "files": [
+      "convergence.png",
+      "40ps/spectrum.png",
+      "40ps/extras.png",
+      "first20ps/spectrum.png",
+      "first20ps/extras.png",
+      "second20ps/spectrum.png",
+      "second20ps/extras.png",
+      "figure7_current.png"
+    ],
+    "notes": "Full40ps and first20ps estimates nearly identical; second20ps lower by10.54%. Full40ps and first20ps cost/cutoff pass. Second20ps cutoff fails at4.1013 with multimodal cutoff weights, including a higher-frequency mode near6.5THz that lowers eta. Weighted cutoff roughly1.9THz full,2.2THz first,3.8THz second. No physical drift conclusion justified. First-batch convergence cannot establish stability. Figure7 new1873/N5 and2100/N10 points readable; fixed concentration panel and separate historical series preserved."
+  },
+  "verification": "One A100; preflight and model/protocol hashes PASS. Remote1873 replica6 uses1873K for NPT and NVT; production40000steps. Structure512 type2 Ti. Analysis uses state temperature in V/(kB*T), pressure Pa, volume m3. No new failures.",
+  "article_compile": "PASS",
+  "caveats": [
+    "Cumulative and20/40ps estimates are correlated.",
+    "Historical5k and exported15k not pooled.",
+    "Sampling stopping rule is heuristic; errors exclude model/protocol bias."
+  ]
+}

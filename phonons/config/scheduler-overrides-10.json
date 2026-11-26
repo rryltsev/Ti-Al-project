@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-28",
+  "supersedes": "scheduler-overrides-09.json",
+  "cpu_vasp_partition": "apollo",
+  "reason": "PBE and r2SCAN completed planned soft stops without EDIFF; new 64-rank continuations preserve fresh densities and r2SCAN wavefunctions.",
+  "requested_walltime": "20:00:00",
+  "observed_partition_max_walltime": "20:00:00",
+  "memory_GiB_per_node": 240,
+  "scientific_changes": [],
+  "jobs": {
+    "PBE_old": {
+      "job_id": "20959336",
+      "partition": "v100",
+      "action": "Cancelled by explicit user request; no new checkpoint assumed"
+    },
+    "PBE": {
+      "job_id": "20964089",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4,
+      "memory_GiB_per_node": 240,
+      "walltime": "20:00:00",
+      "target": "PBE/production-02/force-001-restart-04",
+      "ISTART": 0,
+      "LWAVE": false,
+      "driver": "restart_step_v6.py",
+      "launcher": "launch_v9.sbatch"
+    },
+    "r2SCAN": {
+      "job_id": "20964090",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4,
+      "memory_GiB_per_node": 240,
+      "walltime": "20:00:00",
+      "target": "r2SCAN/production-02/force-001-restart-03",
+      "ISTART": 1,
+      "LWAVE": true,
+      "driver": "restart_step_v6.py",
+      "launcher": "launch_v9.sbatch"
+    },
+    "PBEsol": {
+      "job_id": "20962927",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4,
+      "memory_GiB_per_node": 240,
+      "walltime": "20:00:00",
+      "target": "PBEsol/production-04/force-002",
+      "policy": "execution-policy-04.json",
+      "driver": "production_step_v4.py",
+      "launcher": "launch_v8.sbatch",
+      "guard_override": {
+        "minimum_reserve_hours": 6,
+        "guard": "checkpoint_guard_v3.py",
+        "scope": "current job 20962927 only",
+        "proof": "PBEsol-force002-measured-guard-20261028-result.json",
+        "basis": "First completed PBEsol post-SCF time 2002s; still reserve max(6h,2*recent_max_SCF+3h). No Slurm time extension."
+      }
+    },
+    "PBE_softstop_continuation": {
+      "job_id": "20959747",
+      "action": "Cancelled before start; required clean checkpoint from interrupted run"
+    },
+    "r2SCAN_previous": {
+      "job_id": "20959337",
+      "state": "COMPLETED",
+      "scientific_state": "checkpointed_needs_review; no EDIFF",
+      "SCF_steps": 9,
+      "elapsed": "15:19:14",
+      "end_local": "2026-10-26T00:36:19+05:00"
+    },
+    "PBEsol_completed": {
+      "job_id": "20959338",
+      "state": "COMPLETED",
+      "step": "force-001",
+      "accepted": true,
+      "SCF_steps": 25,
+      "end_local": "2026-10-28T08:41:39+05:00",
+      "report": "results/PBEsol-force001-validation-20261028.json"
+    },
+    "PBE_checkpoint": {
+      "job_id": "20959753",
+      "state": "COMPLETED",
+      "end_local": "2026-10-28T09:34:14+05:00",
+      "SCF_steps": 16,
+      "EDIFF": false,
+      "density_audit": "PBE-stopped-checkpoint-audit-20261028.json"
+    },
+    "r2SCAN_checkpoint": {
+      "job_id": "20960773",
+      "state": "COMPLETED",
+      "end_local": "2026-10-28T19:13:22+05:00",
+      "SCF_steps": 9,
+      "EDIFF": false,
+      "WAVECAR_bytes": 25201037952,
+      "wavecar_audit": "r2SCAN-wavecar-header-audit-20261028.json"
+    }
+  },
+  "restart_gate": "restart_step_v4.py validates original clean 20958089 checkpoint; does not read cancelled 20959336 outputs. launch_v6.sbatch rejects allocations outside Apollo.",
+  "provenance": "runs/alpha-ti-xc-phonons-20261021-01/restart64-source-manifest-20261028.json",
+  "forbidden_vasp_nodes": [
+    "tesla-a101"
+  ],
+  "checkpoint_guard": "Existing checkpoint_guard_v2.py reads actual Slurm EndTime at launch; minimum 8h reserve remains active. No claim of an automatically queued next restart."
+}

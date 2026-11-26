@@ -1,0 +1,59 @@
+{
+  "unix": 1793201770.1178515,
+  "source": "testset\\dft\\scf-check-20261028\\snapshot-1793201770.json",
+  "sid": "TiAl-test-036",
+  "latest_complete": {
+    "n": 21,
+    "dE_eV": 0.2367637,
+    "deps_eV": -0.06720709
+  },
+  "iteration_in_progress": 22,
+  "runtime_h": 10.695277777777777,
+  "remaining_h": 9.304722222222223,
+  "deadline_local": "2026-10-29T05:54:27",
+  "loop_minutes_last5": [
+    33.82728,
+    34.59002666666667,
+    23.606146666666667,
+    38.89318166666667,
+    47.22283
+  ],
+  "timing_scenarios": [
+    {
+      "tail": 5,
+      "additional_steps": 34.40450914983975,
+      "additional_h_median_recent_step_plus45min": 20.92751555555556
+    },
+    {
+      "tail": 8,
+      "additional_steps": 28.238320147151587,
+      "additional_h_median_recent_step_plus45min": 17.468512888888892
+    },
+    {
+      "tail": 10,
+      "additional_steps": 32.46949440384312,
+      "additional_h_median_recent_step_plus45min": 19.77451466666667
+    }
+  ],
+  "iteration_count_scenarios": [
+    {
+      "final_step": 32,
+      "total_runtime_h_median_recent_step_plus45min": 17.786782666666667,
+      "total_runtime_h_latest_step_plus45min": 20.102796611111113
+    },
+    {
+      "final_step": 36,
+      "total_runtime_h_median_recent_step_plus45min": 20.092784444444447,
+      "total_runtime_h_latest_step_plus45min": 23.250985277777776
+    },
+    {
+      "final_step": 40,
+      "total_runtime_h_median_recent_step_plus45min": 22.39878622222222,
+      "total_runtime_h_latest_step_plus45min": 26.399173944444442
+    }
+  ],
+  "warnings": [],
+  "interpretation": "Material worsening: last step increased from34.6 to47.2min, completed18->21 in2h. Residual band error falls, total energy oscillates; no SCF error or established divergence. EDDAV CPU time closely tracks wall time, not predominantly idle waiting. Exact slowdown cause not established. At median/latest recent speed a40-step completion would require about22.4–26.4h total; remaining9.3h. Acceleration can change this, forecasts descriptive only.",
+  "DFT_modified": false,
+  "reassess_on_next_monitoring": true
+}

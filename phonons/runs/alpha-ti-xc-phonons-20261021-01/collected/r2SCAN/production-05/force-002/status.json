@@ -1,0 +1,74 @@
+{
+  "xc": "r2SCAN",
+  "step": "force-002",
+  "job_id": "20972837",
+  "parent_job": "20968910",
+  "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/recovery-01/force-002",
+  "seed_source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-04",
+  "resources": {
+    "nodes": 2,
+    "ranks": 64,
+    "ranks_per_node": 32,
+    "memory_GiB_per_node": 240,
+    "KPAR": 8,
+    "NCORE": 4,
+    "NBANDS": 576
+  },
+  "state": "validated",
+  "seed_electrons": 960.0000918597315,
+  "wave_header": {
+    "bytes": 25201037952,
+    "record_bytes": 389952,
+    "spins": 1,
+    "precision_tag": 45200,
+    "nkpts": 112,
+    "nbands": 576,
+    "encut_eV": 550.0,
+    "min_plane_waves": 48605,
+    "max_plane_waves": 48743,
+    "record_extent_complete": true,
+    "band_headers_finite": true,
+    "sampled_coefficients_finite": true,
+    "full_coefficient_scan": false
+  },
+  "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 70994240  104857600 104857600          355990       0       0        \n",
+  "required_additional_bytes": 30260863996,
+  "quality": {
+    "energy_eV": -1240.43988961,
+    "free_energy_eV": -1240.6375713,
+    "max_force_eV_A": 0.07099555039411273,
+    "stress_kbar_ASE_tension_positive": [
+      [
+        0.28522406,
+        -0.015414220000000001,
+        -0.00045977
+      ],
+      [
+        -0.015414220000000001,
+        0.29065927,
+        -2.916e-05
+      ],
+      [
+        -0.00045977,
+        -2.916e-05,
+        0.20462311
+      ]
+    ],
+    "max_stress_kbar": 0.29065927,
+    "force_drift_eV_A": [
+      0.0,
+      -1.0416666665701302e-10,
+      -1.0416666662990796e-10
+    ],
+    "ionic_steps": 1,
+    "scf_steps": [
+      16
+    ],
+    "volume_A3": 1661.330009465202,
+    "outputs": {
+      "OUTCAR": "b91b6303a46bd4ce2afef92a3cc52894758b2dd564d6f20d723541ede6c2a33f",
+      "vasprun.xml": "a343fbc76ebd7107d7ca8ac38a94e9f422d672949336f1f81c8a156367c5a6a0",
+      "CONTCAR": "603da43b6a2b22b45397a856b731e4c0b7fbbced7bbf53119415f4b6531c17d0"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "model": "atat_QHA",
+    "T_K": 1225.0,
+    "N": 5120,
+    "windows": 69,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 25.61890773699893,
+        "alpha2_at_pct": 26.50879588408789,
+        "window_edge": false,
+        "order_left": 0.14375589660693777,
+        "order_right": 0.7518498809118719,
+        "order_direction": "rising",
+        "order_se_left": 0.027243145844468263,
+        "order_se_right": 0.0011784410706773259,
+        "bootstrap_midpoint_match": {
+          "resolved": 296,
+          "alpha_95": [
+            25.583814279884898,
+            25.705064824894443
+          ],
+          "alpha2_95": [
+            26.43420854611724,
+            26.559928950958522
+          ],
+          "width_95": [
+            0.7336911291131338,
+            0.9649677384296891
+          ]
+        }
+      }
+    ],
+    "min_width_at_pct": 0.5,
+    "largest_unthresholded_interior_width_at_pct": 0.889888147088957,
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 296,
+      "blocks_per_replica": 20,
+      "baseline_interior_candidates": 1,
+      "draws_without_interior_contact": 4,
+      "draws_with_one_interior_contact": 296,
+      "draws_with_multiple_interior_contacts": 0,
+      "draws_invalid": 0,
+      "alpha_95": [
+        25.583814279884898,
+        25.705064824894443
+      ],
+      "alpha2_95": [
+        26.43420854611724,
+        26.559928950958522
+      ],
+      "width_95": [
+        0.7336911291131338,
+        0.9649677384296891
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 1,
+      "offset_gradient_max_abs": 7.120536272428792e-10,
+      "status": "connected",
+      "contacts": [
+        {
+          "alpha_at_pct": 2.63671875,
+          "alpha2_at_pct": 3.18359375,
+          "window_edge": true,
+          "order_left": 0.007074609375000167,
+          "order_right": 0.0072866881418540445,
+          "order_direction": "rising",
+          "order_se_left": 4.59500470970407e-05,
+          "order_se_right": 5.626876001295765e-05
+        },
+        {
+          "alpha_at_pct": 25.546875000000004,
+          "alpha2_at_pct": 26.425781250000004,
+          "window_edge": false,
+          "order_left": 0.12153134086815023,
+          "order_right": 0.7485512199025475,
+          "order_direction": "rising",
+          "order_se_left": 0.01945972467380096,
+          "order_se_right": 0.0011833236599533311
+        }
+      ]
+    }
+  }
+]

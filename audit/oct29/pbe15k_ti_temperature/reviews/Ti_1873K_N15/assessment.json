@@ -1,0 +1,517 @@
+{
+  "reviewed_unix": 1793808737.9729204,
+  "temperature_K": 1873,
+  "n_replicas": 15,
+  "summary_sha256": "be39e1f7db0878cdd14243bfe43f1ef571658bce3cf5c3925a47a13ecd204c7a",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 3.111775050074184,
+      "eta_std_mPa_s": 0.09635045506481266,
+      "relative_std": 0.030963181307889102,
+      "neff": 64.3147558695143,
+      "tau_exp_ps": 0.16386135053578402,
+      "tau_int_ps": 0.11849068395931403,
+      "cost_z": 0.7845568263277279,
+      "criterion_z": 0.15178747485832841
+    },
+    "first20ps": {
+      "eta_mPa_s": 3.0169366051974214,
+      "eta_std_mPa_s": 0.12368343224992762,
+      "relative_std": 0.0409963643375377,
+      "neff": 33.24147645217812,
+      "tau_exp_ps": 0.1479633960614737,
+      "tau_int_ps": 0.11529420199118995,
+      "cost_z": 0.19491370782222442,
+      "criterion_z": -0.0907346019388292
+    },
+    "second20ps": {
+      "eta_mPa_s": 3.1887432898984955,
+      "eta_std_mPa_s": 0.14875521217663548,
+      "relative_std": 0.046650105904690334,
+      "neff": 31.285293275213842,
+      "tau_exp_ps": 0.18057086155021057,
+      "tau_int_ps": 0.12098654926545327,
+      "cost_z": -0.9695092720464494,
+      "criterion_z": 1.5072949956713992
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs_N10_percent": -0.5245506224921259,
+      "SE_change_percent": -18.276127180246114,
+      "vs_5k_percent": -4.515337643016693,
+      "vs_historical15k_percent": -3.22654789493636
+    },
+    "first20ps": {
+      "vs_N10_percent": -2.4391900321947824,
+      "SE_change_percent": -19.74994801996082,
+      "vs_5k_percent": -7.42545059841917,
+      "vs_historical15k_percent": -6.175939658579854
+    },
+    "second20ps": {
+      "vs_N10_percent": 0.6589441907762339,
+      "SE_change_percent": -18.872921863091886,
+      "vs_5k_percent": -2.1535710392062812,
+      "vs_historical15k_percent": -0.8329037045982757
+    }
+  },
+  "new_batch_40ps": {
+    "eta_mPa_s": 3.0581667927346623,
+    "eta_std_mPa_s": 0.15934910150807913,
+    "relative_std": 0.052106085870348026,
+    "neff": 72.10982566350997,
+    "tau_exp_ps": 0.15955356759354997,
+    "tau_int_ps": 0.11819696486093997,
+    "cost_z": -0.14071175345763082,
+    "criterion_z": -0.17916031509004907
+  },
+  "previous_replicas_40ps": {
+    "eta_mPa_s": 3.128183958501201,
+    "eta_std_mPa_s": 0.11789756376000246,
+    "relative_std": 0.037688820518244216,
+    "neff": 66.52074721599739,
+    "tau_exp_ps": 0.1628585347997631,
+    "tau_int_ps": 0.11824138421820336,
+    "cost_z": -0.20303992364544024,
+    "criterion_z": 0.32756155712021556
+  },
+  "new_batch_z": 0.3532259612615194,
+  "new_batch_vs_previous_percent": -2.238268806930588,
+  "checks": [
+    {
+      "id": "Ti_1873K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": true,
+        "window_fit_diagnostics": true
+      },
+      "passed": false,
+      "last_three_relative_range": 0.027937464117083734,
+      "max_20_40_relative_difference": 0.030477281728478967
+    }
+  ],
+  "pass_streak": 0,
+  "stop_recommended": false,
+  "review_required": false,
+  "visual_review": {
+    "files": [
+      "convergence.png",
+      "40ps/spectrum.png",
+      "40ps/extras.png",
+      "first20ps/spectrum.png",
+      "first20ps/extras.png",
+      "second20ps/spectrum.png",
+      "second20ps/extras.png",
+      "new_batch_40ps/spectrum.png",
+      "new_batch_40ps/extras.png"
+    ],
+    "notes": "All nine source figures visually inspected. Full40 and first20 cutoff weights concentrated near 1.6 THz; second20 has a broader low-frequency shoulder and main mode near 1.5 THz. New five replicas have a broader single weight peak near 1.7 THz. All four cost/cutoff summary Z values below 2; no selected high-frequency mode. Cumulative mean nearly unchanged from N10; split-window spread increases but is not evidence of physical drift. Crowded minor cutoff-axis labels in source extras remain readable; no source image was modified.",
+    "monitor_figure": "campaign_monitor.png: PASS; all labels, error bars and series visually checked."
+  },
+  "runtime_verification": "runtime-check.json: PASS; five new replica raw hashes, model/protocol identity, 512 Ti, 1873 K target, 40001 samples, 40 ps, one A100 verified; current 2000 K input checked.",
+  "campaign_points": [
+    {
+      "id": "Ti_1873K",
+      "temperature_K": 1873,
+      "x_Al": 0.0,
+      "n_replicas": 15,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 3.111775050074184,
+          "eta_std_mPa_s": 0.09635045506481266,
+          "relative_std": 0.030963181307889102,
+          "neff": 64.3147558695143,
+          "tau_exp_ps": 0.16386135053578402,
+          "tau_int_ps": 0.11849068395931403,
+          "cost_z": 0.7845568263277279,
+          "criterion_z": 0.15178747485832841
+        },
+        "first20ps": {
+          "eta_mPa_s": 3.0169366051974214,
+          "eta_std_mPa_s": 0.12368343224992762,
+          "relative_std": 0.0409963643375377,
+          "neff": 33.24147645217812,
+          "tau_exp_ps": 0.1479633960614737,
+          "tau_int_ps": 0.11529420199118995,
+          "cost_z": 0.19491370782222442,
+          "criterion_z": -0.0907346019388292
+        },
+        "second20ps": {
+          "eta_mPa_s": 3.1887432898984955,
+          "eta_std_mPa_s": 0.14875521217663548,
+          "relative_std": 0.046650105904690334,
+          "neff": 31.285293275213842,
+          "tau_exp_ps": 0.18057086155021057,
+          "tau_int_ps": 0.12098654926545327,
+          "cost_z": -0.9695092720464494,
+          "criterion_z": 1.5072949956713992
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/Ti_1873K/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "b7c3c63527da5ca884cc41ffd69450f9cd6e847f179018d87cf387da461f0dda"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/Ti_1873K/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "2d8e3e42acc29f60fd09dfdf804342b777ca7dcb8e1cf9602d86e9e3b8dc7c7f"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/Ti_1873K/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "76369a5b9c28e7b93ddee6cfeec20a207f980ed68d75e4082dd39d0a744f0cd9"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/Ti_1873K/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "d8e9b4c670ea62c499db8f3480c00c8471ec59f32ae2fc1cebce9cf381753091"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/Ti_1873K/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "9d3bcc7509f5925ca6543d48347ddd56e22c4255dd4a36a66328ec7900bb4999"
+        },
+        {
+          "replica": 6,
+          "stress_file": "states/Ti_1873K/replicas/replica_0006/attempt_001/production/stress.npz",
+          "sha256": "e8beb4bced8c1d2e28c2cfa5f6100dbf284923b3bb9c0b5ae797771b5be202cf"
+        },
+        {
+          "replica": 7,
+          "stress_file": "states/Ti_1873K/replicas/replica_0007/attempt_001/production/stress.npz",
+          "sha256": "69dd55b4ff31b4d1c2433eadd51d77fbe25c36d88a3ec626ac011f620421b81c"
+        },
+        {
+          "replica": 8,
+          "stress_file": "states/Ti_1873K/replicas/replica_0008/attempt_001/production/stress.npz",
+          "sha256": "7b658553992d46a78219e2cadd2f7c849936fbf5a60d6f00d7bab38524b5cad4"
+        },
+        {
+          "replica": 9,
+          "stress_file": "states/Ti_1873K/replicas/replica_0009/attempt_001/production/stress.npz",
+          "sha256": "3bf651427a21ce67b857ecc40c2587358c19eaf203af5be33177386cead4c131"
+        },
+        {
+          "replica": 10,
+          "stress_file": "states/Ti_1873K/replicas/replica_0010/attempt_001/production/stress.npz",
+          "sha256": "89c45d8b925cab85e84fc376e24bf85fb42fbd827c7a3bcf8cb4251c8ebf3961"
+        },
+        {
+          "replica": 11,
+          "stress_file": "states/Ti_1873K/replicas/replica_0011/attempt_001/production/stress.npz",
+          "sha256": "33e0930105f2d6091ee35e3ac59ed90c9104c723a0aa2b531cadb3402a107a5b"
+        },
+        {
+          "replica": 12,
+          "stress_file": "states/Ti_1873K/replicas/replica_0012/attempt_001/production/stress.npz",
+          "sha256": "75809964c0543459695aca8e77ba2fa31122d642a9c8fe3f46e579ac914cbdef"
+        },
+        {
+          "replica": 13,
+          "stress_file": "states/Ti_1873K/replicas/replica_0013/attempt_001/production/stress.npz",
+          "sha256": "8e574b5723a01c69ce473b9d7a57da73c1668f36425be0a2482939ebfd701344"
+        },
+        {
+          "replica": 14,
+          "stress_file": "states/Ti_1873K/replicas/replica_0014/attempt_001/production/stress.npz",
+          "sha256": "cb5e2e6a83d02f0cef5ec7334f26b0b7cd2d005c6788a7c1a2b9b291e463b11e"
+        },
+        {
+          "replica": 15,
+          "stress_file": "states/Ti_1873K/replicas/replica_0015/attempt_001/production/stress.npz",
+          "sha256": "5ad82bfe44e845be47a62aa744256d0adbc522027dbbc970fb3016f1d5302f12"
+        }
+      ],
+      "new_batch_40ps": {
+        "eta_mPa_s": 3.0581667927346623,
+        "eta_std_mPa_s": 0.15934910150807913,
+        "relative_std": 0.052106085870348026,
+        "neff": 72.10982566350997,
+        "tau_exp_ps": 0.15955356759354997,
+        "tau_int_ps": 0.11819696486093997,
+        "cost_z": -0.14071175345763082,
+        "criterion_z": -0.17916031509004907
+      },
+      "previous_replicas_40ps": {
+        "eta_mPa_s": 3.128183958501201,
+        "eta_std_mPa_s": 0.11789756376000246,
+        "relative_std": 0.037688820518244216,
+        "neff": 66.52074721599739,
+        "tau_exp_ps": 0.1628585347997631,
+        "tau_int_ps": 0.11824138421820336,
+        "cost_z": -0.20303992364544024,
+        "criterion_z": 0.32756155712021556
+      },
+      "new_batch_z": 0.3532259612615194
+    },
+    {
+      "id": "Ti_2000K",
+      "temperature_K": 2000,
+      "x_Al": 0.0,
+      "n_replicas": 10,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 2.945048222540609,
+          "eta_std_mPa_s": 0.11557838915029565,
+          "relative_std": 0.039244990375943485,
+          "neff": 63.14185145332588,
+          "tau_exp_ps": 0.1691918499443115,
+          "tau_int_ps": 0.11401451296875936,
+          "cost_z": -0.48723159352002604,
+          "criterion_z": 0.27452196412273
+        },
+        "first20ps": {
+          "eta_mPa_s": 2.8869435495281905,
+          "eta_std_mPa_s": 0.15513077169057213,
+          "relative_std": 0.053735297912536235,
+          "neff": 37.77415370135904,
+          "tau_exp_ps": 0.15864217078074416,
+          "tau_int_ps": 0.11231666041018516,
+          "cost_z": -1.7043134976462533,
+          "criterion_z": 0.4211243261611211
+        },
+        "second20ps": {
+          "eta_mPa_s": 2.9224296037716333,
+          "eta_std_mPa_s": 0.15237500013087307,
+          "relative_std": 0.05213983595506312,
+          "neff": 34.14674407086995,
+          "tau_exp_ps": 0.15844034184932695,
+          "tau_int_ps": 0.11258307780881226,
+          "cost_z": -1.0899243062984434,
+          "criterion_z": -0.5627243842503679
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/Ti_2000K/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "f7d64d5a4b7f276d8262781c3a42b8af4c559db55df6e91e24fc27888127dc3a"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/Ti_2000K/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "254a8146815be696de94b446e3bfe855f99a14ebcff5029896a4b4d8e0b2f521"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/Ti_2000K/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "b8ea1c725e2f045d2aa9028b24fc74022ac11d8fe2a88c101d7fa3b3e0480809"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/Ti_2000K/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "059ede3eaddca1150361d543e969c8263c1dac33104e83ea06a08059e10d7260"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/Ti_2000K/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "a25b23c531cda249dd82174244a2a1a71f946b350db10d22d72c8a3e25bccb46"
+        },
+        {
+          "replica": 6,
+          "stress_file": "states/Ti_2000K/replicas/replica_0006/attempt_001/production/stress.npz",
+          "sha256": "feec131924aa25a85b7702bf7a4c8cb173292a276451aeffeca876d86743fbb8"
+        },
+        {
+          "replica": 7,
+          "stress_file": "states/Ti_2000K/replicas/replica_0007/attempt_001/production/stress.npz",
+          "sha256": "7ad68a70b3c8077e02611c1c91ae693d738c26cc96af2381f50bb576579a1467"
+        },
+        {
+          "replica": 8,
+          "stress_file": "states/Ti_2000K/replicas/replica_0008/attempt_001/production/stress.npz",
+          "sha256": "6938bfffa42f6a287897b03a7130c22ec967ada19e36a16ba00d40965813ada6"
+        },
+        {
+          "replica": 9,
+          "stress_file": "states/Ti_2000K/replicas/replica_0009/attempt_001/production/stress.npz",
+          "sha256": "b17b46b3783845717f8449fbc4833c408667904d8a9a0b0fad267c690ba25d4e"
+        },
+        {
+          "replica": 10,
+          "stress_file": "states/Ti_2000K/replicas/replica_0010/attempt_001/production/stress.npz",
+          "sha256": "d566e55d66a6b5b60cebeea5f9ddc8aa320094ba90bd77062b0f040ebaccf861"
+        }
+      ],
+      "new_batch_40ps": {
+        "eta_mPa_s": 2.900224255871437,
+        "eta_std_mPa_s": 0.13816687989098053,
+        "relative_std": 0.047640067698649466,
+        "neff": 86.5090190424162,
+        "tau_exp_ps": 0.13601958669238046,
+        "tau_int_ps": 0.11064216349835843,
+        "cost_z": 0.8677957891975356,
+        "criterion_z": -0.11383443332591163
+      },
+      "previous_replicas_40ps": {
+        "eta_mPa_s": 2.9556353516344,
+        "eta_std_mPa_s": 0.17334079721418966,
+        "relative_std": 0.05864755850830384,
+        "neff": 65.05504614303251,
+        "tau_exp_ps": 0.1916904555724638,
+        "tau_int_ps": 0.11614280469180654,
+        "cost_z": 0.21837332887340716,
+        "criterion_z": -0.14960848424073273
+      },
+      "new_batch_z": 0.24997230519785985
+    },
+    {
+      "id": "Ti_2100K",
+      "temperature_K": 2100,
+      "x_Al": 0.0,
+      "n_replicas": 15,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 2.527711148983959,
+          "eta_std_mPa_s": 0.06788937033580685,
+          "relative_std": 0.026858041261200165,
+          "neff": 83.87668941324186,
+          "tau_exp_ps": 0.11567057970180296,
+          "tau_int_ps": 0.09988206983968258,
+          "cost_z": -0.008201252717357489,
+          "criterion_z": 4.745914890702562
+        },
+        "first20ps": {
+          "eta_mPa_s": 2.599621311336925,
+          "eta_std_mPa_s": 0.09749205798676094,
+          "relative_std": 0.037502407585904514,
+          "neff": 46.839693852980815,
+          "tau_exp_ps": 0.12003907231078452,
+          "tau_int_ps": 0.102336449450978,
+          "cost_z": 1.3231817478675842,
+          "criterion_z": 1.296264259687224
+        },
+        "second20ps": {
+          "eta_mPa_s": 2.4018260425199482,
+          "eta_std_mPa_s": 0.10628242888840232,
+          "relative_std": 0.04425067719596083,
+          "neff": 57.49850547204462,
+          "tau_exp_ps": 0.10104591645554474,
+          "tau_int_ps": 0.09526821053962312,
+          "cost_z": -0.048416189442147414,
+          "criterion_z": 4.862316844346897
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/Ti_2100K/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "80cd333bbd4c1a9e9297dfddedf950f81a7ee13a069e391d6a44b9dbe4588c8b"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/Ti_2100K/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "ae9414fb9252bd7839bed4997f806d3237f40a5537e85764ed47fe50895590e3"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/Ti_2100K/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "4b7f63040408f85337d3163b4d0ff2d285d0b563fd4d95d6996f0395441956b6"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/Ti_2100K/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "1c55ee79b63a875427898b7112f1ae8a879c33e3432a4a592ec92b467d94e2d5"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/Ti_2100K/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "c503f0b81fb024c76b59cac139c647e8fd9a3bb1ed971eac3d92bb77f46177c7"
+        },
+        {
+          "replica": 6,
+          "stress_file": "states/Ti_2100K/replicas/replica_0006/attempt_001/production/stress.npz",
+          "sha256": "f937ab5280f3ab0f262b5a262f0788390c6895eef31e26c50c045e21ffbd5609"
+        },
+        {
+          "replica": 7,
+          "stress_file": "states/Ti_2100K/replicas/replica_0007/attempt_001/production/stress.npz",
+          "sha256": "f076dbf496c5c92c5b7e049f142fcbd17d6c74f89565a1ded6d0c353f35ce963"
+        },
+        {
+          "replica": 8,
+          "stress_file": "states/Ti_2100K/replicas/replica_0008/attempt_001/production/stress.npz",
+          "sha256": "2d223d4131bc60a14eb15ea13ba6127572f4bcc57f2fea08b3e6d8b7b1ed50cd"
+        },
+        {
+          "replica": 9,
+          "stress_file": "states/Ti_2100K/replicas/replica_0009/attempt_001/production/stress.npz",
+          "sha256": "16732515a0d674954bb37e04c1a309577631e8956de908a4b17b8ffb910c1060"
+        },
+        {
+          "replica": 10,
+          "stress_file": "states/Ti_2100K/replicas/replica_0010/attempt_001/production/stress.npz",
+          "sha256": "aa77262060f9c6c70bf5d2579cc71ca06d0ee471a4cc26a744dfa9c0ddc32097"
+        },
+        {
+          "replica": 11,
+          "stress_file": "states/Ti_2100K/replicas/replica_0011/attempt_001/production/stress.npz",
+          "sha256": "937fd42c8787655e07c79000849840c2c680cd7829f917ad0cc87d1232e84ef2"
+        },
+        {
+          "replica": 12,
+          "stress_file": "states/Ti_2100K/replicas/replica_0012/attempt_001/production/stress.npz",
+          "sha256": "de30ca401f8842910102fe215e90c564e5af3cd18ad8e83334a030072e9e9543"
+        },
+        {
+          "replica": 13,
+          "stress_file": "states/Ti_2100K/replicas/replica_0013/attempt_001/production/stress.npz",
+          "sha256": "e807dbf769b2ede9c13aef0533198b227fc5096ee1ef3ae0cad8029ef5fe46d3"
+        },
+        {
+          "replica": 14,
+          "stress_file": "states/Ti_2100K/replicas/replica_0014/attempt_001/production/stress.npz",
+          "sha256": "4faf889afb0f70f58c610b0e5c947053a6e730f2f7003298ae078b46198c3814"
+        },
+        {
+          "replica": 15,
+          "stress_file": "states/Ti_2100K/replicas/replica_0015/attempt_001/production/stress.npz",
+          "sha256": "1a207d19507a2200ae77545125a9599d762abf6b8f47e249bff7aea759691623"
+        }
+      ],
+      "new_batch_40ps": {
+        "eta_mPa_s": 2.4381547654333207,
+        "eta_std_mPa_s": 0.101584977582094,
+        "relative_std": 0.04166469619660909,
+        "neff": 100.01573036801021,
+        "tau_exp_ps": 0.10330636764884434,
+        "tau_int_ps": 0.09678519885489847,
+        "cost_z": 0.2247819892254581,
+        "criterion_z": -0.30887843682645133
+      },
+      "previous_replicas_40ps": {
+        "eta_mPa_s": 2.5482123984211085,
+        "eta_std_mPa_s": 0.08844837084267763,
+        "relative_std": 0.03470996801423653,
+        "neff": 97.82835136466075,
+        "tau_exp_ps": 0.11847656891319104,
+        "tau_int_ps": 0.10046280991514124,
+        "cost_z": 0.039879834225329265,
+        "criterion_z": 6.309610179533286
+      },
+      "new_batch_z": 0.8170904647281654
+    }
+  ],
+  "sources_sha256": {
+    "collected/analysis/Ti_1873K/batch_0015/summary.json": "be39e1f7db0878cdd14243bfe43f1ef571658bce3cf5c3925a47a13ecd204c7a",
+    "collected/analysis/Ti_2000K/batch_0010/summary.json": "adae6e37eae5c02090df82e46eff712358c19ae624b3d7a750b66e17dd377abd",
+    "collected/analysis/Ti_2100K/batch_0015/summary.json": "e70f229e4d756c569602ce245a77da50efddd1f2da1d17a7fabda2343c6fd101"
+  },
+  "article_profile_sha256": "8ca5307ab484cf7963593cdd0c36bd6dca3fd2800cb8e1893fa164874365cfe8",
+  "caveats": [
+    "Formal estimator standard errors exclude model/protocol systematics.",
+    "Cumulative estimates and 20/40 ps windows are correlated; the convergence criteria are a heuristic.",
+    "Historical 15k and 5k references remain separate; agreement with 5k is not a stopping criterion.",
+    "The fixed article profile is unchanged; this figure shows only completed campaign batches and separate reference data."
+  ],
+  "article_compile": "PASS; 18 pages, Figure 7 on page 14 is byte-identical to the previously inspected render; fixed profile preserved.",
+  "render_script_sha256": "4ba49b8da3d354244e5f0536ee83e64b4e1a7e61df344c04b5ad7a0e2df32c51"
+}

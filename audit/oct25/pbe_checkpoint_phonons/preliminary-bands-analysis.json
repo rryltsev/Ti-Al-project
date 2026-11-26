@@ -1,0 +1,306 @@
+{
+  "primary_supercell": [
+    5,
+    5,
+    5
+  ],
+  "archive_reproduction_5k": {
+    "rms_THz": 0.00011297280441015334,
+    "max_abs_THz": 0.0003317710968189225,
+    "mean_THz": -2.2882564854570346e-05
+  },
+  "experimental_note": "Digitized room-temperature points; nearest-frequency branch distance is descriptive, without branch labels/uncertainties, not a statistically calibrated phonon RMSE. No points removed.",
+  "controls": {
+    "5000/common": {
+      "half-displacement": {
+        "rms_THz": 0.0003024371469379246,
+        "max_abs_THz": 0.00082042428331075,
+        "mean_THz": 8.759639063452592e-06
+      },
+      "large-cell": {
+        "rms_THz": 0.028993686736697843,
+        "max_abs_THz": 0.1401660147925341,
+        "mean_THz": 0.005142939050669775
+      },
+      "raw_to_corrected": {
+        "rms_THz": 0.0011521709562160962,
+        "max_abs_THz": 0.019647229287093112,
+        "mean_THz": -9.963149715850368e-06
+      }
+    },
+    "5000/relaxed": {
+      "half-displacement": {
+        "rms_THz": 0.0005908875214196274,
+        "max_abs_THz": 0.0020795530747568236,
+        "mean_THz": -0.00020530411608937483
+      },
+      "large-cell": {
+        "rms_THz": 0.028881814010452152,
+        "max_abs_THz": 0.13871745443130346,
+        "mean_THz": 0.005131092575634566
+      },
+      "raw_to_corrected": {
+        "rms_THz": 0.001657512734831305,
+        "max_abs_THz": 0.02892983122464335,
+        "mean_THz": -1.2957611931723387e-05
+      }
+    },
+    "20000/common": {
+      "half-displacement": {
+        "rms_THz": 0.0003690653800719041,
+        "max_abs_THz": 0.0009044992335236479,
+        "mean_THz": 0.00016808939761471975
+      },
+      "large-cell": {
+        "rms_THz": 0.04078380255865131,
+        "max_abs_THz": 0.2358454074493026,
+        "mean_THz": 0.005928121870349293
+      },
+      "raw_to_corrected": {
+        "rms_THz": 0.0015667312177957303,
+        "max_abs_THz": 0.03164934000732532,
+        "mean_THz": -3.894512842199394e-05
+      }
+    },
+    "20000/relaxed": {
+      "half-displacement": {
+        "rms_THz": 0.0005314906210259368,
+        "max_abs_THz": 0.0014726992841254116,
+        "mean_THz": 0.0001857010365644956
+      },
+      "large-cell": {
+        "rms_THz": 0.041153565037861044,
+        "max_abs_THz": 0.2406196070308555,
+        "mean_THz": 0.006191764301350949
+      },
+      "raw_to_corrected": {
+        "rms_THz": 0.0017172285495428007,
+        "max_abs_THz": 0.030155313995215573,
+        "mean_THz": -5.0728897750102576e-05
+      }
+    },
+    "23400/common": {
+      "half-displacement": {
+        "rms_THz": 0.00035602879365133653,
+        "max_abs_THz": 0.0010603585364261647,
+        "mean_THz": 0.000122448991578717
+      },
+      "large-cell": {
+        "rms_THz": 0.04134932726123409,
+        "max_abs_THz": 0.24138914402601808,
+        "mean_THz": 0.006167364636088758
+      },
+      "raw_to_corrected": {
+        "rms_THz": 0.001820033278009404,
+        "max_abs_THz": 0.035185494520848404,
+        "mean_THz": 5.397135266629809e-05
+      }
+    },
+    "23400/relaxed": {
+      "half-displacement": {
+        "rms_THz": 0.0006504436369124791,
+        "max_abs_THz": 0.0022770547771235883,
+        "mean_THz": -0.00013628733516221153
+      },
+      "large-cell": {
+        "rms_THz": 0.04160962616267775,
+        "max_abs_THz": 0.24471579012585964,
+        "mean_THz": 0.006299141773533404
+      },
+      "raw_to_corrected": {
+        "rms_THz": 0.001502769718732872,
+        "max_abs_THz": 0.03290892815712554,
+        "mean_THz": 9.615166852717476e-05
+      }
+    }
+  },
+  "comparisons": {
+    "5000/common_vs_5k_same_geometry_protocol": {
+      "rms_THz": 0.0,
+      "max_abs_THz": 0.0,
+      "mean_THz": 0.0
+    },
+    "5000/relaxed_vs_5k_same_geometry_protocol": {
+      "rms_THz": 0.0,
+      "max_abs_THz": 0.0,
+      "mean_THz": 0.0
+    },
+    "5000_geometry_effect": {
+      "rms_THz": 0.002722730552666751,
+      "max_abs_THz": 0.007397656063396596,
+      "mean_THz": -0.0010902833502329117
+    },
+    "20000/common_vs_5k_same_geometry_protocol": {
+      "rms_THz": 0.11821581228935545,
+      "max_abs_THz": 0.36843962855992274,
+      "mean_THz": 0.028115152968374937
+    },
+    "20000/relaxed_vs_5k_same_geometry_protocol": {
+      "rms_THz": 0.11038220655389547,
+      "max_abs_THz": 0.35405648645995225,
+      "mean_THz": 0.027944346820025646
+    },
+    "20000_geometry_effect": {
+      "rms_THz": 0.010997305834814237,
+      "max_abs_THz": 0.022759848894915002,
+      "mean_THz": -0.0012610894985821985
+    },
+    "23400/common_vs_5k_same_geometry_protocol": {
+      "rms_THz": 0.12603272407214364,
+      "max_abs_THz": 0.4365553533018973,
+      "mean_THz": 0.01426117757677987
+    },
+    "23400/relaxed_vs_5k_same_geometry_protocol": {
+      "rms_THz": 0.12069109771914806,
+      "max_abs_THz": 0.43517145573106397,
+      "mean_THz": 0.012515067176585496
+    },
+    "23400_geometry_effect": {
+      "rms_THz": 0.008357920690048955,
+      "max_abs_THz": 0.018451164282415,
+      "mean_THz": -0.002836393750427286
+    }
+  },
+  "experiment": {
+    "5000/common": {
+      "n": 77,
+      "nearest_branch_rms_THz": 0.22572007743777092,
+      "nearest_branch_MAE_THz": 0.17121605902521753,
+      "fixed_5k_branch_association_rms_THz": 0.22572007743777092
+    },
+    "5000/relaxed": {
+      "n": 77,
+      "nearest_branch_rms_THz": 0.2249413947242999,
+      "nearest_branch_MAE_THz": 0.17087667485574431,
+      "fixed_5k_branch_association_rms_THz": 0.2249413947242999
+    },
+    "20000/common": {
+      "n": 77,
+      "nearest_branch_rms_THz": 0.20737500907390644,
+      "nearest_branch_MAE_THz": 0.17005485965894218,
+      "fixed_5k_branch_association_rms_THz": 0.21337488481999695
+    },
+    "20000/relaxed": {
+      "n": 77,
+      "nearest_branch_rms_THz": 0.20830461835133332,
+      "nearest_branch_MAE_THz": 0.1708877054206532,
+      "fixed_5k_branch_association_rms_THz": 0.21362272552046666
+    },
+    "23400/common": {
+      "n": 77,
+      "nearest_branch_rms_THz": 0.20408040061837474,
+      "nearest_branch_MAE_THz": 0.16713936306653052,
+      "fixed_5k_branch_association_rms_THz": 0.2102515033672951
+    },
+    "23400/relaxed": {
+      "n": 77,
+      "nearest_branch_rms_THz": 0.20421466409725555,
+      "nearest_branch_MAE_THz": 0.16745908843998003,
+      "fixed_5k_branch_association_rms_THz": 0.20973870939112796
+    }
+  },
+  "geometry": {
+    "5000": {
+      "common": {
+        "a_A": 2.934990406922347,
+        "c_A": 4.639683953212114,
+        "c_over_a": 1.5808174167347013,
+        "V_per_atom_A3": 17.306227418687822,
+        "energy_eV_atom": -7.7979190745773295,
+        "stress_GPa": [
+          0.01502571531190905,
+          0.015022651626477012,
+          -0.029858548573057662,
+          9.288528782701552e-07,
+          -9.04824999713142e-08,
+          3.53278951927718e-07
+        ],
+        "max_force_eV_A": 3.5323561165265717e-07
+      },
+      "relaxed": {
+        "a_A": 2.934642860386192,
+        "c_A": 4.640714594965622,
+        "c_over_a": 1.5813558295658896,
+        "V_per_atom_A3": 17.30597246084038,
+        "energy_eV_atom": -7.797919551414488,
+        "stress_GPa": [
+          1.688069233949049e-05,
+          2.9822500897980093e-05,
+          2.424090352577155e-05,
+          1.085608775125673e-06,
+          -2.717188039632789e-06,
+          -6.797014636134052e-07
+        ],
+        "max_force_eV_A": 1.675283289261074e-07
+      }
+    },
+    "20000": {
+      "common": {
+        "a_A": 2.934990406922347,
+        "c_A": 4.639683953212114,
+        "c_over_a": 1.5808174167347013,
+        "V_per_atom_A3": 17.306227418687822,
+        "energy_eV_atom": -7.804815033954618,
+        "stress_GPa": [
+          -0.2503573011416114,
+          -0.2503638668784333,
+          -0.053730228719329275,
+          -1.6289311377773124e-06,
+          -1.3669818289099175e-06,
+          4.442104655677673e-07
+        ],
+        "max_force_eV_A": 4.486384873082819e-07
+      },
+      "relaxed": {
+        "a_A": 2.9381866592721537,
+        "c_A": 4.6373913416078265,
+        "c_over_a": 1.578317472436077,
+        "V_per_atom_A3": 17.335371291214674,
+        "energy_eV_atom": -7.8048437633934,
+        "stress_GPa": [
+          1.5762795710794597e-05,
+          2.21012606575541e-05,
+          2.1523659082780957e-06,
+          -2.3390914033832027e-07,
+          -6.668756203518071e-08,
+          4.354915259373107e-07
+        ],
+        "max_force_eV_A": 3.4725569034974793e-07
+      }
+    },
+    "23400": {
+      "common": {
+        "a_A": 2.934990406922347,
+        "c_A": 4.639683953212114,
+        "c_over_a": 1.5808174167347013,
+        "V_per_atom_A3": 17.306227418687822,
+        "energy_eV_atom": -7.803930620235441,
+        "stress_GPa": [
+          -0.21461838085010732,
+          -0.21463558393659438,
+          -0.08449350180681407,
+          9.027937932548215e-07,
+          -1.5820015597238355e-06,
+          1.3639471267188553e-06
+        ],
+        "max_force_eV_A": 1.218369771978385e-07
+      },
+      "relaxed": {
+        "a_A": 2.9375499170912396,
+        "c_A": 4.638800948448412,
+        "c_over_a": 1.5791394459236119,
+        "V_per_atom_A3": 17.333125587949453,
+        "energy_eV_atom": -7.80394945530319,
+        "stress_GPa": [
+          -2.895647394869641e-06,
+          -1.7381206350443672e-05,
+          -8.858102198755174e-06,
+          9.559088059034994e-07,
+          -8.20425183695761e-07,
+          8.255565723272929e-08
+        ],
+        "max_force_eV_A": 3.76784063600004e-07
+      }
+    }
+  }
+}

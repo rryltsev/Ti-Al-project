@@ -1,0 +1,21 @@
+{
+  "key": "forces",
+  "job_id": "20991463",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=v100",
+    "--gres=gpu:a100:1",
+    "--mem=24G",
+    "--time=00:15:00",
+    "--array=0-15%1",
+    "--job-name=Ti3Al-PBE-forces",
+    "--output=forces-%A_%a.log",
+    "forces.sbatch"
+  ],
+  "utc": "2026-11-09T17:03:19.830723+00:00"
+}

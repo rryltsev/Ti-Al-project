@@ -1,0 +1,26 @@
+{
+  "parent_job": "20968910",
+  "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-04",
+  "checkpoints": {
+    "CHGCAR": {
+      "sha256": "ccb6fb747ded8aba118c32d7ccd5ed2a5ef6df9a2d8ee42ec03304cfe5120cf4",
+      "bytes": 127578746
+    },
+    "TAUCAR": {
+      "sha256": "a979a09324224d6f02d6d087204e139b80bb6a799a812893b02e0004b943f7bb",
+      "bytes": 127374170
+    },
+    "WAVECAR": {
+      "sha256": "d80676dd9f8d682f70dc1efdc2b66b2845e23e30f04e7480cefc4fffacc6e795",
+      "bytes": 25201037952
+    }
+  },
+  "frozen_source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/recovery-01/force-002",
+  "driver_sha256": "3f5d5e6892067987d0103211814b0c0cc54a484223b5563a1bf729d56edf37ec",
+  "policy_sha256": "a6661c042d25c91b5060c72cfa6501ffcf0ae49f87f8f784fe18e28314b4886b",
+  "changes": [
+    "Opposite displacement from frozen phonopy inputs; same scientific settings",
+    "ISTART1/ICHARG1: converged first displacement as initial guess; self-consistency retained",
+    "64 ranks KPAR8 NCORE4 NBANDS576; LWAVE/LCHARG enabled"
+  ]
+}

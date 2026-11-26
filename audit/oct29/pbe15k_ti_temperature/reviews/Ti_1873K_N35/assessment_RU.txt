@@ -1,0 +1,17 @@
+1873 K N=35: новый полный пакет. Все ошибки ниже — формальные SE.
+
+40ps: 3.165205 +/- 0.069196 мПа·с; neff=58.570; costZ=0.821; cutoffZ=2.776.
+first20ps: 3.082943 +/- 0.085327 мПа·с; neff=33.560; costZ=-0.033; cutoffZ=-0.150.
+second20ps: 3.203226 +/- 0.100793 мПа·с; neff=25.353; costZ=-0.244; cutoffZ=1.359.
+Прежние30: 3.144310+/-0.075790; изменение40 +0.6645%; изменениеSE -8.700%.
+Новые5: 3.321848+/-0.171835; против прежнихZ=0.945; costZ=0.375; cutoffZ=-0.725.
+Отдельные5k: 3.258927+/-0.153054; отличие -2.876%.
+[{"id": "Ti_1873K", "flags": {"minimum_replicas": true, "precision": true, "last_three_stability": false, "duration_stability": true, "spectral_points": false, "cost": true, "cutoff": false, "new_batch_consistency": true, "window_fit_diagnostics": false}, "passed": false, "last_three_relative_range": 0.030099280153234365, "max_20_40_relative_difference": 0.025989467424819}]
+Полных прохождений 0/2; stop=False; review hold=False.
+All nine source diagnostic figures inspected. Full40 main cutoff mode near1.6THz plus smaller mode near0.9THz;weighted cutoffZ2.776 fails. First20 main mode near1.7THz passes. Second20 broad bimodal weight near0.9 and1.5THz passes weighted diagnostics. New5 main mode near1.8THz passes cost/cutoff with broad SE. No dominant high-frequency mode visible. Low full40 neff58.570 fails. Higher new5 value does not establish physical drift; comparison with the previously cutoff-failed cumulative result is descriptive.
+Formal SE excludes model, protocol and cutoff systematics.
+Accumulated estimates and windows20/40ps are correlated; stopping is a heuristic.
+Historical15k and5k remain separate; agreement with5k is not a stop criterion.
+Fixed article profile and the earlier preview snapshot remain unchanged.
+Исторические15k: 3.215526+/-0.109346; отличие40 -1.565%.
+Не проходят размах3.0099%>2%,neff40=58.5698<60,cutoff40Z2.7756>2. Другиеокна/новые5cost/cutoff проходят. SE2.1861%,20/40=2.5989%,newbatchZ0.9453 проходят. Полныхпрохождений0/2. ДоreviewholdN50 ещё не дошли.

@@ -1,0 +1,9 @@
+{
+  "purpose": "Matched-protocol article Figure2 variant",
+  "user_choice": "2026-11-01: PBE15k, consistent with current manuscript, explicitly preferred over previous PBE5k comparison",
+  "PBE": {"checkpoint": 15000, "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf", "force_job_id": "20973104"},
+  "PBEsol": {"checkpoint": 23100, "sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295", "force_job_id": "20972853"},
+  "r2SCAN": {"checkpoint": 23200, "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309", "force_job_id": "20973060"},
+  "protocol": "Same XC-specific DFT geometry and frozen force000/001/002 POSCARs; 4x4x3 cell; central pair +/-0.01A; common Phonopy force-constant processing",
+  "earlier_PBE5k_results": "Historical comparison retained; do not substitute its DOS or bands into the PBE15k candidate figure"
+}

@@ -1,0 +1,116 @@
+{
+  "checked_unix": 1793880913.6744597,
+  "checks": {
+    "protocol.json": true,
+    "baseline_5k.json": true,
+    "known_15k.json": true,
+    "workflow.py": true,
+    "md_core.py": true,
+    "analysis_common.py": true,
+    "analyze_point.py": true,
+    "test_analysis.py": true,
+    "README_RU.txt": true,
+    "initial_Ti_2100K.data": true,
+    "initial_Ti_1873K.data": true,
+    "initial_Ti_2000K.data": true,
+    "checkpoint": true,
+    "frozen_model": true,
+    "preflight": true,
+    "physics": true,
+    "normalization": true,
+    "oneA100": true,
+    "scope": true,
+    "initial_Ti_2100K": true,
+    "latest_Ti_2100K": true,
+    "initial_Ti_1873K": true,
+    "latest_Ti_1873K": true,
+    "initial_Ti_2000K": true,
+    "latest_Ti_2000K": true
+  },
+  "raw_job": "JobId=20962153 JobName=TiAl-visc15k-iter UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=904 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=1 Restarts=4 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=01:51:37 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-05T15:21:31 EligibleTime=2026-11-05T15:23:32 AccrueTime=2026-11-05T15:23:32 StartTime=2026-11-05T15:23:36 EndTime=2026-11-06T11:23:36 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-05T15:23:36 Scheduler=Main Partition=v100 AllocNode:Sid=umt:1602107 ReqNodeList=tesla-a101 ExcNodeList=(null) NodeList=tesla-a101 BatchHost=tesla-a101 NumNodes=1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/job.sbatch WorkDir=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01 StdErr=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/allocation-20962153.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/allocation-20962153.log Power= TresPerNode=gres:gpu:a100:1 \n",
+  "completed": {
+    "Ti_2100K": 30,
+    "Ti_1873K": 30,
+    "Ti_2000K": 25
+  },
+  "latest_replicas": [
+    {
+      "id": "Ti_2100K",
+      "replica": 30,
+      "target_K": 2100,
+      "prefactor_V_over_kBT": 3.273709641176875e-07,
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_1873K",
+      "replica": 30,
+      "target_K": 1873,
+      "prefactor_V_over_kBT": 3.6535877963355995e-07,
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 25,
+      "target_K": 2000,
+      "prefactor_V_over_kBT": 3.4404535852822733e-07,
+      "checks": "PASS"
+    }
+  ],
+  "progress": {
+    "status": "running",
+    "phase": "replica_preparation",
+    "job_id": "20962153",
+    "unix": 1793880834.68007,
+    "composition": "Ti_2000K",
+    "replica": 26
+  },
+  "analyzed": {
+    "Ti_2100K": 30,
+    "Ti_1873K": 30,
+    "Ti_2000K": 25
+  },
+  "JobId": "20962153",
+  "JobState": "RUNNING",
+  "Reason": "None",
+  "Restarts": "4",
+  "StartTime": "2026-11-05T15:23:36",
+  "ReqTRES": "cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1",
+  "AllocTRES": "cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1",
+  "new1873K_replicas": [
+    {
+      "replica": 26,
+      "sha256": "7150ee4b1685988b7846b8c6f8a8926c6e97822e953a5b6fad0cd03e5f20643d",
+      "volume_A3": 9503.494124723344,
+      "prefactor": 3.6750415240112e-07,
+      "checks": "PASS"
+    },
+    {
+      "replica": 27,
+      "sha256": "3a7110bfe2b70f713c3a2f2ada8331ad1b9954ed58918d5c942a699e7353ead1",
+      "volume_A3": 9575.163908897764,
+      "prefactor": 3.702756533817195e-07,
+      "checks": "PASS"
+    },
+    {
+      "replica": 28,
+      "sha256": "85241b45fa1e0c686c5b4f35086b75c4af3c35bcb3ba9fd5e2bdce4ff427fca9",
+      "volume_A3": 9522.280604502384,
+      "prefactor": 3.682306335497574e-07,
+      "checks": "PASS"
+    },
+    {
+      "replica": 29,
+      "sha256": "b17754a795deff41cf1695892bf98666792fc8f20e5d6f326b03a67331b1e59e",
+      "volume_A3": 9510.409638458494,
+      "prefactor": 3.677715782531594e-07,
+      "checks": "PASS"
+    },
+    {
+      "replica": 30,
+      "sha256": "800cda1bfc485075d25a2ab15907af622291a87a7aee9d8ec3c52e835822943c",
+      "volume_A3": 9448.015737993184,
+      "prefactor": 3.6535877963355995e-07,
+      "checks": "PASS"
+    }
+  ]
+}

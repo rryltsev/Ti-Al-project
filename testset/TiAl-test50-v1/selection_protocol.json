@@ -1,0 +1,46 @@
+{
+  "dataset_id": "TiAl-test50-v1",
+  "seed": "deterministic family medoid then composition-balanced SOAP farthest point selection",
+  "quotas": {
+    "liquid": 25,
+    "POSCAR_alpha-Ti-hcp_orthogonal": 8,
+    "POSCAR_beta-Ti-bcc": 9,
+    "POSCAR_gamma_AlTi_L1_0": 8
+  },
+  "soap": {
+    "species": [
+      "Al",
+      "Ti"
+    ],
+    "periodic": true,
+    "r_cut": 5.0,
+    "n_max": 4,
+    "l_max": 3,
+    "sigma": 0.5,
+    "average": "outer"
+  },
+  "geometry_matching_tolerance_A": 5e-05,
+  "near_duplicate_rmsd_threshold_A": 0.1,
+  "near_duplicate_cell_strain_threshold": 0.01,
+  "solid_min_training_gap_ps": 0.5,
+  "solid_one_frame_per_trajectory": true,
+  "solid_discard_before_ps": 1.0,
+  "minimum_pair_distance_A": 1.8,
+  "qc_rejected": [],
+  "near_rejected": [],
+  "eligible_candidates": 1707,
+  "n_reference_geometries": 1000,
+  "no_dft_labels": true,
+  "limitations": [
+    "Holdout from supplied fine-tuning datasets only; foundation pretraining overlap unknown.",
+    "Solid families describe parent lattices, not a verified finite-temperature phase classification. D019 trajectories are absent: all 11 source jobs failed before MD (NPT triangular-cell requirement).",
+    "0.5 ps temporal separation is a heuristic, not a measured decorrelation time; source trajectories can be shared with training.",
+    "Liquid archive lacks complete original trajectory/time metadata; trajectory-level independence cannot be certified.",
+    "Diversity-selected benchmark, not an unbiased random sample of thermodynamic configurations.",
+    "The liquid-source label is not a verified phase assignment; selected instantaneous kinetic temperatures span 590\u20133062 K."
+  ],
+  "sources": [
+    "https://singroup.github.io/dscribe/latest/tutorials/descriptors/soap.html",
+    "https://docs.ase-lib.org/ase/neighborlist.html"
+  ]
+}

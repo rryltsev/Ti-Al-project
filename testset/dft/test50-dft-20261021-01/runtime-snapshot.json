@@ -1,0 +1,887 @@
+{
+  "unix": 1792634326.3308516,
+  "states": {
+    "validated": 29,
+    "running": 5
+  },
+  "execution_code_sha256": {
+    "workflow.py": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+    "production.sbatch": "6847ee85865db1db3fc5eeb287e0222f2214e325fad1dc5823dff2c76801eaaf",
+    "setup.sbatch": "bd019cad69d721cd3e8c65f6df2441ed0f02106f7b74a7b80613b96485035970",
+    "protocol.json": "e6992d3c592258431e2a4c54161543e6f87a0f697275b9dc476aafa9ffc71bdb"
+  },
+  "reports": [
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-001",
+      "functional": "PBE",
+      "job_id": "20957367",
+      "finished_unix": 1792579643.9757085,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  35    -0.127358122779E+04    0.55696E-06   -0.31707E-06  7640   0.420E-03",
+        "   1 F= -.12735812E+04 E0= -.12735807E+04  d E =-.149421E-02"
+      ],
+      "poscar_sha256": "7436ae947e276da9610ff4719d9f3e5dba73f93d04c5ff680d5639562f56b9d0"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-002",
+      "functional": "PBE",
+      "job_id": "20957368",
+      "finished_unix": 1792579644.079358,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  20    -0.757583882718E+03    0.11584E-06   -0.13074E-06  3264   0.137E-03",
+        "   1 F= -.75758388E+03 E0= -.75758143E+03  d E =-.736717E-02"
+      ],
+      "poscar_sha256": "d1dc127988767b523e9e9b79874589687a7fede2351051ee1c35dc3eda4425cd"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-003",
+      "functional": "PBE",
+      "job_id": "20957414",
+      "finished_unix": 1792589677.7002137,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  36    -0.159494684655E+04    0.56787E-06   -0.98904E-07  8800   0.272E-03",
+        "   1 F= -.15949468E+04 E0= -.15949426E+04  d E =-.128051E-01"
+      ],
+      "poscar_sha256": "e32d73cddfa223a72bbbbda2bc30c36415d372488435d62b2dcdf826da372e8a"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-004",
+      "functional": "PBE",
+      "job_id": "20957878",
+      "finished_unix": 1792589677.7456462,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  32    -0.109267206616E+04    0.55759E-06   -0.18564E-06  6232   0.412E-03",
+        "   1 F= -.10926721E+04 E0= -.10926676E+04  d E =-.133691E-01"
+      ],
+      "poscar_sha256": "49f7dea9abea2ab84af357edc0465cf95bf88505daa3f81015a20780ba52a884"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-005",
+      "functional": "PBE",
+      "job_id": "20957924",
+      "finished_unix": 1792591919.8488219,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  40    -0.136903945851E+04    0.19791E-08   -0.15499E-06  6720   0.221E-03",
+        "   1 F= -.13690395E+04 E0= -.13690383E+04  d E =-.357746E-02"
+      ],
+      "poscar_sha256": "df9f9cbfd6d2264b162bbcff037ed85a0548ddf48df55aaae3cee9d173f4ba7b"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-006",
+      "functional": "PBE",
+      "job_id": "20957925",
+      "finished_unix": 1792586747.0616286,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  34    -0.908198847954E+03   -0.15764E-06   -0.92997E-06  6440   0.526E-03",
+        "   1 F= -.90819885E+03 E0= -.90819975E+03  d E =0.269594E-02"
+      ],
+      "poscar_sha256": "93e04165c8a0b3c4fe86e90de3e3e6c6110b77ac64395ba97b08017e4e0634c2"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-007",
+      "functional": "PBE",
+      "job_id": "20957938",
+      "finished_unix": 1792587949.047871,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  36    -0.112728024446E+04    0.99007E-06   -0.64830E-06  7992   0.454E-03",
+        "   1 F= -.11272802E+04 E0= -.11272764E+04  d E =-.115054E-01"
+      ],
+      "poscar_sha256": "9bbb52e3300cf7cb62892843bcadf01e540098565a5b7abe665cfdcca808553e"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-008",
+      "functional": "PBE",
+      "job_id": "20957977",
+      "finished_unix": 1792589754.2843041,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  35    -0.134102500886E+04    0.72905E-07   -0.13914E-06  7560   0.367E-03",
+        "   1 F= -.13410250E+04 E0= -.13410271E+04  d E =0.619066E-02"
+      ],
+      "poscar_sha256": "8d64b4e0de02958f4343cf929dfac172cb9d3a13398b131b601930f485ffe7a3"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-009",
+      "functional": "PBE",
+      "job_id": "20957984",
+      "finished_unix": 1792609921.4951148,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  40    -0.152302576488E+04    0.83831E-06   -0.97995E-07  7160   0.275E-03",
+        "   1 F= -.15230258E+04 E0= -.15230278E+04  d E =0.596010E-02"
+      ],
+      "poscar_sha256": "1bb641a7519d5bf24d63e641cf5d481057698fc8df984b1c57bdc8cd32221711"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-010",
+      "functional": "PBE",
+      "job_id": "20958319",
+      "finished_unix": 1792619035.8114269,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  36    -0.976266815087E+03    0.41450E-06   -0.66984E-06  6672   0.458E-03",
+        "   1 F= -.97626682E+03 E0= -.97626219E+03  d E =-.138814E-01"
+      ],
+      "poscar_sha256": "c68019f8ab25c21e623312371df40360f7a9fa670cbea70b5dbd4db8b7a9c200"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-011",
+      "functional": "PBE",
+      "job_id": "20958320",
+      "finished_unix": 1792622221.7179425,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  33    -0.117828683681E+04    0.54816E-06   -0.29216E-06  8088   0.429E-03",
+        "   1 F= -.11782868E+04 E0= -.11782849E+04  d E =-.593290E-02"
+      ],
+      "poscar_sha256": "9c3dd091ceaa47e3971ecfcdc26ded0e00b36b132a784f96988a2c3404933ba5"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-012",
+      "functional": "PBE",
+      "job_id": "20958323",
+      "finished_unix": 1792629814.574381,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  36    -0.144813749289E+04    0.13140E-06   -0.10429E-06  7456   0.265E-03",
+        "   1 F= -.14481375E+04 E0= -.14481341E+04  d E =-.100949E-01"
+      ],
+      "poscar_sha256": "91fc92609ee1c0d0f06d05e35f16a7baf0a5f62d334fa07a75f0ab3cd3e62436"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-013",
+      "functional": "PBE",
+      "job_id": "20958356",
+      "finished_unix": 1792623981.369193,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  30    -0.749667243548E+03   -0.56416E-06   -0.16489E-06  2952   0.191E-03",
+        "   1 F= -.74966724E+03 E0= -.74966800E+03  d E =0.227643E-02"
+      ],
+      "poscar_sha256": "d82afde291665f891c496c688e1ba1c0d6f05db392ff3f217a2a80b38bec0a68"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-014",
+      "functional": "PBE",
+      "job_id": "20958359",
+      "finished_unix": 1792629686.8958418,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  32    -0.100652220333E+04    0.34578E-06   -0.12307E-06  4856   0.312E-03",
+        "   1 F= -.10065222E+04 E0= -.10065199E+04  d E =-.697697E-02"
+      ],
+      "poscar_sha256": "5a4c5e65fc9897e376bfe44f54350a1b61e6f7a4ef60e2f7aaf395a0ddfc32cf"
+    },
+    {
+      "state": "running",
+      "structure_id": "TiAl-test-015",
+      "functional": "PBE",
+      "job_id": "20958361",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  19    -0.145065541348E+04    0.81853E+00   -0.33283E+00 16680   0.354E+00    0.479E+00",
+        "DAV:  20    -0.145063351415E+04    0.21899E-01   -0.15313E+00 16640   0.236E+00    0.428E+00"
+      ],
+      "poscar_sha256": "f09ae8632fe56af891f93b2bf5f27f3175c3a17e400d58047934c80ca0fa7baf"
+    },
+    {
+      "state": "running",
+      "structure_id": "TiAl-test-016",
+      "functional": "PBE",
+      "job_id": "20958376",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  13    -0.128721044945E+04    0.17302E+01   -0.14640E+01 13896   0.709E+00    0.144E+01",
+        "DAV:  14    -0.128784197656E+04   -0.63153E+00   -0.11723E+01 13824   0.729E+00    0.171E+01"
+      ],
+      "poscar_sha256": "8fd13c350a145e413d6bde3879c7045156e0c69a15870f15f19c8e5438e5e475"
+    },
+    {
+      "state": "running",
+      "structure_id": "TiAl-test-017",
+      "functional": "PBE",
+      "job_id": "20958379",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  19    -0.112881130134E+04    0.17427E+00   -0.65832E-01 10800   0.155E+00    0.175E+00",
+        "DAV:  20    -0.112880515756E+04    0.61438E-02   -0.25829E-01 10792   0.915E-01    0.155E+00"
+      ],
+      "poscar_sha256": "f67979398dc21c078d83a42e27792f49fe599dd8b5787f36578237f5d92827a9"
+    },
+    {
+      "state": "running",
+      "structure_id": "TiAl-test-018",
+      "functional": "PBE",
+      "job_id": "20958380",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  28    -0.902860832623E+03    0.33033E-05   -0.64964E-05  8896   0.162E-02    0.201E-02",
+        "DAV:  29    -0.902860829408E+03    0.32142E-05   -0.29942E-05  8640   0.111E-02    0.130E-02"
+      ],
+      "poscar_sha256": "7f061b974c196a934d40d98a2eb2239b5f5a4ab2bae76d7fd5ab271aad86ce11"
+    },
+    {
+      "state": "running",
+      "structure_id": "TiAl-test-019",
+      "functional": "PBE",
+      "job_id": "20958383",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PE",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:   2     0.627188184368E+03   -0.19376E+05   -0.19017E+05  9320   0.567E+02",
+        "DAV:   3    -0.129837913341E+04   -0.19256E+04   -0.18384E+04 13572   0.161E+02"
+      ],
+      "poscar_sha256": "d84722b5441542a4003ad18e10a8bb53c89c4ec1824f5a81b50fa5fa7449d333"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-001",
+      "functional": "PBEsol",
+      "job_id": "20957370",
+      "finished_unix": 1792579644.1859674,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  35    -0.136028440615E+04    0.39900E-06   -0.30618E-06  7568   0.414E-03",
+        "   1 F= -.13602844E+04 E0= -.13602839E+04  d E =-.164803E-02"
+      ],
+      "poscar_sha256": "7436ae947e276da9610ff4719d9f3e5dba73f93d04c5ff680d5639562f56b9d0"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-002",
+      "functional": "PBEsol",
+      "job_id": "20957371",
+      "finished_unix": 1792579644.2597866,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  23    -0.831620796539E+03   -0.83139E-07   -0.41394E-07  2976   0.820E-04",
+        "   1 F= -.83162080E+03 E0= -.83161848E+03  d E =-.694702E-02"
+      ],
+      "poscar_sha256": "d1dc127988767b523e9e9b79874589687a7fede2351051ee1c35dc3eda4425cd"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-003",
+      "functional": "PBEsol",
+      "job_id": "20957388",
+      "finished_unix": 1792589677.8064742,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  36    -0.171590719145E+04    0.63481E-06   -0.10809E-06  8872   0.293E-03",
+        "   1 F= -.17159072E+04 E0= -.17159028E+04  d E =-.131338E-01"
+      ],
+      "poscar_sha256": "e32d73cddfa223a72bbbbda2bc30c36415d372488435d62b2dcdf826da372e8a"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-004",
+      "functional": "PBEsol",
+      "job_id": "20957840",
+      "finished_unix": 1792579644.3449686,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  31    -0.118248290433E+04    0.92489E-06   -0.87706E-06  8800   0.714E-03",
+        "   1 F= -.11824829E+04 E0= -.11824783E+04  d E =-.138306E-01"
+      ],
+      "poscar_sha256": "49f7dea9abea2ab84af357edc0465cf95bf88505daa3f81015a20780ba52a884"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-005",
+      "functional": "PBEsol",
+      "job_id": "20957899",
+      "finished_unix": 1792589677.8568635,
+      "revalidated_without_DFT_rerun": true,
+      "original_slurm_exit_retained": true,
+      "validator_sha256": "f2ce013ef7113df1da76340698f099275e1adac84e840f89da671bb497808ce0",
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  40    -0.145166638198E+04    0.22672E-07   -0.14761E-06  6624   0.213E-03",
+        "   1 F= -.14516664E+04 E0= -.14516647E+04  d E =-.490251E-02"
+      ],
+      "poscar_sha256": "df9f9cbfd6d2264b162bbcff037ed85a0548ddf48df55aaae3cee9d173f4ba7b"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-006",
+      "functional": "PBEsol",
+      "job_id": "20957926",
+      "finished_unix": 1792586783.2384222,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  34    -0.976966153864E+03   -0.54522E-06   -0.68923E-06  6064   0.467E-03",
+        "   1 F= -.97696615E+03 E0= -.97696680E+03  d E =0.192710E-02"
+      ],
+      "poscar_sha256": "93e04165c8a0b3c4fe86e90de3e3e6c6110b77ac64395ba97b08017e4e0634c2"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-007",
+      "functional": "PBEsol",
+      "job_id": "20957927",
+      "finished_unix": 1792591001.8040793,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  36    -0.120158510328E+04    0.60040E-06   -0.47244E-06  7336   0.409E-03",
+        "   1 F= -.12015851E+04 E0= -.12015805E+04  d E =-.138373E-01"
+      ],
+      "poscar_sha256": "9bbb52e3300cf7cb62892843bcadf01e540098565a5b7abe665cfdcca808553e"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-008",
+      "functional": "PBEsol",
+      "job_id": "20957935",
+      "finished_unix": 1792587588.783918,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  35    -0.144346422314E+04    0.21310E-06   -0.12980E-06  7320   0.357E-03",
+        "   1 F= -.14434642E+04 E0= -.14434662E+04  d E =0.579731E-02"
+      ],
+      "poscar_sha256": "8d64b4e0de02958f4343cf929dfac172cb9d3a13398b131b601930f485ffe7a3"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-009",
+      "functional": "PBEsol",
+      "job_id": "20957939",
+      "finished_unix": 1792603428.5991774,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "GGA": "PS",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  39    -0.161081679861E+04    0.56854E-06   -0.13283E-06  8224   0.304E-03",
+        "   1 F= -.16108168E+04 E0= -.16108183E+04  d E =0.462582E-02"
+      ],
+      "poscar_sha256": "1bb641a7519d5bf24d63e641cf5d481057698fc8df984b1c57bdc8cd32221711"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-001",
+      "functional": "r2SCAN",
+      "job_id": "20957373",
+      "finished_unix": 1792584673.8454018,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "METAGGA": "R2SCAN",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  38    -0.216835340236E+04   -0.73395E-06   -0.83473E-07  5056   0.241E-03",
+        "   1 F= -.21683534E+04 E0= -.21683533E+04  d E =-.450175E-03"
+      ],
+      "poscar_sha256": "7436ae947e276da9610ff4719d9f3e5dba73f93d04c5ff680d5639562f56b9d0"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-002",
+      "functional": "r2SCAN",
+      "job_id": "20957374",
+      "finished_unix": 1792574930.9778526,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "METAGGA": "R2SCAN",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  28    -0.139758235548E+04   -0.71447E-06   -0.63618E-07  2832   0.116E-03",
+        "   1 F= -.13975824E+04 E0= -.13975789E+04  d E =-.104908E-01"
+      ],
+      "poscar_sha256": "d1dc127988767b523e9e9b79874589687a7fede2351051ee1c35dc3eda4425cd"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-003",
+      "functional": "r2SCAN",
+      "job_id": "20957844",
+      "finished_unix": 1792601647.9862368,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "METAGGA": "R2SCAN",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  35    -0.269579925301E+04    0.78755E-06   -0.38966E-06 13808   0.487E-03",
+        "   1 F= -.26957993E+04 E0= -.26957966E+04  d E =-.794058E-02"
+      ],
+      "poscar_sha256": "e32d73cddfa223a72bbbbda2bc30c36415d372488435d62b2dcdf826da372e8a"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-004",
+      "functional": "r2SCAN",
+      "job_id": "20957928",
+      "finished_unix": 1792597650.7063806,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "METAGGA": "R2SCAN",
+        "NKPTS": "6"
+      },
+      "last_oszicar_lines": [
+        "DAV:  33    -0.190055081391E+04   -0.90615E-06   -0.32164E-06  7256   0.471E-03",
+        "   1 F= -.19005508E+04 E0= -.19005486E+04  d E =-.657896E-02"
+      ],
+      "poscar_sha256": "49f7dea9abea2ab84af357edc0465cf95bf88505daa3f81015a20780ba52a884"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-005",
+      "functional": "r2SCAN",
+      "job_id": "20957929",
+      "finished_unix": 1792633317.8903923,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "METAGGA": "R2SCAN",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  44    -0.234823794378E+04   -0.18947E-06   -0.25606E-07  5952   0.127E-03",
+        "   1 F= -.23482379E+04 E0= -.23482400E+04  d E =0.610153E-02"
+      ],
+      "poscar_sha256": "df9f9cbfd6d2264b162bbcff037ed85a0548ddf48df55aaae3cee9d173f4ba7b"
+    },
+    {
+      "state": "validated",
+      "structure_id": "TiAl-test-006",
+      "functional": "r2SCAN",
+      "job_id": "20957940",
+      "finished_unix": 1792603465.9410572,
+      "outcar_exists": true,
+      "vasp_version": "vasp.6.6.1 17Jul2026 (build Oct 17 2026 20:46:57) complex",
+      "settings": {
+        "NSW": "0",
+        "IBRION": "-1",
+        "ENCUT": "550.0",
+        "EDIFF": "0.1E-05",
+        "ISMEAR": "1",
+        "SIGMA": "0.10",
+        "ISPIN": "1",
+        "METAGGA": "R2SCAN",
+        "NKPTS": "5"
+      },
+      "last_oszicar_lines": [
+        "DAV:  37    -0.163098203229E+04    0.86757E-06   -0.47316E-06  5688   0.382E-03",
+        "   1 F= -.16309820E+04 E0= -.16309836E+04  d E =0.469198E-02"
+      ],
+      "poscar_sha256": "93e04165c8a0b3c4fe86e90de3e3e6c6110b77ac64395ba97b08017e4e0634c2"
+    }
+  ]
+}

@@ -1,0 +1,863 @@
+{
+  "total": 1124686,
+  "trainable": 1124686,
+  "adapter_trainable": 0,
+  "parameters": {
+    "atomic_model.descriptor.film_scale_strength_log": {
+      "shape": [
+        1
+      ],
+      "numel": 1,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.film_shift_strength_log": {
+      "shape": [
+        1
+      ],
+      "numel": 1,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.type_embedding.adam_type_embedding": {
+      "shape": [
+        119,
+        32
+      ],
+      "numel": 3808,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.rbf_proj_layer1.matrix": {
+      "shape": [
+        16,
+        32
+      ],
+      "numel": 512,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.rbf_proj_layer2.matrix": {
+      "shape": [
+        32,
+        32
+      ],
+      "numel": 1024,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.env_type_embed.adam_type_embedding": {
+      "shape": [
+        119,
+        8
+      ],
+      "numel": 952,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.g_layer1.matrix": {
+      "shape": [
+        48,
+        64
+      ],
+      "numel": 3072,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.g_layer2.matrix": {
+      "shape": [
+        64,
+        32
+      ],
+      "numel": 2048,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.env_seed_embedding.output_proj.matrix": {
+      "shape": [
+        128,
+        64
+      ],
+      "numel": 8192,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.radial_basis.adam_freqs": {
+      "shape": [
+        1,
+        16
+      ],
+      "numel": 16,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.radial_embedding.net.0.matrix": {
+      "shape": [
+        16,
+        32
+      ],
+      "numel": 512,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.radial_embedding.net.2.matrix": {
+      "shape": [
+        32,
+        128
+      ],
+      "numel": 4096,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.post_so2_norm.adam_scale": {
+      "shape": [
+        4,
+        1,
+        32
+      ],
+      "numel": 128,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.post_so2_norm.bias": {
+      "shape": [
+        1,
+        32
+      ],
+      "numel": 32,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.adamw_attn_logit_w": {
+      "shape": [
+        32,
+        2,
+        1
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.adamw_attn_z_bias_raw": {
+      "shape": [
+        2,
+        1
+      ],
+      "numel": 2,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.adamw_attn_gate_w": {
+      "shape": [
+        32,
+        2,
+        1
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.adamw_focus_compete_w": {
+      "shape": [
+        32,
+        2
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.0.weight_m0": {
+      "shape": [
+        128,
+        256
+      ],
+      "numel": 32768,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.0.weight_m.0": {
+      "shape": [
+        96,
+        384
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.1.weight_m0": {
+      "shape": [
+        128,
+        256
+      ],
+      "numel": 32768,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.1.weight_m.0": {
+      "shape": [
+        96,
+        384
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.2.weight_m0": {
+      "shape": [
+        128,
+        256
+      ],
+      "numel": 32768,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.so2_linears.2.weight_m.0": {
+      "shape": [
+        96,
+        384
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.non_linearities.0.gate_linear.weight": {
+      "shape": [
+        32,
+        192
+      ],
+      "numel": 6144,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.non_linearities.1.gate_linear.weight": {
+      "shape": [
+        32,
+        192
+      ],
+      "numel": 6144,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.attn_qk_norm.adam_scale": {
+      "shape": [
+        2,
+        32
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.attn_q_proj.weight": {
+      "shape": [
+        32,
+        64
+      ],
+      "numel": 2048,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.attn_k_proj.weight": {
+      "shape": [
+        32,
+        64
+      ],
+      "numel": 2048,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.attn_output_gate_norm.adam_scale": {
+      "shape": [
+        2,
+        32
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.radial_hidden_proj.weight": {
+      "shape": [
+        32,
+        64
+      ],
+      "numel": 2048,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.radial_degree_mixer.weight": {
+      "shape": [
+        256,
+        25
+      ],
+      "numel": 6400,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.radial_degree_mixer.channel_basis": {
+      "shape": [
+        1,
+        64
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.message_node_grid_product.residual_scale": {
+      "shape": [
+        2,
+        32
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.message_node_grid_product.frame_expand.weight": {
+      "shape": [
+        4,
+        32,
+        96
+      ],
+      "numel": 12288,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.message_node_grid_product.frame_contract.weight": {
+      "shape": [
+        4,
+        96,
+        32
+      ],
+      "numel": 12288,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.message_node_grid_product.scalar_gate.weight": {
+      "shape": [
+        64,
+        64
+      ],
+      "numel": 4096,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.pre_focus_mix.weight": {
+      "shape": [
+        4,
+        32,
+        64
+      ],
+      "numel": 8192,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.so2_conv.post_focus_mix.weight": {
+      "shape": [
+        4,
+        64,
+        32
+      ],
+      "numel": 8192,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.pre_ffn_norms.0.adam_scale": {
+      "shape": [
+        4,
+        1,
+        32
+      ],
+      "numel": 128,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.pre_ffn_norms.0.bias": {
+      "shape": [
+        1,
+        32
+      ],
+      "numel": 32,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.so3_linear_1.weight": {
+      "shape": [
+        4,
+        32,
+        576
+      ],
+      "numel": 73728,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.scalar_gate.weight": {
+      "shape": [
+        192,
+        96
+      ],
+      "numel": 18432,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.grid_op.left_proj.weight": {
+      "shape": [
+        96,
+        96
+      ],
+      "numel": 9216,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.grid_op.right_proj.weight": {
+      "shape": [
+        96,
+        96
+      ],
+      "numel": 9216,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.grid_op.router.weight": {
+      "shape": [
+        192,
+        1
+      ],
+      "numel": 192,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.act.grid_op.out_proj.weight": {
+      "shape": [
+        96,
+        96
+      ],
+      "numel": 9216,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.0.ffns.0.so3_linear_2.weight": {
+      "shape": [
+        4,
+        288,
+        32
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.post_so2_norm.adam_scale": {
+      "shape": [
+        4,
+        1,
+        32
+      ],
+      "numel": 128,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.post_so2_norm.bias": {
+      "shape": [
+        1,
+        32
+      ],
+      "numel": 32,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.adamw_attn_logit_w": {
+      "shape": [
+        32,
+        2,
+        1
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.adamw_attn_z_bias_raw": {
+      "shape": [
+        2,
+        1
+      ],
+      "numel": 2,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.adamw_attn_gate_w": {
+      "shape": [
+        32,
+        2,
+        1
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.adamw_focus_compete_w": {
+      "shape": [
+        32,
+        2
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.0.weight_m0": {
+      "shape": [
+        128,
+        256
+      ],
+      "numel": 32768,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.0.weight_m.0": {
+      "shape": [
+        96,
+        384
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.1.weight_m0": {
+      "shape": [
+        128,
+        256
+      ],
+      "numel": 32768,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.1.weight_m.0": {
+      "shape": [
+        96,
+        384
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.2.weight_m0": {
+      "shape": [
+        128,
+        256
+      ],
+      "numel": 32768,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.so2_linears.2.weight_m.0": {
+      "shape": [
+        96,
+        384
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.non_linearities.0.gate_linear.weight": {
+      "shape": [
+        32,
+        192
+      ],
+      "numel": 6144,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.non_linearities.1.gate_linear.weight": {
+      "shape": [
+        32,
+        192
+      ],
+      "numel": 6144,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.attn_qk_norm.adam_scale": {
+      "shape": [
+        2,
+        32
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.attn_q_proj.weight": {
+      "shape": [
+        32,
+        64
+      ],
+      "numel": 2048,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.attn_k_proj.weight": {
+      "shape": [
+        32,
+        64
+      ],
+      "numel": 2048,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.attn_output_gate_norm.adam_scale": {
+      "shape": [
+        2,
+        32
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.radial_hidden_proj.weight": {
+      "shape": [
+        32,
+        64
+      ],
+      "numel": 2048,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.radial_degree_mixer.weight": {
+      "shape": [
+        256,
+        25
+      ],
+      "numel": 6400,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.radial_degree_mixer.channel_basis": {
+      "shape": [
+        1,
+        64
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.message_node_grid_product.residual_scale": {
+      "shape": [
+        2,
+        32
+      ],
+      "numel": 64,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.message_node_grid_product.frame_expand.weight": {
+      "shape": [
+        4,
+        32,
+        96
+      ],
+      "numel": 12288,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.message_node_grid_product.frame_contract.weight": {
+      "shape": [
+        4,
+        96,
+        32
+      ],
+      "numel": 12288,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.message_node_grid_product.scalar_gate.weight": {
+      "shape": [
+        64,
+        64
+      ],
+      "numel": 4096,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.pre_focus_mix.weight": {
+      "shape": [
+        4,
+        32,
+        64
+      ],
+      "numel": 8192,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.so2_conv.post_focus_mix.weight": {
+      "shape": [
+        4,
+        64,
+        32
+      ],
+      "numel": 8192,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.pre_ffn_norms.0.adam_scale": {
+      "shape": [
+        4,
+        1,
+        32
+      ],
+      "numel": 128,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.pre_ffn_norms.0.bias": {
+      "shape": [
+        1,
+        32
+      ],
+      "numel": 32,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.so3_linear_1.weight": {
+      "shape": [
+        4,
+        32,
+        576
+      ],
+      "numel": 73728,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.scalar_gate.weight": {
+      "shape": [
+        192,
+        96
+      ],
+      "numel": 18432,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.grid_op.left_proj.weight": {
+      "shape": [
+        96,
+        96
+      ],
+      "numel": 9216,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.grid_op.right_proj.weight": {
+      "shape": [
+        96,
+        96
+      ],
+      "numel": 9216,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.grid_op.router.weight": {
+      "shape": [
+        192,
+        1
+      ],
+      "numel": 192,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.act.grid_op.out_proj.weight": {
+      "shape": [
+        96,
+        96
+      ],
+      "numel": 9216,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.blocks.1.ffns.0.so3_linear_2.weight": {
+      "shape": [
+        4,
+        288,
+        32
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.so3_linear_1.weight": {
+      "shape": [
+        4,
+        32,
+        576
+      ],
+      "numel": 73728,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.act.scalar_gate.weight": {
+      "shape": [
+        192,
+        96
+      ],
+      "numel": 18432,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.act.grid_op.left_proj.weight": {
+      "shape": [
+        192,
+        192
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.act.grid_op.right_proj.weight": {
+      "shape": [
+        192,
+        192
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.act.grid_op.out_proj.weight": {
+      "shape": [
+        192,
+        96
+      ],
+      "numel": 18432,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.descriptor.output_ffn.so3_linear_2.weight": {
+      "shape": [
+        4,
+        288,
+        32
+      ],
+      "numel": 36864,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.fitting_net.filter_layers.networks.0.hidden_layers.0.linear.matrix": {
+      "shape": [
+        32,
+        192
+      ],
+      "numel": 6144,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.fitting_net.filter_layers.networks.0.hidden_layers.0.linear.bias": {
+      "shape": [
+        192
+      ],
+      "numel": 192,
+      "trainable": true,
+      "adapter": false
+    },
+    "atomic_model.fitting_net.filter_layers.networks.0.output_layer.matrix": {
+      "shape": [
+        96,
+        1
+      ],
+      "numel": 96,
+      "trainable": true,
+      "adapter": false
+    }
+  }
+}

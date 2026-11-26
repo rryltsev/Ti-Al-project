@@ -1,0 +1,36 @@
+from pathlib import Path
+import json,hashlib,time,sys,os
+OUT=Path(__file__).resolve().parent;ROOT=OUT.parents[1];WORK=ROOT.parents[2]
+sys.path.insert(0,str(WORK/'audit/oct27/viscosity_5k_vs_15k/python_deps'));os.environ['MPLCONFIGDIR']=str(ROOT/'cache/matplotlib')
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+read=lambda p:json.loads(p.read_text(encoding='utf-8'));sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+cfg=read(ROOT/'protocol.json');latest=read(ROOT/'collected/analysis/latest.json');rows=[];sources={}
+for T,n in [(1873,25),(2000,25),(2100,30)]:
+ f=ROOT/f'collected/analysis/Ti_{T}K/batch_{n:04d}/summary.json';d=read(f);assert d==read(ROOT/f'collected/analysis/latest_Ti_{T}K.json')==latest['points'][f'Ti_{T}K'];assert d['protocol_sha256']==sha(ROOT/'protocol.json') and d['checkpoint_sha256']==cfg['checkpoint']['sha256'] and len(d['points'][0]['sources'])==n
+ sources[f.relative_to(ROOT).as_posix()]=sha(f);rows.append(d['points'][0])
+row=rows[-1];prev=read(ROOT/'collected/analysis/Ti_2100K/batch_0025/summary.json')['points'][0];history=[read(ROOT/f'collected/analysis/Ti_2100K/batch_{n:04d}/summary.json')['points'][0] for n in [20,25,30]];base=read(ROOT/'baseline_5k.json');old=read(ROOT/'known_15k.json');b=next(x for x in base if x['T']==2100)
+comparisons={w:dict(vs_N25_percent=100*(v['eta_mPa_s']/prev['windows'][w]['eta_mPa_s']-1),SE_change_percent=100*(v['eta_std_mPa_s']/prev['windows'][w]['eta_std_mPa_s']-1),vs_5k_percent=100*(v['eta_mPa_s']/b['eta_mPa_s']-1)) for w,v in row['windows'].items()}
+visual=['convergence.png']+[f'{w}/{kind}.png' for w in ['40ps','first20ps','second20ps','new_batch_40ps'] for kind in ['spectrum','extras']]
+a=dict(reviewed_unix=time.time(),temperature_K=2100,n_replicas=30,windows=row['windows'],comparisons=comparisons,new_batch_40ps=row['new_batch_40ps'],previous_replicas_40ps=row['previous_replicas_40ps'],new_batch_z=row['new_batch_z'],checks=d['checks'],pass_streak=d['pass_streak'],stop_recommended=d['stop_recommended'],review_required=d['review_required'],campaign_points=rows,sources_sha256=sources,historical15k_at2100=None,visual_review=dict(files=visual,notes='All nine source figures inspected. Full40 cutoff mode near1.55THz remains above criterionZ2 throughout selected mode; first20 peak near1.6THz also fails weighted cutoffZ. Second20 near1.6THz passes. New5 peak near2.4THz passes, with no dominant high-frequency mode. Previous25 cutoff failure limits formal new-batch Z interpretation. No physical drift established. Source minor labels crowded but readable; originals unchanged.'),runtime_verification='runtime-check.json PASS; new5 hashes,512Ti,2100K,40001samples,40ps,V/(kBT),oneA100; sameID requeue exit75 followed by healthy restart4.',article_profile_sha256=sha(WORK/'audit/nov01/viscosity_article_combined/figure_profile.json'),caveats=['Cumulative and window estimates correlated.','Formal SE excludes model/protocol/cutoff systematics.','5k is separate and agreement is not a stop criterion.','No new fixed-cutoff fit was substituted for official N30 results.'])
+(OUT/'assessment.json').write_text(json.dumps(a,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.labelsize':11,'axes.titlesize':12,'legend.fontsize':9})
+fig,axs=plt.subplots(1,2,figsize=(11.2,4.6));fig.subplots_adjust(left=.065,right=.985,bottom=.22,top=.86,wspace=.25)
+def series(ax,data,x,**style):ax.errorbar([x(r) for r in data],[r['eta_mPa_s'] for r in data],yerr=[r['eta_std_mPa_s'] for r in data],capsize=3,lw=1.3,ms=5,**style)
+new=[dict(r['windows']['40ps'],T=r['temperature_K'],N=r['n_replicas']) for r in rows];series(axs[0],new,lambda r:r['T'],fmt='D-',color='#18745B',label='Новая серия 15k, 40 пс');series(axs[0],[r for r in base if r['T'] in [1873,2000,2100]],lambda r:r['T'],fmt='s:',color='#777777',mfc='white',label='Исторические 5k, 20 пс');series(axs[0],old,lambda r:r['T'],fmt='o--',color='#356CB0',mfc='white',label='Исторические 15k, 20 пс')
+for r in new:
+ axs[0].annotate(f"N={r['N']}",(r['T'],r['eta_mPa_s']),xytext=(7,-20),textcoords='offset points',color='#18745B',fontsize=9)
+ if r['cost_z']>=2 or r['criterion_z']>=2:axs[0].plot(r['T'],r['eta_mPa_s'],'D',mfc='white',mec='#18745B',ms=5,zorder=5)
+axs[0].set(title='Чистый Ti: текущие оценки',xlabel='Температура, K',ylabel='Вязкость, мПа·с',xlim=(1850,2145),ylim=(2.25,3.65),xticks=[1873,2000,2100]);axs[0].legend(loc='upper right',frameon=False)
+for w,label,col in [('40ps','40 пс','#18745B'),('first20ps','Первые 20 пс','#C37817'),('second20ps','Вторые 20 пс','#5265AB')]:
+ vals=[dict(r['windows'][w],N=r['n_replicas']) for r in history];series(axs[1],vals,lambda r:r['N'],fmt='o-',color=col,label=label)
+ for r in vals:
+  if r['cost_z']>=2 or r['criterion_z']>=2:axs[1].plot(r['N'],r['eta_mPa_s'],'o',mfc='white',mec=col,ms=5,zorder=5)
+axs[1].set(title='2100 K: последние три пакета',xlabel='Число реплик N',ylabel='Вязкость, мПа·с',xticks=[20,25,30],xlim=(19,31),ylim=(2.25,2.95));axs[1].legend(loc='upper right',frameon=False)
+for ax in axs:ax.grid(axis='y',alpha=.18);ax.spines[['top','right']].set_visible(False)
+fig.suptitle('Мониторинг PBE 15000 · 5 ноября 2026 · предварительные результаты',fontsize=13,y=.985);fig.text(.5,.08,'Только полностью проанализированные пакеты. Ошибки: ±1 SE. Окна 20/40 пс коррелированы.',ha='center',fontsize=9,color='#444444');fig.text(.5,.035,'Пустые маркеры новых результатов: проверка cutoff/cost не пройдена.',ha='center',fontsize=9,color='#884444');fig.savefig(OUT/'campaign_monitor.png',dpi=180);fig.savefig(OUT/'campaign_monitor.svg');plt.close(fig)
+lines=['2100 K N=30. Официальные оценки; ошибки формальные SE.','']
+for r in rows:lines.append(f"{r['temperature_K']} K N={r['n_replicas']}: "+'; '.join(f"{w}: {v['eta_mPa_s']:.6f} +/- {v['eta_std_mPa_s']:.6f}" for w,v in r['windows'].items()))
+lines += ['',f"N25->30: среднее {comparisons['40ps']['vs_N25_percent']:+.3f}%; SE {comparisons['40ps']['SE_change_percent']:+.3f}%.",f"Новые5={row['new_batch_40ps']['eta_mPa_s']:.6f}+/-{row['new_batch_40ps']['eta_std_mPa_s']:.6f}; прежние25={prev['windows']['40ps']['eta_mPa_s']:.6f}+/-{prev['windows']['40ps']['eta_std_mPa_s']:.6f}; Z={row['new_batch_z']:.3f}. Cutoff прежних25 не проходит, поэтому интерпретация формального Z ограничена.",f"5k={b['eta_mPa_s']:.6f}+/-{b['eta_std_mPa_s']:.6f}; отличие {comparisons['40ps']['vs_5k_percent']:+.3f}%. Исторического15k2100K нет.",'Не проходят: cutoffZ40=3.143 и first20=2.672. Second20=-0.159,new5=0.142 проходят. Серия полных прохождений0/2.','Проходят: N30>=30; ошибка2.0201%; размахN20/25/30=0.8801%; max20/40=2.5124%; neff40=64.526; cost всех окон/пакета<2; Zнового пакета1.067<=2.5.','Все9исходных графиков визуально проверены. Физический дрейф не установлен. Окна и накопленные оценки коррелированы, формальные ошибки не включают систематику.','Штатный requeue того жеID20962153: предыдущаяаллокация19:17:39,выход75,переочередь15:21:26local; новыйстарт15:23:36,Restarts4,однаA100. Завершённые реплики сохранены.','Профиль статьи сохранён. Физический протокол не менялся.']
+(OUT/'assessment_RU.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8');print(json.dumps(comparisons,indent=2))

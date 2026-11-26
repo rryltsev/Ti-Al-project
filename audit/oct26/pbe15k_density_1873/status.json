@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "15000/preflight.json": {
+      "status": "passed",
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "CUDA_VISIBLE_DEVICES": "0",
+        "deepmd_device": "cuda:0"
+      },
+      "checks": [
+        {
+          "composition": "Ti",
+          "E_diff_eV_atom": 1.192092668134137e-08,
+          "F_diff_RMS_eV_A": 1.0838655773669487e-06,
+          "stress_max_diff_GPa": 2.2101134479045473e-06
+        },
+        {
+          "composition": "Al0.1Ti0.9",
+          "E_diff_eV_atom": 5.789101010122977e-08,
+          "F_diff_RMS_eV_A": 1.15821471935923e-06,
+          "stress_max_diff_GPa": 1.7876984802273763e-06
+        },
+        {
+          "composition": "Al0.2Ti0.8",
+          "E_diff_eV_atom": 1.0877847671508789e-08,
+          "F_diff_RMS_eV_A": 1.0076540563848427e-06,
+          "stress_max_diff_GPa": 1.8564307375390424e-06
+        },
+        {
+          "composition": "Al0.3Ti0.7",
+          "E_diff_eV_atom": 8.277595043182373e-08,
+          "F_diff_RMS_eV_A": 1.0363596509881888e-06,
+          "stress_max_diff_GPa": 1.0869739089421231e-06
+        },
+        {
+          "composition": "Al0.4Ti0.6",
+          "E_diff_eV_atom": 6.541609877785958e-08,
+          "F_diff_RMS_eV_A": 1.0105566528274265e-06,
+          "stress_max_diff_GPa": 8.759947392820148e-07
+        },
+        {
+          "composition": "Al0.5Ti0.5",
+          "E_diff_eV_atom": 7.003545761108399e-08,
+          "F_diff_RMS_eV_A": 9.85501221133666e-07,
+          "stress_max_diff_GPa": 1.1710646243324648e-06
+        },
+        {
+          "composition": "Al0.6Ti0.4",
+          "E_diff_eV_atom": 6.482005005636892e-08,
+          "F_diff_RMS_eV_A": 8.09015013367088e-07,
+          "stress_max_diff_GPa": 1.5247737490656725e-06
+        },
+        {
+          "composition": "Al0.7Ti0.3",
+          "E_diff_eV_atom": 3.620982113261562e-08,
+          "F_diff_RMS_eV_A": 9.78848285335826e-07,
+          "stress_max_diff_GPa": 5.180124247488181e-07
+        },
+        {
+          "composition": "Al0.8Ti0.2",
+          "E_diff_eV_atom": 6.735324802775722e-08,
+          "F_diff_RMS_eV_A": 8.441302647622356e-07,
+          "stress_max_diff_GPa": 9.70987067518485e-07
+        },
+        {
+          "composition": "Al0.9Ti0.1",
+          "E_diff_eV_atom": 4.827976169963222e-08,
+          "F_diff_RMS_eV_A": 6.538440559196884e-07,
+          "stress_max_diff_GPa": 8.364760024269062e-07
+        },
+        {
+          "composition": "Al",
+          "E_diff_eV_atom": 5.0961970146090605e-08,
+          "F_diff_RMS_eV_A": 5.033875273912461e-07,
+          "stress_max_diff_GPa": 7.435769178124243e-07
+        }
+      ],
+      "seconds_per_100_steps": 5.564427305012941,
+      "projected_series_hours": 10.201450059190392,
+      "protocol_sha256": "6b58568cd1be1ee29f3b1158e4e3f3e0ff6f55c13cbf3becc6ccb7d50f9ab685",
+      "model_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "versions": {
+        "ase": "3.29.0",
+        "deepmd-kit": "3.2.0",
+        "torch": "2.11.0",
+        "numpy": "2.5.3"
+      }
+    },
+    "15000/progress.json": {
+      "checkpoint": 15000,
+      "completed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "failed": []
+    },
+    "15000/summary.json": {
+      "status": "completed",
+      "completed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "failed": []
+    },
+    "density_summary.json": {
+      "status": "completed",
+      "T_K": 1873,
+      "checkpoint": 15000,
+      "rows": [
+        {
+          "x_Al": 0.0,
+          "composition": "Ti",
+          "rho_g_cm3": 4.282801367758014,
+          "sem_g_cm3": 0.0007609701219138806,
+          "half_drift_g_cm3": 0.0020124537655901165,
+          "mean_T_K": 1863.5467348477982,
+          "mean_P_GPa": 0.009826919329304728,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0006853929619367186,
+            "5": 0.0007233679897441489,
+            "6": 0.0007609701219138806
+          }
+        },
+        {
+          "x_Al": 0.1,
+          "composition": "Al0.1Ti0.9",
+          "rho_g_cm3": 4.106583278320424,
+          "sem_g_cm3": 0.000732542277091556,
+          "half_drift_g_cm3": -0.00031586979571240903,
+          "mean_T_K": 1863.6318072051806,
+          "mean_P_GPa": 0.004792266959362865,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0006342831163869949,
+            "5": 0.000732542277091556,
+            "6": 0.0006102235784320475
+          }
+        },
+        {
+          "x_Al": 0.2,
+          "composition": "Al0.2Ti0.8",
+          "rho_g_cm3": 3.9302921905369765,
+          "sem_g_cm3": 0.0006967676546180746,
+          "half_drift_g_cm3": -0.0011034785708927686,
+          "mean_T_K": 1863.607993049433,
+          "mean_P_GPa": 0.005741940037446549,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.000622605833554293,
+            "5": 0.0006967676546180746,
+            "6": 0.0005907844963154733
+          }
+        },
+        {
+          "x_Al": 0.3,
+          "composition": "Al0.3Ti0.7",
+          "rho_g_cm3": 3.7425087170916935,
+          "sem_g_cm3": 0.0017038642517324344,
+          "half_drift_g_cm3": 0.0015434851431952445,
+          "mean_T_K": 1863.6866729924589,
+          "mean_P_GPa": 0.007782650192537921,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0017038642517324344,
+            "5": 0.0015314034755867334,
+            "6": 0.0008882600809216475
+          }
+        },
+        {
+          "x_Al": 0.4,
+          "composition": "Al0.4Ti0.6",
+          "rho_g_cm3": 3.5541716824272203,
+          "sem_g_cm3": 0.0015100331235659375,
+          "half_drift_g_cm3": -0.0023804681223760227,
+          "mean_T_K": 1863.4590721584996,
+          "mean_P_GPa": 0.005830084827520402,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0011543471055939427,
+            "5": 0.0013012115267488995,
+            "6": 0.0015100331235659375
+          }
+        },
+        {
+          "x_Al": 0.5,
+          "composition": "Al0.5Ti0.5",
+          "rho_g_cm3": 3.349690800280451,
+          "sem_g_cm3": 0.0019217644514833972,
+          "half_drift_g_cm3": 0.0041246253326749915,
+          "mean_T_K": 1863.6238217629113,
+          "mean_P_GPa": 0.00713287063209395,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0016629667390864447,
+            "5": 0.0019217644514833972,
+            "6": 0.001496056874017138
+          }
+        },
+        {
+          "x_Al": 0.6,
+          "composition": "Al0.6Ti0.4",
+          "rho_g_cm3": 3.141845277389372,
+          "sem_g_cm3": 0.003278178292768057,
+          "half_drift_g_cm3": -0.0039749920257934335,
+          "mean_T_K": 1863.5757392855464,
+          "mean_P_GPa": 0.00434044212972474,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0031641892490361177,
+            "5": 0.003203961445928484,
+            "6": 0.003278178292768057
+          }
+        },
+        {
+          "x_Al": 0.7,
+          "composition": "Al0.7Ti0.3",
+          "rho_g_cm3": 2.9046690695600965,
+          "sem_g_cm3": 0.0019082265009418248,
+          "half_drift_g_cm3": 0.0014565251094769138,
+          "mean_T_K": 1863.6948240841102,
+          "mean_P_GPa": 0.007339797153634286,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.001561413476188469,
+            "5": 0.0019082265009418248,
+            "6": 0.001106294495511757
+          }
+        },
+        {
+          "x_Al": 0.8,
+          "composition": "Al0.8Ti0.2",
+          "rho_g_cm3": 2.644532775548643,
+          "sem_g_cm3": 0.0025520574722376495,
+          "half_drift_g_cm3": 0.005876482797206428,
+          "mean_T_K": 1863.5792184622533,
+          "mean_P_GPa": 0.00681647259338977,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0016567560676640073,
+            "5": 0.0025520574722376495,
+            "6": 0.0021865840731186913
+          }
+        },
+        {
+          "x_Al": 0.9,
+          "composition": "Al0.9Ti0.1",
+          "rho_g_cm3": 2.3685476065894435,
+          "sem_g_cm3": 0.0014510258236975248,
+          "half_drift_g_cm3": 0.0029221593480888153,
+          "mean_T_K": 1863.6262001946977,
+          "mean_P_GPa": 0.006636448923589053,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0011342168350361628,
+            "5": 0.0014148634161840394,
+            "6": 0.0014510258236975248
+          }
+        },
+        {
+          "x_Al": 1.0,
+          "composition": "Al",
+          "rho_g_cm3": 2.091772473552159,
+          "sem_g_cm3": 0.0014053165625920864,
+          "half_drift_g_cm3": 0.0016295143458049388,
+          "mean_T_K": 1863.5375787584317,
+          "mean_P_GPa": 0.005339237797744644,
+          "samples": 3000,
+          "block_sem_g_cm3": {
+            "3": 0.0011164884943726922,
+            "5": 0.0009241613938882224,
+            "6": 0.0014053165625920864
+          }
+        }
+      ],
+      "note": "Block SEM and half-window drift are diagnostics; liquid-state and convergence assessment requires trajectories."
+    }
+  },
+  "logs": {
+    "analysis.log": "  \"block_sem_g_cm3\": {\n      \"3\": 0.0017038642517324344,\n      \"5\": 0.0015314034755867334,\n      \"6\": 0.0008882600809216475\n    }\n  },\n  {\n    \"x_Al\": 0.4,\n    \"composition\": \"Al0.4Ti0.6\",\n    \"rho_g_cm3\": 3.5541716824272203,\n    \"sem_g_cm3\": 0.0015100331235659375,\n    \"half_drift_g_cm3\": -0.0023804681223760227,\n    \"mean_T_K\": 1863.4590721584996,\n    \"mean_P_GPa\": 0.005830084827520402,\n    \"samples\": 3000,\n    \"block_sem_g_cm3\": {\n      \"3\": 0.0011543471055939427,\n      \"5\": 0.0013012115267488995,\n      \"6\": 0.0015100331235659375\n    }\n  },\n  {\n    \"x_Al\": 0.5,\n    \"composition\": \"Al0.5Ti0.5\",\n    \"rho_g_cm3\": 3.349690800280451,\n    \"sem_g_cm3\": 0.0019217644514833972,\n    \"half_drift_g_cm3\": 0.0041246253326749915,\n    \"mean_T_K\": 1863.6238217629113,\n    \"mean_P_GPa\": 0.00713287063209395,\n    \"samples\": 3000,\n    \"block_sem_g_cm3\": {\n      \"3\": 0.0016629667390864447,\n      \"5\": 0.0019217644514833972,\n      \"6\": 0.001496056874017138\n    }\n  },\n  {\n    \"x_Al\": 0.6,\n    \"composition\": \"Al0.6Ti0.4\",\n    \"rho_g_cm3\": 3.141845277389372,\n    \"sem_g_cm3\": 0.003278178292768057,\n    \"half_drift_g_cm3\": -0.0039749920257934335,\n    \"mean_T_K\": 1863.5757392855464,\n    \"mean_P_GPa\": 0.00434044212972474,\n    \"samples\": 3000,\n    \"block_sem_g_cm3\": {\n      \"3\": 0.0031641892490361177,\n      \"5\": 0.003203961445928484,\n      \"6\": 0.003278178292768057\n    }\n  },\n  {\n    \"x_Al\": 0.7,\n    \"composition\": \"Al0.7Ti0.3\",\n    \"rho_g_cm3\": 2.9046690695600965,\n    \"sem_g_cm3\": 0.0019082265009418248,\n    \"half_drift_g_cm3\": 0.0014565251094769138,\n    \"mean_T_K\": 1863.6948240841102,\n    \"mean_P_GPa\": 0.007339797153634286,\n    \"samples\": 3000,\n    \"block_sem_g_cm3\": {\n      \"3\": 0.001561413476188469,\n      \"5\": 0.0019082265009418248,\n      \"6\": 0.001106294495511757\n    }\n  },\n  {\n    \"x_Al\": 0.8,\n    \"composition\": \"Al0.8Ti0.2\",\n    \"rho_g_cm3\": 2.644532775548643,\n    \"sem_g_cm3\": 0.0025520574722376495,\n    \"half_drift_g_cm3\": 0.005876482797206428,\n    \"mean_T_K\": 1863.5792184622533,\n    \"mean_P_GPa\": 0.00681647259338977,\n    \"samples\": 3000,\n    \"block_sem_g_cm3\": {\n      \"3\": 0.0016567560676640073,\n      \"5\": 0.0025520574722376495,\n      \"6\": 0.0021865840731186913\n    }\n  },\n  {\n    \"x_Al\": 0.9,\n    \"composition\": \"Al0.9Ti0.1\",\n    \"rho_g_cm3\": 2.3685476065894435,\n    \"sem_g_cm3\": 0.0014510258236975248,\n    \"half_drift_g_cm3\": 0.0029221593480888153,\n    \"mean_T_K\": 1863.6262001946977,\n    \"mean_P_GPa\": 0.006636448923589053,\n    \"samples\": 3000,\n    \"block_sem_g_cm3\": {\n      \"3\": 0.0011342168350361628,\n      \"5\": 0.0014148634161840394,\n      \"6\": 0.0014510258236975248\n    }\n  },\n  {\n    \"x_Al\": 1.0,\n    \"composition\": \"Al\",\n    \"rho_g_cm3\": 2.091772473552159,\n    \"sem_g_cm3\": 0.0014053165625920864,\n    \"half_drift_g_cm3\": 0.0016295143458049388,\n    \"mean_T_K\": 1863.5375787584317,\n    \"mean_P_GPa\": 0.005339237797744644,\n    \"samples\": 3000,\n    \"block_sem_g_cm3\": {\n      \"3\": 0.0011164884943726922,\n      \"5\": 0.0009241613938882224,\n      \"6\": 0.0014053165625920864\n    }\n  }\n]\n",
+    "allocation-20961139.log": "",
+    "worker-15000.log": "2.3454\nproduction 1000 1969.0 2.4033\nproduction 2000 1951.6 2.3699\nproduction 3000 1924.4 2.3618\nproduction 4000 1708.5 2.3848\nproduction 5000 1912.2 2.3436\nproduction 6000 2083.4 2.3282\nproduction 7000 2032.3 2.2994\nproduction 8000 1864.2 2.3511\nproduction 9000 1778.0 2.5061\nproduction 10000 1665.2 2.4034\nproduction 11000 1856.3 2.3389\nproduction 12000 1903.7 2.4118\nproduction 13000 1798.9 2.4286\nproduction 14000 1953.7 2.3562\nproduction 15000 1769.3 2.3322\nproduction 16000 1805.9 2.3757\nproduction 17000 1819.0 2.3465\nproduction 18000 1937.5 2.3706\nproduction 19000 1894.3 2.347\nproduction 20000 1860.4 2.378\nproduction 21000 1810.6 2.3067\nproduction 22000 1840.7 2.3605\nproduction 23000 1951.0 2.3784\nproduction 24000 1918.0 2.3294\nproduction 25000 1880.9 2.317\nproduction 26000 1774.6 2.3647\nproduction 27000 1757.7 2.3806\nproduction 28000 1809.1 2.4\nproduction 29000 1867.6 2.3391\nproduction 30000 1785.3 2.3497\nCOMPLETED_COMPOSITION 15000 Al0.9Ti0.1\nSTART_COMPOSITION 15000 Al\nequilibration 0 1873.0 2.0855\nequilibration 1000 1891.0 2.0833\nequilibration 2000 1708.2 2.136\nequilibration 3000 1919.8 2.0488\nequilibration 4000 1753.5 2.0815\nequilibration 5000 1937.1 2.0967\nequilibration 6000 1791.1 2.0422\nequilibration 7000 1941.1 2.0888\nequilibration 8000 1675.0 2.0764\nequilibration 9000 1864.8 2.095\nequilibration 10000 1645.6 2.0996\nequilibration 11000 1668.6 2.0718\nequilibration 12000 2185.4 2.1624\nequilibration 13000 1667.0 2.0798\nequilibration 14000 2212.5 2.0721\nequilibration 15000 1840.9 2.0987\nequilibration 16000 1861.7 2.1157\nequilibration 17000 1910.7 2.1273\nequilibration 18000 1717.4 2.0858\nequilibration 19000 1723.8 2.1298\nequilibration 20000 1740.4 2.0958\nequilibration 21000 1909.5 2.0819\nequilibration 22000 1839.6 2.0536\nequilibration 23000 1900.7 2.1283\nequilibration 24000 1915.2 2.0497\nequilibration 25000 1973.0 2.0989\nequilibration 26000 1916.5 2.0311\nequilibration 27000 1994.5 2.046\nequilibration 28000 2052.6 2.0718\nequilibration 29000 1652.8 2.1404\nequilibration 30000 1823.0 2.0953\nproduction 0 1873.0 2.0953\nproduction 1000 1690.9 2.1406\nproduction 2000 1716.0 2.1135\nproduction 3000 1824.6 2.0784\nproduction 4000 1871.6 2.095\nproduction 5000 1949.5 2.1011\nproduction 6000 1909.4 2.0913\nproduction 7000 1858.2 2.1095\nproduction 8000 1903.2 2.0759\nproduction 9000 1819.2 2.0876\nproduction 10000 1900.0 2.059\nproduction 11000 1670.3 2.133\nproduction 12000 1995.3 2.0598\nproduction 13000 2058.8 2.114\nproduction 14000 1757.5 2.0745\nproduction 15000 1945.5 2.1083\nproduction 16000 1759.4 2.0556\nproduction 17000 1926.4 2.1125\nproduction 18000 1834.3 2.0059\nproduction 19000 1791.1 2.1229\nproduction 20000 1855.8 2.057\nproduction 21000 1895.7 2.0642\nproduction 22000 1998.5 2.1376\nproduction 23000 1650.0 2.1147\nproduction 24000 1888.9 2.1438\nproduction 25000 1995.4 2.0294\nproduction 26000 1960.4 2.1358\nproduction 27000 1683.4 2.0633\nproduction 28000 1818.3 2.1367\nproduction 29000 1987.4 2.1066\nproduction 30000 1837.4 2.1066\nCOMPLETED_COMPOSITION 15000 Al\n"
+  }
+}

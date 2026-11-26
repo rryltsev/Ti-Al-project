@@ -1,0 +1,22 @@
+{
+  "key": "N694-QC",
+  "job_id": "20989409",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=4",
+    "--mem=12G",
+    "--time=00:10:00",
+    "--array=0-7%4",
+    "--dependency=afterany:20989407",
+    "--job-name=TiAl-N694-seeds-QC",
+    "--output=training-plan01/N694-QC-%A_%a.log",
+    "training-plan01/qc.sbatch",
+    "N694"
+  ],
+  "utc": "2026-11-07T15:41:23.067660+00:00"
+}

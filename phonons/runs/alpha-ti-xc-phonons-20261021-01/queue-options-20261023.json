@@ -1,0 +1,225 @@
+{
+  "checked_utc": "2026-10-23T16:29:52.288391+00:00",
+  "options": [
+    {
+      "name": "apollo-current32",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=apollo",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=1",
+        "--ntasks=32",
+        "--ntasks-per-node=32",
+        "--cpus-per-task=1",
+        "--mem=300G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959579 to start at 2026-10-25T17:33:02 using 32 processors on nodes apollo23 in partition apollo\n"
+    },
+    {
+      "name": "apollo-32-compact",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=apollo",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=1",
+        "--ntasks=32",
+        "--ntasks-per-node=32",
+        "--cpus-per-task=1",
+        "--mem=240G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959580 to start at 2026-10-25T11:32:52 using 32 processors on nodes apollo9 in partition apollo\n"
+    },
+    {
+      "name": "apollo-32-split2",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=apollo",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=2",
+        "--ntasks=32",
+        "--ntasks-per-node=16",
+        "--cpus-per-task=1",
+        "--mem=128G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959581 to start at 2026-10-25T11:32:52 using 32 processors on nodes apollo[9,11] in partition apollo\n"
+    },
+    {
+      "name": "apollo-32-split4",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=apollo",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=4",
+        "--ntasks=32",
+        "--ntasks-per-node=8",
+        "--cpus-per-task=1",
+        "--mem=80G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959582 to start at 2026-10-25T11:32:52 using 32 processors on nodes apollo[9,11-13] in partition apollo\n"
+    },
+    {
+      "name": "apollo-64-compact",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=apollo",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=2",
+        "--ntasks=64",
+        "--ntasks-per-node=32",
+        "--cpus-per-task=1",
+        "--mem=240G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959583 to start at 2026-10-25T15:52:04 using 64 processors on nodes apollo[8-9] in partition apollo\n"
+    },
+    {
+      "name": "apollo-64-split4",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=apollo",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=4",
+        "--ntasks=64",
+        "--ntasks-per-node=16",
+        "--cpus-per-task=1",
+        "--mem=128G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959584 to start at 2026-10-25T15:52:04 using 64 processors on nodes apollo[7-9,11] in partition apollo\n"
+    },
+    {
+      "name": "apollo-32-split2-long",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=apollo",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=2",
+        "--ntasks=32",
+        "--ntasks-per-node=16",
+        "--cpus-per-task=1",
+        "--mem=128G",
+        "--time=48:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959585 to start at 2026-10-25T11:32:52 using 32 processors on nodes apollo[9,11] in partition apollo\n"
+    },
+    {
+      "name": "apollo-32-compact-long",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=apollo",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=1",
+        "--ntasks=32",
+        "--ntasks-per-node=32",
+        "--cpus-per-task=1",
+        "--mem=240G",
+        "--time=48:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959586 to start at 2026-10-25T11:32:52 using 32 processors on nodes apollo9 in partition apollo\n"
+    },
+    {
+      "name": "tesla-32-split4",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=tesla",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=4",
+        "--ntasks=32",
+        "--ntasks-per-node=8",
+        "--cpus-per-task=1",
+        "--mem=80G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959587 to start at 2026-10-29T22:30:22 using 32 processors on nodes tesla[22,24,35,43] in partition tesla\n"
+    },
+    {
+      "name": "tesla-32-split8",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=tesla",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=8",
+        "--ntasks=32",
+        "--ntasks-per-node=4",
+        "--cpus-per-task=1",
+        "--mem=40G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959588 to start at 2026-10-29T22:30:22 using 32 processors on nodes tesla[1-6,35,43] in partition tesla\n"
+    },
+    {
+      "name": "v100-cpu32",
+      "command": [
+        "sbatch",
+        "--test-only",
+        "--partition=v100",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=1",
+        "--ntasks=32",
+        "--ntasks-per-node=32",
+        "--cpus-per-task=1",
+        "--mem=240G",
+        "--time=20:00:00",
+        "--wrap=/bin/true"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "sbatch: Job 20959589 to start at 2026-10-24T01:48:42 using 32 processors on nodes tesla-a101 in partition v100\n"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "unix": 1793960503.7636292,
+  "T": 1941,
+  "Nold": 15,
+  "Nnew": 5,
+  "Ntotal": 20,
+  "windows20ps": 25,
+  "combined": {
+    "eta_mPa_s": 3.6503669530202267,
+    "eta_std_mPa_s": 0.1421430657177967,
+    "relative_std": 0.03893939090156153,
+    "neff": 25.444264772500276,
+    "cost_z": 0.5856373584983434,
+    "criterion_z": 0.011048698145213861,
+    "formal_std_mPa_s": 0.1421430657177967,
+    "cluster_jackknife_std_mPa_s": 0.13514769987814446,
+    "legacy_replicas": 15,
+    "new_40ps_replicas": 5,
+    "replica_clusters": 20,
+    "windows_20ps": 25,
+    "leave_one_replica_out_mPa_s": [
+      3.6711933465695172,
+      3.6318261963132805,
+      3.6547275878200476,
+      3.6430996970242964,
+      3.6447729706498406,
+      3.729571693643037,
+      3.6672583082460144,
+      3.642539262676855,
+      3.625599659901711,
+      3.6613599393686243,
+      3.63772368132185,
+      3.661620199905209,
+      3.6016076548454605,
+      3.6591402652213065,
+      3.653398068365833,
+      3.6307791077491602,
+      3.70633837646856,
+      3.6486225260850365,
+      3.6219289570493913,
+      3.5875287817238974
+    ],
+    "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+    "pooling_version": "r2scan-sequential-refinement-v2"
+  },
+  "previous": {
+    "eta_mPa_s": 3.5599720482364896,
+    "eta_std_mPa_s": 0.17155058990669847,
+    "relative_std": 0.048188746310994166,
+    "neff": 28.604149289204486,
+    "cost_z": -0.3109196751275336,
+    "criterion_z": 0.022630628070911145,
+    "formal_std_mPa_s": 0.17155058990669847,
+    "cluster_jackknife_std_mPa_s": 0.16493038670668597,
+    "legacy_replicas": 15,
+    "new_40ps_replicas": 0,
+    "replica_clusters": 15,
+    "windows_20ps": 15,
+    "leave_one_replica_out_mPa_s": [
+      3.5779889618663208,
+      3.5308758333499632,
+      3.568983986932991,
+      3.53372110771315,
+      3.561273118587995,
+      3.684844754648423,
+      3.5852471302220033,
+      3.537623852828755,
+      3.5097111601652227,
+      3.5690574714096837,
+      3.5303132117115297,
+      3.5747809834087767,
+      3.4774677430201457,
+      3.564702312573437,
+      3.5610822951471888
+    ],
+    "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+    "pooling_version": "r2scan-legacy20-new40-v1"
+  },
+  "new_batch": {
+    "eta_mPa_s": 3.73825817560309,
+    "eta_std_mPa_s": 0.23002805197871234,
+    "relative_std": 0.061533484626594075,
+    "neff": 29.405057276833354,
+    "cost_z": -0.5506667421826761,
+    "criterion_z": 0.3262788838456826,
+    "formal_std_mPa_s": 0.23002805197871234,
+    "cluster_jackknife_std_mPa_s": 0.21570634185758852,
+    "legacy_replicas": 0,
+    "new_40ps_replicas": 5,
+    "replica_clusters": 5,
+    "windows_20ps": 10,
+    "leave_one_replica_out_mPa_s": [
+      3.649386029751197,
+      3.91351552341665,
+      3.772502187145313,
+      3.687698402126003,
+      3.609801973312219
+    ],
+    "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+    "pooling_version": "r2scan-sequential-refinement-v2"
+  },
+  "new_batch_z": 0.6213059347456004,
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 3.708738105253894,
+      "eta_std_mPa_s": 0.22083987005553318,
+      "relative_std": 0.059545824964746294,
+      "neff": 59.07606763642507,
+      "tau_exp_ps": 0.1986476483122307,
+      "tau_int_ps": 0.12407004485439115,
+      "cost_z": 0.11360425046954654,
+      "criterion_z": -0.08108898535033625
+    },
+    "first20ps": {
+      "eta_mPa_s": 2.837093881421104,
+      "eta_std_mPa_s": 0.26092549703283324,
+      "relative_std": 0.09196928545139837,
+      "neff": 111.50265639491045,
+      "tau_exp_ps": 0.10010039681822688,
+      "tau_int_ps": 0.0965502319720648,
+      "cost_z": 0.3337008725619558,
+      "criterion_z": 4.4800837984660085
+    },
+    "second20ps": {
+      "eta_mPa_s": 4.34528951987807,
+      "eta_std_mPa_s": 0.4153919371920642,
+      "relative_std": 0.095595917209153,
+      "neff": 29.024622487394666,
+      "tau_exp_ps": 0.2640297194567531,
+      "tau_int_ps": 0.14293790054422592,
+      "cost_z": -0.2624206926498633,
+      "criterion_z": 0.4013406446087542
+    }
+  },
+  "checks": [
+    {
+      "id": "Ti_1941K",
+      "flags": {
+        "combined_precision": false,
+        "combined_last_three_stability": false,
+        "combined_cost": true,
+        "combined_cutoff": true,
+        "new_batch_consistency": true
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.23502447438874052,
+      "new40_diagnostics": {
+        "40ps": {
+          "relative_std": 0.059545824964746294,
+          "neff": 59.07606763642507,
+          "cost_z": 0.11360425046954654,
+          "criterion_z": -0.08108898535033625
+        },
+        "first20ps": {
+          "relative_std": 0.09196928545139837,
+          "neff": 111.50265639491045,
+          "cost_z": 0.3337008725619558,
+          "criterion_z": 4.4800837984660085
+        },
+        "second20ps": {
+          "relative_std": 0.095595917209153,
+          "neff": 29.024622487394666,
+          "cost_z": -0.2624206926498633,
+          "criterion_z": 0.4013406446087542
+        }
+      }
+    }
+  ],
+  "runtime_checks": "PASS",
+  "visual_qa": "Convergence, combined convergence, spectrum/extras for 40ps/first20/second20/new40/new20/combined reviewed; new40 identical to full40 at N5",
+  "source_sha256": "5dd1dbb797e7970e80f3d1a1675179620afe3c9e0e458194dd8caa53a7bcd7a1",
+  "convergence_established": false,
+  "article_changed": false
+}

@@ -1,0 +1,64 @@
+Using GPU device(s): 0, GPU: RTX 5060 Ti
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   neo
+  Use type:  finetune
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model
+  Name:      model_frozen.pt2
+  Full path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model/model_frozen.pt2
+==========================================
+Model found: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model/model_frozen.pt2
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/sol
+==========================================
+Activated: lammps_deepmd_dpa4_env
+Python: /home/katkoff/miniconda3/envs/lammps_deepmd_dpa4_env/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/sol/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/sol/.triton
+==========================================
+==========================================
+Melting point calculation
+==========================================
+Date:            Fri Sep 25 16:31:36 +05 2026
+System:          beta_Ti
+Mode:            dpa4-neo-finetune
+Calculator:      deepmd
+Engine:          lammps
+LAMMPS mode:     native
+DFT method:      sol
+Conda env:       lammps_deepmd_dpa4_env
+Model path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model/model_frozen.pt2
+Tm estimate:     1900 K
+T range:         ±100 K, step 50 K
+T overheat:      1.5
+Supercell:       1,1,3
+N atoms min:     1000
+MD timestep:     0.001
+Force clear:     true
+Workdir:         /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/sol
+Log file:        /home/katkoff/deepmd_check_pipline/logs/run_melting_20260925_163135.log
+==========================================
+Traceback (most recent call last):
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/melting_calculator_lammps.py", line 14, in <module>
+    from utils import (
+    ...<5 lines>...
+    )
+ImportError: cannot import name 'LammpsTemperaturePointRunner' from 'utils' (/home/katkoff/deepmd_check_pipline/models_check/utils/__init__.py)
+==========================================
+Melting calculation finished
+==========================================
+Exit code: 1
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/melting/lammps/native/dpa4/neo/finetune/beta_Ti/sol
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_melting_20260925_163135.log
+==========================================
+❌ ERROR: Calculation failed with code 1
+Check log: tail -100 /home/katkoff/deepmd_check_pipline/logs/run_melting_20260925_163135.log
+==========================================

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-24T19:37:30.289978+00:00",
+  "argv": [
+    "sbatch",
+    "--parsable",
+    "--partition=nompi,apollo,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=384M",
+    "--time=00:40:00",
+    "--job-name=TiPD-atat_s3_5120",
+    "--array=1-483%96",
+    "--output=logs/%A_%a.out",
+    "window.sbatch"
+  ],
+  "remote": "/home6/u3129/tial-pd-20261124-ce/atat_s3_5120"
+}

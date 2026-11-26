@@ -1,0 +1,69 @@
+{
+  "unix": 1793933217.0501862,
+  "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02",
+  "run_id": "r2scan-ti-1873-20261106-01",
+  "args": [
+    "sbatch",
+    "--parsable",
+    "--partition=v100",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=6",
+    "--gres=gpu:a100:1",
+    "--mem=32G",
+    "--time=20:00:00",
+    "--requeue",
+    "--job-name=Ti1873-visc-r2SCAN",
+    "--comment=r2scan-ti-1873-20261106-01",
+    "--chdir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K",
+    "--output=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-%j.log",
+    "--open-mode=append",
+    "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/job.sbatch"
+  ],
+  "status": "single_job_released",
+  "returncode": 0,
+  "stdout": "20988268\n",
+  "stderr": "",
+  "job_id": "20988268",
+  "new_sbatch_created": false,
+  "mode": "single_job_sequential_refinement_v2",
+  "dispatcher_remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K",
+  "transition": {
+    "unix": 1793939818.697937,
+    "status": "single_job_released",
+    "job_id": "20988268",
+    "dispatcher_remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/workflow.py",
+    "dispatcher_sha256": "e47c2f181277365242832b262575f3d5aacd087aed982a058d035719bdb07cb7",
+    "original_workflow_sha256": "f5f6e17adba92b8a16e99f19c64ab4df2d5b4b106839a185c61928834db0a279",
+    "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02",
+    "cancelled_jobs": [
+      {
+        "job_id": "20988269",
+        "action": "cancel_superseded_unstarted_temperature_job",
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "job_id": "20988270",
+        "action": "cancel_superseded_unstarted_temperature_job",
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "job_id": "20988271",
+        "action": "cancel_superseded_unstarted_temperature_job",
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "new_sbatch_created": false,
+    "data_confirmation": "confirmed",
+    "released_unix": 1793940309.5819464,
+    "scheduler_after_release": "JobId=20988268 JobName=Ti-visc-r2SCAN-refine UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=897 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-06T09:39:39 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T09:37:53 Scheduler=Main Partition=v100 AllocNode:Sid=umt:2203327 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/job.sbatch WorkDir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K Comment=r2scan-ti-sequential-refinement-20261106-02  StdErr=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-20988268.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-20988268.log Power= TresPerNode=gres:gpu:a100:1 \n",
+    "gpu_export_bootstrap": true,
+    "repair_unix": 1793940304.2105079
+  },
+  "gpu_export_repair": "sameID; no completed replica or physical protocol changed"
+}

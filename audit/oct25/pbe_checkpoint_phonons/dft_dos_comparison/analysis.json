@@ -1,0 +1,358 @@
+{
+  "criterion_clarification": "Author selected PBE 5k by agreement with the archived DFT phonon DOS, not experimental dispersion points. Previous experiment-only assessment does not test this criterion.",
+  "DFT_source": {
+    "total_dos.dat": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\total_dos.dat",
+      "sha256": "5e4438aae477df4d656ed7ffd808675642b9d9cceff4a79fd8c0b228e70088da"
+    },
+    "POSCAR": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\POSCAR",
+      "sha256": "bb123213ff83623624614ed5cc62020e8db2666b8fc118f3e1df7751f8eddcfe"
+    },
+    "phonopy.yaml": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\phonopy.yaml",
+      "sha256": "605424c6a803939d15e97d7fcf4f14ddad4c62e2ae7da40561e432f5e36f3b38"
+    },
+    "mesh.conf": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\mesh.conf",
+      "sha256": "b58083bbb7b6cd61a2f40ed4609533a2f58648d6dc94166274ceba0ec3fff461"
+    },
+    "make_total_dos_from_mesh.py": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\make_total_dos_from_mesh.py",
+      "sha256": "2912512024fd6d66fec702b35ce8cecf0ca167afc180574d2f422e95073b6c95"
+    },
+    "force_run_INCAR": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\force_run_INCAR",
+      "sha256": "e2ca1ab6fde579794984fb563410f1e2b2c759ba70cfc3184968b83a64515c6c"
+    },
+    "force_run_KPOINTS": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\force_run_KPOINTS",
+      "sha256": "54ae1e1e1e0722bd898e7a9654935f266e872a0b19a01695c6196b084ddb5807"
+    }
+  },
+  "DFT_geometry": {
+    "a_A": 2.95,
+    "c_A": 4.68,
+    "V_per_atom_A3": 17.6356114191036
+  },
+  "DFT_raw_integral": 5.999999999999988,
+  "normalization": "3 modes per atom, no frequency rescaling or shifting",
+  "MLIP_source_sha256": "827485046dd6104aa5794f9fc7fd10b955edacc2b6f08e5c107534ec6be37045",
+  "MLIP_supercell": [
+    9,
+    9,
+    9
+  ],
+  "MLIP_mesh": [
+    50,
+    50,
+    50
+  ],
+  "DFT_supercell": [
+    4,
+    4,
+    3
+  ],
+  "DFT_mesh": [
+    40,
+    40,
+    30
+  ],
+  "width_checks": {
+    "0.05": {
+      "DFT": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.0,
+        "wasserstein_THz": 0.0,
+        "L2_relative": 0.0,
+        "mean_frequency_THz": 5.30066663034313,
+        "dominant_peak_THz": 6.8405,
+        "high_frequency_peak_THz": 6.8405,
+        "prominent_peaks_THz": [
+          3.2105,
+          5.5105,
+          6.8405,
+          7.4895000000000005
+        ]
+      },
+      "5000/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.13241470621607254,
+        "wasserstein_THz": 0.26765328362892665,
+        "L2_relative": 0.3135690009684141,
+        "mean_frequency_THz": 5.568319781333334,
+        "dominant_peak_THz": 6.9195,
+        "high_frequency_peak_THz": 6.9195,
+        "prominent_peaks_THz": [
+          3.6685000000000003,
+          5.7225,
+          6.9195
+        ]
+      },
+      "5000/relaxed": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.13248120547813275,
+        "wasserstein_THz": 0.26721785100690404,
+        "L2_relative": 0.31331135594302173,
+        "mean_frequency_THz": 5.567884349333333,
+        "dominant_peak_THz": 6.9205,
+        "high_frequency_peak_THz": 6.9205,
+        "prominent_peaks_THz": [
+          3.6695,
+          5.721500000000001,
+          6.9205
+        ]
+      },
+      "20000/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.1678047984790476,
+        "wasserstein_THz": 0.3143950509424489,
+        "L2_relative": 0.3797177738004631,
+        "mean_frequency_THz": 5.6150616079999995,
+        "dominant_peak_THz": 7.210500000000001,
+        "high_frequency_peak_THz": 7.210500000000001,
+        "prominent_peaks_THz": [
+          3.7495000000000003,
+          6.2875000000000005,
+          7.210500000000001
+        ]
+      },
+      "20000/relaxed": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.16551440330163875,
+        "wasserstein_THz": 0.30910506566563206,
+        "L2_relative": 0.37498938395978365,
+        "mean_frequency_THz": 5.609771618666667,
+        "dominant_peak_THz": 7.1915000000000004,
+        "high_frequency_peak_THz": 7.1915000000000004,
+        "prominent_peaks_THz": [
+          3.7425,
+          6.2875000000000005,
+          7.1915000000000004
+        ]
+      },
+      "23400/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.1646197065725082,
+        "wasserstein_THz": 0.30230614200876327,
+        "L2_relative": 0.3730710206218094,
+        "mean_frequency_THz": 5.602972698666667,
+        "dominant_peak_THz": 7.194500000000001,
+        "high_frequency_peak_THz": 7.194500000000001,
+        "prominent_peaks_THz": [
+          3.7215000000000003,
+          6.277500000000001,
+          7.194500000000001
+        ]
+      },
+      "23400/relaxed": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.16246250321808214,
+        "wasserstein_THz": 0.29647432515556627,
+        "L2_relative": 0.3686179027061312,
+        "mean_frequency_THz": 5.59714088,
+        "dominant_peak_THz": 7.1785000000000005,
+        "high_frequency_peak_THz": 7.1785000000000005,
+        "prominent_peaks_THz": [
+          3.7165000000000004,
+          6.2735,
+          7.1785000000000005
+        ]
+      }
+    },
+    "0.1": {
+      "DFT": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.0,
+        "wasserstein_THz": 0.0,
+        "L2_relative": 0.0,
+        "mean_frequency_THz": 5.30066663034313,
+        "dominant_peak_THz": 6.8635,
+        "high_frequency_peak_THz": 6.8635,
+        "prominent_peaks_THz": [
+          3.2275,
+          5.5545,
+          6.8635
+        ]
+      },
+      "5000/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.12638247178012466,
+        "wasserstein_THz": 0.26765316529483757,
+        "L2_relative": 0.2880228245946839,
+        "mean_frequency_THz": 5.568319781333334,
+        "dominant_peak_THz": 6.9485,
+        "high_frequency_peak_THz": 6.9485,
+        "prominent_peaks_THz": [
+          3.6565,
+          6.9485
+        ]
+      },
+      "5000/relaxed": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.12648505117247966,
+        "wasserstein_THz": 0.2672177330699846,
+        "L2_relative": 0.2878128122468465,
+        "mean_frequency_THz": 5.567884349333333,
+        "dominant_peak_THz": 6.9495000000000005,
+        "high_frequency_peak_THz": 6.9495000000000005,
+        "prominent_peaks_THz": [
+          3.6585,
+          6.9495000000000005
+        ]
+      },
+      "20000/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.15780704238250276,
+        "wasserstein_THz": 0.31439498087850337,
+        "L2_relative": 0.3489851066850228,
+        "mean_frequency_THz": 5.615061608,
+        "dominant_peak_THz": 7.2025,
+        "high_frequency_peak_THz": 7.2025,
+        "prominent_peaks_THz": [
+          3.7435,
+          6.2845,
+          7.2025
+        ]
+      },
+      "20000/relaxed": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.1549641446368994,
+        "wasserstein_THz": 0.3091049919740346,
+        "L2_relative": 0.3436689052512174,
+        "mean_frequency_THz": 5.609771618666667,
+        "dominant_peak_THz": 7.1835,
+        "high_frequency_peak_THz": 7.1835,
+        "prominent_peaks_THz": [
+          3.7355,
+          6.2975,
+          7.1835
+        ]
+      },
+      "23400/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.15390707941537826,
+        "wasserstein_THz": 0.30230607162668094,
+        "L2_relative": 0.34125901154618293,
+        "mean_frequency_THz": 5.602972698666667,
+        "dominant_peak_THz": 7.1865,
+        "high_frequency_peak_THz": 7.1865,
+        "prominent_peaks_THz": [
+          3.7185,
+          6.2725,
+          7.1865
+        ]
+      },
+      "23400/relaxed": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.15149291803296558,
+        "wasserstein_THz": 0.2964742531525676,
+        "L2_relative": 0.336266225244463,
+        "mean_frequency_THz": 5.597140880000001,
+        "dominant_peak_THz": 7.1695,
+        "high_frequency_peak_THz": 7.1695,
+        "prominent_peaks_THz": [
+          3.7135000000000002,
+          6.2765,
+          7.1695
+        ]
+      }
+    },
+    "0.15": {
+      "DFT": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.0,
+        "wasserstein_THz": 0.0,
+        "L2_relative": 0.0,
+        "mean_frequency_THz": 5.30066663034313,
+        "dominant_peak_THz": 6.8615,
+        "high_frequency_peak_THz": 6.8615,
+        "prominent_peaks_THz": [
+          3.2555,
+          5.6045,
+          6.8615
+        ]
+      },
+      "5000/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.1185971520521909,
+        "wasserstein_THz": 0.26765315183324834,
+        "L2_relative": 0.26296699717264904,
+        "mean_frequency_THz": 5.568319781333334,
+        "dominant_peak_THz": 6.9785,
+        "high_frequency_peak_THz": 6.9785,
+        "prominent_peaks_THz": [
+          3.6785,
+          6.9785
+        ]
+      },
+      "5000/relaxed": {
+        "integral_per_atom": 3.0000000000000004,
+        "total_variation": 0.11868051908715219,
+        "wasserstein_THz": 0.2672177198101974,
+        "L2_relative": 0.26284627869258903,
+        "mean_frequency_THz": 5.567884349333333,
+        "dominant_peak_THz": 6.979500000000001,
+        "high_frequency_peak_THz": 6.979500000000001,
+        "prominent_peaks_THz": [
+          3.6805,
+          6.979500000000001
+        ]
+      },
+      "20000/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.14733276629363562,
+        "wasserstein_THz": 0.3143949777095937,
+        "L2_relative": 0.31839892190396485,
+        "mean_frequency_THz": 5.6150616079999995,
+        "dominant_peak_THz": 7.194500000000001,
+        "high_frequency_peak_THz": 7.194500000000001,
+        "prominent_peaks_THz": [
+          3.7665,
+          7.194500000000001
+        ]
+      },
+      "20000/relaxed": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.14444321806383004,
+        "wasserstein_THz": 0.3091049883897047,
+        "L2_relative": 0.3128597256240839,
+        "mean_frequency_THz": 5.609771618666667,
+        "dominant_peak_THz": 7.1735,
+        "high_frequency_peak_THz": 7.1735,
+        "prominent_peaks_THz": [
+          3.7575000000000003,
+          7.1735
+        ]
+      },
+      "23400/common": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.14324491924166635,
+        "wasserstein_THz": 0.3023060683792253,
+        "L2_relative": 0.3101778627597277,
+        "mean_frequency_THz": 5.602972698666667,
+        "dominant_peak_THz": 7.1775,
+        "high_frequency_peak_THz": 7.1775,
+        "prominent_peaks_THz": [
+          3.7425,
+          7.1775
+        ]
+      },
+      "23400/relaxed": {
+        "integral_per_atom": 3.0,
+        "total_variation": 0.14063188503595764,
+        "wasserstein_THz": 0.29647424971870684,
+        "L2_relative": 0.3050503122265589,
+        "mean_frequency_THz": 5.59714088,
+        "dominant_peak_THz": 7.1595,
+        "high_frequency_peak_THz": 7.1595,
+        "prominent_peaks_THz": [
+          3.7365,
+          7.1595
+        ]
+      }
+    }
+  },
+  "limitations": "Different DFT/MLIP reference cells, supercells and q meshes; archival reference comparison, not a controlled same-geometry DFT force-constant error. Raw DFT mesh.yaml is not present in the supplied folder.",
+  "script_sha256": "d24465bf3899af2769d388ce7f58bf5b9ad0043280d371897300486b850891fb"
+}

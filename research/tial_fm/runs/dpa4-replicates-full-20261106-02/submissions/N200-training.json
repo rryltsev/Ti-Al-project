@@ -1,0 +1,22 @@
+{
+  "key": "N200-training",
+  "job_id": "20988583",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=v100",
+    "--gres=gpu:1",
+    "--cpus-per-task=4",
+    "--mem=40G",
+    "--time=04:00:00",
+    "--array=0-7%1",
+    "--job-name=TiAl-N200-seeds",
+    "--output=training-plan01/N200-%A_%a.log",
+    "training-plan01/train.sbatch",
+    "N200"
+  ],
+  "utc": "2026-11-06T14:15:44.693344+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "FAILED_BEFORE_TRAINING",
+  "failed_job": "20990460",
+  "blocked_H0": "20990461",
+  "reason": "Sparse Al/Ti atomic_shift_map packed by ConstantScaleShiftTarget as two consecutive values rather than89 model-element slots.",
+  "indices": {
+    "Al": 2,
+    "Ti": 78
+  },
+  "B0_numerical_QC": "PASS",
+  "failed_gate": "alignment E shift identity",
+  "training_steps": 0,
+  "cancelled_dependent_jobs": [
+    "20990461",
+    "20990464",
+    "20990465",
+    "20990466",
+    "20990467"
+  ],
+  "repair": "Dense89-element shift map; Al/Ti values at original indices, zeros elsewhere. Keep source checkpoints unchanged.",
+  "replacement_run": "grace-n200-fp64-pilot-20261109-02"
+}

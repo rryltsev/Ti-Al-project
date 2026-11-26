@@ -1,0 +1,18 @@
+{
+  "train": "20991849",
+  "postprocess": "20991850",
+  "cases": 6,
+  "seeds": [
+    10,
+    20,
+    30
+  ],
+  "XC": "PBE",
+  "N": 694,
+  "epochs": 50,
+  "steps": 34700,
+  "GPU_concurrency": 1,
+  "optimizer_gate_at_submission": "PENDING",
+  "production_gate": "All six optimizer smoke PASS required by train.sbatch before training",
+  "postprocess_dependency": "afterany; explicit failure status"
+}

@@ -1,0 +1,838 @@
+{
+  "version": 1,
+  "purpose": "Find and validate historical 15k 20ps raw inputs before any pooled analysis",
+  "created_unix": 1793503324.341184,
+  "production_protocol_sha256": "94b0a4121f2327504a99655c3f4bbb726d7a0205654bf3287802e6e012b9dbcc",
+  "verified_new_checkpoint": {
+    "functional": "PBE",
+    "step": 15000,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-15000.pt",
+    "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+    "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+    "article_checkpoint": false
+  },
+  "verified_new_frozen_model": {
+    "path": "/home6/u3129/tial-testsets/pbe15k-melting-20261026-02/model_15000.pt2",
+    "sha256": "1a59af825e47b585d3b49789f65bed0ac1fce0286630f9484f0687cbac3d0f65"
+  },
+  "historical_exports": [
+    {
+      "system": "AlTi",
+      "T": 1873,
+      "dft": "pbe",
+      "c_Ti": 1.0,
+      "eta_mPa_s": 3.2155255210859233,
+      "eta_std_mPa_s": 0.10934559743987708,
+      "eta_pa_s": 0.0032155255210859234,
+      "eta_std_pa_s": 0.00010934559743987709,
+      "neff": 34.185831180564655,
+      "n_replicas": 25,
+      "n_steps": 20001,
+      "timestep_ps": 0.001,
+      "block_size": 1,
+      "tau_exp_ps": 0.15726095083892214,
+      "tau_exp_std_ps": 0.01876933803795736,
+      "tau_int_ps": 0.12068889266318056,
+      "checkpoint_step": 15000,
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipline_PBE-15k_27.10.2026\\results\\AlTi\\1873\\pbe\\c_Ti_1.00\\result.json",
+      "source_sha256": "c30d10b017bc4d8a08130816aa5b2e45ffe87ee5ff070a6e4c81ac73e4d86873",
+      "provenance": "Supplied15k export; raw trajectories/model hashes absent from export; kept separate from new run."
+    },
+    {
+      "system": "AlTi",
+      "T": 2000,
+      "dft": "pbe",
+      "c_Ti": 1.0,
+      "eta_mPa_s": 2.72402291265908,
+      "eta_std_mPa_s": 0.09203048407512719,
+      "eta_pa_s": 0.0027240229126590802,
+      "eta_std_pa_s": 9.203048407512719e-05,
+      "neff": 39.92954739011723,
+      "n_replicas": 20,
+      "n_steps": 20001,
+      "timestep_ps": 0.001,
+      "block_size": 1,
+      "tau_exp_ps": 0.12580590585136509,
+      "tau_exp_std_ps": 0.014474355984401329,
+      "tau_int_ps": 0.1050455031248201,
+      "checkpoint_step": 15000,
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipline_PBE-15k_27.10.2026\\results\\AlTi\\2000\\pbe\\c_Ti_1.00\\result.json",
+      "source_sha256": "e430f7ce16238ba0ad785a9bb7ab6b077760eb513d10084501829bc2c39e18fb",
+      "provenance": "Supplied15k export; raw trajectories/model hashes absent from export; kept separate from new run."
+    }
+  ],
+  "candidates": [
+    {
+      "T": 1873,
+      "host_archive": "wsl2",
+      "n_replicas": 15,
+      "n_atoms": 512,
+      "composition": "pure Ti",
+      "n_samples": 20001,
+      "production_params": {
+        "T": 1873.0,
+        "timestep": 0.001,
+        "Tdamp": 0.2,
+        "run_steps": 20000,
+        "corr_length": 5000,
+        "sample_interval": 1,
+        "elements": [
+          "Al",
+          "Ti"
+        ],
+        "masses": [
+          26.98,
+          47.88
+        ]
+      },
+      "production_completed_at": "2026-10-16T15:39:36.952453",
+      "preparation_params": {
+        "T": 1873.0,
+        "P": 1.0,
+        "timestep": 0.001,
+        "seed": 1,
+        "equil_steps": 5000,
+        "run_steps": 1000,
+        "elements": [
+          "Al",
+          "Ti"
+        ],
+        "masses": [
+          26.98,
+          47.88
+        ]
+      },
+      "preparation_case": {
+        "status": "completed",
+        "c_Ti": 1.0,
+        "input_data": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1873K/pbe/01_generate_liquid/c_Ti_1.00/data.lammps",
+        "output_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1873K/pbe/02_nvt_snapshots/c_Ti_1.00",
+        "n_snapshots": 15,
+        "completed_viscs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "chosen_ts": [
+          200,
+          600,
+          1100,
+          1300,
+          1400,
+          1500,
+          1800,
+          1900,
+          2000,
+          2900,
+          3500,
+          3800,
+          4000,
+          4100,
+          4900
+        ],
+        "npt_dump_file": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1873K/pbe/02_nvt_snapshots/c_Ti_1.00/npt.lammpstrj",
+        "first_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1873K/pbe/02_nvt_snapshots/c_Ti_1.00/data.1",
+        "last_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/1873K/pbe/02_nvt_snapshots/c_Ti_1.00/data.15",
+        "T": 1873.0,
+        "P": 1.0,
+        "completed_at": "2026-10-16T10:02:12.612309"
+      },
+      "fit": {
+        "eta_mPa_s": 3.2589265891105748,
+        "std_mPa_s": 0.1530541570674705,
+        "neff": 31.772578928949155,
+        "difference_from_5k_reference_mPa_s": 8.881784197001252e-16
+      },
+      "matched_export_5k": {
+        "system": "AlTi",
+        "T": 1873,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 3.258926589110574,
+        "eta_std_mPa_s": 0.153054157067472,
+        "eta_pa_s": 0.003258926589110574,
+        "eta_std_pa_s": 0.000153054157067472,
+        "neff": 31.772578928949294,
+        "n_replicas": 15,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.1750319452838669,
+        "tau_exp_std_ps": 0.03580746698177719,
+        "tau_int_ps": 0.12135813144302879,
+        "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+        "tdm_mPa_s": 3.417918622117348,
+        "tdm_delta_pct": 4.878662610505935
+      },
+      "manifest": [
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc1\\pressure_1.data",
+          "pressure_sha256": "27b23a9d37e893872b48faea034837d4387b5798d79209d64a1475b9baa65bf7",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc1\\mol.data",
+          "mol_sha256": "b84fe7e34eece7940200e015f9bdc5881a6d701493fdf47b42d60532c83c0a21",
+          "volume_A3": 9539.180020260623,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc2\\pressure_2.data",
+          "pressure_sha256": "ec87443bc479a216d1703bb04abfc9aad4e57c6b601eac1c269646854552f1c2",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc2\\mol.data",
+          "mol_sha256": "2a7129ac6ad3073ff44781941ccb0ffce9b494f5d80b2ea321666aa937d761de",
+          "volume_A3": 9461.66270324877,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc3\\pressure_3.data",
+          "pressure_sha256": "0106c94c5c3202ef748d2d07303b5b43bbfebcaf4bb8e0ea611af1460fdcd7bb",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc3\\mol.data",
+          "mol_sha256": "3d4a89b33d36830d7ac6cfaa02a4e037830f4f67bc8f293f00ec9c5cdd3270ec",
+          "volume_A3": 9508.490468721231,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc4\\pressure_4.data",
+          "pressure_sha256": "6029737621288c06343038b4a4cb6fd7e91ea40bb014319624a17e6c6d4ee2f3",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc4\\mol.data",
+          "mol_sha256": "09fd8da706bcb9c58b837aa2e37154b0a616c453f0616de3dfdea66fb5fbfb77",
+          "volume_A3": 9485.81818821362,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc5\\pressure_5.data",
+          "pressure_sha256": "2210f280b6b0786e7200b4a129bfe157142945ae6d3ee577f99c092ea76c6970",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc5\\mol.data",
+          "mol_sha256": "2fdb0c9f6ee60d8fb26c230748bce6a245b5ade61955794d1e026e9a68e577f6",
+          "volume_A3": 9445.952949587981,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc6\\pressure_6.data",
+          "pressure_sha256": "3daad637cfc6ef4b3f026d2c50849955c32ba8dfdcaa725dad4ff914437f37a9",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc6\\mol.data",
+          "mol_sha256": "c97fd2ad6145b6ea191b11fb434a2f1ca67d131e785665251862748026ce84ff",
+          "volume_A3": 9508.990696307177,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc7\\pressure_7.data",
+          "pressure_sha256": "8d5f7145750f9a6d53ed2f44f4b345ac6a348157013531ca1bf3e0b7657c8495",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc7\\mol.data",
+          "mol_sha256": "0e9adcf92b1284d4efed8fd82273fbd8c384708d61cc48c012b83c2ac5ef2acf",
+          "volume_A3": 9527.297196222808,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc8\\pressure_8.data",
+          "pressure_sha256": "29cd77f5125b78165888a570a7e43485cc78d3cd8bba8b0bb178d590c54d9249",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc8\\mol.data",
+          "mol_sha256": "238b35bd54fb5692f607046e1ef4935ed34d53977dbb839ac71a81be8f713c7c",
+          "volume_A3": 9421.219842656308,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc9\\pressure_9.data",
+          "pressure_sha256": "6614b11d1b8253d88080f2e2fb6c3175e6e97ca95c9d64aa7937de7fd6559cf2",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc9\\mol.data",
+          "mol_sha256": "417d429c75fbe26d2e7df633616a4605c898756587e2893779b2898513b8575c",
+          "volume_A3": 9529.761276812917,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc10\\pressure_10.data",
+          "pressure_sha256": "49209417bf724a666b8a2f8f5cf95de2047bd26788930185e2fead9753c7b163",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc10\\mol.data",
+          "mol_sha256": "30f4bfcbad514763466e719ca9ed60993bfb2769d5f89b5a4e901ba6c8f19cab",
+          "volume_A3": 9586.962791510965,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc11\\pressure_11.data",
+          "pressure_sha256": "f988125ee2f041932dc6f9b19b8bdd3144ba13f86a8f0e18da5c8f88a27b7b72",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc11\\mol.data",
+          "mol_sha256": "b5429a72db28500975e43f17b2318168e1b297e940578b7f13fc9f2d9ebec247",
+          "volume_A3": 9458.366479964076,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc12\\pressure_12.data",
+          "pressure_sha256": "c6ed41495d0c0744d5496c196938c49e749741a734d240c42aa53accfb0924e8",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc12\\mol.data",
+          "mol_sha256": "d249b8d1f362fccb5c50c615e34b0282b673680926911bc241e6d9843d31f1ce",
+          "volume_A3": 9503.013263263878,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc13\\pressure_13.data",
+          "pressure_sha256": "9077811f773498af519caab01d872e2c4a5c7968cec2765b949dce919cc52441",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc13\\mol.data",
+          "mol_sha256": "3141699a8b686a43b52e8772b1949f81e57e1def544e4bfb8e235c129a348bb9",
+          "volume_A3": 9410.180615542511,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc14\\pressure_14.data",
+          "pressure_sha256": "263da7a950b2bf98b86a12a91eea88083e9de10316983bafb0dc2ab3c31a772c",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc14\\mol.data",
+          "mol_sha256": "6175bd371a988d1c58b64e99c371d470594a912266e0bc806712c7ffc3328462",
+          "volume_A3": 9574.262574827822,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc15\\pressure_15.data",
+          "pressure_sha256": "bfa0d58c193e2fa1a5842b2be38564f4d61145bfc4008aea6b69db16375e1359",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc15\\mol.data",
+          "mol_sha256": "b45a2c6a531de1101ba5c046636492990ff4ec1c6ba90f4b30f98da24776d3e0",
+          "volume_A3": 9421.819791368223,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        }
+      ],
+      "checkpoint_files": {
+        "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\checkpoint.json": "59213b87cd4de468222a98469cb1a7debfd8ca0c104f36b2d3dccfcbe0ecfbd5",
+        "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\02_nvt_snapshots\\checkpoint.json": "5f963aeb15145626edb5e9c07c8b8c046128c1f8ed6fe37eb8379db88fc49dde"
+      },
+      "interpretation": "Reproduces earlier 5k-labelled export; NOT the requested historical 15k dataset. Model hash is not recorded in these old metadata."
+    },
+    {
+      "T": 2000,
+      "host_archive": "wsl2",
+      "n_replicas": 15,
+      "n_atoms": 512,
+      "composition": "pure Ti",
+      "n_samples": 20001,
+      "production_params": {
+        "T": 2000.0,
+        "timestep": 0.001,
+        "Tdamp": 0.2,
+        "run_steps": 20000,
+        "corr_length": 5000,
+        "sample_interval": 1,
+        "elements": [
+          "Al",
+          "Ti"
+        ],
+        "masses": [
+          26.98,
+          47.88
+        ]
+      },
+      "production_completed_at": "2026-10-17T21:45:54.054583",
+      "preparation_params": {
+        "T": 2000.0,
+        "P": 1.0,
+        "timestep": 0.001,
+        "seed": 1,
+        "equil_steps": 5000,
+        "run_steps": 1000,
+        "elements": [
+          "Al",
+          "Ti"
+        ],
+        "masses": [
+          26.98,
+          47.88
+        ]
+      },
+      "preparation_case": {
+        "status": "completed",
+        "c_Ti": 1.0,
+        "input_data": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2000K/pbe/01_generate_liquid/c_Ti_1.00/data.lammps",
+        "output_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2000K/pbe/02_nvt_snapshots/c_Ti_1.00",
+        "n_snapshots": 15,
+        "completed_viscs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "chosen_ts": [
+          200,
+          600,
+          1100,
+          1300,
+          1400,
+          1500,
+          1800,
+          1900,
+          2000,
+          2900,
+          3500,
+          3800,
+          4000,
+          4100,
+          4900
+        ],
+        "npt_dump_file": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2000K/pbe/02_nvt_snapshots/c_Ti_1.00/npt.lammpstrj",
+        "first_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2000K/pbe/02_nvt_snapshots/c_Ti_1.00/data.1",
+        "last_snapshot": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2000K/pbe/02_nvt_snapshots/c_Ti_1.00/data.15",
+        "T": 2000.0,
+        "P": 1.0,
+        "completed_at": "2026-10-17T16:06:57.282799"
+      },
+      "fit": {
+        "eta_mPa_s": 2.5989330599547045,
+        "std_mPa_s": 0.092286084318744,
+        "neff": 46.291969433774725,
+        "difference_from_5k_reference_mPa_s": -1.212363542890671e-13
+      },
+      "matched_export_5k": {
+        "system": "AlTi",
+        "T": 2000,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 2.5989330599548257,
+        "eta_std_mPa_s": 0.09228608431886295,
+        "eta_pa_s": 0.0025989330599548257,
+        "eta_std_pa_s": 9.228608431886296e-05,
+        "neff": 46.29196943376038,
+        "n_replicas": 15,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.11008708566173753,
+        "tau_exp_std_ps": 0.011331198699203383,
+        "tau_int_ps": 0.10103074271851778,
+        "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+        "tdm_mPa_s": 2.31481378462869,
+        "tdm_delta_pct": -10.932150569937116
+      },
+      "manifest": [
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc1\\pressure_1.data",
+          "pressure_sha256": "0d95efd8d60cd691784d9751d56782b070241917d2a943f796ae96933baa3576",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc1\\mol.data",
+          "mol_sha256": "be2219211f23a0b3b58bf635aad35d3bfc2e39023f249d8d1a8a145178e6fd46",
+          "volume_A3": 9516.331108296417,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc2\\pressure_2.data",
+          "pressure_sha256": "8b7f4b75c3e2c13805fe5a5462427325e8da07b5fedec956453e8ae141caa3f0",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc2\\mol.data",
+          "mol_sha256": "efa92ab9fcab9a815a627e1d85fbceeb441fbaafdccc0c98db7082e140982e43",
+          "volume_A3": 9506.53258435015,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc3\\pressure_3.data",
+          "pressure_sha256": "772fe6d7dce586e23aeb4c64d8477c51db56e77f0b0da2db3a80e373e7978c73",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc3\\mol.data",
+          "mol_sha256": "99ff212733be2e77e65f90cb3d091127051fe6bdd96b2f006552baa5f6dd1faf",
+          "volume_A3": 9547.7867419927,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc4\\pressure_4.data",
+          "pressure_sha256": "5f2ba0b37594df2037eb9c3d28e42836e10741f36d21db6447b1001625aa0c33",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc4\\mol.data",
+          "mol_sha256": "18083549b19eab85d6643fb2301d1e5ea393fecdd1b18579157cdd87f000f0ae",
+          "volume_A3": 9522.175275752219,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc5\\pressure_5.data",
+          "pressure_sha256": "cfdcc86ea68b88c41594951ea867ca00b7fdb34ef56aa1b6d4bf035de35275a7",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc5\\mol.data",
+          "mol_sha256": "2755c557c07af505a3bee50b8c54a9272fde5d0fbe9d2b30de2f081c1f0b934f",
+          "volume_A3": 9525.277664066345,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc6\\pressure_6.data",
+          "pressure_sha256": "6fb59b1ebbf25418ff3169ba044cfd8dd96f90fb0ea86ca59b1547cd06993b14",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc6\\mol.data",
+          "mol_sha256": "b76788c6f9555fbba62517354dc760ede2f66659a2d8f975efdc9c5ba7095123",
+          "volume_A3": 9557.314855541674,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc7\\pressure_7.data",
+          "pressure_sha256": "85a8dd4eaa4e2f654dc3ab2458ed793743a131df82c569d903f7753845efa2a4",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc7\\mol.data",
+          "mol_sha256": "978555632ea93edd02de31a71942b7d35b732d513c2e73ed0ae2776641cd660f",
+          "volume_A3": 9521.005072752821,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc8\\pressure_8.data",
+          "pressure_sha256": "369751af04d23f561a39169d792deffbc172fd57ccffdd4dc7ca4b1fa6a04e53",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc8\\mol.data",
+          "mol_sha256": "2eab313ff1439346ae64e545e8ed768a5c266615a77f8c966345d9c02eca995e",
+          "volume_A3": 9516.270687649621,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc9\\pressure_9.data",
+          "pressure_sha256": "07620d88c5ceab9b90afb6bf45ae13adbb2ab2db54286e0f78a07d5b35a485cc",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc9\\mol.data",
+          "mol_sha256": "20339d8f9317ad161e3879e89f9d95d1a382bf77566ff6a2d082a1ffa893ee53",
+          "volume_A3": 9531.24496735068,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc10\\pressure_10.data",
+          "pressure_sha256": "5c0d934450eeb32b4276401f7ce20ea66c53cacdb7117baa0e6cfe1908165a9d",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc10\\mol.data",
+          "mol_sha256": "b89c8902761db2d9cab4fce2bf989dd35f303e24ada23d550e5a5685240d16dd",
+          "volume_A3": 9469.117201096738,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc11\\pressure_11.data",
+          "pressure_sha256": "180e2d5c21e667d599f4a21ff941f1a77bd43f195fa22aadfd4907b31a07190f",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc11\\mol.data",
+          "mol_sha256": "717eebefdaa0ec0f8f815d121e220b6fd4a35f9da4f0c325a9f3bd4f3334c92a",
+          "volume_A3": 9629.247116763612,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc12\\pressure_12.data",
+          "pressure_sha256": "be23539c1b20413c67feb034103cd23e34a448a800595e09b08c77c814c9e77f",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc12\\mol.data",
+          "mol_sha256": "40c390176cbd84b8c4186921b61b2085717a593786f6dc7c8817d0d68c5a5049",
+          "volume_A3": 9620.74302314366,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc13\\pressure_13.data",
+          "pressure_sha256": "0903278ae1b624ed03be842fd1b8812ceb693e397a57a0b6941b4471fe22f37a",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc13\\mol.data",
+          "mol_sha256": "f63ee6561008a9f8ae3d386f51eca15b834f72c3c4700533195d6d13f5371e8c",
+          "volume_A3": 9642.113386830231,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc14\\pressure_14.data",
+          "pressure_sha256": "b5de804518d1e044bd94d56343388a00fd76955326be093ca515f9db73c9b1b7",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc14\\mol.data",
+          "mol_sha256": "eb8c8653b1112b4625ec11c8add5f5d02a9a9214ba7f01c5c88c8be1ca72cfef",
+          "volume_A3": 9437.366811459502,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc15\\pressure_15.data",
+          "pressure_sha256": "7c2562d4068902893bb8ecd567174803cad6c2fde63a036750e1d68b3206d934",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc15\\mol.data",
+          "mol_sha256": "45f3c0343c780b0eee9143249a807a3c8e192f8837199ccacf04e4f15b17428b",
+          "volume_A3": 9504.563182979662,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        }
+      ],
+      "checkpoint_files": {
+        "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\03_stress_autocorr\\checkpoint.json": "d036f99772ec80f0f202dc107b2f27a53584d2a8efbade6fbc95d0f5677fed6c",
+        "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\02_nvt_snapshots\\checkpoint.json": "18a2860adbf1c8d29519e21ddc31fb149615dc5ff6c78f42a6e1885b8cf46c75"
+      },
+      "interpretation": "Reproduces earlier 5k-labelled export; NOT the requested historical 15k dataset. Model hash is not recorded in these old metadata."
+    },
+    {
+      "T": 2100,
+      "host_archive": "cluster",
+      "n_replicas": 15,
+      "n_atoms": 512,
+      "composition": "pure Ti",
+      "n_samples": 20001,
+      "production_params": {
+        "T": 2100.0,
+        "timestep": 0.001,
+        "Tdamp": 0.2,
+        "run_steps": 20000,
+        "corr_length": 5000,
+        "sample_interval": 1,
+        "elements": [
+          "Al",
+          "Ti"
+        ],
+        "masses": [
+          26.98,
+          47.88
+        ]
+      },
+      "production_completed_at": "2026-10-18T18:17:37.800066",
+      "preparation_params": {
+        "T": 2100.0,
+        "P": 1.0,
+        "timestep": 0.001,
+        "seed": 1,
+        "equil_steps": 5000,
+        "run_steps": 1000,
+        "elements": [
+          "Al",
+          "Ti"
+        ],
+        "masses": [
+          26.98,
+          47.88
+        ]
+      },
+      "preparation_case": {
+        "status": "completed",
+        "c_Ti": 1.0,
+        "input_data": "/home/u2626/_scratch2/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2100K/pbe/01_generate_liquid/c_Ti_1.00/data.lammps",
+        "output_dir": "/home/u2626/_scratch2/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2100K/pbe/02_nvt_snapshots/c_Ti_1.00",
+        "n_snapshots": 15,
+        "completed_viscs": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "chosen_ts": [
+          200,
+          600,
+          1100,
+          1300,
+          1400,
+          1500,
+          1800,
+          1900,
+          2000,
+          2900,
+          3500,
+          3800,
+          4000,
+          4100,
+          4900
+        ],
+        "npt_dump_file": "/home/u2626/_scratch2/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2100K/pbe/02_nvt_snapshots/c_Ti_1.00/npt.lammpstrj",
+        "first_snapshot": "/home/u2626/_scratch2/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2100K/pbe/02_nvt_snapshots/c_Ti_1.00/data.1",
+        "last_snapshot": "/home/u2626/_scratch2/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2100K/pbe/02_nvt_snapshots/c_Ti_1.00/data.15",
+        "T": 2100.0,
+        "P": 1.0,
+        "completed_at": "2026-10-18T15:17:43.277324"
+      },
+      "fit": {
+        "eta_mPa_s": 2.6459169140150367,
+        "std_mPa_s": 0.10829949824318912,
+        "neff": 42.17620073532609,
+        "difference_from_5k_reference_mPa_s": -1.3322676295501878e-15
+      },
+      "matched_export_5k": {
+        "system": "AlTi",
+        "T": 2100,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 2.645916914015038,
+        "eta_std_mPa_s": 0.10829949824318905,
+        "eta_pa_s": 0.002645916914015038,
+        "eta_std_pa_s": 0.00010829949824318904,
+        "neff": 42.17620073532606,
+        "n_replicas": 15,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.13041804780115154,
+        "tau_exp_std_ps": 0.020532118116156618,
+        "tau_int_ps": 0.10274485554673696,
+        "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json"
+      },
+      "manifest": [
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc1\\pressure_1.data",
+          "pressure_sha256": "514401a3d8ce3eb0557c68ef5f16086b944d57bea9821e3af556be2e8d4a17cb",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc1\\mol.data",
+          "mol_sha256": "d99b311f727af593dd22c24f7a5ca2e47b88aaf5c28976cd7d7239d5255e7f3e",
+          "volume_A3": 9517.76835121091,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc2\\pressure_2.data",
+          "pressure_sha256": "5746130c966aa23c050c7d9fd796f2fa8b01dd80bc651ed358eda9989d8539e9",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc2\\mol.data",
+          "mol_sha256": "fb7cb36c0b6f451bc3f13b29447c1e913a0ae8d889ecf90e1ad7baa5b8cc0ce8",
+          "volume_A3": 9605.880060558724,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc3\\pressure_3.data",
+          "pressure_sha256": "64f537a58836d2bee33f0cc744da265f3785b79b7d7221a34d20dc54fc0ba77a",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc3\\mol.data",
+          "mol_sha256": "fd75b927163919fef09ff522dfb21f604a6cf279b81b127ad72b60606b63c0e6",
+          "volume_A3": 9612.32501877724,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc4\\pressure_4.data",
+          "pressure_sha256": "9e23c5bcec9b7e0e9c8dce8d4f21059bc5b5d1be3d64f9f948cfa9aab8e3c236",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc4\\mol.data",
+          "mol_sha256": "6b7add46f4db75206fb3c235b886602353fa00e5e8a92c8d7b076c00f0dd593b",
+          "volume_A3": 9550.285552286317,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc5\\pressure_5.data",
+          "pressure_sha256": "4e5efe7da978c41f1710b811fd64ef3578fdc9af0df4f29b2c43ddb1e729f33d",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc5\\mol.data",
+          "mol_sha256": "4367f3325fb408ecb615d07600cd0a0a1d7501bb5d495ae5e7793b259eb83ef9",
+          "volume_A3": 9642.872567586059,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc6\\pressure_6.data",
+          "pressure_sha256": "b300db50523f96792d9202be7d6b5b646bb529ef40e21da2d565842e90c2f800",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc6\\mol.data",
+          "mol_sha256": "097913ee82ffae856c02124f16f975d7354a8dbb7eaa1780843e6d5b0c6481ca",
+          "volume_A3": 9495.815527976878,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc7\\pressure_7.data",
+          "pressure_sha256": "7f8974453b6dd1a0c47cb0fef0ac34a54c831b6435856129cdcab33827f0ad0b",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc7\\mol.data",
+          "mol_sha256": "8654700b74dd8237466d727af7396fec8aa2da3a4b8420e2348767972aba344b",
+          "volume_A3": 9551.149661000245,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc8\\pressure_8.data",
+          "pressure_sha256": "46819fd823a3426d155b7fd729c6a07deacb2b167febbb0eaced0504f108fae6",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc8\\mol.data",
+          "mol_sha256": "f3cf49eef35190428a420b55156aaeca46e9e4730f80cabcf501741caa767585",
+          "volume_A3": 9634.424692618719,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc9\\pressure_9.data",
+          "pressure_sha256": "81b3261f2ba20b33327d9061e76633cf496e979dcff469dc0ca760431104a6f6",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc9\\mol.data",
+          "mol_sha256": "4817b06efc0345d571f4b4c5daab7828d9cfb29fbf17e30f77f77bad984dea04",
+          "volume_A3": 9541.784468375425,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc10\\pressure_10.data",
+          "pressure_sha256": "01e9b007a2be4a9318b22674f8c40bce7b1c693dec85fb9a332409dac55a9882",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc10\\mol.data",
+          "mol_sha256": "b20c8cd91963d22a18d8f7a3d8fc93a30070415ff14e3be1ccb7d85440f9e3c2",
+          "volume_A3": 9538.614731895857,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc11\\pressure_11.data",
+          "pressure_sha256": "7a1b59bd668bfdf926bf01edaa2ebf63be00cba2685cb8ec25841e7c3972417b",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc11\\mol.data",
+          "mol_sha256": "3428dd211d50ca53cf4969ac27f8e9af047c05460c6784518e1e7d4c86f99339",
+          "volume_A3": 9613.259445386382,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc12\\pressure_12.data",
+          "pressure_sha256": "657ccaa2a77b619985ead22718993b57b90862ddc0d8d669918ceacdfd86a210",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc12\\mol.data",
+          "mol_sha256": "3a7fb4b8f060591312b3984c7b4a11d81628ee3eb7e832d5605e2f6931738155",
+          "volume_A3": 9574.642275563561,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc13\\pressure_13.data",
+          "pressure_sha256": "012dc4920bd8b6807d1031774b1338fae7fe2749c1c5a56e50c72f6202f0e605",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc13\\mol.data",
+          "mol_sha256": "76dbf1f757bdf7eb15aa7e9b9b9ccbb38792ac5caa2ca2b74a05f06817a6e850",
+          "volume_A3": 9535.02884874982,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc14\\pressure_14.data",
+          "pressure_sha256": "ea363c0bfad8f99f51bdf35d0a863743b1d9fbd294baa263fe6a2c61a9814fa4",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc14\\mol.data",
+          "mol_sha256": "d2b9b3b35a2c8b1ea5485a4454b1bba6b501fd03bec157169c7977f855f7612d",
+          "volume_A3": 9650.834416710763,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        },
+        {
+          "pressure_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc15\\pressure_15.data",
+          "pressure_sha256": "271a8a637c6432893cf9ef83884b8b746cdf90eebaf19c5408d03342243d9abc",
+          "mol_file": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\c_Ti_1.00\\visc15\\mol.data",
+          "mol_sha256": "e865da2b562342411c1bdbe58b2e1933a06620a403232a3329795eb3dcfe303d",
+          "volume_A3": 9571.292389979111,
+          "first_step": 0.0,
+          "last_step": 20000.0
+        }
+      ],
+      "checkpoint_files": {
+        "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\03_stress_autocorr\\checkpoint.json": "0e293ff270bbc8e8ae543daa6eb4fed64c7b8abe49ffc47b2e8e8fde42b3de06",
+        "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\02_nvt_snapshots\\checkpoint.json": "5a721e54615c12c273e00c107485fd47a8cea7d3230ecf6f32b86dce2a173d65"
+      },
+      "interpretation": "Reproduces earlier 5k-labelled export; NOT the requested historical 15k dataset. Model hash is not recorded in these old metadata."
+    }
+  ],
+  "pooling_performed": false,
+  "compatibility_status": "not_established_missing_historical_15k_raw_and_model_binding",
+  "finished_unix": 1793503338.7365537
+}

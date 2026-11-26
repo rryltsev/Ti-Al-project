@@ -1,0 +1,32 @@
+{
+  "job_id": "20964836",
+  "scheduler_state": "COMPLETED",
+  "pending_reason": null,
+  "new_points_complete": 15,
+  "planned_points": 15,
+  "automation_id": "ti-pbe-15k-3",
+  "automation_status": "DELETED",
+  "hourly": false,
+  "pdf_render_visual_check": "passed: both final scientific PDFs, manuscript Fig. 3 on page 10, and final supporting table on page 14",
+  "manuscript_compile": "success: main.pdf and supporting_materials.pdf in manuscript/build/density-temperature-oct29",
+  "output_sha256": {
+    "density_ti.pdf": "b8f004bc98487a7fadbb28bcb0514ae45d2f0e23b11738b6c6a50ee1afa401a5",
+    "pbe_5k_15k_temperature_comparison.pdf": "76895f0ed168df626521a30794cf76a97a4062a3390725c4a6228b5784c5c749",
+    "density_registry_15k.json": "86a8738dce3d43956260b9490c588d75f3456a06fbc79e7bc609846c0422f7d1",
+    "FINAL_REPORT_RU.txt": "aa697393cbc362c1783d673a66640b9d7b8b6eb87014f488341c5e83448a6f83"
+  },
+  "checked_utc": "2026-10-29T18:12:39.154668+00:00",
+  "active_point": null,
+  "article_figure_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\figures\\density_ti_dcaa301f1346.pdf",
+  "pressure_note": "New-point mean pressures 1.48-9.71 MPa, versus target 0.1 MPa; liquid 2100-2500 K: 8.11-9.71 MPa. Block 95% pressure checks are recorded; density SEM excludes protocol effects.",
+  "exit_code": "0:0",
+  "elapsed": "09:52:26",
+  "primary_Ti_points": 17,
+  "collected_files": 109,
+  "collected_file_hashes": "all 109 verified",
+  "phase_note": "The beta-initialized 1900 K cell melted; 1800 K retained crystalline order. This homogeneous result does not establish a melting temperature.",
+  "compiled_pdf_sha256": {
+    "main.pdf": "c674930a75b6d5083b6a7d297cabfe6e4f431a379f922a621ac2752a9611e415",
+    "supporting_materials.pdf": "2f738270c336c4212b49c5ebfd593358dee5fcf247d5fdd8f9e4f4880f5a5420"
+  }
+}

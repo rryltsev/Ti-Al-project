@@ -1,0 +1,886 @@
+{
+  "method": "PCHIP or piecewise-linear interpolation of window chemical potentials vs observed mean Al fraction. Solve Maxwell equal-area along all increasing branches, require an interior pair supported globally over the measured interval, and retain the widest gap. Thinned grids keep both endpoint windows and alternate interior centers; the same subset is applied in quantum and classical samples. The differential is computed within each paired sample, not against a separately sampled historical bound.",
+  "uncertainty": "Sensitivity values compare reconstructions on fixed window means. They quantify changes when varying the chosen windows and interpolation, not statistical confidence limits.",
+  "historical_author_input_sha256": "5419763f1f8b79c5c867c7b98946482a150d01e0bb06b158d7cf70a2edc7fc06",
+  "historical_author": {
+    "PCHIP_all_13": {
+      "window_centers_at_pct": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "quantum": {
+        "alpha_at_pct": 14.958144796322415,
+        "alpha2_at_pct": 21.958271357196086,
+        "mu_eV": 3.376179488573217,
+        "maxwell_residual_eV_atom": 0.0,
+        "min_support_gap_eV_atom": -2.7755575615628914e-17
+      }
+    },
+    "PCHIP_even_7": {
+      "window_centers_at_pct": [
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25
+      ],
+      "quantum": {
+        "alpha_at_pct": 14.965484863496853,
+        "alpha2_at_pct": 22.020645607299524,
+        "mu_eV": 3.37637162926597,
+        "maxwell_residual_eV_atom": -2.7755575615628914e-17,
+        "min_support_gap_eV_atom": -2.7755575615628914e-17
+      }
+    },
+    "PCHIP_odd_plus_ends_8": {
+      "window_centers_at_pct": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        25
+      ],
+      "quantum": {
+        "alpha_at_pct": 14.797893322883265,
+        "alpha2_at_pct": 21.90513190850413,
+        "mu_eV": 3.375828144872951,
+        "maxwell_residual_eV_atom": -2.7755575615628914e-17,
+        "min_support_gap_eV_atom": -5.551115123125783e-17
+      }
+    },
+    "linear_all_13": {
+      "window_centers_at_pct": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "quantum": {
+        "alpha_at_pct": 14.957227965038461,
+        "alpha2_at_pct": 21.943883773129343,
+        "mu_eV": 3.3761454957411066,
+        "maxwell_residual_eV_atom": 0.0,
+        "min_support_gap_eV_atom": 0.0
+      }
+    },
+    "linear_even_7": {
+      "window_centers_at_pct": [
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25
+      ],
+      "quantum": {
+        "alpha_at_pct": 14.971289773143983,
+        "alpha2_at_pct": 21.655075776803837,
+        "mu_eV": 3.3763387333921955,
+        "maxwell_residual_eV_atom": 5.551115123125783e-17,
+        "min_support_gap_eV_atom": 0.0
+      }
+    },
+    "linear_odd_plus_ends_8": {
+      "window_centers_at_pct": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        25
+      ],
+      "quantum": {
+        "alpha_at_pct": 14.978305492349897,
+        "alpha2_at_pct": 21.835825856986474,
+        "mu_eV": 3.375752161778569,
+        "maxwell_residual_eV_atom": 2.7755575615628914e-17,
+        "min_support_gap_eV_atom": 0.0
+      }
+    }
+  },
+  "paired_samples": {
+    "paired768_final.json": {
+      "N": 768,
+      "input_sha256": "46e7c666e6e80fefeed18699fa904cc3cc183390c712248399dfc96a38df7920",
+      "tests": {
+        "PCHIP_all_13": {
+          "window_centers_at_pct": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.981741475958366,
+            "alpha2_at_pct": 22.022246200735783,
+            "mu_eV": 3.3749092858779517,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": -2.7755575615628914e-17
+          },
+          "classical": {
+            "alpha_at_pct": 14.91337236071592,
+            "alpha2_at_pct": 22.018116860595445,
+            "mu_eV": 3.3729675267533645,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": -5.697819676464942e-18
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.06836911524244549,
+            "alpha2": -0.004129340140337945
+          }
+        },
+        "PCHIP_even_7": {
+          "window_centers_at_pct": [
+            13,
+            15,
+            17,
+            19,
+            21,
+            23,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.989378969712275,
+            "alpha2_at_pct": 22.122943993051425,
+            "mu_eV": 3.3750096621043153,
+            "maxwell_residual_eV_atom": -2.7755575615628914e-17,
+            "min_support_gap_eV_atom": -6.9303122313654875e-18
+          },
+          "classical": {
+            "alpha_at_pct": 14.899644308658333,
+            "alpha2_at_pct": 22.12484718003071,
+            "mu_eV": 3.3730650845923558,
+            "maxwell_residual_eV_atom": -1.1102230246251565e-16,
+            "min_support_gap_eV_atom": -5.551115123125783e-17
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.08973466105394223,
+            "alpha2": 0.001903186979284044
+          }
+        },
+        "PCHIP_odd_plus_ends_8": {
+          "window_centers_at_pct": [
+            13,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.765128761609251,
+            "alpha2_at_pct": 22.022978606761427,
+            "mu_eV": 3.374833465137118,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": 3.4740692229329766e-18
+          },
+          "classical": {
+            "alpha_at_pct": 14.728716987935698,
+            "alpha2_at_pct": 22.013249036177452,
+            "mu_eV": 3.372898200485798,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": 9.333864855252494e-19
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.03641177367355297,
+            "alpha2": -0.009729570583974834
+          }
+        },
+        "linear_all_13": {
+          "window_centers_at_pct": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.9807713583925,
+            "alpha2_at_pct": 22.01489996363285,
+            "mu_eV": 3.37489694185865,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": 0.0
+          },
+          "classical": {
+            "alpha_at_pct": 14.915735932774368,
+            "alpha2_at_pct": 22.014874465384867,
+            "mu_eV": 3.372958174576293,
+            "maxwell_residual_eV_atom": -5.551115123125783e-17,
+            "min_support_gap_eV_atom": -5.551115123125783e-17
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.06503542561813269,
+            "alpha2": -2.549824798236955e-05
+          }
+        },
+        "linear_even_7": {
+          "window_centers_at_pct": [
+            13,
+            15,
+            17,
+            19,
+            21,
+            23,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.992771947863423,
+            "alpha2_at_pct": 21.771193944280355,
+            "mu_eV": 3.375025696565272,
+            "maxwell_residual_eV_atom": 2.7755575615628914e-17,
+            "min_support_gap_eV_atom": 0.0
+          },
+          "classical": {
+            "alpha_at_pct": 14.939410974426876,
+            "alpha2_at_pct": 21.772092226038477,
+            "mu_eV": 3.3730970985975213,
+            "maxwell_residual_eV_atom": 2.7755575615628914e-17,
+            "min_support_gap_eV_atom": 0.0
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.053360973436547,
+            "alpha2": 0.0008982817581220104
+          }
+        },
+        "linear_odd_plus_ends_8": {
+          "window_centers_at_pct": [
+            13,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.974864844684404,
+            "alpha2_at_pct": 22.002970258817474,
+            "mu_eV": 3.374756644285719,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": 0.0
+          },
+          "classical": {
+            "alpha_at_pct": 14.926123364979881,
+            "alpha2_at_pct": 21.997381507463174,
+            "mu_eV": 3.3728134999307415,
+            "maxwell_residual_eV_atom": -2.7755575615628914e-17,
+            "min_support_gap_eV_atom": -2.7755575615628914e-17
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.048741479704522916,
+            "alpha2": -0.0055887513542991485
+          }
+        }
+      },
+      "sensitivity": {
+        "PCHIP_and_thinning": {
+          "alpha": {
+            "min_shift_pp": -0.08973466105394223,
+            "max_shift_pp": -0.03641177367355297,
+            "max_absolute_difference_from_primary_pp": 0.03195734156889252
+          },
+          "alpha2": {
+            "min_shift_pp": -0.009729570583974834,
+            "max_shift_pp": 0.001903186979284044,
+            "max_absolute_difference_from_primary_pp": 0.006032527119621989
+          }
+        },
+        "all_interpolants_and_thinning": {
+          "alpha": {
+            "min_shift_pp": -0.08973466105394223,
+            "max_shift_pp": -0.03641177367355297,
+            "max_absolute_difference_from_primary_pp": 0.03195734156889252
+          },
+          "alpha2": {
+            "min_shift_pp": -0.009729570583974834,
+            "max_shift_pp": 0.001903186979284044,
+            "max_absolute_difference_from_primary_pp": 0.006032527119621989
+          }
+        }
+      },
+      "pchip_one_interior_window_omitted": [
+        {
+          "omitted_window_center_at_pct": 14,
+          "alpha_shift_pp": -0.06264151473071777,
+          "alpha2_shift_pp": -0.004238606994785954
+        },
+        {
+          "omitted_window_center_at_pct": 15,
+          "alpha_shift_pp": -0.05161687775402335,
+          "alpha2_shift_pp": -0.0021076142790583674
+        },
+        {
+          "omitted_window_center_at_pct": 16,
+          "alpha_shift_pp": -0.0899362098062273,
+          "alpha2_shift_pp": -0.007161276446943532
+        },
+        {
+          "omitted_window_center_at_pct": 17,
+          "alpha_shift_pp": -0.0654958180993983,
+          "alpha2_shift_pp": 0.0008486630276500762
+        },
+        {
+          "omitted_window_center_at_pct": 18,
+          "alpha_shift_pp": -0.06378001259663613,
+          "alpha2_shift_pp": -0.0014725032569842256
+        },
+        {
+          "omitted_window_center_at_pct": 19,
+          "alpha_shift_pp": -0.06894153859736463,
+          "alpha2_shift_pp": -0.004856827577143008
+        },
+        {
+          "omitted_window_center_at_pct": 20,
+          "alpha_shift_pp": -0.06673240278466963,
+          "alpha2_shift_pp": -0.0027662109890016495
+        },
+        {
+          "omitted_window_center_at_pct": 21,
+          "alpha_shift_pp": -0.06885670898830476,
+          "alpha2_shift_pp": -0.011041070291639699
+        },
+        {
+          "omitted_window_center_at_pct": 22,
+          "alpha_shift_pp": -0.06810316455836407,
+          "alpha2_shift_pp": -0.0021867204383170247
+        },
+        {
+          "omitted_window_center_at_pct": 23,
+          "alpha_shift_pp": -0.06842489003488872,
+          "alpha2_shift_pp": -0.002975331125508518
+        },
+        {
+          "omitted_window_center_at_pct": 24,
+          "alpha_shift_pp": -0.06836904676072386,
+          "alpha2_shift_pp": -0.004183615278957831
+        }
+      ]
+    },
+    "paired5120.json": {
+      "N": 5120,
+      "input_sha256": "a53d35accb937fa28200c15d727ba7d8ea2a408cfeed70a8b78fc67cf4f0c597",
+      "tests": {
+        "PCHIP_all_13": {
+          "window_centers_at_pct": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.943414601888946,
+            "alpha2_at_pct": 21.93116256533347,
+            "mu_eV": 3.3761408674960918,
+            "maxwell_residual_eV_atom": 8.326672684688674e-17,
+            "min_support_gap_eV_atom": 3.627774122229568e-18
+          },
+          "classical": {
+            "alpha_at_pct": 14.896071798176763,
+            "alpha2_at_pct": 21.922215617107216,
+            "mu_eV": 3.37412632929575,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": -3.784686984788216e-18
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.04734280371218347,
+            "alpha2": -0.008946948226252971
+          }
+        },
+        "PCHIP_even_7": {
+          "window_centers_at_pct": [
+            13,
+            15,
+            17,
+            19,
+            21,
+            23,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.943045971869278,
+            "alpha2_at_pct": 21.979737009707232,
+            "mu_eV": 3.376336414742486,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": 5.380989565473246e-18
+          },
+          "classical": {
+            "alpha_at_pct": 14.832952359160734,
+            "alpha2_at_pct": 21.96111880770223,
+            "mu_eV": 3.3741224033091686,
+            "maxwell_residual_eV_atom": 0.0,
+            "min_support_gap_eV_atom": -2.7755575615628914e-17
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.11009361270854434,
+            "alpha2": -0.018618202005001194
+          }
+        },
+        "PCHIP_odd_plus_ends_8": {
+          "window_centers_at_pct": [
+            13,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.786400739726538,
+            "alpha2_at_pct": 21.87214409708019,
+            "mu_eV": 3.3757530208180677,
+            "maxwell_residual_eV_atom": 8.326672684688674e-17,
+            "min_support_gap_eV_atom": -4.180105251204257e-20
+          },
+          "classical": {
+            "alpha_at_pct": 14.757706082650937,
+            "alpha2_at_pct": 21.884260277288092,
+            "mu_eV": 3.3739300031956225,
+            "maxwell_residual_eV_atom": -2.7755575615628914e-17,
+            "min_support_gap_eV_atom": -3.3803518203164613e-18
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.028694657075600816,
+            "alpha2": 0.01211618020790084
+          }
+        },
+        "linear_all_13": {
+          "window_centers_at_pct": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.94348382293526,
+            "alpha2_at_pct": 21.907371175864842,
+            "mu_eV": 3.3761056928015916,
+            "maxwell_residual_eV_atom": -8.326672684688674e-17,
+            "min_support_gap_eV_atom": -8.326672684688674e-17
+          },
+          "classical": {
+            "alpha_at_pct": 14.898632805228498,
+            "alpha2_at_pct": 21.893493008054186,
+            "mu_eV": 3.374097526258746,
+            "maxwell_residual_eV_atom": 5.551115123125783e-17,
+            "min_support_gap_eV_atom": 0.0
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.04485101770676181,
+            "alpha2": -0.013878167810656095
+          }
+        },
+        "linear_even_7": {
+          "window_centers_at_pct": [
+            13,
+            15,
+            17,
+            19,
+            21,
+            23,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.958046626281924,
+            "alpha2_at_pct": 21.61663671663355,
+            "mu_eV": 3.376299201025599,
+            "maxwell_residual_eV_atom": -2.7755575615628914e-17,
+            "min_support_gap_eV_atom": -2.7755575615628914e-17
+          },
+          "classical": {
+            "alpha_at_pct": 14.901348199906,
+            "alpha2_at_pct": 21.5995437668209,
+            "mu_eV": 3.374108441504463,
+            "maxwell_residual_eV_atom": 1.1102230246251565e-16,
+            "min_support_gap_eV_atom": 0.0
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.056698426375923816,
+            "alpha2": -0.01709294981264975
+          }
+        },
+        "linear_odd_plus_ends_8": {
+          "window_centers_at_pct": [
+            13,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            25
+          ],
+          "quantum": {
+            "alpha_at_pct": 14.969226096940735,
+            "alpha2_at_pct": 21.78439302015283,
+            "mu_eV": 3.3756774228200492,
+            "maxwell_residual_eV_atom": -2.7755575615628914e-17,
+            "min_support_gap_eV_atom": -2.7755575615628914e-17
+          },
+          "classical": {
+            "alpha_at_pct": 14.927012653588834,
+            "alpha2_at_pct": 21.796182651389397,
+            "mu_eV": 3.373844947445485,
+            "maxwell_residual_eV_atom": -2.7755575615628914e-17,
+            "min_support_gap_eV_atom": -2.7755575615628914e-17
+          },
+          "classical_minus_quantum_pp": {
+            "alpha": -0.04221344335190125,
+            "alpha2": 0.011789631236567288
+          }
+        }
+      },
+      "sensitivity": {
+        "PCHIP_and_thinning": {
+          "alpha": {
+            "min_shift_pp": -0.11009361270854434,
+            "max_shift_pp": -0.028694657075600816,
+            "max_absolute_difference_from_primary_pp": 0.06275080899636087
+          },
+          "alpha2": {
+            "min_shift_pp": -0.018618202005001194,
+            "max_shift_pp": 0.01211618020790084,
+            "max_absolute_difference_from_primary_pp": 0.02106312843415381
+          }
+        },
+        "all_interpolants_and_thinning": {
+          "alpha": {
+            "min_shift_pp": -0.11009361270854434,
+            "max_shift_pp": -0.028694657075600816,
+            "max_absolute_difference_from_primary_pp": 0.06275080899636087
+          },
+          "alpha2": {
+            "min_shift_pp": -0.018618202005001194,
+            "max_shift_pp": 0.01211618020790084,
+            "max_absolute_difference_from_primary_pp": 0.02106312843415381
+          }
+        }
+      },
+      "pchip_one_interior_window_omitted": [
+        {
+          "omitted_window_center_at_pct": 14,
+          "alpha_shift_pp": -0.047634334699923286,
+          "alpha2_shift_pp": -0.008931626489438571
+        },
+        {
+          "omitted_window_center_at_pct": 15,
+          "alpha_shift_pp": -0.03889833205982285,
+          "alpha2_shift_pp": -0.0070188147484451235
+        },
+        {
+          "omitted_window_center_at_pct": 16,
+          "alpha_shift_pp": -0.07950318624459918,
+          "alpha2_shift_pp": -0.025960950975143504
+        },
+        {
+          "omitted_window_center_at_pct": 17,
+          "alpha_shift_pp": -0.0323883502873894,
+          "alpha2_shift_pp": 0.012483914210136504
+        },
+        {
+          "omitted_window_center_at_pct": 18,
+          "alpha_shift_pp": -0.058450944624988566,
+          "alpha2_shift_pp": -0.023575189649776007
+        },
+        {
+          "omitted_window_center_at_pct": 19,
+          "alpha_shift_pp": -0.04807506467942346,
+          "alpha2_shift_pp": -0.00994665777617243
+        },
+        {
+          "omitted_window_center_at_pct": 20,
+          "alpha_shift_pp": -0.047616753782330434,
+          "alpha2_shift_pp": -0.008862923680844403
+        },
+        {
+          "omitted_window_center_at_pct": 21,
+          "alpha_shift_pp": -0.04733223927788899,
+          "alpha2_shift_pp": -0.013061027134547487
+        },
+        {
+          "omitted_window_center_at_pct": 22,
+          "alpha_shift_pp": -0.047614430292695076,
+          "alpha2_shift_pp": -0.0028382021390704892
+        },
+        {
+          "omitted_window_center_at_pct": 23,
+          "alpha_shift_pp": -0.04735490227736605,
+          "alpha2_shift_pp": -0.007940083718711577
+        },
+        {
+          "omitted_window_center_at_pct": 24,
+          "alpha_shift_pp": -0.04734280371218347,
+          "alpha2_shift_pp": -0.008946948226252971
+        }
+      ]
+    }
+  },
+  "dense_grid": {
+    "input_sha256": "4be6afa4c887e04d15cedb5727d1f135da9393a8845aa2873a6641df496414bd",
+    "grid_centers": [
+      0.13,
+      0.135,
+      0.14,
+      0.145,
+      0.15,
+      0.155,
+      0.16,
+      0.165,
+      0.17,
+      0.175,
+      0.18,
+      0.185,
+      0.19,
+      0.195,
+      0.2,
+      0.205,
+      0.21,
+      0.215,
+      0.22,
+      0.225,
+      0.23,
+      0.235,
+      0.24,
+      0.245,
+      0.25
+    ],
+    "tests": {
+      "full_25": {
+        "PCHIP": {
+          "quantum": [
+            14.932722377040184,
+            21.921873617160983,
+            3.3759836151621934
+          ],
+          "classical": [
+            14.895712927146104,
+            21.92073690887244,
+            3.3740557961744297
+          ],
+          "classical_minus_quantum": [
+            -0.037009449894080504,
+            -0.001136708288544952,
+            -0.0019278189877636187
+          ]
+        },
+        "linear": {
+          "quantum": [
+            14.937399215022367,
+            21.908979972373395,
+            3.3759774134385623
+          ],
+          "classical": [
+            14.901240698888776,
+            21.905939125179422,
+            3.37404745361615
+          ],
+          "classical_minus_quantum": [
+            -0.036158516133591334,
+            -0.0030408471939722403,
+            -0.001929959822412286
+          ]
+        }
+      },
+      "old_13": {
+        "PCHIP": {
+          "quantum": [
+            14.943414601888946,
+            21.93116256533347,
+            3.3761408674960918
+          ],
+          "classical": [
+            14.896071798176763,
+            21.922215617107216,
+            3.37412632929575
+          ],
+          "classical_minus_quantum": [
+            -0.04734280371218347,
+            -0.008946948226252971,
+            -0.002014538200341587
+          ]
+        },
+        "linear": {
+          "quantum": [
+            14.94348382293526,
+            21.907371175864842,
+            3.3761056928015916
+          ],
+          "classical": [
+            14.898632805228498,
+            21.893493008054186,
+            3.374097526258746
+          ],
+          "classical_minus_quantum": [
+            -0.04485101770676181,
+            -0.013878167810656095,
+            -0.0020081665428457462
+          ]
+        }
+      },
+      "new_12_plus_edges": {
+        "PCHIP": {
+          "quantum": [
+            14.969744640247152,
+            21.88700324006651,
+            3.3758407121492935
+          ],
+          "classical": [
+            14.928083491272707,
+            21.89075029863994,
+            3.373985397616643
+          ],
+          "classical_minus_quantum": [
+            -0.04166114897444473,
+            0.0037470585734311612,
+            -0.0018553145326505316
+          ]
+        },
+        "linear": {
+          "quantum": [
+            14.97823122116496,
+            21.809362967065432,
+            3.3757997170384018
+          ],
+          "classical": [
+            14.937350384398012,
+            21.814026436967332,
+            3.373941819257627
+          ],
+          "classical_minus_quantum": [
+            -0.04088083676694687,
+            0.004663469901899475,
+            -0.001857897780774831
+          ]
+        }
+      }
+    },
+    "paired_change": {
+      "quantum": [
+        -0.010692224848790843,
+        -0.009288948172560652,
+        -0.00015725233389884963
+      ],
+      "classical": [
+        -0.00035887103078913185,
+        -0.0014787082349734249,
+        -7.053312132265788e-05
+      ],
+      "classical_minus_quantum": [
+        0.010333353818001711,
+        0.007810239937587227,
+        8.671921257619175e-05
+      ]
+    },
+    "paired_change_95": {
+      "quantum": [
+        [
+          -0.02733803069751257,
+          0.00531630470708486
+        ],
+        [
+          -0.030956264542982746,
+          0.012405321014146944
+        ],
+        [
+          -0.0003649140593273037,
+          2.359550452334375e-05
+        ]
+      ],
+      "classical": [
+        [
+          -0.021056916802898628,
+          0.018143954092251686
+        ],
+        [
+          -0.023014486507374254,
+          0.017680097080349358
+        ],
+        [
+          -0.0002708061926777083,
+          9.655046588928891e-05
+        ]
+      ],
+      "classical_minus_quantum": [
+        [
+          0.0017089495302279546,
+          0.017638316087905396
+        ],
+        [
+          0.0010793113508759332,
+          0.014424764205234726
+        ],
+        [
+          3.6738868287122804e-05,
+          0.0001389662120730883
+        ]
+      ]
+    }
+  }
+}

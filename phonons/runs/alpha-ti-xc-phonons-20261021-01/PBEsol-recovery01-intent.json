@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-21T12:00:50.172282+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=16",
+    "--cpus-per-task=1",
+    "--mem=192G",
+    "--time=01:20:00",
+    "--job-name=ti-ph-PBEsol-recovery01",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol-recovery01-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/recovery.sbatch",
+    "PBEsol"
+  ],
+  "state": "submission_intent"
+}

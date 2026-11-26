@@ -1,0 +1,45 @@
+{
+  "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phase_reproduction\\atomistic\\atat\\qha_fit\\grid.npz",
+  "sha256": "4e8bc92ffb059707445d40fb2b16b6d6e50343486b19f9d4e0f500af292d7011",
+  "qha_measure": "flat dv at zero pressure, symmetric \u00b10.045 A\u00b3/atom once per sweep, natural cubic interpolation",
+  "N": 5120,
+  "n_windows": 483,
+  "sections": [
+    [
+      1600,
+      "static"
+    ],
+    [
+      1625,
+      "static"
+    ],
+    [
+      1650,
+      "static"
+    ],
+    [
+      1200,
+      "HA"
+    ],
+    [
+      1225,
+      "HA"
+    ],
+    [
+      1200,
+      "QHA"
+    ],
+    [
+      1225,
+      "QHA"
+    ]
+  ],
+  "c0_range": [
+    0.02,
+    0.36
+  ],
+  "c0_step": 0.005,
+  "kappa_eV": 100,
+  "protocol": "5120 sites, one random start per window, 10000 equilibration + 40000 production sweeps, stride 10",
+  "c0_provenance": "S3 states 0.005 spacing for static 1600 and 1650 K. Applied this spacing at other temperatures and used the main window range."
+}

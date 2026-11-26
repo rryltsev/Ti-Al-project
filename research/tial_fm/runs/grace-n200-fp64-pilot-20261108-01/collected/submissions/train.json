@@ -1,0 +1,22 @@
+{
+  "key": "train",
+  "job_id": "20990466",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=v100",
+    "--gres=gpu:a100:1",
+    "--cpus-per-task=4",
+    "--mem=40G",
+    "--dependency=afterok:20990465",
+    "--time=04:00:00",
+    "--array=0-3%1",
+    "--job-name=TiAl-GRACE-train",
+    "--output=train-%A_%a.log",
+    "train.sbatch"
+  ],
+  "utc": "2026-11-08T18:05:54.612721+00:00"
+}

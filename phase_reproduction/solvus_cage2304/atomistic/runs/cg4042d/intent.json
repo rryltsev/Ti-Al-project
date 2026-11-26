@@ -1,0 +1,30 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-cage2304-20261126/cg4042d",
+  "utc": "2026-11-26T07:47:26.026529+00:00",
+  "job_name": "ta-cg4042d",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=12",
+    "--mem=4G",
+    "--time=155",
+    "--job-name=ta-cg4042d",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "a064277d4dd6a4208db2931e1a885c16d9eb7180d1b1f6d7e47da61f72dc8e80",
+    "run_windows.py": "48e33624bed3fd32118a63b87a8e3ade4f1ddfee47937e0ad7e6edc2632fb912",
+    "sgmc.cpp": "eab1b97507504037511c6b5e9489af294458a40a53bc52254b87ee84aee34c97",
+    "engine.hpp": "f99c4754ec26fa82a220ebe74efa70df3e6b24d692d89f84103ac4d488237f47",
+    "fitted.mtp": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+    "windows.csv": "65aeef8607e904cf5ad0d1ddb050b52b68d0e1b0e38a528f6d2e50af9048c4bb"
+  }
+}

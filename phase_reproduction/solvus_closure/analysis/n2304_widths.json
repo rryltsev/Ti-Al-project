@@ -1,0 +1,469 @@
+{
+  "source_T_K": 1245.0,
+  "N": 2304,
+  "pressure_GPa": 0,
+  "W_max": 0.4,
+  "cut_Q": 0.37,
+  "production_frames": 38400,
+  "source_mu_eV": [
+    3.535,
+    3.545,
+    3.555
+  ],
+  "search_bounds_eV": [
+    3.49,
+    3.6
+  ],
+  "scope": "Finite-cell conditional projected contacts. Interior refers to chemical field only; all T other than 1245 K are reweighted. Width denotes the absolute difference of the two conditional Al compositions on one flank, in percentage points.",
+  "temperatures": [
+    {
+      "T_K": 1240.0,
+      "peak_mu_eV": 3.5420922513164137,
+      "peak_log_odds_over_four": 1.8150301028012328,
+      "peak_within_simulated_fields": true,
+      "branches": {
+        "Ti_rich": {
+          "mu_eV": 3.5151808574486276,
+          "x_alpha_atpct": 25.510522940463257,
+          "x_alpha2_atpct": 26.369007287045047,
+          "signed_width_pp": 0.8584843465817897,
+          "width_pp": 0.8584843465817897,
+          "inside_measured_mu": false,
+          "extrapolation_meV": 19.819142551372515,
+          "phase_ESS_alpha_alpha2": [
+            0.13978144508692344,
+            3.841023085825257
+          ]
+        },
+        "Al_rich": {
+          "mu_eV": 3.5770025335618962,
+          "x_alpha_atpct": 28.705422783832756,
+          "x_alpha2_atpct": 28.34586962280007,
+          "signed_width_pp": -0.35955316103268586,
+          "width_pp": 0.35955316103268586,
+          "inside_measured_mu": false,
+          "extrapolation_meV": 22.002533561896076,
+          "phase_ESS_alpha_alpha2": [
+            0.5841436027364139,
+            1.0548408392026358
+          ]
+        }
+      }
+    },
+    {
+      "T_K": 1242.0,
+      "peak_mu_eV": 3.5431471639527308,
+      "peak_log_odds_over_four": 0.8048661812833562,
+      "peak_within_simulated_fields": true,
+      "branches": {
+        "Ti_rich": {
+          "mu_eV": 3.522881583053343,
+          "x_alpha_atpct": 26.127746457522022,
+          "x_alpha2_atpct": 26.55516602226256,
+          "signed_width_pp": 0.4274195647405392,
+          "width_pp": 0.4274195647405392,
+          "inside_measured_mu": false,
+          "extrapolation_meV": 12.118416946657273,
+          "phase_ESS_alpha_alpha2": [
+            3.086364864968362,
+            14.087699340407518
+          ]
+        },
+        "Al_rich": {
+          "mu_eV": 3.56531626748624,
+          "x_alpha_atpct": 28.195964017039486,
+          "x_alpha2_atpct": 27.89319752032335,
+          "signed_width_pp": -0.302766496716135,
+          "width_pp": 0.302766496716135,
+          "inside_measured_mu": false,
+          "extrapolation_meV": 10.316267486239816,
+          "phase_ESS_alpha_alpha2": [
+            9.268083418035353,
+            13.500239030036068
+          ]
+        }
+      }
+    },
+    {
+      "T_K": 1243.0,
+      "peak_mu_eV": 3.5436999625455003,
+      "peak_log_odds_over_four": 0.3117232562937222,
+      "peak_within_simulated_fields": true,
+      "branches": {
+        "Ti_rich": {
+          "mu_eV": 3.5304616635322317,
+          "x_alpha_atpct": 26.5375003531669,
+          "x_alpha2_atpct": 26.764544489499944,
+          "signed_width_pp": 0.227044136333042,
+          "width_pp": 0.227044136333042,
+          "inside_measured_mu": false,
+          "extrapolation_meV": 4.538336467768467,
+          "phase_ESS_alpha_alpha2": [
+            33.41872147826775,
+            47.873448302053156
+          ]
+        },
+        "Al_rich": {
+          "mu_eV": 3.5572844701360347,
+          "x_alpha_atpct": 27.816006136227898,
+          "x_alpha2_atpct": 27.6085680102358,
+          "signed_width_pp": -0.20743812599209832,
+          "width_pp": 0.20743812599209832,
+          "inside_measured_mu": false,
+          "extrapolation_meV": 2.2844701360345,
+          "phase_ESS_alpha_alpha2": [
+            52.88427510831784,
+            60.89880883384691
+          ]
+        }
+      }
+    },
+    {
+      "T_K": 1244.0,
+      "peak_mu_eV": 3.544274141406134,
+      "peak_log_odds_over_four": -0.1725013155513302,
+      "peak_within_simulated_fields": true,
+      "branches": {
+        "Ti_rich": null,
+        "Al_rich": null
+      }
+    },
+    {
+      "T_K": 1245.0,
+      "peak_mu_eV": 3.5448740718608276,
+      "peak_log_odds_over_four": -0.6469609283300852,
+      "peak_within_simulated_fields": true,
+      "branches": {
+        "Ti_rich": null,
+        "Al_rich": null
+      }
+    }
+  ],
+  "bootstrap": {
+    "draws": 64,
+    "seed": 3129243,
+    "blocks_per_trajectory": [
+      7,
+      9,
+      12,
+      14,
+      11,
+      13,
+      20,
+      9,
+      16,
+      11,
+      11,
+      24,
+      12,
+      10,
+      11,
+      5,
+      9,
+      15,
+      11,
+      11,
+      7,
+      14,
+      7,
+      8,
+      8,
+      15,
+      8,
+      7
+    ],
+    "intervals": {
+      "1240.0": {
+        "draws": 64,
+        "both_roots_found": 64,
+        "both_roots_inside_sampled_fields": 0,
+        "peak_inside_sampled_fields": 64,
+        "Ti_rich": {
+          "root_found": 64,
+          "inside_sampled_fields": 0,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.5086424797832403,
+              3.5144947677449943,
+              3.5200102522847128
+            ],
+            "width_pp": [
+              0.4127276100047316,
+              0.8386866473280392,
+              1.1731202924611852
+            ],
+            "x_alpha_atpct": [
+              25.13852470024009,
+              25.556314417364906,
+              25.85367007710254
+            ],
+            "x_alpha2_atpct": [
+              26.213983100649266,
+              26.36082131250729,
+              26.463586916692957
+            ]
+          }
+        },
+        "Al_rich": {
+          "root_found": 64,
+          "inside_sampled_fields": 0,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.5679422514897334,
+              3.5774774721147167,
+              3.591800849301789
+            ],
+            "width_pp": [
+              0.21291486749493727,
+              0.3703546028256852,
+              0.5053351322240206
+            ],
+            "x_alpha_atpct": [
+              28.294386207391337,
+              28.71130497651592,
+              29.096726969374444
+            ],
+            "x_alpha2_atpct": [
+              27.947377147574024,
+              28.36937937579842,
+              28.83259373570295
+            ]
+          }
+        }
+      },
+      "1242.0": {
+        "draws": 64,
+        "both_roots_found": 64,
+        "both_roots_inside_sampled_fields": 1,
+        "peak_inside_sampled_fields": 64,
+        "Ti_rich": {
+          "root_found": 64,
+          "inside_sampled_fields": 1,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.515911361587545,
+              3.522672946598507,
+              3.533511975250436
+            ],
+            "width_pp": [
+              0.15700960468456576,
+              0.4075780793746482,
+              0.8488871206358805
+            ],
+            "x_alpha_atpct": [
+              25.543435337061094,
+              26.127994339357123,
+              26.68691439240167
+            ],
+            "x_alpha2_atpct": [
+              26.36552946066031,
+              26.54749656104802,
+              26.843787011979796
+            ]
+          }
+        },
+        "Al_rich": {
+          "root_found": 64,
+          "inside_sampled_fields": 3,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.551851237605972,
+              3.5655320857147474,
+              3.5781037716806727
+            ],
+            "width_pp": [
+              0.1545158261709564,
+              0.297696651267092,
+              0.40385213614715176
+            ],
+            "x_alpha_atpct": [
+              27.562855267198255,
+              28.20127238878127,
+              28.762716308350075
+            ],
+            "x_alpha2_atpct": [
+              27.40932938496805,
+              27.907548267277562,
+              28.486794651009888
+            ]
+          }
+        }
+      },
+      "1243.0": {
+        "draws": 64,
+        "both_roots_found": 53,
+        "both_roots_inside_sampled_fields": 9,
+        "peak_inside_sampled_fields": 64,
+        "Ti_rich": {
+          "root_found": 53,
+          "inside_sampled_fields": 9,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.5188072483982986,
+              3.527764143089426,
+              3.5417225043235874
+            ],
+            "width_pp": [
+              0.04058555875126686,
+              0.28152057258001406,
+              0.6240363038883717
+            ],
+            "x_alpha_atpct": [
+              25.82605529251148,
+              26.406159192274362,
+              27.064932176064385
+            ],
+            "x_alpha2_atpct": [
+              26.43825752623221,
+              26.707997406595393,
+              27.105517734815653
+            ]
+          }
+        },
+        "Al_rich": {
+          "root_found": 53,
+          "inside_sampled_fields": 11,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.5466254305649825,
+              3.5595638251683086,
+              3.5711186678917968
+            ],
+            "width_pp": [
+              0.04067891625858131,
+              0.2329452206876077,
+              0.36167539275137156
+            ],
+            "x_alpha_atpct": [
+              27.297787642936232,
+              27.939703227927822,
+              28.518896483807644
+            ],
+            "x_alpha2_atpct": [
+              27.255722021217355,
+              27.692683059446743,
+              28.183610256475085
+            ]
+          }
+        }
+      },
+      "1244.0": {
+        "draws": 64,
+        "both_roots_found": 25,
+        "both_roots_inside_sampled_fields": 7,
+        "peak_inside_sampled_fields": 64,
+        "Ti_rich": {
+          "root_found": 25,
+          "inside_sampled_fields": 7,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.5208381083974505,
+              3.530814922227427,
+              3.5405160435973637
+            ],
+            "width_pp": [
+              0.042284989260620874,
+              0.2305394204473501,
+              0.5042263397870091
+            ],
+            "x_alpha_atpct": [
+              25.995045437326034,
+              26.536952347734047,
+              27.024872220475604
+            ],
+            "x_alpha2_atpct": [
+              26.49927177711304,
+              26.781230267746686,
+              27.070475006191785
+            ]
+          }
+        },
+        "Al_rich": {
+          "root_found": 25,
+          "inside_sampled_fields": 10,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.5455910827825443,
+              3.557255481581715,
+              3.569804215965908
+            ],
+            "width_pp": [
+              0.04200772569166702,
+              0.1943081279150043,
+              0.3281070851788698
+            ],
+            "x_alpha_atpct": [
+              27.260922210020535,
+              27.832875978214084,
+              28.44151739259944
+            ],
+            "x_alpha2_atpct": [
+              27.21891448432887,
+              27.621474746668035,
+              28.110704675581704
+            ]
+          }
+        }
+      },
+      "1245.0": {
+        "draws": 64,
+        "both_roots_found": 5,
+        "both_roots_inside_sampled_fields": 3,
+        "peak_inside_sampled_fields": 64,
+        "Ti_rich": {
+          "root_found": 5,
+          "inside_sampled_fields": 3,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.523825940266076,
+              3.537143795329885,
+              3.5384423687097217
+            ],
+            "width_pp": [
+              0.08859729751534182,
+              0.11804290874333034,
+              0.3537454693138223
+            ],
+            "x_alpha_atpct": [
+              26.23538293730855,
+              26.862277804345744,
+              26.921526906764388
+            ],
+            "x_alpha2_atpct": [
+              26.589128406622372,
+              26.977105464180042,
+              27.01044572917063
+            ]
+          }
+        },
+        "Al_rich": {
+          "root_found": 5,
+          "inside_sampled_fields": 3,
+          "conditional_intervals_2p5_50_97p5": {
+            "mu_eV": [
+              3.5497074678263743,
+              3.552419193440779,
+              3.5682531159127664
+            ],
+            "width_pp": [
+              0.08652031208907403,
+              0.11706842246115201,
+              0.24253445601495544
+            ],
+            "x_alpha_atpct": [
+              27.447383676063332,
+              27.582898066710154,
+              28.325993074039882
+            ],
+            "x_alpha2_atpct": [
+              27.36054239122719,
+              27.46903937171967,
+              28.083458618024927
+            ]
+          }
+        }
+      }
+    },
+    "method": "Sample contiguous time blocks with replacement separately within each chain; target block length >=2g. Each replica refits the source MBAR offsets before temperature reweighting."
+  }
+}

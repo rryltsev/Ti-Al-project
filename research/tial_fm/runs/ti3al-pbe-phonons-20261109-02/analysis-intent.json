@@ -1,0 +1,19 @@
+{
+  "remote": "/home6/u3129/tial-fm-research/ti3al-pbe-phonons-20261109-02",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=apollo",
+    "--mem=16G",
+    "--time=00:30:00",
+    "--dependency=afterany:20991463",
+    "--job-name=Ti3Al-PBE-compare",
+    "--output=analysis-%j.log",
+    "cpu.sbatch",
+    "analyze"
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "status": "PASS",
+  "n_structures": 50,
+  "exact_reference_overlaps": 0,
+  "internal_exact_duplicates": 0,
+  "matching_regression_cases_passed": 3,
+  "poscar_extxyz_roundtrips_passed": 50,
+  "source_provenance_passed": 50,
+  "labels_removed": true,
+  "liquid_archive_xyz_poscar_pairs_passed": 200,
+  "D019_failed_logs": [
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti13Al5/slurm-19370268.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti143Al73/slurm-19370269.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti149Al67/slurm-19370270.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti175Al41/slurm-19370271.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti17Al10/slurm-19370272.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti181Al35/slurm-19370273.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti3Al/slurm-19370274.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti47Al7/slurm-19370275.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti65Al43/slurm-19370276.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti7Al2/slurm-19370277.out",
+    "MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/POSCAR_AlTi3_D0_19/Ti97Al11/slurm-19370278.out"
+  ],
+  "source_checks": [
+    {
+      "structure_id": "TiAl-test-001",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1303.3614284983796,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-002",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 589.9604176457683,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-003",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1412.489388973626,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-004",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1130.7998396807154,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-005",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1879.4840119967191,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-006",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1165.769659503738,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-007",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1240.8588262852463,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-008",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1291.1268964597098,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-009",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1397.1462342047344,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-010",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 2767.7014404790534,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-011",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1175.1231215177531,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-012",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1608.9418926245614,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-013",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 2562.05415143944,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-014",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1126.828092043514,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-015",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1981.8597785805553,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-016",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1373.7170133625505,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-017",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1686.8845152082683,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-018",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1113.845226719781,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-019",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 2739.7285545347318,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-020",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 3062.0617755572416,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-021",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 2996.134171265103,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-022",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1251.328104728173,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-023",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1110.1774470104288,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-024",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 1617.8705385490907,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-025",
+      "source": "archive XYZ and POSCAR agree",
+      "kinetic_temperature_K": 2980.9122732258857,
+      "original_trajectory_time_unknown": true
+    },
+    {
+      "structure_id": "TiAl-test-026",
+      "source_geometry_verified": true,
+      "step": 7010,
+      "kinetic_temperature_K": 898.1687482616052,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-027",
+      "source_geometry_verified": true,
+      "step": 4510,
+      "kinetic_temperature_K": 928.4327459841834,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-028",
+      "source_geometry_verified": true,
+      "step": 3510,
+      "kinetic_temperature_K": 1005.8756758653417,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-029",
+      "source_geometry_verified": true,
+      "step": 7010,
+      "kinetic_temperature_K": 967.0801209695964,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-030",
+      "source_geometry_verified": true,
+      "step": 1510,
+      "kinetic_temperature_K": 979.4397457860871,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-031",
+      "source_geometry_verified": true,
+      "step": 4010,
+      "kinetic_temperature_K": 1019.7757131675213,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-032",
+      "source_geometry_verified": true,
+      "step": 7760,
+      "kinetic_temperature_K": 1079.5075992906086,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-033",
+      "source_geometry_verified": true,
+      "step": 5510,
+      "kinetic_temperature_K": 948.5239319898501,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-034",
+      "source_geometry_verified": true,
+      "step": 9760,
+      "kinetic_temperature_K": 1031.8180393827208,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-035",
+      "source_geometry_verified": true,
+      "step": 6760,
+      "kinetic_temperature_K": 1013.5227995242687,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-036",
+      "source_geometry_verified": true,
+      "step": 6260,
+      "kinetic_temperature_K": 1042.2264413690743,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-037",
+      "source_geometry_verified": true,
+      "step": 2010,
+      "kinetic_temperature_K": 1070.9245824954833,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-038",
+      "source_geometry_verified": true,
+      "step": 2010,
+      "kinetic_temperature_K": 1004.044620870724,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-039",
+      "source_geometry_verified": true,
+      "step": 3260,
+      "kinetic_temperature_K": 1021.9079957562332,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-040",
+      "source_geometry_verified": true,
+      "step": 6510,
+      "kinetic_temperature_K": 1074.0984449355597,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-041",
+      "source_geometry_verified": true,
+      "step": 5260,
+      "kinetic_temperature_K": 994.0234988576772,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-042",
+      "source_geometry_verified": true,
+      "step": 2260,
+      "kinetic_temperature_K": 1020.529454389095,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-043",
+      "source_geometry_verified": true,
+      "step": 5260,
+      "kinetic_temperature_K": 964.5089758314484,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-044",
+      "source_geometry_verified": true,
+      "step": 1510,
+      "kinetic_temperature_K": 963.8203528882184,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-045",
+      "source_geometry_verified": true,
+      "step": 4260,
+      "kinetic_temperature_K": 980.6261655925452,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-046",
+      "source_geometry_verified": true,
+      "step": 8010,
+      "kinetic_temperature_K": 1057.132817525822,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-047",
+      "source_geometry_verified": true,
+      "step": 3260,
+      "kinetic_temperature_K": 977.8514817831519,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-048",
+      "source_geometry_verified": true,
+      "step": 1760,
+      "kinetic_temperature_K": 942.9417149244256,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-049",
+      "source_geometry_verified": true,
+      "step": 3510,
+      "kinetic_temperature_K": 1058.116709373474,
+      "energy_and_temperature_alignment_verified": true
+    },
+    {
+      "structure_id": "TiAl-test-050",
+      "source_geometry_verified": true,
+      "step": 2510,
+      "kinetic_temperature_K": 1049.1079489660278,
+      "energy_and_temperature_alignment_verified": true
+    }
+  ]
+}

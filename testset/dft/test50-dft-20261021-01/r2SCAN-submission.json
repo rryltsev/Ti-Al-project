@@ -1,0 +1,24 @@
+{
+  "job_id": "20957372",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--chdir=/home6/u3129/tial-testsets/test50-dft-20261021-01",
+    "--job-name=t50-r2SCAN",
+    "--output=/home6/u3129/tial-testsets/test50-dft-20261021-01/r2SCAN-%A_%a.out",
+    "--no-requeue",
+    "--ntasks=24",
+    "--cpus-per-task=1",
+    "--mem=64G",
+    "--time=20:00:00",
+    "--array=0-49%2",
+    "/home6/u3129/tial-testsets/test50-dft-20261021-01/production.sbatch",
+    "r2SCAN"
+  ],
+  "unix": 1792566803.43478,
+  "state": "submitted"
+}

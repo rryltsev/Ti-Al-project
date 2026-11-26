@@ -1,0 +1,1304 @@
+{
+  "version": 2,
+  "created_unix": 1793544737.3953583,
+  "purpose": "Separate exploratory pooling, fixed cutoff, no production replacement",
+  "model_check": "model_check.json",
+  "main_cutoff_THz": 1.5,
+  "cutoff_choice": "Pre-existing 1.5 THz diagnostic anchor, set before historical fit inspection",
+  "normalization": "per replica V/(kB*T), pressure bar to Pa, five shear channels",
+  "segmentation": "Both 20001-sample halves of each new 40001-sample trajectory; shared boundary sample retained to match existing analyses; halves and all channels stay together in resampling",
+  "uncertainty": "Formal STACIE SE plus stratified delete-one-replica jackknife; sensitivity groups five consecutive old replicas, retaining ten whole new trajectories. These do not prove independence between preparation reservoirs.",
+  "temperatures": {
+    "1873": {
+      "old_n": 25,
+      "new_n": 10,
+      "old_ps": 500,
+      "new_ps": 400,
+      "new_manifest": [
+        {
+          "replica": 1,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0001\\attempt_001\\production\\stress.npz",
+          "sha256": "b7c3c63527da5ca884cc41ffd69450f9cd6e847f179018d87cf387da461f0dda",
+          "volume_A3": 9500.870547562748
+        },
+        {
+          "replica": 2,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0002\\attempt_001\\production\\stress.npz",
+          "sha256": "2d8e3e42acc29f60fd09dfdf804342b777ca7dcb8e1cf9602d86e9e3b8dc7c7f",
+          "volume_A3": 9484.5506827077
+        },
+        {
+          "replica": 3,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0003\\attempt_001\\production\\stress.npz",
+          "sha256": "76369a5b9c28e7b93ddee6cfeec20a207f980ed68d75e4082dd39d0a744f0cd9",
+          "volume_A3": 9474.937467481537
+        },
+        {
+          "replica": 4,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0004\\attempt_001\\production\\stress.npz",
+          "sha256": "d8e9b4c670ea62c499db8f3480c00c8471ec59f32ae2fc1cebce9cf381753091",
+          "volume_A3": 9515.339987454789
+        },
+        {
+          "replica": 5,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0005\\attempt_001\\production\\stress.npz",
+          "sha256": "9d3bcc7509f5925ca6543d48347ddd56e22c4255dd4a36a66328ec7900bb4999",
+          "volume_A3": 9557.470683148871
+        },
+        {
+          "replica": 6,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0006\\attempt_001\\production\\stress.npz",
+          "sha256": "e8beb4bced8c1d2e28c2cfa5f6100dbf284923b3bb9c0b5ae797771b5be202cf",
+          "volume_A3": 9434.629170241064
+        },
+        {
+          "replica": 7,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0007\\attempt_001\\production\\stress.npz",
+          "sha256": "69dd55b4ff31b4d1c2433eadd51d77fbe25c36d88a3ec626ac011f620421b81c",
+          "volume_A3": 9539.683433984954
+        },
+        {
+          "replica": 8,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0008\\attempt_001\\production\\stress.npz",
+          "sha256": "7b658553992d46a78219e2cadd2f7c849936fbf5a60d6f00d7bab38524b5cad4",
+          "volume_A3": 9572.062743579816
+        },
+        {
+          "replica": 9,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0009\\attempt_001\\production\\stress.npz",
+          "sha256": "3bf651427a21ce67b857ecc40c2587358c19eaf203af5be33177386cead4c131",
+          "volume_A3": 9547.61029494913
+        },
+        {
+          "replica": 10,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_1873K\\replicas\\replica_0010\\attempt_001\\production\\stress.npz",
+          "sha256": "89c45d8b925cab85e84fc376e24bf85fb42fbd827c7a3bcf8cb4251c8ebf3961",
+          "volume_A3": 9509.760404076436
+        }
+      ],
+      "scan": {
+        "old20": [
+          {
+            "acint": 0.0032236954226036742,
+            "acint_std": 0.0001250892050327506,
+            "cost_zscore": -0.3744528078403299,
+            "criterion_zscore": 1.1820415941174236,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0032366313639490395,
+            "acint_std": 0.00011606997893094136,
+            "cost_zscore": -0.5417613639035969,
+            "criterion_zscore": 0.13717658822428122,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.003248407211375576,
+            "acint_std": 0.00011323623026796934,
+            "cost_zscore": -0.6870769905759343,
+            "criterion_zscore": 1.4443178296343515,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.0032389756997985774,
+            "acint_std": 0.00010897418381115335,
+            "cost_zscore": -0.7975503569610822,
+            "criterion_zscore": 2.57157839752228,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.0032094891722907375,
+            "acint_std": 0.0001030455702322369,
+            "cost_zscore": -0.885458541230045,
+            "criterion_zscore": 2.709155693536102,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.0031888005395851655,
+            "acint_std": 9.930331163032852e-05,
+            "cost_zscore": -0.943724493982823,
+            "criterion_zscore": 3.4201483278998643,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.0031330465378807118,
+            "acint_std": 9.121497963879098e-05,
+            "cost_zscore": -0.8898325686905303,
+            "criterion_zscore": 6.951615308528426,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.003076399820238219,
+            "acint_std": 8.448007990683254e-05,
+            "cost_zscore": -0.5858578825234522,
+            "criterion_zscore": 14.261233904869494,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.002963007106523085,
+            "acint_std": 7.434224457827845e-05,
+            "cost_zscore": 1.0669143042834532,
+            "criterion_zscore": 41.43054482669892,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "new_split20": [
+          {
+            "acint": 0.003185581625363218,
+            "acint_std": 0.00014249997300977852,
+            "cost_zscore": -1.4015900581463925,
+            "criterion_zscore": 1.6235818097672199,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0031721209088575167,
+            "acint_std": 0.0001382607204947867,
+            "cost_zscore": -1.5186413318597805,
+            "criterion_zscore": 1.4508039066915088,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.0031468435651943816,
+            "acint_std": 0.00012956504978412067,
+            "cost_zscore": -1.47994432752491,
+            "criterion_zscore": 1.1385018685316968,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.0031207102862768005,
+            "acint_std": 0.00011872293488615202,
+            "cost_zscore": -1.2541693165576742,
+            "criterion_zscore": -0.3534185498717525,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.0031061305678264906,
+            "acint_std": 0.00011267413315310525,
+            "cost_zscore": -1.0152143867379613,
+            "criterion_zscore": 1.01155164097675,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.003094279153012767,
+            "acint_std": 0.00010976382165767316,
+            "cost_zscore": -0.857350216197082,
+            "criterion_zscore": 5.229975498883486,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.003031138860013414,
+            "acint_std": 0.00010179450044911345,
+            "cost_zscore": -0.10899436885683507,
+            "criterion_zscore": 16.509341637554545,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.002935929514618499,
+            "acint_std": 9.16286510802986e-05,
+            "cost_zscore": 0.9297845414001562,
+            "criterion_zscore": 18.875951946238978,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.0027908348699243837,
+            "acint_std": 7.655676299864973e-05,
+            "cost_zscore": 2.549042198373736,
+            "criterion_zscore": 32.83884773809243,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "pooled20": [
+          {
+            "acint": 0.0032079378407188094,
+            "acint_std": 9.514876476515538e-05,
+            "cost_zscore": -1.318535035826001,
+            "criterion_zscore": -0.6141216385931221,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0032042662012287484,
+            "acint_std": 8.890526537015935e-05,
+            "cost_zscore": -1.434467903320941,
+            "criterion_zscore": -1.035980862906693,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.003201278384427124,
+            "acint_std": 8.49319216782103e-05,
+            "cost_zscore": -1.5018887642070429,
+            "criterion_zscore": -0.8194947773451808,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.003186282946053289,
+            "acint_std": 8.025976681284802e-05,
+            "cost_zscore": -1.4763199907132096,
+            "criterion_zscore": 0.8751911445944845,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.0031637656714724564,
+            "acint_std": 7.605588634871877e-05,
+            "cost_zscore": -1.3316575782631448,
+            "criterion_zscore": 4.267794367425357,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.003146974006132137,
+            "acint_std": 7.366734067200169e-05,
+            "cost_zscore": -1.1560610971126586,
+            "criterion_zscore": 8.607616779307316,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.0030866333412102316,
+            "acint_std": 6.7898338104319e-05,
+            "cost_zscore": -0.049198953813734125,
+            "criterion_zscore": 22.396629113156994,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.0030131794890221122,
+            "acint_std": 6.207115756775632e-05,
+            "cost_zscore": 1.5091890135072583,
+            "criterion_zscore": 33.22940816654937,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.002885802462766527,
+            "acint_std": 5.346769674626342e-05,
+            "cost_zscore": 4.957197582216221,
+            "criterion_zscore": 74.55972228223544,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "new40": [
+          {
+            "acint": 0.003232083851126769,
+            "acint_std": 0.0001496099387154566,
+            "cost_zscore": 0.8292739736332291,
+            "criterion_zscore": 2.2728776108168134,
+            "neff": 33.327105216192635,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0032075169383562405,
+            "acint_std": 0.00014453086182510168,
+            "cost_zscore": 0.5399790558152702,
+            "criterion_zscore": 2.2183168088355756,
+            "neff": 41.534008795147784,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.003170980556597982,
+            "acint_std": 0.0001333850265137935,
+            "cost_zscore": 0.2654309938734347,
+            "criterion_zscore": 1.543454420632557,
+            "neff": 49.74091179804552,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.003135050784886284,
+            "acint_std": 0.00012010178412670093,
+            "cost_zscore": -0.09582628493641158,
+            "criterion_zscore": -0.05757560687584942,
+            "neff": 62.05176618172983,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.0031163924335657566,
+            "acint_std": 0.00011296619766044249,
+            "cost_zscore": -0.39257380183314894,
+            "criterion_zscore": 1.3735048183237695,
+            "neff": 74.36161926994384,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.003104175094972223,
+            "acint_std": 0.00010977340286915147,
+            "cost_zscore": -0.5376011420778881,
+            "criterion_zscore": 4.975315048844116,
+            "neff": 82.56852150438296,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.0030451403296948227,
+            "acint_std": 0.00010185134383477471,
+            "cost_zscore": -0.3528763082919154,
+            "criterion_zscore": 15.153741159713874,
+            "neff": 103.08627450954022,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.0029562839571903306,
+            "acint_std": 9.222737297413531e-05,
+            "cost_zscore": 0.3133856324024855,
+            "criterion_zscore": 18.05356382864376,
+            "neff": 123.60303190785623,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.0028116558955543183,
+            "acint_std": 7.754558955781402e-05,
+            "cost_zscore": 1.2682473467845952,
+            "criterion_zscore": 33.028808014668215,
+            "neff": 164.63754173474007,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "new_first20": [
+          {
+            "acint": 0.003203628083169449,
+            "acint_std": 0.00021036738184620568,
+            "cost_zscore": -0.03963011679618627,
+            "criterion_zscore": 4.700138367829982,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0031579629836999616,
+            "acint_std": 0.00020722477162380773,
+            "cost_zscore": -0.1873705289810423,
+            "criterion_zscore": 2.729370908176963,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.0030892802786987245,
+            "acint_std": 0.00017306196830901263,
+            "cost_zscore": -0.3307659379565819,
+            "criterion_zscore": 2.884834576570075,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.003086922749249335,
+            "acint_std": 0.00015630237862302235,
+            "cost_zscore": -0.5741636207215536,
+            "criterion_zscore": 0.45064859091073545,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.0030971864044031863,
+            "acint_std": 0.00015209787671011135,
+            "cost_zscore": -0.7175272974697338,
+            "criterion_zscore": 1.1586560224786722,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.0030985147525005546,
+            "acint_std": 0.00015021957208417538,
+            "cost_zscore": -0.7883801753222158,
+            "criterion_zscore": 3.3688736845310014,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.0030656650151023126,
+            "acint_std": 0.00014376260671712445,
+            "cost_zscore": -0.6573521644484351,
+            "criterion_zscore": 9.243895999961913,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.002983772237956851,
+            "acint_std": 0.000132880362246647,
+            "cost_zscore": -0.11020224056841937,
+            "criterion_zscore": 11.43228798480561,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.0028144037772702205,
+            "acint_std": 0.0001100151667315182,
+            "cost_zscore": 1.040427703220319,
+            "criterion_zscore": 14.800276810794331,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "new_second20": [
+          {
+            "acint": 0.003175811696928587,
+            "acint_std": 0.00019216423152866965,
+            "cost_zscore": -1.8511230703276909,
+            "criterion_zscore": -0.6229958474250451,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0031944545767405375,
+            "acint_std": 0.00019009264904939143,
+            "cost_zscore": -1.9919661004565734,
+            "criterion_zscore": -0.8033461759215773,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.003198050750433737,
+            "acint_std": 0.0001879697393855971,
+            "cost_zscore": -1.9428591068560905,
+            "criterion_zscore": -0.35700587261925343,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.0031711690449773384,
+            "acint_std": 0.0001797822638451427,
+            "cost_zscore": -1.6187515246273332,
+            "criterion_zscore": 0.4144955182053461,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.003131620940300002,
+            "acint_std": 0.0001691117035228727,
+            "cost_zscore": -1.254856063831608,
+            "criterion_zscore": 1.4032388702151737,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.0031025942308702094,
+            "acint_std": 0.00016256551392816474,
+            "cost_zscore": -0.9780571788513699,
+            "criterion_zscore": 3.145733311208971,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.002997214083815244,
+            "acint_std": 0.00014475543589752957,
+            "cost_zscore": -0.00853654244776306,
+            "criterion_zscore": 7.7692224185745005,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.002888179710582801,
+            "acint_std": 0.00012593419105657702,
+            "cost_zscore": 0.882496288052636,
+            "criterion_zscore": 7.916978725262365,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.0027677700501450857,
+            "acint_std": 0.00010658825515517985,
+            "cost_zscore": 1.8353463927465279,
+            "criterion_zscore": 18.978653213050283,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ]
+      },
+      "jackknife": {
+        "old_block_1": {
+          "old_se": 0.12313291019976318,
+          "new_se": 0.10342877456143372,
+          "pooled_se": 0.0828590724284472,
+          "old_new_difference_se": 0.1608080376770478,
+          "old_group_count": 25,
+          "old_leaveout_eta": [
+            3.1998759563048216,
+            3.2249340665788386,
+            3.277267228383327,
+            3.229983834467221,
+            3.238064435280682,
+            3.2688110765591176,
+            3.2583721718877037,
+            3.2335243576989163,
+            3.2050978448254743,
+            3.2313009257464125,
+            3.2227465954641055,
+            3.259073306540857,
+            3.2536524210955142,
+            3.276478751015243,
+            3.1868459587506757,
+            3.2708633534991756,
+            3.206810080678373,
+            3.2318316531027538,
+            3.262949055088647,
+            3.224666251001774,
+            3.2713969097425055,
+            3.239348852137227,
+            3.2414209098677116,
+            3.2093716552331246,
+            3.2529389404895688
+          ],
+          "new_leaveout_eta": [
+            3.1552442305791772,
+            3.1583156938481514,
+            3.1394903847706725,
+            3.0420459069778647,
+            3.1287039911036265,
+            3.0797409153205337,
+            3.14812315449191,
+            3.110643664072398,
+            3.1315713095217537,
+            3.115610846002694
+          ],
+          "pool_old_leaveout_eta": [
+            3.164561651340589,
+            3.1783503436029883,
+            3.207644824452397,
+            3.1813643363949504,
+            3.1857251402022992,
+            3.202919932397331,
+            3.1970216973058063,
+            3.183030758420565,
+            3.1674946897995704,
+            3.1818936180070883,
+            3.1772820090083753,
+            3.197361600487835,
+            3.1945485747985756,
+            3.2070965191646366,
+            3.1569812665390864,
+            3.2040583137901777,
+            3.1684518643359407,
+            3.1822457903431145,
+            3.199699921195519,
+            3.178410052876696,
+            3.2043835725105447,
+            3.186410254196547,
+            3.187552080045005,
+            3.1695839242791797,
+            3.1940895466907655
+          ],
+          "pool_new_leaveout_eta": [
+            3.2017801986480827,
+            3.2032004877278277,
+            3.194759309272447,
+            3.1512257703033795,
+            3.189872315186455,
+            3.167388177843082,
+            3.1981301831699946,
+            3.1818811895547987,
+            3.1910611029622418,
+            3.183940401851503
+          ]
+        },
+        "old_block_5": {
+          "old_se": 0.03404304968651367,
+          "new_se": 0.10342877456143372,
+          "pooled_se": 0.0499916649894613,
+          "old_new_difference_se": 0.10888728410259077,
+          "old_group_count": 5,
+          "old_leaveout_eta": [
+            3.208893645028527,
+            3.240606444238375,
+            3.2423435545442714,
+            3.242166920857962,
+            3.2617728405612603
+          ],
+          "new_leaveout_eta": [
+            3.1552442305791772,
+            3.1583156938481514,
+            3.1394903847706725,
+            3.0420459069778647,
+            3.1287039911036265,
+            3.0797409153205337,
+            3.14812315449191,
+            3.110643664072398,
+            3.1315713095217537,
+            3.115610846002694
+          ],
+          "pool_old_leaveout_eta": [
+            3.1696311906248393,
+            3.1870627419542985,
+            3.188065689754612,
+            3.188189959830518,
+            3.198772017510839
+          ],
+          "pool_new_leaveout_eta": [
+            3.2017801986480827,
+            3.2032004877278277,
+            3.194759309272447,
+            3.1512257703033795,
+            3.189872315186455,
+            3.167388177843082,
+            3.1981301831699946,
+            3.1818811895547987,
+            3.1910611029622418,
+            3.183940401851503
+          ]
+        }
+      },
+      "new40_automatic": {
+        "eta_mPa_s": 3.1281839585038598,
+        "std_mPa_s": 0.11789756375965112
+      },
+      "new40_jackknife_se": 0.09891942915077989
+    },
+    "2000": {
+      "old_n": 20,
+      "new_n": 10,
+      "old_ps": 400,
+      "new_ps": 400,
+      "new_manifest": [
+        {
+          "replica": 1,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0001\\attempt_001\\production\\stress.npz",
+          "sha256": "f7d64d5a4b7f276d8262781c3a42b8af4c559db55df6e91e24fc27888127dc3a",
+          "volume_A3": 9650.442731116333
+        },
+        {
+          "replica": 2,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0002\\attempt_001\\production\\stress.npz",
+          "sha256": "254a8146815be696de94b446e3bfe855f99a14ebcff5029896a4b4d8e0b2f521",
+          "volume_A3": 9518.43104758666
+        },
+        {
+          "replica": 3,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0003\\attempt_001\\production\\stress.npz",
+          "sha256": "b8ea1c725e2f045d2aa9028b24fc74022ac11d8fe2a88c101d7fa3b3e0480809",
+          "volume_A3": 9561.000352751338
+        },
+        {
+          "replica": 4,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0004\\attempt_001\\production\\stress.npz",
+          "sha256": "059ede3eaddca1150361d543e969c8263c1dac33104e83ea06a08059e10d7260",
+          "volume_A3": 9578.248130813772
+        },
+        {
+          "replica": 5,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0005\\attempt_001\\production\\stress.npz",
+          "sha256": "a25b23c531cda249dd82174244a2a1a71f946b350db10d22d72c8a3e25bccb46",
+          "volume_A3": 9703.873492969604
+        },
+        {
+          "replica": 6,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0006\\attempt_001\\production\\stress.npz",
+          "sha256": "feec131924aa25a85b7702bf7a4c8cb173292a276451aeffeca876d86743fbb8",
+          "volume_A3": 9534.617902627346
+        },
+        {
+          "replica": 7,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0007\\attempt_001\\production\\stress.npz",
+          "sha256": "7ad68a70b3c8077e02611c1c91ae693d738c26cc96af2381f50bb576579a1467",
+          "volume_A3": 9461.639585805737
+        },
+        {
+          "replica": 8,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0008\\attempt_001\\production\\stress.npz",
+          "sha256": "6938bfffa42f6a287897b03a7130c22ec967ada19e36a16ba00d40965813ada6",
+          "volume_A3": 9520.357189349976
+        },
+        {
+          "replica": 9,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0009\\attempt_001\\production\\stress.npz",
+          "sha256": "b17b46b3783845717f8449fbc4833c408667904d8a9a0b0fad267c690ba25d4e",
+          "volume_A3": 9613.686128855954
+        },
+        {
+          "replica": 10,
+          "stress": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\source\\states\\Ti_2000K\\replicas\\replica_0010\\attempt_001\\production\\stress.npz",
+          "sha256": "d566e55d66a6b5b60cebeea5f9ddc8aa320094ba90bd77062b0f040ebaccf861",
+          "volume_A3": 9570.772799593598
+        }
+      ],
+      "scan": {
+        "old20": [
+          {
+            "acint": 0.0028591531110426322,
+            "acint_std": 0.00015376007247266537,
+            "cost_zscore": -0.19317148733358763,
+            "criterion_zscore": 6.649420766491649,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0027292197395389463,
+            "acint_std": 0.0001131820669060522,
+            "cost_zscore": 0.3380863086415704,
+            "criterion_zscore": 3.6698921987336193,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.0027270199994922006,
+            "acint_std": 9.903830130536068e-05,
+            "cost_zscore": 0.44181253860630476,
+            "criterion_zscore": 2.051363669343173,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.002736378522368379,
+            "acint_std": 9.410199318540756e-05,
+            "cost_zscore": 0.5108859344892985,
+            "criterion_zscore": 2.558804690980341,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.0027390279475528042,
+            "acint_std": 9.13627187862518e-05,
+            "cost_zscore": 0.47352047090844007,
+            "criterion_zscore": 3.612230795008312,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.0027331131710112955,
+            "acint_std": 8.95695022830899e-05,
+            "cost_zscore": 0.4738577473884492,
+            "criterion_zscore": 4.148659024079506,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.0026947590011730197,
+            "acint_std": 8.344881239616094e-05,
+            "cost_zscore": 0.714637792494655,
+            "criterion_zscore": 5.26646702677311,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.002651073941971926,
+            "acint_std": 7.738067801029287e-05,
+            "cost_zscore": 1.1383300156108869,
+            "criterion_zscore": 8.831847998320239,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.0025532068096452212,
+            "acint_std": 6.741431277012152e-05,
+            "cost_zscore": 2.2441112839327237,
+            "criterion_zscore": 23.382481642823322,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "new_split20": [
+          {
+            "acint": 0.0029660316551167877,
+            "acint_std": 0.00013143229212485557,
+            "cost_zscore": -1.5100761265590052,
+            "criterion_zscore": -0.3067840366933398,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.002959287390725543,
+            "acint_std": 0.00012694750297652006,
+            "cost_zscore": -1.4834908114032253,
+            "criterion_zscore": -0.43383363637517325,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.0029457433232281385,
+            "acint_std": 0.00012013236636439182,
+            "cost_zscore": -1.4727735929066468,
+            "criterion_zscore": -0.3761124894387857,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.002926074636951895,
+            "acint_std": 0.00011230166921226948,
+            "cost_zscore": -1.5333130921723281,
+            "criterion_zscore": -0.3801839553726119,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.002901668662819102,
+            "acint_std": 0.0001056995510740905,
+            "cost_zscore": -1.5555486527472147,
+            "criterion_zscore": 0.828017996104343,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.002885410530896583,
+            "acint_std": 0.00010200959081063572,
+            "cost_zscore": -1.490816884341691,
+            "criterion_zscore": 2.6718540477697976,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.0028359476191404127,
+            "acint_std": 9.438216362568584e-05,
+            "cost_zscore": -0.816257244527341,
+            "criterion_zscore": 12.085253896307396,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.0027605949814737884,
+            "acint_std": 8.620776167112761e-05,
+            "cost_zscore": 0.4952922385951839,
+            "criterion_zscore": 20.26243892811294,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.002613843345171103,
+            "acint_std": 7.187919251110778e-05,
+            "cost_zscore": 2.8157798914110317,
+            "criterion_zscore": 37.14315669783581,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "pooled20": [
+          {
+            "acint": 0.0028919817305664256,
+            "acint_std": 9.956778704624968e-05,
+            "cost_zscore": -0.3043084902131019,
+            "criterion_zscore": 3.6137323783170525,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0028465950816049927,
+            "acint_std": 8.694559153898117e-05,
+            "cost_zscore": 0.025961271896268834,
+            "criterion_zscore": 2.0834337241970795,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.0028310505820003697,
+            "acint_std": 7.794176667252925e-05,
+            "cost_zscore": 0.17184114401552425,
+            "criterion_zscore": 0.5267085200244364,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.0028241645191384736,
+            "acint_std": 7.262553374644518e-05,
+            "cost_zscore": 0.07250780354512475,
+            "criterion_zscore": 0.9303807870585166,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.002814855954041251,
+            "acint_std": 6.929868784860801e-05,
+            "cost_zscore": -0.15203735571454596,
+            "criterion_zscore": 4.389682740234396,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.002804861720248506,
+            "acint_std": 6.74469833260985e-05,
+            "cost_zscore": -0.22210510369058686,
+            "criterion_zscore": 7.682137299672127,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.002761002406101795,
+            "acint_std": 6.266623096144842e-05,
+            "cost_zscore": 0.11739554346377856,
+            "criterion_zscore": 18.047686282539182,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.002701519835334985,
+            "acint_std": 5.7599680945388694e-05,
+            "cost_zscore": 1.0324384947483982,
+            "criterion_zscore": 28.575722026528904,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.0025817429152452955,
+            "acint_std": 4.915571863496225e-05,
+            "cost_zscore": 3.8357664302715038,
+            "criterion_zscore": 61.0144157662462,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "new40": [
+          {
+            "acint": 0.0029965332316168056,
+            "acint_std": 0.00013489393232760135,
+            "cost_zscore": -1.5341003467314624,
+            "criterion_zscore": -0.06159205847882673,
+            "neff": 33.327105216192635,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.0029855664881375072,
+            "acint_std": 0.00013030574616812001,
+            "cost_zscore": -1.232310552522068,
+            "criterion_zscore": -0.12641671794630274,
+            "neff": 41.534008795147784,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.0029682500015919336,
+            "acint_std": 0.00012234402330069474,
+            "cost_zscore": -1.0246636117324328,
+            "criterion_zscore": -0.2558052961139659,
+            "neff": 49.74091179804552,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.002949534759777651,
+            "acint_std": 0.00011458401803360874,
+            "cost_zscore": -0.574632830918937,
+            "criterion_zscore": -0.1987237684612139,
+            "neff": 62.05176618172983,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.0029199870428784783,
+            "acint_std": 0.00010763543146591867,
+            "cost_zscore": 0.0575281549648533,
+            "criterion_zscore": 1.519346708564798,
+            "neff": 74.36161926994384,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.002899687690380963,
+            "acint_std": 0.00010342295249700888,
+            "cost_zscore": 0.44671871287236947,
+            "criterion_zscore": 3.2566670624470877,
+            "neff": 82.56852150438296,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.0028456918269590846,
+            "acint_std": 9.509534929568962e-05,
+            "cost_zscore": 1.2554311696815057,
+            "criterion_zscore": 11.997049658733474,
+            "neff": 103.08627450954022,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.002767457684992136,
+            "acint_std": 8.658786548765977e-05,
+            "cost_zscore": 2.0753767386526816,
+            "criterion_zscore": 21.080517518918654,
+            "neff": 123.60303190785623,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.0026158287474183145,
+            "acint_std": 7.179427168714283e-05,
+            "cost_zscore": 3.27340503248638,
+            "criterion_zscore": 36.51461979390329,
+            "neff": 164.63754173474007,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "new_first20": [
+          {
+            "acint": 0.002983788122766322,
+            "acint_std": 0.0001935822251325738,
+            "cost_zscore": -1.6686463999289225,
+            "criterion_zscore": -1.0971823411460744,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.002977349410315822,
+            "acint_std": 0.0001856223249935832,
+            "cost_zscore": -1.7132158299779063,
+            "criterion_zscore": -1.0361875829259894,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.0029630076121004325,
+            "acint_std": 0.0001766200600744267,
+            "cost_zscore": -1.8131755816444388,
+            "criterion_zscore": -0.693921574908022,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.0029291708815889312,
+            "acint_std": 0.00016399622610409987,
+            "cost_zscore": -1.881327859806724,
+            "criterion_zscore": -0.051511341880300376,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.0028856338403696964,
+            "acint_std": 0.00015056442613610912,
+            "cost_zscore": -1.7791733691301634,
+            "criterion_zscore": 0.1294776817071616,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.0028639348240330825,
+            "acint_std": 0.0001434128815629303,
+            "cost_zscore": -1.6343576076929358,
+            "criterion_zscore": 0.5867079884673493,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.002818115548039482,
+            "acint_std": 0.0001319369298770312,
+            "cost_zscore": -0.95035823200756,
+            "criterion_zscore": 5.392905016846762,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.00274651766318291,
+            "acint_std": 0.00012078644118537044,
+            "cost_zscore": 0.04055202133435762,
+            "criterion_zscore": 9.528506935779111,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.0026107245589052923,
+            "acint_std": 0.00010154717481353247,
+            "cost_zscore": 1.4974422379306878,
+            "criterion_zscore": 17.138745538814007,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ],
+        "new_second20": [
+          {
+            "acint": 0.0029519768795159534,
+            "acint_std": 0.00017983162459018616,
+            "cost_zscore": -0.01806080977307584,
+            "criterion_zscore": -0.20690980276329266,
+            "neff": 16.913702176703588,
+            "fcut": 800000000000.0
+          },
+          {
+            "acint": 0.002943873787599851,
+            "acint_std": 0.00017396410943736537,
+            "cost_zscore": -0.27030749805565624,
+            "criterion_zscore": -0.43447907040330935,
+            "neff": 21.017773284794046,
+            "fcut": 1000000000000.0
+          },
+          {
+            "acint": 0.0029329173613142526,
+            "acint_std": 0.00016375703451472888,
+            "cost_zscore": -0.5395191745091267,
+            "criterion_zscore": -0.4155887043456281,
+            "neff": 25.12081448052632,
+            "fcut": 1200000000000.0
+          },
+          {
+            "acint": 0.002927338094710163,
+            "acint_std": 0.0001547523578651508,
+            "cost_zscore": -0.9520292472211048,
+            "criterion_zscore": -1.1052353857856059,
+            "neff": 31.276897418956533,
+            "fcut": 1500000000000.0
+          },
+          {
+            "acint": 0.002917950131986621,
+            "acint_std": 0.00014870981249972062,
+            "cost_zscore": -1.2710868879209598,
+            "criterion_zscore": -0.20713385097582815,
+            "neff": 37.43198331240099,
+            "fcut": 1800000000000.0
+          },
+          {
+            "acint": 0.0029062827828946237,
+            "acint_std": 0.0001450156490307137,
+            "cost_zscore": -1.400377366953086,
+            "criterion_zscore": 1.286168024796653,
+            "neff": 41.535032187763235,
+            "fcut": 2000000000000.0
+          },
+          {
+            "acint": 0.0028539123395408595,
+            "acint_std": 0.0001349831262369937,
+            "cost_zscore": -1.3823153349601462,
+            "criterion_zscore": 5.8801855614325635,
+            "neff": 51.794169842505504,
+            "fcut": 2500000000000.0
+          },
+          {
+            "acint": 0.002774821932288425,
+            "acint_std": 0.00012305785380589565,
+            "cost_zscore": -0.8802331339075742,
+            "criterion_zscore": 9.785951874966115,
+            "neff": 62.05330142110902,
+            "fcut": 3000000000000.0
+          },
+          {
+            "acint": 0.002616834330068983,
+            "acint_std": 0.00010175121818831213,
+            "cost_zscore": 0.45849542514591746,
+            "criterion_zscore": 18.76881408399163,
+            "neff": 82.57056839030142,
+            "fcut": 4000000000000.0
+          }
+        ]
+      },
+      "jackknife": {
+        "old_block_1": {
+          "old_se": 0.10665301995855823,
+          "new_se": 0.11053710328276631,
+          "pooled_se": 0.07736761347455456,
+          "old_new_difference_se": 0.15360116493186363,
+          "old_group_count": 20,
+          "old_leaveout_eta": [
+            2.722802029292438,
+            2.737355980357467,
+            2.772311890124901,
+            2.7662263951842587,
+            2.7763647287506155,
+            2.7515978305421616,
+            2.753050355253329,
+            2.702120322993579,
+            2.7354407901179747,
+            2.6733573407855857,
+            2.741974315641227,
+            2.747703120655769,
+            2.7141679388206086,
+            2.7100985468273513,
+            2.713250863607473,
+            2.741903230630971,
+            2.7491398657245845,
+            2.7314876019333423,
+            2.7412677579817863,
+            2.7516609876668126
+          ],
+          "new_leaveout_eta": [
+            2.9702617563329956,
+            2.9474918617522894,
+            2.8730101290448955,
+            2.8699205673464885,
+            2.95014331910781,
+            2.9382094403046803,
+            2.9002684434064747,
+            2.9794501459315224,
+            2.8985238019852155,
+            2.9402087653532463
+          ],
+          "pool_old_leaveout_eta": [
+            2.8166002640850833,
+            2.824679523660017,
+            2.842214267813895,
+            2.84128748461653,
+            2.8453058876985877,
+            2.833203122458262,
+            2.829639132949064,
+            2.8051651341905477,
+            2.8227443551207902,
+            2.7905142063870847,
+            2.829667515785985,
+            2.830305637675328,
+            2.8114916227701867,
+            2.8095573632299247,
+            2.8131694505027283,
+            2.8273465372090483,
+            2.831381829144247,
+            2.820217858582885,
+            2.8270576847314954,
+            2.833373800272811
+          ],
+          "pool_new_leaveout_eta": [
+            2.8457837019116115,
+            2.834503668762835,
+            2.798262646381437,
+            2.7996684085621,
+            2.836834056651053,
+            2.8246553342707794,
+            2.812747109048818,
+            2.849010036994043,
+            2.8103871507611755,
+            2.83130525340146
+          ]
+        },
+        "old_block_5": {
+          "old_se": 0.14318962758902465,
+          "new_se": 0.11053710328276631,
+          "pooled_se": 0.09332865275622505,
+          "old_new_difference_se": 0.18089146096825168,
+          "old_group_count": 4,
+          "old_leaveout_eta": [
+            2.855160620220775,
+            2.656412671252293,
+            2.6653306129124155,
+            2.7789570054143415
+          ],
+          "new_leaveout_eta": [
+            2.9702617563329956,
+            2.9474918617522894,
+            2.8730101290448955,
+            2.8699205673464885,
+            2.95014331910781,
+            2.9382094403046803,
+            2.9002684434064747,
+            2.9794501459315224,
+            2.8985238019852155,
+            2.9402087653532463
+          ],
+          "pool_old_leaveout_eta": [
+            2.8866759480174,
+            2.77520828837624,
+            2.789960811181004,
+            2.8475777816177112
+          ],
+          "pool_new_leaveout_eta": [
+            2.8457837019116115,
+            2.834503668762835,
+            2.798262646381437,
+            2.7996684085621,
+            2.836834056651053,
+            2.8246553342707794,
+            2.812747109048818,
+            2.849010036994043,
+            2.8103871507611755,
+            2.83130525340146
+          ]
+        }
+      },
+      "new40_automatic": {
+        "eta_mPa_s": 2.945048222309681,
+        "std_mPa_s": 0.11557838915457454
+      },
+      "new40_jackknife_se": 0.10657591154884859
+    }
+  },
+  "finished_unix": 1793544765.6396964
+}

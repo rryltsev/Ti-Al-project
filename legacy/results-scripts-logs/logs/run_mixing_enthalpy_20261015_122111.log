@@ -1,0 +1,67 @@
+Using GPU device(s): 0, GPU: RTX 5060 Ti
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   neo
+  Use type:  finetune
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model
+  Name:      model_frozen.pt2
+  Full path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model/model_frozen.pt2
+==========================================
+Model found: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model/model_frozen.pt2
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/pbe
+==========================================
+Activated: ase_deepmd_dpa4
+Python: /home/katkoff/miniconda3/envs/ase_deepmd_dpa4/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/pbe/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/pbe/.triton
+==========================================
+==========================================
+Mixing enthalpy calculation (WSL2)
+==========================================
+Date:          Thu Oct 15 12:21:11 +05 2026
+System:        AlTi
+Mode:          dpa4-neo-finetune
+Model path:    /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model/model_frozen.pt2
+DFT method:    pbe
+Step:          0.1
+T measure:     2000 K
+N atoms:       200
+Seed:          42
+R min:         2.0
+Relax fmax:    0.001
+Relax steps:   10000
+MD timestep:   1.0
+MD ttime:      25.0
+MD pressure:   1.0
+Melt steps:    20000
+Equil steps:   30000
+Prod steps:    30000
+Melt factor:   1.5
+Equil factor:  1.0
+Log interval:  100
+Workdir:       /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/pbe
+Log file:      /home/katkoff/deepmd_check_pipline/logs/run_mixing_enthalpy_20261015_122111.log
+==========================================
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/mixing_enthalpy.py", line 277
+    "dft_method": self.args.dft_method
+                  ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+==========================================
+Mixing enthalpy calculation finished
+==========================================
+Exit code: 1
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/pbe
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_mixing_enthalpy_20261015_122111.log
+==========================================
+❌ ERROR: Calculation failed with code 1
+Check log: tail -100 /home/katkoff/deepmd_check_pipline/logs/run_mixing_enthalpy_20261015_122111.log
+==========================================

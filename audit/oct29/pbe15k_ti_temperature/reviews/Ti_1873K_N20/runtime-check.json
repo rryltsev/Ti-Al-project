@@ -1,0 +1,136 @@
+{
+  "checked_unix": 1793833492.1921937,
+  "raw_job": "JobId=20962153 JobName=TiAl-visc15k-iter UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=904 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=1 Restarts=3 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=08:01:05 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-30T15:34:59 EligibleTime=2026-10-30T15:37:00 AccrueTime=2026-10-30T15:37:00 StartTime=2026-11-04T20:03:47 EndTime=2026-11-05T16:03:47 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-04T20:03:47 Scheduler=Main Partition=v100 AllocNode:Sid=umt:1602107 ReqNodeList=tesla-a101 ExcNodeList=(null) NodeList=tesla-a101 BatchHost=tesla-a101 NumNodes=1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/job.sbatch WorkDir=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01 StdErr=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/allocation-20962153.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/allocation-20962153.log Power= TresPerNode=gres:gpu:a100:1 \n",
+  "raw_node": "NodeName=tesla-a101 Arch=x86_64 CoresPerSocket=12  CPUAlloc=22 CPUEfctv=48 CPUTot=48 CPULoad=6.39 AvailableFeatures=a100,tesla,bigmem ActiveFeatures=a100,tesla,bigmem Gres=gpu:a100:2,shard:a100:12 NodeAddr=tesla-a101 NodeHostName=tesla-a101 Version=23.02.7 OS=Linux 4.18.0-193.19.1.el8_2.centos.plus.x86_64 #1 SMP Mon Sep 14 20:42:18 UTC 2020  RealMemory=254000 AllocMem=131072 FreeMem=141417 Sockets=2 Boards=1 State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A Partitions=v100  BootTime=2026-06-19T10:14:59 SlurmdStartTime=2026-06-19T10:16:23 LastBusyTime=2026-10-26T11:58:04 ResumeAfterTime=None CfgTRES=cpu=48,mem=254000M,billing=71808,gres/gpu=2,gres/gpu:a100=2,gres/shard=12 AllocTRES=cpu=22,mem=128G,gres/gpu=2,gres/gpu:a100=2 CapWatts=n/a CurrentWatts=0 AveWatts=0 ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s\n",
+  "checks": {
+    "protocol.json": true,
+    "baseline_5k.json": true,
+    "known_15k.json": true,
+    "workflow.py": true,
+    "md_core.py": true,
+    "analysis_common.py": true,
+    "analyze_point.py": true,
+    "test_analysis.py": true,
+    "README_RU.txt": true,
+    "initial_Ti_2100K.data": true,
+    "initial_Ti_1873K.data": true,
+    "initial_Ti_2000K.data": true,
+    "checkpoint": true,
+    "frozen_model": true,
+    "preflight": true,
+    "physics": true,
+    "temperatures": true,
+    "normalization": true,
+    "one_a100_requested": true,
+    "one_a100_allocated": true,
+    "Ti_2100K_20": true,
+    "Ti_1873K_16": true,
+    "Ti_1873K_17": true,
+    "Ti_1873K_18": true,
+    "Ti_1873K_19": true,
+    "Ti_1873K_20": true,
+    "Ti_2000K_16": true,
+    "current_target": true
+  },
+  "node": {
+    "NodeName": "tesla-a101",
+    "State": "MIXED",
+    "Gres": "gpu:a100:2,shard:a100:12",
+    "AllocTRES": "cpu=22,mem=128G,gres/gpu=2,gres/gpu:a100=2"
+  },
+  "completed": {
+    "Ti_2100K": 20,
+    "Ti_1873K": 20,
+    "Ti_2000K": 16
+  },
+  "verified_replicas": [
+    {
+      "id": "Ti_2100K",
+      "replica": 20,
+      "target_K": 2100,
+      "n_samples": 40001,
+      "volume_A3": 9607.140576053695,
+      "prefactor_V_over_kBT": 3.313535044562271e-07,
+      "stress_sha256": "aa4d750d423efbb7abd50b0f05b32fce284b1cfbbbdbf431195fef90eb55f330",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_1873K",
+      "replica": 16,
+      "target_K": 1873,
+      "n_samples": 40001,
+      "volume_A3": 9619.057253423936,
+      "prefactor_V_over_kBT": 3.7197302764895624e-07,
+      "stress_sha256": "3a53cd7c6cba35be211edda3cb358617afbe0354271d81ec6e7ee82e9a4215d6",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_1873K",
+      "replica": 17,
+      "target_K": 1873,
+      "n_samples": 40001,
+      "volume_A3": 9502.000068956579,
+      "prefactor_V_over_kBT": 3.6744637663033525e-07,
+      "stress_sha256": "bd765bd99f098a65b4f16caaf422fa760e699793daf34308983e3a8f6ddb1c10",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_1873K",
+      "replica": 18,
+      "target_K": 1873,
+      "n_samples": 40001,
+      "volume_A3": 9485.31056205472,
+      "prefactor_V_over_kBT": 3.66800986313104e-07,
+      "stress_sha256": "ea6cb414511a4827e47421d4c049f2bf7eb80a2178a4930f206e39ff1bec3de8",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_1873K",
+      "replica": 19,
+      "target_K": 1873,
+      "n_samples": 40001,
+      "volume_A3": 9441.161988139782,
+      "prefactor_V_over_kBT": 3.65093742217049e-07,
+      "stress_sha256": "99dbb9373f9c9ac05fc9b57475ec461791521bde65b3e4003c4b8e70e5e6d8e4",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_1873K",
+      "replica": 20,
+      "target_K": 1873,
+      "n_samples": 40001,
+      "volume_A3": 9448.581868226485,
+      "prefactor_V_over_kBT": 3.6538067213002576e-07,
+      "stress_sha256": "4501d57b23a06308da41bc774504e5c1964f30d37291fd52cfb30f1d2febb32e",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 16,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9664.716718807866,
+      "prefactor_V_over_kBT": 3.5000629120101726e-07,
+      "stress_sha256": "f66ed2dd57a5f75cbd53908e9977816faa3a09a070f9085f241c0dc5710ad5dc",
+      "checks": "PASS"
+    }
+  ],
+  "progress": {
+    "status": "running",
+    "phase": "production",
+    "job_id": "20962153",
+    "unix": 1793833045.137678,
+    "composition": "Ti_2000K",
+    "replica": 17,
+    "production_ps": 40
+  },
+  "protocol_and_model_hashes": "PASS",
+  "JobId": "20962153",
+  "JobState": "RUNNING",
+  "Reason": "None",
+  "Restarts": "3",
+  "ExitCode": "0:0",
+  "ReqTRES": "cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1",
+  "AllocTRES": "cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1",
+  "StartTime": "2026-11-04T20:03:47"
+}

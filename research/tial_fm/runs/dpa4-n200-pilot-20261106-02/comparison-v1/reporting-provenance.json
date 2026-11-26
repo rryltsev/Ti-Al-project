@@ -1,0 +1,30 @@
+{
+  "utc": "2026-11-06T13:46:34.795176+00:00",
+  "versions": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "sha256": {
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\scripts\\collect_completed_pilots.py": "876267af03a3aa6cae7140323de4802cb08f2cbeb5dd6c7fd7c0405c6d1d6b22",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\scripts\\analyze_predictions.py": "c00d634c8ae4f70d1c40c5b986cf80b650aa4af33c2f81b85176eceeb8c42486",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\scripts\\analyze_pilot_physics.py": "5fd96b717cf21ac219634fdfd54b4f73f6953682d0ed1fc53bcae1016355ce6c",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\scripts\\stage_pilot_physics.py": "92f94c49d90e5ed7c3091ccb41507ae29a6917c255ef5b5fc0b393e1407a9361",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\scripts\\compare_completed_pilots.py": "94a9527edb5d186b8bcef288938786636aeabba9f41357d507af56bce07c3b97",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\scripts\\report_pilot_comparison.py": "901f63690c92a3f5f5fa4085ca46656590ad139e95b6b03aa14bb584651e7549",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\scripts\\record_completed_pilots.py": "c2db6293adcbed2cd485beac3c7642f10cf26afdc5b1f80418e3031c95c3ea99",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\state.json": "39eacb449182470d041f0e98e7a391026116b703262029a20ec301c90eb902b1",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\protocol\\experiment_matrix.yaml": "72c34f8887e7f29f52a7650c4b16ffed7a396d82fe1acc31be1485c26a8c3e5e",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\reports\\summary.md": "b5ca2bb0bbf59a0f5b6d5dec44da377e23dc7db5749b5188dcbf311de04572ca",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\reports\\12_n200_pilot_comparison.md": "69b645e539ca7c4627e49cc42ba379abc242242daf14f9af965ee48ad7f4ac87"
+  },
+  "supplemental_physics_accounting": {
+    "job_id": "20988553",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed_seconds": 29,
+    "allocated_CPUs": 1,
+    "evidence_command": "sacct -j 20988553 --format=JobID,State,ElapsedRaw,AllocCPUS,ExitCode -P"
+  }
+}

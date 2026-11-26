@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-14",
+  "status": "PASS",
+  "remote_before_allocated_bytes": 124363411456,
+  "remote_after_allocated_bytes": 15288225792,
+  "remote_net_released_bytes": 109075185664,
+  "local_duplicate_archive_bytes_deleted": 1720989938,
+  "local_duplicate_density_bytes_deleted": 1147594986,
+  "git_bytes_released": 503268587,
+  "local_archive_bytes": 2434914859,
+  "audit_folder_bytes_including_backup": 2621798242,
+  "approximate_net_local_bytes_released_including_audit_and_backup": 750055269,
+  "retained_pt2_count": 31,
+  "backup": {
+    "status": "PASS",
+    "archive": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\storage-20261114\\offloaded-vasp-restarts-and-grace-optimizers.tar.gz",
+    "archive_bytes": 2434914859,
+    "archive_sha256": "7dfd4d4a84fb9f068f223a3b60d6be7f854727c0b0c487c24c520f3566689e43",
+    "files": 42,
+    "manifest": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\storage-20261114\\offload-manifest.json"
+  },
+  "git": {
+    "status": "PASS",
+    "objects_before": 49593,
+    "objects_after": 49593,
+    "original_objects_preserved": 49593,
+    "bytes_before": 4352045132,
+    "bytes_after": 3848776545,
+    "pack_hash": "a0cedd3d31097dc11dfcc4d5d2e9bfd04eb35448",
+    "git_dir": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\.git",
+    "method": "All objects explicitly packed, including unreachable objects; pack verified; only redundant loose copies removed",
+    "utc": "2026-11-14T12:40:27.482162+00:00",
+    "bytes_released": 503268587
+  }
+}

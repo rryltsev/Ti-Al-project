@@ -1,0 +1,280 @@
+                 JOBID      STATE         TIME                    NODELIST(REASON)
+
+{
+  "PBE-lora16-N200-seed20": {
+    "steps": 10000,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1410382,
+      "trainable": 325158,
+      "adapter_trainable": 285696,
+      "frozen": 1085224,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 20,
+      "torch_initial_seed": 13545900953510009613
+    },
+    "tail": [
+      "[2026-11-06 19:54:15,794] DEEPMD INFO    Batch   10000: trn: mae_e = 8.78e-04, mae_f = 8.90e-02, mae_v = 5.43e-03, rmse = 1.33e+00, lr = 1.00e-06",
+      "[2026-11-06 19:54:15,795] DEEPMD INFO    Batch   10000: val: mae_e = 1.63e-03, mae_f = 9.46e-02, mae_v = 5.32e-03, rmse = 1.38e+00",
+      "[2026-11-06 19:54:15,796] DEEPMD INFO    Batch   10000: total wall time = 22.50 s, eta = 0:00:00 at 2026-11-06 19:54",
+      "[2026-11-06 19:54:16,592] DEEPMD INFO    Saved model to checkpoints/model.ckpt-10000.pt",
+      "[2026-11-06 19:54:16,600] DEEPMD INFO    average training time: 0.2278 s/batch (100 batches excluded)",
+      "[2026-11-06 19:54:16,601] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "PBE-full-N200-seed20": {
+    "steps": 10000,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1124686,
+      "trainable": 1124686,
+      "adapter_trainable": 0,
+      "frozen": 0,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 20,
+      "torch_initial_seed": 13545900953510009613
+    },
+    "tail": [
+      "[2026-11-06 20:45:09,979] DEEPMD INFO    Batch   10000: trn: mae_e = 7.12e-04, mae_f = 7.32e-02, mae_v = 4.68e-03, rmse = 1.21e+00, lr = 1.00e-06",
+      "[2026-11-06 20:45:09,981] DEEPMD INFO    Batch   10000: val: mae_e = 7.60e-04, mae_f = 9.62e-02, mae_v = 5.36e-03, rmse = 1.38e+00",
+      "[2026-11-06 20:45:09,981] DEEPMD INFO    Batch   10000: total wall time = 26.66 s, eta = 0:00:00 at 2026-11-06 20:45",
+      "[2026-11-06 20:45:10,638] DEEPMD INFO    Saved model to checkpoints/model.ckpt-10000.pt",
+      "[2026-11-06 20:45:10,647] DEEPMD INFO    average training time: 0.2682 s/batch (100 batches excluded)",
+      "[2026-11-06 20:45:10,648] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "r2SCAN-lora16-N200-seed20": {
+    "steps": 10000,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1410382,
+      "trainable": 325158,
+      "adapter_trainable": 285696,
+      "frozen": 1085224,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 20,
+      "torch_initial_seed": 13545900953510009613
+    },
+    "tail": [
+      "[2026-11-06 21:40:08,167] DEEPMD INFO    Batch   10000: trn: mae_e = 8.60e-04, mae_f = 1.02e-01, mae_v = 5.97e-03, rmse = 1.43e+00, lr = 1.00e-06",
+      "[2026-11-06 21:40:08,168] DEEPMD INFO    Batch   10000: val: mae_e = 2.12e-03, mae_f = 1.08e-01, mae_v = 6.16e-03, rmse = 1.48e+00",
+      "[2026-11-06 21:40:08,169] DEEPMD INFO    Batch   10000: total wall time = 27.19 s, eta = 0:00:00 at 2026-11-06 21:40",
+      "[2026-11-06 21:40:08,904] DEEPMD INFO    Saved model to checkpoints/model.ckpt-10000.pt",
+      "[2026-11-06 21:40:08,916] DEEPMD INFO    average training time: 0.2905 s/batch (100 batches excluded)",
+      "[2026-11-06 21:40:08,916] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "r2SCAN-full-N200-seed20": {
+    "steps": 10000,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1124686,
+      "trainable": 1124686,
+      "adapter_trainable": 0,
+      "frozen": 0,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 20,
+      "torch_initial_seed": 13545900953510009613
+    },
+    "tail": [
+      "[2026-11-06 22:35:06,832] DEEPMD INFO    Batch   10000: trn: mae_e = 8.52e-04, mae_f = 8.31e-02, mae_v = 5.08e-03, rmse = 1.29e+00, lr = 1.00e-06",
+      "[2026-11-06 22:35:06,833] DEEPMD INFO    Batch   10000: val: mae_e = 1.46e-03, mae_f = 1.10e-01, mae_v = 5.94e-03, rmse = 1.48e+00",
+      "[2026-11-06 22:35:06,834] DEEPMD INFO    Batch   10000: total wall time = 28.93 s, eta = 0:00:00 at 2026-11-06 22:35",
+      "[2026-11-06 22:35:07,554] DEEPMD INFO    Saved model to checkpoints/model.ckpt-10000.pt",
+      "[2026-11-06 22:35:07,580] DEEPMD INFO    average training time: 0.2898 s/batch (100 batches excluded)",
+      "[2026-11-06 22:35:07,580] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "PBE-lora16-N200-seed30": {
+    "steps": 10000,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1410382,
+      "trainable": 325158,
+      "adapter_trainable": 285696,
+      "frozen": 1085224,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 30,
+      "torch_initial_seed": 9366557240072453607
+    },
+    "tail": [
+      "[2026-11-06 23:26:32,340] DEEPMD INFO    Batch   10000: trn: mae_e = 7.95e-04, mae_f = 8.18e-02, mae_v = 5.53e-03, rmse = 1.28e+00, lr = 1.00e-06",
+      "[2026-11-06 23:26:32,341] DEEPMD INFO    Batch   10000: val: mae_e = 2.10e-03, mae_f = 1.03e-01, mae_v = 5.85e-03, rmse = 1.45e+00",
+      "[2026-11-06 23:26:32,342] DEEPMD INFO    Batch   10000: total wall time = 26.68 s, eta = 0:00:00 at 2026-11-06 23:26",
+      "[2026-11-06 23:26:33,017] DEEPMD INFO    Saved model to checkpoints/model.ckpt-10000.pt",
+      "[2026-11-06 23:26:33,024] DEEPMD INFO    average training time: 0.2684 s/batch (100 batches excluded)",
+      "[2026-11-06 23:26:33,024] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "PBE-full-N200-seed30": {
+    "steps": 10000,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1124686,
+      "trainable": 1124686,
+      "adapter_trainable": 0,
+      "frozen": 0,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 30,
+      "torch_initial_seed": 9366557240072453607
+    },
+    "tail": [
+      "[2026-11-07 00:17:37,838] DEEPMD INFO    Batch   10000: trn: mae_e = 6.97e-04, mae_f = 6.73e-02, mae_v = 4.95e-03, rmse = 1.16e+00, lr = 1.00e-06",
+      "[2026-11-07 00:17:37,839] DEEPMD INFO    Batch   10000: val: mae_e = 1.07e-03, mae_f = 1.06e-01, mae_v = 5.06e-03, rmse = 1.45e+00",
+      "[2026-11-07 00:17:37,840] DEEPMD INFO    Batch   10000: total wall time = 26.47 s, eta = 0:00:00 at 2026-11-07 00:17",
+      "[2026-11-07 00:17:38,728] DEEPMD INFO    Saved model to checkpoints/model.ckpt-10000.pt",
+      "[2026-11-07 00:17:38,777] DEEPMD INFO    average training time: 0.2664 s/batch (100 batches excluded)",
+      "[2026-11-07 00:17:38,778] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "r2SCAN-lora16-N200-seed30": {
+    "steps": 10000,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1410382,
+      "trainable": 325158,
+      "adapter_trainable": 285696,
+      "frozen": 1085224,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 30,
+      "torch_initial_seed": 9366557240072453607
+    },
+    "tail": [
+      "[2026-11-07 01:09:59,436] DEEPMD INFO    Batch   10000: trn: mae_e = 7.88e-04, mae_f = 9.34e-02, mae_v = 5.93e-03, rmse = 1.36e+00, lr = 1.00e-06",
+      "[2026-11-07 01:09:59,437] DEEPMD INFO    Batch   10000: val: mae_e = 2.53e-03, mae_f = 1.18e-01, mae_v = 5.91e-03, rmse = 1.55e+00",
+      "[2026-11-07 01:09:59,438] DEEPMD INFO    Batch   10000: total wall time = 27.01 s, eta = 0:00:00 at 2026-11-07 01:09",
+      "[2026-11-07 01:10:00,398] DEEPMD INFO    Saved model to checkpoints/model.ckpt-10000.pt",
+      "[2026-11-07 01:10:00,408] DEEPMD INFO    average training time: 0.2736 s/batch (100 batches excluded)",
+      "[2026-11-07 01:10:00,408] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "r2SCAN-full-N200-seed30": {
+    "steps": 10000,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1124686,
+      "trainable": 1124686,
+      "adapter_trainable": 0,
+      "frozen": 0,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 30,
+      "torch_initial_seed": 9366557240072453607
+    },
+    "tail": [
+      "[2026-11-07 02:01:09,277] DEEPMD INFO    Batch   10000: trn: mae_e = 7.23e-04, mae_f = 7.63e-02, mae_v = 5.14e-03, rmse = 1.24e+00, lr = 1.00e-06",
+      "[2026-11-07 02:01:09,278] DEEPMD INFO    Batch   10000: val: mae_e = 1.36e-03, mae_f = 1.21e-01, mae_v = 5.67e-03, rmse = 1.56e+00",
+      "[2026-11-07 02:01:09,279] DEEPMD INFO    Batch   10000: total wall time = 26.37 s, eta = 0:00:00 at 2026-11-07 02:01",
+      "[2026-11-07 02:01:10,235] DEEPMD INFO    Saved model to checkpoints/model.ckpt-10000.pt",
+      "[2026-11-07 02:01:10,242] DEEPMD INFO    average training time: 0.2668 s/batch (100 batches excluded)",
+      "[2026-11-07 02:01:10,242] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "PBE-lora16-N694-seed10": {
+    "steps": 34700,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1410382,
+      "trainable": 325158,
+      "adapter_trainable": 285696,
+      "frozen": 1085224,
+      "num_steps": 34700,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 10,
+      "torch_initial_seed": 16008486670409321230
+    },
+    "tail": [
+      "[2026-11-07 04:44:15,329] DEEPMD INFO    Batch   34700: trn: mae_e = 8.22e-04, mae_f = 8.74e-02, mae_v = 4.97e-03, rmse = 1.32e+00, lr = 1.00e-06",
+      "[2026-11-07 04:44:15,330] DEEPMD INFO    Batch   34700: val: mae_e = 2.10e-03, mae_f = 9.55e-02, mae_v = 4.89e-03, rmse = 1.39e+00",
+      "[2026-11-07 04:44:15,331] DEEPMD INFO    Batch   34700: total wall time = 26.98 s, eta = 0:00:00 at 2026-11-07 04:44",
+      "[2026-11-07 04:44:16,296] DEEPMD INFO    Saved model to checkpoints/model.ckpt-34700.pt",
+      "[2026-11-07 04:44:16,303] DEEPMD INFO    average training time: 0.2701 s/batch (100 batches excluded)",
+      "[2026-11-07 04:44:16,304] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "PBE-full-N694-seed10": {
+    "steps": 34700,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1124686,
+      "trainable": 1124686,
+      "adapter_trainable": 0,
+      "frozen": 0,
+      "num_steps": 34700,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 10,
+      "torch_initial_seed": 16008486670409321230
+    },
+    "tail": [
+      "[2026-11-07 07:26:11,840] DEEPMD INFO    Batch   34700: trn: mae_e = 7.35e-04, mae_f = 7.41e-02, mae_v = 4.45e-03, rmse = 1.22e+00, lr = 1.00e-06",
+      "[2026-11-07 07:26:11,841] DEEPMD INFO    Batch   34700: val: mae_e = 9.44e-04, mae_f = 9.59e-02, mae_v = 4.68e-03, rmse = 1.38e+00",
+      "[2026-11-07 07:26:11,842] DEEPMD INFO    Batch   34700: total wall time = 26.61 s, eta = 0:00:00 at 2026-11-07 07:26",
+      "[2026-11-07 07:26:12,541] DEEPMD INFO    Saved model to checkpoints/model.ckpt-34700.pt",
+      "[2026-11-07 07:26:12,546] DEEPMD INFO    average training time: 0.2675 s/batch (100 batches excluded)",
+      "[2026-11-07 07:26:12,546] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "r2SCAN-lora16-N694-seed10": {
+    "steps": 34700,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1410382,
+      "trainable": 325158,
+      "adapter_trainable": 285696,
+      "frozen": 1085224,
+      "num_steps": 34700,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 10,
+      "torch_initial_seed": 16008486670409321230
+    },
+    "tail": [
+      "[2026-11-07 10:09:40,021] DEEPMD INFO    Batch   34700: trn: mae_e = 9.44e-04, mae_f = 9.98e-02, mae_v = 5.45e-03, rmse = 1.41e+00, lr = 1.00e-06",
+      "[2026-11-07 10:09:40,022] DEEPMD INFO    Batch   34700: val: mae_e = 1.18e-03, mae_f = 1.09e-01, mae_v = 5.29e-03, rmse = 1.48e+00",
+      "[2026-11-07 10:09:40,023] DEEPMD INFO    Batch   34700: total wall time = 27.01 s, eta = 0:00:00 at 2026-11-07 10:09",
+      "[2026-11-07 10:09:41,007] DEEPMD INFO    Saved model to checkpoints/model.ckpt-34700.pt",
+      "[2026-11-07 10:09:41,020] DEEPMD INFO    average training time: 0.2704 s/batch (100 batches excluded)",
+      "[2026-11-07 10:09:41,020] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  },
+  "r2SCAN-full-N694-seed10": {
+    "steps": 34700,
+    "zero_step": "PASS",
+    "train": "PASS",
+    "inventory": {
+      "total": 1124686,
+      "trainable": 1124686,
+      "adapter_trainable": 0,
+      "frozen": 0,
+      "num_steps": 34700,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 10,
+      "torch_initial_seed": 16008486670409321230
+    },
+    "tail": [
+      "[2026-11-07 12:52:14,189] DEEPMD INFO    Batch   34700: trn: mae_e = 7.46e-04, mae_f = 8.42e-02, mae_v = 4.79e-03, rmse = 1.29e+00, lr = 1.00e-06",
+      "[2026-11-07 12:52:14,190] DEEPMD INFO    Batch   34700: val: mae_e = 9.30e-04, mae_f = 1.10e-01, mae_v = 5.05e-03, rmse = 1.48e+00",
+      "[2026-11-07 12:52:14,191] DEEPMD INFO    Batch   34700: total wall time = 26.62 s, eta = 0:00:00 at 2026-11-07 12:52",
+      "[2026-11-07 12:52:15,134] DEEPMD INFO    Saved model to checkpoints/model.ckpt-34700.pt",
+      "[2026-11-07 12:52:15,140] DEEPMD INFO    average training time: 0.2688 s/batch (100 batches excluded)",
+      "[2026-11-07 12:52:15,140] DEEPMD INFO    Trained model has been saved to: model.ckpt"
+    ]
+  }
+}

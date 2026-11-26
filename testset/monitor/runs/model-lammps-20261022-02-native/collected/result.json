@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "job_id": "20958503",
+  "structure_id": "TiAl-test-001",
+  "models": {
+    "PBE": {
+      "energy_eV_atom": 4.3461721201378235e-08,
+      "force_max_eV_A": 1.115758148984014e-06,
+      "stress_max_eV_A3": 7.475176963533947e-09,
+      "model_sha256": "660ebda9c96dedd5fc297148d6463fea535b0663e028c49e3bb78a4f21ca60bc",
+      "status": "passed"
+    },
+    "PBEsol": {
+      "energy_eV_atom": 1.8971491044794675e-10,
+      "force_max_eV_A": 1.5422682544397048e-06,
+      "stress_max_eV_A3": 4.097038139305731e-09,
+      "model_sha256": "a7c63464cd92745e8cc1dd153e2e8678da63a7fd523479e682eb7c02a3d05a3f",
+      "status": "passed"
+    },
+    "r2SCAN": {
+      "energy_eV_atom": 1.2236543827586704e-08,
+      "force_max_eV_A": 1.3344178794172379e-06,
+      "stress_max_eV_A3": 4.024919786349557e-09,
+      "model_sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a",
+      "status": "passed"
+    }
+  },
+  "binary": "/home6/u3129/mlip-research/software/lammps-deepmd-mpi-a33449868448/build/lmp",
+  "plugin": "/home/u3129/miniconda3/envs/lammps_deepmd_dpa4/lib/python3.12/site-packages/deepmd/lib/libdeepmd_lmpplugin.so",
+  "unix": 1792638172.8933237
+}

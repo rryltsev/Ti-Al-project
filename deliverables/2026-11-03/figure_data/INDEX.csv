@@ -1,0 +1,50 @@
+﻿file,data_rows,column_names
+Fig01_parity/energy.csv,294,functional | model | structure_id | family | n_atoms | DFT_energy_eV_atom | model_energy_eV_atom
+Fig01_parity/force.csv,206676,functional | model | structure_id | family | atom_index_zero_based | element | component | DFT_force_eV_A | model_force_eV_A
+Fig01_parity/metrics.csv,6,functional | model | energy_MAE_meV_atom | energy_RMSE_meV_atom | force_MAE_eV_A | force_RMSE_eV_A | stress_MAE_GPa | stress_RMSE_GPa
+Fig01_parity/stress.csv,1764,functional | model | structure_id | component | DFT_stress_GPa | model_stress_GPa
+Fig02_phonons/bands.csv,3624,functional | method | point | normalized_path_coordinate | q1 | q2 | q3 | frequency_1_THz | frequency_2_THz | frequency_3_THz | frequency_4_THz | frequency_5_THz | frequency_6_THz
+Fig02_phonons/DOS.csv,4901,frequency_THz | PBE_DFT | PBE_DPA4 | PBEsol_DFT | PBEsol_DPA4 | r2SCAN_DFT | r2SCAN_DPA4
+Fig02_phonons/experiment.csv,77,normalized_path_coordinate | frequency_THz
+Fig03_density_T/liquid_correlation.csv,200,temperature_K | density_g_cm3 | lower_g_cm3 | upper_g_cm3
+Fig03_density_T/liquid_experiment.csv,25,temperature_K | density_g_cm3 | lower_g_cm3 | upper_g_cm3
+Fig03_density_T/models.csv,67,functional | series | starting_phase | temperature_K | density_g_cm3 | SEM_g_cm3
+Fig03_density_T/solid_reference.csv,15,phase | temperature_K | density_g_cm3
+Fig04_melting/pbe_1750K_001.csv,101,time_ps | solid_like_fraction
+Fig04_melting/pbe_1775K_001.csv,201,time_ps | solid_like_fraction
+Fig04_melting/pbe_1800K_001.csv,101,time_ps | solid_like_fraction
+Fig04_melting/scan_1850K_001.csv,101,time_ps | solid_like_fraction
+Fig04_melting/scan_1850K_002.csv,101,time_ps | solid_like_fraction
+Fig04_melting/scan_1860K_001.csv,101,time_ps | solid_like_fraction
+Fig04_melting/sol_1730K_001.csv,101,time_ps | solid_like_fraction
+Fig04_melting/sol_1750K_001.csv,101,time_ps | solid_like_fraction
+Fig04_melting/sol_1770K_001.csv,101,time_ps | solid_like_fraction
+Fig05_density_x/experiment.csv,20,x_Al | density_g_cm3 | excess_volume_cm3_mol
+Fig05_density_x/models.csv,33,functional | x_Al | density_g_cm3 | excess_volume_cm3_mol
+Fig06_enthalpy/experiment.csv,9,x_Al | mixing_enthalpy_kJ_mol
+Fig06_enthalpy/models.csv,33,functional | x_Al | mixing_enthalpy_kJ_mol | SEM_kJ_mol
+Fig07_viscosity/Arrhenius_curves.csv,800,functional | temperature_K | viscosity_mPa_s
+Fig07_viscosity/composition.csv,22,functional | x_Al | viscosity_mPa_s | SE_mPa_s
+Fig07_viscosity/Ishikawa_curve.csv,200,temperature_K | viscosity_mPa_s | lower_mPa_s | upper_mPa_s
+Fig07_viscosity/Takeda.csv,5,x_Al | viscosity_mPa_s | measurement_Tmin_K | measurement_Tmax_K
+Fig07_viscosity/temperature.csv,7,functional | temperature_K | viscosity_mPa_s | SE_mPa_s
+FigS01_learning/raw.csv,235,optimization_steps | steps_thousands | energy_train_meV_atom | energy_validation_meV_atom | force_train_eV_A | force_validation_eV_A
+FigS01_learning/smoothed.csv,225,optimization_steps | steps_thousands | energy_train_meV_atom | energy_validation_meV_atom | force_train_eV_A | force_validation_eV_A
+FigS02_checkpoints/energy_residuals.csv,5095,optimization_steps | split | structure_id | x_Ti | volume_A3_atom | energy_residual_meV_atom
+FigS02_checkpoints/metrics.csv,15,optimization_steps | steps_thousands | split | energy_RMSE_meV_atom | force_RMSE_eV_A | Ti_rich_energy_bias_meV_atom
+FigS03_fixed_composition/points.csv,58,optimization_steps | split | structure_id | x_Ti | volume_A3_atom | energy_residual_meV_atom
+FigS04_train_test/points.csv,870,split | structure_id | x_Ti | volume_A3_atom | fine_tuned_residual_meV_atom | pretrained_residual_meV_atom
+FigS05_phonons/20000_common.csv,200,q_normalized | branch_1_THz | branch_2_THz | branch_3_THz | branch_4_THz | branch_5_THz | branch_6_THz
+FigS05_phonons/20000_relaxed.csv,200,q_normalized | branch_1_THz | branch_2_THz | branch_3_THz | branch_4_THz | branch_5_THz | branch_6_THz
+FigS05_phonons/23400_common.csv,200,q_normalized | branch_1_THz | branch_2_THz | branch_3_THz | branch_4_THz | branch_5_THz | branch_6_THz
+FigS05_phonons/23400_relaxed.csv,200,q_normalized | branch_1_THz | branch_2_THz | branch_3_THz | branch_4_THz | branch_5_THz | branch_6_THz
+FigS05_phonons/5000_common.csv,200,q_normalized | branch_1_THz | branch_2_THz | branch_3_THz | branch_4_THz | branch_5_THz | branch_6_THz
+FigS05_phonons/5000_relaxed.csv,200,q_normalized | branch_1_THz | branch_2_THz | branch_3_THz | branch_4_THz | branch_5_THz | branch_6_THz
+FigS05_phonons/experimental_source.csv,200,Model_q | Model_branch_0 | Model_branch_1 | Model_branch_2 | Model_branch_3 | Model_branch_4 | Model_branch_5 | DFT_branch_0_x | DFT_branch_0_y | DFT_branch_1_x | DFT_branch_1_y | DFT_branch_2_x | DFT_branch_2_y | DFT_branch_3_x | DFT_branch_3_y | DFT_branch_4_x | DFT_branch_4_y | DFT_branch_5_x | DFT_branch_5_y | DFT_branch_6_x | DFT_branch_6_y | DFT_branch_7_x | DFT_branch_7_y | Exp_x | Exp_y
+FigS05_phonons/q_ticks.csv,5,q_normalized
+FigS06_DOS/curves.csv,16000,frequency_THz | 5000/common_modes_atom_THz | 5000/relaxed_modes_atom_THz | 20000/common_modes_atom_THz | 20000/relaxed_modes_atom_THz | 23400/common_modes_atom_THz | 23400/relaxed_modes_atom_THz
+FigS07_DOS_DFT/curves.csv,16000,frequency_THz | 5000/common_modes_atom_THz | 5000/relaxed_modes_atom_THz | 20000/common_modes_atom_THz | 20000/relaxed_modes_atom_THz | 23400/common_modes_atom_THz | 23400/relaxed_modes_atom_THz | DFT_modes_atom_THz
+FigS08_five_DOS/curves.csv,16000,frequency_THz | DFT_modes_atom_THz | PBE-5000/fixed/MP40_modes_atom_THz | PBE-10000/fixed/MP40_modes_atom_THz | PBE-15000/fixed/MP40_modes_atom_THz | PBE-20000/fixed/MP40_modes_atom_THz | PBE-23400/fixed/MP40_modes_atom_THz | PBE-5000/equilibrium/MP40_modes_atom_THz | PBE-10000/equilibrium/MP40_modes_atom_THz | PBE-15000/equilibrium/MP40_modes_atom_THz | PBE-20000/equilibrium/MP40_modes_atom_THz | PBE-23400/equilibrium/MP40_modes_atom_THz
+FigS09_tradeoff/points.csv,5,optimization_steps | steps_thousands | validation_energy_RMSE_meV_atom | test20_energy_RMSE_meV_atom | DOS_L2_relative | DOS_total_variation | DOS_W1_THz | L2_ratio_to_5k | TV_ratio_to_5k | W1_ratio_to_5k
+FigS10_density_enthalpy/curves.csv,33,optimization_steps | x_Al | density_g_cm3 | density_SEM_g_cm3 | mixing_enthalpy_kJ_mol | enthalpy_SEM_kJ_mol
+FigS11_window_sensitivity/curves.csv,132,optimization_steps | window | x_Al | change_from_production_kJ_mol

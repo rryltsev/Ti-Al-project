@@ -1,0 +1,237 @@
+Using GPU device(s): 1, GPU: RTX 3050
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   neo
+  Use type:  finetune
+==========================================
+==========================================
+Phases JSON:
+{
+  "phases": [
+    {
+      "name": "alpha_Ti",
+      "type": "solid",
+      "temps": "300,500,700,900,1100"
+    },
+    {
+      "name": "beta_Ti",
+      "type": "solid",
+      "temps": "1200,1400,1600,1800,1900"
+    },
+    {
+      "name": "liquid_Ti",
+      "type": "liquid",
+      "temps": "2000,2100,2200,2300,2400,2500"
+    }
+  ]
+}
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model
+  Name:      model_frozen.pt2
+  Full path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model/model_frozen.pt2
+==========================================
+Model found: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model/model_frozen.pt2
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/Ti/sol
+==========================================
+Activated: ase_deepmd_dpa4
+Python: /home/katkoff/miniconda3/envs/ase_deepmd_dpa4/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/Ti/sol/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/Ti/sol/.triton
+==========================================
+==========================================
+Thermal density scan (WSL2)
+==========================================
+Date:                Sun Oct  4 19:50:03 +05 2026
+System:              Ti
+Mode:                dpa4-neo-finetune
+Model path:          /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model/model_frozen.pt2
+DFT method:          sol
+Phases:              alpha_Ti beta_Ti liquid_Ti
+  alpha_Ti [solid]: 300,500,700,900,1100
+  beta_Ti [solid]: 1200,1400,1600,1800,1900
+  liquid_Ti [liquid]: 2000,2100,2200,2300,2400,2500
+Melt factor:         1.5
+Equil factor:        1.0
+N atoms:             200
+Seed:                42
+R min:               2.0
+Relax fmax:          0.001
+Relax steps:         10000
+MD timestep:         1.0
+MD ttime:            25.0
+MD pressure:         1.0
+Melt steps:          20000
+Equil steps:         20000
+Prod steps:          30000
+Log interval:        100
+Force clear:         true
+Workdir:             /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/Ti/sol
+Log file:            /home/katkoff/deepmd_check_pipline/logs/run_thermal_density_scan_20261004_195003.log
+==========================================
+WARNING:__main__:FORCE CLEAR: removing contents of /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/Ti/sol
+INFO:__main__:  Skipping cache dir: .triton
+INFO:__main__:  Skipping cache dir: .cache
+INFO:__main__:System: Ti
+INFO:__main__:Parsed 3 phases:
+INFO:__main__:  alpha_Ti [solid]: [300.0, 500.0, 700.0, 900.0, 1100.0]
+INFO:__main__:  beta_Ti [solid]: [1200.0, 1400.0, 1600.0, 1800.0, 1900.0]
+INFO:__main__:  liquid_Ti [liquid]: [2000.0, 2100.0, 2200.0, 2300.0, 2400.0, 2500.0]
+INFO:__main__:Melt factor:  1.5
+INFO:__main__:Equil factor: 1.0
+INFO:__main__:Output: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/Ti/sol
+INFO:utils.structure:Loaded 7 structures from /home/katkoff/deepmd_check_pipline/models_check/utils/structures_config.json
+INFO:__main__:============================================================
+INFO:__main__:THERMAL DENSITY SCANNER
+INFO:__main__:============================================================
+INFO:__main__:Calculator:   deepmd
+INFO:__main__:Mode:         dpa4-neo-finetune
+INFO:__main__:System:       Ti
+INFO:__main__:Device:       cuda, dtype: float32, GPU: RTX 3050
+INFO:__main__:Parsed 3 phases:
+INFO:__main__:  alpha_Ti [solid]: [300.0, 500.0, 700.0, 900.0, 1100.0]
+INFO:__main__:  beta_Ti [solid]: [1200.0, 1400.0, 1600.0, 1800.0, 1900.0]
+INFO:__main__:  liquid_Ti [liquid]: [2000.0, 2100.0, 2200.0, 2300.0, 2400.0, 2500.0]
+INFO:__main__:N atoms:      200
+INFO:__main__:Output:       /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/Ti/sol
+INFO:__main__:============================================================
+INFO:__main__:
+Generating solid structure for alpha_Ti...
+INFO:utils.structure:Configured for: alpha_Ti
+INFO:utils.structure:Creating conventional cell for 'alpha_Ti' (P6_3/mmc, hexagonal)
+INFO:utils.structure:Generated bulk: Ti2, 2 atoms
+INFO:__main__:  Conventional cell: 2 atoms
+INFO:__main__:  Target n_atoms: 200, ratio = 100.00, repeat = 5
+INFO:__main__:  Supercell: 5x5x5 → 250 atoms
+WARNING:__main__:  Supercell has 250 atoms, target was 200 (difference: 50)
+INFO:__main__:  Converted to ASE: 250 atoms
+INFO:__main__:Relaxing solid structure...
+INFO:utils.calculator:=== DEEPMD DP CREATION START ===
+INFO:utils.calculator:model_path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_sol_Neo_DPA4_shard_20260920_040140/output_model/model_frozen.pt2
+INFO:utils.calculator:device: cuda
+INFO:utils.calculator:default_dtype: float32
+INFO:utils.calculator:DeepMD DP imported successfully
+INFO:utils.calculator:Calling DP(...)
+W1004 19:50:07.650000 2224344 site-packages/torch/_inductor/package/package.py:120] Loading outdated pt2 file. Please regenerate your package.
+INFO:utils.calculator:DP(...) returned successfully
+INFO:utils.calculator:calculator type: <class 'deepmd.calculator.DP'>
+INFO:utils.md_runner:  --- RELAX ---
+Error: CUDA driver error: no kernel image is available for execution on the device
+INFO:deepmd.utils.batch_size:Adjust batch size from 1024 to 512
+Error: CUDA driver error: no kernel image is available for execution on the device
+INFO:deepmd.utils.batch_size:Adjust batch size from 512 to 256
+Error: CUDA driver error: no kernel image is available for execution on the device
+INFO:deepmd.utils.batch_size:Adjust batch size from 256 to 128
+Error: CUDA driver error: no kernel image is available for execution on the device
+Traceback (most recent call last):
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 126, in execute
+    n_batch, result = callable(max(batch_nframes, 1), start_index)
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 199, in execute_with_batch_size
+    return (end_index - start_index), callable(
+                                      ~~~~~~~~^
+        *[
+        ^^
+    ...<20 lines>...
+        },
+        ^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt_expt/infer/deep_eval.py", line 1961, in _eval_model
+    model_ret = self._pt2_runner(*model_inputs)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/export/pt2_archive/_package.py", line 733, in __call__
+    flat_outputs = self.loader.boxed_run(flat_inputs)
+RuntimeError: run_func_( container_handle_, input_handles.data(), input_handles.size(), output_handles.data(), output_handles.size(), reinterpret_cast<AOTInductorStreamHandle>(stream_handle), proxy_executor_handle_) API call failed at /pytorch/torch/csrc/inductor/aoti_runner/model_container_runner.cpp, line 144
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/density_thermal_scan.py", line 760, in <module>
+    main()
+    ~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/density_thermal_scan.py", line 756, in main
+    scanner.run()
+    ~~~~~~~~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/density_thermal_scan.py", line 506, in run
+    solid_path = self._generate_solid_structure(name)
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/density_thermal_scan.py", line 265, in _generate_solid_structure
+    self.md_runner.relax(atoms)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/utils/md_runner.py", line 71, in relax
+    dyn.run(fmax=self.relax_fmax, steps=self.relax_steps)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/optimize/optimize.py", line 506, in run
+    return Dynamics.run(self, steps=steps)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/optimize/optimize.py", line 375, in run
+    for converged in Dynamics.irun(self, steps=steps):
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/optimize/optimize.py", line 322, in irun
+    gradient = self.optimizable.get_gradient()
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/filters.py", line 31, in get_gradient
+    return -self.filterobj.get_forces().ravel()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/filters.py", line 602, in get_forces
+    stress = self.atoms.get_stress(**kwargs)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/atoms.py", line 2050, in get_stress
+    stress = self._calc.get_stress(self)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/calculators/abc.py", line 34, in get_stress
+    return self.get_property('stress', atoms)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/calculators/calculator.py", line 517, in get_property
+    self.calculate(atoms, [name], system_changes)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/calculator.py", line 143, in calculate
+    e, f, v = self.dp.eval(
+              ~~~~~~~~~~~~^
+        coords=coord,
+        ^^^^^^^^^^^^^
+    ...<4 lines>...
+        charge_spin=charge_spin,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )[:3]
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/infer/deep_pot.py", line 206, in eval
+    results = self.deep_eval.eval(
+        coords,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt_expt/infer/deep_eval.py", line 1319, in eval
+    out = self._eval_func(self._eval_model, numb_test, natoms)(
+        coords,
+    ...<5 lines>...
+        charge_spin,
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt_expt/infer/deep_eval.py", line 1358, in eval_func
+    return self.auto_batch_size.execute_all(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        inner_func, numb_test, natoms, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 228, in execute_all
+    n_batch, result = self.execute(execute_with_batch_size, index, natoms)
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 138, in execute
+    raise OutOfMemoryError(
+        "The callable still throws an out-of-memory (OOM) error even when batch size is 1!"
+    ) from e
+deepmd.utils.errors.OutOfMemoryError: The callable still throws an out-of-memory (OOM) error even when batch size is 1!
+==========================================
+Thermal density scan finished
+==========================================
+Exit code: 1
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/Ti/sol
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_thermal_density_scan_20261004_195003.log
+==========================================
+❌ ERROR: Calculation failed with code 1
+Check log: tail -100 /home/katkoff/deepmd_check_pipline/logs/run_thermal_density_scan_20261004_195003.log
+==========================================

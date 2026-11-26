@@ -1,0 +1,4 @@
+{
+  "job_id": "20988442",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && test ! -e harmonic-v2-submission.txt && sbatch --parsable --dependency=afterany:20988440 --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=16G --time=00:15:00 --job-name=TiAl-FM-H0 --output=harmonic-v2-%j.log harmonic-v2.sbatch | tee harmonic-v2-submission.txt"
+}

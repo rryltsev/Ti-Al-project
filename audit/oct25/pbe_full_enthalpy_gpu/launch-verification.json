@@ -1,0 +1,31 @@
+{
+  "job_id": "20960642",
+  "state": "RUNNING",
+  "checkpoints": [
+    15000,
+    20000
+  ],
+  "compositions_per_checkpoint": 11,
+  "temperature_K": 2000,
+  "gpu_count": 2,
+  "verified_distinct_GPU_UUIDs": [
+    "GPU-b5e078e3-4081-f2c5-f8b5-cf03a593bf9c",
+    "GPU-9de121c5-6e69-818a-2ace-225ee601989c"
+  ],
+  "verified_trajectory_fields": [
+    "numbers",
+    "positions",
+    "momenta",
+    "cell",
+    "energy",
+    "forces",
+    "stress"
+  ],
+  "estimated_hours_by_checkpoint": {
+    "15000": 7.852365874995788,
+    "20000": 9.243042916059494
+  },
+  "cpu_gpu_checks_passed": true,
+  "checked_at": "2026-10-25T20:28:30.299964+05:00",
+  "logging_metadata": "analysis_windows.json"
+}

@@ -1,0 +1,20 @@
+{
+  "key": "comparison",
+  "job_id": "20990677",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--partition=apollo",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=2",
+    "--mem=8G",
+    "--time=00:10:00",
+    "--dependency=afterok:20990676",
+    "--job-name=TiAl-GRACE-mask-compare",
+    "--output=comparison-%j.log",
+    "comparison.sbatch"
+  ],
+  "utc": "2026-11-09T07:21:02.585275+00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "unix": 1793194548.0650542,
+  "source": "testset\\dft\\scf-check-20261028\\snapshot-1793194548.json",
+  "sid": "TiAl-test-036",
+  "latest_complete": {
+    "n": 18,
+    "dE_eV": 0.3273195,
+    "deps_eV": -0.2116839
+  },
+  "iteration_in_progress": 19,
+  "loop_minutes_last5": [
+    35.52771333333333,
+    23.77591,
+    33.87459666666667,
+    33.82728,
+    34.59002666666667
+  ],
+  "runtime_h": 8.689166666666667,
+  "remaining_h": 11.310833333333333,
+  "deadline_local": "2026-10-29T05:54:27",
+  "timing_scenarios": [
+    {
+      "tail": 5,
+      "additional_steps": 26.687286319718325,
+      "additional_h_recent_max_step_plus45min": 16.737471
+    },
+    {
+      "tail": 8,
+      "additional_steps": 30.265806198371404,
+      "additional_h_recent_max_step_plus45min": 19.10598522222222
+    },
+    {
+      "tail": 10,
+      "additional_steps": 22.493730892158645,
+      "additional_h_recent_max_step_plus45min": 14.368956777777779
+    }
+  ],
+  "iteration_count_scenarios": [
+    {
+      "final_step": 30,
+      "total_runtime_h_at_last_loop_plus45min": 16.357172
+    },
+    {
+      "final_step": 36,
+      "total_runtime_h_at_last_loop_plus45min": 19.81617466666667
+    },
+    {
+      "final_step": 40,
+      "total_runtime_h_at_last_loop_plus45min": 22.122176444444445
+    },
+    {
+      "final_step": 44,
+      "total_runtime_h_at_last_loop_plus45min": 24.428178222222225
+    }
+  ],
+  "warnings": [],
+  "risk": "elevated: slow 34–35min steps, only18 completed, about11.3h left; 40-step scenario about22.1h total. Residuals improving, no SCF errors. Late acceleration can permit completion; scenarios are not guarantees.",
+  "DFT_modified": false
+}

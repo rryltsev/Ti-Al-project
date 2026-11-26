@@ -1,0 +1,36 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/alloy-ti-n16ref-01",
+  "utc": "2026-11-25T03:10:01.835252+00:00",
+  "job_name": "ta-alloy-ti-n16ref-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=8",
+    "--mem=6G",
+    "--time=30",
+    "--job-name=ta-alloy-ti-n16ref-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "8a55856bd2ac72afb867730b15f1efad025e346259a3c9d825b0079cb0f60b9f",
+    "refine_n16.py": "1a5ac5a99eb698f6bdfa4ef5f4d491a5b52a8b6d5df0bcae8bee0953abeae3c4",
+    "n16_ti.json": "d6b4b7fb3ba2eada9816355cc556815b160d8cc2d09dd9c2842b738aba406310",
+    "n16_static.json": "80eadbb8a87deeddc0fafbc9df73be8d402adfc61f016eac7a7930fedfd1ea16",
+    "n16_ti.py": "393832255931ad27d3ff1669348c1ceef3be8a45c9a6cdcc739722bba74d1a6e",
+    "n16_static.py": "a53b6fa3ea3c1d6a65ec8214ade24425364fd3f4ddbf0d16dfe9218bd127be7c",
+    "pilot.py": "8b5feb2322ab0ec8bf031e48b6457023b1e22ef6b290d8ff9229b644bf9a6ccd",
+    "decorations.py": "f24bb18c0fcd701d3209674f4c013b05626d484bf504619434994f04faef4eec",
+    "hcp_orbits.py": "50b78ef8da95ee8beca65dd5f7a1c792109d89fc7e92bfe50ee4a848bc01deea",
+    "label_cell.py": "3efe48cd9866055cbd19b3a4fdfae24b86305955c928a1d7858c450b52f1011f",
+    "mtp_cfg.py": "8326d00eb692d2e19dab513b3d918041966906d784109eb9d04361dc8c7d7727",
+    "fitted.mtp": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661"
+  }
+}

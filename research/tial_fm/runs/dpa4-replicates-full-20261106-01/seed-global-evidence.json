@@ -1,0 +1,27 @@
+[
+  {
+    "path": "pt/utils/utils.py",
+    "line": 346,
+    "context": "    if seed is not None:\n        if isinstance(seed, list):\n            seed = mix_entropy(seed)\n        generator = torch.Generator(device=DEVICE)\n        generator.manual_seed(seed)\n        return generator\n    else:\n        return None"
+  },
+  {
+    "path": "pt/utils/dataloader.py",
+    "line": 59,
+    "context": "    if isinstance(seed, (list, tuple)):\n        mixed_seed = mix_entropy(seed)\n    else:\n        mixed_seed = seed\n    torch.manual_seed(mixed_seed)\n    torch.cuda.manual_seed_all(mixed_seed)\n    torch.backends.cudnn.deterministic = True\n    dp_random.seed(seed)\n"
+  },
+  {
+    "path": "pt/utils/dataloader.py",
+    "line": 62,
+    "context": "        mixed_seed = seed\n    torch.manual_seed(mixed_seed)\n    torch.cuda.manual_seed_all(mixed_seed)\n    torch.backends.cudnn.deterministic = True\n    dp_random.seed(seed)\n\n\nclass DpLoaderSet(Dataset):\n    \"\"\"A dataset for storing DataLoaders to multiple Systems."
+  },
+  {
+    "path": "pt/model/descriptor/sezm_nn/wignerd.py",
+    "line": 803,
+    "context": "        target_lmax = min(max(int(lmax), 2), 10)\n        dtype = torch.float64\n        device = torch.device(\"cpu\")\n        generator = torch.Generator()\n        generator.manual_seed(20260404)\n\n        max_monomials = math.comb(2 * target_lmax + 3, 3)\n        n_fit = min(2048, max(128, 2 * max_monomials))\n        q_fit = torch.randn(n_fit, 4, dtype=dtype, device=device, generator=generator)"
+  },
+  {
+    "path": "entrypoints/test.py",
+    "line": 143,
+    "context": "    err_coll = []\n\n    # init random seed\n    if rand_seed is not None:\n        dp_random.seed(rand_seed % (2**32))\n\n    # init model\n    dp = DeepEval(model, head=head)\n    tester = build_tester(dp, atomic=atomic)"
+  }
+]

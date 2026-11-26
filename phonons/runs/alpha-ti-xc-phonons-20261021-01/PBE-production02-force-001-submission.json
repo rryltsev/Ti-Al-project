@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-21T13:49:30.192667+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=32",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=300G",
+    "--time=20:00:00",
+    "--job-name=ti2-PBE-force-001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/production-step.sbatch",
+    "PBE",
+    "force-001"
+  ],
+  "state": "submitted",
+  "source_input_hashes": {
+    "POSCAR": "e3c4a0a7de184e3d29d1c805a71436cd3a70266f06b2a2eaaa48e1489c1257b4",
+    "INCAR": "288bdd9cc0bcd2e811b23f8b6174b0f00be3e00492042a6d0a3914b6f8f2c837",
+    "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba"
+  },
+  "policy_sha256": "a90db9e0963e7d5d810cd42dc99415c1edac4029ded2be01c95f78a7f9352598",
+  "job_id": "20958089"
+}

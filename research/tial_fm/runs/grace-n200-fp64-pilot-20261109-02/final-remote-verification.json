@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-09T06:59:36.726566+00:00",
+  "inputs": {
+    "baseline.sbatch": "e4d12da081866ec85004f3e5c32fcdad5f22eff205d35d1cec5fbb59a009c8ad",
+    "build_pbesol_phonons.py": "84a7df7a420ea24edafc04895328d0ea9d10d2cf77efcd2fc98a8f1b3c9a5290",
+    "data-preflight.json": "0b2d6cce303aa0fea03030fa9baacf7545cf491491e4388d712a4eac33d6298e",
+    "grace_pilot_baseline.py": "6e645b27cf1247d5b3d4efdb4e7ef376435de9f57fcb29010ab499e8205d71fb",
+    "grace_pilot_common.py": "513c4763a322df6c72a3abf2f382c866fbdfd1cf7b9d9b6211e8f1572043ca1c",
+    "grace_pilot_harmonics.py": "33c58fafb71ed79c1f70548b9fe4214d5430588683e5432b232cc11efb87a916",
+    "harmonics.sbatch": "079525069c32486fade394d23f33dd99a01f6c8ef0e3488bd52c0737f7ed1157",
+    "harmonic_worker.py": "e7f66e396aba1025a6082d73556f79a04f9d2b6e124a60189beb62aa373b1ca1",
+    "plan.json": "a49dbb8e6a41ab7afb13f5ad4dd7ff6d61d00d8c41c2c9f41c2d4128f986ce66",
+    "probes.json": "8a9748576ecc40def7ca0fe68c77f2d9a81b8e84a701cea86497207ab9d9c719",
+    "reference_figure.npz": "b2031d942f0f8cbdb8fa8f2c95089ce90bf81b1a3beca201f58013eac2a4fcc6",
+    "cases/PBE-full-N200-seed10/input.yaml": "8801c9ebd685ff9bc5c8d80a09f0d5ef46661fca08340219465592cb890a5969",
+    "cases/PBE-restricted-N200-seed10/input.yaml": "1222ea1e9e4854e0636ed26bfab9f3e04d38129111eeca9d0b2c0b04475dc1ff",
+    "cases/r2SCAN-full-N200-seed10/input.yaml": "2f5f30e1841d0f578be0913a558b596b8b1a937692fe16a4a82389453c348bcd",
+    "cases/r2SCAN-restricted-N200-seed10/input.yaml": "e37997c5434e2d85702ce4e9fb5c98a634c123927eb210e2195bcbb1ed9c0bf9",
+    "data/PBE/train.extxyz": "063202481e768ede1970b03951c24ba20c233c2ed34c921b41192174551473d1",
+    "data/PBE/validation.extxyz": "5e9f38bfbea8434260474076ef6c354ad71b4442aa386766c8a7244c68f096ba",
+    "data/r2SCAN/train.extxyz": "f15f9de62cc139acc314bb6ec69622803a4108b108432869d6890dc17699e3a3",
+    "data/r2SCAN/validation.extxyz": "76a8d107562693d7d2aed72b86274bf4f4ad0ed156e1812e2219ca34d6efb76f",
+    "harmonic_inputs/PBE/phonopy_disp.yaml": "6146c0af082f27471ca212fc44b7f0cb01099e173752abb6f1b584f915c401be",
+    "harmonic_inputs/PBE/reference-status.json": "05e0f64ccc4926ae6c53f4c6a7e048e9fe488597abdd70c0f89bdda4b0aa9754",
+    "harmonic_inputs/PBE/force000/POSCAR": "c45bffe17f4d0428d7b91e7eae65b6211eb6231c603acb9b729c3e23738a56f9",
+    "harmonic_inputs/PBE/force001/audit.json": "be8f522e1a62fe257e76fc2dbea1b0dad7a495d18ef13fcc9b84cbb6b57f2364",
+    "harmonic_inputs/PBE/force001/forces.npy": "7a5ab58e1b8ccd49de5c303d21164e1e2b1e0e364edbec9bbb2fa23bb142418d",
+    "harmonic_inputs/PBE/force001/INCAR": "2b267eae9e3a2ced932fb44ba084a02b83a1dfe852641e9f1decf2dce37ecab0",
+    "harmonic_inputs/PBE/force001/KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "harmonic_inputs/PBE/force001/POSCAR": "e3c4a0a7de184e3d29d1c805a71436cd3a70266f06b2a2eaaa48e1489c1257b4",
+    "harmonic_inputs/PBE/force002/audit.json": "62e0d49e0ae0cde6e1384a74db83c612bf8d9a0e1c12ec07315885bba9d099e3",
+    "harmonic_inputs/PBE/force002/forces.npy": "5375dce3884e23b8895de5d0956affed9422507843dd7d49d56285fe56d7b5f1",
+    "harmonic_inputs/PBE/force002/INCAR": "68e0e03511bf885119fd71d7288614f62e47c3e46636d71e78bfe367d76f7f0e",
+    "harmonic_inputs/PBE/force002/KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "harmonic_inputs/PBE/force002/POSCAR": "79ee0e26d830db1c4daed9a5486d447fc762c09efb28812fa523cc2d91854786",
+    "harmonic_inputs/r2SCAN/phonopy_disp.yaml": "b027917450cd5110591047bf50a283102406c4fd48fb53b31a817d83ad62da46",
+    "harmonic_inputs/r2SCAN/reference-status.json": "05e0f64ccc4926ae6c53f4c6a7e048e9fe488597abdd70c0f89bdda4b0aa9754",
+    "harmonic_inputs/r2SCAN/force000/POSCAR": "2d8480bd129348a401329c5b82c3d4f4b3cc182424e126e307a951ef9e6ddd08",
+    "harmonic_inputs/r2SCAN/force001/audit.json": "bf39f62d5d31760c2c2d0c415581a549b8fdd23723fd4b5674914eec480c26af",
+    "harmonic_inputs/r2SCAN/force001/forces.npy": "448a763370e35c5b7de669aecc1de990d211a4cb6fbad029e9951df077d46b3e",
+    "harmonic_inputs/r2SCAN/force001/INCAR": "4c7777d0d484028f0c1a0b26b0c256ebb66bfc045521d6acfee23ae4d2fd1c25",
+    "harmonic_inputs/r2SCAN/force001/KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "harmonic_inputs/r2SCAN/force001/POSCAR": "c3f0600bcab963f148aed2d47ec9ee112277bc59b8ea02e30797f6c56179a4fc",
+    "harmonic_inputs/r2SCAN/force002/audit.json": "19b794ae3d125e3c032b554f5c56bf73883e1bc343512f2ba925ca7010855e4e",
+    "harmonic_inputs/r2SCAN/force002/forces.npy": "97b2861426faabaf6733dff8f4ec873101a618f4351ee2e351af2a8523ae2fe0",
+    "harmonic_inputs/r2SCAN/force002/INCAR": "4c7777d0d484028f0c1a0b26b0c256ebb66bfc045521d6acfee23ae4d2fd1c25",
+    "harmonic_inputs/r2SCAN/force002/KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "harmonic_inputs/r2SCAN/force002/POSCAR": "7be6a0867f5c9ca31747cf7ad81344315a3e39661ad04a7fb0f2b9f147276d6f",
+    "grace_pilot_train.py": "f35e31cebf0f4321157f8a842ba86e6bc38e807e8557bbd452230db0afba56a1",
+    "grace_pilot_evaluate.py": "ddfa08e1e7a9adc85bd8830fa0c295c5b7d0aa18e05b8c678aa1578f2f9f81c0",
+    "grace_optimizer_gate.py": "117d6a2e83ad91a0ba0fcf85bd4afea59cd9f768e895ed43639644295f8d4596",
+    "backend-manifest.json": "ee08bc86180093d8f4b7889f2ee57213e853f969b01213834a00b19b0f7d8eaa",
+    "smoke.sbatch": "d21b8f4c9c88a866d81f6a877b0ecc2167ac9003d7635bb078467bf5cd7f67fb",
+    "optimizer-gate.sbatch": "4da2422890dba84aa5f3ffa6a05515a9e0ea51772590905516285f059c569798",
+    "train.sbatch": "e59178491c6998e9f9cf343bf740950aeba06f636074b775f7f839c9caaa3920",
+    "trained-harmonics.sbatch": "827c24234d9b85dc7c2b1093289af356de3ff97041cc4aad963bb12a36a617e7"
+  },
+  "cases": {
+    "PBE-full-N200-seed10": {
+      "checkpoint": {
+        "checkpoint.index": "6c5f9359bcd3ae68a73c267a8a0b57f4f6a238c65af481be75056317cfd9754b",
+        "checkpoint.data-00000-of-00001": "32c7edf94f3c0fb560b21aec2b3d6d69b8613b3f670ad24a124f40f0c4ca755d"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "5d7a475df467b0314683a3043964b8a35b57ca96aa346408133cedebf75b7af6",
+        "fingerprint.pb": "bd3f3f819471ae28d52c4892eea6a60cde7f87661e73b37a1f0318cbf8983732",
+        "variables/variables.data-00000-of-00001": "b5c1d11a0ba091a2eb11fba660e58a18fae9a91d9fc96070cd4e58ac43624e36",
+        "variables/variables.index": "1c31714519ce5e24a040d317271ad24450be27378814289d53cfc8704b77abd4"
+      },
+      "training_summary_sha256": "e28b77ec86b83e9153cdab23f0bf75a060b55cdd538168ee22c1ffb18c0e53c3",
+      "model_yaml_sha256": "28a2d3473cf3b2019d036fc431dfb9d82b39aaf34d9cff762acbf2dc03a6ba6f"
+    },
+    "PBE-restricted-N200-seed10": {
+      "checkpoint": {
+        "checkpoint.index": "6c9e1b5d409bc5551a1f262c42ac4cf584a54d36f7036e9af7f76ef83cab7857",
+        "checkpoint.data-00000-of-00001": "58e721390c661423fdabf8e81d6ed032c55ca5339c884c67e818d091ea73cb41"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "4a4c365d449b841adf6a94b27adaddcd6c531395b7b83bdd07f0ede8a1533c74",
+        "fingerprint.pb": "35fb88e34e7cdf12cfdc197f71b030cff9aa731e6266e43da1410c9734595944",
+        "variables/variables.data-00000-of-00001": "bc7339dba77cf1a7f4ee711e49e0886f274bd16b731fb1e29af86948a8ee65ab",
+        "variables/variables.index": "54fce17913dcb0ec87d3c96b5bcc4a496f35394628b233fa01e2df5ad1b60ab4"
+      },
+      "training_summary_sha256": "bd75de258cfc77ad2ff78c02f3414fa94144876920e19d717780fb391683f875",
+      "model_yaml_sha256": "25de640017aa691318959e28c343fc5c21cd96cfdad9474b6137c9dec92d3c73"
+    },
+    "r2SCAN-full-N200-seed10": {
+      "checkpoint": {
+        "checkpoint.index": "c9f81311dff5f0080701931887de5cd61920fa0fda08bf3aa781171a07090642",
+        "checkpoint.data-00000-of-00001": "1f1665143dd3b6b4fa108a052c4b82f9ff1fc7d18d139d2b9e8be023f3ab5d52"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "8740da7886461f34ff2b785930f16cdd3b5b23c6f731343a03649a2309e7b4c1",
+        "fingerprint.pb": "178dd40d60726360980d413ead017be51d0fdef595006937492d68dea7aaa5af",
+        "variables/variables.data-00000-of-00001": "ad469d3cff235900dbe0d86b278c90b88146a414118c695aa11adb765379577a",
+        "variables/variables.index": "9d9fd96127e73f8b89415ad8d71081eb3a81dbcab1e8d9162a3be9e40a22a0ba"
+      },
+      "training_summary_sha256": "8caf5ba6e7e46c55719a1d4aeea7c2740b9368d64dafa52e5a37e607a67fe617",
+      "model_yaml_sha256": "75ae52501b22a85b3ccc13feeeb8d607a179cce1598c108f6f18f0d66194868b"
+    },
+    "r2SCAN-restricted-N200-seed10": {
+      "checkpoint": {
+        "checkpoint.index": "b62b7967cbaea29de7edc1732af1ede9dbda0fc30815112eaf74ba58f7fe13e8",
+        "checkpoint.data-00000-of-00001": "365b7df8d0b8494295b1fe2c0c15c6e379c70375ccbb8c3366c00ebcefaa3a83"
+      },
+      "export": {
+        "metadata.json": "e18f90023a45a30975ac8392b24d705fb961285b2a2d1943a566e5f579be7c33",
+        "metadata.yaml": "47358487f3a1971684a3f7983fc5702364fbb792715a6b8229c3e7c33ef07529",
+        "saved_model.pb": "c1287ee98ee44e28d479430bcd19fd5f31484cb49530af68da0f6c9634fa65e8",
+        "fingerprint.pb": "48eccf88863b78febfc67c7fa6348ae0f5a620d60daba49c71c22caab24070e9",
+        "variables/variables.data-00000-of-00001": "b385f722387fded10663522d0aae7aebdb12eb83a8b03336fe32247ee488b29e",
+        "variables/variables.index": "cd5c9b28039dfb805c74d7bb001e7a84fff4e1cc098e1099c7726c65843c982e"
+      },
+      "training_summary_sha256": "f092232a65e19691aa3f0f01d96195b3362f5dd4da778a9340383e3d9f945617",
+      "model_yaml_sha256": "4831cc4625fe71012bf0cffc9177f9a806da2448a2bc02e63e0402f8c6dbd33e"
+    }
+  },
+  "accounting": "JobID|State|ElapsedRaw|ExitCode|NodeList\n20990597_0|COMPLETED|764|0:0|tesla-a101\n20990597_1|COMPLETED|695|0:0|tesla-a101\n20990597_2|COMPLETED|779|0:0|tesla-a101\n20990597_3|COMPLETED|699|0:0|tesla-a101\n20990598_0|COMPLETED|6|0:0|apollo28\n20990598_1|COMPLETED|6|0:0|apollo28\n20990598_2|COMPLETED|6|0:0|apollo28\n20990598_3|COMPLETED|6|0:0|apollo28\n"
+}

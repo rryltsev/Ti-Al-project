@@ -1,0 +1,3766 @@
+{
+  "temperature_K": 1000,
+  "pressure_GPa": 0,
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "chemical_field": "configurational mu_Al minus mu_Ti, eV",
+  "phase_order": [
+    "alpha",
+    "alpha2"
+  ],
+  "composition": "Al atomic percent; differences in percentage points",
+  "nested_cage_definition": "Weights the subset W<0.35 of W<0.40 samples passing both volume guards. Independent simulations give the primary wall comparison; Kish counts here treat individual frames as independent.",
+  "conditional_95": "2.5th and 97.5th bootstrap percentiles; contiguous blocks resampled within each independent trajectory",
+  "difference_intervals": "Difference of independent empirical distributions of joint bootstrap samples",
+  "C46": {
+    "description": "Author v16 C46, VCSGC Monte Carlo, QHA, fixed c/a",
+    "N": 5120,
+    "phase": {
+      "alpha": {
+        "Al_at_percent": 14.958144796322392,
+        "Al_at_percent_conditional_95": [
+          14.926048963106311,
+          14.990897930716027
+        ],
+        "start_mfa_q": 0.14958144796322392,
+        "start_mfa_r": 0.14958144796322392,
+        "start_mfa_volume_A3_atom": 17.518129263481608
+      },
+      "alpha2": {
+        "Al_at_percent": 21.95827135719608,
+        "Al_at_percent_conditional_95": [
+          21.91055649006404,
+          22.012892452177997
+        ],
+        "start_mfa_q": 0.8719210368041381,
+        "start_mfa_r": 0.0021366058279016866,
+        "start_mfa_volume_A3_atom": 17.249505594326006
+      }
+    },
+    "published_field_eV": 3.3761794885732166,
+    "classical_config_field_start_eV": 3.3020781618963637,
+    "uncertainty": "Reported 95% intervals are conditional author bootstrap results from the 5120-site MC analysis; they omit model and finite-size uncertainty."
+  },
+  "groups": {
+    "N96_4x4x3_cap0.35_axial1": {
+      "N": 96,
+      "shape": "4x4x3",
+      "cap": 0.35,
+      "axial_free": 1,
+      "status": "candidate",
+      "n_runs": 16,
+      "production_frames": 12800,
+      "series": [
+        "s96w35a",
+        "s96w35b"
+      ],
+      "trial_fields_eV": [
+        3.256,
+        3.286
+      ],
+      "second_MBAR_eigenvalue": 0.9298226247894783,
+      "joint_histogram_bin_width_x_Q": [
+        0.025,
+        0.05
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.7822435074506676,
+      "min_median_max_blocks_per_trajectory": [
+        3.0,
+        11.0,
+        16.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 96,
+      "bootstrap_resolved": 96,
+      "equal_height_separator": {
+        "mu_eV": 3.272589386746091,
+        "order_cut": 0.5375000000000001,
+        "basin_mode_q": [
+          0.1475,
+          0.9975
+        ],
+        "barrier_kBT": 1.3685233857236876
+      },
+      "primary": {
+        "mu_eV": 3.2915381646965183,
+        "alpha_at_percent": 14.929570168896793,
+        "alpha2_at_percent": 22.825852216775612,
+        "width_at_percent": 7.896282047878817
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.2758996458190515,
+        "alpha_at_percent": 13.939492932476025,
+        "alpha2_at_percent": 21.903045015994724,
+        "width_at_percent": 7.9635520835186995
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": -0.028574627425598464,
+          "conditional_95_holding_C46_point_fixed": [
+            -0.41983584313342703,
+            1.1983488442128003
+          ],
+          "span_from_marginal_95_intervals": [
+            -0.4525889775270624,
+            1.2304446774288813
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.8675808595795331,
+          "conditional_95_holding_C46_point_fixed": [
+            0.5277496752376223,
+            1.384842065528332
+          ],
+          "span_from_marginal_95_intervals": [
+            0.4731285802557039,
+            1.432556932660372
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.2872039702199314,
+          3.2968985817890037
+        ],
+        "alpha_at_percent": [
+          14.538308953188965,
+          16.156493640535192
+        ],
+        "alpha2_at_percent": [
+          22.4860210324337,
+          23.34311342272441
+        ],
+        "width_at_percent": [
+          7.108522003663115,
+          8.133891582985374
+        ]
+      },
+      "order_modes_at_primary": [
+        0.1625,
+        0.9975
+      ],
+      "barriers_at_primary_kBT": [
+        0.6825656058522765,
+        3.0097217203782125
+      ],
+      "phase_volume_A3_atom": [
+        17.455623128718035,
+        17.235819216802255
+      ],
+      "phase_c_a": [
+        1.5920838457475355,
+        1.6086483272385634
+      ],
+      "phase_wall": [
+        0.3176037663551894,
+        0.3024845794816313
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.3438622335423454,
+          0.14798298171334345,
+          0.07669883141518025,
+          0.028638760085003278
+        ],
+        [
+          0.8973035454025362,
+          0.012929092339287273,
+          0.002542797830092812,
+          0.0002586530991081085
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        5955.166827628552,
+        2379.4601359605385
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        171.10763423677335,
+        61.97487305718427
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.256": [
+          0.4387217586065617,
+          0.41322891502385933
+        ],
+        "3.286": [
+          0.5612782413934385,
+          0.5867710849761403
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.256 to 3.286": {
+          "best_link": 0.9627599087582669,
+          "n_same_center": 8,
+          "min_median_same_center": [
+            0.8754010555313083,
+            0.9368169125584485
+          ]
+        }
+      },
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.294645669882749,
+          "alpha_at_percent": 15.458723937596577,
+          "alpha2_at_percent": 23.08962899885293,
+          "width_at_percent": 7.630905061256351
+        },
+        "window": {
+          "mu_eV": 3.2903226418939124,
+          "alpha_at_percent": 14.838273230007129,
+          "alpha2_at_percent": 22.776641860978692,
+          "width_at_percent": 7.938368630971565
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.0043230279888364365,
+        "alpha_at_percent": 0.6204507075894483,
+        "alpha2_at_percent": 0.31298713787423793,
+        "width_at_percent": 0.30746356971521394
+      },
+      "by_field": {
+        "3.256": {
+          "mu_eV": 3.2903226418939124,
+          "alpha_at_percent": 14.838273230007129,
+          "alpha2_at_percent": 22.776641860978692,
+          "width_at_percent": 7.938368630971565
+        },
+        "3.286": {
+          "mu_eV": 3.294645669882749,
+          "alpha_at_percent": 15.458723937596577,
+          "alpha2_at_percent": 23.08962899885293,
+          "width_at_percent": 7.630905061256351
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.0043230279888364365,
+        "alpha_at_percent": 0.6204507075894483,
+        "alpha2_at_percent": 0.31298713787423793,
+        "width_at_percent": 0.30746356971521394
+      },
+      "by_field_cohort": {},
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.293629799579333,
+          "alpha_at_percent": 15.017270337526389,
+          "alpha2_at_percent": 22.718862914269998,
+          "width_at_percent": 7.701592576743607
+        },
+        "late": {
+          "mu_eV": 3.2907047830694536,
+          "alpha_at_percent": 15.200961387241746,
+          "alpha2_at_percent": 23.083888937675372,
+          "width_at_percent": 7.8829275504336245
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 0.00292501650987953,
+        "alpha_at_percent": 0.18369104971535677,
+        "alpha2_at_percent": 0.36502602340537393,
+        "width_at_percent": 0.18133497369001716
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.2906870090271525,
+          "alpha_at_percent": 14.731806001637974,
+          "alpha2_at_percent": 22.698596425576646,
+          "width_at_percent": 7.966790423938671
+        },
+        "0.05": {
+          "mu_eV": 3.2928896887606447,
+          "alpha_at_percent": 15.279926208182223,
+          "alpha2_at_percent": 23.00498940562858,
+          "width_at_percent": 7.725063197446358
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 0.0022026797334921966,
+        "alpha_at_percent": 0.5481202065442492,
+        "alpha2_at_percent": 0.3063929800519354,
+        "width_at_percent": 0.24172722649231293
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.2928896887606447,
+          "alpha_at_percent": 15.279926208182223,
+          "alpha2_at_percent": 23.00498940562858,
+          "width_at_percent": 7.725063197446358
+        },
+        "0.05": {
+          "mu_eV": 3.292201638283563,
+          "alpha_at_percent": 15.093519975006389,
+          "alpha2_at_percent": 22.91791678672042,
+          "width_at_percent": 7.8243968117140295
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 0.0006880504770818696,
+        "alpha_at_percent": 0.18640623317583405,
+        "alpha2_at_percent": 0.08707261890816298,
+        "width_at_percent": 0.09933361426767107
+      },
+      "by_field_support": {
+        "3.256": {
+          "frames": 6400,
+          "n_bias_states": 8,
+          "second_MBAR_eigenvalue": 0.9286895473471631,
+          "phase_Kish_ess_frames": [
+            1990.9752383891225,
+            879.2159024809854
+          ]
+        },
+        "3.286": {
+          "frames": 6400,
+          "n_bias_states": 8,
+          "second_MBAR_eigenvalue": 0.9308575091285315,
+          "phase_Kish_ess_frames": [
+            3739.9015652807648,
+            1320.261310566085
+          ]
+        }
+      },
+      "nested_cage_check": {
+        "source_cap": 0.35,
+        "target_wall": 0.35,
+        "volume_guard_cap": 0.4,
+        "source_mu_eV": 3.2915381646137596,
+        "source_order_cut": 0.5375000000000001,
+        "fractions_alpha_alpha2": [
+          1.0,
+          1.0
+        ],
+        "phase_Kish_ess_retained_frames": [
+          5955.166829785454,
+          2379.460137772438
+        ],
+        "delta_semigrand_alpha2_minus_alpha_eV_cell": -0.0,
+        "linearized_delta_mu_eV": -0.0,
+        "kept_frames": 12800,
+        "total_frames": 12800,
+        "fewer_than_10_weighted_frames_in_a_phase": false,
+        "conditioned": {
+          "mu_eV": 3.2915381646137596,
+          "alpha_at_percent": 14.929570160406671,
+          "alpha2_at_percent": 22.825852219938334,
+          "width_at_percent": 7.896282059531662
+        }
+      }
+    },
+    "N96_4x4x3_cap0.4_axial1": {
+      "N": 96,
+      "shape": "4x4x3",
+      "cap": 0.4,
+      "axial_free": 1,
+      "status": "candidate",
+      "n_runs": 16,
+      "production_frames": 12800,
+      "series": [
+        "s96w40a",
+        "s96w40b"
+      ],
+      "trial_fields_eV": [
+        3.256,
+        3.286
+      ],
+      "second_MBAR_eigenvalue": 0.9288541552544131,
+      "joint_histogram_bin_width_x_Q": [
+        0.025,
+        0.05
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.771985273791316,
+      "min_median_max_blocks_per_trajectory": [
+        3.0,
+        8.5,
+        19.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 96,
+      "bootstrap_resolved": 96,
+      "equal_height_separator": {
+        "mu_eV": 3.275765973294256,
+        "order_cut": 0.5974999999999999,
+        "basin_mode_q": [
+          0.1475,
+          0.9975
+        ],
+        "barrier_kBT": 1.1831603438577571
+      },
+      "primary": {
+        "mu_eV": 3.296157169854153,
+        "alpha_at_percent": 15.484215907440227,
+        "alpha2_at_percent": 22.86435201966679,
+        "width_at_percent": 7.3801361122265625
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.279668593445643,
+        "alpha_at_percent": 14.395396896714349,
+        "alpha2_at_percent": 22.08704888965128,
+        "width_at_percent": 7.691651992936932
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": 0.5260711111178349,
+          "conditional_95_holding_C46_point_fixed": [
+            0.10285919072053495,
+            1.053993829238502
+          ],
+          "span_from_marginal_95_intervals": [
+            0.07010605632689959,
+            1.086089662454583
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.9060806624707105,
+          "conditional_95_holding_C46_point_fixed": [
+            0.7070066192829998,
+            1.1374871737631551
+          ],
+          "span_from_marginal_95_intervals": [
+            0.6523855243010814,
+            1.185202040895195
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.2902176897631312,
+          3.301178758417138
+        ],
+        "alpha_at_percent": [
+          15.061003987042927,
+          16.012138625560894
+        ],
+        "alpha2_at_percent": [
+          22.66527797647908,
+          23.095758530959234
+        ],
+        "width_at_percent": [
+          6.9874441208542795,
+          7.722674629117101
+        ]
+      },
+      "order_modes_at_primary": [
+        0.1575,
+        0.9975
+      ],
+      "barriers_at_primary_kBT": [
+        0.4397522108494485,
+        2.8845760996966447
+      ],
+      "phase_volume_A3_atom": [
+        17.448912754519924,
+        17.24930583551208
+      ],
+      "phase_c_a": [
+        1.594644057058326,
+        1.6090828826079182
+      ],
+      "phase_wall": [
+        0.3352300498564651,
+        0.3153447971479405
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.3858618177867428,
+          0.13802553852363916,
+          0.07028947154713265,
+          0.025191808440095175
+        ],
+        [
+          0.9000170685523864,
+          0.012416953304253601,
+          0.0020177918846787123,
+          0.00012226704535292442
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        6135.5572785712775,
+        2135.177184318178
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        133.12379448806752,
+        50.68247545245361
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.256": [
+          0.4377174902790267,
+          0.4083457101315096
+        ],
+        "3.286": [
+          0.5622825097209735,
+          0.5916542898684902
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.256 to 3.286": {
+          "best_link": 0.9582762731918367,
+          "n_same_center": 8,
+          "min_median_same_center": [
+            0.9019030806208388,
+            0.9430482076822643
+          ]
+        }
+      },
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.2982800021382443,
+          "alpha_at_percent": 15.533872259706975,
+          "alpha2_at_percent": 22.97925181456998,
+          "width_at_percent": 7.445379554863008
+        },
+        "window": {
+          "mu_eV": 3.2943885647418987,
+          "alpha_at_percent": 15.512912154297076,
+          "alpha2_at_percent": 22.772716917832884,
+          "width_at_percent": 7.259804763535807
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.003891437396345676,
+        "alpha_at_percent": 0.020960105409898233,
+        "alpha2_at_percent": 0.20653489673709657,
+        "width_at_percent": 0.185574791327201
+      },
+      "by_field": {
+        "3.256": {
+          "mu_eV": 3.2943885647418987,
+          "alpha_at_percent": 15.512912154297076,
+          "alpha2_at_percent": 22.772716917832884,
+          "width_at_percent": 7.259804763535807
+        },
+        "3.286": {
+          "mu_eV": 3.2982800021382443,
+          "alpha_at_percent": 15.533872259706975,
+          "alpha2_at_percent": 22.97925181456998,
+          "width_at_percent": 7.445379554863008
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.003891437396345676,
+        "alpha_at_percent": 0.020960105409898233,
+        "alpha2_at_percent": 0.20653489673709657,
+        "width_at_percent": 0.185574791327201
+      },
+      "by_field_cohort": {},
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.2960604851639204,
+          "alpha_at_percent": 15.796557774637973,
+          "alpha2_at_percent": 22.95284506560348,
+          "width_at_percent": 7.1562872909655075
+        },
+        "late": {
+          "mu_eV": 3.296927302431929,
+          "alpha_at_percent": 15.326731905185524,
+          "alpha2_at_percent": 22.832382169133158,
+          "width_at_percent": 7.5056502639476355
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 0.000866817268008635,
+        "alpha_at_percent": 0.46982586945244975,
+        "alpha2_at_percent": 0.12046289647032182,
+        "width_at_percent": 0.34936297298212793
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.2947071082112327,
+          "alpha_at_percent": 15.164036117834934,
+          "alpha2_at_percent": 22.677960019039652,
+          "width_at_percent": 7.513923901204719
+        },
+        "0.05": {
+          "mu_eV": 3.29736091161956,
+          "alpha_at_percent": 15.791580705328817,
+          "alpha2_at_percent": 22.99597927463641,
+          "width_at_percent": 7.204398569307596
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 0.0026538034083274376,
+        "alpha_at_percent": 0.6275445874938832,
+        "alpha2_at_percent": 0.31801925559675936,
+        "width_at_percent": 0.30952533189712295
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.2957304407644115,
+          "alpha_at_percent": 15.391407896999295,
+          "alpha2_at_percent": 22.810897426512515,
+          "width_at_percent": 7.419489529513218
+        },
+        "0.05": {
+          "mu_eV": 3.296157169854153,
+          "alpha_at_percent": 15.484215907440227,
+          "alpha2_at_percent": 22.86435201966679,
+          "width_at_percent": 7.3801361122265625
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 0.0004267290897415066,
+        "alpha_at_percent": 0.09280801044093145,
+        "alpha2_at_percent": 0.05345459315427448,
+        "width_at_percent": 0.0393534172866552
+      },
+      "by_field_support": {
+        "3.256": {
+          "frames": 6400,
+          "n_bias_states": 8,
+          "second_MBAR_eigenvalue": 0.9272473167660951,
+          "phase_Kish_ess_frames": [
+            1851.3988911623223,
+            755.2894825885504
+          ]
+        },
+        "3.286": {
+          "frames": 6400,
+          "n_bias_states": 8,
+          "second_MBAR_eigenvalue": 0.9303521186978202,
+          "phase_Kish_ess_frames": [
+            3700.9004462967105,
+            1293.7579160979342
+          ]
+        }
+      },
+      "nested_cage_check": {
+        "source_cap": 0.4,
+        "target_wall": 0.35,
+        "volume_guard_cap": 0.4,
+        "source_mu_eV": 3.2961571728589485,
+        "source_order_cut": 0.5974999999999999,
+        "fractions_alpha_alpha2": [
+          0.6655278759996269,
+          0.8333420187814793
+        ],
+        "phase_Kish_ess_retained_frames": [
+          3974.2486737948757,
+          1744.1340664365084
+        ],
+        "delta_semigrand_alpha2_minus_alpha_eV_cell": -0.019377247556184203,
+        "linearized_delta_mu_eV": -0.0027349946981219627,
+        "kept_frames": 8989,
+        "total_frames": 12800,
+        "fewer_than_10_weighted_frames_in_a_phase": false,
+        "conditioned": {
+          "mu_eV": 3.292568785333393,
+          "alpha_at_percent": 15.282049794040631,
+          "alpha2_at_percent": 22.713196307252034,
+          "width_at_percent": 7.431146513211403
+        }
+      }
+    },
+    "N288_6x6x4_cap0.35_axial1": {
+      "N": 288,
+      "shape": "6x6x4",
+      "cap": 0.35,
+      "axial_free": 1,
+      "status": "candidate",
+      "n_runs": 16,
+      "production_frames": 12800,
+      "series": [
+        "s288w35a",
+        "s288w35b"
+      ],
+      "trial_fields_eV": [
+        3.266,
+        3.28
+      ],
+      "second_MBAR_eigenvalue": 0.966038838109891,
+      "joint_histogram_bin_width_x_Q": [
+        0.014433756729740644,
+        0.028867513459481287
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.5244786786007127,
+      "min_median_max_blocks_per_trajectory": [
+        4.0,
+        8.0,
+        16.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 128,
+      "bootstrap_resolved": 128,
+      "equal_height_separator": {
+        "mu_eV": 3.28305629987295,
+        "order_cut": 0.4975,
+        "basin_mode_q": [
+          0.10250000000000001,
+          0.9075
+        ],
+        "barrier_kBT": 2.073708145210772
+      },
+      "primary": {
+        "mu_eV": 3.2888229245031613,
+        "alpha_at_percent": 15.04018911694584,
+        "alpha2_at_percent": 22.46990646507256,
+        "width_at_percent": 7.429717348126721
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.2831999527339306,
+        "alpha_at_percent": 14.61992107744147,
+        "alpha2_at_percent": 21.913743031583675,
+        "width_at_percent": 7.293821954142205
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": 0.08204432062344758,
+          "conditional_95_holding_C46_point_fixed": [
+            -0.14253447386690254,
+            0.3197705726397544
+          ],
+          "span_from_marginal_95_intervals": [
+            -0.1752876082605379,
+            0.3518664058558354
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.5116351078764829,
+          "conditional_95_holding_C46_point_fixed": [
+            0.25035658689682805,
+            0.7171449066600601
+          ],
+          "span_from_marginal_95_intervals": [
+            0.1957354919149097,
+            0.7648597737921001
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.2865897318324024,
+          3.2913862401679626
+        ],
+        "alpha_at_percent": [
+          14.81561032245549,
+          15.277915368962146
+        ],
+        "alpha2_at_percent": [
+          22.208627944092907,
+          22.67541626385614
+        ],
+        "width_at_percent": [
+          7.190529678191272,
+          7.638216158932827
+        ]
+      },
+      "order_modes_at_primary": [
+        0.1075,
+        0.9175
+      ],
+      "barriers_at_primary_kBT": [
+        1.544255293107595,
+        3.2341679555089504
+      ],
+      "phase_volume_A3_atom": [
+        17.45178195027754,
+        17.23645651405228
+      ],
+      "phase_c_a": [
+        1.5929479117703917,
+        1.6058907639724076
+      ],
+      "phase_wall": [
+        0.33755682987233887,
+        0.32923446524130523
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.29180818247074347,
+          0.15058391382109693,
+          0.09899987752169084,
+          0.06021559086430253
+        ],
+        [
+          0.8772056648145254,
+          0.014731743674023147,
+          0.005406372399972344,
+          0.0014524777143823978
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        4150.795528088486,
+        2042.0095077099782
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        78.91495455787411,
+        57.30293579074632
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.266": [
+          0.4133964534809734,
+          0.43727725533301487
+        ],
+        "3.28": [
+          0.5866035465190264,
+          0.5627227446669855
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.266 to 3.28": {
+          "best_link": 0.9797902920079449,
+          "n_same_center": 8,
+          "min_median_same_center": [
+            0.8934667315297063,
+            0.9352797687164291
+          ]
+        }
+      },
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.289315222287711,
+          "alpha_at_percent": 15.352270562046655,
+          "alpha2_at_percent": 22.597866239788505,
+          "width_at_percent": 7.245595677741851
+        },
+        "window": {
+          "mu_eV": 3.2885888349315984,
+          "alpha_at_percent": 14.960764226870445,
+          "alpha2_at_percent": 22.430367224533747,
+          "width_at_percent": 7.469602997663302
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.0007263873561127454,
+        "alpha_at_percent": 0.39150633517621003,
+        "alpha2_at_percent": 0.16749901525475863,
+        "width_at_percent": 0.2240073199214514
+      },
+      "by_field": {
+        "3.266": {
+          "mu_eV": 3.2885888349315984,
+          "alpha_at_percent": 14.960764226870445,
+          "alpha2_at_percent": 22.430367224533747,
+          "width_at_percent": 7.469602997663302
+        },
+        "3.28": {
+          "mu_eV": 3.289315222287711,
+          "alpha_at_percent": 15.352270562046655,
+          "alpha2_at_percent": 22.597866239788505,
+          "width_at_percent": 7.245595677741851
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.0007263873561127454,
+        "alpha_at_percent": 0.39150633517621003,
+        "alpha2_at_percent": 0.16749901525475863,
+        "width_at_percent": 0.2240073199214514
+      },
+      "by_field_cohort": {},
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.28989167228972,
+          "alpha_at_percent": 15.07809013108827,
+          "alpha2_at_percent": 22.359653578157513,
+          "width_at_percent": 7.281563447069242
+        },
+        "late": {
+          "mu_eV": 3.287730984818167,
+          "alpha_at_percent": 14.974434754010723,
+          "alpha2_at_percent": 22.52697636062778,
+          "width_at_percent": 7.5525416066170585
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 0.002160687471552958,
+        "alpha_at_percent": 0.10365537707754768,
+        "alpha2_at_percent": 0.16732278247026855,
+        "width_at_percent": 0.27097815954781623
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.288604363972716,
+          "alpha_at_percent": 14.929538996658767,
+          "alpha2_at_percent": 22.393003641540332,
+          "width_at_percent": 7.463464644881565
+        },
+        "0.05": {
+          "mu_eV": 3.2890499233949555,
+          "alpha_at_percent": 15.171292831405193,
+          "alpha2_at_percent": 22.542781190648512,
+          "width_at_percent": 7.37148835924332
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 0.00044555942223967193,
+        "alpha_at_percent": 0.24175383474642587,
+        "alpha2_at_percent": 0.14977754910817964,
+        "width_at_percent": 0.09197628563824534
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.2887604866047604,
+          "alpha_at_percent": 15.006908459304425,
+          "alpha2_at_percent": 22.448639000653607,
+          "width_at_percent": 7.441730541349184
+        },
+        "0.05": {
+          "mu_eV": 3.288842084070185,
+          "alpha_at_percent": 15.049704696506321,
+          "alpha2_at_percent": 22.476561134351268,
+          "width_at_percent": 7.426856437844945
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 8.159746542446555e-05,
+        "alpha_at_percent": 0.0427962372018964,
+        "alpha2_at_percent": 0.027922133697661167,
+        "width_at_percent": 0.01487410350423879
+      },
+      "by_field_support": {
+        "3.266": {
+          "frames": 6400,
+          "n_bias_states": 8,
+          "second_MBAR_eigenvalue": 0.9656929857898017,
+          "phase_Kish_ess_frames": [
+            1229.863840933302,
+            748.6725131553011
+          ]
+        },
+        "3.28": {
+          "frames": 6400,
+          "n_bias_states": 8,
+          "second_MBAR_eigenvalue": 0.9665567082348256,
+          "phase_Kish_ess_frames": [
+            3029.618344787797,
+            1180.4785282984642
+          ]
+        }
+      },
+      "nested_cage_check": {
+        "source_cap": 0.35,
+        "target_wall": 0.35,
+        "volume_guard_cap": 0.4,
+        "source_mu_eV": 3.2888229244090614,
+        "source_order_cut": 0.4975,
+        "fractions_alpha_alpha2": [
+          1.0,
+          1.0
+        ],
+        "phase_Kish_ess_retained_frames": [
+          4150.795517575971,
+          2042.0094828203137
+        ],
+        "delta_semigrand_alpha2_minus_alpha_eV_cell": -0.0,
+        "linearized_delta_mu_eV": -0.0,
+        "kept_frames": 12800,
+        "total_frames": 12800,
+        "fewer_than_10_weighted_frames_in_a_phase": false,
+        "conditioned": {
+          "mu_eV": 3.2888229244090614,
+          "alpha_at_percent": 15.040189108155976,
+          "alpha2_at_percent": 22.4699064815039,
+          "width_at_percent": 7.429717373347924
+        }
+      }
+    },
+    "N288_6x6x4_cap0.4_axial1": {
+      "N": 288,
+      "shape": "6x6x4",
+      "cap": 0.4,
+      "axial_free": 1,
+      "status": "candidate",
+      "n_runs": 16,
+      "production_frames": 12800,
+      "series": [
+        "s288w40a",
+        "s288w40b"
+      ],
+      "trial_fields_eV": [
+        3.266,
+        3.28
+      ],
+      "second_MBAR_eigenvalue": 0.9656949733968165,
+      "joint_histogram_bin_width_x_Q": [
+        0.014433756729740644,
+        0.028867513459481287
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.5818807553733284,
+      "min_median_max_blocks_per_trajectory": [
+        3.0,
+        6.0,
+        14.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 128,
+      "bootstrap_resolved": 128,
+      "equal_height_separator": {
+        "mu_eV": 3.2879525741962565,
+        "order_cut": 0.5225,
+        "basin_mode_q": [
+          0.1175,
+          0.8925000000000001
+        ],
+        "barrier_kBT": 2.1681643593408424
+      },
+      "primary": {
+        "mu_eV": 3.2939280663244235,
+        "alpha_at_percent": 15.193726374635737,
+        "alpha2_at_percent": 22.416222561478808,
+        "width_at_percent": 7.2224961868430695
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.2881693963070497,
+        "alpha_at_percent": 14.769632222637942,
+        "alpha2_at_percent": 21.93070139945651,
+        "width_at_percent": 7.161069176818568
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": 0.23558157831334547,
+          "conditional_95_holding_C46_point_fixed": [
+            0.10872979140284045,
+            0.46513854046568603
+          ],
+          "span_from_marginal_95_intervals": [
+            0.07597665700920508,
+            0.49723437368176704
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.45795120428272895,
+          "conditional_95_holding_C46_point_fixed": [
+            0.2636085873840166,
+            0.6633876668807268
+          ],
+          "span_from_marginal_95_intervals": [
+            0.20898749240209824,
+            0.7111025340127668
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.292082866616197,
+          3.296611552022432
+        ],
+        "alpha_at_percent": [
+          15.066874587725232,
+          15.423283336788078
+        ],
+        "alpha2_at_percent": [
+          22.221879944580095,
+          22.621659024076806
+        ],
+        "width_at_percent": [
+          6.954743281452794,
+          7.449611075870805
+        ]
+      },
+      "order_modes_at_primary": [
+        0.1225,
+        0.9075
+      ],
+      "barriers_at_primary_kBT": [
+        1.610613395056549,
+        3.2831218022990782
+      ],
+      "phase_volume_A3_atom": [
+        17.45305162101856,
+        17.24715941998843
+      ],
+      "phase_c_a": [
+        1.5921790361203383,
+        1.6057246922026855
+      ],
+      "phase_wall": [
+        0.37071410141332667,
+        0.35102409156708037
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.2986559404311486,
+          0.1495844175472259,
+          0.09941630646080389,
+          0.06009239054625083
+        ],
+        [
+          0.8744287512855414,
+          0.015084915398272017,
+          0.005638615358652125,
+          0.0014966204166881002
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        3240.340323232716,
+        1792.005344236399
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        42.47798420449185,
+        23.018648239536848
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.266": [
+          0.3841375862947216,
+          0.41005770882191633
+        ],
+        "3.28": [
+          0.615862413705277,
+          0.5899422911780846
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.266 to 3.28": {
+          "best_link": 0.9683928622397023,
+          "n_same_center": 8,
+          "min_median_same_center": [
+            0.8585023030649684,
+            0.9275730491907537
+          ]
+        }
+      },
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.2918861938671897,
+          "alpha_at_percent": 15.007106311000273,
+          "alpha2_at_percent": 22.3620853865811,
+          "width_at_percent": 7.354979075580825
+        },
+        "window": {
+          "mu_eV": 3.296351047379286,
+          "alpha_at_percent": 15.613972076341899,
+          "alpha2_at_percent": 22.58692104424561,
+          "width_at_percent": 6.972948967903713
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.004464853512096134,
+        "alpha_at_percent": 0.6068657653416256,
+        "alpha2_at_percent": 0.22483565766451008,
+        "width_at_percent": 0.382030107677112
+      },
+      "by_field": {
+        "3.266": {
+          "mu_eV": 3.296351047379286,
+          "alpha_at_percent": 15.613972076341899,
+          "alpha2_at_percent": 22.58692104424561,
+          "width_at_percent": 6.972948967903713
+        },
+        "3.28": {
+          "mu_eV": 3.2918861938671897,
+          "alpha_at_percent": 15.007106311000273,
+          "alpha2_at_percent": 22.3620853865811,
+          "width_at_percent": 7.354979075580825
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.004464853512096134,
+        "alpha_at_percent": 0.6068657653416256,
+        "alpha2_at_percent": 0.22483565766451008,
+        "width_at_percent": 0.382030107677112
+      },
+      "by_field_cohort": {},
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.2938727046437264,
+          "alpha_at_percent": 15.139676838941682,
+          "alpha2_at_percent": 22.416276858198035,
+          "width_at_percent": 7.276600019256351
+        },
+        "late": {
+          "mu_eV": 3.293951299643255,
+          "alpha_at_percent": 15.251462351512664,
+          "alpha2_at_percent": 22.39643911042807,
+          "width_at_percent": 7.144976758915403
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 7.859499952855842e-05,
+        "alpha_at_percent": 0.11178551257098235,
+        "alpha2_at_percent": 0.01983774776996583,
+        "width_at_percent": 0.13162326034094818
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.29374060821602,
+          "alpha_at_percent": 15.090409467684568,
+          "alpha2_at_percent": 22.358501965056497,
+          "width_at_percent": 7.2680924973719305
+        },
+        "0.05": {
+          "mu_eV": 3.294156664688932,
+          "alpha_at_percent": 15.334228788178875,
+          "alpha2_at_percent": 22.48041349310174,
+          "width_at_percent": 7.146184704922865
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 0.00041605647291209635,
+        "alpha_at_percent": 0.24381932049430688,
+        "alpha2_at_percent": 0.12191152804524208,
+        "width_at_percent": 0.12190779244906569
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.2939490467602544,
+          "alpha_at_percent": 15.205682409855717,
+          "alpha2_at_percent": 22.42246631019256,
+          "width_at_percent": 7.216783900336843
+        },
+        "0.05": {
+          "mu_eV": 3.2939280663244235,
+          "alpha_at_percent": 15.193726374635737,
+          "alpha2_at_percent": 22.416222561478808,
+          "width_at_percent": 7.2224961868430695
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 2.0980435830875166e-05,
+        "alpha_at_percent": 0.011956035219979455,
+        "alpha2_at_percent": 0.006243748713753661,
+        "width_at_percent": 0.0057122865062266825
+      },
+      "by_field_support": {
+        "3.266": {
+          "frames": 6400,
+          "n_bias_states": 8,
+          "second_MBAR_eigenvalue": 0.9647661629882665,
+          "phase_Kish_ess_frames": [
+            900.8946339790136,
+            493.67548420520103
+          ]
+        },
+        "3.28": {
+          "frames": 6400,
+          "n_bias_states": 8,
+          "second_MBAR_eigenvalue": 0.9666695843007415,
+          "phase_Kish_ess_frames": [
+            2286.6114574197272,
+            1248.6744362489749
+          ]
+        }
+      },
+      "nested_cage_check": {
+        "source_cap": 0.4,
+        "target_wall": 0.35,
+        "volume_guard_cap": 0.4,
+        "source_mu_eV": 3.2939280663457424,
+        "source_order_cut": 0.5225,
+        "fractions_alpha_alpha2": [
+          0.1578612144504889,
+          0.46805280710308156
+        ],
+        "phase_Kish_ess_retained_frames": [
+          515.5489604545562,
+          745.2727691545682
+        ],
+        "delta_semigrand_alpha2_minus_alpha_eV_cell": -0.09365876776573896,
+        "linearized_delta_mu_eV": -0.00450265457021301,
+        "kept_frames": 3216,
+        "total_frames": 12800,
+        "fewer_than_10_weighted_frames_in_a_phase": false,
+        "conditioned": {
+          "mu_eV": 3.289543286403366,
+          "alpha_at_percent": 15.047271792706018,
+          "alpha2_at_percent": 22.33552807119311,
+          "width_at_percent": 7.2882562784870935
+        }
+      }
+    },
+    "N768_8x8x6_cap0.35_axial1": {
+      "N": 768,
+      "shape": "8x8x6",
+      "cap": 0.35,
+      "axial_free": 1,
+      "status": "candidate",
+      "n_runs": 24,
+      "production_frames": 33600,
+      "series": [
+        "s768w35a",
+        "s768w35b"
+      ],
+      "trial_fields_eV": [
+        3.286,
+        3.289
+      ],
+      "second_MBAR_eigenvalue": 0.9840451469242182,
+      "joint_histogram_bin_width_x_Q": [
+        0.008838834764831846,
+        0.01767766952966369
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.5786762419761352,
+      "min_median_max_blocks_per_trajectory": [
+        6.0,
+        12.0,
+        25.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 192,
+      "bootstrap_resolved": 192,
+      "equal_height_separator": {
+        "mu_eV": 3.287519207608848,
+        "order_cut": 0.5075000000000001,
+        "basin_mode_q": [
+          0.0775,
+          0.8875
+        ],
+        "barrier_kBT": 3.9370021663406543
+      },
+      "primary": {
+        "mu_eV": 3.2896502555472464,
+        "alpha_at_percent": 15.02468065145841,
+        "alpha2_at_percent": 22.52055019349136,
+        "width_at_percent": 7.495869542032948
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.287571050150526,
+        "alpha_at_percent": 14.858614904159314,
+        "alpha2_at_percent": 22.316335856577332,
+        "width_at_percent": 7.4577209524180175
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": 0.0665358551360189,
+          "conditional_95_holding_C46_point_fixed": [
+            -0.007254406808653968,
+            0.15294420468068282
+          ],
+          "span_from_marginal_95_intervals": [
+            -0.04000754120228933,
+            0.18504003789676382
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.5622788362952811,
+          "conditional_95_holding_C46_point_fixed": [
+            0.4464710252979245,
+            0.672841483521541
+          ],
+          "span_from_marginal_95_intervals": [
+            0.3918499303160061,
+            0.720556350653581
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.288838657401673,
+          3.290700696660284
+        ],
+        "alpha_at_percent": [
+          14.950890389513738,
+          15.111089001003075
+        ],
+        "alpha2_at_percent": [
+          22.404742382494003,
+          22.63111284071762
+        ],
+        "width_at_percent": [
+          7.36827440319419,
+          7.622940984647656
+        ]
+      },
+      "order_modes_at_primary": [
+        0.0825,
+        0.8925000000000001
+      ],
+      "barriers_at_primary_kBT": [
+        3.3703872912151644,
+        4.88735167700783
+      ],
+      "phase_volume_A3_atom": [
+        17.4476323812084,
+        17.23289414292651
+      ],
+      "phase_c_a": [
+        1.5919363271608211,
+        1.6068048628978393
+      ],
+      "phase_wall": [
+        0.3452058125157354,
+        0.34090618649367666
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.24102592797349498,
+          0.15395314134207846,
+          0.11839111072864382,
+          0.08761704601411897
+        ],
+        [
+          0.8807024218365211,
+          0.01169627296327493,
+          0.0059876292974012976,
+          0.0024356836424572655
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        9689.066835702082,
+        5867.175009811857
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        171.48000598517942,
+        88.79017080443607
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.286": [
+          0.49516862945364776,
+          0.4790711311878976
+        ],
+        "3.289": [
+          0.5048313705463516,
+          0.5209288688121024
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.286 to 3.289": {
+          "best_link": 0.9878509236776177,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.9650374670259912,
+            0.9748484968516429
+          ]
+        }
+      },
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.2894306418106054,
+          "alpha_at_percent": 15.064777990390823,
+          "alpha2_at_percent": 22.519130584011723,
+          "width_at_percent": 7.4543525936209
+        },
+        "window": {
+          "mu_eV": 3.289874158233695,
+          "alpha_at_percent": 14.987127690265414,
+          "alpha2_at_percent": 22.511696093336283,
+          "width_at_percent": 7.5245684030708695
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.000443516423089374,
+        "alpha_at_percent": 0.07765030012540919,
+        "alpha2_at_percent": 0.0074344906754397755,
+        "width_at_percent": 0.07021580944996941
+      },
+      "by_field": {
+        "3.286": {
+          "mu_eV": 3.289874158233695,
+          "alpha_at_percent": 14.987127690265414,
+          "alpha2_at_percent": 22.511696093336283,
+          "width_at_percent": 7.5245684030708695
+        },
+        "3.289": {
+          "mu_eV": 3.2894306418106054,
+          "alpha_at_percent": 15.064777990390823,
+          "alpha2_at_percent": 22.519130584011723,
+          "width_at_percent": 7.4543525936209
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.000443516423089374,
+        "alpha_at_percent": 0.07765030012540919,
+        "alpha2_at_percent": 0.0074344906754397755,
+        "width_at_percent": 0.07021580944996941
+      },
+      "by_field_cohort": {},
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.290193401170364,
+          "alpha_at_percent": 15.060651373972716,
+          "alpha2_at_percent": 22.4205443375475,
+          "width_at_percent": 7.359892963574785
+        },
+        "late": {
+          "mu_eV": 3.289104814934902,
+          "alpha_at_percent": 14.983047434257097,
+          "alpha2_at_percent": 22.612653866274744,
+          "width_at_percent": 7.629606432017646
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 0.0010885862354621523,
+        "alpha_at_percent": 0.07760393971561896,
+        "alpha2_at_percent": 0.19210952872724363,
+        "width_at_percent": 0.2697134684428617
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.28963271502289,
+          "alpha_at_percent": 14.99842704247521,
+          "alpha2_at_percent": 22.507575098973355,
+          "width_at_percent": 7.509148056498146
+        },
+        "0.05": {
+          "mu_eV": 3.2896690969745666,
+          "alpha_at_percent": 15.057233995145053,
+          "alpha2_at_percent": 22.533260030992448,
+          "width_at_percent": 7.476026035847397
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 3.6381951676656143e-05,
+        "alpha_at_percent": 0.05880695266984226,
+        "alpha2_at_percent": 0.025684932019093054,
+        "width_at_percent": 0.03312202065074921
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.2896502555472464,
+          "alpha_at_percent": 15.02468065145841,
+          "alpha2_at_percent": 22.52055019349136,
+          "width_at_percent": 7.495869542032948
+        },
+        "0.05": {
+          "mu_eV": 3.2896486098637365,
+          "alpha_at_percent": 15.022052852759424,
+          "alpha2_at_percent": 22.51937932702621,
+          "width_at_percent": 7.497326474266789
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 1.645683509909901e-06,
+        "alpha_at_percent": 0.002627798698986439,
+        "alpha2_at_percent": 0.0011708664651486345,
+        "width_at_percent": 0.0014569322338404689
+      },
+      "by_field_support": {
+        "3.286": {
+          "frames": 16800,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.9840584582330992,
+          "phase_Kish_ess_frames": [
+            4491.729332980003,
+            2753.592057443722
+          ]
+        },
+        "3.289": {
+          "frames": 16800,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.9840479588156252,
+          "phase_Kish_ess_frames": [
+            5099.6909359384745,
+            3130.1281418955305
+          ]
+        }
+      },
+      "nested_cage_check": {
+        "source_cap": 0.35,
+        "target_wall": 0.35,
+        "volume_guard_cap": 0.4,
+        "source_mu_eV": 3.2896502555472464,
+        "source_order_cut": 0.5075000000000001,
+        "fractions_alpha_alpha2": [
+          1.0,
+          1.0
+        ],
+        "phase_Kish_ess_retained_frames": [
+          9689.066835702102,
+          5867.175009811808
+        ],
+        "delta_semigrand_alpha2_minus_alpha_eV_cell": -0.0,
+        "linearized_delta_mu_eV": -0.0,
+        "kept_frames": 33600,
+        "total_frames": 33600,
+        "fewer_than_10_weighted_frames_in_a_phase": false,
+        "conditioned": {
+          "mu_eV": 3.2896502555472464,
+          "alpha_at_percent": 15.02468065145841,
+          "alpha2_at_percent": 22.52055019349136,
+          "width_at_percent": 7.495869542032948
+        }
+      }
+    },
+    "N768_8x8x6_cap0.4_axial1": {
+      "N": 768,
+      "shape": "8x8x6",
+      "cap": 0.4,
+      "axial_free": 1,
+      "status": "candidate",
+      "n_runs": 24,
+      "production_frames": 33600,
+      "series": [
+        "s768w40a",
+        "s768w40b"
+      ],
+      "trial_fields_eV": [
+        3.286,
+        3.289
+      ],
+      "second_MBAR_eigenvalue": 0.9840500005121013,
+      "joint_histogram_bin_width_x_Q": [
+        0.008838834764831846,
+        0.01767766952966369
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.5574614849007096,
+      "min_median_max_blocks_per_trajectory": [
+        7.0,
+        14.5,
+        35.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 192,
+      "bootstrap_resolved": 192,
+      "equal_height_separator": {
+        "mu_eV": 3.291339233826305,
+        "order_cut": 0.4875,
+        "basin_mode_q": [
+          0.07250000000000001,
+          0.8775
+        ],
+        "barrier_kBT": 4.230915217464347
+      },
+      "primary": {
+        "mu_eV": 3.2934027825960617,
+        "alpha_at_percent": 14.933170032479934,
+        "alpha2_at_percent": 22.39637950798874,
+        "width_at_percent": 7.463209475508806
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.291315596643762,
+        "alpha_at_percent": 14.775896751516223,
+        "alpha2_at_percent": 22.21007512058534,
+        "width_at_percent": 7.434178369069117
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": -0.024974763842458003,
+          "conditional_95_holding_C46_point_fixed": [
+            -0.09745019488755347,
+            0.04771119081731179
+          ],
+          "span_from_marginal_95_intervals": [
+            -0.13020332928118883,
+            0.07980702403339279
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.43810815079266163,
+          "conditional_95_holding_C46_point_fixed": [
+            0.3439027618625232,
+            0.5378896529414057
+          ],
+          "span_from_marginal_95_intervals": [
+            0.28928166688060486,
+            0.5856045200734457
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.292225526329604,
+          3.2943472188474985
+        ],
+        "alpha_at_percent": [
+          14.860694601434838,
+          15.005855987139704
+        ],
+        "alpha2_at_percent": [
+          22.302174119058602,
+          22.496161010137484
+        ],
+        "width_at_percent": [
+          7.345078160687097,
+          7.582930277450173
+        ]
+      },
+      "order_modes_at_primary": [
+        0.07250000000000001,
+        0.8825000000000001
+      ],
+      "barriers_at_primary_kBT": [
+        3.707334715438209,
+        5.16259523081936
+      ],
+      "phase_volume_A3_atom": [
+        17.461659381573114,
+        17.246197838178173
+      ],
+      "phase_c_a": [
+        1.5904854705451592,
+        1.6065507913185897
+      ],
+      "phase_wall": [
+        0.38682686156958757,
+        0.3751919588927189
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.23091373890936598,
+          0.15475186061088636,
+          0.12141497319665333,
+          0.09024622858229227
+        ],
+        [
+          0.8729569667653431,
+          0.013080984574966667,
+          0.006942912139388492,
+          0.002874316839851668
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        7790.211676531801,
+        5800.378918008216
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        140.24315519592508,
+        107.1509509516056
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.286": [
+          0.48550655697034967,
+          0.4826577604994914
+        ],
+        "3.289": [
+          0.51449344302965,
+          0.5173422395005084
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.286 to 3.289": {
+          "best_link": 0.9911400445923985,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.9615786843926349,
+            0.9795229830573716
+          ]
+        }
+      },
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.293152261238409,
+          "alpha_at_percent": 14.815462670864383,
+          "alpha2_at_percent": 22.366907985178116,
+          "width_at_percent": 7.551445314313734
+        },
+        "window": {
+          "mu_eV": 3.293702515432758,
+          "alpha_at_percent": 15.05422134665388,
+          "alpha2_at_percent": 22.42014393864997,
+          "width_at_percent": 7.365922591996091
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.0005502541943487316,
+        "alpha_at_percent": 0.23875867578949794,
+        "alpha2_at_percent": 0.05323595347185517,
+        "width_at_percent": 0.18552272231764366
+      },
+      "by_field": {
+        "3.286": {
+          "mu_eV": 3.293702515432758,
+          "alpha_at_percent": 15.05422134665388,
+          "alpha2_at_percent": 22.42014393864997,
+          "width_at_percent": 7.365922591996091
+        },
+        "3.289": {
+          "mu_eV": 3.293152261238409,
+          "alpha_at_percent": 14.815462670864383,
+          "alpha2_at_percent": 22.366907985178116,
+          "width_at_percent": 7.551445314313734
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.0005502541943487316,
+        "alpha_at_percent": 0.23875867578949794,
+        "alpha2_at_percent": 0.05323595347185517,
+        "width_at_percent": 0.18552272231764366
+      },
+      "by_field_cohort": {},
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.292665727504916,
+          "alpha_at_percent": 14.872219898617228,
+          "alpha2_at_percent": 22.266514233194034,
+          "width_at_percent": 7.394294334576807
+        },
+        "late": {
+          "mu_eV": 3.2941144994753717,
+          "alpha_at_percent": 14.99586819651893,
+          "alpha2_at_percent": 22.53189719340902,
+          "width_at_percent": 7.53602899689009
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 0.0014487719704558977,
+        "alpha_at_percent": 0.12364829790170262,
+        "alpha2_at_percent": 0.26538296021498553,
+        "width_at_percent": 0.1417346623132838
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.2933900202841593,
+          "alpha_at_percent": 14.914926153170239,
+          "alpha2_at_percent": 22.38696453724932,
+          "width_at_percent": 7.47203838407908
+        },
+        "0.05": {
+          "mu_eV": 3.2934176171370395,
+          "alpha_at_percent": 14.958380678148867,
+          "alpha2_at_percent": 22.40623981642285,
+          "width_at_percent": 7.447859138273982
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 2.7596852880229505e-05,
+        "alpha_at_percent": 0.04345452497862823,
+        "alpha2_at_percent": 0.01927527917353089,
+        "width_at_percent": 0.024179245805098226
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.2934013237763593,
+          "alpha_at_percent": 14.930905096908573,
+          "alpha2_at_percent": 22.39535150994819,
+          "width_at_percent": 7.4644464130396155
+        },
+        "0.05": {
+          "mu_eV": 3.2934027825960617,
+          "alpha_at_percent": 14.933170032479934,
+          "alpha2_at_percent": 22.39637950798874,
+          "width_at_percent": 7.463209475508806
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 1.4588197023712723e-06,
+        "alpha_at_percent": 0.002264935571361093,
+        "alpha2_at_percent": 0.0010279980405520917,
+        "width_at_percent": 0.0012369375308098896
+      },
+      "by_field_support": {
+        "3.286": {
+          "frames": 16800,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.9839634967576187,
+          "phase_Kish_ess_frames": [
+            3654.4436686905915,
+            2623.1376756277737
+          ]
+        },
+        "3.289": {
+          "frames": 16800,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.9841362008188878,
+          "phase_Kish_ess_frames": [
+            3895.0212869500238,
+            3159.817519703336
+          ]
+        }
+      },
+      "nested_cage_check": {
+        "source_cap": 0.4,
+        "target_wall": 0.35,
+        "volume_guard_cap": 0.4,
+        "source_mu_eV": 3.2934027825960617,
+        "source_order_cut": 0.4875,
+        "fractions_alpha_alpha2": [
+          0.004586511668456676,
+          0.08894110862781031
+        ],
+        "phase_Kish_ess_retained_frames": [
+          34.90341096829563,
+          441.5033652627101
+        ],
+        "delta_semigrand_alpha2_minus_alpha_eV_cell": -0.2554914102243329,
+        "linearized_delta_mu_eV": -0.004457480500240864,
+        "kept_frames": 890,
+        "total_frames": 33600,
+        "fewer_than_10_weighted_frames_in_a_phase": false,
+        "conditioned": {
+          "mu_eV": 3.2889926809166936,
+          "alpha_at_percent": 14.753461227271117,
+          "alpha2_at_percent": 22.320543659768997,
+          "width_at_percent": 7.567082432497879
+        }
+      }
+    },
+    "N1400_10x10x7_cap0.35_axial1": {
+      "N": 1400,
+      "shape": "10x10x7",
+      "cap": 0.35,
+      "axial_free": 1,
+      "status": "candidate",
+      "n_runs": 28,
+      "production_frames": 22400,
+      "series": [
+        "s1400w35a",
+        "s1400w35b"
+      ],
+      "trial_fields_eV": [
+        3.286,
+        3.289
+      ],
+      "second_MBAR_eigenvalue": 0.9906440300889487,
+      "joint_histogram_bin_width_x_Q": [
+        0.006546536707079772,
+        0.013093073414159544
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.3894145951511914,
+      "min_median_max_blocks_per_trajectory": [
+        2.0,
+        6.5,
+        16.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 192,
+      "bootstrap_resolved": 192,
+      "equal_height_separator": {
+        "mu_eV": 3.2880234935468406,
+        "order_cut": 0.47250000000000003,
+        "basin_mode_q": [
+          0.057499999999999996,
+          0.8674999999999999
+        ],
+        "barrier_kBT": 6.430621408844587
+      },
+      "primary": {
+        "mu_eV": 3.2890901421464225,
+        "alpha_at_percent": 14.858789655892574,
+        "alpha2_at_percent": 22.36146259535002,
+        "width_at_percent": 7.502672939457447
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.287951039258844,
+        "alpha_at_percent": 14.776243040384804,
+        "alpha2_at_percent": 22.253117272789595,
+        "width_at_percent": 7.476874232404793
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": -0.09935514042981808,
+          "conditional_95_holding_C46_point_fixed": [
+            -0.20077934602769076,
+            0.002934903598484695
+          ],
+          "span_from_marginal_95_intervals": [
+            -0.23353248042132613,
+            0.0350307368145657
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.40319123815394065,
+          "conditional_95_holding_C46_point_fixed": [
+            0.27733407397012044,
+            0.5115651844044571
+          ],
+          "span_from_marginal_95_intervals": [
+            0.22271297898820208,
+            0.5592800515364971
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.2879183046996094,
+          3.290122117537869
+        ],
+        "alpha_at_percent": [
+          14.757365450294701,
+          14.961079699920877
+        ],
+        "alpha2_at_percent": [
+          22.2356054311662,
+          22.469836541600536
+        ],
+        "width_at_percent": [
+          7.392377907054956,
+          7.600675158893304
+        ]
+      },
+      "order_modes_at_primary": [
+        0.057499999999999996,
+        0.8725
+      ],
+      "barriers_at_primary_kBT": [
+        5.939311377399296,
+        7.275151261375419
+      ],
+      "phase_volume_A3_atom": [
+        17.452995927001,
+        17.241469753437688
+      ],
+      "phase_c_a": [
+        1.5906402770304593,
+        1.6062243044417257
+      ],
+      "phase_wall": [
+        0.34725083319214584,
+        0.34493918219453695
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.2073410758673782,
+          0.15621145296312341,
+          0.12851289864996537,
+          0.10228615875523586
+        ],
+        [
+          0.8721760667120356,
+          0.011624248742316575,
+          0.0070300832333748545,
+          0.00362810512627416
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        4142.237146329687,
+        4093.527314575925
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        45.889925109713495,
+        81.72432622517391
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.286": [
+          0.5227341259807098,
+          0.5147358212193728
+        ],
+        "3.289": [
+          0.4772658740192904,
+          0.4852641787806275
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.286 to 3.289": {
+          "best_link": 0.9830950757800484,
+          "n_same_center": 14,
+          "min_median_same_center": [
+            0.9214946393541159,
+            0.9536824872046936
+          ]
+        }
+      },
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.288341784838759,
+          "alpha_at_percent": 14.757833639742646,
+          "alpha2_at_percent": 22.315249917742637,
+          "width_at_percent": 7.55741627799999
+        },
+        "window": {
+          "mu_eV": 3.28974926470792,
+          "alpha_at_percent": 14.932161209309507,
+          "alpha2_at_percent": 22.39752723210417,
+          "width_at_percent": 7.465366022794664
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.0014074798691612322,
+        "alpha_at_percent": 0.17432756956686113,
+        "alpha2_at_percent": 0.08227731436153363,
+        "width_at_percent": 0.09205025520532573
+      },
+      "by_field": {
+        "3.286": {
+          "mu_eV": 3.28974926470792,
+          "alpha_at_percent": 14.932161209309507,
+          "alpha2_at_percent": 22.39752723210417,
+          "width_at_percent": 7.465366022794664
+        },
+        "3.289": {
+          "mu_eV": 3.288341784838759,
+          "alpha_at_percent": 14.757833639742646,
+          "alpha2_at_percent": 22.315249917742637,
+          "width_at_percent": 7.55741627799999
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.0014074798691612322,
+        "alpha_at_percent": 0.17432756956686113,
+        "alpha2_at_percent": 0.08227731436153363,
+        "width_at_percent": 0.09205025520532573
+      },
+      "by_field_cohort": {},
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.2892325163773295,
+          "alpha_at_percent": 14.897469861846346,
+          "alpha2_at_percent": 22.297295187213663,
+          "width_at_percent": 7.399825325367315
+        },
+        "late": {
+          "mu_eV": 3.2889404584014184,
+          "alpha_at_percent": 14.82074376975932,
+          "alpha2_at_percent": 22.426298664927884,
+          "width_at_percent": 7.605554895168565
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 0.0002920579759111419,
+        "alpha_at_percent": 0.07672609208702674,
+        "alpha2_at_percent": 0.12900347771422105,
+        "width_at_percent": 0.20572956980124957
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.289089258355551,
+          "alpha_at_percent": 14.856564841534912,
+          "alpha2_at_percent": 22.360306070757986,
+          "width_at_percent": 7.503741229223074
+        },
+        "0.05": {
+          "mu_eV": 3.2890910873646484,
+          "alpha_at_percent": 14.861609117895563,
+          "alpha2_at_percent": 22.362588347748684,
+          "width_at_percent": 7.500979229853122
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 1.829009097509271e-06,
+        "alpha_at_percent": 0.005044276360651523,
+        "alpha2_at_percent": 0.002282276990698051,
+        "width_at_percent": 0.0027619993699516954
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.2890901421464225,
+          "alpha_at_percent": 14.858789655892574,
+          "alpha2_at_percent": 22.36146259535002,
+          "width_at_percent": 7.502672939457447
+        },
+        "0.05": {
+          "mu_eV": 3.2890902186280115,
+          "alpha_at_percent": 14.8590008348426,
+          "alpha2_at_percent": 22.36155796790944,
+          "width_at_percent": 7.50255713306684
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 7.648158906192748e-08,
+        "alpha_at_percent": 0.00021117895002653597,
+        "alpha2_at_percent": 9.537255942149159e-05,
+        "width_at_percent": 0.00011580639060770892
+      },
+      "by_field_support": {
+        "3.286": {
+          "frames": 11900,
+          "n_bias_states": 14,
+          "second_MBAR_eigenvalue": 0.9905748073952693,
+          "phase_Kish_ess_frames": [
+            2055.2614913819707,
+            1958.5834149660857
+          ]
+        },
+        "3.289": {
+          "frames": 10500,
+          "n_bias_states": 14,
+          "second_MBAR_eigenvalue": 0.9907787828122061,
+          "phase_Kish_ess_frames": [
+            1869.0071557821382,
+            2090.0182650576817
+          ]
+        }
+      },
+      "nested_cage_check": {
+        "source_cap": 0.35,
+        "target_wall": 0.35,
+        "volume_guard_cap": 0.4,
+        "source_mu_eV": 3.2890901421464225,
+        "source_order_cut": 0.47250000000000003,
+        "fractions_alpha_alpha2": [
+          1.0,
+          1.0
+        ],
+        "phase_Kish_ess_retained_frames": [
+          4142.237146329686,
+          4093.527314575909
+        ],
+        "delta_semigrand_alpha2_minus_alpha_eV_cell": -0.0,
+        "linearized_delta_mu_eV": -0.0,
+        "kept_frames": 22400,
+        "total_frames": 22400,
+        "fewer_than_10_weighted_frames_in_a_phase": false,
+        "conditioned": {
+          "mu_eV": 3.2890901421464225,
+          "alpha_at_percent": 14.858789655892574,
+          "alpha2_at_percent": 22.36146259535002,
+          "width_at_percent": 7.502672939457447
+        }
+      }
+    },
+    "N1400_10x10x7_cap0.4_axial1": {
+      "N": 1400,
+      "shape": "10x10x7",
+      "cap": 0.4,
+      "axial_free": 1,
+      "status": "candidate",
+      "n_runs": 28,
+      "production_frames": 22400,
+      "series": [
+        "s1400w40a",
+        "s1400w40b"
+      ],
+      "trial_fields_eV": [
+        3.287,
+        3.29
+      ],
+      "second_MBAR_eigenvalue": 0.9905317699363395,
+      "joint_histogram_bin_width_x_Q": [
+        0.006546536707079772,
+        0.013093073414159544
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.4274690776333982,
+      "min_median_max_blocks_per_trajectory": [
+        3.0,
+        7.0,
+        22.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 192,
+      "bootstrap_resolved": 192,
+      "equal_height_separator": {
+        "mu_eV": 3.2925835415025175,
+        "order_cut": 0.4975,
+        "basin_mode_q": [
+          0.0625,
+          0.8725
+        ],
+        "barrier_kBT": 5.661120459785587
+      },
+      "primary": {
+        "mu_eV": 3.2936821363438424,
+        "alpha_at_percent": 14.981743875033668,
+        "alpha2_at_percent": 22.444830392729067,
+        "width_at_percent": 7.463086517695397
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.2925373461779737,
+        "alpha_at_percent": 14.898209038105756,
+        "alpha2_at_percent": 22.340049159978232,
+        "width_at_percent": 7.441840121872476
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": 0.023599078711276533,
+          "conditional_95_holding_C46_point_fixed": [
+            -0.04091993164152008,
+            0.10452722930785718
+          ],
+          "span_from_marginal_95_intervals": [
+            -0.07367306603515544,
+            0.1366230625239382
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.48655903553298785,
+          "conditional_95_holding_C46_point_fixed": [
+            0.36909649876821504,
+            0.5949440955872554
+          ],
+          "span_from_marginal_95_intervals": [
+            0.3144754037862967,
+            0.6426589627192953
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.293020366636677,
+          3.294461092282878
+        ],
+        "alpha_at_percent": [
+          14.917224864680872,
+          15.062672025630249
+        ],
+        "alpha2_at_percent": [
+          22.327367855964294,
+          22.553215452783334
+        ],
+        "width_at_percent": [
+          7.323100667746439,
+          7.579612756863039
+        ]
+      },
+      "order_modes_at_primary": [
+        0.0625,
+        0.8775
+      ],
+      "barriers_at_primary_kBT": [
+        5.131105205224831,
+        6.4981333236339145
+      ],
+      "phase_volume_A3_atom": [
+        17.45692516298534,
+        17.241305531715966
+      ],
+      "phase_c_a": [
+        1.5915127497402572,
+        1.606379906344134
+      ],
+      "phase_wall": [
+        0.3924786926468781,
+        0.38292668896353355
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.21238236050126677,
+          0.1578949131313307,
+          0.1272357800301772,
+          0.10175670133857259
+        ],
+        [
+          0.8749892418909351,
+          0.011894242347934948,
+          0.007223065356853639,
+          0.003686666113438315
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        3509.8708622475338,
+        3325.3900525723875
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        50.81882615460637,
+        63.59508816273932
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.287": [
+          0.48687704489979405,
+          0.5193142089780882
+        ],
+        "3.29": [
+          0.5131229551002071,
+          0.4806857910219112
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.287 to 3.29": {
+          "best_link": 0.9860843819130682,
+          "n_same_center": 14,
+          "min_median_same_center": [
+            0.9373864120369293,
+            0.967280987428533
+          ]
+        }
+      },
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.295292083414818,
+          "alpha_at_percent": 15.08028153971015,
+          "alpha2_at_percent": 22.531695968106984,
+          "width_at_percent": 7.451414428396832
+        },
+        "window": {
+          "mu_eV": 3.2922688577871133,
+          "alpha_at_percent": 14.89057616901221,
+          "alpha2_at_percent": 22.365742622220044,
+          "width_at_percent": 7.475166453207835
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.00302322562770474,
+        "alpha_at_percent": 0.1897053706979399,
+        "alpha2_at_percent": 0.16595334588694044,
+        "width_at_percent": 0.023752024811002137
+      },
+      "by_field": {
+        "3.287": {
+          "mu_eV": 3.2922688577871133,
+          "alpha_at_percent": 14.89057616901221,
+          "alpha2_at_percent": 22.365742622220044,
+          "width_at_percent": 7.475166453207835
+        },
+        "3.29": {
+          "mu_eV": 3.295292083414818,
+          "alpha_at_percent": 15.08028153971015,
+          "alpha2_at_percent": 22.531695968106984,
+          "width_at_percent": 7.451414428396832
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.00302322562770474,
+        "alpha_at_percent": 0.1897053706979399,
+        "alpha2_at_percent": 0.16595334588694044,
+        "width_at_percent": 0.023752024811002137
+      },
+      "by_field_cohort": {},
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.2936722362148863,
+          "alpha_at_percent": 14.948264480914375,
+          "alpha2_at_percent": 22.495434571394764,
+          "width_at_percent": 7.547170090480387
+        },
+        "late": {
+          "mu_eV": 3.293684944831879,
+          "alpha_at_percent": 15.014396732270457,
+          "alpha2_at_percent": 22.384393737367517,
+          "width_at_percent": 7.369997005097059
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 1.2708616992540556e-05,
+        "alpha_at_percent": 0.06613225135608225,
+        "alpha2_at_percent": 0.1110408340272464,
+        "width_at_percent": 0.17717308538332777
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.2936800148178396,
+          "alpha_at_percent": 14.975844990787992,
+          "alpha2_at_percent": 22.442239429050368,
+          "width_at_percent": 7.466394438262375
+        },
+        "0.05": {
+          "mu_eV": 3.2936843583908013,
+          "alpha_at_percent": 14.988983545750365,
+          "alpha2_at_percent": 22.447272456769625,
+          "width_at_percent": 7.458288911019261
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 4.343572961751363e-06,
+        "alpha_at_percent": 0.013138554962372595,
+        "alpha2_at_percent": 0.005033027719257177,
+        "width_at_percent": 0.008105527243113642
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.2936821363438424,
+          "alpha_at_percent": 14.981743875033668,
+          "alpha2_at_percent": 22.444830392729067,
+          "width_at_percent": 7.463086517695397
+        },
+        "0.05": {
+          "mu_eV": 3.2936819384029556,
+          "alpha_at_percent": 14.981169308464962,
+          "alpha2_at_percent": 22.44459495125619,
+          "width_at_percent": 7.463425642791227
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 1.9794088679248034e-07,
+        "alpha_at_percent": 0.0005745665687069135,
+        "alpha2_at_percent": 0.00023544147287779538,
+        "width_at_percent": 0.0003391250958300063
+      },
+      "by_field_support": {
+        "3.287": {
+          "frames": 11900,
+          "n_bias_states": 14,
+          "second_MBAR_eigenvalue": 0.9905576198613719,
+          "phase_Kish_ess_frames": [
+            1837.857305185856,
+            1833.0146202567782
+          ]
+        },
+        "3.29": {
+          "frames": 10500,
+          "n_bias_states": 14,
+          "second_MBAR_eigenvalue": 0.9905439220229354,
+          "phase_Kish_ess_frames": [
+            1635.8855718185664,
+            1481.5725793400452
+          ]
+        }
+      },
+      "nested_cage_check": {
+        "source_cap": 0.4,
+        "target_wall": 0.35,
+        "volume_guard_cap": 0.4,
+        "source_mu_eV": 3.2936821363438424,
+        "source_order_cut": 0.4975,
+        "fractions_alpha_alpha2": [
+          1.23402498317966e-05,
+          0.013473702426957232
+        ],
+        "phase_Kish_ess_retained_frames": [
+          3.5701727025613073,
+          42.61194774613878
+        ],
+        "delta_semigrand_alpha2_minus_alpha_eV_cell": -0.6028366502649439,
+        "linearized_delta_mu_eV": -0.005769698720645027,
+        "kept_frames": 58,
+        "total_frames": 22400,
+        "fewer_than_10_weighted_frames_in_a_phase": true,
+        "conditioned": null
+      }
+    },
+    "N768_8x8x6_cap0.4_axial0": {
+      "N": 768,
+      "shape": "8x8x6",
+      "cap": 0.4,
+      "axial_free": 0,
+      "status": "candidate",
+      "n_runs": 48,
+      "production_frames": 50400,
+      "series": [
+        "s768w40f",
+        "s768w40g",
+        "s768w40h",
+        "s768w40j"
+      ],
+      "trial_fields_eV": [
+        3.288,
+        3.294,
+        3.322,
+        3.324
+      ],
+      "second_MBAR_eigenvalue": 0.983212778854324,
+      "joint_histogram_bin_width_x_Q": [
+        0.008838834764831846,
+        0.01767766952966369
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.5781545237159329,
+      "min_median_max_blocks_per_trajectory": [
+        25.0,
+        50.0,
+        100.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 192,
+      "bootstrap_resolved": 192,
+      "equal_height_separator": {
+        "mu_eV": 3.3193486008271265,
+        "order_cut": 0.4825,
+        "basin_mode_q": [
+          0.0825,
+          0.8625
+        ],
+        "barrier_kBT": 2.9258842210553886
+      },
+      "primary": {
+        "mu_eV": 3.3217644535355015,
+        "alpha_at_percent": 16.118455223490415,
+        "alpha2_at_percent": 22.224275541898816,
+        "width_at_percent": 6.105820318408403
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.3191959415119894,
+        "alpha_at_percent": 15.919850145416689,
+        "alpha2_at_percent": 21.91154949986975,
+        "width_at_percent": 5.991699354453061
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": 1.1603104271680227,
+          "conditional_95_holding_C46_point_fixed": [
+            1.0857272134824196,
+            1.2171773422006051
+          ],
+          "span_from_marginal_95_intervals": [
+            1.0529740790887843,
+            1.2492731754166861
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.26600418470273723,
+          "conditional_95_holding_C46_point_fixed": [
+            0.17817812729771632,
+            0.34212739980582896
+          ],
+          "span_from_marginal_95_intervals": [
+            0.12355703231579795,
+            0.38984226693786894
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.320989124149495,
+          3.3223842099768843
+        ],
+        "alpha_at_percent": [
+          16.04387200980481,
+          16.175322138522997
+        ],
+        "alpha2_at_percent": [
+          22.136449484493795,
+          22.300398757001908
+        ],
+        "width_at_percent": [
+          6.013147611918924,
+          6.20497021179276
+        ]
+      },
+      "order_modes_at_primary": [
+        0.0825,
+        0.8725
+      ],
+      "barriers_at_primary_kBT": [
+        2.423380472659863,
+        3.877081837061255
+      ],
+      "phase_volume_A3_atom": [
+        17.428093652585684,
+        17.248360819847395
+      ],
+      "phase_c_a": [
+        1.563743802209997,
+        1.5637438022099952
+      ],
+      "phase_wall": [
+        0.386340510767392,
+        0.37697221224689326
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.26534437310071424,
+          0.16140379607324862,
+          0.12490302700353452,
+          0.09308701276211802
+        ],
+        [
+          0.8548404699954183,
+          0.0181684897056859,
+          0.010690410827358195,
+          0.0052716511474877065
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        8145.435634545721,
+        7040.731927858693
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        842.4098645856864,
+        754.428282696955
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.288": [
+          0.11556529707434149,
+          0.18015109582299899
+        ],
+        "3.294": [
+          0.19273387703285416,
+          0.2297657815779547
+        ],
+        "3.322": [
+          0.3399758226969517,
+          0.29315645916428096
+        ],
+        "3.324": [
+          0.3517250031958508,
+          0.29692666343476254
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.288 to 3.294": {
+          "best_link": 0.9826890014016487,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.9521892962643348,
+            0.9650033630039383
+          ]
+        },
+        "3.288 to 3.322": {
+          "best_link": 0.9084005584713623,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.4063645274108513,
+            0.4938333463528851
+          ]
+        },
+        "3.288 to 3.324": {
+          "best_link": 0.8979193925602109,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.3811342668839161,
+            0.4570757189079163
+          ]
+        },
+        "3.294 to 3.322": {
+          "best_link": 0.9249385477183618,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.5323650280146779,
+            0.6273457176593272
+          ]
+        },
+        "3.294 to 3.324": {
+          "best_link": 0.8975645114441377,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.4902689346690009,
+            0.5741979687320343
+          ]
+        },
+        "3.322 to 3.324": {
+          "best_link": 0.9832782696559766,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.9499535541204042,
+            0.9603184116062524
+          ]
+        }
+      },
+      "field_cohort_split_eV": 3.308,
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.3216250399481972,
+          "alpha_at_percent": 16.138387639048677,
+          "alpha2_at_percent": 22.167750560529797,
+          "width_at_percent": 6.0293629214811215
+        },
+        "window": {
+          "mu_eV": 3.321883998688719,
+          "alpha_at_percent": 16.089561483393314,
+          "alpha2_at_percent": 22.281879745610457,
+          "width_at_percent": 6.1923182622171415
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.00025895874052173085,
+        "alpha_at_percent": 0.04882615565536241,
+        "alpha2_at_percent": 0.11412918508066028,
+        "width_at_percent": 0.16295534073602003
+      },
+      "by_field": {
+        "3.288": {
+          "mu_eV": 3.322832800248119,
+          "alpha_at_percent": 16.052273527583374,
+          "alpha2_at_percent": 22.19882625354882,
+          "width_at_percent": 6.146552725965446
+        },
+        "3.294": {
+          "mu_eV": 3.32252558427004,
+          "alpha_at_percent": 16.194647986158703,
+          "alpha2_at_percent": 22.233453362872165,
+          "width_at_percent": 6.038805376713463
+        },
+        "3.322": {
+          "mu_eV": 3.3201118465602266,
+          "alpha_at_percent": 15.92865803071549,
+          "alpha2_at_percent": 22.167965976734713,
+          "width_at_percent": 6.239307946019224
+        },
+        "3.324": {
+          "mu_eV": 3.3200204632872086,
+          "alpha_at_percent": 16.14015458810629,
+          "alpha2_at_percent": 22.024470241678507,
+          "width_at_percent": 5.884315653572214
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.002812336960910322,
+        "alpha_at_percent": 0.2659899554432137,
+        "alpha2_at_percent": 0.2089831211936577,
+        "width_at_percent": 0.3549922924470099
+      },
+      "by_field_cohort": {
+        "lower_fields": {
+          "mu_eV": 3.3227697629786093,
+          "alpha_at_percent": 16.210304562071588,
+          "alpha2_at_percent": 22.254688570305213,
+          "width_at_percent": 6.044384008233622
+        },
+        "upper_fields": {
+          "mu_eV": 3.3200541575699183,
+          "alpha_at_percent": 16.030798303419928,
+          "alpha2_at_percent": 22.096788613990892,
+          "width_at_percent": 6.065990310570965
+        }
+      },
+      "by_field_cohort_span": {
+        "mu_eV": 0.0027156054086909798,
+        "alpha_at_percent": 0.17950625865166003,
+        "alpha2_at_percent": 0.15789995631432063,
+        "width_at_percent": 0.021606302337342953
+      },
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.321480314476871,
+          "alpha_at_percent": 16.064554092514534,
+          "alpha2_at_percent": 22.191095055137342,
+          "width_at_percent": 6.126540962622807
+        },
+        "late": {
+          "mu_eV": 3.322034416248847,
+          "alpha_at_percent": 16.154586054693794,
+          "alpha2_at_percent": 22.241941776321283,
+          "width_at_percent": 6.087355721627488
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 0.0005541017719759012,
+        "alpha_at_percent": 0.09003196217926046,
+        "alpha2_at_percent": 0.05084672118394096,
+        "width_at_percent": 0.039185240995318615
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.321714500263297,
+          "alpha_at_percent": 16.071645141664476,
+          "alpha2_at_percent": 22.19612786829515,
+          "width_at_percent": 6.1244827266306725
+        },
+        "0.05": {
+          "mu_eV": 3.3218195889720876,
+          "alpha_at_percent": 16.179503657477643,
+          "alpha2_at_percent": 22.252369005687843,
+          "width_at_percent": 6.072865348210202
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 0.0001050887087905572,
+        "alpha_at_percent": 0.10785851581316663,
+        "alpha2_at_percent": 0.056241137392692764,
+        "width_at_percent": 0.05161737842047032
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.3217644535355015,
+          "alpha_at_percent": 16.118455223490415,
+          "alpha2_at_percent": 22.224275541898816,
+          "width_at_percent": 6.105820318408403
+        },
+        "0.05": {
+          "mu_eV": 3.3217644535355015,
+          "alpha_at_percent": 16.118455223490415,
+          "alpha2_at_percent": 22.224275541898816,
+          "width_at_percent": 6.105820318408403
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 0.0,
+        "alpha_at_percent": 0.0,
+        "alpha2_at_percent": 0.0,
+        "width_at_percent": 0.0
+      },
+      "by_field_support": {
+        "3.288": {
+          "frames": 16800,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.9827926453638117,
+          "phase_Kish_ess_frames": [
+            79.6373519191754,
+            386.61294533148754
+          ]
+        },
+        "3.294": {
+          "frames": 16800,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.9830280681840958,
+          "phase_Kish_ess_frames": [
+            106.82773758041395,
+            670.3572409810243
+          ]
+        },
+        "3.322": {
+          "frames": 8400,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.9838141691531059,
+          "phase_Kish_ess_frames": [
+            2439.234641088484,
+            2261.8677801360573
+          ]
+        },
+        "3.324": {
+          "frames": 8400,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.9838007265484331,
+          "phase_Kish_ess_frames": [
+            2894.6396892489897,
+            2435.5751555557035
+          ]
+        }
+      }
+    },
+    "N1400_10x10x7_cap0.4_axial0": {
+      "N": 1400,
+      "shape": "10x10x7",
+      "cap": 0.4,
+      "axial_free": 0,
+      "status": "candidate",
+      "n_runs": 52,
+      "production_frames": 41600,
+      "series": [
+        "s1400w40f",
+        "s1400w40g",
+        "s1400w40h",
+        "s1400w40j"
+      ],
+      "trial_fields_eV": [
+        3.292,
+        3.295,
+        3.322,
+        3.324
+      ],
+      "second_MBAR_eigenvalue": 0.9904939950686164,
+      "joint_histogram_bin_width_x_Q": [
+        0.006546536707079772,
+        0.013093073414159544
+      ],
+      "weakest_joint_histogram_BC_on_max_spanning_tree": 0.42127930332984426,
+      "min_median_max_blocks_per_trajectory": [
+        20.0,
+        40.0,
+        65.0
+      ],
+      "bootstrap_seed": 26713,
+      "bootstrap_attempted": 192,
+      "bootstrap_resolved": 192,
+      "equal_height_separator": {
+        "mu_eV": 3.320919222769722,
+        "order_cut": 0.4575,
+        "basin_mode_q": [
+          0.0625,
+          0.8474999999999999
+        ],
+        "barrier_kBT": 4.733191729961521
+      },
+      "primary": {
+        "mu_eV": 3.3222436182576507,
+        "alpha_at_percent": 16.082655166053264,
+        "alpha2_at_percent": 22.159180822546386,
+        "width_at_percent": 6.0765256564931205
+      },
+      "raw_equal_total_weight": {
+        "mu_eV": 3.3208326432710322,
+        "alpha_at_percent": 15.986654257420549,
+        "alpha2_at_percent": 22.00005112816411,
+        "width_at_percent": 6.013396870743562
+      },
+      "minus_C46": {
+        "alpha": {
+          "delta_at_percent": 1.1245103697308725,
+          "conditional_95_holding_C46_point_fixed": [
+            1.0752957051357708,
+            1.1866656862581433
+          ],
+          "span_from_marginal_95_intervals": [
+            1.0425425707421354,
+            1.2187615194742243
+          ]
+        },
+        "alpha2": {
+          "delta_at_percent": 0.20090946535030696,
+          "conditional_95_holding_C46_point_fixed": [
+            0.10653071021918237,
+            0.28297274727408706
+          ],
+          "span_from_marginal_95_intervals": [
+            0.051909615237264006,
+            0.33068761440612704
+          ]
+        }
+      },
+      "conditional_95": {
+        "mu_eV": [
+          3.321630019056842,
+          3.322965659296498
+        ],
+        "alpha_at_percent": [
+          16.033440501458163,
+          16.144810482580535
+        ],
+        "alpha2_at_percent": [
+          22.06480206741526,
+          22.241244104470166
+        ],
+        "width_at_percent": [
+          5.977069823739217,
+          6.150326659307849
+        ]
+      },
+      "order_modes_at_primary": [
+        0.0625,
+        0.8525
+      ],
+      "barriers_at_primary_kBT": [
+        4.2664399550076215,
+        5.637077455082511
+      ],
+      "phase_volume_A3_atom": [
+        17.427499156278408,
+        17.24984811761116
+      ],
+      "phase_c_a": [
+        1.5637438022100094,
+        1.5637438022099999
+      ],
+      "phase_wall": [
+        0.392346891222787,
+        0.38560677646422337
+      ],
+      "phase_ranked_sublattice_Al_fractions": [
+        [
+          0.23095832037515593,
+          0.1672821496110152,
+          0.13649926765516054,
+          0.10856646900080294
+        ],
+        [
+          0.8502258562714217,
+          0.017512620395378722,
+          0.01166149636657176,
+          0.006967259868483677
+        ]
+      ],
+      "phase_Kish_ess_frames": [
+        5055.238346119421,
+        6688.541345655823
+      ],
+      "phase_Kish_approx_with_run_inefficiency": [
+        375.7060739241896,
+        594.1523636096705
+      ],
+      "phase_origin_fraction_by_mu": {
+        "3.292": [
+          0.057730384842605766,
+          0.1466625201807416
+        ],
+        "3.295": [
+          0.07467586966274328,
+          0.1501925073911029
+        ],
+        "3.322": [
+          0.4305478521984851,
+          0.3505572274409691
+        ],
+        "3.324": [
+          0.4370458932961715,
+          0.35258774498718626
+        ]
+      },
+      "phase_fraction_near_volume_lower": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_volume_upper": [
+        0.0,
+        0.0
+      ],
+      "phase_fraction_near_axial_bounds": [
+        0.0,
+        0.0
+      ],
+      "empirical_overlap_between_fields": {
+        "3.292 to 3.295": {
+          "best_link": 0.9756034748199506,
+          "n_same_center": 14,
+          "min_median_same_center": [
+            0.9419804488732129,
+            0.9624935195329725
+          ]
+        },
+        "3.292 to 3.322": {
+          "best_link": 0.8534502887348323,
+          "n_same_center": 2,
+          "min_median_same_center": [
+            0.26655687721549665,
+            0.42180411318205524
+          ]
+        },
+        "3.292 to 3.324": {
+          "best_link": 0.8072513992526197,
+          "n_same_center": 2,
+          "min_median_same_center": [
+            0.2595566503382116,
+            0.3837018543986369
+          ]
+        },
+        "3.295 to 3.322": {
+          "best_link": 0.8712164535147848,
+          "n_same_center": 2,
+          "min_median_same_center": [
+            0.3361861128185903,
+            0.5043654308446096
+          ]
+        },
+        "3.295 to 3.324": {
+          "best_link": 0.8069788126250286,
+          "n_same_center": 2,
+          "min_median_same_center": [
+            0.32670306209286953,
+            0.4658200592898122
+          ]
+        },
+        "3.322 to 3.324": {
+          "best_link": 0.9833246474771451,
+          "n_same_center": 12,
+          "min_median_same_center": [
+            0.9497660574987934,
+            0.9652382621729948
+          ]
+        }
+      },
+      "field_cohort_split_eV": 3.3085,
+      "by_initialization": {
+        "ordered": {
+          "mu_eV": 3.3223325071176677,
+          "alpha_at_percent": 16.089134566577822,
+          "alpha2_at_percent": 22.13305473599337,
+          "width_at_percent": 6.0439201694155456
+        },
+        "window": {
+          "mu_eV": 3.322155785706668,
+          "alpha_at_percent": 16.0761797647584,
+          "alpha2_at_percent": 22.184782004646728,
+          "width_at_percent": 6.108602239888327
+        }
+      },
+      "by_initialization_span": {
+        "mu_eV": 0.00017672141099955851,
+        "alpha_at_percent": 0.012954801819422102,
+        "alpha2_at_percent": 0.05172726865335875,
+        "width_at_percent": 0.06468207047278174
+      },
+      "by_field": {
+        "3.292": {
+          "mu_eV": 3.3219955771311076,
+          "alpha_at_percent": 15.852653912196512,
+          "alpha2_at_percent": 22.046180534148252,
+          "width_at_percent": 6.193526621951739
+        },
+        "3.295": {
+          "mu_eV": 3.321001995462773,
+          "alpha_at_percent": 15.86946614244044,
+          "alpha2_at_percent": 22.109829460668298,
+          "width_at_percent": 6.240363318227857
+        },
+        "3.322": {
+          "mu_eV": 3.321863858973669,
+          "alpha_at_percent": 16.04009970125801,
+          "alpha2_at_percent": 22.227049304037546,
+          "width_at_percent": 6.186949602779535
+        },
+        "3.324": {
+          "mu_eV": 3.323675576675626,
+          "alpha_at_percent": 16.142931165327536,
+          "alpha2_at_percent": 22.10946423199384,
+          "width_at_percent": 5.966533066666305
+        }
+      },
+      "by_field_span": {
+        "mu_eV": 0.0026735812128531045,
+        "alpha_at_percent": 0.29027725313102337,
+        "alpha2_at_percent": 0.1808687698892939,
+        "width_at_percent": 0.2738302515615523
+      },
+      "by_field_cohort": {
+        "lower_fields": {
+          "mu_eV": 3.3215601359988134,
+          "alpha_at_percent": 15.872215744105814,
+          "alpha2_at_percent": 22.08130030679201,
+          "width_at_percent": 6.209084562686195
+        },
+        "upper_fields": {
+          "mu_eV": 3.322780086751401,
+          "alpha_at_percent": 16.09119117027912,
+          "alpha2_at_percent": 22.168946791134353,
+          "width_at_percent": 6.077755620855233
+        }
+      },
+      "by_field_cohort_span": {
+        "mu_eV": 0.0012199507525876285,
+        "alpha_at_percent": 0.2189754261733068,
+        "alpha2_at_percent": 0.08764648434234346,
+        "width_at_percent": 0.13132894183096244
+      },
+      "production_halves": {
+        "early": {
+          "mu_eV": 3.322146496597806,
+          "alpha_at_percent": 16.075376076719465,
+          "alpha2_at_percent": 22.158231571481284,
+          "width_at_percent": 6.082855494761821
+        },
+        "late": {
+          "mu_eV": 3.3223420367552765,
+          "alpha_at_percent": 16.089640152670643,
+          "alpha2_at_percent": 22.158067163184413,
+          "width_at_percent": 6.068427010513769
+        }
+      },
+      "production_halves_span": {
+        "mu_eV": 0.00019554015747047515,
+        "alpha_at_percent": 0.014264075951178512,
+        "alpha2_at_percent": 0.00016440829687169867,
+        "width_at_percent": 0.014428484248051987
+      },
+      "divider_sensitivity": {
+        "-0.05": {
+          "mu_eV": 3.322238141809641,
+          "alpha_at_percent": 16.07405544069026,
+          "alpha2_at_percent": 22.15408903404197,
+          "width_at_percent": 6.080033593351714
+        },
+        "0.05": {
+          "mu_eV": 3.3222493217582385,
+          "alpha_at_percent": 16.093382283353545,
+          "alpha2_at_percent": 22.164018628961742,
+          "width_at_percent": 6.070636345608197
+        }
+      },
+      "divider_sensitivity_span": {
+        "mu_eV": 1.1179948597561662e-05,
+        "alpha_at_percent": 0.019326842663286214,
+        "alpha2_at_percent": 0.009929594919771745,
+        "width_at_percent": 0.009397247743517134
+      },
+      "bandwidth_sensitivity": {
+        "0.03": {
+          "mu_eV": 3.3222436182576507,
+          "alpha_at_percent": 16.082655166053264,
+          "alpha2_at_percent": 22.159180822546386,
+          "width_at_percent": 6.0765256564931205
+        },
+        "0.05": {
+          "mu_eV": 3.3222431105657964,
+          "alpha_at_percent": 16.081780980791567,
+          "alpha2_at_percent": 22.158728913335114,
+          "width_at_percent": 6.076947932543547
+        }
+      },
+      "bandwidth_sensitivity_span": {
+        "mu_eV": 5.076918543345244e-07,
+        "alpha_at_percent": 0.0008741852616971357,
+        "alpha2_at_percent": 0.0004519092112715839,
+        "width_at_percent": 0.00042227605042644
+      },
+      "by_field_support": {
+        "3.292": {
+          "frames": 11900,
+          "n_bias_states": 14,
+          "second_MBAR_eigenvalue": 0.9899239365891765,
+          "phase_Kish_ess_frames": [
+            32.249623227697136,
+            306.72752888197704
+          ]
+        },
+        "3.295": {
+          "frames": 10500,
+          "n_bias_states": 14,
+          "second_MBAR_eigenvalue": 0.9899899980799618,
+          "phase_Kish_ess_frames": [
+            39.93523168029116,
+            385.84245963671594
+          ]
+        },
+        "3.322": {
+          "frames": 9600,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.991230855689439,
+          "phase_Kish_ess_frames": [
+            2101.415667960925,
+            2207.594442459238
+          ]
+        },
+        "3.324": {
+          "frames": 9600,
+          "n_bias_states": 12,
+          "second_MBAR_eigenvalue": 0.991173485904896,
+          "phase_Kish_ess_frames": [
+            2085.624630279454,
+            2403.8688483901255
+          ]
+        }
+      }
+    }
+  },
+  "differences": {
+    "cage": [
+      {
+        "first": "N96_4x4x3_cap0.35_axial1",
+        "second": "N96_4x4x3_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": 0.0046190051576346924,
+            "alpha_at_percent": 0.5546457385434334,
+            "alpha2_at_percent": 0.03849980289117738,
+            "width_at_percent": -0.5161459356522542
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.00336614959933651,
+              0.011138813534778136
+            ],
+            "alpha_at_percent": [
+              -0.7866839420757092,
+              1.1875099078288
+            ],
+            "alpha2_at_percent": [
+              -0.5508089198566708,
+              0.44498023190111846
+            ],
+            "width_at_percent": [
+              -0.926017184289302,
+              0.3086431658815928
+            ]
+          }
+        }
+      },
+      {
+        "first": "N288_6x6x4_cap0.35_axial1",
+        "second": "N288_6x6x4_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": 0.005105141821262205,
+            "alpha_at_percent": 0.1535372576898979,
+            "alpha2_at_percent": -0.05368390359375397,
+            "width_at_percent": -0.20722116128365187
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              0.0021194676215535503,
+              0.00888332672145965
+            ],
+            "alpha_at_percent": [
+              -0.1403817330769009,
+              0.5161669762698975
+            ],
+            "alpha2_at_percent": [
+              -0.3524388815369718,
+              0.2912499222341216
+            ],
+            "width_at_percent": [
+              -0.5636721254431976,
+              0.1083055076348426
+            ]
+          }
+        }
+      },
+      {
+        "first": "N768_8x8x6_cap0.35_axial1",
+        "second": "N768_8x8x6_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": 0.003752527048815235,
+            "alpha_at_percent": -0.0915106189784769,
+            "alpha2_at_percent": -0.12417068550261945,
+            "width_at_percent": -0.03266006652414255
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              0.00226033152138011,
+              0.005057278815203166
+            ],
+            "alpha_at_percent": [
+              -0.21094696876733435,
+              0.020326993420507082
+            ],
+            "alpha2_at_percent": [
+              -0.2827083797404476,
+              0.0399728674052474
+            ],
+            "width_at_percent": [
+              -0.21046426520323042,
+              0.15812056997024526
+            ]
+          }
+        }
+      },
+      {
+        "first": "N1400_10x10x7_cap0.35_axial1",
+        "second": "N1400_10x10x7_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": 0.004591994197419957,
+            "alpha_at_percent": 0.12295421914109461,
+            "alpha2_at_percent": 0.0833677973790472,
+            "width_at_percent": -0.03958642176205007
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              0.0032946224899873754,
+              0.00602908051806239
+            ],
+            "alpha_at_percent": [
+              0.0029604505106649837,
+              0.2512682214720036
+            ],
+            "alpha2_at_percent": [
+              -0.07865805134648367,
+              0.25095942279610434
+            ],
+            "width_at_percent": [
+              -0.21867469535390924,
+              0.13317840277987808
+            ]
+          }
+        }
+      }
+    ],
+    "axial_release": [
+      {
+        "first": "N768_8x8x6_cap0.4_axial0",
+        "second": "N768_8x8x6_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": -0.028361670939439865,
+            "alpha_at_percent": -1.1852851910104807,
+            "alpha2_at_percent": 0.1721039660899244,
+            "width_at_percent": 1.3573891571004024
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.029593358027475425,
+              -0.02706404550285703
+            ],
+            "alpha_at_percent": [
+              -1.2853677794745901,
+              -1.0788697195138275
+            ],
+            "alpha2_at_percent": [
+              0.03695965558541978,
+              0.3100738866106538
+            ],
+            "width_at_percent": [
+              1.200450054481819,
+              1.5134776189069659
+            ]
+          }
+        }
+      },
+      {
+        "first": "N1400_10x10x7_cap0.4_axial0",
+        "second": "N1400_10x10x7_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": -0.02856148191380825,
+            "alpha_at_percent": -1.100911291019596,
+            "alpha2_at_percent": 0.2856495701826809,
+            "width_at_percent": 1.3865608612022768
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.029566539527439973,
+              -0.027517590910041058
+            ],
+            "alpha_at_percent": [
+              -1.1891529329777508,
+              -1.0048948998458211
+            ],
+            "alpha2_at_percent": [
+              0.14152191922948062,
+              0.42767417151268866
+            ],
+            "width_at_percent": [
+              1.218857973006511,
+              1.541637488455215
+            ]
+          }
+        }
+      }
+    ],
+    "increasing_N": [
+      {
+        "first": "N96_4x4x3_cap0.35_axial1",
+        "second": "N288_6x6x4_cap0.35_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": -0.0027152401933570047,
+            "alpha_at_percent": 0.11061894804904604,
+            "alpha2_at_percent": -0.3559457517030502,
+            "width_at_percent": -0.46656469975209536
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.008744101919728065,
+              0.002289951902528205
+            ],
+            "alpha_at_percent": [
+              -1.1676264971124253,
+              0.602364247678868
+            ],
+            "alpha2_at_percent": [
+              -0.9452543459169283,
+              0.0406953899581388
+            ],
+            "width_at_percent": [
+              -0.7966969122471685,
+              0.31210249174208643
+            ]
+          }
+        }
+      },
+      {
+        "first": "N96_4x4x3_cap0.4_axial1",
+        "second": "N288_6x6x4_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": -0.0022291035297294925,
+            "alpha_at_percent": -0.2904895328044894,
+            "alpha2_at_percent": -0.44812945818798156,
+            "width_at_percent": -0.15763992538349303
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.007717055067287803,
+              0.00413462164290754
+            ],
+            "alpha_at_percent": [
+              -0.825313616498675,
+              0.25704648707445726
+            ],
+            "alpha2_at_percent": [
+              -0.7692622156568716,
+              -0.11966240539971741
+            ],
+            "width_at_percent": [
+              -0.6288047093413244,
+              0.25712039963109573
+            ]
+          }
+        }
+      },
+      {
+        "first": "N288_6x6x4_cap0.35_axial1",
+        "second": "N768_8x8x6_cap0.35_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": 0.0008273310440851667,
+            "alpha_at_percent": -0.01550846548742868,
+            "alpha2_at_percent": 0.05064372841879816,
+            "width_at_percent": 0.06615219390622684
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.0017575540479373153,
+              0.0034010764513979774
+            ],
+            "alpha_at_percent": [
+              -0.2905476442407755,
+              0.2474256124900418
+            ],
+            "alpha2_at_percent": [
+              -0.2023333697092542,
+              0.3403760299482417
+            ],
+            "width_at_percent": [
+              -0.19969112033444325,
+              0.33570461442142085
+            ]
+          }
+        }
+      },
+      {
+        "first": "N288_6x6x4_cap0.4_axial1",
+        "second": "N768_8x8x6_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": -0.0005252837283618028,
+            "alpha_at_percent": -0.2605563421558035,
+            "alpha2_at_percent": -0.01984305349006732,
+            "width_at_percent": 0.24071328866573616
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.00359040454297066,
+              0.001683659223720546
+            ],
+            "alpha_at_percent": [
+              -0.522685306868703,
+              -0.10436160310351061
+            ],
+            "alpha2_at_percent": [
+              -0.26714613400359966,
+              0.20659871426753718
+            ],
+            "width_at_percent": [
+              -0.01868001271547659,
+              0.5473274071500763
+            ]
+          }
+        }
+      },
+      {
+        "first": "N768_8x8x6_cap0.35_axial1",
+        "second": "N1400_10x10x7_cap0.35_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": -0.0005601134008239583,
+            "alpha_at_percent": -0.16589099556583697,
+            "alpha2_at_percent": -0.15908759814134044,
+            "width_at_percent": 0.006803397424499202
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.0021097669294564358,
+              0.0008349835899185475
+            ],
+            "alpha_at_percent": [
+              -0.2984725978154662,
+              -0.03420841563367006
+            ],
+            "alpha2_at_percent": [
+              -0.32571851150865677,
+              0.008980008237140171
+            ],
+            "width_at_percent": [
+              -0.16668888189611025,
+              0.1829601327951594
+            ]
+          }
+        }
+      },
+      {
+        "first": "N768_8x8x6_cap0.4_axial1",
+        "second": "N1400_10x10x7_cap0.4_axial1",
+        "difference": {
+          "values": {
+            "mu_eV": 0.00027935374778076394,
+            "alpha_at_percent": 0.048573842553734536,
+            "alpha2_at_percent": 0.04845088474032622,
+            "width_at_percent": -0.0001229578134083198
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.0009040612613923638,
+              0.0016584191537876711
+            ],
+            "alpha_at_percent": [
+              -0.0510812537122816,
+              0.1619517623180211
+            ],
+            "alpha2_at_percent": [
+              -0.11026468373873204,
+              0.2065333604211754
+            ],
+            "width_at_percent": [
+              -0.19356506557014122,
+              0.17805748374627334
+            ]
+          }
+        }
+      },
+      {
+        "first": "N768_8x8x6_cap0.4_axial0",
+        "second": "N1400_10x10x7_cap0.4_axial0",
+        "difference": {
+          "values": {
+            "mu_eV": 0.0004791647221491502,
+            "alpha_at_percent": -0.0358000574371502,
+            "alpha2_at_percent": -0.06509471935243027,
+            "width_at_percent": -0.029294661915282738
+          },
+          "sign": "second minus first",
+          "conditional_95": {
+            "mu_eV": [
+              -0.00040469442359269964,
+              0.0015873576106709354
+            ],
+            "alpha_at_percent": [
+              -0.11575681881664127,
+              0.059550788441780765
+            ],
+            "alpha2_at_percent": [
+              -0.18291442242776582,
+              0.0553103626818288
+            ],
+            "width_at_percent": [
+              -0.1639183645598112,
+              0.09391632458370709
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "source_sha256": {
+    "pilot96.json": "b752c9c2dd3f99f671a7522f5ccfdaeca31903ef05d1b2ff51727b4ce63310df",
+    "pilot288.json": "7abf5bb7d5b078fed48ea0e21e81c8072af5d60016d0820844829709c1d8b5c8",
+    "analysis768_free.json": "1e73ec88a27b5ba6f0a56562c528556b2ecda6b69f960ab467c6308149eef5c6",
+    "analysis1400_free.json": "b055231bfd913eed57b56183e0ccca33e4c554708547a929f15f8e5b3fb01e9c",
+    "analysis768_fixed.json": "e8e7efe7f2b9391c78002d3f3912bf3213d2a13bd6c20ac151ffe26efd19f323",
+    "analysis1400_fixed.json": "bf51e91034d9101c5e80c8d326f5485d0622a1f0d9dcfc17001a3e69da5577d0",
+    "nested96.json": "81925beddda72f7ecd179cc0c254e24f9b6342689950a33ed921d478bc843996",
+    "nested288.json": "eac1e8247fb9cc8eaf5dbc447b35280d09649c7c1fe88b216e0c1bd50bef0042",
+    "nested768.json": "50713990639d4fb2813b8eb6c3be732eb7e951e8b894e02216e12d8a63a90121",
+    "nested1400.json": "ace437ab88efc85dfce6b639f41ae379e1e1c111f941d0cde2d5dd11a38a17ee"
+  },
+  "C46_reference_sha256": "5419763f1f8b79c5c867c7b98946482a150d01e0bb06b158d7cf70a2edc7fc06"
+}

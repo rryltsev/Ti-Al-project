@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-29T18:04:08.054811+00:00",
+  "source": "r2SCAN/production-02/force-001-restart-02/WAVECAR",
+  "archive": "/home/u3129/tial-phonons-archive/alpha-ti-xc-phonons-20261021-01/r2SCAN/force-001-restart-02/WAVECAR",
+  "sha256_script": "fcbe3c91e457b6f4aafa5eb9739e20d462cba108fe9aff3a6ce9ec5324332bf3",
+  "reason": "Preserve old checkpoint on separate main-home filesystem, verify durable copy before replacing old path by symlink; original is retained if archive copy fails",
+  "quota_before": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 94082728  104857600 104857600          353776       0       0        \n",
+  "archive_storage": "Filesystem      Size  Used Avail Use% Mounted on\nst04:/home       40T   16T   24T  39% /misc/home4\nquota_exit=1\n",
+  "previous_attempt": "Stopped before writing archive intent or executing archive copy because quota command returned 1; no data migration occurred"
+}

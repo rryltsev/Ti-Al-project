@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "precision": "fp32",
+  "block": 1,
+  "load_seconds": 1.5708391964435577,
+  "parameter_bytes": 87060184,
+  "parameter_dtypes": [
+    "float32"
+  ],
+  "main_compute_jit_compile": false,
+  "tf32": false,
+  "UQ": false,
+  "engine": "TensorPotential TPModel / TPCalculator diverse(segment); no ASE result cache",
+  "timings": [
+    {
+      "name": "Ti96",
+      "natoms": 96,
+      "cold_seconds": 8.728397944942117,
+      "warmup_calls": 2,
+      "measured_calls": 6,
+      "wall_seconds": [
+        0.70658915117383,
+        0.7103656213730574,
+        0.7077086940407753,
+        0.7069995924830437,
+        0.6856106091290712,
+        0.6772181689739227
+      ],
+      "kernel_sync_seconds": [
+        0.69781912304461,
+        0.7005716394633055,
+        0.6990384124219418,
+        0.6982798594981432,
+        0.6767968367785215,
+        0.668570252135396
+      ],
+      "median_seconds": 0.7067943718284369,
+      "p10_seconds": 0.681414389051497,
+      "p90_seconds": 0.7090371577069163,
+      "GPU_memory": null
+    },
+    {
+      "name": "TiAl216",
+      "natoms": 216,
+      "cold_seconds": 1.3547523450106382,
+      "warmup_calls": 2,
+      "measured_calls": 6,
+      "wall_seconds": [
+        1.2711405027657747,
+        1.3150503374636173,
+        1.326644230633974,
+        1.3863319493830204,
+        1.441080879420042,
+        1.4341515321284533
+      ],
+      "kernel_sync_seconds": [
+        1.2599144019186497,
+        1.3038676232099533,
+        1.3152467533946037,
+        1.3743964992463589,
+        1.4294662643224,
+        1.4207213874906301
+      ],
+      "median_seconds": 1.3564880900084972,
+      "p10_seconds": 1.293095420114696,
+      "p90_seconds": 1.4376162057742476,
+      "GPU_memory": null
+    },
+    {
+      "name": "TiAl432",
+      "natoms": 432,
+      "cold_seconds": 2.825787927955389,
+      "warmup_calls": 2,
+      "measured_calls": 6,
+      "wall_seconds": [
+        2.7062738332897425,
+        2.699568036943674,
+        2.7039762251079082,
+        2.7193687669932842,
+        2.6043280605226755,
+        2.5760766845196486
+      ],
+      "kernel_sync_seconds": [
+        2.6858293879777193,
+        2.6806293800473213,
+        2.685974193736911,
+        2.700575655326247,
+        2.5848660841584206,
+        2.556491632014513
+      ],
+      "median_seconds": 2.701772131025791,
+      "p10_seconds": 2.590202372521162,
+      "p90_seconds": 2.7128213001415133,
+      "GPU_memory": null
+    }
+  ],
+  "peak_process_RSS_KiB": 3479220,
+  "versions": {
+    "tensorpotential": "0.6.1",
+    "tensorflow": "2.20.0",
+    "numpy": "2.4.6",
+    "ase": "3.29.0"
+  },
+  "job_id": "20989429",
+  "host": "apollo30",
+  "checkpoint": {
+    "path": "/home6/u3129/tial-fm-research/grace-precision-20261107-02/checkpoint-fp32",
+    "source_kind": "controlled_cast",
+    "source_archive_sha256": "763b7e5679c81ea82d39e595e701d0c9f6565064393f705cbe76663c9583d0aa"
+  },
+  "test_access": false
+}

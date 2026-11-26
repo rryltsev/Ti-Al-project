@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "job_id": "20988449",
+  "processing": "Same XC-specific DFT cell, +/-0.01 A, central pair, mass47.867, 4x4x3, same symfc/ASR, mesh50^3. No ML relaxation.",
+  "qualification": "H0 establishes a matched baseline. DFT convergence and accuracy are not certified. Harmonics are physical development data when used for method choice.",
+  "results": {
+    "PBE": {
+      "DFT": {
+        "gamma_THz": [
+          2.983077834617128e-08,
+          1.1082000245242166e-07,
+          1.6777414007183417e-07,
+          3.9641054916557033,
+          3.9641054934760565,
+          5.408169221658619
+        ],
+        "gamma_c_axis_polarization": [
+          5.5375257863976795e-06,
+          0.0005940877960712084,
+          0.9994003746781425,
+          1.589272256582145e-19,
+          4.6682732651080613e-20,
+          1.0000000000000002
+        ],
+        "mesh_min_THz": 2.983077834617128e-08,
+        "imaginary_modes_weighted": 0,
+        "DOS_integral_modes_per_atom": 2.999999999999999,
+        "ASR_residual": {
+          "translation_max_eV_A2": 6.113165529342268e-15,
+          "translation_other_index_max_eV_A2": 6.113165529342268e-15,
+          "permutation_max_eV_A2": 0.0
+        },
+        "ASR_max_change_eV_A2": 9.019586643865818e-05,
+        "force_drift_eV_A": [
+          [
+            1.0416666666604804e-10,
+            3.124999999800741e-10,
+            -4.1666666655577195e-10
+          ],
+          [
+            3.1250000007042425e-10,
+            4.1666666664612215e-10,
+            1.0416666666604804e-10
+          ]
+        ],
+        "reference_max_force_eV_A": null
+      },
+      "original": {
+        "gamma_THz": [
+          -1.1914087895453987e-07,
+          7.711156413253316e-08,
+          9.447984778394696e-08,
+          2.9273633352827098,
+          2.927363336944553,
+          5.365255531454072
+        ],
+        "gamma_c_axis_polarization": [
+          0.9997982995584564,
+          1.2764053469050664e-05,
+          0.00018893638807437722,
+          4.9147646485877036e-20,
+          1.3092963300277627e-20,
+          1.0000000000000004
+        ],
+        "mesh_min_THz": -1.238575728591789,
+        "imaginary_modes_weighted": 2028,
+        "DOS_integral_modes_per_atom": 2.999999999999999,
+        "ASR_residual": {
+          "translation_max_eV_A2": 7.265021917390868e-15,
+          "translation_other_index_max_eV_A2": 7.265021917390868e-15,
+          "permutation_max_eV_A2": 0.0
+        },
+        "ASR_max_change_eV_A2": 0.00011164256403284334,
+        "force_drift_eV_A": [
+          [
+            0.0,
+            0.0,
+            2.7466455036299444e-18
+          ],
+          [
+            0.0,
+            0.0,
+            2.710505431213761e-19
+          ]
+        ],
+        "reference_max_force_eV_A": 9.190158769689724e-07
+      },
+      "DFT_archived_bands_reproduction_max_THz": 2.2331590727784377e-07,
+      "sorted_band_RMSE_THz": 0.6978719999795606,
+      "sorted_band_max_error_THz": 1.467988439094345,
+      "relative_FC_Frobenius_error": 0.24901152088099526
+    },
+    "PBEsol": {
+      "DFT": {
+        "gamma_THz": [
+          -7.4216869663015e-08,
+          7.177924592543621e-08,
+          7.92673404897923e-08,
+          3.7864768047128665,
+          3.786476808537231,
+          5.7575035750239065
+        ],
+        "gamma_c_axis_polarization": [
+          0.0004658644032641411,
+          0.5384811455398067,
+          0.46105299005692957,
+          3.9942351434013363e-19,
+          1.0608598015054878e-19,
+          1.0000000000000004
+        ],
+        "mesh_min_THz": -7.4216869663015e-08,
+        "imaginary_modes_weighted": 0,
+        "DOS_integral_modes_per_atom": 2.999999999999999,
+        "ASR_residual": {
+          "translation_max_eV_A2": 5.599687380453133e-15,
+          "translation_other_index_max_eV_A2": 5.599687380453133e-15,
+          "permutation_max_eV_A2": 0.0
+        },
+        "ASR_max_change_eV_A2": 0.00011795419475801872,
+        "force_drift_eV_A": [
+          [
+            -4.1666666664612215e-10,
+            5.208333333392752e-10,
+            3.1250000005235423e-10
+          ],
+          [
+            2.0833333335016613e-10,
+            2.0833333335016613e-10,
+            -2.083333332417459e-10
+          ]
+        ],
+        "reference_max_force_eV_A": null
+      },
+      "original": {
+        "gamma_THz": [
+          8.754458540156744e-08,
+          9.08295487640723e-08,
+          1.1756224982062043e-07,
+          2.6510312832035035,
+          2.6510312871124144,
+          5.972406965949208
+        ],
+        "gamma_c_axis_polarization": [
+          0.0015073922139879619,
+          0.0030466563822250867,
+          0.9954459514037871,
+          1.3339784917884002e-19,
+          3.2629782925698646e-20,
+          1.0000000000000002
+        ],
+        "mesh_min_THz": -1.4663813013532658,
+        "imaginary_modes_weighted": 3228,
+        "DOS_integral_modes_per_atom": 2.999999999999999,
+        "ASR_residual": {
+          "translation_max_eV_A2": 1.1393663790215669e-14,
+          "translation_other_index_max_eV_A2": 1.1393663790215669e-14,
+          "permutation_max_eV_A2": 0.0
+        },
+        "ASR_max_change_eV_A2": 0.00010861830958486252,
+        "force_drift_eV_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "reference_max_force_eV_A": 1.0565099245594968e-06
+      },
+      "DFT_archived_bands_reproduction_max_THz": 2.5217167253969535e-07,
+      "sorted_band_RMSE_THz": 0.6343245215228961,
+      "sorted_band_max_error_THz": 1.2462738532527489,
+      "relative_FC_Frobenius_error": 0.2141320587566481
+    },
+    "r2SCAN": {
+      "DFT": {
+        "gamma_THz": [
+          7.420416038058362e-08,
+          1.1142125600917182e-07,
+          1.453675129513871e-07,
+          4.586615641085147,
+          4.586615643092966,
+          5.189323501615238
+        ],
+        "gamma_c_axis_polarization": [
+          0.013448172174752953,
+          0.00028160435078068366,
+          0.9862702234744668,
+          3.692591719409783e-19,
+          1.0757769909362874e-18,
+          1.0000000000000007
+        ],
+        "mesh_min_THz": 7.420416038058362e-08,
+        "imaginary_modes_weighted": 0,
+        "DOS_integral_modes_per_atom": 2.999999999999999,
+        "ASR_residual": {
+          "translation_max_eV_A2": 7.327471962526033e-15,
+          "translation_other_index_max_eV_A2": 7.327471962526033e-15,
+          "permutation_max_eV_A2": 0.0
+        },
+        "ASR_max_change_eV_A2": 0.0005958040776532503,
+        "force_drift_eV_A": [
+          [
+            5.208333334386604e-10,
+            1.0416666670218812e-10,
+            -3.1249999996200403e-10
+          ],
+          [
+            0.0,
+            -1.0416666665701302e-10,
+            -1.0416666662990796e-10
+          ]
+        ],
+        "reference_max_force_eV_A": null
+      },
+      "original": {
+        "gamma_THz": [
+          -9.835951109066257e-08,
+          -8.566264963336533e-08,
+          4.101242805325437e-08,
+          2.9299337248740063,
+          2.9299337267889136,
+          5.439034018494137
+        ],
+        "gamma_c_axis_polarization": [
+          0.9994270326205128,
+          0.00047287213006753687,
+          0.00010009524941962774,
+          1.4704299256720197e-20,
+          4.5480609013470256e-20,
+          1.0
+        ],
+        "mesh_min_THz": -1.3460259815636773,
+        "imaginary_modes_weighted": 2616,
+        "DOS_integral_modes_per_atom": 2.999999999999999,
+        "ASR_residual": {
+          "translation_max_eV_A2": 4.459106694998383e-15,
+          "translation_other_index_max_eV_A2": 4.459106694998383e-15,
+          "permutation_max_eV_A2": 0.0
+        },
+        "ASR_max_change_eV_A2": 6.311049609530883e-05,
+        "force_drift_eV_A": [
+          [
+            0.0,
+            0.0,
+            -1.4094628242311558e-18
+          ],
+          [
+            0.0,
+            0.0,
+            9.396418828207704e-19
+          ]
+        ],
+        "reference_max_force_eV_A": 1.13978583223364e-06
+      },
+      "DFT_archived_bands_reproduction_max_THz": 1.7912994062180838e-07,
+      "sorted_band_RMSE_THz": 1.0102129931911685,
+      "sorted_band_max_error_THz": 1.8384081445692768,
+      "relative_FC_Frobenius_error": 0.3303957880522022
+    }
+  }
+}

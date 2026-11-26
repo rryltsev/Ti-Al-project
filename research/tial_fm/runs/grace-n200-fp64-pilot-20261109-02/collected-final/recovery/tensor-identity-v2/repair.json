@@ -1,0 +1,27 @@
+{
+  "status": "STAGED",
+  "old_smoke_job": "20990621",
+  "new_sha256": "f35e31cebf0f4321157f8a842ba86e6bc38e807e8557bbd452230db0afba56a1",
+  "path_checks": [
+    {
+      "XC": "PBE",
+      "alias": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/aligned/PBE/checkpoint",
+      "canonical": "/misc/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/aligned/PBE/checkpoint",
+      "same": true,
+      "other_XC_rejected": true
+    },
+    {
+      "XC": "r2SCAN",
+      "alias": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/aligned/r2SCAN/checkpoint",
+      "canonical": "/misc/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/aligned/r2SCAN/checkpoint",
+      "same": true,
+      "other_XC_rejected": true
+    }
+  ],
+  "archive": "/misc/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/recovery/tensor-identity-v2",
+  "preserved_gates": [
+    "baseline",
+    "H0"
+  ],
+  "accounting": "20990621_0|FAILED\n20990621_1|FAILED\n20990621_2|FAILED\n20990621_3|FAILED\n"
+}

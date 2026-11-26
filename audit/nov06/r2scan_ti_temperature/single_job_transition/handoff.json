@@ -1,0 +1,19 @@
+{
+  "unix": 1793941344.642755,
+  "active_job_id": "20988268",
+  "mode": "single_job_sequential_refinement_v2",
+  "dataset_confirmed": true,
+  "legacy_total": 75,
+  "new_budget_first_pass": 20,
+  "no_mandatory_new30": true,
+  "superseded_cancelled": [
+    "20988269",
+    "20988270",
+    "20988271"
+  ],
+  "native_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+  "gpu_sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380",
+  "tests": "CPU serial/normalization/pooled spectra + synthetic complete path + native/GPU E/F/V4states +1873LAMMPS GPUpreflight PASS",
+  "article_write_performed": false,
+  "monitor_updated": true
+}

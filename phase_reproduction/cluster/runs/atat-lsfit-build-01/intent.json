@@ -1,0 +1,25 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/atat-lsfit-build-01",
+  "utc": "2026-11-24T18:35:21.080520+00:00",
+  "job_name": "ta-atat-lsfit-build-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=4G",
+    "--time=10",
+    "--job-name=ta-atat-lsfit-build-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "09c71c4b6eea02eb350d78870ba3a81ad568c080ae6ee22314c9d98cb280def8"
+  }
+}

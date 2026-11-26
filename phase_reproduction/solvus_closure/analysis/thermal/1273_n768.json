@@ -1,0 +1,261 @@
+{
+  "source_T_K": 1273.15,
+  "N": 768,
+  "shape": "8x8x6",
+  "W_max": 0.4,
+  "axial_free": 1,
+  "pressure_GPa": 0.0,
+  "source_fields": [
+    3.34,
+    3.37,
+    3.4,
+    3.413,
+    3.43,
+    3.451,
+    3.46,
+    3.475,
+    3.49,
+    3.513,
+    3.52,
+    3.55,
+    3.552,
+    3.58,
+    3.61,
+    3.64,
+    3.67,
+    3.7,
+    3.73
+  ],
+  "lambda2": 0.9773140025884072,
+  "field_bounds": [
+    3.34,
+    3.72
+  ],
+  "Q_bandwidth": 0.04,
+  "manifests": [
+    "solvus_temperatures/atomistic/series/at1273-n768-u/windows.csv",
+    "solvus_temperatures/atomistic/series/at1273-n768-v/windows.csv",
+    "solvus_temperatures/atomistic/series/at1273-n768-o/windows.csv",
+    "solvus_temperatures/atomistic/series/at1273-n768-p/windows.csv",
+    "solvus_temperatures/atomistic/series/at1273-n768-peak/windows.csv",
+    "solvus_temperatures/atomistic/series/at1273-n768-sh/windows.csv",
+    "solvus_temperatures/atomistic/series/at1273-n768-ex/windows.csv"
+  ],
+  "notes": "Local temperature reweighting with unbiased total E. Secondary check only. Disconnected or low-ESS phases and fields far outside the source windows can give spurious roots.",
+  "temperatures": [
+    {
+      "T_K": 1273.15,
+      "roots": {
+        "Ti_rich": null,
+        "Al_rich": null
+      }
+    },
+    {
+      "T_K": 1250.0,
+      "roots": {
+        "Ti_rich": {
+          "equal_height_field": 3.514484707461227,
+          "beta_barrier": 1.6156971844172436,
+          "Q_modes": [
+            0.1125,
+            0.8075000000000001
+          ],
+          "Q_cut": 0.4925,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 25.720078037728126,
+              "mean_Q": 0.18635977222352146,
+              "effective_frames_time_corrected": 140.6402316433276
+            },
+            {
+              "mean_x_atpct": 26.298384380712875,
+              "mean_Q": 0.7586026659915335,
+              "effective_frames_time_corrected": 130.3699690262253
+            }
+          ],
+          "single_variant": null
+        },
+        "Al_rich": {
+          "equal_height_field": 3.5821748117624885,
+          "beta_barrier": 1.3310884120181647,
+          "Q_modes": [
+            0.1175,
+            0.7825
+          ],
+          "Q_cut": 0.5225,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 28.988714508525106,
+              "mean_Q": 0.2096141060550268,
+              "effective_frames_time_corrected": 56.35267053690747
+            },
+            {
+              "mean_x_atpct": 28.45455752103351,
+              "mean_Q": 0.7472745882360272,
+              "effective_frames_time_corrected": 12.723303864377947
+            }
+          ],
+          "single_variant": null
+        }
+      }
+    },
+    {
+      "T_K": 1237.5,
+      "roots": {
+        "Ti_rich": {
+          "equal_height_field": 3.482176075295891,
+          "beta_barrier": 1.9753652085009177,
+          "Q_modes": [
+            0.1075,
+            0.8225
+          ],
+          "Q_cut": 0.4925,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 24.186409112055127,
+              "mean_Q": 0.1758637063981196,
+              "effective_frames_time_corrected": 63.18326463297827
+            },
+            {
+              "mean_x_atpct": 25.36148108994705,
+              "mean_Q": 0.7751890223753449,
+              "effective_frames_time_corrected": 84.9579032346842
+            }
+          ],
+          "single_variant": {
+            "mu_eV": 3.50084476232981,
+            "width_pp": 0.8628366350740491,
+            "phases": [
+              {
+                "mean_x_atpct": 25.0643560804704,
+                "mean_Q": 0.19797346910309543,
+                "effective_frames_time_corrected": 60.2550354711251
+              },
+              {
+                "mean_x_atpct": 25.927192715544454,
+                "mean_Q": 0.7976008630306206,
+                "effective_frames_time_corrected": 76.18826200419004
+              }
+            ]
+          }
+        },
+        "Al_rich": {
+          "equal_height_field": 3.61287991924039,
+          "beta_barrier": 1.6937750760171602,
+          "Q_modes": [
+            0.1225,
+            0.8075000000000001
+          ],
+          "Q_cut": 0.5225,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 30.438808915552062,
+              "mean_Q": 0.20423714979566454,
+              "effective_frames_time_corrected": 15.756316179781072
+            },
+            {
+              "mean_x_atpct": 29.224359303958906,
+              "mean_Q": 0.7614657056109214,
+              "effective_frames_time_corrected": 0.5713654152971894
+            }
+          ],
+          "single_variant": {
+            "mu_eV": 3.5899686897324155,
+            "width_pp": 0.7067316995927164,
+            "phases": [
+              {
+                "mean_x_atpct": 29.309932573709897,
+                "mean_Q": 0.2349216145914514,
+                "effective_frames_time_corrected": 22.547062485819836
+              },
+              {
+                "mean_x_atpct": 28.603200874117174,
+                "mean_Q": 0.7814959389968734,
+                "effective_frames_time_corrected": 3.9531855384184023
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "T_K": 1225.0,
+      "roots": {
+        "Ti_rich": {
+          "equal_height_field": 3.460457509973077,
+          "beta_barrier": 2.2384810375861393,
+          "Q_modes": [
+            0.10250000000000001,
+            0.8325
+          ],
+          "Q_cut": 0.4875,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 23.195921058318618,
+              "mean_Q": 0.1656176389312442,
+              "effective_frames_time_corrected": 25.728220511136097
+            },
+            {
+              "mean_x_atpct": 24.764120425136714,
+              "mean_Q": 0.7836273923060815,
+              "effective_frames_time_corrected": 33.92252105295419
+            }
+          ],
+          "single_variant": {
+            "mu_eV": 3.4732380409216543,
+            "width_pp": 1.3685059372952364,
+            "phases": [
+              {
+                "mean_x_atpct": 23.81417313991065,
+                "mean_Q": 0.1860923387750268,
+                "effective_frames_time_corrected": 23.926001117780395
+              },
+              {
+                "mean_x_atpct": 25.182679077205886,
+                "mean_Q": 0.8085032060432912,
+                "effective_frames_time_corrected": 31.65137256902486
+              }
+            ]
+          }
+        },
+        "Al_rich": {
+          "equal_height_field": 3.632101583131321,
+          "beta_barrier": 1.8218420366016133,
+          "Q_modes": [
+            0.1325,
+            0.8325
+          ],
+          "Q_cut": 0.5275000000000001,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 31.341892450341177,
+              "mean_Q": 0.2128431885425096,
+              "effective_frames_time_corrected": 8.275708606997593
+            },
+            {
+              "mean_x_atpct": 29.560635733547556,
+              "mean_Q": 0.777440622384643,
+              "effective_frames_time_corrected": 0.15021692643279444
+            }
+          ],
+          "single_variant": {
+            "mu_eV": 3.616582219483322,
+            "width_pp": 1.3303366358455526,
+            "phases": [
+              {
+                "mean_x_atpct": 30.56316092308204,
+                "mean_Q": 0.22703464685262267,
+                "effective_frames_time_corrected": 6.561593771441848
+              },
+              {
+                "mean_x_atpct": 29.232824287236493,
+                "mean_Q": 0.7920052795506846,
+                "effective_frames_time_corrected": 0.3145033410886049
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "T_K": 600.0,
+  "N": 768,
+  "n_windows": 26,
+  "equilibrate": 1500,
+  "production": 4500,
+  "stride": 5,
+  "size_shape": [
+    8,
+    8,
+    6
+  ],
+  "start": "ordered",
+  "range_x_Al": [
+    0.01937355324074074,
+    0.24977430555555544
+  ],
+  "contact_columns": [
+    "left_Al_at_pct",
+    "right_Al_at_pct",
+    "delta_mu_eV"
+  ],
+  "class_direct_tangent": [
+    4.526960385690631,
+    24.149827338375612,
+    3.2150438828886037
+  ],
+  "quantum_reweight_tangent": [
+    4.57976413077529,
+    24.144820087253784,
+    3.2176295258958763
+  ],
+  "classical_min_adjacent_dmu_eV": -0.007510245308327779,
+  "raw_classical_facets": [
+    {
+      "alpha_at_pct": 4.526801835227774,
+      "alpha2_at_pct": 24.147607928429068,
+      "window_edge": false,
+      "mean_order_left_right": [
+        0.0323855558593655,
+        0.9658229617686506
+      ]
+    }
+  ],
+  "classical_all_adjacent_increasing": 0,
+  "bootstrap_draws": 384,
+  "bootstrap_window_block_tau_multiplier": 6,
+  "lowest_number_of_blocks": 42,
+  "class_bootstrap_resolved": 384,
+  "quantum_bootstrap_resolved": 384,
+  "classical_95": [
+    [
+      4.403539118175606,
+      4.689023434074192
+    ],
+    [
+      24.112165299868213,
+      24.18726939198999
+    ],
+    [
+      3.2147204040268873,
+      3.215466591352595
+    ]
+  ],
+  "quantum_reweighted_95": [
+    [
+      4.454955058929512,
+      4.724547602027358
+    ],
+    [
+      24.107249381194634,
+      24.18230847742918
+    ],
+    [
+      3.2172715337206577,
+      3.218074909093817
+    ]
+  ],
+  "class_minus_quantum_95": [
+    [
+      -0.08318292505533002,
+      -0.018241063660559817
+    ],
+    [
+      -0.004217635585174495,
+      0.015016686472433528
+    ],
+    [
+      -0.002673033325797214,
+      -0.0025025719871399343
+    ]
+  ],
+  "early_late_classical": [
+    [
+      4.459726705012352,
+      24.139153199246625,
+      3.2152171239915615
+    ],
+    [
+      4.619290424432363,
+      24.15728744059979,
+      3.2148674475464056
+    ]
+  ],
+  "quantum_min_window_Kish_fraction": 0.9574981979756293,
+  "maximum_energy_reconstruction_error_eV_atom": 5.224265464676137e-12,
+  "mean_order_range": [
+    0.016282793209879354,
+    0.9990432098765948
+  ],
+  "every_second_window_classical_tangent": [
+    4.393165512654681,
+    24.019397006543944,
+    3.2152781246760664
+  ],
+  "maximum_mean_order": {
+    "x_Al": 0.24977430555555544,
+    "m": 0.9990432098765948
+  },
+  "author_quantum": [
+    4.590143054930434,
+    24.0897225730685,
+    3.2185421798886464
+  ]
+}

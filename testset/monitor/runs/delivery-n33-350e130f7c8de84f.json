@@ -1,0 +1,115 @@
+{
+  "checked_unix": 1793444317.4679964,
+  "new_ids": [
+    "TiAl-test-047"
+  ],
+  "common_count": 33,
+  "fingerprint": "350e130f7c8de84f",
+  "analysis_mode": "monitor-raw",
+  "models_and_analysis_unchanged": true,
+  "visual_QA": [
+    "parity",
+    "coverage",
+    "energy_residuals",
+    "convergence"
+  ],
+  "cache_files_verified": 300,
+  "history20k_counts": [
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "history15k_preserved_hash_verified": true,
+  "validated_counts": {
+    "PBE": 43,
+    "PBEsol": 40,
+    "r2SCAN": 33
+  },
+  "queues": {
+    "PBE": {
+      "running": 0,
+      "pending": 7,
+      "pending_reason_counts": {
+        "(Priority)": 7
+      },
+      "running_ids": [],
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "PBEsol": {
+      "running": 3,
+      "pending": 7,
+      "pending_reason_counts": {
+        "(Priority)": 7
+      },
+      "running_ids": [
+        "TiAl-test-031",
+        "TiAl-test-048",
+        "TiAl-test-039"
+      ],
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "r2SCAN": {
+      "running": 2,
+      "pending": 15,
+      "pending_reason_counts": {
+        "(JobArrayTaskLimit)": 15
+      },
+      "running_ids": [
+        "TiAl-test-030",
+        "TiAl-test-038"
+      ],
+      "evidence": "testset/monitor/data/latest.json"
+    }
+  },
+  "new_scheduler_errors": [],
+  "readiness": {
+    "candidate_for_discussion": false,
+    "automatic_stop": false,
+    "reasons": [
+      "Need three comparable checkpoints separated by at least five new structures."
+    ],
+    "qualification": "Heuristic discussion trigger based on fine-tuned models only. The pretrained baseline does not change the stopping rule. Report adaptive stopping, completion-order bias, coverage and uncertainty. Full fixed Test50 remains preferred."
+  },
+  "completed_r2SCAN047_elapsed": "04:57:20",
+  "artifacts_sha256": {
+    "convergence.pdf": "d9afa9d4fa5ef2462c7be1bcedabbf63c554c3a9a93fa15b6f32de10f7a5dbd8",
+    "convergence.png": "164eb64b7d60a2a44488eacd8ce483f4486babae6db7338feb568d3ebfcec321",
+    "coverage.pdf": "591d3880464ac5f1c0b5d7365057c328cafef01ee6922d1a0e2185d83598eb58",
+    "coverage.png": "8aafd886af2827ee6d0ae3b6347bd6038e2d4ae06c826e95d442b664820d3a06",
+    "energy_residuals.pdf": "13a40220672c57a48ceb57aef37393b598660d108049117d2bb97313773ec2a8",
+    "energy_residuals.png": "07be8193c516b9436b7fb39cfa2bc216fb85ba9d5eabf84437eee95c56a3ad84",
+    "metrics.json": "322d482444967deea0eb472836bdfb14a0fc64d084d329c53ccf4bff2c36b27e",
+    "parity.pdf": "2824d8e02fd6b89d026ba6dd719f94408cb7a6a5b4d090f29b04a3d2183b51b8",
+    "parity.png": "0ba1d1d34b2de1b0a9bb5e8da497b0e7a3ce68a4e4c412f1b3e2bb5c3491e845"
+  },
+  "scf_check_20261031": {
+    "unix": 1793444390.1074758,
+    "evidence": "testset/dft/scf-check-20261031/snapshot-1793444390.json",
+    "DFT_modified": false,
+    "targets": {
+      "TiAl-test-030": {
+        "last_complete": 27,
+        "iteration_in_progress": 28,
+        "dE_eV": -0.0002412505,
+        "deps_eV": -0.001532556,
+        "recent_step_minutes": 21.9138666667,
+        "elapsed": "09:45:35",
+        "remaining": "10:14:25",
+        "warning_count": 0
+      },
+      "TiAl-test-038": {
+        "last_complete": 22,
+        "iteration_in_progress": 23,
+        "dE_eV": 0.01854395,
+        "deps_eV": -0.04848076,
+        "recent_step_minutes": 13.5699833333,
+        "elapsed": "05:32:53",
+        "remaining": "14:27:07",
+        "warning_count": 0
+      }
+    },
+    "interpretation": "Both active OUTCARs show decreasing electronic residuals and no VASP warnings. Neither has reached EDIFF. Current trend leaves useful time margin; completion within20h is conditional, not guaranteed. No intervention indicated."
+  }
+}

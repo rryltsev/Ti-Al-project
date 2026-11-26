@@ -1,0 +1,78 @@
+{
+  "id": "grace-2l-preparation-20261107-01",
+  "model": "GRACE-2L-OMAT-medium-base-fp64",
+  "checkpoint_sha256": "763b7e5679c81ea82d39e595e701d0c9f6565064393f705cbe76663c9583d0aa",
+  "revision": "4aff666029967745f7993f348eb87a804d625cff",
+  "environment": "/home6/u3129/mlip-research/envs/grace_ft_a100",
+  "cases": [
+    {
+      "name": "PBE-full-N200-seed10",
+      "XC": "PBE",
+      "method": "full",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "expected_steps": 10000,
+      "epochs": 50,
+      "launch_ready": false
+    },
+    {
+      "name": "PBE-restricted-N200-seed10",
+      "XC": "PBE",
+      "method": "restricted",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "expected_steps": 10000,
+      "epochs": 50,
+      "launch_ready": false
+    },
+    {
+      "name": "r2SCAN-full-N200-seed10",
+      "XC": "r2SCAN",
+      "method": "full",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "expected_steps": 10000,
+      "epochs": 50,
+      "launch_ready": false
+    },
+    {
+      "name": "r2SCAN-restricted-N200-seed10",
+      "XC": "r2SCAN",
+      "method": "restricted",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "expected_steps": 10000,
+      "epochs": 50,
+      "launch_ready": false
+    }
+  ],
+  "restricted_patterns": [
+    "I2/reducing_",
+    "rho/reducing_",
+    "I1/reducing_"
+  ],
+  "mask_semantics": "Native TensorPotential substring selection; final exact tensor list/counts must come from preflight.",
+  "data_note": "Backend test_filename is validation149 only. The held-out test149 is not staged.",
+  "initial_energy_shift": "None: preserve original tensors and predictions. Report raw and train-only aligned energy metrics, as for DPA4. If large energy offsets prevent optimization, diagnose after B0 before modifying the declared recipe.",
+  "recipe_status": "Draft native GRACE recipe, not yet GPU-profiled or training-qualified. Paired full/restricted use identical seed/data/LR/loss and final epoch50. GRACE Huber E/F/stress weights16/32/128 are architecture-specific, not equivalent to DPA4 E/F/virial MAE20/20/5.",
+  "restore_policy": "Mandatory model-only checkpoint restore and fresh Adam state in the training observer; no optimizer slots or epoch counters from foundation training. Runtime restore of all existing model objects must be asserted.",
+  "selection_policy": "Fixed final checkpoint at epoch50; no best-validation checkpoint selection; no test access.",
+  "gates_before_training": [
+    "GRACE-specific B0",
+    "GRACE-specific H0",
+    "actual optimizer-step mask check and zero-step source equivalence",
+    "bounded A100 timing/memory profile"
+  ],
+  "no_new_DFT": true,
+  "test_access": false,
+  "training_submitted": false,
+  "preflight_only": true,
+  "references": [
+    "https://gracemaker.readthedocs.io/en/latest/gracemaker/foundation/",
+    "https://huggingface.co/AMS-ICAMS-RUB/grace-foundation-models/resolve/4aff666029967745f7993f348eb87a804d625cff/checkpoints/GRACE-2L-OMAT-medium-base-fp64-checkpoint.tar.gz"
+  ]
+}

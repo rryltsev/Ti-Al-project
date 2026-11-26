@@ -1,0 +1,55 @@
+{
+  "unix": 1793165937.9606314,
+  "source": "testset\\dft\\scf-check-20261028\\snapshot-1793165937.json",
+  "targets": {
+    "TiAl-test-027": {
+      "latest_complete": {
+        "n": 15,
+        "dE_eV": 0.01465425,
+        "deps_eV": -0.7612848
+      },
+      "iteration_header": 16,
+      "converged": false,
+      "recent_loop_minutes": [
+        24.325123333333334,
+        25.026043333333334,
+        26.210050000000003,
+        15.814083333333334,
+        15.516853333333334
+      ],
+      "warnings": []
+    },
+    "TiAl-test-035": {
+      "latest_complete": {
+        "n": 31,
+        "dE_eV": -2.786386e-06,
+        "deps_eV": -1.112398e-05
+      },
+      "iteration_header": 32,
+      "converged": false,
+      "recent_loop_minutes": [
+        11.754965,
+        11.87646,
+        11.913578333333334,
+        11.714318333333333,
+        11.613058333333333
+      ],
+      "warnings": []
+    },
+    "TiAl-test-044": {
+      "latest_complete": null,
+      "iteration_header": 33,
+      "converged": true,
+      "recent_loop_minutes": [
+        6.100203333333334,
+        6.096801666666667,
+        5.600318333333333,
+        5.14617,
+        3.9840333333333335
+      ],
+      "warnings": []
+    }
+  },
+  "interpretation": "044 converged and validated in 03:54:17. 027 progressed to step 15 and latest loops accelerated to 15.5–15.8 min; residual falls, timing risk lower but forecast conditional. Fits at recent speed about 4.4–7.3 additional hours; slow recent maximum scenario up to 11.7 additional hours versus 13.9h available. 035 near threshold at step31, no warnings.",
+  "DFT_modified": false
+}

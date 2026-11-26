@@ -1,0 +1,117 @@
+[
+  {
+    "model": "DFT",
+    "method": "Chebyshev degree 3",
+    "T_min": 600.0,
+    "T_max": 1450.0,
+    "alpha_chebyshev_coefficients": [
+      8.133474742892243,
+      7.749089295098667,
+      1.2730246972621948,
+      0.4449531437687654
+    ],
+    "alpha2_chebyshev_coefficients": [
+      21.77910164882414,
+      -1.9690605286330163,
+      1.1219181774306686,
+      0.5193802587014383
+    ],
+    "domain": [
+      600.0,
+      1450.0
+    ],
+    "drawing_samples": 300
+  },
+  {
+    "model": "MTP",
+    "method": "Chebyshev degree 3",
+    "T_min": 600.0,
+    "T_max": 1350.0,
+    "alpha_chebyshev_coefficients": [
+      10.77589196755865,
+      8.851763951994906,
+      1.2220013517228707,
+      0.6334778082905907
+    ],
+    "alpha2_chebyshev_coefficients": [
+      22.840587067859488,
+      -0.8156829024367133,
+      1.1717920835334719,
+      0.5730776944627666
+    ],
+    "domain": [
+      600.0,
+      1350.0
+    ],
+    "drawing_samples": 300
+  },
+  {
+    "model": "DeepMD_Dima",
+    "method": "Chebyshev degree 3",
+    "T_min": 600.0,
+    "T_max": 1025.0,
+    "alpha_chebyshev_coefficients": [
+      12.371299218749995,
+      7.644899284996348,
+      -0.42293255208335134,
+      0.1320945746527789
+    ],
+    "alpha2_chebyshev_coefficients": [
+      22.58136337719297,
+      -0.8530177205165627,
+      0.6256633771929797,
+      0.2061114339668655
+    ],
+    "domain": [
+      600.0,
+      1025.0
+    ],
+    "drawing_samples": 300
+  },
+  {
+    "model": "DPA4_PBE",
+    "method": "Chebyshev degree 3",
+    "T_min": 600.0,
+    "T_max": 1650.0,
+    "alpha_chebyshev_coefficients": [
+      8.57150774098042,
+      10.191926744863308,
+      1.633001860851856,
+      -0.3637772971505855
+    ],
+    "alpha2_chebyshev_coefficients": [
+      23.530915500653162,
+      -1.5383489033143214,
+      0.06175978123550611,
+      0.2549135408422823
+    ],
+    "domain": [
+      600.0,
+      1650.0
+    ],
+    "drawing_samples": 300
+  },
+  {
+    "model": "DPA4_SCAN",
+    "method": "Chebyshev degree 3",
+    "T_min": 600.0,
+    "T_max": 1825.0,
+    "alpha_chebyshev_coefficients": [
+      8.144224069923636,
+      10.667298758562511,
+      2.631688961750565,
+      -0.2232997198875466
+    ],
+    "alpha2_chebyshev_coefficients": [
+      23.833710036552592,
+      -1.246738981993853,
+      0.06004798607182386,
+      0.33936942295688755
+    ],
+    "domain": [
+      600.0,
+      1825.0
+    ],
+    "drawing_samples": 300
+  }
+]

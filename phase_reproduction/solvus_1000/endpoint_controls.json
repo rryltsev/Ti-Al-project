@@ -1,0 +1,1549 @@
+{
+  "method": "Separate normalization conditional on phase. Bootstrap columns are alpha, alpha2; rows are 2.5% and 97.5% quantiles. Replica draws are stratified by starting phase. Block draws keep replicas fixed. Field uncertainty uses joint umbrella bootstrap values.",
+  "umbrella_analysis": "analysis1400_free.json",
+  "umbrella_sha256": "b055231bfd913eed57b56183e0ccca33e4c554708547a929f15f8e5b3fb01e9c",
+  "groups": [
+    {
+      "N": 1400,
+      "cap": 0.35,
+      "series": "check1400w35",
+      "manifest_sha256": "eea192068c54307c93bcfc7a99ca1ed598aed1013c8c5c27798018e8f578824a",
+      "sampled_mu_eV": 3.289,
+      "target_mu_eV": 3.2890901421464225,
+      "MBAR_order_cut": 0.47250000000000003,
+      "q_core_limits": [
+        0.265,
+        0.6725000000000001
+      ],
+      "MBAR_phase_x": [
+        0.14858789655892574,
+        0.2236146259535002
+      ],
+      "MBAR_phase_volumes_A3_atom": [
+        17.452995927001,
+        17.241469753437688
+      ],
+      "controls_phase_x": [
+        0.14914013949468133,
+        0.22486182932866233
+      ],
+      "phase_results": [
+        {
+          "means": {
+            "x": 0.14914013949468133,
+            "Q": 0.08069956978393669,
+            "volume_A3_atom": 17.449651563859142,
+            "c_a": 1.5913569189964631,
+            "wall": 0.34733452601576187,
+            "U_eV_atom": -7.283664470576675,
+            "Al_richest_sublattice": 0.20966481683263347,
+            "Al_2nd_sublattice": 0.15653471292197574,
+            "Al_3rd_sublattice": 0.12859400820831993,
+            "Al_4th_sublattice": 0.10176702001579636
+          },
+          "frames": 4200,
+          "semi_grand_U_minus_muN_eV_atom": -7.774199833186974,
+          "Kish_frames": 4199.63387185904,
+          "approx_correlated_Kish": 93.60697456786218
+        },
+        {
+          "means": {
+            "x": 0.22486182932866233,
+            "Q": 0.873535270992167,
+            "volume_A3_atom": 17.237007487602177,
+            "c_a": 1.6068892379587676,
+            "wall": 0.34529358640765795,
+            "U_eV_atom": -7.068149588133618,
+            "Al_richest_sublattice": 0.8800132825727871,
+            "Al_2nd_sublattice": 0.010131646650788221,
+            "Al_3rd_sublattice": 0.006271903695222695,
+            "Al_4th_sublattice": 0.0030304843958500987
+          },
+          "frames": 1400,
+          "semi_grand_U_minus_muN_eV_atom": -7.807740414323533,
+          "Kish_frames": 1399.8995610960972,
+          "approx_correlated_Kish": 32.34349245949386
+        }
+      ],
+      "replicas": [
+        {
+          "name": "check1400w35-q00",
+          "seed": 81273410,
+          "start": "random",
+          "inefficiencies_x_q_v_ca_indicator": [
+            9.075273546405265,
+            11.473929585699189,
+            8.898607626785106,
+            33.901057866428204,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              950,
+              0
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.1477661621231317,
+                "Q": 0.07244035680790825,
+                "volume_A3_atom": 17.450407995513412,
+                "c_a": 1.5901341384391796,
+                "wall": 0.3472304638079556,
+                "U_eV_atom": -7.2874674399428505,
+                "Al_richest_sublattice": 0.20209642972906616,
+                "Al_2nd_sublattice": 0.15637913238845277,
+                "Al_3rd_sublattice": 0.13080113651295144,
+                "Al_4th_sublattice": 0.1017879498620567
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.773483667124853,
+              "Kish_frames": 699.9342625158623,
+              "approx_correlated_Kish": 20.646384112072163
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w35-q01",
+          "seed": 81273411,
+          "start": "random",
+          "inefficiencies_x_q_v_ca_indicator": [
+            3.870156547842522,
+            12.320673683131265,
+            8.192887050448464,
+            60.30874510124856,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              950,
+              0
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.14927231227394733,
+                "Q": 0.07437682878361528,
+                "volume_A3_atom": 17.4543451610627,
+                "c_a": 1.5925772926490473,
+                "wall": 0.3471465796650958,
+                "U_eV_atom": -7.283001669297127,
+                "Al_richest_sublattice": 0.20505493386165885,
+                "Al_2nd_sublattice": 0.15988633349515355,
+                "Al_3rd_sublattice": 0.12992836750927558,
+                "Al_4th_sublattice": 0.10221961422970181
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.77397176009277,
+              "Kish_frames": 699.9447021274351,
+              "approx_correlated_Kish": 11.606023321366445
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w35-q02",
+          "seed": 81273412,
+          "start": "random",
+          "inefficiencies_x_q_v_ca_indicator": [
+            6.714852049630934,
+            13.767732107030847,
+            9.016766486052909,
+            53.8862826772657,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              950,
+              0
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.14925987334288973,
+                "Q": 0.08339887128639428,
+                "volume_A3_atom": 17.445692781516083,
+                "c_a": 1.59100575429792,
+                "wall": 0.34740416731496904,
+                "U_eV_atom": -7.283686600651557,
+                "Al_richest_sublattice": 0.21180902680769423,
+                "Al_2nd_sublattice": 0.15455596521587447,
+                "Al_3rd_sublattice": 0.12914074225958316,
+                "Al_4th_sublattice": 0.10153375908840667
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.77461577868168,
+              "Kish_frames": 699.9355167819899,
+              "approx_correlated_Kish": 12.989122314746135
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w35-q03",
+          "seed": 81273413,
+          "start": "random",
+          "inefficiencies_x_q_v_ca_indicator": [
+            6.515394553111942,
+            14.830539799323944,
+            8.232080564674876,
+            33.52006161914577,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              950,
+              0
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.15006136404541248,
+                "Q": 0.07535424558551575,
+                "volume_A3_atom": 17.44202203184907,
+                "c_a": 1.5910829164006028,
+                "wall": 0.34758132202431313,
+                "U_eV_atom": -7.281289598596083,
+                "Al_richest_sublattice": 0.2065770482345431,
+                "Al_2nd_sublattice": 0.15918849036293833,
+                "Al_3rd_sublattice": 0.13093999111378077,
+                "Al_4th_sublattice": 0.10353992647038766
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.774854951794895,
+              "Kish_frames": 699.9433489779484,
+              "approx_correlated_Kish": 20.881326440586236
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w35-q04",
+          "seed": 81273414,
+          "start": "ordered",
+          "inefficiencies_x_q_v_ca_indicator": [
+            15.147244380796117,
+            19.138852327991195,
+            11.488778727960536,
+            47.49603918898079,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha2"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            0,
+            700
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha2"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              0,
+              950
+            ]
+          },
+          "phase_results": [
+            null,
+            {
+              "means": {
+                "x": 0.22492335026636878,
+                "Q": 0.8735702948268612,
+                "volume_A3_atom": 17.234403592658218,
+                "c_a": 1.606470984156692,
+                "wall": 0.34538201355259884,
+                "U_eV_atom": -7.067468274584694,
+                "Al_richest_sublattice": 0.8801010713865095,
+                "Al_2nd_sublattice": 0.010142722030812642,
+                "Al_3rd_sublattice": 0.00636865286733982,
+                "Al_4th_sublattice": 0.0030809547808126826
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.807261448684355,
+              "Kish_frames": 699.9489535303834,
+              "approx_correlated_Kish": 14.736996294477821
+            }
+          ]
+        },
+        {
+          "name": "check1400w35-q05",
+          "seed": 81273415,
+          "start": "ordered",
+          "inefficiencies_x_q_v_ca_indicator": [
+            4.84813269324312,
+            14.649170819756854,
+            7.593796727152444,
+            57.64167636605903,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha2"
+              ],
+              [
+                151,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 1,
+            "q_cut_crossings": 5,
+            "samples": [
+              843,
+              107
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.1495003476084121,
+                "Q": 0.08740551207194375,
+                "volume_A3_atom": 17.455433187221214,
+                "c_a": 1.5924939686577189,
+                "wall": 0.3471670304854494,
+                "U_eV_atom": -7.282708612323976,
+                "Al_richest_sublattice": 0.2150544816623678,
+                "Al_2nd_sublattice": 0.15455251415563806,
+                "Al_3rd_sublattice": 0.12645480689789892,
+                "Al_4th_sublattice": 0.10193958771774338
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.774428731890268,
+              "Kish_frames": 699.9442174075543,
+              "approx_correlated_Kish": 12.14302326952622
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w35-q06",
+          "seed": 81273416,
+          "start": "ordered",
+          "inefficiencies_x_q_v_ca_indicator": [
+            11.105220363840166,
+            13.736243293740165,
+            9.830563007363796,
+            39.06696869352484,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha2"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            0,
+            700
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha2"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              0,
+              950
+            ]
+          },
+          "phase_results": [
+            null,
+            {
+              "means": {
+                "x": 0.22480029737656335,
+                "Q": 0.8735002408869852,
+                "volume_A3_atom": 17.23961184873411,
+                "c_a": 1.607307566642852,
+                "wall": 0.34520514343117564,
+                "U_eV_atom": -7.068831023661415,
+                "Al_richest_sublattice": 0.8799254780418083,
+                "Al_2nd_sublattice": 0.01012056928788467,
+                "Al_3rd_sublattice": 0.0061751372016310745,
+                "Al_4th_sublattice": 0.0029800049749292025
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.808219465714254,
+              "Kish_frames": 699.9506190817656,
+              "approx_correlated_Kish": 17.916686205494592
+            }
+          ]
+        },
+        {
+          "name": "check1400w35-q07",
+          "seed": 81273417,
+          "start": "ordered",
+          "inefficiencies_x_q_v_ca_indicator": [
+            4.273325575772832,
+            22.56161413301005,
+            6.637280011642757,
+            29.886228509249147,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha2"
+              ],
+              [
+                90,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 1,
+            "q_cut_crossings": 3,
+            "samples": [
+              875,
+              75
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.14897648673283317,
+                "Q": 0.09121196689745932,
+                "volume_A3_atom": 17.450016845565862,
+                "c_a": 1.5908444436752733,
+                "wall": 0.34747719790210646,
+                "U_eV_atom": -7.283844452111439,
+                "Al_richest_sublattice": 0.21738546190592214,
+                "Al_2nd_sublattice": 0.1546422133105039,
+                "Al_3rd_sublattice": 0.1243000155334857,
+                "Al_4th_sublattice": 0.09957825618142072
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.773841546036008,
+              "Kish_frames": 699.9361914954449,
+              "approx_correlated_Kish": 23.420024084967082
+            },
+            null
+          ]
+        }
+      ],
+      "production_halves": [
+        [
+          {
+            "means": {
+              "x": 0.1489570723976945,
+              "Q": 0.07783127119885909,
+              "volume_A3_atom": 17.44988837060852,
+              "c_a": 1.5911968799839569,
+              "wall": 0.3472629739836067,
+              "U_eV_atom": -7.284194367531118,
+              "Al_richest_sublattice": 0.2073305257968402,
+              "Al_2nd_sublattice": 0.15687621337173344,
+              "Al_3rd_sublattice": 0.12879863045575887,
+              "Al_4th_sublattice": 0.10282291996644516
+            },
+            "frames": 2100,
+            "semi_grand_U_minus_muN_eV_atom": -7.774127605957366,
+            "Kish_frames": 2099.818210546967,
+            "approx_correlated_Kish": 46.794888405704725
+          },
+          {
+            "means": {
+              "x": 0.22503812414979996,
+              "Q": 0.8742594858565345,
+              "volume_A3_atom": 17.231296892036788,
+              "c_a": 1.6065541599512543,
+              "wall": 0.34566840034177243,
+              "U_eV_atom": -7.0678162089180585,
+              "Al_richest_sublattice": 0.8807327385422047,
+              "Al_2nd_sublattice": 0.010106982437963931,
+              "Al_3rd_sublattice": 0.006292547862604197,
+              "Al_4th_sublattice": 0.003020227756427392
+            },
+            "frames": 700,
+            "semi_grand_U_minus_muN_eV_atom": -7.807986884666288,
+            "Kish_frames": 699.9515707158749,
+            "approx_correlated_Kish": 16.170604910519817
+          }
+        ],
+        [
+          {
+            "means": {
+              "x": 0.14932310858228345,
+              "Q": 0.0835663327561947,
+              "volume_A3_atom": 17.44941488389002,
+              "c_a": 1.591516872328224,
+              "wall": 0.3474060397408118,
+              "U_eV_atom": -7.283134857315351,
+              "Al_richest_sublattice": 0.21199785814942743,
+              "Al_2nd_sublattice": 0.15619339530271958,
+              "Al_3rd_sublattice": 0.12838949551033554,
+              "Al_4th_sublattice": 0.10071168536665077
+            },
+            "frames": 2100,
+            "semi_grand_U_minus_muN_eV_atom": -7.774272021747999,
+            "Kish_frames": 2099.8159636081946,
+            "approx_correlated_Kish": 46.81208682309868
+          },
+          {
+            "means": {
+              "x": 0.2246854429859769,
+              "Q": 0.8728106801594939,
+              "volume_A3_atom": 17.24272104776142,
+              "c_a": 1.6072244899183985,
+              "wall": 0.34491857789294794,
+              "U_eV_atom": -7.068483140419386,
+              "Al_richest_sublattice": 0.8792934531055949,
+              "Al_2nd_sublattice": 0.010156323667771517,
+              "Al_3rd_sublattice": 0.006251248810645259,
+              "Al_4th_sublattice": 0.0030407463598961034
+            },
+            "frames": 700,
+            "semi_grand_U_minus_muN_eV_atom": -7.807493816028365,
+            "Kish_frames": 699.948082849899,
+            "approx_correlated_Kish": 16.172891075154848
+          }
+        ]
+      ],
+      "divider_check": [
+        {
+          "cut": 0.42250000000000004,
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.14914013949468133,
+                "Q": 0.08069956978393669,
+                "volume_A3_atom": 17.449651563859142,
+                "c_a": 1.5913569189964631,
+                "wall": 0.34733452601576187,
+                "U_eV_atom": -7.283664470576675,
+                "Al_richest_sublattice": 0.20966481683263347,
+                "Al_2nd_sublattice": 0.15653471292197574,
+                "Al_3rd_sublattice": 0.12859400820831993,
+                "Al_4th_sublattice": 0.10176702001579636
+              },
+              "frames": 4200,
+              "semi_grand_U_minus_muN_eV_atom": -7.774199833186974,
+              "Kish_frames": 4199.63387185904,
+              "approx_correlated_Kish": 93.60697456786218
+            },
+            {
+              "means": {
+                "x": 0.22486182932866233,
+                "Q": 0.873535270992167,
+                "volume_A3_atom": 17.237007487602177,
+                "c_a": 1.6068892379587676,
+                "wall": 0.34529358640765795,
+                "U_eV_atom": -7.068149588133618,
+                "Al_richest_sublattice": 0.8800132825727871,
+                "Al_2nd_sublattice": 0.010131646650788221,
+                "Al_3rd_sublattice": 0.006271903695222695,
+                "Al_4th_sublattice": 0.0030304843958500987
+              },
+              "frames": 1400,
+              "semi_grand_U_minus_muN_eV_atom": -7.807740414323533,
+              "Kish_frames": 1399.8995610960972,
+              "approx_correlated_Kish": 32.34349245949386
+            }
+          ]
+        },
+        {
+          "cut": 0.5225000000000001,
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.14914013949468133,
+                "Q": 0.08069956978393669,
+                "volume_A3_atom": 17.449651563859142,
+                "c_a": 1.5913569189964631,
+                "wall": 0.34733452601576187,
+                "U_eV_atom": -7.283664470576675,
+                "Al_richest_sublattice": 0.20966481683263347,
+                "Al_2nd_sublattice": 0.15653471292197574,
+                "Al_3rd_sublattice": 0.12859400820831993,
+                "Al_4th_sublattice": 0.10176702001579636
+              },
+              "frames": 4200,
+              "semi_grand_U_minus_muN_eV_atom": -7.774199833186974,
+              "Kish_frames": 4199.63387185904,
+              "approx_correlated_Kish": 93.60697456786218
+            },
+            {
+              "means": {
+                "x": 0.22486182932866233,
+                "Q": 0.873535270992167,
+                "volume_A3_atom": 17.237007487602177,
+                "c_a": 1.6068892379587676,
+                "wall": 0.34529358640765795,
+                "U_eV_atom": -7.068149588133618,
+                "Al_richest_sublattice": 0.8800132825727871,
+                "Al_2nd_sublattice": 0.010131646650788221,
+                "Al_3rd_sublattice": 0.006271903695222695,
+                "Al_4th_sublattice": 0.0030304843958500987
+              },
+              "frames": 1400,
+              "semi_grand_U_minus_muN_eV_atom": -7.807740414323533,
+              "Kish_frames": 1399.8995610960972,
+              "approx_correlated_Kish": 32.34349245949386
+            }
+          ]
+        }
+      ],
+      "bootstrap": {
+        "replica": {
+          "conditional": [
+            [
+              0.14851695275929708,
+              0.2248002973765633
+            ],
+            [
+              0.14965374476141163,
+              0.2249233502663688
+            ]
+          ],
+          "with_field": [
+            [
+              0.14811188854564902,
+              0.2241996695398231
+            ],
+            [
+              0.1499871331923432,
+              0.2254239340637305
+            ]
+          ],
+          "minus_umbrella": [
+            [
+              -0.000325621100468057,
+              0.00039817919045770925
+            ],
+            [
+              0.0013047238956835933,
+              0.0022912217791374867
+            ]
+          ],
+          "resolved": 1869
+        },
+        "block": {
+          "conditional": [
+            [
+              0.14871106641444218,
+              0.22375953866336135
+            ],
+            [
+              0.14957440068474237,
+              0.22585175078300887
+            ]
+          ],
+          "with_field": [
+            [
+              0.14829773860462883,
+              0.22353532644162907
+            ],
+            [
+              0.149986114905216,
+              0.22602077448745939
+            ]
+          ],
+          "minus_umbrella": [
+            [
+              -0.00021195367252915126,
+              -0.00017059932027314734
+            ],
+            [
+              0.001224987059029399,
+              0.002736349148179969
+            ]
+          ],
+          "resolved": 2000
+        }
+      }
+    },
+    {
+      "N": 1400,
+      "cap": 0.4,
+      "series": "check1400w40",
+      "manifest_sha256": "70c0421abb1f74775fc696acc8c5f1a82767e4f127c9c210aa0b567b2fa673e3",
+      "sampled_mu_eV": 3.294,
+      "target_mu_eV": 3.2936821363438424,
+      "MBAR_order_cut": 0.4975,
+      "q_core_limits": [
+        0.28,
+        0.6875
+      ],
+      "MBAR_phase_x": [
+        0.14981743875033668,
+        0.22444830392729065
+      ],
+      "MBAR_phase_volumes_A3_atom": [
+        17.45692516298534,
+        17.241305531715966
+      ],
+      "controls_phase_x": [
+        0.149866767077104,
+        0.22488694902694548
+      ],
+      "phase_results": [
+        {
+          "means": {
+            "x": 0.149866767077104,
+            "Q": 0.08277044526291576,
+            "volume_A3_atom": 17.45827447154673,
+            "c_a": 1.5910679580288458,
+            "wall": 0.3921166623158915,
+            "U_eV_atom": -7.277950942445034,
+            "Al_richest_sublattice": 0.21194460102429022,
+            "Al_2nd_sublattice": 0.1565001875524602,
+            "Al_3rd_sublattice": 0.128536250465137,
+            "Al_4th_sublattice": 0.10248602926652921
+          },
+          "frames": 2800,
+          "semi_grand_U_minus_muN_eV_atom": -7.771564435998495,
+          "Kish_frames": 2796.7909621954213,
+          "approx_correlated_Kish": 27.448836826953375
+        },
+        {
+          "means": {
+            "x": 0.22488694902694548,
+            "Q": 0.8704401960122211,
+            "volume_A3_atom": 17.2365261592687,
+            "c_a": 1.6062162809974043,
+            "wall": 0.3835190473277808,
+            "U_eV_atom": -7.066428027217921,
+            "Al_richest_sublattice": 0.8777170960361125,
+            "Al_2nd_sublattice": 0.011290450266648232,
+            "Al_3rd_sublattice": 0.006961503067066612,
+            "Al_4th_sublattice": 0.0035787467379547818
+          },
+          "frames": 2800,
+          "semi_grand_U_minus_muN_eV_atom": -7.8071341539248404,
+          "Kish_frames": 2795.645930270651,
+          "approx_correlated_Kish": 43.76934205168171
+        }
+      ],
+      "replicas": [
+        {
+          "name": "check1400w40-q00",
+          "seed": 92746020,
+          "start": "random",
+          "inefficiencies_x_q_v_ca_indicator": [
+            3.330465121465231,
+            7.099875385337496,
+            7.980292741868638,
+            66.99616031522712,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              950,
+              0
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.15016324706181283,
+                "Q": 0.07216714599920208,
+                "volume_A3_atom": 17.45687992052045,
+                "c_a": 1.5944883625159634,
+                "wall": 0.3917175455235253,
+                "U_eV_atom": -7.277336376154052,
+                "Al_richest_sublattice": 0.2042886065612133,
+                "Al_2nd_sublattice": 0.1599848292686178,
+                "Al_3rd_sublattice": 0.13163111082895138,
+                "Al_4th_sublattice": 0.1047484415884684
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.771926380536932,
+              "Kish_frames": 699.2993661870622,
+              "approx_correlated_Kish": 10.43790215583628
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w40-q01",
+          "seed": 92746021,
+          "start": "random",
+          "inefficiencies_x_q_v_ca_indicator": [
+            10.201326595715294,
+            17.180846279892243,
+            8.613214387687202,
+            128.1070471712651,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              950,
+              0
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.14887351595703,
+                "Q": 0.08006503060692269,
+                "volume_A3_atom": 17.46150542262762,
+                "c_a": 1.5892383589387682,
+                "wall": 0.3924453805902936,
+                "U_eV_atom": -7.2799259769572755,
+                "Al_richest_sublattice": 0.2089222889122186,
+                "Al_2nd_sublattice": 0.15587367949186046,
+                "Al_3rd_sublattice": 0.12886106167613845,
+                "Al_4th_sublattice": 0.10183703374790253
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.770268017039645,
+              "Kish_frames": 699.313252105378,
+              "approx_correlated_Kish": 5.458819538401137
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w40-q02",
+          "seed": 92746022,
+          "start": "random",
+          "inefficiencies_x_q_v_ca_indicator": [
+            20.115855694801315,
+            46.95047802373717,
+            12.642857036254084,
+            61.22213977713043,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              950,
+              0
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.15138667712732792,
+                "Q": 0.10675231160988309,
+                "volume_A3_atom": 17.45398075756347,
+                "c_a": 1.5908903386546636,
+                "wall": 0.3921427996352445,
+                "U_eV_atom": -7.2739406805354525,
+                "Al_richest_sublattice": 0.23145091083474534,
+                "Al_2nd_sublattice": 0.15392074781192888,
+                "Al_3rd_sublattice": 0.12350953422077593,
+                "Al_4th_sublattice": 0.09666551564186154
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.772560274670186,
+              "Kish_frames": 699.0965191629996,
+              "approx_correlated_Kish": 11.419014783017232
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w40-q03",
+          "seed": 92746023,
+          "start": "random",
+          "inefficiencies_x_q_v_ca_indicator": [
+            15.773316212177512,
+            25.321084711859992,
+            31.624181885399622,
+            149.8294670693714,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            700,
+            0
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              950,
+              0
+            ]
+          },
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.1490645504894705,
+                "Q": 0.0723282731955961,
+                "volume_A3_atom": 17.460669118884542,
+                "c_a": 1.5896736599519348,
+                "wall": 0.39215865775053876,
+                "U_eV_atom": -7.280547173534311,
+                "Al_richest_sublattice": 0.20331075538616394,
+                "Al_2nd_sublattice": 0.156210681712298,
+                "Al_3rd_sublattice": 0.13009999340701128,
+                "Al_4th_sublattice": 0.1066367714524088
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.771518420643605,
+              "Kish_frames": 699.1557097437899,
+              "approx_correlated_Kish": 4.66634316612819
+            },
+            null
+          ]
+        },
+        {
+          "name": "check1400w40-q04",
+          "seed": 92746024,
+          "start": "ordered",
+          "inefficiencies_x_q_v_ca_indicator": [
+            16.644098090549143,
+            19.71790150051234,
+            7.456444283504755,
+            33.51456168434624,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha2"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            0,
+            700
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha2"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              0,
+              950
+            ]
+          },
+          "phase_results": [
+            null,
+            {
+              "means": {
+                "x": 0.22640384722885085,
+                "Q": 0.8811936021112632,
+                "volume_A3_atom": 17.23416064949841,
+                "c_a": 1.6081833929012377,
+                "wall": 0.38365870799184304,
+                "U_eV_atom": -7.0618845061535405,
+                "Al_richest_sublattice": 0.8872990488123054,
+                "Al_2nd_sublattice": 0.009713661577017788,
+                "Al_3rd_sublattice": 0.005837611805839752,
+                "Al_4th_sublattice": 0.0027650667202404077
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.807586813370727,
+              "Kish_frames": 699.4333657785053,
+              "approx_correlated_Kish": 20.869536423183835
+            }
+          ]
+        },
+        {
+          "name": "check1400w40-q05",
+          "seed": 92746025,
+          "start": "ordered",
+          "inefficiencies_x_q_v_ca_indicator": [
+            20.144161532080094,
+            25.983819018542192,
+            9.306178165510605,
+            91.86451400107514,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha2"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            0,
+            700
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha2"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              0,
+              950
+            ]
+          },
+          "phase_results": [
+            null,
+            {
+              "means": {
+                "x": 0.22616786776951575,
+                "Q": 0.8785905833861298,
+                "volume_A3_atom": 17.230435485645533,
+                "c_a": 1.6061796470438574,
+                "wall": 0.3804365298414087,
+                "U_eV_atom": -7.063739356601488,
+                "Al_richest_sublattice": 0.8851108053091131,
+                "Al_2nd_sublattice": 0.010534739606735712,
+                "Al_3rd_sublattice": 0.006152504184396844,
+                "Al_4th_sublattice": 0.002873421977817063
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.808664422488918,
+              "Kish_frames": 699.1621181245096,
+              "approx_correlated_Kish": 7.610796461801636
+            }
+          ]
+        },
+        {
+          "name": "check1400w40-q06",
+          "seed": 92746026,
+          "start": "ordered",
+          "inefficiencies_x_q_v_ca_indicator": [
+            20.249306402101237,
+            23.978891649809718,
+            10.17192157637486,
+            25.39053288710737,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha2"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            0,
+            700
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha2"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              0,
+              950
+            ]
+          },
+          "phase_results": [
+            null,
+            {
+              "means": {
+                "x": 0.22516775980483228,
+                "Q": 0.874069701755297,
+                "volume_A3_atom": 17.231176945122648,
+                "c_a": 1.6051885881741819,
+                "wall": 0.3848428696467504,
+                "U_eV_atom": -7.065446995114803,
+                "Al_richest_sublattice": 0.880720036121301,
+                "Al_2nd_sublattice": 0.010338634782142735,
+                "Al_3rd_sublattice": 0.006422957145236948,
+                "Al_4th_sublattice": 0.0031894111706485375
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.807078023264539,
+              "Kish_frames": 699.2013014882007,
+              "approx_correlated_Kish": 27.537874238284942
+            }
+          ]
+        },
+        {
+          "name": "check1400w40-q07",
+          "seed": 92746027,
+          "start": "ordered",
+          "inefficiencies_x_q_v_ca_indicator": [
+            97.1639590821321,
+            103.25789453604919,
+            55.31336489924483,
+            49.50965588166623,
+            1.0
+          ],
+          "core_visits": [
+            [
+              251,
+              "alpha2"
+            ]
+          ],
+          "core_to_core_transitions": 0,
+          "q_cut_crossings": 0,
+          "samples": [
+            0,
+            700
+          ],
+          "including_burn_in": {
+            "core_visits": [
+              [
+                1,
+                "alpha2"
+              ]
+            ],
+            "core_to_core_transitions": 0,
+            "q_cut_crossings": 0,
+            "samples": [
+              0,
+              950
+            ]
+          },
+          "phase_results": [
+            null,
+            {
+              "means": {
+                "x": 0.22187370317909777,
+                "Q": 0.8483770737260737,
+                "volume_A3_atom": 17.250063661025283,
+                "c_a": 1.605339853249966,
+                "wall": 0.3850971431228363,
+                "U_eV_atom": -7.074467506188381,
+                "Al_richest_sublattice": 0.8581565084736529,
+                "Al_2nd_sublattice": 0.014508379487612685,
+                "Al_3rd_sublattice": 0.009382141859666142,
+                "Al_4th_sublattice": 0.005447782895459125
+              },
+              "frames": 700,
+              "semi_grand_U_minus_muN_eV_atom": -7.805248958873832,
+              "Kish_frames": 698.1146950286468,
+              "approx_correlated_Kish": 6.760884464721701
+            }
+          ]
+        }
+      ],
+      "production_halves": [
+        [
+          {
+            "means": {
+              "x": 0.15039030557796634,
+              "Q": 0.08658402962967848,
+              "volume_A3_atom": 17.457869977402247,
+              "c_a": 1.5925339420629798,
+              "wall": 0.3924034196849122,
+              "U_eV_atom": -7.276524205571503,
+              "Al_richest_sublattice": 0.21532832780022235,
+              "Al_2nd_sublattice": 0.15659937045880995,
+              "Al_3rd_sublattice": 0.12761788073077873,
+              "Al_4th_sublattice": 0.10201564332205436
+            },
+            "frames": 1400,
+            "semi_grand_U_minus_muN_eV_atom": -7.7718620685329425,
+            "Kish_frames": 1398.3724539923794,
+            "approx_correlated_Kish": 13.757009529951866
+          },
+          {
+            "means": {
+              "x": 0.22358389171928328,
+              "Q": 0.8614833375112134,
+              "volume_A3_atom": 17.240747097704414,
+              "c_a": 1.6062141602522486,
+              "wall": 0.3846061711811202,
+              "U_eV_atom": -7.070128320830584,
+              "Al_richest_sublattice": 0.8696963948527021,
+              "Al_2nd_sublattice": 0.012548471924835606,
+              "Al_3rd_sublattice": 0.007839597582439174,
+              "Al_4th_sublattice": 0.004251102517156179
+            },
+            "frames": 1400,
+            "semi_grand_U_minus_muN_eV_atom": -7.806542590960623,
+            "Kish_frames": 1397.254912769369,
+            "approx_correlated_Kish": 21.765094452815088
+          }
+        ],
+        [
+          {
+            "means": {
+              "x": 0.149346056227873,
+              "Q": 0.07897745821237183,
+              "volume_A3_atom": 17.458676781002744,
+              "c_a": 1.589609891831007,
+              "wall": 0.3918314537344789,
+              "U_eV_atom": -7.279369973457701,
+              "Al_richest_sublattice": 0.20857914988715276,
+              "Al_2nd_sublattice": 0.15640154033681203,
+              "Al_3rd_sublattice": 0.1294496600491463,
+              "Al_4th_sublattice": 0.10295387463837996
+            },
+            "frames": 1400,
+            "semi_grand_U_minus_muN_eV_atom": -7.771268410988849,
+            "Kish_frames": 1398.4386582918037,
+            "approx_correlated_Kish": 13.692529223677607
+          },
+          {
+            "means": {
+              "x": 0.22620718928583639,
+              "Q": 0.8795151654066445,
+              "volume_A3_atom": 17.23224956082562,
+              "c_a": 1.6062184297080688,
+              "wall": 0.3824175879605389,
+              "U_eV_atom": -7.062678939155224,
+              "Al_richest_sublattice": 0.8858435633408122,
+              "Al_2nd_sublattice": 0.010015839526254773,
+              "Al_3rd_sublattice": 0.0060718294329996465,
+              "Al_4th_sublattice": 0.002897524843277274
+            },
+            "frames": 1400,
+            "semi_grand_U_minus_muN_eV_atom": -7.807733517618534,
+            "Kish_frames": 1398.5282224122243,
+            "approx_correlated_Kish": 22.010721001010133
+          }
+        ]
+      ],
+      "divider_check": [
+        {
+          "cut": 0.4475,
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.149866767077104,
+                "Q": 0.08277044526291576,
+                "volume_A3_atom": 17.45827447154673,
+                "c_a": 1.5910679580288458,
+                "wall": 0.3921166623158915,
+                "U_eV_atom": -7.277950942445034,
+                "Al_richest_sublattice": 0.21194460102429022,
+                "Al_2nd_sublattice": 0.1565001875524602,
+                "Al_3rd_sublattice": 0.128536250465137,
+                "Al_4th_sublattice": 0.10248602926652921
+              },
+              "frames": 2800,
+              "semi_grand_U_minus_muN_eV_atom": -7.771564435998495,
+              "Kish_frames": 2796.7909621954213,
+              "approx_correlated_Kish": 27.448836826953375
+            },
+            {
+              "means": {
+                "x": 0.22488694902694548,
+                "Q": 0.8704401960122211,
+                "volume_A3_atom": 17.2365261592687,
+                "c_a": 1.6062162809974043,
+                "wall": 0.3835190473277808,
+                "U_eV_atom": -7.066428027217921,
+                "Al_richest_sublattice": 0.8777170960361125,
+                "Al_2nd_sublattice": 0.011290450266648232,
+                "Al_3rd_sublattice": 0.006961503067066612,
+                "Al_4th_sublattice": 0.0035787467379547818
+              },
+              "frames": 2800,
+              "semi_grand_U_minus_muN_eV_atom": -7.8071341539248404,
+              "Kish_frames": 2795.645930270651,
+              "approx_correlated_Kish": 43.76934205168171
+            }
+          ]
+        },
+        {
+          "cut": 0.5475,
+          "phase_results": [
+            {
+              "means": {
+                "x": 0.149866767077104,
+                "Q": 0.08277044526291576,
+                "volume_A3_atom": 17.45827447154673,
+                "c_a": 1.5910679580288458,
+                "wall": 0.3921166623158915,
+                "U_eV_atom": -7.277950942445034,
+                "Al_richest_sublattice": 0.21194460102429022,
+                "Al_2nd_sublattice": 0.1565001875524602,
+                "Al_3rd_sublattice": 0.128536250465137,
+                "Al_4th_sublattice": 0.10248602926652921
+              },
+              "frames": 2800,
+              "semi_grand_U_minus_muN_eV_atom": -7.771564435998495,
+              "Kish_frames": 2796.7909621954213,
+              "approx_correlated_Kish": 27.448836826953375
+            },
+            {
+              "means": {
+                "x": 0.22488694902694548,
+                "Q": 0.8704401960122211,
+                "volume_A3_atom": 17.2365261592687,
+                "c_a": 1.6062162809974043,
+                "wall": 0.3835190473277808,
+                "U_eV_atom": -7.066428027217921,
+                "Al_richest_sublattice": 0.8777170960361125,
+                "Al_2nd_sublattice": 0.011290450266648232,
+                "Al_3rd_sublattice": 0.006961503067066612,
+                "Al_4th_sublattice": 0.0035787467379547818
+              },
+              "frames": 2800,
+              "semi_grand_U_minus_muN_eV_atom": -7.8071341539248404,
+              "Kish_frames": 2795.645930270651,
+              "approx_correlated_Kish": 43.76934205168171
+            }
+          ]
+        }
+      ],
+      "bootstrap": {
+        "replica": {
+          "conditional": [
+            [
+              0.14896898080931956,
+              0.22293007840246565
+            ],
+            [
+              0.1508008891354924,
+              0.22628579690863904
+            ]
+          ],
+          "with_field": [
+            [
+              0.14883399546810533,
+              0.2229422424301814
+            ],
+            [
+              0.15108618486865494,
+              0.2264125586120764
+            ]
+          ],
+          "minus_umbrella": [
+            [
+              -0.0010716399408679926,
+              -0.0017313443211631426
+            ],
+            [
+              0.0012496024814723442,
+              0.002420669091146224
+            ]
+          ],
+          "resolved": 2000
+        },
+        "block": {
+          "conditional": [
+            [
+              0.14915041864404463,
+              0.22295048023785088
+            ],
+            [
+              0.15061828310296052,
+              0.22647647992578657
+            ]
+          ],
+          "with_field": [
+            [
+              0.14905167468878885,
+              0.2228820432193509
+            ],
+            [
+              0.150859884418108,
+              0.22658130241115934
+            ]
+          ],
+          "minus_umbrella": [
+            [
+              -0.0009115557195820516,
+              -0.001626006418032179
+            ],
+            [
+              0.0009942022653073913,
+              0.0025206308210894133
+            ]
+          ],
+          "resolved": 2000
+        }
+      }
+    }
+  ]
+}

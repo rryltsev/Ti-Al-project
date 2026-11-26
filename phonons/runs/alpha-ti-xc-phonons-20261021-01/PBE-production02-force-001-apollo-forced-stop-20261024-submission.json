@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-24T03:12:27.347350+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--exclude=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=32",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=240G",
+    "--time=2-00:00:00",
+    "--job-name=ti-PBE-apollo",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-apollo-forced-stop-20261024-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v6.sbatch",
+    "restart_step_v4.py",
+    "PBE",
+    "force-001",
+    "20958089"
+  ],
+  "source_hashes": {
+    "restart_step_v4.py": "cec725d3bd70a625a8aaf8fcce2a5e61b91560dfff55188f310ff9071ee30156",
+    "launch_v6.sbatch": "87e37097880cce805e773a24e9196ffaf63ff0c117b0e4d1d4cdb5ecb2766d08"
+  },
+  "parent_job": "20958089",
+  "checkpoint_source": "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001",
+  "checkpoint_sha256": "bfb82d8a9eadfc0dcea5eda5ef9402bc7b8a2fbd8bd0bd00c05bc777d505731a",
+  "cancelled_jobs": "20959336|CANCELLED by 13129|06:22:01|0:0\n20959747|CANCELLED by 13129|00:00:00|0:0\n",
+  "scientific_changes": [],
+  "note": "User explicitly requested immediate release of A100. Unsaved iterations of 20959336 are discarded; clean original checkpoint is retained.",
+  "job_id": "20959753",
+  "state": "submitted"
+}

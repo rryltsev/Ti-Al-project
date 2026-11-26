@@ -1,0 +1,34 @@
+% Ti--Al manuscript: revised draft, 3 November 2026.
+% AIP / Journal of Chemical Physics format, REVTeX 4.2.
+% Switch reprint to preprint for a single-column editing copy.
+\documentclass[aip,jcp,reprint,superscriptaddress,amsmath,amssymb,longbibliography,floatfix]{revtex4-2}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\rscan}{\ensuremath{r^{2}}SCAN}
+\newcommand{\draftnote}[1]{\par\smallskip\noindent{\small\textbf{Draft note.} \textit{#1}}\par\smallskip}
+\begin{document}
+\title{Assessing exchange-correlation effects in Ti--Al alloys with fine-tuned foundation interatomic potentials}
+\author{N. N. Katkov}
+\affiliation{Vatolin Institute of Metallurgy of the Ural Branch of the Russian Academy of Sciences, Amundsena Street 101, Yekaterinburg 620016, Russia}
+\author{E. O. Khazieva}
+\affiliation{Vatolin Institute of Metallurgy of the Ural Branch of the Russian Academy of Sciences, Amundsena Street 101, Yekaterinburg 620016, Russia}
+\author{R. E. Ryltsev}
+\email{rrylcev@mail.ru}
+\affiliation{Vatolin Institute of Metallurgy of the Ural Branch of the Russian Academy of Sciences, Amundsena Street 101, Yekaterinburg 620016, Russia}
+\affiliation{Ural Federal University, 620002 Ekaterinburg, Russia}
+\date{Draft -- 3 November 2026}
+\input{sections/abstract}
+\maketitle
+\input{sections/introduction}
+\input{sections/methods}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusions}
+\section*{Supplementary Material}
+See the Supporting Materials for learning curves, training/validation/test errors, numerical lattice-dynamics diagnostics, mixing-enthalpy and viscosity sampling checks, density and coexistence analyses, and data provenance.
+% Add acknowledgments, author declarations, and data availability before submission.
+\bibliography{references,methods_references,results_references,discussion_references}
+\end{document}

@@ -1,0 +1,73 @@
+{
+  "checked_local": "2026-10-31T20:05:56+05:00",
+  "PBE_completed": {
+    "job_id": "20968908",
+    "functional": "PBE",
+    "step": "force-001",
+    "accepted": true,
+    "scientific_scope": "One displaced supercell; DOS and convergence diagnostics remain incomplete",
+    "scheduler_state": "COMPLETED",
+    "exit_code": "0:0",
+    "end_local": "2026-10-31T19:31:36+05:00",
+    "elapsed": "09:04:39",
+    "scf_iterations": 24,
+    "final_energy_change_eV": -9.0367e-09,
+    "final_band_energy_change_eV": -1.2681e-11,
+    "ediff_eV": 1e-08,
+    "EDIFF_reached": true,
+    "normal_termination": true,
+    "supercell": [
+      4,
+      4,
+      3
+    ],
+    "atoms": 96,
+    "kmesh": [
+      6,
+      6,
+      6
+    ],
+    "encut_eV": 550,
+    "displaced_atom_1based": 1,
+    "displacement_A": [
+      0.006442623107205084,
+      0.0,
+      0.007648045992180625
+    ],
+    "displacement_norm_A": 0.01,
+    "forces_XML_OUTCAR_max_component_difference_eV_A": 4.999999999999986e-07,
+    "forces_NPY_XML_identical": true,
+    "force_sum_eV_A": [
+      9.999999999940612e-09,
+      2.999999999808711e-08,
+      -3.999999998935411e-08
+    ],
+    "max_force_eV_A": 0.06384069073736123,
+    "equilibrium_max_force_eV_A": 2.3685438564654023e-07,
+    "equilibrium_max_stress_kbar": 0.00872395,
+    "input_hashes": {
+      "INCAR": "2b267eae9e3a2ced932fb44ba084a02b83a1dfe852641e9f1decf2dce37ecab0",
+      "POSCAR": "e3c4a0a7de184e3d29d1c805a71436cd3a70266f06b2a2eaaa48e1489c1257b4",
+      "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+      "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba"
+    },
+    "output_hashes": {
+      "OUTCAR": "646fe2a674462358fbf1ed2c1afbd6ec90e621dbd2529867ae1be9139a176204",
+      "vasprun.xml": "ef6389abe305d1a23d416703ac5954a15d8cbc2f3e8acd6de75e6358875e3214",
+      "forces.npy": "7a5ab58e1b8ccd49de5c303d21164e1e2b1e0e364edbec9bbb2fa23bb142418d",
+      "CONTCAR": "4d0d01cb6adedbb35624e4a39834fd2d301d59d7391c33e6a342e05aaf9173e1"
+    }
+  },
+  "CHGCAR_bytes": 127578746,
+  "CHGCAR_mtime_local": "2026-10-31T19:31:30+05:00",
+  "STOPCAR_present": false,
+  "checkpoint_request_present": false,
+  "next_job_id": "20972819",
+  "next_step": "force-002",
+  "next_status": "PENDING",
+  "reason": "Priority",
+  "partition": "apollo",
+  "walltime": "20:00:00",
+  "forecast_start_local": "2026-11-01T07:58:03+05:00",
+  "forecast_not_guaranteed": true
+}

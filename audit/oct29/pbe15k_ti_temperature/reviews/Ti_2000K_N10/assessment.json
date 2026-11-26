@@ -1,0 +1,165 @@
+{
+  "reviewed_unix": 1793343607.1394718,
+  "temperature_K": 2000,
+  "n_replicas": 10,
+  "summary_sha256": "adae6e37eae5c02090df82e46eff712358c19ae624b3d7a750b66e17dd377abd",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 2.945048222540609,
+      "eta_std_mPa_s": 0.11557838915029565,
+      "relative_std": 0.039244990375943485,
+      "neff": 63.14185145332588,
+      "tau_exp_ps": 0.1691918499443115,
+      "tau_int_ps": 0.11401451296875936,
+      "cost_z": -0.48723159352002604,
+      "criterion_z": 0.27452196412273
+    },
+    "first20ps": {
+      "eta_mPa_s": 2.8869435495281905,
+      "eta_std_mPa_s": 0.15513077169057213,
+      "relative_std": 0.053735297912536235,
+      "neff": 37.77415370135904,
+      "tau_exp_ps": 0.15864217078074416,
+      "tau_int_ps": 0.11231666041018516,
+      "cost_z": -1.7043134976462533,
+      "criterion_z": 0.4211243261611211
+    },
+    "second20ps": {
+      "eta_mPa_s": 2.9224296037716333,
+      "eta_std_mPa_s": 0.15237500013087307,
+      "relative_std": 0.05213983595506312,
+      "neff": 34.14674407086995,
+      "tau_exp_ps": 0.15844034184932695,
+      "tau_int_ps": 0.11258307780881226,
+      "cost_z": -1.0899243062984434,
+      "criterion_z": -0.5627243842503679
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs_N5_percent": -0.35820146378803264,
+      "SE_change_percent": -33.32303127262044,
+      "vs_5k_percent": 3.737428209641447,
+      "vs_historical15k_percent": 8.113929910588503,
+      "cutoff_z_N5": -0.14960848424073273,
+      "cutoff_z_N10": 0.27452196412273
+    },
+    "first20ps": {
+      "vs_N5_percent": -5.078797859597839,
+      "SE_change_percent": -50.63504756033447,
+      "vs_5k_percent": 1.6907284988738613,
+      "vs_historical15k_percent": 5.980883498152156,
+      "cutoff_z_N5": 0.39802548152641315,
+      "cutoff_z_N10": 0.4211243261611211
+    },
+    "second20ps": {
+      "vs_N5_percent": 33.23964253127492,
+      "SE_change_percent": 31.965299040682815,
+      "vs_5k_percent": 2.940701920819011,
+      "vs_historical15k_percent": 7.283591125115629,
+      "cutoff_z_N5": 6.334455374323646,
+      "cutoff_z_N10": -0.5627243842503679
+    }
+  },
+  "new_batch_40ps": {
+    "eta_mPa_s": 2.900224255871437,
+    "eta_std_mPa_s": 0.13816687989098053,
+    "relative_std": 0.047640067698649466,
+    "neff": 86.5090190424162,
+    "tau_exp_ps": 0.13601958669238046,
+    "tau_int_ps": 0.11064216349835843,
+    "cost_z": 0.8677957891975356,
+    "criterion_z": -0.11383443332591163
+  },
+  "previous_replicas_40ps": {
+    "eta_mPa_s": 2.9556353516344,
+    "eta_std_mPa_s": 0.17334079721418966,
+    "relative_std": 0.05864755850830384,
+    "neff": 65.05504614303251,
+    "tau_exp_ps": 0.1916904555724638,
+    "tau_int_ps": 0.11614280469180654,
+    "cost_z": 0.21837332887340716,
+    "criterion_z": -0.14960848424073273
+  },
+  "new_batch_z": 0.24997230519785985,
+  "new_batch_vs_previous_percent": -1.87476089472004,
+  "checks": [
+    {
+      "id": "Ti_2000K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": true,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": true,
+        "window_fit_diagnostics": true
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.01972961684216268
+    }
+  ],
+  "pass_streak": 0,
+  "visual_review": {
+    "files": [
+      "convergence.png",
+      "40ps/spectrum.png",
+      "40ps/extras.png",
+      "first20ps/spectrum.png",
+      "first20ps/extras.png",
+      "second20ps/spectrum.png",
+      "second20ps/extras.png",
+      "new_batch_40ps/spectrum.png",
+      "new_batch_40ps/extras.png",
+      "figure7_current.png",
+      "diagnostics/Ti_2000K_N10_cutoff/cutoff_diagnostic.png"
+    ],
+    "notes": "All three windows and newest5 pass cost/cutoff. Full40ps,first20ps,second20ps mean cutoffs1.527/1.817/1.640THz; previous second20ps high-frequency mode at6.925THz no longer dominates. Eta curves overlap at common low cutoffs. The increase of second20ps eta by33.24% sinceN5 is not evidence of physical drift because old estimate failed cutoff diagnostics. Figure7 readable, all temperatures N10; historical series and composition panel preserved."
+  },
+  "verification": "One A100 job20962153 RUNNING; completed10/10/10,2100K replica11 production. Preflight/native/frozen/protocol hashes,512Ti,current2100K thermostat and V/(kB*T) state-specific normalization PASS. Latest index,per-temperature latest and batch summary exactly match. All10 raw stress hashes verified for post-hoc followup. No current failure.",
+  "article_compile": "PASS",
+  "caveats": [
+    "Cumulative and20/40ps estimates are correlated.",
+    "Historical5k and exported15k not pooled.",
+    "Sampling stopping rule is heuristic; errors exclude model/protocol bias."
+  ],
+  "posthoc_cutoff_diagnostic": {
+    "unix": 1793343607.1394718,
+    "temperature_K": 2000,
+    "n_replicas": 10,
+    "report": "diagnostics/Ti_2000K_N10_cutoff/assessment_RU.txt",
+    "results": "diagnostics/Ti_2000K_N10_cutoff/diagnostic_results.json",
+    "original_results_unchanged": true,
+    "paired_jackknife": {
+      "cutoff_THz": 1.5,
+      "difference_mPa_s": 0.0018327868787672286,
+      "standard_error_mPa_s": 0.3373864998491963,
+      "leave_one_out_differences": [
+        -0.014047796779088125,
+        0.03214123767318047,
+        0.04568345261017148,
+        -0.15347024666477038,
+        -0.07603268977752478,
+        0.060465998683515224,
+        0.14643761599733965,
+        0.03630644865462067,
+        0.15423584639260787,
+        -0.20897533242162594
+      ]
+    },
+    "mean_cutoff_THz": {
+      "40ps": 1.5265980539678923,
+      "first20ps": 1.8167297340003925,
+      "second20ps": 1.6399267789875633
+    },
+    "weight_above5THz": {
+      "40ps": 1.3038397264659315e-15,
+      "first20ps": 6.4871963836123e-08,
+      "second20ps": 9.341136092875531e-07
+    },
+    "script_sha256": "9bb118e56e1e2f3ba2fbc9d26339e36b75d895ed265416bbd330c17c8106af8f"
+  }
+}

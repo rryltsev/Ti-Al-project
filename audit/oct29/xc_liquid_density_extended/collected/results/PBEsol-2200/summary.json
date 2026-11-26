@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "state": {
+    "id": "PBEsol-2200",
+    "functional": "PBEsol",
+    "key": "sol",
+    "checkpoint": 23100,
+    "phase": "liquid",
+    "T_K": 2200,
+    "N": 200,
+    "initial_file": "PBEsol-2200.traj",
+    "initial_sha256": "6d88ae2396fd4d967e137448ff139b5e009f0694a2229b6ca85b6b3afb393579",
+    "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\density\\dpa4\\neo\\finetune\\Ti\\sol\\liquid\\T_2200K\\trajectory.traj",
+    "source_sha256": "15f6e336ee4d4271c907caed25b2afb25df363af519b1f8dfa5cf52376330840",
+    "archived_last_energy_eV": -1568.4808028853483,
+    "bulk_modulus_GPa": 110.0,
+    "seed": 202610635,
+    "equil_steps": 10000,
+    "production_steps": 90000
+  },
+  "job_id": "20968916",
+  "device": {
+    "name": "NVIDIA A100-PCIE-40GB",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "deepmd_device": "cuda:0"
+  },
+  "model_sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+  "protocol_sha256": "d90b9fb94eb608253a6432284c452dd83ca59b284de8ff0e577795a14060adfc",
+  "worker_sha256": "7ae0dcf3bbd1c6e6bb91083f724c9a945eb52083a97e5b535bf3e355020ba1c5",
+  "common_sha256": "be0a57c89c05c08cd90330fd4d59e61baa7a9c490b2e38f6a4a5a5dddad4f567",
+  "wall_seconds": 4758.28776772134,
+  "equil_seconds": 522.3080624546856,
+  "production_seconds": 4235.523284781724,
+  "rho_g_cm3": 4.427913351183678
+}

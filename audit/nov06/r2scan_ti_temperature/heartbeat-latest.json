@@ -1,0 +1,88 @@
+{
+  "checked_unix": 1793938238.834226,
+  "automation_id": "pbe-15k-ti-al",
+  "PBE": [
+    {
+      "job_id": "20962153",
+      "state": "RUNNING",
+      "completed": {
+        "Ti_2100K": 44,
+        "Ti_1873K": 40,
+        "Ti_2000K": 35
+      },
+      "analyzed": {
+        "Ti_2100K": 40,
+        "Ti_1873K": 40,
+        "Ti_2000K": 35
+      },
+      "progress": {
+        "status": "running",
+        "phase": "production",
+        "job_id": "20962153",
+        "unix": 1793937241.8864255,
+        "composition": "Ti_2100K",
+        "replica": 45,
+        "production_ps": 40
+      },
+      "target_N": 45,
+      "control_armed": true,
+      "guard_alive": false,
+      "no_restart": true
+    },
+    {
+      "job_id": "20987437",
+      "state": "RUNNING",
+      "completed": {
+        "Ti_1941K": 34
+      },
+      "analyzed": {
+        "Ti_1941K": 30
+      },
+      "progress": {
+        "status": "running",
+        "phase": "production",
+        "job_id": "20987437",
+        "unix": 1793937231.1910443,
+        "composition": "Ti_1941K",
+        "replica": 35,
+        "production_ps": 40
+      },
+      "target_N": 35,
+      "control_armed": true,
+      "guard_alive": false,
+      "no_restart": true
+    }
+  ],
+  "r2SCAN": [
+    {
+      "T": 1873,
+      "job_id": "20988268",
+      "state": "PENDING",
+      "completed": 0,
+      "runtime_checks": "PASS"
+    },
+    {
+      "T": 1941,
+      "job_id": "20988269",
+      "state": "PENDING",
+      "completed": 0,
+      "runtime_checks": "PASS"
+    },
+    {
+      "T": 2000,
+      "job_id": "20988270",
+      "state": "PENDING",
+      "completed": 0,
+      "runtime_checks": "PASS"
+    },
+    {
+      "T": 2100,
+      "job_id": "20988271",
+      "state": "PENDING",
+      "completed": 0,
+      "runtime_checks": "PASS"
+    }
+  ],
+  "decision": "DONT_NOTIFY",
+  "article_profile_unchanged": true
+}

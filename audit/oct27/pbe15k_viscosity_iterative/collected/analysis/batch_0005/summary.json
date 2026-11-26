@@ -1,0 +1,264 @@
+{
+  "n_replicas": 5,
+  "temperature_K": 1873,
+  "points": [
+    {
+      "id": "xAl_0.20",
+      "x_Al": 0.2,
+      "actual_x_Al": 0.201171875,
+      "n_replicas": 5,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 3.4951635925506963,
+          "eta_std_mPa_s": 0.1903087156191573,
+          "relative_std": 0.05444915826680205,
+          "neff": 90.94452827765747,
+          "tau_exp_ps": 0.15088250458992916,
+          "tau_int_ps": 0.10098700096254382,
+          "cost_z": -0.5307736047814101,
+          "criterion_z": 1.565104779152123
+        },
+        "first20ps": {
+          "eta_mPa_s": 3.5944195840411948,
+          "eta_std_mPa_s": 0.22787412686971215,
+          "relative_std": 0.06339664069310294,
+          "neff": 61.435696450563285,
+          "tau_exp_ps": 0.13306101749480712,
+          "tau_int_ps": 0.10197251146608755,
+          "cost_z": -0.04040405399435672,
+          "criterion_z": 0.5837319113881795
+        },
+        "second20ps": {
+          "eta_mPa_s": 3.4139836561920798,
+          "eta_std_mPa_s": 0.2926127407983276,
+          "relative_std": 0.08571005905889564,
+          "neff": 44.346531337691296,
+          "tau_exp_ps": 0.17764406777576908,
+          "tau_int_ps": 0.1004956117334513,
+          "cost_z": -1.5806842042403417,
+          "criterion_z": 1.0737131015032553
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/xAl_0.20/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "a8ceff721827a5c35791a2036842368df2a8c631349d7498c7c660f73dfddedf"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/xAl_0.20/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "ac5370356494861f4165a696319272a02a9d818584743fab430b4cfb03a3b215"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/xAl_0.20/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "f74fde204e88a67d74bd785004310e1665f42a58d1e99565550ca7f9d7b388ef"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/xAl_0.20/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "b42a6d86f8cd0156299db573fb3caa0ec9600bf7a75be2ffc8677cd1139f70d9"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/xAl_0.20/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "fb0c34cb915c466f88d1638ddd78c24c6330b5a47fdcf4031a9b11d029b73250"
+        }
+      ]
+    },
+    {
+      "id": "xAl_0.45",
+      "x_Al": 0.45,
+      "actual_x_Al": 0.451171875,
+      "n_replicas": 5,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 4.652387665772592,
+          "eta_std_mPa_s": 0.2892827174164551,
+          "relative_std": 0.06217940941265388,
+          "neff": 71.65523550713145,
+          "tau_exp_ps": 0.22245574802440232,
+          "tau_int_ps": 0.10982652289083769,
+          "cost_z": -1.4676976095747216,
+          "criterion_z": 1.59068980357959
+        },
+        "first20ps": {
+          "eta_mPa_s": 4.349788204715012,
+          "eta_std_mPa_s": 0.3315240478972506,
+          "relative_std": 0.07621613565871795,
+          "neff": 37.4543715724544,
+          "tau_exp_ps": 0.1809852826805237,
+          "tau_int_ps": 0.10377192439826777,
+          "cost_z": -1.1997449359268213,
+          "criterion_z": 0.8998037773260391
+        },
+        "second20ps": {
+          "eta_mPa_s": 4.847264506667716,
+          "eta_std_mPa_s": 0.42708312352947997,
+          "relative_std": 0.08810807063282813,
+          "neff": 33.55880782086081,
+          "tau_exp_ps": 0.24015770827419602,
+          "tau_int_ps": 0.11324075674195848,
+          "cost_z": -1.1426980055690272,
+          "criterion_z": -0.15762729540985607
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/xAl_0.45/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "17f6079715e71a42625d5b8a4b097dc4e2ce7f2ae32e8fa346b59acfd7dc7bbe"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/xAl_0.45/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "492038fb22e6ba2224324ed875ba974803de7e9be13c1d01fbe8a0dc7eea11a8"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/xAl_0.45/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "c24d7b12fef16fa72f4aa83701f0591cdb4d21b51df29265d58b3b4a2fada6ac"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/xAl_0.45/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "e0bec42cdecd0f34d0232d48c0c87edfa2bebc552f3306a6dde19e9cf0ac3b36"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/xAl_0.45/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "fdc082e8c93bb51ad6247ee4a56f80c0a23dc00aa7247171f8cc0f9627637571"
+        }
+      ]
+    },
+    {
+      "id": "xAl_0.80",
+      "x_Al": 0.8,
+      "actual_x_Al": 0.80078125,
+      "n_replicas": 5,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 1.8136616226837778,
+          "eta_std_mPa_s": 0.08494959454989409,
+          "relative_std": 0.04683872310436241,
+          "neff": 99.76211857196839,
+          "tau_exp_ps": 0.11342070159568005,
+          "tau_int_ps": 0.059056827188831366,
+          "cost_z": 0.9441950622883941,
+          "criterion_z": 1.108440617692401
+        },
+        "first20ps": {
+          "eta_mPa_s": 1.7610149882699038,
+          "eta_std_mPa_s": 0.10060461779882983,
+          "relative_std": 0.05712876861864082,
+          "neff": 67.88103466129444,
+          "tau_exp_ps": 0.07978884419993564,
+          "tau_int_ps": 0.05625706156638756,
+          "cost_z": 0.5388793343354097,
+          "criterion_z": 0.44645471580887286
+        },
+        "second20ps": {
+          "eta_mPa_s": 1.4187087339166922,
+          "eta_std_mPa_s": 0.10010614407647012,
+          "relative_std": 0.0705614490721451,
+          "neff": 183.91746727694192,
+          "tau_exp_ps": 0.048072836015960796,
+          "tau_int_ps": 0.04710591194305236,
+          "cost_z": 0.9550491186112889,
+          "criterion_z": 11.095957957449485
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/xAl_0.80/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "909a07404fa0175bf24f98f552a1ba369e180ed42ee2ff64330356a6a2371874"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/xAl_0.80/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "0cb483b2094f3d7be65f2d6d341720d15a59eb5f946adcdfdd474eebdac8e6d7"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/xAl_0.80/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "713c60489c6d390467cba33332629ca562d03276e37e9d4e8d28334e54e972a2"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/xAl_0.80/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "8f6730079833f1c01aceb7d7999f99be2aa4dcafa96a82889d546f5933c485db"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/xAl_0.80/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "f04b2aece2440d8709ec0649d7f7e50dafe2bf8a64b423a24ccd26ee8c6e07de"
+        }
+      ]
+    }
+  ],
+  "unix": 1793135851.1777432,
+  "protocol_sha256": "eeeae924aa6929b74609c92c1f662778df0f8779c39d43fb112a6ee1064f72ef",
+  "checkpoint_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+  "caveats": [
+    "Cumulative estimates share trajectories; successive error bars are correlated.",
+    "20 ps windows overlap the 40 ps estimate. Duration ratios are diagnostic, not independent-sample tests.",
+    "STACIE errors do not include finite-size, thermostat, preparation, or model errors.",
+    "Optional sequential stopping: nominal intervals are descriptive.",
+    "NPT reservoir snapshots are 5 ps apart; complete statistical independence is not proven."
+  ],
+  "checks": [
+    {
+      "id": "xAl_0.20",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": true,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": false
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.028398096072539847
+    },
+    {
+      "id": "xAl_0.45",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": false
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.06504175550197377
+    },
+    {
+      "id": "xAl_0.80",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": false
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.21776547721324746
+    }
+  ],
+  "all_passed": false,
+  "pass_streak": 0,
+  "stop_recommended": false
+}

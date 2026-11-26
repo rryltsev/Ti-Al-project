@@ -1,0 +1,24 @@
+{
+  "job_id": "20960770",
+  "status": "running",
+  "checkpoint": 15000,
+  "preflight": "passed",
+  "temperatures_K": [
+    1700,
+    1750,
+    1800,
+    1850
+  ],
+  "confirmed_active_temperatures_K": [
+    1700,
+    1850
+  ],
+  "confirmed_equilibration_dump_step_at_least": 2100,
+  "distinct_gpu_uuids": [
+    "GPU-b5e078e3-4081-f2c5-f8b5-cf03a593bf9c",
+    "GPU-9de121c5-6e69-818a-2ace-225ee601989c"
+  ],
+  "benchmark_series_hours": 4.36145195737481,
+  "note": "Thermo log buffered after second thermo_style resets options; progress verified from actual dump steps. Final stage close flushes log.",
+  "recorded_utc": "2026-10-26T02:10:31.254609+00:00"
+}

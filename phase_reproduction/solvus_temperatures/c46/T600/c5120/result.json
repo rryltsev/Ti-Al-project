@@ -1,0 +1,130 @@
+{
+  "T_K": 600.0,
+  "N": 5120,
+  "n_windows": 52,
+  "equilibrate": 3000,
+  "production": 9000,
+  "stride": 10,
+  "size_shape": [
+    16,
+    16,
+    10
+  ],
+  "start": "ordered",
+  "range_x_Al": [
+    0.019490017361111108,
+    0.24993207465277775
+  ],
+  "contact_columns": [
+    "left_Al_at_pct",
+    "right_Al_at_pct",
+    "delta_mu_eV"
+  ],
+  "class_direct_tangent": [
+    4.54790910711852,
+    24.10392859763998,
+    3.215993534996919
+  ],
+  "quantum_reweight_tangent": [
+    4.5980279977823635,
+    24.093730077287184,
+    3.2186124817270416
+  ],
+  "classical_min_adjacent_dmu_eV": -0.005343195441970483,
+  "raw_classical_facets": [
+    {
+      "alpha_at_pct": 4.548912124300884,
+      "alpha2_at_pct": 24.10323814008974,
+      "window_edge": false,
+      "mean_order_left_right": [
+        0.011952784781809707,
+        0.9640357239823906
+      ]
+    }
+  ],
+  "classical_all_adjacent_increasing": 0,
+  "bootstrap_draws": 384,
+  "bootstrap_window_block_tau_multiplier": 6,
+  "lowest_number_of_blocks": 30,
+  "class_bootstrap_resolved": 384,
+  "quantum_bootstrap_resolved": 384,
+  "classical_95": [
+    [
+      4.489463348512216,
+      4.607492692092129
+    ],
+    [
+      24.07943788104292,
+      24.126968526640983
+    ],
+    [
+      3.2158947808263894,
+      3.216099161713509
+    ]
+  ],
+  "quantum_reweighted_95": [
+    [
+      4.540215497311172,
+      4.657295657619479
+    ],
+    [
+      24.065797742043237,
+      24.120936718561833
+    ],
+    [
+      3.2185057819660647,
+      3.2187344800717654
+    ]
+  ],
+  "class_minus_quantum_95": [
+    [
+      -0.07750819894276262,
+      -0.025935598550888134
+    ],
+    [
+      -0.003917125792427267,
+      0.023734636094976485
+    ],
+    [
+      -0.002676873902260746,
+      -0.0025561457451898527
+    ]
+  ],
+  "early_late_classical": [
+    [
+      4.527817042918924,
+      24.126469048723507,
+      3.215927507332781
+    ],
+    [
+      4.565890379363678,
+      24.080829576374377,
+      3.2160595871086772
+    ]
+  ],
+  "quantum_min_window_Kish_fraction": 0.729082593418352,
+  "maximum_energy_reconstruction_error_eV_atom": 5.0954795938196185e-12,
+  "mean_order_range": [
+    0.00628761574074142,
+    0.9995870949073689
+  ],
+  "every_second_window_classical_tangent": [
+    4.546780881182762,
+    24.10632352980502,
+    3.2159924001610527
+  ],
+  "maximum_mean_order": {
+    "x_Al": 0.24993207465277775,
+    "m": 0.9995870949073689
+  },
+  "author_quantum": [
+    4.590143054930434,
+    24.0897225730685,
+    3.2185421798886464
+  ],
+  "historical_shifted_by_classical_minus_quantum": [
+    4.540688648934574,
+    24.100018626660265,
+    3.2159230866461748
+  ]
+}

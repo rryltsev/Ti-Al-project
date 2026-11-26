@@ -1,0 +1,34 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/alloy-ti-geometry-01",
+  "utc": "2026-11-25T04:18:27.255008+00:00",
+  "job_name": "ta-alloy-ti-geometry-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=2G",
+    "--time=10",
+    "--job-name=ta-alloy-ti-geometry-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "ab76351efbecff994f2e9ed19ae9365fb16ccbafc12a6b9d26de26b99add4a43",
+    "geometry_check.py": "ebb0a5339ebbf1f5d635a118f6c022790590ef118d4be68d37c8982ea96d8569",
+    "tail_check.py": "3e23952469b630406e4f1bbe881b4b336d357eca690d79811312ea76683d8dba",
+    "tail_samples.npz": "2252830d8cfba7e85568739865fd11456424011786abfaf233252c48587d321a",
+    "pilot.py": "8b5feb2322ab0ec8bf031e48b6457023b1e22ef6b290d8ff9229b644bf9a6ccd",
+    "decorations.py": "f24bb18c0fcd701d3209674f4c013b05626d484bf504619434994f04faef4eec",
+    "hcp_orbits.py": "50b78ef8da95ee8beca65dd5f7a1c792109d89fc7e92bfe50ee4a848bc01deea",
+    "label_cell.py": "3efe48cd9866055cbd19b3a4fdfae24b86305955c928a1d7858c450b52f1011f",
+    "mtp_cfg.py": "8326d00eb692d2e19dab513b3d918041966906d784109eb9d04361dc8c7d7727",
+    "fitted.mtp": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661"
+  }
+}

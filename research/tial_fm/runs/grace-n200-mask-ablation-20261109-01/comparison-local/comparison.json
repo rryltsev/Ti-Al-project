@@ -1,0 +1,466 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-09T12:40:13.765592+00:00",
+  "cases": {
+    "PBE-full-N200-seed10": {
+      "case": {
+        "name": "PBE-full-N200-seed10",
+        "XC": "PBE",
+        "method": "full",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 2.4719803617569456,
+          "E_aligned_RMSE_meV_atom": 1.2863139108290338,
+          "F_RMSE_eV_A": 0.06929818733487743,
+          "stress_RMSE_GPa": 0.07880678822303672
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 2.5596425984610263,
+          "E_aligned_RMSE_meV_atom": 1.317504245403436,
+          "F_RMSE_eV_A": 0.07589893462661669,
+          "stress_RMSE_GPa": 0.06999628229595291
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.2261937991911517,
+        "band_max_error_THz": 0.6018984613513547,
+        "gamma_doublet_THz": 3.7199724104921064,
+        "gamma_singlet_THz": 5.437465359682339,
+        "gamma_doublet_abs_error_THz": 0.24413308207378281,
+        "gamma_singlet_abs_error_THz": 0.029296138023673812,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -6.113318258034954e-08,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "6c5f9359bcd3ae68a73c267a8a0b57f4f6a238c65af481be75056317cfd9754b",
+        "checkpoint.data-00000-of-00001": "32c7edf94f3c0fb560b21aec2b3d6d69b8613b3f670ad24a124f40f0c4ca755d"
+      },
+      "trainable": 21764956,
+      "training_seconds": 622.4939034003764,
+      "checks": 11
+    },
+    "PBE-restricted-N200-seed10": {
+      "case": {
+        "name": "PBE-restricted-N200-seed10",
+        "XC": "PBE",
+        "method": "restricted",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 1.411622844017403,
+          "E_aligned_RMSE_meV_atom": 1.2666572471994175,
+          "F_RMSE_eV_A": 0.07432583343549566,
+          "stress_RMSE_GPa": 0.08487766725654627
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 1.402383399742997,
+          "E_aligned_RMSE_meV_atom": 1.2947532584114263,
+          "F_RMSE_eV_A": 0.07817254392821155,
+          "stress_RMSE_GPa": 0.07711019720604818
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.31394340251324987,
+        "band_max_error_THz": 1.05782626761936,
+        "gamma_doublet_THz": 3.7160217533568822,
+        "gamma_singlet_THz": 6.465995489278025,
+        "gamma_doublet_abs_error_THz": 0.24808373920900717,
+        "gamma_singlet_abs_error_THz": 1.05782626761936,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -1.460838667236441e-07,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "6c9e1b5d409bc5551a1f262c42ac4cf584a54d36f7036e9af7f76ef83cab7857",
+        "checkpoint.data-00000-of-00001": "58e721390c661423fdabf8e81d6ed032c55ca5339c884c67e818d091ea73cb41"
+      },
+      "trainable": 21111690,
+      "training_seconds": 557.1373295802623,
+      "checks": 11
+    },
+    "r2SCAN-full-N200-seed10": {
+      "case": {
+        "name": "r2SCAN-full-N200-seed10",
+        "XC": "r2SCAN",
+        "method": "full",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 2.79137875461882,
+          "E_aligned_RMSE_meV_atom": 1.4623557181256577,
+          "F_RMSE_eV_A": 0.07839057649267259,
+          "stress_RMSE_GPa": 0.08699537466679262
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 2.979795611976845,
+          "E_aligned_RMSE_meV_atom": 1.5352917004762925,
+          "F_RMSE_eV_A": 0.08608483964387834,
+          "stress_RMSE_GPa": 0.08046888369421357
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.2605938357535526,
+        "band_max_error_THz": 0.6707954621139534,
+        "gamma_doublet_THz": 4.015350230473886,
+        "gamma_singlet_THz": 5.293613184662899,
+        "gamma_doublet_abs_error_THz": 0.5712654116151916,
+        "gamma_singlet_abs_error_THz": 0.10428968304764119,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -7.695571579495351e-08,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "c9f81311dff5f0080701931887de5cd61920fa0fda08bf3aa781171a07090642",
+        "checkpoint.data-00000-of-00001": "1f1665143dd3b6b4fa108a052c4b82f9ff1fc7d18d139d2b9e8be023f3ab5d52"
+      },
+      "trainable": 21764956,
+      "training_seconds": 636.3151567429304,
+      "checks": 11
+    },
+    "r2SCAN-restricted-N200-seed10": {
+      "case": {
+        "name": "r2SCAN-restricted-N200-seed10",
+        "XC": "r2SCAN",
+        "method": "restricted",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 1.5919260372114152,
+          "E_aligned_RMSE_meV_atom": 1.4199073819945989,
+          "F_RMSE_eV_A": 0.08452972043128089,
+          "stress_RMSE_GPa": 0.09132898290925619
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 1.608322513039213,
+          "E_aligned_RMSE_meV_atom": 1.4602589531955885,
+          "F_RMSE_eV_A": 0.08893654038022056,
+          "stress_RMSE_GPa": 0.08631535211380054
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.3919910417914041,
+        "band_max_error_THz": 1.4813767774382693,
+        "gamma_doublet_THz": 3.992983995243069,
+        "gamma_singlet_THz": 6.670700279053527,
+        "gamma_doublet_abs_error_THz": 0.5936316468460088,
+        "gamma_singlet_abs_error_THz": 1.4813767774382693,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": 6.038159897927595e-08,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "b62b7967cbaea29de7edc1732af1ede9dbda0fc30815112eaf74ba58f7fe13e8",
+        "checkpoint.data-00000-of-00001": "365b7df8d0b8494295b1fe2c0c15c6e379c70375ccbb8c3366c00ebcefaa3a83"
+      },
+      "trainable": 21111690,
+      "training_seconds": 559.517725892365,
+      "checks": 11
+    },
+    "PBE-restricted_mlp-N200-seed10": {
+      "case": {
+        "name": "PBE-restricted_mlp-N200-seed10",
+        "XC": "PBE",
+        "method": "restricted_mlp",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "LinMLPOut2ScalarTarget_"
+        ],
+        "expected_trainable": 21112778,
+        "expected_trainable_tensors": 14
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 2.1214675174197843,
+          "E_aligned_RMSE_meV_atom": 1.3042232141480115,
+          "F_RMSE_eV_A": 0.07446829361401887,
+          "stress_RMSE_GPa": 0.08506852488376235
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 2.0766342980425407,
+          "E_aligned_RMSE_meV_atom": 1.3271849890251513,
+          "F_RMSE_eV_A": 0.07821827712605404,
+          "stress_RMSE_GPa": 0.0773799386137937
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.3181922046012871,
+        "band_max_error_THz": 1.0683005107162673,
+        "gamma_doublet_THz": 3.7155461989096135,
+        "gamma_singlet_THz": 6.476469732374932,
+        "gamma_doublet_abs_error_THz": 0.24855929365627594,
+        "gamma_singlet_abs_error_THz": 1.0683005107162673,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -1.0393228663916422e-07,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "e191c247095d9abcec68c2c5f559094dbeae0848e568b505b959fb7242fc88fd",
+        "checkpoint.data-00000-of-00001": "523068bbd007aa9462e14444625d20567903ca5b02e9315be4d1515c7a2b9551"
+      },
+      "trainable": 21112778,
+      "training_seconds": 559.8524605389684,
+      "checks": 11
+    },
+    "PBE-restricted_radial-N200-seed10": {
+      "case": {
+        "name": "PBE-restricted_radial-N200-seed10",
+        "XC": "PBE",
+        "method": "restricted_radial",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "R_Linear_",
+          "R1_Linear_"
+        ],
+        "expected_trainable": 21144842,
+        "expected_trainable_tensors": 18
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 2.0738020598687044,
+          "E_aligned_RMSE_meV_atom": 1.334020403283365,
+          "F_RMSE_eV_A": 0.07236856473466335,
+          "stress_RMSE_GPa": 0.08455623618569708
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 2.0200708278049593,
+          "E_aligned_RMSE_meV_atom": 1.3550267013744959,
+          "F_RMSE_eV_A": 0.0765840472616983,
+          "stress_RMSE_GPa": 0.0792926571265954
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.2641140870558605,
+        "band_max_error_THz": 0.7328754814518463,
+        "gamma_doublet_THz": 3.6592086558498282,
+        "gamma_singlet_THz": 5.94970567779482,
+        "gamma_doublet_abs_error_THz": 0.30489683671606094,
+        "gamma_singlet_abs_error_THz": 0.5415364561361553,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -9.644864399976716e-08,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "a652e97c9427b8bb4bc73170be66b993dabcd215b2df23ec8f95e4821f853f6e",
+        "checkpoint.data-00000-of-00001": "2a2781747502726d635829d2cd08bf93c7e054919182b61b27f616fe23f3ef9e"
+      },
+      "trainable": 21144842,
+      "training_seconds": 570.2534626368433,
+      "checks": 11
+    },
+    "r2SCAN-restricted_mlp-N200-seed10": {
+      "case": {
+        "name": "r2SCAN-restricted_mlp-N200-seed10",
+        "XC": "r2SCAN",
+        "method": "restricted_mlp",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "LinMLPOut2ScalarTarget_"
+        ],
+        "expected_trainable": 21112778,
+        "expected_trainable_tensors": 14
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 2.3043899793596774,
+          "E_aligned_RMSE_meV_atom": 1.472989164965683,
+          "F_RMSE_eV_A": 0.08464794553861615,
+          "stress_RMSE_GPa": 0.09119540122428835
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 2.2779039214314523,
+          "E_aligned_RMSE_meV_atom": 1.5071812242895393,
+          "F_RMSE_eV_A": 0.08894844096291261,
+          "stress_RMSE_GPa": 0.08644383862643873
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.39740269621727214,
+        "band_max_error_THz": 1.4911024729470155,
+        "gamma_doublet_THz": 3.987485393044302,
+        "gamma_singlet_THz": 6.680425974562273,
+        "gamma_doublet_abs_error_THz": 0.5991302490447756,
+        "gamma_singlet_abs_error_THz": 1.4911024729470155,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -6.151487789240032e-08,
+        "DOS_integral": 2.9999999999999996
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "111099bb458813efb49f3d5da389dd3b0ec62f00d741f7c7d4daa76de07a2a38",
+        "checkpoint.data-00000-of-00001": "f6000d656c8ea13a0cae567264fc2a13a8709cc66779403d0baa4e6290a9445c"
+      },
+      "trainable": 21112778,
+      "training_seconds": 509.2156488317996,
+      "checks": 11
+    },
+    "r2SCAN-restricted_radial-N200-seed10": {
+      "case": {
+        "name": "r2SCAN-restricted_radial-N200-seed10",
+        "XC": "r2SCAN",
+        "method": "restricted_radial",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "R_Linear_",
+          "R1_Linear_"
+        ],
+        "expected_trainable": 21144842,
+        "expected_trainable_tensors": 18
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 2.3810533630446105,
+          "E_aligned_RMSE_meV_atom": 1.4621607874573108,
+          "F_RMSE_eV_A": 0.08203717743135047,
+          "stress_RMSE_GPa": 0.09209067127992791
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 2.345049249842073,
+          "E_aligned_RMSE_meV_atom": 1.4891898942844093,
+          "F_RMSE_eV_A": 0.08694762852637039,
+          "stress_RMSE_GPa": 0.08950227352905477
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.3261083693836871,
+        "band_max_error_THz": 0.873771560872461,
+        "gamma_doublet_THz": 3.9284087784445565,
+        "gamma_singlet_THz": 6.063095062487719,
+        "gamma_doublet_abs_error_THz": 0.6582068636445211,
+        "gamma_singlet_abs_error_THz": 0.873771560872461,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -7.187398314993945e-08,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "54d826054318ac862bd0c8613e268e26d7353f82237beb7df83dc8501176a77b",
+        "checkpoint.data-00000-of-00001": "bb9088bd876ca211ec549df66bad7ddad7a08cc4c85e493095178a1d055ac2b3"
+      },
+      "trainable": 21144842,
+      "training_seconds": 578.6421059835702,
+      "checks": 11
+    }
+  },
+  "comparisons": {
+    "PBE": {
+      "full": {
+        "validation_reduction_vs_restricted_percent": {
+          "E_raw_RMSE_meV_atom": -82.52088543903977,
+          "E_aligned_RMSE_meV_atom": -1.757167772639856,
+          "F_RMSE_eV_A": 2.908449933115631,
+          "stress_RMSE_GPa": 9.225647408326598
+        },
+        "phonon_reduction_vs_restricted_percent": 27.95077157845186
+      },
+      "restricted_mlp": {
+        "validation_reduction_vs_restricted_percent": {
+          "E_raw_RMSE_meV_atom": -48.078927518901594,
+          "E_aligned_RMSE_meV_atom": -2.5048580031006296,
+          "F_RMSE_eV_A": -0.058502890585843126,
+          "stress_RMSE_GPa": -0.34981288794364573
+        },
+        "phonon_reduction_vs_restricted_percent": -1.3533656238748026
+      },
+      "restricted_radial": {
+        "validation_reduction_vs_restricted_percent": {
+          "E_raw_RMSE_meV_atom": -44.04554618766594,
+          "E_aligned_RMSE_meV_atom": -4.655206895329278,
+          "F_RMSE_eV_A": 2.032039110780426,
+          "stress_RMSE_GPa": -2.8303129801566795
+        },
+        "phonon_reduction_vs_restricted_percent": 15.87206963372526
+      }
+    },
+    "r2SCAN": {
+      "full": {
+        "validation_reduction_vs_restricted_percent": {
+          "E_raw_RMSE_meV_atom": -85.27351248388528,
+          "E_aligned_RMSE_meV_atom": -5.138317907005807,
+          "F_RMSE_eV_A": 3.2064444199770725,
+          "stress_RMSE_GPa": 6.773381879829243
+        },
+        "phonon_reduction_vs_restricted_percent": 33.52046144660974
+      },
+      "restricted_mlp": {
+        "validation_reduction_vs_restricted_percent": {
+          "E_raw_RMSE_meV_atom": -41.63228475406626,
+          "E_aligned_RMSE_meV_atom": -3.213284259703908,
+          "F_RMSE_eV_A": -0.013380982261246288,
+          "stress_RMSE_GPa": -0.14885707987242203
+        },
+        "phonon_reduction_vs_restricted_percent": -1.380555637480052
+      },
+      "restricted_radial": {
+        "validation_reduction_vs_restricted_percent": {
+          "E_raw_RMSE_meV_atom": -45.80715191324922,
+          "E_aligned_RMSE_meV_atom": -1.9812199079833892,
+          "F_RMSE_eV_A": 2.2363269870260383,
+          "stress_RMSE_GPa": -3.692183762458079
+        },
+        "phonon_reduction_vs_restricted_percent": 16.807188273138163
+      }
+    }
+  },
+  "checks": {
+    "collected_files": {
+      "grace-n200-fp64-pilot-20261109-02": 314,
+      "grace-n200-mask-ablation-20261109-01": 323
+    },
+    "models": 8,
+    "parameter_checks": 88,
+    "identical_first5_batches_within_XC": true,
+    "frozen_split_checked": true,
+    "train_only_alignment": true,
+    "test_access": false,
+    "seed": 10,
+    "seed_count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "GRACE-full-N200-seed10",
+    "backend": "GRACE",
+    "method": "full",
+    "N": 200,
+    "seed": 10,
+    "XC": "PBE",
+    "model": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/cases/PBE-full-N200-seed10",
+    "hashes": {
+      "checkpoint.index": "6c5f9359bcd3ae68a73c267a8a0b57f4f6a238c65af481be75056317cfd9754b",
+      "checkpoint.data-00000-of-00001": "32c7edf94f3c0fb560b21aec2b3d6d69b8613b3f670ad24a124f40f0c4ca755d"
+    },
+    "yaml_sha256": "28a2d3473cf3b2019d036fc431dfb9d82b39aaf34d9cff762acbf2dc03a6ba6f",
+    "source_run": "grace-n200-fp64-pilot-20261109-02",
+    "summary_sha256": "e28b77ec86b83e9153cdab23f0bf75a060b55cdd538168ee22c1ffb18c0e53c3"
+  },
+  "job_id": "20991477",
+  "structures": 25,
+  "seconds": 20.64115795865655,
+  "geometry_sha256": "d01b28dd6035a16a7e6ec7c3f7461b194ed28df1c2c5f3310ef690ff574ed628",
+  "predictions_sha256": "f1478cea25df88ae3654b24f096a72249404c75783b99602ba265edfda615aae",
+  "max_residual_force_eV_A": 0.14886516482621825,
+  "residual_stress_GPa": [
+    [
+      -0.6361364497614111,
+      5.686582028454755e-16,
+      1.5888979197152992e-16
+    ],
+    [
+      5.686582028454755e-16,
+      -0.6363198226173337,
+      3.8468054898370396e-16
+    ],
+    [
+      1.5888979197152992e-16,
+      3.8468054898370396e-16,
+      -0.7197995419844164
+    ]
+  ]
+}

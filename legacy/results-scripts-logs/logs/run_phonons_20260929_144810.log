@@ -1,0 +1,102 @@
+Using GPU device(s): 1, GPU: RTX 3050
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    grace
+  Variant:   2L
+  Use type:  pretrained
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/ml_models/grace
+  Name:      GRACE-2L-OMAT-large-ft-AM
+  Full path: /home/katkoff/ml_models/grace/GRACE-2L-OMAT-large-ft-AM
+==========================================
+Model found: /home/katkoff/ml_models/grace/GRACE-2L-OMAT-large-ft-AM
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained
+==========================================
+Activated: ase_project_grace
+Python: /home/katkoff/miniconda3/envs/ase_project_grace/bin/python
+==========================================
+Cache directories (GRACE):
+  NUMBA_CACHE_DIR: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained/.numba_cache
+  XDG_CACHE_HOME:  /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained/.cache
+==========================================
+==========================================
+Phonon calculation (WSL2)
+==========================================
+Date:          Tue Sep 29 14:48:10 +05 2026
+System:        alpha2_AlTi3
+Mode:          grace-2L-pretrained
+Model path:    /home/katkoff/ml_models/grace/GRACE-2L-OMAT-large-ft-AM
+CIF file:      /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Supercell:     5,5,5
+Delta:         0.01
+Kpts DOS:      50,50,50
+DOS width:     0.0002
+DOS npts:      1000
+Band path:     GMKGALHA
+Band npoints:  200
+Use THz:       true
+Fmax:          0.0001
+Max steps:     1000
+Pressure:      0.0
+Workdir:       /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained
+Log file:      /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_144810.log
+==========================================
+/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py:82: UserWarning: Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  structure = parser.parse_structures(primitive=False)[0]
+2026-09-29 14:48:11.679757: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1790675291.690092  657321 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1790675291.693039  657321 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1790675291.701336  657321 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1790675291.701358  657321 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1790675291.701359  657321 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1790675291.701360  657321 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING:tensorflow:UserWarning: enabling the new type promotion must happen at the beginning of the program. Please ensure no TF APIs have been used yet.
+WARNING:tensorflow:UserWarning: enabling the new type promotion must happen at the beginning of the program. Please ensure no TF APIs have been used yet.
+WARNING:tensorflow:UserWarning: enabling the new type promotion must happen at the beginning of the program. Please ensure no TF APIs have been used yet.
+WARNING:tensorflow:UserWarning: enabling the new type promotion must happen at the beginning of the program. Please ensure no TF APIs have been used yet.
+WARNING:tensorflow:UserWarning: enabling the new type promotion must happen at the beginning of the program. Please ensure no TF APIs have been used yet.
+I0000 00:00:1790675293.447569  657321 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 5657 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3050, pci bus id: 0000:84:00.0, compute capability: 8.6
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790675298.252146  657321 service.cc:152] XLA service 0x6107e2c2de60 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1790675298.252178  657321 service.cc:160]   StreamExecutor device (0): NVIDIA GeForce RTX 3050, Compute Capability 8.6
+I0000 00:00:1790675298.810831  657321 cuda_dnn.cc:529] Loaded cuDNN version 90300
+I0000 00:00:1790675301.490919  657321 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+Output directory: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained
+==================================================
+PHONON CALCULATION WORKFLOW
+==================================================
+Loading structure from /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Loaded 8 atoms
+Setting up calculator: grace
+Calculator ready
+Starting relaxation...
+Relaxation finished: 6 steps, 3.90 sec, converged=True
+Starting phonon calculation...
+Phonons done: 15.05 sec, displacements=49, atoms_per_call=1000
+Computing DOS...
+DOS saved to /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained/phonon_dos.dat
+Computing band structure...
+Using standard band path: GMKGALHA
+WARNING, 2 imaginary frequencies at q = ( 0.00,  0.00,  0.00) ; (omega_q = 2.296e-05*i)
+WARNING, 2 imaginary frequencies at q = ( 0.00,  0.00,  0.00) ; (omega_q = 2.296e-05*i)
+Band structure saved to /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained/phonon_bands.dat
+Metrics saved to /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained/metrics.json
+==================================================
+CALCULATION COMPLETED
+Results saved in: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained
+==================================================
+==========================================
+Phonon calculation finished
+==========================================
+Exit code: 0
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/phonons/grace/2L/pretrained
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_144810.log
+==========================================
+✅ SUCCESS!
+==========================================

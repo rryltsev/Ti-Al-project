@@ -1,0 +1,186 @@
+{
+  "same_named_shapes_hashes": true,
+  "counts": [
+    44,
+    44
+  ],
+  "changed_keys": [
+    {
+      "a": "0:A_ChemIndTransf/DenseLayer_A_ChemIndTransf__:0",
+      "b": "0:I1/reducing_A:0"
+    },
+    {
+      "a": "1:A1/w_left_FC:0",
+      "b": "1:I1/reducing_AA:0"
+    },
+    {
+      "a": "2:A1/w_right_FC:0",
+      "b": "2:I1/reducing_AAA:0"
+    },
+    {
+      "a": "3:AA1/w_left_FC:0",
+      "b": "3:I1/reducing_AAAA:0"
+    },
+    {
+      "a": "4:AA1/w_right_FC:0",
+      "b": "4:I2/reducing_B:0"
+    },
+    {
+      "a": "5:AA2/w_left_FC:0",
+      "b": "5:I2/reducing_BB:0"
+    },
+    {
+      "a": "6:AA2/w_right_FC:0",
+      "b": "6:I2/reducing_BBB:0"
+    },
+    {
+      "a": "7:B/reducing_B0:0",
+      "b": "7:I2/reducing_BBBB:0"
+    },
+    {
+      "a": "8:B/reducing_YI:0",
+      "b": "8:R_Linear_0/Linear_R_Linear_0_no_decay:0"
+    },
+    {
+      "a": "9:B0_ChemIndTransf/DenseLayer_B0_ChemIndTransf__:0",
+      "b": "9:R_Linear_1/Linear_R_Linear_1_no_decay:0"
+    },
+    {
+      "a": "10:B1/w_left_FC:0",
+      "b": "10:R_Linear_2/Linear_R_Linear_2_no_decay:0"
+    },
+    {
+      "a": "11:B1/w_right_FC:0",
+      "b": "11:R1_Linear_0/Linear_R1_Linear_0_no_decay:0"
+    },
+    {
+      "a": "12:BB1/w_left_FC:0",
+      "b": "12:R1_Linear_1/Linear_R1_Linear_1_no_decay:0"
+    },
+    {
+      "a": "13:BB1/w_right_FC:0",
+      "b": "13:R1_Linear_2/Linear_R1_Linear_2_no_decay:0"
+    },
+    {
+      "a": "14:BB2/w_left_FC:0",
+      "b": "14:rho/reducing_A:0"
+    },
+    {
+      "a": "15:BB2/w_right_FC:0",
+      "b": "15:rho/reducing_AA:0"
+    },
+    {
+      "a": "16:I/reducing_I1:0",
+      "b": "16:rho/reducing_AAA:0"
+    },
+    {
+      "a": "17:I1/reducing_A:0",
+      "b": "17:rho/reducing_AAAA:0"
+    },
+    {
+      "a": "18:I1/reducing_AA:0",
+      "b": "18:A_ChemIndTransf/DenseLayer_A_ChemIndTransf__:0"
+    },
+    {
+      "a": "19:I1/reducing_AAA:0",
+      "b": "19:A1/w_left_FC:0"
+    },
+    {
+      "a": "20:I1/reducing_AAAA:0",
+      "b": "20:A1/w_right_FC:0"
+    },
+    {
+      "a": "21:I2/reducing_B:0",
+      "b": "21:AA1/w_left_FC:0"
+    },
+    {
+      "a": "22:I2/reducing_BB:0",
+      "b": "22:AA1/w_right_FC:0"
+    },
+    {
+      "a": "23:I2/reducing_BBB:0",
+      "b": "23:AA2/w_left_FC:0"
+    },
+    {
+      "a": "24:I2/reducing_BBBB:0",
+      "b": "24:AA2/w_right_FC:0"
+    },
+    {
+      "a": "25:Variable:0",
+      "b": "25:B/reducing_B0:0"
+    },
+    {
+      "a": "26:Variable:0",
+      "b": "26:B/reducing_YI:0"
+    },
+    {
+      "a": "27:LinMLPOut2ScalarTarget_MLP_layer0/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer0__:0",
+      "b": "27:B0_ChemIndTransf/DenseLayer_B0_ChemIndTransf__:0"
+    },
+    {
+      "a": "28:LinMLPOut2ScalarTarget_MLP_layer1/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer1__:0",
+      "b": "28:B1/w_left_FC:0"
+    },
+    {
+      "a": "29:R_Linear_0/Linear_R_Linear_0_no_decay:0",
+      "b": "29:B1/w_right_FC:0"
+    },
+    {
+      "a": "30:R_Linear_1/Linear_R_Linear_1_no_decay:0",
+      "b": "30:BB1/w_left_FC:0"
+    },
+    {
+      "a": "31:R_Linear_2/Linear_R_Linear_2_no_decay:0",
+      "b": "31:BB1/w_right_FC:0"
+    },
+    {
+      "a": "32:R1_Linear_0/Linear_R1_Linear_0_no_decay:0",
+      "b": "32:BB2/w_left_FC:0"
+    },
+    {
+      "a": "33:R1_Linear_1/Linear_R1_Linear_1_no_decay:0",
+      "b": "33:BB2/w_right_FC:0"
+    },
+    {
+      "a": "34:R1_Linear_2/Linear_R1_Linear_2_no_decay:0",
+      "b": "34:I/reducing_I1:0"
+    },
+    {
+      "a": "35:tr_atomic_shift:0",
+      "b": "35:Variable:0"
+    },
+    {
+      "a": "36:Z/ChemicalEmbedding:0",
+      "b": "36:Variable:0"
+    },
+    {
+      "a": "37:rho/reducing_A:0",
+      "b": "37:LinMLPOut2ScalarTarget_MLP_layer0/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer0__:0"
+    },
+    {
+      "a": "38:rho/reducing_AA:0",
+      "b": "38:LinMLPOut2ScalarTarget_MLP_layer1/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer1__:0"
+    },
+    {
+      "a": "39:rho/reducing_AAA:0",
+      "b": "39:RadialBasis/cutoff:0"
+    },
+    {
+      "a": "40:rho/reducing_AAAA:0",
+      "b": "40:tr_atomic_shift:0"
+    },
+    {
+      "a": "41:RadialBasis/cutoff:0",
+      "b": "41:element_map_index:0"
+    },
+    {
+      "a": "42:element_map_index:0",
+      "b": "42:element_map_symbols:0"
+    },
+    {
+      "a": "43:element_map_symbols:0",
+      "b": "43:Z/ChemicalEmbedding:0"
+    }
+  ],
+  "hash_differences": []
+}

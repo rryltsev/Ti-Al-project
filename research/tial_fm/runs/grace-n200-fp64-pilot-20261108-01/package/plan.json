@@ -1,0 +1,63 @@
+{
+  "id": "grace-n200-fp64-pilot-20261108-01",
+  "model": "GRACE-2L-OMAT-medium-base-fp64",
+  "source_checkpoint": "/home6/u3129/tial-fm-research/grace-2l-preparation-20261107-01/checkpoint",
+  "source_hashes": {
+    "checkpoint.data-00000-of-00001": "b0edbae73335e32b55e8bb64c7f4fe3cac4d5b01ea277dc5db1ac61a0d1231e5",
+    "checkpoint.index": "e6b88f7815fb91bc8687079fc177e4d88ba4640528101855e7c6eff61a4939d1",
+    "model.yaml": "9d2c48d499253916fc02189f3dbee87c079dfdf87d86770a986315e073c0c15c"
+  },
+  "cases": [
+    {
+      "name": "PBE-full-N200-seed10",
+      "XC": "PBE",
+      "method": "full",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "epochs": 50,
+      "steps": 10000
+    },
+    {
+      "name": "PBE-restricted-N200-seed10",
+      "XC": "PBE",
+      "method": "restricted",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "epochs": 50,
+      "steps": 10000
+    },
+    {
+      "name": "r2SCAN-full-N200-seed10",
+      "XC": "r2SCAN",
+      "method": "full",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "epochs": 50,
+      "steps": 10000
+    },
+    {
+      "name": "r2SCAN-restricted-N200-seed10",
+      "XC": "r2SCAN",
+      "method": "restricted",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "epochs": 50,
+      "steps": 10000
+    }
+  ],
+  "precision": "float64",
+  "test_access": false,
+  "new_DFT": false,
+  "max_concurrent_GPU_jobs": 1,
+  "recipe": "Adam LR1e-3 ->1e-4 cosine, Huber E/F/stress16/32/128, batch1, 50epochs, noEMA, fixed final checkpoint; same XC train-only alignment across full/restricted.",
+  "restricted_patterns": [
+    "I2/reducing_",
+    "rho/reducing_",
+    "I1/reducing_"
+  ],
+  "training_selection": "Final step10000, no best-validation reload. Smoke models are discarded."
+}

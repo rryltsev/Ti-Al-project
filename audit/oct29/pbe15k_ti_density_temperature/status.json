@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "preflight.json": {
+      "status": "passed",
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "CUDA_VISIBLE_DEVICES": "0",
+        "deepmd_device": "cuda:0"
+      },
+      "checks": [
+        {
+          "phase": "liquid",
+          "E_diff_eV_atom": 1.7881370695249644e-09,
+          "F_diff_RMS_eV_A": 1.0529512313007936e-06,
+          "stress_max_diff_GPa": 3.423302712154409e-06
+        },
+        {
+          "phase": "alpha",
+          "E_diff_eV_atom": 7.724762417637975e-08,
+          "F_diff_RMS_eV_A": 3.055993805561226e-07,
+          "stress_max_diff_GPa": 6.186614952682886e-06
+        },
+        {
+          "phase": "beta",
+          "E_diff_eV_atom": 1.7642975308262976e-07,
+          "F_diff_RMS_eV_A": 3.6335845013197227e-07,
+          "stress_max_diff_GPa": 1.124784104890855e-05
+        }
+      ],
+      "seconds_per_step": {
+        "liquid": 0.04364028360694647,
+        "alpha": 0.047556579411029816,
+        "beta": 0.04779731290414929
+      },
+      "projected_hours": 10.258488378021866,
+      "model_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "protocol_sha256": "7232566e3a2da201a4aa44a9c4f1bf4113b02aff615c0689500980dc6577521f",
+      "versions": {
+        "ase": "3.29.0",
+        "deepmd-kit": "3.2.0",
+        "torch": "2.11.0",
+        "numpy": "2.5.3"
+      }
+    },
+    "progress.json": {
+      "active": null,
+      "completed": [
+        "liquid-2500",
+        "liquid-2400",
+        "liquid-2300",
+        "liquid-2200",
+        "liquid-2100",
+        "alpha-300",
+        "alpha-500",
+        "alpha-700",
+        "alpha-900",
+        "alpha-1100",
+        "beta-1200",
+        "beta-1400",
+        "beta-1600",
+        "beta-1800",
+        "beta-1900"
+      ],
+      "failed": []
+    },
+    "summary.json": {
+      "status": "completed",
+      "completed": [
+        "liquid-2500",
+        "liquid-2400",
+        "liquid-2300",
+        "liquid-2200",
+        "liquid-2100",
+        "alpha-300",
+        "alpha-500",
+        "alpha-700",
+        "alpha-900",
+        "alpha-1100",
+        "beta-1200",
+        "beta-1400",
+        "beta-1600",
+        "beta-1800",
+        "beta-1900"
+      ],
+      "failed": []
+    }
+  },
+  "logs": {
+    "worker.log": "duction 27000 1570.4 4.4398\nproduction 28000 1651.5 4.4226\nproduction 29000 1569.7 4.4196\nproduction 30000 1783.1 4.3735\nCOMPLETED beta-1600\nSTART beta-1800\nequilibration 0 1800.0 4.6363\nequilibration 1000 1808.6 4.3695\nequilibration 2000 1723.8 4.334\nequilibration 3000 1908.2 4.3501\nequilibration 4000 1781.7 4.371\nequilibration 5000 2055.9 4.3938\nequilibration 6000 1911.1 4.3315\nequilibration 7000 1775.7 4.368\nequilibration 8000 1742.0 4.3501\nequilibration 9000 1701.5 4.3356\nequilibration 10000 1833.8 4.4191\nequilibration 11000 1796.6 4.3386\nequilibration 12000 1790.8 4.3701\nequilibration 13000 1886.2 4.3229\nequilibration 14000 1972.2 4.3054\nequilibration 15000 1806.4 4.3487\nequilibration 16000 1786.4 4.3894\nequilibration 17000 1815.8 4.3389\nequilibration 18000 1604.7 4.3624\nequilibration 19000 1777.7 4.4079\nequilibration 20000 1861.9 4.3305\nproduction 0 1800.0 4.3305\nproduction 1000 1711.7 4.3797\nproduction 2000 1674.5 4.3942\nproduction 3000 1721.2 4.3754\nproduction 4000 1840.1 4.3453\nproduction 5000 1765.0 4.3154\nproduction 6000 1684.2 4.3955\nproduction 7000 2038.4 4.3662\nproduction 8000 1817.0 4.327\nproduction 9000 1730.1 4.4113\nproduction 10000 1567.0 4.3167\nproduction 11000 1904.0 4.3852\nproduction 12000 1969.6 4.3849\nproduction 13000 1919.7 4.3512\nproduction 14000 1698.8 4.3346\nproduction 15000 1863.0 4.3358\nproduction 16000 1913.9 4.3804\nproduction 17000 1827.7 4.3727\nproduction 18000 1716.1 4.3753\nproduction 19000 1796.7 4.3643\nproduction 20000 1741.9 4.3219\nproduction 21000 1982.0 4.3438\nproduction 22000 1795.6 4.3099\nproduction 23000 1793.1 4.3319\nproduction 24000 1687.0 4.3563\nproduction 25000 1845.5 4.4055\nproduction 26000 1639.6 4.3297\nproduction 27000 1692.5 4.402\nproduction 28000 1615.5 4.3301\nproduction 29000 1656.4 4.3427\nproduction 30000 1763.7 4.3519\nCOMPLETED beta-1800\nSTART beta-1900\nequilibration 0 1900.0 4.6363\nequilibration 1000 1832.1 4.2436\nequilibration 2000 1923.0 4.3174\nequilibration 3000 1944.7 4.2651\nequilibration 4000 2053.9 4.2842\nequilibration 5000 1980.3 4.2917\nequilibration 6000 1807.7 4.187\nequilibration 7000 2035.9 4.2656\nequilibration 8000 1965.9 4.2626\nequilibration 9000 1979.7 4.2312\nequilibration 10000 1748.4 4.2405\nequilibration 11000 1777.4 4.2455\nequilibration 12000 1790.1 4.3291\nequilibration 13000 1845.8 4.2102\nequilibration 14000 1871.2 4.2472\nequilibration 15000 1898.7 4.321\nequilibration 16000 1999.9 4.1945\nequilibration 17000 1828.0 4.2893\nequilibration 18000 1914.6 4.2969\nequilibration 19000 1885.4 4.3662\nequilibration 20000 2002.1 4.3041\nproduction 0 1900.0 4.3041\nproduction 1000 1991.8 4.2524\nproduction 2000 1727.4 4.2693\nproduction 3000 1924.2 4.2106\nproduction 4000 1825.3 4.2826\nproduction 5000 1895.7 4.3558\nproduction 6000 1951.8 4.259\nproduction 7000 2033.9 4.2016\nproduction 8000 1940.5 4.3138\nproduction 9000 1763.2 4.296\nproduction 10000 1887.9 4.2919\nproduction 11000 2011.3 4.2625\nproduction 12000 1931.0 4.2647\nproduction 13000 1677.7 4.2508\nproduction 14000 1977.0 4.3122\nproduction 15000 1839.8 4.2645\nproduction 16000 1854.8 4.2798\nproduction 17000 1936.1 4.2909\nproduction 18000 1868.5 4.2691\nproduction 19000 1907.3 4.2212\nproduction 20000 1706.9 4.2455\nproduction 21000 1961.9 4.2087\nproduction 22000 2136.2 4.2459\nproduction 23000 1922.5 4.2673\nproduction 24000 1957.8 4.263\nproduction 25000 1958.5 4.3151\nproduction 26000 1865.9 4.3152\nproduction 27000 1841.0 4.269\nproduction 28000 2003.8 4.2744\nproduction 29000 1927.6 4.2567\nproduction 30000 1959.2 4.2694\nCOMPLETED beta-1900\n",
+    "allocation-20964836.log": ""
+  }
+}

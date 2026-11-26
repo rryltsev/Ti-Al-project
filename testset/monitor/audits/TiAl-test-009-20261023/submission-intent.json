@@ -1,0 +1,21 @@
+{
+  "unix": 1792733222.549112,
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:20:00",
+    "--no-requeue",
+    "--job-name=t50-audit009",
+    "--chdir=/home6/u3129/tial-testsets/audit-test009-20261023-01",
+    "--output=/home6/u3129/tial-testsets/audit-test009-20261023-01/audit-%j.out",
+    "/home6/u3129/tial-testsets/audit-test009-20261023-01/model_job.sbatch"
+  ],
+  "purpose": "Re-evaluate original PBE checkpoint and frozen export on unchanged Test009; no training, freezing or cache replacement."
+}

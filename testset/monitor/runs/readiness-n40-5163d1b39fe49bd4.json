@@ -1,0 +1,482 @@
+{
+  "checked_unix": 1793547867.520059,
+  "common_count": 40,
+  "fingerprint": "5163d1b39fe49bd4",
+  "checkpoint_counts": [
+    30,
+    35,
+    40
+  ],
+  "coverage": {
+    "liquid": {
+      "completed": 20,
+      "planned": 25,
+      "composition_bins_ready": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_bins_planned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_range": [
+        0.0,
+        1.0
+      ]
+    },
+    "POSCAR_alpha-Ti-hcp_orthogonal": {
+      "completed": 6,
+      "planned": 8,
+      "composition_bins_ready": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_bins_planned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_range": [
+        0.0,
+        0.390625
+      ]
+    },
+    "POSCAR_beta-Ti-bcc": {
+      "completed": 7,
+      "planned": 9,
+      "composition_bins_ready": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_bins_planned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_range": [
+        0.0,
+        0.6
+      ]
+    },
+    "POSCAR_gamma_AlTi_L1_0": {
+      "completed": 7,
+      "planned": 8,
+      "composition_bins_ready": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_bins_planned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "composition_range": [
+        0.352,
+        0.648
+      ]
+    }
+  },
+  "stability": {
+    "PBE": {
+      "energy_meV_atom": {
+        "mae": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            1.1008664233886134,
+            1.106340800436824,
+            1.1383599966084736
+          ],
+          "range": 0.03749357321986024,
+          "allowed_range": 1.0,
+          "pass": true
+        },
+        "rmse": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            1.4403421732149988,
+            1.4654420211370078,
+            1.5143526783060108
+          ],
+          "range": 0.07401050509101204,
+          "allowed_range": 1.0,
+          "pass": true
+        }
+      },
+      "force_eV_A": {
+        "mae": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            0.04571483483218793,
+            0.04630233346732772,
+            0.04693667895890833
+          ],
+          "range": 0.0012218441267203978,
+          "allowed_range": 0.005,
+          "pass": true
+        },
+        "rmse": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            0.06200441732972065,
+            0.06282301580899254,
+            0.06376148170703155
+          ],
+          "range": 0.0017570643773109004,
+          "allowed_range": 0.006200441732972066,
+          "pass": true
+        }
+      }
+    },
+    "PBEsol": {
+      "energy_meV_atom": {
+        "mae": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            1.5197906733237065,
+            1.5083778692305674,
+            1.4484048622875296
+          ],
+          "range": 0.07138581103617692,
+          "allowed_range": 1.0,
+          "pass": true
+        },
+        "rmse": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            1.8127486074252213,
+            1.8178855452380995,
+            1.7693106684737925
+          ],
+          "range": 0.04857487676430705,
+          "allowed_range": 1.0,
+          "pass": true
+        }
+      },
+      "force_eV_A": {
+        "mae": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            0.04540975262974791,
+            0.04598704761846923,
+            0.04659939495743497
+          ],
+          "range": 0.0011896423276870557,
+          "allowed_range": 0.005,
+          "pass": true
+        },
+        "rmse": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            0.06162101202364919,
+            0.06244111834780301,
+            0.06332600698667051
+          ],
+          "range": 0.0017049949630213238,
+          "allowed_range": 0.00616210120236492,
+          "pass": true
+        }
+      }
+    },
+    "r2SCAN": {
+      "energy_meV_atom": {
+        "mae": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            1.3966012677815165,
+            1.3998238005605401,
+            1.3592618775486898
+          ],
+          "range": 0.040561923011850354,
+          "allowed_range": 1.0,
+          "pass": true
+        },
+        "rmse": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            1.6310551132183377,
+            1.6332219272570085,
+            1.6029635213964688
+          ],
+          "range": 0.03025840586053974,
+          "allowed_range": 1.0,
+          "pass": true
+        }
+      },
+      "force_eV_A": {
+        "mae": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            0.052004896443688914,
+            0.052874221276013274,
+            0.05370933885677823
+          ],
+          "range": 0.0017044424130893132,
+          "allowed_range": 0.0052004896443688916,
+          "pass": true
+        },
+        "rmse": {
+          "checkpoint_counts": [
+            40,
+            35,
+            30
+          ],
+          "values": [
+            0.07073443635502838,
+            0.07189453299835878,
+            0.07308026470838541
+          ],
+          "range": 0.0023458283533570323,
+          "allowed_range": 0.007073443635502838,
+          "pass": true
+        }
+      }
+    }
+  },
+  "interval_screen": {
+    "PBE": {
+      "energy_meV_atom": {
+        "rmse_ci95": [
+          1.0469837276383793,
+          1.8179257927989334
+        ],
+        "width": 0.7709420651605541,
+        "allowed_width": 1.0,
+        "pass": true
+      },
+      "force_eV_A": {
+        "rmse_ci95": [
+          0.05684181987705691,
+          0.06710851262200881
+        ],
+        "width": 0.010266692744951907,
+        "allowed_width": 0.031002208664860326,
+        "pass": true
+      }
+    },
+    "PBEsol": {
+      "energy_meV_atom": {
+        "rmse_ci95": [
+          1.4668025075935371,
+          2.146240435969918
+        ],
+        "width": 0.679437928376381,
+        "allowed_width": 1.0,
+        "pass": true
+      },
+      "force_eV_A": {
+        "rmse_ci95": [
+          0.05649189832351396,
+          0.06672014213549951
+        ],
+        "width": 0.010228243811985553,
+        "allowed_width": 0.030810506011824595,
+        "pass": true
+      }
+    },
+    "r2SCAN": {
+      "energy_meV_atom": {
+        "rmse_ci95": [
+          1.40454930837168,
+          1.8546828636656103
+        ],
+        "width": 0.4501335552939303,
+        "allowed_width": 1.0,
+        "pass": true
+      },
+      "force_eV_A": {
+        "rmse_ci95": [
+          0.06473881958845329,
+          0.07681555082442176
+        ],
+        "width": 0.012076731235968474,
+        "allowed_width": 0.03536721817751419,
+        "pass": true
+      }
+    }
+  },
+  "readiness": {
+    "candidate_for_discussion": true,
+    "automatic_stop": false,
+    "reasons": [],
+    "qualification": "Heuristic discussion trigger based on fine-tuned models only. The pretrained baseline does not change the stopping rule. Report adaptive stopping, completion-order bias, coverage and uncertainty. Full fixed Test50 remains preferred."
+  },
+  "missing_ids": [
+    "TiAl-test-021",
+    "TiAl-test-022",
+    "TiAl-test-023",
+    "TiAl-test-024",
+    "TiAl-test-025",
+    "TiAl-test-032",
+    "TiAl-test-033",
+    "TiAl-test-041",
+    "TiAl-test-042",
+    "TiAl-test-050"
+  ],
+  "remaining_jobs": [
+    {
+      "functional": "PBE",
+      "structure_id": "TiAl-test-042",
+      "job": "20957366_41",
+      "state": "PENDING"
+    },
+    {
+      "functional": "PBEsol",
+      "structure_id": "TiAl-test-042",
+      "job": "20957369_41",
+      "state": "PENDING"
+    },
+    {
+      "functional": "PBEsol",
+      "structure_id": "TiAl-test-050",
+      "job": "20957369_49",
+      "state": "RUNNING"
+    },
+    {
+      "functional": "PBEsol",
+      "structure_id": "TiAl-test-041",
+      "job": "20957369_40",
+      "state": "RUNNING"
+    },
+    {
+      "functional": "PBEsol",
+      "structure_id": "TiAl-test-033",
+      "job": "20957369_32",
+      "state": "RUNNING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-050",
+      "job": "20957372_49",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-041",
+      "job": "20957372_40",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-033",
+      "job": "20957372_32",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-042",
+      "job": "20957372_41",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-025",
+      "job": "20957372_24",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-024",
+      "job": "20957372_23",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-023",
+      "job": "20957372_22",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-022",
+      "job": "20957372_21",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-021",
+      "job": "20957372_20",
+      "state": "PENDING"
+    },
+    {
+      "functional": "r2SCAN",
+      "structure_id": "TiAl-test-032",
+      "job": "20957372_31",
+      "state": "RUNNING"
+    }
+  ],
+  "limitations": [
+    "Heuristic screening trigger, not proof of representativeness or guaranteed accuracy.",
+    "10/50 missing:5liquid,2hcp,2bcc,1gamma.",
+    "Structure-bootstrap intervals descriptive and conditional on completed subset; do not include adaptive stopping or unknown trajectory correlation.",
+    "Crystal-first scheduling changes completion order; family policy chosen independently of observed errors but after prior inspection.",
+    "PBE5k->15k and15k->20k replacements followed inspection of Test50; not blind checkpoint selection.20k history only30/35/40 used in trigger.",
+    "Pretrained overlap unknown; raw energies against distinct functionals include reference and functional differences."
+  ],
+  "recommendation": "Complete all50 for final article benchmark. User may choose an explicitly labelled partial/adaptively stopped result; no cancellation without explicit user authorization.",
+  "DFT_modified": false
+}

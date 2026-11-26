@@ -1,0 +1,140 @@
+{
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "T_K": 1000.0,
+  "kBT_eV": 0.08617333262145,
+  "name": "interlayer",
+  "dim": 21,
+  "n_blocks": 8,
+  "balanced_draws_per_block": 8192,
+  "t_df": 5,
+  "t_scale": 1.2,
+  "seed_prefix": 8261937,
+  "harmonic_probability_inside": 1.001174302876795,
+  "harmonic_probability_inside_se": 0.0022531654281600895,
+  "pooled": {
+    "fep": {
+      "value_eV_cell": -128340.02225249978,
+      "jackknife_se_eV_cell": 72684.13706705807
+    },
+    "endpoint_excess_energy": {
+      "value_eV_cell": -128360.92757516784,
+      "jackknife_se_eV_cell": 72685.03821270306
+    },
+    "draws": 65536,
+    "effective_samples": 1.0,
+    "largest_normalized_weight": 1.0,
+    "target_weight_top_10_draws": 1.0,
+    "block_target_probability": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "block_fep_eV_cell": [
+      -12320.204592886805,
+      -45272.616225412494,
+      -2522.7047531459334,
+      -2343.478021278219,
+      -28535.76493862866,
+      -13348.677346586835,
+      -128340.20144490742,
+      -125.03033501246959
+    ],
+    "block_endpoint_excess_eV_cell": [
+      -12334.33835217993,
+      -45292.312474935774,
+      -2530.1512890917124,
+      -2361.1087615186966,
+      -28547.847484079986,
+      -13359.348315369933,
+      -128360.92757516784,
+      -137.07475867584432
+    ]
+  },
+  "tail_diagnostics": {
+    "student_component": {
+      "proposal_draws": 32768,
+      "target_probability": 1.0,
+      "effective_weighted_draws": 1.0,
+      "blocks_with_positive_target_weight": 1
+    },
+    "gaussian_component": {
+      "proposal_draws": 32768,
+      "target_probability": 0.0,
+      "effective_weighted_draws": 0.0,
+      "blocks_with_positive_target_weight": 0
+    },
+    "r2_gt_2d": {
+      "proposal_draws": 12785,
+      "target_probability": 1.0,
+      "effective_weighted_draws": 1.0,
+      "blocks_with_positive_target_weight": 1
+    },
+    "r2_gt_3d": {
+      "proposal_draws": 6988,
+      "target_probability": 1.0,
+      "effective_weighted_draws": 1.0,
+      "blocks_with_positive_target_weight": 1
+    },
+    "near_wall_inside": {
+      "proposal_draws": 93,
+      "target_probability": 1.0,
+      "effective_weighted_draws": 1.0,
+      "blocks_with_positive_target_weight": 1
+    },
+    "outside": {
+      "proposal_draws": 137,
+      "target_probability": 0.0,
+      "effective_weighted_draws": 0.0,
+      "blocks_with_positive_target_weight": 0
+    },
+    "excess_below_minus_5kBT": {
+      "proposal_draws": 662,
+      "target_probability": 1.0,
+      "effective_weighted_draws": 1.0,
+      "blocks_with_positive_target_weight": 1
+    }
+  },
+  "convergence_by_draws_per_block": {
+    "2048": {
+      "fep": {
+        "value_eV_cell": -2522.6450223433876,
+        "jackknife_se_eV_cell": 1634.2397538307598
+      },
+      "endpoint_excess_energy": {
+        "value_eV_cell": -2530.1512890917124,
+        "jackknife_se_eV_cell": 1626.1701317907964
+      },
+      "effective_samples": 1.0,
+      "largest_normalized_weight": 1.0
+    },
+    "4096": {
+      "fep": {
+        "value_eV_cell": -45272.496763807394,
+        "jackknife_se_eV_cell": 27933.44651897245
+      },
+      "endpoint_excess_energy": {
+        "value_eV_cell": -45292.312474935774,
+        "jackknife_se_eV_cell": 27941.343639620107
+      },
+      "effective_samples": 1.0,
+      "largest_normalized_weight": 1.0
+    },
+    "8192": {
+      "fep": {
+        "value_eV_cell": -128340.02225249978,
+        "jackknife_se_eV_cell": 72684.13706705807
+      },
+      "endpoint_excess_energy": {
+        "value_eV_cell": -128360.92757516784,
+        "jackknife_se_eV_cell": 72685.03821270306
+      },
+      "effective_samples": 1.0,
+      "largest_normalized_weight": 1.0
+    }
+  }
+}

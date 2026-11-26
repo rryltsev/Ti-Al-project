@@ -1,0 +1,39 @@
+PBE 15k: плотность Ti и сплавов
+Новых температурных точек завершено: 15/15.
+В реестре: 44 записей (основные NPT, поздние окна сосуществования, статические объёмы).
+
+Основная температурная серия чистого Ti:
+ 300 K, alpha: 4.5530046 ± 0.0001515 г/см³ (SEM); MSD(10 пс)=0.043 Å²; предупреждения: []
+ 500 K, alpha: 4.5287050 ± 0.0001109 г/см³ (SEM); MSD(10 пс)=0.078 Å²; предупреждения: []
+ 700 K, alpha: 4.5047479 ± 0.0001908 г/см³ (SEM); MSD(10 пс)=0.118 Å²; предупреждения: []
+ 900 K, alpha: 4.4795246 ± 0.0002851 г/см³ (SEM); MSD(10 пс)=0.166 Å²; предупреждения: []
+1100 K, alpha: 4.4545584 ± 0.0002413 г/см³ (SEM); MSD(10 пс)=0.224 Å²; предупреждения: []
+1200 K, beta: 4.4475862 ± 0.0002742 г/см³ (SEM); MSD(10 пс)=0.384 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+1400 K, beta: 4.4208795 ± 0.0005228 г/см³ (SEM); MSD(10 пс)=0.453 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+1600 K, beta: 4.3935272 ± 0.0004033 г/см³ (SEM); MSD(10 пс)=0.487 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+1800 K, beta: 4.3632225 ± 0.0010531 г/см³ (SEM); MSD(10 пс)=0.772 Å²; предупреждения: []
+1873 K, liquid: 4.2828014 ± 0.0007610 г/см³ (SEM); MSD(10 пс)=29.382 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+1900 K, beta: 4.2752695 ± 0.0011105 г/см³ (SEM); MSD(10 пс)=30.305 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias', 'Substantial diffusion from crystalline initialization; inspect melting/phase change']
+2000 K, liquid: 4.2605731 ± 0.0011380 г/см³ (SEM); MSD(10 пс)=36.005 Å²; предупреждения: []
+2100 K, liquid: 4.2415230 ± 0.0012279 г/см³ (SEM); MSD(10 пс)=44.331 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+2200 K, liquid: 4.2246925 ± 0.0010824 г/см³ (SEM); MSD(10 пс)=46.188 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+2300 K, liquid: 4.2064077 ± 0.0008618 г/см³ (SEM); MSD(10 пс)=46.537 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+2400 K, liquid: 4.1899086 ± 0.0008265 г/см³ (SEM); MSD(10 пс)=53.533 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+2500 K, liquid: 4.1717342 ± 0.0015173 г/см³ (SEM); MSD(10 пс)=60.194 Å²; предупреждения: ['Mean pressure differs from target outside block 95% interval; density SEM excludes protocol bias']
+
+Дополнительные оценки из последних 10 пс траекторий сосуществования:
+1700 K, solid-like, N=1296: 4.3775986 ± 0.0007841 г/см³; доля solid-like=0.9826
+1750 K, solid-like, N=1296: 4.3696636 ± 0.0009574 г/см³; доля solid-like=0.9649
+1775 K, liquid-like, N=1296: 4.2978770 ± 0.0007865 г/см³; доля solid-like=0.0002
+1800 K, liquid-like, N=1296: 4.2927032 ± 0.0008737 г/см³; доля solid-like=0.0001
+1850 K, liquid-like, N=1296: 4.2850151 ± 0.0009150 г/см³; доля solid-like=0.0000
+
+Ограничения и определения:
+Density is mean instantaneous mass/volume. Primary NPT averages exclude t=0 and use 3000 samples at 10 fs.
+Primary SEM: maximum among 3, 5, 6 ps block estimates; not a total uncertainty or checkpoint-only error.
+Old 5k temperature-series values are preserved as published in the original CSV. Recording cadence differs from 15k.
+Phase marker denotes starting structure, not a structural identification of the final phase. MSD is a mobility diagnostic.
+Coexistence late windows use different cell size, pressure and thermostat/barostat; retained separately, not joined to main curves.
+Static EOS and phonon-relaxation volume duplicate the same 0 K equilibrium; no duplicate finite-temperature point is created.
+Property-screen single-point evaluations on 5k geometries, canceled equilibration-only MD, and NVT viscosity runs do not supply independent equilibrated 15k NPT density points.
+The 2000 K raw scalar mean is 4.2605731066 g/cm3; an earlier rounded status message used 4.26061. Article precision 4.2606 is unchanged.

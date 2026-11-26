@@ -1,0 +1,22 @@
+{
+  "name": "r2SCAN-full-N694-seed10",
+  "XC": "r2SCAN",
+  "method": "full",
+  "N": 694,
+  "validation": 149,
+  "seed": 10,
+  "epochs": 50,
+  "expected_steps": 34700,
+  "source": {
+    "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+    "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+  },
+  "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+  "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+  "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+  "configuration_sha256": "1be6ff072790dcf22f66a543afc526c2d36033abf8be237a6cbcbe48be0f81e1",
+  "data_root": "/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-01/data/N694",
+  "dataset_manifest": "dataset-files-N694.json",
+  "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+  "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+}

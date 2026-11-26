@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-restricted_mlp-N200-seed20",
+    "XC": "PBE",
+    "method": "restricted_mlp",
+    "N": 200,
+    "validation": 149,
+    "seed": 20,
+    "epochs": 50,
+    "steps": 10000,
+    "trainable_patterns": [
+      "I2/reducing_",
+      "rho/reducing_",
+      "I1/reducing_",
+      "LinMLPOut2ScalarTarget_"
+    ],
+    "expected_trainable": 21112778,
+    "expected_trainable_tensors": 14
+  },
+  "steps": 10000,
+  "epochs": 50,
+  "training_seconds": 512.6599504370242,
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01/cases/PBE-restricted_mlp-N200-seed20/final-checkpoint/checkpoint",
+  "hashes": {
+    "checkpoint.index": "6cd8ba076f03654e9a3e49b42989e602adfc03491ca1767ed6fa85417a4682da",
+    "checkpoint.data-00000-of-00001": "439956af92e8d96970ea4967b2f39e83eedc914131297d6159f7c9a22cb2c465"
+  },
+  "test_access": false,
+  "selection": "fixed final epoch50",
+  "GPU_memory": {
+    "current": 565351936,
+    "peak": 2110308864
+  }
+}

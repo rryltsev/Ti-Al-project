@@ -1,0 +1,92 @@
+{
+  "T_K": 1273.15,
+  "n_stable": 409,
+  "n_orbits": 20,
+  "volumes": [
+    {
+      "V_A3_atom": 16.25103005690759,
+      "n_training": 39,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 0.6318740963360662,
+      "control_RMSE_vib_meV_atom": 0.5368677532826567
+    },
+    {
+      "V_A3_atom": 16.59679665386307,
+      "n_training": 39,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 0.7022429564142019,
+      "control_RMSE_vib_meV_atom": 0.5302121815900843
+    },
+    {
+      "V_A3_atom": 16.94256325081855,
+      "n_training": 39,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 0.7635402635681057,
+      "control_RMSE_vib_meV_atom": 0.5527932545348931
+    },
+    {
+      "V_A3_atom": 17.288329847774033,
+      "n_training": 39,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 0.8252733349525844,
+      "control_RMSE_vib_meV_atom": 0.6019503423537602
+    },
+    {
+      "V_A3_atom": 17.634096444729515,
+      "n_training": 39,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 0.891423495602582,
+      "control_RMSE_vib_meV_atom": 0.674065290217073
+    },
+    {
+      "V_A3_atom": 17.979863041684997,
+      "n_training": 39,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 0.962016059749846,
+      "control_RMSE_vib_meV_atom": 0.8000387335200995
+    },
+    {
+      "V_A3_atom": 18.325629638640475,
+      "n_training": 39,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 1.1014337523523576,
+      "control_RMSE_vib_meV_atom": 0.9467023861653929
+    },
+    {
+      "V_A3_atom": 18.8442795340737,
+      "n_training": 38,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 2.0197784020821534,
+      "control_RMSE_vib_meV_atom": 1.9802945291956098
+    },
+    {
+      "V_A3_atom": 19.36292942950692,
+      "n_training": 35,
+      "n_control": 7,
+      "J_vib_classical_check_1000_K_max_abs_eV": 0.0,
+      "training_RMSE_vib_meV_atom": 2.4087720720177956,
+      "control_RMSE_vib_meV_atom": 3.6291008605006705
+    }
+  ],
+  "sha256": {
+    "structure_labels.csv": "799cc133c780b6d10aa79d3b593811ee1f80b13255d920fafc5ac331b0a19027",
+    "classical_grid.npz": "cdb53f4c553f9a8ffb6aff100cf8e9a8d24e9841fb762126f0708ae47c7486e6",
+    "index.csv": "e834d768bcc4a70e9ef13a6f364cc4a33ccd23bc2321509c5457563dfce9493e",
+    "volume_temperature_coefficients.npz": "878314bfc222fb17f28e02abaf0956f1fde3e1ed34b36b16a29d4f6670d1f37c"
+  },
+  "target_quantum_temperature_is_original": false,
+  "quantum_temperature_Hermite_check_max_abs_label_eV_atom": 2.6020852139652106e-18,
+  "quantum_temperature_50_vs_25K_max_abs_label_eV_atom": 3.905864700432897e-09,
+  "temperature_bracket_quantum_K": [
+    1250.0,
+    1275.0
+  ]
+}

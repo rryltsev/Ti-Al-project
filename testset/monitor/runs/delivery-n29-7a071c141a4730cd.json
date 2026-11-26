@@ -1,0 +1,91 @@
+{
+  "checked_unix": 1793231167.256513,
+  "new_ids": [
+    "TiAl-test-036"
+  ],
+  "common_count": 29,
+  "fingerprint": "7a071c141a4730cd",
+  "analysis_mode": "monitor-raw",
+  "artifact_sha256": {
+    "convergence.pdf": "b03a82f980c711d3e5dc1e0a71dc0a9715a1f39be964eb23769d6d5287cf594e",
+    "convergence.png": "9bce9e921da9007060b2839ce0844564e83e15989038f2ea7de29a909f1373f1",
+    "coverage.pdf": "bfa17d49d95f242cf0672c5ea3e5335f61c1962a58d8a28b07d31b7cd2573bb9",
+    "coverage.png": "6035e1777733b87dd212188e5b7691b33144d41f9fa6781b7d96a38a6a5db913",
+    "energy_residuals.pdf": "da54898222cadc668a665952febfeb1d9e079f00ff11963f18e2f302f3339f27",
+    "energy_residuals.png": "7c92b1512f47b5f0c486bc6c634161881c9fa537863b9353bb8efb90ffd40ac3",
+    "metrics.json": "d89e1c110eb3fc617505e673cd09c9b44d23461afd44346dc58d4ee8e56f97c3",
+    "parity.pdf": "e01d0d528c1bc8c99a81ff310ef2c2fac4debdff6573a1b222b72b836e4860fd",
+    "parity.png": "5ad152386272537e23b6f01aad15b4a6a0cae150feb84e7a030be0b382755964"
+  },
+  "cache_files_verified": 250,
+  "visual_QA": [
+    "parity",
+    "coverage",
+    "energy_residuals",
+    "convergence"
+  ],
+  "visual_QA_result": "All four PNGs readable, correct29 subset, PBE15k, blue fine-tuned/orange pretrained parity, no aligned series, current-version convergence only.",
+  "models_and_analysis_unchanged": true,
+  "validated_counts": {
+    "PBE": 38,
+    "PBEsol": 37,
+    "r2SCAN": 29
+  },
+  "queues": {
+    "PBE": {
+      "running": 0,
+      "pending": 12,
+      "pending_reason_counts": {
+        "(Priority)": 12
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "PBEsol": {
+      "running": 0,
+      "pending": 13,
+      "pending_reason_counts": {
+        "(Priority)": 13
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "r2SCAN": {
+      "running": 1,
+      "pending": 20,
+      "pending_reason_counts": {
+        "(JobArrayTaskLimit)": 20
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    }
+  },
+  "new_scheduler_errors": [],
+  "readiness": {
+    "candidate_for_discussion": false,
+    "automatic_stop": false,
+    "reasons": [
+      "Fewer than 30 common structures (screening threshold, not a statistical guarantee).",
+      "POSCAR_alpha-Ti-hcp_orthogonal: 3 structures; screening minimum 4.",
+      "POSCAR_beta-Ti-bcc: 3 structures; screening minimum 4.",
+      "POSCAR_gamma_AlTi_L1_0: 3 structures; screening minimum 4.",
+      "Need three comparable checkpoints separated by at least five new structures."
+    ],
+    "qualification": "Heuristic discussion trigger based on fine-tuned models only. The pretrained baseline does not change the stopping rule. Report adaptive stopping, completion-order bias, coverage and uncertainty. Full fixed Test50 remains preferred."
+  },
+  "scf_036": {
+    "unix": 1793231191.1628454,
+    "source": "testset\\dft\\scf-check-20261028\\snapshot-1793231191.json",
+    "sid": "TiAl-test-036",
+    "latest_complete": {
+      "n": 39,
+      "dE_eV": -8.09e-07,
+      "deps_eV": -5.8392e-08
+    },
+    "converged": true,
+    "elapsed": "18:07:10",
+    "deadline_local": "2026-10-29T05:54:27",
+    "end_local": "2026-10-29T04:01:37",
+    "spare_to_limit": "01:52:50",
+    "outcome": "COMPLETED exit0:0; DFT labels validated and common subset now29",
+    "DFT_modified": false,
+    "reassess_on_next_monitoring": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "checked_unix": 1793808617.3965337,
+  "new_replicas": [
+    {
+      "replica": 11,
+      "temperature_target_K": 1873,
+      "final_temperature_K": 1925.7752421043172,
+      "volume_A3": 9560.357330265495,
+      "prefactor_V_over_kBT": 3.697030767000486e-07,
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "visible": "0",
+        "job_id": "20962153"
+      },
+      "checks": "PASS"
+    },
+    {
+      "replica": 12,
+      "temperature_target_K": 1873,
+      "final_temperature_K": 1929.6146443077782,
+      "volume_A3": 9552.678346860721,
+      "prefactor_V_over_kBT": 3.694061271517628e-07,
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "visible": "0",
+        "job_id": "20962153"
+      },
+      "checks": "PASS"
+    },
+    {
+      "replica": 13,
+      "temperature_target_K": 1873,
+      "final_temperature_K": 1943.1805106635672,
+      "volume_A3": 9448.252652188894,
+      "prefactor_V_over_kBT": 3.6536794120608724e-07,
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "visible": "0",
+        "job_id": "20962153"
+      },
+      "checks": "PASS"
+    },
+    {
+      "replica": 14,
+      "temperature_target_K": 1873,
+      "final_temperature_K": 1882.322080229746,
+      "volume_A3": 9418.451748572392,
+      "prefactor_V_over_kBT": 3.642155276116095e-07,
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "visible": "0",
+        "job_id": "20962153"
+      },
+      "checks": "PASS"
+    },
+    {
+      "replica": 15,
+      "temperature_target_K": 1873,
+      "final_temperature_K": 1871.6737900450246,
+      "volume_A3": 9558.38458150234,
+      "prefactor_V_over_kBT": 3.696267896678698e-07,
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "visible": "0",
+        "job_id": "20962153"
+      },
+      "checks": "PASS"
+    }
+  ],
+  "current_progress": {
+    "status": "running",
+    "phase": "production",
+    "job_id": "20962153",
+    "unix": 1793808182.051132,
+    "composition": "Ti_2000K",
+    "replica": 12,
+    "production_ps": 40
+  },
+  "current_temperature_input": "PASS",
+  "status": "PASS"
+}

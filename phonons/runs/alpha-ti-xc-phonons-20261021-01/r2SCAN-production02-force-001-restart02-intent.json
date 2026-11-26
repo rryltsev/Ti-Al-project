@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-23T01:20:35.011251+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=32",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=300G",
+    "--time=20:00:00",
+    "--dependency=afterany:20958091",
+    "--kill-on-invalid-dep=yes",
+    "--job-name=tir2-r2SCAN-f001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-restart02-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/restart-step-v2.sbatch",
+    "r2SCAN",
+    "force-001",
+    "20958091"
+  ],
+  "parent_job": "20958091",
+  "replaces": "20958711",
+  "source_hashes": {
+    "restart_step_v2.py": "e12c4e3688c327d8d03713ed72a4a6d25d205a315efa078f7f444e47d6999ec4",
+    "restart-step-v2.sbatch": "3938c16be2b79eeb407b18d4e81b88a31ca555b09d2bc4a92c53c8aa3ab8d218",
+    "checkpoint_guard_v2.py": "7972782ce4e1749781a35ce43758043c461a6d4561104915205d49b496c8aa5f"
+  }
+}

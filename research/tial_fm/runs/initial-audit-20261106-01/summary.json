@@ -1,0 +1,87 @@
+{
+  "run_id": "initial-audit-20261106-01",
+  "selected": 1000,
+  "sizes": {
+    "250": 104,
+    "216": 880,
+    "256": 16
+  },
+  "matched_label_geometries": 2990,
+  "historical_counts": {
+    "PBE": {
+      "train": 850,
+      "validate": 149
+    },
+    "PBEsol": {
+      "train": 849,
+      "validate": 149
+    },
+    "r2SCAN": {
+      "train": 845,
+      "validate": 148
+    }
+  },
+  "common_label_triples": 992,
+  "common_historical_train": 658,
+  "common_historical_validation": 14,
+  "known_parent_geometries": 120,
+  "unresolved_parent_geometries": 880,
+  "parent_overlap_counts": {
+    "PBE": 11,
+    "PBEsol": 14,
+    "r2SCAN": 11
+  },
+  "common_atoms": 218346,
+  "labels_by_role": {
+    "PBE": {
+      "train": {
+        "geometries": 850,
+        "atoms": 187220
+      },
+      "validate": {
+        "geometries": 149,
+        "atoms": 32740
+      }
+    },
+    "PBEsol": {
+      "train": {
+        "geometries": 849,
+        "atoms": 186982
+      },
+      "validate": {
+        "geometries": 149,
+        "atoms": 32728
+      }
+    },
+    "r2SCAN": {
+      "train": {
+        "geometries": 845,
+        "atoms": 186186
+      },
+      "validate": {
+        "geometries": 148,
+        "atoms": 32410
+      }
+    }
+  },
+  "fixed_external_geometries": 49,
+  "missing_external": {
+    "id": "TiAl-test-025",
+    "reason": "User explicitly requested cancellation of the sole pending r2SCAN task and cessation of Test50 monitoring on 2026-11-04.",
+    "state": "cancelled_before_execution"
+  },
+  "new_DFT_jobs": 0,
+  "new_training_jobs": 0,
+  "new_model_evaluations": 0,
+  "elapsed_seconds": 65.18393030017614,
+  "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "geometry_match_tolerance_A": 5e-05,
+  "baseline_arithmetic": "PASS",
+  "phonon_arithmetic": "PASS",
+  "scientific_gates": {
+    "data": "blocked_parent_independence",
+    "B0": "partial_cached_raw_reproduction",
+    "H0": "partial_FT_only_no_original_FM"
+  }
+}

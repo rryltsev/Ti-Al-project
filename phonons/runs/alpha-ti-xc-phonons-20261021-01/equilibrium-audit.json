@@ -1,0 +1,53 @@
+{
+  "scope": "Equilibrium-cell convergence only; phonon force calculations incomplete",
+  "functionals": {
+    "PBE": {
+      "a_A": 2.93665557,
+      "c_A": 4.64814336,
+      "volume_per_atom_A3": 17.357460128099632,
+      "max_force_eV_A": 2.3685438564654023e-07,
+      "max_stress_kbar": 0.00872395,
+      "scf_steps": [
+        17
+      ],
+      "spacegroup": 194,
+      "verified_output_hashes": {
+        "OUTCAR": "81bc435aeae234fd3913cf41abafde26ae8622af18ba502001d36742ecae0da1",
+        "vasprun.xml": "87fb2e15cb4fea0043b67d91f93712a1c4c479939cfbc7193c1fbad1b1114562",
+        "CONTCAR": "829d42af99ac39022dbef2c5f511c833ea94441fe3e02b0aa36b96f465987c76"
+      }
+    },
+    "PBEsol": {
+      "a_A": 2.89931448,
+      "c_A": 4.58937358,
+      "volume_per_atom_A3": 16.704931436053247,
+      "max_force_eV_A": 3.028200785945344e-07,
+      "max_stress_kbar": 0.00982509,
+      "scf_steps": [
+        15
+      ],
+      "spacegroup": 194,
+      "verified_output_hashes": {
+        "OUTCAR": "5e9c94144c4579e4ebd74461da964a39adc27afb6bf7beba38697c7a36673445",
+        "vasprun.xml": "0e2458abd4ced7efe207e2e72268576376afb7607c27b9e16a46fd13692d81fb",
+        "CONTCAR": "8c052862608e7348708532f7192d58ca4284d6b617061f2a3c159a486682fd21"
+      }
+    },
+    "r2SCAN": {
+      "a_A": 2.93549035,
+      "c_A": 4.63791439,
+      "volume_per_atom_A3": 17.305520931929177,
+      "max_force_eV_A": 1.7485302399443942e-05,
+      "max_stress_kbar": 0.012326440000000001,
+      "scf_steps": [
+        18
+      ],
+      "spacegroup": 194,
+      "verified_output_hashes": {
+        "OUTCAR": "c16d3dd93de5ad69f4a280709e2fd093d88098afa9fc6a9a9e4a35bbc400c7a9",
+        "vasprun.xml": "d4a9badee6f0352407738143e829271e4befcaa2d5084e79ef1111c06d745310",
+        "CONTCAR": "f938350906540990e87a48e2e4d5f5a1b04361bb21593f9595c8bd433b85a901"
+      }
+    }
+  }
+}

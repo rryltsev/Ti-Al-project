@@ -1,0 +1,253 @@
+{
+  "potential": "../inputs/fitted.mtp",
+  "potential_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "pressure_GPa": 0,
+  "axial_free": true,
+  "displacement_wall": 0.4,
+  "account": "u3129",
+  "direct_table": "size_dependence.csv",
+  "congruent_table": "congruent_temperatures.csv",
+  "note": "Widths for confirmed equilibrium must be read together with status. Barriers at equal peak heights differ from the barriers at corrected 4:1 basin weights. The N^(2/3) normalization is a size diagnostic, not a measured interfacial tension.",
+  "files": [
+    {
+      "file": "analysis/closure_summary.csv",
+      "sha256": "44de599f608365cdd5d9a912792a96c00946b0359339eb694925b339f2eceb81"
+    },
+    {
+      "file": "size_dependence.csv",
+      "sha256": "3265fed744c352ec11d7f70ea43e64920845a85171b53845ae20306929b55998"
+    },
+    {
+      "file": "congruent_temperatures.csv",
+      "sha256": "68fac3955b54c983988ab3298aac9112128dd7ac9334ab2458ca9257b058a506"
+    },
+    {
+      "file": "analysis/reviewed_status.json",
+      "sha256": "c9fe79de4aa3306231bdb4d5314639f262875f5675130ef8cef9650776d538f7"
+    },
+    {
+      "file": "analysis/thermal/validation.json",
+      "sha256": "6c1c0ae3395b39717542bfe22d087182158f29c3d3fdecae497e443ccd0e9e17"
+    },
+    {
+      "file": "atomistic/series_summary.csv",
+      "sha256": "9ac456539331d0fdfd6f8c81b68d7656eea584525a35d31ba74dc92bff4cf41b"
+    },
+    {
+      "file": "atomistic/provenance.json",
+      "sha256": "f5a935b18925a058237e79ed93b2522e330a8fe4b8dea2c53dd0117cc01d1d0b"
+    },
+    {
+      "file": "atomistic/slurm_accounting.csv",
+      "sha256": "531df5d05ebe2cc419ef210eac8fb6d14de0bec4a9cf88baa8d4cc0de8fa34d1"
+    },
+    {
+      "file": "analysis/vertex_size_limit.json",
+      "sha256": "2c2c51268a2a3caf377201d1e9a2a551dbedb53cd918727e739ee909b0d0203b"
+    },
+    {
+      "file": "analysis/critical_order_profiles.csv",
+      "sha256": "07676eb86616b4be2724c7b11f3374c0c9a1be8fc6a7429917ab27a3991dd90b"
+    },
+    {
+      "file": "analysis/n2304_widths.json",
+      "sha256": "fe831af7981994377ce611771283371193965e97b294fa29b65f3d04a2380fc7"
+    },
+    {
+      "file": "analysis/thermal/direct_1245_n2304.json",
+      "sha256": "8d9a3b763f9e0db6c098990afdc709df1862929625726e0339ed5cb32108d74b"
+    },
+    {
+      "file": "analysis/thermal/direct_1245_n2304_early.json",
+      "sha256": "516157dae70a9ea15e3ad45e3cae9c0d3f35906277de11098dda59cd1b14a96c"
+    },
+    {
+      "file": "analysis/thermal/direct_1245_n2304_late.json",
+      "sha256": "97df0ba21e2be10f810731ba10081a5e1aa4576918213391b6c666dc3992ad22"
+    },
+    {
+      "file": "analysis/thermal/pooled_n768.json",
+      "sha256": "c37c85654bff8163ec8f917a71a9dd2beba2e4377a25811511d270a0b1e2dd4e"
+    },
+    {
+      "file": "analysis/thermal/pooled_n1400_all.json",
+      "sha256": "d34f3d0b379f0f94a3f64ff86983485c415e1ceaddc98cfa04294982be330907"
+    },
+    {
+      "file": "analysis/thermal/stride4_n768.json",
+      "sha256": "8bb9f37917b9c8e9d949877ee33d45b6dbbb486a436862ff774319105e07280d"
+    },
+    {
+      "file": "analysis/thermal/stride4_n1400.json",
+      "sha256": "49fa3694456ebdaa746643ae121ca3f1d25646de221651be3f7d017dd2fa330d"
+    },
+    {
+      "file": "report/TiAl_solvus_closure.tex",
+      "sha256": "1e39d446aaa8e4d85ac69d7f448bdd65fd8b045f260e7e3a44136359dc7b4534"
+    },
+    {
+      "file": "report/TiAl_solvus_closure.pdf",
+      "sha256": "6910013684fea9081e0ee1ca217315731f9f3719319c96771191db670d0cd45f"
+    }
+  ],
+  "closure": {
+    "working_bulk_T_K": 1244,
+    "working_bulk_range_K": [
+      1240,
+      1247
+    ],
+    "Al_at_pct_rounded": 27.2,
+    "scope": "Classical site-confined HCP Ti–Al, W<0.40, hydrostatic p=0, free V and c/a.",
+    "uncertainty": "Working range reflecting between-isotherm and finite-size model sensitivity. It is not a frequentist confidence interval on the infinite-size limit.",
+    "largest_cell": {
+      "N": 2304,
+      "source_T_K": 1245.0,
+      "central": {
+        "T_K": 1243.6415346867243,
+        "mu_eV": 3.5440655819011457,
+        "x_atpct": 27.179077562798497,
+        "latent_meV_atom": 27.936187249035413,
+        "jump_Q": 0.6573520179976631,
+        "phases": [
+          {
+            "x_atpct": 27.179077562798497,
+            "mean_Q": 0.115120793374614,
+            "semigrand_meV_atom": 12.890380924693755,
+            "effective_frames": 150.8192365940441
+          },
+          {
+            "x_atpct": 27.17907756279851,
+            "mean_Q": 0.7724728113722771,
+            "semigrand_meV_atom": -15.04580632434166,
+            "effective_frames": 139.67051915200236
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0825,
+            0.7975000000000001
+          ],
+          "Q_valley": 0.4275,
+          "lower_barrier": 2.6361762608903256
+        }
+      },
+      "conditional_intervals_025_50_975": {
+        "T_K": [
+          1242.394366326082,
+          1243.6594716515258,
+          1245.0282559992806
+        ],
+        "mu_eV": [
+          3.542462236587149,
+          3.5440122025521372,
+          3.545196717592315
+        ],
+        "x_atpct": [
+          27.116014993578677,
+          27.17634946840941,
+          27.23045026477291
+        ],
+        "latent_meV_atom": [
+          26.902528721200262,
+          27.824082514800004,
+          28.95612895753967
+        ],
+        "jump_Q": [
+          0.636501056768719,
+          0.6564088467502784,
+          0.6746695260439219
+        ],
+        "lower_barrier": [
+          2.1984215339651785,
+          2.635536941317098,
+          3.174642133527059
+        ]
+      },
+      "early_late_T_K": [
+        1242.6892012413628,
+        1244.6150098506093
+      ]
+    },
+    "finite_size_comparison": {
+      "cells": [
+        {
+          "N": 768,
+          "vertex_K": 1243.766582003545,
+          "x_at_pct": 27.183431239337352,
+          "jump_Q": 0.5877104478484664,
+          "heat_meV_atom": 27.541117184954466,
+          "barrier_kBT": 1.0437530608281105,
+          "barrier_per_N23": 0.01244582285873513
+        },
+        {
+          "N": 1400,
+          "vertex_K": 1241.7738975608747,
+          "x_at_pct": 27.174714327377732,
+          "jump_Q": 0.6199049997054451,
+          "heat_meV_atom": 27.821926688631034,
+          "barrier_kBT": 1.5718598436894846,
+          "barrier_per_N23": 0.01256015875455157
+        },
+        {
+          "N": 2304,
+          "vertex_K": 1243.6415346867243,
+          "x_at_pct": 27.179077562798497,
+          "jump_Q": 0.6573520179976631,
+          "heat_meV_atom": 27.936187249035413,
+          "barrier_kBT": 2.6361762608903256,
+          "barrier_per_N23": 0.015111913591532846
+        }
+      ],
+      "estimates": [
+        {
+          "inverse_size_exponent": 1.0,
+          "cells": [
+            768,
+            1400,
+            2304
+          ],
+          "intercept_K": 1242.5359934512726,
+          "conditional_bootstrap_025_50_975_K": [
+            1240.4482183316268,
+            1242.5382766646176,
+            1244.6676949932335
+          ]
+        },
+        {
+          "inverse_size_exponent": 1.0,
+          "cells": [
+            1400,
+            2304
+          ],
+          "intercept_K": 1246.5338930674643,
+          "conditional_bootstrap_025_50_975_K": [
+            1242.5089818521162,
+            1246.6355905158537,
+            1250.9536238094643
+          ]
+        },
+        {
+          "inverse_size_exponent": 0.6666666666666666,
+          "cells": [
+            768,
+            1400,
+            2304
+          ],
+          "intercept_K": 1242.4228252150308,
+          "conditional_bootstrap_025_50_975_K": [
+            1239.3923154028944,
+            1242.4463942883212,
+            1245.4738059484212
+          ]
+        }
+      ],
+      "source_files": [
+        "analysis/thermal/pooled_n768.json",
+        "analysis/thermal/pooled_n1400_all.json",
+        "analysis/thermal/direct_1245_n2304.json"
+      ],
+      "note": "Unweighted fits on three sizes or the two largest. The bulk intercept depends on the model for finite-size corrections. The resampling intervals omit inter-source equilibration scatter, the order divider, cell shape and the displacement wall. The inverse-N^(2/3) fit tests sensitivity only. Barrier values refer to the smaller peak at the 4:1 vertex."
+    },
+    "UMT_completed_jobs": 36
+  }
+}

@@ -1,0 +1,36 @@
+% Candidate text; the current manuscript has not been modified.
+% Add Schick2012 from additional_references.bib to the existing bibliography.
+
+For comparison, we evaluated the viscosity model of Schick et al.~\cite{Schick2012}.
+Combining their expressions for the activation energy and the Arrhenius prefactor
+gives, at a fixed temperature,
+\begin{equation}
+\eta = \eta_{\mathrm{Ti}}^{1-x}\eta_{\mathrm{Al}}^{x}
+\exp\!\left[(1-x)\ln(1-x)+x\ln x-
+\frac{\Delta H_{\mathrm{mix}}}{RT}\right],
+\qquad x=x_{\mathrm{Al}},
+\end{equation}
+where $0\ln0$ is understood as zero and $\Delta H_{\mathrm{mix}}$ is the
+integral molar enthalpy of mixing, per mole of atoms. The pure-component
+viscosities and the three enthalpy datasets are the same as in the KRP calculation.
+The PBE and r$^2$SCAN enthalpies correspond to the original models used in
+Fig.~\ref{fig:viscosity}(a) at 1873~K. The experimental enthalpy is the
+provisional calorimetric digitization at 2000~K, transferred to 1873~K.
+The pure-Al reference correlation is extrapolated above its validated range.
+No parameters are fitted to the alloy-viscosity data.
+
+Using the experimental enthalpy, the mean absolute relative deviation from
+the five Takeda viscosity correlations at 1873~K is 13.5\%, compared with
+43.2\% for KRP. The corresponding deviations with PBE and r$^2$SCAN
+enthalpies are 24.4\% and 18.7\%, respectively.
+The Schick model captures a broad intermediate-composition maximum, although
+the measurements cover only $0.45\le x_{\mathrm{Al}}\le0.90$ and do not
+constrain the Ti-rich branch. These residuals are descriptive comparisons
+conditional on the pure-component inputs and the enthalpy interpolation.
+
+% Candidate replacement for the model-specific part of the Fig. 7 caption:
+% The dash-dotted green, dashed blue, and dotted orange curves in panel (a)
+% are predictions of the Schick model using experimental, PBE, and r$^2$SCAN
+% mixing enthalpies, respectively. The three calculations share the same
+% pure-component viscosities. The experimental enthalpy is transferred from
+% 2000 K; the MD enthalpies are evaluated at 1873 K. Panel (b) is unchanged.

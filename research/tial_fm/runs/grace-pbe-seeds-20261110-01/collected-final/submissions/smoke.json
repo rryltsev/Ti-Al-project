@@ -1,0 +1,21 @@
+{
+  "key": "smoke",
+  "job_id": "20991794",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=v100",
+    "--gres=gpu:a100:1",
+    "--mem=24G",
+    "--time=00:10:00",
+    "--array=0-7%1",
+    "--job-name=TiAl-GRA-PBE-smoke",
+    "--output=smoke-%A_%a.log",
+    "smoke.sbatch"
+  ],
+  "utc": "2026-11-09T19:52:24.873623+00:00"
+}

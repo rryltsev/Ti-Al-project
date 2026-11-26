@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "cases": {
+    "PBE-full-N694-seed10": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "979635c5b8fdb45503fe1a33c016f7fc000f33be9ac0a4d6ba241d698b89b0f1"
+    },
+    "PBE-restricted_radial-N694-seed10": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "aee54040d2d76138693cbdaa41bb266b32d7d2a94b86bc602d5f0d5e08bcf65d"
+    },
+    "PBE-full-N694-seed20": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "4f670fff1ff34eb55f6e0720221b6a79e530ce8798e33ee3c05fa0a9dc724707"
+    },
+    "PBE-restricted_radial-N694-seed20": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "0aeda25c574e518b0aedba9dc11522d61f502f72d711065d110ef0d7694617be"
+    },
+    "PBE-full-N694-seed30": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "e17ab43ae226387702615bcb8a23e5f7ed0c4dfad3c20554df694ef1ac23d1f4"
+    },
+    "PBE-restricted_radial-N694-seed30": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "89968a8dbce8128351898ab313065e1b3c91da69a38843231b255d96a74e76a6"
+    }
+  },
+  "validation_identical": true,
+  "nested_train": true,
+  "epochs": 50,
+  "steps": 34700,
+  "alignment": "new fit on train694 only",
+  "PBE_only": true
+}

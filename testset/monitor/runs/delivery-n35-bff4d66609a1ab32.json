@@ -1,0 +1,115 @@
+{
+  "checked_unix": 1793465626.2830224,
+  "new_ids": [
+    "TiAl-test-030",
+    "TiAl-test-038"
+  ],
+  "common_count": 35,
+  "fingerprint": "bff4d66609a1ab32",
+  "analysis_mode": "monitor-raw",
+  "models_and_analysis_unchanged": true,
+  "visual_QA": [
+    "parity",
+    "coverage",
+    "energy_residuals",
+    "convergence"
+  ],
+  "cache_files_verified": 300,
+  "history20k_counts": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    35
+  ],
+  "history15k_preserved_hash_verified": true,
+  "validated_counts": {
+    "PBE": 43,
+    "PBEsol": 43,
+    "r2SCAN": 35
+  },
+  "queues": {
+    "PBE": {
+      "running": 1,
+      "pending": 6,
+      "pending_reason_counts": {
+        "(Priority)": 6
+      },
+      "running_ids": [
+        "TiAl-test-032"
+      ],
+      "running_elapsed": {
+        "TiAl-test-032": "01:25:14"
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "PBEsol": {
+      "running": 0,
+      "pending": 7,
+      "pending_reason_counts": {
+        "(Priority)": 7
+      },
+      "running_ids": [],
+      "running_elapsed": {},
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "r2SCAN": {
+      "running": 3,
+      "pending": 12,
+      "pending_reason_counts": {
+        "(JobArrayTaskLimit)": 12
+      },
+      "running_ids": [
+        "TiAl-test-039",
+        "TiAl-test-031",
+        "TiAl-test-048"
+      ],
+      "running_elapsed": {
+        "TiAl-test-039": "03:49:43",
+        "TiAl-test-031": "04:41:10",
+        "TiAl-test-048": "03:31:10"
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    }
+  },
+  "new_scheduler_errors": [],
+  "readiness": {
+    "candidate_for_discussion": false,
+    "automatic_stop": false,
+    "reasons": [
+      "Need three comparable checkpoints separated by at least five new structures."
+    ],
+    "qualification": "Heuristic discussion trigger based on fine-tuned models only. The pretrained baseline does not change the stopping rule. Report adaptive stopping, completion-order bias, coverage and uncertainty. Full fixed Test50 remains preferred."
+  },
+  "completed_r2SCAN_tasks": {
+    "TiAl-test-030": {
+      "job": "20957372_29",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "elapsed": "14:07:14",
+      "spare_to_20h": "05:52:46",
+      "DFT_labels_validated": true
+    },
+    "TiAl-test-038": {
+      "job": "20957372_37",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "elapsed": "10:44:23",
+      "spare_to_20h": "09:15:37",
+      "DFT_labels_validated": true
+    }
+  },
+  "artifacts_sha256": {
+    "convergence.pdf": "2a7c3a035a6bfea585f9a19a757376b7fd780de061bad0f8242b76e0c3f832fc",
+    "convergence.png": "d4734c065db0eade22db75ec2b372c146e6fd74175c177f62d20afd344808be3",
+    "coverage.pdf": "1dbebacae64c22aebe343ace73e28078064f3bb34031aec8ee663d679f89bea3",
+    "coverage.png": "2893a558ca96d8439ea9f4702706839f1f440e781e268c7a3f11f1890903705e",
+    "energy_residuals.pdf": "403a77bcea63f0b70c3d931725cbb6bee6ce63f70ce1791b327a4e8e506594a7",
+    "energy_residuals.png": "6f3cb856f239da114fe03aa54ec26280d4bcc49686f2ee74cc6d71812327d722",
+    "metrics.json": "f8169b35cca66bffcb272eb540eefaabfd81c4cd1d64a696c0af7ebd64e9ecb8",
+    "parity.pdf": "6af4ddad93908592f28172d87ee2094f7e4705563e625ade4692e536db9df1ca",
+    "parity.png": "2ec240c655a59eee3d55d242124438c5274dc5ece156d0f4af9add664eeb2263"
+  },
+  "DFT_modified": false
+}

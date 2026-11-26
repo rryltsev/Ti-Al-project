@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {
+      "path": "DFT_Ti_Ti3Al_reference.json",
+      "bytes": 44093,
+      "sha256": "8b160e60b0b4a691107cac0a31ca3629b029fba2dcefc68649e0b39a0311f6ee"
+    },
+    {
+      "path": "README_RU.txt",
+      "bytes": 4127,
+      "sha256": "252b1cf9bb5981435ec0215d60335d34ef81666a7a542959415d6e07ecf80c19"
+    },
+    {
+      "path": "Ti3Al_D019/SPOSCAR",
+      "bytes": 2082,
+      "sha256": "5f4b99522a244b0fafd5596483445eb0c9cefc824866241f1f67e4058a6cb692"
+    },
+    {
+      "path": "Ti3Al_D019/band.conf",
+      "bytes": 238,
+      "sha256": "46feb338ebf9b003e7417e7b6987304e56fe079b962595bc96b733b61f72dd49"
+    },
+    {
+      "path": "Ti3Al_D019/force_run_INCAR",
+      "bytes": 293,
+      "sha256": "1862c64c3aa31f9d67fada16724dfa81be384641e3fb24a5ec40625fecca4a57"
+    },
+    {
+      "path": "Ti3Al_D019/force_run_KPOINTS",
+      "bytes": 55,
+      "sha256": "ae0328d0fe577e11c870ceba601e027b40e25d6a0dff5219ea89b3b5572c956d"
+    },
+    {
+      "path": "Ti3Al_D019/force_run_POSCAR",
+      "bytes": 4159,
+      "sha256": "0fdfe4b983c97b014535306b3b2a89a9e4691511f9364d5d54d54f2475cc474c"
+    },
+    {
+      "path": "Ti3Al_D019/mesh.conf",
+      "bytes": 115,
+      "sha256": "03f0d0b9e11412c8604731d0b45c8bccc1985c400c05a3f3d8f576c6b257ef21"
+    },
+    {
+      "path": "Ti3Al_D019/phonopy.yaml",
+      "bytes": 12684,
+      "sha256": "da27071f6257150b40eaa48ee6fc01b2f0ff5f6295ff6194e0dfd6193527d80e"
+    },
+    {
+      "path": "Ti3Al_D019/phonopy_disp.yaml",
+      "bytes": 13220,
+      "sha256": "5631d1e373cff70a8156ba2706a5557831b0433e9fbeb248a9152e20a87aa59d"
+    },
+    {
+      "path": "Ti3Al_D019/projected_dos.dat",
+      "bytes": 36402,
+      "sha256": "7808c979af2d551c1971f7b3a0a2f5634eadf1f84cc960840c725081ff98ed67"
+    },
+    {
+      "path": "Ti3Al_D019/total_dos.dat",
+      "bytes": 8262,
+      "sha256": "34ea9c621d4495d476e277b17f9966acad6fd1602852e0952f4a971af9b4387e"
+    },
+    {
+      "path": "Ti_hcp/POSCAR",
+      "bytes": 229,
+      "sha256": "bb123213ff83623624614ed5cc62020e8db2666b8fc118f3e1df7751f8eddcfe"
+    },
+    {
+      "path": "Ti_hcp/SPOSCAR",
+      "bytes": 6103,
+      "sha256": "cffb906993c266932fd68af684a11766eeb21652c0b66fbbe01dc38f7fdd11f5"
+    },
+    {
+      "path": "Ti_hcp/band.conf",
+      "bytes": 182,
+      "sha256": "d535a2db0909d01b3667a85424c1dbe56e7e98a87ca23d6cda21276369f2aef2"
+    },
+    {
+      "path": "Ti_hcp/force_run_INCAR",
+      "bytes": 274,
+      "sha256": "e2ca1ab6fde579794984fb563410f1e2b2c759ba70cfc3184968b83a64515c6c"
+    },
+    {
+      "path": "Ti_hcp/force_run_KPOINTS",
+      "bytes": 35,
+      "sha256": "54ae1e1e1e0722bd898e7a9654935f266e872a0b19a01695c6196b084ddb5807"
+    },
+    {
+      "path": "Ti_hcp/force_run_POSCAR",
+      "bytes": 6103,
+      "sha256": "117937beee545c908b59214787f1c1b607e4903c7e8f3e2b6dc5ebe99f36f61f"
+    },
+    {
+      "path": "Ti_hcp/make_total_dos_from_mesh.py",
+      "bytes": 2115,
+      "sha256": "2912512024fd6d66fec702b35ce8cecf0ca167afc180574d2f422e95073b6c95"
+    },
+    {
+      "path": "Ti_hcp/mesh.conf",
+      "bytes": 90,
+      "sha256": "b58083bbb7b6cd61a2f40ed4609533a2f58648d6dc94166274ceba0ec3fff461"
+    },
+    {
+      "path": "Ti_hcp/phonopy.yaml",
+      "bytes": 15467,
+      "sha256": "605424c6a803939d15e97d7fcf4f14ddad4c62e2ae7da40561e432f5e36f3b38"
+    },
+    {
+      "path": "Ti_hcp/phonopy_disp.yaml",
+      "bytes": 15469,
+      "sha256": "844620636405c2c451061adc038364d3caf4b9f8e57fb84297b3c31ec8ddfcde"
+    },
+    {
+      "path": "Ti_hcp/total_dos.dat",
+      "bytes": 55334,
+      "sha256": "5e4438aae477df4d656ed7ffd808675642b9d9cceff4a79fd8c0b228e70088da"
+    }
+  ],
+  "validation": {
+    "JSON_parsed": true,
+    "all_three_DOS_byte_identical_to_IMM_sources": true,
+    "all_DOS_columns_and_rows_validated": true,
+    "DFT_force_provenance_checks_preserved": true,
+    "includes_POTCAR_contents": false,
+    "includes_MLIP_data": false
+  }
+}

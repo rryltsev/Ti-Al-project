@@ -1,0 +1,98 @@
+[
+  {
+    "name": "v100-48h",
+    "command": [
+      "sbatch",
+      "--test-only",
+      "-p",
+      "v100",
+      "-A",
+      "imet-2026-2",
+      "-q",
+      "normal",
+      "-N",
+      "1",
+      "-n",
+      "32",
+      "--ntasks-per-node=32",
+      "--mem=240G",
+      "--time=48:00:00",
+      "--wrap=/bin/true"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "sbatch: Job 20959593 to start at 2026-10-24T01:48:42 using 32 processors on nodes tesla-a101 in partition v100\n"
+  },
+  {
+    "name": "either-48h",
+    "command": [
+      "sbatch",
+      "--test-only",
+      "-p",
+      "apollo,v100",
+      "-A",
+      "imet-2026-2",
+      "-q",
+      "normal",
+      "-N",
+      "1",
+      "-n",
+      "32",
+      "--ntasks-per-node=32",
+      "--mem=240G",
+      "--time=48:00:00",
+      "--wrap=/bin/true"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "sbatch: Job 20959594 to start at 2026-10-25T11:34:23 using 32 processors on nodes apollo9 in partition apollo\n"
+  },
+  {
+    "name": "apollo64-48h",
+    "command": [
+      "sbatch",
+      "--test-only",
+      "-p",
+      "apollo",
+      "-A",
+      "imet-2026-2",
+      "-q",
+      "normal",
+      "-N",
+      "2",
+      "-n",
+      "64",
+      "--ntasks-per-node=32",
+      "--mem=240G",
+      "--time=48:00:00",
+      "--wrap=/bin/true"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "sbatch: Job 20959595 to start at 2026-10-25T15:52:04 using 64 processors on nodes apollo[8-9] in partition apollo\n"
+  },
+  {
+    "name": "either-20h",
+    "command": [
+      "sbatch",
+      "--test-only",
+      "-p",
+      "apollo,v100",
+      "-A",
+      "imet-2026-2",
+      "-q",
+      "normal",
+      "-N",
+      "1",
+      "-n",
+      "32",
+      "--ntasks-per-node=32",
+      "--mem=240G",
+      "--time=20:00:00",
+      "--wrap=/bin/true"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "sbatch: Job 20959596 to start at 2026-10-25T11:34:23 using 32 processors on nodes apollo9 in partition apollo\n"
+  }
+]

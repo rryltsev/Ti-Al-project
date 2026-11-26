@@ -1,0 +1,26 @@
+{
+  "remote_root": "/home6/u3129/tial-testsets/model-lammps-20261022-02-native",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=32G",
+    "--time=00:10:00",
+    "--no-requeue",
+    "--chdir=/home6/u3129/tial-testsets/model-lammps-20261022-02-native",
+    "--job-name=t50-lammps-check",
+    "--output=/home6/u3129/tial-testsets/model-lammps-20261022-02-native/slurm-%j.out",
+    "/home6/u3129/tial-testsets/model-lammps-20261022-02-native/model_job.sbatch"
+  ],
+  "unix": 1792638154.4423733,
+  "files": {
+    "lammps_smoke.py": "2df85ebed6215897318b4e5ffdac8f1ab6f2f22336dd26d340f3e78e9d26ca04",
+    "model_job.sbatch": "132c792af0fc8629a090387e86eccc29e08b66b273f6cbd8e3b675094a3faa58"
+  },
+  "reason": "Bundled wheel LAMMPS SIGSEGV before any console output; use the previously validated native MPI binary and its matching environment."
+}

@@ -1,0 +1,106 @@
+{
+  "checked_unix": 1793642575.9939754,
+  "new_ids": [
+    "TiAl-test-041"
+  ],
+  "common_count": 44,
+  "fingerprint": "cbc74a85fca1dfd5",
+  "analysis_mode": "monitor-raw",
+  "models_and_analysis_unchanged": true,
+  "visual_QA": [
+    "parity",
+    "coverage",
+    "energy_residuals",
+    "convergence"
+  ],
+  "cache_files_verified": 300,
+  "history20k_counts": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "history15k_preserved_hash_verified": true,
+  "validated_counts": {
+    "PBE": 50,
+    "PBEsol": 50,
+    "r2SCAN": 44
+  },
+  "queues": {
+    "PBE": {
+      "running": 0,
+      "pending": 0,
+      "pending_reason_counts": {},
+      "running_ids": [],
+      "running_elapsed": {},
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "PBEsol": {
+      "running": 0,
+      "pending": 0,
+      "pending_reason_counts": {},
+      "running_ids": [],
+      "running_elapsed": {},
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "r2SCAN": {
+      "running": 2,
+      "pending": 4,
+      "pending_reason_counts": {
+        "(JobArrayTaskLimit)": 4
+      },
+      "running_ids": [
+        "TiAl-test-042",
+        "TiAl-test-021"
+      ],
+      "running_elapsed": {
+        "TiAl-test-042": "09:09:42",
+        "TiAl-test-021": "07:50:49"
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    }
+  },
+  "new_scheduler_errors": [],
+  "readiness": {
+    "candidate_for_discussion": true,
+    "automatic_stop": false,
+    "reasons": [],
+    "qualification": "Heuristic discussion trigger based on fine-tuned models only. The pretrained baseline does not change the stopping rule. Report adaptive stopping, completion-order bias, coverage and uncertainty. Full fixed Test50 remains preferred."
+  },
+  "readiness_checkpoint_counts": [
+    33,
+    39,
+    44
+  ],
+  "completed_r2SCAN_tasks": {
+    "TiAl-test-041": {
+      "job": "20957372_40",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "elapsed": "12:23:37",
+      "spare_to_20h": "07:36:23",
+      "DFT_labels_validated": true
+    }
+  },
+  "artifacts_sha256": {
+    "convergence.pdf": "015c34f6c8f93ddf83a05565e397092bec5ccf0f6fd2c24f8fb1933cf6e69de8",
+    "convergence.png": "fd2a73c40a67279ad113f39d37468ee32d6a4a6183be0483d3bd9c117121f8b9",
+    "coverage.pdf": "0ca0aa85be5230988c3547330228377689bca3b63a733a42c2ca12e41d3c9107",
+    "coverage.png": "e7d4c9cff51a9a776f22eb4968e7c66f9857bdbb34c26a8969ff1a535944ca0b",
+    "energy_residuals.pdf": "d281b70e0d8d26fe3be6b20b3e3ff763dd807ffa90022879320ad4a94b43c3b3",
+    "energy_residuals.png": "014d46320394c304283346cc9c242e35833d645aceddae05214e7780e76d2692",
+    "metrics.json": "8e7a6e3f2d2c80664e96085fd0e494f1a2e43987d76d683759b78a159ec962f1",
+    "parity.pdf": "005c930f52491106b26d8e24fcaefc95cee5e84e15d3680e305343c2598d2592",
+    "parity.png": "e733491471d73494376219f4e9df35928190ac6a3a7ea38f1b74882a2ab775af"
+  },
+  "DFT_modified": false
+}

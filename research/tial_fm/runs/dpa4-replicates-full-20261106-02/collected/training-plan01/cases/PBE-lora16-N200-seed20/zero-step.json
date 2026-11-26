@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "tial-selected-0070",
+      "live_vs_merged": {
+        "energy_delta_eV_atom": -6.346790878861039e-09,
+        "force_max_eV_A": 4.0501029338613215e-07,
+        "virial_max_eV": 4.5130908148394155e-06
+      },
+      "initialized_vs_source": {
+        "energy_delta_eV_atom": 0.0026179853470964603,
+        "force_max_eV_A": 4.423487567767337e-07,
+        "virial_max_eV": 1.96908040450694e-06
+      }
+    },
+    {
+      "id": "tial-selected-0687",
+      "live_vs_merged": {
+        "energy_delta_eV_atom": -4.917383193969727e-09,
+        "force_max_eV_A": 1.5583775647698417e-06,
+        "virial_max_eV": 1.2814126140625604e-05
+      },
+      "initialized_vs_source": {
+        "energy_delta_eV_atom": 0.0020575532174289036,
+        "force_max_eV_A": 1.923835185380085e-06,
+        "virial_max_eV": 1.3461195475628074e-05
+      }
+    },
+    {
+      "id": "tial-selected-0299",
+      "live_vs_merged": {
+        "energy_delta_eV_atom": -1.1175870895385742e-08,
+        "force_max_eV_A": 8.244275733204631e-07,
+        "virial_max_eV": 1.3528855859590294e-05
+      },
+      "initialized_vs_source": {
+        "energy_delta_eV_atom": 0.0015402230392282945,
+        "force_max_eV_A": 1.0588546177636715e-06,
+        "virial_max_eV": 1.403846764702621e-05
+      }
+    }
+  ],
+  "energy_shift_Al_Ti_eV": [
+    0.002617986712903674,
+    0.0015402245188527767
+  ],
+  "energy_shift_noncomposition_residual_eV_atom": 2.8454316962529813e-09,
+  "source_sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+  "initial_merged_sha256": "662f4698912611dc79ef9f4ed450e9e6ee040a990c317dd657149c2b3b3a38f9",
+  "test_access": false
+}

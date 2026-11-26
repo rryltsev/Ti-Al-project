@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "DPA4-lora16-N694-seed10",
+    "backend": "DPA4",
+    "method": "lora16",
+    "N": 694,
+    "seed": 10,
+    "XC": "PBE",
+    "model": "/misc/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-02/training-plan01/cases/PBE-lora16-N694-seed10/merged/34700.pt",
+    "sha256": "d4eb49b4cfc819b68ef53cd9d2de8581afadd68556999d4947632644eb0559cd",
+    "source_run": "dpa4-replicates-full-20261106-02",
+    "summary_sha256": "3e698b5d9adcf23fc6cd66bde5f8c6264ab99f6fde8872e3f82c2e66a2e9c901"
+  },
+  "metrics": {
+    "DOS_integral_per_atom": 3.001388488443972,
+    "DFT_tabulated_integral_per_atom": 2.9875995032179867,
+    "normalized_DOS_L1": 0.5755290409564475,
+    "DOS_Wasserstein_THz": 0.47539921737460666,
+    "DOS_peak_THz": 8.739999999999707
+  },
+  "mesh14": {
+    "min_THz": 0.29489698124592806,
+    "max_THz": 9.211595804364478,
+    "imaginary_modes_weighted": 0,
+    "total_modes_weighted": 65856
+  },
+  "displacement_mesh": {
+    "0.5": {
+      "min_THz": 0.29492813588976763,
+      "max_THz": 9.211770650953502,
+      "imaginary_modes_weighted": 0,
+      "total_modes_weighted": 65856
+    },
+    "1.0": {
+      "min_THz": 0.29489698124592806,
+      "max_THz": 9.211595804364478,
+      "imaginary_modes_weighted": 0,
+      "total_modes_weighted": 65856
+    },
+    "2.0": {
+      "min_THz": 0.29513933373821877,
+      "max_THz": 9.21232567933831,
+      "imaginary_modes_weighted": 0,
+      "total_modes_weighted": 65856
+    }
+  },
+  "displacement_convergence": {
+    "0.5": {
+      "band_RMSE_to_001A_THz": 0.00028584783039266765,
+      "band_max_difference_THz": 0.0007367444764128095
+    },
+    "2.0": {
+      "band_RMSE_to_001A_THz": 0.0011689072700910128,
+      "band_max_difference_THz": 0.0034252827005190056
+    }
+  },
+  "ASR_sensitivity": {
+    "band_RMSE_change_THz": 0.003981417138756382,
+    "mesh": {
+      "min_THz": 0.3140332245256587,
+      "max_THz": 9.211553181487776,
+      "imaginary_modes_weighted": 0,
+      "total_modes_weighted": 65856
+    }
+  },
+  "mesh20_metrics": {
+    "DOS_integral_per_atom": 3.003771643560759,
+    "DFT_tabulated_integral_per_atom": 2.9875995032179867,
+    "normalized_DOS_L1": 0.5681493240551476,
+    "DOS_Wasserstein_THz": 0.4718916380778937,
+    "DOS_peak_THz": 8.739999999999707
+  },
+  "Gamma_THz": [
+    -0.11574942374445057,
+    -0.018494768984538806,
+    -0.0030738867636545663,
+    3.6721306848163424,
+    3.6748235946007486,
+    4.206219952559622,
+    4.475976470743973,
+    4.4844277780989605,
+    4.5694798265059,
+    4.6235536058496685,
+    4.967039040826063,
+    6.506804833454999,
+    6.542289943823624,
+    7.1464778849232715,
+    7.156070728996942,
+    7.419421492523452,
+    7.425904069816235,
+    7.899480750356273,
+    8.651201277206273,
+    8.69906966794089,
+    8.808098686872746,
+    8.814550704824047,
+    9.062988805610816,
+    9.0846000223705
+  ],
+  "max_residual_force_eV_A": 0.014895641314978322,
+  "residual_stress_GPa": [
+    [
+      -0.6631256333961254,
+      5.408324202490266e-07,
+      -3.0506781104070556e-07
+    ],
+    [
+      5.916087379328114e-07,
+      -0.663318414620703,
+      4.79329710637746e-08
+    ],
+    [
+      -3.3563479768666307e-07,
+      7.350536081817881e-08,
+      -0.24205525416272938
+    ]
+  ],
+  "geometry_sha256": "d01b28dd6035a16a7e6ec7c3f7461b194ed28df1c2c5f3310ef690ff574ed628",
+  "source_summary_sha256": "6f16db50141cf656898eaad0d43aa09541ffb74fe0dc7d8eb56c4602a0d4939b"
+}

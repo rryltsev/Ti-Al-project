@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-01T10:06:10.548472+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--exclude=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=2",
+    "--ntasks=64",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=240G",
+    "--time=20:00:00",
+    "--job-name=ti2-PBE-force-000",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production06-force-000-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v15.sbatch",
+    "production_step_v9.py",
+    "PBE",
+    "force-000"
+  ],
+  "state": "submitted",
+  "source_input_hashes": {
+    "POSCAR": "c45bffe17f4d0428d7b91e7eae65b6211eb6231c603acb9b729c3e23738a56f9",
+    "INCAR": "288bdd9cc0bcd2e811b23f8b6174b0f00be3e00492042a6d0a3914b6f8f2c837",
+    "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba"
+  },
+  "policy_sha256": "3d7335bccb37efac5549aa9020d98ff90303669e4dffe5ef6728959e0a29c8be",
+  "source_hashes": {
+    "execution-policy-09.json": "3d7335bccb37efac5549aa9020d98ff90303669e4dffe5ef6728959e0a29c8be",
+    "launch_v15.sbatch": "8fd2c80824c4f8d43ae60b4c73868fc6dbbe42b431179de7360aaabf0882cbd1",
+    "production_step_v9.py": "ac10a7c04d3f187709566598fd1e5134a98cccc48495e1dc6a3aebeae41b6276",
+    "checkpoint_guard_v2.py": "7972782ce4e1749781a35ce43758043c461a6d4561104915205d49b496c8aa5f"
+  },
+  "placement_policy_sha256": "625441b09f22e15e7f6a41895676c8c619975b9ba181d4cf21764d550bac5f7e",
+  "job_id": "20973061"
+}

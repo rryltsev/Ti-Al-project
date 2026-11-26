@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "unix": 1793956786.0074756,
+  "job_id": "20988268",
+  "one_A100": true,
+  "active": {
+    "status": "running",
+    "phase": "production",
+    "job_id": "20988268",
+    "unix": 1793955756.1914275,
+    "composition": "Ti_1941K",
+    "replica": 4,
+    "production_ps": 40
+  },
+  "completed_raw_checked": [
+    {
+      "replica": 1,
+      "sha256": "011e8f6af92e1d05a033f18137d83041753db4a2e9a53513a9a079aa491914c2",
+      "V_over_kBT": 3.5385676459550353e-07
+    },
+    {
+      "replica": 2,
+      "sha256": "75601932c8685b1f5396f2743d790db470298682147dcad299e7b88cb96aeea6",
+      "V_over_kBT": 3.519691024167727e-07
+    },
+    {
+      "replica": 3,
+      "sha256": "ec493262f62c8dc8424b84c1d0bde4e5578cf7431e0895887ecb7dfdc961b036",
+      "V_over_kBT": 3.517429787771726e-07
+    }
+  ],
+  "normalization": "OwnV/(kB*T),bar->Pa,five shear channels",
+  "atoms": 512,
+  "Ti_only": true,
+  "target_temperature_K": 1941,
+  "dt_fs": 1,
+  "production_ps": 40
+}

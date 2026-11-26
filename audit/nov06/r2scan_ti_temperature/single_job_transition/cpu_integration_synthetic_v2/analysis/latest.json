@@ -1,0 +1,235 @@
+{
+  "points": {
+    "Ti_1941K": {
+      "temperature_K": 1941,
+      "n_replicas": 5,
+      "points": [
+        {
+          "id": "Ti_1941K",
+          "temperature_K": 1941,
+          "x_Al": 0.0,
+          "n_replicas": 5,
+          "windows": {
+            "40ps": {
+              "eta_mPa_s": 1.4373911967648427,
+              "eta_std_mPa_s": 0.02229096926989704,
+              "relative_std": 0.015507935014537202,
+              "neff": 887.9486268064943,
+              "tau_exp_ps": 0.019317589901203032,
+              "tau_int_ps": 0.01931520288305199,
+              "cost_z": 3.0421304001812755,
+              "criterion_z": -0.7214689657675376
+            },
+            "first20ps": {
+              "eta_mPa_s": 1.433244167677963,
+              "eta_std_mPa_s": 0.029121575687444504,
+              "relative_std": 0.02031864238081997,
+              "neff": 752.6778266363136,
+              "tau_exp_ps": 0.01924205268031852,
+              "tau_int_ps": 0.019280275266926383,
+              "cost_z": 1.278814341294808,
+              "criterion_z": -0.8437862243258316
+            },
+            "second20ps": {
+              "eta_mPa_s": 1.4414164840740322,
+              "eta_std_mPa_s": 0.029385095092731083,
+              "relative_std": 0.02038626269187431,
+              "neff": 738.3438658721443,
+              "tau_exp_ps": 0.019334418470321236,
+              "tau_int_ps": 0.01934861159572263,
+              "cost_z": 0.8382121042051123,
+              "criterion_z": -0.11256779839262579
+            }
+          },
+          "sources": [
+            {
+              "replica": 1,
+              "stress_file": "states/Ti_1941K/replicas/replica_0001/stress.npz",
+              "sha256": "2d0e7bbfc1c9d8e4ced1212dddd7f669728c063794bd89aeed9d557bfefdf997"
+            },
+            {
+              "replica": 2,
+              "stress_file": "states/Ti_1941K/replicas/replica_0002/stress.npz",
+              "sha256": "689504e3e22b2700cd8b436c6f54e0d3744e0f11e56ce6f1670708a902ddf32d"
+            },
+            {
+              "replica": 3,
+              "stress_file": "states/Ti_1941K/replicas/replica_0003/stress.npz",
+              "sha256": "6932c2d19c99e3be403956def6cd54e4823df667314ebda5b484a02010594441"
+            },
+            {
+              "replica": 4,
+              "stress_file": "states/Ti_1941K/replicas/replica_0004/stress.npz",
+              "sha256": "599feee54e22bd96485414843c5a7efc24fbc083896f6d5cadb892ef566d075c"
+            },
+            {
+              "replica": 5,
+              "stress_file": "states/Ti_1941K/replicas/replica_0005/stress.npz",
+              "sha256": "5cf46b68c127d5e44a4e2f32394e023e93985972ec91008b9a33371b3ac222a2"
+            }
+          ],
+          "combined_20ps": {
+            "eta_mPa_s": 2.761491674033402,
+            "eta_std_mPa_s": 0.2851833503267106,
+            "relative_std": 0.10327148656949423,
+            "neff": 28.000047071090833,
+            "cost_z": 0.4819738915695977,
+            "criterion_z": 0.6554462314096248,
+            "formal_std_mPa_s": 0.10658368410120614,
+            "cluster_jackknife_std_mPa_s": 0.2851833503267106,
+            "legacy_replicas": 15,
+            "new_40ps_replicas": 5,
+            "replica_clusters": 20,
+            "windows_20ps": 25,
+            "leave_one_replica_out_mPa_s": [
+              2.7412415998095976,
+              2.70863213957175,
+              2.7295833147085045,
+              2.7155879628086166,
+              2.723179992631658,
+              2.7961107840964265,
+              2.744852420178781,
+              2.7168664198905157,
+              2.70193934646779,
+              2.738569989972354,
+              2.713316959848034,
+              2.7342434571477097,
+              2.679951091787644,
+              2.730806966245386,
+              2.7243293186101813,
+              2.8289952758426553,
+              2.892060149577899,
+              2.859201834071616,
+              2.8658754767270778,
+              2.8887401966540422
+            ],
+            "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+            "pooling_version": "r2scan-sequential-refinement-v2"
+          },
+          "legacy_manifest_sha256": "c830e8dbc7b8f18f6bbc68cfc47fed5f368901c271fb08a11b9e0d6e226f8a62",
+          "new_batch_40ps": {
+            "eta_mPa_s": 1.4373911967648427,
+            "eta_std_mPa_s": 0.02229096926989704,
+            "relative_std": 0.015507935014537202,
+            "neff": 887.9486268064943,
+            "tau_exp_ps": 0.019317589901203032,
+            "tau_int_ps": 0.01931520288305199,
+            "cost_z": 3.0421304001812755,
+            "criterion_z": -0.7214689657675376
+          },
+          "new_batch_20ps": {
+            "eta_mPa_s": 1.437364222502257,
+            "eta_std_mPa_s": 0.020899016931305477,
+            "relative_std": 0.014539819903770188,
+            "neff": 705.6987874742435,
+            "cost_z": 1.5286445362522976,
+            "criterion_z": -0.22407825240486298,
+            "formal_std_mPa_s": 0.020899016931305477,
+            "cluster_jackknife_std_mPa_s": 0.008118348120813223,
+            "legacy_replicas": 0,
+            "new_40ps_replicas": 5,
+            "replica_clusters": 5,
+            "windows_20ps": 10,
+            "leave_one_replica_out_mPa_s": [
+              1.4362503351025175,
+              1.4448845425327808,
+              1.4342993971975038,
+              1.4334678726621277,
+              1.4368887313818308
+            ],
+            "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+            "pooling_version": "r2scan-sequential-refinement-v2"
+          },
+          "previous_accumulated_20ps": {
+            "eta_mPa_s": 3.5599720482364896,
+            "eta_std_mPa_s": 0.17155058990669847,
+            "relative_std": 0.048188746310994166,
+            "neff": 28.604149289204486,
+            "cost_z": -0.3109196751275336,
+            "criterion_z": 0.022630628070911145,
+            "formal_std_mPa_s": 0.17155058990669847,
+            "cluster_jackknife_std_mPa_s": 0.16493038670668597,
+            "legacy_replicas": 15,
+            "new_40ps_replicas": 0,
+            "replica_clusters": 15,
+            "windows_20ps": 15,
+            "leave_one_replica_out_mPa_s": [
+              3.5779889618663208,
+              3.5308758333499632,
+              3.568983986932991,
+              3.53372110771315,
+              3.561273118587995,
+              3.684844754648423,
+              3.5852471302220033,
+              3.537623852828755,
+              3.5097111601652227,
+              3.5690574714096837,
+              3.5303132117115297,
+              3.5747809834087767,
+              3.4774677430201457,
+              3.564702312573437,
+              3.5610822951471888
+            ],
+            "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+            "pooling_version": "r2scan-legacy20-new40-v1"
+          },
+          "new_batch_z": 12.282266398898757
+        }
+      ],
+      "unix": 1793939718.6016386,
+      "protocol_sha256": "80c1def5d21302355f0d61187f9555a0a5c9d4c23eeed4735275f99bac9d691b",
+      "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "checks": [
+        {
+          "id": "Ti_1941K",
+          "flags": {
+            "combined_precision": false,
+            "combined_last_three_stability": false,
+            "combined_cost": true,
+            "combined_cutoff": true,
+            "new_batch_consistency": false
+          },
+          "passed": false,
+          "last_three_relative_range": null,
+          "max_20_40_relative_difference": 0.0028851081711182003,
+          "new40_diagnostics": {
+            "40ps": {
+              "relative_std": 0.015507935014537202,
+              "neff": 887.9486268064943,
+              "cost_z": 3.0421304001812755,
+              "criterion_z": -0.7214689657675376
+            },
+            "first20ps": {
+              "relative_std": 0.02031864238081997,
+              "neff": 752.6778266363136,
+              "cost_z": 1.278814341294808,
+              "criterion_z": -0.8437862243258316
+            },
+            "second20ps": {
+              "relative_std": 0.02038626269187431,
+              "neff": 738.3438658721443,
+              "cost_z": 0.8382121042051123,
+              "criterion_z": -0.11256779839262579
+            }
+          }
+        }
+      ],
+      "all_passed": false,
+      "pass_streak": 0,
+      "stop_recommended": false,
+      "review_required": false,
+      "assessment_pending": true,
+      "legacy_replicas": 15,
+      "total_replica_clusters": 20,
+      "sampling_extension": "Only the explicit versioned plan determines additional blocks; no mandatory Nnew quota.",
+      "caveats": [
+        "Cumulative and20/40ps estimates are correlated.",
+        "Combined20ps includes legacy20ps and both halves of each new40ps; both halves are one uncertainty cluster.",
+        "AdoptedSE=max(formalSE,whole-replica jackknifeSE); unequal cluster lengths and reservoir dependence limit its interpretation.",
+        "Legacy and new preparation differ; no PBE trajectories are pooled.",
+        "Finite refinement plan controls new blocks; diagnostics do not impose a new30-replica quota; errors exclude model/protocol bias."
+      ]
+    }
+  },
+  "unix": 1793939768.4873865
+}

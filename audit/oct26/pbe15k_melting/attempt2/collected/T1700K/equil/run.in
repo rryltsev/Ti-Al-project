@@ -1,0 +1,18 @@
+variable zc equal (zlo+zhi)/2
+region liquid block INF INF INF INF INF ${zc} units box
+group liquid region liquid
+group solid subtract all liquid
+compute LiquidTemp liquid temp
+compute SolidTemp solid temp
+thermo_style custom step time atoms temp pe ke etotal press pxx pyy pzz vol lx ly lz c_LiquidTemp c_SolidTemp
+min_style cg
+minimize 1e-10 1e-10 5000 10000
+reset_timestep 0
+velocity all create 1700 4928459 dist gaussian
+fix integrate all npt temp 1700 1700 0.1 aniso 0 0 1.0
+dump trajectory all custom 100 /misc/home6/u3129/tial-testsets/pbe15k-melting-20261026-02/T1700K/equil/trajectory.lammpstrj id type x y z c_2 vx vy vz
+dump_modify trajectory sort id
+restart 5000 /misc/home6/u3129/tial-testsets/pbe15k-melting-20261026-02/T1700K/equil/restart.*
+run 10000
+write_data /misc/home6/u3129/tial-testsets/pbe15k-melting-20261026-02/T1700K/equil/final.data
+write_restart /misc/home6/u3129/tial-testsets/pbe15k-melting-20261026-02/T1700K/equil/final.restart

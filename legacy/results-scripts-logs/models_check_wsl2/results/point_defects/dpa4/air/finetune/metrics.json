@@ -1,0 +1,390 @@
+{
+  "calculator": "deepmd",
+  "model_name": "model_frozen.pt2",
+  "model_path": "/home/katkoff/finetune_deepmd_dpa4/run_fits/TiAlZrSi_Air_DPA4_20260925_160833/output_model",
+  "family": "dpa4",
+  "variant": "air",
+  "use_type": "finetune",
+  "systems": [
+    "alpha_Ti",
+    "fcc_Al",
+    "gamma_AlTi",
+    "alpha2_AlTi3",
+    "D022_Al3Ti"
+  ],
+  "device": "cuda",
+  "dtype": "float32",
+  "gpu_name": "RTX 5060 Ti",
+  "fmax_target": 0.001,
+  "max_steps_limit": 1000,
+  "n_layers": 8,
+  "vacuum": 8.0,
+  "repeat_inplane": [
+    3,
+    3,
+    3
+  ],
+  "fixed_fraction": 0.35,
+  "timestamp": "2026-09-29T13:35:38.862640",
+  "hostname": "WIN-UTL01HS3G45",
+  "relaxations": [
+    {
+      "label": "mu_Al0",
+      "type": "bulk",
+      "system": "fcc_Al",
+      "n_atoms": 4,
+      "n_steps": 0,
+      "time_sec": 1.3304785619839095,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "mu_Ti0",
+      "type": "bulk",
+      "system": "alpha_Ti",
+      "n_atoms": 2,
+      "n_steps": 0,
+      "time_sec": 0.01363720401423052,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "bulk/alpha_Ti",
+      "type": "bulk",
+      "system": "alpha_Ti",
+      "n_atoms": 2,
+      "n_steps": 0,
+      "time_sec": 0.00033163800253532827,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "surface/σ_basal",
+      "type": "surface",
+      "system": "alpha_Ti",
+      "n_atoms": 144,
+      "n_steps": 86,
+      "time_sec": 8.936657351005124,
+      "time_per_step_sec": 0.10391462036052469,
+      "converged": true
+    },
+    {
+      "label": "surface/σ_prism",
+      "type": "surface",
+      "system": "alpha_Ti",
+      "n_atoms": 144,
+      "n_steps": 73,
+      "time_sec": 7.184331669006497,
+      "time_per_step_sec": 0.09841550231515749,
+      "converged": true
+    },
+    {
+      "label": "surface/σ_pyr.I",
+      "type": "surface",
+      "system": "alpha_Ti",
+      "n_atoms": 234,
+      "n_steps": 72,
+      "time_sec": 9.89480074198218,
+      "time_per_step_sec": 0.13742778808308584,
+      "converged": true
+    },
+    {
+      "label": "surface/σ_pyr.II",
+      "type": "surface",
+      "system": "alpha_Ti",
+      "n_atoms": 144,
+      "n_steps": 69,
+      "time_sec": 6.439629547006916,
+      "time_per_step_sec": 0.09332796444937559,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Ti/perfect",
+      "type": "vacancy_bulk",
+      "system": "alpha_Ti",
+      "n_atoms": 120,
+      "n_steps": 0,
+      "time_sec": 0.11761068200576119,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Ti/vac",
+      "type": "vacancy_bulk",
+      "system": "alpha_Ti",
+      "n_atoms": 119,
+      "n_steps": 65,
+      "time_sec": 5.698288265004521,
+      "time_per_step_sec": 0.08766597330776187,
+      "converged": true
+    },
+    {
+      "label": "bulk/fcc_Al",
+      "type": "bulk",
+      "system": "fcc_Al",
+      "n_atoms": 4,
+      "n_steps": 0,
+      "time_sec": 0.11265760700916871,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "surface/σ{100}",
+      "type": "surface",
+      "system": "fcc_Al",
+      "n_atoms": 144,
+      "n_steps": 47,
+      "time_sec": 4.495718505000696,
+      "time_per_step_sec": 0.09565358521278075,
+      "converged": true
+    },
+    {
+      "label": "surface/σ{110}",
+      "type": "surface",
+      "system": "fcc_Al",
+      "n_atoms": 144,
+      "n_steps": 59,
+      "time_sec": 5.631591925979592,
+      "time_per_step_sec": 0.09545071060982359,
+      "converged": true
+    },
+    {
+      "label": "surface/σ{111}",
+      "type": "surface",
+      "system": "fcc_Al",
+      "n_atoms": 81,
+      "n_steps": 46,
+      "time_sec": 3.16659780399641,
+      "time_per_step_sec": 0.06883908269557414,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Al/perfect",
+      "type": "vacancy_bulk",
+      "system": "fcc_Al",
+      "n_atoms": 108,
+      "n_steps": 0,
+      "time_sec": 0.10035900899674743,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Al/vac",
+      "type": "vacancy_bulk",
+      "system": "fcc_Al",
+      "n_atoms": 107,
+      "n_steps": 42,
+      "time_sec": 3.376677235995885,
+      "time_per_step_sec": 0.08039707704752107,
+      "converged": true
+    },
+    {
+      "label": "bulk/gamma_AlTi",
+      "type": "bulk",
+      "system": "gamma_AlTi",
+      "n_atoms": 4,
+      "n_steps": 0,
+      "time_sec": 0.011785371985752136,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "surface/σ{111}",
+      "type": "surface",
+      "system": "gamma_AlTi",
+      "n_atoms": 162,
+      "n_steps": 92,
+      "time_sec": 9.629385208972963,
+      "time_per_step_sec": 0.10466723053231482,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Ti/perfect",
+      "type": "vacancy_bulk",
+      "system": "gamma_AlTi",
+      "n_atoms": 108,
+      "n_steps": 0,
+      "time_sec": 0.036059161997400224,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Ti/vac",
+      "type": "vacancy_bulk",
+      "system": "gamma_AlTi",
+      "n_atoms": 107,
+      "n_steps": 55,
+      "time_sec": 4.672200697998051,
+      "time_per_step_sec": 0.08494910359996456,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Al/perfect",
+      "type": "vacancy_bulk",
+      "system": "gamma_AlTi",
+      "n_atoms": 108,
+      "n_steps": 0,
+      "time_sec": 0.08131454899557866,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Al/vac",
+      "type": "vacancy_bulk",
+      "system": "gamma_AlTi",
+      "n_atoms": 107,
+      "n_steps": 44,
+      "time_sec": 3.7090131379954983,
+      "time_per_step_sec": 0.08429575313626132,
+      "converged": true
+    },
+    {
+      "label": "bulk/alpha2_AlTi3",
+      "type": "bulk",
+      "system": "alpha2_AlTi3",
+      "n_atoms": 8,
+      "n_steps": 25,
+      "time_sec": 1.6174254749785177,
+      "time_per_step_sec": 0.06469701899914071,
+      "converged": true
+    },
+    {
+      "label": "surface/σ{0001}",
+      "type": "surface",
+      "system": "alpha2_AlTi3",
+      "n_atoms": 576,
+      "n_steps": 63,
+      "time_sec": 19.360901198990177,
+      "time_per_step_sec": 0.3073158920474631,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Ti/perfect",
+      "type": "vacancy_bulk",
+      "system": "alpha2_AlTi3",
+      "n_atoms": 144,
+      "n_steps": 25,
+      "time_sec": 2.7123169300029986,
+      "time_per_step_sec": 0.10849267720011994,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Ti/vac",
+      "type": "vacancy_bulk",
+      "system": "alpha2_AlTi3",
+      "n_atoms": 143,
+      "n_steps": 55,
+      "time_sec": 5.748722424992593,
+      "time_per_step_sec": 0.10452222590895624,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Al/perfect",
+      "type": "vacancy_bulk",
+      "system": "alpha2_AlTi3",
+      "n_atoms": 144,
+      "n_steps": 25,
+      "time_sec": 2.699732903012773,
+      "time_per_step_sec": 0.10798931612051092,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Al/vac",
+      "type": "vacancy_bulk",
+      "system": "alpha2_AlTi3",
+      "n_atoms": 143,
+      "n_steps": 45,
+      "time_sec": 4.769828718999634,
+      "time_per_step_sec": 0.10599619375554742,
+      "converged": true
+    },
+    {
+      "label": "bulk/D022_Al3Ti",
+      "type": "bulk",
+      "system": "D022_Al3Ti",
+      "n_atoms": 8,
+      "n_steps": 0,
+      "time_sec": 0.1012703200103715,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "surface/σ{001}",
+      "type": "surface",
+      "system": "D022_Al3Ti",
+      "n_atoms": 576,
+      "n_steps": 159,
+      "time_sec": 47.53366061698762,
+      "time_per_step_sec": 0.2989538403584127,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Ti/perfect",
+      "type": "vacancy_bulk",
+      "system": "D022_Al3Ti",
+      "n_atoms": 144,
+      "n_steps": 0,
+      "time_sec": 0.12849659100174904,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Ti/vac",
+      "type": "vacancy_bulk",
+      "system": "D022_Al3Ti",
+      "n_atoms": 143,
+      "n_steps": 54,
+      "time_sec": 5.789883072022349,
+      "time_per_step_sec": 0.10722005688930275,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Al/perfect",
+      "type": "vacancy_bulk",
+      "system": "D022_Al3Ti",
+      "n_atoms": 144,
+      "n_steps": 0,
+      "time_sec": 0.1256078039878048,
+      "time_per_step_sec": null,
+      "converged": true
+    },
+    {
+      "label": "vacancy_bulk/Evf-Al/vac",
+      "type": "vacancy_bulk",
+      "system": "D022_Al3Ti",
+      "n_atoms": 143,
+      "n_steps": 54,
+      "time_sec": 5.482204829982948,
+      "time_per_step_sec": 0.10152231166635088,
+      "converged": true
+    }
+  ],
+  "summary": {
+    "calculator": "deepmd",
+    "model_name": "model_frozen.pt2",
+    "model_path": "/home/katkoff/finetune_deepmd_dpa4/run_fits/TiAlZrSi_Air_DPA4_20260925_160833/output_model",
+    "family": "dpa4",
+    "variant": "air",
+    "use_type": "finetune",
+    "systems": [
+      "alpha_Ti",
+      "fcc_Al",
+      "gamma_AlTi",
+      "alpha2_AlTi3",
+      "D022_Al3Ti"
+    ],
+    "device": "cuda",
+    "dtype": "float32",
+    "gpu_name": "RTX 5060 Ti",
+    "total_wall_time_sec": 174.63181890299893,
+    "total_relax_time_sec": 170.70917675990495,
+    "n_relaxations": 33,
+    "total_steps": 1255,
+    "total_atom_steps": 271412,
+    "time_per_step_avg_sec": 0.13602324841426688,
+    "time_per_atom_step_avg_sec": 0.0006289669460447767,
+    "n_converged": 33,
+    "n_not_converged": 0,
+    "converged_ratio": 1.0
+  }
+}

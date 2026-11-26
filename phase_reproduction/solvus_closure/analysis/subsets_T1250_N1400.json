@@ -1,0 +1,61 @@
+{
+  "T_K": 1250.0,
+  "N": 1400,
+  "cut_Q": 0.47,
+  "pooled_S": -2.4379562793634726,
+  "evaluations": {
+    "3.517": {
+      "mu_eval": 3.5489368010721303,
+      "direct_fields": [
+        3.517
+      ],
+      "runs": 14,
+      "n_bias_windows": 14,
+      "BC_tree_min": 0.36326999386326475,
+      "S_at_common_mu": -2.1903927166370316,
+      "conditional_low_high": [
+        {
+          "x_pct": 27.245404967091268,
+          "Q": 0.14114586810625657,
+          "time_ESS": 1.2223874765724265
+        },
+        {
+          "x_pct": 27.403244244612985,
+          "Q": 0.7209625630303024,
+          "time_ESS": 3.0288811808224056
+        }
+      ],
+      "range_Q0": [
+        0.025,
+        0.955
+      ]
+    },
+    "3.546": {
+      "mu_eval": 3.5489368010721303,
+      "direct_fields": [
+        3.546
+      ],
+      "runs": 14,
+      "n_bias_windows": 14,
+      "BC_tree_min": 0.4035971355344675,
+      "S_at_common_mu": -2.4924671399531544,
+      "conditional_low_high": [
+        {
+          "x_pct": 27.378106361444015,
+          "Q": 0.14629849498491343,
+          "time_ESS": 75.30720397753896
+        },
+        {
+          "x_pct": 27.377404839978034,
+          "Q": 0.7116341977998251,
+          "time_ESS": 63.5333363239233
+        }
+      ],
+      "range_Q0": [
+        0.025,
+        0.955
+      ]
+    }
+  },
+  "note": "All estimates use the same target field and cutoff. Each individual field group has independent seeds and its own MBAR normalization. Marginally overlapping Q windows or very small effective counts limit the evidential value of the individual reconstruction."
+}

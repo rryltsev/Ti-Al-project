@@ -1,0 +1,30 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/random-anchor-01",
+  "utc": "2026-11-24T18:13:17.117963+00:00",
+  "job_name": "ta-random-anchor-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=8G",
+    "--time=30",
+    "--job-name=ta-random-anchor-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "6aca527afb07bd3c20a9a11ffa562590663cb04b2dfa0a78fe69f32d2b760ffe",
+    "Ti48Al16_candidate.cfg": "f409ac77fab469e78c0c1a4cd03b88ada8be3f68086ed21300d05b736eb86969",
+    "fitted.mtp": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+    "label_cell.py": "3efe48cd9866055cbd19b3a4fdfae24b86305955c928a1d7858c450b52f1011f",
+    "hcp_orbits.py": "6a6a745abd5d594244901d13c1ae6305e8eb63c7d41b54d82dfa094d73cade3b",
+    "mtp_cfg.py": "8326d00eb692d2e19dab513b3d918041966906d784109eb9d04361dc8c7d7727"
+  }
+}

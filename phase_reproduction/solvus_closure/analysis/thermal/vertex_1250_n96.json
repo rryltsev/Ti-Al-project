@@ -1,0 +1,368 @@
+{
+  "source_T_K": 1250.0,
+  "N": 96,
+  "shape": "4x4x3",
+  "W_max": 0.4,
+  "axial_free": 1,
+  "pressure_GPa": 0.0,
+  "trajectories": 49,
+  "time_part": "all",
+  "Q_bandwidth": 0.04,
+  "manifests": [
+    "solvus_closure/atomistic/series/zc1250s/windows.csv"
+  ],
+  "T_search": [
+    1200.0,
+    1270.0
+  ],
+  "mu_search": [
+    3.47,
+    3.64
+  ],
+  "lambda2": 0.9361323770365969,
+  "estimates": [
+    {
+      "Q_divider": 0.32,
+      "endpoints": [
+        {
+          "temperature_K": 1200.0,
+          "field_eV": 3.5472833249377396,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": 2.170790596836543,
+          "profile": null,
+          "phases": [
+            {
+              "Al_at_pct": 26.907234254873003,
+              "Q": 0.21926990862383905,
+              "corrected_Kish": 46.94036318520576
+            },
+            {
+              "Al_at_pct": 26.907234250617176,
+              "Q": 0.8756142197539168,
+              "corrected_Kish": 68.61254026154573
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -42.74214261687738
+        },
+        {
+          "temperature_K": 1270.0,
+          "field_eV": 3.572757282016555,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": 0.2613468854654679,
+          "profile": {
+            "Q_peaks": [
+              0.2925,
+              0.9075
+            ],
+            "Q_valley": 0.5025,
+            "from_lower_peak_kBT": 0.13497018810963474
+          },
+          "phases": [
+            {
+              "Al_at_pct": 28.204829954783317,
+              "Q": 0.21379650972256922,
+              "corrected_Kish": 66.64713974683997
+            },
+            {
+              "Al_at_pct": 28.204829952859445,
+              "Q": 0.7493604928733714,
+              "corrected_Kish": 136.20911676778292
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -30.930545348226925
+        }
+      ],
+      "finite_cell_candidate": null
+    },
+    {
+      "Q_divider": 0.37,
+      "endpoints": [
+        {
+          "temperature_K": 1200.0,
+          "field_eV": 3.5446307973282174,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": 1.9559668768134808,
+          "profile": null,
+          "phases": [
+            {
+              "Al_at_pct": 26.835023183144983,
+              "Q": 0.24312917367194173,
+              "corrected_Kish": 48.374295465736964
+            },
+            {
+              "Al_at_pct": 26.8350231737902,
+              "Q": 0.8800437438765546,
+              "corrected_Kish": 67.68667186113034
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -42.13754131133556
+        },
+        {
+          "temperature_K": 1270.0,
+          "field_eV": 3.56948766319748,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": 0.0512978475603314,
+          "profile": {
+            "Q_peaks": [
+              0.2875,
+              0.9075
+            ],
+            "Q_valley": 0.5025,
+            "from_lower_peak_kBT": 0.1415588959720773
+          },
+          "phases": [
+            {
+              "Al_at_pct": 28.079220505723935,
+              "Q": 0.23462543977884698,
+              "corrected_Kish": 71.57018753496989
+            },
+            {
+              "Al_at_pct": 28.079220513879108,
+              "Q": 0.7662982851970488,
+              "corrected_Kish": 131.22459865746893
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -31.482266046817248
+        }
+      ],
+      "finite_cell_candidate": null
+    },
+    {
+      "Q_divider": 0.42,
+      "endpoints": [
+        {
+          "temperature_K": 1200.0,
+          "field_eV": 3.5411264181460145,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": 1.714847472621383,
+          "profile": null,
+          "phases": [
+            {
+              "Al_at_pct": 26.741127536460585,
+              "Q": 0.2743448578596439,
+              "corrected_Kish": 53.77514933367431
+            },
+            {
+              "Al_at_pct": 26.741127560677555,
+              "Q": 0.8856240404869367,
+              "corrected_Kish": 66.40964198564399
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -41.33843074278598
+        },
+        {
+          "temperature_K": 1270.0,
+          "field_eV": 3.5645100151082687,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": -0.1839023445916188,
+          "profile": {
+            "Q_peaks": [
+              0.2875,
+              0.9125000000000001
+            ],
+            "Q_valley": 0.5075000000000001,
+            "from_lower_peak_kBT": 0.1525291018728141
+          },
+          "phases": [
+            {
+              "Al_at_pct": 27.89018059347168,
+              "Q": 0.26125840114949817,
+              "corrected_Kish": 80.00821582447301
+            },
+            {
+              "Al_at_pct": 27.89018059146945,
+              "Q": 0.7874975544855165,
+              "corrected_Kish": 124.95746852513261
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -32.256015829441125
+        }
+      ],
+      "finite_cell_candidate": {
+        "temperature_K": 1261.9464414148645,
+        "field_eV": 3.5614026481749668,
+        "maximum_on_field_boundary": false,
+        "max_log_ordered_over_four_disordered": -7.886592958694649e-07,
+        "profile": {
+          "Q_peaks": [
+            0.2925,
+            0.9225000000000001
+          ],
+          "Q_valley": 0.4925,
+          "from_lower_peak_kBT": 0.10913433591215965
+        },
+        "phases": [
+          {
+            "Al_at_pct": 27.73601042655562,
+            "Q": 0.262361889751121,
+            "corrected_Kish": 82.00441967135129
+          },
+          {
+            "Al_at_pct": 27.73601042517205,
+            "Q": 0.8005066903759075,
+            "corrected_Kish": 125.70317363456076
+          }
+        ],
+        "semigrand_energy_ordered_minus_disordered_meV_atom": -33.43713098166795
+      }
+    },
+    {
+      "Q_divider": 0.47,
+      "endpoints": [
+        {
+          "temperature_K": 1200.0,
+          "field_eV": 3.5395004802464336,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": 1.5659174568663625,
+          "profile": null,
+          "phases": [
+            {
+              "Al_at_pct": 26.698119989870165,
+              "Q": 0.29669483289177423,
+              "corrected_Kish": 58.90824520163418
+            },
+            {
+              "Al_at_pct": 26.69811999535961,
+              "Q": 0.8891130678252942,
+              "corrected_Kish": 65.49600528898591
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -40.96012199192784
+        },
+        {
+          "temperature_K": 1270.0,
+          "field_eV": 3.5622383910336723,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": -0.3311087091914364,
+          "profile": {
+            "Q_peaks": [
+              0.2875,
+              0.9125000000000001
+            ],
+            "Q_valley": 0.5125,
+            "from_lower_peak_kBT": 0.15785914522456967
+          },
+          "phases": [
+            {
+              "Al_at_pct": 27.80472903503818,
+              "Q": 0.2801776149885737,
+              "corrected_Kish": 86.44599289042836
+            },
+            {
+              "Al_at_pct": 27.80472903841527,
+              "Q": 0.8009785265609627,
+              "corrected_Kish": 119.9484162731799
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -32.685977710961915
+        }
+      ],
+      "finite_cell_candidate": {
+        "temperature_K": 1255.8973400774958,
+        "field_eV": 3.5570475250618077,
+        "maximum_on_field_boundary": false,
+        "max_log_ordered_over_four_disordered": 3.208051391201394e-07,
+        "profile": {
+          "Q_peaks": [
+            0.2975,
+            0.9325000000000001
+          ],
+          "Q_valley": 0.4825,
+          "from_lower_peak_kBT": 0.08346770593823657
+        },
+        "phases": [
+          {
+            "Al_at_pct": 27.550335357194072,
+            "Q": 0.28291872485715147,
+            "corrected_Kish": 89.34919467435185
+          },
+          {
+            "Al_at_pct": 27.550335359802386,
+            "Q": 0.8209348670400053,
+            "corrected_Kish": 119.91651564519348
+          }
+        ],
+        "semigrand_energy_ordered_minus_disordered_meV_atom": -34.52176328299651
+      }
+    },
+    {
+      "Q_divider": 0.52,
+      "endpoints": [
+        {
+          "temperature_K": 1200.0,
+          "field_eV": 3.5375616684064695,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": 1.3693324620637066,
+          "profile": null,
+          "phases": [
+            {
+              "Al_at_pct": 26.64727929094306,
+              "Q": 0.3295666017779614,
+              "corrected_Kish": 64.90177725273757
+            },
+            {
+              "Al_at_pct": 26.647279284243638,
+              "Q": 0.8938745700611299,
+              "corrected_Kish": 64.12128340180172
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -40.12045589426237
+        },
+        {
+          "temperature_K": 1270.0,
+          "field_eV": 3.55956479750577,
+          "maximum_on_field_boundary": false,
+          "max_log_ordered_over_four_disordered": -0.5117745975138097,
+          "profile": {
+            "Q_peaks": [
+              0.2875,
+              0.9125000000000001
+            ],
+            "Q_valley": 0.5125,
+            "from_lower_peak_kBT": 0.16446752914318277
+          },
+          "phases": [
+            {
+              "Al_at_pct": 27.704767644835552,
+              "Q": 0.30566644893042383,
+              "corrected_Kish": 96.4784470887996
+            },
+            {
+              "Al_at_pct": 27.704767642005194,
+              "Q": 0.817748587769643,
+              "corrected_Kish": 112.82738838353828
+            }
+          ],
+          "semigrand_energy_ordered_minus_disordered_meV_atom": -33.12833199354464
+        }
+      ],
+      "finite_cell_candidate": {
+        "temperature_K": 1248.7287247851596,
+        "field_eV": 3.5523309790836253,
+        "maximum_on_field_boundary": false,
+        "max_log_ordered_over_four_disordered": 1.0873418099244248e-07,
+        "profile": {
+          "Q_peaks": [
+            0.3025,
+            0.9475
+          ],
+          "Q_valley": 0.4625,
+          "from_lower_peak_kBT": 0.05593393002370438
+        },
+        "phases": [
+          {
+            "Al_at_pct": 27.35304455632284,
+            "Q": 0.3120684788423705,
+            "corrected_Kish": 98.94786066309304
+          },
+          {
+            "Al_at_pct": 27.353044571990896,
+            "Q": 0.8428956449167356,
+            "corrected_Kish": 111.29736900613867
+          }
+        ],
+        "semigrand_energy_ordered_minus_disordered_meV_atom": -35.34556666472603
+      }
+    }
+  ]
+}

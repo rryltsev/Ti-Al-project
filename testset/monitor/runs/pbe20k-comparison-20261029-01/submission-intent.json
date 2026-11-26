@@ -1,0 +1,20 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:15:00",
+    "--no-requeue",
+    "--chdir=/home6/u3129/tial-testsets/pbe20k-comparison-20261029-01",
+    "--job-name=t50-pbe20k-compare",
+    "--output=/home6/u3129/tial-testsets/pbe20k-comparison-20261029-01/job-%j.out",
+    "/home6/u3129/tial-testsets/pbe20k-comparison-20261029-01/job.sbatch"
+  ],
+  "unix": 1793242972.4004045
+}

@@ -1,0 +1,266 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Accuracy relative to the DFT references}
+\label{sec:results_fit}
+
+We assess accuracy relative to the DFT references using a common held-out set rather than the separate validation partitions of the training runs.
+The present preliminary comparison contains 20 configurations from the liquid pool, each with 216 atoms, spanning $x_{\mathrm{Al}}=0$--1.
+All three DFT labels and all model predictions are available for exactly these geometries.
+Figure~\ref{fig:test_parity} compares each fine-tuned model with its own functional and includes the unchanged pretrained DPA4-Neo model as a baseline.
+Here, the PBE predictions refer to the approximately 5000-step checkpoint selected using the hcp-Ti DFT phonon DOS, whereas PBEsol and \rscan{} use the final checkpoints, as described in Sec.~\ref{sec:finetuning}.
+Table~\ref{tab:fit} reports the corresponding energy, force, and stress errors.
+
+\input{sections/test20_metrics_table}
+
+\begin{figure*}[t]
+\includegraphics[width=\textwidth]{figures/test20_parity.pdf}
+\caption{Preliminary parity plots for the same 20 held-out configurations from the liquid pool. Panels (a)--(c) compare raw energies per atom and (d)--(f) compare all Cartesian force components against PBE, PBEsol, and \rscan{}, respectively. Blue denotes the corresponding fine-tuned model; orange denotes one unchanged pretrained DPA4-Neo model, with open symbols for its energies. Dashed lines indicate perfect agreement. Insets report MAE and RMSE on the full common subset; force statistics contain 12\,960 components, not that many independent configurations. No energy-reference offsets are applied. The large raw pretrained energy offsets for PBEsol and \rscan{} must not be interpreted solely as errors in configuration-dependent energetics.}
+\label{fig:test_parity}
+\end{figure*}
+
+The fine-tuned energy MAEs are 4.34, 1.49, and 1.36~meV/atom for PBE, PBEsol, and \rscan{}, respectively; the corresponding RMSEs are 6.41, 1.90, and 1.66~meV/atom.
+Descriptive 95\% structure-bootstrap intervals for these RMSEs are 3.65--8.96, 1.28--2.46, and 1.26--2.03~meV/atom.
+The higher PBE error includes a positive mean residual of 4.17~meV/atom and a largest deviation of 17.93~meV/atom on a Ti-rich configuration with $x_{\mathrm{Al}}=0.0509$.
+An audit of this configuration confirmed the DFT energy, geometry, and agreement between the source checkpoint and exported model; it is retained in the benchmark.
+The pretrained model has a smaller PBE energy RMSE of 3.40~meV/atom.
+The difference is not caused by this single configuration: omitting it only as a sensitivity check gives RMSEs of 5.13 and 3.48~meV/atom for the selected PBE and pretrained models, respectively, on the remaining 19 structures.
+All 20 configurations remain in Fig.~\ref{fig:test_parity} and Table~\ref{tab:fit}.
+
+The positive residual is also present in the PBE training set and grows toward Ti-rich compositions.
+The composition and volume analysis in the Supporting Materials identifies a systematic fitting bias in the selected checkpoint, including positive residuals on training structures of the same composition as the largest-error test structure.
+The discrepancy therefore cannot be attributed solely to one anomalous test configuration or to extrapolation beyond the training volume range.
+
+Forces show a different trend.
+Fine-tuned component RMSEs are 0.0675, 0.0650, and 0.0756~eV/\AA, compared with 0.0745, 0.0873, and 0.1019~eV/\AA{} for the pretrained baseline against the respective references.
+Thus, the central force RMSE decreases by approximately 9\%, 25\%, and 26\% after fine-tuning.
+The fine-tuned force-RMSE bootstrap intervals are 0.0576--0.0775, 0.0555--0.0745, and 0.0646--0.0863~eV/\AA; their overlap cautions against a strong ranking of the three fits.
+Stress RMSEs are 0.112, 0.086, and 0.091~GPa.
+These test-set component errors are not directly interchangeable with force-vector norms printed in the training logs.
+
+A retrospective comparison of five PBE checkpoints on identical training, validation, and held-out configurations clarifies this behavior (Supporting Materials).
+From 5000 to 23\,400 steps, the held-out energy RMSE decreases from 6.41 to 1.34~meV/atom and the force-component RMSE decreases from 0.0675 to 0.0654~eV/\AA; training and validation errors also decrease overall.
+The mean energy residual on the 91 Ti-rich training structures with $x_{\mathrm{Ti}}\geq0.9$ falls from 10.93 to 0.78~meV/atom.
+The final checkpoint thus outperforms the pretrained baseline in PBE energy accuracy on the present test subset, reversing the comparison obtained for the selected 5000-step model.
+These results do not support general energy/force overfitting beyond 5000 steps.
+Nevertheless, the 5000-step model remains closer to the hcp-Ti DFT DOS, including in the comparison at exactly the DFT geometry.
+Phonons probe local second derivatives of the energy, which need not improve with aggregate energy and force errors across the dataset.
+The larger PBE energy error in Fig.~\ref{fig:test_parity} and Table~\ref{tab:fit} therefore reflects a property-dependent checkpoint choice, rather than an intrinsic limitation of the PBE functional or an unavoidable consequence of fine-tuning.
+The selected model is retained throughout the main property comparisons; the later-checkpoint results serve as diagnostics and do not replace it retrospectively.
+
+The raw pretrained energy RMSE increases to approximately 406~meV/atom against PBEsol and 4098~meV/atom against \rscan{}.
+These values include differences in the elemental energy references and in the exchange-correlation description; they do not quantify the error in relative structural energies alone.
+Force and stress comparisons provide complementary evidence for adaptation because constant elemental energy shifts do not affect these derivatives.
+No such shifts are fitted or applied in the present comparison.
+
+These results support accurate reproduction of the sampled liquid-pool forces and low energy errors for the PBEsol and \rscan{} fits, while identifying a systematic Ti-rich energy bias in the PBE checkpoint selected for phonon performance.
+They do not establish that a functional with a smaller MLIP test error is closer to experiment.
+Only 20 of the planned 50 test configurations currently enter the common comparison; the crystalline families are not yet represented, and statistical independence of the liquid source trajectories is unverified.
+Consequently, the present errors do not bound solid--liquid free-energy errors or establish convergence of the full benchmark.
+
+\draftnote{Preliminary common subset: 20 liquid-pool configurations. Update the paired plots, metrics, composition coverage, and interpretation as additional complete PBE/PBEsol/\rscan{} label triplets become available.}
+
+\subsection{Lattice dynamics and thermal density of Ti}
+\label{sec:results_crystal}
+
+The harmonic phonon dispersions of $\alpha$-Ti are shown in Fig.~\ref{fig:phonons}.
+All three models produce acoustic branches approaching zero at $\Gamma$ and positive frequencies along the sampled path, apart from residual negative values smaller than $3\times10^{-4}$~THz.
+This supports harmonic stability along the tested directions.
+The comparison with room-temperature experimental points reproduced by Souvatzis \textit{et al.}\cite{Souvatzis2007} shows that agreement depends on the branch and wave vector.
+In particular, the \rscan{} model does not provide a uniform improvement over PBE.
+
+At $\Gamma$, the PBE optical frequencies are approximately 3.98~THz for the nearly degenerate pair and 5.48~THz for the remaining mode.
+The corresponding PBEsol values are 3.77 and 5.01~THz.
+For \rscan{}, the optical frequencies are instead approximately 4.21~THz and a nearly degenerate pair at 4.56~THz.
+The change therefore involves a rearrangement of the optical frequencies, rather than a common upward shift of the spectrum.
+At the same time, the maximum frequency along the sampled path increases from 8.23~THz for PBE to 8.74~THz for PBEsol and 9.00~THz for \rscan{}.
+The densities of states show a corresponding redistribution of spectral weight.
+The independent PBE DFT density of states is included as a separate theoretical reference; it is not an experimental benchmark for choosing between functionals.
+Differences in relaxed geometry and force-constant sampling also enter this comparison.
+
+\begin{figure*}[t]
+\includegraphics[width=\textwidth]{figures/phonons_alpha_ti.pdf}
+\caption{Harmonic lattice dynamics of $\alpha$-Ti. Panels (a)--(c) show the three MLIP dispersions along $\Gamma$--K--M--$\Gamma$--A. Black symbols are digitized room-temperature experimental points reproduced in Ref.~\onlinecite{Souvatzis2007}, where the measurements are attributed to Stassis \textit{et al.} Panel (d) compares phonon densities of states with the independent PBE DFT calculation. Each DOS integrates to three modes per atom. The MLIP curves are harmonic results at their optimized reference geometries.}
+\label{fig:phonons}
+\end{figure*}
+
+The $\alpha_2$-Ti$_3$Al calculations likewise have no appreciable imaginary frequencies along the sampled $\Gamma$--M--K--$\Gamma$--A--L--H--A path; the largest residual negative magnitude is below $10^{-3}$~THz.
+Their maximum frequencies are 9.14, 9.48, and 9.58~THz for PBE, PBEsol, and \rscan{}, respectively.
+The available DFT Ti$_3$Al reference has an unresolved structural assignment, as noted in Sec.~\ref{sec:phonons}, so these results establish differences between the models without yet providing a quantitative DFT-based ranking for this compound.
+Neither these harmonic calculations nor the room-temperature comparison determine the temperature-renormalized phonon spectrum near melting.
+
+The temperature-dependent density of elemental Ti provides a complementary test of the equilibrium volume (Fig.~\ref{fig:density_ti}).
+At 300~K, PBE and \rscan{} give very similar densities, 4.559 and 4.565~g/cm$^3$, whereas PBEsol gives 4.737~g/cm$^3$.
+The solid-state reference is the tabulation by Zinov'ev,\cite{Zinoviev1989} obtained from thermal-expansion data and the room-temperature density.
+Relative to its 300~K value of 4.50~g/cm$^3$, the deviations are approximately $+1.3\%$, $+1.5\%$, and $+5.3\%$ for PBE, \rscan{}, and PBEsol, respectively.
+The higher PBEsol density persists over the temperature range considered.
+The crystalline branches were obtained from separately prepared $\alpha$-Ti and $\beta$-Ti cells at 300--1100 and 1200--1900~K, respectively, rather than by heating a single crystal through the $\alpha$--$\beta$ transition.
+Figure~\ref{fig:density_ti}(a) marks the experimental transition temperatures, approximately 1155~K for $\alpha$--$\beta$ and 1943~K for melting, as reference guides rather than predictions of the models.
+The two crystalline phases have very similar densities: the solid-state tabulation gives 4.37 and 4.38~g/cm$^3$ for $\alpha$- and $\beta$-Ti near the transition, a difference of only about 0.2\%.
+This small density change is barely visible on the scale of the figure, and the simulated branches likewise show no pronounced discontinuity between the neighboring 1100 and 1200~K points.
+The temperature grid does not resolve the transition jump itself.
+Within each preparation series the density generally decreases with temperature.
+The solid-initialized PBE and PBEsol series exhibit a marked decrease between 1600 and 1800~K, while the \rscan{} series retains a higher density at 1800--1900~K.
+This high-temperature decrease is separate from the $\alpha$--$\beta$ transition and motivates the coexistence analysis below, but a density change in a short, initially homogeneous simulation is not itself an equilibrium melting-temperature measurement.
+
+For liquid Ti, we use the experimental reference correlation of Ntonti \textit{et al.},\cite{Ntonti2024}
+\begin{equation}
+\rho_{\mathrm{ref}}(T)=4.2221-3.952\times10^{-4}(T-1941),
+\label{eq:ti_liquid_density_reference}
+\end{equation}
+where $\rho_{\mathrm{ref}}$ is in g/cm$^3$ and $T$ is in kelvin.
+This correlation applies at 0.1~MPa over 1941--3520~K and has a reported expanded uncertainty of 2.0\% at 95\% coverage.
+It therefore covers all six separately prepared liquid states without extrapolation.
+Figure~\ref{fig:density_ti}(b) also shows individual liquid-Ti measurements from electromagnetic levitation by Reiplinger and Brillo,\cite{Reiplinger2022} digitized with their reported error bars from the published vector graphic.
+These measurements span approximately 1858--2088~K and include undercooled liquid; their experimental error bars are distinct from the expanded uncertainty band of the Ntonti correlation.
+At 2000~K, it gives 4.199~g/cm$^3$, compared with 4.271, 4.322, and 4.457~g/cm$^3$ for PBE, \rscan{}, and PBEsol: deviations of $+1.7\%$, $+2.9\%$, and $+6.1\%$.
+All three liquid series decrease less steeply with temperature than the reference, so these deviations increase to $+4.4\%$, $+5.9\%$, and $+9.1\%$, respectively, at 2500~K.
+PBE is closest to the central reference throughout this interval; its 2000~K value lies within the reference uncertainty band.
+Thus, the liquid-density comparison does not support a uniform advantage of \rscan{} over PBE.
+This ordering describes deviations from the central correlation and does not by itself establish statistical separation of the models.
+
+\begin{figure*}[t]
+\includegraphics[width=\textwidth]{figures/density_ti.pdf}
+\caption{Temperature-dependent density of elemental Ti compared with experiment. (a) Circles and triangles denote simulations initialized from separately prepared $\alpha$-Ti and $\beta$-Ti cells, respectively. Vertical lines mark the experimental $\alpha$--$\beta$ transition (approximately 1155~K) and melting (1943~K). Black diamonds are the solid densities in Table~65 of Zinov'ev,\cite{Zinoviev1989} derived from thermal expansion and room-temperature density; dotted lines connect values within each phase. The small density change at the $\alpha$--$\beta$ transition is barely visible at this scale. (b) Separately prepared liquids (colored squares). Open black circles and error bars are measurements from Fig.~4 of Reiplinger and Brillo,\cite{Reiplinger2022} digitized from the published graphic, including undercooled liquid. The black line is the Ntonti \textit{et al.}\cite{Ntonti2024} correlation, shown within its stated temperature range; shading is its $\pm2\%$ expanded uncertainty at 95\% coverage. This band is distinct from the measurement error bars and does not describe MLIP uncertainty. Model colors are common to both panels; colored lines connect points within each preparation series.}
+\label{fig:density_ti}
+\end{figure*}
+
+\subsection{Solid--liquid coexistence and melting}
+\label{sec:results_melting}
+
+The coexistence trajectories provide a clearer distinction between the models.
+Figure~\ref{fig:melting} shows the evolution of the solid-like atom fraction near the temperature at which the direction of interface motion changes.
+For PBE, the solid grows at 1750~K and disappears at 1800~K.
+At 1775~K, the interfaces initially fluctuate with little net displacement, followed by substantial retreat of the solid during the second half of the trajectory.
+A crystalline layer remains at 50~ps.
+Thus, the interface direction suggests a working interval of 1750--1775~K, while the conservative interval bounded by opposite single-phase outcomes is 1750--1800~K.
+
+For PBEsol, crystallization occurs at 1730~K and complete melting at 1770~K.
+At 1750~K, the solid fraction fluctuates and decreases overall, but the solid slab survives to the end of the run.
+We therefore retain 1730--1770~K as the conservative bracket.
+The \rscan{} trajectories yield a narrower observed bracket: the crystal grows in both preparations at 1850~K, whereas the solid layer disappears at 1860~K.
+Changing the structural-order threshold or using the bond-correlation criterion preserves the principal distinction between growth and retreat.
+
+\begin{figure*}[t]
+\includegraphics[width=\textwidth]{figures/melting_ti.pdf}
+\caption{Solid-like fraction in representative 1296-atom, 50~ps Ti coexistence trajectories, using $\bar q_6>0.25$. The two \rscan{} trajectories at 1850~K have different preparation histories; the dashed curve denotes the second preparation. The fraction diagnoses growth or retreat of the crystalline slab, rather than an exact thermodynamic phase fraction.}
+\label{fig:melting}
+\end{figure*}
+
+\begin{table}[tb]
+\caption{Ti melting estimates and conservative brackets from opposite single-phase outcomes within 50~ps. The reference value is 1943~K, as used in Ref.~\onlinecite{Wang2012}. Brackets are protocol-dependent observations, not confidence intervals.}
+\label{tab:melting}
+\begin{ruledtabular}
+\begin{tabular}{lrrr}
+Model & Estimate (K) & Bracket (K) & Bias (\%)\\
+\hline
+PBE      & $\sim1760$ & 1750--1800 & $-9.4$\\
+PBEsol   & $\sim1750$ & 1730--1770 & $-9.9$\\
+\rscan{} & $\sim1855$ & 1850--1860 & $-4.5$\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The working estimates are approximately 1760, 1750, and 1855~K for PBE, PBEsol, and \rscan{}, respectively (Table~\ref{tab:melting}).
+Relative to 1943~K, the \rscan{} model reduces the underestimation from about 180--190~K to 88~K.
+Using 1941~K as the experimental reference would not change this ranking.
+The approximately 100~K separation between \rscan{} and the two GGA-based potentials exceeds the widths of their observed brackets.
+This makes melting the clearest improvement obtained with \rscan{} in the present set of tests.
+The 1850--1860~K bracket must nevertheless not be interpreted as a total uncertainty of $\pm5$~K: finite cell size, interface interactions, preparation dependence, and finite observation time remain unquantified.
+
+\subsection{Liquid density and mixing thermodynamics}
+\label{sec:results_thermo}
+
+We next compare properties across composition, using $x_{\mathrm{Al}}=N_{\mathrm{Al}}/(N_{\mathrm{Al}}+N_{\mathrm{Ti}})$ throughout.
+At 1873~K, all models predict a monotonic decrease in density as Ti is replaced by Al (Fig.~\ref{fig:liquid_density}).
+PBE gives the lowest densities and PBEsol generally the highest, with \rscan{} between them.
+The comparison uses the densities tabulated at 1873~K by Brillo \textit{et al.}\cite{Brillo2025}
+PBE is closest overall to this reference set.
+Using equal weight for each of the 11 common compositions and averaging multiple published entries at the same composition gives mean absolute deviations of 0.116, 0.246, and 0.189~g/cm$^3$ for PBE, PBEsol, and \rscan{}, respectively.
+The corresponding mean absolute relative deviations are 3.4\%, 7.5\%, and 5.8\%.
+These are descriptive discrepancies against the tabulated values, rather than statistically weighted goodness-of-fit measures.
+
+\begin{figure*}[t]
+\includegraphics[width=\textwidth]{figures/liquid_density.pdf}
+\caption{Liquid density (a) and excess molar volume (b) at 1873~K. Black symbols in (a) are the printed densities in Table~7 of Ref.~\onlinecite{Brillo2025}; separate entries at the same composition are shown individually. Reference excess volumes in (b) are recomputed from those densities and their pure-component endpoints. Each MLIP excess volume uses its own pure-liquid references. Some experimental reference values represent extrapolated or undercooled-liquid states.}
+\label{fig:liquid_density}
+\end{figure*}
+
+All three models predict negative excess molar volumes at the sampled interior compositions.
+At 1873~K, the discrete minima are approximately $-0.98$~cm$^3$/mol at $x_{\mathrm{Al}}=0.7$ for PBE, $-0.83$~cm$^3$/mol at $x_{\mathrm{Al}}=0.6$ for PBEsol, and $-1.02$~cm$^3$/mol at $x_{\mathrm{Al}}=0.6$ for \rscan{}.
+Thus, mixing produces substantial volume contraction relative to each model's pure-liquid reference volumes.
+The published densities also imply a pronounced contraction over much of the intermediate and Al-rich composition range, but yield appreciable scatter and positive excess volumes at some Ti-rich compositions.
+The models therefore capture the principal contraction without reproducing all features of the reference data.
+Absolute density and excess volume probe different combinations of pure-component and alloy errors; agreement in one does not guarantee agreement in the other.
+
+\draftnote{The density comparison currently uses the printed 1873~K column of Table~7 in Ref.~\onlinecite{Brillo2025}. At least one equiatomic entry is inconsistent with its listed temperature-fit coefficients. Resolve the reference convention before finalizing numerical error metrics. Some values are extrapolated, and Ti-rich liquids at 1873~K are below the experimental liquidus.}
+
+The mixing enthalpy gives a different ranking (Fig.~\ref{fig:mixing}).
+At 2000~K, all three models predict strongly exothermic mixing and a broad minimum near intermediate composition.
+The minima on the sampled grid are $-26.3$, $-25.4$, and $-32.0$~kJ/mol for PBE, PBEsol, and \rscan{}, respectively, each at $x_{\mathrm{Al}}=0.5$.
+The values reported here use the thermodynamic enthalpy at the imposed external pressure, as defined in Sec.~\ref{sec:thermodynamics}, and consistent pure-liquid reference calculations.
+
+The experimental comparison is based on calorimetric points reproduced in Fig.~7 of Witusiewicz \textit{et al.}\cite{Witusiewicz2008}
+Their CALPHAD curve is not used as an experimental dataset.
+The reproduced points indicate a minimum of approximately $-29.5$ to $-30$~kJ/mol near $x_{\mathrm{Al}}=0.5$--0.6.
+PBE and PBEsol underestimate the depth of this minimum, whereas \rscan{} overestimates it.
+Across nine digitized interior compositions, the provisional mean absolute deviations are approximately 2.6, 3.1, and 1.5~kJ/mol for PBE, PBEsol, and \rscan{}, respectively.
+Consequently, \rscan{} better reproduces the overall composition dependence under this metric, although it is not uniformly closer at every composition.
+
+\begin{figure*}[t]
+\includegraphics[width=\textwidth]{figures/mixing_enthalpy.pdf}
+\caption{Liquid mixing enthalpy at 2000~K compared with calorimetric points reproduced in Ref.~\onlinecite{Witusiewicz2008} (a), and temperature dependence of the model predictions (b). Reference points are a provisional digitization of the calorimetric symbols, not the CALPHAD line. Error bars in (a) are diagnostic standard errors from six 5~ps blocks, including both pure-liquid references; they are not final confidence intervals. Lines connect sampled compositions.}
+\label{fig:mixing}
+\end{figure*}
+
+Increasing temperature makes the enthalpy of mixing less negative for all three models.
+The minimum changes from $-27.4$ to $-22.1$~kJ/mol between 1873 and 2500~K for PBE, from $-26.6$ to $-21.4$~kJ/mol for PBEsol, and from $-33.4$ to $-27.0$~kJ/mol for \rscan{}.
+The stronger exothermic mixing predicted by \rscan{} therefore persists across the three isotherms.
+These results quantify a difference in the energetic preference for the alloy relative to its pure liquids.
+They do not, by themselves, identify a particular electronic mechanism or establish chemical short-range order.
+
+\draftnote{The original calorimetric reports behind Ref.~\onlinecite{Witusiewicz2008} are unavailable. The current digitization has an estimated reading tolerance of about 0.2~kJ/mol, which is not an experimental uncertainty. Finalize the digitization and trajectory uncertainty analysis before treating the quoted deviations as publication-ready metrics.}
+
+\subsection{Liquid viscosity}
+\label{sec:results_viscosity}
+
+The available STACIE results provide a transport comparison between PBE and \rscan{}.
+At 1873~K, the \rscan{} viscosity exceeds the PBE viscosity at every sampled composition (Fig.~\ref{fig:viscosity}).
+Both models predict a substantial enhancement at intermediate compositions relative to the Ti endpoint and the most Al-rich sampled alloy.
+The PBE curve reaches its largest sampled value, $5.43\pm0.40$~mPa\,s, at $x_{\mathrm{Al}}=0.40$.
+The \rscan{} curve has a broad high-viscosity region spanning approximately $x_{\mathrm{Al}}=0.40$--0.60, with a largest sampled value of $7.19\pm0.28$~mPa\,s at $x_{\mathrm{Al}}=0.45$.
+The quoted uncertainties are those returned by the estimator.
+They do not establish a precise location or fine structure of the continuous maximum.
+
+\begin{figure*}[t]
+\includegraphics[width=\textwidth]{figures/viscosity.pdf}
+\caption{STACIE viscosity versus composition at 1873~K (a) and temperature for pure Ti (b). Error bars show the supplied estimator standard deviations. The symbols in (a) are values of the experimental temperature correlations of Takeda \textit{et al.}\cite{Takeda2025}; open squares require a 3~K extrapolation beyond the stated measurement ranges. The dashed curve marked with an asterisk in (b) is a provisional transcription of the Ishikawa \textit{et al.}\cite{Ishikawa2012} correlation from the supplied literature review; the shaded band denotes its reported 10.3\% uncertainty, not a specified confidence level.}
+\label{fig:viscosity}
+\end{figure*}
+
+For the experimentally covered alloys, the higher \rscan{} viscosity does not generally improve agreement.
+The temperature correlations of Takeda \textit{et al.}\cite{Takeda2025} provide five matched compositions at 1873~K, corresponding to $x_{\mathrm{Al}}=0.90$, 0.80, 0.70, 0.60, and 0.45.
+PBE is closer at four of these five compositions; \rscan{} is closer at $x_{\mathrm{Al}}=0.90$.
+For example, at $x_{\mathrm{Al}}=0.60$, the correlation gives 3.55~mPa\,s, compared with 4.05~mPa\,s for PBE and 6.54~mPa\,s for \rscan{}.
+At $x_{\mathrm{Al}}=0.45$, the corresponding values are 5.31, 4.88, and 7.19~mPa\,s.
+The last two experimental values involve only a 3~K extrapolation, but this is distinguished explicitly from interpolation.
+The experimental alloy series does not extend to $x_{\mathrm{Al}}<0.45$, so it cannot confirm the predicted maximum and decline on the Ti-rich side.
+
+For pure Ti, \rscan{} predicts a decrease from 3.70~mPa\,s at 1873~K to 2.99~mPa\,s at 2100~K.
+PBE gives 3.26 and 2.65~mPa\,s at those temperatures.
+At 2000~K, PBE gives $2.84\pm0.07$~mPa\,s; the central values of both models decrease monotonically over the sampled temperature range.
+A provisional comparison with the Ishikawa correlation gives a mixed ranking: PBE is closer at 1873 and 1941~K, while \rscan{} is closer at 2000 and 2100~K.
+Most deviations are comparable to the reported experimental uncertainty band.
+The available pure-Ti series therefore does not establish an unambiguous overall advantage for either model in viscosity.
+
+The broad differences between the two model predictions must also be distinguished from the uncertainty of stress-correlation analysis.
+For 25 matched cases in the original trajectory ensembles, TDM and STACIE differed by a median absolute relative amount of 10.6\% and a maximum of 32.2\% relative to STACIE.
+Updated STACIE estimates are not compared with TDM estimates from smaller ensembles.
+The differences have both signs, and trajectory-subset estimates indicate sensitivity to sampling.
+We retain STACIE as the common estimator for the main comparison and do not merge the TDM-only 1773~K series into it.
+
+\draftnote{Preparation and longer-trajectory checks remain pending. Verify the provisional pure-Ti correlation and its uncertainty against the full Ishikawa paper before finalizing this comparison.}
+
+Taken together, the present benchmarks show that the benefit of changing the reference functional depends on the observable.
+The \rscan{} potential raises the Ti melting temperature toward experiment and improves the overall mixing-enthalpy comparison, but these gains do not extend uniformly to lattice dynamics, liquid density, or viscosity.
+The different rankings are the central outcome of the multi-property assessment and motivate a separate discussion of reference-functional effects, residual fitting errors, and sampling limitations.

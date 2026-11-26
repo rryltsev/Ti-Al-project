@@ -1,0 +1,10 @@
+{
+  "updated_date": "2026-10-25",
+  "authorization": "User explicitly prohibited all future VASP runs on A100 nodes",
+  "allowed_partition": "apollo",
+  "excluded_nodes": ["tesla-a101"],
+  "forbidden_accelerator": "A100",
+  "default_walltime": "20:00:00",
+  "walltime_rule": "Use the normal 20h allocation window. Weekend MaxTime is transient and must not be treated as a permanent limit. This is not a cumulative compute budget.",
+  "scope": "All VASP calculations in this project, including CPU-only binaries and future GPU builds"
+}

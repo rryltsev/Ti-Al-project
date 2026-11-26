@@ -1,0 +1,46 @@
+{
+  "id": "pbe-dft-geometry-20261025-01",
+  "checkpoints": [
+    "5000",
+    "20000",
+    "23400"
+  ],
+  "models": {
+    "5000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-5000.pt",
+      "sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac"
+    },
+    "20000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-20000.pt",
+      "sha256": "3b0b4b69f8fca7be5bae4a5f24498aac904efad08f126f4a57de035e0379c67e"
+    },
+    "23400": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-23400.pt",
+      "sha256": "ca0dff4ddcadcf36b4d674cbe378f3199b24d9aa3a029aa42774fc92b3e70c65"
+    }
+  },
+  "geometry_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\POSCAR",
+  "geometry_sha256": "bb123213ff83623624614ed5cc62020e8db2666b8fc118f3e1df7751f8eddcfe",
+  "relaxation": false,
+  "supercell": [
+    9,
+    9,
+    9
+  ],
+  "delta_A": 0.01,
+  "mass_amu": 47.867,
+  "postprocessing_meshes": [
+    [
+      40,
+      40,
+      30
+    ],
+    [
+      50,
+      50,
+      50
+    ]
+  ],
+  "sigma_THz": 0.05,
+  "note": "Exact archived DFT cell and fractional positions, no relaxation; 40x40x30 matches the documented DFT mesh dimensions; raw mesh.yaml is unavailable."
+}

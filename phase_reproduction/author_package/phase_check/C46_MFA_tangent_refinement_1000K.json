@@ -1,0 +1,80 @@
+[
+  {
+    "kind": "static",
+    "T_K": 1000,
+    "c_alpha": 0.061592858221157294,
+    "c_alpha2": 0.2079865638856984,
+    "derivative_checks": [
+      {
+        "derivative_step": 1e-05,
+        "c_alpha": 0.06159285832718823,
+        "c_alpha2": 0.2079865632383477,
+        "residual_eV": 2.220446049250313e-10
+      },
+      {
+        "derivative_step": 5e-06,
+        "c_alpha": 0.061592858221157294,
+        "c_alpha2": 0.2079865638856984,
+        "residual_eV": 1.7763568394002505e-10
+      }
+    ],
+    "min_support_gap_eV_atom": 8.492584413488657e-11,
+    "grid_contact_error_at_pct": [
+      0.009285822115729508,
+      -0.0013436114301629276
+    ],
+    "interpretation": "Numerical root refinement of the specified one-plus-three-sublattice MFA, not an uncertainty estimate"
+  },
+  {
+    "kind": "HA_C40",
+    "T_K": 1000,
+    "c_alpha": 0.08925707732412336,
+    "c_alpha2": 0.19420950921328306,
+    "derivative_checks": [
+      {
+        "derivative_step": 1e-05,
+        "c_alpha": 0.08925707727122258,
+        "c_alpha2": 0.194209508748107,
+        "residual_eV": 1.3322676295501878e-10
+      },
+      {
+        "derivative_step": 5e-06,
+        "c_alpha": 0.08925707732412336,
+        "c_alpha2": 0.19420950921328306,
+        "residual_eV": 1.4773826606528928e-10
+      }
+    ],
+    "min_support_gap_eV_atom": 1.595126430942173e-08,
+    "grid_contact_error_at_pct": [
+      -0.024292267587663896,
+      0.02095092132830545
+    ],
+    "interpretation": "Numerical root refinement of the specified one-plus-three-sublattice MFA, not an uncertainty estimate"
+  },
+  {
+    "kind": "QHA",
+    "T_K": 1000,
+    "c_alpha": 0.08788649234330713,
+    "c_alpha2": 0.21307738800642895,
+    "derivative_checks": [
+      {
+        "derivative_step": 1e-05,
+        "c_alpha": 0.08788649238648058,
+        "c_alpha2": 0.2130773874913753,
+        "residual_eV": 4.440892098500626e-11
+      },
+      {
+        "derivative_step": 5e-06,
+        "c_alpha": 0.08788649234330713,
+        "c_alpha2": 0.21307738800642895,
+        "residual_eV": 4.083977600544131e-11
+      }
+    ],
+    "min_support_gap_eV_atom": 3.5079112947755675e-09,
+    "grid_contact_error_at_pct": [
+      -0.011350765669286556,
+      0.007738800642895227
+    ],
+    "interpretation": "Numerical root refinement of the specified one-plus-three-sublattice MFA, not an uncertainty estimate"
+  }
+]

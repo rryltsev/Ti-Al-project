@@ -1,0 +1,30 @@
+{
+  "path": "/home/u3129/miniconda3/envs/lammps_deepmd_dpa4/lib/python3.12/site-packages/deepmd/pt/entrypoints/main.py",
+  "sha256": "803505f7861d48285bd68ef531df6a3066af8e96a83622b3746d2ffdcb229186",
+  "hits": [
+    {
+      "line": 150,
+      "context": "        model_params_single: dict[str, Any],\n        data_dict_single: dict[str, Any],\n        rank: int = 0,\n        seed: int | None = None,\n    ) -> tuple[\n        DpLoaderSet | LmdbDataset,\n        DpLoaderSet | LmdbDataset | None,\n        StatFileSpec,"
+    },
+    {
+      "line": 174,
+      "context": "            data_dict_single.get(\"stat_file_mode\", \"update\"),\n        )\n\n        rank_seed = [rank, seed % (2**32)] if seed is not None else None\n\n        def _make_dp_loader_set(\n            systems: str | list[str],\n            dataset_params: dict[str, Any],"
+    },
+    {
+      "line": 187,
+      "context": "                systems,\n                dataset_params[\"batch_size\"],\n                model_params_single[\"type_map\"],\n                seed=rank_seed,\n                modifier=modifier,\n            )\n\n        # LMDB path: single string \u2192 LmdbDataset"
+    },
+    {
+      "line": 233,
+      "context": "        )\n\n    rank = dist.get_rank() if dist.is_available() and dist.is_initialized() else 0\n    data_seed = config[\"training\"].get(\"seed\", None)\n    if not multi_task:\n        (\n            train_data,\n            validation_data,"
+    },
+    {
+      "line": 243,
+      "context": "            config[\"model\"],\n            config[\"training\"],\n            rank=rank,\n            seed=data_seed,\n        )\n    else:\n        train_data, validation_data, stat_file_spec = {}, {}, {}\n        for model_key in config[\"model\"][\"model_dict\"]:"
+    },
+    {
+      "line": 256,
+      "context": "                config[\"model\"][\"model_dict\"][model_key],\n                config[\"training\"][\"data_dict\"][model_key],\n                rank=rank,\n                seed=data_seed,\n            )\n\n    trainer = training.Trainer(\n        config,"
+    }
+  ]
+}

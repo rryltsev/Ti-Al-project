@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "composition": "Ti",
+      "E_match": true
+    },
+    {
+      "composition": "Al",
+      "E_match": true
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "E_match": true
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "E_match": true
+    }
+  ],
+  "benchmarks": [
+    {
+      "checkpoint": 15000,
+      "seconds_200_steps": 110.99384727701545,
+      "projected_60ps_hours": 9.24948727308462
+    },
+    {
+      "checkpoint": 20000,
+      "seconds_200_steps": 110.96245526708663,
+      "projected_60ps_hours": 9.246871272257218
+    }
+  ],
+  "versions": {
+    "ase": "3.29.0",
+    "deepmd-kit": "3.2.0",
+    "torch": "2.11.0",
+    "numpy": "2.5.3"
+  },
+  "protocol_sha256": "a2468d0677bb716f450dd535c8f1f60de2b8621785181d164eb92edf13a2d5c5"
+}

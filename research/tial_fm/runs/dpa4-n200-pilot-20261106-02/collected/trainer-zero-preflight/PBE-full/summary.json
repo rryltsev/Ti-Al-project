@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "method": "full",
+  "XC": "PBE",
+  "checks": [
+    {
+      "id": "tial-selected-0070",
+      "live_vs_merged": {
+        "energy_delta_eV_atom": 0.0,
+        "force_max_eV_A": 0.0,
+        "virial_max_eV": 0.0
+      },
+      "source_restoration": {
+        "energy_delta_eV_atom": 0.0026180175900084057,
+        "force_max_eV_A": 0.0,
+        "virial_max_eV": 0.0
+      }
+    },
+    {
+      "id": "tial-selected-0687",
+      "live_vs_merged": {
+        "energy_delta_eV_atom": 0.0,
+        "force_max_eV_A": 0.0,
+        "virial_max_eV": 0.0
+      },
+      "source_restoration": {
+        "energy_delta_eV_atom": 0.0020575932379788353,
+        "force_max_eV_A": 0.0,
+        "virial_max_eV": 0.0
+      }
+    },
+    {
+      "id": "tial-selected-0299",
+      "live_vs_merged": {
+        "energy_delta_eV_atom": 0.0,
+        "force_max_eV_A": 0.0,
+        "virial_max_eV": 0.0
+      },
+      "source_restoration": {
+        "energy_delta_eV_atom": 0.0015402784514897405,
+        "force_max_eV_A": 0.0,
+        "virial_max_eV": 0.0
+      }
+    }
+  ],
+  "mask_equals_preflight": true,
+  "total": 1124686,
+  "trainable": 1124686,
+  "energy_offset_Al_Ti_eV": [
+    0.002618017590008449,
+    0.0015402784514897878
+  ],
+  "composition_offset_residual_eV_atom": 9.020562075079397e-17,
+  "optimizer_steps_executed": 0,
+  "qualification": "Exact training configuration except one-step schedule used for initialization; execution stopped immediately after Trainer initialization. GPU runs start anew with original50epoch schedule and independent statistics."
+}

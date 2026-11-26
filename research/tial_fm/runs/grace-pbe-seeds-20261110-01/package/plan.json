@@ -1,0 +1,666 @@
+{
+  "id": "grace-pbe-seeds-20261110-01",
+  "model": "GRACE-2L-OMAT-medium-base-fp64",
+  "source_checkpoint": "/home6/u3129/tial-fm-research/grace-2l-preparation-20261107-01/checkpoint",
+  "source_hashes": {
+    "checkpoint.data-00000-of-00001": "b0edbae73335e32b55e8bb64c7f4fe3cac4d5b01ea277dc5db1ac61a0d1231e5",
+    "checkpoint.index": "e6b88f7815fb91bc8687079fc177e4d88ba4640528101855e7c6eff61a4939d1",
+    "model.yaml": "9d2c48d499253916fc02189f3dbee87c079dfdf87d86770a986315e073c0c15c"
+  },
+  "cases": [
+    {
+      "name": "PBE-full-N200-seed20",
+      "XC": "PBE",
+      "method": "full",
+      "N": 200,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "steps": 10000,
+      "expected_trainable": 21764956
+    },
+    {
+      "name": "PBE-restricted-N200-seed20",
+      "XC": "PBE",
+      "method": "restricted",
+      "N": 200,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "steps": 10000,
+      "expected_trainable": 21111690
+    },
+    {
+      "name": "PBE-restricted_mlp-N200-seed20",
+      "XC": "PBE",
+      "method": "restricted_mlp",
+      "N": 200,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "steps": 10000,
+      "trainable_patterns": [
+        "I2/reducing_",
+        "rho/reducing_",
+        "I1/reducing_",
+        "LinMLPOut2ScalarTarget_"
+      ],
+      "expected_trainable": 21112778,
+      "expected_trainable_tensors": 14
+    },
+    {
+      "name": "PBE-restricted_radial-N200-seed20",
+      "XC": "PBE",
+      "method": "restricted_radial",
+      "N": 200,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "steps": 10000,
+      "trainable_patterns": [
+        "I2/reducing_",
+        "rho/reducing_",
+        "I1/reducing_",
+        "R_Linear_",
+        "R1_Linear_"
+      ],
+      "expected_trainable": 21144842,
+      "expected_trainable_tensors": 18
+    },
+    {
+      "name": "PBE-full-N200-seed30",
+      "XC": "PBE",
+      "method": "full",
+      "N": 200,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "steps": 10000,
+      "expected_trainable": 21764956
+    },
+    {
+      "name": "PBE-restricted-N200-seed30",
+      "XC": "PBE",
+      "method": "restricted",
+      "N": 200,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "steps": 10000,
+      "expected_trainable": 21111690
+    },
+    {
+      "name": "PBE-restricted_mlp-N200-seed30",
+      "XC": "PBE",
+      "method": "restricted_mlp",
+      "N": 200,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "steps": 10000,
+      "trainable_patterns": [
+        "I2/reducing_",
+        "rho/reducing_",
+        "I1/reducing_",
+        "LinMLPOut2ScalarTarget_"
+      ],
+      "expected_trainable": 21112778,
+      "expected_trainable_tensors": 14
+    },
+    {
+      "name": "PBE-restricted_radial-N200-seed30",
+      "XC": "PBE",
+      "method": "restricted_radial",
+      "N": 200,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "steps": 10000,
+      "trainable_patterns": [
+        "I2/reducing_",
+        "rho/reducing_",
+        "I1/reducing_",
+        "R_Linear_",
+        "R1_Linear_"
+      ],
+      "expected_trainable": 21144842,
+      "expected_trainable_tensors": 18
+    }
+  ],
+  "precision": "float64",
+  "test_access": false,
+  "new_DFT": false,
+  "max_concurrent_GPU_jobs": 1,
+  "recipe": "Adam LR1e-3 ->1e-4 cosine, Huber E/F/stress16/32/128, batch1, 50epochs, noEMA, fixed final checkpoint; same XC train-only alignment across full/restricted.",
+  "restricted_patterns": [
+    "I2/reducing_",
+    "rho/reducing_",
+    "I1/reducing_"
+  ],
+  "training_selection": "Final step10000, no best-validation reload. Smoke models are discarded.",
+  "parents": [
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02",
+      "case": {
+        "name": "PBE-full-N200-seed10",
+        "XC": "PBE",
+        "method": "full",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "ti3al_name": "GRACE-full-N200-seed10"
+    },
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02",
+      "case": {
+        "name": "PBE-restricted-N200-seed10",
+        "XC": "PBE",
+        "method": "restricted",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "ti3al_name": "GRACE-restricted-N200-seed10"
+    },
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-n200-mask-ablation-20261109-01",
+      "case": {
+        "name": "PBE-restricted_mlp-N200-seed10",
+        "XC": "PBE",
+        "method": "restricted_mlp",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "LinMLPOut2ScalarTarget_"
+        ],
+        "expected_trainable": 21112778,
+        "expected_trainable_tensors": 14
+      },
+      "ti3al_name": "GRACE-restricted_mlp-N200-seed10"
+    },
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-n200-mask-ablation-20261109-01",
+      "case": {
+        "name": "PBE-restricted_radial-N200-seed10",
+        "XC": "PBE",
+        "method": "restricted_radial",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "R_Linear_",
+          "R1_Linear_"
+        ],
+        "expected_trainable": 21144842,
+        "expected_trainable_tensors": 18
+      },
+      "ti3al_name": "GRACE-restricted_radial-N200-seed10"
+    }
+  ],
+  "ti3al_parent": "/home6/u3129/tial-fm-research/ti3al-pbe-phonons-20261109-02",
+  "initial_parameter_signatures": {
+    "PBE": [
+      [
+        "A1/w_left_FC:0",
+        [
+          42,
+          42,
+          5
+        ],
+        "c28f623c76b312b08ef8ae40b0d9bc186e72929bf0ab68f7643cf9e5c511ed68"
+      ],
+      [
+        "A1/w_right_FC:0",
+        [
+          42,
+          42,
+          5
+        ],
+        "1d34859e7432cad5022bf1d3cdbe33750c82f34a31f86ced14005acb2ad64acd"
+      ],
+      [
+        "AA1/w_left_FC:0",
+        [
+          42,
+          42,
+          27
+        ],
+        "78b867290621c1194106095f3d4b0f4a1922deea1f26e76f99cdfeebee0cf9da"
+      ],
+      [
+        "AA1/w_right_FC:0",
+        [
+          42,
+          42,
+          27
+        ],
+        "2a4c79decd6eec7ed78ab11467fd5a6dc2e32b2a907bd20670abd3069752768e"
+      ],
+      [
+        "AA2/w_left_FC:0",
+        [
+          42,
+          42,
+          27
+        ],
+        "842422b42b9fa06267aa08d10ba358e9a64339975f0031574f54edb8b8d5a8f2"
+      ],
+      [
+        "AA2/w_right_FC:0",
+        [
+          42,
+          42,
+          27
+        ],
+        "768d36406b61e5c4d1a77ac326d10781cad1a7c039ce18e313c0bd662d2bf732"
+      ],
+      [
+        "A_ChemIndTransf/DenseLayer_A_ChemIndTransf__:0",
+        [
+          128,
+          42
+        ],
+        "d6140dd47a3080a25537210df8be1d500a61e6e88baf24506071cb1883af768e"
+      ],
+      [
+        "B/reducing_B0:0",
+        [
+          64,
+          32,
+          4
+        ],
+        "0f6e72acf3c37376662b598a4d44ebf75ae5781f22575bb34334d3c4b5fb4a25"
+      ],
+      [
+        "B/reducing_YI:0",
+        [
+          64,
+          32,
+          14
+        ],
+        "4ca9e19fe99fb0188770e424f10262bb94f39197bb6f295b502d6c758c9e44f5"
+      ],
+      [
+        "B0_ChemIndTransf/DenseLayer_B0_ChemIndTransf__:0",
+        [
+          128,
+          32
+        ],
+        "cffe144c655bd716b855303bde66e83a9cea1ac82c638a55dd0559ddcd9744b5"
+      ],
+      [
+        "B1/w_left_FC:0",
+        [
+          64,
+          64,
+          7
+        ],
+        "220d229df89bab54c64722c3e85d3adb55640cdc79a13a98d23e7ac7a88251ab"
+      ],
+      [
+        "B1/w_right_FC:0",
+        [
+          64,
+          64,
+          7
+        ],
+        "a90887be0464f88346fe877ff572c0e1ee18289734e2a98f91018da9b278d9ab"
+      ],
+      [
+        "BB1/w_left_FC:0",
+        [
+          64,
+          64,
+          18
+        ],
+        "9e53ce53a9cae18c4a6466ba0193916610b3d506883b5703b30c498241956134"
+      ],
+      [
+        "BB1/w_right_FC:0",
+        [
+          64,
+          64,
+          18
+        ],
+        "d567740c20ced7e427ac8d13eb6e4f3f447ea3f5ae29d82aded389e066e7d736"
+      ],
+      [
+        "BB2/w_left_FC:0",
+        [
+          64,
+          64,
+          18
+        ],
+        "8422466f2183390a471d97a22d00e90ad06f8825697ebc71e12988eb684f8400"
+      ],
+      [
+        "BB2/w_right_FC:0",
+        [
+          64,
+          64,
+          18
+        ],
+        "bc989648a520a95a86a396a64b5b2d0f707234fcf00ea1d97f2d9216f2b55da0"
+      ],
+      [
+        "I/reducing_I1:0",
+        [
+          32,
+          12,
+          2
+        ],
+        "abc09665f05c4f2f2e3be3c80c2a4b195f1346aa7c096095d351938b892392d2"
+      ],
+      [
+        "I1/reducing_A:0",
+        [
+          89,
+          12,
+          42,
+          2
+        ],
+        "a9dc618b020e10c479b169633c27ce20018cbe5ad4b31700bca212e225194d31"
+      ],
+      [
+        "I1/reducing_AA:0",
+        [
+          89,
+          12,
+          42,
+          9
+        ],
+        "2be2932639ab1864642abe357298ac28f550bd3714b455f37861f21571c59978"
+      ],
+      [
+        "I1/reducing_AAA:0",
+        [
+          89,
+          12,
+          42,
+          45
+        ],
+        "b87698619160f73a01cddebb3b8e119b3f08a8883d9186fcfa0482eab7c7f100"
+      ],
+      [
+        "I1/reducing_AAAA:0",
+        [
+          89,
+          12,
+          42,
+          172
+        ],
+        "b30b5b288936bfe2d1b105fb3b07ac53cba91e6104657ee16ffbacf768a49527"
+      ],
+      [
+        "I2/reducing_B:0",
+        [
+          89,
+          17,
+          64,
+          1
+        ],
+        "761d0baac894d39fe0b2d83ac63b754af0086bb492bf3adad27c3ed0614d223d"
+      ],
+      [
+        "I2/reducing_BB:0",
+        [
+          89,
+          17,
+          64,
+          4
+        ],
+        "2c32a509cd7b2733fd20718964bda06a5a4675dd787be33463673d82f8c103f0"
+      ],
+      [
+        "I2/reducing_BBB:0",
+        [
+          89,
+          17,
+          64,
+          11
+        ],
+        "779c45a4470e3869d1c323026a0e991d5574b1b7024a02964a4b4063068ea309"
+      ],
+      [
+        "I2/reducing_BBBB:0",
+        [
+          89,
+          17,
+          64,
+          38
+        ],
+        "50bbc6121c91655e893afc32a2fef3d7ccf1e300ff165ba7c869b3706d3147d1"
+      ],
+      [
+        "LinMLPOut2ScalarTarget_MLP_layer0/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer0__:0",
+        [
+          16,
+          64
+        ],
+        "a1ad4428ec640ffea6accfdf0a556baf56922f6568c5c49ff7e4b7a4624e0746"
+      ],
+      [
+        "LinMLPOut2ScalarTarget_MLP_layer1/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer1__:0",
+        [
+          64,
+          1
+        ],
+        "66fd316f773ecbb0b7f6396b328733d99ce730eb9a4f1afbdb162df79e2c8511"
+      ],
+      [
+        "R1_Linear_0/Linear_R1_Linear_0_no_decay:0",
+        [
+          10,
+          64
+        ],
+        "3a543a3a3c9e971ced622cfc4ccf5e535ba9e7e216ea0e09e2b651a0670701bd"
+      ],
+      [
+        "R1_Linear_1/Linear_R1_Linear_1_no_decay:0",
+        [
+          64,
+          64
+        ],
+        "9a2382a0be86b0b5e16401fe323824ddf282fd5246b30edc4e7cb99be4f21063"
+      ],
+      [
+        "R1_Linear_2/Linear_R1_Linear_2_no_decay:0",
+        [
+          64,
+          160
+        ],
+        "40260d826ae84b45bf2dc0186c16cf244ffebd761244ad4d503ded0cccbf7905"
+      ],
+      [
+        "R_Linear_0/Linear_R_Linear_0_no_decay:0",
+        [
+          10,
+          64
+        ],
+        "ac420e9ea6c042038e4e4d552959cd49df85db6f5026f875eb55b98e8394ec7c"
+      ],
+      [
+        "R_Linear_1/Linear_R_Linear_1_no_decay:0",
+        [
+          64,
+          64
+        ],
+        "dd2b72049bf46c0707e9e07d0994d7588fc8db12ac4bd045e905d0fe4413fca0"
+      ],
+      [
+        "R_Linear_2/Linear_R_Linear_2_no_decay:0",
+        [
+          64,
+          210
+        ],
+        "4b34639cb5282016a00ed4088b3988592ce95aa00611fd8717912a5968a093ab"
+      ],
+      [
+        "RadialBasis/cutoff:0",
+        [],
+        "3e6357a56fbae74413051d518261f4b70e5b3758172a70e7f101e996e00a9ee0"
+      ],
+      [
+        "Variable:0",
+        [
+          1,
+          16,
+          1
+        ],
+        "79f9bee923f91406dddeea3248a8daec74e85f12438c5a1607ce11995b531979"
+      ],
+      [
+        "Variable:0",
+        [
+          1,
+          17,
+          1
+        ],
+        "49ecd70e4b59104633628ce7b36ea9fa43895bc23494c73b850d13697605f8e2"
+      ],
+      [
+        "Z/ChemicalEmbedding:0",
+        [
+          89,
+          128
+        ],
+        "cd206d5a2c0b90037a4c01a4d72ac650323feb6ba05ee36fe5f8979081f89791"
+      ],
+      [
+        "element_map_index:0",
+        [
+          89
+        ],
+        "b5e4c3be1915d81b9cdc6a718728ff7f06ceb0c29b35ec51a73890a8bc179ca5"
+      ],
+      [
+        "element_map_symbols:0",
+        [
+          89
+        ],
+        "36dc0b1619c4cf747109d76156d92e3023a0474591c9b005b1e7fde3bebd18e7"
+      ],
+      [
+        "rho/reducing_A:0",
+        [
+          89,
+          17,
+          42,
+          1
+        ],
+        "58bb7689a9ac33f10272ebca98dcacb76f862937d976f6feba159f1f42782ef6"
+      ],
+      [
+        "rho/reducing_AA:0",
+        [
+          89,
+          17,
+          42,
+          5
+        ],
+        "a6b69cd16e74a1d50b5976dd18a014f023b79c41fdb4707dd91dbb8656066d90"
+      ],
+      [
+        "rho/reducing_AAA:0",
+        [
+          89,
+          17,
+          42,
+          14
+        ],
+        "bd66145e935bc33926a3984773271ae07e5868721429b857f41e514b0733db0c"
+      ],
+      [
+        "rho/reducing_AAAA:0",
+        [
+          89,
+          17,
+          42,
+          69
+        ],
+        "e3022195a15cb6af5b2387e188974e96db637d1f9161168e32229217c67aa6e3"
+      ],
+      [
+        "tr_atomic_shift:0",
+        [
+          89,
+          1
+        ],
+        "a53677ddafa246a664595c6971112fde1ea8565182c33ceba0ead9ca1c53c390"
+      ]
+    ]
+  },
+  "active_XC": [
+    "PBE"
+  ],
+  "paused_XC": [
+    "r2SCAN"
+  ],
+  "matched_batches": "Within XC and seed; production must match own discarded smoke.",
+  "controlled_changes": {
+    "PBE-full-N200-seed20": {
+      "parent": "PBE-full-N200-seed10",
+      "source_run": "grace-n200-fp64-pilot-20261109-02",
+      "only_scientific_change": "seed",
+      "input_sha256": "3b5dc8d4438b632152b23c3cbb867050908871fd5f6411d7d2b6a68625e348c8"
+    },
+    "PBE-full-N200-seed30": {
+      "parent": "PBE-full-N200-seed10",
+      "source_run": "grace-n200-fp64-pilot-20261109-02",
+      "only_scientific_change": "seed",
+      "input_sha256": "14927bb9b3138db244c3b6198a401159c393ca1673d38fd9a4d2ae0c03ca0f72"
+    },
+    "PBE-restricted-N200-seed20": {
+      "parent": "PBE-restricted-N200-seed10",
+      "source_run": "grace-n200-fp64-pilot-20261109-02",
+      "only_scientific_change": "seed",
+      "input_sha256": "363406e4250c306cc1f214b2225e7c14eee8694a655f2b57c184805a2b1d37e9"
+    },
+    "PBE-restricted-N200-seed30": {
+      "parent": "PBE-restricted-N200-seed10",
+      "source_run": "grace-n200-fp64-pilot-20261109-02",
+      "only_scientific_change": "seed",
+      "input_sha256": "de9db28c69446e7e6ccb8710fd7f07205cf8ca082bd35f060f6c81183cc9fba2"
+    },
+    "PBE-restricted_mlp-N200-seed20": {
+      "parent": "PBE-restricted_mlp-N200-seed10",
+      "source_run": "grace-n200-mask-ablation-20261109-01",
+      "only_scientific_change": "seed",
+      "input_sha256": "20697cf0fface5f04118f2ce0a29ff7557e24fbd385d3e4c9a39cff01c425db5"
+    },
+    "PBE-restricted_mlp-N200-seed30": {
+      "parent": "PBE-restricted_mlp-N200-seed10",
+      "source_run": "grace-n200-mask-ablation-20261109-01",
+      "only_scientific_change": "seed",
+      "input_sha256": "b0049bcb09dae3cc83259ccf0a6bf03e21025daf22d8815d1487e14cce8e59e6"
+    },
+    "PBE-restricted_radial-N200-seed20": {
+      "parent": "PBE-restricted_radial-N200-seed10",
+      "source_run": "grace-n200-mask-ablation-20261109-01",
+      "only_scientific_change": "seed",
+      "input_sha256": "d225db302984525b9cc607193bf47349c75cc1f150601e67480e00bf419aa20f"
+    },
+    "PBE-restricted_radial-N200-seed30": {
+      "parent": "PBE-restricted_radial-N200-seed10",
+      "source_run": "grace-n200-mask-ablation-20261109-01",
+      "only_scientific_change": "seed",
+      "input_sha256": "fc378769601a3e182a10b034f06414f49728211d21a89eefdf9167ec7f2bbbb7"
+    }
+  }
+}

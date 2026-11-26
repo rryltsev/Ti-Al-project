@@ -1,0 +1,36 @@
+{
+  "revision": "production-03",
+  "authorization": "User: \u0420\u0491\u0420\u00b0\u0420\u0406\u0420\u00b0\u0420\u2116 \u0420\u0405\u0420\u00b5 \u0420\u0491\u0421\u0453\u0420\u0458\u0420\u00b0\u0421\u201a\u0421\u040a \u0420\u0455 \u0420\u00bb\u0420\u0451\u0420\u0458\u0420\u0451\u0421\u201a\u0420\u00b0\u0421\u2026, \u0420\u0456\u0420\u00bb\u0420\u00b0\u0420\u0406\u0420\u0405\u0420\u0455\u0420\u00b5 - \u0420\u0406\u0421\u2039\u0420\u0457\u0420\u0455\u0420\u00bb\u0420\u0405\u0420\u0451\u0421\u201a\u0421\u040a \u0420\u00b7\u0420\u00b0\u0420\u0491\u0420\u00b0\u0421\u2021\u0421\u0453. \u0420\u045b\u0421\u201a\u0420\u0458\u0420\u00b5\u0420\u0405\u0420\u0451 \u0420\u0406\u0420\u0455\u0420\u0455\u0420\u00b1\u0421\u2030\u0420\u00b5 \u0420\u00bb\u0420\u0451\u0420\u0458\u0420\u0451\u0421\u201a\u0421\u2039 \u0420\u0457\u0420\u0455 \u0421\u0402\u0420\u00b5\u0421\u0403\u0421\u0453\u0421\u0402\u0421\u0403\u0420\u00b0\u0420\u0458",
+  "authorized_local_date": "2026-10-21",
+  "maximum_cumulative_CPU_hours": null,
+  "agent_imposed_elapsed_deadline": null,
+  "partition": "apollo",
+  "account": "imet-2026-2",
+  "qos": "normal",
+  "scheduler_max_walltime_per_job": "20:00:00",
+  "standard": {
+    "nodes": 2,
+    "ranks": 64,
+    "ranks_per_node": 32,
+    "memory_GiB_per_node": 300,
+    "KPAR": 8,
+    "NCORE": 4,
+    "NBANDS": 576
+  },
+  "dense_kmesh": {
+    "nodes": 2,
+    "ranks": 64,
+    "ranks_per_node": 32,
+    "memory_GiB_per_node": 300,
+    "KPAR": 4,
+    "NCORE": 4,
+    "NBANDS": 576
+  },
+  "steps": [
+    "force-001"
+  ],
+  "continuation": "Each calculation is a separate Slurm job. Submit subsequent steps after validating completed steps. No cumulative budget gate. Do not repeat failed settings unchanged.",
+  "checkpoint_policy": "Minimum 8h reserve; max(8h, 2*recent SCF maximum + 3h finalization). Preserve densities; no wavefunction storage change.",
+  "scientific_settings_source": "Original immutable remote protocol.json; local protocol.json now records the new resource authorization. Physical settings unchanged.",
+  "reason": "PBEsol production-02 TIMEOUT after soft-stop during force finalization; no checkpoint survived"
+}

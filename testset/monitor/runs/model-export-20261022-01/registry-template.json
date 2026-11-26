@@ -1,0 +1,9 @@
+{
+  "status": "awaiting_accessible_article_models",
+  "policy": "Freeze paths and SHA256 of the three article models before evaluating test errors. Do not substitute foundation models, select checkpoints, refit offsets or train on Test50.",
+  "models": {
+    "PBE": {"path": null, "sha256": null, "article_run": "TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047"},
+    "PBEsol": {"path": null, "sha256": null, "article_run": "TiAl_tune_sol_Neo_DPA4_shard_20260920_040140"},
+    "r2SCAN": {"path": null, "sha256": null, "article_run": "TiAl_tune_scan_Neo_DPA4_shard_20260919_153828"}
+  }
+}

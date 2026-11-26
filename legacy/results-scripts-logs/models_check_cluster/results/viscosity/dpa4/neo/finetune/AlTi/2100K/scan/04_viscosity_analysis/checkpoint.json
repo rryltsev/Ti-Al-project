@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "version": 1,
+    "input_hash": "a1da55c680ff",
+    "params_hash": "c38401cc762a",
+    "params_snapshot": {
+      "T": 2100.0,
+      "n_snapshots": 50
+    },
+    "created_at": "2026-10-18T18:07:45.475817",
+    "updated_at": "2026-10-18T18:07:46.249121"
+  },
+  "cases": {
+    "c_Ti_1.00": {
+      "status": "completed",
+      "c_Ti": 1.0,
+      "input_dir": "/home/u2626/_scratch2/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2100K/scan/03_stress_autocorr/c_Ti_1.00",
+      "output_dir": "/home/u2626/_scratch2/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2100K/scan/04_viscosity_analysis/c_Ti_1.00",
+      "n_snapshots_requested": 50,
+      "n_snapshots_used": 15,
+      "viscosity_mPa_s": 3.5234481277491874,
+      "kinematic_visc_m2_s": 8.189452436802669e-07,
+      "fit_params": {
+        "A": 0.0013421303829866682,
+        "alpha": 9.999999815071572,
+        "tau1": 683.6563598021617,
+        "tau2": 467.9220448060833,
+        "viscosity_mPa_s": 3.5234481277491874,
+        "kinematic_visc_m2_s": 8.189452436802669e-07,
+        "cutoff_right": 4650,
+        "A_nw": 0.0014417114098627278,
+        "alpha_nw": 9.999997915349693,
+        "tau1_nw": 647.5512704607511,
+        "tau2_nw": 449.9904387200286
+      },
+      "T": 2100.0,
+      "completed_at": "2026-10-18T18:07:46.249098"
+    }
+  }
+}

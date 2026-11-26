@@ -1,0 +1,277 @@
+{
+  "id": "dpa4-n694-seeds-20261107-01",
+  "remote_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01",
+  "parent_run": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-replicates-full-20261106-02",
+  "cases": [
+    {
+      "name": "PBE-lora16-N694-seed20",
+      "XC": "PBE",
+      "method": "lora16",
+      "N": 694,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "expected_steps": 34700,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "1be9459d247a4b6e211466f6120346dbc28384915931725266f4b04a4a6f2359",
+      "data_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/data/N694",
+      "dataset_manifest": "dataset-files-N694.json",
+      "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+      "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+    },
+    {
+      "name": "PBE-full-N694-seed20",
+      "XC": "PBE",
+      "method": "full",
+      "N": 694,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "expected_steps": 34700,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "cde4b75b5d99aed46a94aa8a64171ebf41cf6f3201d9cf3491a72c0c7eb967f4",
+      "data_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/data/N694",
+      "dataset_manifest": "dataset-files-N694.json",
+      "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+      "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+    },
+    {
+      "name": "r2SCAN-lora16-N694-seed20",
+      "XC": "r2SCAN",
+      "method": "lora16",
+      "N": 694,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "expected_steps": 34700,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "adcf17ce84e73c56127a5be4f3e98226d711fcda4f8e3963b76b1633b3add35f",
+      "data_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/data/N694",
+      "dataset_manifest": "dataset-files-N694.json",
+      "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+      "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+    },
+    {
+      "name": "r2SCAN-full-N694-seed20",
+      "XC": "r2SCAN",
+      "method": "full",
+      "N": 694,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "expected_steps": 34700,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "2a45dc1702c19c042312664007fb08a9e1fd128693ba33d1d4f7f8cf45764fbe",
+      "data_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/data/N694",
+      "dataset_manifest": "dataset-files-N694.json",
+      "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+      "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+    },
+    {
+      "name": "PBE-lora16-N694-seed30",
+      "XC": "PBE",
+      "method": "lora16",
+      "N": 694,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "expected_steps": 34700,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "cf3709c59d92bfe8cfd297e3913554288ba85cd191ae44100f91974509a33b2c",
+      "data_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/data/N694",
+      "dataset_manifest": "dataset-files-N694.json",
+      "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+      "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+    },
+    {
+      "name": "PBE-full-N694-seed30",
+      "XC": "PBE",
+      "method": "full",
+      "N": 694,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "expected_steps": 34700,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "5e30985ba0c23f5269d4de830478d17f8041b8f1ad5fe746a908e372bc27aa51",
+      "data_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/data/N694",
+      "dataset_manifest": "dataset-files-N694.json",
+      "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+      "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+    },
+    {
+      "name": "r2SCAN-lora16-N694-seed30",
+      "XC": "r2SCAN",
+      "method": "lora16",
+      "N": 694,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "expected_steps": 34700,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "9e5e0b962505b6208cc50d2a687ebde0cdb4d489082115e68a3676a86091c2eb",
+      "data_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/data/N694",
+      "dataset_manifest": "dataset-files-N694.json",
+      "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+      "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+    },
+    {
+      "name": "r2SCAN-full-N694-seed30",
+      "XC": "r2SCAN",
+      "method": "full",
+      "N": 694,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "expected_steps": 34700,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "b9ca47a95bd3eb8945870af4f927ff8d4081467586d0e493e039c941c37ef92d",
+      "data_root": "/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/data/N694",
+      "dataset_manifest": "dataset-files-N694.json",
+      "dataset_manifest_sha256": "9a65d656e034b32e14273e503150642b630ab251e001ea6dfa6fd74af2849e68",
+      "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+    }
+  ],
+  "groups": {
+    "N694": [
+      "PBE-lora16-N694-seed20",
+      "PBE-full-N694-seed20",
+      "r2SCAN-lora16-N694-seed20",
+      "r2SCAN-full-N694-seed20",
+      "PBE-lora16-N694-seed30",
+      "PBE-full-N694-seed30",
+      "r2SCAN-lora16-N694-seed30",
+      "r2SCAN-full-N694-seed30"
+    ]
+  },
+  "existing_seed10": {
+    "PBE-lora16": {
+      "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-lora16",
+      "model_sha256": "43eb4a388b321d882bbb429a5931a1e6447afca6f5ccd0bec05152d8063975c8",
+      "seed": 10,
+      "N": 200
+    },
+    "PBE-full": {
+      "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-full",
+      "model_sha256": "4060086208e4735e78bd52f3637f0f7fd4a350b883878b6a3d5bfcc564facf73",
+      "seed": 10,
+      "N": 200
+    },
+    "r2SCAN-lora16": {
+      "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/r2SCAN-lora16",
+      "model_sha256": "a9a16d1abb76fbca781337601b34abf1abbf873860f0953ddbc3857aebf13c56",
+      "seed": 10,
+      "N": 200
+    },
+    "r2SCAN-full": {
+      "remote_path": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/r2SCAN-full",
+      "model_sha256": "0e43c963fdf0daa29553800e15d2ff70c4946e88a1a72da42db824d54ce060a6",
+      "seed": 10,
+      "N": 200
+    },
+    "PBE-lora16-N694-seed10": {
+      "remote_path": "/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-02/training-plan01/cases/PBE-lora16-N694-seed10",
+      "model_sha256": "d4eb49b4cfc819b68ef53cd9d2de8581afadd68556999d4947632644eb0559cd",
+      "seed": 10,
+      "N": 694
+    },
+    "PBE-full-N694-seed10": {
+      "remote_path": "/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-02/training-plan01/cases/PBE-full-N694-seed10",
+      "model_sha256": "b6babcc37e91abcc310a776a8fdcced630e2c393e9c1dba3a1a017b81e413169",
+      "seed": 10,
+      "N": 694
+    },
+    "r2SCAN-lora16-N694-seed10": {
+      "remote_path": "/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-02/training-plan01/cases/r2SCAN-lora16-N694-seed10",
+      "model_sha256": "54d44fccb6444cf233dc3925fa51f53883687d3b0a44896dad0e1a5731822ba6",
+      "seed": 10,
+      "N": 694
+    },
+    "r2SCAN-full-N694-seed10": {
+      "remote_path": "/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-02/training-plan01/cases/r2SCAN-full-N694-seed10",
+      "model_sha256": "0601df4abacab0a720b986f0164e58e84b9d0c3d8215226b45dc76bfe0d805d6",
+      "seed": 10,
+      "N": 694
+    }
+  },
+  "no_new_DFT": true,
+  "test_access": false,
+  "max_concurrent_new_GPUs": 1,
+  "seeds_N200": [
+    10,
+    20,
+    30
+  ],
+  "seeds_N694": [
+    10,
+    20,
+    30
+  ],
+  "epochs": 50,
+  "estimated_GPU_hours": {
+    "N694_8_additional": 21.7083333333,
+    "total": 21.7083333333
+  },
+  "estimate_qualification": "Twice the measured allocated GPU time of the four completed N694 seed10 cases; excludes queue delay.",
+  "resources": {
+    "account": "imet-2026-2",
+    "GPU_partition": "v100",
+    "CPU_partition": "apollo",
+    "GPU_tasks": {
+      "gpus": 1,
+      "cpus": 4,
+      "memory": "40G",
+      "time": "04:00:00"
+    }
+  },
+  "followup": "Per-case final-checkpoint validation, harmonics, derivative/export/mask QC; three-seed N694 aggregate and matched seed10 size control after completion.",
+  "seed_policy": "Only training.seed changes from10 to20/30. Descriptor/fitting seeds42 and initial pretrained tensors remain fixed; LoRA A initialization uses the backend PyTorch RNG. Per-parameter initial hashes and exposure traces are retained."
+}

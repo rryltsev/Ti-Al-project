@@ -1,0 +1,17 @@
+2000 K N=35: новый полный пакет. Все ошибки ниже — формальные SE.
+
+40ps: 2.832111 +/- 0.056813 мПа·с; neff=63.206; costZ=-1.143; cutoffZ=1.604.
+first20ps: 2.867834 +/- 0.075901 мПа·с; neff=35.356; costZ=-1.452; cutoffZ=-0.380.
+second20ps: 2.770302 +/- 0.077528 мПа·с; neff=32.143; costZ=-0.545; cutoffZ=1.024.
+Прежние30: 2.803288+/-0.059714; изменение40 +1.0282%; изменениеSE -4.859%.
+Новые5: 2.972498+/-0.156762; против прежнихZ=1.009; costZ=1.697; cutoffZ=1.647.
+Отдельные5k: 2.838945+/-0.069114; отличие -0.241%.
+[{"id": "Ti_2000K", "flags": {"minimum_replicas": true, "precision": true, "last_three_stability": true, "duration_stability": true, "spectral_points": true, "cost": true, "cutoff": true, "new_batch_consistency": true, "window_fit_diagnostics": true}, "passed": true, "last_three_relative_range": 0.010177459682965606, "max_20_40_relative_difference": 0.021824468319590173}]
+Полных прохождений 2/2; stop=True; review hold=False.
+All9 diagnostic figures inspected. Full40 mode near1.5THz;first20 near1.7THz;second20 near1.5THz;new5 near2THz with tiny lower/upper modes. All weighted cost/cutoff pass in all windows andnew5. New5 diagnostics have less margin (cost1.697,cutoff1.647) but are below2. N30 andN35 are two successive complete passes. Workflow excludes stop-recommended temperatures;2000K production is complete at35. This sampling heuristic does not eliminate model/protocol/cutoff systematics.
+Formal SE excludes model, protocol and cutoff systematics.
+Accumulated estimates and windows20/40ps are correlated; stopping is a heuristic.
+Historical15k and5k remain separate; agreement with5k is not a stop criterion.
+Fixed article profile and the earlier preview snapshot remain unchanged.
+Исторические15k: 2.724023+/-0.092030; отличие40 +3.968%.
+Все критерии проходят вN30иN35;streak2/2,stop=True. N35;SE2.0060%;размах1.0177%;20/40=2.1824%;neff63.2058;newbatchZ1.0087;всеcost/cutoff<2. ПайплайнпропускаетэтуTпослепрохождения. Этоэвристика,неустранениесистематики.

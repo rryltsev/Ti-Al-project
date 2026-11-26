@@ -1,0 +1,21 @@
+{
+  "key": "GPU-benchmark",
+  "job_id": "20989427",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=v100",
+    "--gres=gpu:a100:1",
+    "--cpus-per-task=4",
+    "--mem=40G",
+    "--time=01:10:00",
+    "--dependency=afterany:20989407,afterok:20989425",
+    "--job-name=TiAl-GRACE-fp-A100",
+    "--output=GPU-benchmark-%j.log",
+    "gpu.sbatch"
+  ],
+  "utc": "2026-11-07T16:31:01.571260+00:00"
+}

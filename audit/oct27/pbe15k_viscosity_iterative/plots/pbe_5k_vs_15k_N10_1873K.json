@@ -1,0 +1,50 @@
+{
+  "temperature_K": 1873,
+  "error_bars": "plus/minus one STACIE standard error",
+  "rows": [
+    {
+      "x_Al": 0.2,
+      "PBE_5k_20ps_N50": {
+        "eta_mPa_s": 4.058941731552027,
+        "eta_std_mPa_s": 0.1133640085616111
+      },
+      "PBE_15k_40ps_N10": {
+        "eta_mPa_s": 3.924765911678582,
+        "eta_std_mPa_s": 0.1605032140041641,
+        "criterion_z": 1.1558210008549394
+      },
+      "delta_percent": -3.3056848003122252
+    },
+    {
+      "x_Al": 0.45,
+      "PBE_5k_20ps_N50": {
+        "eta_mPa_s": 4.8829928969516745,
+        "eta_std_mPa_s": 0.15516837775697043
+      },
+      "PBE_15k_40ps_N10": {
+        "eta_mPa_s": 4.670865289222016,
+        "eta_std_mPa_s": 0.1938903457954728,
+        "criterion_z": 0.13274077151283478
+      },
+      "delta_percent": -4.34421290807292
+    },
+    {
+      "x_Al": 0.8,
+      "PBE_5k_20ps_N50": {
+        "eta_mPa_s": 1.7613482567937695,
+        "eta_std_mPa_s": 0.03631777320585242
+      },
+      "PBE_15k_40ps_N10": {
+        "eta_mPa_s": 1.8078744481762383,
+        "eta_std_mPa_s": 0.06420369930200566,
+        "criterion_z": 2.2049763607325223
+      },
+      "delta_percent": 2.641510059297514
+    }
+  ],
+  "sources": {
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct27\\pbe15k_viscosity_iterative\\baseline_5k.json": "8560306561a479b6f183a27ad91531885404e7dcb9bf489d51ec89e3b3554a73",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct27\\pbe15k_viscosity_iterative\\collected\\analysis\\batch_0010\\summary.json": "a3f1132fa7fb0c548f518e80277c1eab260b6686c75cdc3adbae4e72dc5651eb"
+  },
+  "note": "Different preparation and trajectory duration; differences cannot be attributed exclusively to checkpoint. Historical trajectories are not pooled."
+}

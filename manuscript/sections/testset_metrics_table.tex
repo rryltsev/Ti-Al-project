@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\caption{Errors on 49 common held-out geometries from the 50-configuration test design. Energy errors use raw energies per atom; forces pool Cartesian components and stresses pool six independent tensor entries. The pretrained rows compare one unchanged model with each functional. No energy offsets are fitted.}
+\label{tab:fit}
+\begin{ruledtabular}
+\begin{tabular}{llrrrrrr}
+ & & \multicolumn{2}{c}{Energy (meV/atom)} & \multicolumn{2}{c}{Force (eV/\AA)} & \multicolumn{2}{c}{Stress (GPa)} \\
+Reference & Model & MAE & RMSE & MAE & RMSE & MAE & RMSE \\
+\hline
+PBE & Fine-tuned & 1.11 & 1.47 & 0.0464 & 0.0626 & 0.050 & 0.072 \\
+PBE & Pretrained & 2.49 & 2.93 & 0.0545 & 0.0735 & 0.069 & 0.100 \\
+PBEsol & Fine-tuned & 1.48 & 1.77 & 0.0461 & 0.0622 & 0.048 & 0.070 \\
+PBEsol & Pretrained & 424.17 & 427.35 & 0.0620 & 0.0832 & 1.526 & 2.208 \\
+\rscan{} & Fine-tuned & 1.35 & 1.58 & 0.0527 & 0.0714 & 0.052 & 0.073 \\
+\rscan{} & Pretrained & 4220.67 & 4254.29 & 0.0786 & 0.1038 & 0.597 & 0.856 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}

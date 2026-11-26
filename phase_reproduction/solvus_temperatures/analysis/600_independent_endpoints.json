@@ -1,0 +1,231 @@
+{
+  "estimate": "Conditional means from K=0 trajectories. No relative phase weight or coexistence field is inferred from their number of starts.",
+  "rows": [
+    {
+      "T_K": 600.0,
+      "N": 1400,
+      "W_max": 0.4,
+      "axial_free": 1,
+      "source_mu_eV": 3.156,
+      "target_mu_eV": 3.156551825775757,
+      "Q_cut": 0.5325,
+      "MBAR_at_pct": [
+        5.865746893462926,
+        24.265025009745123
+      ],
+      "chains": [
+        "at600-n1400-pure-h00q00",
+        "at600-n1400-pure-h01q00",
+        "at600-n1400-pure-h02q00",
+        "at600-n1400-pure-h03q00"
+      ],
+      "controls": {
+        "all": {
+          "alpha": {
+            "count": 2550,
+            "kish_frames": 2530.1597243781152,
+            "approx_kish_after_time_correlation": 76.42353531050101,
+            "conditional_95_Al_at_pct": [
+              5.757890652231074,
+              5.860694129526159
+            ],
+            "time_blocks_by_chain": [
+              7,
+              5,
+              6
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 5.812203169322882,
+            "mean_Q": 0.02698628801785213,
+            "V_A3_atom": 17.446637447302813,
+            "c_a": 1.576468778963621
+          },
+          "alpha2": {
+            "count": 850,
+            "kish_frames": 848.5706593117627,
+            "approx_kish_after_time_correlation": 49.85456034901918,
+            "conditional_95_Al_at_pct": [
+              24.25952255914171,
+              24.338763362681288
+            ],
+            "time_blocks_by_chain": [
+              12
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 24.29896478148394,
+            "mean_Q": 0.9718068573209625,
+            "V_A3_atom": 16.98111211963243,
+            "c_a": 1.6092460317702448
+          }
+        },
+        "ordered": {
+          "alpha": {
+            "count": 850,
+            "kish_frames": 843.1209209873693,
+            "approx_kish_after_time_correlation": 24.074782078734884,
+            "conditional_95_Al_at_pct": [
+              5.80247182976762,
+              5.9423432328833234
+            ],
+            "time_blocks_by_chain": [
+              6
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 5.861234741939632,
+            "mean_Q": 0.026740250454072183,
+            "V_A3_atom": 17.447095514107097,
+            "c_a": 1.5769834852437443
+          },
+          "alpha2": {
+            "count": 850,
+            "kish_frames": 848.5706593117627,
+            "approx_kish_after_time_correlation": 49.85456034901918,
+            "conditional_95_Al_at_pct": [
+              24.25952255914171,
+              24.338763362681288
+            ],
+            "time_blocks_by_chain": [
+              12
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 24.29896478148394,
+            "mean_Q": 0.9718068573209625,
+            "V_A3_atom": 16.98111211963243,
+            "c_a": 1.6092460317702448
+          }
+        },
+        "random": {
+          "alpha": {
+            "count": 1700,
+            "kish_frames": 1687.110804875181,
+            "approx_kish_after_time_correlation": 52.51086635589792,
+            "conditional_95_Al_at_pct": [
+              5.713271408290965,
+              5.84805456451021
+            ],
+            "time_blocks_by_chain": [
+              7,
+              5
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 5.787421652390584,
+            "mean_Q": 0.02711064022047182,
+            "V_A3_atom": 17.446405931370133,
+            "c_a": 1.5762086363307168
+          },
+          "alpha2": null
+        }
+      }
+    },
+    {
+      "T_K": 600.0,
+      "N": 1400,
+      "W_max": 0.4,
+      "axial_free": 1,
+      "source_mu_eV": 3.159,
+      "target_mu_eV": 3.156551825775757,
+      "Q_cut": 0.5325,
+      "MBAR_at_pct": [
+        5.865746893462926,
+        24.265025009745123
+      ],
+      "chains": [
+        "at600-n1400-pure-h04q00",
+        "at600-n1400-pure-h05q00",
+        "at600-n1400-pure-h06q00",
+        "at600-n1400-pure-h07q00"
+      ],
+      "controls": {
+        "all": {
+          "alpha": {
+            "count": 1700,
+            "kish_frames": 1428.7783280287435,
+            "approx_kish_after_time_correlation": 35.94197460824429,
+            "conditional_95_Al_at_pct": [
+              5.759146658998478,
+              5.899246566615577
+            ],
+            "time_blocks_by_chain": [
+              6,
+              4
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 5.827559647246811,
+            "mean_Q": 0.027297975433014942,
+            "V_A3_atom": 17.440474947243413,
+            "c_a": 1.5769199496466133
+          },
+          "alpha2": {
+            "count": 1700,
+            "kish_frames": 1631.137145739513,
+            "approx_kish_after_time_correlation": 50.21462243000693,
+            "conditional_95_Al_at_pct": [
+              24.252701641433962,
+              24.34128869970966
+            ],
+            "time_blocks_by_chain": [
+              5,
+              7
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 24.299565297460614,
+            "mean_Q": 0.9718304098055621,
+            "V_A3_atom": 16.979790226035153,
+            "c_a": 1.6105186567414815
+          }
+        },
+        "ordered": {
+          "alpha": null,
+          "alpha2": {
+            "count": 1700,
+            "kish_frames": 1631.137145739513,
+            "approx_kish_after_time_correlation": 50.21462243000693,
+            "conditional_95_Al_at_pct": [
+              24.252701641433962,
+              24.34128869970966
+            ],
+            "time_blocks_by_chain": [
+              5,
+              7
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 24.299565297460614,
+            "mean_Q": 0.9718304098055621,
+            "V_A3_atom": 16.979790226035153,
+            "c_a": 1.6105186567414815
+          }
+        },
+        "random": {
+          "alpha": {
+            "count": 1700,
+            "kish_frames": 1428.7783280287435,
+            "approx_kish_after_time_correlation": 35.94197460824429,
+            "conditional_95_Al_at_pct": [
+              5.759146658998478,
+              5.899246566615577
+            ],
+            "time_blocks_by_chain": [
+              6,
+              4
+            ],
+            "bootstrap_valid": 512,
+            "bootstrap_draws": 512,
+            "Al_at_pct": 5.827559647246811,
+            "mean_Q": 0.027297975433014942,
+            "V_A3_atom": 17.440474947243413,
+            "c_a": 1.5769199496466133
+          },
+          "alpha2": null
+        }
+      }
+    }
+  ]
+}

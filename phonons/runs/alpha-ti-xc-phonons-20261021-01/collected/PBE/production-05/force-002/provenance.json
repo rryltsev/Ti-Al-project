@@ -1,0 +1,22 @@
+{
+  "source_hashes": {
+    "POSCAR": "79ee0e26d830db1c4daed9a5486d447fc762c09efb28812fa523cc2d91854786",
+    "INCAR": "288bdd9cc0bcd2e811b23f8b6174b0f00be3e00492042a6d0a3914b6f8f2c837",
+    "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba"
+  },
+  "input_hashes": {
+    "POSCAR": "79ee0e26d830db1c4daed9a5486d447fc762c09efb28812fa523cc2d91854786",
+    "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba",
+    "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "INCAR": "68e0e03511bf885119fd71d7288614f62e47c3e46636d71e78bfe367d76f7f0e"
+  },
+  "policy_sha256": "ee7c9713479de2ae4bbf82e4e3118a8ca98740c6c9dbccc2fd6671c0cf594751",
+  "driver_sha256": "f0e2ba7fa905f82052cd345a5d4f84f8565c7da036fd2c522c7119134797ae3e",
+  "changes": [
+    "KPAR=8",
+    "64 ranks on 2 nodes; 32 per node",
+    "NBANDS=576 explicitly preserves previous band count",
+    "LCHARG=True for restart"
+  ]
+}

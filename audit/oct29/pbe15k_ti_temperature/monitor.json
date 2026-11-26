@@ -1,0 +1,986 @@
+{
+  "automation_id": "pbe-15k-ti-al",
+  "interval_minutes": 60,
+  "job_id": "20962153",
+  "status": "completed_user_requested_pause",
+  "last_reported_batches": {
+    "Ti_2100K": 45,
+    "Ti_1873K": 40,
+    "Ti_2000K": 35
+  },
+  "historical_points_reported": [
+    1873,
+    2000
+  ],
+  "last_checked_unix": 1793940954.4280884,
+  "last_scheduler_state": "COMPLETED",
+  "last_scheduler_reason": "requested_pause",
+  "initial_figure": "figure7_current.png",
+  "handoff": "handoff.json",
+  "cpu_tests": "PASS",
+  "gpu_preflight": "PASS",
+  "notes": "Concentration series paused by user. Hourly collection and Fig.7 update. Historical 20 ps raw recovered and separately pooled in audit/nov01/pbe15k_legacy_pooling_v2 at user request. Keep exploratory pooled estimates separate from the official new 40 ps campaign; no 5k pooling or extra sbatch. User selected a fixed combined article figure on 2026-11-01; update_figure.py honors audit/nov01/viscosity_article_combined/figure_profile.json. Report future campaign batches separately, do not overwrite article selection automatically.",
+  "article_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\build\\ti-temperature\\main.pdf",
+  "article_figure_page": 14,
+  "article_compile": "PASS;fixed profile/caption preserved",
+  "figure_visual_review": "PASS:Figure7 render identical to previously inspected version",
+  "completed": {
+    "Ti_2100K": 45,
+    "Ti_1873K": 40,
+    "Ti_2000K": 35
+  },
+  "last_figure_update_unix": 1793928064.526575,
+  "last_progress": {
+    "status": "running",
+    "phase": "production",
+    "job_id": "20962153",
+    "unix": 1793927337.8154604,
+    "composition": "Ti_1873K",
+    "replica": 39,
+    "production_ps": 40
+  },
+  "last_reported_event": "Final user-requested PBE stop: summary and separate new40ps plot delivered; only2000 meets the full working heuristic; no more MD.",
+  "last_review": "reviews\\Ti_2100K_N40",
+  "last_user_diagnostic": {
+    "unix": 1793351321.9710238,
+    "temperature_K": 2100,
+    "n_replicas": 15,
+    "report": "diagnostics/Ti_2100K_N15_cutoff/assessment_RU.txt",
+    "results": "diagnostics/Ti_2100K_N15_cutoff/diagnostic_results.json",
+    "original_results_unchanged": true,
+    "paired_jackknife": {
+      "0.8": {
+        "cutoff_THz": 0.8,
+        "difference_mPa_s": 0.1624903787492719,
+        "standard_error_mPa_s": 0.5292896083196534,
+        "leave_one_out_differences": [
+          -0.011522039308136094,
+          -0.03748514450169693,
+          0.30845976788982166,
+          0.19904456050190336,
+          0.034819388414102266,
+          0.053184216627122444,
+          0.30191613820266694,
+          0.15575604201102916,
+          0.20873384172068535,
+          0.2311654411998763,
+          -0.009857577622748945,
+          0.043281874813254004,
+          0.34640564425604925,
+          -0.09477251487367963,
+          0.30281377180122304
+        ]
+      },
+      "1.5": {
+        "cutoff_THz": 1.5,
+        "difference_mPa_s": 0.22434569771824941,
+        "standard_error_mPa_s": 0.15530119809519893,
+        "leave_one_out_differences": [
+          0.1667544747835908,
+          0.23050019280472164,
+          0.23595399718602095,
+          0.18305173739903555,
+          0.16860670483009138,
+          0.2597231953807089,
+          0.23999111313842414,
+          0.1999724462031817,
+          0.3015983266073117,
+          0.19294615503662313,
+          0.24673730798967447,
+          0.2671206258666953,
+          0.2456613467186862,
+          0.16362757646971524,
+          0.2693581624228637
+        ]
+      }
+    },
+    "mean_cutoff_THz": {
+      "40ps": 2.031935622708259,
+      "first20ps": 2.258545183603466,
+      "second20ps": 2.7786492436151113
+    },
+    "weight_above5THz": {
+      "40ps": 1.896938145650175e-11,
+      "first20ps": 7.851023402422896e-11,
+      "second20ps": 0.08636459395323089
+    },
+    "script_sha256": "caa2f5260145aee6350655583e46a7ed6c9896734e1c1fda063526e8641fdd91",
+    "next_check": "At N20 compare automatic and common1.5THz diagnostics. N15 full40ps and second20ps still fail cutoff; fixed fits must not replace production results."
+  },
+  "user_diagnostics": {
+    "Ti_2000K_N5": {
+      "unix": 1793338163.781739,
+      "temperature_K": 2000,
+      "n_replicas": 5,
+      "report": "diagnostics/Ti_2000K_N5_cutoff/assessment_RU.txt",
+      "next_check": "At N10 revisit both automatic cutoff weights and common-cutoff sensitivity; do not replace official estimates with post-hoc fits."
+    },
+    "Ti_2100K_N10": {
+      "unix": 1793338866.6536012,
+      "temperature_K": 2100,
+      "n_replicas": 10,
+      "report": "diagnostics/Ti_2100K_N10_cutoff/assessment_RU.txt",
+      "original_results_unchanged": true,
+      "automatic_delta_mPa_s": 0.3904160836300692,
+      "fixed_1p5THz": {
+        "difference_mPa_s": 0.32165761522646086,
+        "standard_error_mPa_s": 0.21724071168255182,
+        "leave_one_out_differences": [
+          0.23754041148644742,
+          0.3338987666288329,
+          0.36079038499601307,
+          0.24780839011365577,
+          0.24611580635470728,
+          0.3697500260990685,
+          0.36925343752047984,
+          0.2768754365251838,
+          0.4806106454928946,
+          0.2957609320453926
+        ]
+      },
+      "fixed_0p8THz": {
+        "difference_mPa_s": 0.046291376403940085,
+        "standard_error_mPa_s": 0.3535614513126126,
+        "leave_one_out_differences": [
+          -0.05407785791781321,
+          -0.10612730472076437,
+          0.2606883317742628,
+          0.15400426414453883,
+          0.05210338894768998,
+          0.07224711111499839,
+          0.03939893404071408,
+          -0.164381262442797,
+          -0.02073496734672064,
+          0.07458059523430832
+        ]
+      },
+      "p_1p5THz": 0.10546875,
+      "p_0p8THz": 0.890625,
+      "script_sha256": {
+        "diagnose.py": "d96b5b5c06f85ae04b18e04c4ccbe340b6673951a4ede88090d11b9f79a96d38",
+        "low_cutoff_check.py": "74786578ca9df4ea768d80088259f3315387a088c68c90e8b3a845b068cb0c3b"
+      },
+      "next_check": "At N15 inspect cutoff weights, common-cutoff sensitivity and all window diagnostics. Do not replace official results with post-hoc estimates."
+    },
+    "Ti_2000K_N10": {
+      "unix": 1793343607.1394718,
+      "temperature_K": 2000,
+      "n_replicas": 10,
+      "report": "diagnostics/Ti_2000K_N10_cutoff/assessment_RU.txt",
+      "results": "diagnostics/Ti_2000K_N10_cutoff/diagnostic_results.json",
+      "original_results_unchanged": true,
+      "paired_jackknife": {
+        "cutoff_THz": 1.5,
+        "difference_mPa_s": 0.0018327868787672286,
+        "standard_error_mPa_s": 0.3373864998491963,
+        "leave_one_out_differences": [
+          -0.014047796779088125,
+          0.03214123767318047,
+          0.04568345261017148,
+          -0.15347024666477038,
+          -0.07603268977752478,
+          0.060465998683515224,
+          0.14643761599733965,
+          0.03630644865462067,
+          0.15423584639260787,
+          -0.20897533242162594
+        ]
+      },
+      "mean_cutoff_THz": {
+        "40ps": 1.5265980539678923,
+        "first20ps": 1.8167297340003925,
+        "second20ps": 1.6399267789875633
+      },
+      "weight_above5THz": {
+        "40ps": 1.3038397264659315e-15,
+        "first20ps": 6.4871963836123e-08,
+        "second20ps": 9.341136092875531e-07
+      },
+      "script_sha256": "9bb118e56e1e2f3ba2fbc9d26339e36b75d895ed265416bbd330c17c8106af8f"
+    },
+    "Ti_2100K_N15": {
+      "unix": 1793351321.9710238,
+      "temperature_K": 2100,
+      "n_replicas": 15,
+      "report": "diagnostics/Ti_2100K_N15_cutoff/assessment_RU.txt",
+      "results": "diagnostics/Ti_2100K_N15_cutoff/diagnostic_results.json",
+      "original_results_unchanged": true,
+      "paired_jackknife": {
+        "0.8": {
+          "cutoff_THz": 0.8,
+          "difference_mPa_s": 0.1624903787492719,
+          "standard_error_mPa_s": 0.5292896083196534,
+          "leave_one_out_differences": [
+            -0.011522039308136094,
+            -0.03748514450169693,
+            0.30845976788982166,
+            0.19904456050190336,
+            0.034819388414102266,
+            0.053184216627122444,
+            0.30191613820266694,
+            0.15575604201102916,
+            0.20873384172068535,
+            0.2311654411998763,
+            -0.009857577622748945,
+            0.043281874813254004,
+            0.34640564425604925,
+            -0.09477251487367963,
+            0.30281377180122304
+          ]
+        },
+        "1.5": {
+          "cutoff_THz": 1.5,
+          "difference_mPa_s": 0.22434569771824941,
+          "standard_error_mPa_s": 0.15530119809519893,
+          "leave_one_out_differences": [
+            0.1667544747835908,
+            0.23050019280472164,
+            0.23595399718602095,
+            0.18305173739903555,
+            0.16860670483009138,
+            0.2597231953807089,
+            0.23999111313842414,
+            0.1999724462031817,
+            0.3015983266073117,
+            0.19294615503662313,
+            0.24673730798967447,
+            0.2671206258666953,
+            0.2456613467186862,
+            0.16362757646971524,
+            0.2693581624228637
+          ]
+        }
+      },
+      "mean_cutoff_THz": {
+        "40ps": 2.031935622708259,
+        "first20ps": 2.258545183603466,
+        "second20ps": 2.7786492436151113
+      },
+      "weight_above5THz": {
+        "40ps": 1.896938145650175e-11,
+        "first20ps": 7.851023402422896e-11,
+        "second20ps": 0.08636459395323089
+      },
+      "script_sha256": "caa2f5260145aee6350655583e46a7ed6c9896734e1c1fda063526e8641fdd91",
+      "next_check": "At N20 compare automatic and common1.5THz diagnostics. N15 full40ps and second20ps still fail cutoff; fixed fits must not replace production results."
+    },
+    "Ti_2100K_N20": {
+      "unix": 1793826552.182154,
+      "temperature_K": 2100,
+      "n_replicas": 20,
+      "report": "diagnostics/Ti_2100K_N20_cutoff/assessment_RU.txt",
+      "results": "diagnostics/Ti_2100K_N20_cutoff/diagnostic_results.json",
+      "original_results_unchanged": true,
+      "paired_jackknife": {
+        "1.5": {
+          "cutoff_THz": 1.5,
+          "difference_mPa_s": 0.14171420058866224,
+          "standard_error_mPa_s": 0.1379680670669399,
+          "leave_one_out_differences": [
+            0.08849420517898594,
+            0.14209672279940666,
+            0.14802764562903528,
+            0.11151959397256733,
+            0.09664663907763557,
+            0.16712051660280197,
+            0.146423215365002,
+            0.12260335866389957,
+            0.18889009732875459,
+            0.1113984452264542,
+            0.15170980484876304,
+            0.167574120969407,
+            0.15529931754945356,
+            0.09359918642482803,
+            0.16911444336531423,
+            0.15577841273833967,
+            0.17929871947288106,
+            0.11194269558255061,
+            0.2003686889605707,
+            0.13222909632868005
+          ]
+        }
+      },
+      "fixed_1p5": {
+        "40ps": {
+          "acint": 0.002572248508540647,
+          "acint_std": 6.513991043129523e-05,
+          "fcut": 1500000000000.0,
+          "cost_zscore": 0.28318286855196606,
+          "criterion_zscore": 4.675053282181504,
+          "neff": 62.05176618172983,
+          "criterion": -117.94937466271156
+        },
+        "first20ps": {
+          "acint": 0.0026486331795767524,
+          "acint_std": 9.827433508273649e-05,
+          "fcut": 1500000000000.0,
+          "cost_zscore": 0.49059360833448024,
+          "criterion_zscore": 1.6392503485070542,
+          "neff": 31.276897418956533,
+          "criterion": -120.54981919172246
+        },
+        "second20ps": {
+          "acint": 0.00250691897898809,
+          "acint_std": 8.663898432536989e-05,
+          "fcut": 1500000000000.0,
+          "cost_zscore": -0.5873142776652186,
+          "criterion_zscore": 0.5669789108389346,
+          "neff": 31.276897418956533,
+          "criterion": -122.2350962295711
+        },
+        "new_batch_40ps": {
+          "acint": 0.0026564444350765976,
+          "acint_std": 0.00014351006826788235,
+          "fcut": 1500000000000.0,
+          "cost_zscore": -0.003971899686864922,
+          "criterion_zscore": 0.5946682501432731,
+          "neff": 62.05176618172983,
+          "criterion": -120.36694419510047
+        },
+        "previous15_40ps": {
+          "acint": 0.0025469593731876896,
+          "acint_std": 7.270414249137672e-05,
+          "fcut": 1500000000000.0,
+          "cost_zscore": -0.006393749868432079,
+          "criterion_zscore": 3.043126232184618,
+          "neff": 62.05176618172983,
+          "criterion": -119.72522612692678
+        }
+      },
+      "weight_above5THz": {
+        "40ps": 1.8997264611220625e-13,
+        "first20ps": 3.8483753867391537e-11,
+        "second20ps": 0.0002916091868209976,
+        "new_batch_40ps": 0.8520887243916879
+      },
+      "script_sha256": "9c17f7f680c2da8209f7c60bb6d91312ea54839f96532fe2bc9424f585eff47f",
+      "next_check": "At N25 inspect automatic cutoff weights and all window/new-batch diagnostics. Compare common1.5THz sensitivity if cutoff failures persist. Fixed fits must never replace production results or stop criteria.",
+      "followup_completed": "Ti_2100K_N25"
+    },
+    "Ti_2000K_N20": {
+      "unix": 1793840850.270475,
+      "temperature_K": 2000,
+      "n_replicas": 20,
+      "report": "reviews/Ti_2000K_N20/assessment_RU.txt",
+      "runtime_check": "reviews/Ti_2000K_N20/runtime-check.json",
+      "original_results_unchanged": true,
+      "new_batch_z": 2.9965059215602183,
+      "thermo_group_means": {
+        "previous15": {
+          "40ps": {
+            "Temp": 1998.2462473150458,
+            "PotEng": -3760.9710714380712,
+            "Press": 147.16804471103902,
+            "Volume": 9558.311073333334
+          },
+          "first20ps": {
+            "Temp": 1999.4516583416253,
+            "PotEng": -3760.7878164179106,
+            "Press": 181.34072565207288,
+            "Volume": 9558.311073333334
+          },
+          "second20ps": {
+            "Temp": 1997.2797150580432,
+            "PotEng": -3761.157136650083,
+            "Press": 116.21661691737978,
+            "Volume": 9558.311073333334
+          }
+        },
+        "new5": {
+          "40ps": {
+            "Temp": 1997.3454353117206,
+            "PotEng": -3759.41823436409,
+            "Press": -2849.6612102293766,
+            "Volume": 9598.03492
+          },
+          "first20ps": {
+            "Temp": 1997.7480900497512,
+            "PotEng": -3759.218768756219,
+            "Press": -2884.9060599800996,
+            "Volume": 9598.03492
+          },
+          "second20ps": {
+            "Temp": 1996.8504907462686,
+            "PotEng": -3759.6228447761196,
+            "Press": -2815.5534329650745,
+            "Volume": 9598.03492
+          }
+        }
+      },
+      "next_check": "At N25 compare newest five against previous20, last-three stability, all window diagnostics, temperatures/volumes. No protocol or article selection changes without user decision."
+    },
+    "Ti_2100K_N25": {
+      "unix": 1793850995.1747708,
+      "temperature_K": 2100,
+      "n_replicas": 25,
+      "report": "diagnostics/Ti_2100K_N25_cutoff/assessment_RU.txt",
+      "results": "diagnostics/Ti_2100K_N25_cutoff/diagnostic_results.json",
+      "original_results_unchanged": true,
+      "paired_jackknife": {
+        "1.5": {
+          "cutoff_THz": 1.5,
+          "difference_mPa_s": 0.15552625688719512,
+          "standard_error_mPa_s": 0.1089426283493723,
+          "leave_one_out_differences": [
+            0.11739941344835782,
+            0.15662898542182208,
+            0.16060763198782893,
+            0.1317013037332019,
+            0.12043173789996536,
+            0.17583081625499683,
+            0.1603247944451237,
+            0.14065351845192084,
+            0.1938058849284222,
+            0.13280022702605657,
+            0.16449269006260256,
+            0.17615042263021677,
+            0.16656794975933092,
+            0.11809368095070089,
+            0.1764206465826811,
+            0.16689304964064228,
+            0.18570888989088813,
+            0.13250709358904886,
+            0.20132187184999756,
+            0.1483341675797018,
+            0.14697503244087132,
+            0.1432405013081701,
+            0.15972011060617042,
+            0.15571848804563646,
+            0.15991505867924816
+          ]
+        }
+      },
+      "fixed_1p5": {
+        "40ps": {
+          "acint": 0.0025784896141319074,
+          "acint_std": 5.767820381974091e-05,
+          "fcut": 1500000000000.0,
+          "cost_zscore": 0.8012316540978917,
+          "criterion_zscore": 3.2165854079939873,
+          "neff": 62.05176618172983,
+          "criterion": -120.3293317173795
+        },
+        "first20ps": {
+          "acint": 0.0026591432069519093,
+          "acint_std": 8.7898910801541e-05,
+          "fcut": 1500000000000.0,
+          "cost_zscore": 0.8245531462663713,
+          "criterion_zscore": 1.4751979558265604,
+          "neff": 31.276897418956533,
+          "criterion": -121.2335465970302
+        },
+        "second20ps": {
+          "acint": 0.002503616950064714,
+          "acint_std": 7.63820376068261e-05,
+          "fcut": 1500000000000.0,
+          "cost_zscore": -0.06473550964859492,
+          "criterion_zscore": -0.6726672670075109,
+          "neff": 31.276897418956533,
+          "criterion": -124.33934271163344
+        },
+        "new_batch_40ps": {
+          "acint": 0.0026077187719187127,
+          "acint_std": 0.00012606914306518055,
+          "fcut": 1500000000000.0,
+          "cost_zscore": 0.09767321927501503,
+          "criterion_zscore": -0.5287707236682694,
+          "neff": 62.05176618172983,
+          "criterion": -123.3468675303893
+        },
+        "previous20_40ps": {
+          "acint": 0.002572248508540647,
+          "acint_std": 6.513991043129523e-05,
+          "fcut": 1500000000000.0,
+          "cost_zscore": 0.28318286855196606,
+          "criterion_zscore": 4.675053282181504,
+          "neff": 62.05176618172983,
+          "criterion": -117.94937466271156
+        }
+      },
+      "fixed_new_batch_z": 0.24996024703838418,
+      "weight_above5THz": {
+        "40ps": 6.502330049445445e-19,
+        "first20ps": 3.0826347403984135e-13,
+        "second20ps": 1.185181912440177e-08,
+        "new_batch_40ps": 0.03602652286899834
+      },
+      "script_sha256": "f16dcca47e07567e51045ec80e11b540d28d7d6897902c9a12b75c9fe18162b4",
+      "next_check": "At N30 inspect all official window/new-batch diagnostics and last-three stability. Persistent cutoff failures must not be treated as physical drift or repaired by replacing official estimates; a common1.5THz sensitivity check remains separate."
+    },
+    "Ti_2000K_N25": {
+      "unix": 1793865579.631296,
+      "temperature_K": 2000,
+      "n_replicas": 25,
+      "report": "reviews/Ti_2000K_N25/assessment_RU.txt",
+      "original_results_unchanged": true,
+      "new_batch_z": 0.5903823177150209,
+      "next_check": "At N30 compare newest5 against previous25 and last-three stability; retain earlierN20 discrepancy and inspect all fit diagnostics. No protocol or article changes."
+    },
+    "Ti_2100K_N30": {
+      "unix": 1793876392.5318162,
+      "temperature_K": 2100,
+      "n_replicas": 30,
+      "report": "reviews/Ti_2100K_N30/assessment_RU.txt",
+      "original_results_unchanged": true,
+      "next_check": "At N35 inspect all fit diagnostics and pass streak. Persistent cutoff failures require review hold atN>=50 if stable stats; no production substitution or physics changes."
+    }
+  },
+  "article_build": {
+    "unix": 1793888550.563529,
+    "status": "compiled",
+    "article_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\build\\ti-temperature\\main.pdf",
+    "canonical_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\build\\ti-temperature\\main.pdf",
+    "canonical_locked": false
+  },
+  "article_page_count": 18,
+  "local_maintenance": {
+    "unix": 1793340032.881408,
+    "change": "update_figure.py now compiles to staging and atomically publishes; if Windows blocks replacing an existing open PDF, keeps it and writes a timestamped PDF. Actual path recorded in article-build.json. No physical/protocol change.",
+    "backup": "update_figure.before-pdf-lock-fix-20261030.py"
+  },
+  "latest_cutoff_followup": {
+    "unix": 1793850995.1747708,
+    "temperature_K": 2100,
+    "n_replicas": 25,
+    "report": "diagnostics/Ti_2100K_N25_cutoff/assessment_RU.txt",
+    "results": "diagnostics/Ti_2100K_N25_cutoff/diagnostic_results.json",
+    "original_results_unchanged": true,
+    "paired_jackknife": {
+      "1.5": {
+        "cutoff_THz": 1.5,
+        "difference_mPa_s": 0.15552625688719512,
+        "standard_error_mPa_s": 0.1089426283493723,
+        "leave_one_out_differences": [
+          0.11739941344835782,
+          0.15662898542182208,
+          0.16060763198782893,
+          0.1317013037332019,
+          0.12043173789996536,
+          0.17583081625499683,
+          0.1603247944451237,
+          0.14065351845192084,
+          0.1938058849284222,
+          0.13280022702605657,
+          0.16449269006260256,
+          0.17615042263021677,
+          0.16656794975933092,
+          0.11809368095070089,
+          0.1764206465826811,
+          0.16689304964064228,
+          0.18570888989088813,
+          0.13250709358904886,
+          0.20132187184999756,
+          0.1483341675797018,
+          0.14697503244087132,
+          0.1432405013081701,
+          0.15972011060617042,
+          0.15571848804563646,
+          0.15991505867924816
+        ]
+      }
+    },
+    "fixed_1p5": {
+      "40ps": {
+        "acint": 0.0025784896141319074,
+        "acint_std": 5.767820381974091e-05,
+        "fcut": 1500000000000.0,
+        "cost_zscore": 0.8012316540978917,
+        "criterion_zscore": 3.2165854079939873,
+        "neff": 62.05176618172983,
+        "criterion": -120.3293317173795
+      },
+      "first20ps": {
+        "acint": 0.0026591432069519093,
+        "acint_std": 8.7898910801541e-05,
+        "fcut": 1500000000000.0,
+        "cost_zscore": 0.8245531462663713,
+        "criterion_zscore": 1.4751979558265604,
+        "neff": 31.276897418956533,
+        "criterion": -121.2335465970302
+      },
+      "second20ps": {
+        "acint": 0.002503616950064714,
+        "acint_std": 7.63820376068261e-05,
+        "fcut": 1500000000000.0,
+        "cost_zscore": -0.06473550964859492,
+        "criterion_zscore": -0.6726672670075109,
+        "neff": 31.276897418956533,
+        "criterion": -124.33934271163344
+      },
+      "new_batch_40ps": {
+        "acint": 0.0026077187719187127,
+        "acint_std": 0.00012606914306518055,
+        "fcut": 1500000000000.0,
+        "cost_zscore": 0.09767321927501503,
+        "criterion_zscore": -0.5287707236682694,
+        "neff": 62.05176618172983,
+        "criterion": -123.3468675303893
+      },
+      "previous20_40ps": {
+        "acint": 0.002572248508540647,
+        "acint_std": 6.513991043129523e-05,
+        "fcut": 1500000000000.0,
+        "cost_zscore": 0.28318286855196606,
+        "criterion_zscore": 4.675053282181504,
+        "neff": 62.05176618172983,
+        "criterion": -117.94937466271156
+      }
+    },
+    "fixed_new_batch_z": 0.24996024703838418,
+    "weight_above5THz": {
+      "40ps": 6.502330049445445e-19,
+      "first20ps": 3.0826347403984135e-13,
+      "second20ps": 1.185181912440177e-08,
+      "new_batch_40ps": 0.03602652286899834
+    },
+    "script_sha256": "f16dcca47e07567e51045ec80e11b540d28d7d6897902c9a12b75c9fe18162b4",
+    "next_check": "At N30 inspect all official window/new-batch diagnostics and last-three stability. Persistent cutoff failures must not be treated as physical drift or repaired by replacing official estimates; a common1.5THz sensitivity check remains separate."
+  },
+  "last_requeue": {
+    "unix": 1793356492.7139513,
+    "job_id": "20962153",
+    "restarts": 3,
+    "cause": "scheduled walltime protection after completed replica",
+    "completed": {
+      "Ti_2100K": 15,
+      "Ti_1873K": 14,
+      "Ti_2000K": 10
+    },
+    "requires_action": false
+  },
+  "scheduler_estimated_start": null,
+  "node_check": {
+    "state": "MIXED",
+    "gpu_total": 2,
+    "node_allocated": 2,
+    "job_allocated": 1,
+    "checked_unix": 1793876199.8488638
+  },
+  "last_collection": {
+    "unix": 1793927992.3556855,
+    "bytes": 19300201,
+    "job_id": "20962153"
+  },
+  "legacy_pooling_audit": {
+    "report": "audit\\nov01\\pbe15k_legacy_pooling_v2\\report_RU.txt",
+    "status": "completed; historical raw recovered from user-supplied directories; separate pooling delivered",
+    "pooling_performed": true,
+    "production_protocol_changed": false,
+    "new_replicas_included_per_T": 10,
+    "old_replicas": {
+      "1873": 25,
+      "2000": 20
+    },
+    "common_cutoff_THz": 1.5,
+    "model_initial_pressure_checks": 45,
+    "max_model_pressure_error_bar": 0.0901453982496605,
+    "cutoff_caveat": "Old subsets at 1.5 THz fail cutoff Z; pooled subsets pass. Different preparation and possible old-replica correlations remain. Never replace official 40 ps points or stopping rules with this diagnostic.",
+    "results": "audit\\nov01\\pbe15k_legacy_pooling_v2\\combined_results.json",
+    "unix": 1793545054.9657302,
+    "common_cutoff_followup": {
+      "unix": 1793549742.8975708,
+      "report": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\pbe15k_legacy_pooling_v2\\common_cutoff\\report_RU.txt",
+      "primary_shared_THz": [
+        [
+          1.2204839530013787,
+          1.26539123306453
+        ]
+      ],
+      "practical_interior_THz": [
+        1.23,
+        1.26
+      ],
+      "strict_shared_including_each_half": false,
+      "limiting_diagnostic": "1873 K new first20 cutoff Z 2.50-2.81 in common main interval; old2000 has only a small margin below 2. neff is also below 60.",
+      "pooled_eta_ranges_mPa_s": {
+        "1873": [
+          3.1989812423333586,
+          3.2007020242874873
+        ],
+        "2000": [
+          2.829404985929578,
+          2.830607111570553
+        ]
+      },
+      "production_protocol_changed": false
+    }
+  },
+  "article_selection": {
+    "profile": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\viscosity_article_combined\\figure_profile.json",
+    "version": "2026-11-01-r2-arrhenius",
+    "fixed": true,
+    "composition_pbe_checkpoint": 5000,
+    "temperature_pbe_checkpoint": 15000,
+    "temperatures": [
+      1873,
+      2000,
+      2100
+    ],
+    "pooled_temperatures": [
+      1873,
+      2000
+    ],
+    "intermediate_1941_not_confirmed_as_15k": true,
+    "show_checkpoint_labels": false,
+    "official_monitoring_and_stop_rule_unchanged": true,
+    "rendering": {
+      "temperature_curve": "weighted_arrhenius",
+      "temperature_coordinates": "eta_T",
+      "takeda_symbols": "uniform_black_squares"
+    }
+  },
+  "article_variants": {
+    "three_points": "audit/nov01/viscosity_article_combined/variants/three_points/viscosity_combined.pdf",
+    "four_points": "audit/nov01/viscosity_article_combined/variants/four_points/viscosity_combined.pdf",
+    "four_point_1941_source_checkpoint": 5000,
+    "delivered": true,
+    "canonical_article": "three_points"
+  },
+  "local_maintenance_history": [
+    {
+      "unix": 1793558952.3996527,
+      "change": "Recovered update_figure failure after the manuscript caption was edited: locate viscosity caption by its stable label and preserve the existing manuscript wording. Profile caption remains separately recorded; no physical or data-selection changes.",
+      "backup": "audit/nov01/viscosity_article_combined/before/build_figure.before-caption-anchor-fix-20261101.py",
+      "validation": "Article compilation PASS; 18 pages; Figure 7 on page 14 visually reviewed."
+    }
+  ],
+  "last_user_queue_diagnostic": {
+    "unix": 1793680597.6483119,
+    "report": "queue-diagnostic-20261103_RU.txt",
+    "scheduler_reason": "Priority",
+    "priority": 895,
+    "competing_pending_priorities": [
+      960,
+      976,
+      987
+    ],
+    "age_weight": 0,
+    "job_walltime_hours": 20,
+    "partition_max_hours": 20,
+    "visible_time_quota_exhausted": false,
+    "changes_to_job": false
+  },
+  "scheduler_actual_start": "2026-11-05T15:23:36",
+  "last_campaign_figure": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\pbe15k_ti_temperature\\reviews\\Ti_2100K_N40\\campaign_monitor.png",
+  "last_delivery_unix": 1793940954.4280884,
+  "last_notification": {
+    "unix": 1793924792.014587,
+    "pairs": [
+      {
+        "T": 2100,
+        "N": 40
+      }
+    ],
+    "reason": "2100K N40:40ps2.564520+/-0.044702;first20 2.583260+/-0.062246;second20 2.533207+/-0.060998. Mean+0.5812%,SE-6.0832%. Failneff59.7403,cutofffull3.5425/first2.9157,new5cost2.5348/cutoff4.2548;new5Z0.0137notfitvalidation;streak0/2. N50reviewholdrule retained.",
+    "report": "reviews/Ti_2100K_N40/assessment_RU.txt",
+    "graph": "reviews/Ti_2100K_N40/campaign_monitor.png"
+  },
+  "last_verified_requeue": {
+    "checked_unix": 1793876392.5318162,
+    "job_id": "20962153",
+    "restarts": 4,
+    "prior_elapsed": "19:17:39",
+    "step_exit_code": "75:0",
+    "requeue_local": "2026-11-05T15:21:26",
+    "new_start_local": "2026-11-05T15:23:36",
+    "planned": true,
+    "completed_replicas_preserved": true
+  },
+  "last_event": "new_complete_analyzed_batch",
+  "last_checks": "PASS:one A100/model hashes/512Ti/targetT/40ps/raw hashes/state VoverkBT",
+  "last_visual_qa": {
+    "1873": {
+      "status": "reviewed",
+      "image": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\qa_Ti_1873K_N40.png",
+      "observations": "Inspected convergence, full40/first20/second20/new5 spectra and extras. Accumulated estimates stable; chosen full40 cutoff criterion exceeds2 and neff55.79<60. Both20ps windows/new5 spectra not a proof of physical drift. New5 has broad uncertainty and passes its own cost/cutoff."
+    },
+    "2000": {
+      "status": "reviewed",
+      "image": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\qa_Ti_2000K_N35.png",
+      "observations": "Inspected all requested panels; new40/halves stable within prescribed duration threshold, fullneff63.21 and all cost/cutoff tests pass; streak2. Formal heuristic success does not rule out systematic model/protocol error."
+    },
+    "2100": {
+      "status": "reviewed",
+      "image": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\qa_Ti_2100K_N45.png",
+      "observations": "Inspected all requested panels; means stable and new5 agrees broadly. Full40/first20 cutoff sensitivity remains; fullneff59.85 just below60, cutoffZ2.44/first20Z2.83 fail. No physical drift established."
+    }
+  },
+  "last_article_qa": {
+    "checked_unix": 1793928135.7415278,
+    "pages": 18,
+    "figure_page": 14,
+    "render_identical_to_previously_inspected": true,
+    "profile_preserved": true,
+    "caption_preserved": true,
+    "article_build": {
+      "unix": 1793928064.526575,
+      "status": "compiled",
+      "article_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\build\\ti-temperature\\main.pdf",
+      "canonical_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\build\\ti-temperature\\main.pdf",
+      "canonical_locked": false
+    }
+  },
+  "last_article_build": {
+    "unix": 1793928064.526575,
+    "status": "compiled",
+    "article_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\build\\ti-temperature\\main.pdf",
+    "canonical_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\build\\ti-temperature\\main.pdf",
+    "canonical_locked": false
+  },
+  "last_user_figure_preview": {
+    "unix": 1793929421.266383,
+    "directory": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\viscosity_article_combined\\current_campaign_1941_20261106",
+    "figure_png": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\viscosity_article_combined\\current_campaign_1941_20261106\\figure7b_current_campaign.png",
+    "figure_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\viscosity_article_combined\\current_campaign_1941_20261106\\figure7b_current_campaign.pdf",
+    "points": [
+      {
+        "T": 1873,
+        "N": 35,
+        "eta_mPa_s": 3.165204854341662,
+        "SE": 0.06919610843957313
+      },
+      {
+        "T": 1941,
+        "N": 25,
+        "eta_mPa_s": 2.8457802894507376,
+        "SE": 0.07155770746060094
+      },
+      {
+        "T": 2000,
+        "N": 35,
+        "eta_mPa_s": 2.832111498906028,
+        "SE": 0.056813078633071674
+      },
+      {
+        "T": 2100,
+        "N": 40,
+        "eta_mPa_s": 2.5645199323540675,
+        "SE": 0.04470237604307486
+      }
+    ],
+    "article_compiled": false,
+    "fixed_article_profile_changed": false,
+    "delivered": true
+  },
+  "completed_temperatures": {
+    "Ti_2000K": {
+      "n_replicas": 35,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 2.832111498906028,
+          "eta_std_mPa_s": 0.056813078633071674,
+          "relative_std": 0.020060325539802054,
+          "neff": 63.205813364685405,
+          "tau_exp_ps": 0.14599547314000025,
+          "tau_int_ps": 0.10939301778746735,
+          "cost_z": -1.1428338726565586,
+          "criterion_z": 1.6036112537485356
+        },
+        "first20ps": {
+          "eta_mPa_s": 2.8678340607348525,
+          "eta_std_mPa_s": 0.07590054097394174,
+          "relative_std": 0.026466155072617074,
+          "neff": 35.35639928783897,
+          "tau_exp_ps": 0.13860027415976023,
+          "tau_int_ps": 0.1093480809592461,
+          "cost_z": -1.4520555016271883,
+          "criterion_z": -0.37978958191448114
+        },
+        "second20ps": {
+          "eta_mPa_s": 2.770302171220606,
+          "eta_std_mPa_s": 0.07752844865795694,
+          "relative_std": 0.027985556761050943,
+          "neff": 32.14292807640952,
+          "tau_exp_ps": 0.1457202585563637,
+          "tau_int_ps": 0.10841764737400415,
+          "cost_z": -0.5450663063051027,
+          "criterion_z": 1.0240942998744689
+        }
+      },
+      "pass_streak": 2,
+      "stop_rule_met": true,
+      "delivered_unix": 1793917776.9991493,
+      "workflow_skips_stopped_temperatures": true,
+      "protocol_changed": false,
+      "remaining_main_temperatures_K": [
+        2100,
+        1873
+      ],
+      "rule_is_heuristic": true
+    }
+  },
+  "last_quiet_status": "Final replica of the user-requested five-replica batch is running; stop control correctly armed. No failure or final yet. No PBE restart permitted.",
+  "user_stop_request": {
+    "job_id": "20962153",
+    "composition": "Ti_2100K",
+    "target_replicas": 45,
+    "requested_unix": 1793930997.541795,
+    "current_progress": {
+      "status": "running",
+      "phase": "production",
+      "job_id": "20962153",
+      "unix": 1793930671.0239408,
+      "composition": "Ti_2100K",
+      "replica": 41,
+      "production_ps": 40
+    },
+    "reason": "User2026-11-06 explicitly selected finishing the current five-replica batch",
+    "no_restart": true,
+    "control_armed": true,
+    "guard_pid": 2155240,
+    "armed_unix": 1793937028.3396635,
+    "armed_progress": {
+      "status": "running",
+      "phase": "replica_preparation",
+      "job_id": "20962153",
+      "unix": 1793937027.742494,
+      "composition": "Ti_2100K",
+      "replica": 45
+    }
+  },
+  "no_further_restarts": true,
+  "stop_boundary": "current_five_replica_batch",
+  "last_stop_check": {
+    "unix": 1793938238.834226,
+    "job_id": "20962153",
+    "state": "RUNNING",
+    "completed": {
+      "Ti_2100K": 44,
+      "Ti_1873K": 40,
+      "Ti_2000K": 35
+    },
+    "analyzed": {
+      "Ti_2100K": 40,
+      "Ti_1873K": 40,
+      "Ti_2000K": 35
+    },
+    "progress": {
+      "status": "running",
+      "phase": "production",
+      "job_id": "20962153",
+      "unix": 1793937241.8864255,
+      "composition": "Ti_2100K",
+      "replica": 45,
+      "production_ps": 40
+    },
+    "target_N": 45,
+    "control_armed": true,
+    "guard_alive": false,
+    "no_restart": true
+  },
+  "monitoring_complete_for_campaign": true,
+  "final_delivery": {
+    "delivered": true,
+    "unix": 1793940954.4280884,
+    "reason": "requested_pause",
+    "temperatures_K": [
+      1873,
+      2000,
+      2100
+    ],
+    "artifact": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\pbe_final_current.png",
+    "report": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\report_RU.txt",
+    "summary": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\pbe_user_stop_final\\summary.json",
+    "rule_is_heuristic": true
+  }
+}

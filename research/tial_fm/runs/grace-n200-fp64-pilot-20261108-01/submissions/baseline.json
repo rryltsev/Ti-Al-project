@@ -1,0 +1,20 @@
+{
+  "key": "baseline",
+  "job_id": "20990460",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=v100",
+    "--gres=gpu:a100:1",
+    "--cpus-per-task=4",
+    "--mem=40G",
+    "--time=00:30:00",
+    "--job-name=TiAl-GRACE-B0",
+    "--output=baseline-%j.log",
+    "baseline.sbatch"
+  ],
+  "utc": "2026-11-08T17:59:00.650097+00:00"
+}

@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "preflight.json": {
+      "status": "passed",
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "CUDA_VISIBLE_DEVICES": "0",
+        "deepmd_device": "cuda:0"
+      },
+      "checks": [
+        {
+          "id": "PBEsol-1873",
+          "E_diff_eV_atom": 7.450580937984342e-08,
+          "F_diff_RMS_eV_A": 1.1213449402689996e-06,
+          "stress_max_diff_GPa": 1.634848577313387e-06,
+          "archived_energy_diff_eV_atom": 7.152557714107388e-08
+        },
+        {
+          "id": "r2SCAN-1873",
+          "E_diff_eV_atom": 8.404254913330078e-08,
+          "F_diff_RMS_eV_A": 1.2931794836392026e-06,
+          "stress_max_diff_GPa": 2.3133880491680678e-06,
+          "archived_energy_diff_eV_atom": 5.245209194981726e-08
+        },
+        {
+          "id": "PBEsol-2500",
+          "E_diff_eV_atom": 5.722046239498013e-08,
+          "F_diff_RMS_eV_A": 1.156011830141165e-06,
+          "stress_max_diff_GPa": 1.7105597632969255e-06,
+          "archived_energy_diff_eV_atom": 3.8743022514609036e-08
+        },
+        {
+          "id": "r2SCAN-2500",
+          "E_diff_eV_atom": 1.0311603546142578e-07,
+          "F_diff_RMS_eV_A": 1.231360619084026e-06,
+          "stress_max_diff_GPa": 2.939334973925021e-06,
+          "archived_energy_diff_eV_atom": 5.9008602875110225e-08
+        },
+        {
+          "id": "PBEsol-2400",
+          "E_diff_eV_atom": 1.2576580388667935e-07,
+          "F_diff_RMS_eV_A": 1.141159048964143e-06,
+          "stress_max_diff_GPa": 1.4959478478549112e-06,
+          "archived_energy_diff_eV_atom": 2.9206279350546537e-08
+        },
+        {
+          "id": "r2SCAN-2400",
+          "E_diff_eV_atom": 7.927417755126954e-08,
+          "F_diff_RMS_eV_A": 1.1406983324546253e-06,
+          "stress_max_diff_GPa": 2.6177478141292635e-06,
+          "archived_energy_diff_eV_atom": 5.8412556427356325e-08
+        },
+        {
+          "id": "PBEsol-2300",
+          "E_diff_eV_atom": 2.384185449955112e-08,
+          "F_diff_RMS_eV_A": 1.0631339564772397e-06,
+          "stress_max_diff_GPa": 2.8322503210773727e-06,
+          "archived_energy_diff_eV_atom": 2.20537151562894e-08
+        },
+        {
+          "id": "r2SCAN-2300",
+          "E_diff_eV_atom": 6.973743438720703e-08,
+          "F_diff_RMS_eV_A": 1.3242150930480551e-06,
+          "stress_max_diff_GPa": 4.535074885640142e-06,
+          "archived_energy_diff_eV_atom": 3.337860562169226e-08
+        },
+        {
+          "id": "PBEsol-2200",
+          "E_diff_eV_atom": 1.4305118156698881e-08,
+          "F_diff_RMS_eV_A": 1.1821562493897538e-06,
+          "stress_max_diff_GPa": 1.6463447169495174e-06,
+          "archived_energy_diff_eV_atom": 4.8875812126425444e-08
+        },
+        {
+          "id": "r2SCAN-2200",
+          "E_diff_eV_atom": 1.0788440704345703e-07,
+          "F_diff_RMS_eV_A": 1.1707186687749945e-06,
+          "stress_max_diff_GPa": 2.6252745619206384e-06,
+          "archived_energy_diff_eV_atom": 6.020069577061804e-08
+        },
+        {
+          "id": "PBEsol-2100",
+          "E_diff_eV_atom": 1.1742115361812466e-07,
+          "F_diff_RMS_eV_A": 1.2288849002882236e-06,
+          "stress_max_diff_GPa": 7.632865774800192e-07,
+          "archived_energy_diff_eV_atom": 9.536743505123013e-08
+        },
+        {
+          "id": "r2SCAN-2100",
+          "E_diff_eV_atom": 6.794929504394531e-08,
+          "F_diff_RMS_eV_A": 1.2267450905851332e-06,
+          "stress_max_diff_GPa": 3.2353651386752533e-06,
+          "archived_energy_diff_eV_atom": 2.3841862457629758e-08
+        },
+        {
+          "id": "PBEsol-2000",
+          "E_diff_eV_atom": 7.629394872310514e-08,
+          "F_diff_RMS_eV_A": 1.124055689191235e-06,
+          "stress_max_diff_GPa": 2.4484324634051687e-06,
+          "archived_energy_diff_eV_atom": 2.6226047111777007e-08
+        },
+        {
+          "id": "r2SCAN-2000",
+          "E_diff_eV_atom": 3.695487976074219e-08,
+          "F_diff_RMS_eV_A": 1.3041491307908025e-06,
+          "stress_max_diff_GPa": 2.013084420158674e-06,
+          "archived_energy_diff_eV_atom": 6.079674221837195e-08
+        }
+      ],
+      "seconds_per_step": {
+        "PBEsol": 0.05459779677912593,
+        "r2SCAN": 0.054496496208012106
+      },
+      "projected_hours": 21.212779191943508,
+      "models_sha256": {
+        "23100": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+        "23200": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309"
+      },
+      "protocol_sha256": "d90b9fb94eb608253a6432284c452dd83ca59b284de8ff0e577795a14060adfc",
+      "versions": {
+        "ase": "3.29.0",
+        "deepmd-kit": "3.2.0",
+        "torch": "2.11.0",
+        "numpy": "2.5.3"
+      }
+    },
+    "progress.json": {
+      "active": null,
+      "completed": [
+        "PBEsol-1873",
+        "r2SCAN-1873",
+        "PBEsol-2500",
+        "r2SCAN-2500",
+        "PBEsol-2400",
+        "r2SCAN-2400",
+        "PBEsol-2300",
+        "r2SCAN-2300",
+        "PBEsol-2200",
+        "r2SCAN-2200",
+        "PBEsol-2100",
+        "r2SCAN-2100",
+        "PBEsol-2000",
+        "r2SCAN-2000"
+      ],
+      "failed": []
+    },
+    "summary.json": {
+      "status": "completed",
+      "completed": [
+        "PBEsol-1873",
+        "r2SCAN-1873",
+        "PBEsol-2500",
+        "r2SCAN-2500",
+        "PBEsol-2400",
+        "r2SCAN-2400",
+        "PBEsol-2300",
+        "r2SCAN-2300",
+        "PBEsol-2200",
+        "r2SCAN-2200",
+        "PBEsol-2100",
+        "r2SCAN-2100",
+        "PBEsol-2000",
+        "r2SCAN-2000"
+      ],
+      "failed": []
+    }
+  },
+  "logs": {
+    "worker.log": "8 4.4102\nproduction 82000 2186.9 4.4919\nproduction 83000 1884.8 4.5459\nproduction 84000 1853.2 4.4088\nproduction 85000 2044.7 4.5688\nproduction 86000 1960.1 4.4803\nproduction 87000 2054.3 4.4545\nproduction 88000 2230.8 4.3393\nproduction 89000 2096.6 4.4605\nproduction 90000 2189.0 4.4807\nCOMPLETED PBEsol-2000\nSTART r2SCAN-2000\nequilibration 0 2000.0 4.3994\nequilibration 1000 1978.9 4.3073\nequilibration 2000 2068.8 4.2287\nequilibration 3000 1951.7 4.3655\nequilibration 4000 1969.3 4.3109\nequilibration 5000 2014.5 4.3407\nequilibration 6000 2005.0 4.3168\nequilibration 7000 1761.3 4.3012\nequilibration 8000 1915.5 4.3512\nequilibration 9000 2051.9 4.2578\nequilibration 10000 1536.8 4.3\nproduction 0 2000.0 4.3\nproduction 1000 1773.6 4.3533\nproduction 2000 2048.9 4.2917\nproduction 3000 2091.4 4.3379\nproduction 4000 1891.4 4.306\nproduction 5000 2051.4 4.3258\nproduction 6000 2027.4 4.2627\nproduction 7000 2112.4 4.3144\nproduction 8000 1921.2 4.3436\nproduction 9000 2031.3 4.3183\nproduction 10000 1902.8 4.3245\nproduction 11000 2129.6 4.3209\nproduction 12000 2001.8 4.3172\nproduction 13000 2010.1 4.3017\nproduction 14000 2149.2 4.3509\nproduction 15000 1897.0 4.2854\nproduction 16000 2053.4 4.3141\nproduction 17000 1934.5 4.3331\nproduction 18000 2099.5 4.3105\nproduction 19000 1918.7 4.3082\nproduction 20000 1837.5 4.354\nproduction 21000 2199.5 4.4035\nproduction 22000 2068.0 4.3118\nproduction 23000 1910.9 4.3628\nproduction 24000 1977.4 4.3262\nproduction 25000 1939.5 4.265\nproduction 26000 1967.2 4.4521\nproduction 27000 1939.7 4.3405\nproduction 28000 1869.5 4.3298\nproduction 29000 1931.1 4.3822\nproduction 30000 1846.4 4.3478\nproduction 31000 1956.6 4.2438\nproduction 32000 2060.7 4.3322\nproduction 33000 2093.1 4.306\nproduction 34000 1921.1 4.4387\nproduction 35000 2038.6 4.3351\nproduction 36000 2090.2 4.2792\nproduction 37000 1952.1 4.3588\nproduction 38000 1868.1 4.2717\nproduction 39000 2111.8 4.3854\nproduction 40000 2107.6 4.2161\nproduction 41000 1968.0 4.3152\nproduction 42000 1729.2 4.2484\nproduction 43000 1942.3 4.2985\nproduction 44000 1978.3 4.4159\nproduction 45000 1998.7 4.2828\nproduction 46000 2060.3 4.2519\nproduction 47000 1829.3 4.3499\nproduction 48000 1876.1 4.3174\nproduction 49000 1987.0 4.2857\nproduction 50000 1885.3 4.3674\nproduction 51000 2011.4 4.425\nproduction 52000 1807.5 4.3033\nproduction 53000 1831.7 4.319\nproduction 54000 1938.6 4.2878\nproduction 55000 1824.1 4.3421\nproduction 56000 2129.5 4.3315\nproduction 57000 1787.6 4.2483\nproduction 58000 2046.1 4.4144\nproduction 59000 1955.2 4.2265\nproduction 60000 1998.8 4.38\nproduction 61000 1989.8 4.3103\nproduction 62000 1913.0 4.368\nproduction 63000 2062.0 4.3486\nproduction 64000 1923.0 4.3008\nproduction 65000 1754.7 4.4084\nproduction 66000 2038.0 4.3186\nproduction 67000 1862.4 4.3344\nproduction 68000 1896.9 4.3369\nproduction 69000 2020.7 4.2879\nproduction 70000 2160.7 4.2234\nproduction 71000 1803.1 4.3571\nproduction 72000 2066.9 4.3732\nproduction 73000 1814.1 4.3361\nproduction 74000 2106.3 4.3026\nproduction 75000 2054.7 4.2854\nproduction 76000 1996.5 4.318\nproduction 77000 1873.8 4.2432\nproduction 78000 2063.4 4.2988\nproduction 79000 2016.5 4.385\nproduction 80000 2082.7 4.2863\nproduction 81000 1893.7 4.2612\nproduction 82000 1923.1 4.375\nproduction 83000 2013.4 4.3488\nproduction 84000 1930.0 4.2712\nproduction 85000 1870.1 4.2967\nproduction 86000 2000.6 4.3268\nproduction 87000 1895.3 4.352\nproduction 88000 2054.8 4.3159\nproduction 89000 2148.2 4.2959\nproduction 90000 2191.9 4.2775\nCOMPLETED r2SCAN-2000\n",
+    "allocation-20968916.log": ""
+  }
+}

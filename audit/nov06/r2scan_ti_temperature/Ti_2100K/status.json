@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "submission.json": {
+      "unix": 1793933223.9663167,
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K",
+      "run_id": "r2scan-ti-2100-20261106-01",
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--partition=v100",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=1",
+        "--ntasks=1",
+        "--cpus-per-task=6",
+        "--gres=gpu:a100:1",
+        "--mem=32G",
+        "--time=20:00:00",
+        "--requeue",
+        "--job-name=Ti2100-visc-r2SCAN",
+        "--comment=r2scan-ti-2100-20261106-01",
+        "--chdir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K",
+        "--output=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K/allocation-%j.log",
+        "--open-mode=append",
+        "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K/job.sbatch"
+      ],
+      "status": "submitted",
+      "returncode": 0,
+      "stdout": "20988271\n",
+      "stderr": "",
+      "job_id": "20988271",
+      "new_sbatch_created": true
+    }
+  },
+  "completed": {
+    "Ti_2100K": 0
+  },
+  "logs": {},
+  "runtime_checks": {
+    "status": "PASS",
+    "models_and_initial_hashes": true,
+    "protocol_sha256": "b8ba5d5cd445cd3bb2958607c753fb3ae3833ed476fbf96398e3293f9d497ff9",
+    "latest_new5_raw_sha_checked": [],
+    "normalization": "state-specific V/(kB*T),bar->Pa,five shear channels;baseline reproduced in prequeue validation"
+  },
+  "scontrol": "JobId=20988271 JobName=Ti2100-visc-r2SCAN UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=897 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-06T07:47:03 EligibleTime=2026-11-06T07:47:03 AccrueTime=2026-11-06T07:47:03 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T09:09:50 Scheduler=Backfill:* Partition=v100 AllocNode:Sid=umt:2203689 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K/job.sbatch WorkDir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K Comment=r2scan-ti-2100-20261106-01  StdErr=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K/allocation-20988271.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K/allocation-20988271.log Power= TresPerNode=gres:gpu:a100:1",
+  "scontrol_returncode": 0
+}

@@ -1,0 +1,81 @@
+{
+  "checked_utc": "2026-10-28T02:40:23.166820+00:00",
+  "jobs": {
+    "PBE": {
+      "job_id": "20959753",
+      "state": "RUNNING",
+      "start_local": "2026-10-27T20:07:24+05:00",
+      "end_local": "2026-10-28T16:07:24+05:00",
+      "recent_scf": [
+        "DAV:  11    -0.749265259582E+03    0.62057E-05   -0.37506E-05172000   0.890E-03    0.443E-02",
+        "DAV:  12    -0.749265238609E+03    0.20973E-04   -0.21639E-05160040   0.895E-03    0.277E-02",
+        "DAV:  13    -0.749265231117E+03    0.74927E-05   -0.49158E-06173544   0.477E-03    0.205E-02",
+        "DAV:  14    -0.749265224150E+03    0.69661E-05   -0.42990E-06159816   0.479E-03    0.131E-02",
+        "DAV:  15    -0.749265220272E+03    0.38780E-05   -0.22363E-06171216   0.340E-03    0.830E-03"
+      ],
+      "ediff_reached": false,
+      "wavecar": {
+        "bytes": 0
+      },
+      "checkpoint_guard": {
+        "job_id": "20959753",
+        "checked_epoch": 1793155066.622998,
+        "deadline_epoch": 1793185644.0,
+        "reserve_seconds": 28800,
+        "state": "armed"
+      },
+      "fatal_indicators": []
+    },
+    "PBEsol": {
+      "job_id": "20959338",
+      "state": "RUNNING",
+      "start_local": "2026-10-28T00:10:39+05:00",
+      "end_local": "2026-10-28T20:10:39+05:00",
+      "recent_scf": [
+        "DAV:  18    -0.797861391000E+03    0.15229E-04   -0.52838E-05173848   0.214E-02    0.192E-02",
+        "DAV:  19    -0.797861372059E+03    0.18941E-04   -0.87703E-06171120   0.854E-03    0.863E-03",
+        "DAV:  20    -0.797861368796E+03    0.32630E-05   -0.39625E-06174128   0.634E-03    0.547E-03",
+        "DAV:  21    -0.797861366698E+03    0.20982E-05   -0.97064E-07173080   0.299E-03    0.200E-03",
+        "DAV:  22    -0.797861366464E+03    0.23381E-06   -0.25785E-07176888   0.141E-03    0.163E-03"
+      ],
+      "ediff_reached": false,
+      "wavecar": {
+        "bytes": 0
+      },
+      "checkpoint_guard": {
+        "job_id": "20959338",
+        "checked_epoch": 1793154951.869256,
+        "deadline_epoch": 1793200239.0,
+        "reserve_seconds": 28800,
+        "state": "armed"
+      },
+      "fatal_indicators": []
+    },
+    "r2SCAN": {
+      "job_id": "20960773",
+      "state": "RUNNING",
+      "start_local": "2026-10-28T04:30:48+05:00",
+      "end_local": "2026-10-29T00:30:48+05:00",
+      "recent_scf": [
+        "DAV:   1     0.139245604320E+05    0.13925E+05   -0.51642E+05129960   0.205E+03",
+        "DAV:   2    -0.121768142105E+03   -0.14046E+05   -0.13835E+05129024   0.694E+02"
+      ],
+      "ediff_reached": false,
+      "wavecar": {
+        "bytes": 0
+      },
+      "checkpoint_guard": {
+        "job_id": "20960773",
+        "checked_epoch": 1793154967.1934643,
+        "deadline_epoch": 1793215848.0,
+        "reserve_seconds": 28800,
+        "state": "armed"
+      },
+      "fatal_indicators": []
+    }
+  },
+  "converged": false,
+  "wavecar_note": "r2SCAN LWAVE true confirmed in OUTCAR, actual file is still 0 bytes. Saving has not yet been demonstrated for this attempt. PBE and PBEsol remain LWAVE false.",
+  "quota_used_KiB": 43225044,
+  "quota_limit_KiB": 104857600
+}

@@ -1,0 +1,48 @@
+load xyz file:  TiAl-liq-relax-ss_select-1000_ASAP-desc.xyz , a total of  1000 frames , a total of  220176 atoms , with elements:  [13, 22] .
+Find the following descriptor names that match the specifications:  ['SOAP-n4-l3-c3.2-g0.4']
+Use global descriptor matrix with shape:  (1000, 144)
+0
+Remove raw desciptors..
+removing the global descriptors from output xyz with the names:  ['SOAP-n4-l3-c3.2-g0.4']
+removing the atomic descriptors from output xyz with the names:  []
+Perform standard scaling of the design matrix. To turn it off use `--no-scale`
+Traceback (most recent call last):
+  File "/home/u2626/.conda/envs/asap_project/bin/asap", line 8, in <module>
+    sys.exit(asap())
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/asaplib/cli/cmd_asap.py", line 577, in pca
+    map_process(ctx.obj, reduce_dict, axes, map_name)
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/asaplib/cli/func_asap.py", line 135, in map_process
+    from asaplib.reducedim import Dimension_Reducers
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/asaplib/reducedim/__init__.py", line 4, in <module>
+    from .dim_reducer import Dimension_Reducers
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/asaplib/reducedim/dim_reducer.py", line 7, in <module>
+    import umap
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/umap/__init__.py", line 2, in <module>
+    from .umap_ import UMAP
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/umap/umap_.py", line 42, in <module>
+    from umap.layouts import (
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/umap/layouts.py", line 42, in <module>
+    def rdist(x, y):
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/numba/core/decorators.py", line 234, in wrapper
+    disp.enable_caching()
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/numba/core/dispatcher.py", line 863, in enable_caching
+    self._cache = FunctionCache(self.py_func)
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/numba/core/caching.py", line 601, in __init__
+    self._impl = self._impl_class(py_func)
+  File "/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/numba/core/caching.py", line 337, in __init__
+    raise RuntimeError("cannot cache function %r: no locator available "
+RuntimeError: cannot cache function 'rdist': no locator available for file '/home/u2626/.conda/envs/asap_project/lib/python3.8/site-packages/umap/layouts.py'

@@ -1,0 +1,1641 @@
+{
+  "groups": {
+    "5000": {
+      "train": {
+        "n": 850,
+        "energy_mae_meV_atom": 3.6057801649613745,
+        "energy_rmse_meV_atom": 5.214218463246466,
+        "energy_bias_meV_atom": 2.689696213908708,
+        "energy_n_positive": 602,
+        "energy_centered_rmse_diagnostic_meV_atom": 4.46694621182587,
+        "force_rmse_eV_A": 0.06298155033971345,
+        "force_mae_eV_A": 0.04635431474031752,
+        "stress_rmse_GPa": 0.08146422615854661,
+        "stress_mae_GPa": 0.05904481948278155
+      },
+      "validation": {
+        "n": 149,
+        "energy_mae_meV_atom": 4.3411622908715275,
+        "energy_rmse_meV_atom": 6.070802745752471,
+        "energy_bias_meV_atom": 3.747412276712545,
+        "energy_n_positive": 118,
+        "energy_centered_rmse_diagnostic_meV_atom": 4.776143549578451,
+        "force_rmse_eV_A": 0.06669461847234645,
+        "force_mae_eV_A": 0.0489855515998006,
+        "stress_rmse_GPa": 0.07631579764536056,
+        "stress_mae_GPa": 0.056938222541800504
+      },
+      "test20": {
+        "n": 20,
+        "energy_mae_meV_atom": 4.339665217775858,
+        "energy_rmse_meV_atom": 6.405515531492637,
+        "energy_bias_meV_atom": 4.1664703125310805,
+        "energy_n_positive": 17,
+        "energy_centered_rmse_diagnostic_meV_atom": 4.86530105532952,
+        "force_rmse_eV_A": 0.0675423106035919,
+        "force_mae_eV_A": 0.048939952155631745,
+        "stress_rmse_GPa": 0.11220398026054712,
+        "stress_mae_GPa": 0.07869299318642084
+      }
+    },
+    "10000": {
+      "train": {
+        "n": 850,
+        "energy_mae_meV_atom": 3.0437002969020153,
+        "energy_rmse_meV_atom": 3.3224069826798237,
+        "energy_bias_meV_atom": -3.0036713429747732,
+        "energy_n_positive": 25,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.419981204788208,
+        "force_rmse_eV_A": 0.06101589089227174,
+        "force_mae_eV_A": 0.044831498510520755,
+        "stress_rmse_GPa": 0.07559942859958706,
+        "stress_mae_GPa": 0.05397554932810661
+      },
+      "validation": {
+        "n": 149,
+        "energy_mae_meV_atom": 3.034711682982229,
+        "energy_rmse_meV_atom": 3.343643484271344,
+        "energy_bias_meV_atom": -3.0138414240048377,
+        "energy_n_positive": 4,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.4480026315109749,
+        "force_rmse_eV_A": 0.06543256035583253,
+        "force_mae_eV_A": 0.04802952130161353,
+        "stress_rmse_GPa": 0.07387451981759559,
+        "stress_mae_GPa": 0.05591835327988936
+      },
+      "test20": {
+        "n": 20,
+        "energy_mae_meV_atom": 3.1498200123085636,
+        "energy_rmse_meV_atom": 3.394799129286018,
+        "energy_bias_meV_atom": -3.016012007904868,
+        "energy_n_positive": 1,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.5583108471594345,
+        "force_rmse_eV_A": 0.0662690871806004,
+        "force_mae_eV_A": 0.047956468334540786,
+        "stress_rmse_GPa": 0.08860774048845549,
+        "stress_mae_GPa": 0.05805271851132843
+      }
+    },
+    "15000": {
+      "train": {
+        "n": 850,
+        "energy_mae_meV_atom": 2.9255228806303624,
+        "energy_rmse_meV_atom": 3.3217854300919325,
+        "energy_bias_meV_atom": 2.8205832226930414,
+        "energy_n_positive": 791,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.7545850584778095,
+        "force_rmse_eV_A": 0.059894503817121296,
+        "force_mae_eV_A": 0.043987025264932055,
+        "stress_rmse_GPa": 0.0648621128374075,
+        "stress_mae_GPa": 0.04625105739829176
+      },
+      "validation": {
+        "n": 149,
+        "energy_mae_meV_atom": 3.013788957517278,
+        "energy_rmse_meV_atom": 3.512015123993327,
+        "energy_bias_meV_atom": 2.9049181608993044,
+        "energy_n_positive": 139,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.9737529505070466,
+        "force_rmse_eV_A": 0.06487057631124228,
+        "force_mae_eV_A": 0.0476144732142883,
+        "stress_rmse_GPa": 0.060230069219418966,
+        "stress_mae_GPa": 0.045981246379172516
+      },
+      "test20": {
+        "n": 20,
+        "energy_mae_meV_atom": 2.7027673494546947,
+        "energy_rmse_meV_atom": 3.378873258841343,
+        "energy_bias_meV_atom": 2.5179645914622615,
+        "energy_n_positive": 18,
+        "energy_centered_rmse_diagnostic_meV_atom": 2.253139768291219,
+        "force_rmse_eV_A": 0.06552410723535425,
+        "force_mae_eV_A": 0.04753470084028602,
+        "stress_rmse_GPa": 0.09614712337740064,
+        "stress_mae_GPa": 0.06391591083566305
+      }
+    },
+    "20000": {
+      "train": {
+        "n": 850,
+        "energy_mae_meV_atom": 0.9631942229897906,
+        "energy_rmse_meV_atom": 1.2017313754964096,
+        "energy_bias_meV_atom": 0.513488630074436,
+        "energy_n_positive": 564,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.0865025198483307,
+        "force_rmse_eV_A": 0.05956101915965734,
+        "force_mae_eV_A": 0.04373753829474871,
+        "stress_rmse_GPa": 0.06194740301979701,
+        "stress_mae_GPa": 0.04419777355779997
+      },
+      "validation": {
+        "n": 149,
+        "energy_mae_meV_atom": 0.9746583467896706,
+        "energy_rmse_meV_atom": 1.2210256681716054,
+        "energy_bias_meV_atom": 0.4084252782095683,
+        "energy_n_positive": 96,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.1506921718919236,
+        "force_rmse_eV_A": 0.06472130698549088,
+        "force_mae_eV_A": 0.04750768100121931,
+        "stress_rmse_GPa": 0.056616607914070076,
+        "stress_mae_GPa": 0.04380055706866164
+      },
+      "test20": {
+        "n": 20,
+        "energy_mae_meV_atom": 0.9197531398951787,
+        "energy_rmse_meV_atom": 1.2279303953512646,
+        "energy_bias_meV_atom": 0.05389296817113034,
+        "energy_n_positive": 9,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.2267471637665273,
+        "force_rmse_eV_A": 0.06537624101363339,
+        "force_mae_eV_A": 0.04741963728439906,
+        "stress_rmse_GPa": 0.08880170849651861,
+        "stress_mae_GPa": 0.05702297631647835
+      }
+    },
+    "23400": {
+      "train": {
+        "n": 850,
+        "energy_mae_meV_atom": 0.9713163808327561,
+        "energy_rmse_meV_atom": 1.2006701082588076,
+        "energy_bias_meV_atom": 0.6334713460973811,
+        "energy_n_positive": 613,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.0199621377971777,
+        "force_rmse_eV_A": 0.05949420338047832,
+        "force_mae_eV_A": 0.04368298771612391,
+        "stress_rmse_GPa": 0.06363692182004979,
+        "stress_mae_GPa": 0.04532911611494844
+      },
+      "validation": {
+        "n": 149,
+        "energy_mae_meV_atom": 0.9943520795959916,
+        "energy_rmse_meV_atom": 1.2332184460230418,
+        "energy_bias_meV_atom": 0.5524592906217677,
+        "energy_n_positive": 105,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.1025499842715427,
+        "force_rmse_eV_A": 0.064683857603403,
+        "force_mae_eV_A": 0.04746922656411317,
+        "stress_rmse_GPa": 0.057518304830371576,
+        "stress_mae_GPa": 0.04439561704949751
+      },
+      "test20": {
+        "n": 20,
+        "energy_mae_meV_atom": 0.9878185507185551,
+        "energy_rmse_meV_atom": 1.3407547174508543,
+        "energy_bias_meV_atom": 0.31660130062971037,
+        "energy_n_positive": 11,
+        "energy_centered_rmse_diagnostic_meV_atom": 1.3028379902375797,
+        "force_rmse_eV_A": 0.06540398519929387,
+        "force_mae_eV_A": 0.04743850149056298,
+        "stress_rmse_GPa": 0.08922210371175605,
+        "stress_mae_GPa": 0.05844236418141302
+      }
+    }
+  },
+  "subgroups": {
+    "5000": {
+      "train": {
+        "xTi_lt_0.5": {
+          "n": 380,
+          "energy_mae_meV_atom": 1.2729204883529839,
+          "energy_rmse_meV_atom": 1.5959021546774341,
+          "energy_bias_meV_atom": -0.060633302528054725,
+          "energy_n_positive": 204,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.5947499145410287,
+          "force_rmse_eV_A": 0.04782594707027661,
+          "force_mae_eV_A": 0.03526083760397672,
+          "stress_rmse_GPa": 0.0788047005132257,
+          "stress_mae_GPa": 0.0539452224925195
+        },
+        "xTi_ge_0.5": {
+          "n": 470,
+          "energy_mae_meV_atom": 5.491922031155392,
+          "energy_rmse_meV_atom": 6.863725130561817,
+          "energy_bias_meV_atom": 4.913366886772474,
+          "energy_n_positive": 398,
+          "energy_centered_rmse_diagnostic_meV_atom": 4.792655683843101,
+          "force_rmse_eV_A": 0.07285591503739526,
+          "force_mae_eV_A": 0.05521472947671393,
+          "stress_rmse_GPa": 0.0835526131775803,
+          "stress_mae_GPa": 0.06316789790044022
+        },
+        "xTi_ge_0.9": {
+          "n": 91,
+          "energy_mae_meV_atom": 10.932687092826884,
+          "energy_rmse_meV_atom": 11.364600591837611,
+          "energy_bias_meV_atom": 10.932687092826884,
+          "energy_n_positive": 91,
+          "energy_centered_rmse_diagnostic_meV_atom": 3.103304616426221,
+          "force_rmse_eV_A": 0.08158239727001869,
+          "force_mae_eV_A": 0.06323010328253185,
+          "stress_rmse_GPa": 0.1073745556226972,
+          "stress_mae_GPa": 0.0816993158824147
+        },
+        "pure_Ti": {
+          "n": 15,
+          "energy_mae_meV_atom": 11.991026966656092,
+          "energy_rmse_meV_atom": 12.388527745522417,
+          "energy_bias_meV_atom": 11.991026966656092,
+          "energy_n_positive": 15,
+          "energy_centered_rmse_diagnostic_meV_atom": 3.1130197536323387,
+          "force_rmse_eV_A": 0.07779738712709694,
+          "force_mae_eV_A": 0.05811745055412943,
+          "stress_rmse_GPa": 0.1206702592094569,
+          "stress_mae_GPa": 0.0873142249240797
+        },
+        "Ti_rich_V_lt18": {
+          "n": 220,
+          "energy_mae_meV_atom": 3.9792757755988846,
+          "energy_rmse_meV_atom": 5.059742516009559,
+          "energy_bias_meV_atom": 2.9011432066691003,
+          "energy_n_positive": 164,
+          "energy_centered_rmse_diagnostic_meV_atom": 4.1454025646145,
+          "force_rmse_eV_A": 0.07529821315031097,
+          "force_mae_eV_A": 0.05668578347303365,
+          "stress_rmse_GPa": 0.07687656639070074,
+          "stress_mae_GPa": 0.057498238109888036
+        },
+        "Ti_rich_V_18to20": {
+          "n": 178,
+          "energy_mae_meV_atom": 5.911050590695645,
+          "energy_rmse_meV_atom": 7.153152924729235,
+          "energy_bias_meV_atom": 5.715928384541604,
+          "energy_n_positive": 162,
+          "energy_centered_rmse_diagnostic_meV_atom": 4.300669653362605,
+          "force_rmse_eV_A": 0.0718072451430352,
+          "force_mae_eV_A": 0.054712250994091625,
+          "stress_rmse_GPa": 0.08521411526947478,
+          "stress_mae_GPa": 0.06513382105882899
+        },
+        "Ti_rich_V_ge20": {
+          "n": 72,
+          "energy_mae_meV_atom": 9.077717762047989,
+          "energy_rmse_meV_atom": 10.13929969474825,
+          "energy_bias_meV_atom": 9.077717762047989,
+          "energy_n_positive": 72,
+          "energy_centered_rmse_diagnostic_meV_atom": 4.516684462359572,
+          "force_rmse_eV_A": 0.0673141127858033,
+          "force_mae_eV_A": 0.051771139166245886,
+          "stress_rmse_GPa": 0.09777736187135018,
+          "stress_mae_GPa": 0.07563165945222193
+        }
+      },
+      "validation": {
+        "xTi_lt_0.5": {
+          "n": 64,
+          "energy_mae_meV_atom": 1.2841808227940006,
+          "energy_rmse_meV_atom": 1.6668275217330526,
+          "energy_bias_meV_atom": 0.15842597852118362,
+          "energy_n_positive": 38,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.6592815302221489,
+          "force_rmse_eV_A": 0.04656835841635402,
+          "force_mae_eV_A": 0.03449912104063422,
+          "stress_rmse_GPa": 0.0649588127897021,
+          "stress_mae_GPa": 0.04831669255026442
+        },
+        "xTi_ge_0.5": {
+          "n": 85,
+          "energy_mae_meV_atom": 6.642889513894606,
+          "energy_rmse_meV_atom": 7.90646061627213,
+          "energy_bias_meV_atom": 6.449707842409571,
+          "energy_n_positive": 80,
+          "energy_centered_rmse_diagnostic_meV_atom": 4.57311581137224,
+          "force_rmse_eV_A": 0.07851351251037737,
+          "force_mae_eV_A": 0.059891868471146435,
+          "stress_rmse_GPa": 0.08385797612545318,
+          "stress_mae_GPa": 0.06342972747660414
+        },
+        "xTi_ge_0.9": {
+          "n": 24,
+          "energy_mae_meV_atom": 11.346831612404833,
+          "energy_rmse_meV_atom": 11.80712143954695,
+          "energy_bias_meV_atom": 11.346831612404833,
+          "energy_n_positive": 24,
+          "energy_centered_rmse_diagnostic_meV_atom": 3.264587117529504,
+          "force_rmse_eV_A": 0.08145766962442359,
+          "force_mae_eV_A": 0.06256016644969724,
+          "stress_rmse_GPa": 0.10261135905752579,
+          "stress_mae_GPa": 0.07692969188201901
+        },
+        "pure_Ti": {
+          "n": 4,
+          "energy_mae_meV_atom": 14.427344673195975,
+          "energy_rmse_meV_atom": 14.603727291646045,
+          "energy_bias_meV_atom": 14.427344673195975,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.2628690836129395,
+          "force_rmse_eV_A": 0.07378305642558398,
+          "force_mae_eV_A": 0.05787137218671883,
+          "stress_rmse_GPa": 0.1425740936001538,
+          "stress_mae_GPa": 0.1052396831460894
+        },
+        "Ti_rich_V_lt18": {
+          "n": 39,
+          "energy_mae_meV_atom": 4.730511024069564,
+          "energy_rmse_meV_atom": 5.7415536243090495,
+          "energy_bias_meV_atom": 4.309474047756024,
+          "energy_n_positive": 34,
+          "energy_centered_rmse_diagnostic_meV_atom": 3.793925599235399,
+          "force_rmse_eV_A": 0.08124125306399253,
+          "force_mae_eV_A": 0.06128306182506583,
+          "stress_rmse_GPa": 0.07185671419837794,
+          "stress_mae_GPa": 0.05560396442467647
+        },
+        "Ti_rich_V_18to20": {
+          "n": 34,
+          "energy_mae_meV_atom": 7.63111682604507,
+          "energy_rmse_meV_atom": 8.593044973485023,
+          "energy_bias_meV_atom": 7.63111682604507,
+          "energy_n_positive": 34,
+          "energy_centered_rmse_diagnostic_meV_atom": 3.95050350000959,
+          "force_rmse_eV_A": 0.0766770284427385,
+          "force_mae_eV_A": 0.059081958302401226,
+          "stress_rmse_GPa": 0.08861505665501011,
+          "stress_mae_GPa": 0.06816741744637858
+        },
+        "Ti_rich_V_ge20": {
+          "n": 12,
+          "energy_mae_meV_atom": 10.05814222139967,
+          "energy_rmse_meV_atom": 11.24464215952433,
+          "energy_bias_meV_atom": 10.05814222139967,
+          "energy_n_positive": 12,
+          "energy_centered_rmse_diagnostic_meV_atom": 5.027499612118263,
+          "force_rmse_eV_A": 0.0742403312077609,
+          "force_mae_eV_A": 0.05752342923467729,
+          "stress_rmse_GPa": 0.10383165256989386,
+          "stress_mae_GPa": 0.07544000248100814
+        }
+      },
+      "test20": {
+        "xTi_lt_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 1.3211449037811989,
+          "energy_rmse_meV_atom": 1.4634452555894228,
+          "energy_bias_meV_atom": 1.12176010034296,
+          "energy_n_positive": 8,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9398544000991553,
+          "force_rmse_eV_A": 0.05157227962149692,
+          "force_mae_eV_A": 0.03718479210576275,
+          "stress_rmse_GPa": 0.12026344593387715,
+          "stress_mae_GPa": 0.07708355286664072
+        },
+        "xTi_ge_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 7.358185531770519,
+          "energy_rmse_meV_atom": 8.93977552471423,
+          "energy_bias_meV_atom": 7.211180524719206,
+          "energy_n_positive": 9,
+          "energy_centered_rmse_diagnostic_meV_atom": 5.283792375954043,
+          "force_rmse_eV_A": 0.08040041926499078,
+          "force_mae_eV_A": 0.06069511220550074,
+          "stress_rmse_GPa": 0.10351893519896688,
+          "stress_mae_GPa": 0.08030243350620095
+        },
+        "xTi_ge_0.9": {
+          "n": 2,
+          "energy_mae_meV_atom": 12.917607573914712,
+          "energy_rmse_meV_atom": 13.85456768495521,
+          "energy_bias_meV_atom": 12.917607573914712,
+          "energy_n_positive": 2,
+          "energy_centered_rmse_diagnostic_meV_atom": 5.008438908816443,
+          "force_rmse_eV_A": 0.08938434304519823,
+          "force_mae_eV_A": 0.06954674088426525,
+          "stress_rmse_GPa": 0.15235255471951348,
+          "stress_mae_GPa": 0.12839685607999862
+        },
+        "pure_Ti": {
+          "n": 1,
+          "energy_mae_meV_atom": 7.909168665098268,
+          "energy_rmse_meV_atom": 7.909168665098268,
+          "energy_bias_meV_atom": 7.909168665098268,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.0,
+          "force_rmse_eV_A": 0.10816653432185087,
+          "force_mae_eV_A": 0.08668096220614045,
+          "stress_rmse_GPa": 0.17169039180313575,
+          "stress_mae_GPa": 0.14839172157730104
+        },
+        "Ti_rich_V_lt18": {
+          "n": 4,
+          "energy_mae_meV_atom": 5.610643153471212,
+          "energy_rmse_meV_atom": 6.539368833639013,
+          "energy_bias_meV_atom": 5.610643153471212,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 3.359170752845985,
+          "force_rmse_eV_A": 0.09712233344539073,
+          "force_mae_eV_A": 0.07525276422636579,
+          "stress_rmse_GPa": 0.11071823696633372,
+          "stress_mae_GPa": 0.08477855377030201
+        },
+        "Ti_rich_V_18to20": {
+          "n": 2,
+          "energy_mae_meV_atom": 2.0095383842331143,
+          "energy_rmse_meV_atom": 2.3796278688958155,
+          "energy_bias_meV_atom": 1.2745133489765428,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.0095383842331147,
+          "force_rmse_eV_A": 0.07136926947184323,
+          "force_mae_eV_A": 0.0528738819322598,
+          "stress_rmse_GPa": 0.06876898919021682,
+          "stress_mae_GPa": 0.0548304696982588
+        },
+        "Ti_rich_V_ge20": {
+          "n": 4,
+          "energy_mae_meV_atom": 11.780051483838527,
+          "energy_rmse_meV_atom": 12.417902678839004,
+          "energy_bias_meV_atom": 11.780051483838527,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 3.9287013094953753,
+          "force_rmse_eV_A": 0.06466092002605439,
+          "force_mae_eV_A": 0.05004807532125616,
+          "stress_rmse_GPa": 0.11030552990564188,
+          "stress_mae_GPa": 0.08856229514607096
+        }
+      }
+    },
+    "10000": {
+      "train": {
+        "xTi_lt_0.5": {
+          "n": 380,
+          "energy_mae_meV_atom": 2.2683978105032483,
+          "energy_rmse_meV_atom": 2.5906245371438934,
+          "energy_bias_meV_atom": -2.189640192095507,
+          "energy_n_positive": 24,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.3844895527276344,
+          "force_rmse_eV_A": 0.04643553963040183,
+          "force_mae_eV_A": 0.03417154870158748,
+          "stress_rmse_GPa": 0.07667893658623376,
+          "stress_mae_GPa": 0.05219892770580403
+        },
+        "xTi_ge_0.5": {
+          "n": 470,
+          "energy_mae_meV_atom": 3.6705406050542106,
+          "energy_rmse_meV_atom": 3.8127229471314656,
+          "energy_bias_meV_atom": -3.6618241883665212,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0620263109154666,
+          "force_rmse_eV_A": 0.07052838890749416,
+          "force_mae_eV_A": 0.05334565283882484,
+          "stress_rmse_GPa": 0.07471523277166191,
+          "stress_mae_GPa": 0.055411966809968266
+        },
+        "xTi_ge_0.9": {
+          "n": 91,
+          "energy_mae_meV_atom": 3.4091762760985582,
+          "energy_rmse_meV_atom": 3.57741784781349,
+          "energy_bias_meV_atom": -3.3641574206786236,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.2167018150506095,
+          "force_rmse_eV_A": 0.07894441572126588,
+          "force_mae_eV_A": 0.0610586171401795,
+          "stress_rmse_GPa": 0.09691419326368922,
+          "stress_mae_GPa": 0.07189357024018721
+        },
+        "pure_Ti": {
+          "n": 15,
+          "energy_mae_meV_atom": 3.102854792058815,
+          "energy_rmse_meV_atom": 3.3576075611916916,
+          "energy_bias_meV_atom": -2.8297404025112125,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.8072348462132146,
+          "force_rmse_eV_A": 0.07541275487251735,
+          "force_mae_eV_A": 0.05616119956607049,
+          "stress_rmse_GPa": 0.10846061340456835,
+          "stress_mae_GPa": 0.0806626999080736
+        },
+        "Ti_rich_V_lt18": {
+          "n": 220,
+          "energy_mae_meV_atom": 3.6495179551977643,
+          "energy_rmse_meV_atom": 3.7978347792654144,
+          "energy_bias_meV_atom": -3.6495179551977643,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0509841603407282,
+          "force_rmse_eV_A": 0.07273152064963596,
+          "force_mae_eV_A": 0.0546148759995582,
+          "stress_rmse_GPa": 0.07952174276666736,
+          "stress_mae_GPa": 0.058840134762902827
+        },
+        "Ti_rich_V_18to20": {
+          "n": 178,
+          "energy_mae_meV_atom": 3.6888853601171827,
+          "energy_rmse_meV_atom": 3.840614103703556,
+          "energy_bias_meV_atom": -3.665870102571036,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.145300434227842,
+          "force_rmse_eV_A": 0.06961580241100597,
+          "force_mae_eV_A": 0.05295086158318906,
+          "stress_rmse_GPa": 0.07451343345492645,
+          "stress_mae_GPa": 0.05543351075337498
+        },
+        "Ti_rich_V_ge20": {
+          "n": 72,
+          "energy_mae_meV_atom": 3.6894241684876707,
+          "energy_rmse_meV_atom": 3.788845642616841,
+          "energy_bias_meV_atom": -3.6894241684876707,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.8622648134741911,
+          "force_rmse_eV_A": 0.06546448731408132,
+          "force_mae_eV_A": 0.050277722080727644,
+          "stress_rmse_GPa": 0.05823748597368224,
+          "stress_mae_GPa": 0.04488374776035719
+        }
+      },
+      "validation": {
+        "xTi_lt_0.5": {
+          "n": 64,
+          "energy_mae_meV_atom": 2.181084901912799,
+          "energy_rmse_meV_atom": 2.474918509555319,
+          "energy_bias_meV_atom": -2.154317021121567,
+          "energy_n_positive": 3,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.2182527658271163,
+          "force_rmse_eV_A": 0.04579232649334648,
+          "force_mae_eV_A": 0.03390716752955182,
+          "stress_rmse_GPa": 0.06207061477504791,
+          "stress_mae_GPa": 0.04679513394879667
+        },
+        "xTi_ge_0.5": {
+          "n": 85,
+          "energy_mae_meV_atom": 3.6774424357874462,
+          "energy_rmse_meV_atom": 3.8711582496631687,
+          "energy_bias_meV_atom": -3.6610127391169467,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.258114429596385,
+          "force_rmse_eV_A": 0.07698077117870446,
+          "force_mae_eV_A": 0.05866173774570452,
+          "stress_rmse_GPa": 0.08164359699517632,
+          "stress_mae_GPa": 0.0627876007762415
+        },
+        "xTi_ge_0.9": {
+          "n": 24,
+          "energy_mae_meV_atom": 3.2431042413355584,
+          "energy_rmse_meV_atom": 3.4502199189393057,
+          "energy_bias_meV_atom": -3.1849157322942054,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.326774007595271,
+          "force_rmse_eV_A": 0.07984549865372362,
+          "force_mae_eV_A": 0.06113032926343665,
+          "stress_rmse_GPa": 0.09548461053859579,
+          "stress_mae_GPa": 0.07367386418068243
+        },
+        "pure_Ti": {
+          "n": 4,
+          "energy_mae_meV_atom": 3.3790169976513154,
+          "energy_rmse_meV_atom": 3.469151474413283,
+          "energy_bias_meV_atom": -3.3790169976513154,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.7856564656434404,
+          "force_rmse_eV_A": 0.07228763155731358,
+          "force_mae_eV_A": 0.05671396233321797,
+          "stress_rmse_GPa": 0.06705867252494777,
+          "stress_mae_GPa": 0.053315744669477694
+        },
+        "Ti_rich_V_lt18": {
+          "n": 39,
+          "energy_mae_meV_atom": 3.267228131679583,
+          "energy_rmse_meV_atom": 3.395364956658035,
+          "energy_bias_meV_atom": -3.267228131679583,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9239716037102864,
+          "force_rmse_eV_A": 0.0793790189829134,
+          "force_mae_eV_A": 0.05978106421305022,
+          "stress_rmse_GPa": 0.08574924515025815,
+          "stress_mae_GPa": 0.06648315338197375
+        },
+        "Ti_rich_V_18to20": {
+          "n": 34,
+          "energy_mae_meV_atom": 3.8291886320335937,
+          "energy_rmse_meV_atom": 4.056576201565684,
+          "energy_bias_meV_atom": -3.7881143903573444,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.4512063411784952,
+          "force_rmse_eV_A": 0.07548817801703926,
+          "force_mae_eV_A": 0.05808930746348198,
+          "stress_rmse_GPa": 0.08210560872871053,
+          "stress_mae_GPa": 0.06286725326671767
+        },
+        "Ti_rich_V_ge20": {
+          "n": 12,
+          "energy_mae_meV_atom": 4.58069136810725,
+          "energy_rmse_meV_atom": 4.6965363640633155,
+          "energy_bias_meV_atom": -4.58069136810725,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.036687228201829,
+          "force_rmse_eV_A": 0.07289728961787642,
+          "force_mae_eV_A": 0.056530679005192035,
+          "stress_rmse_GPa": 0.06494414066878257,
+          "stress_mae_GPa": 0.05055137275126251
+        }
+      },
+      "test20": {
+        "xTi_lt_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 2.4376517492962497,
+          "energy_rmse_meV_atom": 2.6844679649133316,
+          "energy_bias_meV_atom": -2.1700357404888586,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.5802889418226331,
+          "force_rmse_eV_A": 0.05052380142388042,
+          "force_mae_eV_A": 0.036339924799900634,
+          "stress_rmse_GPa": 0.10542381963755175,
+          "stress_mae_GPa": 0.06555322595705755
+        },
+        "xTi_ge_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 3.861988275320877,
+          "energy_rmse_meV_atom": 3.9803208415599216,
+          "energy_bias_meV_atom": -3.861988275320877,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9633278585405722,
+          "force_rmse_eV_A": 0.07893370206179572,
+          "force_mae_eV_A": 0.05957301186918093,
+          "stress_rmse_GPa": 0.06773833185108637,
+          "stress_mae_GPa": 0.050552211065599297
+        },
+        "xTi_ge_0.9": {
+          "n": 2,
+          "energy_mae_meV_atom": 2.9823692795045216,
+          "energy_rmse_meV_atom": 3.3487854421721575,
+          "energy_bias_meV_atom": -2.9823692795045216,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.5231012502036276,
+          "force_rmse_eV_A": 0.0867305679564909,
+          "force_mae_eV_A": 0.06738686032674261,
+          "stress_rmse_GPa": 0.059726933372935796,
+          "stress_mae_GPa": 0.045020677415345496
+        },
+        "pure_Ti": {
+          "n": 1,
+          "energy_mae_meV_atom": 4.505470529708149,
+          "energy_rmse_meV_atom": 4.505470529708149,
+          "energy_bias_meV_atom": -4.505470529708149,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.0,
+          "force_rmse_eV_A": 0.10530117862253612,
+          "force_mae_eV_A": 0.08429561836377844,
+          "stress_rmse_GPa": 0.07553720616903307,
+          "stress_mae_GPa": 0.05707401009456652
+        },
+        "Ti_rich_V_lt18": {
+          "n": 4,
+          "energy_mae_meV_atom": 4.373395577922502,
+          "energy_rmse_meV_atom": 4.375419794406924,
+          "energy_bias_meV_atom": -4.373395577922502,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.13307703143605745,
+          "force_rmse_eV_A": 0.09512164914639935,
+          "force_mae_eV_A": 0.07374705654332077,
+          "stress_rmse_GPa": 0.08640297624695112,
+          "stress_mae_GPa": 0.06302355146696619
+        },
+        "Ti_rich_V_18to20": {
+          "n": 2,
+          "energy_mae_meV_atom": 4.664801068840432,
+          "energy_rmse_meV_atom": 4.67886864223781,
+          "energy_bias_meV_atom": -4.664801068840432,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.36255035438054417,
+          "force_rmse_eV_A": 0.07043757360596284,
+          "force_mae_eV_A": 0.051654451058973656,
+          "stress_rmse_GPa": 0.06177905092398914,
+          "stress_mae_GPa": 0.05250508264866041
+        },
+        "Ti_rich_V_ge20": {
+          "n": 4,
+          "energy_mae_meV_atom": 2.9491745759594745,
+          "energy_rmse_meV_atom": 3.084992826806027,
+          "energy_bias_meV_atom": -2.9491745759594745,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9052900430021833,
+          "force_rmse_eV_A": 0.06361972397670723,
+          "force_mae_eV_A": 0.04935824760014473,
+          "stress_rmse_GPa": 0.04579742497187076,
+          "stress_mae_GPa": 0.03710443487270185
+        }
+      }
+    },
+    "15000": {
+      "train": {
+        "xTi_lt_0.5": {
+          "n": 380,
+          "energy_mae_meV_atom": 2.1284196595872085,
+          "energy_rmse_meV_atom": 2.4605728233266704,
+          "energy_bias_meV_atom": 1.8949805161425035,
+          "energy_n_positive": 323,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.569543711507925,
+          "force_rmse_eV_A": 0.045578372231618064,
+          "force_mae_eV_A": 0.03354867352090911,
+          "stress_rmse_GPa": 0.07087463806691251,
+          "stress_mae_GPa": 0.04810812799808513
+        },
+        "xTi_ge_0.5": {
+          "n": 470,
+          "energy_mae_meV_atom": 3.5699893146652526,
+          "energy_rmse_meV_atom": 3.8807875384826236,
+          "energy_bias_meV_atom": 3.568942857776456,
+          "energy_n_positive": 468,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.524191194295666,
+          "force_rmse_eV_A": 0.06923414560208645,
+          "force_mae_eV_A": 0.05232418812917511,
+          "stress_rmse_GPa": 0.05955880675984667,
+          "stress_mae_GPa": 0.04474959606228861
+        },
+        "xTi_ge_0.9": {
+          "n": 91,
+          "energy_mae_meV_atom": 4.751882135608953,
+          "energy_rmse_meV_atom": 5.113223107746326,
+          "energy_bias_meV_atom": 4.751882135608953,
+          "energy_n_positive": 91,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.8880324994214224,
+          "force_rmse_eV_A": 0.07758166398861312,
+          "force_mae_eV_A": 0.059941475562162866,
+          "stress_rmse_GPa": 0.06881917966664694,
+          "stress_mae_GPa": 0.050838112300294454
+        },
+        "pure_Ti": {
+          "n": 15,
+          "energy_mae_meV_atom": 6.426093498898537,
+          "energy_rmse_meV_atom": 6.876055287910689,
+          "energy_bias_meV_atom": 6.426093498898537,
+          "energy_n_positive": 15,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.4465197047680802,
+          "force_rmse_eV_A": 0.07434763664251015,
+          "force_mae_eV_A": 0.05521057490575799,
+          "stress_rmse_GPa": 0.08795932776491858,
+          "stress_mae_GPa": 0.0578266391652505
+        },
+        "Ti_rich_V_lt18": {
+          "n": 220,
+          "energy_mae_meV_atom": 3.0654030743891414,
+          "energy_rmse_meV_atom": 3.4200730688086045,
+          "energy_bias_meV_atom": 3.063167461944893,
+          "energy_n_positive": 218,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.5211524894210928,
+          "force_rmse_eV_A": 0.0713894267551487,
+          "force_mae_eV_A": 0.05355529133214407,
+          "stress_rmse_GPa": 0.06625041896237399,
+          "stress_mae_GPa": 0.04952940642841293
+        },
+        "Ti_rich_V_18to20": {
+          "n": 178,
+          "energy_mae_meV_atom": 3.707988852703114,
+          "energy_rmse_meV_atom": 3.930990034144324,
+          "energy_bias_meV_atom": 3.707988852703114,
+          "energy_n_positive": 178,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.3051824840885036,
+          "force_rmse_eV_A": 0.06834866139815711,
+          "force_mae_eV_A": 0.05193646516427119,
+          "stress_rmse_GPa": 0.05299250659786863,
+          "stress_mae_GPa": 0.04048356265226779
+        },
+        "Ti_rich_V_ge20": {
+          "n": 72,
+          "energy_mae_meV_atom": 4.770615079804212,
+          "energy_rmse_meV_atom": 4.9364645683613935,
+          "energy_bias_meV_atom": 4.770615079804212,
+          "energy_n_positive": 72,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.2688239417003802,
+          "force_rmse_eV_A": 0.0642619912415703,
+          "force_mae_eV_A": 0.049360364737149325,
+          "stress_rmse_GPa": 0.05293360623530892,
+          "stress_mae_GPa": 0.04069120254057129
+        }
+      },
+      "validation": {
+        "xTi_lt_0.5": {
+          "n": 64,
+          "energy_mae_meV_atom": 2.108350726419866,
+          "energy_rmse_meV_atom": 2.4143328159518314,
+          "energy_bias_meV_atom": 1.8548859030436478,
+          "energy_n_positive": 54,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.5454453186288577,
+          "force_rmse_eV_A": 0.04530768687652475,
+          "force_mae_eV_A": 0.03356220544487537,
+          "stress_rmse_GPa": 0.05640177422184906,
+          "stress_mae_GPa": 0.04297894109395337
+        },
+        "xTi_ge_0.5": {
+          "n": 85,
+          "energy_mae_meV_atom": 3.695530684461211,
+          "energy_rmse_meV_atom": 4.1511828163958,
+          "energy_bias_meV_atom": 3.695530684461211,
+          "energy_n_positive": 85,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.8908653403522504,
+          "force_rmse_eV_A": 0.0763604567392084,
+          "force_mae_eV_A": 0.05819392440678668,
+          "stress_rmse_GPa": 0.0629591161295672,
+          "stress_mae_GPa": 0.04824180565274927
+        },
+        "xTi_ge_0.9": {
+          "n": 24,
+          "energy_mae_meV_atom": 5.530619829632664,
+          "energy_rmse_meV_atom": 5.945352657740967,
+          "energy_bias_meV_atom": 5.530619829632664,
+          "energy_n_positive": 24,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.1816192438144535,
+          "force_rmse_eV_A": 0.07903978156939206,
+          "force_mae_eV_A": 0.060518082178818246,
+          "stress_rmse_GPa": 0.06964495698115801,
+          "stress_mae_GPa": 0.051273605929748056
+        },
+        "pure_Ti": {
+          "n": 4,
+          "energy_mae_meV_atom": 6.008993123402805,
+          "energy_rmse_meV_atom": 6.111311230434074,
+          "energy_bias_meV_atom": 6.008993123402805,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.113609715352491,
+          "force_rmse_eV_A": 0.07161461518002714,
+          "force_mae_eV_A": 0.05610172388262722,
+          "stress_rmse_GPa": 0.07149440865424725,
+          "stress_mae_GPa": 0.05480921862192115
+        },
+        "Ti_rich_V_lt18": {
+          "n": 39,
+          "energy_mae_meV_atom": 3.502344530554988,
+          "energy_rmse_meV_atom": 4.087992011392906,
+          "energy_bias_meV_atom": 3.502344530554988,
+          "energy_n_positive": 39,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.1083788735670304,
+          "force_rmse_eV_A": 0.07872795900977654,
+          "force_mae_eV_A": 0.05930019734948331,
+          "stress_rmse_GPa": 0.06818813423837237,
+          "stress_mae_GPa": 0.05213897888221806
+        },
+        "Ti_rich_V_18to20": {
+          "n": 34,
+          "energy_mae_meV_atom": 3.7664040768919658,
+          "energy_rmse_meV_atom": 4.118357890873985,
+          "energy_bias_meV_atom": 3.7664040768919658,
+          "energy_n_positive": 34,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.6658547496392349,
+          "force_rmse_eV_A": 0.07484769178331292,
+          "force_mae_eV_A": 0.05761093360865527,
+          "stress_rmse_GPa": 0.05764011378142594,
+          "stress_mae_GPa": 0.045212602794636715
+        },
+        "Ti_rich_V_ge20": {
+          "n": 12,
+          "energy_mae_meV_atom": 4.122577739435957,
+          "energy_rmse_meV_atom": 4.437735803824846,
+          "energy_bias_meV_atom": 4.122577739435957,
+          "energy_n_positive": 12,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.6425138802628325,
+          "force_rmse_eV_A": 0.0724464174902518,
+          "force_mae_eV_A": 0.0561367798557108,
+          "stress_rmse_GPa": 0.0596035646793824,
+          "stress_mae_GPa": 0.04415873408829463
+        }
+      },
+      "test20": {
+        "xTi_lt_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 1.9284527025296445,
+          "energy_rmse_meV_atom": 2.089567032945983,
+          "energy_bias_meV_atom": 1.5588471865447777,
+          "energy_n_positive": 8,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.3915048811183197,
+          "force_rmse_eV_A": 0.050271946604815494,
+          "force_mae_eV_A": 0.036132128425810824,
+          "stress_rmse_GPa": 0.10730347001778726,
+          "stress_mae_GPa": 0.06259567554863969
+        },
+        "xTi_ge_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 3.477081996379744,
+          "energy_rmse_meV_atom": 4.297357166148929,
+          "energy_bias_meV_atom": 3.477081996379744,
+          "energy_n_positive": 10,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.5253077839945393,
+          "force_rmse_eV_A": 0.07784310272941967,
+          "force_mae_eV_A": 0.05893727325476123,
+          "stress_rmse_GPa": 0.08351349585330523,
+          "stress_mae_GPa": 0.06523614612268641
+        },
+        "xTi_ge_0.9": {
+          "n": 2,
+          "energy_mae_meV_atom": 5.1149021209648,
+          "energy_rmse_meV_atom": 6.3024525531003786,
+          "energy_bias_meV_atom": 5.1149021209648,
+          "energy_n_positive": 2,
+          "energy_centered_rmse_diagnostic_meV_atom": 3.6822119000719216,
+          "force_rmse_eV_A": 0.08550236232601646,
+          "force_mae_eV_A": 0.06654711512672089,
+          "stress_rmse_GPa": 0.12382909639554465,
+          "stress_mae_GPa": 0.0968925201816454
+        },
+        "pure_Ti": {
+          "n": 1,
+          "energy_mae_meV_atom": 1.432690220892878,
+          "energy_rmse_meV_atom": 1.432690220892878,
+          "energy_bias_meV_atom": 1.432690220892878,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.0,
+          "force_rmse_eV_A": 0.10333776929919311,
+          "force_mae_eV_A": 0.0829334610384271,
+          "stress_rmse_GPa": 0.1590602227135623,
+          "stress_mae_GPa": 0.1305436851425168
+        },
+        "Ti_rich_V_lt18": {
+          "n": 4,
+          "energy_mae_meV_atom": 1.5031896941148186,
+          "energy_rmse_meV_atom": 1.6139353202854112,
+          "energy_bias_meV_atom": 1.5031896941148186,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.587544008200042,
+          "force_rmse_eV_A": 0.09374652554256245,
+          "force_mae_eV_A": 0.07303466183994055,
+          "stress_rmse_GPa": 0.10967942312997876,
+          "stress_mae_GPa": 0.08998141708229296
+        },
+        "Ti_rich_V_18to20": {
+          "n": 2,
+          "energy_mae_meV_atom": 1.8182016521811413,
+          "energy_rmse_meV_atom": 1.9010424198230562,
+          "energy_bias_meV_atom": 1.8182016521811413,
+          "energy_n_positive": 2,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.5550720979949086,
+          "force_rmse_eV_A": 0.06936069509376254,
+          "force_mae_eV_A": 0.05139616373066355,
+          "stress_rmse_GPa": 0.047156026788008565,
+          "stress_mae_GPa": 0.04032939272412226
+        },
+        "Ti_rich_V_ge20": {
+          "n": 4,
+          "energy_mae_meV_atom": 6.28041447074397,
+          "energy_rmse_meV_atom": 6.46192139959786,
+          "energy_bias_meV_atom": 6.28041447074397,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.5207965841132407,
+          "force_rmse_eV_A": 0.0628888507059097,
+          "force_mae_eV_A": 0.04861043943163076,
+          "stress_rmse_GPa": 0.06553501876675906,
+          "stress_mae_GPa": 0.05294425186236192
+        }
+      }
+    },
+    "20000": {
+      "train": {
+        "xTi_lt_0.5": {
+          "n": 380,
+          "energy_mae_meV_atom": 0.7340677599397393,
+          "energy_rmse_meV_atom": 0.9246903137920205,
+          "energy_bias_meV_atom": 0.058295488749764424,
+          "energy_n_positive": 185,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.922850915593744,
+          "force_rmse_eV_A": 0.045334028754337626,
+          "force_mae_eV_A": 0.03337985888235848,
+          "stress_rmse_GPa": 0.07007256617271157,
+          "stress_mae_GPa": 0.04768636073340512
+        },
+        "xTi_ge_0.5": {
+          "n": 470,
+          "energy_mae_meV_atom": 1.1484454058813214,
+          "energy_rmse_meV_atom": 1.3858054935397455,
+          "energy_bias_meV_atom": 0.8815171273156599,
+          "energy_n_positive": 379,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0692915505951053,
+          "force_rmse_eV_A": 0.06884369956943086,
+          "force_mae_eV_A": 0.05201026777104378,
+          "stress_rmse_GPa": 0.05449958243743115,
+          "stress_mae_GPa": 0.04137721371369368
+        },
+        "xTi_ge_0.9": {
+          "n": 91,
+          "energy_mae_meV_atom": 1.1526720935630372,
+          "energy_rmse_meV_atom": 1.4093822860097247,
+          "energy_bias_meV_atom": 0.6908754426448389,
+          "energy_n_positive": 69,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.2284337796024234,
+          "force_rmse_eV_A": 0.07710013833702503,
+          "force_mae_eV_A": 0.05952861050927029,
+          "stress_rmse_GPa": 0.0613155846573624,
+          "stress_mae_GPa": 0.045496961359851366
+        },
+        "pure_Ti": {
+          "n": 15,
+          "energy_mae_meV_atom": 1.2211524344901237,
+          "energy_rmse_meV_atom": 1.5640955395432956,
+          "energy_bias_meV_atom": 1.0460576514362834,
+          "energy_n_positive": 12,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.1628233944545665,
+          "force_rmse_eV_A": 0.07362056168531989,
+          "force_mae_eV_A": 0.05454651396471858,
+          "stress_rmse_GPa": 0.07622402516096433,
+          "stress_mae_GPa": 0.05138408298491852
+        },
+        "Ti_rich_V_lt18": {
+          "n": 220,
+          "energy_mae_meV_atom": 1.1043004188701562,
+          "energy_rmse_meV_atom": 1.311486880446634,
+          "energy_bias_meV_atom": 0.730997703116917,
+          "energy_n_positive": 167,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.088871064736976,
+          "force_rmse_eV_A": 0.07093554240310133,
+          "force_mae_eV_A": 0.053198205621003726,
+          "stress_rmse_GPa": 0.05957804856973899,
+          "stress_mae_GPa": 0.04498383177917014
+        },
+        "Ti_rich_V_18to20": {
+          "n": 178,
+          "energy_mae_meV_atom": 1.1769574199611375,
+          "energy_rmse_meV_atom": 1.452554435823454,
+          "energy_bias_meV_atom": 0.9574484999426351,
+          "energy_n_positive": 144,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0923400381694295,
+          "force_rmse_eV_A": 0.06800949136751346,
+          "force_mae_eV_A": 0.05165703232596267,
+          "stress_rmse_GPa": 0.05128306564200109,
+          "stress_mae_GPa": 0.03943067953736423
+        },
+        "Ti_rich_V_ge20": {
+          "n": 72,
+          "energy_mae_meV_atom": 1.212844831384781,
+          "energy_rmse_meV_atom": 1.436867935770703,
+          "energy_bias_meV_atom": 1.1537183633729076,
+          "energy_n_positive": 68,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.8564598080833105,
+          "force_rmse_eV_A": 0.06395844819053133,
+          "force_mae_eV_A": 0.04909816257195438,
+          "stress_rmse_GPa": 0.04517940386148628,
+          "stress_mae_GPa": 0.03516925689399672
+        }
+      },
+      "validation": {
+        "xTi_lt_0.5": {
+          "n": 64,
+          "energy_mae_meV_atom": 0.781378574459832,
+          "energy_rmse_meV_atom": 0.9494578422740061,
+          "energy_bias_meV_atom": 0.0010181381296230155,
+          "energy_n_positive": 34,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.949457296380601,
+          "force_rmse_eV_A": 0.04521764593768192,
+          "force_mae_eV_A": 0.03351929157013626,
+          "stress_rmse_GPa": 0.05594496227215517,
+          "stress_mae_GPa": 0.04322118427795948
+        },
+        "xTi_ge_0.5": {
+          "n": 85,
+          "energy_mae_meV_atom": 1.1201866459556664,
+          "energy_rmse_meV_atom": 1.3909394042512264,
+          "energy_bias_meV_atom": 0.71517888956388,
+          "energy_n_positive": 62,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.1929926999864384,
+          "force_rmse_eV_A": 0.07617839831135748,
+          "force_mae_eV_A": 0.05803904047117808,
+          "stress_rmse_GPa": 0.05711710571326582,
+          "stress_mae_GPa": 0.04423679069930799
+        },
+        "xTi_ge_0.9": {
+          "n": 24,
+          "energy_mae_meV_atom": 1.2358741756358813,
+          "energy_rmse_meV_atom": 1.6044140125121094,
+          "energy_bias_meV_atom": 1.1230655060412336,
+          "energy_n_positive": 22,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.1458046049329504,
+          "force_rmse_eV_A": 0.07880660322551584,
+          "force_mae_eV_A": 0.06032484854295932,
+          "stress_rmse_GPa": 0.06156000540083025,
+          "stress_mae_GPa": 0.046150771805225276
+        },
+        "pure_Ti": {
+          "n": 4,
+          "energy_mae_meV_atom": 1.103928360660373,
+          "energy_rmse_meV_atom": 1.4391590232411384,
+          "energy_bias_meV_atom": 1.103928360660373,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9233205665997533,
+          "force_rmse_eV_A": 0.07119527015380911,
+          "force_mae_eV_A": 0.05575927717363559,
+          "stress_rmse_GPa": 0.05271747475644593,
+          "stress_mae_GPa": 0.03930805230334402
+        },
+        "Ti_rich_V_lt18": {
+          "n": 39,
+          "energy_mae_meV_atom": 1.1294619460554798,
+          "energy_rmse_meV_atom": 1.3286328063275066,
+          "energy_bias_meV_atom": 0.8399191690909086,
+          "energy_n_positive": 31,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.029466329436443,
+          "force_rmse_eV_A": 0.07851511889397178,
+          "force_mae_eV_A": 0.05910599849393141,
+          "stress_rmse_GPa": 0.06072554263407695,
+          "stress_mae_GPa": 0.04678290280356587
+        },
+        "Ti_rich_V_18to20": {
+          "n": 34,
+          "energy_mae_meV_atom": 1.2611560682481302,
+          "energy_rmse_meV_atom": 1.579022794665274,
+          "energy_bias_meV_atom": 0.75268592167749,
+          "energy_n_positive": 26,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.3880838913340359,
+          "force_rmse_eV_A": 0.0746939349593141,
+          "force_mae_eV_A": 0.05748475974625473,
+          "stress_rmse_GPa": 0.05578953116108879,
+          "stress_mae_GPa": 0.04391785766084332
+        },
+        "Ti_rich_V_ge20": {
+          "n": 12,
+          "energy_mae_meV_atom": 0.6906285574692913,
+          "energy_rmse_meV_atom": 0.9501129091231625,
+          "energy_bias_meV_atom": 0.20350305677914374,
+          "energy_n_positive": 5,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9280630614155612,
+          "force_rmse_eV_A": 0.07229281113620949,
+          "force_mae_eV_A": 0.05603225525757799,
+          "stress_rmse_GPa": 0.04801111821433694,
+          "stress_mae_GPa": 0.03686556996945311
+        }
+      },
+      "test20": {
+        "xTi_lt_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 0.533543433586519,
+          "energy_rmse_meV_atom": 0.6823656022428682,
+          "energy_bias_meV_atom": -0.17102565346347218,
+          "energy_n_positive": 3,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.6605853775112377,
+          "force_rmse_eV_A": 0.05009496484637509,
+          "force_mae_eV_A": 0.03600096050532888,
+          "stress_rmse_GPa": 0.10596646225706711,
+          "stress_mae_GPa": 0.062196110910104754
+        },
+        "xTi_ge_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 1.3059628462038382,
+          "energy_rmse_meV_atom": 1.596872974450615,
+          "energy_bias_meV_atom": 0.27881158980573284,
+          "energy_n_positive": 6,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.5723445531818887,
+          "force_rmse_eV_A": 0.07770843117182205,
+          "force_mae_eV_A": 0.058838314063469246,
+          "stress_rmse_GPa": 0.06739878144686966,
+          "stress_mae_GPa": 0.05184984172285196
+        },
+        "xTi_ge_0.9": {
+          "n": 2,
+          "energy_mae_meV_atom": 2.6802987995908882,
+          "energy_rmse_meV_atom": 2.7796980253126637,
+          "energy_bias_meV_atom": 0.7366949550789446,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.6802987995908882,
+          "force_rmse_eV_A": 0.08524216510310684,
+          "force_mae_eV_A": 0.06636362797419751,
+          "stress_rmse_GPa": 0.09900182621474021,
+          "stress_mae_GPa": 0.07006826754448271
+        },
+        "pure_Ti": {
+          "n": 1,
+          "energy_mae_meV_atom": 1.9436038445119435,
+          "energy_rmse_meV_atom": 1.9436038445119435,
+          "energy_bias_meV_atom": -1.9436038445119435,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.0,
+          "force_rmse_eV_A": 0.1029776693985503,
+          "force_mae_eV_A": 0.08254519239832708,
+          "stress_rmse_GPa": 0.13557193873349632,
+          "stress_mae_GPa": 0.11232040158354302
+        },
+        "Ti_rich_V_lt18": {
+          "n": 4,
+          "energy_mae_meV_atom": 0.9914268602576234,
+          "energy_rmse_meV_atom": 1.207142796503353,
+          "energy_bias_meV_atom": -0.984910189575106,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.6979582004827111,
+          "force_rmse_eV_A": 0.09352693816067637,
+          "force_mae_eV_A": 0.07274882924215297,
+          "stress_rmse_GPa": 0.09317230417948139,
+          "stress_mae_GPa": 0.07839857584790728
+        },
+        "Ti_rich_V_18to20": {
+          "n": 2,
+          "energy_mae_meV_atom": 0.7249711539361459,
+          "energy_rmse_meV_atom": 0.8575831670287514,
+          "energy_bias_meV_atom": -0.45811102838892265,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.7249711539361459,
+          "force_rmse_eV_A": 0.06922006243153978,
+          "force_mae_eV_A": 0.051401794378639266,
+          "stress_rmse_GPa": 0.045645427675706805,
+          "stress_mae_GPa": 0.03682260481322061
+        },
+        "Ti_rich_V_ge20": {
+          "n": 4,
+          "energy_mae_meV_atom": 1.9109946782838994,
+          "energy_rmse_meV_atom": 2.133094012459699,
+          "energy_bias_meV_atom": 1.9109946782838994,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9477285505681642,
+          "force_rmse_eV_A": 0.06287689563536354,
+          "force_mae_eV_A": 0.0486460587272005,
+          "stress_rmse_GPa": 0.04041854217242822,
+          "stress_mae_GPa": 0.0328147260526123
+        }
+      }
+    },
+    "23400": {
+      "train": {
+        "xTi_lt_0.5": {
+          "n": 380,
+          "energy_mae_meV_atom": 0.7725176227185994,
+          "energy_rmse_meV_atom": 0.9807926593848926,
+          "energy_bias_meV_atom": 0.3005282740473966,
+          "energy_n_positive": 227,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9336150155183788,
+          "force_rmse_eV_A": 0.04526905148073946,
+          "force_mae_eV_A": 0.03333077508572966,
+          "stress_rmse_GPa": 0.07331171504987119,
+          "stress_mae_GPa": 0.05027934242454899
+        },
+        "xTi_ge_0.5": {
+          "n": 470,
+          "energy_mae_meV_atom": 1.1320472916484572,
+          "energy_rmse_meV_atom": 1.352558482684964,
+          "energy_bias_meV_atom": 0.9026593617973685,
+          "energy_n_positive": 386,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0072837364132405,
+          "force_rmse_eV_A": 0.06877389606262949,
+          "force_mae_eV_A": 0.05195135084675816,
+          "stress_rmse_GPa": 0.05457491965025861,
+          "stress_mae_GPa": 0.04132680548165439
+        },
+        "xTi_ge_0.9": {
+          "n": 91,
+          "energy_mae_meV_atom": 1.1991871525160116,
+          "energy_rmse_meV_atom": 1.462511578191348,
+          "energy_bias_meV_atom": 0.7813189141409794,
+          "energy_n_positive": 69,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.2363174635785537,
+          "force_rmse_eV_A": 0.07705470903925177,
+          "force_mae_eV_A": 0.05948580202787954,
+          "stress_rmse_GPa": 0.06040022191054163,
+          "stress_mae_GPa": 0.04457222730803416
+        },
+        "pure_Ti": {
+          "n": 15,
+          "energy_mae_meV_atom": 1.2445933734665675,
+          "energy_rmse_meV_atom": 1.6366020003801518,
+          "energy_bias_meV_atom": 1.210473189774883,
+          "energy_n_positive": 12,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.1014630109470471,
+          "force_rmse_eV_A": 0.07361503934973555,
+          "force_mae_eV_A": 0.054541594132691294,
+          "stress_rmse_GPa": 0.0749852050206381,
+          "stress_mae_GPa": 0.0503432314121791
+        },
+        "Ti_rich_V_lt18": {
+          "n": 220,
+          "energy_mae_meV_atom": 1.0499305573849,
+          "energy_rmse_meV_atom": 1.2535607489004938,
+          "energy_bias_meV_atom": 0.7085248930876834,
+          "energy_n_positive": 169,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0341213792679531,
+          "force_rmse_eV_A": 0.07086866894130286,
+          "force_mae_eV_A": 0.05313787064655482,
+          "stress_rmse_GPa": 0.06051869789228852,
+          "stress_mae_GPa": 0.045598801239473595
+        },
+        "Ti_rich_V_18to20": {
+          "n": 178,
+          "energy_mae_meV_atom": 1.1363432050016293,
+          "energy_rmse_meV_atom": 1.385111496152566,
+          "energy_bias_meV_atom": 0.9696166748669055,
+          "energy_n_positive": 149,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9891295974714563,
+          "force_rmse_eV_A": 0.06793879473736146,
+          "force_mae_eV_A": 0.051598858804956516,
+          "stress_rmse_GPa": 0.050831692997323624,
+          "stress_mae_GPa": 0.03911417681084914
+        },
+        "Ti_rich_V_ge20": {
+          "n": 72,
+          "energy_mae_meV_atom": 1.3723390827750945,
+          "energy_rmse_meV_atom": 1.5483618731796915,
+          "energy_bias_meV_atom": 1.3303146588772745,
+          "energy_n_positive": 68,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.7922672520638249,
+          "force_rmse_eV_A": 0.06388032112696451,
+          "force_mae_eV_A": 0.049041917986800944,
+          "stress_rmse_GPa": 0.043169272227436085,
+          "stress_mae_GPa": 0.03374359488003093
+        }
+      },
+      "validation": {
+        "xTi_lt_0.5": {
+          "n": 64,
+          "energy_mae_meV_atom": 0.8059945205217458,
+          "energy_rmse_meV_atom": 0.9758996253902299,
+          "energy_bias_meV_atom": 0.2211155796711585,
+          "energy_n_positive": 38,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9505198468540668,
+          "force_rmse_eV_A": 0.045156144128798766,
+          "force_mae_eV_A": 0.033468161417560705,
+          "stress_rmse_GPa": 0.05950755912298904,
+          "stress_mae_GPa": 0.045346896830494164
+        },
+        "xTi_ge_0.5": {
+          "n": 85,
+          "energy_mae_meV_atom": 1.136174241722483,
+          "energy_rmse_meV_atom": 1.396006942341396,
+          "energy_bias_meV_atom": 0.80194161416105,
+          "energy_n_positive": 67,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.1426832590626956,
+          "force_rmse_eV_A": 0.07615010355437997,
+          "force_mae_eV_A": 0.05801012912813613,
+          "stress_rmse_GPa": 0.05597387828324146,
+          "stress_mae_GPa": 0.04367935933204121
+        },
+        "xTi_ge_0.9": {
+          "n": 24,
+          "energy_mae_meV_atom": 1.3571285904661436,
+          "energy_rmse_meV_atom": 1.7053692262625186,
+          "energy_bias_meV_atom": 1.2595875211714747,
+          "energy_n_positive": 21,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.1496623305963893,
+          "force_rmse_eV_A": 0.07882612082040737,
+          "force_mae_eV_A": 0.060323424326730365,
+          "stress_rmse_GPa": 0.05817097355918082,
+          "stress_mae_GPa": 0.04397133106153007
+        },
+        "pure_Ti": {
+          "n": 4,
+          "energy_mae_meV_atom": 1.3192148186404935,
+          "energy_rmse_meV_atom": 1.633308508388517,
+          "energy_bias_meV_atom": 1.3192148186404935,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9629999718866313,
+          "force_rmse_eV_A": 0.07124340815850634,
+          "force_mae_eV_A": 0.055784842010170414,
+          "stress_rmse_GPa": 0.052952121613206934,
+          "stress_mae_GPa": 0.039480146564212074
+        },
+        "Ti_rich_V_lt18": {
+          "n": 39,
+          "energy_mae_meV_atom": 1.1558222895441346,
+          "energy_rmse_meV_atom": 1.3612394209953045,
+          "energy_bias_meV_atom": 0.9001639516164709,
+          "energy_n_positive": 32,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.0211158707423227,
+          "force_rmse_eV_A": 0.07849187668924662,
+          "force_mae_eV_A": 0.059076948747463096,
+          "stress_rmse_GPa": 0.05980569619729426,
+          "stress_mae_GPa": 0.04646540010911847
+        },
+        "Ti_rich_V_18to20": {
+          "n": 34,
+          "energy_mae_meV_atom": 1.2634517460991765,
+          "energy_rmse_meV_atom": 1.5372392381946196,
+          "energy_bias_meV_atom": 0.8130995768607701,
+          "energy_n_positive": 27,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.3045970847560604,
+          "force_rmse_eV_A": 0.07467473668520984,
+          "force_mae_eV_A": 0.05746573988856759,
+          "stress_rmse_GPa": 0.05424147464386099,
+          "stress_mae_GPa": 0.04300635486076829
+        },
+        "Ti_rich_V_ge20": {
+          "n": 12,
+          "energy_mae_meV_atom": 0.7116984905681498,
+          "energy_rmse_meV_atom": 1.0424137736453793,
+          "energy_bias_meV_atom": 0.45110478978172547,
+          "energy_n_positive": 8,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9397504690722882,
+          "force_rmse_eV_A": 0.07221920890212163,
+          "force_mae_eV_A": 0.05597565326565059,
+          "stress_rmse_GPa": 0.047246314860919764,
+          "stress_mae_GPa": 0.03653157280848008
+        }
+      },
+      "test20": {
+        "xTi_lt_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 0.5763282247474211,
+          "energy_rmse_meV_atom": 0.8266104860351166,
+          "energy_bias_meV_atom": 0.18839630809792512,
+          "energy_n_positive": 5,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.8048550967213187,
+          "force_rmse_eV_A": 0.050079682224467244,
+          "force_mae_eV_A": 0.0360087632290509,
+          "stress_rmse_GPa": 0.1045125233358077,
+          "stress_mae_GPa": 0.06331033614767138
+        },
+        "xTi_ge_0.5": {
+          "n": 10,
+          "energy_mae_meV_atom": 1.399308876689689,
+          "energy_rmse_meV_atom": 1.7064470484343277,
+          "energy_bias_meV_atom": 0.4448062931614956,
+          "energy_n_positive": 6,
+          "energy_centered_rmse_diagnostic_meV_atom": 1.6474552772910585,
+          "force_rmse_eV_A": 0.07776495347002582,
+          "force_mae_eV_A": 0.05886823975207505,
+          "stress_rmse_GPa": 0.07069865661725801,
+          "stress_mae_GPa": 0.05357439221515466
+        },
+        "xTi_ge_0.9": {
+          "n": 2,
+          "energy_mae_meV_atom": 2.8472036017145936,
+          "energy_rmse_meV_atom": 2.959866563704296,
+          "energy_bias_meV_atom": 0.8088521034887175,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 2.8472036017145936,
+          "force_rmse_eV_A": 0.08537967626198417,
+          "force_mae_eV_A": 0.06640785798063255,
+          "stress_rmse_GPa": 0.10951108338842305,
+          "stress_mae_GPa": 0.07735519088580113
+        },
+        "pure_Ti": {
+          "n": 1,
+          "energy_mae_meV_atom": 2.038351498225876,
+          "energy_rmse_meV_atom": 2.038351498225876,
+          "energy_bias_meV_atom": -2.038351498225876,
+          "energy_n_positive": 0,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.0,
+          "force_rmse_eV_A": 0.10324163101876307,
+          "force_mae_eV_A": 0.08269601497333477,
+          "stress_rmse_GPa": 0.14949254049052835,
+          "stress_mae_GPa": 0.12306411111200348
+        },
+        "Ti_rich_V_lt18": {
+          "n": 4,
+          "energy_mae_meV_atom": 1.0335332387362077,
+          "energy_rmse_meV_atom": 1.236127456657663,
+          "energy_bias_meV_atom": -0.9428197643072904,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.7994385411865556,
+          "force_rmse_eV_A": 0.09363891707666147,
+          "force_mae_eV_A": 0.07284549010192772,
+          "stress_rmse_GPa": 0.09838172566284574,
+          "stress_mae_GPa": 0.08127776014310172
+        },
+        "Ti_rich_V_18to20": {
+          "n": 2,
+          "energy_mae_meV_atom": 0.5985023428899517,
+          "energy_rmse_meV_atom": 0.6381071748196607,
+          "energy_bias_meV_atom": -0.22130456866401949,
+          "energy_n_positive": 1,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.5985023428899517,
+          "force_rmse_eV_A": 0.06931712155574632,
+          "force_mae_eV_A": 0.05147875504406791,
+          "stress_rmse_GPa": 0.047582364001208646,
+          "stress_mae_GPa": 0.03785403787653366
+        },
+        "Ti_rich_V_ge20": {
+          "n": 4,
+          "energy_mae_meV_atom": 2.165487781543039,
+          "energy_rmse_meV_atom": 2.355483464258339,
+          "energy_bias_meV_atom": 2.165487781543039,
+          "energy_n_positive": 4,
+          "energy_centered_rmse_diagnostic_meV_atom": 0.9268036568671234,
+          "force_rmse_eV_A": 0.0628314531808016,
+          "force_mae_eV_A": 0.04858573175622596,
+          "stress_rmse_GPa": 0.04104565132070873,
+          "stress_mae_GPa": 0.03373120145651812
+        }
+      }
+    }
+  },
+  "common20_paired_bootstrap": {
+    "energy": {
+      "5000_rmse_ci95": [
+        3.6569073052378096,
+        8.870759545516668
+      ],
+      "23400_rmse_ci95": [
+        0.8330297024007073,
+        1.8123500566177695
+      ],
+      "paired_delta_final_minus_5000_ci95": [
+        -7.079199883920318,
+        -2.6737876417104602
+      ]
+    },
+    "force": {
+      "5000_rmse_ci95": [
+        0.05785055864099564,
+        0.07667634018369876
+      ],
+      "23400_rmse_ci95": [
+        0.05604826105882378,
+        0.07421578544119839
+      ],
+      "paired_delta_final_minus_5000_ci95": [
+        -0.002692397352513275,
+        -0.0016072030543086873
+      ]
+    }
+  },
+  "common20_late_checkpoint_bootstrap": {
+    "energy": {
+      "paired_delta_23400_minus_20000_ci95": [
+        0.005404044532960545,
+        0.2159600651180952
+      ]
+    },
+    "force": {
+      "paired_delta_23400_minus_20000_ci95": [
+        -3.784888740249199e-05,
+        8.720048795350724e-05
+      ]
+    }
+  },
+  "paired_frame_counts": {
+    "train": {
+      "n": 850,
+      "final_lower_absolute_energy": 649,
+      "final_lower_force_rmse_per_frame": 850
+    },
+    "validation": {
+      "n": 149,
+      "final_lower_absolute_energy": 122,
+      "final_lower_force_rmse_per_frame": 147
+    },
+    "test20": {
+      "n": 20,
+      "final_lower_absolute_energy": 18,
+      "final_lower_force_rmse_per_frame": 20
+    }
+  },
+  "test009": {
+    "5000": {
+      "split": "test20",
+      "id": "TiAl-test-009",
+      "i": 1007,
+      "n_atoms": 216,
+      "x_Ti": 0.9490740740740741,
+      "volume_A3_atom": 22.18482115618821,
+      "energy_error_meV_atom": 17.926046482731156,
+      "force_sse": 2.7728713255960002,
+      "force_sae": 33.96331267642876,
+      "force_count": 648,
+      "force_vector_norm_mae": 0.10474335560602598,
+      "stress_sse": 0.10167006732966265,
+      "stress_sae": 0.6504119434961773,
+      "stress_count": 6
+    },
+    "10000": {
+      "split": "test20",
+      "id": "TiAl-test-009",
+      "i": 1007,
+      "n_atoms": 216,
+      "x_Ti": 0.9490740740740741,
+      "volume_A3_atom": 22.18482115618821,
+      "energy_error_meV_atom": -1.4592680293008942,
+      "force_sse": 2.5635169116965812,
+      "force_sae": 32.70981028373,
+      "force_count": 648,
+      "force_vector_norm_mae": 0.10076704544378387,
+      "stress_sse": 0.008572461746683292,
+      "stress_sae": 0.19780406841674683,
+      "stress_count": 6
+    },
+    "15000": {
+      "split": "test20",
+      "id": "TiAl-test-009",
+      "i": 1007,
+      "n_atoms": 216,
+      "x_Ti": 0.9490740740740741,
+      "volume_A3_atom": 22.18482115618821,
+      "energy_error_meV_atom": 8.797114021036721,
+      "force_sse": 2.554813459175752,
+      "force_sae": 32.5041784513295,
+      "force_count": 648,
+      "force_vector_norm_mae": 0.10034827091226617,
+      "stress_sse": 0.03220281467151684,
+      "stress_sae": 0.37944813132464406,
+      "stress_count": 6
+    },
+    "20000": {
+      "split": "test20",
+      "id": "TiAl-test-009",
+      "i": 1007,
+      "n_atoms": 216,
+      "x_Ti": 0.9490740740740741,
+      "volume_A3_atom": 22.18482115618821,
+      "energy_error_meV_atom": 3.4169937546698326,
+      "force_sse": 2.5453783622564448,
+      "force_sae": 32.51797718044402,
+      "force_count": 648,
+      "force_vector_norm_mae": 0.10034108147970369,
+      "stress_sse": 0.007337835694490165,
+      "stress_sae": 0.16689680103253432,
+      "stress_count": 6
+    },
+    "23400": {
+      "split": "test20",
+      "id": "TiAl-test-009",
+      "i": 1007,
+      "n_atoms": 216,
+      "x_Ti": 0.9490740740740741,
+      "volume_A3_atom": 22.18482115618821,
+      "energy_error_meV_atom": 3.656055705203311,
+      "force_sse": 2.540512422438642,
+      "force_sae": 32.47756624017886,
+      "force_count": 648,
+      "force_vector_norm_mae": 0.10020773876379487,
+      "stress_sse": 0.009824010645000207,
+      "stress_sae": 0.18987762395759267,
+      "stress_count": 6
+    }
+  },
+  "definitions": "Raw energy meV/atom, component force eV/A, six independent stresses GPa. No fitted shifts; all checkpoints included. Bootstrap conditional on common20, no trajectory independence or sequential coverage claimed.",
+  "selection_note": "Post-hoc checkpoint diagnostic; no change to the article model, original registry, or common20 cache. Phonon comparison is not recalculated here."
+}

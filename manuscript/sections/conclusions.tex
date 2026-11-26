@@ -1,0 +1,31 @@
+\section{Conclusions}
+\label{sec:conclusions}
+
+We developed Ti--Al interatomic potentials by fine-tuning DPA4-Neo on PBE, PBEsol, and \rscan{} datasets derived from a common pool of selected configurations.
+Their comparison across lattice dynamics, density, melting, mixing thermodynamics, and viscosity shows that exchange-correlation choices have property-dependent consequences.
+The DFT-reference benchmark gives energy RMSEs of 1.47, 1.77, and 1.58~meV/atom for PBE, PBEsol, and \rscan{}, respectively, with force RMSEs of 0.062--0.071~eV/\AA.
+These fitting errors provide context for the property comparison, but do not determine the errors in phase free-energy differences.
+
+The clearest improvement with \rscan{} is the melting temperature of Ti.
+PBE trajectories crystallize at 1750~K and melt at 1775~K, giving a working bracket of 1750--1775~K.
+Representative melting estimates are approximately 1760~K for PBE, 1750~K for PBEsol, and 1855~K for \rscan{}, reducing the discrepancy from experiment from about 9--10\% to 4.5\%.
+These brackets are finite-size and finite-time observations, not confidence intervals.
+For liquid mixing at 2000~K, the extended 60~ps \rscan{} series has the smallest provisional overall discrepancy from the reproduced calorimetric data, approximately 1.5~kJ/mol compared with 3.6 and 3.1~kJ/mol for PBE and PBEsol.
+Its broad minimum at $x_{\mathrm{Al}}=0.5$--0.6 remains too exothermic; the two sampled compositions are not statistically distinguished as the location of the minimum.
+
+The gains are selective.
+PBE is closer overall to the tabulated liquid densities at 1873~K, with a mean absolute deviation of 0.112~g/cm$^3$, compared with 0.246 and 0.189~g/cm$^3$ for PBEsol and \rscan{}.
+PBE also gives closer alloy viscosities at four of the five compared compositions; the Al-rich state at $x_{\mathrm{Al}}=0.90$ is the exception.
+For pure Ti, both models give temperature dependences consistent with Arrhenius behavior over 1873--2100~K, and \rscan{} is closer to the central experimental viscosity correlation at 2000 and 2100~K.
+Neither the viscosity results across these liquid states nor the experimental phonon dispersions therefore provide a uniform ranking of the functionals.
+
+The matched $\alpha$-Ti phonon benchmark provides a direct distinction between the DFT reference and its learned representation.
+PBE DFT is closer to the experimental optical features near $\Gamma$, while no functional improves every branch uniformly.
+The fine-tuned models retain DPA4--DFT spectral RMSEs of 0.209--0.278~THz and systematically underestimate the nondegenerate optical frequency at $\Gamma$.
+For \rscan{}, this reverses the optical-mode ordering relative to DFT.
+These discrepancies show why experimental agreement and fidelity to the reference functional require separate validation, subject to the remaining DFT convergence and finite-temperature qualifications.
+
+The thermodynamic results are consistent with improved relative energies of selected environments under \rscan{}.
+They do not identify a unique electronic mechanism; testing changes in Ti-derived bonding requires direct electronic-structure and free-energy comparisons.
+Foundation-model fine-tuning provides a practical framework for exploring these differences.
+The electronic-structure reference should therefore be assessed against several observables and the intended range of phases, temperatures, and compositions.

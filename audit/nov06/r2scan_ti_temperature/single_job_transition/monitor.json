@@ -1,0 +1,62 @@
+{
+  "job_id": "20988268",
+  "mode": "single_job_sequential_refinement_v2",
+  "data_confirmation": "confirmed",
+  "delivered_rounds": [
+    1
+  ],
+  "final_delivered": true,
+  "last_checked_unix": 1793978386.0879378,
+  "state": "COMPLETED",
+  "active_T": null,
+  "phase": "cycle_completed",
+  "gpu_export_verified": true,
+  "gpu_frozen_sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380",
+  "single_job_transition_announced": true,
+  "legacy_dataset_confirmed": true,
+  "legacy_replicas": 75,
+  "first_plan_new_replica_total": 20,
+  "automatic_extension": false,
+  "transition_verified": true,
+  "exactly_one_active_slurm_job": true,
+  "superseded_jobs_cancelled": true,
+  "last_quiet_status": "NoactiveMD;finitecyclecomplete.",
+  "last_runtime_check": "PASS",
+  "current_new_completed": {
+    "Ti_1873K": 5,
+    "Ti_1941K": 5,
+    "Ti_2000K": 5,
+    "Ti_2100K": 5
+  },
+  "last_notification_unix": 1793978613.0487695,
+  "last_delivered_event": "Firstfinitecyclecomplete;75legacy retained+20new40ps;allfourfullbatches delivered;no convergence established;nextblocks requirediscussion.",
+  "delivered_temperature_batches": {
+    "Ti_1873K": [
+      5
+    ],
+    "Ti_1941K": [
+      5
+    ],
+    "Ti_2000K": [
+      5
+    ],
+    "Ti_2100K": [
+      5
+    ]
+  },
+  "last_preview_7b": "audit/nov01/viscosity_article_combined/current_campaign_20261106_final_pbe_r2scan",
+  "last_collection_transport_retry": "OneSSHconnectionreset;read-onlycollectretry succeeded,notMDfailure",
+  "final_delivery": {
+    "delivered": true,
+    "unix": 1793978613.0487695,
+    "status": "refinement_cycle_complete_review_required",
+    "summary": "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\final_cycle_v1\\summary.json",
+    "report": "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\final_cycle_v1\\report_RU.txt"
+  },
+  "automation_removed": {
+    "id": "pbe-15k-ti-al",
+    "unix": 1793978799.8470368,
+    "reason": "PBE final results already delivered; r2SCAN finite cycle completed0:0,all four full batches and final results delivered; no active campaign remains",
+    "delete_status": "deleted"
+  }
+}

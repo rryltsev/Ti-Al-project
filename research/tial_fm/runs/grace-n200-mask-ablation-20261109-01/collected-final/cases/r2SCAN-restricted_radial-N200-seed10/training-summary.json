@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "r2SCAN-restricted_radial-N200-seed10",
+    "XC": "r2SCAN",
+    "method": "restricted_radial",
+    "N": 200,
+    "validation": 149,
+    "seed": 10,
+    "epochs": 50,
+    "steps": 10000,
+    "trainable_patterns": [
+      "I2/reducing_",
+      "rho/reducing_",
+      "I1/reducing_",
+      "R_Linear_",
+      "R1_Linear_"
+    ],
+    "expected_trainable": 21144842,
+    "expected_trainable_tensors": 18
+  },
+  "steps": 10000,
+  "epochs": 50,
+  "training_seconds": 578.6421059835702,
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/grace-n200-mask-ablation-20261109-01/cases/r2SCAN-restricted_radial-N200-seed10/final-checkpoint/checkpoint",
+  "hashes": {
+    "checkpoint.index": "54d826054318ac862bd0c8613e268e26d7353f82237beb7df83dc8501176a77b",
+    "checkpoint.data-00000-of-00001": "bb9088bd876ca211ec549df66bad7ddad7a08cc4c85e493095178a1d055ac2b3"
+  },
+  "test_access": false,
+  "selection": "fixed final epoch50",
+  "GPU_memory": {
+    "current": 565938944,
+    "peak": 2358833664
+  }
+}

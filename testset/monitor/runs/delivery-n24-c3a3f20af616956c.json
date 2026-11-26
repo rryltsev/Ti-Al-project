@@ -1,0 +1,72 @@
+{
+  "unix": 1793165875.4952269,
+  "new_ids": [
+    "TiAl-test-044"
+  ],
+  "fingerprint": "c3a3f20af616956c",
+  "archive": "testset\\monitor\\results\\n24-c3a3f20af616956c",
+  "artifact_sha256": {
+    "convergence.pdf": "c6d67cf83fa19a22582ce10d88ba267fadf69fb643c9f9f2175a422e9ef5810f",
+    "convergence.png": "4df4720a3fe0e5bca2ba28fdc2c14c0d72e0b950fd30e1c6e3a9b09155bbd81c",
+    "coverage.pdf": "e268e022352715770ed8b2d7ed4667fe86ead8886915196167799d85dace1a62",
+    "coverage.png": "8163f77b290716f50479621d962df055acfda49e46cac7c96f07275ead641c61",
+    "energy_residuals.pdf": "3229900467100fdc78e6d2546cdaafe9a467b884919cac722daa358a9fa02a79",
+    "energy_residuals.png": "ea09abb6886b9af27676f5dea30c50e400bfcd9933141f70be5cd39c0c73d8bd",
+    "metrics.json": "23daae51324ee14c840299fe1cf631289e6b09fc8495954bb672da988a63035d",
+    "parity.pdf": "3450e77dfc7db702d553aac1131a98bb586b2c0c589d1a79f997004101e8c7cd",
+    "parity.png": "1f6dd10d976910772966c0b39e5c37718a81331226f17ad633a403eee6c7025e"
+  },
+  "cache_files_hash_checked": 250,
+  "visual_QA": [
+    "parity",
+    "coverage",
+    "energy_residuals",
+    "convergence"
+  ],
+  "models_and_analysis_unchanged_from_n23": true,
+  "scheduler_errors": [],
+  "queues": {
+    "PBE": {
+      "running": 2,
+      "pending": 14,
+      "pending_reason_counts": {
+        "(Priority)": 14
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "PBEsol": {
+      "running": 2,
+      "pending": 15,
+      "pending_reason_counts": {
+        "(Priority)": 15
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "r2SCAN": {
+      "running": 4,
+      "pending": 22,
+      "pending_reason_counts": {
+        "(Priority)": 22
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    }
+  },
+  "readiness": {
+    "candidate_for_discussion": false,
+    "automatic_stop": false,
+    "reasons": [
+      "Fewer than 30 common structures (screening threshold, not a statistical guarantee).",
+      "POSCAR_alpha-Ti-hcp_orthogonal: 1 structures; screening minimum 4.",
+      "POSCAR_alpha-Ti-hcp_orthogonal: composition coverage insufficient.",
+      "POSCAR_beta-Ti-bcc: 1 structures; screening minimum 4.",
+      "POSCAR_beta-Ti-bcc: composition coverage insufficient.",
+      "POSCAR_gamma_AlTi_L1_0: 2 structures; screening minimum 4.",
+      "POSCAR_gamma_AlTi_L1_0: composition coverage insufficient.",
+      "PBE energy_meV_atom: RMSE bootstrap interval too wide for screening.",
+      "PBEsol energy_meV_atom: RMSE bootstrap interval too wide for screening.",
+      "Need three comparable checkpoints separated by at least five new structures."
+    ],
+    "qualification": "Heuristic discussion trigger based on fine-tuned models only. The pretrained baseline does not change the stopping rule. Report adaptive stopping, completion-order bias, coverage and uncertainty. Full fixed Test50 remains preferred."
+  },
+  "SCF_followup": "testset\\dft\\scf-check-20261028\\followup-1793165937.json"
+}

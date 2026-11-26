@@ -1,0 +1,33 @@
+{
+  "remote_root": "/home6/u3129/tial-testsets/model-export-20261022-01",
+  "files": {
+    "PBE/checkpoint.pt": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac",
+    "PBEsol/checkpoint.pt": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+    "r2SCAN/checkpoint.pt": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+    "source-manifest.json": "a6782826cf43eb860ea700995a91372f95fbd944a3172f891b2ae35752f9b054",
+    "export_models.py": "fe455659111a7e0f61da978d8c8e3c1ae774eb1ed8656801c6432a24d98881a4",
+    "model_job.sbatch": "2604ad1394b8a1c149436f9a8c47fea93f8ad83a42fe7b29da16c7de4723ff12",
+    "predict.py": "96ec173d6a915d22d1249ab7e8442fedfa34ff0903e863ebcd0c9ec36faa308d",
+    "bundle.json": "68099ee8215e63488f648c98b8e7290873239e7b5d9d5c52f2b45d095f74c6c6",
+    "registry-template.json": "534e609295820742b82800b56fed19b54d8446d1e8309b837d214730ee0e440b"
+  },
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=v100",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=32G",
+    "--gres=gpu:a100:1",
+    "--time=00:30:00",
+    "--no-requeue",
+    "--chdir=/home6/u3129/tial-testsets/model-export-20261022-01",
+    "--job-name=t50-export",
+    "--output=/home6/u3129/tial-testsets/model-export-20261022-01/slurm-%j.out",
+    "/home6/u3129/tial-testsets/model-export-20261022-01/model_job.sbatch"
+  ],
+  "unix": 1792636762.5364096
+}

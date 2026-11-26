@@ -1,0 +1,179 @@
+{
+  "unix": 1793457118.9278588,
+  "clock": {
+    "returncode": 0,
+    "stdout": "2026-10-31T19:31:58+05:00\n",
+    "stderr": ""
+  },
+  "source": "testset\\dft\\scf-check-20261031\\snapshot-1793457118.json",
+  "targets": {
+    "TiAl-test-030": {
+      "last_complete": [
+        {
+          "n": 33,
+          "dE_eV": 2.839949e-05,
+          "deps_eV": -1.459758e-05
+        },
+        {
+          "n": 34,
+          "dE_eV": 9.319512e-06,
+          "deps_eV": -8.324387e-06
+        },
+        {
+          "n": 35,
+          "dE_eV": 3.034598e-06,
+          "deps_eV": -3.462569e-06
+        },
+        {
+          "n": 36,
+          "dE_eV": 5.988986e-07,
+          "deps_eV": -1.75364e-06
+        },
+        {
+          "n": 37,
+          "dE_eV": -5.09544e-06,
+          "deps_eV": -5.53836e-07
+        },
+        {
+          "n": 38,
+          "dE_eV": -2.007029e-06,
+          "deps_eV": -1.979209e-07
+        }
+      ],
+      "iteration_in_progress": 39,
+      "last_loops_min": [
+        22.080613333333336,
+        17.726028333333332,
+        16.653401666666667,
+        16.023196666666667,
+        14.75159,
+        12.564703333333334
+      ],
+      "converged": false,
+      "outcar_age_s": 337.8003523349762,
+      "warnings": [],
+      "settings": [
+        "   EDIFF = 1E-6",
+        "   ISMEAR = 1",
+        "   SIGMA = 0.1",
+        "   NELM = 100",
+        "   NSW = 0",
+        "   IBRION = -1",
+        "   METAGGA = R2SCAN",
+        "   k-points           NKPTS =      4   k-points in BZ     NKDIM =      4   number of bands    NBANDS=   1408",
+        "   number of dos      NEDOS =    301   number of ions     NIONS =    256",
+        "   NELM   =    100;   NELMIN=  4; NELMDL= -5     # of ELM steps ",
+        "   EDIFF  = 0.1E-05   stopping-criterion for ELM",
+        "   NSW    =      0    number of steps for IOM",
+        "   IBRION =     -1    ionic relax: 0-MD 1-quasi-New 2-CG",
+        "   ISMEAR =     1;   SIGMA  =   0.10  broadening in eV -4-tet -1-fermi 0-gaus",
+        "   IALGO  =     38    algorithm",
+        "   METAGGA = R2SCAN    functional components",
+        " Methfessel and Paxton  Order N= 1 SIGMA  =   0.10"
+      ],
+      "slurm": {
+        "JobState": "RUNNING",
+        "RunTime": "13:17:43",
+        "TimeLimit": "20:00:00",
+        "StartTime": "2026-10-31T06:14:15",
+        "EndTime": "2026-11-01T02:14:15",
+        "NodeList": "apollo1"
+      },
+      "oszicar_tail": [
+        "DAV:  33    -0.310233391372E+04    0.28399E-04   -0.14598E-04 15968   0.259E-02    0.277E-02",
+        "DAV:  34    -0.310233390440E+04    0.93195E-05   -0.83244E-05 15416   0.185E-02    0.211E-02",
+        "DAV:  35    -0.310233390137E+04    0.30346E-05   -0.34626E-05 13976   0.121E-02    0.159E-02",
+        "DAV:  36    -0.310233390077E+04    0.59890E-06   -0.17536E-05 13112   0.861E-03    0.858E-03",
+        "DAV:  37    -0.310233390587E+04   -0.50954E-05   -0.55384E-06 11376   0.486E-03    0.779E-03",
+        "DAV:  38    -0.310233390787E+04   -0.20070E-05   -0.19792E-06  8408   0.369E-03    0.474E-03"
+      ]
+    },
+    "TiAl-test-038": {
+      "last_complete": [
+        {
+          "n": 30,
+          "dE_eV": 0.0003738834,
+          "deps_eV": -0.0003007028
+        },
+        {
+          "n": 31,
+          "dE_eV": 7.190369e-05,
+          "deps_eV": -0.0001820778
+        },
+        {
+          "n": 32,
+          "dE_eV": 0.0001930508,
+          "deps_eV": -0.0001092783
+        },
+        {
+          "n": 33,
+          "dE_eV": 2.407591e-05,
+          "deps_eV": -4.482841e-05
+        },
+        {
+          "n": 34,
+          "dE_eV": 9.63686e-06,
+          "deps_eV": -2.070534e-05
+        },
+        {
+          "n": 35,
+          "dE_eV": 1.132395e-05,
+          "deps_eV": -1.088776e-05
+        }
+      ],
+      "iteration_in_progress": 36,
+      "last_loops_min": [
+        37.47092833333333,
+        13.496465,
+        18.758343333333336,
+        13.503911666666665,
+        13.67959,
+        13.532298333333333
+      ],
+      "converged": false,
+      "outcar_age_s": 180.1562774181366,
+      "warnings": [],
+      "settings": [
+        "   EDIFF = 1E-6",
+        "   ISMEAR = 1",
+        "   SIGMA = 0.1",
+        "   NELM = 100",
+        "   NSW = 0",
+        "   IBRION = -1",
+        "   METAGGA = R2SCAN",
+        "   k-points           NKPTS =      5   k-points in BZ     NKDIM =      5   number of bands    NBANDS=   1312",
+        "   number of dos      NEDOS =    301   number of ions     NIONS =    250",
+        "   NELM   =    100;   NELMIN=  4; NELMDL= -5     # of ELM steps ",
+        "   EDIFF  = 0.1E-05   stopping-criterion for ELM",
+        "   NSW    =      0    number of steps for IOM",
+        "   IBRION =     -1    ionic relax: 0-MD 1-quasi-New 2-CG",
+        "   ISMEAR =     1;   SIGMA  =   0.10  broadening in eV -4-tet -1-fermi 0-gaus",
+        "   IALGO  =     38    algorithm",
+        "   METAGGA = R2SCAN    functional components",
+        " Methfessel and Paxton  Order N= 1 SIGMA  =   0.10"
+      ],
+      "slurm": {
+        "JobState": "RUNNING",
+        "RunTime": "09:05:01",
+        "TimeLimit": "20:00:00",
+        "StartTime": "2026-10-31T10:26:57",
+        "EndTime": "2026-11-01T06:26:57",
+        "NodeList": "apollo28"
+      },
+      "oszicar_tail": [
+        "DAV:  30    -0.293783066250E+04    0.37388E-03   -0.30070E-03 18312   0.112E-01    0.166E-01",
+        "DAV:  31    -0.293783059060E+04    0.71904E-04   -0.18208E-03 18288   0.866E-02    0.142E-01",
+        "DAV:  32    -0.293783039755E+04    0.19305E-03   -0.10928E-03 18376   0.662E-02    0.773E-02",
+        "DAV:  33    -0.293783037347E+04    0.24076E-04   -0.44828E-04 18272   0.427E-02    0.582E-02",
+        "DAV:  34    -0.293783036384E+04    0.96369E-05   -0.20705E-04 18560   0.302E-02    0.449E-02",
+        "DAV:  35    -0.293783035251E+04    0.11324E-04   -0.10888E-04 18296   0.217E-02    0.340E-02"
+      ]
+    }
+  },
+  "accounting": {
+    "returncode": 0,
+    "stdout": "JobID|State|ExitCode|Elapsed|Start|End|Timelimit\n20957372_29|RUNNING|0:0|13:17:44|2026-10-31T06:14:15|Unknown|20:00:00\n20957372_37|RUNNING|0:0|09:05:02|2026-10-31T10:26:57|Unknown|20:00:00\n",
+    "stderr": ""
+  },
+  "DFT_modified": false
+}

@@ -1,0 +1,89 @@
+Using GPU device(s): 0, GPU: RTX 5060 Ti
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   air
+  Use type:  pretrained
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/ml_models/deepmd/dpa4/models
+  Name:      DPA4-Air-OMat24-v20260805.pt
+  Full path: /home/katkoff/ml_models/deepmd/dpa4/models/DPA4-Air-OMat24-v20260805.pt
+==========================================
+Model found: /home/katkoff/ml_models/deepmd/dpa4/models/DPA4-Air-OMat24-v20260805.pt
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained
+==========================================
+Activated: ase_deepmd_dpa4
+Python: /home/katkoff/miniconda3/envs/ase_deepmd_dpa4/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained/.triton
+==========================================
+==========================================
+Phonon calculation (WSL2)
+==========================================
+Date:          Tue Sep 29 14:36:27 +05 2026
+System:        alpha2_AlTi3
+Mode:          dpa4-air-pretrained
+Model path:    /home/katkoff/ml_models/deepmd/dpa4/models/DPA4-Air-OMat24-v20260805.pt
+CIF file:      /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Supercell:     5,5,5
+Delta:         0.01
+Kpts DOS:      50,50,50
+DOS width:     0.0002
+DOS npts:      1000
+Band path:     GMKГALHA
+Band npoints:  200
+Use THz:       true
+Fmax:          0.0001
+Max steps:     1000
+Pressure:      0.0
+Workdir:       /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained
+Log file:      /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_143627.log
+==========================================
+/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py:82: UserWarning: Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  structure = parser.parse_structures(primitive=False)[0]
+Output directory: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained
+==================================================
+PHONON CALCULATION WORKFLOW
+==================================================
+Loading structure from /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Loaded 8 atoms
+Setting up calculator: deepmd
+Calculator ready
+Starting relaxation...
+Relaxation finished: 7 steps, 4.02 sec, converged=True
+Starting phonon calculation...
+Phonons done: 52.19 sec, displacements=49, atoms_per_call=1000
+Traceback (most recent call last):
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 455, in <module>
+    main()
+    ~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 451, in main
+    phonon_calc.run()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 395, in run
+    self.calculate_phonons()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 165, in calculate_phonons
+    self.ph.read(acoustic=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/phonons.py", line 439, in read
+    fminus_av = self.cache[basename + '-']['forces']
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+==========================================
+Phonon calculation finished
+==========================================
+Exit code: 1
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_143627.log
+==========================================
+❌ ERROR: Calculation failed with code 1
+Check log: tail -100 /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_143627.log
+==========================================

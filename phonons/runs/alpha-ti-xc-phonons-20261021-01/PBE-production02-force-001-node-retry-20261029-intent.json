@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T18:06:06.201679+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--exclude=tesla-a101,apollo22",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=2",
+    "--ntasks=64",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=240G",
+    "--time=20:00:00",
+    "--job-name=ti7-PBE-f001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-node-retry-20261029-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v11.sbatch",
+    "restart_step_v7.py",
+    "PBE",
+    "force-001",
+    "20959753"
+  ],
+  "parent_job": "20959753",
+  "failure_job": "20964089",
+  "scheduler": "20959753|COMPLETED|2026-10-27T20:07:24|2026-10-28T09:34:14|0:0|apollo11\n20964089|NODE_FAIL|2026-10-29T08:42:28|2026-10-29T13:14:15|0:0|apollo[20,22]\n",
+  "source_hashes": {
+    "execution-policy-05.json": "a3b39e4a8a7295ae08dff371cae6594b22b1aa6b56ef1bf1332816ec75e20c50",
+    "production_step_v5.py": "6dca224bb9b38cf84b4856cd2c7a030802c67029a17c3c7b534dbb9ccef21144",
+    "checkpoint_guard_v4.py": "52e75d1093d909ff5d7934c7bf0693833c82274a963972153b150088416eb9ba",
+    "restart_step_v7.py": "069612466a3b8cdcfd1e394e653b1c916ebfc0980cbcaa284d64e4d484112772",
+    "launch_v11.sbatch": "2b77402ff6b83e50a54b219d4d0df93836f8965a5dce0d4696d22931b4fff8c2"
+  },
+  "scientific_changes": [],
+  "reason": "Recover after NODE_FAIL. Apollo22 rebooted at13:13:26 immediately before failure13:14:15; exclude it in this retry. Do not use interrupted outputs."
+}

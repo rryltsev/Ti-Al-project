@@ -1,0 +1,42 @@
+{
+  "unix": 1793216554.3537683,
+  "source": "testset\\dft\\scf-check-20261028\\snapshot-1793216554.json",
+  "sid": "TiAl-test-036",
+  "latest_complete": {
+    "n": 30,
+    "dE_eV": 0.0002286452,
+    "deps_eV": -0.0001071933
+  },
+  "iteration_in_progress": 31,
+  "loop_minutes_last5": [
+    22.704538333333335,
+    22.930218333333336,
+    22.776061666666667,
+    22.777461666666667,
+    22.837395
+  ],
+  "elapsed": "14:48:07",
+  "remaining_h": 5.198055555555555,
+  "deadline_local": "2026-10-29T05:54:27",
+  "timing_scenarios": [
+    {
+      "tail": 5,
+      "additional_steps": 7.643034401749251,
+      "additional_h_max_recent_step_plus45min": 3.8073624444444447
+    },
+    {
+      "tail": 8,
+      "additional_steps": 7.188900550636788,
+      "additional_h_max_recent_step_plus45min": 3.8073624444444447
+    },
+    {
+      "tail": 10,
+      "additional_steps": 6.873264670157656,
+      "additional_h_max_recent_step_plus45min": 3.4251921388888893
+    }
+  ],
+  "risk": "Improving: step24->30 and stable22.7–22.9min loops versus40–47min before. Residuals continue down; still not EDIFF-converged. Forecast conditional; limited reserve means continue monitoring. No new actionable deterioration.",
+  "notification_required": false,
+  "DFT_modified": false,
+  "reassess_on_next_monitoring": true
+}

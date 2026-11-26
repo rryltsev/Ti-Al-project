@@ -1,0 +1,42 @@
+{
+  "system": "alpha2_AlTi3",
+  "calculator": "deepmd",
+  "family": "dpa4",
+  "variant": "air",
+  "use_type": "pretrained",
+  "e_per_atom_eV": -7.061539,
+  "properties": [
+    {
+      "property": "σ{0001}",
+      "type": "surface_energy",
+      "miller": [
+        0,
+        0,
+        1
+      ],
+      "value": 1.8157,
+      "unit": "J/m2",
+      "E_slab_eV": -4008.631526,
+      "n_atoms": 576,
+      "surface_area_A2": 259.4925
+    },
+    {
+      "property": "Evf-Ti",
+      "type": "vacancy_formation_energy",
+      "element": "Ti",
+      "value": 2.1703,
+      "unit": "eV",
+      "E_perfect_eV": -1016.8616,
+      "E_vac_eV": -1006.891844
+    },
+    {
+      "property": "Evf-Al",
+      "type": "vacancy_formation_energy",
+      "element": "Al",
+      "value": 3.5122,
+      "unit": "eV",
+      "E_perfect_eV": -1016.861598,
+      "E_vac_eV": -1009.605172
+    }
+  ]
+}

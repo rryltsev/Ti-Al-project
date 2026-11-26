@@ -1,0 +1,29 @@
+{
+  "validation": "Same local compiler, seed, starting configuration and all proposal parameters",
+  "reference_at_1000_all_45_frames_and_final_state_identical": true,
+  "new_temperatures_have_distinct_trajectories": true,
+  "all_trace_temperatures_verified_K": [
+    600,
+    1000,
+    1273.15
+  ],
+  "settings": [
+    "4",
+    "3",
+    "0.4",
+    "3.29",
+    "12",
+    ".48",
+    "27516",
+    "window",
+    "10",
+    "35",
+    "1",
+    "1"
+  ],
+  "potential_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "source_sha256": {
+    "solvus_temperatures\\atomistic\\sgmc.cpp": "eab1b97507504037511c6b5e9489af294458a40a53bc52254b87ee84aee34c97",
+    "solvus_1000\\sgmc.cpp": "39da5b7a7c2bc1f1623bd7588f5a30f1b164a2eebf0e70355c308e18806acaf9"
+  }
+}

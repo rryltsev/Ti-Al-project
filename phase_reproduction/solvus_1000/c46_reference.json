@@ -1,0 +1,102 @@
+{
+  "reference": "Author v16 C46, VCSGC Monte Carlo, QHA, fixed c/a",
+  "temperature_K": 1000,
+  "pressure_GPa": 0,
+  "N_sites": 5120,
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "model_DOI": "10.1103/PhysRevMaterials.7.103602",
+  "package_files_sha256": {
+    "phase_check/MC_window_means.csv": "7695aba37e59f86e626e76cb52328fc07d902d6ea32c95c212198bc2d168d98f",
+    "phase_check/C46_phase_boundary_points.csv": "d78afb150c2deaa980cea8e2180d2bcdc57673ccc1ccef856b8ba87ef208085b",
+    "phase_check/reproduce_C46_phase_contacts.py": "427e65a57d45fba88e633263159692fbd03f784339b4263d0e5359661156a155"
+  },
+  "refitted_eci_grid_sha256": "10b8825df876c4ad5ca67fe3d885e5f1ce3c38aa86fdf8712b139ac44cc41ec5",
+  "phase": {
+    "alpha": {
+      "Al_at_percent": 14.958144796322392,
+      "Al_at_percent_conditional_95": [
+        14.926048963106311,
+        14.990897930716027
+      ],
+      "start_mfa_q": 0.14958144796322392,
+      "start_mfa_r": 0.14958144796322392,
+      "start_mfa_volume_A3_atom": 17.518129263481608
+    },
+    "alpha2": {
+      "Al_at_percent": 21.95827135719608,
+      "Al_at_percent_conditional_95": [
+        21.91055649006404,
+        22.012892452177997
+      ],
+      "start_mfa_q": 0.8719210368041381,
+      "start_mfa_r": 0.0021366058279016866,
+      "start_mfa_volume_A3_atom": 17.249505594326006
+    }
+  },
+  "delta_mu_Al_minus_Ti_eV": 3.3761794885732166,
+  "delta_mu_spin_eV": 1.6880897442866083,
+  "cartesian_config_field_start_estimate_eV": 3.3020781618963637,
+  "cartesian_config_minus_classical_physical_field_eV": -0.07410132667685294,
+  "barrier_eV_per_atom": 0.00025387103256108726,
+  "tangent_residual_eV": 4.640385298237959e-17,
+  "bootstrap": {
+    "resolved": 300,
+    "attempts": 300
+  },
+  "windows_c_Al_and_mu_occ_eV": [
+    [
+      0.13136303710937489,
+      3.350821023078458
+    ],
+    [
+      0.14061254882812493,
+      3.3637554383361885
+    ],
+    [
+      0.14986977539062502,
+      3.3765568908345998
+    ],
+    [
+      0.15920156250000006,
+      3.3880733171717536
+    ],
+    [
+      0.16918208007812505,
+      3.388409090215855
+    ],
+    [
+      0.17997836914062498,
+      3.3746853137667285
+    ],
+    [
+      0.1903146484375,
+      3.3688896522260654
+    ],
+    [
+      0.20041245117187498,
+      3.3672040547139486
+    ],
+    [
+      0.210294189453125,
+      3.3692422559991946
+    ],
+    [
+      0.21987456054687501,
+      3.3764744202623658
+    ],
+    [
+      0.22905922851562502,
+      3.3905263959275307
+    ],
+    [
+      0.23759897460937515,
+      3.4156933850425393
+    ],
+    [
+      0.24510390625000028,
+      3.4586950561716727
+    ]
+  ],
+  "initialization": "Volumes and preferred-site probabilities are fixed-c/a C46 MFA starts evaluated at MC endpoint compositions. The coordinate-only starting field includes the classical momentum correction to C46. All starts require direct atomistic equilibration.",
+  "uncertainty": "Reported 95% intervals are conditional author bootstrap results from the 5120-site MC analysis; they omit model and finite-size uncertainty."
+}

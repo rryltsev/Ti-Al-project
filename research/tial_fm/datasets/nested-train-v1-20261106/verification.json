@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "N200_exact_rows_verified_for": [
+    "PBE",
+    "PBEsol",
+    "r2SCAN"
+  ],
+  "train_validation_test_overlap": 0,
+  "nested_sizes": [
+    100,
+    200,
+    400,
+    694
+  ],
+  "counts": {
+    "geometries": 200,
+    "atoms": 44034,
+    "groups": 83,
+    "families": {
+      "unresolved_liquid_relax_pool": 176,
+      "POSCAR_gamma_AlTi_L1_0": 10,
+      "POSCAR_beta-Ti-bcc": 11,
+      "POSCAR_alpha-Ti-hcp_orthogonal": 3
+    },
+    "label_budget_per_XC": {
+      "train": 200,
+      "development": 149,
+      "train_plus_development": 349,
+      "test": 149
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"/misc/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/workflow.py\", line 266, in <module>\n    try:sys.exit(main())\n                 ^^^^^^\n  File \"/misc/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/workflow.py\", line 236, in main\n    pre=preflight()\n        ^^^^^^^^^^^\n  File \"/misc/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/workflow.py\", line 80, in preflight\n    dp=DeepPot(CFG['checkpoint']['path']);assert set(dp.get_type_map())=={'Al','Ti'}\n                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "unix": 1793101190.0383363
+}

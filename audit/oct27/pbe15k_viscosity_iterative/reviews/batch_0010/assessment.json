@@ -1,0 +1,452 @@
+{
+  "batch": 10,
+  "review_unix": 1793160675.0421143,
+  "job_id": "20962153",
+  "scheduler_state": "RUNNING",
+  "collection": {
+    "unix": 1793160333.25693,
+    "bytes": 3686757,
+    "job_id": "20962153"
+  },
+  "progress_at_collection": {
+    "status": "running",
+    "phase": "replica_preparation",
+    "job_id": "20962153",
+    "unix": 1793160237.2050896,
+    "composition": "xAl_0.20",
+    "replica": 11
+  },
+  "preflight": "passed",
+  "source_checks": "Latest equals batch summary except plot key; 10 sources per composition; original five source records unchanged; all historical baseline points have 50 replicas and 20001 samples.",
+  "rows": [
+    {
+      "id": "xAl_0.20",
+      "x_Al": 0.2,
+      "baseline_5k": {
+        "eta_mPa_s": 4.058941731552027,
+        "eta_std_mPa_s": 0.1133640085616111,
+        "n_replicas": 50,
+        "n_steps": 20001
+      },
+      "windows": {
+        "40ps": {
+          "N5": {
+            "eta_mPa_s": 3.4951635925506963,
+            "eta_std_mPa_s": 0.1903087156191573,
+            "relative_std": 0.05444915826680205,
+            "neff": 90.94452827765747,
+            "tau_exp_ps": 0.15088250458992916,
+            "tau_int_ps": 0.10098700096254382,
+            "cost_z": -0.5307736047814101,
+            "criterion_z": 1.565104779152123
+          },
+          "N10": {
+            "eta_mPa_s": 3.924765911678582,
+            "eta_std_mPa_s": 0.1605032140041641,
+            "relative_std": 0.04089497759001849,
+            "neff": 67.42943515168979,
+            "tau_exp_ps": 0.19668019259100644,
+            "tau_int_ps": 0.11141568810359607,
+            "cost_z": -0.9315932699800831,
+            "criterion_z": 1.1558210008549394
+          },
+          "change_vs_N5_pct": 12.291336521229068,
+          "change_vs_5k_pct": -3.3056848003122252,
+          "diagnostic_combined_z_vs_5k": 0.6828247965204818
+        },
+        "first20ps": {
+          "N5": {
+            "eta_mPa_s": 3.5944195840411948,
+            "eta_std_mPa_s": 0.22787412686971215,
+            "relative_std": 0.06339664069310294,
+            "neff": 61.435696450563285,
+            "tau_exp_ps": 0.13306101749480712,
+            "tau_int_ps": 0.10197251146608755,
+            "cost_z": -0.04040405399435672,
+            "criterion_z": 0.5837319113881795
+          },
+          "N10": {
+            "eta_mPa_s": 3.889132283276836,
+            "eta_std_mPa_s": 0.1993396244125949,
+            "relative_std": 0.05125555262538893,
+            "neff": 36.80466426337509,
+            "tau_exp_ps": 0.16316364708579414,
+            "tau_int_ps": 0.109401903068304,
+            "cost_z": 0.4452788312677103,
+            "criterion_z": -0.289668574558419
+          },
+          "change_vs_N5_pct": 8.199173534000636,
+          "change_vs_5k_pct": -4.183589208861605,
+          "diagnostic_combined_z_vs_5k": 0.7404910732596024
+        },
+        "second20ps": {
+          "N5": {
+            "eta_mPa_s": 3.4139836561920798,
+            "eta_std_mPa_s": 0.2926127407983276,
+            "relative_std": 0.08571005905889564,
+            "neff": 44.346531337691296,
+            "tau_exp_ps": 0.17764406777576908,
+            "tau_int_ps": 0.1004956117334513,
+            "cost_z": -1.5806842042403417,
+            "criterion_z": 1.0737131015032553
+          },
+          "N10": {
+            "eta_mPa_s": 4.064740621642267,
+            "eta_std_mPa_s": 0.268142553831323,
+            "relative_std": 0.06596793714305589,
+            "neff": 27.928180296317386,
+            "tau_exp_ps": 0.2664183883773252,
+            "tau_int_ps": 0.11645565053588307,
+            "cost_z": -1.6786277958184745,
+            "criterion_z": 0.5453040124706885
+          },
+          "change_vs_N5_pct": 19.061513791077566,
+          "change_vs_5k_pct": 0.1428670445097202,
+          "diagnostic_combined_z_vs_5k": 0.01991912886635773
+        }
+      },
+      "new_replicas_6_to_10_40ps": {
+        "eta_mPa_s": 4.301560199916765,
+        "eta_std_mPa_s": 0.258199548527266,
+        "relative_std": 0.06002462746709024,
+        "neff": 70.22069190562276,
+        "tau_exp_ps": 0.22498531125072949,
+        "tau_int_ps": 0.12001241252675429,
+        "cost_z": -0.08215982813542007,
+        "criterion_z": 0.250190834688235
+      },
+      "prior_replicas_1_to_5_40ps": {
+        "eta_mPa_s": 3.4951635925506963,
+        "eta_std_mPa_s": 0.1903087156191573,
+        "relative_std": 0.05444915826680205,
+        "neff": 90.94452827765747,
+        "tau_exp_ps": 0.15088250458992916,
+        "tau_int_ps": 0.10098700096254382,
+        "cost_z": -0.5307736047814101,
+        "criterion_z": 1.565104779152123
+      },
+      "new_batch_z": 2.514049923670111,
+      "unmet_or_unavailable": [
+        "minimum_replicas",
+        "precision",
+        "last_three_stability",
+        "duration_stability",
+        "new_batch_consistency"
+      ],
+      "max_20_40_difference_pct": 3.5664473528771445
+    },
+    {
+      "id": "xAl_0.45",
+      "x_Al": 0.45,
+      "baseline_5k": {
+        "eta_mPa_s": 4.8829928969516745,
+        "eta_std_mPa_s": 0.15516837775697043,
+        "n_replicas": 50,
+        "n_steps": 20001
+      },
+      "windows": {
+        "40ps": {
+          "N5": {
+            "eta_mPa_s": 4.652387665772592,
+            "eta_std_mPa_s": 0.2892827174164551,
+            "relative_std": 0.06217940941265388,
+            "neff": 71.65523550713145,
+            "tau_exp_ps": 0.22245574802440232,
+            "tau_int_ps": 0.10982652289083769,
+            "cost_z": -1.4676976095747216,
+            "criterion_z": 1.59068980357959
+          },
+          "N10": {
+            "eta_mPa_s": 4.670865289222016,
+            "eta_std_mPa_s": 0.1938903457954728,
+            "relative_std": 0.041510583968857595,
+            "neff": 66.5824866811638,
+            "tau_exp_ps": 0.2142146986363965,
+            "tau_int_ps": 0.1108778590650774,
+            "cost_z": 0.18151431810393392,
+            "criterion_z": 0.13274077151283478
+          },
+          "change_vs_N5_pct": 0.397164311679421,
+          "change_vs_5k_pct": -4.34421290807292,
+          "diagnostic_combined_z_vs_5k": 0.854196494198185
+        },
+        "first20ps": {
+          "N5": {
+            "eta_mPa_s": 4.349788204715012,
+            "eta_std_mPa_s": 0.3315240478972506,
+            "relative_std": 0.07621613565871795,
+            "neff": 37.4543715724544,
+            "tau_exp_ps": 0.1809852826805237,
+            "tau_int_ps": 0.10377192439826777,
+            "cost_z": -1.1997449359268213,
+            "criterion_z": 0.8998037773260391
+          },
+          "N10": {
+            "eta_mPa_s": 4.332317893994296,
+            "eta_std_mPa_s": 0.2326033411092176,
+            "relative_std": 0.05369027546008697,
+            "neff": 35.437164490494254,
+            "tau_exp_ps": 0.18039036285009594,
+            "tau_int_ps": 0.10350853894865088,
+            "cost_z": -1.0472072843528795,
+            "criterion_z": 0.47732332165810415
+          },
+          "change_vs_N5_pct": -0.4016358934850861,
+          "change_vs_5k_pct": -11.277407413415464,
+          "diagnostic_combined_z_vs_5k": 1.9694422617282266
+        },
+        "second20ps": {
+          "N5": {
+            "eta_mPa_s": 4.847264506667716,
+            "eta_std_mPa_s": 0.42708312352947997,
+            "relative_std": 0.08810807063282813,
+            "neff": 33.55880782086081,
+            "tau_exp_ps": 0.24015770827419602,
+            "tau_int_ps": 0.11324075674195848,
+            "cost_z": -1.1426980055690272,
+            "criterion_z": -0.15762729540985607
+          },
+          "N10": {
+            "eta_mPa_s": 4.950436553743954,
+            "eta_std_mPa_s": 0.2992798377470135,
+            "relative_std": 0.06045524157271986,
+            "neff": 33.921584402338304,
+            "tau_exp_ps": 0.23333419322365556,
+            "tau_int_ps": 0.11676304688688066,
+            "cost_z": -0.6024993139960797,
+            "criterion_z": -0.27297536878809775
+          },
+          "change_vs_N5_pct": 2.128459194548138,
+          "change_vs_5k_pct": 1.3811950624458724,
+          "diagnostic_combined_z_vs_5k": 0.20006204669028882
+        }
+      },
+      "new_replicas_6_to_10_40ps": {
+        "eta_mPa_s": 4.688980581746733,
+        "eta_std_mPa_s": 0.2626342686537657,
+        "relative_std": 0.05601095250343936,
+        "neff": 70.52169332084361,
+        "tau_exp_ps": 0.2067076456242017,
+        "tau_int_ps": 0.11193234231262848,
+        "cost_z": 1.0565565546459745,
+        "criterion_z": -0.6340554675928269
+      },
+      "prior_replicas_1_to_5_40ps": {
+        "eta_mPa_s": 4.652387665772592,
+        "eta_std_mPa_s": 0.2892827174164551,
+        "relative_std": 0.06217940941265388,
+        "neff": 71.65523550713145,
+        "tau_exp_ps": 0.22245574802440232,
+        "tau_int_ps": 0.10982652289083769,
+        "cost_z": -1.4676976095747216,
+        "criterion_z": 1.59068980357959
+      },
+      "new_batch_z": 0.09365535445246459,
+      "unmet_or_unavailable": [
+        "minimum_replicas",
+        "precision",
+        "last_three_stability",
+        "duration_stability"
+      ],
+      "max_20_40_difference_pct": 7.2480659206531906
+    },
+    {
+      "id": "xAl_0.80",
+      "x_Al": 0.8,
+      "baseline_5k": {
+        "eta_mPa_s": 1.7613482567937695,
+        "eta_std_mPa_s": 0.03631777320585242,
+        "n_replicas": 50,
+        "n_steps": 20001
+      },
+      "windows": {
+        "40ps": {
+          "N5": {
+            "eta_mPa_s": 1.8136616226837778,
+            "eta_std_mPa_s": 0.08494959454989409,
+            "relative_std": 0.04683872310436241,
+            "neff": 99.76211857196839,
+            "tau_exp_ps": 0.11342070159568005,
+            "tau_int_ps": 0.059056827188831366,
+            "cost_z": 0.9441950622883941,
+            "criterion_z": 1.108440617692401
+          },
+          "N10": {
+            "eta_mPa_s": 1.8078744481762383,
+            "eta_std_mPa_s": 0.06420369930200566,
+            "relative_std": 0.03551336176401717,
+            "neff": 79.05428902290744,
+            "tau_exp_ps": 0.12835784543528425,
+            "tau_int_ps": 0.05924159007654167,
+            "cost_z": -0.96051674214081,
+            "criterion_z": 2.2049763607325223
+          },
+          "change_vs_N5_pct": -0.31908788470563776,
+          "change_vs_5k_pct": 2.641510059297514,
+          "diagnostic_combined_z_vs_5k": 0.630745734681582
+        },
+        "first20ps": {
+          "N5": {
+            "eta_mPa_s": 1.7610149882699038,
+            "eta_std_mPa_s": 0.10060461779882983,
+            "relative_std": 0.05712876861864082,
+            "neff": 67.88103466129444,
+            "tau_exp_ps": 0.07978884419993564,
+            "tau_int_ps": 0.05625706156638756,
+            "cost_z": 0.5388793343354097,
+            "criterion_z": 0.44645471580887286
+          },
+          "N10": {
+            "eta_mPa_s": 1.7565567121563808,
+            "eta_std_mPa_s": 0.08994316465630187,
+            "relative_std": 0.05120424751096479,
+            "neff": 56.2630634278428,
+            "tau_exp_ps": 0.09730154383348046,
+            "tau_int_ps": 0.05682062221753973,
+            "cost_z": 0.46466166532844055,
+            "criterion_z": 2.0254002294214333
+          },
+          "change_vs_N5_pct": -0.25316514301237936,
+          "change_vs_5k_pct": -0.27203845797711956,
+          "diagnostic_combined_z_vs_5k": 0.049398014422576415
+        },
+        "second20ps": {
+          "N5": {
+            "eta_mPa_s": 1.4187087339166922,
+            "eta_std_mPa_s": 0.10010614407647012,
+            "relative_std": 0.0705614490721451,
+            "neff": 183.91746727694192,
+            "tau_exp_ps": 0.048072836015960796,
+            "tau_int_ps": 0.04710591194305236,
+            "cost_z": 0.9550491186112889,
+            "criterion_z": 11.095957957449485
+          },
+          "N10": {
+            "eta_mPa_s": 1.7864843291583967,
+            "eta_std_mPa_s": 0.08779935861015552,
+            "relative_std": 0.04914644767777914,
+            "neff": 47.32230590499638,
+            "tau_exp_ps": 0.12656617398493453,
+            "tau_int_ps": 0.05931290601001351,
+            "cost_z": -1.4403288668091838,
+            "criterion_z": 2.4491441049129383
+          },
+          "change_vs_N5_pct": 25.923262925602074,
+          "change_vs_5k_pct": 1.4270926983164012,
+          "diagnostic_combined_z_vs_5k": 0.2645505481466322
+        }
+      },
+      "new_replicas_6_to_10_40ps": {
+        "eta_mPa_s": 1.7141713768419313,
+        "eta_std_mPa_s": 0.12083993241910845,
+        "relative_std": 0.07049466234918438,
+        "neff": 119.63296397394633,
+        "tau_exp_ps": 0.11251336792723184,
+        "tau_int_ps": 0.05652944567699377,
+        "cost_z": -0.150971285067508,
+        "criterion_z": 3.4794306152896453
+      },
+      "prior_replicas_1_to_5_40ps": {
+        "eta_mPa_s": 1.8136616226837778,
+        "eta_std_mPa_s": 0.08494959454989409,
+        "relative_std": 0.04683872310436241,
+        "neff": 99.76211857196839,
+        "tau_exp_ps": 0.11342070159568005,
+        "tau_int_ps": 0.059056827188831366,
+        "cost_z": 0.9441950622883941,
+        "criterion_z": 1.108440617692401
+      },
+      "new_batch_z": 0.6735437969600175,
+      "unmet_or_unavailable": [
+        "minimum_replicas",
+        "precision",
+        "last_three_stability",
+        "cutoff"
+      ],
+      "max_20_40_difference_pct": 2.838567471962794
+    }
+  ],
+  "visual_review": [
+    {
+      "path": "collected/analysis/batch_0010/convergence.png",
+      "sha256": "f50b148ac22966f671e253f8a652e20426affbc92b4deb89d66577a994ddd3b7"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.20/40ps/spectrum.png",
+      "sha256": "08a88a93160e11cf973f66b32d2c64547d73ec1494cbebe047f066bb8894ddf5"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.20/40ps/extras.png",
+      "sha256": "dd203d0dae3814033ed275c1529ef8a250cd1015cfa91c0289f17352a89ec08a"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.45/40ps/spectrum.png",
+      "sha256": "a1fb92bad0d624760884275198fff88973c008cb4e278ad566c713248d53bc45"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.45/40ps/extras.png",
+      "sha256": "01097dd970e4e776e010a7d45b135ca0a2eda8bb1cbcb8cb2fe8b1dee62a4da5"
+    },
+    {
+      "path": "collected/analysis/batch_0005/xAl_0.80/40ps/spectrum.png",
+      "sha256": "2d6ad00cef405be9a21570f34876118b1785b9d82a857af1b7f7b463b8ec1bd2"
+    },
+    {
+      "path": "collected/analysis/batch_0005/xAl_0.80/40ps/extras.png",
+      "sha256": "6ec2bacde809921b56674af773264e628dc8e43438bbfa331db22e010e6d3bf5"
+    },
+    {
+      "path": "collected/analysis/batch_0005/xAl_0.80/first20ps/spectrum.png",
+      "sha256": "90560b81dfeab1813cfe523e534bc019384e8d1de165a8109ecf645ecd709f6e"
+    },
+    {
+      "path": "collected/analysis/batch_0005/xAl_0.80/first20ps/extras.png",
+      "sha256": "c2bddf1b417a2f8c7e6661f5a658042aad0e99ac4fa84a26437c353f36424358"
+    },
+    {
+      "path": "collected/analysis/batch_0005/xAl_0.80/second20ps/spectrum.png",
+      "sha256": "2a06fca99c6e6a2f9b69fb324304c8cd6effd75f24b6cbf5f4dd7b3e03e55857"
+    },
+    {
+      "path": "collected/analysis/batch_0005/xAl_0.80/second20ps/extras.png",
+      "sha256": "5ba2fd6166ef7541446b0b3a61ab606f79290f9fa2c373c7b7738518cee5edff"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.80/40ps/spectrum.png",
+      "sha256": "a3e97b30a0883872008a8277364b97e8936f04b1dd8d4664bd5c952157f4d00b"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.80/40ps/extras.png",
+      "sha256": "96400885d70663e0d145f16c292d37898cd2edd9c0e7b59f2c424e934acd26d6"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.80/first20ps/spectrum.png",
+      "sha256": "0829d1b0df64f2313f7b5a24cdf15eefdb803454633ef0e34adeb714921aa78b"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.80/first20ps/extras.png",
+      "sha256": "395a402dce3f4df2bcd3ebe8b89bfeafad15e4bb17ed9500947035f44876255b"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.80/second20ps/spectrum.png",
+      "sha256": "060bebd63d1fc950dfe9212a2dd367e1ba0dafe1d8de74adbdc38502fa3e201d"
+    },
+    {
+      "path": "collected/analysis/batch_0010/xAl_0.80/second20ps/extras.png",
+      "sha256": "0199e9524db168b85dbfb6d4b77d97d1ae74f4ed81ca548dc274faa58795e4c4"
+    }
+  ],
+  "visual_findings": {
+    "convergence": "N10 full-40ps xAl0.20 rises by 12.29%; xAl0.45 and xAl0.80 change less than 0.4%. Errors decrease but remain above 3%.",
+    "xAl_0.20_40ps": "Selected cutoff around 1.6 THz; cost and cutoff criterion pass, with a broad low-frequency eta plateau.",
+    "xAl_0.45_40ps": "Selected cutoff around 1.6 THz; cost and cutoff criterion pass, with a broad low-frequency eta plateau.",
+    "xAl_0.80_40ps": "Selected cutoff moves from about 2.4 to 1.9 THz. Eta remains near 1.81. Criterion z increases from 1.10844 to 2.20498 and fails.",
+    "xAl_0.80_first20ps": "Main cutoff peak shifts lower; N10 also has a secondary peak around 4 THz. Eta remains near 1.76; criterion z increases from 0.44645 to 2.02540 and narrowly fails.",
+    "xAl_0.80_second20ps": "The pathological N5 concentration near 9 THz is absent at N10; the main weight is now near 2.5 THz with a lower-frequency shoulder. Model uncertainty is much better behaved. Eta rises from 1.41871 to 1.78648. Criterion z improves from 11.09596 to 2.44914 but still fails. This does not establish physical drift."
+  },
+  "cutoff_conclusion": "Strong second20ps anomaly weakens, but cutoff problem persists overall: all three N10 xAl0.80 windows have criterion_z > 2. New-only replicas6-10 also have criterion_z=3.47943.",
+  "interpretation": "N10 is not converged. At xAl0.20 new-only vs previous-only z=2.51405 narrowly exceeds 2.5. Duration agreement fails at xAl0.20 (3.57%) and xAl0.45 (7.25%), passes at xAl0.80 (2.84%). Full40ps differences vs5k are -3.31%, -4.34%, +2.64%, within one combined nominal SE, but first20ps xAl0.45 is -11.28%, diagnostic 1.97 SE. No robust checkpoint-effect or global-recalculation conclusion yet. Preparation differs from historical5k; window and cumulative estimates are correlated; sampling errors do not cover systematic uncertainty.",
+  "action": "Continue the existing single A100 job unchanged toward N15 and further protocol checks; minimum N30 and two consecutive complete passes required.",
+  "stop_recommended": false,
+  "pass_streak": 0
+}

@@ -1,0 +1,71 @@
+{
+  "state": "design_only_not_submitted",
+  "base": {
+    "supercell": [
+      4,
+      4,
+      3
+    ],
+    "atoms": 96,
+    "electronic_kmesh": [
+      6,
+      6,
+      6
+    ],
+    "unfolded_primitive_mesh": [
+      24,
+      24,
+      18
+    ]
+  },
+  "candidates": [
+    {
+      "purpose": "In-plane interaction-range convergence",
+      "supercell": [
+        6,
+        6,
+        3
+      ],
+      "atoms": 216,
+      "electronic_kmesh": [
+        4,
+        4,
+        6
+      ],
+      "unfolded_primitive_mesh": [
+        24,
+        24,
+        18
+      ]
+    },
+    {
+      "purpose": "c-axis interaction-range convergence",
+      "supercell": [
+        4,
+        4,
+        6
+      ],
+      "atoms": 192,
+      "electronic_kmesh": [
+        6,
+        6,
+        3
+      ],
+      "unfolded_primitive_mesh": [
+        24,
+        24,
+        18
+      ]
+    }
+  ],
+  "reason": "Increase real-space interaction range independently in basal plane and c while retaining the exact unfolded Gamma electronic grid. Avoid confounding supercell and electronic k-mesh changes. Revisit grids if production kmesh diagnostics require a denser grid.",
+  "before_submission": [
+    "Validate cutoff/kmesh/smearing diagnostics at base supercell",
+    "Regenerate displacements from each accepted functional geometry; record hashes and atom order",
+    "Scale NBANDS with atom count and preserve convergence settings",
+    "Calculate irreducible kpoint count and choose compatible KPAR, NCORE and MPI allocation",
+    "Review actual memory, checkpoint size, writable storage and 20h soft-stop strategy",
+    "Define quantitative frequency/DOS convergence criteria before final qualification"
+  ],
+  "qualification": "Initial96atom cell size convergence remains unestablished. Larger cells are candidates, not accepted results."
+}

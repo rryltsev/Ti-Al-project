@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-01",
+  "source_thread": "01a15c09-6430-7c61-8706-69838a8cbe0c",
+  "source_bundle": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\figure2-six-panels-20261101-02",
+  "verified_manifest_files": 51,
+  "source_manifest_sha256": "88ecb9a2477b6c648bce516e21a698dab486b8fba83e398b11db075521ec5f6d",
+  "figure_source_sha256": "7416202d11aef0ff4d6091d6b233c6fbd920c707306847d7da7d6abb854d753c",
+  "model_steps": {
+    "PBE": 15000,
+    "PBEsol": 23100,
+    "r2SCAN": 23200
+  },
+  "verified_metrics": {
+    "PBE": {
+      "sorted_band_RMSE_THz": 0.209046952110402,
+      "Gamma_DFT_THz": [
+        -1.9348512893167248e-07,
+        9.778573364572523e-08,
+        2.1583470391022103e-07,
+        3.964105491655709,
+        3.9641054934760698,
+        5.408169221658665
+      ],
+      "Gamma_DPA4_THz": [
+        -1.970500977394602e-07,
+        -9.823140258328791e-08,
+        1.8635570037641308e-07,
+        3.7999183275724993,
+        3.799918329369412,
+        4.903233387950142
+      ],
+      "DFT_DOS": {
+        "integral": 3.0,
+        "peak_7_8_THz": 7.0140000000000065,
+        "peak_height": 0.9018946969058352
+      },
+      "DPA4_DOS": {
+        "integral": 3.0,
+        "peak_7_8_THz": 7.050000000000007,
+        "peak_height": 1.1074424141469523
+      }
+    },
+    "PBEsol": {
+      "sorted_band_RMSE_THz": 0.2780982429114023,
+      "Gamma_DFT_THz": [
+        -3.2638854220271034e-07,
+        1.8659745231098083e-07,
+        2.8180632647231136e-07,
+        3.786476804712821,
+        3.786476808537187,
+        5.757503575023925
+      ],
+      "Gamma_DPA4_THz": [
+        -3.010922825349483e-07,
+        -6.140590284095295e-08,
+        2.4492960583179197e-07,
+        3.7647488176796466,
+        3.7647488213917155,
+        4.954178783646813
+      ],
+      "DFT_DOS": {
+        "integral": 3.0,
+        "peak_7_8_THz": 7.194000000000007,
+        "peak_height": 0.7815245925398353
+      },
+      "DPA4_DOS": {
+        "integral": 3.0,
+        "peak_7_8_THz": 7.328000000000007,
+        "peak_height": 1.0067851707495485
+      }
+    },
+    "r2SCAN": {
+      "sorted_band_RMSE_THz": 0.2594494686193214,
+      "Gamma_DFT_THz": [
+        -1.0492578024122476e-07,
+        1.090091263407838e-07,
+        2.3215696930406437e-07,
+        4.586615641085168,
+        4.586615643092987,
+        5.189323501615258
+      ],
+      "Gamma_DPA4_THz": [
+        1.933456805977079e-08,
+        1.6085954537821553e-07,
+        2.736974896610176e-07,
+        4.220688045959042,
+        4.5631672023875,
+        4.563167204384806
+      ],
+      "DFT_DOS": {
+        "integral": 3.0000000000000004,
+        "peak_7_8_THz": 7.538000000000007,
+        "peak_height": 0.8995898003211188
+      },
+      "DPA4_DOS": {
+        "integral": 3.0,
+        "peak_7_8_THz": 7.744000000000008,
+        "peak_height": 1.0177098663103996
+      }
+    }
+  },
+  "baseline_backup": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov01\\manuscript_revision_phonons\\before_revision.zip",
+  "build": "build/revision-nov01-phonons",
+  "scope": "Figure 2, phonon methods/results/discussion, associated abstract/conclusion statements and SI. Other numerical results preserved from the current working manuscript.",
+  "PDF_sha256": {
+    "main": "6b7fef434fe82c9b67ae8b10ab407a6710b3b24d11af20983ef4625e0ea6a1f1",
+    "supporting_materials": "417d02adc35a05b8294bde2ccd8c47c2581490f4f37c729ff3c8e5f1ada9e3f7"
+  },
+  "preservation_checks": {
+    "six_other_figures_content_identical": true,
+    "PDF_creation_date_only_changes": [
+      "figures/viscosity.pdf"
+    ],
+    "other_result_sections_identical": true,
+    "test_metrics_table_identical": true
+  },
+  "verification": "audit\\nov01\\manuscript_revision_phonons\\verification.json",
+  "final_source_sha256": {
+    "manuscript\\main.tex": "bf687b4fcfda275e0663f8db6fbf35ecade8d8c0d512ebf3270fbaf9adf5e4c6",
+    "manuscript\\supporting_materials.tex": "1024d11d1c605b8907ffc045c4dca105c0af43411d9b236f3b26a8b97b42315f",
+    "manuscript\\revision_nov01_phonons_notes_ru.txt": "22ff62b95fe74a35f59ed346a0a8b9f558124c5ff9c15143d2048e2abc6a90d2",
+    "manuscript\\sections\\abstract.tex": "0e8bf877d1167f5e08337cb03daf0cbc525390b45211994d96a7ae5e5879778f",
+    "manuscript\\sections\\conclusions.tex": "76652228e5874706f39c9504d447508dd1bc814a69e390849c32fda95391e95d",
+    "manuscript\\sections\\discussion.tex": "bc84be060cfac9e94af34d83ba5a84c8ef9fac55854840011699e9d0a8b5d4e1",
+    "manuscript\\sections\\introduction.tex": "6d3519eee25cb9a0f9bbc1fc678b9c02a37e22ca472ba354b65797db31ef4e64",
+    "manuscript\\sections\\methods.tex": "c7a18b285f553eee0b5555151b0578b0aef05e8d1bb8a82de82952bd3474f4bf",
+    "manuscript\\sections\\results.tex": "cc334726d1425955a28298412a34b935ca3f8f669ab04ef503fff8a7777950d1",
+    "manuscript\\sections\\test20_metrics_table.tex": "b75b8ff4b96e588917d06b6787a1c5b4abbd37918020737271f3f60f76b0b8a3",
+    "manuscript\\sections\\test23_metrics_table.tex": "fe7aadc4ec972999e254fe1d360ded415e841e6856e6f1aef2572b503b958d7e",
+    "manuscript\\sections\\testset_metrics_table.tex": "935f902f475b6f43e7da008fd0d63996e6792c754d5b0587f19d649aaac19de8",
+    "audit\\nov01\\manuscript_revision_phonons\\finalize.py": "5cbbb63363488e2f8680b4fad3398523b682144037650f6b94e8b130a6d13aca",
+    "audit\\nov01\\manuscript_revision_phonons\\polish_si.py": "467080e8c54604c72e0293d64de2c2190e99b7cf8a9d108297b172f617fe0ae6",
+    "audit\\nov01\\manuscript_revision_phonons\\revise.py": "f0556c1015b75d68fbeffb8b473b43585815e6f87bea0e7a96014c4078caf6b3",
+    "audit\\nov01\\manuscript_revision_phonons\\verify.py": "139b94c66a5a5640e257fc9688cfeb224cfa87b91d7201c4ee4d6bd5104a869c"
+  },
+  "local_data_manifest_sha256": "60bb39db8c71106fdf619635b1a0a71e2a89cea3f66f19be9bf944923a43320d"
+}

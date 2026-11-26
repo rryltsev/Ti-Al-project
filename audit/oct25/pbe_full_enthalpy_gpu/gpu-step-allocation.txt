@@ -1,0 +1,38 @@
+StepId=20960642.extern UserId=13129 StartTime=2026-10-25T20:25:49 TimeLimit=UNLIMITED
+   State=RUNNING Partition=v100 NodeList=tesla-a101
+   Nodes=1 CPUs=0 Tasks=1 Name=extern Network=(null)
+   TRES=(null)
+   ResvPorts=(null)
+   CPUFreqReq=Default
+   SrunHost:Pid=(null):0
+
+StepId=20960642.batch UserId=13129 StartTime=2026-10-25T20:25:49 TimeLimit=UNLIMITED
+   State=RUNNING Partition=v100 NodeList=tesla-a101
+   Nodes=1 CPUs=0 Tasks=1 Name=batch Network=(null)
+   TRES=(null)
+   ResvPorts=(null)
+   CPUFreqReq=Default
+   SrunHost:Pid=(null):0
+
+StepId=20960642.0 UserId=13129 StartTime=2026-10-25T20:25:55 TimeLimit=UNLIMITED
+   State=RUNNING Partition=v100 NodeList=tesla-a101
+   Nodes=1 CPUs=4 Tasks=1 Name=env Network=(null)
+   TRES=cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=12G,node=1
+   ResvPorts=12327-12328
+   CPUFreqReq=Default Dist=Cyclic
+   SrunHost:Pid=tesla-a101:3816779
+   TresPerStep=cpu:4
+   TresPerNode=gres:gpu:a100:1
+   TresPerTask=cpu:4
+
+StepId=20960642.1 UserId=13129 StartTime=2026-10-25T20:25:55 TimeLimit=UNLIMITED
+   State=RUNNING Partition=v100 NodeList=tesla-a101
+   Nodes=1 CPUs=4 Tasks=1 Name=env Network=(null)
+   TRES=cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=12G,node=1
+   ResvPorts=12329-12330
+   CPUFreqReq=Default Dist=Cyclic
+   SrunHost:Pid=tesla-a101:3816780
+   TresPerStep=cpu:4
+   TresPerNode=gres:gpu:a100:1
+   TresPerTask=cpu:4
+

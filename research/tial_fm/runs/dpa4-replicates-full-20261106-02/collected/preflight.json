@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "datasets": {
+    "200": {
+      "PBE": {
+        "train": {
+          "structures": 200,
+          "atoms": 44034,
+          "groups": 83
+        },
+        "validation": {
+          "structures": 149,
+          "atoms": 32740,
+          "groups": 23
+        }
+      },
+      "r2SCAN": {
+        "train": {
+          "structures": 200,
+          "atoms": 44034,
+          "groups": 83
+        },
+        "validation": {
+          "structures": 149,
+          "atoms": 32740,
+          "groups": 23
+        }
+      }
+    },
+    "694": {
+      "PBE": {
+        "train": {
+          "structures": 694,
+          "atoms": 152798,
+          "groups": 91
+        },
+        "validation": {
+          "structures": 149,
+          "atoms": 32740,
+          "groups": 23
+        }
+      },
+      "r2SCAN": {
+        "train": {
+          "structures": 694,
+          "atoms": 152798,
+          "groups": 91
+        },
+        "validation": {
+          "structures": 149,
+          "atoms": 32740,
+          "groups": 23
+        }
+      }
+    }
+  },
+  "group_overlap": 0,
+  "train200_nested_in694": true,
+  "test_data_staged": false,
+  "configuration_count": 12,
+  "zero_step_policy": "Every GPU case performs exact initialized live/merged/source and frozen-mask checks before its first optimizer step; no separate duplicated CPU initialization."
+}

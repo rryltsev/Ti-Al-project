@@ -1,0 +1,132 @@
+{
+  "latest_audit_run": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\initial-audit-20261106-01",
+  "status": "data_split_ready_with_documented_parent_containment",
+  "new_DFT_jobs": 0,
+  "summary": {
+    "run_id": "initial-audit-20261106-01",
+    "selected": 1000,
+    "sizes": {
+      "250": 104,
+      "216": 880,
+      "256": 16
+    },
+    "matched_label_geometries": 2990,
+    "historical_counts": {
+      "PBE": {
+        "train": 850,
+        "validate": 149
+      },
+      "PBEsol": {
+        "train": 849,
+        "validate": 149
+      },
+      "r2SCAN": {
+        "train": 845,
+        "validate": 148
+      }
+    },
+    "common_label_triples": 992,
+    "common_historical_train": 658,
+    "common_historical_validation": 14,
+    "known_parent_geometries": 120,
+    "unresolved_parent_geometries": 880,
+    "parent_overlap_counts": {
+      "PBE": 11,
+      "PBEsol": 14,
+      "r2SCAN": 11
+    },
+    "common_atoms": 218346,
+    "labels_by_role": {
+      "PBE": {
+        "train": {
+          "geometries": 850,
+          "atoms": 187220
+        },
+        "validate": {
+          "geometries": 149,
+          "atoms": 32740
+        }
+      },
+      "PBEsol": {
+        "train": {
+          "geometries": 849,
+          "atoms": 186982
+        },
+        "validate": {
+          "geometries": 149,
+          "atoms": 32728
+        }
+      },
+      "r2SCAN": {
+        "train": {
+          "geometries": 845,
+          "atoms": 186186
+        },
+        "validate": {
+          "geometries": 148,
+          "atoms": 32410
+        }
+      }
+    },
+    "fixed_external_geometries": 49,
+    "missing_external": {
+      "id": "TiAl-test-025",
+      "reason": "User explicitly requested cancellation of the sole pending r2SCAN task and cessation of Test50 monitoring on 2026-11-04.",
+      "state": "cancelled_before_execution"
+    },
+    "new_DFT_jobs": 0,
+    "new_training_jobs": 0,
+    "new_model_evaluations": 0,
+    "elapsed_seconds": 65.18393030017614,
+    "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "geometry_match_tolerance_A": 5e-05,
+    "baseline_arithmetic": "PASS",
+    "phonon_arithmetic": "PASS",
+    "scientific_gates": {
+      "data": "blocked_parent_independence",
+      "B0": "partial_cached_raw_reproduction",
+      "H0": "partial_FT_only_no_original_FM"
+    }
+  },
+  "updated_local_date": "2026-11-06",
+  "stage": "grouped_split_prepared_and_verified",
+  "new_training_jobs": 0,
+  "external_shared_parent_structures": 24,
+  "installed_lora_policy": "configs/installed_lora_policy.json",
+  "backend_source_permission": "explicit_user_approval_received_and_transfer_verified",
+  "next_actions": [
+    "Select nested N100/N200/N400 subsets within the frozen train694 only",
+    "Validate current runtime masks and baseline derivatives/exports",
+    "Evaluate original FM harmonic response on frozen DFT geometries",
+    "Resolve allocation and profile first bounded training; compare newly trained models on this split"
+  ],
+  "training_launch_ready": false,
+  "git": {
+    "commit": null,
+    "reason": "unborn repository; author identity not configured; no remote"
+  },
+  "reports": [
+    "reports/00_inventory.md",
+    "reports/01_baseline_reproduction.md",
+    "reports/02_phonon_baseline.md",
+    "reports/summary.md",
+    "reports/07_grouped_split.md"
+  ],
+  "active_dataset": {
+    "version": "common992-grouped-v1-20261106-02",
+    "root": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\datasets\\common992-grouped-v1-20261106-02",
+    "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+    "manifest_sha256": "3c288164cffbd00adedd667ab9a8b85cf2aa21ce41b1d8c8e3cf55fa68d7628d",
+    "counts": {
+      "train": 694,
+      "validation": 149,
+      "test": 149
+    },
+    "verification": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\datasets\\common992-grouped-v1-20261106-02\\verification.json",
+    "paired_label_records": 2976,
+    "guarantee_scope": "Fixed-nTi/fixed-nAl trajectories and their relaxation descendants, per documented scripts",
+    "exact_liquid_trajectory_ids_recovered": false,
+    "old_test49": "archival_diagnostic_only"
+  }
+}

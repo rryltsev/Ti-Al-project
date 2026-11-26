@@ -1,0 +1,18 @@
+{
+  "unix": 1793155691.3446352,
+  "sstat_batch": {
+    "returncode": 0,
+    "stdout": "JobID|AveCPU|MaxRSS|AveRSS\n20958471.batch|00:00:00|21368K|21368K\n20958479.batch|00:00:00|21404K|21404K\n20958488.batch|00:00:00|20964K|20964K\n",
+    "stderr": ""
+  },
+  "steps": {
+    "returncode": 0,
+    "stdout": "JobID|State|Elapsed|TotalCPU|CPUTimeRAW|MaxRSS|NodeList\n20957372_26|RUNNING|03:17:23|00:00:00|284232||apollo10\n20957372_26.batch|RUNNING|03:17:23|00:00:00|284232||apollo10\n20957372_26.extern|RUNNING|03:17:23|00:00:00|284232||apollo10\n20957372_26.0|RUNNING|03:17:22|00:00:00|284208||apollo10\n20957372_34|RUNNING|03:17:23|00:00:00|284232||apollo16\n20957372_34.batch|RUNNING|03:17:23|00:00:00|284232||apollo16\n20957372_34.extern|RUNNING|03:17:23|00:00:00|284232||apollo16\n20957372_34.0|RUNNING|03:17:22|00:00:00|284208||apollo16\n20957372_43|RUNNING|02:47:17|00:00:00|240888||apollo29\n20957372_43.batch|RUNNING|02:47:17|00:00:00|240888||apollo29\n20957372_43.extern|RUNNING|02:47:17|00:00:00|240888||apollo29\n20957372_43.0|RUNNING|02:47:16|00:00:00|240864||apollo29\n",
+    "stderr": ""
+  },
+  "nodes": {
+    "returncode": 0,
+    "stdout": "NodeName=apollo10 Arch=x86_64 CoresPerSocket=18  CPUAlloc=31 CPUEfctv=36 CPUTot=36 CPULoad=33.55 AvailableFeatures=a2017,bigmem ActiveFeatures=a2017,bigmem Gres=(null) NodeAddr=apollo10 NodeHostName=apollo10 Version=23.02.7 OS=Linux 4.18.0-193.19.1.el8_2.centos.plus.x86_64 #1 SMP Mon Sep 14 20:42:18 UTC 2020  RealMemory=257000 AllocMem=79186 FreeMem=136845 Sockets=2 Boards=1 State=MIXED ThreadsPerCore=1 TmpDisk=0 Weight=8 Owner=N/A MCS_label=N/A Partitions=apollo,nompi  BootTime=2026-06-19T14:52:26 SlurmdStartTime=2026-06-19T14:52:56 LastBusyTime=2026-10-27T20:18:56 ResumeAfterTime=None CfgTRES=cpu=36,mem=257000M,billing=6336 AllocTRES=cpu=31,mem=79186M CapWatts=n/a CurrentWatts=0 AveWatts=0 ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s\nNodeName=apollo16 Arch=x86_64 CoresPerSocket=18  CPUAlloc=24 CPUEfctv=36 CPUTot=36 CPULoad=24.01 AvailableFeatures=a2017,bigmem ActiveFeatures=a2017,bigmem Gres=(null) NodeAddr=apollo16 NodeHostName=apollo16 Version=23.02.7 OS=Linux 4.18.0-193.19.1.el8_2.centos.plus.x86_64 #1 SMP Mon Sep 14 20:42:18 UTC 2020  RealMemory=257000 AllocMem=65536 FreeMem=146818 Sockets=2 Boards=1 State=MIXED ThreadsPerCore=1 TmpDisk=0 Weight=8 Owner=N/A MCS_label=N/A Partitions=apollo,nompi  BootTime=2026-06-18T16:02:29 SlurmdStartTime=2026-06-18T16:05:00 LastBusyTime=2026-10-28T04:30:48 ResumeAfterTime=None CfgTRES=cpu=36,mem=257000M,billing=6336 AllocTRES=cpu=24,mem=64G CapWatts=n/a CurrentWatts=0 AveWatts=0 ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s\nNodeName=apollo29 Arch=x86_64 CoresPerSocket=18  CPUAlloc=28 CPUEfctv=36 CPUTot=36 CPULoad=31.19 AvailableFeatures=a2019,bigmem ActiveFeatures=a2019,bigmem Gres=(null) NodeAddr=apollo29 NodeHostName=apollo29 Version=23.02.7 OS=Linux 4.18.0-193.19.1.el8_2.centos.plus.x86_64 #1 SMP Mon Sep 14 20:42:18 UTC 2020  RealMemory=385600 AllocMem=69536 FreeMem=200979 Sockets=2 Boards=1 State=MIXED ThreadsPerCore=1 TmpDisk=0 Weight=7 Owner=N/A MCS_label=N/A Partitions=apollo,nompi  BootTime=2026-06-18T16:02:21 SlurmdStartTime=2026-06-18T16:03:03 LastBusyTime=2026-10-27T09:00:20 ResumeAfterTime=None CfgTRES=cpu=36,mem=385600M,billing=6336 AllocTRES=cpu=28,mem=69536M CapWatts=n/a CurrentWatts=0 AveWatts=0 ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s\n",
+    "stderr": ""
+  }
+}

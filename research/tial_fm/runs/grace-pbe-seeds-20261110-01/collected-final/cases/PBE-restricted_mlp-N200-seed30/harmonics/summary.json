@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "results": {
+    "PBE": {
+      "model": {
+        "gamma_THz": [
+          -8.725729305133899e-08,
+          -8.501785261013867e-08,
+          9.000309760998576e-08,
+          3.7083394180784626,
+          3.7083394198725825,
+          6.4792339184973855
+        ],
+        "gamma_c_axis_polarization": [
+          0.9043358066562723,
+          0.09563799331808528,
+          2.620002564187146e-05,
+          3.073299203339737e-20,
+          8.890116042397767e-21,
+          0.9999999999999992
+        ],
+        "mesh_min_THz": -8.725729305133899e-08,
+        "imaginary_modes_weighted": 0,
+        "DOS_integral_modes_per_atom": 2.999999999999999,
+        "ASR_residual": {
+          "translation_max_eV_A2": 8.215650382226158e-15,
+          "translation_other_index_max_eV_A2": 8.215650382226158e-15,
+          "permutation_max_eV_A2": 0.0
+        },
+        "ASR_max_change_eV_A2": 4.836614179637433e-05,
+        "force_drift_eV_A": [
+          [
+            4.481368979606752e-18,
+            2.529805069132844e-19,
+            1.6263032587282567e-18
+          ],
+          [
+            -5.421010862427522e-19,
+            -2.8098906303582658e-18,
+            -1.2829725707745136e-18
+          ]
+        ],
+        "reference_max_force_eV_A": 2.1577587067167013e-08
+      },
+      "sorted_band_RMSE_to_DFT_THz": 0.3185899217528813
+    }
+  },
+  "scope": "Fixed DFT cells, central +/-0.01A, same symfc/ASR and mesh50^3; baseline does not certify DFT convergence."
+}

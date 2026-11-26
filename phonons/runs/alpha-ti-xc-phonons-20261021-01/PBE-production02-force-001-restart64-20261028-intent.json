@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-28T16:34:19.813861+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--exclude=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=2",
+    "--ntasks=64",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=240G",
+    "--time=20:00:00",
+    "--job-name=ti6-PBE-f001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-restart64-20261028-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v9.sbatch",
+    "restart_step_v6.py",
+    "PBE",
+    "force-001",
+    "20959753"
+  ],
+  "parent_job": "20959753",
+  "parent_scheduler": "20959753|COMPLETED|2026-10-28T09:34:14|0:0\n",
+  "source_hashes": {
+    "restart_step_v6.py": "3ab9c91e1ca1ad396fbe905e3a5d94b2188554c3df09c66a9fc3982ec346d327",
+    "wavecar_check.py": "9481d96ef44db1d508c5443fa2ec7321094a506c7d7c81620edebe9e1abfe9e6",
+    "launch_v9.sbatch": "5d1d468ddf9ac61830e5cb8bd45b4311bfd395a5348d7a399f3268301f1003b9"
+  },
+  "checkpoint_proof": "7a074bf21e322f72f2eaa0b7619850e6c43b4483cf2ae1d368dc07289fc7f09d  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03/CHGCAR\n442ef0ed5b90bc218a4392210a94e35c2f1e7c1af6152a73b63ff48ce57844c5  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03/OUTCAR\n658e52265235f3212a2dcc605ee31bfb5c9ecea760ebfc58ec80ef3d980f3316  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03/vasprun.xml\n",
+  "scientific_changes": [],
+  "changes": [
+    "64 MPI, KPAR8; successful PBEsol resource layout",
+    "PBE resumes latest CHGCAR at increased throughput"
+  ],
+  "quota": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 68376960  104857600 104857600          352288       0       0        \n"
+}

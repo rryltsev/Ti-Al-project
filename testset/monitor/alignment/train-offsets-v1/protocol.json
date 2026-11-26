@@ -1,0 +1,16 @@
+{
+  "status": "predeclared_before_training_predictions",
+  "created_unix": 1792641940.3403106,
+  "authorization": "User requested training-only energy alignment on 2026-10-22 after inspecting raw test results.",
+  "model_sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+  "formula": "E_aligned = E_pretrained + n_Al*c_Al + n_Ti*c_Ti",
+  "elements": [
+    "Al",
+    "Ti"
+  ],
+  "fit": "Unregularized rank-2 least squares of per-atom energy residuals; equal weight per training frame.",
+  "target": "(energy.npy - pretrained total energy)/n_atoms",
+  "selection": "All frames in training_systems.json, separately for each functional; no validation/test labels, no outlier removal.",
+  "constraints": "Fit once then freeze. Forces, stresses and pretrained weights unchanged. Retain raw metrics. Do not change stopping heuristic.",
+  "test_geometry_manifest_sha256": "71f2f057f45141fb6456cbbe16e306c8abf80f2100728def25e24d5dd298d088"
+}

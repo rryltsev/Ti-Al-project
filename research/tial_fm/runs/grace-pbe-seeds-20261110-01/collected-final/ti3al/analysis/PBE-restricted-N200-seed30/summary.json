@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-restricted-N200-seed30",
+    "backend": "GRACE",
+    "method": "restricted",
+    "N": 200,
+    "seed": 30,
+    "XC": "PBE",
+    "model": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01/cases/PBE-restricted-N200-seed30"
+  },
+  "metrics": {
+    "DOS_integral_per_atom": 3.002529335210157,
+    "DFT_tabulated_integral_per_atom": 2.9875995032179867,
+    "normalized_DOS_L1": 0.40085417849818683,
+    "DOS_Wasserstein_THz": 0.27424985753357206,
+    "DOS_peak_THz": 9.019999999999701
+  },
+  "mesh14": {
+    "min_THz": 0.3725762180150245,
+    "max_THz": 9.453589965902932,
+    "imaginary_modes_weighted": 0,
+    "total_modes_weighted": 65856
+  },
+  "displacement_mesh": {
+    "0.5": {
+      "min_THz": 0.3725556220172452,
+      "max_THz": 9.453497476030465,
+      "imaginary_modes_weighted": 0,
+      "total_modes_weighted": 65856
+    },
+    "1.0": {
+      "min_THz": 0.3725762180150245,
+      "max_THz": 9.453589965902932,
+      "imaginary_modes_weighted": 0,
+      "total_modes_weighted": 65856
+    },
+    "2.0": {
+      "min_THz": 0.37265750194512337,
+      "max_THz": 9.453959339260999,
+      "imaginary_modes_weighted": 0,
+      "total_modes_weighted": 65856
+    }
+  },
+  "displacement_convergence": {
+    "0.5": {
+      "band_RMSE_to_001A_THz": 0.00016247532916425415,
+      "band_max_difference_THz": 0.000399044092257661
+    },
+    "2.0": {
+      "band_RMSE_to_001A_THz": 0.0006487275723354753,
+      "band_max_difference_THz": 0.0015950220104370416
+    }
+  },
+  "ASR_sensitivity": {
+    "band_RMSE_change_THz": 5.115603053869411e-06,
+    "mesh": {
+      "min_THz": 0.37257713675499116,
+      "max_THz": 9.453589996651722,
+      "imaginary_modes_weighted": 0,
+      "total_modes_weighted": 65856
+    }
+  },
+  "mesh20_metrics": {
+    "DOS_integral_per_atom": 2.9954689076391103,
+    "DFT_tabulated_integral_per_atom": 2.9875995032179867,
+    "normalized_DOS_L1": 0.3976116806601504,
+    "DOS_Wasserstein_THz": 0.2762949774823422,
+    "DOS_peak_THz": 9.019999999999701
+  },
+  "Gamma_THz": [
+    -0.0001419790371009717,
+    -0.00014050676274883999,
+    -8.885506984869596e-05,
+    4.010970650924369,
+    4.011160613185689,
+    4.69462702684989,
+    4.69473868131799,
+    4.832681181129649,
+    4.8327296867075376,
+    5.133617373595886,
+    5.4031146588672385,
+    6.854948674273164,
+    6.855016647083287,
+    7.319043905624004,
+    7.578321111182003,
+    7.578346252146981,
+    7.74288719958754,
+    8.291751772171281,
+    9.033991886237883,
+    9.034131262627573,
+    9.077915747070506,
+    9.131776292352079,
+    9.425977660996445,
+    9.426097502545904
+  ],
+  "max_residual_force_eV_A": 0.10565621821301756,
+  "residual_stress_GPa": [
+    [
+      -0.6834132116634035,
+      -2.341533776422546e-16,
+      -1.137316405690951e-15
+    ],
+    [
+      -2.341533776422546e-16,
+      -0.6836072931438381,
+      2.1408308813006135e-15
+    ],
+    [
+      -1.137316405690951e-15,
+      2.1408308813006135e-15,
+      0.2677777065021885
+    ]
+  ],
+  "geometry_sha256": "d01b28dd6035a16a7e6ec7c3f7461b194ed28df1c2c5f3310ef690ff574ed628",
+  "source_summary_sha256": "0608df1f4c55ce1d76d7d8d93964badbf8c905bb7d28cb4bc6ca72a175decd76"
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "DPA4-full-N694-seed20",
+    "backend": "DPA4",
+    "method": "full",
+    "N": 694,
+    "seed": 20,
+    "XC": "PBE",
+    "model": "/misc/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/training-plan01/cases/PBE-full-N694-seed20/merged/34700.pt",
+    "sha256": "d09767c591dba180b8b7c62e90b14c4e60324a20f34c92eec94377e6bb7b5272",
+    "source_run": "dpa4-n694-seeds-20261107-01",
+    "summary_sha256": "744d98fb46527f0658d19155a7e5a14e59a6eed5dfaac80070529b597d4247dd"
+  },
+  "job_id": "20991473",
+  "structures": 25,
+  "seconds": 13.293892638757825,
+  "geometry_sha256": "d01b28dd6035a16a7e6ec7c3f7461b194ed28df1c2c5f3310ef690ff574ed628",
+  "predictions_sha256": "10fbac58619ca06abe9371f2e54c83d79489e8385acfc76b3d9bc02de7fe3a03",
+  "max_residual_force_eV_A": 0.0554250659645807,
+  "residual_stress_GPa": [
+    [
+      -0.6681987596241287,
+      -2.89658740740229e-07,
+      4.7738475792187434e-08
+    ],
+    [
+      -2.614080575008038e-07,
+      -0.6683994973371342,
+      1.601031603918773e-08
+    ],
+    [
+      8.043945134442292e-08,
+      2.8014230053822316e-08,
+      0.1460919131940286
+    ]
+  ]
+}

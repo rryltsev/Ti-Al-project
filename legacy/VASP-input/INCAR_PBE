@@ -1,0 +1,17 @@
+SYSTEM = TiAl 
+
+                                                                                                      
+LREAL = A                      # real space projection                         
+PREC  = Accurate                 # chose Low only after tests
+ENCUT = 520
+EDIFF = 1E-6                   # do not use default (too large drift)
+#KSPASING = 1      
+ISMEAR = 1; SIGMA = 0.1# 
+ALGO = Normal                          
+NCORE= 4  
+KPAR = 6                                    
+NELMIN = 4                     # minimum 4 steps per time step, avoid breaking after 2 steps
+NELM = 100           
+NSW = 0; IBRION = -1
+LASPH =.TRUE                
+NWRITE = 1 ; LCHARG = .FALSE. ; LWAVE = .FALSE.  

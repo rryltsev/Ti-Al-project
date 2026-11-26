@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "offset_eV_atom": {
+    "Al": 0.005522045449451675,
+    "Ti": 0.002071898153978438
+  },
+  "alignment": "Equal-structure least squares in E/atom, train694 only",
+  "metrics": {
+    "train": {
+      "structures": 694,
+      "E_raw_RMSE_meV_atom": 4.846989068548502,
+      "E_aligned_RMSE_meV_atom": 2.9796392946461236,
+      "F_RMSE_eV_A": 0.08248192123266793,
+      "stress_RMSE_GPa": 0.12354426025818734
+    },
+    "validation": {
+      "structures": 149,
+      "E_raw_RMSE_meV_atom": 4.900408595218765,
+      "E_aligned_RMSE_meV_atom": 2.7134596754318627,
+      "F_RMSE_eV_A": 0.08273193452994312,
+      "stress_RMSE_GPa": 0.11973589732630835
+    }
+  },
+  "checks": [
+    {
+      "id": "tial-selected-0070",
+      "E_shift_error": 8.393286066166183e-14,
+      "F_max_difference": 1.8318679906315083e-14,
+      "stress_max_difference": 3.729655473350135e-17
+    },
+    {
+      "id": "tial-selected-0687",
+      "E_shift_error": 2.1860291354869332e-13,
+      "F_max_difference": 6.017408793468348e-14,
+      "stress_max_difference": 7.45931094670027e-17
+    },
+    {
+      "id": "tial-selected-0299",
+      "E_shift_error": 6.183942247162122e-14,
+      "F_max_difference": 5.1458837191376006e-14,
+      "stress_max_difference": 1.6306400674181987e-16
+    }
+  ],
+  "source": "train694 only",
+  "checkpoint_hashes": {
+    "checkpoint.index": "1487ddcbc4f9476f87c3f0ddad89483c553cb937cf0631783d3d25a4882516af",
+    "checkpoint.data-00000-of-00001": "71d7133e8ad065ff6a9b6dbf7f9e410a9c1db7d2f73518f2f93d9947b791c002"
+  }
+}

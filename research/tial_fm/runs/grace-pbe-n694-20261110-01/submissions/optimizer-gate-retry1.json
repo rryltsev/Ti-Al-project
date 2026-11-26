@@ -1,0 +1,20 @@
+{
+  "key": "optimizer-gate-retry1",
+  "job_id": "20991845",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=apollo",
+    "--mem=4G",
+    "--time=00:05:00",
+    "--dependency=afterany:20991843",
+    "--job-name=TiAl-GRA694-gate",
+    "--output=gate-%j.log",
+    "gate.sbatch"
+  ],
+  "utc": "2026-11-10T03:03:03.691145+00:00"
+}

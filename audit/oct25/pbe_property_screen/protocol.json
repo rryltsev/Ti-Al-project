@@ -1,0 +1,85 @@
+{
+  "id": "pbe-property-screen-20261025-01",
+  "models": {
+    "5000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-5000.pt",
+      "sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac"
+    },
+    "15000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf"
+    }
+  },
+  "geometry_sha256": "b363841cbc43aed6088b6f282ddf049e55ff9108b972d990e4788a30fc715863",
+  "rows_sha256": "b40d7506952758c66c4ad36a13c5848040b3ab6be6c945b33739c1f2f421e0e5",
+  "archive_predictions_sha256": "b41e4555da06d2daaaa8aa3a8098f371d690ce8275e29441c6ce62f980a6c416",
+  "sources": [
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Ti_2000K.traj",
+      "sha256": "bbe46fd5e6ca9d3884b60fb406026c5d510dd94be3a55912a4f411f071432b6a",
+      "n_frames": 301
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.1Ti0.9_2000K.traj",
+      "sha256": "0af279e9bb3d707792f2d4b906b779f690a978047f3d5f07da198200abd8b598",
+      "n_frames": 301
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.3Ti0.7_2000K.traj",
+      "sha256": "f31a78c36d2b0ec322ebf7c07eeda81bea9309bd67241988553843493b1a5a5b",
+      "n_frames": 301
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.5Ti0.5_2000K.traj",
+      "sha256": "adfacee459a653d914b8e96808392df0c56f2c3bced86715ba7f14b5143781cc",
+      "n_frames": 301
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al_2000K.traj",
+      "sha256": "4db8156de781eb190815b604ddcaa7a0305d4b3c965227b1d504fc4b601cad63",
+      "n_frames": 301
+    }
+  ],
+  "liquid": {
+    "T_K": 2000,
+    "n_atoms": 200,
+    "compositions_x_Al": [
+      0,
+      0.1,
+      0.3,
+      0.5,
+      1
+    ],
+    "frames_per_composition": 50,
+    "spacing_ps": 0.6,
+    "total_frames": 250
+  },
+  "eos": {
+    "Ti_hcp_reference_V_A3_atom": 17.5,
+    "Ti_bcc_reference_V_A3_atom": 17.5,
+    "Al_fcc_reference_V_A3_atom": 16.6,
+    "volume_factors": [
+      0.92,
+      0.936,
+      0.9520000000000001,
+      0.9680000000000001,
+      0.9840000000000001,
+      1.0,
+      1.016,
+      1.032,
+      1.048,
+      1.064,
+      1.08
+    ],
+    "hcp_c_over_a_bracket": [
+      1.45,
+      1.75
+    ],
+    "hcp_rule": "zero deviatoric stress at fixed volume",
+    "cubic_rule": "fixed cubic symmetry",
+    "equilibrium_rule": "zero hydrostatic pressure",
+    "bulk_modulus_rule": "central finite difference of pressure on shape-relaxed E(V)"
+  },
+  "pressure_convention": "P_config = trace(virial)/(3V), positive compression; excludes kinetic term",
+  "policy": "Native checkpoints, CPU only; archived inputs and manuscript unchanged. Liquid differences are paired on the archived PBE ensemble, not DFT errors or new 15k equilibrium MD."
+}

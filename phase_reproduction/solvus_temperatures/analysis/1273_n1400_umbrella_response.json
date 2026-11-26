@@ -1,0 +1,89 @@
+[
+  {
+    "temperature_K": 1273.15,
+    "N": 1400,
+    "cap": 0.4,
+    "axial_free": 1,
+    "production_half": null,
+    "statistics": {
+      "complete_sampled_fields": {
+        "x_range": [
+          0.2451923064327983,
+          0.2729499877627379
+        ],
+        "mu_range": [
+          3.49,
+          3.547
+        ],
+        "max_chemical_response": {
+          "mu_eV": 3.4905011339448384,
+          "x_Al": 0.2454436346521209,
+          "mean_Q": 0.09667876545480487,
+          "dx_dmu_eV_inv": 0.5015266658276359,
+          "Nvar_Q": 4.5684862306120895,
+          "low_Q_quartile": {
+            "mean_Q": 0.038861239103533424,
+            "mean_x_at_percent": 24.492362127377397
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.1749054129512511,
+            "mean_x_at_percent": 24.60385881384975
+          },
+          "correlation_x_Q": 0.07735476420248252,
+          "prob_Q_above_0p4": 0.0012326495385609041,
+          "prob_Q_above_0p6": 5.740665966711052e-05,
+          "equal_total_conditional_gap_at_most_at_percent": 1.2538316374922802,
+          "Kish_frames": 6000.259328269684,
+          "composition_smoothing_sd_at_percent": 0.25,
+          "composition_modes_at_percent": [
+            24.571428571428573
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": false
+        },
+        "max_order_response": {
+          "mu_eV": 3.547,
+          "x_Al": 0.2729499877627379,
+          "mean_Q": 0.11806714203832791,
+          "dx_dmu_eV_inv": 0.4687520647005209,
+          "Nvar_Q": 8.930063233517235,
+          "low_Q_quartile": {
+            "mean_Q": 0.04637973585407488,
+            "mean_x_at_percent": 27.270900880798425
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.22522841921171463,
+            "mean_x_at_percent": 27.355519068059337
+          },
+          "correlation_x_Q": 0.05358262640367429,
+          "prob_Q_above_0p4": 0.011288760003251463,
+          "prob_Q_above_0p6": 0.0017015688025443312,
+          "equal_total_conditional_gap_at_most_at_percent": 1.212170767191876,
+          "Kish_frames": 4905.07070719612,
+          "composition_smoothing_sd_at_percent": 0.25,
+          "composition_modes_at_percent": [
+            27.285714285714285
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": true
+        },
+        "composition_mode_scan": {
+          "number_fields": 115,
+          "fields_with_multiple_modes_above_10pct": 0,
+          "strongest_pair": null,
+          "widest_pair": null,
+          "note": "Adjacent peaks with >10% maximum density, separation >=2 smoothing widths, and >5% smoothed total mass on each side of the intervening minimum."
+        }
+      }
+    },
+    "diagnostic_dx_dmu_for_3p5pp_equal_total": 3.90797403653513,
+    "finite_size_mu_scale_for_3p5pp_eV": 0.002239011804632634,
+    "bootstrap_count": 0,
+    "bootstrap_max_chi_x_and_NvarQ_95": {},
+    "note": "Resolved maxima at fixed reweighted fields on a <=0.0005 eV search mesh with local refinement. Composition modes are Gaussian-smoothed peaks above 10% of the dominant peak. The susceptibility scale N(0.035)^2/(4kBT) assumes equally populated phases, and gives their between-phase contribution only; a variance bound on conditional means applies to the recovered finite-size distribution. Neither is a confidence limit on a bulk gap."
+  }
+]

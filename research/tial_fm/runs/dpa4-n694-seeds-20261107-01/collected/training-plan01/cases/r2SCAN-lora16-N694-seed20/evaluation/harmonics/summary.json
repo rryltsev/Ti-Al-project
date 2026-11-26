@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "XC": "r2SCAN",
+  "method": "lora16",
+  "model": {
+    "gamma_THz": [
+      -1.2826756224011758e-07,
+      -4.444225054927783e-09,
+      8.562715656908603e-08,
+      4.543473925795671,
+      4.543473927704493,
+      5.003343488566305
+    ],
+    "gamma_c_axis_polarization": [
+      0.9986041728044612,
+      0.0013885135522061186,
+      7.313643332618966e-06,
+      5.480851509491157e-19,
+      1.7070654948243824e-18,
+      1.0000000000000007
+    ],
+    "mesh_min_THz": -1.2826756224011758e-07,
+    "imaginary_modes_weighted": 0,
+    "DOS_integral_modes_per_atom": 2.999999999999999,
+    "ASR_residual": {
+      "translation_max_eV_A2": 6.439293542825908e-15,
+      "translation_other_index_max_eV_A2": 6.439293542825908e-15,
+      "permutation_max_eV_A2": 0.0
+    },
+    "ASR_max_change_eV_A2": 7.780823523784175e-05,
+    "force_drift_eV_A": [
+      [
+        0.0,
+        0.0,
+        -1.5178830414797062e-18
+      ],
+      [
+        0.0,
+        0.0,
+        -1.1926223897340549e-18
+      ]
+    ],
+    "reference_max_force_eV_A": 1.1141803691732563e-06
+  },
+  "sorted_band_RMSE_THz": 0.18403970050841026,
+  "sorted_band_max_error_THz": 0.5496285078972578,
+  "original_sorted_band_RMSE_THz": 1.0102129931911685,
+  "qualification": "Matched geometry physical development diagnostic; not independent test for tuning."
+}

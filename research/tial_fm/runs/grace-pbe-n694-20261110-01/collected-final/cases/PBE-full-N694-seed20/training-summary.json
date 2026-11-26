@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-full-N694-seed20",
+    "XC": "PBE",
+    "method": "full",
+    "N": 694,
+    "validation": 149,
+    "seed": 20,
+    "epochs": 50,
+    "steps": 34700,
+    "expected_trainable": 21764956
+  },
+  "steps": 34700,
+  "epochs": 50,
+  "training_seconds": 1725.9761368129402,
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/grace-pbe-n694-20261110-01/cases/PBE-full-N694-seed20/final-checkpoint/checkpoint",
+  "hashes": {
+    "checkpoint.index": "b47aae6951f4632e0c04bd3a3a8c27c3f5f68065664137a87214f1bce20e508e",
+    "checkpoint.data-00000-of-00001": "f873092be82b099bf7771625969c9a54477c10d636871544e1ed61208bca2237"
+  },
+  "test_access": false,
+  "selection": "fixed final epoch50",
+  "GPU_memory": {
+    "current": 589701376,
+    "peak": 2709908480
+  }
+}

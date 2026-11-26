@@ -1,0 +1,9 @@
+\begin{abstract}
+Machine-learning interatomic potentials inherit the exchange-correlation approximation used to generate their reference data, but its effect on finite-temperature alloy properties remains difficult to assess systematically.
+We compare Ti--Al potentials obtained by fine-tuning the DPA4-Neo foundation model on PBE, PBEsol, and \rscan{} datasets derived from a common pool of 1000 selected configurations.
+Common DFT labeling and fine-tuning settings support comparisons across lattice dynamics, density, melting, liquid mixing thermodynamics, and viscosity. Matched direct-DFT and DPA4 phonon calculations distinguish discrepancies with experiment in the reference description from residual errors in the fine-tuned harmonic response.
+The clearest improvement with \rscan{} is found for the melting temperature of Ti: the coexistence estimate increases from approximately 1750--1760~K for the GGA-based potentials to 1855~K, reducing the deviation from the experimental value of 1943~K from about 9--10\% to 4.5\%.
+The \rscan{} model also improves the overall description of the liquid mixing enthalpy at 2000~K, although its broad minimum near $x_{\mathrm{Al}}=0.5$--0.6 is somewhat too exothermic.
+These gains do not extend uniformly to other observables: PBE gives closer agreement with the liquid-density references and most of the available alloy-viscosity reference values, while harmonic phonons and pure-Ti viscosity show no uniform functional ranking.
+The results identify relative phase and mixing energetics as promising areas for \rscan{}-based Ti--Al potentials and demonstrate why exchange-correlation choices must be assessed against several complementary properties.
+\end{abstract}

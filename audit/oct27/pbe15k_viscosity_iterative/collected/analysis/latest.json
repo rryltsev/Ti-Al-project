@@ -1,0 +1,478 @@
+{
+  "n_replicas": 15,
+  "temperature_K": 1873,
+  "points": [
+    {
+      "id": "xAl_0.20",
+      "x_Al": 0.2,
+      "actual_x_Al": 0.201171875,
+      "n_replicas": 15,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 3.9845816478019174,
+          "eta_std_mPa_s": 0.1346205933454519,
+          "relative_std": 0.0337853770469768,
+          "neff": 61.48231341230992,
+          "tau_exp_ps": 0.20255199607698554,
+          "tau_int_ps": 0.11250120344061938,
+          "cost_z": -1.4557711536136722,
+          "criterion_z": 0.3710940400132006
+        },
+        "first20ps": {
+          "eta_mPa_s": 3.955117643537923,
+          "eta_std_mPa_s": 0.17718916987445857,
+          "relative_std": 0.04479997457571444,
+          "neff": 33.9856095687245,
+          "tau_exp_ps": 0.18291882861562728,
+          "tau_int_ps": 0.11094447151882227,
+          "cost_z": 0.021493628486268686,
+          "criterion_z": -0.20075447442458383
+        },
+        "second20ps": {
+          "eta_mPa_s": 4.051436468645531,
+          "eta_std_mPa_s": 0.20680575134981619,
+          "relative_std": 0.05104504364076949,
+          "neff": 26.647732450477026,
+          "tau_exp_ps": 0.23595071340861493,
+          "tau_int_ps": 0.11514043089677341,
+          "cost_z": -0.7389197990959657,
+          "criterion_z": -0.38146594479234436
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/xAl_0.20/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "a8ceff721827a5c35791a2036842368df2a8c631349d7498c7c660f73dfddedf"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/xAl_0.20/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "ac5370356494861f4165a696319272a02a9d818584743fab430b4cfb03a3b215"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/xAl_0.20/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "f74fde204e88a67d74bd785004310e1665f42a58d1e99565550ca7f9d7b388ef"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/xAl_0.20/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "b42a6d86f8cd0156299db573fb3caa0ec9600bf7a75be2ffc8677cd1139f70d9"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/xAl_0.20/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "fb0c34cb915c466f88d1638ddd78c24c6330b5a47fdcf4031a9b11d029b73250"
+        },
+        {
+          "replica": 6,
+          "stress_file": "states/xAl_0.20/replicas/replica_0006/attempt_001/production/stress.npz",
+          "sha256": "ae67ea603598543072792ba77387cf50ae91aa4beb655f0c848380710964a949"
+        },
+        {
+          "replica": 7,
+          "stress_file": "states/xAl_0.20/replicas/replica_0007/attempt_001/production/stress.npz",
+          "sha256": "9566e7f8ec23e8241d5279df1f371f8e00bf0824c41c17ec646f686ddac731a5"
+        },
+        {
+          "replica": 8,
+          "stress_file": "states/xAl_0.20/replicas/replica_0008/attempt_001/production/stress.npz",
+          "sha256": "804921853a173700b9ebc117e2f0eeb4604a035189a232110c3450bf9d07f944"
+        },
+        {
+          "replica": 9,
+          "stress_file": "states/xAl_0.20/replicas/replica_0009/attempt_001/production/stress.npz",
+          "sha256": "0e3e3cfe2f8f63f2bab9e4e0a3ab634ad654aa6d6cbeb14202f85c2406ca9d09"
+        },
+        {
+          "replica": 10,
+          "stress_file": "states/xAl_0.20/replicas/replica_0010/attempt_001/production/stress.npz",
+          "sha256": "9c40b01dae3d716f93fcb5fbb280827621835aa2c4c4b0ef1bb547296f10e2bb"
+        },
+        {
+          "replica": 11,
+          "stress_file": "states/xAl_0.20/replicas/replica_0011/attempt_001/production/stress.npz",
+          "sha256": "f86b1501da988b5f03d978db298a2e8442e822aed4f6ae521c2202511acfbc64"
+        },
+        {
+          "replica": 12,
+          "stress_file": "states/xAl_0.20/replicas/replica_0012/attempt_001/production/stress.npz",
+          "sha256": "1d9d58c92f5f7e0ae6a17dc8754aa3270f0254533eb859626824cd29d8a5dda5"
+        },
+        {
+          "replica": 13,
+          "stress_file": "states/xAl_0.20/replicas/replica_0013/attempt_001/production/stress.npz",
+          "sha256": "905724c0b88db4c0dcd66a2188af90b05c694cc74790f06bdc0e6cac18b251cd"
+        },
+        {
+          "replica": 14,
+          "stress_file": "states/xAl_0.20/replicas/replica_0014/attempt_001/production/stress.npz",
+          "sha256": "c5e99ff924294ba8d92c7eaa37e942618817677fa21bbb88f9f5de2fca2d8638"
+        },
+        {
+          "replica": 15,
+          "stress_file": "states/xAl_0.20/replicas/replica_0015/attempt_001/production/stress.npz",
+          "sha256": "36b067fede366804355398df58cdb4476d3a3fb7bf86e707d445ba1146050050"
+        }
+      ],
+      "new_batch_40ps": {
+        "eta_mPa_s": 4.06087907216652,
+        "eta_std_mPa_s": 0.23218390399546374,
+        "relative_std": 0.057175773981270335,
+        "neff": 57.79430902282694,
+        "tau_exp_ps": 0.1995802274512901,
+        "tau_int_ps": 0.11342695239406447,
+        "cost_z": 0.5386160987476054,
+        "criterion_z": -0.5470951857850692
+      },
+      "previous_replicas_40ps": {
+        "eta_mPa_s": 3.924765911678582,
+        "eta_std_mPa_s": 0.1605032140041641,
+        "relative_std": 0.04089497759001849,
+        "neff": 67.42943515168979,
+        "tau_exp_ps": 0.19668019259100644,
+        "tau_int_ps": 0.11141568810359607,
+        "cost_z": -0.9315932699800831,
+        "criterion_z": 1.1558210008549394
+      },
+      "new_batch_z": 0.4822263596357333
+    },
+    {
+      "id": "xAl_0.45",
+      "x_Al": 0.45,
+      "actual_x_Al": 0.451171875,
+      "n_replicas": 15,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 4.725292400281263,
+          "eta_std_mPa_s": 0.17473671234363014,
+          "relative_std": 0.03697902638432054,
+          "neff": 52.127026761352745,
+          "tau_exp_ps": 0.2425798580906429,
+          "tau_int_ps": 0.11273576040322618,
+          "cost_z": 0.08954963866625719,
+          "criterion_z": -0.3651834069155508
+        },
+        "first20ps": {
+          "eta_mPa_s": 4.522189530960703,
+          "eta_std_mPa_s": 0.22379039028264391,
+          "relative_std": 0.0494871762340977,
+          "neff": 29.105640172373292,
+          "tau_exp_ps": 0.21799902703664645,
+          "tau_int_ps": 0.10795244937665417,
+          "cost_z": -0.6235033347822327,
+          "criterion_z": -0.13432371155515627
+        },
+        "second20ps": {
+          "eta_mPa_s": 4.830525992423808,
+          "eta_std_mPa_s": 0.25000594901738993,
+          "relative_std": 0.051755429824722816,
+          "neff": 28.565991299069818,
+          "tau_exp_ps": 0.24485686520526279,
+          "tau_int_ps": 0.11518039373157882,
+          "cost_z": -0.7891932752407103,
+          "criterion_z": -0.22482511432115454
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/xAl_0.45/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "17f6079715e71a42625d5b8a4b097dc4e2ce7f2ae32e8fa346b59acfd7dc7bbe"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/xAl_0.45/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "492038fb22e6ba2224324ed875ba974803de7e9be13c1d01fbe8a0dc7eea11a8"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/xAl_0.45/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "c24d7b12fef16fa72f4aa83701f0591cdb4d21b51df29265d58b3b4a2fada6ac"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/xAl_0.45/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "e0bec42cdecd0f34d0232d48c0c87edfa2bebc552f3306a6dde19e9cf0ac3b36"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/xAl_0.45/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "fdc082e8c93bb51ad6247ee4a56f80c0a23dc00aa7247171f8cc0f9627637571"
+        },
+        {
+          "replica": 6,
+          "stress_file": "states/xAl_0.45/replicas/replica_0006/attempt_001/production/stress.npz",
+          "sha256": "6d068c0ae52c9c41d5cf1ac4419d7f9986f1fa585390bea30826f3ed7c843633"
+        },
+        {
+          "replica": 7,
+          "stress_file": "states/xAl_0.45/replicas/replica_0007/attempt_001/production/stress.npz",
+          "sha256": "2dd69b2b16fadbfd12365b6f39b419d91261d3925935f2bed31fc89d5a98b115"
+        },
+        {
+          "replica": 8,
+          "stress_file": "states/xAl_0.45/replicas/replica_0008/attempt_001/production/stress.npz",
+          "sha256": "b4e4275a281b896e8ae45c8b0eca47ac91e39e3fbbd99b45ccc001bfdbb66ec5"
+        },
+        {
+          "replica": 9,
+          "stress_file": "states/xAl_0.45/replicas/replica_0009/attempt_001/production/stress.npz",
+          "sha256": "3681564208d937cd6be45cfbcd04aff19f16230fde531a238fd0781112b8d346"
+        },
+        {
+          "replica": 10,
+          "stress_file": "states/xAl_0.45/replicas/replica_0010/attempt_001/production/stress.npz",
+          "sha256": "8eab30e431cb6d149e96e799fba5d78240ced5134e0ed54c8871adabcc9a5f0d"
+        },
+        {
+          "replica": 11,
+          "stress_file": "states/xAl_0.45/replicas/replica_0011/attempt_001/production/stress.npz",
+          "sha256": "278681c747f82a46cd69beae70dcac4a37fb9b9c716f0ba3b4fbfb7352042322"
+        },
+        {
+          "replica": 12,
+          "stress_file": "states/xAl_0.45/replicas/replica_0012/attempt_001/production/stress.npz",
+          "sha256": "64897add88d1a1e5a617cd71d3a6f1340c73091111bd29f6d018f6682fb9e08e"
+        },
+        {
+          "replica": 13,
+          "stress_file": "states/xAl_0.45/replicas/replica_0013/attempt_001/production/stress.npz",
+          "sha256": "0cde7184af5c875549f8c90095413219d459e15cf58b6682767213ea617f82b8"
+        },
+        {
+          "replica": 14,
+          "stress_file": "states/xAl_0.45/replicas/replica_0014/attempt_001/production/stress.npz",
+          "sha256": "22235f600f9f5459eee0ae585cac062b2323e9f128339598cbfc08f69d7dac59"
+        },
+        {
+          "replica": 15,
+          "stress_file": "states/xAl_0.45/replicas/replica_0015/attempt_001/production/stress.npz",
+          "sha256": "65399de3e451da3444625bfc69e841ea6d4ae8999b1efbfba56d1c50db39570b"
+        }
+      ],
+      "new_batch_40ps": {
+        "eta_mPa_s": 4.764702331652005,
+        "eta_std_mPa_s": 0.32062035855496956,
+        "relative_std": 0.06729074268188437,
+        "neff": 45.737391092649695,
+        "tau_exp_ps": 0.275694047039645,
+        "tau_int_ps": 0.11483468977303808,
+        "cost_z": -0.5036019760861671,
+        "criterion_z": -0.09360932622450648
+      },
+      "previous_replicas_40ps": {
+        "eta_mPa_s": 4.670865289222016,
+        "eta_std_mPa_s": 0.1938903457954728,
+        "relative_std": 0.041510583968857595,
+        "neff": 66.5824866811638,
+        "tau_exp_ps": 0.2142146986363965,
+        "tau_int_ps": 0.1108778590650774,
+        "cost_z": 0.18151431810393392,
+        "criterion_z": 0.13274077151283478
+      },
+      "new_batch_z": 0.2504406730262022
+    },
+    {
+      "id": "xAl_0.80",
+      "x_Al": 0.8,
+      "actual_x_Al": 0.80078125,
+      "n_replicas": 15,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 1.8256282004559772,
+          "eta_std_mPa_s": 0.054141628310926136,
+          "relative_std": 0.029656437327930996,
+          "neff": 70.73877403091716,
+          "tau_exp_ps": 0.13608323145623555,
+          "tau_int_ps": 0.05954208255466105,
+          "cost_z": -0.1850891624601776,
+          "criterion_z": 1.2568525298571784
+        },
+        "first20ps": {
+          "eta_mPa_s": 1.8239788137283803,
+          "eta_std_mPa_s": 0.07765453463363164,
+          "relative_std": 0.042574252534709346,
+          "neff": 38.367778967120245,
+          "tau_exp_ps": 0.13291969553417207,
+          "tau_int_ps": 0.05913177437905549,
+          "cost_z": -0.0762245558857219,
+          "criterion_z": 0.703290349835356
+        },
+        "second20ps": {
+          "eta_mPa_s": 1.7917908445138575,
+          "eta_std_mPa_s": 0.06997165455760208,
+          "relative_std": 0.039051240144374416,
+          "neff": 44.40516363699939,
+          "tau_exp_ps": 0.12067011456079599,
+          "tau_int_ps": 0.0587936408366389,
+          "cost_z": -0.866909034529064,
+          "criterion_z": 2.0359697090708244
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/xAl_0.80/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "909a07404fa0175bf24f98f552a1ba369e180ed42ee2ff64330356a6a2371874"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/xAl_0.80/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "0cb483b2094f3d7be65f2d6d341720d15a59eb5f946adcdfdd474eebdac8e6d7"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/xAl_0.80/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "713c60489c6d390467cba33332629ca562d03276e37e9d4e8d28334e54e972a2"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/xAl_0.80/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "8f6730079833f1c01aceb7d7999f99be2aa4dcafa96a82889d546f5933c485db"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/xAl_0.80/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "f04b2aece2440d8709ec0649d7f7e50dafe2bf8a64b423a24ccd26ee8c6e07de"
+        },
+        {
+          "replica": 6,
+          "stress_file": "states/xAl_0.80/replicas/replica_0006/attempt_001/production/stress.npz",
+          "sha256": "6062b0688ca39811821a0091580adc269c2e987aaa00375caa1a677392dd9d9b"
+        },
+        {
+          "replica": 7,
+          "stress_file": "states/xAl_0.80/replicas/replica_0007/attempt_001/production/stress.npz",
+          "sha256": "a4d636c1d7640dcdec201d8226763f5e69f04bd83737eb72e47e78eab62245f4"
+        },
+        {
+          "replica": 8,
+          "stress_file": "states/xAl_0.80/replicas/replica_0008/attempt_001/production/stress.npz",
+          "sha256": "c19ec3e646748636b324b329024243bad272e24d0aa165e0a1832654be74029b"
+        },
+        {
+          "replica": 9,
+          "stress_file": "states/xAl_0.80/replicas/replica_0009/attempt_001/production/stress.npz",
+          "sha256": "1154c11157aa9a94af62ecff4b97d9ed8d6a024262e5a92ffe514d18e6dc0d06"
+        },
+        {
+          "replica": 10,
+          "stress_file": "states/xAl_0.80/replicas/replica_0010/attempt_001/production/stress.npz",
+          "sha256": "f392df72ca99b3c1a2694856e6041d22ee7ad3ac7a9ee826189c10f322ebc30e"
+        },
+        {
+          "replica": 11,
+          "stress_file": "states/xAl_0.80/replicas/replica_0011/attempt_001/production/stress.npz",
+          "sha256": "ea844f737ba06f61e03e115e77d411cf8864d76c5c685edb67d7a75a005e14ca"
+        },
+        {
+          "replica": 12,
+          "stress_file": "states/xAl_0.80/replicas/replica_0012/attempt_001/production/stress.npz",
+          "sha256": "7b3529e92d7d4b1a08a9625c98e3d648447279d9a8050353a8d667d1214cd78f"
+        },
+        {
+          "replica": 13,
+          "stress_file": "states/xAl_0.80/replicas/replica_0013/attempt_001/production/stress.npz",
+          "sha256": "b06e903a54a2a0866bae33414487dd5aea28147e256923af65015570840f7097"
+        },
+        {
+          "replica": 14,
+          "stress_file": "states/xAl_0.80/replicas/replica_0014/attempt_001/production/stress.npz",
+          "sha256": "7f7521bb5b3b5d533cd0ebddbdbf2be5a889b625a66f23d9132898a02c447cec"
+        },
+        {
+          "replica": 15,
+          "stress_file": "states/xAl_0.80/replicas/replica_0015/attempt_001/production/stress.npz",
+          "sha256": "51f046ac5c49b52b938eef56f983b92b76d1104a9fbd90fb05cc1f62f72ba114"
+        }
+      ],
+      "new_batch_40ps": {
+        "eta_mPa_s": 1.5152953695737468,
+        "eta_std_mPa_s": 0.0873239466587553,
+        "relative_std": 0.05762833333498508,
+        "neff": 336.83823311913835,
+        "tau_exp_ps": 0.05003672254655623,
+        "tau_int_ps": 0.04896031274512267,
+        "cost_z": 1.8096657059512646,
+        "criterion_z": 8.118356066496379
+      },
+      "previous_replicas_40ps": {
+        "eta_mPa_s": 1.8078744481762383,
+        "eta_std_mPa_s": 0.06420369930200566,
+        "relative_std": 0.03551336176401717,
+        "neff": 79.05428902290744,
+        "tau_exp_ps": 0.12835784543528425,
+        "tau_int_ps": 0.05924159007654167,
+        "cost_z": -0.96051674214081,
+        "criterion_z": 2.2049763607325223
+      },
+      "new_batch_z": 2.6994105388603367
+    }
+  ],
+  "unix": 1793236138.3785458,
+  "protocol_sha256": "eeeae924aa6929b74609c92c1f662778df0f8779c39d43fb112a6ee1064f72ef",
+  "checkpoint_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+  "caveats": [
+    "Cumulative estimates share trajectories; successive error bars are correlated.",
+    "20 ps windows overlap the 40 ps estimate. Duration ratios are diagnostic, not independent-sample tests.",
+    "STACIE errors do not include finite-size, thermostat, preparation, or model errors.",
+    "Optional sequential stopping: nominal intervals are descriptive.",
+    "NPT reservoir snapshots are 5 ps apart; complete statistical independence is not proven."
+  ],
+  "checks": [
+    {
+      "id": "xAl_0.20",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": true,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": true
+      },
+      "passed": false,
+      "last_three_relative_range": 0.12282796501891412,
+      "max_20_40_relative_difference": 0.01677837894989409
+    },
+    {
+      "id": "xAl_0.45",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": true,
+        "duration_stability": false,
+        "spectral_points": false,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": true
+      },
+      "passed": false,
+      "last_three_relative_range": 0.01542861866163702,
+      "max_20_40_relative_difference": 0.04298207435977308
+    },
+    {
+      "id": "xAl_0.80",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": true,
+        "last_three_stability": true,
+        "duration_stability": true,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": false
+      },
+      "passed": false,
+      "last_three_relative_range": 0.009724735997890806,
+      "max_20_40_relative_difference": 0.018534636972450502
+    }
+  ],
+  "all_passed": false,
+  "pass_streak": 0,
+  "stop_recommended": false,
+  "plot": "analysis/batch_0015/convergence.png"
+}

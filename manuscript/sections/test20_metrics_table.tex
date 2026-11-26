@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\caption{Preliminary errors on the same 20 liquid-pool configurations. Energy errors use raw energies per atom, force errors pool Cartesian components, and stress errors pool the six independent tensor entries. The pretrained rows use one unchanged model compared with each functional; their absolute energy errors include differences in energy references. No energy shifts were fitted.}
+\label{tab:fit}
+\begin{ruledtabular}
+\begin{tabular}{llrrrrrr}
+ & & \multicolumn{2}{c}{Energy (meV/atom)} & \multicolumn{2}{c}{Force (eV/\AA)} & \multicolumn{2}{c}{Stress (GPa)} \\
+Reference & Model & MAE & RMSE & MAE & RMSE & MAE & RMSE \\
+\hline
+PBE & Fine-tuned & 4.34 & 6.41 & 0.0489 & 0.0675 & 0.079 & 0.112 \\
+PBE & Pretrained & 3.02 & 3.40 & 0.0537 & 0.0745 & 0.071 & 0.102 \\
+PBEsol & Fine-tuned & 1.49 & 1.90 & 0.0471 & 0.0650 & 0.056 & 0.086 \\
+PBEsol & Pretrained & 400.57 & 405.67 & 0.0633 & 0.0873 & 1.352 & 2.010 \\
+\rscan{} & Fine-tuned & 1.36 & 1.66 & 0.0548 & 0.0756 & 0.060 & 0.091 \\
+\rscan{} & Pretrained & 4049.61 & 4098.13 & 0.0762 & 0.1019 & 0.657 & 0.927 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}

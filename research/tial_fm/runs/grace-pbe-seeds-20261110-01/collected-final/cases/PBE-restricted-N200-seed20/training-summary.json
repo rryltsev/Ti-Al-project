@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-restricted-N200-seed20",
+    "XC": "PBE",
+    "method": "restricted",
+    "N": 200,
+    "validation": 149,
+    "seed": 20,
+    "epochs": 50,
+    "steps": 10000,
+    "expected_trainable": 21111690
+  },
+  "steps": 10000,
+  "epochs": 50,
+  "training_seconds": 508.8792446758598,
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01/cases/PBE-restricted-N200-seed20/final-checkpoint/checkpoint",
+  "hashes": {
+    "checkpoint.index": "74be92765a0393d63909cb9fb11897a691b11734d8a04a0820ef27243243c9d9",
+    "checkpoint.data-00000-of-00001": "cef55ec0b1940f68516f45c215146e9da6e47987b8cfca6a2c7380ddf58b4e1a"
+  },
+  "test_access": false,
+  "selection": "fixed final epoch50",
+  "GPU_memory": {
+    "current": 565334272,
+    "peak": 2120053760
+  }
+}

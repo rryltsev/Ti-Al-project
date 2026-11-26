@@ -1,0 +1,277 @@
+Методы: происхождение параметров и незакрытые детали
+21 октября 2026
+
+Текущая общая сборка: build/revision-oct21/main.pdf.
+Историческая сборка с первым Results: build/results/main.pdf.
+Ниже сохранена история проверки Methods; параметры фононов
+уточнены по command.txt при подготовке Results.
+
+Раздел включён в main.tex после принятого введения.
+Текст: sections/methods.tex. Новые ссылки: methods_references.bib.
+Текст введения не изменён.
+21 октября автор подтвердил общий численный протокол DFT и одинаковые
+гиперпараметры всех трёх fine-tuning. Две соответствующие Draft note сняты.
+Остальные замечания сохраняют отдельные нерешённые вопросы.
+
+Корень исходных данных:
+C:\Users\Roman Ryltsev\Desktop\STARTUPS\Ti-Al-X\TiAl-Project
+Ниже пути к исходным данным заданы относительно этого корня.
+Новые MD, DFT или обучение не запускались.
+
+ПОДТВЕРЖДЕНО АВТОРОМ В ОБСУЖДЕНИИ
+
+1. Твёрдые растворы получены случайными замещениями; SQS-оптимизации
+   не было. Использовано random substitutional configurations.
+2. 21 октября подтверждён единый протокол DFT для PBE/PBEsol/r2SCAN.
+   В статье указан ENCUT=550 eV для всех трёх. Основание: сохранённые
+   OUTCAR PBEsol/r2SCAN и подтверждение автора для общего протокола.
+   Это не означает, что утраченные PBE OUTCAR были восстановлены.
+3. 21 октября подтверждены одинаковые гиперпараметры всех трёх fine-tuning.
+   Параметры сохранённого PBE-конфига описаны как общие. Разбиения данных
+   train/validation остаются различными, что отдельно оговорено в статье.
+4. Вязкость 1773 K есть только TDM. Она отделена от главной STACIE-серии.
+5. Согласованная область статьи: плотность, фононы, плавление,
+   энтальпия смешения и вязкость. Дефекты и упругость не добавлены.
+
+ГЕНЕРАЦИЯ КОНФИГУРАЦИЙ
+
+Источники:
+  MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/get_supercell.py
+  MACE-dataset-gen/MD-Solid-Solutions/Ti-Al_SS/RESULT/**/mace_md_npt.py
+  MACE-dataset-gen/MD-liquid+relax/mace_md_npt_relax.py
+  MACE-dataset-gen/MD-liquid+relax/mace_md_npt_relax_mod.py
+  MACE-dataset-gen/MACE-database/asap.sh
+  MACE-dataset-gen/MACE-database/TiAl_liq-relax_ASAP-desc-state.yaml
+  MACE-dataset-gen/MACE-database/TiAl-liq-relax-ss_select-1000_ASAP-desc-state.yaml
+  MACE-dataset-gen/MACE-database/TiAl-liq-relax-ss_select-1000.xyz
+
+58 сохранённых скриптов твёрдых растворов имеют T=1000 K,
+10000 шагов, dt=1 fs, p=1 bar.
+В скриптах жидкостей T=2000 K. Используется MACE-MPA-0 medium.
+Родительские фазы: hcp/bcc Ti, gamma-TiAl, alpha2-Ti3Al.
+Код замещает случайно выбранные атомы, не оптимизирует корреляции.
+
+SOAP: rcut=3.2 A, sigma=0.4 A, n=4, l=3, crossover=true,
+periodic=true, rbf=gto; усреднение по атомам, element_wise=false.
+В команде asap select алгоритм явно не задан. FPS в Methods восстановлен
+по документированному значению по умолчанию:
+https://bingqingcheng.github.io/select.html
+До выпуска архива желательно закрепить версию ASAP и явный параметр FPS.
+PCA используется для карты, а не объявляется алгоритмом отбора.
+
+1000 структур: 880 по 216 атомов, 104 по 250, 16 по 256.
+Чистый Al: 14 структур; чистый Ti: 19. Это прямой подсчёт xyz.
+
+Не закрыто:
+  В исходном описании проекта указан запуск релаксаций через 1 ps.
+  В сохранённых вариантах кода встречаются 100 и 500 MD-шагов,
+  разные частоты записи и параметры релаксации. В Methods единый
+  интервал 1 ps не утверждается. Нужен точный протокол сборки общего
+  пула и связь этих вариантов с вошедшими в него траекториями.
+  Также пока не утверждаются точное число исходных кандидатов,
+  единый seed и полный график генерации жидкой части.
+
+DFT И ДАТАСЕТЫ
+
+Источники:
+  VASP-input/INCAR_PBE, INCAR_PBEE-sol, INCAR_scan
+  VASP-input/POTCAR_Ti_pv и POTCAR_Al — только названия/валентность,
+  лицензированные файлы не копировались в рукопись.
+  VASP-output/VASP_PBEsol/RESULTS/**/OUTCAR и KPOINTS
+  VASP-output/r2SCAN/RESULTS/**/OUTCAR и KPOINTS
+  DPA4-finetune/*/npy_format
+  Рабочий аудит: audit/vasp_checks.json и audit/frame_matches.json.
+
+PBEsol/r2SCAN: ENCUT=550 eV, EDIFF=1e-6 eV, ISMEAR=1,
+SIGMA=0.1 eV, PREC=Accurate, LREAL=A, LASPH=true, ISPIN=1,
+VASP 6.3.2. Метки PAW: Ti_pv 07Sep2000 (10 электронов);
+Al 04Jan2001 (3 электрона).
+Детальные параметры сверены по репрезентативным OUTCAR;
+ENCUT и завершённость ранее проверены по всем доступным OUTCAR.
+
+Все 1000 пар KPOINTS PBEsol/r2SCAN побайтно одинаковы.
+Число сохранённых точек: 4 в 47 файлах, 5 в 681, 6 в 272.
+Полные сетки содержат 8--12 точек и не включают Gamma.
+Заголовок генератора сообщает minimum periodic distance 35.0004--38.3526 A.
+Не называть эти сетки автоматически сеткой Monkhorst--Pack 2x2x2.
+Опечатка KSPASING в одном шаблоне не использована как реальный KSPACING.
+
+PBE: 999=850+149; PBEsol: 998=849+149; r2SCAN: 993=845+148.
+Все структуры сопоставлены с выбранным пулом; пересечение всех наборов 992.
+Разбиения train/validation внутри функционала не пересекаются.
+Общих validation-конфигураций у всех трёх моделей только 14:
+нужен единый независимый тест, если хотим строго сравнивать ошибки ML.
+В Methods не заявлен идентичный train/test split и не назван validation test.
+
+Не закрыто:
+  восстановление исходных PBE outputs для будущего архива воспроизводимости;
+  точная энергетическая конвенция экспорта VASP
+  (free energy / energy without entropy / sigma->0);
+  правила исключения неуспешных SPE и версия конвертера.
+Наличие финального датасета не равнозначно доказательству этих деталей.
+
+ОБУЧЕНИЕ
+
+Источники:
+  DPA4-finetune/TiAl_tune_pbe_DPA4-shard-Neo-OMat24-v20260805.json
+  DPA4-finetune/run_finetune_dpa4_shard.sh
+  DPA4-finetune/lcurve_pbe.out, lcurve_sol.out, lcurve_scan.out
+
+Стартовая модель DPA4-Neo-OMat24-v20260805.pt.
+В PBE-конфиге: rcut=6 A, 2 блока, 32 канала, 16 радиальных функций,
+lmax=3, mmax=1; LoRA rank=16, alpha=16.
+50 эпох, cosine LR 1e-4 -> 1e-6, warmup_ratio=0.003,
+warmup_start_factor=0.2; HybridMuon, weight_decay=0.01,
+gradient_max_norm=5; MAE-loss, f_use_norm=true, веса 20/20/5.
+batch_size=auto:128 означает параметр автоматического выбора размера,
+а не батч из 128 структур. FP32 + AMP; EMA отключена.
+Скрипт запускает torchrun на двух процессах, ZeRO stage 3 в конфиге.
+
+Конечные записанные шаги lcurve: PBE 23400, PBEsol 23100, r2SCAN 23200.
+Не интерпретировать число строк lcurve как число эпох.
+Не называть агрегированную rmse_val ошибкой энергии.
+
+Не закрыто:
+  отдельные входы PBEsol/r2SCAN для архива (общность настроек подтверждена автором);
+  точная версия/commit реализации DeePMD/DPA4, HybridMuon и LoRA;
+  нормировка членов loss и точная семантика f_use_norm;
+  какой checkpoint экспортирован для каждого свойства;
+  бинарные модели и контрольные суммы экспортов.
+Нет оснований утверждать доказанную экономию обучения против обучения
+с нуля: отдельного сравнения здесь нет.
+
+ПЛОТНОСТЬ И ЭНТАЛЬПИЯ
+
+Источники:
+  results-scripts-logs/models_check_wsl2/scripts/mixing_enthalpy.py
+  results-scripts-logs/models_check_wsl2/scripts/density_thermal_scan.py
+  results-scripts-logs/models_check_wsl2/utils/md_runner.py
+  results-scripts-logs/models_check_wsl2/utils/bulk_modulus.py
+  results-scripts-logs/models_check_wsl2/utils/trajectory_analyzer.py
+  .../results/mixing_enthalpy/dpa4/neo/finetune/AlTi/
+  .../results/density/dpa4/neo/finetune/Ti/
+  Рабочий аудит: audit/oct20/reprocess_thermo.py, thermo_reprocessed.json.
+
+Уравнение H в тексте соответствует исправленной обработке, не ошибочному
+знаку давления в старом CSV. Использован p_ext=1 bar, а не средний
+мгновенный pV. Обе версии данных остаются различимы в аудите.
+rho=<M/V>; Vm=N_A<V>/N. Не заменять одно среднее другим без проверки.
+Количество вещества задано в молях атомов.
+Для смешения каждый MLIP использует собственные чистые жидкости при той же T.
+
+Термодинамика жидкостей: 200 атомов, 10 ps при 1.5T, затем 30 ps
+уравновешивания и 30 ps продукции; 301 кадр через 0.1 ps.
+Параметры MD восстановлены из сохранённых скриптов и метаданных;
+все 99 продукционных траекторий были проверены предыдущим аудитом.
+Серия плотности жидкого Ti: total_steps=70000.
+Твёрдый Ti: metadata даёт 250 атомов, total_steps=50000, 301 кадр.
+При 30 ps продукции это 20 ps уравновешивания: НЕ переносить
+default equil_steps=30000 из новой версии скрипта на эти запуски.
+Поле counts.Ti=200 в metadata твёрдых фаз ошибочно; масса соответствует 250.
+Ячейку и атомные координаты считать первичными при окончательной сверке.
+
+dt=1 fs, ttime=25 fs, p=1 bar, pfactor=B*ttime^2,
+изотропная часть баростата (set_fraction_traceless(0)).
+B(Ti)=110 GPa, B(Al)=76 GPa, правило смесей.
+Этот B — параметр баростата, не результат расчёта модуля упругости.
+
+Блочные ошибки 6x5 ps остаются предварительными.
+Общая чистая компонента создаёт ковариацию ошибок между составами.
+Не объявлены доказанными независимость кадров, сходимость по размеру
+или устойчивость исходной bcc-фазы во всех высокотемпературных точках.
+
+ФОНОНЫ
+
+Источники:
+  .../models_check_wsl2/scripts/phonon_calculator.py
+  .../results/phonons/dpa4/neo/finetune/{alpha_Ti,alpha2_AlTi3}/{pbe,sol,scan}/metrics.json
+  TiAl-papers/phonons/DFT_Ti_Ti3Al/DFT_Ti_Ti3Al_reference.json
+  и force_run_INCAR / force_run_KPOINTS для Ti_hcp.
+
+Суперячейки именно 5x5x5; 250 и 1000 атомов.
+13 и 49 вычислений сил соответственно, включая несмещённую структуру.
+fmax=1e-4 eV/A; BFGS + FixSymmetry + hydrostatic_strain=True.
+Следовательно, не следует утверждать полную независимую оптимизацию a и c.
+Акустическое правило сумм включено.
+
+Уточнение при подготовке Results: прочитаны command.txt всех шести
+расчётов. Они явно задают amplitude=0.01 A, mesh=50^3, width=2e-4 eV,
+dos-npts=1000, band-npoints=200. Это подтверждённые команды запуска,
+а не только defaults. Соответствующая оговорка из Methods удалена.
+Пути: alpha-Ti GKMGA; Ti3Al GMKGALHA.
+При нормировке DOS в THz учитывать якобиан преобразования из eV:
+скрипт меняет ось частот, но записывает исходные веса.
+Сравнение формы и сравнение абсолютной спектральной плотности различать.
+
+PBE-референс hcp-Ti: 96 атомов (4x4x3), delta=0.01 A,
+ENCUT=500 eV, EDIFF=1e-8 eV, kmesh=4x4x4 Gamma, SIGMA=0.2 eV,
+qmesh=40x40x30, DOS sigma=0.05 THz.
+Предварительная релаксация этого DFT-референса не восстановлена.
+
+DFT-Ti3Al: паспорт данных идентифицирует Cmcm, не подтверждает идеальную
+D019. Его сравнение с идеальным alpha2-Ti3Al пока требует решения.
+В Methods не замаскировано под стандартный согласованный референс.
+Соавторство коллеги и окончательное включение референса обсуждаются отдельно.
+
+ПЛАВЛЕНИЕ
+
+Источники: MD-results/melting; audit/melting/run_parameters.json,
+melting_assessment.txt, analyze_melting.py и trajectory_summary.json.
+1296 атомов, 50 ps, dt=1 fs, p=0 bar, NPT aniso, Tdamp=0.1 ps,
+Pdamp=1 ps, запись 0.5 ps; две границы вдоль z.
+5/10 ps подготовки, 20 ps нагрева половины до 1.5T, 10 ps охлаждения.
+Кристаллическая часть при подготовке не интегрируется; в продукции
+интегрируются все атомы. Это не NPH-расчёт.
+Периодическая ячейка около 20x20x59 A.
+qbar6 по 14 ближайшим соседям, порог 0.25 и проверки чувствительности.
+Скобка по направлению границы и скобка по однофазным исходам различаются.
+Ширина скобки не объявлена полной погрешностью Tm.
+
+ВЯЗКОСТЬ
+
+Источники: обе папки models_check_{cluster,wsl2}, checkpoint.json
+для 02_nvt_snapshots и 03_stress_autocorr, pressure_*.data, mol.data;
+scripts/viscosity_pipeline/{nvt_snapshots_viscosity,stress_autocorr_viscosity,viscosity_analysis}.py;
+stacie_pipeline_wsl2/stacie_pipline.py и соответствующий код кластера.
+Повторная проверка: audit/oct20/stacie_check.py и stacie_recheck.json.
+
+512 атомов; 5 ps NPT (1 bar, Tdamp=0.1 ps, Pdamp=0.5 ps),
+выбор кадров на этой же стадии, 1 ps NVT после назначения скоростей,
+20 ps NVT продукции, Tdamp=0.2 ps, dt=1 fs.
+Текст не называет отобранные из одной короткой траектории состояния
+доказанно независимыми и не скрывает необходимость проверки подготовки.
+15 траекторий обычно; 50 при cTi=0.55; 30 для r2SCAN Ti/1873 K.
+Массы LAMMPS: Al=26.98, Ti=47.88.
+
+STACIE использует пять нормированных анизотропных каналов, свой V/(kBT)
+для каждой траектории, LorentzModel. В 1.3.0 независимо воспроизведены
+все 28 предоставленных центральных значений.
+Это версия повторной проверки, не установленная версия исходного запуска.
+TDM использует три сдвиговые компоненты, взвешенный fit интеграла двумя
+экспонентами. Это два разных постпроцессинга одних временных рядов.
+STACIE eta_std не включает все систематические погрешности.
+Значения Neff относятся к эффективным частотным точкам, не MD-кадрам.
+При дальнейших расчётах обновить длину, подготовку и перечень T в Methods.
+
+БИБЛИОГРАФИЯ И СБОРКА
+
+12 новых записей в methods_references.bib; всего 27 цитируемых источников.
+Метаданные DOI сохранены в audit/methods/*.metadata.json.
+Использованы первоисточники методов и официальная документация:
+  https://github.com/ACEsuit/mace-foundations
+  https://github.com/BingqingCheng/ASAP
+  https://bingqingcheng.github.io/select.html
+  https://molmod.github.io/stacie/examples/lj_shear_viscosity.html
+  https://arxiv.org/abs/2106.09685
+
+Встроенный компилятор вновь не запускается из WindowsApps (Windows error 5).
+Проверочная сборка использует ту же ранее скопированную локальную версию
+Tectonic; системные разрешения не изменены.
+Команда из manuscript:
+  ..\audit\latex-tools\tectonic.exe -X compile --outdir build/methods --outfmt pdf --untrusted --keep-logs main.tex
+
+Проверенная сборка введения и Methods: build/methods/main.pdf.
+6 страниц, 27 библиографических записей. Все страницы просмотрены
+после рендеринга; неразрешённых ссылок, отсутствующих символов
+и переполнения строк в журнале сборки нет.
+Старый build/main.pdf содержит только введение и библиографию.

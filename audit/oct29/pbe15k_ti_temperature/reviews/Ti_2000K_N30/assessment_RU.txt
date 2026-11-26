@@ -1,0 +1,16 @@
+2000 K, N=30. Новый полностью проанализированный пакет. Ошибки ниже: формальные SE.
+
+40ps: 2.803288 +/- 0.059714 мПа·с; neff=61.332; cost Z=-1.481; cutoff Z=0.488.
+first20ps: 2.814368 +/- 0.078815 мПа·с; neff=36.477; cost Z=-1.750; cutoff Z=-0.270.
+second20ps: 2.762662 +/- 0.082386 мПа·с; neff=31.445; cost Z=-0.351; cutoff Z=0.579.
+Предыдущие N=25: 2.807455 +/- 0.066598. Изменение среднего40: -0.148%; SE: -10.336%.
+Новые5: 2.780773 +/- 0.135822; Z против прежних=0.176.
+5k отдельно: 2.838945 +/- 0.069114; разница40 -1.256%.
+Исторические15k отдельно: 2.724023 +/- 0.092030; разница40 +2.910%.
+[{"id": "Ti_2000K", "flags": {"minimum_replicas": true, "precision": true, "last_three_stability": true, "duration_stability": true, "spectral_points": true, "cost": true, "cutoff": true, "new_batch_consistency": true, "window_fit_diagnostics": true}, "passed": true, "last_three_relative_range": 0.0123275039681211, "max_20_40_relative_difference": 0.014492220812782786}]
+Последовательных полных прохождений 1/2; stop=False; review hold=False.
+All nine diagnostics visually inspected: full40 cutoff weight near1.5THz; first20 near1.7THz; second20 near1.5THz; new5 near1.8THz, unimodal main weight and broad new5 uncertainty. All weighted cost/cutoff Z<2. No physical drift inferred. Minor-axis labels overlap in source extras but modes and diagnostics readable.
+Formal estimator SE; model, protocol and cutoff bias are not included.
+Windows and accumulated estimates are correlated; these stopping criteria are a heuristic.
+5k and historical 15k references remain separate; agreement with 5k is not a stop criterion.
+Fixed article profile is unchanged; only complete analyzed batches are plotted.

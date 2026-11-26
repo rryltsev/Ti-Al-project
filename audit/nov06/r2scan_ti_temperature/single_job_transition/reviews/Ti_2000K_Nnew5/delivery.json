@@ -1,0 +1,175 @@
+{
+  "unix": 1793971634.9772568,
+  "T": 2000,
+  "Nold": 15,
+  "Nnew": 5,
+  "Ntotal": 20,
+  "windows20ps": 25,
+  "combined": {
+    "eta_mPa_s": 3.424412382779482,
+    "eta_std_mPa_s": 0.11985678031236514,
+    "relative_std": 0.03500068534826444,
+    "neff": 31.009386516240994,
+    "cost_z": -0.6198584283531297,
+    "criterion_z": 0.1668147151181658,
+    "formal_std_mPa_s": 0.11985678031236514,
+    "cluster_jackknife_std_mPa_s": 0.09728185315996346,
+    "legacy_replicas": 15,
+    "new_40ps_replicas": 5,
+    "replica_clusters": 20,
+    "windows_20ps": 25,
+    "leave_one_replica_out_mPa_s": [
+      3.4274540200309223,
+      3.4265833355298065,
+      3.4058345293458148,
+      3.4333717215156296,
+      3.4461946308847202,
+      3.4686910591989135,
+      3.4114347535179803,
+      3.431766313321089,
+      3.4508721224050123,
+      3.436797740101064,
+      3.408488674253686,
+      3.4103529852428567,
+      3.4416817506208526,
+      3.445043882617598,
+      3.3944872512588042,
+      3.4148316291806653,
+      3.4146571826234218,
+      3.430062393212442,
+      3.363459833966185,
+      3.421636231716476
+    ],
+    "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+    "pooling_version": "r2scan-sequential-refinement-v2"
+  },
+  "previous": {
+    "eta_mPa_s": 3.297652830525588,
+    "eta_std_mPa_s": 0.14403026618163328,
+    "relative_std": 0.043676600777492205,
+    "neff": 33.80446759596214,
+    "cost_z": -0.7575778558252809,
+    "criterion_z": -0.09490693543728021,
+    "formal_std_mPa_s": 0.14403026618163328,
+    "cluster_jackknife_std_mPa_s": 0.11483421510159215,
+    "legacy_replicas": 15,
+    "new_40ps_replicas": 0,
+    "replica_clusters": 15,
+    "windows_20ps": 15,
+    "leave_one_replica_out_mPa_s": [
+      3.3004510012063744,
+      3.2826262718205594,
+      3.270085606976477,
+      3.2991612153200465,
+      3.3321144048214473,
+      3.360723991431657,
+      3.263533905959848,
+      3.2995299356512136,
+      3.3314067490932597,
+      3.313775309538706,
+      3.2579751597020357,
+      3.2701760974122123,
+      3.315876799665004,
+      3.3237240594961373,
+      3.252218141482867
+    ],
+    "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+    "pooling_version": "r2scan-legacy20-new40-v1"
+  },
+  "new_batch": {
+    "eta_mPa_s": 3.5911364272732014,
+    "eta_std_mPa_s": 0.19613589727842107,
+    "relative_std": 0.054616665573841684,
+    "neff": 34.43965288284851,
+    "cost_z": -0.27680136674131367,
+    "criterion_z": -0.1587829355658144,
+    "formal_std_mPa_s": 0.19613589727842107,
+    "cluster_jackknife_std_mPa_s": 0.12718277401580919,
+    "legacy_replicas": 0,
+    "new_40ps_replicas": 5,
+    "replica_clusters": 5,
+    "windows_20ps": 10,
+    "leave_one_replica_out_mPa_s": [
+      3.622781179860728,
+      3.617412494419908,
+      3.637968140027635,
+      3.4667567050300003,
+      3.6208757417471436
+    ],
+    "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+    "pooling_version": "r2scan-sequential-refinement-v2"
+  },
+  "new_batch_z": 1.2060674722859879,
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 3.582155620222624,
+      "eta_std_mPa_s": 0.1922968492554358,
+      "relative_std": 0.05368188030967926,
+      "neff": 69.94591866047745,
+      "tau_exp_ps": 0.1774617769946662,
+      "tau_int_ps": 0.1222323600597763,
+      "cost_z": -0.7859810377968969,
+      "criterion_z": -0.26576839524831386
+    },
+    "first20ps": {
+      "eta_mPa_s": 3.610259928363966,
+      "eta_std_mPa_s": 0.2890406824052764,
+      "relative_std": 0.08006090645563539,
+      "neff": 30.014049862741448,
+      "tau_exp_ps": 0.20629663198741963,
+      "tau_int_ps": 0.1252113204398079,
+      "cost_z": 0.21713436168997272,
+      "criterion_z": -0.23838196941086406
+    },
+    "second20ps": {
+      "eta_mPa_s": 3.54837935287058,
+      "eta_std_mPa_s": 0.2424930883345721,
+      "relative_std": 0.06833911039934307,
+      "neff": 43.554782601776864,
+      "tau_exp_ps": 0.1494677714564416,
+      "tau_int_ps": 0.11915942225400737,
+      "cost_z": -0.4505131601379746,
+      "criterion_z": 0.08498161274893164
+    }
+  },
+  "checks": [
+    {
+      "id": "Ti_2000K",
+      "flags": {
+        "combined_precision": false,
+        "combined_last_three_stability": false,
+        "combined_cost": true,
+        "combined_cutoff": true,
+        "new_batch_consistency": true
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.009429034060207897,
+      "new40_diagnostics": {
+        "40ps": {
+          "relative_std": 0.05368188030967926,
+          "neff": 69.94591866047745,
+          "cost_z": -0.7859810377968969,
+          "criterion_z": -0.26576839524831386
+        },
+        "first20ps": {
+          "relative_std": 0.08006090645563539,
+          "neff": 30.014049862741448,
+          "cost_z": 0.21713436168997272,
+          "criterion_z": -0.23838196941086406
+        },
+        "second20ps": {
+          "relative_std": 0.06833911039934307,
+          "neff": 43.554782601776864,
+          "cost_z": -0.4505131601379746,
+          "criterion_z": 0.08498161274893164
+        }
+      }
+    }
+  ],
+  "runtime_checks": "PASS",
+  "visual_qa": "All convergence, combined convergence and spectrum/extras for40/first20/second20/new40/new20/combined reviewed; new40 equals full40 atN5",
+  "source_sha256": "9d6c19058f5503bfc2a2b50c8cdd245d8c2a8dcb5e2fe281121fcb284266e94a",
+  "article_changed": false,
+  "convergence_established": false
+}

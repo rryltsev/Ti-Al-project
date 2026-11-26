@@ -1,0 +1,69 @@
+{
+  "automation_id": "pbe-15k-ti-al",
+  "interval_minutes": 30,
+  "job_id": "20962153",
+  "initial_scheduler_state": "PENDING",
+  "thread_id": "01a17b96-45dd-7971-b28e-a55f28b9461c",
+  "last_reported_batch": 15,
+  "notifications": "New complete batch with plot; meaningful failure; action required; completion. Quiet otherwise.",
+  "gpu_preflight": "PASS on NVIDIA A100-PCIE-40GB for all three compositions; energies, forces and virials agree with native checkpoint.",
+  "cpu_analysis_tests": "PASS",
+  "previous_failed_job_id": "20961934",
+  "last_reported_failure_job_id": "20961934",
+  "last_reported_event": "Batch N=15 complete and visually reviewed (23 plots). Job20962153 RUNNING, one A100, xAl0.20 replica16 at collection. Full40ps changes vsN10 +1.52%, +1.17%, +0.98%; vs5k -1.83%, -3.23%, +3.65%. xAl0.20 new-vs-prior z0.482 passes, last-three range12.28% fails. xAl0.80 cumulative cutoff issue weakened: z1.257/0.703/2.036; second20ps still fails. New-only11-15 cutoff z8.118 and consistency z2.699 fail; no physical-drift claim. Continue unchanged protocol; not converged; pass_streak0.",
+  "repair": "repairs/type-map-20261027",
+  "last_review_unix": 1793238036.8150995,
+  "last_review": "reviews/batch_0015/assessment.json",
+  "last_observed_requeue": {
+    "job_id": "20962153",
+    "request_unix": 1793178452.6051898,
+    "observed_unix": 1793180158.2998364,
+    "scheduler_state": "PENDING",
+    "reason": "Priority",
+    "completed": {
+      "xAl_0.20": 15,
+      "xAl_0.45": 15,
+      "xAl_0.80": 11
+    },
+    "interpretation": "Expected automatic requeue at completed-replica boundary before walltime; same job ID, no new submission, no action required."
+  },
+  "last_observed_resume": {
+    "job_id": "20962153",
+    "observed_unix": 1793230577.6940544,
+    "scheduler_state": "RUNNING",
+    "node": "tesla-a101",
+    "gpus": 1,
+    "phase": "production",
+    "composition": "xAl_0.80",
+    "replica": 12,
+    "progress_unix": 1793230029.4643192,
+    "latest_analyzed_batch": 10,
+    "interpretation": "Expected automatic continuation after requeue using the same job ID. No new errors or full batch; no notification required."
+  },
+  "fulfilled_requested_report": {
+    "batch": 15,
+    "compare_batches": [
+      5,
+      10
+    ],
+    "compare_checkpoint": "5k",
+    "focus": [
+      "xAl_0.20 cumulative stability, duration agreement and replicas11-15 vs1-10",
+      "xAl_0.80 cutoff diagnostics for all three windows versus N5 and N10"
+    ],
+    "delivered_batch": 15,
+    "review": "reviews/batch_0015/assessment.json"
+  },
+  "next_monitoring_focus": [
+    "User paused composition refinement. Preserve data; do not resume. Monitor pure Ti temperature campaign instead."
+  ],
+  "status": "paused_by_user",
+  "paused_unix": 1793251332.5945094,
+  "completed_at_pause": {
+    "xAl_0.20": 20,
+    "xAl_0.45": 18,
+    "xAl_0.80": 15
+  },
+  "successor": "audit/oct29/pbe15k_ti_temperature",
+  "automation_moved_to_successor": true
+}

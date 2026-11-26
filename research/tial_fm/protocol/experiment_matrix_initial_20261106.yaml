@@ -1,0 +1,926 @@
+{
+  "format_note": "JSON syntax is valid YAML 1.2. These are experiment designs, not scheduler submission files.",
+  "date": "2026-11-06",
+  "new_DFT_allowed": false,
+  "allocation_id": null,
+  "max_concurrent_training_jobs": 1,
+  "stages": [
+    {
+      "id": "I0",
+      "state": "completed",
+      "work": "Map 2990 label records, preserve historical splits and hashes",
+      "actual_cost": {
+        "local_wall_seconds": 65.18393030017614,
+        "cluster_GPU_hours": 0,
+        "new_DFT_jobs": 0
+      }
+    },
+    {
+      "id": "B0-cached",
+      "state": "completed",
+      "work": "Independent raw E/F/stress arithmetic from cached predictions, 49 geometries",
+      "actual_cost": {
+        "new_model_evaluations": 0
+      },
+      "gate_B0_closed": false
+    },
+    {
+      "id": "H0-cached",
+      "state": "completed",
+      "work": "Independent spectral RMSE and DOS integrals from saved arrays",
+      "gate_H0_closed": false
+    },
+    {
+      "id": "B0-runtime",
+      "state": "blocked",
+      "work": "Original FM and FT derivative, symmetry, export checks; train-only energy alignment",
+      "expected_cost": {
+        "type": "planning_cap",
+        "CPUs": 4,
+        "wall_minutes": 30,
+        "CPU_hours_cap": 2
+      },
+      "blocked_by": [
+        "allocation_for_new_cycle",
+        "evaluator_inputs"
+      ]
+    },
+    {
+      "id": "H0-original-DPA4",
+      "state": "blocked",
+      "work": "Original DPA4 on 3 XC cells x force000/001/002 = 9 force evaluations; reuse FT forces only with exact identities",
+      "expected_cost": {
+        "type": "planning_cap",
+        "CPUs": 4,
+        "wall_minutes": 15,
+        "CPU_hours_cap": 1,
+        "rationale": "Historical matched FT jobs 34-90 s; original-FM runtime not yet measured."
+      },
+      "blocked_by": [
+        "allocation_for_new_cycle",
+        "runtime_validation"
+      ]
+    },
+    {
+      "id": "H0-GRACE",
+      "state": "blocked",
+      "work": "GRACE-2L on same 9 force geometries",
+      "expected_cost": null,
+      "blocked_by": [
+        "pinned_GRACE_2L_checkpoint"
+      ]
+    }
+  ],
+  "training_designs": [
+    {
+      "run_id": "dpa4-neo-lora16-pbe-n200-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "DPA4-Neo/PBE/200",
+      "architecture": "DPA4-Neo",
+      "functional": "PBE",
+      "adaptation": "lora16",
+      "train_size": 200,
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": 0.0001,
+      "epochs": 50,
+      "rank": 16,
+      "alpha": 16,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "dpa4-neo-lora16-pbe-nfull_grouped_train-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "DPA4-Neo/PBE/full_grouped_train",
+      "architecture": "DPA4-Neo",
+      "functional": "PBE",
+      "adaptation": "lora16",
+      "train_size": "full_grouped_train",
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": 0.0001,
+      "epochs": 50,
+      "rank": 16,
+      "alpha": 16,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "dpa4-neo-lora16-r2scan-n200-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "DPA4-Neo/r2SCAN/200",
+      "architecture": "DPA4-Neo",
+      "functional": "r2SCAN",
+      "adaptation": "lora16",
+      "train_size": 200,
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": 0.0001,
+      "epochs": 50,
+      "rank": 16,
+      "alpha": 16,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "dpa4-neo-lora16-r2scan-nfull_grouped_train-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "DPA4-Neo/r2SCAN/full_grouped_train",
+      "architecture": "DPA4-Neo",
+      "functional": "r2SCAN",
+      "adaptation": "lora16",
+      "train_size": "full_grouped_train",
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": 0.0001,
+      "epochs": 50,
+      "rank": 16,
+      "alpha": 16,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "dpa4-neo-full-pbe-n200-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "DPA4-Neo/PBE/200",
+      "architecture": "DPA4-Neo",
+      "functional": "PBE",
+      "adaptation": "full",
+      "train_size": 200,
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": 0.0001,
+      "epochs": 50,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "dpa4-neo-full-pbe-nfull_grouped_train-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "DPA4-Neo/PBE/full_grouped_train",
+      "architecture": "DPA4-Neo",
+      "functional": "PBE",
+      "adaptation": "full",
+      "train_size": "full_grouped_train",
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": 0.0001,
+      "epochs": 50,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "dpa4-neo-full-r2scan-n200-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "DPA4-Neo/r2SCAN/200",
+      "architecture": "DPA4-Neo",
+      "functional": "r2SCAN",
+      "adaptation": "full",
+      "train_size": 200,
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": 0.0001,
+      "epochs": 50,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "dpa4-neo-full-r2scan-nfull_grouped_train-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "DPA4-Neo/r2SCAN/full_grouped_train",
+      "architecture": "DPA4-Neo",
+      "functional": "r2SCAN",
+      "adaptation": "full",
+      "train_size": "full_grouped_train",
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": 0.0001,
+      "epochs": 50,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "grace-2l-full-pbe-n200-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "GRACE-2L/PBE/200",
+      "architecture": "GRACE-2L",
+      "functional": "PBE",
+      "adaptation": "full",
+      "train_size": 200,
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": null,
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": null,
+      "epochs": null,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask",
+        "pinned_GRACE_2L_checkpoint"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "grace-2l-full-pbe-nfull_grouped_train-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "GRACE-2L/PBE/full_grouped_train",
+      "architecture": "GRACE-2L",
+      "functional": "PBE",
+      "adaptation": "full",
+      "train_size": "full_grouped_train",
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": null,
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": null,
+      "epochs": null,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask",
+        "pinned_GRACE_2L_checkpoint"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "grace-2l-full-r2scan-n200-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "GRACE-2L/r2SCAN/200",
+      "architecture": "GRACE-2L",
+      "functional": "r2SCAN",
+      "adaptation": "full",
+      "train_size": 200,
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": null,
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": null,
+      "epochs": null,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask",
+        "pinned_GRACE_2L_checkpoint"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "grace-2l-full-r2scan-nfull_grouped_train-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "GRACE-2L/r2SCAN/full_grouped_train",
+      "architecture": "GRACE-2L",
+      "functional": "r2SCAN",
+      "adaptation": "full",
+      "train_size": "full_grouped_train",
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": null,
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": null,
+      "epochs": null,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask",
+        "pinned_GRACE_2L_checkpoint"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "grace-2l-restricted-pbe-n200-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "GRACE-2L/PBE/200",
+      "architecture": "GRACE-2L",
+      "functional": "PBE",
+      "adaptation": "restricted",
+      "train_size": 200,
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": null,
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": null,
+      "epochs": null,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask",
+        "pinned_GRACE_2L_checkpoint"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "grace-2l-restricted-pbe-nfull_grouped_train-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "GRACE-2L/PBE/full_grouped_train",
+      "architecture": "GRACE-2L",
+      "functional": "PBE",
+      "adaptation": "restricted",
+      "train_size": "full_grouped_train",
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": null,
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": null,
+      "epochs": null,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask",
+        "pinned_GRACE_2L_checkpoint"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "grace-2l-restricted-r2scan-n200-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "GRACE-2L/r2SCAN/200",
+      "architecture": "GRACE-2L",
+      "functional": "r2SCAN",
+      "adaptation": "restricted",
+      "train_size": 200,
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": null,
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": null,
+      "epochs": null,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask",
+        "pinned_GRACE_2L_checkpoint"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    },
+    {
+      "run_id": "grace-2l-restricted-r2scan-nfull_grouped_train-seed10",
+      "state": "blocked",
+      "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+      "control_group": "GRACE-2L/r2SCAN/full_grouped_train",
+      "architecture": "GRACE-2L",
+      "functional": "r2SCAN",
+      "adaptation": "restricted",
+      "train_size": "full_grouped_train",
+      "training_seed": 10,
+      "data_selection_seed": 20261106,
+      "model_hash": null,
+      "split_hash": null,
+      "target_geometry_ids": null,
+      "new_DFT_jobs": 0,
+      "max_initial_lr_candidates": 3,
+      "base_lr": null,
+      "epochs": null,
+      "rank": null,
+      "alpha": null,
+      "trainable_mask": null,
+      "planned_resources": {
+        "partition": "v100",
+        "account": "imet-2026-2",
+        "qos": "normal",
+        "gpus": 1,
+        "gpu_type": "a100",
+        "cpus": 4,
+        "memory_GiB": 32,
+        "planning_wall_cap_hours": 2
+      },
+      "estimated_cost": {
+        "kind": "provisional_reservation_cap_not_measured_forecast",
+        "GPU_hours_cap": 2,
+        "CPU_hours_cap": 8,
+        "wall_estimate_hours": null
+      },
+      "actual_cost": {
+        "GPU_hours": 0,
+        "CPU_hours": 0
+      },
+      "launch_ready": false,
+      "blocked_by": [
+        "grouped_split_and_parent_provenance",
+        "Gate_B0",
+        "Gate_H0",
+        "allocation_budget",
+        "runtime_mask",
+        "pinned_GRACE_2L_checkpoint"
+      ],
+      "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+    }
+  ],
+  "screening_summary": {
+    "base_configurations": 16,
+    "DPA4_configurations": 8,
+    "GRACE_configurations": 8,
+    "one_seed_one_LR_GPU_hours_cap": 32,
+    "one_seed_one_LR_CPU_hours_cap": 128,
+    "with_two_extra_LRs_max_GPU_hours_cap": 96,
+    "scope": "Provisional caps, not approved quota or measured forecast; no bulk submission.",
+    "cost_update": "Measure peak memory, wall seconds per optimizer step, validation time and target exposures on first short training; project each 50-epoch schedule separately."
+  },
+  "later_controls": {
+    "random_initialization": "Same selected architecture, PBE/r2SCAN x N200/full; 4 designs after architecture selection",
+    "finalist_seeds": [
+      10,
+      20,
+      30
+    ],
+    "learning_curves": [
+      100,
+      200,
+      400,
+      "full_grouped_train"
+    ],
+    "PBEsol": "after screening",
+    "KD": "S0/S1/S2 after qualified teacher; not scheduled"
+  }
+}

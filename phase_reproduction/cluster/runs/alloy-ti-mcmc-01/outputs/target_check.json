@@ -1,0 +1,143 @@
+{
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "T_K": 1000.0,
+  "kBT_eV": 0.08617333262145,
+  "chains": 48,
+  "burn": 128,
+  "production_steps": 384,
+  "pcn_rho": 0.7,
+  "orbits": {
+    "d019": {
+      "target_integrand_eV_cell": {
+        "mean": -0.026008937349106986,
+        "se": 0.0037798801698088174
+      },
+      "production_first_half_eV_cell": {
+        "mean": -0.024687100021684172,
+        "se": 0.003298493463690446
+      },
+      "production_second_half_eV_cell": {
+        "mean": -0.027330774676529807,
+        "se": 0.004843977727896174
+      },
+      "paired_second_minus_first_eV_cell": {
+        "mean": -0.0026436746548456347,
+        "se": 0.0033968194424004437
+      },
+      "center_start_eV_cell": {
+        "mean": -0.030066073705914704,
+        "se": 0.006995134777240183
+      },
+      "broad_start_eV_cell": {
+        "mean": -0.021951800992299274,
+        "se": 0.002833570429356794
+      },
+      "broad_minus_center_eV_cell": {
+        "mean": 0.00811427271361543,
+        "se": 0.007547253270553487
+      },
+      "split_rhat_integrand": 1.063523241603487,
+      "acceptance_fraction": {
+        "mean": 0.7303602430555557,
+        "se": 0.0064900493753137205
+      },
+      "min_chain_acceptance": 0.5520833333333334,
+      "proposal_fraction_outside": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "target_p_within_ten_pct_of_wall": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    "interlayer": {
+      "target_integrand_eV_cell": {
+        "mean": -0.05147704464388123,
+        "se": 0.016466289348367243
+      },
+      "production_first_half_eV_cell": {
+        "mean": -0.041740048347793816,
+        "se": 0.015087590417933382
+      },
+      "production_second_half_eV_cell": {
+        "mean": -0.061214040939968496,
+        "se": 0.02144271694325247
+      },
+      "paired_second_minus_first_eV_cell": {
+        "mean": -0.019473992592174676,
+        "se": 0.017038082328681255
+      },
+      "center_start_eV_cell": {
+        "mean": -0.05017220124755575,
+        "se": 0.02163277924710348
+      },
+      "broad_start_eV_cell": {
+        "mean": -0.05278188804020672,
+        "se": 0.025298356172299898
+      },
+      "broad_minus_center_eV_cell": {
+        "mean": -0.0026096867926509656,
+        "se": 0.033286393060445216
+      },
+      "split_rhat_integrand": 1.6113591371780032,
+      "acceptance_fraction": {
+        "mean": 0.6031901041666666,
+        "se": 0.017716633221982733
+      },
+      "min_chain_acceptance": 0.16145833333333334,
+      "proposal_fraction_outside": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "target_p_within_ten_pct_of_wall": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    "basal": {
+      "target_integrand_eV_cell": {
+        "mean": -0.009689349301936457,
+        "se": 0.0017757078759314674
+      },
+      "production_first_half_eV_cell": {
+        "mean": -0.011308897679244099,
+        "se": 0.0025518208059472783
+      },
+      "production_second_half_eV_cell": {
+        "mean": -0.008069800924628811,
+        "se": 0.0023865774752120264
+      },
+      "paired_second_minus_first_eV_cell": {
+        "mean": 0.003239096754615286,
+        "se": 0.0034354809123512075
+      },
+      "center_start_eV_cell": {
+        "mean": -0.0078077916231978975,
+        "se": 0.002418213071445675
+      },
+      "broad_start_eV_cell": {
+        "mean": -0.011570906980675014,
+        "se": 0.002594443428198772
+      },
+      "broad_minus_center_eV_cell": {
+        "mean": -0.0037631153574771165,
+        "se": 0.0035466732526459955
+      },
+      "split_rhat_integrand": 1.0250309293838762,
+      "acceptance_fraction": {
+        "mean": 0.6839192708333334,
+        "se": 0.004805866585497263
+      },
+      "min_chain_acceptance": 0.6145833333333334,
+      "proposal_fraction_outside": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "target_p_within_ten_pct_of_wall": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    }
+  }
+}

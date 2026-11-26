@@ -1,0 +1,845 @@
+{
+  "checked_unix": 1793840622.931668,
+  "raw_job": "JobId=20962153 JobName=TiAl-visc15k-iter UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=904 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=1 Restarts=3 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=09:59:55 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-30T15:34:59 EligibleTime=2026-10-30T15:37:00 AccrueTime=2026-10-30T15:37:00 StartTime=2026-11-04T20:03:47 EndTime=2026-11-05T16:03:47 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-04T20:03:47 Scheduler=Main Partition=v100 AllocNode:Sid=umt:1602107 ReqNodeList=tesla-a101 ExcNodeList=(null) NodeList=tesla-a101 BatchHost=tesla-a101 NumNodes=1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/job.sbatch WorkDir=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01 StdErr=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/allocation-20962153.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/allocation-20962153.log Power= TresPerNode=gres:gpu:a100:1 \n",
+  "raw_node": "NodeName=tesla-a101 Arch=x86_64 CoresPerSocket=12  CPUAlloc=22 CPUEfctv=48 CPUTot=48 CPULoad=6.15 AvailableFeatures=a100,tesla,bigmem ActiveFeatures=a100,tesla,bigmem Gres=gpu:a100:2,shard:a100:12 NodeAddr=tesla-a101 NodeHostName=tesla-a101 Version=23.02.7 OS=Linux 4.18.0-193.19.1.el8_2.centos.plus.x86_64 #1 SMP Mon Sep 14 20:42:18 UTC 2020  RealMemory=254000 AllocMem=131072 FreeMem=140760 Sockets=2 Boards=1 State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A Partitions=v100  BootTime=2026-06-19T10:14:59 SlurmdStartTime=2026-06-19T10:16:23 LastBusyTime=2026-10-26T11:58:04 ResumeAfterTime=None CfgTRES=cpu=48,mem=254000M,billing=71808,gres/gpu=2,gres/gpu:a100=2,gres/shard=12 AllocTRES=cpu=22,mem=128G,gres/gpu=2,gres/gpu:a100=2 CapWatts=n/a CurrentWatts=0 AveWatts=0 ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s\n",
+  "checks": {
+    "protocol.json": true,
+    "baseline_5k.json": true,
+    "known_15k.json": true,
+    "workflow.py": true,
+    "md_core.py": true,
+    "analysis_common.py": true,
+    "analyze_point.py": true,
+    "test_analysis.py": true,
+    "README_RU.txt": true,
+    "initial_Ti_2100K.data": true,
+    "initial_Ti_1873K.data": true,
+    "initial_Ti_2000K.data": true,
+    "checkpoint": true,
+    "frozen_model": true,
+    "preflight": true,
+    "physics": true,
+    "temperatures": true,
+    "normalization": true,
+    "one_a100_requested": true,
+    "one_a100_allocated": true,
+    "Ti_2100K_20": true,
+    "Ti_1873K_20": true,
+    "Ti_2000K_1": true,
+    "Ti_2000K_2": true,
+    "Ti_2000K_3": true,
+    "Ti_2000K_4": true,
+    "Ti_2000K_5": true,
+    "Ti_2000K_6": true,
+    "Ti_2000K_7": true,
+    "Ti_2000K_8": true,
+    "Ti_2000K_9": true,
+    "Ti_2000K_10": true,
+    "Ti_2000K_11": true,
+    "Ti_2000K_12": true,
+    "Ti_2000K_13": true,
+    "Ti_2000K_14": true,
+    "Ti_2000K_15": true,
+    "Ti_2000K_16": true,
+    "Ti_2000K_17": true,
+    "Ti_2000K_18": true,
+    "Ti_2000K_19": true,
+    "Ti_2000K_20": true,
+    "current_target": true
+  },
+  "node": {
+    "NodeName": "tesla-a101",
+    "State": "MIXED",
+    "Gres": "gpu:a100:2,shard:a100:12",
+    "AllocTRES": "cpu=22,mem=128G,gres/gpu=2,gres/gpu:a100=2"
+  },
+  "completed": {
+    "Ti_2100K": 20,
+    "Ti_1873K": 20,
+    "Ti_2000K": 20
+  },
+  "verified_replicas": [
+    {
+      "id": "Ti_2100K",
+      "replica": 20,
+      "target_K": 2100,
+      "n_samples": 40001,
+      "volume_A3": 9607.140576053695,
+      "prefactor_V_over_kBT": 3.313535044562271e-07,
+      "stress_sha256": "aa4d750d423efbb7abd50b0f05b32fce284b1cfbbbdbf431195fef90eb55f330",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_1873K",
+      "replica": 20,
+      "target_K": 1873,
+      "n_samples": 40001,
+      "volume_A3": 9448.581868226485,
+      "prefactor_V_over_kBT": 3.6538067213002576e-07,
+      "stress_sha256": "4501d57b23a06308da41bc774504e5c1964f30d37291fd52cfb30f1d2febb32e",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 1,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9650.442731116333,
+      "prefactor_V_over_kBT": 3.494893608410368e-07,
+      "stress_sha256": "f7d64d5a4b7f276d8262781c3a42b8af4c559db55df6e91e24fc27888127dc3a",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 2,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9518.43104758666,
+      "prefactor_V_over_kBT": 3.447085771831458e-07,
+      "stress_sha256": "254a8146815be696de94b446e3bfe855f99a14ebcff5029896a4b4d8e0b2f521",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 3,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9561.000352751338,
+      "prefactor_V_over_kBT": 3.462502182941261e-07,
+      "stress_sha256": "b8ea1c725e2f045d2aa9028b24fc74022ac11d8fe2a88c101d7fa3b3e0480809",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 4,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9578.248130813772,
+      "prefactor_V_over_kBT": 3.4687484403399316e-07,
+      "stress_sha256": "059ede3eaddca1150361d543e969c8263c1dac33104e83ea06a08059e10d7260",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 5,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9703.873492969604,
+      "prefactor_V_over_kBT": 3.5142434800480077e-07,
+      "stress_sha256": "a25b23c531cda249dd82174244a2a1a71f946b350db10d22d72c8a3e25bccb46",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 6,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9534.617902627346,
+      "prefactor_V_over_kBT": 3.4529478175218127e-07,
+      "stress_sha256": "feec131924aa25a85b7702bf7a4c8cb173292a276451aeffeca876d86743fbb8",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 7,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9461.639585805737,
+      "prefactor_V_over_kBT": 3.4265188276693557e-07,
+      "stress_sha256": "7ad68a70b3c8077e02611c1c91ae693d738c26cc96af2381f50bb576579a1467",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 8,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9520.357189349976,
+      "prefactor_V_over_kBT": 3.447783321231528e-07,
+      "stress_sha256": "6938bfffa42f6a287897b03a7130c22ec967ada19e36a16ba00d40965813ada6",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 9,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9613.686128855954,
+      "prefactor_V_over_kBT": 3.481582259088282e-07,
+      "stress_sha256": "b17b46b3783845717f8449fbc4833c408667904d8a9a0b0fad267c690ba25d4e",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 10,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9570.772799593598,
+      "prefactor_V_over_kBT": 3.466041260158664e-07,
+      "stress_sha256": "d566e55d66a6b5b60cebeea5f9ddc8aa320094ba90bd77062b0f040ebaccf861",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 11,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9495.04548070041,
+      "prefactor_V_over_kBT": 3.4386167232585584e-07,
+      "stress_sha256": "f40b6a3352c705823864efb186cfc25382bed1ed2f7d79c590566a5fdd8db0c9",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 12,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9492.22157082304,
+      "prefactor_V_over_kBT": 3.437594048459471e-07,
+      "stress_sha256": "1afe0cfd0560a97ca09caec18617f6614c4ea1d63c4d0fe5a8b02b4e78de7ce1",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 13,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9624.89918332531,
+      "prefactor_V_over_kBT": 3.4856430502340965e-07,
+      "stress_sha256": "30c0f05d33fec70d32a899f2b017a9725a69c477f14c406cd9b983f02aa70fbf",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 14,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9562.280862755888,
+      "prefactor_V_over_kBT": 3.4629659177516834e-07,
+      "stress_sha256": "a0a4517ddcfb81ae4d0087f5e1c22f8f7fce495a8409b6751283157d10f92326",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 15,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9487.149586527174,
+      "prefactor_V_over_kBT": 3.4357572368238325e-07,
+      "stress_sha256": "c25b0c188840d969fe1d7847885d6c464c396cbba15ab83879897c1fa465c0cf",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 16,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9664.716718807866,
+      "prefactor_V_over_kBT": 3.5000629120101726e-07,
+      "stress_sha256": "f66ed2dd57a5f75cbd53908e9977816faa3a09a070f9085f241c0dc5710ad5dc",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 17,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9442.14688091189,
+      "prefactor_V_over_kBT": 3.419459573328156e-07,
+      "stress_sha256": "368c5447cf6165f57aab992a9b5b01b727ef8eb2f488b4b6d140c41155c03d4a",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 18,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9612.443788636936,
+      "prefactor_V_over_kBT": 3.48113234740942e-07,
+      "stress_sha256": "09ba1843c1f3aed9ef0b92a91ca8a5191bc641cb3e3ddbee83b751812318b87e",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 19,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9638.690052409256,
+      "prefactor_V_over_kBT": 3.490637393142376e-07,
+      "stress_sha256": "ae5e009066efe37c48dfd8edc11cc73e09cab95d07c31fe38af9e2e366486cb7",
+      "checks": "PASS"
+    },
+    {
+      "id": "Ti_2000K",
+      "replica": 20,
+      "target_K": 2000,
+      "n_samples": 40001,
+      "volume_A3": 9632.177058356148,
+      "prefactor_V_over_kBT": 3.488278721947486e-07,
+      "stress_sha256": "2eeb447a8b2ed40d1e0028f5b085f87be71d7fbb226ac438b74972a92ce7b2a9",
+      "checks": "PASS"
+    }
+  ],
+  "progress": {
+    "status": "running",
+    "phase": "production",
+    "job_id": "20962153",
+    "unix": 1793839683.2735686,
+    "composition": "Ti_2100K",
+    "replica": 21,
+    "production_ps": 40
+  },
+  "thermo_2000K": [
+    {
+      "replica": 1,
+      "volume_A3": 9650.442731116333,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 2000.8871162094763,
+          "PotEng": -3756.9909009975063,
+          "Press": -6705.728485785537,
+          "Volume": 9650.4427
+        },
+        "first20ps": {
+          "Temp": 2007.88018159204,
+          "PotEng": -3756.2976850746268,
+          "Press": -6467.765609950249,
+          "Volume": 9650.4427
+        },
+        "second20ps": {
+          "Temp": 1994.0516268656716,
+          "PotEng": -3757.6463288557215,
+          "Press": -6932.608032835821,
+          "Volume": 9650.4427
+        }
+      }
+    },
+    {
+      "replica": 2,
+      "volume_A3": 9518.43104758666,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 2001.5984411471322,
+          "PotEng": -3763.034170074813,
+          "Press": 2935.4934613117207,
+          "Volume": 9518.431
+        },
+        "first20ps": {
+          "Temp": 1996.6868124378109,
+          "PotEng": -3762.936339303483,
+          "Press": 2897.7481211492536,
+          "Volume": 9518.431
+        },
+        "second20ps": {
+          "Temp": 2007.1014935323383,
+          "PotEng": -3763.147691044776,
+          "Press": 2974.649706641791,
+          "Volume": 9518.431
+        }
+      }
+    },
+    {
+      "replica": 3,
+      "volume_A3": 9561.000352751338,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1998.7592880299253,
+          "PotEng": -3761.182119700748,
+          "Press": -178.6673714872818,
+          "Volume": 9561.0004
+        },
+        "first20ps": {
+          "Temp": 1997.9337059701493,
+          "PotEng": -3761.170374129353,
+          "Press": -304.33906582587065,
+          "Volume": 9561.0004
+        },
+        "second20ps": {
+          "Temp": 2000.5432144278607,
+          "PotEng": -3761.233949253731,
+          "Press": -61.31409967860697,
+          "Volume": 9561.0004
+        }
+      }
+    },
+    {
+      "replica": 4,
+      "volume_A3": 9578.248130813772,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1997.4717334164588,
+          "PotEng": -3760.132663840399,
+          "Press": -1403.1319907182044,
+          "Volume": 9578.2481
+        },
+        "first20ps": {
+          "Temp": 1999.3564303482588,
+          "PotEng": -3759.5836169154227,
+          "Press": -1239.7075392686568,
+          "Volume": 9578.2481
+        },
+        "second20ps": {
+          "Temp": 1995.8100402985074,
+          "PotEng": -3760.657832835821,
+          "Press": -1550.6002347512438,
+          "Volume": 9578.2481
+        }
+      }
+    },
+    {
+      "replica": 5,
+      "volume_A3": 9703.873492969604,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1995.532853117207,
+          "PotEng": -3755.8082042394017,
+          "Press": -10958.295441396509,
+          "Volume": 9703.8735
+        },
+        "first20ps": {
+          "Temp": 1999.7788761194029,
+          "PotEng": -3755.4500502487563,
+          "Press": -10824.024405472637,
+          "Volume": 9703.8735
+        },
+        "second20ps": {
+          "Temp": 1990.5954666666667,
+          "PotEng": -3756.2050696517413,
+          "Press": -11096.869395522388,
+          "Volume": 9703.8735
+        }
+      }
+    },
+    {
+      "replica": 6,
+      "volume_A3": 9534.617902627346,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1987.5383413965087,
+          "PotEng": -3762.9883855361595,
+          "Press": 1587.933209660848,
+          "Volume": 9534.6179
+        },
+        "first20ps": {
+          "Temp": 1989.750644278607,
+          "PotEng": -3762.501826368159,
+          "Press": 1786.7685474378109,
+          "Volume": 9534.6179
+        },
+        "second20ps": {
+          "Temp": 1985.5756990049751,
+          "PotEng": -3763.468010447761,
+          "Press": 1397.7804066616916,
+          "Volume": 9534.6179
+        }
+      }
+    },
+    {
+      "replica": 7,
+      "volume_A3": 9461.639585805737,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1998.302419201995,
+          "PotEng": -3764.590071072319,
+          "Press": 7701.271859650873,
+          "Volume": 9461.6396
+        },
+        "first20ps": {
+          "Temp": 2009.2703119402986,
+          "PotEng": -3763.949115920398,
+          "Press": 7983.362860199005,
+          "Volume": 9461.6396
+        },
+        "second20ps": {
+          "Temp": 1987.5630482587064,
+          "PotEng": -3765.2329880597013,
+          "Press": 7422.985925472637,
+          "Volume": 9461.6396
+        }
+      }
+    },
+    {
+      "replica": 8,
+      "volume_A3": 9520.357189349976,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1996.7804591022443,
+          "PotEng": -3762.2739279301745,
+          "Press": 3129.932749990773,
+          "Volume": 9520.3572
+        },
+        "first20ps": {
+          "Temp": 1996.5847199004975,
+          "PotEng": -3762.561013432836,
+          "Press": 3039.709069721393,
+          "Volume": 9520.3572
+        },
+        "second20ps": {
+          "Temp": 1997.3132009950248,
+          "PotEng": -3762.0012711442787,
+          "Press": 3219.325529016418,
+          "Volume": 9520.3572
+        }
+      }
+    },
+    {
+      "replica": 9,
+      "volume_A3": 9613.686128855954,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 2002.0241216957606,
+          "PotEng": -3758.253890274314,
+          "Press": -3972.8571060074814,
+          "Volume": 9613.6861
+        },
+        "first20ps": {
+          "Temp": 2006.4578666666666,
+          "PotEng": -3757.957116915423,
+          "Press": -3848.9309136268657,
+          "Volume": 9613.6861
+        },
+        "second20ps": {
+          "Temp": 1998.6981333333333,
+          "PotEng": -3758.5427,
+          "Press": -4075.2593764179105,
+          "Volume": 9613.6861
+        }
+      }
+    },
+    {
+      "replica": 10,
+      "volume_A3": 9570.772799593598,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1994.3057506234413,
+          "PotEng": -3760.894942892768,
+          "Press": -1082.0704191371572,
+          "Volume": 9570.7728
+        },
+        "first20ps": {
+          "Temp": 2001.3565736318408,
+          "PotEng": -3760.4452154228857,
+          "Press": -877.5913269751244,
+          "Volume": 9570.7728
+        },
+        "second20ps": {
+          "Temp": 1987.22757960199,
+          "PotEng": -3761.371305472637,
+          "Press": -1301.95461319403,
+          "Volume": 9570.7728
+        }
+      }
+    },
+    {
+      "replica": 11,
+      "volume_A3": 9495.04548070041,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 2001.7759802992518,
+          "PotEng": -3762.875843890274,
+          "Press": 5134.27632446384,
+          "Volume": 9495.0455
+        },
+        "first20ps": {
+          "Temp": 1993.4018134328358,
+          "PotEng": -3763.521505472637,
+          "Press": 4837.509668507462,
+          "Volume": 9495.0455
+        },
+        "second20ps": {
+          "Temp": 2010.4549960199006,
+          "PotEng": -3762.2548517412934,
+          "Press": 5419.12767880597,
+          "Volume": 9495.0455
+        }
+      }
+    },
+    {
+      "replica": 12,
+      "volume_A3": 9492.22157082304,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 2002.433412967581,
+          "PotEng": -3762.9515386533667,
+          "Press": 5381.879279551123,
+          "Volume": 9492.2216
+        },
+        "first20ps": {
+          "Temp": 1999.5308014925374,
+          "PotEng": -3762.9385606965175,
+          "Press": 5288.902149253731,
+          "Volume": 9492.2216
+        },
+        "second20ps": {
+          "Temp": 2005.0822626865672,
+          "PotEng": -3762.945653731343,
+          "Press": 5481.312945273632,
+          "Volume": 9492.2216
+        }
+      }
+    },
+    {
+      "replica": 13,
+      "volume_A3": 9624.89918332531,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1997.0352321695761,
+          "PotEng": -3758.369665586035,
+          "Press": -4887.9745102119705,
+          "Volume": 9624.8992
+        },
+        "first20ps": {
+          "Temp": 2000.64772039801,
+          "PotEng": -3758.3626004975126,
+          "Press": -4953.240725447761,
+          "Volume": 9624.8992
+        },
+        "second20ps": {
+          "Temp": 1993.7522825870647,
+          "PotEng": -3758.3638104477614,
+          "Press": -4813.949316318408,
+          "Volume": 9624.8992
+        }
+      }
+    },
+    {
+      "replica": 14,
+      "volume_A3": 9562.280862755888,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1995.6365985037407,
+          "PotEng": -3760.9411718204487,
+          "Press": -340.7227786957606,
+          "Volume": 9562.2809
+        },
+        "first20ps": {
+          "Temp": 1988.211202487562,
+          "PotEng": -3760.9004771144278,
+          "Press": -451.27530168656716,
+          "Volume": 9562.2809
+        },
+        "second20ps": {
+          "Temp": 2002.4500651741293,
+          "PotEng": -3760.971556716418,
+          "Press": -222.63930058706467,
+          "Volume": 9562.2809
+        }
+      }
+    },
+    {
+      "replica": 15,
+      "volume_A3": 9487.149586527174,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 2003.6119618453865,
+          "PotEng": -3763.2785750623443,
+          "Press": 5866.181889476309,
+          "Volume": 9487.1496
+        },
+        "first20ps": {
+          "Temp": 2004.9272144278607,
+          "PotEng": -3763.241748756219,
+          "Press": 5852.985356766169,
+          "Volume": 9487.1496
+        },
+        "second20ps": {
+          "Temp": 2002.9766164179105,
+          "PotEng": -3763.3140303482587,
+          "Press": 5883.26143119403,
+          "Volume": 9487.1496
+        }
+      }
+    },
+    {
+      "replica": 16,
+      "volume_A3": 9664.716718807866,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 2002.4835670822943,
+          "PotEng": -3756.593313466334,
+          "Press": -7854.623139401497,
+          "Volume": 9664.7167
+        },
+        "first20ps": {
+          "Temp": 2011.9514980099502,
+          "PotEng": -3755.4630950248757,
+          "Press": -7525.938604477612,
+          "Volume": 9664.7167
+        },
+        "second20ps": {
+          "Temp": 1993.1539024875622,
+          "PotEng": -3757.7150288557214,
+          "Press": -8178.0047492537315,
+          "Volume": 9664.7167
+        }
+      }
+    },
+    {
+      "replica": 17,
+      "volume_A3": 9442.14688091189,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1999.742195511222,
+          "PotEng": -3765.4510591022445,
+          "Press": 9176.994386783043,
+          "Volume": 9442.1469
+        },
+        "first20ps": {
+          "Temp": 1997.1653009950248,
+          "PotEng": -3765.3435741293533,
+          "Press": 9019.574057711443,
+          "Volume": 9442.1469
+        },
+        "second20ps": {
+          "Temp": 2001.9845378109453,
+          "PotEng": -3765.5679706467663,
+          "Press": 9339.131679104477,
+          "Volume": 9442.1469
+        }
+      }
+    },
+    {
+      "replica": 18,
+      "volume_A3": 9612.443788636936,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1989.5045927680799,
+          "PotEng": -3758.810421446384,
+          "Press": -3992.9336980798007,
+          "Volume": 9612.4438
+        },
+        "first20ps": {
+          "Temp": 1992.9527303482587,
+          "PotEng": -3758.7571621890547,
+          "Press": -4135.693191442786,
+          "Volume": 9612.4438
+        },
+        "second20ps": {
+          "Temp": 1986.187003482587,
+          "PotEng": -3758.8541427860696,
+          "Press": -3848.952749004975,
+          "Volume": 9612.4438
+        }
+      }
+    },
+    {
+      "replica": 19,
+      "volume_A3": 9638.690052409256,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1996.9112159600998,
+          "PotEng": -3757.936270573566,
+          "Press": -5994.667630074813,
+          "Volume": 9638.6901
+        },
+        "first20ps": {
+          "Temp": 1994.7242781094528,
+          "PotEng": -3757.6618228855723,
+          "Press": -5937.471310348259,
+          "Volume": 9638.6901
+        },
+        "second20ps": {
+          "Temp": 1999.064860199005,
+          "PotEng": -3758.214232835821,
+          "Press": -6056.497711840796,
+          "Volume": 9638.6901
+        }
+      }
+    },
+    {
+      "replica": 20,
+      "volume_A3": 9632.177058356148,
+      "thermo_rows": 401,
+      "window_means": {
+        "40ps": {
+          "Temp": 1998.0856052369077,
+          "PotEng": -3758.3001072319203,
+          "Press": -5583.075970373816,
+          "Volume": 9632.1771
+        },
+        "first20ps": {
+          "Temp": 1991.9466427860696,
+          "PotEng": -3758.8681895522386,
+          "Press": -5845.001251343284,
+          "Volume": 9632.1771
+        },
+        "second20ps": {
+          "Temp": 2003.8621497512438,
+          "PotEng": -3757.762848756219,
+          "Press": -5333.4436338303485,
+          "Volume": 9632.1771
+        }
+      }
+    }
+  ],
+  "thermo_group_means": {
+    "previous15": {
+      "40ps": {
+        "Temp": 1998.2462473150458,
+        "PotEng": -3760.9710714380712,
+        "Press": 147.16804471103902,
+        "Volume": 9558.311073333334
+      },
+      "first20ps": {
+        "Temp": 1999.4516583416253,
+        "PotEng": -3760.7878164179106,
+        "Press": 181.34072565207288,
+        "Volume": 9558.311073333334
+      },
+      "second20ps": {
+        "Temp": 1997.2797150580432,
+        "PotEng": -3761.157136650083,
+        "Press": 116.21661691737978,
+        "Volume": 9558.311073333334
+      }
+    },
+    "new5": {
+      "40ps": {
+        "Temp": 1997.3454353117206,
+        "PotEng": -3759.41823436409,
+        "Press": -2849.6612102293766,
+        "Volume": 9598.03492
+      },
+      "first20ps": {
+        "Temp": 1997.7480900497512,
+        "PotEng": -3759.218768756219,
+        "Press": -2884.9060599800996,
+        "Volume": 9598.03492
+      },
+      "second20ps": {
+        "Temp": 1996.8504907462686,
+        "PotEng": -3759.6228447761196,
+        "Press": -2815.5534329650745,
+        "Volume": 9598.03492
+      }
+    }
+  },
+  "protocol_and_model_hashes": "PASS",
+  "JobId": "20962153",
+  "JobState": "RUNNING",
+  "Reason": "None",
+  "Restarts": "3",
+  "ExitCode": "0:0",
+  "ReqTRES": "cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1",
+  "AllocTRES": "cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1",
+  "StartTime": "2026-11-04T20:03:47"
+}

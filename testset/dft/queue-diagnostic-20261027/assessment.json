@@ -1,0 +1,44 @@
+{
+  "checked_local": "2026-10-27T08:26:47.495472+05:00",
+  "snapshots": [
+    "snapshot-1793071556.json",
+    "verification-1793071607.json"
+  ],
+  "partition": "apollo",
+  "nodes": 36,
+  "node_states": {
+    "ALLOCATED": 30,
+    "MIXED": 6
+  },
+  "allocated_cpu": 1208,
+  "total_cpu": 1296,
+  "cpu_allocation_percent": 93.20987654320987,
+  "higher_priority_runnable_pending_tasks": 57,
+  "higher_priorities": {
+    "970": 7,
+    "966": 25,
+    "958": 5,
+    "907": 3,
+    "924": 17
+  },
+  "test50_pending": 62,
+  "test50_running": 0,
+  "PBEsol_next_ids": [
+    "TiAl-test-035",
+    "TiAl-test-044"
+  ],
+  "r2SCAN_next_ids": [
+    "TiAl-test-027",
+    "TiAl-test-035",
+    "TiAl-test-044"
+  ],
+  "next_crystal_priority": 906,
+  "age_priority_weight": 0,
+  "fairshare_weight": 1000,
+  "user_fairshare": 0.907555,
+  "test50_start_estimate": "Unknown / N/A",
+  "all_throttles": 5,
+  "crystal_first_nice_verified": true,
+  "scheduler_mutations": false,
+  "forecast_qualification": "No reliable Test50 start time. Earlier release of running jobs can change the backfill schedule. Start estimates of higher-priority jobs are not a lower bound for Test50."
+}

@@ -1,0 +1,153 @@
+{
+  "functional": "r2SCAN",
+  "reference_force_calculated": false,
+  "reference_cancellation_max_error_eV_A": {
+    "DFT": 6.938893903907228e-18,
+    "DPA4": 1.734723475976807e-18
+  },
+  "DFT_reproduced_FC_max_difference_eV_A2": null,
+  "model_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+  "DPA4_job_id": "20973060",
+  "DFT_job_ids": {
+    "force001": "20968910",
+    "force002": "20972837"
+  },
+  "geometry": "Identical XC-specific DFT geometry and exact POSCAR bytes; no ML relaxation",
+  "supercell": [
+    4,
+    4,
+    3
+  ],
+  "displacements": "Same phonopy dataset, opposite 0.01 A displacements",
+  "processing": "Identical mean force removal and central pair, traditional Phonopy fit, symfc projector and 10 ASR polish cycles. Reference force cancels algebraically; no invented reference data. Matches PBEsol processing.",
+  "qmesh": [
+    50,
+    50,
+    50
+  ],
+  "mass_amu": 47.867,
+  "sigma_THz": 0.05,
+  "frequency_step_THz": 0.002,
+  "force_component_RMSE_eV_A": 0.0002973928954100521,
+  "force_max_vector_error_eV_A": 0.001982267072054426,
+  "sorted_band_frequency_RMSE_THz": 0.2632112148967603,
+  "sorted_band_max_difference_THz": 0.8401158823054384,
+  "band_comparison_note": "Frequencies sorted independently at each q, no eigenvector branch tracking.",
+  "qualification": "Matched-protocol comparison at current DFT settings; DFT reference forces/stress and cutoff/kmesh/smearing/supercell convergence pending.",
+  "methods": {
+    "DFT": {
+      "reference_max_force_eV_A": null,
+      "force_drift_removed_eV_A": [
+        [
+          5.208333334386604e-10,
+          1.0416666670218812e-10,
+          -3.1249999996200403e-10
+        ],
+        [
+          0.0,
+          -1.0416666665701302e-10,
+          -1.0416666662990796e-10
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 8.867906409193438e-15,
+        "translation_other_index_max_eV_A2": 8.867906409193438e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 5.001332681331405e-11,
+      "ASR_max_change_eV_A2": 0.0005958040776561369,
+      "gamma_THz": [
+        -1.0075411924673244e-07,
+        -7.260739351591409e-08,
+        3.3831506961844355e-08,
+        4.586615641085167,
+        4.586615643092986,
+        5.189323501615254
+      ],
+      "min_frequency_THz": -1.0075411924673244e-07,
+      "max_frequency_THz": 8.864433333621433,
+      "imaginary_modes_below_minus_0p001_THz": 0,
+      "DOS_integral_before_rescale": 2.9999999999999822,
+      "DOS_integral": 3.0,
+      "DOS_peaks": [
+        {
+          "frequency_THz": 3.5379998992458845,
+          "height": 0.6611035749098179
+        },
+        {
+          "frequency_THz": 5.919999899245886,
+          "height": 0.7600983525317561
+        },
+        {
+          "frequency_THz": 7.147999899245887,
+          "height": 0.5797381104782794
+        },
+        {
+          "frequency_THz": 7.537999899245888,
+          "height": 0.8995898013207019
+        },
+        {
+          "frequency_THz": 8.263999899245889,
+          "height": 0.6137617473670572
+        }
+      ]
+    },
+    "DPA4": {
+      "reference_max_force_eV_A": 1.2195773531313588e-06,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          -2.8912057932946783e-19
+        ],
+        [
+          0.0,
+          0.0,
+          -1.2649025345664218e-18
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 8.517492267046123e-15,
+        "translation_other_index_max_eV_A2": 8.517492267046123e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 4.927080965444475e-11,
+      "ASR_max_change_eV_A2": 6.744521335699805e-05,
+      "gamma_THz": [
+        7.466211646970881e-08,
+        1.1122813130015959e-07,
+        1.392441128224917e-07,
+        4.220688045959041,
+        4.563167202387501,
+        4.5631672043848015
+      ],
+      "min_frequency_THz": 7.466211646970881e-08,
+      "max_frequency_THz": 8.891474497181242,
+      "imaginary_modes_below_minus_0p001_THz": 0,
+      "DOS_integral_before_rescale": 2.9999999999997957,
+      "DOS_integral": 3.0,
+      "DOS_peaks": [
+        {
+          "frequency_THz": 3.8839998992458846,
+          "height": 0.6419957602607782
+        },
+        {
+          "frequency_THz": 5.957999899245886,
+          "height": 0.6675773904919228
+        },
+        {
+          "frequency_THz": 7.309999899245887,
+          "height": 0.5875870795720346
+        },
+        {
+          "frequency_THz": 7.743999899245888,
+          "height": 1.0177098699004625
+        },
+        {
+          "frequency_THz": 8.311999899245889,
+          "height": 0.5932296262258105
+        }
+      ]
+    }
+  }
+}

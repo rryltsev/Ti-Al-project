@@ -1,0 +1,282 @@
+[
+  {
+    "T": 1873,
+    "dft": "pbe",
+    "c_Ti": 0.3,
+    "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_0.30",
+    "n_trajectories": 15,
+    "checks": {
+      "full": {
+        "eta_mPa_s": 3.151901041261925,
+        "std_mPa_s": 0.24005900697046043,
+        "neff": 27.37219899857577,
+        "seconds": 3.2831954956054688
+      },
+      "offdiagonal": {
+        "eta_mPa_s": 3.2084328131106563,
+        "std_mPa_s": 0.22154486853818292,
+        "neff": 31.646578240755108
+      },
+      "first_half": {
+        "eta_mPa_s": 2.929665931594798,
+        "std_mPa_s": 0.20377772181435494,
+        "neff": 17.004042590540003
+      },
+      "second_half": {
+        "eta_mPa_s": 2.921534025584169,
+        "std_mPa_s": 0.18077905806603037,
+        "neff": 27.899449190272303
+      },
+      "replicas_odd": {
+        "eta_mPa_s": 3.2163392956131656,
+        "std_mPa_s": 0.2961954440010621,
+        "neff": 26.76396821204423
+      },
+      "replicas_even": {
+        "eta_mPa_s": 3.016227943160174,
+        "std_mPa_s": 0.1954925816363158,
+        "neff": 39.13862340081614
+      }
+    }
+  },
+  {
+    "T": 1873,
+    "dft": "pbe",
+    "c_Ti": 0.4,
+    "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_0.40",
+    "n_trajectories": 15,
+    "checks": {
+      "full": {
+        "eta_mPa_s": 4.0501470370133035,
+        "std_mPa_s": 0.22576049983616797,
+        "neff": 29.763485754542245,
+        "seconds": 2.916374683380127
+      },
+      "offdiagonal": {
+        "eta_mPa_s": 3.700746303552648,
+        "std_mPa_s": 0.351038205890356,
+        "neff": 50.660014610216244
+      },
+      "first_half": {
+        "eta_mPa_s": 3.6066432705206855,
+        "std_mPa_s": 0.22352787306115857,
+        "neff": 20.392371294247926
+      },
+      "second_half": {
+        "eta_mPa_s": 4.406558427754039,
+        "std_mPa_s": 0.3511430681753398,
+        "neff": 15.619804220885987
+      },
+      "replicas_odd": {
+        "eta_mPa_s": 3.7147562135972727,
+        "std_mPa_s": 0.3706476857913823,
+        "neff": 41.69421873185979
+      },
+      "replicas_even": {
+        "eta_mPa_s": 4.205741782035406,
+        "std_mPa_s": 0.3006172376998376,
+        "neff": 38.70563073034198
+      }
+    }
+  },
+  {
+    "T": 1873,
+    "dft": "pbe",
+    "c_Ti": 0.9,
+    "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\03_stress_autocorr\\c_Ti_0.90",
+    "n_trajectories": 15,
+    "checks": {
+      "full": {
+        "eta_mPa_s": 4.013919328530145,
+        "std_mPa_s": 0.24531923054642735,
+        "neff": 20.300061710664714,
+        "seconds": 3.113901376724243
+      },
+      "offdiagonal": {
+        "eta_mPa_s": 3.9340965723357852,
+        "std_mPa_s": 0.40111991354689663,
+        "neff": 36.99984809836098
+      },
+      "first_half": {
+        "eta_mPa_s": 3.387416031842963,
+        "std_mPa_s": 0.1855976998076919,
+        "neff": 25.7823725036557
+      },
+      "second_half": {
+        "eta_mPa_s": 3.559579916801589,
+        "std_mPa_s": 0.22161175317990722,
+        "neff": 21.902210918890194
+      },
+      "replicas_odd": {
+        "eta_mPa_s": 4.012773798345307,
+        "std_mPa_s": 0.32431570347855526,
+        "neff": 27.12462243677285
+      },
+      "replicas_even": {
+        "eta_mPa_s": 3.364131278133421,
+        "std_mPa_s": 0.18817971305435757,
+        "neff": 53.48194660085945
+      }
+    }
+  },
+  {
+    "T": 1873,
+    "dft": "scan",
+    "c_Ti": 0.5,
+    "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\scan\\03_stress_autocorr\\c_Ti_0.50",
+    "n_trajectories": 15,
+    "checks": {
+      "full": {
+        "eta_mPa_s": 6.917912714584159,
+        "std_mPa_s": 0.4198957730031375,
+        "neff": 20.76838111006416,
+        "seconds": 2.5922482013702393
+      },
+      "offdiagonal": {
+        "eta_mPa_s": 6.660578032360361,
+        "std_mPa_s": 0.5099995263685226,
+        "neff": 24.58958105843874
+      },
+      "first_half": {
+        "eta_mPa_s": 6.839056036045579,
+        "std_mPa_s": 0.5841388056696608,
+        "neff": 16.852601986580396
+      },
+      "second_half": {
+        "eta_mPa_s": 6.771097378956693,
+        "std_mPa_s": 0.5394307680841431,
+        "neff": 16.487526690880408
+      },
+      "replicas_odd": {
+        "eta_mPa_s": 7.253402219203339,
+        "std_mPa_s": 0.6301612398983361,
+        "neff": 20.73608304636184
+      },
+      "replicas_even": {
+        "eta_mPa_s": 6.544425553175394,
+        "std_mPa_s": 0.5415363802474378,
+        "neff": 27.663413919047322
+      }
+    }
+  },
+  {
+    "T": 1873,
+    "dft": "scan",
+    "c_Ti": 0.6,
+    "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\scan\\03_stress_autocorr\\c_Ti_0.60",
+    "n_trajectories": 15,
+    "checks": {
+      "full": {
+        "eta_mPa_s": 6.559051280606909,
+        "std_mPa_s": 0.4459620722707892,
+        "neff": 22.868595235590753,
+        "seconds": 2.5943944454193115
+      },
+      "offdiagonal": {
+        "eta_mPa_s": 6.953108799220206,
+        "std_mPa_s": 0.5789573290340991,
+        "neff": 17.680726061482513
+      },
+      "first_half": {
+        "eta_mPa_s": 5.948094977308322,
+        "std_mPa_s": 0.4385927082407656,
+        "neff": 18.012983633497537
+      },
+      "second_half": {
+        "eta_mPa_s": 6.515983849851405,
+        "std_mPa_s": 0.5292457055767418,
+        "neff": 21.924498737623505
+      },
+      "replicas_odd": {
+        "eta_mPa_s": 7.82432699888822,
+        "std_mPa_s": 0.73826025354207,
+        "neff": 16.186029102088217
+      },
+      "replicas_even": {
+        "eta_mPa_s": 5.527546195620777,
+        "std_mPa_s": 0.40481292190286977,
+        "neff": 34.01195039184526
+      }
+    }
+  },
+  {
+    "T": 1873,
+    "dft": "scan",
+    "c_Ti": 0.7,
+    "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\scan\\03_stress_autocorr\\c_Ti_0.70",
+    "n_trajectories": 15,
+    "checks": {
+      "full": {
+        "eta_mPa_s": 6.225928361435899,
+        "std_mPa_s": 0.3831545501318466,
+        "neff": 27.401476618472582,
+        "seconds": 2.20833420753479
+      },
+      "offdiagonal": {
+        "eta_mPa_s": 6.034505734920581,
+        "std_mPa_s": 0.485400190683882,
+        "neff": 30.4883057564902
+      },
+      "first_half": {
+        "eta_mPa_s": 6.713844739394362,
+        "std_mPa_s": 0.6036203707164179,
+        "neff": 16.467006511056827
+      },
+      "second_half": {
+        "eta_mPa_s": 5.6749614570362965,
+        "std_mPa_s": 0.37917479250048347,
+        "neff": 18.30216643381394
+      },
+      "replicas_odd": {
+        "eta_mPa_s": 6.1133831510299235,
+        "std_mPa_s": 0.5901387617854884,
+        "neff": 23.87429102339243
+      },
+      "replicas_even": {
+        "eta_mPa_s": 6.554207311600096,
+        "std_mPa_s": 0.4858492552790239,
+        "neff": 33.6462788541807
+      }
+    }
+  },
+  {
+    "T": 1873,
+    "dft": "scan",
+    "c_Ti": 0.8,
+    "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\scan\\03_stress_autocorr\\c_Ti_0.80",
+    "n_trajectories": 15,
+    "checks": {
+      "full": {
+        "eta_mPa_s": 5.514453911461639,
+        "std_mPa_s": 0.2859022368938279,
+        "neff": 27.03626104282825,
+        "seconds": 2.1019139289855957
+      },
+      "offdiagonal": {
+        "eta_mPa_s": 5.84269271745524,
+        "std_mPa_s": 0.38325134422417084,
+        "neff": 26.726186081972802
+      },
+      "first_half": {
+        "eta_mPa_s": 5.276028753178197,
+        "std_mPa_s": 0.3712127246378369,
+        "neff": 16.13968725277552
+      },
+      "second_half": {
+        "eta_mPa_s": 5.789702758753593,
+        "std_mPa_s": 0.45085954936481515,
+        "neff": 16.33017089784509
+      },
+      "replicas_odd": {
+        "eta_mPa_s": 5.1519565441136725,
+        "std_mPa_s": 0.3588365068023273,
+        "neff": 28.350852276252066
+      },
+      "replicas_even": {
+        "eta_mPa_s": 5.883230579926058,
+        "std_mPa_s": 0.44834848622531615,
+        "neff": 24.540546159010145
+      }
+    }
+  }
+]

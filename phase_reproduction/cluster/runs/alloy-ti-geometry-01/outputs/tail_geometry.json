@@ -1,0 +1,2827 @@
+{
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "archive_sha256": "2252830d8cfba7e85568739865fd11456424011786abfaf233252c48587d321a",
+  "equilibrium_energy_eV_cell": -56.069175892752,
+  "atom_types": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cell_A": [
+    [
+      5.889235615362009,
+      0.0,
+      0.0
+    ],
+    [
+      2.9446178076810043,
+      5.1002276517755805,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      4.604627846650802
+    ]
+  ],
+  "relaxed_positions_A": [
+    [
+      -0.009114628102897575,
+      -0.0052622803734376595,
+      0.0
+    ],
+    [
+      1.4814235319433995,
+      0.8553002223360342,
+      2.302313923325401
+    ],
+    [
+      1.457692278825472,
+      2.5796251354276,
+      0.0
+    ],
+    [
+      2.959234432696035,
+      3.3706404583105773,
+      2.302313923325401
+    ],
+    [
+      2.962867029627625,
+      -0.027414092215030238,
+      0.0
+    ],
+    [
+      4.398677489574884,
+      0.877452034177627,
+      2.302313923325401
+    ],
+    [
+      4.4472670066067215,
+      2.5676308199020776,
+      0.0
+    ],
+    [
+      5.858895320276794,
+      3.3826347738360996,
+      2.302313923325401
+    ]
+  ],
+  "worst_positions_A": [
+    [
+      -0.6986475646560381,
+      -0.5901682074133799,
+      0.24261266465686657
+    ],
+    [
+      1.8027457932481528,
+      2.07968077487034,
+      2.3877540338157015
+    ],
+    [
+      1.553369282694942,
+      2.753625744552598,
+      0.9788813221214988
+    ],
+    [
+      2.9853613333475555,
+      3.3254464285629552,
+      3.2626315337731913
+    ],
+    [
+      2.2376979561644244,
+      0.521261860612013,
+      -1.1263326342223525
+    ],
+    [
+      4.628492871671953,
+      0.4070604593147437,
+      1.839829162829429
+    ],
+    [
+      3.9455520603042973,
+      2.212211802864544,
+      0.12464359650118051
+    ],
+    [
+      7.1023707286727475,
+      2.8914882080377335,
+      1.4992360138260876
+    ]
+  ],
+  "checks": [
+    {
+      "block_zero_based": 6,
+      "index_zero_based": 7587,
+      "proposal": "t5",
+      "wall_fraction": 0.9955107173305261,
+      "archived_wall_fraction": 0.9955107173305261,
+      "inside": true,
+      "r2": 565.6841900912898,
+      "archived_r2": 565.6841900912898,
+      "archived_excess_eV_cell": -128360.92757516784,
+      "replayed_excess_eV_cell": -128360.92757516784,
+      "replayed_minus_archived_eV_cell": 0.0,
+      "replay_matches": true,
+      "standalone_MTP_eV_cell": -128392.62330512487,
+      "repeated_64_atom_MTP_eV_cell": -1027140.986441181,
+      "repeat_minus_original_eV_atom": -2.8448994271457195e-09,
+      "fmax_eV_A": 1585218.124932111,
+      "nearest_pair": {
+        "distance_A": 0.6368157928582855,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block_zero_based": 1,
+      "index_zero_based": 3387,
+      "proposal": "t5",
+      "wall_fraction": 0.9874363463860352,
+      "archived_wall_fraction": 0.9874363463860352,
+      "inside": true,
+      "r2": 540.6184183800613,
+      "archived_r2": 540.6184183800613,
+      "archived_excess_eV_cell": -45292.312474935774,
+      "replayed_excess_eV_cell": -45292.312474935774,
+      "replayed_minus_archived_eV_cell": 0.0,
+      "replay_matches": true,
+      "standalone_MTP_eV_cell": -45325.08820543435,
+      "repeated_64_atom_MTP_eV_cell": -362600.7056435169,
+      "repeat_minus_original_eV_atom": -6.575646693818271e-10,
+      "fmax_eV_A": 577365.7457113861,
+      "nearest_pair": {
+        "distance_A": 0.7235481492869017,
+        "sites_zero_based": [
+          3,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block_zero_based": 4,
+      "index_zero_based": 4201,
+      "proposal": "t5",
+      "wall_fraction": 0.9405976689109864,
+      "archived_wall_fraction": 0.9405976689109864,
+      "inside": true,
+      "r2": 353.01108948448797,
+      "archived_r2": 353.01108948448797,
+      "archived_excess_eV_cell": -28547.847484079986,
+      "replayed_excess_eV_cell": -28547.847484079986,
+      "replayed_minus_archived_eV_cell": 0.0,
+      "replay_matches": true,
+      "standalone_MTP_eV_cell": -28588.706588956135,
+      "repeated_64_atom_MTP_eV_cell": -228709.65271053082,
+      "repeat_minus_original_eV_atom": 1.747275746311061e-08,
+      "fmax_eV_A": 17006354.226388223,
+      "nearest_pair": {
+        "distance_A": 0.5947912710952481,
+        "sites_zero_based": [
+          0,
+          1
+        ],
+        "types": [
+          "Al",
+          "Al"
+        ],
+        "image_of_second_atom": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block_zero_based": 5,
+      "index_zero_based": 2151,
+      "proposal": "t5",
+      "wall_fraction": 0.8556001907826302,
+      "archived_wall_fraction": 0.8556001907826302,
+      "inside": true,
+      "r2": 317.5557142635054,
+      "archived_r2": 317.5557142635054,
+      "archived_excess_eV_cell": -13359.348315369933,
+      "replayed_excess_eV_cell": -13359.348315369933,
+      "replayed_minus_archived_eV_cell": 0.0,
+      "replay_matches": true,
+      "standalone_MTP_eV_cell": -13401.735074167149,
+      "repeated_64_atom_MTP_eV_cell": -107213.88059333252,
+      "repeat_minus_original_eV_atom": 7.298694981727749e-11,
+      "fmax_eV_A": 181711.72555905883,
+      "nearest_pair": {
+        "distance_A": 0.824126480197543,
+        "sites_zero_based": [
+          3,
+          6
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "block_zero_based": 0,
+      "index_zero_based": 7417,
+      "proposal": "t5",
+      "wall_fraction": 0.846529244903483,
+      "archived_wall_fraction": 0.846529244903483,
+      "inside": true,
+      "r2": 404.0639563666268,
+      "archived_r2": 404.0639563666268,
+      "archived_excess_eV_cell": -12334.33835217993,
+      "replayed_excess_eV_cell": -12334.33835217993,
+      "replayed_minus_archived_eV_cell": 0.0,
+      "replay_matches": true,
+      "standalone_MTP_eV_cell": -12372.997759216521,
+      "repeated_64_atom_MTP_eV_cell": -98983.98207372511,
+      "repeat_minus_original_eV_atom": 1.1027623258996755e-10,
+      "fmax_eV_A": 168534.88477671542,
+      "nearest_pair": {
+        "distance_A": 1.0446421817730578,
+        "sites_zero_based": [
+          0,
+          1
+        ],
+        "types": [
+          "Al",
+          "Al"
+        ],
+        "image_of_second_atom": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block_zero_based": 2,
+      "index_zero_based": 1793,
+      "proposal": "t5",
+      "wall_fraction": 0.942153057002378,
+      "archived_wall_fraction": 0.942153057002378,
+      "inside": true,
+      "r2": 235.10495517883305,
+      "archived_r2": 235.10495517883305,
+      "archived_excess_eV_cell": -2530.1512890917124,
+      "replayed_excess_eV_cell": -2530.1512890917124,
+      "replayed_minus_archived_eV_cell": 0.0,
+      "replay_matches": true,
+      "standalone_MTP_eV_cell": -2576.090576232676,
+      "repeated_64_atom_MTP_eV_cell": -20608.72460985791,
+      "repeat_minus_original_eV_atom": 5.468336894409731e-11,
+      "fmax_eV_A": 39537.30251615675,
+      "nearest_pair": {
+        "distance_A": 0.9363036253887791,
+        "sites_zero_based": [
+          3,
+          6
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "block_zero_based": 3,
+      "index_zero_based": 5683,
+      "proposal": "t5",
+      "wall_fraction": 0.7908049577151536,
+      "archived_wall_fraction": 0.7908049577151536,
+      "inside": true,
+      "r2": 490.16798184285494,
+      "archived_r2": 490.16798184285494,
+      "archived_excess_eV_cell": -2361.1087615186966,
+      "replayed_excess_eV_cell": -2361.1087615186966,
+      "replayed_minus_archived_eV_cell": 0.0,
+      "replay_matches": true,
+      "standalone_MTP_eV_cell": -2396.058233141584,
+      "repeated_64_atom_MTP_eV_cell": -19168.4658651336,
+      "repeat_minus_original_eV_atom": -1.4495071809506044e-11,
+      "fmax_eV_A": 37108.16844414757,
+      "nearest_pair": {
+        "distance_A": 0.9407360498460691,
+        "sites_zero_based": [
+          6,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "block_zero_based": 7,
+      "index_zero_based": 1539,
+      "proposal": "t5",
+      "wall_fraction": 0.9478153972481118,
+      "archived_wall_fraction": 0.9478153972481118,
+      "inside": true,
+      "r2": 352.0573903285138,
+      "archived_r2": 352.0573903285138,
+      "archived_excess_eV_cell": -137.07475867584432,
+      "replayed_excess_eV_cell": -137.07475867584432,
+      "replayed_minus_archived_eV_cell": 0.0,
+      "replay_matches": true,
+      "standalone_MTP_eV_cell": -177.974955269287,
+      "repeated_64_atom_MTP_eV_cell": -1423.799642154213,
+      "repeat_minus_original_eV_atom": 1.2967404927621828e-12,
+      "fmax_eV_A": 3279.2758773603423,
+      "nearest_pair": {
+        "distance_A": 1.0967795074077584,
+        "sites_zero_based": [
+          2,
+          6
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "worst_replay_matches": true,
+  "path": [
+    {
+      "fraction": 0.0,
+      "energy_eV_cell": -56.069175892752,
+      "relative_to_minimum_eV_cell": 0.0,
+      "directional_derivative_eV_cell": -0.0,
+      "wall_fraction": 0.0223227008730888,
+      "nearest_pair": {
+        "distance_A": 2.820917464659521,
+        "sites_zero_based": [
+          6,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          0,
+          0,
+          -1
+        ]
+      }
+    },
+    {
+      "fraction": 0.01,
+      "energy_eV_cell": -56.066730748363,
+      "relative_to_minimum_eV_cell": 0.00244514438900012,
+      "directional_derivative_eV_cell": 0.4898599741524438,
+      "wall_fraction": 0.023021229198531626,
+      "nearest_pair": {
+        "distance_A": 2.821756284663974,
+        "sites_zero_based": [
+          6,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.02,
+      "energy_eV_cell": -56.059360294363,
+      "relative_to_minimum_eV_cell": 0.009815598388996705,
+      "directional_derivative_eV_cell": 0.9852414183610843,
+      "wall_fraction": 0.02371979487026809,
+      "nearest_pair": {
+        "distance_A": 2.8120989484611223,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.03,
+      "energy_eV_cell": -56.047003878144,
+      "relative_to_minimum_eV_cell": 0.02217201460800311,
+      "directional_derivative_eV_cell": 1.4872353837408743,
+      "wall_fraction": 0.031070080611995517,
+      "nearest_pair": {
+        "distance_A": 2.7898877943620937,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.04,
+      "energy_eV_cell": -56.029589867862,
+      "relative_to_minimum_eV_cell": 0.039586024889999294,
+      "directional_derivative_eV_cell": 1.996945994816404,
+      "wall_fraction": 0.03936321658272647,
+      "nearest_pair": {
+        "distance_A": 2.7676767084423,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.05,
+      "energy_eV_cell": -56.00703561024,
+      "relative_to_minimum_eV_cell": 0.062140282511997214,
+      "directional_derivative_eV_cell": 2.515467855785891,
+      "wall_fraction": 0.04765635255345744,
+      "nearest_pair": {
+        "distance_A": 2.745465692356472,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.06,
+      "energy_eV_cell": -55.979247473449,
+      "relative_to_minimum_eV_cell": 0.08992841930299988,
+      "directional_derivative_eV_cell": 3.043899560622507,
+      "wall_fraction": 0.05594948852418839,
+      "nearest_pair": {
+        "distance_A": 2.723254747813318,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.07,
+      "energy_eV_cell": -55.946120976462,
+      "relative_to_minimum_eV_cell": 0.12305491629000187,
+      "directional_derivative_eV_cell": 3.5833174277741175,
+      "wall_fraction": 0.06424262449491934,
+      "nearest_pair": {
+        "distance_A": 2.701043876577747,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.08,
+      "energy_eV_cell": -55.907541007037,
+      "relative_to_minimum_eV_cell": 0.16163488571500295,
+      "directional_derivative_eV_cell": 4.134768021714095,
+      "wall_fraction": 0.07276279773475695,
+      "nearest_pair": {
+        "distance_A": 2.6788330804731904,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.09,
+      "energy_eV_cell": -55.863382131101,
+      "relative_to_minimum_eV_cell": 0.20579376165100172,
+      "directional_derivative_eV_cell": 4.699264428046062,
+      "wall_fraction": 0.08276708755913689,
+      "nearest_pair": {
+        "distance_A": 2.656622361384057,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.1,
+      "energy_eV_cell": -55.813508996553,
+      "relative_to_minimum_eV_cell": 0.25566689619900274,
+      "directional_derivative_eV_cell": 5.277776233039015,
+      "wall_fraction": 0.09277137738351682,
+      "nearest_pair": {
+        "distance_A": 2.6344117212582963,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.11,
+      "energy_eV_cell": -55.757776834169,
+      "relative_to_minimum_eV_cell": 0.31139905858299954,
+      "directional_derivative_eV_cell": 5.871217399050501,
+      "wall_fraction": 0.10277566720789676,
+      "nearest_pair": {
+        "distance_A": 2.6122011621101042,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.12,
+      "energy_eV_cell": -55.696032057127,
+      "relative_to_minimum_eV_cell": 0.373143835625001,
+      "directional_derivative_eV_cell": 6.480434476993608,
+      "wall_fraction": 0.11277995703227667,
+      "nearest_pair": {
+        "distance_A": 2.5899906860227584,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.13,
+      "energy_eV_cell": -55.628111706289,
+      "relative_to_minimum_eV_cell": 0.4410641864630023,
+      "directional_derivative_eV_cell": 7.1071253787419515,
+      "wall_fraction": 0.12278424685665662,
+      "nearest_pair": {
+        "distance_A": 2.5677802951516076,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.14,
+      "energy_eV_cell": -55.553825029496,
+      "relative_to_minimum_eV_cell": 0.5153508632560033,
+      "directional_derivative_eV_cell": 7.753352996179152,
+      "wall_fraction": 0.13278853668103655,
+      "nearest_pair": {
+        "distance_A": 2.5455699917272163,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.15,
+      "energy_eV_cell": -55.472983392409,
+      "relative_to_minimum_eV_cell": 0.5961925003430011,
+      "directional_derivative_eV_cell": 8.41677929802949,
+      "wall_fraction": 0.1427928265054165,
+      "nearest_pair": {
+        "distance_A": 2.5233597780586696,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.16,
+      "energy_eV_cell": -55.385428138642,
+      "relative_to_minimum_eV_cell": 0.6837477541100014,
+      "directional_derivative_eV_cell": 9.097769911007736,
+      "wall_fraction": 0.15279711632979653,
+      "nearest_pair": {
+        "distance_A": 2.501149656537065,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.17,
+      "energy_eV_cell": -55.290965855341,
+      "relative_to_minimum_eV_cell": 0.7782100374110001,
+      "directional_derivative_eV_cell": 9.797716644575049,
+      "wall_fraction": 0.16280140615417643,
+      "nearest_pair": {
+        "distance_A": 2.478939629639181,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.18,
+      "energy_eV_cell": -55.189414569319,
+      "relative_to_minimum_eV_cell": 0.8797613234330015,
+      "directional_derivative_eV_cell": 10.515473016695859,
+      "wall_fraction": 0.17280569597855636,
+      "nearest_pair": {
+        "distance_A": 2.4567296999313495,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.19,
+      "energy_eV_cell": -55.080598210437,
+      "relative_to_minimum_eV_cell": 0.9885776823149968,
+      "directional_derivative_eV_cell": 11.250646856732077,
+      "wall_fraction": 0.1828099858029363,
+      "nearest_pair": {
+        "distance_A": 2.434519870073543,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.2,
+      "energy_eV_cell": -54.964349165015,
+      "relative_to_minimum_eV_cell": 1.1048267277369987,
+      "directional_derivative_eV_cell": 12.001722852124598,
+      "wall_fraction": 0.19281427562731598,
+      "nearest_pair": {
+        "distance_A": 2.4123101428236797,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.21,
+      "energy_eV_cell": -54.84051166472,
+      "relative_to_minimum_eV_cell": 1.2286642280320024,
+      "directional_derivative_eV_cell": 12.76838852729389,
+      "wall_fraction": 0.20281856545169594,
+      "nearest_pair": {
+        "distance_A": 2.3901005210421764,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.22,
+      "energy_eV_cell": -54.708928933972,
+      "relative_to_minimum_eV_cell": 1.360246958780003,
+      "directional_derivative_eV_cell": 13.550804015679876,
+      "wall_fraction": 0.21282285527607586,
+      "nearest_pair": {
+        "distance_A": 2.367891007696753,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.23,
+      "energy_eV_cell": -54.569444731805,
+      "relative_to_minimum_eV_cell": 1.4997311609470003,
+      "directional_derivative_eV_cell": 14.347807429106737,
+      "wall_fraction": 0.22282714510045576,
+      "nearest_pair": {
+        "distance_A": 2.3456816058675107,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.24,
+      "energy_eV_cell": -54.421925026941,
+      "relative_to_minimum_eV_cell": 1.647250865811003,
+      "directional_derivative_eV_cell": 15.159000967646906,
+      "wall_fraction": 0.2328314349248357,
+      "nearest_pair": {
+        "distance_A": 2.323472318752304,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.25,
+      "energy_eV_cell": -54.266205971085,
+      "relative_to_minimum_eV_cell": 1.8029699216669997,
+      "directional_derivative_eV_cell": 15.987823909859692,
+      "wall_fraction": 0.24283572474921541,
+      "nearest_pair": {
+        "distance_A": 2.3012631496724163,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.26,
+      "energy_eV_cell": -54.102106298695,
+      "relative_to_minimum_eV_cell": 1.9670695940570013,
+      "directional_derivative_eV_cell": 16.835333858261276,
+      "wall_fraction": 0.2528400145735957,
+      "nearest_pair": {
+        "distance_A": 2.279054102078577,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.27,
+      "energy_eV_cell": -53.929432234619,
+      "relative_to_minimum_eV_cell": 2.139743658133,
+      "directional_derivative_eV_cell": 17.702978744150187,
+      "wall_fraction": 0.2628443043979753,
+      "nearest_pair": {
+        "distance_A": 2.2568451795573288,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.28,
+      "energy_eV_cell": -53.747973271142,
+      "relative_to_minimum_eV_cell": 2.3212026216099986,
+      "directional_derivative_eV_cell": 18.592672145421673,
+      "wall_fraction": 0.2728485942223555,
+      "nearest_pair": {
+        "distance_A": 2.2346363858377702,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.29,
+      "energy_eV_cell": -53.557496686938,
+      "relative_to_minimum_eV_cell": 2.511679205813998,
+      "directional_derivative_eV_cell": 19.507049084726304,
+      "wall_fraction": 0.28285288404673514,
+      "nearest_pair": {
+        "distance_A": 2.2124277247987143,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.3,
+      "energy_eV_cell": -53.357740695333,
+      "relative_to_minimum_eV_cell": 2.711435197419,
+      "directional_derivative_eV_cell": 20.44899972611058,
+      "wall_fraction": 0.2928571738711151,
+      "nearest_pair": {
+        "distance_A": 2.190219200476272,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.31,
+      "energy_eV_cell": -53.14841332843,
+      "relative_to_minimum_eV_cell": 2.920762564321997,
+      "directional_derivative_eV_cell": 21.421943372777445,
+      "wall_fraction": 0.3028614636954947,
+      "nearest_pair": {
+        "distance_A": 2.168010817071908,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.32,
+      "energy_eV_cell": -52.929184659013,
+      "relative_to_minimum_eV_cell": 3.1399912337389964,
+      "directional_derivative_eV_cell": 22.430056585431245,
+      "wall_fraction": 0.312865753519875,
+      "nearest_pair": {
+        "distance_A": 2.1458025789609967,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.33,
+      "energy_eV_cell": -52.699708238056,
+      "relative_to_minimum_eV_cell": 3.3694676546960025,
+      "directional_derivative_eV_cell": 23.46892047230126,
+      "wall_fraction": 0.3228700433442546,
+      "nearest_pair": {
+        "distance_A": 2.1235944907019104,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.34,
+      "energy_eV_cell": -52.459664019462,
+      "relative_to_minimum_eV_cell": 3.6095118732900033,
+      "directional_derivative_eV_cell": 24.548643461923845,
+      "wall_fraction": 0.3328743331686346,
+      "nearest_pair": {
+        "distance_A": 2.1013865570456876,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.35000000000000003,
+      "energy_eV_cell": -52.208544362183,
+      "relative_to_minimum_eV_cell": 3.8606315305690018,
+      "directional_derivative_eV_cell": 25.686644271014273,
+      "wall_fraction": 0.3428786229930146,
+      "nearest_pair": {
+        "distance_A": 2.079178782946318,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.36,
+      "energy_eV_cell": -51.945696726358,
+      "relative_to_minimum_eV_cell": 4.123479166393999,
+      "directional_derivative_eV_cell": 26.893703690445776,
+      "wall_fraction": 0.35288291281739453,
+      "nearest_pair": {
+        "distance_A": 2.0569711735716947,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.37,
+      "energy_eV_cell": -51.670439034768,
+      "relative_to_minimum_eV_cell": 4.398736857983998,
+      "directional_derivative_eV_cell": 28.17093563647979,
+      "wall_fraction": 0.36288720264177443,
+      "nearest_pair": {
+        "distance_A": 2.034763734315284,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.38,
+      "energy_eV_cell": -51.381998829206,
+      "relative_to_minimum_eV_cell": 4.687177063546002,
+      "directional_derivative_eV_cell": 29.531818626687027,
+      "wall_fraction": 0.3728914924661544,
+      "nearest_pair": {
+        "distance_A": 2.0125564708085637,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.39,
+      "energy_eV_cell": -51.079507169173,
+      "relative_to_minimum_eV_cell": 4.989668723579001,
+      "directional_derivative_eV_cell": 30.982420117383192,
+      "wall_fraction": 0.38289578229053434,
+      "nearest_pair": {
+        "distance_A": 1.990349388934301,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.4,
+      "energy_eV_cell": -50.761995836887,
+      "relative_to_minimum_eV_cell": 5.307180055864997,
+      "directional_derivative_eV_cell": 32.538658284482516,
+      "wall_fraction": 0.39290007211491423,
+      "nearest_pair": {
+        "distance_A": 1.9681424948407187,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.41000000000000003,
+      "energy_eV_cell": -50.428336728545,
+      "relative_to_minimum_eV_cell": 5.6408391642070015,
+      "directional_derivative_eV_cell": 34.21409785611772,
+      "wall_fraction": 0.4029043619392942,
+      "nearest_pair": {
+        "distance_A": 1.94593579495664,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.42,
+      "energy_eV_cell": -50.077273204331,
+      "relative_to_minimum_eV_cell": 5.991902688421,
+      "directional_derivative_eV_cell": 36.02175827782489,
+      "wall_fraction": 0.412908651763674,
+      "nearest_pair": {
+        "distance_A": 1.923729296007678,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.43,
+      "energy_eV_cell": -49.707415563857,
+      "relative_to_minimum_eV_cell": 6.361760328895002,
+      "directional_derivative_eV_cell": 37.97523964488103,
+      "wall_fraction": 0.4229129415880539,
+      "nearest_pair": {
+        "distance_A": 1.9015230050335548,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.44,
+      "energy_eV_cell": -49.317234799701,
+      "relative_to_minimum_eV_cell": 6.751941093051002,
+      "directional_derivative_eV_cell": 40.08883150501947,
+      "wall_fraction": 0.4329172314124339,
+      "nearest_pair": {
+        "distance_A": 1.8793169294066565,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.45,
+      "energy_eV_cell": -48.905055570067,
+      "relative_to_minimum_eV_cell": 7.164120322685001,
+      "directional_derivative_eV_cell": 42.37751239073735,
+      "wall_fraction": 0.4429215212368139,
+      "nearest_pair": {
+        "distance_A": 1.857111076851912,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.46,
+      "energy_eV_cell": -48.469045375254,
+      "relative_to_minimum_eV_cell": 7.600130517498002,
+      "directional_derivative_eV_cell": 44.85796416515465,
+      "wall_fraction": 0.4529258110611938,
+      "nearest_pair": {
+        "distance_A": 1.8349054554681155,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.47000000000000003,
+      "energy_eV_cell": -48.007195714649,
+      "relative_to_minimum_eV_cell": 8.061980178103,
+      "directional_derivative_eV_cell": 47.54867996083944,
+      "wall_fraction": 0.4629301008855736,
+      "nearest_pair": {
+        "distance_A": 1.8127000737508174,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.48,
+      "energy_eV_cell": -47.517306311627,
+      "relative_to_minimum_eV_cell": 8.551869581124997,
+      "directional_derivative_eV_cell": 50.469466514677094,
+      "wall_fraction": 0.4729343907099536,
+      "nearest_pair": {
+        "distance_A": 1.7904949406169133,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.49,
+      "energy_eV_cell": -46.996951745484,
+      "relative_to_minimum_eV_cell": 9.072224147268003,
+      "directional_derivative_eV_cell": 53.646624222085634,
+      "wall_fraction": 0.48293868053433353,
+      "nearest_pair": {
+        "distance_A": 1.7682900654310898,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.5,
+      "energy_eV_cell": -46.443405878664,
+      "relative_to_minimum_eV_cell": 9.625770014087998,
+      "directional_derivative_eV_cell": 57.115238502640665,
+      "wall_fraction": 0.49294297035871343,
+      "nearest_pair": {
+        "distance_A": 1.7460854580342833,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.51,
+      "energy_eV_cell": -45.853556428303,
+      "relative_to_minimum_eV_cell": 10.215619464448999,
+      "directional_derivative_eV_cell": 60.91218615686253,
+      "wall_fraction": 0.5029472601830933,
+      "nearest_pair": {
+        "distance_A": 1.7238811287743354,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.52,
+      "energy_eV_cell": -45.223915031009,
+      "relative_to_minimum_eV_cell": 10.845260861743,
+      "directional_derivative_eV_cell": 65.08297539101082,
+      "wall_fraction": 0.5129515500074733,
+      "nearest_pair": {
+        "distance_A": 1.7016770885390515,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.53,
+      "energy_eV_cell": -44.550434696382,
+      "relative_to_minimum_eV_cell": 11.518741196370001,
+      "directional_derivative_eV_cell": 69.69245151543124,
+      "wall_fraction": 0.5229558398318532,
+      "nearest_pair": {
+        "distance_A": 1.6794733487918727,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.54,
+      "energy_eV_cell": -43.828336844858,
+      "relative_to_minimum_eV_cell": 12.240839047894,
+      "directional_derivative_eV_cell": 74.82135280479581,
+      "wall_fraction": 0.5329601296562332,
+      "nearest_pair": {
+        "distance_A": 1.6572699216104219,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.55,
+      "energy_eV_cell": -43.051945404529,
+      "relative_to_minimum_eV_cell": 13.017230488223,
+      "directional_derivative_eV_cell": 80.56970844606482,
+      "wall_fraction": 0.5429644194806129,
+      "nearest_pair": {
+        "distance_A": 1.6350668197281786,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.56,
+      "energy_eV_cell": -42.214469328265,
+      "relative_to_minimum_eV_cell": 13.854706564487003,
+      "directional_derivative_eV_cell": 87.06077297596089,
+      "wall_fraction": 0.552968709304993,
+      "nearest_pair": {
+        "distance_A": 1.6128640565796009,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.5700000000000001,
+      "energy_eV_cell": -41.307743565161,
+      "relative_to_minimum_eV_cell": 14.761432327591002,
+      "directional_derivative_eV_cell": 94.44753720573078,
+      "wall_fraction": 0.5629729991293729,
+      "nearest_pair": {
+        "distance_A": 1.5906616463490189,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.58,
+      "energy_eV_cell": -40.321967968083,
+      "relative_to_minimum_eV_cell": 15.747207924668999,
+      "directional_derivative_eV_cell": 102.90076146981826,
+      "wall_fraction": 0.5729772889537527,
+      "nearest_pair": {
+        "distance_A": 1.5684596040236798,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.59,
+      "energy_eV_cell": -39.245535089228,
+      "relative_to_minimum_eV_cell": 16.823640803524,
+      "directional_derivative_eV_cell": 112.61228912633047,
+      "wall_fraction": 0.5829815787781326,
+      "nearest_pair": {
+        "distance_A": 1.546257945451355,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.6,
+      "energy_eV_cell": -38.064835761567,
+      "relative_to_minimum_eV_cell": 18.004340131185003,
+      "directional_derivative_eV_cell": 123.79136506609872,
+      "wall_fraction": 0.5929858686025127,
+      "nearest_pair": {
+        "distance_A": 1.5240566874029822,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.61,
+      "energy_eV_cell": -36.764191871352,
+      "relative_to_minimum_eV_cell": 19.304984021400003,
+      "directional_derivative_eV_cell": 136.62567060806262,
+      "wall_fraction": 0.6029901584268925,
+      "nearest_pair": {
+        "distance_A": 1.501855847640857,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.62,
+      "energy_eV_cell": -35.326362419511,
+      "relative_to_minimum_eV_cell": 20.742813473241,
+      "directional_derivative_eV_cell": 151.24439151604946,
+      "wall_fraction": 0.6129944482512725,
+      "nearest_pair": {
+        "distance_A": 1.4796554449929566,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.63,
+      "energy_eV_cell": -33.733248986377,
+      "relative_to_minimum_eV_cell": 22.335926906375,
+      "directional_derivative_eV_cell": 167.67316936768202,
+      "wall_fraction": 0.6229987380756523,
+      "nearest_pair": {
+        "distance_A": 1.457455499434048,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.64,
+      "energy_eV_cell": -31.967414745709,
+      "relative_to_minimum_eV_cell": 24.101761147043,
+      "directional_derivative_eV_cell": 185.740201311245,
+      "wall_fraction": 0.6330030279000323,
+      "nearest_pair": {
+        "distance_A": 1.435256032174322,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.65,
+      "energy_eV_cell": -30.014566816524,
+      "relative_to_minimum_eV_cell": 26.054609076228,
+      "directional_derivative_eV_cell": 204.9484459625341,
+      "wall_fraction": 0.6430073177244123,
+      "nearest_pair": {
+        "distance_A": 1.4130570657563637,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.66,
+      "energy_eV_cell": -27.868176223356,
+      "relative_to_minimum_eV_cell": 28.200999669396,
+      "directional_derivative_eV_cell": 224.21015371961943,
+      "wall_fraction": 0.6530116075487922,
+      "nearest_pair": {
+        "distance_A": 1.3908586241614107,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.67,
+      "energy_eV_cell": -25.536428553284,
+      "relative_to_minimum_eV_cell": 30.532747339468,
+      "directional_derivative_eV_cell": 241.6106868136796,
+      "wall_fraction": 0.6630158973731721,
+      "nearest_pair": {
+        "distance_A": 1.3686607329259284,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.68,
+      "energy_eV_cell": -23.052527597105,
+      "relative_to_minimum_eV_cell": 33.016648295647,
+      "directional_derivative_eV_cell": 253.98452066193698,
+      "wall_fraction": 0.6730271156848532,
+      "nearest_pair": {
+        "distance_A": 1.346463419269713,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.6900000000000001,
+      "energy_eV_cell": -20.489878486214,
+      "relative_to_minimum_eV_cell": 35.579297406538004,
+      "directional_derivative_eV_cell": 256.32869783396654,
+      "wall_fraction": 0.6831047282362804,
+      "nearest_pair": {
+        "distance_A": 1.324266712236857,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.7000000000000001,
+      "energy_eV_cell": -17.984562007108,
+      "relative_to_minimum_eV_cell": 38.084613885644,
+      "directional_derivative_eV_cell": 240.96684117477963,
+      "wall_fraction": 0.6931823407877077,
+      "nearest_pair": {
+        "distance_A": 1.3020706428511175,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.71,
+      "energy_eV_cell": -15.767041568254,
+      "relative_to_minimum_eV_cell": 40.302134324498,
+      "directional_derivative_eV_cell": 196.48215027165253,
+      "wall_fraction": 0.7032599533391349,
+      "nearest_pair": {
+        "distance_A": 1.2798752442874313,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.72,
+      "energy_eV_cell": -14.206627640035,
+      "relative_to_minimum_eV_cell": 41.862548252717,
+      "directional_derivative_eV_cell": 106.23881255864015,
+      "wall_fraction": 0.7133375658905621,
+      "nearest_pair": {
+        "distance_A": 1.2576805520615644,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.73,
+      "energy_eV_cell": -13.873458124145,
+      "relative_to_minimum_eV_cell": 42.195717768607,
+      "directional_derivative_eV_cell": -53.688812394433754,
+      "wall_fraction": 0.7234151784419895,
+      "nearest_pair": {
+        "distance_A": 1.2354866042401786,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.74,
+      "energy_eV_cell": -15.624071789594,
+      "relative_to_minimum_eV_cell": 40.445104103158,
+      "directional_derivative_eV_cell": -317.1627223227181,
+      "wall_fraction": 0.7334927909934168,
+      "nearest_pair": {
+        "distance_A": 1.2132934416739247,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.75,
+      "energy_eV_cell": -20.717784565997,
+      "relative_to_minimum_eV_cell": 35.351391326755,
+      "directional_derivative_eV_cell": -731.5605540046745,
+      "wall_fraction": 0.743570403544844,
+      "nearest_pair": {
+        "distance_A": 1.1911011082565428,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.76,
+      "energy_eV_cell": -30.974394537881,
+      "relative_to_minimum_eV_cell": 25.094781354871,
+      "directional_derivative_eV_cell": -1362.4990260289317,
+      "wall_fraction": 0.7536480160962714,
+      "nearest_pair": {
+        "distance_A": 1.168909651213452,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.77,
+      "energy_eV_cell": -48.98616583035,
+      "relative_to_minimum_eV_cell": 7.083010062402003,
+      "directional_derivative_eV_cell": -2300.0331739469093,
+      "wall_fraction": 0.7637256286476987,
+      "nearest_pair": {
+        "distance_A": 1.1467191214237784,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.78,
+      "energy_eV_cell": -78.400986879267,
+      "relative_to_minimum_eV_cell": -22.331810986514995,
+      "directional_derivative_eV_cell": -3666.7709637774633,
+      "wall_fraction": 0.7738032411991258,
+      "nearest_pair": {
+        "distance_A": 1.1245295737804641,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.79,
+      "energy_eV_cell": -124.298429642754,
+      "relative_to_minimum_eV_cell": -68.229253750002,
+      "directional_derivative_eV_cell": -5628.4406399751315,
+      "wall_fraction": 0.7838808537505533,
+      "nearest_pair": {
+        "distance_A": 1.1023410675937824,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.8,
+      "energy_eV_cell": -193.686547375552,
+      "relative_to_minimum_eV_cell": -137.61737148280002,
+      "directional_derivative_eV_cell": -8407.599453448838,
+      "wall_fraction": 0.7939584663019804,
+      "nearest_pair": {
+        "distance_A": 1.0801536670445138,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.81,
+      "energy_eV_cell": -296.154996954441,
+      "relative_to_minimum_eV_cell": -240.085821061689,
+      "directional_derivative_eV_cell": -12301.351898707067,
+      "wall_fraction": 0.8040360788534079,
+      "nearest_pair": {
+        "distance_A": 1.0579674416940248,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.8200000000000001,
+      "energy_eV_cell": -444.729844018974,
+      "relative_to_minimum_eV_cell": -388.660668126222,
+      "directional_derivative_eV_cell": -17704.172066403866,
+      "wall_fraction": 0.814113691404835,
+      "nearest_pair": {
+        "distance_A": 1.0357824670597926,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.8300000000000001,
+      "energy_eV_cell": -656.987713844917,
+      "relative_to_minimum_eV_cell": -600.918537952165,
+      "directional_derivative_eV_cell": -25137.20692770835,
+      "wall_fraction": 0.8241913039562624,
+      "nearest_pair": {
+        "distance_A": 1.013598825266347,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.84,
+      "energy_eV_cell": -956.502416785784,
+      "relative_to_minimum_eV_cell": -900.433240893032,
+      "directional_derivative_eV_cell": -35285.78977009326,
+      "wall_fraction": 0.8342689165076895,
+      "nearest_pair": {
+        "distance_A": 0.9914166057834365,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.85,
+      "energy_eV_cell": -1374.716582195832,
+      "relative_to_minimum_eV_cell": -1318.64740630308,
+      "directional_derivative_eV_cell": -49047.331610413625,
+      "wall_fraction": 0.8443465290591168,
+      "nearest_pair": {
+        "distance_A": 0.9692359062653216,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.86,
+      "energy_eV_cell": -1953.355141691833,
+      "relative_to_minimum_eV_cell": -1897.2859657990812,
+      "directional_derivative_eV_cell": -67592.30386729611,
+      "wall_fraction": 0.8544241416105441,
+      "nearest_pair": {
+        "distance_A": 0.9470568335077623,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.87,
+      "energy_eV_cell": -2747.527901697313,
+      "relative_to_minimum_eV_cell": -2691.4587258045613,
+      "directional_derivative_eV_cell": -92441.70321536569,
+      "wall_fraction": 0.8645017541619714,
+      "nearest_pair": {
+        "distance_A": 0.9248795045423595,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.88,
+      "energy_eV_cell": -3829.706405741186,
+      "relative_to_minimum_eV_cell": -3773.637229848434,
+      "directional_derivative_eV_cell": -125565.22988347315,
+      "wall_fraction": 0.8745793667133986,
+      "nearest_pair": {
+        "distance_A": 0.9027040478918164,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.89,
+      "energy_eV_cell": -5294.807620291254,
+      "relative_to_minimum_eV_cell": -5238.738444398502,
+      "directional_derivative_eV_cell": -169505.45177777892,
+      "wall_fraction": 0.8846569792648259,
+      "nearest_pair": {
+        "distance_A": 0.8805306050143862,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.9,
+      "energy_eV_cell": -7266.675913298734,
+      "relative_to_minimum_eV_cell": -7210.606737405981,
+      "directional_derivative_eV_cell": -227534.51460749208,
+      "wall_fraction": 0.8947345918162534,
+      "nearest_pair": {
+        "distance_A": 0.8583593319715884,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.91,
+      "energy_eV_cell": -9906.328069307496,
+      "relative_to_minimum_eV_cell": -9850.258893414744,
+      "directional_derivative_eV_cell": -303851.5483509827,
+      "wall_fraction": 0.9048122043676805,
+      "nearest_pair": {
+        "distance_A": 0.836190401360481,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.92,
+      "energy_eV_cell": -13422.416561949625,
+      "relative_to_minimum_eV_cell": -13366.347386056874,
+      "directional_derivative_eV_cell": -403830.5543654892,
+      "wall_fraction": 0.9148898169191078,
+      "nearest_pair": {
+        "distance_A": 0.8140240045607211,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.93,
+      "energy_eV_cell": -18084.470388392725,
+      "relative_to_minimum_eV_cell": -18028.40121249997,
+      "directional_derivative_eV_cell": -534331.1576075214,
+      "wall_fraction": 0.924967429470535,
+      "nearest_pair": {
+        "distance_A": 0.79186035435784,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.9400000000000001,
+      "energy_eV_cell": -24239.64077549855,
+      "relative_to_minimum_eV_cell": -24183.571599605795,
+      "directional_derivative_eV_cell": -704090.41265848,
+      "wall_fraction": 0.9350450420219624,
+      "nearest_pair": {
+        "distance_A": 0.769699688018227,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.9500000000000001,
+      "energy_eV_cell": -32333.815853051008,
+      "relative_to_minimum_eV_cell": -32277.746677158255,
+      "directional_derivative_eV_cell": -924209.3587324193,
+      "wall_fraction": 0.9451226545733897,
+      "nearest_pair": {
+        "distance_A": 0.7475422709091221,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.96,
+      "energy_eV_cell": -42938.19669016612,
+      "relative_to_minimum_eV_cell": -42882.12751427337,
+      "directional_derivative_eV_cell": -1208762.6312891152,
+      "wall_fraction": 0.9552002671248169,
+      "nearest_pair": {
+        "distance_A": 0.7253884007795817,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.97,
+      "energy_eV_cell": -56782.69189174622,
+      "relative_to_minimum_eV_cell": -56726.62271585347,
+      "directional_derivative_eV_cell": -1575557.9694875865,
+      "wall_fraction": 0.9652778796762441,
+      "nearest_pair": {
+        "distance_A": 0.7032384128474002,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.98,
+      "energy_eV_cell": -74797.80337485886,
+      "relative_to_minimum_eV_cell": -74741.7341989661,
+      "directional_derivative_eV_cell": -2047081.47739298,
+      "wall_fraction": 0.9753554922276715,
+      "nearest_pair": {
+        "distance_A": 0.6810926858744575,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 0.99,
+      "energy_eV_cell": -98167.07083260853,
+      "relative_to_minimum_eV_cell": -98111.00165671577,
+      "directional_derivative_eV_cell": -2651672.0861680824,
+      "wall_fraction": 0.9854331047790988,
+      "nearest_pair": {
+        "distance_A": 0.658951649461639,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "fraction": 1.0,
+      "energy_eV_cell": -128392.62330512487,
+      "relative_to_minimum_eV_cell": -128336.55412923211,
+      "directional_derivative_eV_cell": -3424978.2454668498,
+      "wall_fraction": 0.9955107173305261,
+      "nearest_pair": {
+        "distance_A": 0.6368157928582855,
+        "sites_zero_based": [
+          2,
+          7
+        ],
+        "types": [
+          "Ti",
+          "Ti"
+        ],
+        "image_of_second_atom": [
+          -1,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "maximum_sampled_along_linear_path": {
+    "fraction": 0.73,
+    "energy_eV_cell": -13.873458124145,
+    "relative_to_minimum_eV_cell": 42.195717768607,
+    "directional_derivative_eV_cell": -53.688812394433754,
+    "wall_fraction": 0.7234151784419895,
+    "nearest_pair": {
+      "distance_A": 1.2354866042401786,
+      "sites_zero_based": [
+        2,
+        7
+      ],
+      "types": [
+        "Ti",
+        "Ti"
+      ],
+      "image_of_second_atom": [
+        -1,
+        0,
+        0
+      ]
+    }
+  },
+  "max_path_wall_fraction": 0.9955107173305261,
+  "restricted_by_pair_distance_A": {
+    "0.0": {
+      "proposal_draws_kept": 65399,
+      "harmonic_probability_within_wall_and_cut": 1.001174302876795,
+      "harmonic_probability_block_se": 0.0022531654281600895,
+      "restricted_MTP_minus_unrestricted_harmonic_eV_cell": {
+        "value_eV_cell": -128340.02225249978,
+        "jackknife_se_eV_cell": 72684.13706705807
+      },
+      "restricted_MTP_minus_equally_restricted_harmonic_eV_cell": -128340.02215136556,
+      "endpoint_excess_eV_cell": {
+        "value_eV_cell": -128360.92757516784,
+        "jackknife_se_eV_cell": 72685.03821270306
+      },
+      "effective_samples": 1.0,
+      "largest_weight": 1.0,
+      "minimum_retained_MTP_eV_cell": -128392.62330512487
+    },
+    "1.68052": {
+      "proposal_draws_kept": 65027,
+      "harmonic_probability_within_wall_and_cut": 1.0011743027621054,
+      "harmonic_probability_block_se": 0.002253165410532366,
+      "restricted_MTP_minus_unrestricted_harmonic_eV_cell": {
+        "value_eV_cell": 0.015519973873357202,
+        "jackknife_se_eV_cell": 0.0008217443792309186
+      },
+      "restricted_MTP_minus_equally_restricted_harmonic_eV_cell": 0.015621108086396617,
+      "endpoint_excess_eV_cell": {
+        "value_eV_cell": -0.027300067929519424,
+        "jackknife_se_eV_cell": 0.00464386180619012
+      },
+      "effective_samples": 13009.850073673048,
+      "largest_weight": 0.0047700439905770265,
+      "minimum_retained_MTP_eV_cell": -55.984723530385
+    },
+    "1.8": {
+      "proposal_draws_kept": 64684,
+      "harmonic_probability_within_wall_and_cut": 1.0011743023221966,
+      "harmonic_probability_block_se": 0.002253165306530169,
+      "restricted_MTP_minus_unrestricted_harmonic_eV_cell": {
+        "value_eV_cell": 0.015519973873357202,
+        "jackknife_se_eV_cell": 0.0008217443792309186
+      },
+      "restricted_MTP_minus_equally_restricted_harmonic_eV_cell": 0.015621108048532676,
+      "endpoint_excess_eV_cell": {
+        "value_eV_cell": -0.02730006792951955,
+        "jackknife_se_eV_cell": 0.004643861806190095
+      },
+      "effective_samples": 13009.85007367305,
+      "largest_weight": 0.0047700439905770265,
+      "minimum_retained_MTP_eV_cell": -55.984723530385
+    },
+    "2.0": {
+      "proposal_draws_kept": 63553,
+      "harmonic_probability_within_wall_and_cut": 1.0011686844936833,
+      "harmonic_probability_block_se": 0.002253333164129799,
+      "restricted_MTP_minus_unrestricted_harmonic_eV_cell": {
+        "value_eV_cell": 0.015519974326723416,
+        "jackknife_se_eV_cell": 0.0008217443930200316
+      },
+      "restricted_MTP_minus_equally_restricted_harmonic_eV_cell": 0.01562062496135836,
+      "endpoint_excess_eV_cell": {
+        "value_eV_cell": -0.027300069842319863,
+        "jackknife_se_eV_cell": 0.0046438616254287956
+      },
+      "effective_samples": 13009.849936781622,
+      "largest_weight": 0.004770044015672687,
+      "minimum_retained_MTP_eV_cell": -55.984723530385
+    },
+    "2.2": {
+      "proposal_draws_kept": 60100,
+      "harmonic_probability_within_wall_and_cut": 0.9993645347916387,
+      "harmonic_probability_block_se": 0.002267009004472608,
+      "restricted_MTP_minus_unrestricted_harmonic_eV_cell": {
+        "value_eV_cell": 0.015530374245051933,
+        "jackknife_se_eV_cell": 0.0008228807243493904
+      },
+      "restricted_MTP_minus_equally_restricted_harmonic_eV_cell": 0.015475596683821348,
+      "endpoint_excess_eV_cell": {
+        "value_eV_cell": -0.02731109844550986,
+        "jackknife_se_eV_cell": 0.004644199815441776
+      },
+      "effective_samples": 13006.76647344855,
+      "largest_weight": 0.004770619728138462,
+      "minimum_retained_MTP_eV_cell": -55.984723530385
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "dpa4-n200-pilot-20261106-02",
+  "remote_root": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02",
+  "model": {
+    "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+    "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+  },
+  "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+  "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+  "authorization": {
+    "current_request": "2026-11-06: N200, baseline, original phonons, pilot DPA4 PBE/r2SCAN",
+    "prior_policy_source": "phonons/config/protocol.json",
+    "prior_policy_sha256": "7896a01ab426b68d1c05d016bbd7c7b2cadf6d94b907010317a728905e92456c",
+    "no_new_DFT": true,
+    "cumulative_agent_imposed_limit": null
+  },
+  "allocation": {
+    "account": "imet-2026-2",
+    "CPU": {
+      "partition": "apollo",
+      "cpus": 4,
+      "memory": "24G",
+      "time": "00:45:00"
+    },
+    "GPU": {
+      "partition": "v100",
+      "gpus": 1,
+      "cpus": 4,
+      "memory": "40G",
+      "time": "04:00:00"
+    },
+    "existing_jobs_not_modified": true
+  },
+  "gates": {
+    "B0": "native/export, symmetry, energy-force/virial finite differences; all evaluation artifacts saved",
+    "H0": "DFT force/band reconstruction, matched original FM response, diagnostics"
+  },
+  "pilot": {
+    "XCs": [
+      "PBE",
+      "r2SCAN"
+    ],
+    "methods": [
+      "lora16",
+      "full"
+    ],
+    "N": 200,
+    "validation": 149,
+    "test": 149,
+    "seed": 10,
+    "epochs": 50,
+    "checkpoint_selection": "fixed final 50 epoch checkpoint; development may diagnose convergence; no test-driven selection"
+  }
+}

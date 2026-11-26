@@ -1,0 +1,35 @@
+[
+  {
+    "model": "atat_static",
+    "T_K": 1000.0,
+    "N": 5120,
+    "windows": 35,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 11.122006646208224,
+        "alpha2_at_pct": 22.290750018220702,
+        "window_edge": false
+      }
+    ],
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "alpha_95": [
+        11.094903743223352,
+        11.147786291951066
+      ],
+      "alpha2_95": [
+        22.240638763772505,
+        22.33678878627134
+      ],
+      "width_95": [
+        11.119712684696772,
+        11.22325776494231
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 33
+    }
+  }
+]

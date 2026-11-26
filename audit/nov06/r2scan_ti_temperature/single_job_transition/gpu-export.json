@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "unix": 1793940610.7515876,
+  "job_id": "20988268",
+  "device": "NVIDIA A100-PCIE-40GB",
+  "path": "/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2",
+  "sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380",
+  "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+  "checkpoint_internal_step": 23199,
+  "atomic_virial": true,
+  "equivalence": [
+    {
+      "id": "Ti_1873K",
+      "E_max_eV_atom": 6.053598688993134e-08,
+      "F_max_eV_A": 5.593847626439441e-06,
+      "virial_max_eV": 0.000381320344288838
+    },
+    {
+      "id": "Ti_1941K",
+      "E_max_eV_atom": 9.336510764512695e-08,
+      "F_max_eV_A": 7.486098187570178e-06,
+      "virial_max_eV": 0.00033592555402606195
+    },
+    {
+      "id": "Ti_2000K",
+      "E_max_eV_atom": 5.5646543373200075e-08,
+      "F_max_eV_A": 7.3615521696268615e-06,
+      "virial_max_eV": 0.00024769835863480694
+    },
+    {
+      "id": "Ti_2100K",
+      "E_max_eV_atom": 8.242206739339508e-08,
+      "F_max_eV_A": 6.616390672231631e-06,
+      "virial_max_eV": 0.00028453390277860535
+    }
+  ],
+  "method": "Same freeze_sezm_to_pt2(cuda:0,atomic_virial=True) as previously validated PBE15k A100 workflow; unchanged native weights"
+}

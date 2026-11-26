@@ -1,0 +1,128 @@
+{
+  "reviewed_unix": 1793336516.7150037,
+  "temperature_K": 2000,
+  "n_replicas": 5,
+  "summary_sha256": "cc3b02feb6bb3c758e0757e4a4ec2e12f262fc05d56f9e4bc333319122e50123",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 2.9556353516344,
+      "eta_std_mPa_s": 0.17334079721418966,
+      "relative_std": 0.05864755850830384,
+      "neff": 65.05504614303251,
+      "tau_exp_ps": 0.1916904555724638,
+      "tau_int_ps": 0.11614280469180654,
+      "cost_z": 0.21837332887340716,
+      "criterion_z": -0.14960848424073273
+    },
+    "first20ps": {
+      "eta_mPa_s": 3.0414106484428887,
+      "eta_std_mPa_s": 0.31425285354052535,
+      "relative_std": 0.10332470352249652,
+      "neff": 43.622556332301826,
+      "tau_exp_ps": 0.18237955781731527,
+      "tau_int_ps": 0.11695949520235809,
+      "cost_z": 0.30043779146082455,
+      "criterion_z": 0.39802548152641315
+    },
+    "second20ps": {
+      "eta_mPa_s": 2.1933634376763362,
+      "eta_std_mPa_s": 0.11546596055065829,
+      "relative_std": 0.0526433324123355,
+      "neff": 142.57654176828814,
+      "tau_exp_ps": 0.07930563001586452,
+      "tau_int_ps": 0.08811219208107329,
+      "cost_z": 1.0163489515409045,
+      "criterion_z": 6.334455374323646
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs_5k_percent": 4.110353018107182,
+      "vs_historical15k_percent": 8.502587768222147
+    },
+    "first20ps": {
+      "vs_5k_percent": 7.131732643312483,
+      "vs_historical15k_percent": 11.651434145757156
+    },
+    "second20ps": {
+      "vs_5k_percent": -22.740184553815457,
+      "vs_historical15k_percent": -19.48072729185437
+    }
+  },
+  "reference_5k": {
+    "eta_mPa_s": 2.838944702377819,
+    "eta_std_mPa_s": 0.0691135418479619,
+    "n_replicas": 50,
+    "duration_ps": 20
+  },
+  "reference_historical15k": {
+    "eta_mPa_s": 2.72402291265908,
+    "eta_std_mPa_s": 0.09203048407512719,
+    "n_replicas": 20,
+    "duration_ps": 20
+  },
+  "new_batch_40ps": {
+    "eta_mPa_s": 2.9556353516344,
+    "eta_std_mPa_s": 0.17334079721418966,
+    "relative_std": 0.05864755850830384,
+    "neff": 65.05504614303251,
+    "tau_exp_ps": 0.1916904555724638,
+    "tau_int_ps": 0.11614280469180654,
+    "cost_z": 0.21837332887340716,
+    "criterion_z": -0.14960848424073273
+  },
+  "previous_replicas_40ps": null,
+  "new_batch_z": null,
+  "new_batch_comparison_note": "First five new replicas: no previous independent new-series batch exists. Historical exports remain separate.",
+  "checks": [
+    {
+      "id": "Ti_2000K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": false,
+        "window_fit_diagnostics": false
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.2579045867537565
+    }
+  ],
+  "pass_streak": 0,
+  "visual_review": {
+    "files": [
+      "convergence.png",
+      "40ps/spectrum.png",
+      "40ps/extras.png",
+      "first20ps/spectrum.png",
+      "first20ps/extras.png",
+      "second20ps/spectrum.png",
+      "second20ps/extras.png",
+      "figure7_current.png"
+    ],
+    "notes": "Full40ps selects low-frequency cutoff around1.6THz and passes cost/cutoff. First20ps selects around2.1THz with a secondary high-frequency weight mode; selected diagnostics pass. Second20ps is dominated by cutoff around7THz, has cutoff Z6.334 and strongly cutoff-dependent eta; model uncertainty widens markedly across the spectrum. The lower second20ps estimate must not be interpreted as physical drift. Max20/40 discrepancy25.79%. Figure7 now shows all three temperatures, readable error bars and N labels; fixed composition panel and historical series preserved."
+  },
+  "verification": "Collection: job20962153 RUNNING, one A100, completed2100/1873/2000=10/10/6, 2000 replica7 production. Preflight, native/frozen checkpoint and protocol hashes PASS; 512Ti. Actual2000K input and V/(kB*T) state-temperature normalization checked. No current failure.",
+  "article_compile": "PASS; updater exit0",
+  "caveats": [
+    "Cumulative and20/40ps estimates are correlated.",
+    "Historical5k and exported15k not pooled.",
+    "Sampling stopping rule is heuristic; errors exclude model/protocol bias."
+  ],
+  "posthoc_cutoff_diagnostic": {
+    "path": "diagnostics/Ti_2000K_N5_cutoff/assessment_RU.txt",
+    "results": "diagnostics/Ti_2000K_N5_cutoff/diagnostic_results.json",
+    "script_sha256": "bde5c793c49f3b9d9b0b562c57aec5c70017082528e80c488c85594acd488d6a",
+    "automatic_difference_mPa_s": 0.8480472107290637,
+    "fixed_1p5THz_difference_mPa_s": 0.30366068039197786,
+    "paired_jackknife_SE_mPa_s": 0.34650693801510735,
+    "paired_swap_p": 0.5,
+    "original_results_unchanged": true,
+    "conclusion": "Main discrepancy is cutoff sensitivity; residual difference at common low cutoff is compatible with sampling noise. Five pairs insufficient to exclude systematic effects."
+  }
+}

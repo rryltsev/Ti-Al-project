@@ -1,0 +1,20 @@
+{
+  "status": "FAILED_BEFORE_OPTIMIZATION",
+  "reason": "verify_case.sha expected pathlib.Path but received source.path string; AttributeError. Fixed by Path(p).read_bytes().",
+  "optimizer_steps_executed": 0,
+  "failed_GPU_array_jobs": [
+    "20988557",
+    "20988566"
+  ],
+  "failed_QC_jobs": [
+    "20988560",
+    "20988568"
+  ],
+  "failure_visible_aggregators": [
+    "20988563",
+    "20988570"
+  ],
+  "GPU_allocated_seconds": 13,
+  "retry_run": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-replicates-full-20261106-02",
+  "utc": "2026-11-06T14:11:12.106449+00:00"
+}

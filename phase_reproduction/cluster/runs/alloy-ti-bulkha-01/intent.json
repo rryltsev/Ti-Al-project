@@ -1,0 +1,31 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/alloy-ti-bulkha-01",
+  "utc": "2026-11-25T02:43:16.666291+00:00",
+  "job_name": "ta-alloy-ti-bulkha-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=3",
+    "--mem=5G",
+    "--time=30",
+    "--job-name=ta-alloy-ti-bulkha-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "dfbdccc01f7b9176d81977ebd7bcd29a95f1990248861766b443d6e48aa19535",
+    "bulk_ha.py": "793f2f9f8d3f2536cc72db9a763ec9d848e03f48e0aea73801eb8af3dd0a03f2",
+    "decorations.py": "f24bb18c0fcd701d3209674f4c013b05626d484bf504619434994f04faef4eec",
+    "hcp_orbits.py": "50b78ef8da95ee8beca65dd5f7a1c792109d89fc7e92bfe50ee4a848bc01deea",
+    "label_cell.py": "3efe48cd9866055cbd19b3a4fdfae24b86305955c928a1d7858c450b52f1011f",
+    "mtp_cfg.py": "8326d00eb692d2e19dab513b3d918041966906d784109eb9d04361dc8c7d7727",
+    "fitted.mtp": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661"
+  }
+}

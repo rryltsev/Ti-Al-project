@@ -1,0 +1,21 @@
+{
+  "key": "GPU-analysis",
+  "job_id": "20989428",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=1",
+    "--mem=12G",
+    "--time=00:15:00",
+    "--dependency=afterany:20989427",
+    "--job-name=TiAl-GRACE-fp-A100-QC",
+    "--output=GPU-analysis-%j.log",
+    "analysis.sbatch",
+    "gpu"
+  ],
+  "utc": "2026-11-07T16:31:03.682903+00:00"
+}

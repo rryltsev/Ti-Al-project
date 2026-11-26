@@ -1,0 +1,180 @@
+{
+  "protocol": {
+    "geometry": "same DFT-PBE equilibrium geometry",
+    "supercell": [
+      4,
+      4,
+      3
+    ],
+    "displacements_A": 0.01,
+    "q_mesh": [
+      50,
+      50,
+      50
+    ],
+    "Gamma_centered": true,
+    "sigma_THz": 0.05,
+    "mass_amu": 47.867,
+    "integral_per_atom": 3,
+    "force_processing": "mean force removal; odd central pair; symfc projector; ASR polishing"
+  },
+  "models": {
+    "5000": {
+      "checkpoint": 5000,
+      "sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac",
+      "job_id": "20973059"
+    },
+    "15000": {
+      "checkpoint": 15000,
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "job_id": "20973104"
+    },
+    "20000": {
+      "checkpoint": 20000,
+      "sha256": "3b0b4b69f8fca7be5bae4a5f24498aac904efad08f126f4a57de035e0379c67e",
+      "job_id": "20976314"
+    }
+  },
+  "statistics": {
+    "DFT": {
+      "integral_before_rescale": 2.9999999999999876,
+      "integral": 3.0,
+      "peak_frequency_THz": 7.0140000000000065,
+      "peak_height_per_atom_THz": 0.9018946969058352,
+      "min_mode_THz": -1.9348512893167248e-07,
+      "max_mode_THz": 8.375890715372075
+    },
+    "5000": {
+      "integral_before_rescale": 2.9999999999999876,
+      "integral": 2.9999999999999996,
+      "peak_frequency_THz": 6.906000000000007,
+      "peak_height_per_atom_THz": 0.9690323564719732,
+      "min_mode_THz": -1.7626374237445258e-07,
+      "max_mode_THz": 8.142556230112353,
+      "normalized_L1_DOS_difference": 0.20695934226705112,
+      "DOS_RMSE_0_to_9_THz": 0.09956210080650779
+    },
+    "15000": {
+      "integral_before_rescale": 2.999999999999987,
+      "integral": 3.0,
+      "peak_frequency_THz": 7.050000000000007,
+      "peak_height_per_atom_THz": 1.1074424141469532,
+      "min_mode_THz": 1.973400140217103e-08,
+      "max_mode_THz": 8.180695722967917,
+      "normalized_L1_DOS_difference": 0.16895880101309668,
+      "DOS_RMSE_0_to_9_THz": 0.07926732886417096
+    },
+    "20000": {
+      "integral_before_rescale": 2.9999999999999876,
+      "integral": 3.0,
+      "peak_frequency_THz": 7.166000000000007,
+      "peak_height_per_atom_THz": 1.103440419689291,
+      "min_mode_THz": -8.68762406971539e-08,
+      "max_mode_THz": 8.319097122583527,
+      "normalized_L1_DOS_difference": 0.20560596959321367,
+      "DOS_RMSE_0_to_9_THz": 0.10763460159210937
+    }
+  },
+  "force_diagnostics": {
+    "5000": {
+      "reference_max_force_eV_A": 1.1251392885646335e-06,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          -4.87890977618477e-19
+        ],
+        [
+          0.0,
+          0.0,
+          4.87890977618477e-19
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 9.062629119371834e-15,
+        "translation_other_index_max_eV_A2": 9.062629119371834e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 3.421198468182299e-11,
+      "ASR_max_change_eV_A2": 7.233947831741805e-05,
+      "gamma_THz": [
+        -1.7626374237445258e-07,
+        1.4076770418758587e-07,
+        1.5692300518717506e-07,
+        3.971023641429678,
+        3.971023643067654,
+        5.409857181167072
+      ],
+      "min_frequency_THz": -1.7626374237445258e-07,
+      "max_frequency_THz": 8.142556230112353,
+      "imaginary_modes_below_minus_0p001_THz": 0
+    },
+    "15000": {
+      "reference_max_force_eV_A": 9.688574875342978e-07,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          1.5178830414797062e-18
+        ],
+        [
+          0.0,
+          0.0,
+          5.421010862427522e-19
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 8.954642582992278e-15,
+        "translation_other_index_max_eV_A2": 8.954642582992278e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 3.180793225628339e-11,
+      "ASR_max_change_eV_A2": 7.060636331535086e-05,
+      "gamma_THz": [
+        1.973400140217103e-08,
+        9.034877549416948e-08,
+        1.371186032376607e-07,
+        3.7999183275725006,
+        3.7999183293694125,
+        4.903233387950146
+      ],
+      "min_frequency_THz": 1.973400140217103e-08,
+      "max_frequency_THz": 8.180695722967917,
+      "imaginary_modes_below_minus_0p001_THz": 0
+    },
+    "20000": {
+      "reference_max_force_eV_A": 1.1586911449006614e-06,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          3.2526065174565133e-19
+        ],
+        [
+          0.0,
+          0.0,
+          -5.421010862427522e-20
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 9.575673587391975e-15,
+        "translation_other_index_max_eV_A2": 9.575673587391975e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 3.5592335332724755e-11,
+      "ASR_max_change_eV_A2": 6.400556437036187e-05,
+      "gamma_THz": [
+        -8.68762406971539e-08,
+        9.9337511555207e-08,
+        1.497198226223446e-07,
+        4.036927638471315,
+        4.0369276402014735,
+        5.042736501106625
+      ],
+      "min_frequency_THz": -8.68762406971539e-08,
+      "max_frequency_THz": 8.319097122583527,
+      "imaginary_modes_below_minus_0p001_THz": 0
+    }
+  },
+  "qualification": "DFT numerical and supercell convergence not yet established. DOS mismatch alone does not select a universally best checkpoint."
+}

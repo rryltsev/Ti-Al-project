@@ -1,0 +1,43 @@
+% !TeX program = xelatex
+% Все таблицы и координаты точек встроены в сгенерированный исходник.
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[russian]{babel}
+\IfFontExistsTF{Cambria}{\setmainfont{Cambria}}{\setmainfont{DejaVu Serif}}
+\IfFontExistsTF{Calibri}{\setsansfont{Calibri}}{\setsansfont{DejaVu Sans}}
+\usepackage[a4paper,left=20mm,right=20mm,top=20mm,bottom=19mm,headheight=15pt,headsep=5mm,footskip=9mm]{geometry}
+\usepackage{amsmath,booktabs,xcolor,fancyhdr,hyperref,pgfplots,caption,titlesec}
+\pgfplotsset{compat=1.16}
+\definecolor{ink}{HTML}{173541}\definecolor{loose}{HTML}{176F78}\definecolor{tight}{HTML}{A44938}
+\definecolor{muted}{HTML}{50656D}\definecolor{hair}{HTML}{CAD4D7}
+\hypersetup{unicode=true,colorlinks=true,linkcolor=loose,urlcolor=loose,pdftitle={Ti–Al. Чувствительность сольвуса к амплитуде смещений}}
+\captionsetup{font=small,labelfont={bf,color=loose},labelsep=period,singlelinecheck=false}
+\titleformat{\section}{\sffamily\bfseries\Large\color{ink}}{}{0pt}{}
+\titleformat{\subsection}{\sffamily\bfseries\large\color{ink}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{4pt}{6pt}\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.12}\raggedbottom\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{muted}Ti--Al\quad/ \quad Амплитуда тепловых смещений}
+\fancyhead[R]{\small\sffamily\color{muted}2304 атома\quad/\quad \(p=0\)}
+\fancyfoot[R]{\small\sffamily\color{muted}\thepage}\renewcommand{\headrulewidth}{.25pt}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\bfseries\fontsize{22}{24}\selectfont\color{ink}Как ограничение смещений меняет\\вершину сольвуса \(\alpha/\alpha_2\) в Ti--Al?\par}
+{\large\sffamily\color{muted}Прямое сравнение двух кристаллических ансамблей на MTP Qi\par}
+\vspace{1mm}{\color{loose}\rule{\linewidth}{1.1pt}}
+@OVERVIEW@
+@POOLED@
+@PLOT@
+@INTERPRETATION@
+\clearpage
+\section*{Проверка двух границ при 1243 К}
+@FIELDS@
+@CONTACTS@
+@SUPPORT@
+\clearpage
+@INFERENCE@
+@SAMPLING@
+\clearpage
+@METHOD@
+@GEOMETRY@
+\end{document}

@@ -1,0 +1,57 @@
+{
+  "unix": 1793933363.9818413,
+  "status": "FOUR_JOBS_QUEUED",
+  "jobs": [
+    {
+      "T": 1873,
+      "job_id": "20988268",
+      "legacy_replicas": 30,
+      "legacy_eta": 3.69844142093711,
+      "legacy_formal_SE": 0.11898461448185065,
+      "pressure_error_bar": 0.06991796753936796,
+      "state": "PENDING",
+      "requested_a100": 1
+    },
+    {
+      "T": 1941,
+      "job_id": "20988269",
+      "legacy_replicas": 15,
+      "legacy_eta": 3.5599720482364896,
+      "legacy_formal_SE": 0.17155058990669847,
+      "pressure_error_bar": 0.07556792135346768,
+      "state": "PENDING",
+      "requested_a100": 1
+    },
+    {
+      "T": 2000,
+      "job_id": "20988270",
+      "legacy_replicas": 15,
+      "legacy_eta": 3.297652830525588,
+      "legacy_formal_SE": 0.14403026618163328,
+      "pressure_error_bar": 0.05835169014949315,
+      "state": "PENDING",
+      "requested_a100": 1
+    },
+    {
+      "T": 2100,
+      "job_id": "20988271",
+      "legacy_replicas": 15,
+      "legacy_eta": 2.9943408613114526,
+      "legacy_formal_SE": 0.12379301505735524,
+      "pressure_error_bar": 0.07923205493352725,
+      "state": "PENDING",
+      "requested_a100": 1
+    }
+  ],
+  "distinct_legacy_replicas": 75,
+  "max_legacy_pressure_error_bar": 0.07923205493352725,
+  "physical_a100_available": 2,
+  "initial_sbatch_calls": 4,
+  "pbe_restart_forbidden": true,
+  "pbe_current_batches_targets": {
+    "Ti_2100K": 45,
+    "Ti_1941K": 35
+  },
+  "monitor_updated": true,
+  "article_profile_changed": false
+}

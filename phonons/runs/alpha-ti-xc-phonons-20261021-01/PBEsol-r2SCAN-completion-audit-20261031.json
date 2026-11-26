@@ -1,0 +1,122 @@
+{
+  "PBEsol": {
+    "job_id": "20968907",
+    "functional": "PBEsol",
+    "step": "force-000",
+    "accepted": true,
+    "scientific_scope": "One reference supercell; DOS and convergence diagnostics remain incomplete",
+    "scheduler_state": "COMPLETED",
+    "exit_code": "0:0",
+    "end_local": "2026-10-31T20:55:40+05:00",
+    "elapsed": "11:09:00",
+    "scf_iterations": 28,
+    "final_energy_change_eV": -8.7166e-09,
+    "final_band_energy_change_eV": 1.9781e-10,
+    "ediff_eV": 1e-08,
+    "EDIFF_reached": true,
+    "normal_termination": true,
+    "supercell": [
+      4,
+      4,
+      3
+    ],
+    "atoms": 96,
+    "kmesh": [
+      6,
+      6,
+      6
+    ],
+    "encut_eV": 550,
+    "displaced_atom_1based": null,
+    "displacement_A": [
+      0,
+      0,
+      0
+    ],
+    "displacement_norm_A": 0,
+    "forces_XML_OUTCAR_max_component_difference_eV_A": 5e-07,
+    "forces_NPY_XML_identical": true,
+    "force_sum_eV_A": [
+      -1.9999999999999914e-08,
+      3.9999999999996547e-08,
+      4.235164736271502e-22
+    ],
+    "max_force_eV_A": 2.973785466371103e-06,
+    "equilibrium_max_force_eV_A": 3.028200785945344e-07,
+    "equilibrium_max_stress_kbar": 0.00982509,
+    "input_hashes": {
+      "POSCAR": "5dd85e46e4186282f30edc44a8a345b75cc260a34471ac2f324c8c1b010ed8a6",
+      "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba",
+      "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+      "INCAR": "7025a8b56b4414ec80a9cde6a7faa108250bc8a815d22f59f4a6b4faa3f1f001"
+    },
+    "output_hashes": {
+      "OUTCAR": "801e591503509e97022ae94d62b42a0e1d9f0c92c43ad0628a878eaa3e50bddc",
+      "vasprun.xml": "0012b105a3c94967c7b93a7853c22224a9f77e8325adac30e9b83ab00632f91c",
+      "forces.npy": "cc17129e31d2c3042c54472bca2e3f5afaa9566e2c7d6319015fb32176e5a0ac",
+      "CONTCAR": "c9d66dc1d8869d1d8b6cd054254959bddd6a7651f91ed0ed68642d475d6115ed"
+    },
+    "reference_supercell_max_stress_kbar": 0.20490801000000003,
+    "stress_note": "Primitive equilibrium gate passed; supercell stress is recorded separately for cutoff/kmesh diagnostics. Electronic convergence does not establish stress or force convergence.",
+    "finish_before_planned_softstop_seconds": 10260
+  },
+  "r2SCAN": {
+    "job_id": "20968910",
+    "functional": "r2SCAN",
+    "step": "force-001",
+    "accepted": true,
+    "scientific_scope": "One displaced supercell; DOS and convergence diagnostics remain incomplete",
+    "scheduler_state": "COMPLETED",
+    "exit_code": "0:0",
+    "end_local": "2026-10-31T20:44:37+05:00",
+    "elapsed": "08:18:35",
+    "scf_iterations": 10,
+    "final_energy_change_eV": -1.1496e-09,
+    "final_band_energy_change_eV": -1.3536e-09,
+    "ediff_eV": 1e-08,
+    "EDIFF_reached": true,
+    "normal_termination": true,
+    "supercell": [
+      4,
+      4,
+      3
+    ],
+    "atoms": 96,
+    "kmesh": [
+      6,
+      6,
+      6
+    ],
+    "encut_eV": 550,
+    "displaced_atom_1based": 1,
+    "displacement_A": [
+      0.006449428254494202,
+      0.0,
+      0.0076423082370526045
+    ],
+    "displacement_norm_A": 0.01,
+    "forces_XML_OUTCAR_max_component_difference_eV_A": 5.000000000000054e-07,
+    "forces_NPY_XML_identical": true,
+    "force_sum_eV_A": [
+      5.00000000101114e-08,
+      1.0000000003410059e-08,
+      -2.999999999635239e-08
+    ],
+    "max_force_eV_A": 0.0709074080782932,
+    "equilibrium_max_force_eV_A": 1.7485302399443942e-05,
+    "equilibrium_max_stress_kbar": 0.012326440000000001,
+    "input_hashes": {
+      "INCAR": "4c7777d0d484028f0c1a0b26b0c256ebb66bfc045521d6acfee23ae4d2fd1c25",
+      "POSCAR": "c3f0600bcab963f148aed2d47ec9ee112277bc59b8ea02e30797f6c56179a4fc",
+      "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+      "POTCAR": "1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba"
+    },
+    "output_hashes": {
+      "OUTCAR": "534e7754be036d1c1a2ca803d2f9078d5ff6963bfc0fd6bb7370170909c6e607",
+      "vasprun.xml": "01f62d583c8e01ceb63b7bf41cb5db8ce67b6b70f3fe74a2c13d117299671467",
+      "forces.npy": "448a763370e35c5b7de669aecc1de990d211a4cb6fbad029e9951df077d46b3e",
+      "CONTCAR": "330031b3fbfc94fb772cca5174a1413c777f772c8eba4cd6e281b2f1c8d83c16"
+    },
+    "finish_before_planned_softstop_seconds": 13285
+  }
+}

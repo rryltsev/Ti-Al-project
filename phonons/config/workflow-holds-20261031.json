@@ -1,0 +1,11 @@
+{
+  "updated_local_date": "2026-10-31",
+  "user_instruction": "Remove PBEsol parameter checks from the queue for now; wait for baseline phonons of all functionals to finish.",
+  "defer_parameter_checks_until_all_functionals_base_forces_ready": true,
+  "functionals": ["PBE", "PBEsol", "r2SCAN"],
+  "required_base_steps": ["force-001", "force-002", "force-000"],
+  "affected_steps": ["check-cutoff", "check-kmesh", "check-smearing"],
+  "cancelled_job": "20972836",
+  "cancelled_step": "PBEsol/check-cutoff",
+  "restart_rule": "Do not reuse the cancelled submission intent. After all baseline force sets are independently accepted, review remaining checks and submit a new immutable attempt."
+}

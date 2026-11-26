@@ -1,0 +1,21 @@
+{
+  "args": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:30:00",
+    "--array=0-7%4",
+    "--no-requeue",
+    "--chdir=/home6/u3129/tial-testsets/train-offsets-20261022-01",
+    "--job-name=t50-train-offset",
+    "--output=/home6/u3129/tial-testsets/train-offsets-20261022-01/train-%A_%a.out",
+    "/home6/u3129/tial-testsets/train-offsets-20261022-01/training_job.sbatch"
+  ],
+  "unix": 1792642216.4494693
+}

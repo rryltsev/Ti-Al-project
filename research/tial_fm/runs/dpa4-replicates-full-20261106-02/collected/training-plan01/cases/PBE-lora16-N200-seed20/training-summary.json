@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-lora16-N200-seed20",
+    "XC": "PBE",
+    "method": "lora16",
+    "N": 200,
+    "validation": 149,
+    "seed": 20,
+    "epochs": 50,
+    "expected_steps": 10000,
+    "source": {
+      "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+      "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+    },
+    "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+    "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+    "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+    "configuration_sha256": "8c4ce3541312e75dd2e09577ac6d96ca9cfe34ce61a58eb6fcc4dde608e99fad",
+    "data_root": "/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-02/data/N200",
+    "dataset_manifest": "dataset-files-N200.json",
+    "dataset_manifest_sha256": "da7e2509f47decf84a31bb1b1df1ddc813034ed91a7971d887415c91915dafd5",
+    "intent": "Fixed final 50-epoch checkpoint. Same original weights, recipe and validation; training seed varied, architecture seeds kept at42. Statistics recomputed only from this case train. No test input."
+  },
+  "steps": 10000,
+  "exposures": {
+    "steps": 10000,
+    "frames": 10000,
+    "atoms": 2202298
+  },
+  "total_seconds": 2297.2833439726382,
+  "training_seconds": 2285.8106463123113,
+  "peak_cuda_allocated_bytes": 3829446144,
+  "peak_cuda_reserved_bytes": 4345298944,
+  "gpu": "NVIDIA A100-PCIE-40GB",
+  "job_id": "20988584",
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/dpa4-replicates-full-20261106-02/training-plan01/cases/PBE-lora16-N200-seed20/merged/10000.pt",
+  "test_access": false
+}

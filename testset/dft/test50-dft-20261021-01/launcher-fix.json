@@ -1,0 +1,18 @@
+{
+  "files": {
+    "workflow.py": {
+      "before": "2c77f8279089ee504b7e4dbf7773a5ef435fa299feaa7912b0a8dc8cf7cde91d",
+      "after": "f161ef0ff419a5080aee7380ec4bbf1b1793c8612aa2c7c913a6091471f9733c"
+    },
+    "setup.sbatch": {
+      "before": "f40192a77c5d50ec807e30728b98e89a39903d5acbad034adfda57be2cb35dd1",
+      "after": "bd019cad69d721cd3e8c65f6df2441ed0f02106f7b74a7b80613b96485035970"
+    },
+    "production.sbatch": {
+      "before": "0151a21a439d83fe7283104dd9ad2fbf290c2f5da50c84da4f5c70ac3559449f",
+      "after": "6847ee85865db1db3fc5eeb287e0222f2214e325fad1dc5823dff2c76801eaaf"
+    }
+  },
+  "failed_setup_job": "20957358",
+  "fix": "Explicit working directory; validator checked on legacy outputs; coordinate tolerance accounts for XML rounding."
+}

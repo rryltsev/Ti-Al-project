@@ -1,0 +1,74 @@
+{
+  "remote": "/home6/u3129/tial-testsets/pbe15k-melting-20261026-01",
+  "checkpoint": {
+    "functional": "PBE",
+    "step": 15000,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-15000.pt",
+    "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+    "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+    "article_checkpoint": false
+  },
+  "temperatures_K": [
+    1700,
+    1750,
+    1800,
+    1850
+  ],
+  "workers": {
+    "0": [
+      1700,
+      1750
+    ],
+    "1": [
+      1850,
+      1800
+    ]
+  },
+  "atoms": 1296,
+  "dt_ps": 0.001,
+  "Tdamp_ps": 0.1,
+  "Pdamp_ps": 1.0,
+  "pressure_bar": 0,
+  "barostat": "aniso",
+  "stages": [
+    {
+      "name": "equil",
+      "steps": 10000
+    },
+    {
+      "name": "heat",
+      "steps": 20000
+    },
+    {
+      "name": "cool",
+      "steps": 10000
+    },
+    {
+      "name": "melt",
+      "steps": 50000
+    }
+  ],
+  "overheat_factor": 1.5,
+  "seed": 4928459,
+  "thermo_every": 100,
+  "dump_every": 100,
+  "restart_every": 5000,
+  "inputs": {
+    "initial.data": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\MD-results\\melting\\beta_Ti_two-phase\\pbe\\data\\Ti_1296atoms.data",
+      "sha256": "6fa1c88d5f398178ac086313c2ab8ead8367c9f39c1750a18b7e2842ad80713c"
+    },
+    "reference_two_phase.data": {
+      "source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\MD-results\\melting\\beta_Ti_two-phase\\pbe\\T1750K\\cache\\001\\cool.lammps",
+      "sha256": "c64ad85730db88200054c6bf9e2fa64ac9473259b0866f27f3a761515399afaf"
+    }
+  },
+  "allocation_wall_hours": 22,
+  "notes": [
+    "Original 5k geometry and four-stage LAMMPS preparation retained; positions minimized before equilibration.",
+    "Heat and cool integrate the liquid group only, with global box dilation, matching original implementation. Solid group is not independently integrated in preparation.",
+    "Separate LAMMPS instances and data files between stages; group membership rebuilt from lower half of z, as in original runner.",
+    "All trajectories, separate stage logs, input scripts, data and restart files retained. No random fallback structural classifier.",
+    "Initial temperature scan; refine bracket and/or extend borderline trajectories after interface analysis."
+  ]
+}

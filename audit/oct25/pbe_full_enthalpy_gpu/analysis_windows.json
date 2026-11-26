@@ -1,0 +1,14 @@
+{
+  "retain_all_stages": true,
+  "temperature_K": 2000,
+  "thermo_interval_fs": 10,
+  "trajectory_interval_fs": 100,
+  "stages": [
+    {"name": "equilibration", "global_start_ps": 0, "duration_ps": 30},
+    {"name": "production", "global_start_ps": 30, "duration_ps": 30}
+  ],
+  "transition_at_30_ps": "Velocities reinitialized, thermostat and barostat state restarted, matching the original MDRunner protocol. Each stage stores its initial frame.",
+  "analysis": "Raw equilibration and production records must both be retained. The averaging window is a postprocessing choice, not fixed by the directory name. Check stationarity and account for the restart transient at 30 ps before pooling stages; do not count duplicate boundary times twice.",
+  "default_production_start_ps": 30,
+  "user_request": "Keep every calculation's logs so equilibration/averaging allocation can be revised after inspecting convergence."
+}

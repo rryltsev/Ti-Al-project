@@ -1,0 +1,123 @@
+{
+  "run_id": "pbe15k-ti-temperature-20261029-01",
+  "remote": "/home6/u3129/tial-testsets/pbe15k-ti-temperature-20261029-01",
+  "checkpoint": {
+    "functional": "PBE",
+    "step": 15000,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-15000.pt",
+    "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+    "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+    "article_checkpoint": false
+  },
+  "frozen_model": {
+    "path": "/home6/u3129/tial-testsets/pbe15k-melting-20261026-02/model_15000.pt2",
+    "sha256": "1a59af825e47b585d3b49789f65bed0ac1fce0286630f9484f0687cbac3d0f65"
+  },
+  "states": [
+    {
+      "id": "Ti_2100K",
+      "temperature_K": 2100,
+      "x_Al": 0.0,
+      "c_Ti": 1.0,
+      "actual_x_Al": 0.0,
+      "counts": {
+        "Al": 0,
+        "Ti": 512
+      },
+      "initial_file": "initial_Ti_2100K.data",
+      "initial_sha256": "996f56798c5e302b538e3e4b1e58cf08b716b0fd0270203690451ceff91ec41f",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2100K\\pbe\\01_generate_liquid\\c_Ti_1.00\\data.lammps",
+      "seed": 29102601
+    },
+    {
+      "id": "Ti_1873K",
+      "temperature_K": 1873,
+      "x_Al": 0.0,
+      "c_Ti": 1.0,
+      "actual_x_Al": 0.0,
+      "counts": {
+        "Al": 0,
+        "Ti": 512
+      },
+      "initial_file": "initial_Ti_1873K.data",
+      "initial_sha256": "678259f22f77e43b8cdd9cfe947f5bc1967aa692f15ebbe40861fcb35c24688e",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\01_generate_liquid\\c_Ti_1.00\\data.lammps",
+      "seed": 29202601
+    },
+    {
+      "id": "Ti_2000K",
+      "temperature_K": 2000,
+      "x_Al": 0.0,
+      "c_Ti": 1.0,
+      "actual_x_Al": 0.0,
+      "counts": {
+        "Al": 0,
+        "Ti": 512
+      },
+      "initial_file": "initial_Ti_2000K.data",
+      "initial_sha256": "4a8e63349fbaf09521efadde37987c4030a7998f51ea42b092ee6faed822fd29",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\01_generate_liquid\\c_Ti_1.00\\data.lammps",
+      "seed": 29302601
+    }
+  ],
+  "pressure_bar": 1,
+  "atoms": 512,
+  "dt_ps": 0.001,
+  "initial_npt_steps": 20000,
+  "reservoir_spacing_steps": 5000,
+  "nvt_equil_steps": 1000,
+  "production_steps": 40000,
+  "matched_window_steps": 20000,
+  "preparation_Tdamp_ps": 0.1,
+  "preparation_Pdamp_ps": 0.5,
+  "production_Tdamp_ps": 0.2,
+  "masses": [
+    26.98,
+    47.88
+  ],
+  "elements": [
+    "Al",
+    "Ti"
+  ],
+  "batch_size": 5,
+  "allocation": {
+    "partition": "v100",
+    "node": "tesla-a101",
+    "account": "imet-2026-2",
+    "qos": "normal",
+    "gpu": "a100:1",
+    "cpus": 6,
+    "md_threads": 4,
+    "analysis_threads": 2,
+    "memory": "32G",
+    "walltime": "20:00:00"
+  },
+  "convergence": {
+    "min_replicas": 30,
+    "max_relative_std": 0.03,
+    "max_last_three_range": 0.02,
+    "max_20_40_relative_difference": 0.03,
+    "min_neff": 60,
+    "max_cost_z": 2,
+    "max_criterion_z": 2,
+    "required_consecutive_passes": 2,
+    "interpretation": "Operational stopping rule for sampling; nominal uncertainties after sequential inspection are descriptive, not coverage guarantees.",
+    "max_new_batch_z": 2.5,
+    "review_at_or_above_replicas": 50,
+    "window_fit_diagnostics": "Cost and cutoff Z<2 for full40ps, both20ps windows, and the newest5-replica fit are required in addition to the main rule."
+  },
+  "duration_policy": "New 40ps replicas and first/second20ps fits; historical 5k and exported15k estimates remain separate, with no pooling.",
+  "restart_policy": "Reuse existing Slurm20962153 through a guarded dispatcher and requeue. One A100, sequential temperatures, immutable completed replicas. Future requeue at replica boundary.",
+  "preparation_note": "Archived pure-liquid Ti structure at each T, re-equilibrated under verified15k for20ps NPT; fresh5ps reservoir spacing and1ps NVT,40ps production. Historical15k raw provenance unavailable; new protocol version and sources remain separate.",
+  "scheduling": {
+    "priority_temperatures_K": [
+      2100,
+      1873,
+      2000
+    ],
+    "initial_replicas_each": 10,
+    "batch_size": 5,
+    "policy": "First obtain 5 and 10 new replicas at 2100K, then 10 at1873K, then10 at2000K. Continue five-replica rounds in that order, skipping converged or review-held temperatures."
+  },
+  "inherited_job_id": "20962153"
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-restricted_radial-N200-seed20",
+    "XC": "PBE",
+    "method": "restricted_radial",
+    "N": 200,
+    "validation": 149,
+    "seed": 20,
+    "epochs": 50,
+    "steps": 10000,
+    "trainable_patterns": [
+      "I2/reducing_",
+      "rho/reducing_",
+      "I1/reducing_",
+      "R_Linear_",
+      "R1_Linear_"
+    ],
+    "expected_trainable": 21144842,
+    "expected_trainable_tensors": 18
+  },
+  "steps": 10000,
+  "epochs": 50,
+  "training_seconds": 571.2130507882684,
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01/cases/PBE-restricted_radial-N200-seed20/final-checkpoint/checkpoint",
+  "hashes": {
+    "checkpoint.index": "84b7b7571e44d744a60e2f6c981179bdd9b48e2e6b43521c64a65a5feb507f19",
+    "checkpoint.data-00000-of-00001": "ee97b1f8d34095b197066a73e20a088a9b587b633def4571353e045b672f72ae"
+  },
+  "test_access": false,
+  "selection": "fixed final epoch50",
+  "GPU_memory": {
+    "current": 565938944,
+    "peak": 2358833152
+  }
+}

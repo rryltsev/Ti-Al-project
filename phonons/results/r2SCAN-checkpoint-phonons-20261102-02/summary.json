@@ -1,0 +1,401 @@
+{
+  "functional": "r2SCAN",
+  "models": {
+    "5000": {
+      "step": 5000,
+      "sha256": "83939533e52cebf176e356f6b3500bc32a873ae210b4503eff23ba5454f614c7",
+      "job_id": "20977441"
+    },
+    "10000": {
+      "step": 10000,
+      "sha256": "0333cb304b6232a086494b0ac07178c5267b5f08093257a87d2780eb164a3750",
+      "job_id": "20977441"
+    },
+    "15000": {
+      "step": 15000,
+      "sha256": "458339555ba654f12142dac2f3a6e50ab1fbb0375cf4ecebb64837a51b207ca6",
+      "job_id": "20977441"
+    },
+    "20000": {
+      "step": 20000,
+      "sha256": "db54ff8f7e57d7eec0d582763e0c9e1685e3c730a04f404d20cc9ceabe45008f",
+      "job_id": "20977441"
+    },
+    "23200": {
+      "step": 23200,
+      "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "job_id": "20973060"
+    }
+  },
+  "statistics": {
+    "DFT": {
+      "integral": 3.0,
+      "integral_before_rescale": 2.999999999999999,
+      "min_mesh_mode_THz": -1.0492578024122476e-07,
+      "imaginary_mesh_mode_weight_below_minus_0p001": 0,
+      "min_path_mode_THz": -1.0492578024122476e-07,
+      "max_mesh_mode_THz": 8.864433333621434,
+      "gamma_THz": [
+        -1.0492578024122476e-07,
+        1.090091263407838e-07,
+        2.3215696930406437e-07,
+        4.586615641085168,
+        4.586615643092987,
+        5.189323501615258
+      ]
+    },
+    "5000": {
+      "integral": 3.0000000000000004,
+      "integral_before_rescale": 2.999999999999999,
+      "min_mesh_mode_THz": -7.730348875630065e-08,
+      "imaginary_mesh_mode_weight_below_minus_0p001": 0,
+      "min_path_mode_THz": -7.730348875630065e-08,
+      "max_mesh_mode_THz": 8.596606956786443,
+      "gamma_THz": [
+        -7.730348875630065e-08,
+        1.1161454492017988e-07,
+        1.8948619947041255e-07,
+        4.4648610475342245,
+        4.46486104942292,
+        4.822223108137356
+      ],
+      "normalized_L1_DOS_difference": 0.17729896293477454,
+      "relative_L2_DOS_difference": 0.19571060382095357,
+      "DOS_RMSE_0_to_9_THz": 0.08101871555124289,
+      "sorted_path_frequency_RMSE_THz": 0.24856269015276367,
+      "sorted_path_max_difference_THz": 0.6645685384512454,
+      "validation": {
+        "n": 148,
+        "E_RMSE_meV_atom": 8.553068844629028,
+        "E_MAE_meV_atom": 6.560684827167648,
+        "E_bias_meV_atom": 5.53366037087696,
+        "E_centered_RMSE_diagnostic_meV_atom": 6.5217780980917786,
+        "F_RMSE_eV_A": 0.07212619822875735,
+        "F_MAE_eV_A": 0.05260002691885856,
+        "S_RMSE_GPa": 0.07958388309812325,
+        "S_MAE_GPa": 0.05761340586683188,
+        "F_norm_MAE_eV_A": 0.10526628814440203
+      }
+    },
+    "10000": {
+      "integral": 2.9999999999999996,
+      "integral_before_rescale": 2.9999999999999996,
+      "min_mesh_mode_THz": -7.71101660105366e-08,
+      "imaginary_mesh_mode_weight_below_minus_0p001": 0,
+      "min_path_mode_THz": -7.71101660105366e-08,
+      "max_mesh_mode_THz": 8.877157798034405,
+      "gamma_THz": [
+        -7.71101660105366e-08,
+        1.0883458133894551e-07,
+        1.1604842680151978e-07,
+        4.316273043578564,
+        4.31627304567378,
+        4.580018007317725
+      ],
+      "normalized_L1_DOS_difference": 0.12479872176570794,
+      "relative_L2_DOS_difference": 0.15618704039806436,
+      "DOS_RMSE_0_to_9_THz": 0.06465706579122564,
+      "sorted_path_frequency_RMSE_THz": 0.24023905206943716,
+      "sorted_path_max_difference_THz": 0.6093054942975327,
+      "validation": {
+        "n": 148,
+        "E_RMSE_meV_atom": 5.1672160975529255,
+        "E_MAE_meV_atom": 4.4817830309329665,
+        "E_bias_meV_atom": -4.174429379651521,
+        "E_centered_RMSE_diagnostic_meV_atom": 3.0453672279566386,
+        "F_RMSE_eV_A": 0.07082868487014536,
+        "F_MAE_eV_A": 0.05172574960298161,
+        "S_RMSE_GPa": 0.11237709514424069,
+        "S_MAE_GPa": 0.08319442066358211,
+        "F_norm_MAE_eV_A": 0.10353855842047957
+      }
+    },
+    "15000": {
+      "integral": 3.0,
+      "integral_before_rescale": 2.9999999999999996,
+      "min_mesh_mode_THz": -1.5661277671200278e-07,
+      "imaginary_mesh_mode_weight_below_minus_0p001": 0,
+      "min_path_mode_THz": -1.5661277671200278e-07,
+      "max_mesh_mode_THz": 8.918289259193223,
+      "gamma_THz": [
+        -1.5661277671200278e-07,
+        -1.327134343633281e-07,
+        2.8753068822528514e-08,
+        4.528407341651952,
+        4.620620209914414,
+        4.620620211891808
+      ],
+      "normalized_L1_DOS_difference": 0.18262519234468103,
+      "relative_L2_DOS_difference": 0.22818965060667162,
+      "DOS_RMSE_0_to_9_THz": 0.09446411982358487,
+      "sorted_path_frequency_RMSE_THz": 0.25390254234462184,
+      "sorted_path_max_difference_THz": 0.643085459503479,
+      "validation": {
+        "n": 148,
+        "E_RMSE_meV_atom": 2.2968973363688905,
+        "E_MAE_meV_atom": 1.8925064128534153,
+        "E_bias_meV_atom": -1.7278499912448124,
+        "E_centered_RMSE_diagnostic_meV_atom": 1.513364391537546,
+        "F_RMSE_eV_A": 0.07010498571962899,
+        "F_MAE_eV_A": 0.05109457891569823,
+        "S_RMSE_GPa": 0.08191222128481743,
+        "S_MAE_GPa": 0.059544028150376106,
+        "F_norm_MAE_eV_A": 0.10230455755913957
+      }
+    },
+    "20000": {
+      "integral": 3.0,
+      "integral_before_rescale": 3.0,
+      "min_mesh_mode_THz": -5.983398929257994e-08,
+      "imaginary_mesh_mode_weight_below_minus_0p001": 0,
+      "min_path_mode_THz": -5.983398929257994e-08,
+      "max_mesh_mode_THz": 8.92050326643218,
+      "gamma_THz": [
+        -5.983398929257994e-08,
+        5.866052022949991e-08,
+        1.4585337195493838e-07,
+        4.162880703813411,
+        4.539631747735295,
+        4.539631749746238
+      ],
+      "normalized_L1_DOS_difference": 0.1663467600855488,
+      "relative_L2_DOS_difference": 0.20989976746484368,
+      "DOS_RMSE_0_to_9_THz": 0.08689261687999858,
+      "sorted_path_frequency_RMSE_THz": 0.2612774787095416,
+      "sorted_path_max_difference_THz": 0.8263981401004736,
+      "validation": {
+        "n": 148,
+        "E_RMSE_meV_atom": 1.9455235156071076,
+        "E_MAE_meV_atom": 1.5662931589941926,
+        "E_bias_meV_atom": -1.497213451511729,
+        "E_centered_RMSE_diagnostic_meV_atom": 1.2423419941355014,
+        "F_RMSE_eV_A": 0.06994366785565459,
+        "F_MAE_eV_A": 0.05098453202867973,
+        "S_RMSE_GPa": 0.08571693370438091,
+        "S_MAE_GPa": 0.06226110829609406,
+        "F_norm_MAE_eV_A": 0.1020723899430145
+      }
+    },
+    "23200": {
+      "integral": 3.0,
+      "integral_before_rescale": 2.9999999999999996,
+      "min_mesh_mode_THz": 7.466211646970881e-08,
+      "imaginary_mesh_mode_weight_below_minus_0p001": 0,
+      "min_path_mode_THz": 7.466211646970881e-08,
+      "max_mesh_mode_THz": 8.891474497181242,
+      "gamma_THz": [
+        7.466211646970881e-08,
+        1.1122813130015959e-07,
+        1.392441128224917e-07,
+        4.220688045959041,
+        4.563167202387501,
+        4.5631672043848015
+      ],
+      "normalized_L1_DOS_difference": 0.1716803347178573,
+      "relative_L2_DOS_difference": 0.21858611417649013,
+      "DOS_RMSE_0_to_9_THz": 0.09048853638915777,
+      "sorted_path_frequency_RMSE_THz": 0.25944946861932183,
+      "sorted_path_max_difference_THz": 0.7904718870475955,
+      "validation": {
+        "n": 148,
+        "E_RMSE_meV_atom": 1.692180841954059,
+        "E_MAE_meV_atom": 1.431562607499292,
+        "E_bias_meV_atom": -1.357638892828205,
+        "E_centered_RMSE_diagnostic_meV_atom": 1.0100953611202033,
+        "F_RMSE_eV_A": 0.06992498062202007,
+        "F_MAE_eV_A": 0.05097208929199699,
+        "S_RMSE_GPa": 0.07690825261849353,
+        "S_MAE_GPa": 0.05483563480513993,
+        "F_norm_MAE_eV_A": 0.10204610883521635
+      }
+    }
+  },
+  "force_diagnostics": {
+    "5000": {
+      "reference_max_force_eV_A": 1.303508253794862e-06,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          2.421384851884293e-18
+        ],
+        [
+          0.0,
+          0.0,
+          -1.3733227518149722e-18
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 7.993605777301127e-15,
+        "translation_other_index_max_eV_A2": 7.993605777301127e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 4.737277237154558e-11,
+      "ASR_max_change_eV_A2": 8.33270623283866e-05,
+      "gamma_THz": [
+        -7.730348875630065e-08,
+        1.1161454492017988e-07,
+        1.8948619947041255e-07,
+        4.4648610475342245,
+        4.46486104942292,
+        4.822223108137356
+      ],
+      "min_frequency_THz": -7.730348875630065e-08,
+      "max_frequency_THz": 8.596606956786443,
+      "imaginary_modes_below_minus_0p001_THz": 0
+    },
+    "10000": {
+      "reference_max_force_eV_A": 1.190858467614696e-06,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          6.505213034913027e-19
+        ],
+        [
+          0.0,
+          0.0,
+          1.9877039828900914e-19
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 6.102323507617413e-15,
+        "translation_other_index_max_eV_A2": 6.102323507617413e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 4.434941303088635e-11,
+      "ASR_max_change_eV_A2": 7.052332102386316e-05,
+      "gamma_THz": [
+        -7.71101660105366e-08,
+        1.0883458133894551e-07,
+        1.1604842680151978e-07,
+        4.316273043578564,
+        4.31627304567378,
+        4.580018007317725
+      ],
+      "min_frequency_THz": -7.71101660105366e-08,
+      "max_frequency_THz": 8.877157798034405,
+      "imaginary_modes_below_minus_0p001_THz": 0
+    },
+    "15000": {
+      "reference_max_force_eV_A": 1.2328082553349703e-06,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          8.312216655722201e-19
+        ],
+        [
+          0.0,
+          0.0,
+          2.529805069132844e-19
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 9.166278847061449e-15,
+        "translation_other_index_max_eV_A2": 9.166278847061449e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 5.051425944202492e-11,
+      "ASR_max_change_eV_A2": 6.661096058580007e-05,
+      "gamma_THz": [
+        -1.5661277671200278e-07,
+        -1.327134343633281e-07,
+        2.8753068822528514e-08,
+        4.528407341651952,
+        4.620620209914414,
+        4.620620211891808
+      ],
+      "min_frequency_THz": -1.5661277671200278e-07,
+      "max_frequency_THz": 8.918289259193223,
+      "imaginary_modes_below_minus_0p001_THz": 0
+    },
+    "20000": {
+      "reference_max_force_eV_A": 1.1902741517307413e-06,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          -1.7708635483929904e-18
+        ],
+        [
+          0.0,
+          0.0,
+          -1.5178830414797062e-18
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 6.654399253847032e-15,
+        "translation_other_index_max_eV_A2": 6.654399253847032e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 4.880096327042338e-11,
+      "ASR_max_change_eV_A2": 7.547673079910666e-05,
+      "gamma_THz": [
+        -5.983398929257994e-08,
+        5.866052022949991e-08,
+        1.4585337195493838e-07,
+        4.162880703813411,
+        4.539631747735295,
+        4.539631749746238
+      ],
+      "min_frequency_THz": -5.983398929257994e-08,
+      "max_frequency_THz": 8.92050326643218,
+      "imaginary_modes_below_minus_0p001_THz": 0
+    },
+    "23200": {
+      "reference_max_force_eV_A": 1.2195773531313588e-06,
+      "force_drift_removed_eV_A": [
+        [
+          0.0,
+          0.0,
+          -2.8912057932946783e-19
+        ],
+        [
+          0.0,
+          0.0,
+          -1.2649025345664218e-18
+        ]
+      ],
+      "ASR_residual": {
+        "translation_max_eV_A2": 8.517492267046123e-15,
+        "translation_other_index_max_eV_A2": 8.517492267046123e-15,
+        "permutation_max_eV_A2": 0.0
+      },
+      "ASR_polish_change_eV_A2": 4.927080965444475e-11,
+      "ASR_max_change_eV_A2": 6.744521335699805e-05,
+      "gamma_THz": [
+        7.466211646970881e-08,
+        1.1122813130015959e-07,
+        1.392441128224917e-07,
+        4.220688045959041,
+        4.563167202387501,
+        4.5631672043848015
+      ],
+      "min_frequency_THz": 7.466211646970881e-08,
+      "max_frequency_THz": 8.891474497181242,
+      "imaginary_modes_below_minus_0p001_THz": 0
+    }
+  },
+  "final_checkpoint_FC_reproduction_max_error": 8.881784197001252e-16,
+  "protocol": {
+    "geometry": "same XC-specific DFT equilibrium for all models",
+    "supercell": [
+      4,
+      4,
+      3
+    ],
+    "displacement_A": 0.01,
+    "q_mesh": [
+      50,
+      50,
+      50
+    ],
+    "gamma_centered": true,
+    "sigma_THz": 0.05,
+    "mass_amu": 47.867,
+    "path": "Gamma-K-M-Gamma-A",
+    "band_comparison": "sorted frequencies, no eigenvector branch matching"
+  },
+  "qualification": "DFT cutoff/kmesh/smearing/supercell convergence not established. Checkpoint comparisons are diagnostic, not an automatic model replacement."
+}

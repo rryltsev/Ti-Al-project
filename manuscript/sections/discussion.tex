@@ -1,0 +1,127 @@
+\section{Discussion}
+\label{sec:discussion}
+
+The most consistent gains obtained with \rscan{} concern two thermodynamic differences: the balance between solid and liquid Ti, and the enthalpy of an alloy liquid relative to its pure components.
+The melting estimate moves toward experiment, and the overall mixing-enthalpy discrepancy decreases, although the broad minimum near equiatomic composition becomes too deep.
+Density, phonons, and viscosity do not follow the same ranking.
+These observations suggest that the benefit of \rscan{} is associated with how it distinguishes competing atomic environments, rather than with a uniform improvement of all features of the potential-energy surface.
+
+\subsection{The solid--liquid free-energy balance}
+
+At fixed pressure, melting occurs when the Gibbs free energies of the solid and liquid are equal.
+Let $g_s^A$ and $g_l^A$ denote these free energies per atom for a reference potential $A$, and let $\delta g_i=g_i^B-g_i^A$ be the change on replacing it by potential $B$.
+Linearization about the melting point of $A$ gives
+\begin{equation}
+ \delta T_m \simeq
+ \frac{\delta g_l(T_m^A,p)-\delta g_s(T_m^A,p)}
+ {\Delta s_{\mathrm{fus}}^A},
+ \label{eq:melting_shift}
+\end{equation}
+where $\Delta s_{\mathrm{fus}}^A=s_l^A-s_s^A>0$ is the entropy of fusion per atom, evaluated at that point.
+Thus, a positive change in the liquid--solid free-energy difference raises the melting temperature.
+The approximately 95~K increase from the representative PBE estimate to \rscan{} is consistent with greater relative stability of the crystal near coexistence.
+It does not determine whether this change is predominantly energetic or entropic, since both contributions enter $g_l-g_s$.
+We have not calculated the fusion enthalpy or entropy separately and therefore do not assign a numerical free-energy correction to this temperature shift.
+
+This distinction is particularly relevant for Ti.
+Its high-temperature bcc phase is stabilized by finite-temperature lattice dynamics, which cannot be described by the unstable zero-temperature harmonic spectrum alone.\cite{Souvatzis2008}
+Our coexistence calculations start from a bcc slab and sample ionic motion explicitly.
+Their melting behavior depends on the full potential-energy surface explored by the two phases, including anharmonic contributions.
+The harmonic $\alpha$-Ti spectra characterize a different phase and a local curvature of that surface.
+Their mixed ranking is therefore compatible with the clearer improvement of the \rscan{} melting estimate.
+
+The density results likewise show why a simple association between a smaller equilibrium volume and a higher melting point is insufficient.
+PBEsol gives the largest Ti densities but the lowest working melting estimate, whereas the PBE and \rscan{} densities at 300~K are nearly identical. The PBE and \rscan{} models also differ appreciably in melting temperature despite much smaller relative differences in liquid density.
+Volume probes the pressure derivative of the free energy; melting probes the difference between two free energies.
+Errors in these quantities need not vary together.
+Related sensitivity of melting predictions to the reference functional has been demonstrated in first-principles calculations accelerated by machine-learned force fields.\cite{Jinnouchi2019}
+Here, the remaining underestimation of approximately 88~K by \rscan{} also shows that its improved balance is still imperfect.
+
+\subsection{Mixing energetics and a possible electronic origin}
+
+The mixing enthalpy isolates another difference between environments.
+Defining $\delta H_m=H_m^B-H_m^A$ at common temperature and pressure, Eq.~\eqref{eq:mixing} gives
+\begin{align}
+ \delta\Delta H_{\mathrm{mix}}(x)={}&\delta H_m(x)
+ -x\,\delta H_m^{\mathrm{Al}}\nonumber\\
+ &-(1-x)\,\delta H_m^{\mathrm{Ti}}.
+ \label{eq:mixing_shift}
+\end{align}
+Any constant energy offsets assigned separately to Ti and Al cancel in this expression.
+The change therefore reflects the treatment of alloy environments relative to the elemental liquids, including the different structures sampled by the models.
+At $x=0.5$ and 2000~K, replacing PBE by \rscan{} lowers the calculated mixing enthalpy by approximately 6.65~kJ/mol, or 69~meV/atom.
+This is a substantial change in the energetic preference for mixing.
+It brings much of the composition curve closer to the reproduced calorimetric points, while overshooting their minimum.
+The provisional overall improvement consequently supports a more favorable description of this particular energy difference, without implying that increasingly exothermic mixing is always more accurate.
+
+The construction of \rscan{} offers a plausible reason for changes of this kind.
+Unlike a GGA, the SCAN family uses the orbital kinetic-energy density in addition to the electron density and its gradient.
+This extra ingredient distinguishes electronic environments associated with different bonding regimes.\cite{Sun2015}
+The regularization and constraint restoration in \rscan{} improve numerical behavior while retaining much of this flexibility.\cite{Furness2020}
+In Ti--Al, changes in chemical coordination and crystal order can therefore receive different exchange-correlation corrections even when average density changes are modest.
+This provides a physical basis for expecting shifts in relative energies, but does not prescribe their sign or guarantee improved agreement.
+
+Existing electronic-structure studies illustrate why Ti environments deserve particular attention.
+Calculations for crystalline TiAl find a substantial Ti-$3d$ contribution near the Fermi level.\cite{Hussain2011}
+Moreover, Song \textit{et al.}\cite{Song1994} found that the alternating Ti and Al planes in $\gamma$-TiAl strengthen particular directional Ti--Ti bonding states relative to hypothetical fcc Ti.
+Thus, adding Al can modify the Ti-derived bonding network as well as introduce unlike neighbors.
+Changes in Ti--Al hybridization and Ti--Ti bonding are plausible microscopic contributions to the functional dependence of mixing.
+The crystalline results motivate this interpretation; they do not establish that the same redistribution persists in a disordered liquid.
+Our thermodynamic data contain no direct measurement of orbital occupations, charge transfer, or bond-resolved energies.
+An attribution of the \rscan{} improvement to a specific electronic redistribution therefore remains a hypothesis.
+
+The two favorable thermodynamic shifts also cannot be reduced to a single assertion of stronger bonding.
+Raising the melting point of pure Ti concerns environments containing only Ti, whereas making alloy mixing more exothermic concerns the alloy relative to both elemental liquids.
+Neither shift logically requires the other.
+Their coexistence is consistent with improved environment-dependent energy differences, but a common microscopic cause has not been demonstrated.
+Broad benchmarks reinforce this qualification: \rscan{} improves many solid-state formation enthalpies, yet PBE remains competitive and can have smaller average errors for intermetallic subsets.\cite{Kothakonda2023}
+Those benchmarks concern crystalline formation energies, rather than liquid mixing, but show that the meta-GGA level alone does not establish superiority for a given alloy.
+
+\subsection{Separating reference and representation errors}
+
+The paired phonon calculations make this distinction explicit for the local curvature of the $\alpha$-Ti potential-energy surface.
+Direct DFT--experiment comparisons assess the three electronic-structure descriptions without an intervening learned potential.
+The corresponding DPA4--DFT comparisons, at identical geometry and phonon settings within each functional, test the fidelity of the final fine-tuned models to those references.
+Near $\Gamma$, the closer agreement of PBE DFT with the experimental optical frequencies is a property of the reference calculation, whereas the downward shifts of the nondegenerate optical mode in all three DPA4 models identify an additional model discrepancy.
+In particular, the reversed optical-mode ordering for the \rscan{} model is absent from its DFT reference.
+
+For an identifiable mode at a given wave vector and the same calculated geometry, the model--experiment frequency residual is the sum of the model--DFT and DFT--experiment residuals.
+The two contributions can reinforce or cancel one another.
+Consequently, closer agreement of a learned potential with an experimental point does not necessarily imply more faithful reproduction of its training functional.
+The DOS comparison provides a complementary test of that fidelity over the Brillouin zone, showing residual changes in peak positions and spectral weight at common broadening and normalization.
+
+This separates the two levels of validation without making either error source exact.
+The DFT--experiment residual includes the harmonic approximation, the use of a static equilibrium cell, and unresolved numerical convergence, in addition to the electronic-structure approximation.
+The model--DFT residual tests the final fine-tuned representation under the phonon protocol, which differs from the training-label protocol in electronic sampling and smearing.
+It does not isolate the optimizer's contribution or establish the improvement over the pretrained model without a corresponding pretrained phonon calculation.
+The remaining optical errors therefore motivate more targeted validation of force derivatives near the crystal, even when pooled energy and force errors are small.
+
+\subsection{Consequences for validation and transfer learning}
+
+The other observables help delimit the thermodynamic interpretation.
+At 2000~K, PBE is closer than \rscan{} to the central experimental liquid-Ti density correlation; PBE also gives smaller overall discrepancies for the alloy densities at 1873~K.
+More exothermic mixing and stronger volume contraction are therefore not sufficient criteria for choosing the most accurate model.
+Likewise, the higher alloy viscosity predicted by \rscan{} does not improve agreement at four of the five experimentally covered compositions shared with the PBE calculations; the Al-rich state at $x_{\mathrm{Al}}=0.90$ is an exception.
+For pure Ti, however, \rscan{} is closer to the central experimental viscosity correlation at 2000 and 2100~K, while both models give temperature dependences consistent with smooth Arrhenius behavior over the sampled interval.
+The transport comparison therefore depends on composition and temperature as well as on the reference functional.
+Viscosity depends on the amplitude and relaxation time of stress fluctuations, with additional sensitivity to density and liquid structure.
+A more accurate mixing enthalpy alone cannot determine these dynamical quantities.
+Chemical short-range order could help connect energetics and transport, but would require partial pair correlations or explicit chemical-order parameters; it is not established by the enthalpy minimum.
+
+This outcome differs from our Al--Cu study, where changing from PBE to \rscan{} improved the composition dependence of viscosity as well as several thermodynamic properties.\cite{Khazieva2024}
+Together, the two systems support testing alternative reference functionals, while showing that a favorable ranking in one alloy does not transfer automatically to another.
+Foundation-model fine-tuning makes such comparisons practical by using a common starting representation for the separate DFT datasets.
+The present work demonstrates this use of DPA4-Neo, without a separate benchmark of training cost against models trained from scratch.
+
+Beyond the matched harmonic comparison, a quantitative attribution of thermodynamic changes to exchange-correlation physics must still separate functional effects from potential-fitting and sampling errors.
+The common-geometry benchmark in Sec.~\ref{sec:results_fit} gives comparable energy- and force-error scales for the three fits, but these pooled errors do not constrain systematic solid--liquid free-energy biases directly.
+This cautions against attributing every property difference to the reference functional alone.
+Further targeted tests should include common snapshots of hot bcc Ti and the liquid states relevant to coexistence.
+Comparisons at common geometry and volume would isolate electronic-energy and stress changes; separate equilibrium ensembles would reveal the contribution of structural relaxation.
+Free-energy perturbation or thermodynamic integration, with adequate ensemble overlap, could then test the melting interpretation in Eq.~\eqref{eq:melting_shift}.
+Ensemble-averaged projected densities of states and bond-resolved analyses could examine the proposed electronic origin, but would need to be related to these energy differences.
+
+These checks would refine the causal interpretation.
+The coexistence and liquid-density calculations show a property-dependent pattern: \rscan{} improves the Ti coexistence melting estimate and the provisional overall mixing-enthalpy comparison, whereas PBE is closer to the available liquid-density references.
+The pure-Ti viscosity comparison does not establish a uniform transport ranking.
+The finite-size and observation-time limitations of coexistence, the indirect calorimetric reference, and the sampling uncertainty in viscosity set the precision with which this pattern can presently be quantified.

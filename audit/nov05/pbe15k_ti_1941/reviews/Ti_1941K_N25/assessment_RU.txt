@@ -1,0 +1,16 @@
+1941 K N=25: новый полный пакет. Все ошибки ниже — формальные SE.
+
+40ps: 2.845780 +/- 0.071558 мПа·с; neff=70.862; costZ=0.451; cutoffZ=3.649.
+first20ps: 2.674028 +/- 0.075455 мПа·с; neff=44.773; costZ=1.465; cutoffZ=1.443.
+second20ps: 2.964453 +/- 0.093614 мПа·с; neff=38.019; costZ=0.136; cutoffZ=2.453.
+Прежние20: 2.776439+/-0.065941; изменение40 +2.4975%; изменениеSE +8.518%.
+Новые5: 3.067688+/-0.204596; против прежнихZ=1.355; costZ=1.697; cutoffZ=2.589.
+Отдельные5k: 3.049946+/-0.117315; отличие -6.694%. Исторического15k при этойT нет.
+[{"id": "Ti_1941K", "flags": {"minimum_replicas": false, "precision": true, "last_three_stability": false, "duration_stability": false, "spectral_points": true, "cost": true, "cutoff": false, "new_batch_consistency": true, "window_fit_diagnostics": false}, "passed": false, "last_three_relative_range": 0.024366506546055166, "max_20_40_relative_difference": 0.060353294672732205}]
+Полных прохождений 0/2; stop=False; review hold=False.
+All9source diagnostic figures inspected. Full40 maincutoffnear1.8THz withlower shouldernear1.1THz failsZ3.649;first20near2.2THzpasses;second20near1.8THz failsZ2.453. New5 distinctlybimodal cutoffweightnear1and2THz failsZ2.589;costpasses. New5Z1.355 andhigher mean are descriptive because thefitdiagnosticsfail. This doesnotestablishphysicaldrift;allofficialpointsretained.
+Formal SE excludes model, protocol and cutoff systematics.
+Accumulated estimates and windows20/40ps are correlated; stopping is a heuristic.
+Historical15k and5k remain separate; agreement with5k is not a stop criterion.
+Fixed article profile and the earlier preview snapshot remain unchanged.
+Не проходятN25<30,размах2.4367%>2%,20/40=6.0353%>3%,cutoff40Z3.6488/second20Z2.4533/new5Z2.5888. SE2.5145%,neff70.8619,всеcost,новыйZ1.3549формальнопроходят;неинтерпретироватьZкакподтверждениеприbadfit. Полныхпрохождений0/2.

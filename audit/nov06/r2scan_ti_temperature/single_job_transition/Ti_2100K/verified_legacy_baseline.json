@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "unix": 1793933065.761656,
+  "protocol_sha256": "b8ba5d5cd445cd3bb2958607c753fb3ae3833ed476fbf96398e3293f9d497ff9",
+  "legacy_manifest_sha256": "b03c65ccb405a862591f1f0a89a883056f037f23714769e52190949bf5659c6c",
+  "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+  "frozen_sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a",
+  "checkpoint_internal_step": 23199,
+  "baseline": {
+    "eta_mPa_s": 2.9943408613114526,
+    "eta_std_mPa_s": 0.12679807173457383,
+    "relative_std": 0.04234590436007983,
+    "neff": 33.48620390695944,
+    "cost_z": -0.3584931798370875,
+    "criterion_z": -0.39716333239075086,
+    "formal_std_mPa_s": 0.12379301505735524,
+    "cluster_jackknife_std_mPa_s": 0.12679807173457383,
+    "legacy_replicas": 15,
+    "new_40ps_replicas": 0,
+    "replica_clusters": 15,
+    "windows_20ps": 15,
+    "leave_one_replica_out_mPa_s": [
+      3.0084209821465913,
+      2.958035424627139,
+      3.0482204337844827,
+      3.0229720499383173,
+      3.051370464377864,
+      2.9694232324852394,
+      2.9800069911907836,
+      3.0127102965152557,
+      3.0016178864062044,
+      2.970122269173103,
+      3.008744742701892,
+      3.0177757580547357,
+      2.9392122829416976,
+      2.939026380308139,
+      2.9856158478818635
+    ],
+    "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+    "pooling_version": "r2scan-legacy20-new40-v1"
+  },
+  "baseline_reference": {
+    "system": "AlTi",
+    "T": 2100,
+    "dft": "scan",
+    "c_Ti": 1.0,
+    "eta_mPa_s": 2.994340861294119,
+    "eta_std_mPa_s": 0.12379301504059284,
+    "eta_pa_s": 0.0029943408612941188,
+    "eta_std_pa_s": 0.00012379301504059285,
+    "neff": 33.48620391363342,
+    "n_replicas": 15,
+    "n_steps": 20001,
+    "timestep_ps": 0.001,
+    "block_size": 1,
+    "tau_exp_ps": 0.14415619580278208,
+    "tau_exp_std_ps": 0.021095164948069383,
+    "tau_int_ps": 0.10647182100591417,
+    "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json",
+    "tdm_mPa_s": 3.5234481277491874,
+    "tdm_delta_pct": 17.670241664684582
+  },
+  "model_pressure_checks": [
+    {
+      "replica": 1,
+      "max_abs_pressure_error_bar": 0.04961288255799445
+    },
+    {
+      "replica": 2,
+      "max_abs_pressure_error_bar": 0.04697545269391412
+    },
+    {
+      "replica": 3,
+      "max_abs_pressure_error_bar": 0.04942223568878035
+    },
+    {
+      "replica": 4,
+      "max_abs_pressure_error_bar": 0.04922165316747851
+    },
+    {
+      "replica": 5,
+      "max_abs_pressure_error_bar": 0.05807006996997188
+    },
+    {
+      "replica": 6,
+      "max_abs_pressure_error_bar": 0.05047878096911518
+    },
+    {
+      "replica": 7,
+      "max_abs_pressure_error_bar": 0.04680235462546989
+    },
+    {
+      "replica": 8,
+      "max_abs_pressure_error_bar": 0.04467074877538835
+    },
+    {
+      "replica": 9,
+      "max_abs_pressure_error_bar": 0.03271826537002198
+    },
+    {
+      "replica": 10,
+      "max_abs_pressure_error_bar": 0.07923205493352725
+    },
+    {
+      "replica": 11,
+      "max_abs_pressure_error_bar": 0.03934196677755608
+    },
+    {
+      "replica": 12,
+      "max_abs_pressure_error_bar": 0.029806285353515705
+    },
+    {
+      "replica": 13,
+      "max_abs_pressure_error_bar": 0.03936856506061304
+    },
+    {
+      "replica": 14,
+      "max_abs_pressure_error_bar": 0.04943250352425821
+    },
+    {
+      "replica": 15,
+      "max_abs_pressure_error_bar": 0.03779761938687898
+    }
+  ],
+  "max_error_bar": 0.07923205493352725,
+  "threshold_bar": 20,
+  "final_cpu_tests": "PASS including CPU analysis walltime deferral",
+  "validated_staging_manifest_sha256": "96435f9641b9af7144a124e238e31b116c10b780bfac5831492e467f0917841d",
+  "technical_code_verified_unix": 1793933171.5753694
+}

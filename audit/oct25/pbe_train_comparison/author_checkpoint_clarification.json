@@ -1,0 +1,8 @@
+{
+  "source": "Direct user clarification in this chat, 2026-10-25",
+  "PBE_selection": "The approximately 5000-step checkpoint was selected deliberately after comparing it with the final approximately 23400-step checkpoint; Ti phonons were better with the 5000-step model.",
+  "author_learning_curve_observation": "After approximately 5000 steps the train and validation errors diverged, interpreted by the authors as overfitting.",
+  "other_functionals": "For PBEsol and r2SCAN the final checkpoints performed better and the learning curves reached a plateau.",
+  "interpretation": "The PBE 5000-step checkpoint is an intentional property-based choice, not evidence of an accidentally supplied intermediate checkpoint. Current energy diagnostics apply to this selected model.",
+  "limits": "The paired phonon outputs for early and final PBE checkpoints have not been independently inspected in this diagnostic. Exact deployed MD-file identity has not been compared by hash here."
+}

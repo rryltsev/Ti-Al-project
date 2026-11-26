@@ -1,0 +1,107 @@
+{
+  "run_id": "pbe15k-viscosity-1873-20261027-01",
+  "remote": "/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01",
+  "checkpoint": {
+    "functional": "PBE",
+    "step": 15000,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-15000.pt",
+    "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+    "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+    "article_checkpoint": false
+  },
+  "frozen_model": {
+    "path": "/home6/u3129/tial-testsets/pbe15k-melting-20261026-02/model_15000.pt2",
+    "sha256": "1a59af825e47b585d3b49789f65bed0ac1fce0286630f9484f0687cbac3d0f65"
+  },
+  "states": [
+    {
+      "id": "xAl_0.20",
+      "x_Al": 0.2,
+      "c_Ti": 0.8,
+      "counts": {
+        "Al": 103,
+        "Ti": 409
+      },
+      "actual_x_Al": 0.201171875,
+      "initial_file": "initial_xAl_0.20.data",
+      "initial_sha256": "9c396470e12b45c24e2390de949f748ebe592bbe6aed5037040328b6c65ec3ae",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\01_generate_liquid\\c_Ti_0.80\\data.lammps",
+      "seed": 27102601
+    },
+    {
+      "id": "xAl_0.45",
+      "x_Al": 0.45,
+      "c_Ti": 0.55,
+      "counts": {
+        "Al": 231,
+        "Ti": 281
+      },
+      "actual_x_Al": 0.451171875,
+      "initial_file": "initial_xAl_0.45.data",
+      "initial_sha256": "2208d6d2f887e61a8139f3597a3427581c32fd7819a89a180f1b8570aaa42c2d",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\01_generate_liquid\\c_Ti_0.55\\data.lammps",
+      "seed": 27202601
+    },
+    {
+      "id": "xAl_0.80",
+      "x_Al": 0.8,
+      "c_Ti": 0.2,
+      "counts": {
+        "Al": 410,
+        "Ti": 102
+      },
+      "actual_x_Al": 0.80078125,
+      "initial_file": "initial_xAl_0.80.data",
+      "initial_sha256": "640f51958fdec92469cc34083aa40554ed947e7f417ebdeecbc3805eb86f1bf8",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_cluster\\results\\viscosity\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\01_generate_liquid\\c_Ti_0.20\\data.lammps",
+      "seed": 27302601
+    }
+  ],
+  "temperature_K": 1873,
+  "pressure_bar": 1,
+  "atoms": 512,
+  "dt_ps": 0.001,
+  "initial_npt_steps": 20000,
+  "reservoir_spacing_steps": 5000,
+  "nvt_equil_steps": 1000,
+  "production_steps": 40000,
+  "matched_window_steps": 20000,
+  "preparation_Tdamp_ps": 0.1,
+  "preparation_Pdamp_ps": 0.5,
+  "production_Tdamp_ps": 0.2,
+  "masses": [
+    26.98,
+    47.88
+  ],
+  "elements": [
+    "Al",
+    "Ti"
+  ],
+  "batch_size": 5,
+  "allocation": {
+    "partition": "v100",
+    "node": "tesla-a101",
+    "account": "imet-2026-2",
+    "qos": "normal",
+    "gpu": "a100:1",
+    "cpus": 6,
+    "md_threads": 4,
+    "analysis_threads": 2,
+    "memory": "32G",
+    "walltime": "20:00:00"
+  },
+  "convergence": {
+    "min_replicas": 30,
+    "max_relative_std": 0.03,
+    "max_last_three_range": 0.02,
+    "max_20_40_relative_difference": 0.03,
+    "min_neff": 60,
+    "max_cost_z": 2,
+    "max_criterion_z": 2,
+    "required_consecutive_passes": 2,
+    "interpretation": "Operational stopping rule for sampling; nominal uncertainties after sequential inspection are descriptive, not coverage guarantees."
+  },
+  "duration_policy": "Full 40 ps and matched first 20 ps analyzed separately; never pool historical 5k trajectories.",
+  "restart_policy": "One Slurm job ID, requeued before walltime at a completed-replica boundary; immutable completed replicas are reused.",
+  "preparation_note": "Start from archived 512-atom liquid structures; re-equilibrate under 15k in NPT for 20 ps, then take successive NPT reservoir snapshots 5 ps apart, independently reseed velocities and equilibrate 1 ps NVT. This strengthens preparation relative to historical sampling, so the difference is not a perfectly isolated checkpoint intervention."
+}

@@ -1,0 +1,644 @@
+{
+  "temperature_K": 1000.0,
+  "energy_convention": "Per atom with three translations at Gamma removed; q weights normalized over the Brillouin zone. Input frequencies are ordinary frequencies in THz.",
+  "numerical_check": "Independent ATAT or pilot archive: fit the actual stored quantum free-energy table (1000 to 1800 K, 25 K increments, order four) and compare to the direct mode sum at 1000 K.",
+  "shared_check": "Compare each available matched decoration and volume from two separate phonon calculations. Subtract the author's recovered classical label from our direct spectral sum; repeat for quantum labels to quantify preparation and mesh differences.",
+  "local_archives": {
+    "cluster/runs/atat-v100-02/outputs/results.tar.gz": {
+      "sha256": "f6e0d188c897e19fc6f9e08b8099d2a51c6785f8599d72f52368511f5f73ce2b",
+      "structures": 46
+    },
+    "cluster/runs/atat-v102-01/outputs/results.tar.gz": {
+      "sha256": "21a422cd88052406773c55b4a940ed6e74ea8e3a0a7311aeeb571a4402a7ce0b",
+      "structures": 46
+    },
+    "cluster/runs/atat-v104-01/outputs/results.tar.gz": {
+      "sha256": "e84fd41cc8e38cba986e8461ee4086404253e1994803f2468eff8b3007d6ce62",
+      "structures": 46
+    },
+    "cluster/runs/atat-v106-01/outputs/results.tar.gz": {
+      "sha256": "b33a22babb1a9a9cb1fb186a655fbe51975715259de5c74ef55241eda86ac73b",
+      "structures": 46
+    },
+    "cluster/runs/atat-v109-01/outputs/results.tar.gz": {
+      "sha256": "957459bdcf2800d8caf7a697c8d714c82128a61799c5bfe324fa8d529222d0fd",
+      "structures": 46
+    },
+    "cluster/runs/atat-v112-01/outputs/results.tar.gz": {
+      "sha256": "60693c5d409ee60252f97aabeb773361b420bc4b945a2d7709786ffd2ab0396f",
+      "structures": 46
+    },
+    "cluster/runs/atat-v94-01/outputs/results.tar.gz": {
+      "sha256": "2400159324081b70ae3d0d83ee51177b7b6e89e1f9de97171c07ce709add39ad",
+      "structures": 46
+    },
+    "cluster/runs/atat-v96-01/outputs/results.tar.gz": {
+      "sha256": "44ebe26dc106dce625c5efae496f8c68999b48a9c047a51295ab691af2d49404",
+      "structures": 46
+    },
+    "cluster/runs/atat-v98-01/outputs/results.tar.gz": {
+      "sha256": "cef084555026b9408f802b4f6706f740148f780db2b0873a69932b1406594d08",
+      "structures": 46
+    },
+    "cluster/runs/alloy-ti-bulkha-01/outputs/phonons.tar.gz": {
+      "sha256": "84bf382c439e78fcf4a8d74a4654711a6c0ae0836ad03ab41fbb71618b2bfa67",
+      "structures": 3
+    }
+  },
+  "shared_map_sha256": "9706210cb93ce802f3304e15d4896c47d6979dd99e82940933bb026d5211b777",
+  "author_labels_sha256": "799cc133c780b6d10aa79d3b593811ee1f80b13255d920fafc5ac331b0a19027",
+  "same_spectrum_validation": {
+    "ATAT": {
+      "Fcl_recovered_minus_direct_eV_atom": {
+        "n": 396,
+        "rms": 2.699647319316691e-13,
+        "min": -2.46525022618016e-13,
+        "max": 6.95221658020273e-13,
+        "max_abs": 6.95221658020273e-13
+      },
+      "Fq_archived_minus_direct_eV_atom": {
+        "n": 396,
+        "rms": 1.5915054773504696e-16,
+        "min": -4.996003610813204e-16,
+        "max": 5.551115123125783e-16,
+        "max_abs": 5.551115123125783e-16
+      }
+    },
+    "eight_atom_pilots": {
+      "Fcl_recovered_minus_direct_eV_atom": {
+        "n": 3,
+        "rms": 1.6559214297786313e-13,
+        "min": 3.624878175401136e-14,
+        "max": 2.2959412149248237e-13,
+        "max_abs": 2.2959412149248237e-13
+      },
+      "Fq_archived_minus_direct_eV_atom": {
+        "n": 3,
+        "rms": 1.199177923332954e-16,
+        "min": -1.6653345369377348e-16,
+        "max": 1.1102230246251565e-16,
+        "max_abs": 1.6653345369377348e-16
+      }
+    }
+  },
+  "pilot_details": [
+    {
+      "structure": "basal",
+      "Fcl_direct_eV_atom": -0.3481007251113436,
+      "Fcl_recovered_minus_direct_eV_atom": 2.2959412149248237e-13,
+      "Fq_archived_minus_direct_eV_atom": 5.551115123125783e-17
+    },
+    {
+      "structure": "d019",
+      "Fcl_direct_eV_atom": -0.32954607581942297,
+      "Fcl_recovered_minus_direct_eV_atom": 1.6803225477701744e-13,
+      "Fq_archived_minus_direct_eV_atom": 1.1102230246251565e-16
+    },
+    {
+      "structure": "interlayer",
+      "Fcl_direct_eV_atom": -0.3558475981872,
+      "Fcl_recovered_minus_direct_eV_atom": 3.624878175401136e-14,
+      "Fq_archived_minus_direct_eV_atom": -1.6653345369377348e-16
+    }
+  ],
+  "matched_author_validation": {
+    "all_volumes": {
+      "direct_minus_author_classical_meV_atom": {
+        "n": 72,
+        "rms": 0.0135693663585882,
+        "min": -0.1113026029273545,
+        "max": 0.027845837667905826,
+        "max_abs": 0.1113026029273545
+      },
+      "direct_minus_author_quantum_meV_atom": {
+        "n": 72,
+        "rms": 0.01364666000215861,
+        "min": -0.11194526965041529,
+        "max": 0.02798417974170242,
+        "max_abs": 0.11194526965041529
+      }
+    },
+    "reference_volume": {
+      "direct_minus_author_classical_meV_atom": {
+        "n": 8,
+        "rms": 0.0010364950742992895,
+        "min": 0.0002764983420000533,
+        "max": 0.002133107272761503,
+        "max_abs": 0.002133107272761503
+      },
+      "direct_minus_author_quantum_meV_atom": {
+        "n": 8,
+        "rms": 0.00103745700995833,
+        "min": 0.00027292084531227445,
+        "max": 0.0021351394413060554,
+        "max_abs": 0.0021351394413060554
+      }
+    }
+  },
+  "matched_author_details": [
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 1.0,
+      "direct_minus_author_classical_meV_atom": 0.0007840143955717416,
+      "direct_minus_author_quantum_meV_atom": 0.0007816967984575207
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 1.0,
+      "direct_minus_author_classical_meV_atom": 0.002133107272761503,
+      "direct_minus_author_quantum_meV_atom": 0.0021351394413060554
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 1.0,
+      "direct_minus_author_classical_meV_atom": 0.001157004030527542,
+      "direct_minus_author_quantum_meV_atom": 0.001163067069320789
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 1.0,
+      "direct_minus_author_classical_meV_atom": 0.00035733291792183763,
+      "direct_minus_author_quantum_meV_atom": 0.00035541366577573896
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 1.0,
+      "direct_minus_author_classical_meV_atom": 0.0010509765509536528,
+      "direct_minus_author_quantum_meV_atom": 0.0010522920590450013
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 1.0,
+      "direct_minus_author_classical_meV_atom": 0.0002764983420000533,
+      "direct_minus_author_quantum_meV_atom": 0.00027292084531227445
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 1.0,
+      "direct_minus_author_classical_meV_atom": 0.0006648961025090827,
+      "direct_minus_author_quantum_meV_atom": 0.0006651228176557389
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 1.0,
+      "direct_minus_author_classical_meV_atom": 0.0005833661723131378,
+      "direct_minus_author_quantum_meV_atom": 0.0005808867807877149
+    },
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 1.02,
+      "direct_minus_author_classical_meV_atom": 0.00029564762221712115,
+      "direct_minus_author_quantum_meV_atom": 0.00029171865845167844
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 1.02,
+      "direct_minus_author_classical_meV_atom": 0.001835108326686541,
+      "direct_minus_author_quantum_meV_atom": 0.0018340448005305099
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 1.02,
+      "direct_minus_author_classical_meV_atom": 0.0003886190056423544,
+      "direct_minus_author_quantum_meV_atom": 0.00038821197884120195
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 1.02,
+      "direct_minus_author_classical_meV_atom": 0.0004739892246474753,
+      "direct_minus_author_quantum_meV_atom": 0.0004728523332886425
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 1.02,
+      "direct_minus_author_classical_meV_atom": 0.00038748842134950223,
+      "direct_minus_author_quantum_meV_atom": 0.0003847584286731376
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 1.02,
+      "direct_minus_author_classical_meV_atom": 0.00024389845265648802,
+      "direct_minus_author_quantum_meV_atom": 0.00024184484631595282
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 1.02,
+      "direct_minus_author_classical_meV_atom": 0.0009537622653321698,
+      "direct_minus_author_quantum_meV_atom": 0.0009541811799018696
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 1.02,
+      "direct_minus_author_classical_meV_atom": 0.0006094635606745946,
+      "direct_minus_author_quantum_meV_atom": 0.0006065310226843756
+    },
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 1.04,
+      "direct_minus_author_classical_meV_atom": -0.0009974161213621713,
+      "direct_minus_author_quantum_meV_atom": -0.0010035803919561381
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 1.04,
+      "direct_minus_author_classical_meV_atom": 0.0005785974132033189,
+      "direct_minus_author_quantum_meV_atom": 0.000574606588144011
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 1.04,
+      "direct_minus_author_classical_meV_atom": 0.0016025747551218217,
+      "direct_minus_author_quantum_meV_atom": 0.0016105261179677477
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 1.04,
+      "direct_minus_author_classical_meV_atom": 0.00030437797915450204,
+      "direct_minus_author_quantum_meV_atom": 0.00030225842667652714
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 1.04,
+      "direct_minus_author_classical_meV_atom": 0.0016340531547864856,
+      "direct_minus_author_quantum_meV_atom": 0.001632106617188711
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 1.04,
+      "direct_minus_author_classical_meV_atom": 0.027845837667905826,
+      "direct_minus_author_quantum_meV_atom": 0.02798417974170242
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 1.04,
+      "direct_minus_author_classical_meV_atom": -1.1643972452901608e-06,
+      "direct_minus_author_quantum_meV_atom": -2.6355004845157737e-06
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 1.04,
+      "direct_minus_author_classical_meV_atom": 0.0002615473870815066,
+      "direct_minus_author_quantum_meV_atom": 0.00025712246926046234
+    },
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 1.06,
+      "direct_minus_author_classical_meV_atom": 0.00012922825320949016,
+      "direct_minus_author_quantum_meV_atom": 0.00012518176462084085
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 1.06,
+      "direct_minus_author_classical_meV_atom": 0.002247850081349423,
+      "direct_minus_author_quantum_meV_atom": 0.00224890890693219
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 1.06,
+      "direct_minus_author_classical_meV_atom": 0.0019227580700942326,
+      "direct_minus_author_quantum_meV_atom": 0.0019278862477545289
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 1.06,
+      "direct_minus_author_classical_meV_atom": 0.00016183482259846116,
+      "direct_minus_author_quantum_meV_atom": 0.00016013668951986304
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 1.06,
+      "direct_minus_author_classical_meV_atom": 0.0001268970650225576,
+      "direct_minus_author_quantum_meV_atom": 0.00012041362962289526
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 1.06,
+      "direct_minus_author_classical_meV_atom": -0.0012830104612615578,
+      "direct_minus_author_quantum_meV_atom": -0.0012924183503959519
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 1.06,
+      "direct_minus_author_classical_meV_atom": 0.0003089128300937105,
+      "direct_minus_author_quantum_meV_atom": 0.0003094376510026642
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 1.06,
+      "direct_minus_author_classical_meV_atom": 0.0007231483103997682,
+      "direct_minus_author_quantum_meV_atom": 0.0007206580575624955
+    },
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 1.09,
+      "direct_minus_author_classical_meV_atom": 0.00202489527489913,
+      "direct_minus_author_quantum_meV_atom": 0.002025968920904564
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 1.09,
+      "direct_minus_author_classical_meV_atom": -0.0024177298142968873,
+      "direct_minus_author_quantum_meV_atom": -0.0024225543114320125
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 1.09,
+      "direct_minus_author_classical_meV_atom": 0.0009762489629472348,
+      "direct_minus_author_quantum_meV_atom": 0.0009790095196748894
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 1.09,
+      "direct_minus_author_classical_meV_atom": 0.000606909109968079,
+      "direct_minus_author_quantum_meV_atom": 0.0006058757815452509
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 1.09,
+      "direct_minus_author_classical_meV_atom": -0.1113026029273545,
+      "direct_minus_author_quantum_meV_atom": -0.11194526965041529
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 1.09,
+      "direct_minus_author_classical_meV_atom": -0.0008968248929597245,
+      "direct_minus_author_quantum_meV_atom": -0.0009039455549642028
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 1.09,
+      "direct_minus_author_classical_meV_atom": 0.0007067736791932511,
+      "direct_minus_author_quantum_meV_atom": 0.0007061587730672336
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 1.09,
+      "direct_minus_author_classical_meV_atom": 0.0005203304406786735,
+      "direct_minus_author_quantum_meV_atom": 0.0005168984600345539
+    },
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 1.12,
+      "direct_minus_author_classical_meV_atom": 0.0011723087395276721,
+      "direct_minus_author_quantum_meV_atom": 0.001171842707037296
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 1.12,
+      "direct_minus_author_classical_meV_atom": 0.0017766200661184506,
+      "direct_minus_author_quantum_meV_atom": 0.001774401966969652
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 1.12,
+      "direct_minus_author_classical_meV_atom": 0.0036244741785651513,
+      "direct_minus_author_quantum_meV_atom": 0.003629400909033187
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 1.12,
+      "direct_minus_author_classical_meV_atom": 0.00012961853967929926,
+      "direct_minus_author_quantum_meV_atom": 0.00012720986580783133
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 1.12,
+      "direct_minus_author_classical_meV_atom": 0.0018116097203479953,
+      "direct_minus_author_quantum_meV_atom": 0.0018141961835582698
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 1.12,
+      "direct_minus_author_classical_meV_atom": -0.00047055182395006057,
+      "direct_minus_author_quantum_meV_atom": -0.0004797435550485396
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 1.12,
+      "direct_minus_author_classical_meV_atom": 0.001265746683520863,
+      "direct_minus_author_quantum_meV_atom": 0.0012667932614007782
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 1.12,
+      "direct_minus_author_classical_meV_atom": 0.0005223066195103598,
+      "direct_minus_author_quantum_meV_atom": 0.0005203237343764933
+    },
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 0.94,
+      "direct_minus_author_classical_meV_atom": 0.001095247125382226,
+      "direct_minus_author_quantum_meV_atom": 0.0010958926757731469
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 0.94,
+      "direct_minus_author_classical_meV_atom": 0.0005185878270697053,
+      "direct_minus_author_quantum_meV_atom": 0.0005163709130839855
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 0.94,
+      "direct_minus_author_classical_meV_atom": 0.0019571209216029395,
+      "direct_minus_author_quantum_meV_atom": 0.0019682779202057077
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 0.94,
+      "direct_minus_author_classical_meV_atom": 0.0003081269863702829,
+      "direct_minus_author_quantum_meV_atom": 0.00030596460731668884
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 0.94,
+      "direct_minus_author_classical_meV_atom": 0.00041132572764501774,
+      "direct_minus_author_quantum_meV_atom": 0.0004143239951681643
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 0.94,
+      "direct_minus_author_classical_meV_atom": 0.001362605946242379,
+      "direct_minus_author_quantum_meV_atom": 0.0013654293731235612
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 0.94,
+      "direct_minus_author_classical_meV_atom": -2.4537071208197148e-05,
+      "direct_minus_author_quantum_meV_atom": -2.5025149452684303e-05
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 0.94,
+      "direct_minus_author_classical_meV_atom": 0.0006690445942814094,
+      "direct_minus_author_quantum_meV_atom": 0.0006670043681267224
+    },
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 0.96,
+      "direct_minus_author_classical_meV_atom": -9.610311729746357e-05,
+      "direct_minus_author_quantum_meV_atom": -9.926956551220556e-05
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 0.96,
+      "direct_minus_author_classical_meV_atom": 0.0019245352433916452,
+      "direct_minus_author_quantum_meV_atom": 0.0019237622599921345
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 0.96,
+      "direct_minus_author_classical_meV_atom": 0.001188472366908666,
+      "direct_minus_author_quantum_meV_atom": 0.001194029719209233
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 0.96,
+      "direct_minus_author_classical_meV_atom": 0.00026367136207738895,
+      "direct_minus_author_quantum_meV_atom": 0.0002612997684336982
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 0.96,
+      "direct_minus_author_classical_meV_atom": 0.0014972570007154573,
+      "direct_minus_author_quantum_meV_atom": 0.0014985721222271486
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 0.96,
+      "direct_minus_author_classical_meV_atom": 0.00021069331396228463,
+      "direct_minus_author_quantum_meV_atom": 0.00020647531345785453
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 0.96,
+      "direct_minus_author_classical_meV_atom": 0.001706563018788465,
+      "direct_minus_author_quantum_meV_atom": 0.0017089769653311215
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 0.96,
+      "direct_minus_author_classical_meV_atom": 0.0004102170504394209,
+      "direct_minus_author_quantum_meV_atom": 0.00040759840463922004
+    },
+    {
+      "author": "training_09_Ti9Al3",
+      "atat": "control_05",
+      "volume_ratio": 0.98,
+      "direct_minus_author_classical_meV_atom": -0.0008492502035495342,
+      "direct_minus_author_quantum_meV_atom": -0.0008533312145231342
+    },
+    {
+      "author": "training_01_Ti2Al0",
+      "atat": "train_00",
+      "volume_ratio": 0.98,
+      "direct_minus_author_classical_meV_atom": 0.0003509947616997522,
+      "direct_minus_author_quantum_meV_atom": 0.00034889411937299997
+    },
+    {
+      "author": "training_02_Ti6Al2",
+      "atat": "train_01",
+      "volume_ratio": 0.98,
+      "direct_minus_author_classical_meV_atom": 0.001560589163895898,
+      "direct_minus_author_quantum_meV_atom": 0.00156951612589884
+    },
+    {
+      "author": "D019-excess_Al17",
+      "atat": "train_03",
+      "volume_ratio": 0.98,
+      "direct_minus_author_classical_meV_atom": 0.0002945088486416836,
+      "direct_minus_author_quantum_meV_atom": 0.0002924025196970881
+    },
+    {
+      "author": "additional_02_pool26_Ti6Al2",
+      "atat": "train_23",
+      "volume_ratio": 0.98,
+      "direct_minus_author_classical_meV_atom": 0.0018100382437880036,
+      "direct_minus_author_quantum_meV_atom": 0.0018131475769678218
+    },
+    {
+      "author": "additional_03_pool25_Ti6Al2",
+      "atat": "train_25",
+      "volume_ratio": 0.98,
+      "direct_minus_author_classical_meV_atom": 0.00018845136195988488,
+      "direct_minus_author_quantum_meV_atom": 0.00018559791892247546
+    },
+    {
+      "author": "additional_04_pool36_Ti6Al2",
+      "atat": "train_31",
+      "volume_ratio": 0.98,
+      "direct_minus_author_classical_meV_atom": 0.0007669837732704465,
+      "direct_minus_author_quantum_meV_atom": 0.0007691942346399472
+    },
+    {
+      "author": "additional_07_pool206_Ti9Al3",
+      "atat": "train_37",
+      "volume_ratio": 0.98,
+      "direct_minus_author_classical_meV_atom": 0.0004643835477824432,
+      "direct_minus_author_quantum_meV_atom": 0.0004616519477806946
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "remote_root": "/home6/u3129/tial-testsets/model-verify-infer-20261022-01",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=32G",
+    "--time=00:30:00",
+    "--dependency=afterany:20958500",
+    "--no-requeue",
+    "--chdir=/home6/u3129/tial-testsets/model-verify-infer-20261022-01",
+    "--job-name=t50-verify-infer",
+    "--output=/home6/u3129/tial-testsets/model-verify-infer-20261022-01/slurm-%j.out",
+    "/home6/u3129/tial-testsets/model-verify-infer-20261022-01/model_job.sbatch"
+  ],
+  "unix": 1792637130.0891914,
+  "reason": "Original export validation incorrectly assumed a binary-only type map; retain all 118 source element types and resolve Al/Ti by name. Reuse exports without modifying source weights.",
+  "files": {
+    "verify_exports.py": "f910a6728793a49dc4bad016c19434724d3283d85367e6f89644d59ba6164e88",
+    "export_models.py": "df5edac2f1c3acd7b98bf59ebb644faa0be318b8a77430ed88c502db8b53765e",
+    "predict.py": "96ec173d6a915d22d1249ab7e8442fedfa34ff0903e863ebcd0c9ec36faa308d",
+    "infer_all.py": "2fad3411141b003e7d868ffcc4b834af4e26ba6636e622a89093926bf6160d9c",
+    "model_job.sbatch": "7859131ef8a60a0f18899706c0717b93565bfef924ad25ebf1972fb6f0879ab6",
+    "bundle.json": "68099ee8215e63488f648c98b8e7290873239e7b5d9d5c52f2b45d095f74c6c6",
+    "all50-geometries.json": "868c73c24e206e0890ad8a69f6c6e1717039c8438e8410b890aaa301b212ebe8"
+  }
+}

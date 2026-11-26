@@ -1,0 +1,21 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=8G",
+    "--no-requeue",
+    "--job-name=pbe-md-production",
+    "--chdir=/home6/u3129/tial-testsets/pbe-control-md-20261025-01",
+    "--output=/home6/u3129/tial-testsets/pbe-control-md-20261025-01/production-%A_%a.out",
+    "--time=20:00:00",
+    "--array=0-7%8",
+    "/home6/u3129/tial-testsets/pbe-control-md-20261025-01/job.sbatch"
+  ],
+  "unix": 1792917800.693706
+}

@@ -1,0 +1,38 @@
+PBEsol queue diagnosis and refresh, 2026-10-22
+Cluster: umt.imm.uran.ru; Slurm 23.02.7; array 20957369.
+Before: 26 PENDING with JobArrayTaskLimit, no RUNNING/COMPLETING tasks.
+ArrayTaskThrottle=5, Dependency=(null), no hold. The completed base-array
+record is retained by Slurm and was excluded from active-task counts.
+
+Applied exactly once: scontrol update JobId=20957369 ArrayTaskThrottle=5
+The numerical limit remained 5 throughout. No cancellation, hold, requeue,
+resubmission, Nice changes or production-input modifications were performed.
+Immediately afterwards all 26 pending tasks reported Priority. A later check
+across multiple configured 10-second backfill intervals confirmed Priority.
+PBEsol has not yet started: refreshing the reason does not bypass queue priority
+or reserve compute resources. No priority escalation was performed.
+
+All six tasks already RUNNING at the refresh snapshot retained their StartTime,
+NodeList, Restarts, NumCPUs, NumTasks, TimeLimit and Nice. Three arrays still have
+ArrayTaskThrottle=5. One PBE job from the initial diagnostic snapshot had finished
+normally before the refresh intent was recorded.
+
+Interpretation: the old displayed JobArrayTaskLimit was not a reliable current
+explanation of waiting. Reapplying the SAME limit prompted reconsideration and
+revealed Priority. This is a refresh of stale scheduler state/reason, not proof
+of an incorrectly configured concurrency limit or a repaired internal counter.
+The precise controller-internal cause of the stale reason cannot be established
+without controller logs; no claim of a specific Slurm software defect is made.
+
+Source inspection: job_mgr.c in the official Slurm 23.02.7 tag sets the array
+max_run_tasks on update, including for a completed base record. It does not reset
+tot_run_tasks in that code path. job_array_start_test assigns WAIT_ARRAY_TASK_LIMIT
+when the stored running count reaches max_run_tasks. Sources retained locally:
+https://github.com/SchedMD/slurm/blob/slurm-23-02-7-1/src/slurmctld/job_mgr.c#L12559
+https://github.com/SchedMD/slurm/blob/slurm-23-02-7-1/src/slurmctld/job_mgr.c#L16664
+https://slurm.schedmd.com/job_reason_codes.html
+https://slurm.schedmd.com/scontrol.html
+
+Evidence: refresh-intent.json, refresh-result.json, verification.json.
+User authorized this one-time diagnosis/correction. Hourly monitoring remains
+read-only for Slurm; no new automatic queue-changing policy was introduced.

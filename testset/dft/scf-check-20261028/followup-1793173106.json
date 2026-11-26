@@ -1,0 +1,37 @@
+{
+  "unix": 1793173106.8880208,
+  "source": "testset\\dft\\scf-check-20261028\\snapshot-1793173106.json",
+  "027_latest_complete": {
+    "n": 22,
+    "dE_eV": 0.01369674,
+    "deps_eV": -0.02438317
+  },
+  "iteration_in_progress": 23,
+  "loop_minutes_last5": [
+    15.94682,
+    15.995266666666668,
+    15.965013333333333,
+    15.932799999999999,
+    15.983565
+  ],
+  "timing_scenarios": [
+    {
+      "tail": 5,
+      "additional_steps": 12.922303622867405,
+      "additional_h_recent_max_step_plus45min": 4.215641111111111
+    },
+    {
+      "tail": 8,
+      "additional_steps": 18.640714580994885,
+      "additional_h_recent_max_step_plus45min": 5.815167777777778
+    },
+    {
+      "tail": 10,
+      "additional_steps": 22.154050803721862,
+      "additional_h_recent_max_step_plus45min": 6.881518888888889
+    }
+  ],
+  "interpretation": "027 now has sustained decreasing residuals and stable ~16min steps. Timing risk substantially reduced compared with initial 31min scenario; forecasts remain conditional. 035 completed validated in 07:03:47; 044 in 03:54:17.",
+  "array_observation": "4 RUNNING, 21 PENDING with JobArrayTaskLimit, throttle still 5; reason alone does not establish a counter bug. No automatic refresh or scheduler mutation.",
+  "DFT_modified": false
+}

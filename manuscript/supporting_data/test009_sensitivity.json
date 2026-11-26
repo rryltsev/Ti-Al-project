@@ -1,0 +1,633 @@
+{
+  "all20": {
+    "PBE": {
+      "n": 20,
+      "mae": 4.3396576378449305,
+      "rmse": 6.405512608059671,
+      "bias": 4.166458589939474,
+      "median": 2.0048184568963734,
+      "centered_rmse_diagnostic_only": 4.865307245213911,
+      "n_positive": 17
+    },
+    "pretrained": {
+      "n": 20,
+      "mae": 3.0158119613675076,
+      "rmse": 3.39844007112513,
+      "bias": -2.9427046544632076,
+      "median": -3.200062584353544,
+      "centered_rmse_diagnostic_only": 1.6999659507265288,
+      "n_positive": 1
+    }
+  },
+  "without009": {
+    "PBE": {
+      "n": 19,
+      "mae": 3.624584410033715,
+      "rmse": 5.126138404499186,
+      "bias": 3.442269622764813,
+      "median": 1.8193891490646499,
+      "centered_rmse_diagnostic_only": 3.798430568836563,
+      "n_positive": 16
+    },
+    "pretrained": {
+      "n": 19,
+      "mae": 3.136061376753008,
+      "rmse": 3.4826897538381814,
+      "bias": -3.136061376753008,
+      "median": -3.3644042116573356,
+      "centered_rmse_diagnostic_only": 1.5146771810281818,
+      "n_positive": 0
+    }
+  },
+  "Ti_rich_xTi_ge_half": {
+    "PBE": {
+      "n": 10,
+      "mae": 7.3581747663716355,
+      "rmse": 8.939772672467916,
+      "bias": 7.21116828990047,
+      "median": 7.5353541289884,
+      "centered_rmse_diagnostic_only": 5.283804247901134,
+      "n_positive": 9
+    },
+    "pretrained": {
+      "n": 10,
+      "mae": 3.6094279113248824,
+      "rmse": 3.872690605965061,
+      "bias": -3.463213297516282,
+      "median": -3.642102340998471,
+      "centered_rmse_diagnostic_only": 1.733172289599748,
+      "n_positive": 1
+    }
+  },
+  "Al_rich_xTi_lt_half": {
+    "PBE": {
+      "n": 10,
+      "mae": 1.321140509318226,
+      "rmse": 1.4634370873456384,
+      "bias": 1.121748889978478,
+      "median": 1.339375207308009,
+      "centered_rmse_diagnostic_only": 0.9398550614061396,
+      "n_positive": 8
+    },
+    "pretrained": {
+      "n": 10,
+      "mae": 2.4221960114101333,
+      "rmse": 2.8462356375619926,
+      "bias": -2.4221960114101333,
+      "median": -2.4060232665695587,
+      "centered_rmse_diagnostic_only": 1.4946651085901363,
+      "n_positive": 0
+    }
+  },
+  "leave_one_out": {
+    "TiAl-test-001": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.529374756554883,
+        "rmse": 6.569753511506615,
+        "bias": 4.424431799007648,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.856548615826207,
+        "n_positive": 17
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.969816562162375,
+        "rmse": 3.370599987935639,
+        "bias": -2.892861502263112,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.729825600283376,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-002": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.447406946495455,
+        "rmse": 6.55084021303464,
+        "bias": 4.265092159226553,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.972172198347107,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.1250063550640172,
+        "rmse": 3.4800347423027405,
+        "bias": -3.048051295164754,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.679293038656019,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-003": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.151789449729229,
+        "rmse": 6.316466079386037,
+        "bias": 3.9694746624603265,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.913350652672765,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.8561142121803464,
+        "rmse": 3.1985569202138993,
+        "bias": -2.7791591522810832,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.5833637542082726,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-004": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.537933847664503,
+        "rmse": 6.57060512566688,
+        "bias": 4.4158727078980275,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.865482498692315,
+        "n_positive": 17
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.0330922207372955,
+        "rmse": 3.4317811225306794,
+        "bias": -2.9561371608380322,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.7430934453638411,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-005": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.03335260891089,
+        "rmse": 6.144733930128435,
+        "bias": 3.8510378216419885,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.788242137606929,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.9968548607255125,
+        "rmse": 3.399617187816547,
+        "bias": -2.919899800826249,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.741143927661501,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-006": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.483405353881945,
+        "rmse": 6.561549563111533,
+        "bias": 4.301090566613043,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.955255049637852,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.0715849854427275,
+        "rmse": 3.4577257148660405,
+        "bias": -2.9946299255434643,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.7286002222276315,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-007": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.472303347780735,
+        "rmse": 6.558649004677131,
+        "bias": 4.289988560511833,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.961035669820358,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.9085224001452796,
+        "rmse": 3.2882711192874994,
+        "bias": -2.8315673402460164,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.671811398331871,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-008": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.513995340004408,
+        "rmse": 6.567690496739748,
+        "bias": 4.331680552735506,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.936709638009776,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.9183888031792704,
+        "rmse": 3.3031217313676615,
+        "bias": -2.841433743280007,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.6843002864047332,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-009": {
+      "PBE": {
+        "n": 19,
+        "mae": 3.624584410033715,
+        "rmse": 5.126138404499186,
+        "bias": 3.442269622764813,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 3.798430568836563,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.136061376753008,
+        "rmse": 3.4826897538381814,
+        "bias": -3.136061376753008,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.5146771810281818,
+        "n_positive": 0
+      }
+    },
+    "TiAl-test-010": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.452784473272132,
+        "rmse": 6.552679846200861,
+        "bias": 4.2704696860032305,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.9699800631123665,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.025228474045264,
+        "rmse": 3.4254458551687255,
+        "bias": -2.948273414146001,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.7439504528892116,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-011": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.518617928209934,
+        "rmse": 6.56838256269066,
+        "bias": 4.336303140941031,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.933571177121464,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.161240470182864,
+        "rmse": 3.4862440659734917,
+        "bias": -3.084285410283601,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.6251403617679012,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-012": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.362595643499501,
+        "rmse": 6.510606340878065,
+        "bias": 4.180280856230598,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.991317149702434,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.9426418326856734,
+        "rmse": 3.336991010114343,
+        "bias": -2.8656867727864097,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.7097801969437345,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-013": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.492535260233507,
+        "rmse": 6.563666577086825,
+        "bias": 4.310220472964605,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.950123070147192,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.1358964793248774,
+        "rmse": 3.4826550648491814,
+        "bias": -3.058941419425614,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.6648614636786043,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-014": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.531967211387387,
+        "rmse": 6.570033834223212,
+        "bias": 4.349652424118484,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.924009379783708,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.0147641194894947,
+        "rmse": 3.4164639815821,
+        "bias": -2.9378090595902315,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.7439908448261343,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-015": {
+      "PBE": {
+        "n": 19,
+        "mae": 3.943157383839057,
+        "rmse": 5.980845955586805,
+        "bias": 3.760842596570155,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.650438829646348,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.072392022235881,
+        "rmse": 3.4581804570149144,
+        "bias": -2.9954369623366177,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.7281115351583816,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-016": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.191136721629741,
+        "rmse": 6.363233060920708,
+        "bias": 4.008821934360839,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.941667905290859,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.997465000825938,
+        "rmse": 3.4002219946192827,
+        "bias": -2.9205099409266744,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.7413016101873922,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-017": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.545716016393312,
+        "rmse": 6.571195493482441,
+        "bias": 4.408090539169219,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.873330279393216,
+        "n_positive": 17
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 3.062719985660662,
+        "rmse": 3.4524906743454173,
+        "bias": -2.9857649257613987,
+        "median": -3.3644042116573356,
+        "centered_rmse_diagnostic_only": 1.7334646418473911,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-018": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.502599218670767,
+        "rmse": 6.56571989716308,
+        "bias": 4.3202844314018645,
+        "median": 2.1902477647280967,
+        "centered_rmse_diagnostic_only": 4.944069194478353,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.9324935709285818,
+        "rmse": 3.3232702057716237,
+        "bias": -2.855538511029318,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.7000072566309337,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-019": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.395216409770458,
+        "rmse": 6.528588589061734,
+        "bias": 4.212901622501556,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.987376954306826,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.9958820574535916,
+        "rmse": 3.3986483609680156,
+        "bias": -2.918926997554328,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.7408836447215685,
+        "n_positive": 1
+      }
+    },
+    "TiAl-test-020": {
+      "PBE": {
+        "n": 19,
+        "mae": 4.062680428937052,
+        "rmse": 6.191713979331507,
+        "bias": 3.8803656416681505,
+        "median": 1.8193891490646499,
+        "centered_rmse_diagnostic_only": 4.824943988152663,
+        "n_positive": 16
+      },
+      "pretrained": {
+        "n": 19,
+        "mae": 2.9600734381274947,
+        "rmse": 3.3590689930971873,
+        "bias": -2.8831183782282315,
+        "median": -3.035720957049753,
+        "centered_rmse_diagnostic_only": 1.7236510428475835,
+        "n_positive": 1
+      }
+    }
+  },
+  "009_fraction_squared_error": 0.39158980855825887,
+  "fine_tuned_worse_absolute_count": 9,
+  "per_configuration_meV_atom": [
+    {
+      "id": "TiAl-test-001",
+      "x_Ti": 0.5462962962962963,
+      "volume_A3_atom": 18.654629038837765,
+      "PBE": -0.7350323823558298,
+      "pretrained": -3.889724546265025
+    },
+    {
+      "id": "TiAl-test-002",
+      "x_Ti": 0.0,
+      "volume_A3_atom": 16.685450218381472,
+      "PBE": 2.292420773484962,
+      "pretrained": -0.9411184811338242
+    },
+    {
+      "id": "TiAl-test-003",
+      "x_Ti": 1.0,
+      "volume_A3_atom": 15.831118983261744,
+      "PBE": 7.909153212043268,
+      "pretrained": -6.050069195923571
+    },
+    {
+      "id": "TiAl-test-004",
+      "x_Ti": 0.3472222222222222,
+      "volume_A3_atom": 15.767967414673567,
+      "PBE": -0.572409651273052,
+      "pretrained": -2.68748703334154
+    },
+    {
+      "id": "TiAl-test-005",
+      "x_Ti": 0.75,
+      "volume_A3_atom": 22.188730419184587,
+      "PBE": 10.159453187591689,
+      "pretrained": -3.37599687356542
+    },
+    {
+      "id": "TiAl-test-006",
+      "x_Ti": 0.19907407407407407,
+      "volume_A3_atom": 22.197784564990943,
+      "PBE": 1.6084510331416544,
+      "pretrained": -1.9561245039383308
+    },
+    {
+      "id": "TiAl-test-007",
+      "x_Ti": 0.44907407407407407,
+      "volume_A3_atom": 22.189405351259538,
+      "PBE": 1.8193891490646499,
+      "pretrained": -5.054313624589844
+    },
+    {
+      "id": "TiAl-test-008",
+      "x_Ti": 0.6481481481481481,
+      "volume_A3_atom": 15.979501498890757,
+      "PBE": 1.0272412968148543,
+      "pretrained": -4.866851966944018
+    },
+    {
+      "id": "TiAl-test-009",
+      "x_Ti": 0.9490740740740741,
+      "volume_A3_atom": 22.18482115618821,
+      "PBE": 17.926048966258023,
+      "pretrained": 0.7310730690430015
+    },
+    {
+      "id": "TiAl-test-010",
+      "x_Ti": 0.2962962962962963,
+      "volume_A3_atom": 21.663633289589004,
+      "PBE": 2.1902477647280967,
+      "pretrained": -2.836898220490138
+    },
+    {
+      "id": "TiAl-test-011",
+      "x_Ti": 0.44907407407407407,
+      "volume_A3_atom": 15.661585308819431,
+      "PBE": 0.9394121209098742,
+      "pretrained": -0.25267029387573864
+    },
+    {
+      "id": "TiAl-test-012",
+      "x_Ti": 0.7962962962962963,
+      "volume_A3_atom": 15.954328273228956,
+      "PBE": 3.903835530408102,
+      "pretrained": -4.406044406322365
+    },
+    {
+      "id": "TiAl-test-013",
+      "x_Ti": 0.046296296296296294,
+      "volume_A3_atom": 22.56291479776198,
+      "PBE": 1.4349828124619746,
+      "pretrained": -0.7342061201774818
+    },
+    {
+      "id": "TiAl-test-014",
+      "x_Ti": 0.25,
+      "volume_A3_atom": 16.163122077675443,
+      "PBE": 0.6857757405382641,
+      "pretrained": -3.035720957049753
+    },
+    {
+      "id": "TiAl-test-015",
+      "x_Ti": 0.8472222222222222,
+      "volume_A3_atom": 21.107257006317308,
+      "PBE": 11.873162463956533,
+      "pretrained": -1.9407908048684155
+    },
+    {
+      "id": "TiAl-test-016",
+      "x_Ti": 0.6481481481481481,
+      "volume_A3_atom": 22.187843016541077,
+      "PBE": 7.161555045933533,
+      "pretrained": -3.3644042116573356
+    },
+    {
+      "id": "TiAl-test-017",
+      "x_Ti": 0.39814814814814814,
+      "volume_A3_atom": 19.08478099092613,
+      "PBE": -0.424548445425688,
+      "pretrained": -2.1245594997975767
+    },
+    {
+      "id": "TiAl-test-018",
+      "x_Ti": 0.14814814814814814,
+      "volume_A3_atom": 17.155312040130507,
+      "PBE": 1.2437676021540431,
+      "pretrained": -4.598861379707104
+    },
+    {
+      "id": "TiAl-test-019",
+      "x_Ti": 0.5972222222222222,
+      "volume_A3_atom": 19.120670601351563,
+      "PBE": 3.2840409712599063,
+      "pretrained": -3.3944801357319174
+    },
+    {
+      "id": "TiAl-test-020",
+      "x_Ti": 0.8981481481481481,
+      "volume_A3_atom": 17.85774681751801,
+      "PBE": 9.602224607094614,
+      "pretrained": -4.074843902927754
+    }
+  ],
+  "poscar": {
+    "original": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\TiAl-test50-v1\\POSCARS\\POSCAR.TiAl-test-009",
+    "copy": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_energy_diagnostic\\TiAl-test-009\\POSCAR",
+    "sha256": "1bb641a7519d5bf24d63e641cf5d481057698fc8df984b1c57bdc8cd32221711"
+  }
+}

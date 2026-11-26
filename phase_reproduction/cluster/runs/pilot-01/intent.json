@@ -1,0 +1,28 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/pilot-01",
+  "utc": "2026-11-24T18:05:29.170890+00:00",
+  "job_name": "ta-pilot-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=2G",
+    "--time=10",
+    "--job-name=ta-pilot-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "80a75f0137eb354ba556f227ed21152ffc6fa2da8674bdb559e0d5d17e6cd4b0",
+    "fitted.mtp": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+    "pilot.cfg": "f0319e51d109ca64cfe3f241845f965e261f79ac791a7c0996fc4404f5c4c78b",
+    "pilot_manifest.csv": "4feb7bc61e99fd698b25ef236e1f3256175ffd79f2e48aaf7466fb32dd83c62f"
+  }
+}

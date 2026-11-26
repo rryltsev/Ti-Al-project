@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-lora16",
+    "XC": "PBE",
+    "method": "lora16",
+    "N": 200,
+    "validation": 149,
+    "seed": 10,
+    "source": {
+      "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+      "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+    },
+    "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+    "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+    "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+    "configuration_sha256": "4bdede956acbbed78ada8cd04da67f922fe80778a4ea42c9da8ca1d9a9793ce3",
+    "intent": "Fixed 50 epochs; single GPU, no distributed sharding; native historical HybridMuon and loss recipe; N200-only statistics; test not supplied to trainer or checkpoint selection."
+  },
+  "steps": 10000,
+  "exposures": {
+    "steps": 10000,
+    "frames": 10000,
+    "atoms": 2201898
+  },
+  "total_seconds": 2206.983054416254,
+  "training_seconds": 2192.787590669468,
+  "peak_cuda_allocated_bytes": 3831363072,
+  "peak_cuda_reserved_bytes": 4341104640,
+  "gpu": "NVIDIA A100-PCIE-40GB",
+  "job_id": "20988457",
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01/cases/PBE-lora16/merged/10000.pt",
+  "test_access": false
+}

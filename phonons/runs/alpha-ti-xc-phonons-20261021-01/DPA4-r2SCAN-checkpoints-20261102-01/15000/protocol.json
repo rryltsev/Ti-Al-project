@@ -1,0 +1,25 @@
+{
+  "id": "DPA4-r2SCAN-checkpoints-20261102-01-15000",
+  "model": {
+    "functional": "r2SCAN",
+    "step": 15000,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\output_model\\ckpt\\model.ckpt-15000.pt",
+    "sha256": "458339555ba654f12142dac2f3a6e50ab1fbb0375cf4ecebb64837a51b207ca6",
+    "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-15000.pt",
+    "article_checkpoint": false
+  },
+  "geometry": "Exact DFT-r2SCAN equilibrium; no relaxation",
+  "supercell": [
+    4,
+    4,
+    3
+  ],
+  "displacement_A": 0.01,
+  "input_hashes": {
+    "force000/POSCAR": "2d8480bd129348a401329c5b82c3d4f4b3cc182424e126e307a951ef9e6ddd08",
+    "force001/POSCAR": "c3f0600bcab963f148aed2d47ec9ee112277bc59b8ea02e30797f6c56179a4fc",
+    "force002/POSCAR": "7be6a0867f5c9ca31747cf7ad81344315a3e39661ad04a7fb0f2b9f147276d6f",
+    "phonopy_disp.yaml": "b027917450cd5110591047bf50a283102406c4fd48fb53b31a817d83ad62da46",
+    "worker.py": "a8f283cf12058ed65f5a62710d118890f1898af7fb5bf6f185c937dc049d0d55"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "groups": {
+    "small_controls": {
+      "max_vib_RMSE_all": 0.006269726151012019,
+      "max_vib_RMSE_inner": 0.0016251029553811854,
+      "max_total_RMSE_all": 0.005226597939950838,
+      "max_vib_RMSE_vref1000": 0.0009313134390082228
+    },
+    "22Al_64": {
+      "max_vib_RMSE_all": 0.003292220188472308,
+      "max_vib_RMSE_inner": 0.0013172487223474512,
+      "max_total_RMSE_all": 0.004925572498052286,
+      "max_vib_RMSE_vref1000": 0.0005323888078613395
+    },
+    "seven": {
+      "max_vib_RMSE_all": 0.00558345460883172,
+      "max_vib_RMSE_inner": 0.0015434232116118332,
+      "max_total_RMSE_all": 0.004816317371028062,
+      "max_vib_RMSE_vref1000": 0.0008369672543397083
+    }
+  },
+  "energies": "eV/atom",
+  "inner_volume_ratios": [
+    0.96,
+    1.06
+  ],
+  "inner_temperature_K": [
+    600,
+    1200
+  ],
+  "n_labelled": 414,
+  "n_stable": 396,
+  "unstable": [
+    [
+      0.94,
+      [
+        "train_26",
+        "train_30"
+      ]
+    ],
+    [
+      0.96,
+      [
+        "train_26",
+        "train_30"
+      ]
+    ],
+    [
+      0.98,
+      [
+        "train_26",
+        "train_30"
+      ]
+    ],
+    [
+      1.0,
+      [
+        "train_26",
+        "train_30"
+      ]
+    ],
+    [
+      1.02,
+      [
+        "train_26"
+      ]
+    ],
+    [
+      1.04,
+      [
+        "train_26"
+      ]
+    ],
+    [
+      1.06,
+      [
+        "train_26"
+      ]
+    ],
+    [
+      1.09,
+      [
+        "train_09",
+        "train_26"
+      ]
+    ],
+    [
+      1.12,
+      [
+        "train_09",
+        "train_11",
+        "train_21",
+        "train_26",
+        "train_29"
+      ]
+    ]
+  ]
+}

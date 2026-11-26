@@ -1,0 +1,77 @@
+from pathlib import Path
+import json
+OUT=Path(__file__).resolve().parent/'pbe_phonons_dft_geometry'
+s=json.loads((OUT/'analysis.json').read_text());keys=['5000','20000','23400'];lines=[]
+def add(t=''):lines.append(t)
+primary=s['width_checks']['0.05'];ranking=sorted(keys,key=lambda k:primary[k+'/MP40']['L2_relative'])
+add('Фононные DOS PBE checkpoints при ТОЧНОЙ геометрии исходного DFT-расчёта')
+add('25.10.2026; CPU Apollo; без релаксации')
+add()
+add('ОСНОВНОЙ РЕЗУЛЬТАТ')
+add('Порядок по нормированному L2-расхождению с DFT-DOS: '+' < '.join(ranking)+' (меньше — ближе).')
+best_checks={metric:{min(keys,key=lambda k:d[k+'/'+mesh][metric]) for d in s['width_checks'].values() for mesh in ['MP40','MP50','Gamma40']} for metric in ['L2_relative','TV','W1_THz']}
+add('Лучшие checkpoints по всем сочетаниям сеток и уширений: '+str({k:sorted(v) for k,v in best_checks.items()}))
+add('Переход к DFT-геометрии уменьшает интегральные расхождения всех трёх моделей, но сохраняет')
+add('преимущество 5k. Различия ячеек объясняли часть абсолютного расхождения, но не преимущество ранней модели.')
+add('Все три модели использовали один неизменный POSCAR DFT; хеш, матрица ячейки и дробные')
+add('координаты проверены. Различия исходных геометрий между MLIP и DFT исключены.')
+add('a=2.950 A, c=4.680 A, V/atom=17.63561142 A^3. Ячейка не оптимизировалась ни для одной модели.')
+add()
+add('Модель | главный максимум THz | средняя частота THz | L2_relative | TV | W1 THz')
+for k in ['DFT']+[k+'/MP40' for k in keys]:
+    r=primary[k];add(f"{k:12} | {r['main_peak_THz']:.2f} | {r['mean_THz']:.5f} | {r['L2_relative']:.6f} | {r['TV']:.6f} | {r['W1_THz']:.6f}")
+add()
+add('ЧИСТЫЙ ЭФФЕКТ ГЕОМЕТРИИ, ПРИ ОДИНАКОВОЙ MLIP q-СЕТКЕ 50x50x50')
+add('checkpoint | прежняя собственная ячейка: L2 / peak THz | ячейка DFT: L2 / peak THz')
+for k in keys:
+    old=s['matched_MP50_geometry_comparison'][k]['old-relaxed'];new=s['matched_MP50_geometry_comparison'][k]['MP50']
+    add(f"{k:8} | {old['L2_relative']:.6f} / {old['main_peak_THz']:.2f} | {new['L2_relative']:.6f} / {new['main_peak_THz']:.2f}")
+add('В этом сравнении совпадают сверхъячейка 9^3, q-сетка, уширение, масса, шаг смещения и обработка;')
+add('изменяется только базовая геометрия. Общая MLIP-геометрия прошлого расчёта тоже сохранена в analysis.json.')
+add()
+add('ПРОВЕРКИ q-СЕТКИ И УШИРЕНИЯ')
+for width,d in s['width_checks'].items():
+    for mesh in ['MP40','MP50','Gamma40']:
+        order=sorted(keys,key=lambda k:d[k+'/'+mesh]['L2_relative'])
+        add('sigma='+width+' '+mesh+' | L2: '+', '.join(f"{k}: {d[k+'/'+mesh]['L2_relative']:.6f}" for k in keys)+' | порядок: '+' < '.join(order))
+add('MP40: Monkhorst-Pack 40x40x30; MP50: Monkhorst-Pack 50x50x50; Gamma40: Gamma-centered 40x40x30.')
+add('Размеры 40x40x30 взяты из DFT mesh.conf/phonopy.yaml. Исходный mesh.yaml не сохранился,')
+add('поэтому точное смещение старой сетки не подтверждено; рассчитаны оба варианта 40x40x30.')
+add()
+add('ПРОТОКОЛ И ПРИГОДНОСТЬ РЕЗУЛЬТАТОВ')
+add('Нативный DeepPot CPU, неизменные checkpoints 4999/19999/23399 внутренних шагов (5k/20k/23.4k).')
+add('Сверхъячейка 9x9x9, 1458 атомов, масса Ti 47.867 amu; +/-0.01 A, по 13 расчётов сил на модель.')
+add('ASE Frederiksen, symmetrize=3, acoustic=True; сырые силовые постоянные сохранены отдельно.')
+add('DOS нормированы к 3 модам/атом, основной Gaussian sigma=0.05 THz. Частоты не подгонялись.')
+add('DFT-файл содержит интеграл 6 для двухатомной ячейки; нормировка приведена к одному атому.')
+add('Новые DOS получены прямым Fourier-преобразованием сохранённых матриц; частоты по пути')
+add('проверены относительно ASE. Силы, хеши и результаты находятся в отдельных папках checkpoints.')
+for k,m in s['metadata'].items():
+    add(f"{k}: неизменная геометрия={m['geometry_unchanged']}, max force={m['max_force_eV_A']:.3g} eV/A;")
+    add('  stress xx yy zz yz xz xy (GPa): '+' '.join(f'{v:.6f}' for v in m['stress_GPa']))
+    add('  Gamma frequencies (THz): '+' '.join(f'{v:.6f}' for v in m['gamma_THz']))
+for k,r in s['mesh_frequency_info'].items():add(f"{k}: mesh min/max={r['min_THz']:.6f}/{r['max_THz']:.6f} THz; modes below -0.01 THz={r['imaginary_below_minus_0p01_THz']}")
+add('Ненулевые напряжения ожидаемы: используется фиксированная DFT-ячейка, а не p=0 минимум MLIP.')
+add()
+add('ОГРАНИЧЕНИЯ')
+add('Совпадение геометрии не делает все численные параметры одинаковыми. DFT использовал сверхъячейку')
+add('4x4x3, MLIP — 9x9x9, а алгоритмы построения/симметризации силовых постоянных различаются.')
+add('Ранее при увеличении MLIP сверхъячейки 7^3 -> 9^3 оставалась размерная зависимость; строгая')
+add('сходимость абсолютных DOS не заявляется. Сравнивается конкретный архивный PBE DFT-референс.')
+add('L2_relative=sqrt[integral(g-g_DFT)^2 / integral(g_DFT^2)], TV=0.5 integral|g/3-g_DFT/3|,')
+add('W1=integral|CDF-CDF_DFT|. Это описательные детерминированные расстояния, без статистической значимости.')
+add('Гармонические спектры не включают температурную ангармоническую перенормировку.')
+add()
+add('ВЫЧИСЛИТЕЛЬНЫЕ РЕСУРСЫ')
+cpu=0
+for l in (OUT/'accounting.txt').read_text().splitlines():
+    r=l.split('|')
+    if '.' not in r[0]:add(l);cpu+=int(r[5]);assert r[1:3]==['COMPLETED','0:0']
+add(f'Выделенные CPU-часы: {cpu/3600:.4f}; GPU не использовались.')
+add()
+add('ФАЙЛЫ')
+add('dos_at_dft_geometry.png/pdf: основное сравнение с DFT; dos_geometry_effect.png/pdf: эффект геометрии.')
+add('POSCAR-DFT: точная общая ячейка; dos_comparison.npz: все DOS; analysis.json: метрики и верификация.')
+add('5000, 20000, 23400: исходные силы, матрицы, метаданные; collection.json: SHA256 собранных файлов.')
+add('Старые расчёты и рукопись не изменены.')
+(OUT/'REPORT_RU.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8');print(OUT/'REPORT_RU.txt')

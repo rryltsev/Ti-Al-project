@@ -1,0 +1,1909 @@
+{
+  "job_id": "20961890",
+  "status": "COMPLETED",
+  "elapsed": "04:50:15",
+  "states": 11,
+  "steps_added_each": 30000,
+  "total_ps_each": 60,
+  "T_K": 2000,
+  "P_bar": 1,
+  "model": {
+    "functional": "r2SCAN",
+    "step": 23200,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\output_model\\ckpt\\model.ckpt-23200.pt",
+    "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+    "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt",
+    "article_checkpoint": true
+  },
+  "method": {
+    "enthalpy": "(Epot+Ekin+P_ext V)/N; P_ext=1 bar",
+    "mean_frames_30": 301,
+    "mean_frames_60": 601,
+    "boundary_duplicate_excluded": true,
+    "diagnostic_frames_30": 300,
+    "diagnostic_frames_60": 600,
+    "block_ps": 5,
+    "blocks_30": 6,
+    "blocks_60": 12,
+    "error": "SEM of block means; propagated alloy and pure-component variances. Diagnostic, not a 95% confidence interval.",
+    "assumptions": "Independent composition runs and approximately independent 5 ps blocks; systematic potential and finite-size errors excluded.",
+    "segment_test": "Welch-Satterthwaite approximation for disjoint old/new segments; BH adjustment across nine compositions. Correlations between segments, if present, are not estimated.",
+    "restart": "Exact atomic state preserved; thermostat/barostat internal variables reset. All new steps retained in primary estimate."
+  },
+  "comparison": [
+    {
+      "composition": "Al0.1Ti0.9",
+      "x_Al": 0.1,
+      "deltaH_30_kJ_mol": -8.633894447659486,
+      "SEM_30_kJ_mol": 0.23736893539399342,
+      "deltaH_60_kJ_mol": -8.665074501043819,
+      "SEM_60_kJ_mol": 0.14738771507848866,
+      "deltaH_new30_kJ_mol": -8.696358487939051,
+      "SEM_new30_kJ_mol": 0.19687663188268192,
+      "shift_60_minus_30": -0.031180053384332496,
+      "SEM_ratio_60_over_30": 0.6209225096529556
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "x_Al": 0.2,
+      "deltaH_30_kJ_mol": -16.20350200169264,
+      "SEM_30_kJ_mol": 0.1823967676016117,
+      "deltaH_60_kJ_mol": -16.442405468022116,
+      "SEM_60_kJ_mol": 0.18614898189745807,
+      "deltaH_new30_kJ_mol": -16.682105279239295,
+      "SEM_new30_kJ_mol": 0.31831126401304916,
+      "shift_60_minus_30": -0.23890346632947512,
+      "SEM_ratio_60_over_30": 1.020571714867458
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "x_Al": 0.3,
+      "deltaH_30_kJ_mol": -23.82421432703734,
+      "SEM_30_kJ_mol": 0.16421734985567804,
+      "deltaH_60_kJ_mol": -23.46229086985602,
+      "SEM_60_kJ_mol": 0.17408269563751674,
+      "deltaH_new30_kJ_mol": -23.099161001150264,
+      "SEM_new30_kJ_mol": 0.2158244985212078,
+      "shift_60_minus_30": 0.36192345718131946,
+      "SEM_ratio_60_over_30": 1.0600749299054506
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "x_Al": 0.4,
+      "deltaH_30_kJ_mol": -28.446886437346848,
+      "SEM_30_kJ_mol": 0.1753257866530169,
+      "deltaH_60_kJ_mol": -28.631620820971193,
+      "SEM_60_kJ_mol": 0.15257808919693705,
+      "deltaH_new30_kJ_mol": -28.816970985874264,
+      "SEM_new30_kJ_mol": 0.2449631307349357,
+      "shift_60_minus_30": -0.18473438362434536,
+      "SEM_ratio_60_over_30": 0.8702546961839717
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "x_Al": 0.5,
+      "deltaH_30_kJ_mol": -32.03917291187145,
+      "SEM_30_kJ_mol": 0.17108893128056576,
+      "deltaH_60_kJ_mol": -31.6554104291248,
+      "SEM_60_kJ_mol": 0.19192612047347984,
+      "deltaH_new30_kJ_mol": -31.27036873810232,
+      "SEM_new30_kJ_mol": 0.26632952614941036,
+      "shift_60_minus_30": 0.38376248274664704,
+      "SEM_ratio_60_over_30": 1.1217915679112143
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "x_Al": 0.6,
+      "deltaH_30_kJ_mol": -31.346479805312015,
+      "SEM_30_kJ_mol": 0.12312859575784404,
+      "deltaH_60_kJ_mol": -31.73615695991657,
+      "SEM_60_kJ_mol": 0.19988676784379045,
+      "deltaH_new30_kJ_mol": -32.12713303836961,
+      "SEM_new30_kJ_mol": 0.31449264030793406,
+      "shift_60_minus_30": -0.38967715460455565,
+      "SEM_ratio_60_over_30": 1.6233984202735978
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "x_Al": 0.7,
+      "deltaH_30_kJ_mol": -28.146440748665043,
+      "SEM_30_kJ_mol": 0.33027262735044344,
+      "deltaH_60_kJ_mol": -28.125826779006275,
+      "SEM_60_kJ_mol": 0.21218154743591228,
+      "deltaH_new30_kJ_mol": -28.10514409611511,
+      "SEM_new30_kJ_mol": 0.29784905703885217,
+      "shift_60_minus_30": 0.020613969658768383,
+      "SEM_ratio_60_over_30": 0.6424436355446802
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "x_Al": 0.8,
+      "deltaH_30_kJ_mol": -20.780629633897092,
+      "SEM_30_kJ_mol": 0.19314236450987765,
+      "deltaH_60_kJ_mol": -20.64072262389942,
+      "SEM_60_kJ_mol": 0.1301198794482775,
+      "deltaH_new30_kJ_mol": -20.50034925720189,
+      "SEM_new30_kJ_mol": 0.17550191167859763,
+      "shift_60_minus_30": 0.13990700999767114,
+      "SEM_ratio_60_over_30": 0.6736993190410223
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "x_Al": 0.9,
+      "deltaH_30_kJ_mol": -11.024170392696647,
+      "SEM_30_kJ_mol": 0.1387219959029519,
+      "deltaH_60_kJ_mol": -10.955227827233585,
+      "SEM_60_kJ_mol": 0.12028524367200474,
+      "deltaH_new30_kJ_mol": -10.88605545321903,
+      "SEM_new30_kJ_mol": 0.20792817744559952,
+      "shift_60_minus_30": 0.0689425654630611,
+      "SEM_ratio_60_over_30": 0.8670956821883873
+    }
+  ],
+  "segment_tests": [
+    {
+      "composition": "Al0.1Ti0.9",
+      "x_Al": 0.1,
+      "new_minus_old_kJ_mol": -0.05261997237893184,
+      "difference_SEM": 0.3083900447023977,
+      "t": -0.1706279864828682,
+      "df": 14.850409553881603,
+      "p": 0.8668192674644524,
+      "q_BH": 0.9269492570138333
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "x_Al": 0.2,
+      "new_minus_old_kJ_mol": -0.4656208348608516,
+      "difference_SEM": 0.3668659722965615,
+      "t": -1.2691851248729609,
+      "df": 9.937514800116876,
+      "p": 0.2332939698925653,
+      "q_BH": 0.43627039559211395
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "x_Al": 0.3,
+      "new_minus_old_kJ_mol": 0.737970090311444,
+      "difference_SEM": 0.27119651943849316,
+      "t": 2.721163574810606,
+      "df": 14.39774251878671,
+      "p": 0.016230272080725115,
+      "q_BH": 0.13699353400252878
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "x_Al": 0.4,
+      "new_minus_old_kJ_mol": -0.35681678667292543,
+      "difference_SEM": 0.3012408785091432,
+      "t": -1.1844899285874821,
+      "df": 12.69431558315508,
+      "p": 0.25792277776766953,
+      "q_BH": 0.43627039559211395
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "x_Al": 0.5,
+      "new_minus_old_kJ_mol": 0.7801423788050101,
+      "difference_SEM": 0.31654832001717464,
+      "t": 2.4645285710651783,
+      "df": 11.578053557490653,
+      "p": 0.030443007556117507,
+      "q_BH": 0.13699353400252878
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "x_Al": 0.6,
+      "new_minus_old_kJ_mol": -0.7747937493435985,
+      "difference_SEM": 0.33773698627949256,
+      "t": -2.294074326530591,
+      "df": 8.279712482822282,
+      "p": 0.04987665648761207,
+      "q_BH": 0.14962996946283622
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "x_Al": 0.7,
+      "new_minus_old_kJ_mol": 0.04163556756274146,
+      "difference_SEM": 0.44474045144994206,
+      "t": 0.09361767616820385,
+      "df": 12.067583017752428,
+      "p": 0.9269492570138332,
+      "q_BH": 0.9269492570138333
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "x_Al": 0.8,
+      "new_minus_old_kJ_mol": 0.2844792329045958,
+      "difference_SEM": 0.26096914371493946,
+      "t": 1.0900876205323982,
+      "df": 17.04400160616016,
+      "p": 0.29084693039474263,
+      "q_BH": 0.43627039559211395
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "x_Al": 0.9,
+      "new_minus_old_kJ_mol": 0.14267793515138008,
+      "difference_SEM": 0.24995583434508448,
+      "t": 0.5708125818515664,
+      "df": 17.527689061289642,
+      "p": 0.5753726755582178,
+      "q_BH": 0.7397648685748515
+    }
+  ],
+  "observable_segment_tests": [
+    {
+      "composition": "Ti",
+      "observable": "H_kJ_mol",
+      "old_mean": -1177.54348787041,
+      "new_mean": -1177.4677209605975,
+      "difference": 0.07576690981250067,
+      "old_SEM": 0.11614643098837993,
+      "new_SEM": 0.11709022200798973,
+      "p": 0.6557698804963165,
+      "q_BH": 0.8885080863801632
+    },
+    {
+      "composition": "Ti",
+      "observable": "T_K",
+      "old_mean": 1983.0666415117619,
+      "new_mean": 1987.7852868778548,
+      "difference": 4.718645366092915,
+      "old_SEM": 10.658620029742483,
+      "new_SEM": 6.409586426364631,
+      "p": 0.7140361674688681,
+      "q_BH": 0.8944572663188637
+    },
+    {
+      "composition": "Ti",
+      "observable": "rho_g_cm3",
+      "old_mean": 4.313847005900013,
+      "new_mean": 4.3115723050761545,
+      "difference": -0.002274700823858389,
+      "old_SEM": 0.00351833453588521,
+      "new_SEM": 0.0025159885410255154,
+      "p": 0.6115968856987252,
+      "q_BH": 0.8885080863801632
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "observable": "H_kJ_mol",
+      "old_mean": -1126.2735490179157,
+      "new_mean": -1126.264585438169,
+      "difference": 0.008963579746705364,
+      "old_SEM": 0.21282702784164534,
+      "new_SEM": 0.16553444427584318,
+      "p": 0.9741725820258953,
+      "q_BH": 0.9741725820258953
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "observable": "T_K",
+      "old_mean": 1987.694959406307,
+      "new_mean": 1991.654325355702,
+      "difference": 3.959365949395078,
+      "old_SEM": 7.788019411276126,
+      "new_SEM": 4.607125667439589,
+      "p": 0.6731121866516387,
+      "q_BH": 0.8885080863801632
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "observable": "rho_g_cm3",
+      "old_mean": 4.142748008317899,
+      "new_mean": 4.142890486796022,
+      "difference": 0.00014247847812232095,
+      "old_SEM": 0.002131340434755871,
+      "new_SEM": 0.0031215002390360272,
+      "p": 0.9707690260444073,
+      "q_BH": 0.9741725820258953
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "observable": "H_kJ_mol",
+      "old_mean": -1073.932617578679,
+      "new_mean": -1074.350838219101,
+      "difference": -0.41822064042207785,
+      "old_SEM": 0.1553959230878309,
+      "new_SEM": 0.30254478886975833,
+      "p": 0.25617120372243607,
+      "q_BH": 0.5572397004101224
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "observable": "T_K",
+      "old_mean": 1994.6669697001414,
+      "new_mean": 1996.3166940873355,
+      "difference": 1.6497243871940555,
+      "old_SEM": 5.9615787753240514,
+      "new_SEM": 7.946287666610448,
+      "p": 0.8716668584810963,
+      "q_BH": 0.9741725820258953
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "observable": "rho_g_cm3",
+      "old_mean": 3.9674003096735633,
+      "new_mean": 3.9686429535424916,
+      "difference": 0.0012426438689283614,
+      "old_SEM": 0.0022939716327224323,
+      "new_SEM": 0.003189584259176559,
+      "p": 0.7589334380887328,
+      "q_BH": 0.8944572663188637
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "observable": "H_kJ_mol",
+      "old_mean": -1021.6395868577074,
+      "new_mean": -1020.868399930644,
+      "difference": 0.7711869270633542,
+      "old_SEM": 0.13878502777749424,
+      "new_SEM": 0.1938562026743165,
+      "p": 0.010159226096006151,
+      "q_BH": 0.20969162767107888
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "observable": "T_K",
+      "old_mean": 1973.025276378881,
+      "new_mean": 1984.3639500554218,
+      "difference": 11.338673676540793,
+      "old_SEM": 5.995478551861592,
+      "new_SEM": 8.049268602628182,
+      "p": 0.28706287596885094,
+      "q_BH": 0.5572397004101224
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "observable": "rho_g_cm3",
+      "old_mean": 3.7919182081802485,
+      "new_mean": 3.7887729262528,
+      "difference": -0.003145281927448451,
+      "old_SEM": 0.0011518643691298665,
+      "new_SEM": 0.0024432926057200324,
+      "p": 0.2817990625830844,
+      "q_BH": 0.5572397004101224
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "observable": "H_kJ_mol",
+      "old_mean": -966.3489325973919,
+      "new_mean": -966.6867159049998,
+      "difference": -0.33778330760787867,
+      "old_SEM": 0.15470735385771026,
+      "new_SEM": 0.2258635727952699,
+      "p": 0.2490430342634733,
+      "q_BH": 0.5572397004101224
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "observable": "T_K",
+      "old_mean": 1989.8802089706307,
+      "new_mean": 2000.1554776828768,
+      "difference": 10.275268712246088,
+      "old_SEM": 5.711671565452059,
+      "new_SEM": 5.431764026503214,
+      "p": 0.22164544149900203,
+      "q_BH": 0.5572397004101224
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "observable": "rho_g_cm3",
+      "old_mean": 3.6038002332815253,
+      "new_mean": 3.6078072327633026,
+      "difference": 0.004006999481777296,
+      "old_SEM": 0.0023350638319222803,
+      "new_SEM": 0.0010602060737872278,
+      "p": 0.16228036673299479,
+      "q_BH": 0.4936691352473167
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "observable": "H_kJ_mol",
+      "old_mean": -910.0256121470429,
+      "new_mean": -909.2406196468597,
+      "difference": 0.7849925001831934,
+      "old_SEM": 0.15117737356913738,
+      "new_SEM": 0.24731542572725923,
+      "p": 0.0259173900503875,
+      "q_BH": 0.2850912905542625
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "observable": "T_K",
+      "old_mean": 1987.9467269517888,
+      "new_mean": 1982.8590025071633,
+      "difference": -5.0877244446255645,
+      "old_SEM": 6.210158527560672,
+      "new_SEM": 6.649651594279662,
+      "p": 0.5883994123273749,
+      "q_BH": 0.8885080863801632
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "observable": "rho_g_cm3",
+      "old_mean": 3.41360259775966,
+      "new_mean": 3.4050323097203044,
+      "difference": -0.008570288039355667,
+      "old_SEM": 0.0017667046243566827,
+      "new_SEM": 0.0021781301217092004,
+      "p": 0.012708583495216901,
+      "q_BH": 0.20969162767107888
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "observable": "H_kJ_mol",
+      "old_mean": -849.413762951107,
+      "new_mean": -850.1978899367592,
+      "difference": -0.7841269856522786,
+      "old_SEM": 0.09283546216839034,
+      "new_SEM": 0.295945754460407,
+      "p": 0.04495925493325843,
+      "q_BH": 0.29673108255950564
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "observable": "T_K",
+      "old_mean": 1993.1998415097542,
+      "new_mean": 1982.2080128744099,
+      "difference": -10.99182863534429,
+      "old_SEM": 5.1214243483034005,
+      "new_SEM": 4.72942306649525,
+      "p": 0.14611988259389674,
+      "q_BH": 0.4936691352473167
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "observable": "rho_g_cm3",
+      "old_mean": 3.1983811993313824,
+      "new_mean": 3.2041236039472327,
+      "difference": 0.005742404615850294,
+      "old_SEM": 0.0013991582084903727,
+      "new_SEM": 0.002678940441691305,
+      "p": 0.09621137541957657,
+      "q_BH": 0.4936691352473167
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "observable": "H_kJ_mol",
+      "old_mean": -786.294525957704,
+      "new_mean": -786.2764069841368,
+      "difference": 0.018118973567197827,
+      "old_SEM": 0.31921627536776936,
+      "new_SEM": 0.2739630911092042,
+      "p": 0.9665106741035663,
+      "q_BH": 0.9741725820258953
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "observable": "T_K",
+      "old_mean": 1985.945272796255,
+      "new_mean": 1980.3639867993822,
+      "difference": -5.5812859968727935,
+      "old_SEM": 3.61800781214508,
+      "new_SEM": 4.504616198721225,
+      "p": 0.35785187357553516,
+      "q_BH": 0.6215322014732979
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "observable": "rho_g_cm3",
+      "old_mean": 2.9699694724449395,
+      "new_mean": 2.965086502257826,
+      "difference": -0.004882970187113589,
+      "old_SEM": 0.0035215649960491954,
+      "new_SEM": 0.0032583619811700454,
+      "p": 0.33292180612911143,
+      "q_BH": 0.6103566445700376
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "observable": "H_kJ_mol",
+      "old_mean": -719.0188974160775,
+      "new_mean": -718.7721181348553,
+      "difference": 0.24677928122218873,
+      "old_SEM": 0.170208399501795,
+      "new_SEM": 0.1184261859311811,
+      "p": 0.2646969602756109,
+      "q_BH": 0.5572397004101224
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "observable": "T_K",
+      "old_mean": 1979.5510401585925,
+      "new_mean": 1999.5938241922424,
+      "difference": 20.042784033649923,
+      "old_SEM": 6.354352650814382,
+      "new_SEM": 5.877776574571809,
+      "p": 0.043250464094297114,
+      "q_BH": 0.29673108255950564
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "observable": "rho_g_cm3",
+      "old_mean": 2.701855428491616,
+      "new_mean": 2.6952875334015522,
+      "difference": -0.0065678950900638355,
+      "old_SEM": 0.003489097583433838,
+      "new_SEM": 0.0017844026737851041,
+      "p": 0.13507044406106325,
+      "q_BH": 0.4936691352473167
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "observable": "H_kJ_mol",
+      "old_mean": -649.3491249462866,
+      "new_mean": -649.2583303205045,
+      "difference": 0.0907946257821095,
+      "old_SEM": 0.09615236200628263,
+      "new_SEM": 0.15019578473344605,
+      "p": 0.6236072683331032,
+      "q_BH": 0.8885080863801632
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "observable": "T_K",
+      "old_mean": 1989.6326133495024,
+      "new_mean": 1987.5800121244704,
+      "difference": -2.052601225032049,
+      "old_SEM": 9.822303574399818,
+      "new_SEM": 14.841121578778171,
+      "p": 0.910806123463017,
+      "q_BH": 0.9741725820258953
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "observable": "rho_g_cm3",
+      "old_mean": 2.4176016313000694,
+      "new_mean": 2.4142181648059355,
+      "difference": -0.003383466494133902,
+      "old_SEM": 0.0037161143259030896,
+      "new_SEM": 0.005022459152185932,
+      "p": 0.6009801359431225,
+      "q_BH": 0.8885080863801632
+    },
+    {
+      "composition": "Al",
+      "observable": "H_kJ_mol",
+      "old_mean": -578.4067141898614,
+      "new_mean": -578.4727808569176,
+      "difference": -0.06606666705613407,
+      "old_SEM": 0.11035081820501395,
+      "new_SEM": 0.15923525581784836,
+      "p": 0.7410015361322575,
+      "q_BH": 0.8944572663188637
+    },
+    {
+      "composition": "Al",
+      "observable": "T_K",
+      "old_mean": 1986.6169886616844,
+      "new_mean": 2000.843077692062,
+      "difference": 14.22608903037758,
+      "old_SEM": 5.4011915482227035,
+      "new_SEM": 7.6921264494678505,
+      "p": 0.16455637841577223,
+      "q_BH": 0.4936691352473167
+    },
+    {
+      "composition": "Al",
+      "observable": "rho_g_cm3",
+      "old_mean": 2.122821227067058,
+      "new_mean": 2.1290075071757086,
+      "difference": 0.0061862801086505215,
+      "old_SEM": 0.0015365903438147993,
+      "new_SEM": 0.003540119040439267,
+      "p": 0.15410280614392607,
+      "q_BH": 0.4936691352473167
+    }
+  ],
+  "block_sensitivity": [
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.19075430793137213
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.16369895504903992
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.19158759880835796
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.21044030852795073
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.1986931723030212
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.25064602746649484
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.23492806248378184
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.2183375199591442
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "old",
+      "block_ps": 1.0,
+      "n_blocks": 30,
+      "SEM": 0.21415005973416357
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.13054431876915587
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.1243445864561929
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.1369184413639532
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.15106574843954296
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.15085125515376235
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.19807247414072532
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.1649097331451962
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.14459691736237815
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "combined",
+      "block_ps": 1.0,
+      "n_blocks": 60,
+      "SEM": 0.14465037688669963
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.17968783989690526
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.15301563687217387
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.19744518498606684
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.22347653422126382
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.20358899806793626
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.2702453349709845
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.2576965006942751
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.23311369711964508
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "old",
+      "block_ps": 2.0,
+      "n_blocks": 15,
+      "SEM": 0.2223158086665844
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.12422844086549828
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.14312309344434046
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.1516102301478825
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.15897348653678783
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.16942963087154447
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.23397553864884948
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.17093603157185502
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.1472433749577966
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "combined",
+      "block_ps": 2.0,
+      "n_blocks": 30,
+      "SEM": 0.14935838626714298
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.19972039681048503
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.1337814833387812
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.16730598298717772
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.1882435946239457
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.21099181708558393
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.2509092787569387
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.30164702835515717
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.27069332416581326
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "old",
+      "block_ps": 3.0,
+      "n_blocks": 10,
+      "SEM": 0.21359895318941668
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.13090368274808392
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.15148647420386463
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.15594521651599613
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.14538868599475957
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.181029325325422
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.22487818511565844
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.20658659975200303
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.16696488069807927
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "combined",
+      "block_ps": 3.0,
+      "n_blocks": 20,
+      "SEM": 0.15020876111679854
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.23736893539399342
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.1823967676016117
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.16421734985567804
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.1753257866530169
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.17108893128056576
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.12312859575784404
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.33027262735044344
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.19314236450987765
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "old",
+      "block_ps": 5.0,
+      "n_blocks": 6,
+      "SEM": 0.1387219959029519
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.14738771507848866
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.18614898189745807
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.17408269563751674
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.15257808919693705
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.19192612047347984
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.19988676784379045
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.21218154743591228
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.1301198794482775
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "combined",
+      "block_ps": 5.0,
+      "n_blocks": 12,
+      "SEM": 0.12028524367200474
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.18536729881366815
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.11472765727717106
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.2051788172904964
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.13286470300839515
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.1627984329172879
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.12720173454332115
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.4509237780737333
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.15246998067788872
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "old",
+      "block_ps": 10.0,
+      "n_blocks": 3,
+      "SEM": 0.19086818700691938
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.10286098370424056
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.18125104491142363
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.20196639975989625
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.12958488988590364
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.21351252134204785
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.2671273858249978
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.25308298320183503
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.1410287532800629
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "window": "combined",
+      "block_ps": 10.0,
+      "n_blocks": 6,
+      "SEM": 0.14170656429843856
+    }
+  ],
+  "restart_sensitivity": [
+    {
+      "composition": "Al0.1Ti0.9",
+      "cut_new_start_ps": 0,
+      "deltaH": -8.665074501043819,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "cut_new_start_ps": 0,
+      "deltaH": -16.442405468022116,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "cut_new_start_ps": 0,
+      "deltaH": -23.46229086985602,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "cut_new_start_ps": 0,
+      "deltaH": -28.631620820971193,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "cut_new_start_ps": 0,
+      "deltaH": -31.6554104291248,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "cut_new_start_ps": 0,
+      "deltaH": -31.73615695991657,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "cut_new_start_ps": 0,
+      "deltaH": -28.125826779006275,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "cut_new_start_ps": 0,
+      "deltaH": -20.64072262389942,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "cut_new_start_ps": 0,
+      "deltaH": -10.955227827233585,
+      "shift_from_untrimmed": 0.0
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "cut_new_start_ps": 1,
+      "deltaH": -8.693290862809135,
+      "shift_from_untrimmed": -0.028216361765316833
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "cut_new_start_ps": 1,
+      "deltaH": -16.46780890674063,
+      "shift_from_untrimmed": -0.025403438718512916
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "cut_new_start_ps": 1,
+      "deltaH": -23.50341871103717,
+      "shift_from_untrimmed": -0.04112784118115087
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "cut_new_start_ps": 1,
+      "deltaH": -28.643664180270434,
+      "shift_from_untrimmed": -0.012043359299241274
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "cut_new_start_ps": 1,
+      "deltaH": -31.68036332025747,
+      "shift_from_untrimmed": -0.02495289113267063
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "cut_new_start_ps": 1,
+      "deltaH": -31.735982442152874,
+      "shift_from_untrimmed": 0.00017451776369625804
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "cut_new_start_ps": 1,
+      "deltaH": -28.133226676696324,
+      "shift_from_untrimmed": -0.007399897690049784
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "cut_new_start_ps": 1,
+      "deltaH": -20.653341336736275,
+      "shift_from_untrimmed": -0.012618712836854229
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "cut_new_start_ps": 1,
+      "deltaH": -10.96240471710783,
+      "shift_from_untrimmed": -0.007176889874244807
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "cut_new_start_ps": 2,
+      "deltaH": -8.677569053565776,
+      "shift_from_untrimmed": -0.012494552521957303
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "cut_new_start_ps": 2,
+      "deltaH": -16.477093678843858,
+      "shift_from_untrimmed": -0.03468821082174145
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "cut_new_start_ps": 2,
+      "deltaH": -23.5056844411572,
+      "shift_from_untrimmed": -0.0433935713011806
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "cut_new_start_ps": 2,
+      "deltaH": -28.648860917161755,
+      "shift_from_untrimmed": -0.017240096190562326
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "cut_new_start_ps": 2,
+      "deltaH": -31.68342565810326,
+      "shift_from_untrimmed": -0.028015228978460982
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "cut_new_start_ps": 2,
+      "deltaH": -31.75065780807978,
+      "shift_from_untrimmed": -0.014500848163208957
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "cut_new_start_ps": 2,
+      "deltaH": -28.098850605033533,
+      "shift_from_untrimmed": 0.026976173972741435
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "cut_new_start_ps": 2,
+      "deltaH": -20.67166205528295,
+      "shift_from_untrimmed": -0.030939431383529836
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "cut_new_start_ps": 2,
+      "deltaH": -10.951517938364859,
+      "shift_from_untrimmed": 0.0037098888687268072
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "cut_new_start_ps": 5,
+      "deltaH": -8.66621575994941,
+      "shift_from_untrimmed": -0.001141258905590803
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "cut_new_start_ps": 5,
+      "deltaH": -16.495037612764577,
+      "shift_from_untrimmed": -0.052632144742460696
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "cut_new_start_ps": 5,
+      "deltaH": -23.538489299879757,
+      "shift_from_untrimmed": -0.07619843002373727
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "cut_new_start_ps": 5,
+      "deltaH": -28.678287534592414,
+      "shift_from_untrimmed": -0.04666671362122088
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "cut_new_start_ps": 5,
+      "deltaH": -31.714960289196597,
+      "shift_from_untrimmed": -0.05954986007179741
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "cut_new_start_ps": 5,
+      "deltaH": -31.772690348910714,
+      "shift_from_untrimmed": -0.036533388994143934
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "cut_new_start_ps": 5,
+      "deltaH": -28.040854539150587,
+      "shift_from_untrimmed": 0.0849722398556878
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "cut_new_start_ps": 5,
+      "deltaH": -20.635817686981028,
+      "shift_from_untrimmed": 0.004904936918393332
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "cut_new_start_ps": 5,
+      "deltaH": -10.936424831334378,
+      "shift_from_untrimmed": 0.01880299589920753
+    }
+  ],
+  "min_x06_vs_x05": {
+    "deltaH_x06_minus_x05": -0.08074653079177097,
+    "SEM": 0.26284548885933445,
+    "shared_endpoint_covariance_included": true
+  },
+  "sem_decreased": 5,
+  "sem_increased": 4,
+  "covariance": {
+    "composition_order": [
+      "Ti",
+      "Al0.1Ti0.9",
+      "Al0.2Ti0.8",
+      "Al0.3Ti0.7",
+      "Al0.4Ti0.6",
+      "Al0.5Ti0.5",
+      "Al0.6Ti0.4",
+      "Al0.7Ti0.3",
+      "Al0.8Ti0.2",
+      "Al0.9Ti0.1",
+      "Al"
+    ],
+    "matrices": {
+      "old": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.056344011490077825,
+          0.009956341332134043,
+          0.008864014954098737,
+          0.007771688576063433,
+          0.006679362198028128,
+          0.005587035819992823,
+          0.004494709441957519,
+          0.003402383063922213,
+          0.0023100566858869085,
+          0.0
+        ],
+        [
+          0.0,
+          0.009956341332134043,
+          0.03326858083151634,
+          0.008285034506260523,
+          0.007449381093323763,
+          0.006613727680387005,
+          0.005778074267450246,
+          0.004942420854513486,
+          0.0041067674415767265,
+          0.0032711140286399674,
+          0.0
+        ],
+        [
+          0.0,
+          0.008864014954098737,
+          0.008285034506260523,
+          0.026967337993622158,
+          0.007127073610584095,
+          0.006548093162745881,
+          0.005969112714907667,
+          0.005390132267069454,
+          0.004811151819231239,
+          0.0042321713713930256,
+          0.0
+        ],
+        [
+          0.0,
+          0.007771688576063433,
+          0.007449381093323763,
+          0.007127073610584095,
+          0.0307391314654992,
+          0.006482458645104758,
+          0.006160151162365089,
+          0.005837843679625421,
+          0.005515536196885753,
+          0.0051932287141460845,
+          0.0
+        ],
+        [
+          0.0,
+          0.006679362198028128,
+          0.006613727680387005,
+          0.006548093162745881,
+          0.006482458645104758,
+          0.02927142240672615,
+          0.006351189609822512,
+          0.006285555092181389,
+          0.006219920574540266,
+          0.006154286056899143,
+          0.0
+        ],
+        [
+          0.0,
+          0.005587035819992823,
+          0.005778074267450246,
+          0.005969112714907667,
+          0.006160151162365089,
+          0.006351189609822512,
+          0.01516065109329857,
+          0.006733266504737358,
+          0.006924304952194779,
+          0.0071153433996522025,
+          0.0
+        ],
+        [
+          0.0,
+          0.004494709441957519,
+          0.004942420854513486,
+          0.005390132267069454,
+          0.005837843679625421,
+          0.006285555092181389,
+          0.006733266504737358,
+          0.10908000837696488,
+          0.007628689329849291,
+          0.00807640074240526,
+          0.0
+        ],
+        [
+          0.0,
+          0.003402383063922213,
+          0.0041067674415767265,
+          0.004811151819231239,
+          0.005515536196885753,
+          0.006219920574540266,
+          0.006924304952194779,
+          0.007628689329849291,
+          0.03730397296846646,
+          0.00903745808515832,
+          0.0
+        ],
+        [
+          0.0,
+          0.0023100566858869085,
+          0.0032711140286399674,
+          0.0042321713713930256,
+          0.0051932287141460845,
+          0.006154286056899143,
+          0.0071153433996522025,
+          0.00807640074240526,
+          0.00903745808515832,
+          0.0192437921472986,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "new": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.038760408181469044,
+          0.010378403798621344,
+          0.00939805165748587,
+          0.008417699516350399,
+          0.0074373473752149255,
+          0.006456995234079452,
+          0.00547664309294398,
+          0.004496290951808507,
+          0.003515938810673034,
+          0.0
+        ],
+        [
+          0.0,
+          0.010378403798621344,
+          0.10132206079758507,
+          0.009199019252055516,
+          0.008609326978772603,
+          0.00801963470548969,
+          0.0074299424322067775,
+          0.006840250158923863,
+          0.00625055788564095,
+          0.005660865612358036,
+          0.0
+        ],
+        [
+          0.0,
+          0.00939805165748587,
+          0.009199019252055516,
+          0.04658021416193083,
+          0.008800954441194808,
+          0.008601922035764454,
+          0.0084028896303341,
+          0.008203857224903747,
+          0.00800482481947339,
+          0.0078057924140430375,
+          0.0
+        ],
+        [
+          0.0,
+          0.008417699516350399,
+          0.008609326978772603,
+          0.008800954441194808,
+          0.06000693541946119,
+          0.009184209366039219,
+          0.009375836828461423,
+          0.00956746429088363,
+          0.009759091753305835,
+          0.00995071921572804,
+          0.0
+        ],
+        [
+          0.0,
+          0.0074373473752149255,
+          0.00801963470548969,
+          0.008601922035764454,
+          0.009184209366039219,
+          0.07093141649896946,
+          0.010348784026588748,
+          0.010931071356863513,
+          0.011513358687138278,
+          0.012095646017413041,
+          0.0
+        ],
+        [
+          0.0,
+          0.006456995234079452,
+          0.0074299424322067775,
+          0.0084028896303341,
+          0.009375836828461423,
+          0.010348784026588748,
+          0.09890562080785557,
+          0.012294678422843396,
+          0.01326762562097072,
+          0.014240572819098045,
+          0.0
+        ],
+        [
+          0.0,
+          0.00547664309294398,
+          0.006840250158923863,
+          0.008203857224903747,
+          0.00956746429088363,
+          0.010931071356863513,
+          0.012294678422843396,
+          0.0887140607789334,
+          0.01502189255480316,
+          0.016385499620783044,
+          0.0
+        ],
+        [
+          0.0,
+          0.004496290951808507,
+          0.00625055788564095,
+          0.00800482481947339,
+          0.009759091753305835,
+          0.011513358687138278,
+          0.01326762562097072,
+          0.01502189255480316,
+          0.030800921002842284,
+          0.01853042642246805,
+          0.0
+        ],
+        [
+          0.0,
+          0.003515938810673034,
+          0.005660865612358036,
+          0.0078057924140430375,
+          0.00995071921572804,
+          0.012095646017413041,
+          0.014240572819098045,
+          0.016385499620783044,
+          0.01853042642246805,
+          0.04323412697584872,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "combined": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.02172313855605775,
+          0.004717454480129107,
+          0.004235640994611493,
+          0.0037538275090938803,
+          0.0032720140235762665,
+          0.002790200538058653,
+          0.0023083870525410395,
+          0.0018265735670234258,
+          0.0013447600815058125,
+          0.0
+        ],
+        [
+          0.0,
+          0.004717454480129107,
+          0.03465144346146017,
+          0.004052663082761838,
+          0.003720267384078204,
+          0.00338787168539457,
+          0.003055475986710936,
+          0.002723080288027301,
+          0.0023906845893436664,
+          0.002058288890660032,
+          0.0
+        ],
+        [
+          0.0,
+          0.004235640994611493,
+          0.004052663082761838,
+          0.030304784920424294,
+          0.003686707259062528,
+          0.0035037293472128727,
+          0.003320751435363217,
+          0.0031377735235135623,
+          0.002954795611663907,
+          0.002771817699814252,
+          0.0
+        ],
+        [
+          0.0,
+          0.0037538275090938803,
+          0.003720267384078204,
+          0.003686707259062528,
+          0.023280073302988476,
+          0.0036195870090311756,
+          0.0035860268840154997,
+          0.0035524667589998237,
+          0.003518906633984148,
+          0.003485346508968472,
+          0.0
+        ],
+        [
+          0.0,
+          0.0032720140235762665,
+          0.00338787168539457,
+          0.0035037293472128727,
+          0.0036195870090311756,
+          0.0368356357200007,
+          0.0038513023326677822,
+          0.003967159994486085,
+          0.004083017656304389,
+          0.004198875318122692,
+          0.0
+        ],
+        [
+          0.0,
+          0.002790200538058653,
+          0.003055475986710936,
+          0.003320751435363217,
+          0.0035860268840154997,
+          0.0038513023326677822,
+          0.03995471995903738,
+          0.0043818532299723465,
+          0.004647128678624629,
+          0.004912404127276912,
+          0.0
+        ],
+        [
+          0.0,
+          0.0023083870525410395,
+          0.002723080288027301,
+          0.0031377735235135623,
+          0.0035524667589998237,
+          0.003967159994486085,
+          0.0043818532299723465,
+          0.0450210090722983,
+          0.005211239700944869,
+          0.005625932936431132,
+          0.0
+        ],
+        [
+          0.0,
+          0.0018265735670234258,
+          0.0023906845893436664,
+          0.002954795611663907,
+          0.003518906633984148,
+          0.004083017656304389,
+          0.004647128678624629,
+          0.005211239700944869,
+          0.016931183027634265,
+          0.006339461745585351,
+          0.0
+        ],
+        [
+          0.0,
+          0.0013447600815058125,
+          0.002058288890660032,
+          0.002771817699814252,
+          0.003485346508968472,
+          0.004198875318122692,
+          0.004912404127276912,
+          0.005625932936431132,
+          0.006339461745585351,
+          0.014468539845233556,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+[
+  {
+    "model": "HA_fig2",
+    "T_K": 1000.0,
+    "N": 768,
+    "windows": 35,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 15.436609618203349,
+        "alpha2_at_pct": 20.491144887904774,
+        "window_edge": false
+      }
+    ],
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "alpha_95": [
+        15.331037576768882,
+        15.526143649322947
+      ],
+      "alpha2_95": [
+        20.228175764310276,
+        20.699392526832785
+      ],
+      "width_95": [
+        4.784594279165667,
+        5.264831346325836
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 1,
+      "offset_gradient_max_abs": 1.062452374104136e-09,
+      "status": "connected",
+      "contacts": [
+        {
+          "alpha_at_pct": 7.8125,
+          "alpha2_at_pct": 8.463541666666668,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 15.494791666666666,
+          "alpha2_at_pct": 20.833333333333336,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 20.833333333333336,
+          "alpha2_at_pct": 21.354166666666664,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 32.68229166666667,
+          "alpha2_at_pct": 33.59375,
+          "window_edge": true
+        }
+      ]
+    }
+  },
+  {
+    "model": "static_S1",
+    "T_K": 1000.0,
+    "N": 768,
+    "windows": 35,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 11.528142573548847,
+        "alpha2_at_pct": 20.512071532435783,
+        "window_edge": false
+      }
+    ],
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "alpha_95": [
+        11.429546919848766,
+        11.636908864464779
+      ],
+      "alpha2_95": [
+        20.351300558261247,
+        20.708047749797323
+      ],
+      "width_95": [
+        8.806569639935573,
+        9.212021279773607
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 1,
+      "offset_gradient_max_abs": 3.216652417644842e-09,
+      "status": "connected",
+      "contacts": [
+        {
+          "alpha_at_pct": 2.083333333333333,
+          "alpha2_at_pct": 2.604166666666667,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 11.067708333333332,
+          "alpha2_at_pct": 20.442708333333336,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 20.442708333333336,
+          "alpha2_at_pct": 20.963541666666664,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 20.963541666666664,
+          "alpha2_at_pct": 21.484375,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 21.484375,
+          "alpha2_at_pct": 22.265625,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 22.526041666666664,
+          "alpha2_at_pct": 23.046875,
+          "window_edge": false
+        },
+        {
+          "alpha_at_pct": 31.640625,
+          "alpha2_at_pct": 32.68229166666667,
+          "window_edge": true
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "N200_training": "20988583",
+  "N200_QC": "20988585",
+  "N200_aggregate": "20988586",
+  "N694_training": "20988587",
+  "N694_QC": "20988588",
+  "N694_aggregate": "20988589",
+  "max_new_GPU_concurrency": 1,
+  "dependency_reason": "Full train controls wait for completion of N200 GPU array. CPU QC and failure-visible aggregation use afterany so failed tasks cannot leave a permanent dependency wait."
+}

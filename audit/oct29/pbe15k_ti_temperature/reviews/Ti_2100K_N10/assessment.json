@@ -1,0 +1,172 @@
+{
+  "reviewed_unix": 1793307071.359433,
+  "temperature_K": 2100,
+  "n_replicas": 10,
+  "summary_sha256": "ca65e0ad9233cf122344ac61e872221f7d1fd0de158c90f6bbe82c7a15e22090",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 2.5482123984211085,
+      "eta_std_mPa_s": 0.08844837084267763,
+      "relative_std": 0.03470996801423653,
+      "neff": 97.82835136466075,
+      "tau_exp_ps": 0.11847656891319104,
+      "tau_int_ps": 0.10046280991514124,
+      "cost_z": 0.039879834225329265,
+      "criterion_z": 6.309610179533286
+    },
+    "first20ps": {
+      "eta_mPa_s": 2.6522065880397654,
+      "eta_std_mPa_s": 0.13189365521902113,
+      "relative_std": 0.04972978191585866,
+      "neff": 48.361681440813854,
+      "tau_exp_ps": 0.1282022227946476,
+      "tau_int_ps": 0.1039436211805386,
+      "cost_z": -0.0006912581442650844,
+      "criterion_z": 2.6283899499835894
+    },
+    "second20ps": {
+      "eta_mPa_s": 2.2617905038167496,
+      "eta_std_mPa_s": 0.10802310648651378,
+      "relative_std": 0.04775999647369013,
+      "neff": 120.85250399292804,
+      "tau_exp_ps": 0.0822319453235653,
+      "tau_int_ps": 0.08970470953187006,
+      "cost_z": 1.4098640605195711,
+      "criterion_z": 7.466937298608337
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs_N5_percent": 1.3965219647856353,
+      "SE_change_percent": -17.48065013090696,
+      "vs_5k_percent": -3.6926524440885844,
+      "cutoff_z_N5": 2.688034438641025,
+      "cutoff_z_N10": 6.309610179533286
+    },
+    "first20ps": {
+      "vs_N5_percent": 0.9678282376073266,
+      "SE_change_percent": -20.3409007409711,
+      "vs_5k_percent": 0.23771245391008833,
+      "cutoff_z_N5": 3.7627509829343198,
+      "cutoff_z_N10": 2.6283899499835894
+    },
+    "second20ps": {
+      "vs_N5_percent": 3.3752752307184553,
+      "SE_change_percent": 11.829297387262061,
+      "vs_5k_percent": -14.517704927302388,
+      "cutoff_z_N5": 3.5849010623808826,
+      "cutoff_z_N10": 7.466937298608337
+    }
+  },
+  "new_batch_40ps": {
+    "eta_mPa_s": 2.460298748547199,
+    "eta_std_mPa_s": 0.17003609700964772,
+    "relative_std": 0.06911197150754707,
+    "neff": 140.9488396517909,
+    "tau_exp_ps": 0.1074684206750066,
+    "tau_int_ps": 0.09691545163005175,
+    "cost_z": 0.4706587375778021,
+    "criterion_z": 5.515235261922645
+  },
+  "previous_replicas_40ps": {
+    "eta_mPa_s": 2.5131161789810563,
+    "eta_std_mPa_s": 0.10718500688988737,
+    "relative_std": 0.0426502394860812,
+    "neff": 119.61700004091752,
+    "tau_exp_ps": 0.10548021899669993,
+    "tau_int_ps": 0.099162413240433,
+    "cost_z": 0.44485751754489156,
+    "criterion_z": 2.688034438641025
+  },
+  "new_batch_z": 0.26277361098578017,
+  "new_batch_vs_previous_percent": -2.101670860886029,
+  "checks": [
+    {
+      "id": "Ti_2100K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": false,
+        "new_batch_consistency": true,
+        "window_fit_diagnostics": false
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.11240110705913997
+    }
+  ],
+  "pass_streak": 0,
+  "visual_review": {
+    "files": [
+      "convergence.png",
+      "40ps/spectrum.png",
+      "40ps/extras.png",
+      "first20ps/spectrum.png",
+      "first20ps/extras.png",
+      "second20ps/spectrum.png",
+      "second20ps/extras.png",
+      "new_batch_40ps/spectrum.png",
+      "new_batch_40ps/extras.png",
+      "figure7_current.png"
+    ],
+    "notes": "Convergence shows persistent lower second20ps estimate. Spectrum/extras: cutoff sensitivity persists; criterion_z worsens for full40ps and second20ps, improves but still fails first20ps. Selected cutoff roughly2.4THz full/first,5.9THz second; newest5 has multiple cutoff-weight modes. Cost is acceptable in all windows and new batch, but all cutoff Z exceed2. Do not infer physical drift from these estimates. Updated Figure7 legible; old5k and historical15k retained separately."
+  },
+  "verification": "One A100; preflight/model/protocol hashes passed; remote structures512 type2 Ti; actual2100/1873 temperature commands verified; V/(kB*T) uses state T. Current job healthy; historical REQUEUE log events are not current failures.",
+  "caveats": [
+    "Cumulative and20/40ps estimates are correlated.",
+    "Historical5k and exported15k not pooled.",
+    "Sampling stopping rule is heuristic; errors exclude model/protocol bias."
+  ],
+  "article_compile": "PASS",
+  "posthoc_cutoff_diagnostic": {
+    "unix": 1793338866.6536012,
+    "temperature_K": 2100,
+    "n_replicas": 10,
+    "report": "diagnostics/Ti_2100K_N10_cutoff/assessment_RU.txt",
+    "original_results_unchanged": true,
+    "automatic_delta_mPa_s": 0.3904160836300692,
+    "fixed_1p5THz": {
+      "difference_mPa_s": 0.32165761522646086,
+      "standard_error_mPa_s": 0.21724071168255182,
+      "leave_one_out_differences": [
+        0.23754041148644742,
+        0.3338987666288329,
+        0.36079038499601307,
+        0.24780839011365577,
+        0.24611580635470728,
+        0.3697500260990685,
+        0.36925343752047984,
+        0.2768754365251838,
+        0.4806106454928946,
+        0.2957609320453926
+      ]
+    },
+    "fixed_0p8THz": {
+      "difference_mPa_s": 0.046291376403940085,
+      "standard_error_mPa_s": 0.3535614513126126,
+      "leave_one_out_differences": [
+        -0.05407785791781321,
+        -0.10612730472076437,
+        0.2606883317742628,
+        0.15400426414453883,
+        0.05210338894768998,
+        0.07224711111499839,
+        0.03939893404071408,
+        -0.164381262442797,
+        -0.02073496734672064,
+        0.07458059523430832
+      ]
+    },
+    "p_1p5THz": 0.10546875,
+    "p_0p8THz": 0.890625,
+    "script_sha256": {
+      "diagnose.py": "d96b5b5c06f85ae04b18e04c4ccbe340b6673951a4ede88090d11b9f79a96d38",
+      "low_cutoff_check.py": "74786578ca9df4ea768d80088259f3315387a088c68c90e8b3a845b068cb0c3b"
+    },
+    "next_check": "At N15 inspect cutoff weights, common-cutoff sensitivity and all window diagnostics. Do not replace official results with post-hoc estimates."
+  }
+}

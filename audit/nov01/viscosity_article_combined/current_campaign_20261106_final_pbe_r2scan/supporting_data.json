@@ -1,0 +1,126 @@
+{
+  "created_unix": 1793960100.8135781,
+  "preview_only": true,
+  "article_changed": false,
+  "points": [
+    {
+      "functional": "PBE",
+      "T": 1873,
+      "eta": 3.1447531738969294,
+      "SE": 0.06507653054894712,
+      "Nnew": 40,
+      "Nold": 0,
+      "estimator": "New 40 ps, formal SE",
+      "stop_rule_met": false
+    },
+    {
+      "functional": "PBE",
+      "T": 1941,
+      "eta": 3.009994949844677,
+      "SE": 0.06895842794028612,
+      "Nnew": 35,
+      "Nold": 0,
+      "estimator": "New 40 ps, formal SE",
+      "stop_rule_met": false
+    },
+    {
+      "functional": "PBE",
+      "T": 2000,
+      "eta": 2.832111498906028,
+      "SE": 0.056813078633071674,
+      "Nnew": 35,
+      "Nold": 0,
+      "estimator": "New 40 ps, formal SE",
+      "stop_rule_met": true
+    },
+    {
+      "functional": "PBE",
+      "T": 2100,
+      "eta": 2.575790573871692,
+      "SE": 0.042286238581642266,
+      "Nnew": 45,
+      "Nold": 0,
+      "estimator": "New 40 ps, formal SE",
+      "stop_rule_met": false
+    },
+    {
+      "functional": "r2SCAN",
+      "T": 1873,
+      "eta": 3.7975305590840596,
+      "SE": 0.11237431983287847,
+      "Nold": 30,
+      "Nnew": 5,
+      "estimator": "Legacy 20 ps plus two windows per new 40 ps; max(formal, whole-replica JK)"
+    },
+    {
+      "functional": "r2SCAN",
+      "T": 1941,
+      "eta": 3.6503669530202267,
+      "SE": 0.1421430657177967,
+      "Nold": 15,
+      "Nnew": 5,
+      "estimator": "Legacy 20 ps plus two windows per new 40 ps; max(formal, whole-replica JK)"
+    },
+    {
+      "functional": "r2SCAN",
+      "T": 2000,
+      "eta": 3.297652830525589,
+      "SE": 0.14403026618163317,
+      "Nold": 15,
+      "Nnew": 0,
+      "estimator": "Verified legacy 20 ps; published formal SE, no complete new batch yet"
+    },
+    {
+      "functional": "r2SCAN",
+      "T": 2100,
+      "eta": 2.994340861294119,
+      "SE": 0.12379301504059284,
+      "Nold": 15,
+      "Nnew": 0,
+      "estimator": "Verified legacy 20 ps; published formal SE, no complete new batch yet"
+    }
+  ],
+  "source_sha256": {
+    "audit\\nov06\\pbe_user_stop_final\\summary.json": "0d97802ad401548233394eb82545a3f2d081d89a43d48b3c8d2c4da48394809f",
+    "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\Ti_1873K\\collected\\analysis\\latest_Ti_1873K.json": "b5e49885e8d58612be9f206af5c4b1eb2e48ecdf5cc0061d796b122cf12197ff",
+    "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\Ti_1941K\\collected\\analysis\\latest_Ti_1941K.json": "5dd1dbb797e7970e80f3d1a1675179620afe3c9e0e458194dd8caa53a7bcd7a1",
+    "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\Ti_2000K\\legacy\\manifest.json": "8f1cc9bc650c2f7e0ac865e6070cc66361e9927a15401aee5736dc16e020cd15",
+    "audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\Ti_2100K\\legacy\\manifest.json": "b03c65ccb405a862591f1f0a89a883056f037f23714769e52190949bf5659c6c"
+  },
+  "protected_sha256": {
+    "audit\\nov01\\viscosity_article_combined\\figure_profile.json": "b9760c8037aad413313249af27a2cf31d6ba9cb3a68ebca9f959d798ff69acd1",
+    "manuscript\\figures\\viscosity.pdf": "714f8a5572449abc40fa5f8323e003d5874298d380c5ad70e4a8e9b5d2eadb34",
+    "manuscript\\build\\ti-temperature\\main.pdf": "8dc6a9f2acd6b6d60da5d22f20f00e7cf8c39df07a0e1063c09426f641bf1cf0",
+    "manuscript\\sections\\results.tex": "502021357776ccb64e77a7c5b078f022eb88aa845765d475877e86f2dc1b6f9b",
+    "manuscript\\supporting_data\\viscosity_article_profile.json": "a069d8c9855d68c689819dc9e98a1a834fd99367574e31608b06d3574967455e",
+    "manuscript\\supporting_data\\viscosity_temperature_current.json": "a069d8c9855d68c689819dc9e98a1a834fd99367574e31608b06d3574967455e"
+  },
+  "arrhenius_fits": {
+    "PBE": {
+      "logA": -0.7392759620579115,
+      "B_K": 3548.788951156967,
+      "chi2": 0.6965247048802189,
+      "dof": 2,
+      "note": "Descriptive weighted Arrhenius fit, not convergence evidence"
+    },
+    "r2SCAN": {
+      "logA": -0.8890476266711063,
+      "B_K": 4182.487636705429,
+      "chi2": 0.7259340050645606,
+      "dof": 2,
+      "note": "Descriptive weighted Arrhenius fit, not convergence evidence"
+    }
+  },
+  "model_identity": {
+    "PBE": "checkpoint 15000, final user-requested pause",
+    "r2SCAN": "checkpoint 23200, confirmed legacy plus complete new batches only"
+  },
+  "caveats": [
+    "Actual temperature is 1941 K; no calculation at 1942 K.",
+    "Completion of PBE is user-requested stop, not convergence for 1873/1941/2100.",
+    "r2SCAN 1873 and 1941 include five new 40 ps replicas per temperature; 2000/2100 retain legacy until complete analysis.",
+    "20 ps windows of one 40 ps replica form one cluster for combined uncertainty.",
+    "Errors do not include model systematics; different preparations and reservoir dependence limit interpretation.",
+    "Ishikawa correlation and +/-10.3 percent envelope retained from existing figure recipe."
+  ]
+}

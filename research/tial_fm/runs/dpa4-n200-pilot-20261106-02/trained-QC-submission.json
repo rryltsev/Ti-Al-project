@@ -1,0 +1,10 @@
+{
+  "final": {
+    "job_id": "20988469",
+    "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=12G --time=00:10:00 --dependency=aftercorr:20988454 --array=0-3 --job-name=TiAl-pilot-QC --output=pilot-QC-%A_%a.log trained-QC.sbatch"
+  },
+  "first_checkpoint": {
+    "job_id": "20988473",
+    "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=12G --time=00:10:00 --job-name=TiAl-LoRA-1000-QC --output=checkpoint1000-QC-%j.log checkpoint1000-QC.sbatch"
+  }
+}

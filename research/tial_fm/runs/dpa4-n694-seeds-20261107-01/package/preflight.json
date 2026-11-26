@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "datasets": {
+    "694": {
+      "PBE": {
+        "train": {
+          "structures": 694,
+          "atoms": 152798,
+          "groups": 91
+        },
+        "validation": {
+          "structures": 149,
+          "atoms": 32740,
+          "groups": 23
+        }
+      },
+      "r2SCAN": {
+        "train": {
+          "structures": 694,
+          "atoms": 152798,
+          "groups": 91
+        },
+        "validation": {
+          "structures": 149,
+          "atoms": 32740,
+          "groups": 23
+        }
+      }
+    }
+  },
+  "group_overlap": 0,
+  "train200_nested_in694": true,
+  "test_data_staged": false,
+  "configuration_count": 8,
+  "zero_step_policy": "Every GPU case performs exact initialized live/merged/source and frozen-mask checks before its first optimizer step; no separate duplicated CPU initialization.",
+  "recipe_identical_to_N694_seed10_except_seed_and_run_paths": true
+}

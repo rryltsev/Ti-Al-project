@@ -1,0 +1,167 @@
+{
+  "batch": 5,
+  "job_id": "20962153",
+  "scheduler_state": "RUNNING",
+  "current_composition": "xAl_0.20",
+  "current_replica": 6,
+  "rows": [
+    {
+      "x_Al": 0.2,
+      "baseline": 4.058941731552027,
+      "baseline_std": 0.1133640085616111,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 3.4951635925506963,
+          "eta_std_mPa_s": 0.1903087156191573,
+          "relative_std": 0.05444915826680205,
+          "neff": 90.94452827765747,
+          "tau_exp_ps": 0.15088250458992916,
+          "tau_int_ps": 0.10098700096254382,
+          "cost_z": -0.5307736047814101,
+          "criterion_z": 1.565104779152123
+        },
+        "first20ps": {
+          "eta_mPa_s": 3.5944195840411948,
+          "eta_std_mPa_s": 0.22787412686971215,
+          "relative_std": 0.06339664069310294,
+          "neff": 61.435696450563285,
+          "tau_exp_ps": 0.13306101749480712,
+          "tau_int_ps": 0.10197251146608755,
+          "cost_z": -0.04040405399435672,
+          "criterion_z": 0.5837319113881795
+        },
+        "second20ps": {
+          "eta_mPa_s": 3.4139836561920798,
+          "eta_std_mPa_s": 0.2926127407983276,
+          "relative_std": 0.08571005905889564,
+          "neff": 44.346531337691296,
+          "tau_exp_ps": 0.17764406777576908,
+          "tau_int_ps": 0.1004956117334513,
+          "cost_z": -1.5806842042403417,
+          "criterion_z": 1.0737131015032553
+        }
+      },
+      "unmet_or_unavailable": [
+        "minimum_replicas",
+        "precision",
+        "last_three_stability",
+        "new_batch_consistency"
+      ],
+      "max_duration_difference_pct": 2.8398096072539847,
+      "40ps_delta_5k_pct": -13.889781531447543,
+      "40ps_diagnostic_combined_z": 2.545103733063026,
+      "first20ps_delta_5k_pct": -11.44441527455019,
+      "first20ps_diagnostic_combined_z": 1.8251249558499205,
+      "second20ps_delta_5k_pct": -15.889808674669814,
+      "second20ps_diagnostic_combined_z": 2.0552825986343417
+    },
+    {
+      "x_Al": 0.45,
+      "baseline": 4.8829928969516745,
+      "baseline_std": 0.15516837775697043,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 4.652387665772592,
+          "eta_std_mPa_s": 0.2892827174164551,
+          "relative_std": 0.06217940941265388,
+          "neff": 71.65523550713145,
+          "tau_exp_ps": 0.22245574802440232,
+          "tau_int_ps": 0.10982652289083769,
+          "cost_z": -1.4676976095747216,
+          "criterion_z": 1.59068980357959
+        },
+        "first20ps": {
+          "eta_mPa_s": 4.349788204715012,
+          "eta_std_mPa_s": 0.3315240478972506,
+          "relative_std": 0.07621613565871795,
+          "neff": 37.4543715724544,
+          "tau_exp_ps": 0.1809852826805237,
+          "tau_int_ps": 0.10377192439826777,
+          "cost_z": -1.1997449359268213,
+          "criterion_z": 0.8998037773260391
+        },
+        "second20ps": {
+          "eta_mPa_s": 4.847264506667716,
+          "eta_std_mPa_s": 0.42708312352947997,
+          "relative_std": 0.08810807063282813,
+          "neff": 33.55880782086081,
+          "tau_exp_ps": 0.24015770827419602,
+          "tau_int_ps": 0.11324075674195848,
+          "cost_z": -1.1426980055690272,
+          "criterion_z": -0.15762729540985607
+        }
+      },
+      "unmet_or_unavailable": [
+        "minimum_replicas",
+        "precision",
+        "last_three_stability",
+        "duration_stability",
+        "new_batch_consistency"
+      ],
+      "max_duration_difference_pct": 6.5041755501973775,
+      "40ps_delta_5k_pct": -4.722620655930987,
+      "40ps_diagnostic_combined_z": 0.70248475772372,
+      "first20ps_delta_5k_pct": -10.919628668096736,
+      "first20ps_diagnostic_combined_z": 1.4566834697525177,
+      "second20ps_delta_5k_pct": -0.7316904004972646,
+      "second20ps_diagnostic_combined_z": 0.07862802695031686
+    },
+    {
+      "x_Al": 0.8,
+      "baseline": 1.7613482567937695,
+      "baseline_std": 0.03631777320585242,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 1.8136616226837778,
+          "eta_std_mPa_s": 0.08494959454989409,
+          "relative_std": 0.04683872310436241,
+          "neff": 99.76211857196839,
+          "tau_exp_ps": 0.11342070159568005,
+          "tau_int_ps": 0.059056827188831366,
+          "cost_z": 0.9441950622883941,
+          "criterion_z": 1.108440617692401
+        },
+        "first20ps": {
+          "eta_mPa_s": 1.7610149882699038,
+          "eta_std_mPa_s": 0.10060461779882983,
+          "relative_std": 0.05712876861864082,
+          "neff": 67.88103466129444,
+          "tau_exp_ps": 0.07978884419993564,
+          "tau_int_ps": 0.05625706156638756,
+          "cost_z": 0.5388793343354097,
+          "criterion_z": 0.44645471580887286
+        },
+        "second20ps": {
+          "eta_mPa_s": 1.4187087339166922,
+          "eta_std_mPa_s": 0.10010614407647012,
+          "relative_std": 0.0705614490721451,
+          "neff": 183.91746727694192,
+          "tau_exp_ps": 0.048072836015960796,
+          "tau_int_ps": 0.04710591194305236,
+          "cost_z": 0.9550491186112889,
+          "criterion_z": 11.095957957449485
+        }
+      },
+      "unmet_or_unavailable": [
+        "minimum_replicas",
+        "precision",
+        "last_three_stability",
+        "duration_stability",
+        "new_batch_consistency"
+      ],
+      "max_duration_difference_pct": 21.776547721324746,
+      "40ps_delta_5k_pct": 2.9700750937941,
+      "40ps_diagnostic_combined_z": 0.5662397605604091,
+      "first20ps_delta_5k_pct": -0.018921216890543935,
+      "first20ps_diagnostic_combined_z": 0.003115847294470221,
+      "second20ps_delta_5k_pct": -19.453252447689895,
+      "second20ps_diagnostic_combined_z": 3.2175603586405277
+    }
+  ],
+  "visual_review": [
+    "convergence.png",
+    "all three 40ps spectrum.png and extras.png",
+    "xAl_0.80 second20ps spectrum.png and extras.png"
+  ],
+  "interpretation": "First batch only. All full-40ps spectral checks pass. xAl_0.80 second20ps cutoff z=11.10 and high-cutoff weight concentration make that window estimate unreliable; do not interpret its low value as physical drift. Need more replicas and convergence checks. Matched first20ps xAl_0.20 differs from baseline by -11.44%, diagnostic 1.83 combined SE; global recomputation is not justified from N=5 alone. Windows and cumulative estimates correlated; preparation and duration differ from baseline."
+}

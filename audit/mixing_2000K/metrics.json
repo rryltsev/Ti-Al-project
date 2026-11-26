@@ -1,0 +1,61 @@
+{
+  "pbe": {
+    "minimum_kJ_mol": -26.309620531467203,
+    "minimum_x_Al": 0.5,
+    "minimum_SEM": 0.21638449500045348,
+    "SEM_range": [
+      0.10452489469036264,
+      0.291210006029881
+    ],
+    "max_half_difference": 0.9445745749423509,
+    "max_formula_correction": 1.911413097309591
+  },
+  "sol": {
+    "minimum_kJ_mol": -25.43963712528307,
+    "minimum_x_Al": 0.5,
+    "minimum_SEM": 0.23134355770780785,
+    "SEM_range": [
+      0.12979309771493402,
+      0.4031623334242846
+    ],
+    "max_half_difference": 0.7741123791684004,
+    "max_formula_correction": 3.9426914550919747
+  },
+  "scan": {
+    "minimum_kJ_mol": -32.03917291187122,
+    "minimum_x_Al": 0.5,
+    "minimum_SEM": 0.17108893128055846,
+    "SEM_range": [
+      0.12312859575785416,
+      0.3302726273504394
+    ],
+    "max_half_difference": 1.0807945428057337,
+    "max_formula_correction": 1.3518296073034293
+  },
+  "unadjusted_half_p_lt_005": [
+    {
+      "model": "sol",
+      "x_Al": 0.2,
+      "observable": "H",
+      "half_difference": 0.47068223796031816,
+      "half_p": 0.011669133314391227,
+      "slope_per_ps": 0.023054512805017892,
+      "slope_p": 0.07724917496241082,
+      "half_q_BH": 0.8871476496661654,
+      "slope_q_BH": 0.7361188594075186
+    },
+    {
+      "model": "scan",
+      "x_Al": 0.7,
+      "observable": "T",
+      "half_difference": -14.899018990403874,
+      "half_p": 0.017922174740730615,
+      "slope_per_ps": -0.6517091016813576,
+      "slope_p": 0.13092514293995736,
+      "half_q_BH": 0.8871476496661654,
+      "slope_q_BH": 0.9258277965039842
+    }
+  ],
+  "BH_half_q_lt_005": [],
+  "BH_slope_q_lt_005": []
+}

@@ -1,0 +1,36 @@
+{
+  "solid": {
+    "citation_key": "Zinoviev1989",
+    "source_file": "C:/Users/Roman Ryltsev/Desktop/STARTUPS/Ti-Al-X/TiAl-Project/TiAl-papers/density/Zinovjev_teplofizicheskie_svoistva_metallov.djvu",
+    "table": 65,
+    "printed_page": 221,
+    "djvu_page_one_based": 222,
+    "method_printed_page": 219,
+    "verified": "Values and alpha/beta labels visually checked against the supplied DjVu scan, 2026-10-20.",
+    "meaning": "Handbook densities calculated from thermal expansion and room-temperature density; not separate direct high-temperature density measurements.",
+    "units": {"temperature": "K", "density": "g/cm^3"},
+    "alpha": [[300,4.50],[400,4.49],[500,4.47],[600,4.46],[700,4.45],[800,4.43],[900,4.42],[1000,4.40],[1156,4.37]],
+    "beta": [[1156,4.38],[1200,4.37],[1400,4.35],[1600,4.32],[1800,4.29],[1944,4.26]],
+    "uncertainty": null,
+    "excluded_liquid_entry": {"temperature_K": 1944, "density_g_cm3": 4.12, "reason": "Liquid comparison uses the recent critically evaluated correlation instead."}
+  },
+  "liquid": {
+    "citation_key": "Ntonti2024",
+    "doi": "10.1007/s10765-023-03305-z",
+    "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=956945",
+    "equation": 1,
+    "table": 2,
+    "accepted_manuscript_pdf_page_one_based": 8,
+    "meaning": "Reference correlation fitted to selected primary experimental density datasets, with uncertainty-based weights.",
+    "formula": "rho = c1 + c2 * (T - Tm)",
+    "pressure_MPa": 0.1,
+    "Tm_K": 1941,
+    "valid_range_K": [1941,3520],
+    "c1_kg_m3": 4222.1,
+    "c2_kg_m3_K": -0.3952,
+    "expanded_relative_uncertainty": 0.02,
+    "coverage_percent": 95,
+    "plotted_range_K": [1941,2500],
+    "local_pdf_download": "HTTP 403; full text and numerical table accessed with the web research tool. No downloaded PDF is claimed."
+  }
+}

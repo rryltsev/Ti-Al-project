@@ -1,0 +1,41 @@
+{
+  "id": "pbe-dft-geometry-intermediate-20261025-01",
+  "checkpoints": [
+    "10000",
+    "15000"
+  ],
+  "models": {
+    "10000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-10000.pt",
+      "sha256": "5668ffc594213af8630d18548f3d16972a482bb077379ab9052d193c0a4ba37f"
+    },
+    "15000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf"
+    }
+  },
+  "geometry_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\TiAl-papers\\phonons\\DFT_Ti_Ti3Al\\Ti_hcp\\POSCAR",
+  "geometry_sha256": "bb123213ff83623624614ed5cc62020e8db2666b8fc118f3e1df7751f8eddcfe",
+  "relaxation": false,
+  "supercell": [
+    9,
+    9,
+    9
+  ],
+  "delta_A": 0.01,
+  "mass_amu": 47.867,
+  "postprocessing_meshes": [
+    [
+      40,
+      40,
+      30
+    ],
+    [
+      50,
+      50,
+      50
+    ]
+  ],
+  "sigma_THz": 0.05,
+  "note": "Exact archived DFT cell and fractional positions, no relaxation; 40x40x30 matches the documented DFT mesh dimensions; raw mesh.yaml is unavailable."
+}

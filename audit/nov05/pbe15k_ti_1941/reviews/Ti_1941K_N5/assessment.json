@@ -1,0 +1,103 @@
+{
+  "reviewed_unix": 1793893503.3403833,
+  "temperature_K": 1941,
+  "n_replicas": 5,
+  "summary_sha256": "3c16ea5a4c4997b7bc2a6aed43790e7207af94d0864f1a826b62c2c58d67d971",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 2.826782431883165,
+      "eta_std_mPa_s": 0.12805634178352826,
+      "relative_std": 0.04530109581097787,
+      "neff": 116.07793108058254,
+      "tau_exp_ps": 0.11761656975920373,
+      "tau_int_ps": 0.10705780939971338,
+      "cost_z": 1.254770826321622,
+      "criterion_z": 2.431598141419935
+    },
+    "first20ps": {
+      "eta_mPa_s": 2.6596356982342773,
+      "eta_std_mPa_s": 0.15319345931594577,
+      "relative_std": 0.0575994146181939,
+      "neff": 59.343229110387895,
+      "tau_exp_ps": 0.10696537221283522,
+      "tau_int_ps": 0.10135103165793038,
+      "cost_z": 1.4394877515678939,
+      "criterion_z": 1.361937930634084
+    },
+    "second20ps": {
+      "eta_mPa_s": 2.905563840439724,
+      "eta_std_mPa_s": 0.18700915565386705,
+      "relative_std": 0.06436243218994815,
+      "neff": 73.03507245823563,
+      "tau_exp_ps": 0.11436902804318429,
+      "tau_int_ps": 0.10936912305592068,
+      "cost_z": 2.7771253071732778,
+      "criterion_z": 3.2619998626396187
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs_5k_percent": -7.31697280603859,
+      "vs_historical15k_percent": null,
+      "vs_previous_percent": null,
+      "SE_change_percent": null
+    },
+    "first20ps": {
+      "vs_5k_percent": -12.797290316658373,
+      "vs_historical15k_percent": null,
+      "vs_previous_percent": null,
+      "SE_change_percent": null
+    },
+    "second20ps": {
+      "vs_5k_percent": -4.733930209880288,
+      "vs_historical15k_percent": null,
+      "vs_previous_percent": null,
+      "SE_change_percent": null
+    }
+  },
+  "new_batch_40ps": null,
+  "previous_replicas_40ps": null,
+  "new_batch_z": null,
+  "checks": [
+    {
+      "id": "Ti_1941K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": false,
+        "new_batch_consistency": false,
+        "window_fit_diagnostics": false
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.059129677531474134
+    }
+  ],
+  "pass_streak": 0,
+  "stop_recommended": false,
+  "review_required": false,
+  "visual_review": {
+    "notes": "All seven diagnostics visually inspected. Full40 main cutoff near2.8THz and a small lower-frequency shoulder; cutoff Z2.432 fails. First20 main cutoff near2.8THz passes. Second20 main cutoff near3.5THz with secondary high-frequency weight around7THz; cost Z2.777 and cutoff Z3.262 fail. This preliminary spectral fit does not establish physical drift. No previous accumulated estimate/new5-vs-old contrast at N5.",
+    "files_sha256": {
+      "convergence.png": "57e2b8d5a6835eb6b0a1fbc4ce6ddae8218cea18ee2fdd349a73ce3458640d2e",
+      "40ps/spectrum.png": "ab9eea5e81a1760aa2ab903a6e65f07f28b283bdc4da492d7eee6b409ac72d12",
+      "40ps/extras.png": "06175a6fc0f10fd819968db7ae311c7879c4913e8f7c94a3629b15c581f2fcbb",
+      "first20ps/spectrum.png": "9405ed1ac5d93628cf207441fba5a7e00c88bfddf57d6d85447c14c60e18f44d",
+      "first20ps/extras.png": "46cdde825c3169e2af9119a988a0b7b4c1583bd57a4a0f5b666683034d3d0502",
+      "second20ps/spectrum.png": "b1ea4cade492e7833116b0e5031b578d71c92716062bcf617629d9b28a169218",
+      "second20ps/extras.png": "93169bb7d3fa49769c956c679ceb68b09abda1f6c0cdbb9ac49d60ac36042b5b"
+    }
+  },
+  "runtime_verification": "runtime-check.json: PASS for all five new replicas and all staged/model/GPU/target/normalization checks.",
+  "article_profile_sha256": "8ca5307ab484cf7963593cdd0c36bd6dca3fd2800cb8e1893fa164874365cfe8",
+  "caveats": [
+    "Formal estimator SE; model, protocol and cutoff bias are not included.",
+    "Windows and accumulated estimates are correlated; these stopping criteria are a heuristic.",
+    "5k and historical 15k references remain separate; agreement with 5k is not a stop criterion.",
+    "Fixed article profile is unchanged; only complete analyzed batches are plotted."
+  ]
+}

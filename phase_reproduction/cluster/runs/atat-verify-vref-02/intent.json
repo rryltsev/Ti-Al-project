@@ -1,0 +1,34 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/atat-verify-vref-02",
+  "utc": "2026-11-24T18:51:06.280516+00:00",
+  "job_name": "ta-atat-verify-vref-02",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=2G",
+    "--time=10",
+    "--job-name=ta-atat-verify-vref-02",
+    "--output=slurm-%j.out",
+    "--dependency=afterok:21020437",
+    "--kill-on-invalid-dep=yes",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "518cbaecc836ee8125f1d4017b3163ba581e06e9f28d14bf2b4767fac5cd88a5",
+    "fit_native.py": "e060f977ea0099ad614e4dbe5a8ebef1d270a05f5873afe3b4b69b475efb1891",
+    "sources.txt": "c8c07c83169d95ab25fc30110b8ed1a59d01aee127ee6a7f624ea1c0761a23db",
+    "design.csv": "8b63b293b1e75be24e8293386fc9ca0c216c3e249fcc9863dc3afc16a5cb7b28",
+    "design.json": "3a025fbffb65fd110590c664c88b00276c333791bf1e40eefd8997fb62125aec",
+    "lat.in": "0bc8e7ccdb44b73ed2d249823253f5288de493d080fef75c0682b6fecc03b54d",
+    "clusters.out": "8ad77ecba44682de86a8fb18af8ff71178997a0502fff660a3f184fafcb1c8ad",
+    "selected.out": "b51728d25faaae4bdc83e76426901b8a725271bead8edacb53e97b9943ad916f"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "N": 1400,
+  "shape": "10x10x7",
+  "W": 0.4,
+  "free_axial": 1,
+  "pressure_GPa": 0.0,
+  "source_T_K": [
+    1240.0,
+    1245.0,
+    1247.5,
+    1250.0
+  ],
+  "source_umbrellas": 118,
+  "raw_trajectories": 118,
+  "retained_frames": 28198,
+  "thinning_stride": 4,
+  "T_reference": 1245.0,
+  "configuration_field_reference_eV": 3.545,
+  "Q_divider": 0.37,
+  "search_bounds": [
+    1200.0,
+    1280.0,
+    3.47,
+    3.62
+  ],
+  "gradient_error": 3.398441873722898e-10,
+  "source_overlap_from_rows_to_columns": [
+    [
+      0.27843256588625537,
+      0.2914873304790919,
+      0.25739527912150634,
+      0.17268482451314646
+    ],
+    [
+      0.19800511551764782,
+      0.3973331260806804,
+      0.19660729986091294,
+      0.20805445854075721
+    ],
+    [
+      0.2568709037409227,
+      0.2912014731662999,
+      0.26715818657237944,
+      0.1847694365203998
+    ],
+    [
+      0.18590682571082945,
+      0.3305366670909671,
+      0.19887018141407306,
+      0.28468632578412845
+    ]
+  ],
+  "central": {
+    "T_K": 1242.0511225722648,
+    "mu_eV": 3.544719910772013,
+    "x_atpct": 27.180100992524125,
+    "latent_meV_atom": 27.99361381963449,
+    "jump_Q": 0.6237794972074979,
+    "phases": [
+      {
+        "x_atpct": 27.180100992524125,
+        "mean_Q": 0.1456680049970402,
+        "semigrand_meV_atom": 13.029115022739601,
+        "effective_frames": 378.61275024477334
+      },
+      {
+        "x_atpct": 27.180100992524125,
+        "mean_Q": 0.7694475022045381,
+        "semigrand_meV_atom": -14.964498796894887,
+        "effective_frames": 515.9351860123346
+      }
+    ],
+    "profile": {
+      "Q_modes": [
+        0.10250000000000001,
+        0.8125
+      ],
+      "Q_valley": 0.4025,
+      "lower_barrier": 1.6236792313959423
+    }
+  },
+  "divider_sensitivity": [
+    {
+      "cut": 0.32,
+      "estimate": {
+        "T_K": 1242.2656949895998,
+        "mu_eV": 3.5449455862791672,
+        "x_atpct": 27.189468767297623,
+        "latent_meV_atom": 27.852295109900865,
+        "jump_Q": 0.6271506764966972,
+        "phases": [
+          {
+            "x_atpct": 27.189468767297623,
+            "mean_Q": 0.13513627105750733,
+            "semigrand_meV_atom": 13.347817782969434,
+            "effective_frames": 346.6188424650969
+          },
+          {
+            "x_atpct": 27.189468767297612,
+            "mean_Q": 0.7622869475542046,
+            "semigrand_meV_atom": -14.504477326931429,
+            "effective_frames": 532.898849331919
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.40750000000000003,
+          "lower_barrier": 1.6392788531500095
+        }
+      }
+    },
+    {
+      "cut": 0.37,
+      "estimate": {
+        "T_K": 1242.0511225722648,
+        "mu_eV": 3.544719910772013,
+        "x_atpct": 27.180100992524125,
+        "latent_meV_atom": 27.99361381963449,
+        "jump_Q": 0.6237794972074979,
+        "phases": [
+          {
+            "x_atpct": 27.180100992524125,
+            "mean_Q": 0.1456680049970402,
+            "semigrand_meV_atom": 13.029115022739601,
+            "effective_frames": 378.61275024477334
+          },
+          {
+            "x_atpct": 27.180100992524125,
+            "mean_Q": 0.7694475022045381,
+            "semigrand_meV_atom": -14.964498796894887,
+            "effective_frames": 515.9351860123346
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.4025,
+          "lower_barrier": 1.6236792313959423
+        }
+      }
+    },
+    {
+      "cut": 0.42,
+      "estimate": {
+        "T_K": 1241.8623787069312,
+        "mu_eV": 3.5443079805203586,
+        "x_atpct": 27.16443249076456,
+        "latent_meV_atom": 28.056415016554652,
+        "jump_Q": 0.6183869093114667,
+        "phases": [
+          {
+            "x_atpct": 27.16443249076456,
+            "mean_Q": 0.15680139833633655,
+            "semigrand_meV_atom": 12.690418565258554,
+            "effective_frames": 408.2676205935588
+          },
+          {
+            "x_atpct": 27.16443249076457,
+            "mean_Q": 0.7751883076478032,
+            "semigrand_meV_atom": -15.365996451296096,
+            "effective_frames": 502.38289802802626
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.4025,
+          "lower_barrier": 1.6126529666162865
+        }
+      }
+    },
+    {
+      "cut": 0.47,
+      "estimate": {
+        "T_K": 1241.66912324634,
+        "mu_eV": 3.5439168623955712,
+        "x_atpct": 27.149612126763724,
+        "latent_meV_atom": 28.013042157145506,
+        "jump_Q": 0.6102993186844854,
+        "phases": [
+          {
+            "x_atpct": 27.149612126763724,
+            "mean_Q": 0.17004832198273942,
+            "semigrand_meV_atom": 12.267628136558708,
+            "effective_frames": 440.8746253997143
+          },
+          {
+            "x_atpct": 27.149612126763724,
+            "mean_Q": 0.7803476406672248,
+            "semigrand_meV_atom": -15.7454140205868,
+            "effective_frames": 488.8690550963548
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.4025,
+          "lower_barrier": 1.6010732099124478
+        }
+      }
+    }
+  ],
+  "bootstrap_columns": [
+    "T_K",
+    "mu_eV",
+    "x_atpct",
+    "latent_meV_atom",
+    "jump_Q"
+  ],
+  "draws": 0,
+  "seed": 6213129,
+  "resolved": 0,
+  "min_blocks": 2,
+  "one_block_runs": 0,
+  "interval_95": null,
+  "replicates": [],
+  "manifests": [
+    "solvus_closure/atomistic/series/zc4014c/windows.csv",
+    "solvus_closure/atomistic/series/zc4014s/windows.csv",
+    "solvus_closure/atomistic/series/zc4514l/windows.csv",
+    "solvus_closure/atomistic/series/zc4514c/windows.csv",
+    "solvus_closure/atomistic/series/zc4514r/windows.csv",
+    "solvus_closure/atomistic/series/zc4714c/windows.csv",
+    "solvus_closure/atomistic/series/zc4714s/windows.csv",
+    "solvus_closure/atomistic/series/zc5014l/windows.csv",
+    "solvus_closure/atomistic/series/zc5014c/windows.csv"
+  ]
+}

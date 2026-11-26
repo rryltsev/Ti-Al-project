@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "train": 200,
+  "validation": 149,
+  "metrics": {
+    "offset_eV_atom": {
+      "Al": -0.0015194396664725113,
+      "Ti": 0.000739169509244649
+    },
+    "alignment": "Equal-structure least squares in E/atom, train200 only",
+    "metrics": {
+      "train": {
+        "structures": 200,
+        "E_raw_RMSE_meV_atom": 1.5919260372114152,
+        "E_aligned_RMSE_meV_atom": 1.419907381994599,
+        "F_RMSE_eV_A": 0.08452972043128089,
+        "stress_RMSE_GPa": 0.09132898290925617
+      },
+      "validation": {
+        "structures": 149,
+        "E_raw_RMSE_meV_atom": 1.6083225130392131,
+        "E_aligned_RMSE_meV_atom": 1.4602589531955883,
+        "F_RMSE_eV_A": 0.08893654038022056,
+        "stress_RMSE_GPa": 0.08631535211380054
+      }
+    }
+  },
+  "test_access": false,
+  "fixed_final": true
+}

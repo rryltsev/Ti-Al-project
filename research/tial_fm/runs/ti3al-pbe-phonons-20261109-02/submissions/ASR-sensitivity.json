@@ -1,0 +1,19 @@
+{
+  "key": "ASR-sensitivity",
+  "job_id": "20991481",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--partition=apollo",
+    "--mem=8G",
+    "--time=00:10:00",
+    "--job-name=Ti3Al-PBE-ASR",
+    "--output=asr-%j.log",
+    "asr.sbatch"
+  ],
+  "utc": "2026-11-09T17:11:46.553178+00:00"
+}

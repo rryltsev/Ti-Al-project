@@ -1,0 +1,849 @@
+{
+  "date": "2026-11-06",
+  "temperature_K": 1873.0,
+  "R_J_mol_K": 8.31446261815324,
+  "pure_ti": {
+    "eta_mPa_s": 3.4570167732744665,
+    "formula_mPa_s": "0.61*exp(27000/(8.31*T))",
+    "source": "Ishikawa2012",
+    "doi": "10.1088/0957-0233/23/2/025305",
+    "note": "Same provisional transcription as existing Fig. 7b; 1873 K is below the equilibrium melting point of Ti."
+  },
+  "pure_al": {
+    "eta_mPa_s": 0.4972623575136173,
+    "formula_mPa_s": "10**(-0.7324+803.49/T)",
+    "source": "Assael2006, Eq. (19)",
+    "doi": "10.1063/1.2149380",
+    "fit_temperature_range_K": [
+      933,
+      1270
+    ],
+    "extrapolated": true,
+    "reported_uncertainty_percent_in_validated_range": 14,
+    "note": "Critically evaluated experimental reference correlation, not an arithmetic average. Its 14% uncertainty is not validated at 1873 K.",
+    "equation_crosscheck_url": "https://link.springer.com/article/10.1007/s11661-017-4053-6",
+    "original_paper_mirror": "https://www.scribd.com/document/655453439/285-1-online-viscosity"
+  },
+  "enthalpy_sources": {
+    "experiment": {
+      "x_Al": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "deltaH_kJ_mol": [
+        0.0,
+        -8.850931677018634,
+        -15.559006211180124,
+        -20.03105590062112,
+        -25.714285714285715,
+        -29.53416149068323,
+        -29.720496894409937,
+        -26.925465838509318,
+        -20.683229813664596,
+        -11.366459627329192,
+        0.0
+      ],
+      "deltaH_SEM_kJ_mol": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "enthalpy_temperature_K": 2000,
+      "note": "Calorimetry reproduced in Witusiewicz2008 Fig. 7; provisional digitization. Assumed unchanged from 2000 to 1873 K.",
+      "trajectory_sources": []
+    },
+    "pbe": {
+      "x_Al": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "deltaH_kJ_mol": [
+        0.0,
+        -8.028960566896217,
+        -15.046473689882077,
+        -20.39979758669608,
+        -25.353341694504593,
+        -27.354592758005595,
+        -26.877841860084743,
+        -24.071268007185097,
+        -17.280347783269775,
+        -9.417316504197089,
+        0.0
+      ],
+      "deltaH_SEM_kJ_mol": [
+        0,
+        0.12961608392122237,
+        0.13055236195480172,
+        0.19056971210815904,
+        0.2929310052623795,
+        0.2191041401072651,
+        0.17098376241075192,
+        0.17614318419202568,
+        0.13649559996130795,
+        0.15081708059232637,
+        0
+      ],
+      "enthalpy_temperature_K": 1873.0,
+      "note": "Archived 1873 K MD; total energy plus external-pressure pV, pure-liquid references at the same T and model.",
+      "trajectory_sources": [
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Ti_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.1Ti0.9_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.2Ti0.8_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.3Ti0.7_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.4Ti0.6_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.5Ti0.5_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.6Ti0.4_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.7Ti0.3_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.8Ti0.2_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al0.9Ti0.1_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/pbe/Al_1873K.traj"
+      ]
+    },
+    "scan": {
+      "x_Al": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "deltaH_kJ_mol": [
+        0.0,
+        -9.092182228813272,
+        -17.072492370583404,
+        -24.024332449910617,
+        -29.71949573773736,
+        -33.266005344479595,
+        -33.43134727903691,
+        -29.612970858921642,
+        -21.497113962192657,
+        -11.501573028290977,
+        0.0
+      ],
+      "deltaH_SEM_kJ_mol": [
+        0,
+        0.27548284933895956,
+        0.22933789832670798,
+        0.2755232343995269,
+        0.24084746950781824,
+        0.39888060557961125,
+        0.5320739686957848,
+        0.31880836809819635,
+        0.25256792961582974,
+        0.19103198038020525,
+        0
+      ],
+      "enthalpy_temperature_K": 1873.0,
+      "note": "Archived 1873 K MD; total energy plus external-pressure pV, pure-liquid references at the same T and model.",
+      "trajectory_sources": [
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Ti_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.1Ti0.9_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.2Ti0.8_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.3Ti0.7_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.4Ti0.6_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.5Ti0.5_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.6Ti0.4_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.7Ti0.3_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.8Ti0.2_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al0.9Ti0.1_1873K.traj",
+        "results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/1873K/scan/Al_1873K.traj"
+      ]
+    }
+  },
+  "model_identity": {
+    "PBE": {
+      "train_infos": {
+        "lr": 8.94910241509068e-05,
+        "step": 4999
+      },
+      "source_checkpoint": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\pbe_checkpoint.pt",
+      "checkpoint_sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac",
+      "metadata_sha256": "7326d9d0e06a37e2092866f23fbba322ee2edf466040e37ed3aec387d3699af4",
+      "frozen_sha256": "660ebda9c96dedd5fc297148d6463fea535b0663e028c49e3bb78a4f21ca60bc"
+    },
+    "PBEsol": {
+      "train_infos": {
+        "lr": 1.0000004605209127e-06,
+        "step": 23099
+      },
+      "source_checkpoint": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\pbesol_checkpoint.pt",
+      "checkpoint_sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+      "metadata_sha256": "974a01b7d4af7fc11cc55a1c1677a79b1e667c13ae35c9eeafb73ff6e65a83ce",
+      "frozen_sha256": "a7c63464cd92745e8cc1dd153e2e8678da63a7fd523479e682eb7c02a3d05a3f"
+    },
+    "r2SCAN": {
+      "train_infos": {
+        "lr": 1.0000004565476681e-06,
+        "step": 23199
+      },
+      "source_checkpoint": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\scan_checkpoint.pt",
+      "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "metadata_sha256": "0160cc64a2d5f20e91748161c54b02306a70e36cae2aaf1d2357a1eb846c7973",
+      "frozen_sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+    }
+  },
+  "composition_PBE_checkpoint": 5000,
+  "no_parameters_fitted_to_alloy_viscosity": true,
+  "convention": "x=x_Al, H=integral mixing enthalpy in J/mol atoms, eta in mPa s; 0 ln(0)=0",
+  "equations": {
+    "KRP": "eta=eta_Ti**(1-x)*eta_Al**x*exp(-H/(3*R*T))",
+    "Moelwyn_Hughes": "eta=((1-x)*eta_Ti+x*eta_Al)*(1-2*H/(R*T))",
+    "Schick": "eta=eta_Ti**(1-x)*eta_Al**x*exp((1-x)*ln(1-x)+x*ln(x)-H/(R*T))",
+    "Kaptay": "eta=eta_Ti**(1-x)*eta_Al**x*(V_Ti**(1-x)*V_Al**x/Vm)*exp(-0.155*H/(R*T))"
+  },
+  "volume": {
+    "source": "Brillo et al. 2025, Tables 7 and 8, Eq. (7)",
+    "doi": "10.1007/s10765-025-03651-0",
+    "V_Ti_cm3_mol": 11.45,
+    "V_Al_cm3_mol": 12.94555,
+    "v0_cm3_mol": -2.66,
+    "v1_cm3_mol": -2.831,
+    "equation": "Vm=(1-x)*V_Ti+x*V_Al+x*(1-x)*(v0+v1*(2*x-1))",
+    "note": "Common experimental volume curve for all enthalpy sources. Use the explicit 1873 K column of Table 8; the separate temperature-fit column does not reproduce those coefficients exactly."
+  },
+  "literature": [
+    {
+      "key": "Schick2012",
+      "title": "Viscosity of Al-Cu liquid alloys: measurement and thermodynamic description",
+      "doi": "10.1007/s10853-012-6710-x",
+      "url": "https://elib.dlr.de/77683/1/AlCuViscosity.pdf",
+      "equations": "MH Eq. (1), KRP Eq. (2), Kaptay Eqs. (5)-(6), Schick Eqs. (8),(11)-(12)"
+    },
+    {
+      "key": "Kaptay2003",
+      "title": "A new equation to estimate the concentration dependence of the viscosity of liquid metallic alloys from the heat of mixing data",
+      "publication": "microCAD 2003, Metallurgy, University of Miskolc, pp. 23-28",
+      "author_summary": "https://calphad.org/meetings/2004/a/12/12-5.htm"
+    },
+    {
+      "key": "Dobosz2021",
+      "doi": "10.1016/j.molliq.2021.117646",
+      "url": "https://iris.cnr.it/retrieve/ff429fe0-662b-47ab-963c-0d4c8bb2a6ac/21Dobosz%20Ga-Sn-Zn.pdf",
+      "note": "Independent confirmation of MH factor 2 in Eq. (6) and Schick Eqs. (8)-(9)."
+    },
+    {
+      "key": "Mohr2020",
+      "doi": "10.1002/adem.202000169",
+      "note": "Ti-based alloy application. Its Eq. (17) uses a different omega-parameter convention; not used here and not equated to integral H."
+    }
+  ],
+  "metrics_definition": "Unweighted descriptive residuals against five Takeda Table 3 fits at 1873 K; MAPE=100*mean(abs((prediction-reference)/reference)). No statistical significance or uncertainty interval claimed.",
+  "comparison_points": [
+    {
+      "x_Al": 0.44999999999999996,
+      "eta_Takeda_mPa_s": 5.304558286981723,
+      "fit_min_T_K": 1822,
+      "fit_max_T_K": 1870,
+      "extrapolation_K": 3.0
+    },
+    {
+      "x_Al": 0.6,
+      "eta_Takeda_mPa_s": 3.5540142689291314,
+      "fit_min_T_K": 1714,
+      "fit_max_T_K": 1870,
+      "extrapolation_K": 3.0
+    },
+    {
+      "x_Al": 0.7,
+      "eta_Takeda_mPa_s": 2.6786776153882954,
+      "fit_min_T_K": 1705,
+      "fit_max_T_K": 1888,
+      "extrapolation_K": 0
+    },
+    {
+      "x_Al": 0.8,
+      "eta_Takeda_mPa_s": 1.7639482977165526,
+      "fit_min_T_K": 1674,
+      "fit_max_T_K": 1884,
+      "extrapolation_K": 0
+    },
+    {
+      "x_Al": 0.9,
+      "eta_Takeda_mPa_s": 1.4369301743713225,
+      "fit_min_T_K": 1665,
+      "fit_max_T_K": 1878,
+      "extrapolation_K": 0
+    }
+  ],
+  "metrics": [
+    {
+      "model": "KRP",
+      "enthalpy_source": "experiment",
+      "n": 5,
+      "MAPE_percent": 43.20616943899456,
+      "RMSE_mPa_s": 1.5223761495798542,
+      "mean_signed_relative_error_percent": -43.20616943899456,
+      "maximum_eta_mPa_s": 3.4570167732744665,
+      "x_Al_at_maximum": 0.0,
+      "eta_xAl_045_mPa_s": 2.6094029232850087
+    },
+    {
+      "model": "KRP",
+      "enthalpy_source": "pbe",
+      "n": 5,
+      "MAPE_percent": 46.19506105116366,
+      "RMSE_mPa_s": 1.594558321232307,
+      "mean_signed_relative_error_percent": -46.19506105116366,
+      "maximum_eta_mPa_s": 3.4570167732744665,
+      "x_Al_at_maximum": 0.0,
+      "eta_xAl_045_mPa_s": 2.5394108908331994
+    },
+    {
+      "model": "KRP",
+      "enthalpy_source": "scan",
+      "n": 5,
+      "MAPE_percent": 40.44934617414707,
+      "RMSE_mPa_s": 1.3941519344856996,
+      "mean_signed_relative_error_percent": -40.44934617414707,
+      "maximum_eta_mPa_s": 3.4594722028930462,
+      "x_Al_at_maximum": 0.1,
+      "eta_xAl_045_mPa_s": 2.8346703117455694
+    },
+    {
+      "model": "Moelwyn-Hughes",
+      "enthalpy_source": "experiment",
+      "n": 5,
+      "MAPE_percent": 100.42724732557926,
+      "RMSE_mPa_s": 3.378418322535998,
+      "mean_signed_relative_error_percent": 100.42724732557926,
+      "maximum_eta_mPa_s": 9.779898796280897,
+      "x_Al_at_maximum": 0.4,
+      "eta_xAl_045_mPa_s": 9.664462642180029
+    },
+    {
+      "model": "Moelwyn-Hughes",
+      "enthalpy_source": "pbe",
+      "n": 5,
+      "MAPE_percent": 83.71434804031838,
+      "RMSE_mPa_s": 2.9536906901371185,
+      "mean_signed_relative_error_percent": 83.71434804031838,
+      "maximum_eta_mPa_s": 9.674528235082057,
+      "x_Al_at_maximum": 0.4,
+      "eta_xAl_045_mPa_s": 9.317778190652977
+    },
+    {
+      "model": "Moelwyn-Hughes",
+      "enthalpy_source": "scan",
+      "n": 5,
+      "MAPE_percent": 113.96883830162953,
+      "RMSE_mPa_s": 3.985409697980901,
+      "mean_signed_relative_error_percent": 113.96883830162953,
+      "maximum_eta_mPa_s": 10.949141683713245,
+      "x_Al_at_maximum": 0.4,
+      "eta_xAl_045_mPa_s": 10.720279534763222
+    },
+    {
+      "model": "Schick",
+      "enthalpy_source": "experiment",
+      "n": 5,
+      "MAPE_percent": 13.489130889605555,
+      "RMSE_mPa_s": 0.5237739984187596,
+      "mean_signed_relative_error_percent": -11.035000667857165,
+      "maximum_eta_mPa_s": 4.367699122134553,
+      "x_Al_at_maximum": 0.5,
+      "eta_xAl_045_mPa_s": 4.278286681430582
+    },
+    {
+      "model": "Schick",
+      "enthalpy_source": "pbe",
+      "n": 5,
+      "MAPE_percent": 24.403263906408096,
+      "RMSE_mPa_s": 0.7503576647093114,
+      "mean_signed_relative_error_percent": -24.403263906408096,
+      "maximum_eta_mPa_s": 4.136334873718624,
+      "x_Al_at_maximum": 0.4,
+      "eta_xAl_045_mPa_s": 3.9431689226087863
+    },
+    {
+      "model": "Schick",
+      "enthalpy_source": "scan",
+      "n": 5,
+      "MAPE_percent": 18.68724813457215,
+      "RMSE_mPa_s": 0.6266320647667643,
+      "mean_signed_relative_error_percent": 4.096502467185278,
+      "maximum_eta_mPa_s": 5.550411363811545,
+      "x_Al_at_maximum": 0.5,
+      "eta_xAl_045_mPa_s": 5.4847156212018
+    },
+    {
+      "model": "Kaptay",
+      "enthalpy_source": "experiment",
+      "n": 5,
+      "MAPE_percent": 53.98539026725692,
+      "RMSE_mPa_s": 1.9108379951842183,
+      "mean_signed_relative_error_percent": -53.98539026725692,
+      "maximum_eta_mPa_s": 3.4570167732744665,
+      "x_Al_at_maximum": 0.0,
+      "eta_xAl_045_mPa_s": 1.995023017696721
+    },
+    {
+      "model": "Kaptay",
+      "enthalpy_source": "pbe",
+      "n": 5,
+      "MAPE_percent": 55.128503721659015,
+      "RMSE_mPa_s": 1.9376142267387781,
+      "mean_signed_relative_error_percent": -55.128503721659015,
+      "maximum_eta_mPa_s": 3.4570167732744665,
+      "x_Al_at_maximum": 0.0,
+      "eta_xAl_045_mPa_s": 1.9699586632308668
+    },
+    {
+      "model": "Kaptay",
+      "enthalpy_source": "scan",
+      "n": 5,
+      "MAPE_percent": 53.010813237878395,
+      "RMSE_mPa_s": 1.865719494479204,
+      "mean_signed_relative_error_percent": -53.010813237878395,
+      "maximum_eta_mPa_s": 3.4570167732744665,
+      "x_Al_at_maximum": 0.0,
+      "eta_xAl_045_mPa_s": 2.0733373279518434
+    }
+  ],
+  "matching_MD_metrics": [
+    {
+      "model": "KRP",
+      "MD_model": "pbe",
+      "enthalpy_source": "pbe",
+      "n": 11,
+      "MAPE_percent": 33.81003076695429,
+      "RMSE_mPa_s": 1.5054049728192291
+    },
+    {
+      "model": "KRP",
+      "MD_model": "scan",
+      "enthalpy_source": "scan",
+      "n": 11,
+      "MAPE_percent": 45.87943033496101,
+      "RMSE_mPa_s": 2.903403428354487
+    },
+    {
+      "model": "Moelwyn-Hughes",
+      "MD_model": "pbe",
+      "enthalpy_source": "pbe",
+      "n": 11,
+      "MAPE_percent": 85.7027396521347,
+      "RMSE_mPa_s": 3.4998841134210323
+    },
+    {
+      "model": "Moelwyn-Hughes",
+      "MD_model": "scan",
+      "enthalpy_source": "scan",
+      "n": 11,
+      "MAPE_percent": 53.24498620443278,
+      "RMSE_mPa_s": 2.957986119726997
+    },
+    {
+      "model": "Schick",
+      "MD_model": "pbe",
+      "enthalpy_source": "pbe",
+      "n": 11,
+      "MAPE_percent": 15.483092744919782,
+      "RMSE_mPa_s": 0.6074495981125627
+    },
+    {
+      "model": "Schick",
+      "MD_model": "scan",
+      "enthalpy_source": "scan",
+      "n": 11,
+      "MAPE_percent": 20.98429173975136,
+      "RMSE_mPa_s": 1.1659565094211841
+    },
+    {
+      "model": "Kaptay",
+      "MD_model": "pbe",
+      "enthalpy_source": "pbe",
+      "n": 11,
+      "MAPE_percent": 43.048801962958464,
+      "RMSE_mPa_s": 1.903212497622661
+    },
+    {
+      "model": "Kaptay",
+      "MD_model": "scan",
+      "enthalpy_source": "scan",
+      "n": 11,
+      "MAPE_percent": 54.552594861865565,
+      "RMSE_mPa_s": 3.435070303556987
+    }
+  ],
+  "sensitivity": {
+    "experiment": {
+      "alpha_014_max_relative_change_percent": 2.822109916132054,
+      "alpha_017_max_relative_change_percent": 2.904065846352988,
+      "neglecting_excess_volume_max_relative_change_percent": 6.434345342872949
+    },
+    "pbe": {
+      "alpha_014_max_relative_change_percent": 2.600403201495405,
+      "alpha_017_max_relative_change_percent": 2.6698295341766265,
+      "neglecting_excess_volume_max_relative_change_percent": 6.434345342872949
+    },
+    "scan": {
+      "alpha_014_max_relative_change_percent": 3.1688342204509223,
+      "alpha_017_max_relative_change_percent": 3.2725354434596676,
+      "neglecting_excess_volume_max_relative_change_percent": 6.434345342872949
+    }
+  },
+  "checks": [
+    "All 12 curves positive and finite; pure limits equal the prescribed Ti/Al viscosities.",
+    "All three KRP curves agree with the previous published calculation to rtol=1e-13.",
+    "Schick: independent Arrhenius evaluation of Eqs. (11)-(12) agrees to rtol=1e-13.",
+    "Kaptay: original Eyring expression in Pa s and m3/mol agrees to rtol=1e-13.",
+    "Moelwyn-Hughes: zero-enthalpy limit is the arithmetic mixture.",
+    "Canonical manuscript figure, methods, results, profile and KRP inputs unchanged (SHA-256)."
+  ],
+  "limitations": [
+    "Provisional manual raster digitization; reading tolerance about 0.2 kJ/mol, not experimental uncertainty; original experiments unavailable.",
+    "Only experimental enthalpy is transferred from 2000 to 1873 K; both MD enthalpies are evaluated at 1873 K.",
+    "PBE input is the 5k model used in Fig. 7a, not the PBE 15k / 2000 K data used in Fig. 6.",
+    "Conditional enthalpy SEM is exported at nodes, but no total confidence band is claimed for KRP.",
+    "Pure-component viscosity inputs are identical for all three KRP curves.",
+    "Al reference correlation is extrapolated beyond its 933-1270 K validated range.",
+    "Experimental viscosity comparison covers only x_Al=0.45-0.90; maxima on the Ti-rich side cannot be located from those data.",
+    "Takeda fits at x_Al=0.45 and 0.60 are extrapolated upward by 3 K.",
+    "Model spread is not a statistical confidence interval. Alpha sensitivity is not a total Kaptay error estimate.",
+    "MH is specifically the integral-H form in Schick2012 Eq. (1); other conventions in Ti-Al literature must not be silently interchanged.",
+    "Alloy liquid-state expressions may represent undercooled liquids in parts of the composition range at 1873 K."
+  ],
+  "interpolation": "Piecewise linear interpolation of H, then evaluate the nonlinear viscosity equation.",
+  "manuscript_status": "Unchanged; figure7_schick_candidate is a separate reviewable alternative.",
+  "panel_b": {
+    "source_manifest": "audit\\nov01\\viscosity_article_combined\\figure_manifest.json",
+    "arrhenius_fits": {
+      "pbe": {
+        "a": -0.9962700499025393,
+        "B_K": 4052.1852294196324,
+        "eta0_mPa_s": 0.36925417538005595,
+        "covariance_a_b": [
+          [
+            0.10651011228462735,
+            -0.2109254659996143
+          ],
+          [
+            -0.2109254659996143,
+            0.4186395388894239
+          ]
+        ],
+        "b_definition": "coefficient of 1000/T",
+        "chi2": 0.22285548826045065,
+        "dof": 1,
+        "weight_definition": "(eta/SE)^2 in ln(eta) regression; covariance not rescaled",
+        "input_points": [
+          {
+            "T": 1873,
+            "eta_mPa_s": 3.2,
+            "eta_std_mPa_s": 0.08408915114466135,
+            "unrounded_eta_mPa_s": 3.1996233846551827,
+            "cutoff_THz": 1.25,
+            "kind": "pooled_old_new_20ps",
+            "old_replicas": 25,
+            "new_40ps_replicas": 10,
+            "checkpoint_step": 15000
+          },
+          {
+            "T": 2000,
+            "eta_mPa_s": 2.83,
+            "eta_std_mPa_s": 0.07672039928902132,
+            "unrounded_eta_mPa_s": 2.8298220441644784,
+            "cutoff_THz": 1.25,
+            "kind": "pooled_old_new_20ps",
+            "old_replicas": 20,
+            "new_40ps_replicas": 10,
+            "checkpoint_step": 15000
+          },
+          {
+            "T": 2100,
+            "eta_mPa_s": 2.527711148983959,
+            "eta_std_mPa_s": 0.06788937033580685,
+            "kind": "unchanged_new_full_40ps",
+            "n_replicas": 15,
+            "checkpoint_step": 15000
+          }
+        ]
+      },
+      "scan": {
+        "a": -0.6451981130425224,
+        "B_K": 3672.1616238189035,
+        "eta0_mPa_s": 0.5245586099095804,
+        "covariance_a_b": [
+          [
+            0.20293693728666254,
+            -0.39703691759154114
+          ],
+          [
+            -0.39703691759154114,
+            0.7783151043653338
+          ]
+        ],
+        "b_definition": "coefficient of 1000/T",
+        "chi2": 0.31217340541703487,
+        "dof": 2,
+        "weight_definition": "(eta/SE)^2 in ln(eta) regression; covariance not rescaled",
+        "input_points": [
+          {
+            "system": "AlTi",
+            "T": 1873,
+            "dft": "scan",
+            "c_Ti": 1.0,
+            "eta_mPa_s": 3.6984414209371104,
+            "eta_std_mPa_s": 0.1189846144818516,
+            "eta_pa_s": 0.0036984414209371105,
+            "eta_std_pa_s": 0.0001189846144818516,
+            "neff": 25.174392642548238,
+            "n_replicas": 30,
+            "n_steps": 20001,
+            "timestep_ps": 0.001,
+            "block_size": 1,
+            "tau_exp_ps": 0.17284018174904556,
+            "tau_exp_std_ps": 0.020429161302208298,
+            "tau_int_ps": 0.12450397843921433,
+            "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+            "tdm_mPa_s": 3.9782750153843356,
+            "tdm_delta_pct": 7.566257312149638
+          },
+          {
+            "system": "AlTi",
+            "T": 1941,
+            "dft": "scan",
+            "c_Ti": 1.0,
+            "eta_mPa_s": 3.559972048236484,
+            "eta_std_mPa_s": 0.1715505899066998,
+            "eta_pa_s": 0.003559972048236484,
+            "eta_std_pa_s": 0.0001715505899066998,
+            "neff": 28.60414928920516,
+            "n_replicas": 15,
+            "n_steps": 20001,
+            "timestep_ps": 0.001,
+            "block_size": 1,
+            "tau_exp_ps": 0.19689155963102187,
+            "tau_exp_std_ps": 0.033120790676775966,
+            "tau_int_ps": 0.12136331404392764,
+            "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json",
+            "tdm_mPa_s": 3.554231713432068,
+            "tdm_delta_pct": -0.16124662572166715
+          },
+          {
+            "system": "AlTi",
+            "T": 2000,
+            "dft": "scan",
+            "c_Ti": 1.0,
+            "eta_mPa_s": 3.297652830525589,
+            "eta_std_mPa_s": 0.14403026618163317,
+            "eta_pa_s": 0.003297652830525589,
+            "eta_std_pa_s": 0.00014403026618163317,
+            "neff": 33.80446759596216,
+            "n_replicas": 15,
+            "n_steps": 20001,
+            "timestep_ps": 0.001,
+            "block_size": 1,
+            "tau_exp_ps": 0.16242159174986842,
+            "tau_exp_std_ps": 0.024177236810853,
+            "tau_int_ps": 0.11417569704225228,
+            "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+            "tdm_mPa_s": 3.529157863747618,
+            "tdm_delta_pct": 7.02029731811189
+          },
+          {
+            "system": "AlTi",
+            "T": 2100,
+            "dft": "scan",
+            "c_Ti": 1.0,
+            "eta_mPa_s": 2.994340861294119,
+            "eta_std_mPa_s": 0.12379301504059284,
+            "eta_pa_s": 0.0029943408612941188,
+            "eta_std_pa_s": 0.00012379301504059285,
+            "neff": 33.48620391363342,
+            "n_replicas": 15,
+            "n_steps": 20001,
+            "timestep_ps": 0.001,
+            "block_size": 1,
+            "tau_exp_ps": 0.14415619580278208,
+            "tau_exp_std_ps": 0.021095164948069383,
+            "tau_int_ps": 0.10647182100591417,
+            "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json",
+            "tdm_mPa_s": 3.5234481277491874,
+            "tdm_delta_pct": 17.670241664684582
+          }
+        ]
+      }
+    },
+    "temperature": {
+      "pbe": [
+        {
+          "T": 1873,
+          "eta_mPa_s": 3.2,
+          "eta_std_mPa_s": 0.08408915114466135,
+          "unrounded_eta_mPa_s": 3.1996233846551827,
+          "cutoff_THz": 1.25,
+          "kind": "pooled_old_new_20ps",
+          "old_replicas": 25,
+          "new_40ps_replicas": 10,
+          "checkpoint_step": 15000
+        },
+        {
+          "T": 2000,
+          "eta_mPa_s": 2.83,
+          "eta_std_mPa_s": 0.07672039928902132,
+          "unrounded_eta_mPa_s": 2.8298220441644784,
+          "cutoff_THz": 1.25,
+          "kind": "pooled_old_new_20ps",
+          "old_replicas": 20,
+          "new_40ps_replicas": 10,
+          "checkpoint_step": 15000
+        },
+        {
+          "T": 2100,
+          "eta_mPa_s": 2.527711148983959,
+          "eta_std_mPa_s": 0.06788937033580685,
+          "kind": "unchanged_new_full_40ps",
+          "n_replicas": 15,
+          "checkpoint_step": 15000
+        }
+      ],
+      "scan": [
+        {
+          "system": "AlTi",
+          "T": 1873,
+          "dft": "scan",
+          "c_Ti": 1.0,
+          "eta_mPa_s": 3.6984414209371104,
+          "eta_std_mPa_s": 0.1189846144818516,
+          "eta_pa_s": 0.0036984414209371105,
+          "eta_std_pa_s": 0.0001189846144818516,
+          "neff": 25.174392642548238,
+          "n_replicas": 30,
+          "n_steps": 20001,
+          "timestep_ps": 0.001,
+          "block_size": 1,
+          "tau_exp_ps": 0.17284018174904556,
+          "tau_exp_std_ps": 0.020429161302208298,
+          "tau_int_ps": 0.12450397843921433,
+          "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+          "tdm_mPa_s": 3.9782750153843356,
+          "tdm_delta_pct": 7.566257312149638
+        },
+        {
+          "system": "AlTi",
+          "T": 1941,
+          "dft": "scan",
+          "c_Ti": 1.0,
+          "eta_mPa_s": 3.559972048236484,
+          "eta_std_mPa_s": 0.1715505899066998,
+          "eta_pa_s": 0.003559972048236484,
+          "eta_std_pa_s": 0.0001715505899066998,
+          "neff": 28.60414928920516,
+          "n_replicas": 15,
+          "n_steps": 20001,
+          "timestep_ps": 0.001,
+          "block_size": 1,
+          "tau_exp_ps": 0.19689155963102187,
+          "tau_exp_std_ps": 0.033120790676775966,
+          "tau_int_ps": 0.12136331404392764,
+          "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json",
+          "tdm_mPa_s": 3.554231713432068,
+          "tdm_delta_pct": -0.16124662572166715
+        },
+        {
+          "system": "AlTi",
+          "T": 2000,
+          "dft": "scan",
+          "c_Ti": 1.0,
+          "eta_mPa_s": 3.297652830525589,
+          "eta_std_mPa_s": 0.14403026618163317,
+          "eta_pa_s": 0.003297652830525589,
+          "eta_std_pa_s": 0.00014403026618163317,
+          "neff": 33.80446759596216,
+          "n_replicas": 15,
+          "n_steps": 20001,
+          "timestep_ps": 0.001,
+          "block_size": 1,
+          "tau_exp_ps": 0.16242159174986842,
+          "tau_exp_std_ps": 0.024177236810853,
+          "tau_int_ps": 0.11417569704225228,
+          "source": "results-scripts-logs/stacie_pipeline_wsl2/results/summary.json",
+          "tdm_mPa_s": 3.529157863747618,
+          "tdm_delta_pct": 7.02029731811189
+        },
+        {
+          "system": "AlTi",
+          "T": 2100,
+          "dft": "scan",
+          "c_Ti": 1.0,
+          "eta_mPa_s": 2.994340861294119,
+          "eta_std_mPa_s": 0.12379301504059284,
+          "eta_pa_s": 0.0029943408612941188,
+          "eta_std_pa_s": 0.00012379301504059285,
+          "neff": 33.48620391363342,
+          "n_replicas": 15,
+          "n_steps": 20001,
+          "timestep_ps": 0.001,
+          "block_size": 1,
+          "tau_exp_ps": 0.14415619580278208,
+          "tau_exp_std_ps": 0.021095164948069383,
+          "tau_int_ps": 0.10647182100591417,
+          "source": "results-scripts-logs/stacie_pipeline_cluster/stacie_pipline/results/summary.json",
+          "tdm_mPa_s": 3.5234481277491874,
+          "tdm_delta_pct": 17.670241664684582
+        }
+      ]
+    }
+  },
+  "sources_sha256": {
+    "manuscript\\supporting_data\\viscosity_krp_1873K.json": "1aa1c37f21b3ebe11641949c43f811ad7c6ddcdbf1224e1e36ded6914ff6636a",
+    "audit\\nov01\\viscosity_article_combined\\figure_profile.json": "b9760c8037aad413313249af27a2cf31d6ba9cb3a68ebca9f959d798ff69acd1",
+    "audit\\nov01\\viscosity_article_combined\\figure_manifest.json": "a069d8c9855d68c689819dc9e98a1a834fd99367574e31608b06d3574967455e",
+    "audit\\pdf_text\\2025 Thermophysical Properties of Al–Ti Binary Liquid Alloys.txt": "79713b348c32e522093afc882a9576204288f32e9b4fe50023d79c1e595b230f",
+    "audit\\nov06\\viscosity_models\\compare_models.py": "a8a814e4b3d37c6b044befba20e16cd0c8ef944e803cbcf7741deb44bcba2212"
+  },
+  "protected_files_sha256": {
+    "manuscript\\supporting_data\\viscosity_krp_1873K.json": "1aa1c37f21b3ebe11641949c43f811ad7c6ddcdbf1224e1e36ded6914ff6636a",
+    "audit\\nov01\\viscosity_article_combined\\figure_profile.json": "b9760c8037aad413313249af27a2cf31d6ba9cb3a68ebca9f959d798ff69acd1",
+    "audit\\nov01\\viscosity_article_combined\\figure_manifest.json": "a069d8c9855d68c689819dc9e98a1a834fd99367574e31608b06d3574967455e",
+    "manuscript\\figures\\viscosity.pdf": "714f8a5572449abc40fa5f8323e003d5874298d380c5ad70e4a8e9b5d2eadb34",
+    "manuscript\\sections\\methods.tex": "50f50eedf60a339a303934b41e1dfa9a8319d80eff90bab1fd10ff16fb42d011",
+    "manuscript\\sections\\results.tex": "502021357776ccb64e77a7c5b078f022eb88aa845765d475877e86f2dc1b6f9b"
+  },
+  "output_sha256": {
+    "comparison_at_Takeda_compositions.csv": "32c1e8752497864c870670685787179402b7eef27f7827df86d897cdf1868323",
+    "figure7_schick_candidate.pdf": "8c3659fe00b3cf9d06b8be19dc27bace7a9fe6598fd3495faa69c18a72b01421",
+    "figure7_schick_candidate.png": "c88914adea4a788c71720feb5d5ab7536ab889bb37630e379d543cdfd75b2012",
+    "figure7_schick_candidate.svg": "626cf7d231649d5285b18244020ddc1e757676c00e37b1ce2abd2f24451a2817",
+    "model_curves_1873K.csv": "00d910957922d0405c9b784cb2c33b300ddaed939e93571d252b71914619b484",
+    "model_metrics_vs_matching_MD.csv": "dc696961326b9f24e23f87563036a945871b1aa2d1866fdc95e762e2eedc7faf",
+    "model_metrics_vs_Takeda.csv": "fbb6356b27ef7a3ca66271312a6e01045a17f787b69ea2dc55dd6cff2a81b292",
+    "molar_volume_1873K.csv": "667718bd22ef6c61cbd190b9cf26b7bbb47dd68837b2ae7ee2555236f8bb3282",
+    "viscosity_models_comparison.pdf": "cc60e5d94ce735278010985a8f1578923e4cb06b0f4d72d181fc9435ea2132c3",
+    "viscosity_models_comparison.png": "9e147943b272343cd9115f2bfb8d7a1ad544bcd095945dd0a5b4770ed1c0dc1f",
+    "viscosity_models_comparison.svg": "d2f63e4e7142083687aea35711e62cedb9b7a11a9a2f7209af78f0951d2723af"
+  }
+}

@@ -1,0 +1,11 @@
+T2100:Nold15+Nnew5=Ntotal20,windows25
+old 2.994340861+/-0.126798072;combined 3.059032769+/-0.153526187;formal 0.104623097,cluster 0.153526187;mean change 2.160%,adoptedSE change 21.079%;relativeSE 5.019%
+new5matched20ps 3.140261284+/-0.423882334,formal 0.185854878,cluster 0.423882334,Zvsold 0.329808
+40ps 3.127696414+/-0.181894215;costZ 1.942180,cutoffZ 1.359439
+first20ps 2.695758441+/-0.254610456;costZ 2.516733,cutoffZ 3.897255
+second20ps 3.208340314+/-0.249935861;costZ 0.258013,cutoffZ 1.073621
+Combined costZ 0.963957,cutoffZ 0.313354;new5matched20costZ 2.410955,cutoffZ 0.988330
+
+Diagnostics:all combined cost/cutoff pass,new5vsoldZ<=2.5.Only1873meets3%adoptedprecision;1941=3.894%,2000=3.500%,2100=5.019%.NoT has three accumulated points(baseline+oneblock only);no convergence established.1873second20cutoff2.556;1941first20cutoff4.480;2100first20cost2.517/cutoff3.897,new5matched20cost2.411.2100adoptedSE grows to0.153526 despite formalSE0.104623;old adoptedSE0.126798 differs from publishedformal0.123793.
+The new40/full40 and new_batch40 are identical data atNnew5;do not count as independent confirmations.Whole40psreplicas are clusters;halves are correlated.Adaptivefit,sequentiallooks,different preparations and common reservoir constrain uncertainty interpretation;model systematics excluded.Poorfit does not demonstrate physicaldrift.
+All new data preserved;no PBE restarts,no automatic further blocks,no articleprofile change or article compile.PBE finals already delivered.Next plan requires discussion.

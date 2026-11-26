@@ -1,0 +1,643 @@
+Using GPU device(s): 0, GPU: RTX 5060 Ti
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   neo
+  Use type:  finetune
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model
+  Name:      model_frozen.pt2
+  Full path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model/model_frozen.pt2
+==========================================
+Model found: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model/model_frozen.pt2
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe
+==========================================
+Activated: ase_deepmd_dpa4
+Python: /home/katkoff/miniconda3/envs/ase_deepmd_dpa4/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/.triton
+==========================================
+==========================================
+Thermal density scan (WSL2)
+==========================================
+Date:                Thu Oct  1 18:23:47 +05 2026
+System:              beta_Ti
+Mode:                dpa4-neo-finetune
+Model path:          /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model/model_frozen.pt2
+DFT method:          pbe
+Temperatures solid:  300,500,700,900,1100,1300,1500,1700,1900
+Temperatures liquid: 2000,2100,2200,2300,2400,2500
+Melt factor:         1.5
+Equil factor:        1.0
+N atoms:             200
+Seed:                42
+R min:               2.0
+Relax fmax:          0.001
+Relax steps:         10000
+MD timestep:         1.0
+MD ttime:            25.0
+MD pressure:         1.0
+Melt steps:          20000
+Equil steps:         20000
+Prod steps:          30000
+Log interval:        100
+Force clear:         true
+Workdir:             /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe
+Log file:            /home/katkoff/deepmd_check_pipline/logs/run_thermal_density_scan_20261001_182346.log
+==========================================
+WARNING:__main__:FORCE CLEAR: removing contents of /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe
+INFO:__main__:  Skipping cache dir: .triton
+INFO:__main__:  Skipping cache dir: .cache
+INFO:__main__:System: beta_Ti
+INFO:__main__:Temperatures solid:  [300.0, 500.0, 700.0, 900.0, 1100.0, 1300.0, 1500.0, 1700.0, 1900.0]
+INFO:__main__:Temperatures liquid: [2000.0, 2100.0, 2200.0, 2300.0, 2400.0, 2500.0]
+INFO:__main__:Melt factor:  1.5
+INFO:__main__:Equil factor: 1.0
+INFO:__main__:Output: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe
+INFO:utils.structure:Loaded 7 structures from /home/katkoff/deepmd_check_pipline/models_check/utils/structures_config.json
+INFO:__main__:============================================================
+INFO:__main__:THERMAL DENSITY SCANNER
+INFO:__main__:============================================================
+INFO:__main__:Calculator:   deepmd
+INFO:__main__:Mode:         dpa4-neo-finetune
+INFO:__main__:System:       beta_Ti
+INFO:__main__:Device:       cuda, dtype: float32, GPU: RTX 5060 Ti
+INFO:__main__:T solid:      [300.0, 500.0, 700.0, 900.0, 1100.0, 1300.0, 1500.0, 1700.0, 1900.0]
+INFO:__main__:T liquid:     [2000.0, 2100.0, 2200.0, 2300.0, 2400.0, 2500.0]
+INFO:__main__:N atoms:      200
+INFO:__main__:Output:       /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe
+INFO:__main__:============================================================
+INFO:__main__:
+Generating solid structure for beta_Ti...
+INFO:utils.structure:Configured for: beta_Ti
+INFO:utils.structure:Creating conventional cell for 'beta_Ti' (Im-3m, cubic)
+INFO:utils.structure:Generated bulk: Ti2, 2 atoms
+INFO:__main__:  Conventional cell: 2 atoms
+INFO:__main__:  Target n_atoms: 200, ratio = 100.00, repeat = 5
+INFO:__main__:  Supercell: 5x5x5 → 250 atoms
+WARNING:__main__:  Supercell has 250 atoms, target was 200 (difference: 50)
+INFO:__main__:  Converted to ASE: 250 atoms
+INFO:__main__:Relaxing solid structure...
+INFO:utils.calculator:=== DEEPMD DP CREATION START ===
+INFO:utils.calculator:model_path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047/output_model/model_frozen.pt2
+INFO:utils.calculator:device: cuda
+INFO:utils.calculator:default_dtype: float32
+INFO:utils.calculator:DeepMD DP imported successfully
+INFO:utils.calculator:Calling DP(...)
+W1001 18:23:51.845000 1477551 site-packages/torch/_inductor/package/package.py:120] Loading outdated pt2 file. Please regenerate your package.
+INFO:utils.calculator:DP(...) returned successfully
+INFO:utils.calculator:calculator type: <class 'deepmd.calculator.DP'>
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -7.768800 eV/atom
+INFO:__main__:  Relaxed solid structure saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/cache/solid_relaxed.traj
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 300.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 300 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 300.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 300 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 300.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_300K/trajectory.traj
+INFO:__main__:  Wall time:  1912.07 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      26.1 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 300.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.5701 g/cm³
+INFO:__main__:  ρ      = 4570.06 kg/m³
+INFO:__main__:  ρ      = 0.057496 atoms/Å³
+INFO:__main__:  V      = 4348.167 Å³
+INFO:__main__:  T_avg  = 297.5 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T300K
+INFO:__main__:
+  Completed SOLID T = 300.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 500.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 500 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 500.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 500 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 500.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_500K/trajectory.traj
+INFO:__main__:  Wall time:  1903.63 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      26.3 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 500.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.5442 g/cm³
+INFO:__main__:  ρ      = 4544.16 kg/m³
+INFO:__main__:  ρ      = 0.057170 atoms/Å³
+INFO:__main__:  V      = 4372.977 Å³
+INFO:__main__:  T_avg  = 499.1 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T500K
+INFO:__main__:
+  Completed SOLID T = 500.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 700.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 700 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 700.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 700 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 700.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_700K/trajectory.traj
+INFO:__main__:  Wall time:  1904.97 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      26.2 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 700.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.5193 g/cm³
+INFO:__main__:  ρ      = 4519.30 kg/m³
+INFO:__main__:  ρ      = 0.056857 atoms/Å³
+INFO:__main__:  V      = 4397.096 Å³
+INFO:__main__:  T_avg  = 698.9 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T700K
+INFO:__main__:
+  Completed SOLID T = 700.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 900.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 900 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 900.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 900 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 900.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_900K/trajectory.traj
+INFO:__main__:  Wall time:  1898.67 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      26.3 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 900.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.4875 g/cm³
+INFO:__main__:  ρ      = 4487.50 kg/m³
+INFO:__main__:  ρ      = 0.056457 atoms/Å³
+INFO:__main__:  V      = 4428.272 Å³
+INFO:__main__:  T_avg  = 893.9 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T900K
+INFO:__main__:
+  Completed SOLID T = 900.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 1100.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 1100 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 1100.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 1100 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 1100.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_1100K/trajectory.traj
+INFO:__main__:  Wall time:  1873.05 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      26.7 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 1100.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.4633 g/cm³
+INFO:__main__:  ρ      = 4463.27 kg/m³
+INFO:__main__:  ρ      = 0.056152 atoms/Å³
+INFO:__main__:  V      = 4452.379 Å³
+INFO:__main__:  T_avg  = 1093.3 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T1100K
+INFO:__main__:
+  Completed SOLID T = 1100.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 1300.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 1300 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 1300.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 1300 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 1300.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_1300K/trajectory.traj
+INFO:__main__:  Wall time:  1877.23 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      26.6 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 1300.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.4357 g/cm³
+INFO:__main__:  ρ      = 4435.66 kg/m³
+INFO:__main__:  ρ      = 0.055805 atoms/Å³
+INFO:__main__:  V      = 4480.084 Å³
+INFO:__main__:  T_avg  = 1292.0 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T1300K
+INFO:__main__:
+  Completed SOLID T = 1300.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 1500.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 1500 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 1500.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 1500 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 1500.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_1500K/trajectory.traj
+INFO:__main__:  Wall time:  1902.64 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      26.3 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 1500.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.4134 g/cm³
+INFO:__main__:  ρ      = 4413.41 kg/m³
+INFO:__main__:  ρ      = 0.055525 atoms/Å³
+INFO:__main__:  V      = 4502.707 Å³
+INFO:__main__:  T_avg  = 1496.9 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T1500K
+INFO:__main__:
+  Completed SOLID T = 1500.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 1700.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 1700 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 1700.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 1700 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 1700.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_1700K/trajectory.traj
+INFO:__main__:  Wall time:  1854.61 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      27.0 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 1700.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.3860 g/cm³
+INFO:__main__:  ρ      = 4386.01 kg/m³
+INFO:__main__:  ρ      = 0.055180 atoms/Å³
+INFO:__main__:  V      = 4530.897 Å³
+INFO:__main__:  T_avg  = 1697.3 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T1700K
+INFO:__main__:
+  Completed SOLID T = 1700.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:SOLID | T = 1900.0 K
+INFO:__main__:============================================================
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Equilibrating at 1900 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 1900.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Production at 1900 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 1900.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/solid/T_1900K/trajectory.traj
+INFO:__main__:  Wall time:  1748.47 s
+INFO:__main__:  Total steps: 50000
+INFO:__main__:  Speed:      28.6 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: SOLID T = 1900.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.2865 g/cm³
+INFO:__main__:  ρ      = 4286.50 kg/m³
+INFO:__main__:  ρ      = 0.053928 atoms/Å³
+INFO:__main__:  V      = 4636.095 Å³
+INFO:__main__:  T_avg  = 1890.3 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: solid_beta_Ti_T1900K
+INFO:__main__:
+  Completed SOLID T = 1900.0 K
+INFO:__main__:
+Generating liquid structure for beta_Ti (200 atoms)...
+INFO:utils.liquid_manager:LiquidStructureManager initialized
+INFO:utils.liquid_manager:  Output: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/initial_structures
+INFO:utils.liquid_manager:  n_atoms: 200
+INFO:utils.liquid_manager:  r_min: 2.0 Å
+INFO:utils.liquid_manager:Generating liquid Ti (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/initial_structures/Ti.vasp (composition: {'Ti': 200})
+INFO:__main__:  Structure generated: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/initial_structures/Ti.vasp
+INFO:__main__:Relaxing liquid structure...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -7.689409 eV/atom
+INFO:__main__:  Relaxed liquid structure saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/cache/liquid_relaxed.traj
+INFO:__main__:
+============================================================
+INFO:__main__:LIQUID | T = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:  T_melt  = 3000 K (1.5x)
+INFO:__main__:  T_equil = 2000 K (1.0x)
+INFO:__main__:  T_prod  = 2000 K
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Melting at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Equilibrating at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 3: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/liquid/T_2000K/trajectory.traj
+INFO:__main__:  Wall time:  1966.87 s
+INFO:__main__:  Total steps: 70000
+INFO:__main__:  Speed:      35.6 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: LIQUID T = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.2732 g/cm³
+INFO:__main__:  ρ      = 4273.17 kg/m³
+INFO:__main__:  ρ      = 0.053761 atoms/Å³
+INFO:__main__:  V      = 3720.632 Å³
+INFO:__main__:  T_avg  = 1998.7 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: liquid_beta_Ti_T2000K
+INFO:__main__:
+  Completed LIQUID T = 2000.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:LIQUID | T = 2100.0 K
+INFO:__main__:============================================================
+INFO:__main__:  T_melt  = 3150 K (1.5x)
+INFO:__main__:  T_equil = 2100 K (1.0x)
+INFO:__main__:  T_prod  = 2100 K
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Melting at 3150 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3150.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Equilibrating at 2100 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2100.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 3: Production at 2100 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2100.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/liquid/T_2100K/trajectory.traj
+INFO:__main__:  Wall time:  1958.09 s
+INFO:__main__:  Total steps: 70000
+INFO:__main__:  Speed:      35.7 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: LIQUID T = 2100.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.2418 g/cm³
+INFO:__main__:  ρ      = 4241.79 kg/m³
+INFO:__main__:  ρ      = 0.053366 atoms/Å³
+INFO:__main__:  V      = 3748.181 Å³
+INFO:__main__:  T_avg  = 2078.3 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: liquid_beta_Ti_T2100K
+INFO:__main__:
+  Completed LIQUID T = 2100.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:LIQUID | T = 2200.0 K
+INFO:__main__:============================================================
+INFO:__main__:  T_melt  = 3300 K (1.5x)
+INFO:__main__:  T_equil = 2200 K (1.0x)
+INFO:__main__:  T_prod  = 2200 K
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Melting at 3300 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3300.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Equilibrating at 2200 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2200.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 3: Production at 2200 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2200.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/liquid/T_2200K/trajectory.traj
+INFO:__main__:  Wall time:  1949.64 s
+INFO:__main__:  Total steps: 70000
+INFO:__main__:  Speed:      35.9 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: LIQUID T = 2200.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.2365 g/cm³
+INFO:__main__:  ρ      = 4236.52 kg/m³
+INFO:__main__:  ρ      = 0.053300 atoms/Å³
+INFO:__main__:  V      = 3752.651 Å³
+INFO:__main__:  T_avg  = 2199.1 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: liquid_beta_Ti_T2200K
+INFO:__main__:
+  Completed LIQUID T = 2200.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:LIQUID | T = 2300.0 K
+INFO:__main__:============================================================
+INFO:__main__:  T_melt  = 3450 K (1.5x)
+INFO:__main__:  T_equil = 2300 K (1.0x)
+INFO:__main__:  T_prod  = 2300 K
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Melting at 3450 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3450.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Equilibrating at 2300 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2300.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 3: Production at 2300 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2300.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/liquid/T_2300K/trajectory.traj
+INFO:__main__:  Wall time:  1940.37 s
+INFO:__main__:  Total steps: 70000
+INFO:__main__:  Speed:      36.1 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: LIQUID T = 2300.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.1996 g/cm³
+INFO:__main__:  ρ      = 4199.60 kg/m³
+INFO:__main__:  ρ      = 0.052835 atoms/Å³
+INFO:__main__:  V      = 3785.809 Å³
+INFO:__main__:  T_avg  = 2281.4 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: liquid_beta_Ti_T2300K
+INFO:__main__:
+  Completed LIQUID T = 2300.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:LIQUID | T = 2400.0 K
+INFO:__main__:============================================================
+INFO:__main__:  T_melt  = 3600 K (1.5x)
+INFO:__main__:  T_equil = 2400 K (1.0x)
+INFO:__main__:  T_prod  = 2400 K
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Melting at 3600 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3600.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Equilibrating at 2400 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2400.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 3: Production at 2400 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2400.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/liquid/T_2400K/trajectory.traj
+INFO:__main__:  Wall time:  1932.12 s
+INFO:__main__:  Total steps: 70000
+INFO:__main__:  Speed:      36.2 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: LIQUID T = 2400.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.1926 g/cm³
+INFO:__main__:  ρ      = 4192.59 kg/m³
+INFO:__main__:  ρ      = 0.052747 atoms/Å³
+INFO:__main__:  V      = 3792.435 Å³
+INFO:__main__:  T_avg  = 2380.1 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: liquid_beta_Ti_T2400K
+INFO:__main__:
+  Completed LIQUID T = 2400.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:LIQUID | T = 2500.0 K
+INFO:__main__:============================================================
+INFO:__main__:  T_melt  = 3750 K (1.5x)
+INFO:__main__:  T_equil = 2500 K (1.0x)
+INFO:__main__:  T_prod  = 2500 K
+INFO:__main__:  Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 1: Melting at 3750 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3750.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 2: Equilibrating at 2500 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2500.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 3: Production at 2500 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2500.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/liquid/T_2500K/trajectory.traj
+INFO:__main__:  Wall time:  1924.39 s
+INFO:__main__:  Total steps: 70000
+INFO:__main__:  Speed:      36.4 steps/s
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: LIQUID T = 2500.0 K
+INFO:__main__:============================================================
+INFO:__main__:  ρ      = 4.1870 g/cm³
+INFO:__main__:  ρ      = 4187.00 kg/m³
+INFO:__main__:  ρ      = 0.052677 atoms/Å³
+INFO:__main__:  V      = 3797.193 Å³
+INFO:__main__:  T_avg  = 2492.4 K
+INFO:__main__:  Frames = 301
+INFO:__main__:============================================================
+INFO:utils.checkpoint_manager:Checkpoint saved: liquid_beta_Ti_T2500K
+INFO:__main__:
+  Completed LIQUID T = 2500.0 K
+INFO:__main__:
+============================================================
+INFO:__main__:ALL DONE! solid=9, liquid=6
+INFO:__main__:Results: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/summary.json
+INFO:__main__:============================================================
+INFO:__main__:
+============================================================
+INFO:__main__:FINALIZING DENSITY SCAN
+INFO:__main__:============================================================
+INFO:__main__:Saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/density_scan.json
+INFO:__main__:Saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/density_scan.csv
+INFO:__main__:Saved: /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe/density_scan.png
+INFO:__main__:============================================================
+INFO:__main__:Density scan: status=complete, points=15
+INFO:__main__:============================================================
+==========================================
+Thermal density scan finished
+==========================================
+Exit code: 0
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/density/dpa4/neo/finetune/beta_Ti/pbe
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_thermal_density_scan_20261001_182346.log
+==========================================
+✅ SUCCESS!
+==========================================

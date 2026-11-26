@@ -1,0 +1,23 @@
+{
+  "eta_mPa_s": 1.437364222502257,
+  "eta_std_mPa_s": 0.020899016931305477,
+  "relative_std": 0.014539819903770188,
+  "neff": 705.6987874742435,
+  "cost_z": 1.5286445362522976,
+  "criterion_z": -0.22407825240486298,
+  "formal_std_mPa_s": 0.020899016931305477,
+  "cluster_jackknife_std_mPa_s": 0.008118348120813223,
+  "legacy_replicas": 0,
+  "new_40ps_replicas": 5,
+  "replica_clusters": 5,
+  "windows_20ps": 10,
+  "leave_one_replica_out_mPa_s": [
+    1.4362503351025175,
+    1.4448845425327808,
+    1.4342993971975038,
+    1.4334678726621277,
+    1.4368887313818308
+  ],
+  "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+  "pooling_version": "r2scan-sequential-refinement-v2"
+}

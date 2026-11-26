@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "PBE-full-N200-seed10",
+    "XC": "PBE",
+    "method": "full",
+    "N": 200,
+    "validation": 149,
+    "seed": 10,
+    "epochs": 50,
+    "steps": 10000
+  },
+  "steps": 10000,
+  "epochs": 50,
+  "training_seconds": 622.4939034003764,
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/cases/PBE-full-N200-seed10/final-checkpoint/checkpoint",
+  "hashes": {
+    "checkpoint.index": "6c5f9359bcd3ae68a73c267a8a0b57f4f6a238c65af481be75056317cfd9754b",
+    "checkpoint.data-00000-of-00001": "32c7edf94f3c0fb560b21aec2b3d6d69b8613b3f670ad24a124f40f0c4ca755d"
+  },
+  "test_access": false,
+  "selection": "fixed final epoch50",
+  "GPU_memory": {
+    "current": 583378176,
+    "peak": 2684521984
+  }
+}

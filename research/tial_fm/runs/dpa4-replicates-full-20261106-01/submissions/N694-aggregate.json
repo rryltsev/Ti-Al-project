@@ -1,0 +1,21 @@
+{
+  "key": "N694-aggregate",
+  "job_id": "20988570",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=1",
+    "--mem=8G",
+    "--time=00:10:00",
+    "--dependency=afterany:20988568",
+    "--job-name=TiAl-N694-compare",
+    "--output=N694-aggregate-%j.log",
+    "aggregate.sbatch",
+    "N694"
+  ],
+  "utc": "2026-11-06T14:09:19.497513+00:00"
+}

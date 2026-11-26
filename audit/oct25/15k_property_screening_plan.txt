@@ -1,0 +1,86 @@
+PBE 5k versus 15k: proposed property checks and resource estimate
+Prepared 2026-10-25. This is an assessment; no new simulations submitted.
+
+Recommended order
+1. Static E(V) for hcp Ti, symmetry-constrained bcc Ti, and fcc Al,
+   using both checkpoints and 9-11 volumes per phase. Relax hcp c/a
+   at each volume. Report V0, B0, c/a and E_bcc-E_hcp. These diagnose
+   changes in pressure and phase energetics; they do not determine Tm.
+   Budget: 10-30 minutes on four CPU cores, approximately 0.7-2 core-hours.
+   This is a planning allowance, not a benchmark of the proposed task.
+
+2. Paired E/F/stress evaluations of saved 5k liquid configurations at
+   2000 K, x_Al = 0, 0.1, 0.3, 0.5, 1. Use 30-50 spaced frames per state
+   and evaluate both checkpoints: 300-500 total predictions.
+   Examine pressure shifts and composition-dependent energy shifts after
+   subtracting the pure-endpoint contributions. This is a diagnostic on
+   the 5k ensemble, not an equilibrium mixing enthalpy for 15k.
+   Budget: 10-30 minutes on four CPU cores, 0.7-2 core-hours including
+   loading and analysis. Account for temporal correlation in uncertainty.
+
+3. New 15k NPT liquid MD at the same five compositions and 2000 K.
+   Obtain density and mixing enthalpy from the same trajectories.
+   Pure Ti and Al references must be calculated with 15k at the same T.
+   Archive mixing run logs specify 20 ps melt + 30 ps equilibration +
+   30 ps production, dt=1 fs (80,000 steps per state). Confirm this
+   protocol against the original 2000 K run before a publication repeat.
+   Native CPU estimate: 15-25 hours per state on four cores, 60-100
+   core-hours/state; five states 300-500 core-hours, approximately one
+   day elapsed with five concurrent four-core jobs, excluding queue time.
+   This extrapolates static inference timings, not measured MD throughput.
+   A 30-50 ps exploratory run initialized from equilibrated 5k liquid
+   would cost roughly 6-14 hours/state, but must independently equilibrate
+   under 15k and is not automatically equivalent to the full protocol.
+   Historical compiled GPU route suggests roughly 5-12 GPU-hours for five
+   states, conditional on reproducing comparable performance after export.
+   Benchmark 1000-2000 MD steps first and verify exported E/F/stress against
+   native checkpoints. Compare uncertainty using correlated-block means.
+   Existing 5k results can serve as baseline after provenance checks;
+   costs above do not include a complete repeat of 5k. One or two matched
+   5k control runs would test implementation and sampling differences.
+
+4. Only after these checks: 1873 K density/mixing repeats; melting bracket;
+   viscosity. Do not add a separate production trajectory for structural
+   RDF analysis if existing new MD output is sufficient. Diffusion needs
+   an adequate time window and is optional, not a viscosity substitute.
+
+Deferred resource scale
+- Melting: 1296 atoms, historical 50 ps production took 9169.2 s (2.55 h),
+  5.453 steps/s. Device is not established by this log alone. Including
+  preparation, 3 trial temperatures would require roughly 12-15 hours
+  at that historical throughput. This is an initial bracket only; it may
+  need more temperatures or longer trajectories. Native CPU extrapolation
+  from 1458-atom force calls is several days per temperature, not a quick
+  CPU screen. Do not infer Tm from static E_bcc-E_hcp or hcp DOS.
+- Viscosity: 512 atoms, 15 x (1 ps equilibration + 20 ps production),
+  plus initial equilibration, about 320,000 steps per state. An archived
+  compiled run took 663.552 s for 20,000 steps (30.141 steps/s): about
+  3 hours/state at that throughput; about 10 hours for 50 trajectories.
+  Hardware and statistical adequacy are not guaranteed for a new run.
+  Native CPU execution would be much slower. Defer until density/mixing
+  establish that the checkpoint change materially affects liquid physics.
+
+Evidence (paths relative to workspace unless absolute)
+- audit/oct25/pbe_checkpoint_sweep/compute_summary.json:
+  5095 predictions; mean 0.98175 s/config, median 0.81418 s/config;
+  four CPU cores/job; no GPU; 6.14444 allocated core-hours over 40 tasks.
+- audit/oct25/pbe_phonons_15k_equilibrium/15000/summary.json and associated
+  run records: small-cell relaxation and 13 large-supercell evaluations
+  were inexpensive (about 83 s on four cores). This is why harmonic
+  phonons do not predict the cost of thousands of MD force evaluations.
+- C:/Users/Roman Ryltsev/Desktop/STARTUPS/Ti-Al-X/TiAl-Project/results-scripts-logs/models_check_wsl2/results/density/dpa4/neo/finetune/Ti/pbe/liquid/T_2200K/metadata.json:
+  200 atoms, 70,000 steps, wall_time_s=5884.45, 11.9 steps/s.
+- C:/Users/Roman Ryltsev/Desktop/STARTUPS/Ti-Al-X/TiAl-Project/results-scripts-logs/models_check_wsl2/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/pbe/checkpoint.json:
+  time from relaxed-structure completion to MD completion about 35-39 min
+  for most compositions, 85 min Ti and 129 min x_Al=0.1. Timestamp-derived
+  durations are approximate and may include overhead; not a clean benchmark.
+- C:/Users/Roman Ryltsev/Desktop/STARTUPS/Ti-Al-X/TiAl-Project/results-scripts-logs/logs/run_mixing_enthalpy_20261018_203706.log:
+  1873 K PBE, compiled model_frozen.pt2, RTX 5060 Ti, float32, 80,000 steps.
+- C:/Users/Roman Ryltsev/Desktop/STARTUPS/Ti-Al-X/TiAl-Project/MD-results/melting/beta_Ti_two-phase/pbe/log.lammps:
+  1296 atoms, 50,000 steps, 9169.2 s, one MPI task and eight OMP threads.
+- C:/Users/Roman Ryltsev/Desktop/STARTUPS/Ti-Al-X/TiAl-Project/results-scripts-logs/models_check_cluster/results/viscosity/dpa4/neo/finetune/AlTi/1873K/pbe/log.lammps:
+  512 atoms, 20,000 steps, 663.552 s, one MPI task and 16 OMP threads.
+
+All budgets exclude queue time and assume one force evaluation per MD step.
+The GPU/compiled timings and native CPU timings are different implementations;
+neither is a direct A100 benchmark. Current GPU availability was not checked.

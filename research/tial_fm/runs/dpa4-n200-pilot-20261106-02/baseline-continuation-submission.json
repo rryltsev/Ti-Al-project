@@ -1,0 +1,5 @@
+{
+  "job_id": "20988446",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --dependency=afterany:20988440 --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=24G --time=00:45:00 --job-name=TiAl-FM-B0-resume --output=baseline-continuation-%j.log baseline-continuation.sbatch",
+  "reason": "CPU freeze plus native prediction throughput may exceed initial45min. Only a TIMEOUT resumes completed system files; other unexplained failures stop. Already-complete B0 returns without duplicated evaluations."
+}

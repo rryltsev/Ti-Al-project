@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "version": 1,
+    "params_hash": "d18d1a8caa23",
+    "params_snapshot": {
+      "T": 2000.0,
+      "timestep": 0.001,
+      "Tdamp": 0.2,
+      "run_steps": 20000,
+      "corr_length": 5000,
+      "sample_interval": 1,
+      "elements": [
+        "Al",
+        "Ti"
+      ],
+      "masses": [
+        26.98,
+        47.88
+      ]
+    },
+    "created_at": "2026-10-17T16:06:58.868550",
+    "updated_at": "2026-10-17T21:45:54.054596"
+  },
+  "cases": {
+    "c_Ti_1.00": {
+      "status": "completed",
+      "c_Ti": 1.0,
+      "input_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2000K/pbe/02_nvt_snapshots/c_Ti_1.00",
+      "output_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune/AlTi/2000K/pbe/03_stress_autocorr/c_Ti_1.00",
+      "n_snapshots": 15,
+      "completed_viscs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "T": 2000.0,
+      "completed_at": "2026-10-17T21:45:54.054583"
+    }
+  }
+}

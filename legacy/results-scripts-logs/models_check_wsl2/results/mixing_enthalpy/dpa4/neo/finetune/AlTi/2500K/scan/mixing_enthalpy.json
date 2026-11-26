@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "calculator": "deepmd",
+    "model_type": "dpa4-neo-finetune",
+    "family": "dpa4",
+    "variant": "neo",
+    "use_type": "finetune",
+    "system": "AlTi",
+    "x_element": "Al",
+    "y_element": "Ti",
+    "T_measure_K": 2500.0,
+    "n_atoms": 200,
+    "step": 0.1,
+    "seed": 42,
+    "r_min": 2.0,
+    "timestamp": "2026-10-01T10:26:51"
+  },
+  "reference": {
+    "H_Al_kJ_per_mol": -564.58,
+    "H_Ti_kJ_per_mol": -1161.92,
+    "E_Al_eV_per_atom": -6.175492,
+    "E_Ti_eV_per_atom": -12.368241,
+    "source": "this_calculation"
+  },
+  "points": [
+    {
+      "x_Al": 0.0,
+      "composition": "Ti",
+      "H_kJ_per_mol": -1161.92,
+      "dH_mix_kJ_per_mol": 0.0,
+      "E_pot_eV_per_atom": -12.368241,
+      "dH_mix_eV_per_atom": 0.0,
+      "T_average_K": 2474.5,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.1,
+      "composition": "Al0.1Ti0.9",
+      "H_kJ_per_mol": -1110.7,
+      "dH_mix_kJ_per_mol": -8.51,
+      "E_pot_eV_per_atom": -11.831424,
+      "dH_mix_eV_per_atom": -0.082458,
+      "T_average_K": 2486.7,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.2,
+      "composition": "Al0.2Ti0.8",
+      "H_kJ_per_mol": -1056.89,
+      "dH_mix_kJ_per_mol": -14.44,
+      "E_pot_eV_per_atom": -11.283205,
+      "dH_mix_eV_per_atom": -0.153514,
+      "T_average_K": 2475.0,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.3,
+      "composition": "Al0.3Ti0.7",
+      "H_kJ_per_mol": -1004.9,
+      "dH_mix_kJ_per_mol": -22.18,
+      "E_pot_eV_per_atom": -10.725965,
+      "dH_mix_eV_per_atom": -0.215549,
+      "T_average_K": 2479.1,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.4,
+      "composition": "Al0.4Ti0.6",
+      "H_kJ_per_mol": -947.95,
+      "dH_mix_kJ_per_mol": -24.97,
+      "E_pot_eV_per_atom": -10.148796,
+      "dH_mix_eV_per_atom": -0.257655,
+      "T_average_K": 2498.3,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.5,
+      "composition": "Al0.5Ti0.5",
+      "H_kJ_per_mol": -892.0,
+      "dH_mix_kJ_per_mol": -28.75,
+      "E_pot_eV_per_atom": -9.552112,
+      "dH_mix_eV_per_atom": -0.280245,
+      "T_average_K": 2480.5,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.6,
+      "composition": "Al0.6Ti0.4",
+      "H_kJ_per_mol": -830.89,
+      "dH_mix_kJ_per_mol": -27.37,
+      "E_pot_eV_per_atom": -8.92929,
+      "dH_mix_eV_per_atom": -0.276698,
+      "T_average_K": 2481.4,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.7,
+      "composition": "Al0.7Ti0.3",
+      "H_kJ_per_mol": -766.39,
+      "dH_mix_kJ_per_mol": -22.61,
+      "E_pot_eV_per_atom": -8.272735,
+      "dH_mix_eV_per_atom": -0.239418,
+      "T_average_K": 2484.4,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.8,
+      "composition": "Al0.8Ti0.2",
+      "H_kJ_per_mol": -702.9,
+      "dH_mix_kJ_per_mol": -18.85,
+      "E_pot_eV_per_atom": -7.593214,
+      "dH_mix_eV_per_atom": -0.179172,
+      "T_average_K": 2507.8,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.9,
+      "composition": "Al0.9Ti0.1",
+      "H_kJ_per_mol": -633.88,
+      "dH_mix_kJ_per_mol": -9.57,
+      "E_pot_eV_per_atom": -6.889667,
+      "dH_mix_eV_per_atom": -0.0949,
+      "T_average_K": 2483.1,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 1.0,
+      "composition": "Al",
+      "H_kJ_per_mol": -564.58,
+      "dH_mix_kJ_per_mol": 0.0,
+      "E_pot_eV_per_atom": -6.175492,
+      "dH_mix_eV_per_atom": 0.0,
+      "T_average_K": 2480.9,
+      "n_frames": 301
+    }
+  ],
+  "status": "complete",
+  "missing_compositions": [],
+  "n_compositions": 11
+}

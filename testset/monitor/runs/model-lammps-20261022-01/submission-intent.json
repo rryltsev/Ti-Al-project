@@ -1,0 +1,27 @@
+{
+  "remote_root": "/home6/u3129/tial-testsets/model-lammps-20261022-01",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=32G",
+    "--time=00:10:00",
+    "--dependency=afterok:20958501",
+    "--no-requeue",
+    "--chdir=/home6/u3129/tial-testsets/model-lammps-20261022-01",
+    "--job-name=t50-lammps-check",
+    "--output=/home6/u3129/tial-testsets/model-lammps-20261022-01/slurm-%j.out",
+    "/home6/u3129/tial-testsets/model-lammps-20261022-01/model_job.sbatch"
+  ],
+  "unix": 1792637747.644413,
+  "files": {
+    "lammps_smoke.py": "355679a8e9c88cf436d3bb11b42b4efe988373a3794aa2a1b54aacad323e162f",
+    "model_job.sbatch": "54167504482916c44677b70c5b9449009b6cad66fb92a87ea3b3ecac4fadb941"
+  },
+  "purpose": "LAMMPS run 0, all three models, single unchanged mixed Al/Ti test geometry; compare with verified DeepPot cache."
+}

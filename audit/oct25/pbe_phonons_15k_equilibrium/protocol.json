@@ -1,0 +1,22 @@
+{
+  "id": "pbe-15k-equilibrium-20261025-01",
+  "models": {
+    "15000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf"
+    }
+  },
+  "checkpoints": [
+    "15000"
+  ],
+  "common_sha256": "f04c9dad5d0f15919f7013ff8911937539f4b6ccf6bda30c809c53b27e6e29d3",
+  "relaxation": "independent hcp a,c at zero stress, fixed fractional coordinates",
+  "supercell": [
+    9,
+    9,
+    9
+  ],
+  "delta_A": 0.01,
+  "mass_amu": 47.867,
+  "reference_5k_results": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_checkpoint_phonons\\size9-5000\\results.npz"
+}

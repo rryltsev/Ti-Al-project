@@ -1,0 +1,21 @@
+{
+  "key": "smoke-checkpoint-path-v1",
+  "job_id": "20990621",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=v100",
+    "--gres=gpu:a100:1",
+    "--cpus-per-task=4",
+    "--mem=40G",
+    "--time=01:00:00",
+    "--array=0-3%1",
+    "--job-name=TiAl-GRACE-smoke-v2",
+    "--output=smoke-%A_%a.log",
+    "smoke.sbatch"
+  ],
+  "utc": "2026-11-09T04:52:46.049937+00:00"
+}

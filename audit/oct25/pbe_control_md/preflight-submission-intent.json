@@ -1,0 +1,21 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=8G",
+    "--no-requeue",
+    "--job-name=pbe-md-preflight",
+    "--chdir=/home6/u3129/tial-testsets/pbe-control-md-20261025-01",
+    "--output=/home6/u3129/tial-testsets/pbe-control-md-20261025-01/preflight-%A_%a.out",
+    "--time=00:15:00",
+    "/home6/u3129/tial-testsets/pbe-control-md-20261025-01/job.sbatch",
+    "preflight"
+  ],
+  "unix": 1792917528.1343765
+}

@@ -1,0 +1,20 @@
+{
+  "key": "H0",
+  "job_id": "20990461",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:15:00",
+    "--dependency=afterok:20990460",
+    "--job-name=TiAl-GRACE-H0",
+    "--output=H0-%j.log",
+    "harmonics.sbatch"
+  ],
+  "utc": "2026-11-08T17:59:03.034057+00:00"
+}

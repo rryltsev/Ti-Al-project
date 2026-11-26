@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "GRACE-restricted_radial-N200-seed10",
+    "backend": "GRACE",
+    "method": "restricted_radial",
+    "N": 200,
+    "seed": 10,
+    "XC": "PBE",
+    "model": "/home6/u3129/tial-fm-research/grace-n200-mask-ablation-20261109-01/cases/PBE-restricted_radial-N200-seed10",
+    "hashes": {
+      "checkpoint.index": "a652e97c9427b8bb4bc73170be66b993dabcd215b2df23ec8f95e4821f853f6e",
+      "checkpoint.data-00000-of-00001": "2a2781747502726d635829d2cd08bf93c7e054919182b61b27f616fe23f3ef9e"
+    },
+    "yaml_sha256": "3b9378f21faa9f632867ca3c14c1c7b1003ae797975850adeab538c3ccecf4d1",
+    "source_run": "grace-n200-mask-ablation-20261109-01",
+    "summary_sha256": "7ab2846d1e8cf6cb5e06151545d7ed7a17e45c7ca5707659b0ee2fc2e6c128c0"
+  },
+  "job_id": "20991463",
+  "structures": 25,
+  "seconds": 20.642409440129995,
+  "geometry_sha256": "d01b28dd6035a16a7e6ec7c3f7461b194ed28df1c2c5f3310ef690ff574ed628",
+  "predictions_sha256": "1602c514bab3adcfe81bd887fc65e9986d91b8c0391bb64e9f7dc5124ec086fc",
+  "max_residual_force_eV_A": 0.1169692033350211,
+  "residual_stress_GPa": [
+    [
+      -0.7580496241544024,
+      3.4119492170728522e-15,
+      -8.028115804877301e-16
+    ],
+    [
+      3.4119492170728522e-15,
+      -0.7582430408937031,
+      -4.0140579024386503e-16
+    ],
+    [
+      -8.028115804877301e-16,
+      -4.0140579024386503e-16,
+      -0.3881055486607241
+    ]
+  ]
+}

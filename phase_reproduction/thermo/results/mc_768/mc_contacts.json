@@ -1,0 +1,68 @@
+[
+  {
+    "model": "HA_fig2",
+    "T_K": 1000.0,
+    "N": 768,
+    "windows": 18,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 15.535262766805394,
+        "alpha2_at_pct": 20.584471553434096,
+        "window_edge": false
+      }
+    ],
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "alpha_95": [
+        15.174821629688456,
+        15.788727673504619
+      ],
+      "alpha2_95": [
+        20.391785828098488,
+        20.797042027801897
+      ],
+      "width_95": [
+        4.73435408500243,
+        5.4099024501449895
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 11
+    }
+  },
+  {
+    "model": "static_S1",
+    "T_K": 1000.0,
+    "N": 768,
+    "windows": 18,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 11.43635852331162,
+        "alpha2_at_pct": 20.71578480316535,
+        "window_edge": false
+      }
+    ],
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "alpha_95": [
+        11.278908905667478,
+        11.654550159466561
+      ],
+      "alpha2_95": [
+        20.536158012288688,
+        20.856590824604194
+      ],
+      "width_95": [
+        8.968860745112416,
+        9.479739659635996
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 9
+    }
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "XC": "PBE",
+  "phase": "Ti3Al archive geometry (Cmcm; nominal D019)",
+  "geometry": "Fixed archived cell; no relaxation",
+  "supercell": [
+    2,
+    2,
+    2
+  ],
+  "displacement_scales": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "base_displacement_A": 0.01,
+  "mesh": [
+    14,
+    14,
+    14
+  ],
+  "mesh_gamma_center": false,
+  "DOS": "tetrahedron; modes per atom; archived frequency grid plus extended grid",
+  "force_constants": "traditional raw primary; ASR sensitivity separately",
+  "source_force_constants_available": false,
+  "DFT_reference": "archived total and projected DOS only",
+  "model_count": 16,
+  "training_changes": false,
+  "test_access": false,
+  "qualification": "Development property diagnostic; not independent holdout. FM pretraining overlap unknown.",
+  "max_GPU_concurrency": 1
+}

@@ -1,0 +1,15 @@
+{
+  "parent_job": "20959753",
+  "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001-restart-03",
+  "checkpoints": {
+    "CHGCAR": {
+      "sha256": "7a074bf21e322f72f2eaa0b7619850e6c43b4483cf2ae1d368dc07289fc7f09d",
+      "bytes": 127578746
+    }
+  },
+  "driver_sha256": "069612466a3b8cdcfd1e394e653b1c916ebfc0980cbcaa284d64e4d484112772",
+  "changes": [
+    "64 ranks, KPAR8, NCORE4; scientific settings unchanged",
+    "PBE ISTART0/ICHARG1; density-only restart with faster resource layout"
+  ]
+}

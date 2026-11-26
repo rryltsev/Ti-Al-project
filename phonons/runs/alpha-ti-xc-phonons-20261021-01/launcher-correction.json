@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-21T01:27:33.371463+00:00",
+  "prior_jobs": {
+    "PBE": "20957236",
+    "PBEsol": "20957237",
+    "r2SCAN": "20957238"
+  },
+  "prior_accounting": "20957236|FAILED|1:0|32\n20957237|FAILED|1:0|32\n20957238|FAILED|1:0|32\n",
+  "reason": "Intel environment initialization changed $1; XC was empty before VASP started.",
+  "correction": "Capture and validate XC_NAME before sourcing Intel environment.",
+  "script_sha256": "9e4beb6544a79c73cd988d645cb8ee7989bd2dce6b0de6e622cb33ef23038d6f",
+  "max_corrected_submissions": 3
+}

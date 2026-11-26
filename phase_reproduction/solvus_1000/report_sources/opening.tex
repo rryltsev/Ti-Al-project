@@ -1,0 +1,165 @@
+% !TeX program = xelatex
+% Сборка: два запуска xelatex TiAl_solvus_1000K.tex в одной папке.
+% Все векторные рисунки и библиография включены непосредственно в исходник.
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[russian]{babel}
+\IfFontExistsTF{Cambria}{\setmainfont{Cambria}}{\setmainfont{DejaVu Serif}}
+\IfFontExistsTF{Calibri}{\setsansfont{Calibri}}{\setsansfont{DejaVu Sans}}
+\IfFontExistsTF{Consolas}{\setmonofont[Scale=MatchLowercase]{Consolas}}{\setmonofont{DejaVu Sans Mono}}
+\usepackage[a4paper,left=23mm,right=21mm,top=21mm,bottom=20mm,headheight=15pt,headsep=7mm,footskip=10mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,xcolor,titlesec,fancyhdr,caption,pgfplots,hyperref}
+\pgfplotsset{compat=1.16}
+\definecolor{ink}{HTML}{213542}
+\definecolor{teal}{HTML}{006D70}
+\definecolor{rust}{HTML}{A8492B}
+\definecolor{muted}{HTML}{526673}
+\definecolor{linegray}{HTML}{C5D0D3}
+\hypersetup{unicode=true,colorlinks=true,linkcolor=teal,citecolor=teal,urlcolor=teal,
+ pdftitle={Равновесные составы фаз α и α₂ в Ti–Al при 1000 К},pdfsubject={Кластерное разложение, свободная энергия и прямой расчёт на MTP}}
+\urlstyle{same}
+\captionsetup{font=small,labelfont={bf,color=teal},labelsep=period,singlelinecheck=false}
+\titleformat{\section}{\sffamily\bfseries\Large\color{ink}}{\color{teal}\thesection}{.55em}{}
+\titleformat{\subsection}{\sffamily\bfseries\large\color{ink}}{\thesubsection}{.55em}{}
+\titlespacing*{\section}{0pt}{16pt plus 3pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 2pt}{4pt}
+\setlength{\parindent}{1.1em}
+\setlength{\parskip}{2.5pt plus .7pt}
+\setlength{\textfloatsep}{11pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt}
+\setlength{\emergencystretch}{2em}
+\brokenpenalty=10000 \widowpenalty=8000 \clubpenalty=8000
+\renewcommand{\arraystretch}{1.14}
+\raggedbottom
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{muted}Ti--Al\enspace/\enspace Свободная энергия и фазовое равновесие}
+\fancyhead[R]{\small\sffamily\color{muted}$1000$ К}
+\fancyfoot[R]{\small\sffamily\color{muted}\thepage}
+\renewcommand{\headrulewidth}{0.25pt}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{teal}\bfseries НАУЧНЫЙ ОТЧЁТ\hfill 25 ноября 2026 г.\par}
+\vspace{4mm}
+{\sffamily\bfseries\fontsize{24}{28}\selectfont\color{ink}
+Равновесные составы фаз \(\boldsymbol{\alpha}\) и \(\boldsymbol{\alpha_2}\)\\
+в Ti--Al при 1000 К\par}
+\vspace{2mm}
+{\sffamily\large\color{muted}Прямая атомистическая оценка при нулевом давлении\\
+и сравнение с кластерным разложением C46\par}
+\vspace{4mm}\noindent{\color{teal}\rule{\linewidth}{1.1pt}}\par\vspace{1mm}
+
+\noindent При свободном объёме и отношении осей \(c/a\) расчёт на потенциале
+Qi и соавторов дал \textbf{14,98 ат.\% Al в \(\boldsymbol{\alpha}\)} и
+\textbf{22,44 ат.\% Al в \(\boldsymbol{\alpha_2}\)}. Условные 95\%-е интервалы
+составили \(14{,}92\)--\(15{,}06\) и \(22{,}33\)--\(22{,}55\) ат.\%.
+Это равновесие двух кристаллических фаз в явно заданной области тепловых
+смещений. Границы проверены на четырёх размерах, вплоть до 1400 атомов.
+При изменении допустимых смещений и независимом повторении расчёта
+измеренные составы менялись на величины порядка \(0{,}1\)--\(0{,}2\) процентного пункта.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=.91\linewidth,height=47mm,axis x line*=bottom,axis y line=none,
+ xmin=14.0,xmax=23.15,ymin=.45,ymax=3.53,
+ xtick={14,15,16,17,18,19,20,21,22,23},enlarge x limits=false,
+ tick label style={font=\sffamily\footnotesize,text=muted},
+ tick style={draw=muted},xlabel={Al, ат.\%},xlabel style={font=\sffamily\small},
+ xmajorgrids,grid style={linegray!65},clip=false]
+\addplot[teal,line width=1.5pt,mark=*,mark size=2.3pt] coordinates {(14.982,3) (22.445,3)};
+\addplot[rust,line width=1.5pt,mark=square*,mark size=2.2pt] coordinates {(16.083,2) (22.159,2)};
+\addplot[muted,line width=1.25pt,dashed,mark=triangle*,mark size=2.5pt] coordinates {(14.958,1) (21.958,1)};
+\node[fill=white,text=teal,font=\sffamily\footnotesize,inner xsep=5pt] at (axis cs:18.60,3) {MTP, свободное \(c/a\)};
+\node[fill=white,text=rust,font=\sffamily\footnotesize,inner xsep=5pt] at (axis cs:18.60,2) {MTP, \(c/a\) как у C46};
+\node[fill=white,text=muted,font=\sffamily\footnotesize,inner xsep=5pt] at (axis cs:18.60,1) {C46, фиксированное \(c/a\)};
+\node[above,text=ink,font=\small] at (axis cs:14.982,3.09) {\(\alpha\)};
+\node[above,text=ink,font=\small] at (axis cs:22.445,3.09) {\(\alpha_2\)};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{Интервалы сосуществования при \(p=0\). Концы каждого
+отрезка соответствуют равновесным составам двух фаз одной модели.
+У прямого MTP \(N=1400\) и \(W<0{,}40\), у C46 \(N=5120\).}
+\label{fig:tielines}
+\end{center}
+
+\noindent\textbf{Влияние формы ячейки.}
+При одинаковом \(c/a\) прямой MTP даёт на \(1{,}12\) п.п. больше Al
+в \(\alpha\) и на \(0{,}20\) п.п. больше в \(\alpha_2\), чем C46.
+Освобождение отношения осей в атомистическом расчёте сдвигает границы
+на \(-1{,}10\) и \(+0{,}29\) п.п. Таким образом, совпадение результатов
+для \(\alpha\) при сравнении \(14{,}98\) с \(14{,}96\) возникает из-за
+компенсации двух эффектов.
+
+\noindent\textbf{Чувствительность к обучающей выборке.}
+Независимая подгонка тех же 20 кластерных функций на структурах ATAT
+даёт \(14{,}76\) и \(22{,}71\) ат.\% Al. При одинаковых механических
+условиях обе подгонки предсказывают меньшую растворимость Al в \(\alpha\),
+чем прямой MTP. Для \(\alpha_2\) прямое значение \(22{,}16\) лежит между
+результатами двух подгонок. Здесь выбор обучающих структур меняет знак
+отклонения, тогда как переход от среднего поля к Монте-Карло сильнее всего
+влияет на границу \(\alpha\).
+
+\noindent\textbf{Следующий расчёт.}
+При тех же \(T,p,c/a\) целесообразно построить классический гармонический
+вариант C46 и повторить определение обеих границ. Это даст явную оценку
+влияния статистики ядер. Для измерения ошибки самого потенциала
+нужна независимая разность свободных энергий MTP--DFT для обеих фаз.
+
+\vfill
+\noindent{\small\sffamily\color{muted}
+Построение C46 — с.~\pageref{sec:ce-model}. Фазовые границы C46 — с.~\pageref{sec:ce-phases}.
+Интегрирование в малых ячейках — с.~\pageref{sec:smallcells}.
+Атомистический ансамбль — с.~\pageref{sec:ensemble}.
+Составы и сходимость — с.~\pageref{sec:bulk-results}.
+Дальнейшие расчёты — с.~\pageref{sec:outlook}.}
+\clearpage
+\section{Постановка задачи}
+На богатой титаном стороне диаграммы Ti--Al фаза \(\alpha\) представляет
+собой замещающий раствор Al в гексагональной плотноупакованной (ГПУ)
+решётке. В фазе \(\alpha_2\) структуры D0$_{19}$ алюминий преимущественно
+занимает одну из четырёх подрешёток. В идеальном \(\mathrm{Ti_3Al}\)
+её заполнение полное, тогда как равновесная при конечной температуре
+фаза допускает отклонение от стехиометрии.
+
+Обозначим атомную долю алюминия через \(x=N_{\mathrm{Al}}/N\), а
+свободную энергию Гиббса на атом фазы \(i\) через \(g_i(x,T,p)\).
+Концы двухфазного интервала удовлетворяют условию общей касательной,
+\begin{align}
+  g'_\alpha(x_\alpha)&=g'_{\alpha_2}(x_{\alpha_2})=\Delta\mu, \\
+  g_\alpha(x_\alpha)-x_\alpha\Delta\mu
+    &=g_{\alpha_2}(x_{\alpha_2})-x_{\alpha_2}\Delta\mu ,
+  \qquad \Delta\mu=\mu_{\rm Al}-\mu_{\rm Ti}.
+\end{align}
+Малый систематический сдвиг разности свободных энергий способен заметно
+сместить касательную. Изменение свободной энергии одной декорации
+нужно отличать от сдвига этой касательной после усреднения по всем
+химическим заполнениям и атомным смещениям.
+
+В проектной модели C46 энергии и колебательные вклады представлены
+кластерным разложением. Исходные атомистические данные получены на
+потенциале моментных тензоров (MTP) Qi и соавт.~\cite{qi2023}.
+Воспроизведённая версия C46 использует авторские коэффициенты из комплекта
+рукописи М.\,В.~Петрика, Е.\,О.~Хазиевой и Р.\,Е.~Рыльцева (версия v16).
+Независимая подгонка на собственной выборке структур давала
+при 1000 К \(14{,}764/22{,}707\) ат.\% Al. Сравнения ниже выполнены с
+авторским набором \(14{,}958/21{,}958\) ат.\% Al и дополнены проверкой
+чувствительности к выборке для подгонки.
+В расчёте C46 химическое разупорядочение учитывалось методом
+Монте-Карло, а колебания — в квантовом квазигармоническом приближении.
+В настоящей работе использован тот же файл потенциала. Сначала фиксированные
+декорации и полный перебор малых ячеек позволили проверить отдельные
+вклады в свободную энергию. Затем для макроскопических составов мы
+восстановили равновесные веса фаз из атомистических ансамблей без
+кластерной аппроксимации энергии. С экспериментом прямые свободные
+энергии Гиббса в этом расчёте не калибровались.
+
+\paragraph{Три способа получить термодинамическую информацию.}
+В решёточном MC интеграл \(\int\Delta\mu(x)\,dx\) восстанавливает
+изотерму свободной энергии на атом, по которой проводится общая касательная.
+В малых атомистических ячейках интеграл по параметру связи \(\lambda\)
+измеряет работу перехода от гармонических сил к MTP при заданном
+химическом заполнении. Для больших ячеек обе фазы отбирались в серии
+перекрывающихся окон по параметру порядка \(Q\). Снятие смещающих полей
+методом MBAR даёт относительные вероятности фаз, из которых следуют
+равновесное поле и два состава. Различия этих процедур существенны при
+переносе выводов от одной декорации к многоатомной системе.

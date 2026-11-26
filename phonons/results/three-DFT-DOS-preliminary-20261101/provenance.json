@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "PBE": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\PBE-matched-DFT-DPA4-20261101-01\\comparison.npz",
+      "sha256": "f06472d694d9a85ee2ae0744bd6b390c13bb06e93c88077c2120d6aa077611a7"
+    },
+    "PBEsol": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\PBEsol-matched-DFT-DPA4-20261031-02\\comparison.npz",
+      "sha256": "fab977331fdd481ebbdddf71814c9f419e9a03ad72ae7167143daaadf9357366"
+    },
+    "r2SCAN": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\r2SCAN-matched-DFT-DPA4-20261101-01\\comparison.npz",
+      "sha256": "b1f45d6872af080f86d8b2ee1c6693ef2c059662802108345635207ee374aad1"
+    }
+  },
+  "qualification": "Preliminary, not convergence-validated. Each functional at its own DFT-relaxed geometry. PBE/r2SCAN reference force cancels in central-pair derivative but reference diagnostics still pending.",
+  "csv_note": "Each native 0.002THz Gaussian DOS interpolated to common frequency grid; integrals checked within1e-6 of3."
+}

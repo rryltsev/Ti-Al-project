@@ -1,0 +1,130 @@
+                 JOBID      STATE         TIME                    NODELIST(REASON)
+              20988589    PENDING         0:00                        (Dependency)
+            20988588_0    PENDING         0:00                        (Dependency)
+            20988588_1    PENDING         0:00                        (Dependency)
+            20988588_2    PENDING         0:00                        (Dependency)
+            20988588_3    PENDING         0:00                        (Dependency)
+              20988586    PENDING         0:00                        (Dependency)
+            20988585_0    PENDING         0:00                        (Dependency)
+            20988585_1    PENDING         0:00                        (Dependency)
+            20988585_2    PENDING         0:00                        (Dependency)
+            20988585_3    PENDING         0:00                        (Dependency)
+            20988585_4    PENDING         0:00                        (Dependency)
+            20988585_5    PENDING         0:00                        (Dependency)
+            20988585_6    PENDING         0:00                        (Dependency)
+            20988585_7    PENDING         0:00                        (Dependency)
+            20988587_0    PENDING         0:00                        (Dependency)
+            20988587_1    PENDING         0:00                        (Dependency)
+            20988587_2    PENDING         0:00                        (Dependency)
+            20988587_3    PENDING         0:00                        (Dependency)
+            20988583_1    PENDING         0:00                 (JobArrayTaskLimit)
+            20988583_2    PENDING         0:00                 (JobArrayTaskLimit)
+            20988583_3    PENDING         0:00                 (JobArrayTaskLimit)
+            20988583_4    PENDING         0:00                 (JobArrayTaskLimit)
+            20988583_5    PENDING         0:00                 (JobArrayTaskLimit)
+            20988583_6    PENDING         0:00                 (JobArrayTaskLimit)
+            20988583_7    PENDING         0:00                 (JobArrayTaskLimit)
+            20988583_0    RUNNING         3:23                          tesla-a101
+
+{
+  "PBE-lora16-N200-seed20": {
+    "steps": 700,
+    "zero_step": "PASS",
+    "train": null,
+    "inventory": {
+      "total": 1410382,
+      "trainable": 325158,
+      "adapter_trainable": 285696,
+      "frozen": 1085224,
+      "num_steps": 10000,
+      "optimizer_type": "HybridMuonOptimizer",
+      "seed": 20,
+      "torch_initial_seed": 13545900953510009613
+    },
+    "tail": [
+      "[2026-11-06 19:18:32,863] DEEPMD INFO    Batch     600: trn: mae_e = 4.87e-03, mae_f = 1.01e-01, mae_v = 6.71e-03, rmse = 1.45e+00, lr = 9.92e-05",
+      "[2026-11-06 19:18:32,864] DEEPMD INFO    Batch     600: val: mae_e = 7.01e-03, mae_f = 1.01e-01, mae_v = 6.59e-03, rmse = 1.46e+00",
+      "[2026-11-06 19:18:32,865] DEEPMD INFO    Batch     600: total wall time = 22.44 s, eta = 0:35:09 at 2026-11-06 19:53",
+      "[2026-11-06 19:18:55,263] DEEPMD INFO    Batch     700: trn: mae_e = 6.66e-03, mae_f = 1.05e-01, mae_v = 6.66e-03, rmse = 1.49e+00, lr = 9.89e-05",
+      "[2026-11-06 19:18:55,263] DEEPMD INFO    Batch     700: val: mae_e = 4.57e-03, mae_f = 1.03e-01, mae_v = 5.41e-03, rmse = 1.46e+00",
+      "[2026-11-06 19:18:55,264] DEEPMD INFO    Batch     700: total wall time = 22.40 s, eta = 0:34:43 at 2026-11-06 19:53"
+    ]
+  },
+  "PBE-full-N200-seed20": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "r2SCAN-lora16-N200-seed20": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "r2SCAN-full-N200-seed20": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "PBE-lora16-N200-seed30": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "PBE-full-N200-seed30": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "r2SCAN-lora16-N200-seed30": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "r2SCAN-full-N200-seed30": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "PBE-lora16-N694-seed10": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "PBE-full-N694-seed10": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "r2SCAN-lora16-N694-seed10": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  },
+  "r2SCAN-full-N694-seed10": {
+    "steps": 0,
+    "zero_step": null,
+    "train": null,
+    "inventory": null,
+    "tail": []
+  }
+}

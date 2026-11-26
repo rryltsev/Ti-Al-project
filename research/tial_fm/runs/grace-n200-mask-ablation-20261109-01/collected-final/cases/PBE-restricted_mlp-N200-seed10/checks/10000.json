@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "steps": 10000,
+  "trainable": 21112778,
+  "changed_tensors": [
+    "0:I1/reducing_A:0",
+    "1:I1/reducing_AA:0",
+    "2:I1/reducing_AAA:0",
+    "3:I1/reducing_AAAA:0",
+    "4:I2/reducing_B:0",
+    "5:I2/reducing_BB:0",
+    "6:I2/reducing_BBB:0",
+    "7:I2/reducing_BBBB:0",
+    "8:LinMLPOut2ScalarTarget_MLP_layer0/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer0__:0",
+    "9:LinMLPOut2ScalarTarget_MLP_layer1/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer1__:0",
+    "10:rho/reducing_A:0",
+    "11:rho/reducing_AA:0",
+    "12:rho/reducing_AAA:0",
+    "13:rho/reducing_AAAA:0"
+  ],
+  "frozen_changed": [],
+  "optimizer_iterations": 10000,
+  "fresh_optimizer": true,
+  "recent_step_seconds": [
+    0.033548589795827866,
+    0.032893599942326546,
+    0.03311035968363285,
+    0.035610901191830635
+  ],
+  "first5_batch_hashes": [
+    "1553b83aa6aaccdb583c26b248be433c133a4703762dc9ae0c01c79a2ef40df2",
+    "1ae6c55d0903299f554be99c7ebe5bc256a5a1dd2f4c93472b1c3127e25b8f2a",
+    "4716651ef0326c6d9d7eebbed1eb2593c4ea87bb5428d7d1f94c010e973ad941",
+    "f1630ceca0d9829eea38c417891587ce9b35cef0dfff962e286050310d53cfbb",
+    "928529b7120a4fb59c1402a30f41e98ca5d02943ba886a6376408b302271ec51"
+  ],
+  "GPU_memory": {
+    "current": 833790976,
+    "peak": 2110311936
+  }
+}

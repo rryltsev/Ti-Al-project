@@ -1,0 +1,30 @@
+{
+  "remote_root": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=32G",
+    "--time=00:15:00",
+    "--no-requeue",
+    "--chdir=/home6/u3129/tial-testsets/pretrained-neo-20261022-01",
+    "--job-name=t50-pretrained",
+    "--output=/home6/u3129/tial-testsets/pretrained-neo-20261022-01/slurm-%j.out",
+    "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/model_job.sbatch"
+  ],
+  "unix": 1792640944.7903981,
+  "files": {
+    "predict_pretrained.py": "c65a308661fa02a5a669b293dca5fcc05632d69d3eb8de20bb07f14f11c40296",
+    "predict.py": "96ec173d6a915d22d1249ab7e8442fedfa34ff0903e863ebcd0c9ec36faa308d",
+    "pretrained_registry.json": "2696bcc3ac4c79b578bdba2dabff21d5dc5c591584d00ed25c24560228cecaa7",
+    "DPA4-Neo-OMat24-v20260805.pt": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+    "finetuned-metadata.json": "7326d9d0e06a37e2092866f23fbba322ee2edf466040e37ed3aec387d3699af4",
+    "bundle.json": "868c73c24e206e0890ad8a69f6c6e1717039c8438e8410b890aaa301b212ebe8",
+    "model_job.sbatch": "c0732299d1ddd8e4ed136cf378f44e07b601bb00ec00f684602c2eb115f35518"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "job_id": "20960541",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=8G",
+    "--no-requeue",
+    "--job-name=pbe-md-15k-long",
+    "--chdir=/home6/u3129/tial-testsets/pbe-control-md-20261025-01",
+    "--output=/home6/u3129/tial-testsets/pbe-control-md-20261025-01/retry15k-%A_%a.out",
+    "--time=1-15:00:00",
+    "--array=0-3%4",
+    "/home6/u3129/tial-testsets/pbe-control-md-20261025-01/job-long.sbatch"
+  ],
+  "unix": 1792918161.2883222,
+  "supersedes_tasks": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "result_subdir": "retry15k/results"
+}

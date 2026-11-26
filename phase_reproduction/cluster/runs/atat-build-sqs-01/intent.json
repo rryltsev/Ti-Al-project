@@ -1,0 +1,26 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/atat-build-sqs-01",
+  "utc": "2026-11-24T18:32:37.545885+00:00",
+  "job_name": "ta-atat-build-sqs-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo,nompi,debug",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=6",
+    "--mem=6G",
+    "--time=15",
+    "--job-name=ta-atat-build-sqs-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "53eecda85b03c9a13afe5b5174e4481c06c1477c0907d8023a41e6d8fff3cddb",
+    "atat3_52.tar.gz": "8536fb078375b30096df780e02f4e0c97972f5ebaad9a84a94f22e00f50c7516"
+  }
+}

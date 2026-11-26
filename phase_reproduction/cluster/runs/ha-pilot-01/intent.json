@@ -1,0 +1,30 @@
+{
+  "host": "umt.imm.uran.ru",
+  "user": "u3129",
+  "remote": "/home6/u3129/tial-pd-20261124-atomistic/ha-pilot-01",
+  "utc": "2026-11-24T18:08:12.154673+00:00",
+  "job_name": "ta-ha-pilot-01",
+  "sbatch": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=6G",
+    "--time=25",
+    "--job-name=ta-ha-pilot-01",
+    "--output=slurm-%j.out",
+    "job.sh"
+  ],
+  "sha256": {
+    "job.sh": "056c3a2492bdb5bf9d3f18ac40ad1b17b2cbed20245dc33940f2b85f8f74f4dc",
+    "labels.txt": "eddf6fa96f72b03ef860175146fcee05f062bea517927d0dbaa38ad6507888f9",
+    "fitted.mtp": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+    "label_cell.py": "d736fb653e530b530e426c240e938fd053296413c09529eab9db52895ab78b7a",
+    "hcp_orbits.py": "6a6a745abd5d594244901d13c1ae6305e8eb63c7d41b54d82dfa094d73cade3b",
+    "mtp_cfg.py": "8326d00eb692d2e19dab513b3d918041966906d784109eb9d04361dc8c7d7727"
+  }
+}

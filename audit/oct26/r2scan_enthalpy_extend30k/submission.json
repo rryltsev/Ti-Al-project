@@ -1,0 +1,23 @@
+{
+  "job_id": "20961890",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=v100",
+    "--nodelist=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--gres=gpu:a100:1",
+    "--mem=32G",
+    "--time=12:00:00",
+    "--no-requeue",
+    "--job-name=TiAl-r2SCAN-H-plus30k",
+    "--chdir=/home6/u3129/tial-testsets/r2scan-enthalpy-extend30k-20261026-01",
+    "--output=/home6/u3129/tial-testsets/r2scan-enthalpy-extend30k-20261026-01/allocation-%j.log",
+    "/home6/u3129/tial-testsets/r2scan-enthalpy-extend30k-20261026-01/job.sbatch"
+  ],
+  "unix": 1793071292.880397
+}

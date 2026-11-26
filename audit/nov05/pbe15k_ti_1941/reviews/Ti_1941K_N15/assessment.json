@@ -1,0 +1,261 @@
+{
+  "reviewed_unix": 1793906449.0151172,
+  "temperature_K": 1941,
+  "n_replicas": 15,
+  "summary_sha256": "2973e55d7f811710ed47a57086c6cade7dc26dfccfadca56741666c6fecb2c90",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 2.815506495009731,
+      "eta_std_mPa_s": 0.080433494364356,
+      "relative_std": 0.02856803722773085,
+      "neff": 72.58781729202863,
+      "tau_exp_ps": 0.13060312513723196,
+      "tau_int_ps": 0.10800215492243548,
+      "cost_z": -0.468977224419586,
+      "criterion_z": 1.3540869344595703
+    },
+    "first20ps": {
+      "eta_mPa_s": 2.70029868127646,
+      "eta_std_mPa_s": 0.10153382986385201,
+      "relative_std": 0.03760096265197444,
+      "neff": 45.272687461601265,
+      "tau_exp_ps": 0.1194023372236602,
+      "tau_int_ps": 0.1044487096162902,
+      "cost_z": 0.047621882736940235,
+      "criterion_z": 0.9112191717766105
+    },
+    "second20ps": {
+      "eta_mPa_s": 2.8877311788207534,
+      "eta_std_mPa_s": 0.1116445684709761,
+      "relative_std": 0.03866169028814094,
+      "neff": 36.85412689951725,
+      "tau_exp_ps": 0.12938189385914053,
+      "tau_int_ps": 0.10986233808036287,
+      "cost_z": 0.29309773764016805,
+      "criterion_z": 0.9378018381439241
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs_previous_percent": -0.0802831184999353,
+      "SE_change_percent": -16.101611761233304,
+      "vs_5k_percent": -7.686682180233917,
+      "vs_historical15k_percent": null
+    },
+    "first20ps": {
+      "vs_previous_percent": 1.5001355306520692,
+      "SE_change_percent": -13.137098763242749,
+      "vs_5k_percent": -11.464054224422037,
+      "vs_historical15k_percent": null
+    },
+    "second20ps": {
+      "vs_previous_percent": -1.3813519443342082,
+      "SE_change_percent": -20.92254289084131,
+      "vs_5k_percent": -5.318617960564631,
+      "vs_historical15k_percent": null
+    }
+  },
+  "new_batch_40ps": {
+    "eta_mPa_s": 2.766110360010894,
+    "eta_std_mPa_s": 0.1297987460208165,
+    "relative_std": 0.04692464476374157,
+    "neff": 87.80105771226029,
+    "tau_exp_ps": 0.12341900141279578,
+    "tau_int_ps": 0.10628595331676734,
+    "cost_z": 0.5808883418272922,
+    "criterion_z": 1.2248599199990031
+  },
+  "previous_replicas_40ps": {
+    "eta_mPa_s": 2.8177686875842385,
+    "eta_std_mPa_s": 0.09587013058635889,
+    "relative_std": 0.034023421088035216,
+    "neff": 78.33229805951899,
+    "tau_exp_ps": 0.1276812661893984,
+    "tau_int_ps": 0.10799818216499744,
+    "cost_z": -0.46068407694808106,
+    "criterion_z": 1.162071436747292
+  },
+  "new_batch_z": 0.3201325904822889,
+  "checks": [
+    {
+      "id": "Ti_1941K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": true,
+        "last_three_stability": true,
+        "duration_stability": false,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": true,
+        "window_fit_diagnostics": true
+      },
+      "passed": false,
+      "last_three_relative_range": 0.004004940813817904,
+      "max_20_40_relative_difference": 0.04091903674790587
+    }
+  ],
+  "pass_streak": 0,
+  "stop_recommended": false,
+  "review_required": false,
+  "visual_review": {
+    "files_sha256": {
+      "convergence.png": "a88be639aaddf53817caf49923ec1e14d2f1835eff8f8636f98757d3d5ded201",
+      "40ps/spectrum.png": "013959f6898ba8709cac73e491dbe6bba06a7101971355e5c53c0c5255087c0c",
+      "40ps/extras.png": "69f0fa30cdc271f5b06cd0383fe572d7e16b3ad5fce54c65efd8845032f44de2",
+      "first20ps/spectrum.png": "d10493f2a87a4f1ece3fbc4557bee229b1f01c61c4b5ee4a43c8b5b4ea6bc778",
+      "first20ps/extras.png": "02778b8f6b5aeb6b23d15f31a7bc35790ae4637fde5e6f15f994fd00fc82b932",
+      "second20ps/spectrum.png": "64ab88dfd9bdd6a35d614e01783c58c8b53a1fababbf0b18b9318793a2ae1db5",
+      "second20ps/extras.png": "2d8c4c06d1c1bcf8383d20784f2bf6867ef221959ec13edf6d3c6c451f8d37f1",
+      "new_batch_40ps/spectrum.png": "2d71305b7c881fc5f86ca6bcaac662ff36b40ee43836ac9bdec6e1427e82fca7",
+      "new_batch_40ps/extras.png": "0fcaf7b7861b987d71a011592ecba0066bfbeb440e36d0e07df48b22aade541e"
+    },
+    "notes": "All nine source diagnostic figures inspected. Full40 main cutoff near1.8THz, first20 near2.2THz, second20 near1.8THz, new5 near2THz with upper shoulder. No dominant detached high-frequency mode visible. All weighted cost/cutoff diagnostics pass; all three windows remain correlated and residual first/second difference is not proof of physical drift."
+  },
+  "runtime_verification": "PASS:five new replica raw hashes/512Ti/targetT/40001 samples/40ps/model/protocol/GPU/own volume prefactor",
+  "campaign_points": [
+    {
+      "id": "Ti_1941K",
+      "temperature_K": 1941,
+      "x_Al": 0.0,
+      "n_replicas": 15,
+      "windows": {
+        "40ps": {
+          "eta_mPa_s": 2.815506495009731,
+          "eta_std_mPa_s": 0.080433494364356,
+          "relative_std": 0.02856803722773085,
+          "neff": 72.58781729202863,
+          "tau_exp_ps": 0.13060312513723196,
+          "tau_int_ps": 0.10800215492243548,
+          "cost_z": -0.468977224419586,
+          "criterion_z": 1.3540869344595703
+        },
+        "first20ps": {
+          "eta_mPa_s": 2.70029868127646,
+          "eta_std_mPa_s": 0.10153382986385201,
+          "relative_std": 0.03760096265197444,
+          "neff": 45.272687461601265,
+          "tau_exp_ps": 0.1194023372236602,
+          "tau_int_ps": 0.1044487096162902,
+          "cost_z": 0.047621882736940235,
+          "criterion_z": 0.9112191717766105
+        },
+        "second20ps": {
+          "eta_mPa_s": 2.8877311788207534,
+          "eta_std_mPa_s": 0.1116445684709761,
+          "relative_std": 0.03866169028814094,
+          "neff": 36.85412689951725,
+          "tau_exp_ps": 0.12938189385914053,
+          "tau_int_ps": 0.10986233808036287,
+          "cost_z": 0.29309773764016805,
+          "criterion_z": 0.9378018381439241
+        }
+      },
+      "sources": [
+        {
+          "replica": 1,
+          "stress_file": "states/Ti_1941K/replicas/replica_0001/attempt_001/production/stress.npz",
+          "sha256": "a40816e8f295885f2983f2dde55d898d3b47641855325008160e06624a5f1820"
+        },
+        {
+          "replica": 2,
+          "stress_file": "states/Ti_1941K/replicas/replica_0002/attempt_001/production/stress.npz",
+          "sha256": "a8d44d58f51d005bbace2e1388d89be9d059c525953f5b9c77cd70d018befff1"
+        },
+        {
+          "replica": 3,
+          "stress_file": "states/Ti_1941K/replicas/replica_0003/attempt_001/production/stress.npz",
+          "sha256": "3e062814ae623b4f0fc1bcf6d70ef9487f87939e9c8c3d8686da755aac4bbb5c"
+        },
+        {
+          "replica": 4,
+          "stress_file": "states/Ti_1941K/replicas/replica_0004/attempt_001/production/stress.npz",
+          "sha256": "94c8dd3ab5053d05691736c52eeecc2f1c5df50af559f9565ca4f4eac4d08cad"
+        },
+        {
+          "replica": 5,
+          "stress_file": "states/Ti_1941K/replicas/replica_0005/attempt_001/production/stress.npz",
+          "sha256": "d66a03b00b6b9842d66bde43a5b85f95db73d861a21647c42256d599a8926623"
+        },
+        {
+          "replica": 6,
+          "stress_file": "states/Ti_1941K/replicas/replica_0006/attempt_001/production/stress.npz",
+          "sha256": "72b147e309653365c508d8cfe6b175d65a8281cc2127b2dfe88932e425da542b"
+        },
+        {
+          "replica": 7,
+          "stress_file": "states/Ti_1941K/replicas/replica_0007/attempt_001/production/stress.npz",
+          "sha256": "42f49d3fc031492d2ede06fa468713e186c707f776d239bb17b60df272c16c0a"
+        },
+        {
+          "replica": 8,
+          "stress_file": "states/Ti_1941K/replicas/replica_0008/attempt_001/production/stress.npz",
+          "sha256": "0811211a0ef5c8eb7eab23f0817bc71166b2635c2586df09e6c8d4cf32f4ea7e"
+        },
+        {
+          "replica": 9,
+          "stress_file": "states/Ti_1941K/replicas/replica_0009/attempt_001/production/stress.npz",
+          "sha256": "636a2970552fbcd0eb61ee174cf2ccb17bc82a230ae2299b5d6424ea5968ef0d"
+        },
+        {
+          "replica": 10,
+          "stress_file": "states/Ti_1941K/replicas/replica_0010/attempt_001/production/stress.npz",
+          "sha256": "289a4a17662275b7b165dd69730db3349f9340238df5a5c714f261474986ae58"
+        },
+        {
+          "replica": 11,
+          "stress_file": "states/Ti_1941K/replicas/replica_0011/attempt_001/production/stress.npz",
+          "sha256": "42f116047784e55a942ac7c619ba81324523d279768d14d38cdf2877e90a0018"
+        },
+        {
+          "replica": 12,
+          "stress_file": "states/Ti_1941K/replicas/replica_0012/attempt_001/production/stress.npz",
+          "sha256": "0d13fd9988e2b6f221488eb43f6e3cd83a90972aa134c32563cf8e92fe460665"
+        },
+        {
+          "replica": 13,
+          "stress_file": "states/Ti_1941K/replicas/replica_0013/attempt_001/production/stress.npz",
+          "sha256": "30d7593876b015f7096e274d1efd086d78c0ff581f3c2c63fa6257076c19f37b"
+        },
+        {
+          "replica": 14,
+          "stress_file": "states/Ti_1941K/replicas/replica_0014/attempt_001/production/stress.npz",
+          "sha256": "2434f12a0bfab92150c488e3b1a9651a7393fe80c673f9549efa954b3da7cc0c"
+        },
+        {
+          "replica": 15,
+          "stress_file": "states/Ti_1941K/replicas/replica_0015/attempt_001/production/stress.npz",
+          "sha256": "0d4406bf3a0ae1c0fb1b47f552625ce857a9695fbe247ef53bec293dbcf17fc7"
+        }
+      ],
+      "new_batch_40ps": {
+        "eta_mPa_s": 2.766110360010894,
+        "eta_std_mPa_s": 0.1297987460208165,
+        "relative_std": 0.04692464476374157,
+        "neff": 87.80105771226029,
+        "tau_exp_ps": 0.12341900141279578,
+        "tau_int_ps": 0.10628595331676734,
+        "cost_z": 0.5808883418272922,
+        "criterion_z": 1.2248599199990031
+      },
+      "previous_replicas_40ps": {
+        "eta_mPa_s": 2.8177686875842385,
+        "eta_std_mPa_s": 0.09587013058635889,
+        "relative_std": 0.034023421088035216,
+        "neff": 78.33229805951899,
+        "tau_exp_ps": 0.1276812661893984,
+        "tau_int_ps": 0.10799818216499744,
+        "cost_z": -0.46068407694808106,
+        "criterion_z": 1.162071436747292
+      },
+      "new_batch_z": 0.3201325904822889
+    }
+  ],
+  "article_profile_sha256": "8ca5307ab484cf7963593cdd0c36bd6dca3fd2800cb8e1893fa164874365cfe8",
+  "caveats": [
+    "Formal SE excludes model, protocol and cutoff systematics.",
+    "Accumulated estimates and windows20/40ps are correlated; stopping is a heuristic.",
+    "Historical15k and5k remain separate; agreement with5k is not a stop criterion.",
+    "Fixed article profile and the earlier preview snapshot remain unchanged."
+  ]
+}

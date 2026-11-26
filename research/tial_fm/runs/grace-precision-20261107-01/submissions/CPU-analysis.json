@@ -1,0 +1,21 @@
+{
+  "key": "CPU-analysis",
+  "job_id": "20989426",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=1",
+    "--mem=12G",
+    "--time=00:15:00",
+    "--dependency=afterany:20989425",
+    "--job-name=TiAl-GRACE-fp-CPU-QC",
+    "--output=CPU-analysis-%j.log",
+    "analysis.sbatch",
+    "cpu"
+  ],
+  "utc": "2026-11-07T16:30:59.376998+00:00"
+}

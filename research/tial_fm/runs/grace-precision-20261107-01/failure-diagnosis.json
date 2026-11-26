@@ -1,0 +1,13 @@
+{
+  "status": "FAILED_BEFORE_INFERENCE",
+  "job_CPU": "20989425",
+  "CPU_analysis": "20989426",
+  "GPU_cancelled": [
+    "20989427",
+    "20989428"
+  ],
+  "reason": "Object-checkpoint alias paths differ between archived and current backend serialization; direct tensor-name lookup failed at RadialBasis/rc. Source checkpoint unchanged.",
+  "repair": "Restore source through TensorFlow object graph, serialize normalized fp64 in current backend, then cast into native fp32 template.",
+  "replacement_run": "grace-precision-20261107-02",
+  "new_training_steps": 0
+}

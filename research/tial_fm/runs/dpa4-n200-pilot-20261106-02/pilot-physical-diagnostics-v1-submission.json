@@ -1,0 +1,9 @@
+{
+  "job_id": "20988553",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=8G --time=00:05:00 --job-name=TiAl-pilot-physics --output=pilot-physical-diagnostics-v1-%j.log pilot-physical-diagnostics-v1.sbatch",
+  "source_sha256": {
+    "analyze_pilot_physics_v1.py": "5fd96b717cf21ac219634fdfd54b4f73f6953682d0ed1fc53bcae1016355ce6c",
+    "pilot-physical-diagnostics-v1.sbatch": "563d0973c1d614b8747b802c6d5c8f068cf8695e2a53d17e68dd54866fffa59b"
+  },
+  "scope": "Saved FC postprocessing only; no new model forces or DFT."
+}

@@ -1,0 +1,146 @@
+{
+  "configuration": {
+    "path": "Gamma-K-M-Gamma-A",
+    "ticks": [
+      0.0,
+      0.3520552196007837,
+      0.5280828294011755,
+      0.8329715931103634,
+      1.0
+    ],
+    "experimental_source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_checkpoint_phonons\\reference-data.csv",
+    "experimental_sha256": "a5e52223850078582f71e61c4524de37eea63d64d3a918bc67343af3b95315c9",
+    "experimental_count": 77,
+    "citation": "Stassis et al., room-temperature measurements reproduced in Souvatzis et al., Phys. Rev. Lett. 99, 015901 (2007), doi:10.1103/PhysRevLett.99.015901",
+    "coordinate_mapping": "Experimental x/y retained without edits. Computed path segments mapped linearly between the archived normalized Gamma/K/M/Gamma/A ticks; no frequency shifts or experimental fitting.",
+    "checkpoints": {
+      "PBE": 15000,
+      "PBEsol": 23100,
+      "r2SCAN": 23200
+    },
+    "PBE15k_job": "20973104",
+    "sources": {
+      "PBE-DFT.yaml": {
+        "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\PBE-matched-DFT-DPA4-20261101-01\\DFT\\phonopy_params.yaml",
+        "sha256": "f2673b78af5306892840d71fd2863ab4f53aafcb5a683930e807e8ccb245f30c"
+      },
+      "PBEsol-DFT.yaml": {
+        "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\PBEsol-matched-DFT-DPA4-20261031-02\\DFT\\phonopy_params.yaml",
+        "sha256": "eb9d546d3652881167fbe751d1078f67807bff63c8d3696229dd70cae9c4b1ad"
+      },
+      "PBEsol-DPA4.yaml": {
+        "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\PBEsol-matched-DFT-DPA4-20261031-02\\DPA4\\phonopy_params.yaml",
+        "sha256": "d8d4fb211d144668c06632182b07c9d1b2d8eaa0df578d1e14c46a9e6217cd53"
+      },
+      "r2SCAN-DFT.yaml": {
+        "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\r2SCAN-matched-DFT-DPA4-20261101-01\\DFT\\phonopy_params.yaml",
+        "sha256": "c31ed6b77708371f0290e80ab80db1cb548017d8d6ffa882cca0fcb9054369fa"
+      },
+      "r2SCAN-DPA4.yaml": {
+        "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\r2SCAN-matched-DFT-DPA4-20261101-01\\DPA4\\phonopy_params.yaml",
+        "sha256": "537a57a9b36edb6c275ad518101d45ddf09009790eea9253cf29db0385476969"
+      }
+    },
+    "qualification": "Draft at current converged SCF settings. Reference diagnostics and electronic/supercell convergence remain pending."
+  },
+  "results": {
+    "PBE": {
+      "DFT": {
+        "min_frequency_THz": -1.9348512893167248e-07,
+        "max_frequency_THz": 8.375890715372075,
+        "gamma_THz": [
+          -1.9348512893167248e-07,
+          9.778573364572523e-08,
+          2.1583470391022103e-07,
+          3.964105491655709,
+          3.9641054934760698,
+          5.408169221658665
+        ],
+        "DOS_integral": 3.0,
+        "modes_below_minus_0p001": 0
+      },
+      "DPA4": {
+        "min_frequency_THz": -1.970500977394602e-07,
+        "max_frequency_THz": 8.180695722967917,
+        "gamma_THz": [
+          -1.970500977394602e-07,
+          -9.823140258328791e-08,
+          1.8635570037641308e-07,
+          3.7999183275724993,
+          3.799918329369412,
+          4.903233387950142
+        ],
+        "DOS_integral": 3.0,
+        "modes_below_minus_0p001": 0
+      },
+      "sorted_band_RMSE_THz": 0.209046952110402
+    },
+    "PBEsol": {
+      "DFT": {
+        "min_frequency_THz": -3.2638854220271034e-07,
+        "max_frequency_THz": 8.642149315764422,
+        "gamma_THz": [
+          -3.2638854220271034e-07,
+          1.8659745231098083e-07,
+          2.8180632647231136e-07,
+          3.786476804712821,
+          3.786476808537187,
+          5.757503575023925
+        ],
+        "DOS_integral": 3.0,
+        "modes_below_minus_0p001": 0
+      },
+      "DPA4": {
+        "min_frequency_THz": -3.010922825349483e-07,
+        "max_frequency_THz": 8.605287961743292,
+        "gamma_THz": [
+          -3.010922825349483e-07,
+          -6.140590284095295e-08,
+          2.4492960583179197e-07,
+          3.7647488176796466,
+          3.7647488213917155,
+          4.954178783646813
+        ],
+        "DOS_integral": 3.0,
+        "modes_below_minus_0p001": 0
+      },
+      "sorted_band_RMSE_THz": 0.2780982429114023
+    },
+    "r2SCAN": {
+      "DFT": {
+        "min_frequency_THz": -1.0492578024122476e-07,
+        "max_frequency_THz": 8.864433333621434,
+        "gamma_THz": [
+          -1.0492578024122476e-07,
+          1.090091263407838e-07,
+          2.3215696930406437e-07,
+          4.586615641085168,
+          4.586615643092987,
+          5.189323501615258
+        ],
+        "DOS_integral": 3.0000000000000004,
+        "modes_below_minus_0p001": 0
+      },
+      "DPA4": {
+        "min_frequency_THz": 1.933456805977079e-08,
+        "max_frequency_THz": 8.89147449718124,
+        "gamma_THz": [
+          1.933456805977079e-08,
+          1.6085954537821553e-07,
+          2.736974896610176e-07,
+          4.220688045959042,
+          4.5631672023875,
+          4.563167204384806
+        ],
+        "DOS_integral": 3.0,
+        "modes_below_minus_0p001": 0
+      },
+      "sorted_band_RMSE_THz": 0.2594494686193214
+    }
+  },
+  "experiment_points_each_panel": 77,
+  "panels": 6,
+  "common_axis": "Archived normalized path ticks; experimental coordinates unchanged",
+  "model_geometry": "Same XC-specific DFT equilibrium for DFT and DPA4; no new ML relaxation",
+  "script_sha256": "0cc85502a13b6ac8a06ff771857d0087807a8db7395950b000ed515e77c85820"
+}

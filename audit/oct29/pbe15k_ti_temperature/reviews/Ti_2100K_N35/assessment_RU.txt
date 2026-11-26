@@ -1,0 +1,16 @@
+2100 K N=35: новый полный пакет. Все ошибки ниже — формальные SE.
+
+40ps: 2.549700 +/- 0.047598 мПа·с; neff=63.267; costZ=0.580; cutoffZ=3.805.
+first20ps: 2.587773 +/- 0.067424 мПа·с; neff=35.869; costZ=0.377; cutoffZ=2.882.
+second20ps: 2.499532 +/- 0.063849 мПа·с; neff=33.334; costZ=0.910; cutoffZ=-0.107.
+Прежние30: 2.559084+/-0.051695; изменение40 -0.3667%; изменениеSE -7.926%.
+Новые5: 2.496424+/-0.116244; против прежнихZ=0.493; costZ=-0.099; cutoffZ=1.011.
+Отдельные5k: 2.645917+/-0.108299; отличие -3.636%. Исторического15k при этойT нет.
+[{"id": "Ti_2100K", "flags": {"minimum_replicas": true, "precision": true, "last_three_stability": true, "duration_stability": true, "spectral_points": true, "cost": true, "cutoff": false, "new_batch_consistency": true, "window_fit_diagnostics": false}, "passed": false, "last_three_relative_range": 0.011564686291877508, "max_20_40_relative_difference": 0.019676088687911597}]
+Полных прохождений 0/2; stop=False; review hold=False.
+All nine diagnostic figures inspected. Main cutoff weights: full40 near1.5THz,first20 near1.7THz,second20 near1.5THz,new5 near1.8THz with a modest upper shoulder. No dominant high-frequency mode is visible. Full40 cutoffZ3.805 andfirst20Z2.882 fail;second20 andnew5 pass. Allcost pass. Persistent cutoff failure is not physical drift and is not repaired by substituting a post-hoc common-cutoff fit.
+Formal SE excludes model, protocol and cutoff systematics.
+Accumulated estimates and windows20/40ps are correlated; stopping is a heuristic.
+Historical15k and5k remain separate; agreement with5k is not a stop criterion.
+Fixed article profile and the earlier preview snapshot remain unchanged.
+Не проходит только cutoff полного40ps иfirst20ps (и общий флаг всех окон). N35,SE1.8668%,размах1.1565%,20/40=1.9676%,neff63.2667,newbatchZ0.4925 проходят. ПриN>=50 устойчивой статистике и плохой диагностике — reviewhold; сейчасN35.

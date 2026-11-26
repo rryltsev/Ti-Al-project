@@ -1,0 +1,32 @@
+{
+  "models": {
+    "PBE": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "article_run": "TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047",
+      "checkpoint_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "checkpoint_path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "checkpoint_step": 15000,
+      "artifact_format": "original PyTorch checkpoint; direct CPU DeepPot inference",
+      "prediction_cache": "PBE-15000",
+      "user_selected_date": "2026-10-26"
+    },
+    "PBEsol": {
+      "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBEsol/model_frozen.pt2",
+      "sha256": "a7c63464cd92745e8cc1dd153e2e8678da63a7fd523479e682eb7c02a3d05a3f",
+      "article_run": "TiAl_tune_sol_Neo_DPA4_shard_20260920_040140",
+      "checkpoint_sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+      "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBEsol/checkpoint.pt"
+    },
+    "r2SCAN": {
+      "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+      "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a",
+      "article_run": "TiAl_tune_scan_Neo_DPA4_shard_20260919_153828",
+      "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/checkpoint.pt"
+    }
+  },
+  "previous_source_manifest_sha256": "a6782826cf43eb860ea700995a91372f95fbd944a3172f891b2ae35752f9b054",
+  "PBE_provenance": "models/PBE-15000/source-manifest.json",
+  "PBE_source_sha256": "392d43ef625a468f6f4c153873db6e70af9ca8ff05a80ff1473a74de26a15306"
+}

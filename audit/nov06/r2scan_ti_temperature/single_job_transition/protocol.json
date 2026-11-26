@@ -1,0 +1,68 @@
+{
+  "version": "r2scan-single-job-refinement-v2",
+  "run_id": "r2scan-ti-sequential-refinement-20261106-02",
+  "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02",
+  "job_id": "20988268",
+  "dispatcher_remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K",
+  "allocation": {
+    "gpu": "a100:1",
+    "cpus": 6,
+    "memory": "32G",
+    "walltime": "20:00:00"
+  },
+  "temperature_order_K": [
+    1873,
+    1941,
+    2000,
+    2100
+  ],
+  "batch_size": 5,
+  "states": {
+    "Ti_1873K": {
+      "temperature_K": 1873,
+      "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\Ti_1873K",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1873K",
+      "protocol_sha256": "f5c7202e32f96f56a2b81461ae21606f5a2e1e0aec4500e382e7a28f41bd3490",
+      "legacy_replicas": 30,
+      "job_id": "20988268"
+    },
+    "Ti_1941K": {
+      "temperature_K": 1941,
+      "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\Ti_1941K",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1941K",
+      "protocol_sha256": "63786d8ccd671a68954ead5caa85fc1ba1950fab6de190d6c98b0b051074d394",
+      "legacy_replicas": 15,
+      "job_id": "20988268"
+    },
+    "Ti_2000K": {
+      "temperature_K": 2000,
+      "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\Ti_2000K",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_2000K",
+      "protocol_sha256": "8f7606c9281b35ff3d2d6dc94f21bd2fd20b027818cb6429ebfbf4c83865e55d",
+      "legacy_replicas": 15,
+      "job_id": "20988268"
+    },
+    "Ti_2100K": {
+      "temperature_K": 2100,
+      "local": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\nov06\\r2scan_ti_temperature\\single_job_transition\\Ti_2100K",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_2100K",
+      "protocol_sha256": "68927b710f3283e48dafcb80d3893101a29ba6734d179744c9e55913d6f5e766",
+      "legacy_replicas": 15,
+      "job_id": "20988268"
+    }
+  },
+  "checkpoint": {
+    "functional": "r2SCAN",
+    "step": 23200,
+    "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\output_model\\ckpt\\model.ckpt-23200.pt",
+    "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+    "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt",
+    "article_checkpoint": true
+  },
+  "frozen_model": {
+    "path": "/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2",
+    "sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380"
+  },
+  "sampling_policy": "Refine all existing75 legacy trajectories by explicit5-replica blocks; first finite cycle adds5perT,20new total. No forced30new perT. Assess updated statistics before another plan.",
+  "inventory_sha256": "25f3ab961d6c8de23bc170a0a068efd54b58423b6d2ef4a24ff86ad49e999ce0"
+}

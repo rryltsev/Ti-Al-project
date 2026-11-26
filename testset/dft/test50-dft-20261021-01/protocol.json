@@ -1,0 +1,19 @@
+{
+  "run_id": "test50-dft-20261021-01",
+  "remote_root": "/home6/u3129/tial-testsets/test50-dft-20261021-01",
+  "dataset_root": "/home6/u3129/tial-testsets/TiAl-test50-v1-20261021/TiAl-test50-v1",
+  "functionals": ["PBE", "PBEsol", "r2SCAN"],
+  "encut_eV": 550,
+  "cutoff_resolution": "User explicitly chose 550 eV for all three on 2026-10-21; archived PBE template contains 520 eV and historical PBE OUTCAR is unavailable.",
+  "common_incar": {"PREC":"Accurate","LREAL":"Auto","EDIFF":"1E-6","ISMEAR":1,"SIGMA":0.1,"ALGO":"Normal","NCORE":6,"KPAR":1,"NELMIN":4,"NELM":100,"NSW":0,"IBRION":-1,"ISIF":2,"ISPIN":1,"ISYM":2,"ISTART":0,"ICHARG":2,"LASPH":".TRUE.","NWRITE":1,"LCHARG":".FALSE.","LWAVE":".FALSE."},
+  "kpoints": {"generator":"kpLib 1.1.1","min_distance_A":35.0,"include_gamma":"auto","symprec_A":0.00001,"min_total_kpoints":1,"use_scale_factor":false,"reduction":"time reversal only; spatial symmetry checked"},
+  "paw_sha256": {"Al":"17880443556af62b473fe41b62a467bd001ad55d2cabe504a3f22e34d4e9db96","Ti":"1a7a8efddf2a5b6c8861aa48543d0531abc8e9b6e54500458b415b06354c25ba"},
+  "vasp_environment":"/home/u3129/.local/opt/vasp/6.6.1-oneapi-2025/env.sh",
+  "vasp_binary":"/home/u3129/.local/opt/vasp/6.6.1-oneapi-2025/src/vasp.6.6.1/bin/vasp_std",
+  "grid_python":"/home6/u3129/mlip-research/envs/kplib_111/bin/python",
+  "analysis_python":"/home6/u3129/tial-phonons/envs/phonopy-4.8.2/bin/python",
+  "resources":{"partition":"apollo","account":"imet-2026-2","qos":"normal","nodes":1,"ranks":24,"cpus_per_task":1,"memory_GB":64,"walltime":"20:00:00","array":"0-49%2","maximum_concurrent_tasks":6,"maximum_reserved_CPU_hours":72000},
+  "retries":"No automatic resubmission or parameter changes.",
+  "software_differences":"Historical VASP 6.3.2 and Java grid generator 2020.11.25 unavailable under current account. Same PAW bytes and original grid density criterion retained; software versions are not identical. Parallel layout standardized at 24 MPI ranks, NCORE=6, KPAR=1.",
+  "authorization":"User explicitly requested all 150 single-point DFT labels; no geometry relaxation; separate from phonon and Al32 work."
+}

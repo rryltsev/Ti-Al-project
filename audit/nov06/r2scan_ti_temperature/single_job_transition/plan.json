@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "targets_new_replicas": {
+    "Ti_1873K": 5,
+    "Ti_1941K": 5,
+    "Ti_2000K": 5,
+    "Ti_2100K": 5
+  },
+  "batch_size": 5,
+  "order": [
+    "Ti_1873K",
+    "Ti_1941K",
+    "Ti_2000K",
+    "Ti_2100K"
+  ],
+  "end_action": "finish_cycle_and_assess",
+  "automatic_extension": false,
+  "authorization": "User2026-11-06 requested one Slurm job and sequential five-replica refinement of existing statistics"
+}

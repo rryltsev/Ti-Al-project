@@ -1,0 +1,20 @@
+reset_timestep 0
+velocity all create 2100 29102752 dist gaussian mom yes
+fix equilibrate all nvt temp 2100 2100 0.1
+run 1000
+unfix equilibrate
+write_data /misc/home6/u3129/tial-testsets/pbe15k-ti-temperature-20261029-01/states/Ti_2100K/replicas/replica_0015/attempt_001/production/mol.data
+reset_timestep 0
+fix sample all nvt temp 2100 2100 0.2
+variable pxx equal pxx
+variable pyy equal pyy
+variable pzz equal pzz
+variable pxy equal pxy
+variable pxz equal pxz
+variable pyz equal pyz
+run 0
+fix pressure all ave/time 1 1 1 v_pxx v_pyy v_pzz v_pxy v_pxz v_pyz file /misc/home6/u3129/tial-testsets/pbe15k-ti-temperature-20261029-01/states/Ti_2100K/replicas/replica_0015/attempt_001/production/pressure.data
+restart 10000 /misc/home6/u3129/tial-testsets/pbe15k-ti-temperature-20261029-01/states/Ti_2100K/replicas/replica_0015/attempt_001/production/restart.a /misc/home6/u3129/tial-testsets/pbe15k-ti-temperature-20261029-01/states/Ti_2100K/replicas/replica_0015/attempt_001/production/restart.b
+run 40000
+write_restart /misc/home6/u3129/tial-testsets/pbe15k-ti-temperature-20261029-01/states/Ti_2100K/replicas/replica_0015/attempt_001/production/final.restart
+write_data /misc/home6/u3129/tial-testsets/pbe15k-ti-temperature-20261029-01/states/Ti_2100K/replicas/replica_0015/attempt_001/production/final.data

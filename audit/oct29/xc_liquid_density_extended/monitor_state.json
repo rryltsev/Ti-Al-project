@@ -1,0 +1,283 @@
+{
+  "checked_utc": "2026-10-31T21:42:17.389849+00:00",
+  "job_id": "20968916",
+  "scheduler_state": "COMPLETED",
+  "elapsed_at_status": "18:46:48",
+  "node": "tesla-a101",
+  "gpu": "NVIDIA A100-PCIE-40GB",
+  "active_point": null,
+  "active_stage": null,
+  "active_stage_step_logged": null,
+  "completed_points": 14,
+  "completed_ids": [
+    "PBEsol-1873",
+    "r2SCAN-1873",
+    "PBEsol-2500",
+    "r2SCAN-2500",
+    "PBEsol-2400",
+    "r2SCAN-2400",
+    "PBEsol-2300",
+    "r2SCAN-2300",
+    "PBEsol-2200",
+    "r2SCAN-2200",
+    "PBEsol-2100",
+    "r2SCAN-2100",
+    "PBEsol-2000",
+    "r2SCAN-2000"
+  ],
+  "failed_points": [],
+  "analyzed_points": 14,
+  "planned_points": 14,
+  "preflight_status": "passed",
+  "preflight_checked_configurations": 14,
+  "collection_status": "verified",
+  "new_files": 7,
+  "verified_files": 102,
+  "automation_id": "ti-pbesol-r2scan-3",
+  "automation_status": "DELETED",
+  "figure_updated": true,
+  "notification": "NOTIFY",
+  "qc_summary": [
+    {
+      "id": "PBEsol-1873",
+      "rho_g_cm3": 4.483021938205391,
+      "sem_g_cm3": 0.0006303202965307609,
+      "T_corrected_K": 1873.0082645888322,
+      "P_MPa": 7.4063859683471565,
+      "P_ci95_MPa": [
+        4.759092830296912,
+        10.0536791063974
+      ],
+      "MSD_10ps_A2": 28.25466453419685,
+      "solid_fraction_last10": 0.001,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "r2SCAN-1873",
+      "rho_g_cm3": 4.3367622005109485,
+      "sem_g_cm3": 0.0006599467170881747,
+      "T_corrected_K": 1873.0263492749255,
+      "P_MPa": 7.21858015255776,
+      "P_ci95_MPa": [
+        4.085422246418877,
+        10.351738058696643
+      ],
+      "MSD_10ps_A2": 26.653410126776517,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "PBEsol-2500",
+      "rho_g_cm3": 4.376538794241795,
+      "sem_g_cm3": 0.0008014543938701308,
+      "T_corrected_K": 2500.00938178058,
+      "P_MPa": 10.467660582723308,
+      "P_ci95_MPa": [
+        7.390261385062561,
+        13.545059780384058
+      ],
+      "MSD_10ps_A2": 56.96535093337586,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "r2SCAN-2500",
+      "rho_g_cm3": 4.235498691411317,
+      "sem_g_cm3": 0.0006637693361102502,
+      "T_corrected_K": 2500.0494173499633,
+      "P_MPa": 9.054817353851323,
+      "P_ci95_MPa": [
+        5.606693954345005,
+        12.50294075335764
+      ],
+      "MSD_10ps_A2": 52.64381885941734,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "PBEsol-2400",
+      "rho_g_cm3": 4.39273203134502,
+      "sem_g_cm3": 0.0006487009027917309,
+      "T_corrected_K": 2400.0287822859464,
+      "P_MPa": 9.50700671980407,
+      "P_ci95_MPa": [
+        6.148501264487298,
+        12.865512175120841
+      ],
+      "MSD_10ps_A2": 50.92798002984944,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "r2SCAN-2400",
+      "rho_g_cm3": 4.251643324733988,
+      "sem_g_cm3": 0.000653854440378481,
+      "T_corrected_K": 2400.0286876247483,
+      "P_MPa": 8.783474280080453,
+      "P_ci95_MPa": [
+        5.777151993476886,
+        11.789796566684021
+      ],
+      "MSD_10ps_A2": 47.095967700160614,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "PBEsol-2300",
+      "rho_g_cm3": 4.41081224888861,
+      "sem_g_cm3": 0.0005863665033736605,
+      "T_corrected_K": 2300.0225618332456,
+      "P_MPa": 9.950201045977082,
+      "P_ci95_MPa": [
+        5.966983620735027,
+        13.933418471219136
+      ],
+      "MSD_10ps_A2": 46.55307567141621,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "r2SCAN-2300",
+      "rho_g_cm3": 4.268644626473565,
+      "sem_g_cm3": 0.0005594589506442035,
+      "T_corrected_K": 2300.0016692051677,
+      "P_MPa": 9.987495921255203,
+      "P_ci95_MPa": [
+        6.64396224727923,
+        13.331029595231175
+      ],
+      "MSD_10ps_A2": 46.39996984638521,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "PBEsol-2200",
+      "rho_g_cm3": 4.427913351183678,
+      "sem_g_cm3": 0.0005851613808239863,
+      "T_corrected_K": 2199.9760573482695,
+      "P_MPa": 9.036957051087276,
+      "P_ci95_MPa": [
+        6.815407009030878,
+        11.258507093143672
+      ],
+      "MSD_10ps_A2": 42.705424458267224,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "r2SCAN-2200",
+      "rho_g_cm3": 4.284046479004776,
+      "sem_g_cm3": 0.0005412762447322725,
+      "T_corrected_K": 2200.0013943071845,
+      "P_MPa": 9.697554372035148,
+      "P_ci95_MPa": [
+        6.364602384966738,
+        13.030506359103558
+      ],
+      "MSD_10ps_A2": 39.58169789474093,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "PBEsol-2100",
+      "rho_g_cm3": 4.444685755781087,
+      "sem_g_cm3": 0.0004880850705559168,
+      "T_corrected_K": 2099.9678999104067,
+      "P_MPa": 7.852340482634812,
+      "P_ci95_MPa": [
+        5.179477938523203,
+        10.525203026746421
+      ],
+      "MSD_10ps_A2": 38.62689132401475,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "r2SCAN-2100",
+      "rho_g_cm3": 4.299608164633003,
+      "sem_g_cm3": 0.0005063033007943474,
+      "T_corrected_K": 2099.985068902754,
+      "P_MPa": 7.559712272604233,
+      "P_ci95_MPa": [
+        4.731803904709552,
+        10.387620640498914
+      ],
+      "MSD_10ps_A2": 35.5468575255208,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "PBEsol-2000",
+      "rho_g_cm3": 4.461104176606231,
+      "sem_g_cm3": 0.0005317035577555172,
+      "T_corrected_K": 2000.0234438250454,
+      "P_MPa": 9.284939057474496,
+      "P_ci95_MPa": [
+        6.382758734811538,
+        12.187119380137457
+      ],
+      "MSD_10ps_A2": 34.65380727044128,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    },
+    {
+      "id": "r2SCAN-2000",
+      "rho_g_cm3": 4.31609070947682,
+      "sem_g_cm3": 0.0007774769496481087,
+      "T_corrected_K": 2000.0048194394997,
+      "P_MPa": 8.362593901846605,
+      "P_ci95_MPa": [
+        5.405585538574376,
+        11.319602265118833
+      ],
+      "MSD_10ps_A2": 30.98631218647335,
+      "solid_fraction_last10": 0.0,
+      "warnings": [
+        "Mean pressure excludes target 1 bar in block 95% interval; SEM excludes protocol bias"
+      ]
+    }
+  ],
+  "runtime_assessment": {
+    "actual_elapsed": "18:46:48",
+    "allocation_limit": "20:00:00",
+    "actual_margin": "01:13:12",
+    "time_limit_risk": false
+  },
+  "latest_user_requested_preview": {
+    "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\xc_liquid_density_extended\\previews\\20261031T185729Z",
+    "snapshot_unix": 1793473049.3633275,
+    "completed_points": 12,
+    "partial_id": "PBEsol-2000",
+    "partial_ps": 22.79,
+    "note": "Separate user-requested preview, visually verified; article version unchanged."
+  },
+  "article_figure_pdf": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\figures\\density_ti_6e45e69b79dc.pdf",
+  "completion_verification": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct29\\xc_liquid_density_extended\\analysis\\final_verification.json",
+  "automation_deleted_utc": "2026-10-31T21:42:58.077460+00:00"
+}

@@ -1,0 +1,181 @@
+{
+  "registry": {
+    "status": "frozen",
+    "policy": "Fixed user-selected models. PBE switched5k->15k on2026-10-26 and15k->20k on2026-10-29 by explicit user requests after Test50 inspection. Preserve separate histories; no training or energy shifts on Test50.",
+    "models": {
+      "PBE": {
+        "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-20000.pt",
+        "sha256": "3b0b4b69f8fca7be5bae4a5f24498aac904efad08f126f4a57de035e0379c67e",
+        "article_run": "TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047",
+        "checkpoint_sha256": "3b0b4b69f8fca7be5bae4a5f24498aac904efad08f126f4a57de035e0379c67e",
+        "checkpoint_path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-20000.pt",
+        "checkpoint_step": 20000,
+        "artifact_format": "original PyTorch checkpoint; direct CPU DeepPot inference",
+        "prediction_cache": "PBE-20000",
+        "user_selected_date": "2026-10-29"
+      },
+      "PBEsol": {
+        "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBEsol/model_frozen.pt2",
+        "sha256": "a7c63464cd92745e8cc1dd153e2e8678da63a7fd523479e682eb7c02a3d05a3f",
+        "article_run": "TiAl_tune_sol_Neo_DPA4_shard_20260920_040140",
+        "checkpoint_sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+        "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBEsol/checkpoint.pt"
+      },
+      "r2SCAN": {
+        "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+        "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a",
+        "article_run": "TiAl_tune_scan_Neo_DPA4_shard_20260919_153828",
+        "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+        "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/checkpoint.pt"
+      }
+    },
+    "frozen_unix": 1793243509.504024,
+    "source_manifest_sha256": "a6782826cf43eb860ea700995a91372f95fbd944a3172f891b2ae35752f9b054",
+    "model_selection": {
+      "change": "PBE15000 ->20000",
+      "date": "2026-10-29",
+      "authorization": "User explicitly requested PBE20k for further monitoring, rebuilt graphs/metrics and separate15k history in this chat.",
+      "qualification": "Replacement after viewing Test50 comparison. Preserve adaptive checkpoint-selection provenance; not a blind preselected checkpoint. PBEsol/r2SCAN/pretrained unchanged.",
+      "previous_PBE": {
+        "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+        "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+        "article_run": "TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047",
+        "checkpoint_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+        "checkpoint_path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+        "checkpoint_step": 15000,
+        "artifact_format": "original PyTorch checkpoint; direct CPU DeepPot inference",
+        "prediction_cache": "PBE-15000",
+        "user_selected_date": "2026-10-26"
+      },
+      "previous_registry_sha256": "841a85129df8ec1c1e7951d6e53b0829c52d2c8dd145ec6cef3b99d95630efea",
+      "previous_segment": "results/model-history/PBE-15000/history.json"
+    },
+    "active_source_manifest": "runs/pbe20k-switch-20261029-01/active-source-manifest.json",
+    "active_source_manifest_sha256": "b38bad8d4a5bf61bc07dcb9bd289acd0df4218d910f909c36c4c37b069774828",
+    "source_manifest_scope": "Original source_manifest_sha256 describes initial exports; active_source_manifest describes current PBE20k and unchanged other models.",
+    "model_selection_history": [
+      {
+        "change": "PBE 5000 -> 15000",
+        "date": "2026-10-26",
+        "authorization": "User explicitly requested 15k in this chat, referring to Analysis of TiAl article materials chat.",
+        "source_thread": "01a12c64-36f9-7850-92d2-127c677cbe5f",
+        "qualification": "Model replacement after earlier Test50 results were available. Report this history; do not claim a blind preselected checkpoint. PBEsol/r2SCAN/pretrained unchanged.",
+        "previous_PBE": {
+          "path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBE/model_frozen.pt2",
+          "sha256": "660ebda9c96dedd5fc297148d6463fea535b0663e028c49e3bb78a4f21ca60bc",
+          "article_run": "TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047",
+          "checkpoint_sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac",
+          "checkpoint_path": "/misc/home6/u3129/tial-testsets/model-export-20261022-02-cpu/PBE/checkpoint.pt"
+        },
+        "previous_registry_sha256": "a80c785372b740b962f2384ef73ee230aee30672213a470671bfed7779120fa6"
+      },
+      {
+        "change": "PBE15000 ->20000",
+        "date": "2026-10-29",
+        "authorization": "User explicitly requested PBE20k for further monitoring, rebuilt graphs/metrics and separate15k history in this chat.",
+        "qualification": "Replacement after viewing Test50 comparison. Preserve adaptive checkpoint-selection provenance; not a blind preselected checkpoint. PBEsol/r2SCAN/pretrained unchanged.",
+        "previous_PBE": {
+          "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+          "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+          "article_run": "TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047",
+          "checkpoint_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+          "checkpoint_path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+          "checkpoint_step": 15000,
+          "artifact_format": "original PyTorch checkpoint; direct CPU DeepPot inference",
+          "prediction_cache": "PBE-15000",
+          "user_selected_date": "2026-10-26"
+        },
+        "previous_registry_sha256": "841a85129df8ec1c1e7951d6e53b0829c52d2c8dd145ec6cef3b99d95630efea",
+        "previous_segment": "results/model-history/PBE-15000/history.json"
+      }
+    ]
+  },
+  "pretrained": {
+    "status": "frozen",
+    "model_id": "DPA4-Neo-OMat24-v20260805",
+    "label": "Pretrained DPA4-Neo",
+    "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+    "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+    "local_path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\models\\pretrained\\DPA4-Neo-OMat24-v20260805.pt",
+    "repository": "deepmodelingcommunity/DPA4-OMat24",
+    "revision": "173bfd5a26f90a756ee891777270ef117078d9be",
+    "source_url": "https://huggingface.co/deepmodelingcommunity/DPA4-OMat24/resolve/173bfd5a26f90a756ee891777270ef117078d9be/DPA4-Neo-OMat24-v20260805.pt",
+    "pinned_unix": 1792640871.5951397,
+    "policy": "One original model evaluated unchanged against all three DFT labels. No fitting, bias adjustment, energy alignment or checkpoint selection on Test50.",
+    "pretraining_overlap": "Unknown; independence from foundation pretraining is not established."
+  },
+  "local_files": [
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\pbesol_checkpoint.pt",
+      "sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+      "bytes": 7079769
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\pbe_checkpoint.pt",
+      "sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac",
+      "bytes": 7079447
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\scan_checkpoint.pt",
+      "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "bytes": 7079769
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\model.ckpt.pt",
+      "sha256": "ca0dff4ddcadcf36b4d674cbe378f3199b24d9aa3a029aa42774fc92b3e70c65",
+      "bytes": 7079769
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\model.ckpt.pt",
+      "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "bytes": 7079769
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_sol_Neo_DPA4_shard_20260920_040140\\model.ckpt.pt",
+      "sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+      "bytes": 7079769
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\models\\PBE\\model_frozen.pt2",
+      "sha256": "660ebda9c96dedd5fc297148d6463fea535b0663e028c49e3bb78a4f21ca60bc",
+      "bytes": 16691233
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\models\\PBEsol\\model_frozen.pt2",
+      "sha256": "a7c63464cd92745e8cc1dd153e2e8678da63a7fd523479e682eb7c02a3d05a3f",
+      "bytes": 16693537
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\models\\pretrained\\DPA4-Neo-OMat24-v20260805.pt",
+      "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+      "bytes": 4583819
+    },
+    {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\models\\r2SCAN\\model_frozen.pt2",
+      "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a",
+      "bytes": 16691873
+    }
+  ],
+  "harmonic_model_selection": {
+    "purpose": "Matched-protocol article Figure2 variant",
+    "user_choice": "2026-11-01: PBE15k, consistent with current manuscript, explicitly preferred over previous PBE5k comparison",
+    "PBE": {
+      "checkpoint": 15000,
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "force_job_id": "20973104"
+    },
+    "PBEsol": {
+      "checkpoint": 23100,
+      "sha256": "5a5359a713848d98a7746c70b46be65313d7d990c6bf39d68b40908dd9c7c295",
+      "force_job_id": "20972853"
+    },
+    "r2SCAN": {
+      "checkpoint": 23200,
+      "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "force_job_id": "20973060"
+    },
+    "protocol": "Same XC-specific DFT geometry and frozen force000/001/002 POSCARs; 4x4x3 cell; central pair +/-0.01A; common Phonopy force-constant processing",
+    "earlier_PBE5k_results": "Historical comparison retained; do not substitute its DOS or bands into the PBE15k candidate figure"
+  },
+  "trainable_parameter_mask": "pending_runtime_inspection"
+}

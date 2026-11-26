@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "steps": 3000,
+  "trainable": 21144842,
+  "changed_tensors": [
+    "0:I1/reducing_A:0",
+    "1:I1/reducing_AA:0",
+    "2:I1/reducing_AAA:0",
+    "3:I1/reducing_AAAA:0",
+    "4:I2/reducing_B:0",
+    "5:I2/reducing_BB:0",
+    "6:I2/reducing_BBB:0",
+    "7:I2/reducing_BBBB:0",
+    "8:R_Linear_0/Linear_R_Linear_0_no_decay:0",
+    "9:R_Linear_1/Linear_R_Linear_1_no_decay:0",
+    "10:R_Linear_2/Linear_R_Linear_2_no_decay:0",
+    "11:R1_Linear_0/Linear_R1_Linear_0_no_decay:0",
+    "12:R1_Linear_1/Linear_R1_Linear_1_no_decay:0",
+    "13:R1_Linear_2/Linear_R1_Linear_2_no_decay:0",
+    "14:rho/reducing_A:0",
+    "15:rho/reducing_AA:0",
+    "16:rho/reducing_AAA:0",
+    "17:rho/reducing_AAAA:0"
+  ],
+  "frozen_changed": [],
+  "optimizer_iterations": 3000,
+  "fresh_optimizer": true,
+  "recent_step_seconds": [
+    0.03944992832839489,
+    0.03953738883137703,
+    0.03961247205734253,
+    0.039318570867180824
+  ],
+  "first5_batch_hashes": [
+    "910dcf74db90927ae79237312772c3f64a256b54c634f7ff56d5c8c95d4e9e09",
+    "7d9dc2a5936d1e830e082752a14bb1712ff70f5cc468258780247c3b632b76b0",
+    "4339be72c9a55382caec415a1aa4fa7c902360166aa6accf49df56ed43ebede1",
+    "af77dedcd3ab71f9a76964d90db8c051641d3916c96fdcf323a84b2594666595",
+    "6628323ec0207cfad8527bd24cb76de4b1a449c0b8c1f27b1d409716839ad1c4"
+  ],
+  "GPU_memory": {
+    "current": 832585984,
+    "peak": 2358833664
+  }
+}

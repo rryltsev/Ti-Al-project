@@ -1,0 +1,21 @@
+{
+  "key": "trained-harmonics",
+  "job_id": "20990676",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:15:00",
+    "--array=0-3%2",
+    "--dependency=afterok:20990675",
+    "--job-name=TiAl-GRACE-pilot-H",
+    "--output=trained-H-%A_%a.log",
+    "trained-harmonics.sbatch"
+  ],
+  "utc": "2026-11-09T07:17:27.683373+00:00"
+}

@@ -1,0 +1,219 @@
+{
+  "source_T_K": 1245.0,
+  "N": 1400,
+  "shape": "10x10x7",
+  "cap": 0.4,
+  "axial_free": 1,
+  "time_part": "late",
+  "seed": 31292026,
+  "Q_divider": 0.37,
+  "Q_bandwidth": 0.04,
+  "search_T_mu": [
+    1200.0,
+    1280.0,
+    3.47,
+    3.62
+  ],
+  "draws": 0,
+  "converged": 0,
+  "min_blocks": 1,
+  "one_block_runs": 4,
+  "central": {
+    "T_K": 1243.9880544583045,
+    "mu_eV": 3.5454992277108808,
+    "x_atpct": 27.221076266382468,
+    "latent_meV_atom": 27.2425449637092,
+    "jump_Q": 0.604066420058978,
+    "phases": [
+      {
+        "x_atpct": 27.221076266382468,
+        "mean_Q": 0.15490098137482905,
+        "semigrand_meV_atom": 13.826669692107826,
+        "effective_frames": 77.56334536685247
+      },
+      {
+        "x_atpct": 27.221076266382447,
+        "mean_Q": 0.7589674014338071,
+        "semigrand_meV_atom": -13.415875271601372,
+        "effective_frames": 91.19219581811295
+      }
+    ],
+    "profile": {
+      "Q_modes": [
+        0.10250000000000001,
+        0.8125
+      ],
+      "Q_valley": 0.4025,
+      "lower_barrier": 1.2975462024561644
+    }
+  },
+  "conditional_95": {},
+  "divider_sensitivity": [
+    {
+      "Q_divider": 0.32,
+      "root": {
+        "T_K": 1244.288290269078,
+        "mu_eV": 3.5460681462735946,
+        "x_atpct": 27.243945078285936,
+        "latent_meV_atom": 27.012683965981502,
+        "jump_Q": 0.6078900337139166,
+        "phases": [
+          {
+            "x_atpct": 27.243945078285936,
+            "mean_Q": 0.14095216538426136,
+            "semigrand_meV_atom": 14.267036692495635,
+            "effective_frames": 70.09107544568194
+          },
+          {
+            "x_atpct": 27.243945078285943,
+            "mean_Q": 0.748842199098178,
+            "semigrand_meV_atom": -12.745647273485865,
+            "effective_frames": 94.474846928568
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.40750000000000003,
+          "lower_barrier": 1.3177722156189102
+        }
+      }
+    },
+    {
+      "Q_divider": 0.37,
+      "root": {
+        "T_K": 1243.9880544583045,
+        "mu_eV": 3.5454992277108808,
+        "x_atpct": 27.221076266382468,
+        "latent_meV_atom": 27.242544963709186,
+        "jump_Q": 0.604066420058978,
+        "phases": [
+          {
+            "x_atpct": 27.221076266382468,
+            "mean_Q": 0.15490098137482905,
+            "semigrand_meV_atom": 13.826669692107831,
+            "effective_frames": 77.56334536685245
+          },
+          {
+            "x_atpct": 27.221076266382447,
+            "mean_Q": 0.758967401433807,
+            "semigrand_meV_atom": -13.415875271601356,
+            "effective_frames": 91.19219581811295
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.4025,
+          "lower_barrier": 1.2975462024561664
+        }
+      }
+    },
+    {
+      "Q_divider": 0.4025,
+      "root": {
+        "T_K": 1243.8308456751906,
+        "mu_eV": 3.544978254919884,
+        "x_atpct": 27.201134123150347,
+        "latent_meV_atom": 27.347847266268907,
+        "jump_Q": 0.6005986480902541,
+        "phases": [
+          {
+            "x_atpct": 27.201134123150347,
+            "mean_Q": 0.1633386800283609,
+            "semigrand_meV_atom": 13.572025749974262,
+            "effective_frames": 81.98477757963475
+          },
+          {
+            "x_atpct": 27.201134123150354,
+            "mean_Q": 0.763937328118615,
+            "semigrand_meV_atom": -13.775821516294647,
+            "effective_frames": 89.69923133287101
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.4025,
+          "lower_barrier": 1.290108214349114
+        }
+      }
+    },
+    {
+      "Q_divider": 0.42,
+      "root": {
+        "T_K": 1243.7488937025291,
+        "mu_eV": 3.544743334414663,
+        "x_atpct": 27.19212723944344,
+        "latent_meV_atom": 27.37534185395468,
+        "jump_Q": 0.5982259229960272,
+        "phases": [
+          {
+            "x_atpct": 27.19212723944344,
+            "mean_Q": 0.16811702602747203,
+            "semigrand_meV_atom": 13.422332004877884,
+            "effective_frames": 84.31922566993713
+          },
+          {
+            "x_atpct": 27.19212723944345,
+            "mean_Q": 0.7663429490234992,
+            "semigrand_meV_atom": -13.953009849076796,
+            "effective_frames": 88.92086532425597
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.4025,
+          "lower_barrier": 1.285784031384531
+        }
+      }
+    },
+    {
+      "Q_divider": 0.47,
+      "root": {
+        "T_K": 1243.494663244311,
+        "mu_eV": 3.544326162941065,
+        "x_atpct": 27.17556208452138,
+        "latent_meV_atom": 27.324016814388393,
+        "jump_Q": 0.5883872560562727,
+        "phases": [
+          {
+            "x_atpct": 27.17556208452138,
+            "mean_Q": 0.18458470973139607,
+            "semigrand_meV_atom": 12.880583990375316,
+            "effective_frames": 91.95998663812708
+          },
+          {
+            "x_atpct": 27.175562084521392,
+            "mean_Q": 0.7729719657876688,
+            "semigrand_meV_atom": -14.443432824013076,
+            "effective_frames": 86.38977084227241
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.10250000000000001,
+            0.8125
+          ],
+          "Q_valley": 0.4025,
+          "lower_barrier": 1.2682814919868104
+        }
+      }
+    }
+  ],
+  "replicates": [],
+  "manifests": [
+    "solvus_closure/atomistic/series/zc4514l/windows.csv",
+    "solvus_closure/atomistic/series/zc4514c/windows.csv",
+    "solvus_closure/atomistic/series/zc4514r/windows.csv"
+  ]
+}

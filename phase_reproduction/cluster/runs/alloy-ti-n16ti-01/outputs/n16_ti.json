@@ -1,0 +1,1406 @@
+{
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "static_sha256": "80eadbb8a87deeddc0fafbc9df73be8d402adfc61f016eac7a7930fedfd1ea16",
+  "N": 16,
+  "shape": [
+    2,
+    2,
+    2
+  ],
+  "V_A3_atom": 17.288329847774033,
+  "temperature_K": 1000.0,
+  "replicas": 4,
+  "draws_per_orbit_per_replica": 1024,
+  "mixture_scales": [
+    1.0,
+    1.35
+  ],
+  "seed": 47399,
+  "convention": "Common Cartesian gauge, arithmetic mean displacement fixed, site Voronoi domain. Kinetic terms omitted for every composition.",
+  "overlap_screen": "min ESS across lambda >= 50 and largest endpoint weight <= 0.1; separately flag saddle escape",
+  "results": [
+    {
+      "id": "k02_0-1",
+      "N_Al": 2,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -115.21205239189918,
+      "ti_correction_eV_cell": -0.015926422179377574,
+      "fep_correction_eV_cell": -0.015925304584216565,
+      "coarse_ti_correction_eV_cell": -0.01594318785327966,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.012248134620727155,
+        -0.016032908118373147,
+        -0.01950759680311056,
+        -0.015763957519424752
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.026103566044515972,
+        -0.015606181795577455,
+        -0.004192680411801286,
+        -0.016411977818681638
+      ],
+      "correction_jackknife_se_eV_cell": 0.004448580038081334,
+      "ess_min": 533.1389996290898,
+      "ess_endpoint": 533.1389996290898,
+      "largest_endpoint_weight": 0.013992996491720295,
+      "harmonic_domain_probability": 0.998117532028566,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k02_0-2",
+      "N_Al": 2,
+      "degeneracy": 8,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -115.29113690133843,
+      "ti_correction_eV_cell": -0.007389325362937172,
+      "fep_correction_eV_cell": -0.007388505200935238,
+      "coarse_ti_correction_eV_cell": -0.0074016191175713935,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.006184046687768224,
+        -0.00923802473645684,
+        -0.007976124676576655,
+        -0.006119426723593431
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.010907192290206003,
+        -0.001592604634432346,
+        -0.005604565353335915,
+        -0.011090468358534028
+      ],
+      "correction_jackknife_se_eV_cell": 0.002262791713038903,
+      "ess_min": 647.4407642741538,
+      "ess_endpoint": 647.4407642741538,
+      "largest_endpoint_weight": 0.012145114301338597,
+      "harmonic_domain_probability": 0.993985387801095,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k02_0-4",
+      "N_Al": 2,
+      "degeneracy": 24,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -115.14807874067023,
+      "ti_correction_eV_cell": -0.0054878838591983165,
+      "fep_correction_eV_cell": -0.0054858356281558265,
+      "coarse_ti_correction_eV_cell": -0.0055185758647056556,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.004435449746060716,
+        -0.004983747153324554,
+        -0.006158520662810719,
+        -0.006358898691230679
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.008570175368870928,
+        -0.006982834805314454,
+        -0.0034440434279386285,
+        -0.0028206224270263323
+      ],
+      "correction_jackknife_se_eV_cell": 0.0013883811513350861,
+      "ess_min": 572.1133199421869,
+      "ess_endpoint": 572.1133199421869,
+      "largest_endpoint_weight": 0.012496088297572684,
+      "harmonic_domain_probability": 1.0018309330898418,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k02_0-6",
+      "N_Al": 2,
+      "degeneracy": 24,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -115.40280366234873,
+      "ti_correction_eV_cell": -0.016810613895311962,
+      "fep_correction_eV_cell": -0.01680929489904419,
+      "coarse_ti_correction_eV_cell": -0.016830354230482215,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.01740296538822726,
+        -0.018601272516645707,
+        -0.015057437215214993,
+        -0.016139642939765712
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.015008622559730614,
+        -0.011203904824622255,
+        -0.02186544178021587,
+        -0.018792728822069473
+      ],
+      "correction_jackknife_se_eV_cell": 0.002304465123985669,
+      "ess_min": 709.9727589982828,
+      "ess_endpoint": 709.9727589982828,
+      "largest_endpoint_weight": 0.014165393630428073,
+      "harmonic_domain_probability": 1.0009297035581937,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k02_0-13",
+      "N_Al": 2,
+      "degeneracy": 16,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -115.51387638537643,
+      "ti_correction_eV_cell": -0.020607855884798867,
+      "fep_correction_eV_cell": -0.020606403929521736,
+      "coarse_ti_correction_eV_cell": -0.02062959630034992,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.021180416573994276,
+        -0.02083553897515896,
+        -0.022183974935932466,
+        -0.0181809090055761
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.01886698016485859,
+        -0.01992107492452043,
+        -0.015698685524367737,
+        -0.027503686696213257
+      ],
+      "correction_jackknife_se_eV_cell": 0.002562213115239206,
+      "ess_min": 699.2159560958012,
+      "ess_endpoint": 699.2159560958012,
+      "largest_endpoint_weight": 0.017796110823301865,
+      "harmonic_domain_probability": 1.0100991102775727,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-1-2",
+      "N_Al": 3,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -111.5984819116394,
+      "ti_correction_eV_cell": -0.010945125513920673,
+      "fep_correction_eV_cell": -0.010943873348580886,
+      "coarse_ti_correction_eV_cell": -0.010963892897784239,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.008079758329591857,
+        -0.009272102767184365,
+        -0.013037476464762431,
+        -0.013270580715311491
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.019010062446958277,
+        -0.015777673400632686,
+        -0.004344627681606197,
+        -0.0035665411898243614
+      ],
+      "correction_jackknife_se_eV_cell": 0.003948864409108033,
+      "ess_min": 534.4621577261253,
+      "ess_endpoint": 534.4621577261253,
+      "largest_endpoint_weight": 0.014818214554974622,
+      "harmonic_domain_probability": 0.9959994765885667,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-1-4",
+      "N_Al": 3,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -111.51695604638793,
+      "ti_correction_eV_cell": -0.0018825336615124937,
+      "fep_correction_eV_cell": -0.0018821066904734175,
+      "coarse_ti_correction_eV_cell": -0.0018889448543404756,
+      "delete_one_ti_corrections_eV_cell": [
+        0.0009696830293073184,
+        -0.004661056916864389,
+        0.00011797160616358474,
+        -0.003819770248602216
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.00991301025085858,
+        0.0070348338119527514,
+        -0.007619604582230693,
+        0.004205073459034507
+      ],
+      "correction_jackknife_se_eV_cell": 0.0042076313524035715,
+      "ess_min": 692.2990800249778,
+      "ess_endpoint": 692.2990800249778,
+      "largest_endpoint_weight": 0.008380723148285652,
+      "harmonic_domain_probability": 0.9905057668276916,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-1-6",
+      "N_Al": 3,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -111.73691052915466,
+      "ti_correction_eV_cell": -0.015728114919542648,
+      "fep_correction_eV_cell": -0.015726419311256262,
+      "coarse_ti_correction_eV_cell": -0.015753536026516753,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.014133228007051546,
+        -0.01589018764457223,
+        -0.015718610358367135,
+        -0.017143901891812745
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.020342912736611346,
+        -0.015240032763304346,
+        -0.0157565341542185,
+        -0.011335578139598856
+      ],
+      "correction_jackknife_se_eV_cell": 0.001852221423502901,
+      "ess_min": 523.2610460726044,
+      "ess_endpoint": 523.2610460726044,
+      "largest_endpoint_weight": 0.024452711124946392,
+      "harmonic_domain_probability": 1.0048354284040837,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-1-12",
+      "N_Al": 3,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -111.76517904280955,
+      "ti_correction_eV_cell": -0.016697670605184883,
+      "fep_correction_eV_cell": -0.016690936012154132,
+      "coarse_ti_correction_eV_cell": -0.016798671591844803,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.02083504208154637,
+        -0.014931533236869542,
+        -0.010377383495324216,
+        -0.020227777637017556
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.002939481617928395,
+        -0.021788740685332018,
+        -0.03327469717307501,
+        -0.005145232744951056
+      ],
+      "correction_jackknife_se_eV_cell": 0.007379069545663964,
+      "ess_min": 78.65569615156136,
+      "ess_endpoint": 78.65569615156136,
+      "largest_endpoint_weight": 0.0925334701374851,
+      "harmonic_domain_probability": 0.9887862650228485,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-1-14",
+      "N_Al": 3,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -112.02265266375849,
+      "ti_correction_eV_cell": -0.021589168745911512,
+      "fep_correction_eV_cell": -0.021586908499873186,
+      "coarse_ti_correction_eV_cell": -0.02162306940719242,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.02158620416882922,
+        -0.019083526259421803,
+        -0.020992566609000344,
+        -0.024602877770101186
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.021598062043230625,
+        -0.02869631943299491,
+        -0.02335458520779915,
+        -0.01185850736854055
+      ],
+      "correction_jackknife_se_eV_cell": 0.003433060170660801,
+      "ess_min": 348.478960119083,
+      "ess_endpoint": 348.478960119083,
+      "largest_endpoint_weight": 0.03716651519761515,
+      "harmonic_domain_probability": 0.9924388641352416,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-2-4",
+      "N_Al": 3,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -111.75032703383887,
+      "ti_correction_eV_cell": -0.004968808000471571,
+      "fep_correction_eV_cell": -0.00496792780524211,
+      "coarse_ti_correction_eV_cell": -0.004981983064125122,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.006172468993066052,
+        -0.00645816652021929,
+        -0.002658074586439542,
+        -0.004533317995351765
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.0012534988372445493,
+        -0.0003397510480292643,
+        -0.011550941983689441,
+        -0.006262216038785537
+      ],
+      "correction_jackknife_se_eV_cell": 0.0026261313814426334,
+      "ess_min": 606.9393994033757,
+      "ess_endpoint": 606.9393994033757,
+      "largest_endpoint_weight": 0.018840521815315852,
+      "harmonic_domain_probability": 1.009358660357953,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-2-13",
+      "N_Al": 3,
+      "degeneracy": 16,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -112.24555065255963,
+      "ti_correction_eV_cell": -0.013479970294877925,
+      "fep_correction_eV_cell": -0.01347955625481088,
+      "coarse_ti_correction_eV_cell": -0.01348618180361689,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.012568958413630062,
+        -0.016352661429868336,
+        -0.013516642356583777,
+        -0.011403570655533286
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.016156608485740444,
+        -0.004238311816384592,
+        -0.013369860355828638,
+        -0.019424799677632276
+      ],
+      "correction_jackknife_se_eV_cell": 0.0031694109573379508,
+      "ess_min": 868.460326231116,
+      "ess_endpoint": 868.460326231116,
+      "largest_endpoint_weight": 0.008955348673061464,
+      "harmonic_domain_probability": 1.0032022770457751,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-4-8",
+      "N_Al": 3,
+      "degeneracy": 16,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -111.39360453642593,
+      "ti_correction_eV_cell": -0.004698376371718888,
+      "fep_correction_eV_cell": -0.004696322718226591,
+      "coarse_ti_correction_eV_cell": -0.004729155061005842,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.007547314922843655,
+        -0.00659916715287188,
+        -0.0013179889946248358,
+        -0.0031815407321526996
+      ],
+      "replica_ti_corrections_eV_cell": [
+        0.004461399092738648,
+        0.0012694906562518062,
+        -0.014109890661241327,
+        -0.0090948831656854
+      ],
+      "correction_jackknife_se_eV_cell": 0.0043690811712884395,
+      "ess_min": 333.6634764084355,
+      "ess_endpoint": 333.6634764084355,
+      "largest_endpoint_weight": 0.0317558577592204,
+      "harmonic_domain_probability": 0.9961063868747875,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k03_0-4-10",
+      "N_Al": 3,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -111.85774696328336,
+      "ti_correction_eV_cell": -0.015715239760994308,
+      "fep_correction_eV_cell": -0.01571122703069301,
+      "coarse_ti_correction_eV_cell": -0.015775375537653877,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.013679341799229515,
+        -0.01936375566860079,
+        -0.013251978594509254,
+        -0.016425752283375353
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.02154924142289745,
+        -0.0037393984928029735,
+        -0.02270791536151621,
+        -0.013547849835158329
+      ],
+      "correction_jackknife_se_eV_cell": 0.004244772370610728,
+      "ess_min": 248.58557925986872,
+      "ess_endpoint": 248.58557925986872,
+      "largest_endpoint_weight": 0.04975489471557197,
+      "harmonic_domain_probability": 0.9983349533366792,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-2-3",
+      "N_Al": 4,
+      "degeneracy": 12,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.7865653931827,
+      "ti_correction_eV_cell": 0.011179354499906268,
+      "fep_correction_eV_cell": 0.011181909866719306,
+      "coarse_ti_correction_eV_cell": 0.011141052783746988,
+      "delete_one_ti_corrections_eV_cell": [
+        0.013452854615238208,
+        0.01006399688769625,
+        0.010109459135951834,
+        0.011134795789103931
+      ],
+      "replica_ti_corrections_eV_cell": [
+        0.004698066820563816,
+        0.014614877542924879,
+        0.014471152418311213,
+        0.011313320652642346
+      ],
+      "correction_jackknife_se_eV_cell": 0.002381020229285465,
+      "ess_min": 427.6173476906502,
+      "ess_endpoint": 427.6173476906502,
+      "largest_endpoint_weight": 0.02182722121318903,
+      "harmonic_domain_probability": 1.0029880439535104,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-2-4",
+      "N_Al": 4,
+      "degeneracy": 192,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.93996931767772,
+      "ti_correction_eV_cell": -0.0026858534079321037,
+      "fep_correction_eV_cell": -0.002685835109506495,
+      "coarse_ti_correction_eV_cell": -0.002686130865126167,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.0056676278589816165,
+        -0.0009968060810324744,
+        0.00020399790527630556,
+        -0.004153827209104581
+      ],
+      "replica_ti_corrections_eV_cell": [
+        0.006933624895843961,
+        -0.007562984875921665,
+        -0.010815686980368657,
+        0.0018743798906498835
+      ],
+      "correction_jackknife_se_eV_cell": 0.0040846552015268165,
+      "ess_min": 574.493414630905,
+      "ess_endpoint": 574.493414630905,
+      "largest_endpoint_weight": 0.015321780216812613,
+      "harmonic_domain_probability": 1.0155990630588445,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-2-5",
+      "N_Al": 4,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.74834802967625,
+      "ti_correction_eV_cell": -0.0020952425171996904,
+      "fep_correction_eV_cell": -0.0020936792566555824,
+      "coarse_ti_correction_eV_cell": -0.002118714807491571,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.0002277622187693703,
+        -0.00467307482106177,
+        -0.004253117008300782,
+        0.0009111726212845304
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.0074664865899928354,
+        0.006136018968792468,
+        0.004723075329487576,
+        -0.010531616345488682
+      ],
+      "correction_jackknife_se_eV_cell": 0.0042269565585880825,
+      "ess_min": 239.36921817340226,
+      "ess_endpoint": 239.36921817340226,
+      "largest_endpoint_weight": 0.04205827585709998,
+      "harmonic_domain_probability": 1.0032754154443035,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-2-7",
+      "N_Al": 4,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.94676262124261,
+      "ti_correction_eV_cell": -0.01784510513467829,
+      "fep_correction_eV_cell": -0.017842814081653995,
+      "coarse_ti_correction_eV_cell": -0.017879444775181143,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.013825819968155205,
+        -0.019378857860034453,
+        -0.01919575673841964,
+        -0.01885727623447434
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.02888713990978326,
+        -0.013072633426333236,
+        -0.013661069812206115,
+        -0.014735062816189429
+      ],
+      "correction_jackknife_se_eV_cell": 0.004001753022963258,
+      "ess_min": 375.208582919122,
+      "ess_endpoint": 375.208582919122,
+      "largest_endpoint_weight": 0.02502812130199605,
+      "harmonic_domain_probability": 1.001716402047623,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-2-12",
+      "N_Al": 4,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.17135619573038,
+      "ti_correction_eV_cell": 0.001586990798658272,
+      "fep_correction_eV_cell": 0.0015889763530209018,
+      "coarse_ti_correction_eV_cell": 0.0015572157452942781,
+      "delete_one_ti_corrections_eV_cell": [
+        0.0010202035166155922,
+        0.004623132435665752,
+        0.0007198966671336077,
+        5.755198714000372e-05
+      ],
+      "replica_ti_corrections_eV_cell": [
+        0.003310074260136542,
+        -0.0069275373640756395,
+        0.004241961709972092,
+        0.006345400980941128
+      ],
+      "correction_jackknife_se_eV_cell": 0.0030776346560284907,
+      "ess_min": 341.6760165565197,
+      "ess_endpoint": 341.6760165565197,
+      "largest_endpoint_weight": 0.039810881993338286,
+      "harmonic_domain_probability": 1.0045871137725413,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-2-13",
+      "N_Al": 4,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.29826803237745,
+      "ti_correction_eV_cell": -0.005390068174546348,
+      "fep_correction_eV_cell": -0.005389899900415734,
+      "coarse_ti_correction_eV_cell": -0.005392605671274833,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.009202247537154658,
+        -0.002794264592499831,
+        -0.004759223339480507,
+        -0.004674966174472926
+      ],
+      "replica_ti_corrections_eV_cell": [
+        0.007176745857178493,
+        -0.012738820099000375,
+        -0.007255356477345059,
+        -0.007500441867138011
+      ],
+      "correction_jackknife_se_eV_cell": 0.004078239201035884,
+      "ess_min": 696.6454207951299,
+      "ess_endpoint": 696.6454207951299,
+      "largest_endpoint_weight": 0.010427541383715315,
+      "harmonic_domain_probability": 0.9928741656548292,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-2-15",
+      "N_Al": 4,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.55300265011205,
+      "ti_correction_eV_cell": -0.018487575498427267,
+      "fep_correction_eV_cell": -0.01848377979205931,
+      "coarse_ti_correction_eV_cell": -0.018544438032438132,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.018898845708187353,
+        -0.020390429624040717,
+        -0.019724459577471345,
+        -0.014828723652593866
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.017241776808930954,
+        -0.012512837579288371,
+        -0.014666429194916777,
+        -0.028613877265995197
+      ],
+      "correction_jackknife_se_eV_cell": 0.0037454140470841017,
+      "ess_min": 289.15760536617057,
+      "ess_endpoint": 289.15760536617057,
+      "largest_endpoint_weight": 0.04262970365629425,
+      "harmonic_domain_probability": 1.0016864081133006,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-4-5",
+      "N_Al": 4,
+      "degeneracy": 24,
+      "sampling_issues": [
+        "importance overlap outside pilot screening thresholds"
+      ],
+      "harmonic_config_total_eV_cell": -107.66567361830172,
+      "ti_correction_eV_cell": -0.018989543133263075,
+      "fep_correction_eV_cell": -0.018977557794140978,
+      "coarse_ti_correction_eV_cell": -0.019169317162601774,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.020211606596756714,
+        -0.024844191058193747,
+        -0.006984885350509862,
+        -0.022818175114604454
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.015214059124349267,
+        0.0014253576795047113,
+        -0.04736376063260382,
+        -0.006360452276365276
+      ],
+      "correction_jackknife_se_eV_cell": 0.012069748849456786,
+      "ess_min": 39.45804919565861,
+      "ess_endpoint": 39.45804919565861,
+      "largest_endpoint_weight": 0.15495495501477366,
+      "harmonic_domain_probability": 1.0088225775926025,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-4-7",
+      "N_Al": 4,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.91995549776968,
+      "ti_correction_eV_cell": -0.012122445326870242,
+      "fep_correction_eV_cell": -0.01212036158399783,
+      "coarse_ti_correction_eV_cell": -0.012153557530570819,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.012832844311956615,
+        -0.010257419882925929,
+        -0.014673070787974307,
+        -0.010652873483504877
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.009955436782144918,
+        -0.01748680150618882,
+        -0.003983582893651469,
+        -0.016386522181613176
+      ],
+      "correction_jackknife_se_eV_cell": 0.003079809047994507,
+      "ess_min": 532.9653118170194,
+      "ess_endpoint": 532.9653118170194,
+      "largest_endpoint_weight": 0.01862719045513608,
+      "harmonic_domain_probability": 0.9935919696831942,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-4-8",
+      "N_Al": 4,
+      "degeneracy": 32,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.60014729829172,
+      "ti_correction_eV_cell": 0.0022188345708839,
+      "fep_correction_eV_cell": 0.0022201228561689805,
+      "coarse_ti_correction_eV_cell": 0.0021995150930993472,
+      "delete_one_ti_corrections_eV_cell": [
+        0.0020332413554778445,
+        0.0002762299532357964,
+        0.005877114740467529,
+        0.0007994196106415179
+      ],
+      "replica_ti_corrections_eV_cell": [
+        0.002778026937704789,
+        0.008324324553249053,
+        -0.007906822664493473,
+        0.006623184826581251
+      ],
+      "correction_jackknife_se_eV_cell": 0.0037950146594180932,
+      "ess_min": 334.4231949034475,
+      "ess_endpoint": 334.4231949034475,
+      "largest_endpoint_weight": 0.029318586740397418,
+      "harmonic_domain_probability": 0.9976542588608928,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-4-9",
+      "N_Al": 4,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.92356274738086,
+      "ti_correction_eV_cell": -0.00020763223988622354,
+      "fep_correction_eV_cell": -0.00020744775965834446,
+      "coarse_ti_correction_eV_cell": -0.00021040587031315248,
+      "delete_one_ti_corrections_eV_cell": [
+        0.0001272770988771154,
+        -0.00045412740899669667,
+        -0.0024850064377028025,
+        0.002041818925449494
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.001204619737571745,
+        0.0005361201964713446,
+        0.007009661800913904,
+        -0.006623635936741247
+      ],
+      "correction_jackknife_se_eV_cell": 0.0027953273226865847,
+      "ess_min": 557.0510340434706,
+      "ess_endpoint": 557.0510340434706,
+      "largest_endpoint_weight": 0.015170954695589768,
+      "harmonic_domain_probability": 0.9980577916470271,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-4-10",
+      "N_Al": 4,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.06928375614531,
+      "ti_correction_eV_cell": -0.01760230966319026,
+      "fep_correction_eV_cell": -0.01760133508963794,
+      "coarse_ti_correction_eV_cell": -0.017616946911632785,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.014787940521903301,
+        -0.01674486289279255,
+        -0.020181838765534078,
+        -0.01860006673538299
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.025532575748436537,
+        -0.02012458928003902,
+        -0.009365209524621852,
+        -0.014537753056755129
+      ],
+      "correction_jackknife_se_eV_cell": 0.0034967639566435287,
+      "ess_min": 484.4381963235678,
+      "ess_endpoint": 484.4381963235678,
+      "largest_endpoint_weight": 0.021273468970112955,
+      "harmonic_domain_probability": 0.9988530694066687,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-4-11",
+      "N_Al": 4,
+      "degeneracy": 192,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.17534573733623,
+      "ti_correction_eV_cell": -0.011580967217509341,
+      "fep_correction_eV_cell": -0.011577475356572496,
+      "coarse_ti_correction_eV_cell": -0.011633333314310872,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.01157901608143954,
+        -0.014474975987447089,
+        -0.012430605709108394,
+        -0.007699565331276396
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.011586708064043133,
+        -0.0022650243681139885,
+        -0.00898045950987745,
+        -0.022273274951862487
+      ],
+      "correction_jackknife_se_eV_cell": 0.00425654589820521,
+      "ess_min": 186.25345962768094,
+      "ess_endpoint": 186.25345962768094,
+      "largest_endpoint_weight": 0.0616848699134633,
+      "harmonic_domain_probability": 0.9914751946742947,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-4-12",
+      "N_Al": 4,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.8774557767159,
+      "ti_correction_eV_cell": -0.0002344295504463212,
+      "fep_correction_eV_cell": -0.00023412785018549686,
+      "coarse_ti_correction_eV_cell": -0.00023896245210885513,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.0001716645335632882,
+        -0.0018713571315696312,
+        -0.0009661780650489263,
+        0.002122220764407377
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.0004224440089479586,
+        0.004871665384088765,
+        0.001998870447663819,
+        -0.006940552106162701
+      ],
+      "correction_jackknife_se_eV_cell": 0.0025649684692202286,
+      "ess_min": 669.4011739311629,
+      "ess_endpoint": 669.4011739311629,
+      "largest_endpoint_weight": 0.011474194529200541,
+      "harmonic_domain_probability": 1.0089587582496742,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-4-14",
+      "N_Al": 4,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.34345384230748,
+      "ti_correction_eV_cell": -0.014805130324631757,
+      "fep_correction_eV_cell": -0.014804054840796815,
+      "coarse_ti_correction_eV_cell": -0.014821260511188476,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.012043763175046818,
+        -0.016244487802883904,
+        -0.014092121570491972,
+        -0.016759014393544873
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.022594951659885173,
+        -0.010336950253536835,
+        -0.016909403048273878,
+        -0.008662592414561033
+      ],
+      "correction_jackknife_se_eV_cell": 0.003242834087717805,
+      "ess_min": 588.6957114358613,
+      "ess_endpoint": 588.6957114358613,
+      "largest_endpoint_weight": 0.018512265105155776,
+      "harmonic_domain_probability": 1.0005710269458028,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-6-7",
+      "N_Al": 4,
+      "degeneracy": 24,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.1107820427276,
+      "ti_correction_eV_cell": -0.025577399447566932,
+      "fep_correction_eV_cell": -0.02557485746429156,
+      "coarse_ti_correction_eV_cell": -0.025615466384962378,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.02736108951192958,
+        -0.018916614739264974,
+        -0.027943792212175474,
+        -0.02775775620236903
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.019993206978776806,
+        -0.042933832152174056,
+        -0.01806122056195826,
+        -0.01868412647139341
+      ],
+      "correction_jackknife_se_eV_cell": 0.0065882902654254534,
+      "ess_min": 469.4431668315597,
+      "ess_endpoint": 469.4431668315597,
+      "largest_endpoint_weight": 0.02476664300145111,
+      "harmonic_domain_probability": 1.0003444856179358,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-6-11",
+      "N_Al": 4,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.38271143096793,
+      "ti_correction_eV_cell": -0.020543298759702042,
+      "fep_correction_eV_cell": -0.020541595573905055,
+      "coarse_ti_correction_eV_cell": -0.020568844853151667,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.020935220671830564,
+        -0.017872298825991523,
+        -0.020811648981676638,
+        -0.02248957518192033
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.019356665461560767,
+        -0.02809275649039656,
+        -0.01973315715145705,
+        -0.014425795960048334
+      ],
+      "correction_jackknife_se_eV_cell": 0.0028913848787466283,
+      "ess_min": 487.09522383247344,
+      "ess_endpoint": 487.09522383247344,
+      "largest_endpoint_weight": 0.024184045340030175,
+      "harmonic_domain_probability": 0.995519496231893,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-6-12",
+      "N_Al": 4,
+      "degeneracy": 192,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.30885050611006,
+      "ti_correction_eV_cell": -0.012449408813583505,
+      "fep_correction_eV_cell": -0.012448435564674855,
+      "coarse_ti_correction_eV_cell": -0.01246397342840926,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.009065571786639474,
+        -0.011446498173111538,
+        -0.015774017414086516,
+        -0.013370209051302826
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.021869785639151103,
+        -0.015389913596926345,
+        -0.0016286173805005154,
+        -0.009626398586581217
+      ],
+      "correction_jackknife_se_eV_cell": 0.004273647508497782,
+      "ess_min": 683.997889318021,
+      "ess_endpoint": 683.997889318021,
+      "largest_endpoint_weight": 0.012699643494783726,
+      "harmonic_domain_probability": 1.0006711883778796,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-12-13",
+      "N_Al": 4,
+      "degeneracy": 24,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.14241412605784,
+      "ti_correction_eV_cell": 0.002775821795514002,
+      "fep_correction_eV_cell": 0.0027794095109922724,
+      "coarse_ti_correction_eV_cell": 0.002722090008663315,
+      "delete_one_ti_corrections_eV_cell": [
+        0.00480106236893125,
+        -0.0007573305435569442,
+        0.002888666261226875,
+        0.004281187916663255
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.003028460723101463,
+        0.014338271141849428,
+        0.0024381902596940417,
+        -0.0015885631300429808
+      ],
+      "correction_jackknife_se_eV_cell": 0.0037610421832871576,
+      "ess_min": 349.1747942456551,
+      "ess_endpoint": 349.1747942456551,
+      "largest_endpoint_weight": 0.03367728839726957,
+      "harmonic_domain_probability": 1.0045608656960843,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-12-14",
+      "N_Al": 4,
+      "degeneracy": 96,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.51510201332859,
+      "ti_correction_eV_cell": -0.007571198366411476,
+      "fep_correction_eV_cell": -0.007570651650959788,
+      "coarse_ti_correction_eV_cell": -0.007579392291431347,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.007143135661746563,
+        -0.008175581612727214,
+        -0.007100844490129779,
+        -0.007860274656834055
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.008842755482647055,
+        -0.005732156462923469,
+        -0.008967048434127475,
+        -0.006698105060381897
+      ],
+      "correction_jackknife_se_eV_cell": 0.0007999883663676303,
+      "ess_min": 785.1089440888722,
+      "ess_endpoint": 785.1089440888722,
+      "largest_endpoint_weight": 0.009791283794366688,
+      "harmonic_domain_probability": 1.0088459885000867,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-12-15",
+      "N_Al": 4,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.39893372091277,
+      "ti_correction_eV_cell": -0.0035395004360276247,
+      "fep_correction_eV_cell": -0.003538672555005833,
+      "coarse_ti_correction_eV_cell": -0.0035519100090967504,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.0039323164589984945,
+        -0.00647619998643747,
+        0.000365973310022861,
+        -0.003975621979717443
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.0023501875405302192,
+        0.005923656244710224,
+        -0.014294142383386348,
+        -0.0022177069569854616
+      ],
+      "correction_jackknife_se_eV_cell": 0.004261737963132435,
+      "ess_min": 737.7152707429364,
+      "ess_endpoint": 737.7152707429364,
+      "largest_endpoint_weight": 0.014631324543306732,
+      "harmonic_domain_probability": 0.9963479663568067,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-1-14-15",
+      "N_Al": 4,
+      "degeneracy": 24,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.64448762552007,
+      "ti_correction_eV_cell": -0.020456342216431916,
+      "fep_correction_eV_cell": -0.020454997008677752,
+      "coarse_ti_correction_eV_cell": -0.0204765159348028,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.02090187126115864,
+        -0.02544720659201204,
+        -0.01671221064411841,
+        -0.018513585980043382
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.019105741574366775,
+        -0.0034722546405835416,
+        -0.030801260733975346,
+        -0.02603485704062687
+      ],
+      "correction_jackknife_se_eV_cell": 0.0056712670218146705,
+      "ess_min": 494.6993956665633,
+      "ess_endpoint": 494.6993956665633,
+      "largest_endpoint_weight": 0.023584201588833564,
+      "harmonic_domain_probability": 0.9951656831158127,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-2-4-6",
+      "N_Al": 4,
+      "degeneracy": 12,
+      "sampling_issues": [
+        "importance overlap outside pilot screening thresholds"
+      ],
+      "harmonic_config_total_eV_cell": -108.13337913610555,
+      "ti_correction_eV_cell": -0.0030848723030575667,
+      "fep_correction_eV_cell": -0.0030722341824105906,
+      "coarse_ti_correction_eV_cell": -0.003274157898900805,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.006333147025463497,
+        0.006028811139400142,
+        -0.004924118862050668,
+        -0.006494007324793511
+      ],
+      "replica_ti_corrections_eV_cell": [
+        0.00746824844218119,
+        -0.025756611877044946,
+        0.0026822033073934833,
+        0.008037022035609994
+      ],
+      "correction_jackknife_se_eV_cell": 0.009021655756016121,
+      "ess_min": 78.98698296824934,
+      "ess_endpoint": 78.98698296824934,
+      "largest_endpoint_weight": 0.10681110669121643,
+      "harmonic_domain_probability": 1.0012839436182168,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-2-4-8",
+      "N_Al": 4,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.02377644477153,
+      "ti_correction_eV_cell": -0.003334962278668266,
+      "fep_correction_eV_cell": -0.0033323508277728286,
+      "coarse_ti_correction_eV_cell": -0.0033741352473526595,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.002330179328287194,
+        -0.0009379164032032423,
+        -0.0038444764329852448,
+        -0.006140658104398504
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.006280770047174179,
+        -0.010149806595462331,
+        -0.0017880850364500817,
+        0.005675972363755482
+      ],
+      "correction_jackknife_se_eV_cell": 0.003341228337788131,
+      "ess_min": 253.95342704199996,
+      "ess_endpoint": 253.95342704199996,
+      "largest_endpoint_weight": 0.042931161939729005,
+      "harmonic_domain_probability": 1.0056230066351686,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-2-4-10",
+      "N_Al": 4,
+      "degeneracy": 48,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.23491178928171,
+      "ti_correction_eV_cell": 0.0022538486918756524,
+      "fep_correction_eV_cell": 0.002254744666990171,
+      "coarse_ti_correction_eV_cell": 0.002240431243515195,
+      "delete_one_ti_corrections_eV_cell": [
+        0.0038405986217489594,
+        0.0028355714237863704,
+        0.0009208081824910773,
+        0.0014490427858797482
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.0023382378650399142,
+        0.0005319076959985642,
+        0.006381379172600012,
+        0.004714433387017812
+      ],
+      "correction_jackknife_se_eV_cell": 0.001990097685608409,
+      "ess_min": 632.7896372308835,
+      "ess_endpoint": 632.7896372308835,
+      "largest_endpoint_weight": 0.012495787306086652,
+      "harmonic_domain_probability": 1.0065866078742014,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-2-13-15",
+      "N_Al": 4,
+      "degeneracy": 4,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -109.1621640960535,
+      "ti_correction_eV_cell": -0.03465916143530047,
+      "fep_correction_eV_cell": -0.03465721994277443,
+      "coarse_ti_correction_eV_cell": -0.03468826724175266,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.03469012075013266,
+        -0.03384495192140038,
+        -0.034649617171254914,
+        -0.03544452400150248
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.03456621317203754,
+        -0.03705661434018113,
+        -0.03468778353944371,
+        -0.03225919160863285
+      ],
+      "correction_jackknife_se_eV_cell": 0.0009800895074411381,
+      "ess_min": 501.9735364883968,
+      "ess_endpoint": 501.9735364883968,
+      "largest_endpoint_weight": 0.021956213262532547,
+      "harmonic_domain_probability": 0.9967457267935346,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-4-8-12",
+      "N_Al": 4,
+      "degeneracy": 4,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -107.48511712143599,
+      "ti_correction_eV_cell": 0.01731721579539839,
+      "fep_correction_eV_cell": 0.01731735766323956,
+      "coarse_ti_correction_eV_cell": 0.0173150928394075,
+      "delete_one_ti_corrections_eV_cell": [
+        0.01725454970812001,
+        0.019855004624300565,
+        0.0170934434216608,
+        0.015131174638480361
+      ],
+      "replica_ti_corrections_eV_cell": [
+        0.017505526952419012,
+        0.01012385840001643,
+        0.017992083300828788,
+        0.024229168880390672
+      ],
+      "correction_jackknife_se_eV_cell": 0.0029075869983102576,
+      "ess_min": 597.1391843996074,
+      "ess_endpoint": 597.1391843996074,
+      "largest_endpoint_weight": 0.010072099711908858,
+      "harmonic_domain_probability": 0.9998361225782646,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-4-8-14",
+      "N_Al": 4,
+      "degeneracy": 16,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.15933647060169,
+      "ti_correction_eV_cell": -0.0011284219474846687,
+      "fep_correction_eV_cell": -0.0011280193406292653,
+      "coarse_ti_correction_eV_cell": -0.0011344749615410995,
+      "delete_one_ti_corrections_eV_cell": [
+        0.0027792810660746854,
+        -0.004255161629200413,
+        -0.0026064540861185813,
+        -0.000269617837954982
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.01188881613185607,
+        0.00899627896628658,
+        0.003464201338462188,
+        -0.003654655732057178
+      ],
+      "correction_jackknife_se_eV_cell": 0.004579483688452649,
+      "ess_min": 611.5543249386445,
+      "ess_endpoint": 611.5543249386445,
+      "largest_endpoint_weight": 0.019513385129488657,
+      "harmonic_domain_probability": 0.9941573534629633,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    },
+    {
+      "id": "k04_0-4-10-14",
+      "N_Al": 4,
+      "degeneracy": 12,
+      "sampling_issues": [],
+      "harmonic_config_total_eV_cell": -108.33916151352747,
+      "ti_correction_eV_cell": -0.0061966137021077575,
+      "fep_correction_eV_cell": -0.0061944521956057656,
+      "coarse_ti_correction_eV_cell": -0.006229012125917055,
+      "delete_one_ti_corrections_eV_cell": [
+        -0.003618937490145408,
+        -0.00888384679632764,
+        -0.005661122960966153,
+        -0.006539649632385121
+      ],
+      "replica_ti_corrections_eV_cell": [
+        -0.013496875116418696,
+        0.002408182633968992,
+        -0.007783399756107345,
+        -0.005159207475789028
+      ],
+      "correction_jackknife_se_eV_cell": 0.0032712775397833816,
+      "ess_min": 431.86479229667555,
+      "ess_endpoint": 431.86479229667555,
+      "largest_endpoint_weight": 0.026757691097072343,
+      "harmonic_domain_probability": 0.9965188922650641,
+      "target_probability_near_wall": 0.0,
+      "excluded_draws": 0
+    }
+  ],
+  "compositions": {
+    "2": {
+      "number_of_orbits": 5,
+      "number_of_decorations": 120,
+      "flagged_orbits": [],
+      "status": "pilot_estimate",
+      "harmonic_config_eV_cell": -115.79128067114705,
+      "trial_ti_config_eV_cell": -115.81013851602978,
+      "trial_fep_config_eV_cell": -115.81013712341519,
+      "delete_one_config_eV_cell": [
+        -115.81042780518477,
+        -115.81079168684391,
+        -115.8109498042803,
+        -115.80835971142074
+      ],
+      "jackknife_se_eV_cell": 0.0018026018351035523,
+      "effective_sample_size_joint_endpoint": 1407.4811461594675,
+      "largest_joint_endpoint_weight": 0.011620068376158931,
+      "min_per_orbit_ess": 533.1389996290898,
+      "trial_probability_of_flagged_orbits": 0.0,
+      "trial_orbit_probabilities": {
+        "k02_0-1": 0.05588374098790136,
+        "k02_0-2": 0.02111920334971568,
+        "k02_0-4": 0.011782421251901263,
+        "k02_0-6": 0.2582591380362835,
+        "k02_0-13": 0.6529554963741769
+      }
+    },
+    "3": {
+      "number_of_orbits": 9,
+      "number_of_decorations": 560,
+      "flagged_orbits": [],
+      "status": "pilot_estimate",
+      "harmonic_config_eV_cell": -112.52149530337309,
+      "trial_ti_config_eV_cell": -112.53749662371105,
+      "trial_fep_config_eV_cell": -112.53749544147338,
+      "delete_one_config_eV_cell": [
+        -112.53692599483915,
+        -112.53862563778277,
+        -112.53717733318823,
+        -112.53724723552513
+      ],
+      "jackknife_se_eV_cell": 0.0011503492403673531,
+      "effective_sample_size_joint_endpoint": 1338.4949296618336,
+      "largest_joint_endpoint_weight": 0.01165543104138782,
+      "min_per_orbit_ess": 78.65569615156136,
+      "trial_probability_of_flagged_orbits": 0.0,
+      "trial_orbit_probabilities": {
+        "k03_0-1-2": 0.0010091979985930918,
+        "k03_0-1-4": 0.0007054409174170419,
+        "k03_0-1-6": 0.010635578285960866,
+        "k03_0-1-12": 0.014931880057097675,
+        "k03_0-1-14": 0.3136003195192136,
+        "k03_0-2-4": 0.005484320166740494,
+        "k03_0-2-13": 0.6319942196908955,
+        "k03_0-4-8": 2.902928702953459e-05,
+        "k03_0-4-10": 0.02161001407700532
+      }
+    },
+    "4": {
+      "number_of_orbits": 29,
+      "number_of_decorations": 1820,
+      "flagged_orbits": [
+        "k04_0-1-4-5",
+        "k04_0-2-4-6"
+      ],
+      "status": "unresolved",
+      "harmonic_config_eV_cell": -109.28574155138483,
+      "trial_ti_config_eV_cell": -109.31957664504944,
+      "trial_fep_config_eV_cell": -109.31957471341546,
+      "delete_one_config_eV_cell": [
+        -109.31960362586639,
+        -109.31887435293267,
+        -109.31953106168726,
+        -109.32029169016567
+      ],
+      "jackknife_se_eV_cell": 0.0008691810751912603,
+      "effective_sample_size_joint_endpoint": 541.6349740282626,
+      "largest_joint_endpoint_weight": 0.021133313081989315,
+      "min_per_orbit_ess": 39.45804919565861,
+      "trial_probability_of_flagged_orbits": 1.3216673775792112e-05,
+      "trial_orbit_probabilities": {
+        "k04_0-1-2-3": 1.980628910894225e-07,
+        "k04_0-1-2-4": 2.2076103489225697e-05,
+        "k04_0-1-2-5": 5.931398390186484e-07,
+        "k04_0-1-2-7": 7.1203024111906135e-06,
+        "k04_0-1-2-12": 0.00015399151050337332,
+        "k04_0-1-2-13": 0.0003641137829208963,
+        "k04_0-1-2-15": 0.008148011249628332,
+        "k04_0-1-4-5": 1.3823242665546205e-07,
+        "k04_0-1-4-7": 4.881525328942808e-06,
+        "k04_0-1-4-8": 6.736356011387378e-08,
+        "k04_0-1-4-9": 8.865786436313052e-06,
+        "k04_0-1-4-10": 5.88551054977969e-05,
+        "k04_0-1-4-11": 0.0003758346064438683,
+        "k04_0-1-4-12": 5.1937783669617295e-06,
+        "k04_0-1-4-14": 0.001372282099867308,
+        "k04_0-1-6-7": 2.612516212030203e-05,
+        "k04_0-1-6-11": 0.002313193873781338,
+        "k04_0-1-6-12": 0.001787343154394947,
+        "k04_0-1-12-13": 2.7138368281774648e-05,
+        "k04_0-1-12-14": 0.009248146351059808,
+        "k04_0-1-12-15": 0.001146155146729955,
+        "k04_0-1-14-15": 0.012050574588503712,
+        "k04_0-2-4-6": 1.3078441349136651e-05,
+        "k04_0-2-4-8": 1.4706289994329727e-05,
+        "k04_0-2-4-10": 0.00015973940462288142,
+        "k04_0-2-13-15": 0.9625208513552072,
+        "k04_0-4-8-12": 1.8600129843439778e-09,
+        "k04_0-4-8-14": 2.3038481888773804e-05,
+        "k04_0-4-10-14": 0.0001476848724286226
+      }
+    }
+  },
+  "curvature": {
+    "status": "unresolved",
+    "trial_mu_2_to_3_eV": 3.272641892318731,
+    "trial_mu_3_to_4_eV": 3.2179199786616124,
+    "harmonic_second_difference_eV": -0.03403161578570746,
+    "trial_second_difference_eV": -0.05472191365711865,
+    "trial_anharmonic_shift_second_difference_eV": -0.02069029787141119,
+    "trial_fep_second_difference_eV": -0.05472095388388709,
+    "second_difference_jackknife_se_eV": 0.0027025715393039105,
+    "delete_one_second_difference_eV": [
+      -0.056179441372862016,
+      -0.05241476421103641,
+      -0.05612619959110532,
+      -0.054156930536152004
+    ],
+    "trial_f_double_prime_eV_atom_per_fraction2": -0.8755506185138984,
+    "f_double_prime_jackknife_se_eV_atom_per_fraction2": 0.04324114462886257
+  }
+}

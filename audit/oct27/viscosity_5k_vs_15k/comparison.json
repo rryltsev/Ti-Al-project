@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-27",
+  "comparison": [
+    {
+      "T": 1873,
+      "checkpoint_5k": {
+        "system": "AlTi",
+        "T": 1873,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 3.258926589110574,
+        "eta_std_mPa_s": 0.153054157067472,
+        "eta_pa_s": 0.003258926589110574,
+        "eta_std_pa_s": 0.000153054157067472,
+        "neff": 31.772578928949294,
+        "n_replicas": 15,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.1750319452838669,
+        "tau_exp_std_ps": 0.03580746698177719,
+        "tau_int_ps": 0.12135813144302879
+      },
+      "checkpoint_15k": {
+        "system": "AlTi",
+        "T": 1873,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 3.2155255210859233,
+        "eta_std_mPa_s": 0.10934559743987708,
+        "eta_pa_s": 0.0032155255210859234,
+        "eta_std_pa_s": 0.00010934559743987709,
+        "neff": 34.185831180564655,
+        "n_replicas": 25,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.15726095083892214,
+        "tau_exp_std_ps": 0.01876933803795736,
+        "tau_int_ps": 0.12068889266318056
+      },
+      "delta_mPa_s": -0.0434010680246506,
+      "delta_std_mPa_s": 0.18810112885125926,
+      "delta_95CI_mPa_s": [
+        -0.41207928057311877,
+        0.32527714452381756
+      ],
+      "relative_change_percent": -1.331759609733818,
+      "relative_change_95CI_percent_delta_method": [
+        -12.545110178645832,
+        9.881590959178196
+      ],
+      "abs_z": 0.23073262924950302,
+      "two_sided_normal_p": 0.8175225229169083,
+      "relative_std_5k_percent": 4.696459183182875,
+      "relative_std_15k_percent": 3.400551378704334,
+      "aggregate_production_ps_5k": 300,
+      "aggregate_production_ps_15k": 500,
+      "tau_exp_difference_z": -0.43956612725513694,
+      "resolution_guideline_20pi_tau_ps_5k": 10.997581468946537,
+      "resolution_guideline_20pi_tau_ps_15k": 9.880996957042068,
+      "scan_eta_mPa_s": 3.6984414209371104,
+      "scan_above_pbe_5k_percent": 13.486490714308763,
+      "scan_above_pbe_15k_percent": 15.018257410319059,
+      "source_5k": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipeline_wsl2\\results\\AlTi\\1873\\pbe\\c_Ti_1.00\\result.json",
+      "source_15k": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipline_PBE-15k_27.10.2026\\results\\AlTi\\1873\\pbe\\c_Ti_1.00\\result.json"
+    },
+    {
+      "T": 2000,
+      "checkpoint_5k": {
+        "system": "AlTi",
+        "T": 2000,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 2.838944702377819,
+        "eta_std_mPa_s": 0.0691135418479619,
+        "eta_pa_s": 0.002838944702377819,
+        "eta_std_pa_s": 6.91135418479619e-05,
+        "neff": 30.060308957083702,
+        "n_replicas": 50,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.1446401279271391,
+        "tau_exp_std_ps": 0.018203994213941758,
+        "tau_int_ps": 0.10799337148954315
+      },
+      "checkpoint_15k": {
+        "system": "AlTi",
+        "T": 2000,
+        "dft": "pbe",
+        "c_Ti": 1.0,
+        "eta_mPa_s": 2.72402291265908,
+        "eta_std_mPa_s": 0.09203048407512719,
+        "eta_pa_s": 0.0027240229126590802,
+        "eta_std_pa_s": 9.203048407512719e-05,
+        "neff": 39.92954739011723,
+        "n_replicas": 20,
+        "n_steps": 20001,
+        "timestep_ps": 0.001,
+        "block_size": 1,
+        "tau_exp_ps": 0.12580590585136509,
+        "tau_exp_std_ps": 0.014474355984401329,
+        "tau_int_ps": 0.1050455031248201
+      },
+      "delta_mPa_s": -0.11492178971873912,
+      "delta_std_mPa_s": 0.11509253523088377,
+      "delta_95CI_mPa_s": [
+        -0.3405031587712713,
+        0.11065957933379306
+      ],
+      "relative_change_percent": -4.048046079322498,
+      "relative_change_95CI_percent_delta_method": [
+        -11.879536955022497,
+        3.7834447963774998
+      ],
+      "abs_z": 0.9985164501607153,
+      "two_sided_normal_p": 0.3180289916799001,
+      "relative_std_5k_percent": 2.4344800302053913,
+      "relative_std_15k_percent": 3.378476871374433,
+      "aggregate_production_ps_5k": 1000,
+      "aggregate_production_ps_15k": 400,
+      "tau_exp_difference_z": -0.809827000828609,
+      "resolution_guideline_20pi_tau_ps_5k": 9.08800726620376,
+      "resolution_guideline_20pi_tau_ps_15k": 7.904618192017154,
+      "scan_eta_mPa_s": 3.297652830525589,
+      "scan_above_pbe_5k_percent": 16.157698590027803,
+      "scan_above_pbe_15k_percent": 21.05818989997241,
+      "source_5k": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipline_wsl2_22.10.2026\\results\\AlTi\\2000\\pbe\\c_Ti_1.00\\result.json",
+      "source_15k": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipline_PBE-15k_27.10.2026\\results\\AlTi\\2000\\pbe\\c_Ti_1.00\\result.json"
+    }
+  ],
+  "changed_states": [
+    [
+      1873,
+      "pbe",
+      1.0
+    ],
+    [
+      2000,
+      "pbe",
+      1.0
+    ]
+  ],
+  "unchanged_states": [
+    [
+      1873,
+      "pbe",
+      0.5
+    ],
+    [
+      1873,
+      "pbe",
+      0.55
+    ],
+    [
+      1873,
+      "scan",
+      0.5
+    ],
+    [
+      1873,
+      "scan",
+      0.55
+    ],
+    [
+      1873,
+      "scan",
+      1.0
+    ],
+    [
+      2000,
+      "scan",
+      1.0
+    ]
+  ],
+  "incoming_count": 8,
+  "historical_2000K_5k": {
+    "system": "AlTi",
+    "T": 2000,
+    "dft": "pbe",
+    "c_Ti": 1.0,
+    "eta_mPa_s": 2.5989330599548257,
+    "eta_std_mPa_s": 0.09228608431886295,
+    "eta_pa_s": 0.0025989330599548257,
+    "eta_std_pa_s": 9.228608431886296e-05,
+    "neff": 46.29196943376038,
+    "n_replicas": 15,
+    "n_steps": 20001,
+    "timestep_ps": 0.001,
+    "block_size": 1,
+    "tau_exp_ps": 0.11008708566173753,
+    "tau_exp_std_ps": 0.011331198699203383,
+    "tau_int_ps": 0.10103074271851778
+  },
+  "hypothetical_change_vs_superseded_2000K_percent": 4.813123301699385,
+  "assumptions": [
+    "Checkpoint labels follow user information and existing project provenance; no model hashes in new export.",
+    "Normal approximation and zero covariance between checkpoint estimates; not verified from raw replicas.",
+    "Reported errors are STACIE estimator uncertainty, not total model or protocol uncertainty.",
+    "No raw stress trajectories, preparation logs, seeds or numeric cutoff history supplied in new folder."
+  ],
+  "checks": [
+    "All 8 result.json files equal summary.json records and agree with summary.csv.",
+    "Units and sample metadata checked; only the two pure-Ti PBE states differ from the latest merged 5k data.",
+    "Both old estimates verified against their original summary and detail JSON exports.",
+    "All four spectra and four cutoff diagnostic images visually inspected."
+  ],
+  "methodology_urls": [
+    "https://molmod.github.io/stacie/apidocs/stacie.estimate.html",
+    "https://molmod.github.io/stacie/preparing_inputs/data_sufficiency.html",
+    "https://molmod.github.io/stacie/theory/model.html"
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "remote": "/home6/u3129/tial-testsets/ti-density-pbe15k-20261029-01",
+  "models": {
+    "15000": {
+      "functional": "PBE",
+      "step": 15000,
+      "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-15000.pt",
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "article_checkpoint": false
+    }
+  },
+  "states": [
+    {
+      "id": "liquid-2500",
+      "phase": "liquid",
+      "T_K": 2500,
+      "N": 200,
+      "initial_file": "liquid.traj",
+      "initial_sha256": "5867059f10168d6da453689055c7b641eab1930459ff21bd1df25564a3b77ee8",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610290,
+      "equil_steps": 30000,
+      "production_steps": 30000
+    },
+    {
+      "id": "liquid-2400",
+      "phase": "liquid",
+      "T_K": 2400,
+      "N": 200,
+      "initial_file": "liquid.traj",
+      "initial_sha256": "5867059f10168d6da453689055c7b641eab1930459ff21bd1df25564a3b77ee8",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610307,
+      "equil_steps": 30000,
+      "production_steps": 30000
+    },
+    {
+      "id": "liquid-2300",
+      "phase": "liquid",
+      "T_K": 2300,
+      "N": 200,
+      "initial_file": "liquid.traj",
+      "initial_sha256": "5867059f10168d6da453689055c7b641eab1930459ff21bd1df25564a3b77ee8",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610324,
+      "equil_steps": 30000,
+      "production_steps": 30000
+    },
+    {
+      "id": "liquid-2200",
+      "phase": "liquid",
+      "T_K": 2200,
+      "N": 200,
+      "initial_file": "liquid.traj",
+      "initial_sha256": "5867059f10168d6da453689055c7b641eab1930459ff21bd1df25564a3b77ee8",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610341,
+      "equil_steps": 30000,
+      "production_steps": 30000
+    },
+    {
+      "id": "liquid-2100",
+      "phase": "liquid",
+      "T_K": 2100,
+      "N": 200,
+      "initial_file": "liquid.traj",
+      "initial_sha256": "5867059f10168d6da453689055c7b641eab1930459ff21bd1df25564a3b77ee8",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610358,
+      "equil_steps": 30000,
+      "production_steps": 30000
+    },
+    {
+      "id": "alpha-300",
+      "phase": "alpha",
+      "T_K": 300,
+      "N": 250,
+      "initial_file": "alpha.traj",
+      "initial_sha256": "df90a20011f6d691b9831a015296d4ef881e520254226abe7daab306788a1d12",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610375,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "alpha-500",
+      "phase": "alpha",
+      "T_K": 500,
+      "N": 250,
+      "initial_file": "alpha.traj",
+      "initial_sha256": "df90a20011f6d691b9831a015296d4ef881e520254226abe7daab306788a1d12",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610392,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "alpha-700",
+      "phase": "alpha",
+      "T_K": 700,
+      "N": 250,
+      "initial_file": "alpha.traj",
+      "initial_sha256": "df90a20011f6d691b9831a015296d4ef881e520254226abe7daab306788a1d12",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610409,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "alpha-900",
+      "phase": "alpha",
+      "T_K": 900,
+      "N": 250,
+      "initial_file": "alpha.traj",
+      "initial_sha256": "df90a20011f6d691b9831a015296d4ef881e520254226abe7daab306788a1d12",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610426,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "alpha-1100",
+      "phase": "alpha",
+      "T_K": 1100,
+      "N": 250,
+      "initial_file": "alpha.traj",
+      "initial_sha256": "df90a20011f6d691b9831a015296d4ef881e520254226abe7daab306788a1d12",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610443,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "beta-1200",
+      "phase": "beta",
+      "T_K": 1200,
+      "N": 250,
+      "initial_file": "beta.traj",
+      "initial_sha256": "18f9c9cce519961ed8c73f8a931fb96cd4da4aa43ba834ffdaadaee25cc8f386",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610460,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "beta-1400",
+      "phase": "beta",
+      "T_K": 1400,
+      "N": 250,
+      "initial_file": "beta.traj",
+      "initial_sha256": "18f9c9cce519961ed8c73f8a931fb96cd4da4aa43ba834ffdaadaee25cc8f386",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610477,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "beta-1600",
+      "phase": "beta",
+      "T_K": 1600,
+      "N": 250,
+      "initial_file": "beta.traj",
+      "initial_sha256": "18f9c9cce519961ed8c73f8a931fb96cd4da4aa43ba834ffdaadaee25cc8f386",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610494,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "beta-1800",
+      "phase": "beta",
+      "T_K": 1800,
+      "N": 250,
+      "initial_file": "beta.traj",
+      "initial_sha256": "18f9c9cce519961ed8c73f8a931fb96cd4da4aa43ba834ffdaadaee25cc8f386",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610511,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    },
+    {
+      "id": "beta-1900",
+      "phase": "beta",
+      "T_K": 1900,
+      "N": 250,
+      "initial_file": "beta.traj",
+      "initial_sha256": "18f9c9cce519961ed8c73f8a931fb96cd4da4aa43ba834ffdaadaee25cc8f386",
+      "bulk_modulus_GPa": 110.0,
+      "seed": 202610528,
+      "equil_steps": 20000,
+      "production_steps": 30000
+    }
+  ],
+  "tasks_sha256": "79b8c3029821168d06e7f90fe36e223b31d717fb271b14afb5770c79df8cfcc0",
+  "P_bar": 1.0,
+  "dt_fs": 1.0,
+  "ttime_fs": 25.0,
+  "thermo_interval": 10,
+  "trajectory_interval": 100,
+  "allocation_wall_hours": 20,
+  "priority": "Descending liquid temperature, then alpha, then beta",
+  "initial_sources": {
+    "liquid": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_full_enthalpy_gpu\\15000\\results\\0\\production-final.traj",
+      "sha256": "8f4421cce7ded4b0f271eba23b70b1799132f8d2556fa5d5a2da8cb977a0e725"
+    },
+    "solids": {
+      "path": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_property_screen\\retry15k\\15000\\eos.json",
+      "sha256": "27b5a10aa41f7a8fc4bbeae32b1a9832fad89e6269be75a6629da25dfdc8bd02",
+      "equilibria": {
+        "hcp": {
+          "V_A3_atom": 17.327691484520784,
+          "E_eV_atom": -7.7908673682632426,
+          "P_GPa": -4.493427324671695e-06,
+          "c_over_a": 1.5778274864850896,
+          "cell_A": [
+            [
+              2.9380567792488415,
+              0.0,
+              0.0
+            ],
+            [
+              -1.4690283896244207,
+              2.544431808590585,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              4.635746743152677
+            ]
+          ],
+          "Fmax_eV_A": 3.0240949543809803e-07,
+          "B_GPa": 111.55955545852758,
+          "B_halfstep_GPa": 111.54909061239621
+        },
+        "bcc": {
+          "V_A3_atom": 17.143949748153343,
+          "E_eV_atom": -7.688137392086027,
+          "P_GPa": 1.2957115544408414e-06,
+          "c_over_a": null,
+          "cell_A": [
+            [
+              3.2487300599310114,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              3.2487300599310114,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              3.2487300599310114
+            ]
+          ],
+          "Fmax_eV_A": 4.068000267685405e-07,
+          "B_GPa": 109.98465634066794,
+          "B_halfstep_GPa": 109.949559667937
+        }
+      }
+    }
+  },
+  "protocol_notes": [
+    "Each temperature starts independently from its phase-specific source cell.",
+    "Liquid source is equilibrated PBE15k Ti at 2000 K, followed by 30 ps at the new temperature.",
+    "Crystals are 5x5x5 repetitions of the PBE15k static equilibrium cells.",
+    "Isotropic Melchionna NPT; reset velocities and thermostat at production boundary.",
+    "Nominal thermostat temperature refers to 3(N-1) kinetic degrees of freedom.",
+    "Phase labels describe initialization. Production mobility must be inspected for melting or transformation."
+  ]
+}

@@ -1,0 +1,454 @@
+[
+  {
+    "temperature_K": 1273.15,
+    "N": 96,
+    "cap": 0.4,
+    "axial_free": 1,
+    "production_half": null,
+    "statistics": {
+      "experimental_alpha_alpha2": {
+        "x_range": [
+          0.195,
+          0.23
+        ],
+        "mu_range": [
+          3.3850183343012983,
+          3.4434511291532397
+        ],
+        "max_chemical_response": {
+          "mu_eV": 3.391049589812175,
+          "x_Al": 0.19878001748988472,
+          "mean_Q": 0.32082306689597306,
+          "dx_dmu_eV_inv": 0.6270648534729025,
+          "Nvar_Q": 4.685358591468162,
+          "low_Q_quartile": {
+            "mean_Q": 0.10754433094988908,
+            "mean_x_at_percent": 18.68659510439379
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.6453890142135863,
+            "mean_x_at_percent": 21.885166226873185
+          },
+          "correlation_x_Q": 0.5182152325141304,
+          "prob_Q_above_0p4": 0.27740102895077945,
+          "prob_Q_above_0p6": 0.13095904324479166,
+          "equal_total_conditional_gap_at_most_at_percent": 5.353981184229757,
+          "Kish_frames": 8319.577945336348,
+          "composition_smoothing_sd_at_percent": 0.78125,
+          "composition_modes_at_percent": [
+            19.791666666666668
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": false
+        },
+        "max_order_response": {
+          "mu_eV": 3.4434511291532397,
+          "x_Al": 0.23000000000000012,
+          "mean_Q": 0.48584119561905387,
+          "dx_dmu_eV_inv": 0.5338808868864409,
+          "Nvar_Q": 7.921981588586011,
+          "low_Q_quartile": {
+            "mean_Q": 0.1495316387223451,
+            "mean_x_at_percent": 21.62667884186601
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.8838569456680796,
+            "mean_x_at_percent": 24.84878800308272
+          },
+          "correlation_x_Q": 0.5139056543525458,
+          "prob_Q_above_0p4": 0.5345388184647787,
+          "prob_Q_above_0p6": 0.3649251623206008,
+          "equal_total_conditional_gap_at_most_at_percent": 4.94018027641357,
+          "Kish_frames": 12434.471398274969,
+          "composition_smoothing_sd_at_percent": 0.78125,
+          "composition_modes_at_percent": [
+            23.958333333333332
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": true
+        },
+        "experimental_midpoint": {
+          "mu_eV": 3.413113252685378,
+          "x_Al": 0.21250000000010744,
+          "mean_Q": 0.38629114768309497,
+          "dx_dmu_eV_inv": 0.6108808157427544,
+          "Nvar_Q": 6.327695948080466,
+          "low_Q_quartile": {
+            "mean_Q": 0.12285111254846898,
+            "mean_x_at_percent": 19.928982152489308
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.7705480000034564,
+            "mean_x_at_percent": 23.42016677033642
+          },
+          "correlation_x_Q": 0.5397554561797719,
+          "prob_Q_above_0p4": 0.38352847163683024,
+          "prob_Q_above_0p6": 0.21984021550786365,
+          "equal_total_conditional_gap_at_most_at_percent": 5.284438574954075,
+          "Kish_frames": 10418.08812938965,
+          "composition_smoothing_sd_at_percent": 0.78125,
+          "composition_modes_at_percent": [
+            20.833333333333332
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ]
+        },
+        "composition_mode_scan": {
+          "number_fields": 118,
+          "fields_with_multiple_modes_above_10pct": 0,
+          "strongest_pair": null,
+          "widest_pair": null,
+          "note": "Adjacent peaks with >10% maximum density, separation >=2 smoothing widths, and >5% smoothed total mass on each side of the intervening minimum."
+        }
+      },
+      "complete_sampled_fields": {
+        "x_range": [
+          0.16751719585257224,
+          0.3435757373880636
+        ],
+        "mu_range": [
+          3.34,
+          3.7
+        ],
+        "max_chemical_response": {
+          "mu_eV": 3.3910495880202034,
+          "x_Al": 0.19878001636620238,
+          "mean_Q": 0.3208230620904277,
+          "dx_dmu_eV_inv": 0.6270648534729021,
+          "Nvar_Q": 4.685358459276518,
+          "low_Q_quartile": {
+            "mean_Q": 0.1075443299398833,
+            "mean_x_at_percent": 18.68659499705284
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.6453890036519261,
+            "mean_x_at_percent": 21.885166089743812
+          },
+          "correlation_x_Q": 0.5182152297888616,
+          "prob_Q_above_0p4": 0.27740102095476044,
+          "prob_Q_above_0p6": 0.13095903705859804,
+          "equal_total_conditional_gap_at_most_at_percent": 5.353981184229754,
+          "Kish_frames": 8319.577776858225,
+          "composition_smoothing_sd_at_percent": 0.78125,
+          "composition_modes_at_percent": [
+            19.791666666666668
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": false
+        },
+        "max_order_response": {
+          "mu_eV": 3.46483845904066,
+          "x_Al": 0.24065475031034178,
+          "mean_Q": 0.5488726272881543,
+          "dx_dmu_eV_inv": 0.4627152310290997,
+          "Nvar_Q": 8.223488889389051,
+          "low_Q_quartile": {
+            "mean_Q": 0.17354806779226953,
+            "mean_x_at_percent": 22.784074671321225
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.9187843426721037,
+            "mean_x_at_percent": 25.418469988708768
+          },
+          "correlation_x_Q": 0.4499391379688403,
+          "prob_Q_above_0p4": 0.6242552130002204,
+          "prob_Q_above_0p6": 0.4596489694421877,
+          "equal_total_conditional_gap_at_most_at_percent": 4.599149303513281,
+          "Kish_frames": 12367.665046043747,
+          "composition_smoothing_sd_at_percent": 0.78125,
+          "composition_modes_at_percent": [
+            25.0
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": false
+        },
+        "composition_mode_scan": {
+          "number_fields": 722,
+          "fields_with_multiple_modes_above_10pct": 0,
+          "strongest_pair": null,
+          "widest_pair": null,
+          "note": "Adjacent peaks with >10% maximum density, separation >=2 smoothing widths, and >5% smoothed total mass on each side of the intervening minimum."
+        }
+      }
+    },
+    "diagnostic_dx_dmu_for_3p5pp_equal_total": 0.26797536250526605,
+    "finite_size_mu_scale_for_3p5pp_eV": 0.032652255484225914,
+    "bootstrap_count": 64,
+    "bootstrap_max_chi_x_and_NvarQ_95": {
+      "experimental_alpha_alpha2": [
+        [
+          0.6061040510110232,
+          0.6452372351588759
+        ],
+        [
+          7.575048328411388,
+          8.298050394431614
+        ]
+      ],
+      "complete_sampled_fields": [
+        [
+          0.6061040510110209,
+          0.6452372351588683
+        ],
+        [
+          7.9942651756175405,
+          8.723466118746762
+        ]
+      ]
+    },
+    "note": "Resolved maxima at fixed reweighted fields on a <=0.0005 eV search mesh with local refinement. Composition modes are Gaussian-smoothed peaks above 10% of the dominant peak. The susceptibility scale N(0.035)^2/(4kBT) assumes equally populated phases, and gives their between-phase contribution only; a variance bound on conditional means applies to the recovered finite-size distribution. Neither is a confidence limit on a bulk gap."
+  },
+  {
+    "temperature_K": 1273.15,
+    "N": 288,
+    "cap": 0.4,
+    "axial_free": 1,
+    "production_half": null,
+    "statistics": {
+      "experimental_alpha_alpha2": {
+        "x_range": [
+          0.195,
+          0.23
+        ],
+        "mu_range": [
+          3.3903288791995556,
+          3.4559593443113306
+        ],
+        "max_chemical_response": {
+          "mu_eV": 3.437157442992358,
+          "x_Al": 0.21995487311586642,
+          "mean_Q": 0.1951717859754155,
+          "dx_dmu_eV_inv": 0.5364228937604736,
+          "Nvar_Q": 5.59750897939349,
+          "low_Q_quartile": {
+            "mean_Q": 0.07228171073639829,
+            "mean_x_at_percent": 21.69625820496242
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.3847314094457174,
+            "mean_x_at_percent": 22.520940331356805
+          },
+          "correlation_x_Q": 0.29594431511299685,
+          "prob_Q_above_0p4": 0.08028919664430667,
+          "prob_Q_above_0p6": 0.026108757839942376,
+          "equal_total_conditional_gap_at_most_at_percent": 2.8589965794847596,
+          "Kish_frames": 4264.21717434619,
+          "composition_smoothing_sd_at_percent": 0.2604166666666667,
+          "composition_modes_at_percent": [
+            21.875
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": false
+        },
+        "max_order_response": {
+          "mu_eV": 3.4559593443113306,
+          "x_Al": 0.22999999999999987,
+          "mean_Q": 0.2297948482060695,
+          "dx_dmu_eV_inv": 0.5296811230537833,
+          "Nvar_Q": 8.765845342107577,
+          "low_Q_quartile": {
+            "mean_Q": 0.07795439004487416,
+            "mean_x_at_percent": 22.65591971180754
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.47610609933598036,
+            "mean_x_at_percent": 23.622103885585943
+          },
+          "correlation_x_Q": 0.32692119941694436,
+          "prob_Q_above_0p4": 0.13649918710255543,
+          "prob_Q_above_0p6": 0.05897366066628645,
+          "equal_total_conditional_gap_at_most_at_percent": 2.840973817618023,
+          "Kish_frames": 4879.18198463138,
+          "composition_smoothing_sd_at_percent": 0.2604166666666667,
+          "composition_modes_at_percent": [
+            22.916666666666668
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": true
+        },
+        "experimental_midpoint": {
+          "mu_eV": 3.423239512352943,
+          "x_Al": 0.2125000000000006,
+          "mean_Q": 0.17649135636039381,
+          "dx_dmu_eV_inv": 0.5342571732823207,
+          "Nvar_Q": 4.031331906815783,
+          "low_Q_quartile": {
+            "mean_Q": 0.0685373858234445,
+            "mean_x_at_percent": 20.965849687132245
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.3364540110264751,
+            "mean_x_at_percent": 21.712683681159337
+          },
+          "correlation_x_Q": 0.25925853623987105,
+          "prob_Q_above_0p4": 0.05141751461169828,
+          "prob_Q_above_0p6": 0.012634612907132177,
+          "equal_total_conditional_gap_at_most_at_percent": 2.8532193748356476,
+          "Kish_frames": 3931.58381429888,
+          "composition_smoothing_sd_at_percent": 0.2604166666666667,
+          "composition_modes_at_percent": [
+            21.180555555555557
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ]
+        },
+        "composition_mode_scan": {
+          "number_fields": 133,
+          "fields_with_multiple_modes_above_10pct": 15,
+          "strongest_pair": {
+            "mu_eV": 3.416183304849649,
+            "mean_x": 0.20873643608464973,
+            "modes_at_percent": [
+              20.48611111111111,
+              21.180555555555557
+            ],
+            "delta_modes_pp": 0.6944444444444444,
+            "barrier_from_smaller_peak_kBT": 0.03183671515845045
+          },
+          "widest_pair": {
+            "mu_eV": 3.412702901396752,
+            "mean_x": 0.20688445775982453,
+            "modes_at_percent": [
+              20.48611111111111,
+              21.180555555555557
+            ],
+            "delta_modes_pp": 0.6944444444444444,
+            "barrier_from_smaller_peak_kBT": 0.00023115347822903656
+          },
+          "note": "Adjacent peaks with >10% maximum density, separation >=2 smoothing widths, and >5% smoothed total mass on each side of the intervening minimum."
+        }
+      },
+      "complete_sampled_fields": {
+        "x_range": [
+          0.1840907917352148,
+          0.3312112368535249
+        ],
+        "mu_range": [
+          3.37,
+          3.67
+        ],
+        "max_chemical_response": {
+          "mu_eV": 3.37,
+          "x_Al": 0.1840907917352148,
+          "mean_Q": 0.13730248595167144,
+          "dx_dmu_eV_inv": 0.542571509615073,
+          "Nvar_Q": 1.7603934951121167,
+          "low_Q_quartile": {
+            "mean_Q": 0.056501907804705626,
+            "mean_x_at_percent": 18.185560899497517
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.24473503979964337,
+            "mean_x_at_percent": 18.74325759061487
+          },
+          "correlation_x_Q": 0.1867149061702441,
+          "prob_Q_above_0p4": 0.007852955242421595,
+          "prob_Q_above_0p6": 0.00035619254491761263,
+          "equal_total_conditional_gap_at_most_at_percent": 2.875335167163352,
+          "Kish_frames": 2564.955346225211,
+          "composition_smoothing_sd_at_percent": 0.2604166666666667,
+          "composition_modes_at_percent": [
+            18.40277777777778
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": true
+        },
+        "max_order_response": {
+          "mu_eV": 3.535177657354994,
+          "x_Al": 0.2680464883117099,
+          "mean_Q": 0.40453038200146585,
+          "dx_dmu_eV_inv": 0.43883167386961375,
+          "Nvar_Q": 20.57896073195447,
+          "low_Q_quartile": {
+            "mean_Q": 0.11218852640309834,
+            "mean_x_at_percent": 26.554595830874383
+          },
+          "high_Q_quartile": {
+            "mean_Q": 0.7894083608936716,
+            "mean_x_at_percent": 26.980774178901825
+          },
+          "correlation_x_Q": 0.11864431665420584,
+          "prob_Q_above_0p4": 0.4272553576183964,
+          "prob_Q_above_0p6": 0.2855271097813969,
+          "equal_total_conditional_gap_at_most_at_percent": 2.5858835692831437,
+          "Kish_frames": 8355.511571361805,
+          "composition_smoothing_sd_at_percent": 0.2604166666666667,
+          "composition_modes_at_percent": [
+            26.73611111111111
+          ],
+          "composition_mode_relative_heights": [
+            1.0
+          ],
+          "at_field_interval_edge": false
+        },
+        "composition_mode_scan": {
+          "number_fields": 601,
+          "fields_with_multiple_modes_above_10pct": 14,
+          "strongest_pair": {
+            "mu_eV": 3.4165,
+            "mean_x": 0.20890508832376606,
+            "modes_at_percent": [
+              20.48611111111111,
+              21.180555555555557
+            ],
+            "delta_modes_pp": 0.6944444444444444,
+            "barrier_from_smaller_peak_kBT": 0.032252014750461834
+          },
+          "widest_pair": {
+            "mu_eV": 3.4130000000000003,
+            "mean_x": 0.20704244967668115,
+            "modes_at_percent": [
+              20.48611111111111,
+              21.180555555555557
+            ],
+            "delta_modes_pp": 0.6944444444444444,
+            "barrier_from_smaller_peak_kBT": 0.0029328347929683455
+          },
+          "note": "Adjacent peaks with >10% maximum density, separation >=2 smoothing widths, and >5% smoothed total mass on each side of the intervening minimum."
+        }
+      }
+    },
+    "diagnostic_dx_dmu_for_3p5pp_equal_total": 0.8039260875157982,
+    "finite_size_mu_scale_for_3p5pp_eV": 0.010884085161408636,
+    "bootstrap_count": 64,
+    "bootstrap_max_chi_x_and_NvarQ_95": {
+      "experimental_alpha_alpha2": [
+        [
+          0.5261033583213551,
+          0.5502478821935951
+        ],
+        [
+          7.766068601536854,
+          9.849612069997676
+        ]
+      ],
+      "complete_sampled_fields": [
+        [
+          0.5325680953748811,
+          0.5583390504572276
+        ],
+        [
+          19.162532540450304,
+          21.735183561494175
+        ]
+      ]
+    },
+    "note": "Resolved maxima at fixed reweighted fields on a <=0.0005 eV search mesh with local refinement. Composition modes are Gaussian-smoothed peaks above 10% of the dominant peak. The susceptibility scale N(0.035)^2/(4kBT) assumes equally populated phases, and gives their between-phase contribution only; a variance bound on conditional means applies to the recovered finite-size distribution. Neither is a confidence limit on a bulk gap."
+  }
+]

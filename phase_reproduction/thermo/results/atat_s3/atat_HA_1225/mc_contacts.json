@@ -1,0 +1,76 @@
+[
+  {
+    "model": "atat_HA",
+    "T_K": 1225.0,
+    "N": 5120,
+    "windows": 69,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 24.05743880694975,
+        "alpha2_at_pct": 25.267352401639183,
+        "window_edge": false,
+        "order_left": 0.08473214896891408,
+        "order_right": 0.6961123148740723,
+        "order_direction": "rising",
+        "order_se_left": 0.0050059796122777465,
+        "order_se_right": 0.006747937263796322,
+        "bootstrap_midpoint_match": {
+          "resolved": 300,
+          "alpha_95": [
+            24.015143774554424,
+            24.097773278138142
+          ],
+          "alpha2_95": [
+            25.23672209267156,
+            25.307266120818905
+          ],
+          "width_95": [
+            1.1648791841081638,
+            1.2625198362274237
+          ]
+        }
+      }
+    ],
+    "min_width_at_pct": 0.5,
+    "largest_unthresholded_interior_width_at_pct": 1.2099135946894322,
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "baseline_interior_candidates": 1,
+      "draws_without_interior_contact": 0,
+      "draws_with_one_interior_contact": 300,
+      "draws_with_multiple_interior_contacts": 0,
+      "draws_invalid": 0,
+      "alpha_95": [
+        24.015143774554424,
+        24.097773278138142
+      ],
+      "alpha2_95": [
+        25.23672209267156,
+        25.307266120818905
+      ],
+      "width_95": [
+        1.1648791841081638,
+        1.2625198362274237
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 1,
+      "offset_gradient_max_abs": 1.2982866518791854e-09,
+      "status": "connected",
+      "contacts": [
+        {
+          "alpha_at_pct": 24.19921875,
+          "alpha2_at_pct": 25.234374999999996,
+          "window_edge": false,
+          "order_left": 0.09680308098506739,
+          "order_right": 0.6895681401513968,
+          "order_direction": "rising",
+          "order_se_left": 0.009009546131498404,
+          "order_se_right": 0.008150014624885888
+        }
+      ]
+    }
+  }
+]

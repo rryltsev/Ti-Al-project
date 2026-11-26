@@ -1,0 +1,23 @@
+{
+  "job_id": "20961139",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=v100",
+    "--nodelist=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--gres=gpu:a100:1",
+    "--mem=32G",
+    "--time=16:00:00",
+    "--no-requeue",
+    "--job-name=TiAl-rho1873-PBE15k",
+    "--chdir=/home6/u3129/tial-testsets/pbe15k-density-1873-20261026-01",
+    "--output=/home6/u3129/tial-testsets/pbe15k-density-1873-20261026-01/allocation-%j.log",
+    "/home6/u3129/tial-testsets/pbe15k-density-1873-20261026-01/job.sbatch"
+  ],
+  "unix": 1793003629.0006778
+}

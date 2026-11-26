@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-28",
+  "supersedes": "scheduler-overrides-08.json",
+  "cpu_vasp_partition": "apollo",
+  "reason": "PBEsol force-001 independently validated: EDIFF and normal termination, SCF25; continue remaining displacements using the successful 64-rank KPAR8 layout on Apollo.",
+  "requested_walltime": "20:00:00",
+  "observed_partition_max_walltime": "20:00:00",
+  "memory_GiB_per_node": 240,
+  "scientific_changes": [],
+  "jobs": {
+    "PBE_old": {
+      "job_id": "20959336",
+      "partition": "v100",
+      "action": "Cancelled by explicit user request; no new checkpoint assumed"
+    },
+    "PBE": {
+      "job_id": "20959753",
+      "partition": "apollo",
+      "nodes": 1,
+      "ranks": 32,
+      "KPAR": 4,
+      "NCORE": 4,
+      "target": "PBE/production-02/force-001-restart-03",
+      "checkpoint_parent": "20958089",
+      "dependency": null
+    },
+    "r2SCAN": {
+      "job_id": "20960773",
+      "partition": "apollo",
+      "nodes": 1,
+      "ranks": 32,
+      "KPAR": 4,
+      "NCORE": 4,
+      "LWAVE": true,
+      "target": "r2SCAN/production-02/force-001-restart-02",
+      "checkpoint_parent": "20959337",
+      "wavecar_max_estimated_bytes": 50401041888,
+      "quota_gate": "Require conservative wavefunction-output bound plus densities and 5 GiB additional margin before launching. Actual WAVECAR size must be checked before any next copy/restart."
+    },
+    "PBEsol": {
+      "job_id": "20962927",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4,
+      "memory_GiB_per_node": 240,
+      "walltime": "20:00:00",
+      "target": "PBEsol/production-04/force-002",
+      "policy": "execution-policy-04.json",
+      "driver": "production_step_v4.py",
+      "launcher": "launch_v8.sbatch"
+    },
+    "PBE_softstop_continuation": {
+      "job_id": "20959747",
+      "action": "Cancelled before start; required clean checkpoint from interrupted run"
+    },
+    "r2SCAN_previous": {
+      "job_id": "20959337",
+      "state": "COMPLETED",
+      "scientific_state": "checkpointed_needs_review; no EDIFF",
+      "SCF_steps": 9,
+      "elapsed": "15:19:14",
+      "end_local": "2026-10-26T00:36:19+05:00"
+    },
+    "PBEsol_completed": {
+      "job_id": "20959338",
+      "state": "COMPLETED",
+      "step": "force-001",
+      "accepted": true,
+      "SCF_steps": 25,
+      "end_local": "2026-10-28T08:41:39+05:00",
+      "report": "results/PBEsol-force001-validation-20261028.json"
+    }
+  },
+  "restart_gate": "restart_step_v4.py validates original clean 20958089 checkpoint; does not read cancelled 20959336 outputs. launch_v6.sbatch rejects allocations outside Apollo.",
+  "provenance": "runs/alpha-ti-xc-phonons-20261021-01/PBEsol-production04-force-002-submission.json",
+  "forbidden_vasp_nodes": [
+    "tesla-a101"
+  ],
+  "checkpoint_guard": "Existing checkpoint_guard_v2.py reads actual Slurm EndTime at launch; minimum 8h reserve remains active. No claim of an automatically queued next restart."
+}

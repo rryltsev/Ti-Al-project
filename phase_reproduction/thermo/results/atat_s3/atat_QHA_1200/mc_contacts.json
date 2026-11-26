@@ -1,0 +1,96 @@
+[
+  {
+    "model": "atat_QHA",
+    "T_K": 1200.0,
+    "N": 5120,
+    "windows": 69,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 23.138091299500257,
+        "alpha2_at_pct": 25.047971380788216,
+        "window_edge": false,
+        "order_left": 0.0637683345608814,
+        "order_right": 0.7809885830710559,
+        "order_direction": "rising",
+        "order_se_left": 0.001294720798381275,
+        "order_se_right": 0.0008734357056960225,
+        "bootstrap_midpoint_match": {
+          "resolved": 300,
+          "alpha_95": [
+            23.05797760175848,
+            23.229170320121487
+          ],
+          "alpha2_95": [
+            24.98624305154885,
+            25.11905974437672
+          ],
+          "width_95": [
+            1.8747795592194425,
+            1.9574565717504164
+          ]
+        }
+      }
+    ],
+    "min_width_at_pct": 0.5,
+    "largest_unthresholded_interior_width_at_pct": 1.9098800812879588,
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "baseline_interior_candidates": 1,
+      "draws_without_interior_contact": 0,
+      "draws_with_one_interior_contact": 300,
+      "draws_with_multiple_interior_contacts": 0,
+      "draws_invalid": 0,
+      "alpha_95": [
+        23.05797760175848,
+        23.229170320121487
+      ],
+      "alpha2_95": [
+        24.98624305154885,
+        25.11905974437672
+      ],
+      "width_95": [
+        1.8747795592194425,
+        1.9574565717504164
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 1,
+      "offset_gradient_max_abs": 2.5955082887578654e-09,
+      "status": "connected",
+      "contacts": [
+        {
+          "alpha_at_pct": 14.960937499999998,
+          "alpha2_at_pct": 15.52734375,
+          "window_edge": false,
+          "order_left": 0.023184997193179728,
+          "order_right": 0.024250327754569423,
+          "order_direction": "rising",
+          "order_se_left": 0.0001867518180862963,
+          "order_se_right": 0.0002182978022214054
+        },
+        {
+          "alpha_at_pct": 19.609375,
+          "alpha2_at_pct": 20.13671875,
+          "window_edge": false,
+          "order_left": 0.035786065419653346,
+          "order_right": 0.03807177415777708,
+          "order_direction": "rising",
+          "order_se_left": 0.00026864361598342903,
+          "order_se_right": 0.0003277652791385148
+        },
+        {
+          "alpha_at_pct": 23.28125,
+          "alpha2_at_pct": 25.01953125,
+          "window_edge": false,
+          "order_left": 0.06708055178875963,
+          "order_right": 0.7782040668681958,
+          "order_direction": "rising",
+          "order_se_left": 0.0015689554384680214,
+          "order_se_right": 0.0008974455687897752
+        }
+      ]
+    }
+  }
+]

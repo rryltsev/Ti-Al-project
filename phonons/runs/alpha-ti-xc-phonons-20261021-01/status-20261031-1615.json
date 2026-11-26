@@ -1,0 +1,170 @@
+{
+  "detail": {
+    "PBE": {
+      "scf_lines": [
+        "DAV:   1     0.138072010381E+05    0.13807E+05   -0.49286E+05129984   0.196E+03",
+        "DAV:   2     0.300383945381E+03   -0.13507E+05   -0.13311E+05129024   0.666E+02",
+        "DAV:   3    -0.657073147702E+03   -0.95746E+03   -0.89573E+03187472   0.159E+02",
+        "DAV:   4    -0.744791042091E+03   -0.87718E+02   -0.84347E+02178384   0.400E+01",
+        "DAV:   5    -0.748950675742E+03   -0.41596E+01   -0.39893E+01171064   0.730E+00    0.214E-01",
+        "DAV:   6    -0.749241667246E+03   -0.29099E+00   -0.28263E+00176200   0.156E+00    0.314E-01",
+        "DAV:   7    -0.749262905270E+03   -0.21238E-01   -0.21673E-01169648   0.432E-01    0.106E-01",
+        "DAV:   8    -0.749265079717E+03   -0.21744E-02   -0.22817E-02175112   0.148E-01    0.863E-02",
+        "DAV:   9    -0.749265277284E+03   -0.19757E-03   -0.22393E-03174088   0.523E-02    0.714E-02",
+        "DAV:  10    -0.749265265447E+03    0.11836E-04   -0.29319E-04171328   0.263E-02    0.515E-02",
+        "DAV:  11    -0.749265259710E+03    0.57370E-05   -0.36902E-05172304   0.876E-03    0.443E-02",
+        "DAV:  12    -0.749265237066E+03    0.22645E-04   -0.24995E-05159728   0.956E-03    0.262E-02",
+        "DAV:  13    -0.749265230259E+03    0.68067E-05   -0.45541E-06174488   0.459E-03    0.195E-02"
+      ],
+      "loop_seconds": [
+        1109.4824,
+        1184.9322,
+        1677.8819,
+        1728.422,
+        1709.7192,
+        1577.8509,
+        1603.2884,
+        1721.2922,
+        1602.6879,
+        1580.5205,
+        1412.1314,
+        1281.146,
+        1282.7449
+      ],
+      "guard": {
+        "job_id": "20968908",
+        "checked_epoch": 1793445127.4710984,
+        "deadline_epoch": 1793496417.0,
+        "reserve_seconds": 28800,
+        "state": "armed"
+      },
+      "softstop_due_epoch": 1793467617.0,
+      "seconds_until_softstop": 22461.984414815903,
+      "ediff_reached": false,
+      "normal_termination": false,
+      "stopcar_exists": false,
+      "wave_read_success": false,
+      "stdout_tail": [
+        "DAV:  11    -0.749265259710E+03    0.57370E-05   -0.36902E-05172304   0.876E-03    0.443E-02",
+        "DAV:  12    -0.749265237066E+03    0.22645E-04   -0.24995E-05159728   0.956E-03    0.262E-02",
+        "DAV:  13    -0.749265230259E+03    0.68067E-05   -0.45541E-06174488   0.459E-03    0.195E-02"
+      ],
+      "mean_recent_loop_seconds": 1507.7077749999999,
+      "rough_additional_scf_capacity_until_guard": 14.898102130444943,
+      "softstop_due_Yekaterinburg": "2026-10-31T22:26:57+05:00"
+    },
+    "PBEsol": {
+      "scf_lines": [
+        "DAV:   1     0.142635354689E+05    0.14264E+05   -0.47266E+05129936   0.194E+03",
+        "DAV:   2     0.282813904980E+03   -0.13981E+05   -0.13762E+05129024   0.669E+02",
+        "DAV:   3    -0.823147227127E+03   -0.11060E+04   -0.10383E+04183592   0.176E+02",
+        "DAV:   4    -0.911430634259E+03   -0.88283E+02   -0.85698E+02174608   0.443E+01",
+        "DAV:   5    -0.914271094805E+03   -0.28405E+01   -0.27599E+01168536   0.706E+00    0.124E+02",
+        "DAV:   6    -0.804765657040E+03    0.10951E+03   -0.32290E+02138240   0.379E+01    0.248E+01",
+        "DAV:   7    -0.798473378935E+03    0.62923E+01   -0.43779E+01168056   0.118E+01    0.658E+00",
+        "DAV:   8    -0.797978413329E+03    0.49497E+00   -0.27776E+00162040   0.334E+00    0.313E+00",
+        "DAV:   9    -0.798062805864E+03   -0.84393E-01   -0.10424E+00180696   0.324E+00    0.324E+00",
+        "DAV:  10    -0.797864365308E+03    0.19844E+00   -0.48798E-01182536   0.264E+00    0.605E-01",
+        "DAV:  11    -0.797863526699E+03    0.83861E-03   -0.66888E-02176496   0.650E-01    0.299E-01",
+        "DAV:  12    -0.797862944695E+03    0.58200E-03   -0.77546E-03172400   0.234E-01    0.277E-01",
+        "DAV:  13    -0.797862302645E+03    0.64205E-03   -0.27784E-03172976   0.164E-01    0.196E-01",
+        "DAV:  14    -0.797861910479E+03    0.39217E-03   -0.12002E-03164336   0.861E-02    0.817E-02",
+        "DAV:  15    -0.797861842791E+03    0.67688E-04   -0.30819E-04175976   0.587E-02    0.540E-02",
+        "DAV:  16    -0.797861803483E+03    0.39308E-04   -0.19535E-04181568   0.508E-02    0.485E-02",
+        "DAV:  17    -0.797861723330E+03    0.80153E-04   -0.15393E-04177920   0.410E-02    0.942E-03"
+      ],
+      "loop_seconds": [
+        940.8442,
+        1229.5755,
+        1168.0526,
+        1964.3289,
+        1272.1912,
+        969.378,
+        1321.1438,
+        1066.5661,
+        1219.431,
+        1251.4955,
+        1208.4896,
+        1587.6339,
+        1518.5569,
+        1335.5276,
+        1284.5447,
+        1341.3589,
+        1827.6979
+      ],
+      "guard": {
+        "job_id": "20968907",
+        "checked_epoch": 1793445108.2439437,
+        "deadline_epoch": 1793494000.0,
+        "reserve_seconds": 21600,
+        "state": "armed",
+        "guard_revision": "PBEsol-measured-v4",
+        "minimum_reserve_seconds": 21600
+      },
+      "softstop_due_epoch": 1793472400.0,
+      "seconds_until_softstop": 27244.98054075241,
+      "ediff_reached": false,
+      "normal_termination": false,
+      "stopcar_exists": false,
+      "wave_read_success": false,
+      "stdout_tail": [
+        "DAV:  15    -0.797861842791E+03    0.67688E-04   -0.30819E-04175976   0.587E-02    0.540E-02",
+        "DAV:  16    -0.797861803483E+03    0.39308E-04   -0.19535E-04181568   0.508E-02    0.485E-02",
+        "DAV:  17    -0.797861723330E+03    0.80153E-04   -0.15393E-04177920   0.410E-02    0.942E-03"
+      ],
+      "mean_recent_loop_seconds": 1419.413125,
+      "rough_additional_scf_capacity_until_guard": 19.19453896888012,
+      "softstop_due_Yekaterinburg": "2026-10-31T23:46:40+05:00"
+    },
+    "r2SCAN": {
+      "scf_lines": [
+        "DAV:   1    -0.124063757859E+04   -0.12406E+04   -0.31364E-05174280   0.174E-02    0.155E-02",
+        "DAV:   2    -0.124063759348E+04   -0.14893E-04   -0.18085E-04181464   0.410E-02    0.368E-02",
+        "DAV:   3    -0.124063757060E+04    0.22877E-04   -0.10940E-04176264   0.315E-02    0.453E-03",
+        "DAV:   4    -0.124063757203E+04   -0.14305E-05   -0.11897E-05173120   0.906E-03    0.741E-03"
+      ],
+      "loop_seconds": [
+        2296.5639,
+        2557.458,
+        2395.761,
+        2396.1584
+      ],
+      "guard": {
+        "job_id": "20968910",
+        "checked_epoch": 1793445010.1525705,
+        "deadline_epoch": 1793503562.0,
+        "reserve_seconds": 28800,
+        "state": "armed"
+      },
+      "softstop_due_epoch": 1793474762.0,
+      "seconds_until_softstop": 29606.97763967514,
+      "ediff_reached": false,
+      "normal_termination": false,
+      "stopcar_exists": false,
+      "wave_read_success": true,
+      "stdout_tail": [
+        "DAV:   2    -0.124063759348E+04   -0.14893E-04   -0.18085E-04181464   0.410E-02    0.368E-02",
+        "DAV:   3    -0.124063757060E+04    0.22877E-04   -0.10940E-04176264   0.315E-02    0.453E-03",
+        "DAV:   4    -0.124063757203E+04   -0.14305E-05   -0.11897E-05173120   0.906E-03    0.741E-03"
+      ],
+      "mean_recent_loop_seconds": 2411.485325,
+      "rough_additional_scf_capacity_until_guard": 12.277486133852022,
+      "softstop_due_Yekaterinburg": "2026-11-01T00:26:02+05:00"
+    }
+  },
+  "scheduler": "2026-10-31T16:12:38+05:00\n20968908|RUNNING|5:45:41|14:14:19|2026-10-31T10:26:57|2026-11-01T06:26:57|apollo[23-24]\n20968907|RUNNING|6:25:58|13:34:02|2026-10-31T09:46:40|2026-11-01T05:46:40|apollo[26-27]\n20968910|RUNNING|3:46:36|16:13:24|2026-10-31T12:26:02|2026-11-01T08:26:02|apollo[15-16]\n",
+  "memory_cpu": "JobID|MaxRSS|AveCPU\n20968907.0|6773484K|06:16:23\n20968908.0|6989516K|05:35:35\n20968910.0|6959552K|03:37:13\n",
+  "quota": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 94992128  104857600 104857600          355728       0       0        \n",
+  "assessment": {
+    "EDIFF_eV": 1e-08,
+    "all_running_all_unconverged": true,
+    "PBEsol": "Favourable: 17 SCF completed, previous displaced calculations converged in 25/27 SCF; this is a different reference geometry, no guarantee.",
+    "PBE": "Reasonable chance: 13 SCF, energy residual still nonmonotonic; about 6.2 h before guard.",
+    "r2SCAN": "Uncertain: WAVECAR read verified, only 4 SCF, both residuals about 1e-6 eV. About 8.2 h before guard (~12 more SCF at measured rate). Do not infer guaranteed convergence from restart.",
+    "fatal_errors_observed": false,
+    "CPU_progress": "Average CPU increased between monitor and focused probe; long SCF alone is not a hang.",
+    "quota_free_GiB": 9.408447265625,
+    "new_WAVECAR_claim": "Current file is verified input checkpoint, not a newly finalized output.",
+    "resource_changes": []
+  }
+}

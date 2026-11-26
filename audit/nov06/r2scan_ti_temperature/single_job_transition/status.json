@@ -1,0 +1,1923 @@
+{
+  "metadata": {
+    "progress.json": {
+      "phase": "cycle_completed",
+      "status": "refinement_cycle_complete_review_required",
+      "completed": {
+        "Ti_1873K": 5,
+        "Ti_1941K": 5,
+        "Ti_2000K": 5,
+        "Ti_2100K": 5
+      },
+      "legacy": {
+        "Ti_1873K": 30,
+        "Ti_1941K": 15,
+        "Ti_2000K": 15,
+        "Ti_2100K": 15
+      },
+      "plan_version": 1,
+      "job_id": "20988268",
+      "unix": 1793977154.2885175,
+      "automatic_extension": false
+    },
+    "final.json": {
+      "status": "refinement_cycle_complete_review_required",
+      "completed": {
+        "Ti_1873K": 5,
+        "Ti_1941K": 5,
+        "Ti_2000K": 5,
+        "Ti_2100K": 5
+      },
+      "legacy": {
+        "Ti_1873K": 30,
+        "Ti_1941K": 15,
+        "Ti_2000K": 15,
+        "Ti_2100K": 15
+      },
+      "plan_version": 1,
+      "job_id": "20988268",
+      "unix": 1793977154.2885175,
+      "automatic_extension": false
+    },
+    "submission.json": {
+      "unix": 1793933217.0501862,
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02",
+      "run_id": "r2scan-ti-1873-20261106-01",
+      "args": [
+        "sbatch",
+        "--parsable",
+        "--partition=v100",
+        "--account=imet-2026-2",
+        "--qos=normal",
+        "--nodes=1",
+        "--ntasks=1",
+        "--cpus-per-task=6",
+        "--gres=gpu:a100:1",
+        "--mem=32G",
+        "--time=20:00:00",
+        "--requeue",
+        "--job-name=Ti1873-visc-r2SCAN",
+        "--comment=r2scan-ti-1873-20261106-01",
+        "--chdir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K",
+        "--output=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-%j.log",
+        "--open-mode=append",
+        "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/job.sbatch"
+      ],
+      "status": "single_job_released",
+      "returncode": 0,
+      "stdout": "20988268\n",
+      "stderr": "",
+      "job_id": "20988268",
+      "new_sbatch_created": false,
+      "mode": "single_job_sequential_refinement_v2",
+      "dispatcher_remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K",
+      "transition": {
+        "unix": 1793939818.697937,
+        "status": "single_job_released",
+        "job_id": "20988268",
+        "dispatcher_remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/workflow.py",
+        "dispatcher_sha256": "e47c2f181277365242832b262575f3d5aacd087aed982a058d035719bdb07cb7",
+        "original_workflow_sha256": "f5f6e17adba92b8a16e99f19c64ab4df2d5b4b106839a185c61928834db0a279",
+        "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02",
+        "cancelled_jobs": [
+          {
+            "job_id": "20988269",
+            "action": "cancel_superseded_unstarted_temperature_job",
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "job_id": "20988270",
+            "action": "cancel_superseded_unstarted_temperature_job",
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "job_id": "20988271",
+            "action": "cancel_superseded_unstarted_temperature_job",
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "new_sbatch_created": false,
+        "data_confirmation": "confirmed",
+        "released_unix": 1793940309.5819464,
+        "scheduler_after_release": "JobId=20988268 JobName=Ti-visc-r2SCAN-refine UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=897 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-06T09:39:39 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T09:37:53 Scheduler=Main Partition=v100 AllocNode:Sid=umt:2203327 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/job.sbatch WorkDir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K Comment=r2scan-ti-sequential-refinement-20261106-02  StdErr=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-20988268.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-20988268.log Power= TresPerNode=gres:gpu:a100:1 \n",
+        "gpu_export_bootstrap": true,
+        "repair_unix": 1793940304.2105079
+      },
+      "gpu_export_repair": "sameID; no completed replica or physical protocol changed"
+    },
+    "transition-receipt.json": {
+      "unix": 1793939818.697937,
+      "status": "single_job_released",
+      "job_id": "20988268",
+      "dispatcher_remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/workflow.py",
+      "dispatcher_sha256": "e47c2f181277365242832b262575f3d5aacd087aed982a058d035719bdb07cb7",
+      "original_workflow_sha256": "f5f6e17adba92b8a16e99f19c64ab4df2d5b4b106839a185c61928834db0a279",
+      "remote": "/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02",
+      "cancelled_jobs": [
+        {
+          "job_id": "20988269",
+          "action": "cancel_superseded_unstarted_temperature_job",
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "job_id": "20988270",
+          "action": "cancel_superseded_unstarted_temperature_job",
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "job_id": "20988271",
+          "action": "cancel_superseded_unstarted_temperature_job",
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "new_sbatch_created": false,
+      "data_confirmation": "confirmed",
+      "released_unix": 1793940309.5819464,
+      "scheduler_after_release": "JobId=20988268 JobName=Ti-visc-r2SCAN-refine UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=897 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=1 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-06T09:39:39 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T09:37:53 Scheduler=Main Partition=v100 AllocNode:Sid=umt:2203327 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/job.sbatch WorkDir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K Comment=r2scan-ti-sequential-refinement-20261106-02  StdErr=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-20988268.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-20988268.log Power= TresPerNode=gres:gpu:a100:1 \n",
+      "gpu_export_bootstrap": true,
+      "repair_unix": 1793940304.2105079
+    },
+    "plan.json": {
+      "version": 1,
+      "targets_new_replicas": {
+        "Ti_1873K": 5,
+        "Ti_1941K": 5,
+        "Ti_2000K": 5,
+        "Ti_2100K": 5
+      },
+      "batch_size": 5,
+      "order": [
+        "Ti_1873K",
+        "Ti_1941K",
+        "Ti_2000K",
+        "Ti_2100K"
+      ],
+      "end_action": "finish_cycle_and_assess",
+      "automatic_extension": false,
+      "authorization": "User2026-11-06 requested one Slurm job and sequential five-replica refinement of existing statistics"
+    },
+    "gpu-export.json": {
+      "status": "passed",
+      "unix": 1793940610.7515876,
+      "job_id": "20988268",
+      "device": "NVIDIA A100-PCIE-40GB",
+      "path": "/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2",
+      "sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380",
+      "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+      "checkpoint_internal_step": 23199,
+      "atomic_virial": true,
+      "equivalence": [
+        {
+          "id": "Ti_1873K",
+          "E_max_eV_atom": 6.053598688993134e-08,
+          "F_max_eV_A": 5.593847626439441e-06,
+          "virial_max_eV": 0.000381320344288838
+        },
+        {
+          "id": "Ti_1941K",
+          "E_max_eV_atom": 9.336510764512695e-08,
+          "F_max_eV_A": 7.486098187570178e-06,
+          "virial_max_eV": 0.00033592555402606195
+        },
+        {
+          "id": "Ti_2000K",
+          "E_max_eV_atom": 5.5646543373200075e-08,
+          "F_max_eV_A": 7.3615521696268615e-06,
+          "virial_max_eV": 0.00024769835863480694
+        },
+        {
+          "id": "Ti_2100K",
+          "E_max_eV_atom": 8.242206739339508e-08,
+          "F_max_eV_A": 6.616390672231631e-06,
+          "virial_max_eV": 0.00028453390277860535
+        }
+      ],
+      "method": "Same freeze_sezm_to_pt2(cuda:0,atomic_virial=True) as previously validated PBE15k A100 workflow; unchanged native weights"
+    },
+    "gpu-model-binding.json": {
+      "unix": 1793940610.9366162,
+      "native_checkpoint_unchanged": true,
+      "physical_protocol_unchanged": true,
+      "changes": [
+        {
+          "id": "Ti_1873K",
+          "old_protocol_sha256": "9c98e8408c68d55c72d8c362a959a2c5b6779e369f8c6dfe9168172403911a03",
+          "new_protocol_sha256": "f5c7202e32f96f56a2b81461ae21606f5a2e1e0aec4500e382e7a28f41bd3490",
+          "old_frozen": {
+            "path": "/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+            "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+          },
+          "new_frozen": {
+            "path": "/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2",
+            "sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380"
+          }
+        },
+        {
+          "id": "Ti_1941K",
+          "old_protocol_sha256": "80c1def5d21302355f0d61187f9555a0a5c9d4c23eeed4735275f99bac9d691b",
+          "new_protocol_sha256": "63786d8ccd671a68954ead5caa85fc1ba1950fab6de190d6c98b0b051074d394",
+          "old_frozen": {
+            "path": "/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+            "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+          },
+          "new_frozen": {
+            "path": "/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2",
+            "sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380"
+          }
+        },
+        {
+          "id": "Ti_2000K",
+          "old_protocol_sha256": "8e3ddc294e34f64895a9855b6d42cbaa2d20eb6531bf502a816238627b16b6b2",
+          "new_protocol_sha256": "8f7606c9281b35ff3d2d6dc94f21bd2fd20b027818cb6429ebfbf4c83865e55d",
+          "old_frozen": {
+            "path": "/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+            "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+          },
+          "new_frozen": {
+            "path": "/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2",
+            "sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380"
+          }
+        },
+        {
+          "id": "Ti_2100K",
+          "old_protocol_sha256": "2267cb0736c7abbde11df4e2b313f76aa90bb5e6cb77a4a641de78099ab2dafe",
+          "new_protocol_sha256": "68927b710f3283e48dafcb80d3893101a29ba6734d179744c9e55913d6f5e766",
+          "old_frozen": {
+            "path": "/home6/u3129/tial-testsets/model-export-20261022-02-cpu/r2SCAN/model_frozen.pt2",
+            "sha256": "1a8c1ef801263c7cbaa8561b2dbf4af32d46fb4375a6cfafaad13bde29f91c0a"
+          },
+          "new_frozen": {
+            "path": "/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2",
+            "sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380"
+          }
+        }
+      ],
+      "freeze_device": "cuda:0",
+      "gpu_export_sha256": "f9cd2a583137261932b5bfbb5e93595509fdcfff82f73cc7088204b1c4038122"
+    },
+    "gpu-export-repair.json": {
+      "status": "staged",
+      "unix": 1793940304.2115521,
+      "same_native_checkpoint": {
+        "functional": "r2SCAN",
+        "step": 23200,
+        "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\output_model\\ckpt\\model.ckpt-23200.pt",
+        "sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+        "path": "/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt",
+        "article_checkpoint": true
+      },
+      "physical_protocol_changed": false,
+      "data_changed": false,
+      "completed_replicas": 0,
+      "code_changes": {
+        "workflow.py": {
+          "before": "931ffb454a5ab6be0a46d5a4ecf96a249d3b67edc336692c0f707f7f88f98f6f",
+          "after": "f88634040f153de7676a1acf4094c34a06d9b73997d3922d2fdab1aace9ded70"
+        },
+        "bootstrap_gpu.py": {
+          "before": null,
+          "after": "30a2cbec151e88264964140e865cf899760b55108ee32fef1792f2ea389e5708"
+        }
+      },
+      "dispatcher_before": "f8de4e6facfc44a19cc864a4405e1e8e87d6d1c3b53beb20bf5b725597d55263",
+      "dispatcher_after": "e47c2f181277365242832b262575f3d5aacd087aed982a058d035719bdb07cb7",
+      "method": "freeze_sezm_to_pt2 on cuda:0 within same20988268; validate same-checkpoint E/F/virial on all4initialstructures before MD"
+    }
+  },
+  "states": {
+    "Ti_1873K": {
+      "completed": 5,
+      "metadata": {
+        "preflight.json": {
+          "status": "passed",
+          "device": {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "visible": "0",
+            "job_id": "20988268"
+          },
+          "checks": [
+            {
+              "composition": "Ti_1873K",
+              "E_diff_eV_atom": 8.032659160051026e-08,
+              "F_diff_rms_eV_A": 1.7384076391544162e-06,
+              "pressure_diff_max_GPa": 6.583054174552672e-06
+            }
+          ],
+          "seconds_per_step": [
+            0.035800715759396556
+          ],
+          "native_type_map": [
+            "H",
+            "He",
+            "Li",
+            "Be",
+            "B",
+            "C",
+            "N",
+            "O",
+            "F",
+            "Ne",
+            "Na",
+            "Mg",
+            "Al",
+            "Si",
+            "P",
+            "S",
+            "Cl",
+            "Ar",
+            "K",
+            "Ca",
+            "Sc",
+            "Ti",
+            "V",
+            "Cr",
+            "Mn",
+            "Fe",
+            "Co",
+            "Ni",
+            "Cu",
+            "Zn",
+            "Ga",
+            "Ge",
+            "As",
+            "Se",
+            "Br",
+            "Kr",
+            "Rb",
+            "Sr",
+            "Y",
+            "Zr",
+            "Nb",
+            "Mo",
+            "Tc",
+            "Ru",
+            "Rh",
+            "Pd",
+            "Ag",
+            "Cd",
+            "In",
+            "Sn",
+            "Sb",
+            "Te",
+            "I",
+            "Xe",
+            "Cs",
+            "Ba",
+            "La",
+            "Ce",
+            "Pr",
+            "Nd",
+            "Pm",
+            "Sm",
+            "Eu",
+            "Gd",
+            "Tb",
+            "Dy",
+            "Ho",
+            "Er",
+            "Tm",
+            "Yb",
+            "Lu",
+            "Hf",
+            "Ta",
+            "W",
+            "Re",
+            "Os",
+            "Ir",
+            "Pt",
+            "Au",
+            "Hg",
+            "Tl",
+            "Pb",
+            "Bi",
+            "Po",
+            "At",
+            "Rn",
+            "Fr",
+            "Ra",
+            "Ac",
+            "Th",
+            "Pa",
+            "U",
+            "Np",
+            "Pu",
+            "Am",
+            "Cm",
+            "Bk",
+            "Cf",
+            "Es",
+            "Fm",
+            "Md",
+            "No",
+            "Lr",
+            "Rf",
+            "Db",
+            "Sg",
+            "Bh",
+            "Hs",
+            "Mt",
+            "Ds",
+            "Rg",
+            "Cn",
+            "Nh",
+            "Fl",
+            "Mc",
+            "Lv",
+            "Ts",
+            "Og"
+          ],
+          "native_type_indices": {
+            "Al": 12,
+            "Ti": 21
+          },
+          "estimated_batch_hours": 2.2872679512947798,
+          "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+          "frozen_sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380",
+          "protocol_sha256": "f5c7202e32f96f56a2b81461ae21606f5a2e1e0aec4500e382e7a28f41bd3490",
+          "versions": {
+            "deepmd-kit": "3.2.0",
+            "torch": "2.11.0",
+            "numpy": "2.5.3",
+            "ase": "3.29.0"
+          }
+        },
+        "progress.json": {
+          "status": "running",
+          "phase": "analysis",
+          "job_id": "20988268",
+          "unix": 1793949733.4287505,
+          "composition": "Ti_1873K",
+          "n_replicas": 5
+        },
+        "analysis/latest_Ti_1873K.json": {
+          "temperature_K": 1873,
+          "n_replicas": 5,
+          "points": [
+            {
+              "id": "Ti_1873K",
+              "temperature_K": 1873,
+              "x_Al": 0.0,
+              "n_replicas": 5,
+              "windows": {
+                "40ps": {
+                  "eta_mPa_s": 4.217204555013318,
+                  "eta_std_mPa_s": 0.30243385819390667,
+                  "relative_std": 0.0717142965793253,
+                  "neff": 43.10680653427973,
+                  "tau_exp_ps": 0.2637876984820506,
+                  "tau_int_ps": 0.14029927732188135,
+                  "cost_z": -0.15339184248410626,
+                  "criterion_z": 0.031488134238337025
+                },
+                "first20ps": {
+                  "eta_mPa_s": 3.599494692457607,
+                  "eta_std_mPa_s": 0.26187710519474383,
+                  "relative_std": 0.07275385229584641,
+                  "neff": 49.908740789727275,
+                  "tau_exp_ps": 0.15777427596511504,
+                  "tau_int_ps": 0.12261614127248914,
+                  "cost_z": -1.4106049912236043,
+                  "criterion_z": 1.828294018493913
+                },
+                "second20ps": {
+                  "eta_mPa_s": 3.9883269576940052,
+                  "eta_std_mPa_s": 0.3426263796931165,
+                  "relative_std": 0.08590729479491277,
+                  "neff": 43.71607685164308,
+                  "tau_exp_ps": 0.18577992238824068,
+                  "tau_int_ps": 0.12965403158946573,
+                  "cost_z": -1.1998900368522851,
+                  "criterion_z": 2.555663555234375
+                }
+              },
+              "sources": [
+                {
+                  "replica": 1,
+                  "stress_file": "states/Ti_1873K/replicas/replica_0001/attempt_001/production/stress.npz",
+                  "sha256": "e39e9b1f3e6f84f026c6e3a7d686627d1e5570beec77b015bf40a63ae4477d12"
+                },
+                {
+                  "replica": 2,
+                  "stress_file": "states/Ti_1873K/replicas/replica_0002/attempt_001/production/stress.npz",
+                  "sha256": "138017b3783c3f4c1da42f1ac742ad870045a829dbede41fa02f4765c6150e85"
+                },
+                {
+                  "replica": 3,
+                  "stress_file": "states/Ti_1873K/replicas/replica_0003/attempt_001/production/stress.npz",
+                  "sha256": "e1663bef373c619afd3cd8c85f225076e7bb1fb1d2d9cc3ceae8c1bb0e22aa04"
+                },
+                {
+                  "replica": 4,
+                  "stress_file": "states/Ti_1873K/replicas/replica_0004/attempt_001/production/stress.npz",
+                  "sha256": "15953b8d0b292daa759b32c6d3afaf86c690c49de92c89eb0f581ccf6c0dbab4"
+                },
+                {
+                  "replica": 5,
+                  "stress_file": "states/Ti_1873K/replicas/replica_0005/attempt_001/production/stress.npz",
+                  "sha256": "e6ab1ae97897c91de8df1e3d5b8d149dd8567ec9fa347654c94a1f22e779e014"
+                }
+              ],
+              "combined_20ps": {
+                "eta_mPa_s": 3.7975305590840596,
+                "eta_std_mPa_s": 0.11237431983287847,
+                "relative_std": 0.029591419498670855,
+                "neff": 22.961177750636207,
+                "cost_z": -1.3010296558132113,
+                "criterion_z": -0.3120448313572028,
+                "formal_std_mPa_s": 0.11237431983287847,
+                "cluster_jackknife_std_mPa_s": 0.10304184578111887,
+                "legacy_replicas": 30,
+                "new_40ps_replicas": 5,
+                "replica_clusters": 35,
+                "windows_20ps": 40,
+                "leave_one_replica_out_mPa_s": [
+                  3.810463163447061,
+                  3.8011268033411607,
+                  3.7687583464515386,
+                  3.7907191798928523,
+                  3.797485856210613,
+                  3.8221298753474544,
+                  3.8332108448830633,
+                  3.798094288846638,
+                  3.7936657038168535,
+                  3.7677591756541453,
+                  3.811391601047765,
+                  3.7985988032701754,
+                  3.8213396332635408,
+                  3.8061701174777087,
+                  3.787486438248151,
+                  3.7793786464524493,
+                  3.799891017788195,
+                  3.788257397868535,
+                  3.8287953128189747,
+                  3.8114891507062545,
+                  3.8111360716200045,
+                  3.7932261777210936,
+                  3.8131985143495744,
+                  3.7988575840723424,
+                  3.7916304183843295,
+                  3.8041780680471353,
+                  3.7857231291667124,
+                  3.7686181733193536,
+                  3.816222268454287,
+                  3.8124187877165374,
+                  3.7984052680252214,
+                  3.7924047247828985,
+                  3.7609812903700046,
+                  3.785965412829213,
+                  3.766005947286456
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-sequential-refinement-v2"
+              },
+              "legacy_manifest_sha256": "7a2f13c3071f9e70055ffac3f195603b53686d13a119ca1f99b3a19ea8f3cae7",
+              "new_batch_40ps": {
+                "eta_mPa_s": 4.217204555013318,
+                "eta_std_mPa_s": 0.30243385819390667,
+                "relative_std": 0.0717142965793253,
+                "neff": 43.10680653427973,
+                "tau_exp_ps": 0.2637876984820506,
+                "tau_int_ps": 0.14029927732188135,
+                "cost_z": -0.15339184248410626,
+                "criterion_z": 0.031488134238337025
+              },
+              "new_batch_20ps": {
+                "eta_mPa_s": 4.049603701926481,
+                "eta_std_mPa_s": 0.3838875957380721,
+                "relative_std": 0.09479633662806283,
+                "neff": 27.45194538483378,
+                "cost_z": -1.1579109418988391,
+                "criterion_z": 1.7419220413410113,
+                "formal_std_mPa_s": 0.31288105248068576,
+                "cluster_jackknife_std_mPa_s": 0.3838875957380721,
+                "legacy_replicas": 0,
+                "new_40ps_replicas": 5,
+                "replica_clusters": 5,
+                "windows_20ps": 10,
+                "leave_one_replica_out_mPa_s": [
+                  4.250799399383478,
+                  4.03994038080935,
+                  3.6620536023931223,
+                  3.957830996249012,
+                  3.8930426883132414
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-sequential-refinement-v2"
+              },
+              "previous_accumulated_20ps": {
+                "eta_mPa_s": 3.69844142093711,
+                "eta_std_mPa_s": 0.11898461448185065,
+                "relative_std": 0.03217155578246319,
+                "neff": 25.17439264254821,
+                "cost_z": -0.39437485784918125,
+                "criterion_z": -0.4864109029870831,
+                "formal_std_mPa_s": 0.11898461448185065,
+                "cluster_jackknife_std_mPa_s": 0.1095233214110647,
+                "legacy_replicas": 30,
+                "new_40ps_replicas": 0,
+                "replica_clusters": 30,
+                "windows_20ps": 30,
+                "leave_one_replica_out_mPa_s": [
+                  3.7109515115200153,
+                  3.6988543747284752,
+                  3.662022854682667,
+                  3.6820796541579806,
+                  3.6960938970514756,
+                  3.7283468668127213,
+                  3.735520652094373,
+                  3.693004832227115,
+                  3.69510841526286,
+                  3.6585775184475655,
+                  3.712161466475509,
+                  3.7009155286509667,
+                  3.724775953158366,
+                  3.709175979965177,
+                  3.6797570094063925,
+                  3.6771574024868925,
+                  3.6962821307545357,
+                  3.684144829790472,
+                  3.7324066938719795,
+                  3.7099387648948,
+                  3.710232141662843,
+                  3.6931071492402046,
+                  3.7126849201641807,
+                  3.6922508173419812,
+                  3.6857491022558397,
+                  3.7015793563936534,
+                  3.682716399430737,
+                  3.6553851906802866,
+                  3.722698858794888,
+                  3.7120331069102828
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-legacy20-new40-v1"
+              },
+              "new_batch_z": 0.8737461289473893
+            }
+          ],
+          "unix": 1793949778.524823,
+          "protocol_sha256": "f5c7202e32f96f56a2b81461ae21606f5a2e1e0aec4500e382e7a28f41bd3490",
+          "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+          "checks": [
+            {
+              "id": "Ti_1873K",
+              "flags": {
+                "combined_precision": true,
+                "combined_last_three_stability": false,
+                "combined_cost": true,
+                "combined_cutoff": true,
+                "new_batch_consistency": true
+              },
+              "passed": false,
+              "last_three_relative_range": null,
+              "max_20_40_relative_difference": 0.1464737729692034,
+              "new40_diagnostics": {
+                "40ps": {
+                  "relative_std": 0.0717142965793253,
+                  "neff": 43.10680653427973,
+                  "cost_z": -0.15339184248410626,
+                  "criterion_z": 0.031488134238337025
+                },
+                "first20ps": {
+                  "relative_std": 0.07275385229584641,
+                  "neff": 49.908740789727275,
+                  "cost_z": -1.4106049912236043,
+                  "criterion_z": 1.828294018493913
+                },
+                "second20ps": {
+                  "relative_std": 0.08590729479491277,
+                  "neff": 43.71607685164308,
+                  "cost_z": -1.1998900368522851,
+                  "criterion_z": 2.555663555234375
+                }
+              }
+            }
+          ],
+          "all_passed": false,
+          "pass_streak": 0,
+          "stop_recommended": false,
+          "review_required": false,
+          "assessment_pending": true,
+          "legacy_replicas": 30,
+          "total_replica_clusters": 35,
+          "sampling_extension": "Only the explicit versioned plan determines additional blocks; no mandatory Nnew quota.",
+          "caveats": [
+            "Cumulative and20/40ps estimates are correlated.",
+            "Combined20ps includes legacy20ps and both halves of each new40ps; both halves are one uncertainty cluster.",
+            "AdoptedSE=max(formalSE,whole-replica jackknifeSE); unequal cluster lengths and reservoir dependence limit its interpretation.",
+            "Legacy and new preparation differ; no PBE trajectories are pooled.",
+            "Finite refinement plan controls new blocks; diagnostics do not impose a new30-replica quota; errors exclude model/protocol bias."
+          ]
+        }
+      },
+      "protocol_text": "{\n  \"run_id\": \"r2scan-sequential-1873-20261106-02\",\n  \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1873K\",\n  \"checkpoint\": {\n    \"functional\": \"r2SCAN\",\n    \"step\": 23200,\n    \"local_path\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\DPA4-checkpoints\\\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\\\output_model\\\\ckpt\\\\model.ckpt-23200.pt\",\n    \"sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\",\n    \"path\": \"/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt\",\n    \"article_checkpoint\": true\n  },\n  \"frozen_model\": {\n    \"path\": \"/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2\",\n    \"sha256\": \"bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380\"\n  },\n  \"states\": [\n    {\n      \"id\": \"Ti_1873K\",\n      \"temperature_K\": 1873,\n      \"x_Al\": 0.0,\n      \"c_Ti\": 1.0,\n      \"actual_x_Al\": 0.0,\n      \"counts\": {\n        \"Al\": 0,\n        \"Ti\": 512\n      },\n      \"initial_file\": \"initial.data\",\n      \"initial_sha256\": \"460a94a34b791d227778b61c179ecc6fd21f0fd014a390ba693333ba0e08df48\",\n      \"initial_source\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\results-scripts-logs\\\\Ti-viscosity-r2SCAN\\\\scan_1873K_wsl2\\\\scan\\\\03_stress_autocorr\\\\c_Ti_1.00\\\\visc1\\\\mol.data\",\n      \"seed\": 611187300\n    }\n  ],\n  \"pressure_bar\": 1,\n  \"atoms\": 512,\n  \"dt_ps\": 0.001,\n  \"initial_npt_steps\": 20000,\n  \"reservoir_spacing_steps\": 5000,\n  \"nvt_equil_steps\": 1000,\n  \"production_steps\": 40000,\n  \"matched_window_steps\": 20000,\n  \"preparation_Tdamp_ps\": 0.1,\n  \"preparation_Pdamp_ps\": 0.5,\n  \"production_Tdamp_ps\": 0.2,\n  \"masses\": [\n    26.98,\n    47.88\n  ],\n  \"elements\": [\n    \"Al\",\n    \"Ti\"\n  ],\n  \"batch_size\": 5,\n  \"allocation\": {\n    \"partition\": \"v100\",\n    \"node\": null,\n    \"account\": \"imet-2026-2\",\n    \"qos\": \"normal\",\n    \"gpu\": \"a100:1\",\n    \"cpus\": 6,\n    \"md_threads\": 4,\n    \"analysis_threads\": 2,\n    \"memory\": \"32G\",\n    \"walltime\": \"20:00:00\"\n  },\n  \"convergence\": {\n    \"max_relative_std\": 0.03,\n    \"max_last_three_range\": 0.02,\n    \"max_cost_z\": 2,\n    \"max_criterion_z\": 2,\n    \"max_new_batch_z\": 2.5,\n    \"required_consecutive_passes\": 2,\n    \"interpretation\": \"Diagnostic reference for accumulated legacy+new estimates; no automatic new-replica quota or mandatory recalculation. The current sampling plan is finite and ends for assessment.\"\n  },\n  \"duration_policy\": \"Primary refinement starts from verified legacy20ps spectra and adds two20ps windows per new40ps trajectory. Own volume and temperature for every replica; never temporal concatenation. Separate new40/first20/second20 diagnostics do not enforce a new30-replica series.\",\n  \"restart_policy\": \"Only inherited single ID20988268 can requeue before20h; no new sbatch. All other previous temperature jobs superseded.\",\n  \"preparation_note\": \"New independent seeded reservoir from archived pureTi configuration,20psNPT then5psNPT+1psNVT+40psNVT per newreplica;legacy preparation remains separately identified.\",\n  \"scheduling\": {\n    \"batch_size\": 5,\n    \"policy\": \"Single job round-robin; external versioned plan specifies which five-replica blocks to add to existing statistics. No compulsory new replica quota.\"\n  },\n  \"functional\": \"r2SCAN\",\n  \"legacy\": {\n    \"manifest\": \"legacy/manifest.json\",\n    \"sha256\": \"7a2f13c3071f9e70055ffac3f195603b53686d13a119ca1f99b3a19ea8f3cae7\",\n    \"n_replicas\": 30,\n    \"duration_ps\": 20\n  },\n  \"pooling\": {\n    \"version\": \"r2scan-sequential-refinement-v2\",\n    \"primary\": \"Pooled20ps spectrum;old20ps+two20pswindows from each new40ps\",\n    \"weight\": \"Equal-length20ps channels pooled without temporal concatenation;ownV/(kB*T),fivechannels\",\n    \"uncertainty\": \"max(formalSE,delete-one-whole-replica cluster jackknifeSE);both halves removed together for newreplicas\",\n    \"required_model_pressure_max_error_bar\": 20,\n    \"additional_stop_gates\": [\n      \"pooled20cost/cutoffZ<2\",\n      \"pooled20conservativeSE<=3%\",\n      \"pooled20last3range<=2%\"\n    ],\n    \"legacy_model_validation\": \"All archived zero-step pressures must match checkpoint23200 before submission\",\n    \"extension_policy\": \"No Nnew>=30 requirement. Primary statistics start with all verified legacy replicas. Each added block is analyzed immediately; new40ps windows are additional diagnostics. Extension beyond the current plan requires a new recorded sampling decision.\"\n  },\n  \"previous_model_audit\": {\n    \"source\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\Ti_1873K\\\\prequeue-validation.json\",\n    \"sha256\": \"e4092f0af7008a5f113b6487e17cf4efd0a2e7ee64d32c7cde3d389e196ab30e\",\n    \"same_legacy_manifest_sha256\": \"7a2f13c3071f9e70055ffac3f195603b53686d13a119ca1f99b3a19ea8f3cae7\",\n    \"same_checkpoint_sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\"\n  }\n}\n",
+      "runtime_checks": "PASS"
+    },
+    "Ti_1941K": {
+      "completed": 5,
+      "metadata": {
+        "preflight.json": {
+          "status": "passed",
+          "device": {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "visible": "0",
+            "job_id": "20988268"
+          },
+          "checks": [
+            {
+              "composition": "Ti_1941K",
+              "E_diff_eV_atom": 6.915072070512451e-08,
+              "F_diff_rms_eV_A": 1.7753965402940927e-06,
+              "pressure_diff_max_GPa": 6.703523117539589e-06
+            }
+          ],
+          "seconds_per_step": [
+            0.03598837656900287
+          ],
+          "native_type_map": [
+            "H",
+            "He",
+            "Li",
+            "Be",
+            "B",
+            "C",
+            "N",
+            "O",
+            "F",
+            "Ne",
+            "Na",
+            "Mg",
+            "Al",
+            "Si",
+            "P",
+            "S",
+            "Cl",
+            "Ar",
+            "K",
+            "Ca",
+            "Sc",
+            "Ti",
+            "V",
+            "Cr",
+            "Mn",
+            "Fe",
+            "Co",
+            "Ni",
+            "Cu",
+            "Zn",
+            "Ga",
+            "Ge",
+            "As",
+            "Se",
+            "Br",
+            "Kr",
+            "Rb",
+            "Sr",
+            "Y",
+            "Zr",
+            "Nb",
+            "Mo",
+            "Tc",
+            "Ru",
+            "Rh",
+            "Pd",
+            "Ag",
+            "Cd",
+            "In",
+            "Sn",
+            "Sb",
+            "Te",
+            "I",
+            "Xe",
+            "Cs",
+            "Ba",
+            "La",
+            "Ce",
+            "Pr",
+            "Nd",
+            "Pm",
+            "Sm",
+            "Eu",
+            "Gd",
+            "Tb",
+            "Dy",
+            "Ho",
+            "Er",
+            "Tm",
+            "Yb",
+            "Lu",
+            "Hf",
+            "Ta",
+            "W",
+            "Re",
+            "Os",
+            "Ir",
+            "Pt",
+            "Au",
+            "Hg",
+            "Tl",
+            "Pb",
+            "Bi",
+            "Po",
+            "At",
+            "Rn",
+            "Fr",
+            "Ra",
+            "Ac",
+            "Th",
+            "Pa",
+            "U",
+            "Np",
+            "Pu",
+            "Am",
+            "Cm",
+            "Bk",
+            "Cf",
+            "Es",
+            "Fm",
+            "Md",
+            "No",
+            "Lr",
+            "Rf",
+            "Db",
+            "Sg",
+            "Bh",
+            "Hs",
+            "Mt",
+            "Ds",
+            "Rg",
+            "Cn",
+            "Nh",
+            "Fl",
+            "Mc",
+            "Lv",
+            "Ts",
+            "Og"
+          ],
+          "native_type_indices": {
+            "Al": 12,
+            "Ti": 21
+          },
+          "estimated_batch_hours": 2.2992573919085166,
+          "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+          "frozen_sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380",
+          "protocol_sha256": "63786d8ccd671a68954ead5caa85fc1ba1950fab6de190d6c98b0b051074d394",
+          "versions": {
+            "deepmd-kit": "3.2.0",
+            "torch": "2.11.0",
+            "numpy": "2.5.3",
+            "ase": "3.29.0"
+          }
+        },
+        "progress.json": {
+          "status": "running",
+          "phase": "analysis",
+          "job_id": "20988268",
+          "unix": 1793958878.6161644,
+          "composition": "Ti_1941K",
+          "n_replicas": 5
+        },
+        "analysis/latest_Ti_1941K.json": {
+          "temperature_K": 1941,
+          "n_replicas": 5,
+          "points": [
+            {
+              "id": "Ti_1941K",
+              "temperature_K": 1941,
+              "x_Al": 0.0,
+              "n_replicas": 5,
+              "windows": {
+                "40ps": {
+                  "eta_mPa_s": 3.708738105253894,
+                  "eta_std_mPa_s": 0.22083987005553318,
+                  "relative_std": 0.059545824964746294,
+                  "neff": 59.07606763642507,
+                  "tau_exp_ps": 0.1986476483122307,
+                  "tau_int_ps": 0.12407004485439115,
+                  "cost_z": 0.11360425046954654,
+                  "criterion_z": -0.08108898535033625
+                },
+                "first20ps": {
+                  "eta_mPa_s": 2.837093881421104,
+                  "eta_std_mPa_s": 0.26092549703283324,
+                  "relative_std": 0.09196928545139837,
+                  "neff": 111.50265639491045,
+                  "tau_exp_ps": 0.10010039681822688,
+                  "tau_int_ps": 0.0965502319720648,
+                  "cost_z": 0.3337008725619558,
+                  "criterion_z": 4.4800837984660085
+                },
+                "second20ps": {
+                  "eta_mPa_s": 4.34528951987807,
+                  "eta_std_mPa_s": 0.4153919371920642,
+                  "relative_std": 0.095595917209153,
+                  "neff": 29.024622487394666,
+                  "tau_exp_ps": 0.2640297194567531,
+                  "tau_int_ps": 0.14293790054422592,
+                  "cost_z": -0.2624206926498633,
+                  "criterion_z": 0.4013406446087542
+                }
+              },
+              "sources": [
+                {
+                  "replica": 1,
+                  "stress_file": "states/Ti_1941K/replicas/replica_0001/attempt_001/production/stress.npz",
+                  "sha256": "011e8f6af92e1d05a033f18137d83041753db4a2e9a53513a9a079aa491914c2"
+                },
+                {
+                  "replica": 2,
+                  "stress_file": "states/Ti_1941K/replicas/replica_0002/attempt_001/production/stress.npz",
+                  "sha256": "75601932c8685b1f5396f2743d790db470298682147dcad299e7b88cb96aeea6"
+                },
+                {
+                  "replica": 3,
+                  "stress_file": "states/Ti_1941K/replicas/replica_0003/attempt_001/production/stress.npz",
+                  "sha256": "ec493262f62c8dc8424b84c1d0bde4e5578cf7431e0895887ecb7dfdc961b036"
+                },
+                {
+                  "replica": 4,
+                  "stress_file": "states/Ti_1941K/replicas/replica_0004/attempt_001/production/stress.npz",
+                  "sha256": "851c1bf76166c0221522e2708b07b471cf7bc15e0549624786e2931100945f0f"
+                },
+                {
+                  "replica": 5,
+                  "stress_file": "states/Ti_1941K/replicas/replica_0005/attempt_001/production/stress.npz",
+                  "sha256": "6a0e8f8b9119d794d4889eea0cb4caa42de9702084951d414036cb05e62825e8"
+                }
+              ],
+              "combined_20ps": {
+                "eta_mPa_s": 3.6503669530202267,
+                "eta_std_mPa_s": 0.1421430657177967,
+                "relative_std": 0.03893939090156153,
+                "neff": 25.444264772500276,
+                "cost_z": 0.5856373584983434,
+                "criterion_z": 0.011048698145213861,
+                "formal_std_mPa_s": 0.1421430657177967,
+                "cluster_jackknife_std_mPa_s": 0.13514769987814446,
+                "legacy_replicas": 15,
+                "new_40ps_replicas": 5,
+                "replica_clusters": 20,
+                "windows_20ps": 25,
+                "leave_one_replica_out_mPa_s": [
+                  3.6711933465695172,
+                  3.6318261963132805,
+                  3.6547275878200476,
+                  3.6430996970242964,
+                  3.6447729706498406,
+                  3.729571693643037,
+                  3.6672583082460144,
+                  3.642539262676855,
+                  3.625599659901711,
+                  3.6613599393686243,
+                  3.63772368132185,
+                  3.661620199905209,
+                  3.6016076548454605,
+                  3.6591402652213065,
+                  3.653398068365833,
+                  3.6307791077491602,
+                  3.70633837646856,
+                  3.6486225260850365,
+                  3.6219289570493913,
+                  3.5875287817238974
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-sequential-refinement-v2"
+              },
+              "legacy_manifest_sha256": "c830e8dbc7b8f18f6bbc68cfc47fed5f368901c271fb08a11b9e0d6e226f8a62",
+              "new_batch_40ps": {
+                "eta_mPa_s": 3.708738105253894,
+                "eta_std_mPa_s": 0.22083987005553318,
+                "relative_std": 0.059545824964746294,
+                "neff": 59.07606763642507,
+                "tau_exp_ps": 0.1986476483122307,
+                "tau_int_ps": 0.12407004485439115,
+                "cost_z": 0.11360425046954654,
+                "criterion_z": -0.08108898535033625
+              },
+              "new_batch_20ps": {
+                "eta_mPa_s": 3.73825817560309,
+                "eta_std_mPa_s": 0.23002805197871234,
+                "relative_std": 0.061533484626594075,
+                "neff": 29.405057276833354,
+                "cost_z": -0.5506667421826761,
+                "criterion_z": 0.3262788838456826,
+                "formal_std_mPa_s": 0.23002805197871234,
+                "cluster_jackknife_std_mPa_s": 0.21570634185758852,
+                "legacy_replicas": 0,
+                "new_40ps_replicas": 5,
+                "replica_clusters": 5,
+                "windows_20ps": 10,
+                "leave_one_replica_out_mPa_s": [
+                  3.649386029751197,
+                  3.91351552341665,
+                  3.772502187145313,
+                  3.687698402126003,
+                  3.609801973312219
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-sequential-refinement-v2"
+              },
+              "previous_accumulated_20ps": {
+                "eta_mPa_s": 3.5599720482364896,
+                "eta_std_mPa_s": 0.17155058990669847,
+                "relative_std": 0.048188746310994166,
+                "neff": 28.604149289204486,
+                "cost_z": -0.3109196751275336,
+                "criterion_z": 0.022630628070911145,
+                "formal_std_mPa_s": 0.17155058990669847,
+                "cluster_jackknife_std_mPa_s": 0.16493038670668597,
+                "legacy_replicas": 15,
+                "new_40ps_replicas": 0,
+                "replica_clusters": 15,
+                "windows_20ps": 15,
+                "leave_one_replica_out_mPa_s": [
+                  3.5779889618663208,
+                  3.5308758333499632,
+                  3.568983986932991,
+                  3.53372110771315,
+                  3.561273118587995,
+                  3.684844754648423,
+                  3.5852471302220033,
+                  3.537623852828755,
+                  3.5097111601652227,
+                  3.5690574714096837,
+                  3.5303132117115297,
+                  3.5747809834087767,
+                  3.4774677430201457,
+                  3.564702312573437,
+                  3.5610822951471888
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-legacy20-new40-v1"
+              },
+              "new_batch_z": 0.6213059347456004
+            }
+          ],
+          "unix": 1793958918.6575267,
+          "protocol_sha256": "63786d8ccd671a68954ead5caa85fc1ba1950fab6de190d6c98b0b051074d394",
+          "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+          "checks": [
+            {
+              "id": "Ti_1941K",
+              "flags": {
+                "combined_precision": false,
+                "combined_last_three_stability": false,
+                "combined_cost": true,
+                "combined_cutoff": true,
+                "new_batch_consistency": true
+              },
+              "passed": false,
+              "last_three_relative_range": null,
+              "max_20_40_relative_difference": 0.23502447438874052,
+              "new40_diagnostics": {
+                "40ps": {
+                  "relative_std": 0.059545824964746294,
+                  "neff": 59.07606763642507,
+                  "cost_z": 0.11360425046954654,
+                  "criterion_z": -0.08108898535033625
+                },
+                "first20ps": {
+                  "relative_std": 0.09196928545139837,
+                  "neff": 111.50265639491045,
+                  "cost_z": 0.3337008725619558,
+                  "criterion_z": 4.4800837984660085
+                },
+                "second20ps": {
+                  "relative_std": 0.095595917209153,
+                  "neff": 29.024622487394666,
+                  "cost_z": -0.2624206926498633,
+                  "criterion_z": 0.4013406446087542
+                }
+              }
+            }
+          ],
+          "all_passed": false,
+          "pass_streak": 0,
+          "stop_recommended": false,
+          "review_required": false,
+          "assessment_pending": true,
+          "legacy_replicas": 15,
+          "total_replica_clusters": 20,
+          "sampling_extension": "Only the explicit versioned plan determines additional blocks; no mandatory Nnew quota.",
+          "caveats": [
+            "Cumulative and20/40ps estimates are correlated.",
+            "Combined20ps includes legacy20ps and both halves of each new40ps; both halves are one uncertainty cluster.",
+            "AdoptedSE=max(formalSE,whole-replica jackknifeSE); unequal cluster lengths and reservoir dependence limit its interpretation.",
+            "Legacy and new preparation differ; no PBE trajectories are pooled.",
+            "Finite refinement plan controls new blocks; diagnostics do not impose a new30-replica quota; errors exclude model/protocol bias."
+          ]
+        }
+      },
+      "protocol_text": "{\n  \"run_id\": \"r2scan-sequential-1941-20261106-02\",\n  \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1941K\",\n  \"checkpoint\": {\n    \"functional\": \"r2SCAN\",\n    \"step\": 23200,\n    \"local_path\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\DPA4-checkpoints\\\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\\\output_model\\\\ckpt\\\\model.ckpt-23200.pt\",\n    \"sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\",\n    \"path\": \"/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt\",\n    \"article_checkpoint\": true\n  },\n  \"frozen_model\": {\n    \"path\": \"/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2\",\n    \"sha256\": \"bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380\"\n  },\n  \"states\": [\n    {\n      \"id\": \"Ti_1941K\",\n      \"temperature_K\": 1941,\n      \"x_Al\": 0.0,\n      \"c_Ti\": 1.0,\n      \"actual_x_Al\": 0.0,\n      \"counts\": {\n        \"Al\": 0,\n        \"Ti\": 512\n      },\n      \"initial_file\": \"initial.data\",\n      \"initial_sha256\": \"fc9d77e352683a8e74576626b57df59ae28b0d159c8538d36ff726d8a6bfc12f\",\n      \"initial_source\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\results-scripts-logs\\\\models_check_cluster\\\\results\\\\viscosity\\\\dpa4\\\\neo\\\\finetune\\\\AlTi\\\\1941K\\\\scan\\\\03_stress_autocorr\\\\c_Ti_1.00\\\\visc1\\\\mol.data\",\n      \"seed\": 611194100\n    }\n  ],\n  \"pressure_bar\": 1,\n  \"atoms\": 512,\n  \"dt_ps\": 0.001,\n  \"initial_npt_steps\": 20000,\n  \"reservoir_spacing_steps\": 5000,\n  \"nvt_equil_steps\": 1000,\n  \"production_steps\": 40000,\n  \"matched_window_steps\": 20000,\n  \"preparation_Tdamp_ps\": 0.1,\n  \"preparation_Pdamp_ps\": 0.5,\n  \"production_Tdamp_ps\": 0.2,\n  \"masses\": [\n    26.98,\n    47.88\n  ],\n  \"elements\": [\n    \"Al\",\n    \"Ti\"\n  ],\n  \"batch_size\": 5,\n  \"allocation\": {\n    \"partition\": \"v100\",\n    \"node\": null,\n    \"account\": \"imet-2026-2\",\n    \"qos\": \"normal\",\n    \"gpu\": \"a100:1\",\n    \"cpus\": 6,\n    \"md_threads\": 4,\n    \"analysis_threads\": 2,\n    \"memory\": \"32G\",\n    \"walltime\": \"20:00:00\"\n  },\n  \"convergence\": {\n    \"max_relative_std\": 0.03,\n    \"max_last_three_range\": 0.02,\n    \"max_cost_z\": 2,\n    \"max_criterion_z\": 2,\n    \"max_new_batch_z\": 2.5,\n    \"required_consecutive_passes\": 2,\n    \"interpretation\": \"Diagnostic reference for accumulated legacy+new estimates; no automatic new-replica quota or mandatory recalculation. The current sampling plan is finite and ends for assessment.\"\n  },\n  \"duration_policy\": \"Primary refinement starts from verified legacy20ps spectra and adds two20ps windows per new40ps trajectory. Own volume and temperature for every replica; never temporal concatenation. Separate new40/first20/second20 diagnostics do not enforce a new30-replica series.\",\n  \"restart_policy\": \"Only inherited single ID20988268 can requeue before20h; no new sbatch. All other previous temperature jobs superseded.\",\n  \"preparation_note\": \"New independent seeded reservoir from archived pureTi configuration,20psNPT then5psNPT+1psNVT+40psNVT per newreplica;legacy preparation remains separately identified.\",\n  \"scheduling\": {\n    \"batch_size\": 5,\n    \"policy\": \"Single job round-robin; external versioned plan specifies which five-replica blocks to add to existing statistics. No compulsory new replica quota.\"\n  },\n  \"functional\": \"r2SCAN\",\n  \"legacy\": {\n    \"manifest\": \"legacy/manifest.json\",\n    \"sha256\": \"c830e8dbc7b8f18f6bbc68cfc47fed5f368901c271fb08a11b9e0d6e226f8a62\",\n    \"n_replicas\": 15,\n    \"duration_ps\": 20\n  },\n  \"pooling\": {\n    \"version\": \"r2scan-sequential-refinement-v2\",\n    \"primary\": \"Pooled20ps spectrum;old20ps+two20pswindows from each new40ps\",\n    \"weight\": \"Equal-length20ps channels pooled without temporal concatenation;ownV/(kB*T),fivechannels\",\n    \"uncertainty\": \"max(formalSE,delete-one-whole-replica cluster jackknifeSE);both halves removed together for newreplicas\",\n    \"required_model_pressure_max_error_bar\": 20,\n    \"additional_stop_gates\": [\n      \"pooled20cost/cutoffZ<2\",\n      \"pooled20conservativeSE<=3%\",\n      \"pooled20last3range<=2%\"\n    ],\n    \"legacy_model_validation\": \"All archived zero-step pressures must match checkpoint23200 before submission\",\n    \"extension_policy\": \"No Nnew>=30 requirement. Primary statistics start with all verified legacy replicas. Each added block is analyzed immediately; new40ps windows are additional diagnostics. Extension beyond the current plan requires a new recorded sampling decision.\"\n  },\n  \"previous_model_audit\": {\n    \"source\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\Ti_1941K\\\\prequeue-validation.json\",\n    \"sha256\": \"72d93164760b4eea7805178188483684661572999af90991b1c3cbea4eface4e\",\n    \"same_legacy_manifest_sha256\": \"c830e8dbc7b8f18f6bbc68cfc47fed5f368901c271fb08a11b9e0d6e226f8a62\",\n    \"same_checkpoint_sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\"\n  }\n}\n",
+      "runtime_checks": "PASS"
+    },
+    "Ti_2000K": {
+      "completed": 5,
+      "metadata": {
+        "preflight.json": {
+          "status": "passed",
+          "device": {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "visible": "0",
+            "job_id": "20988268"
+          },
+          "checks": [
+            {
+              "composition": "Ti_2000K",
+              "E_diff_eV_atom": 7.124619649800934e-08,
+              "F_diff_rms_eV_A": 1.7872192573654235e-06,
+              "pressure_diff_max_GPa": 5.097253807252855e-06
+            }
+          ],
+          "seconds_per_step": [
+            0.03586282435804605
+          ],
+          "native_type_map": [
+            "H",
+            "He",
+            "Li",
+            "Be",
+            "B",
+            "C",
+            "N",
+            "O",
+            "F",
+            "Ne",
+            "Na",
+            "Mg",
+            "Al",
+            "Si",
+            "P",
+            "S",
+            "Cl",
+            "Ar",
+            "K",
+            "Ca",
+            "Sc",
+            "Ti",
+            "V",
+            "Cr",
+            "Mn",
+            "Fe",
+            "Co",
+            "Ni",
+            "Cu",
+            "Zn",
+            "Ga",
+            "Ge",
+            "As",
+            "Se",
+            "Br",
+            "Kr",
+            "Rb",
+            "Sr",
+            "Y",
+            "Zr",
+            "Nb",
+            "Mo",
+            "Tc",
+            "Ru",
+            "Rh",
+            "Pd",
+            "Ag",
+            "Cd",
+            "In",
+            "Sn",
+            "Sb",
+            "Te",
+            "I",
+            "Xe",
+            "Cs",
+            "Ba",
+            "La",
+            "Ce",
+            "Pr",
+            "Nd",
+            "Pm",
+            "Sm",
+            "Eu",
+            "Gd",
+            "Tb",
+            "Dy",
+            "Ho",
+            "Er",
+            "Tm",
+            "Yb",
+            "Lu",
+            "Hf",
+            "Ta",
+            "W",
+            "Re",
+            "Os",
+            "Ir",
+            "Pt",
+            "Au",
+            "Hg",
+            "Tl",
+            "Pb",
+            "Bi",
+            "Po",
+            "At",
+            "Rn",
+            "Fr",
+            "Ra",
+            "Ac",
+            "Th",
+            "Pa",
+            "U",
+            "Np",
+            "Pu",
+            "Am",
+            "Cm",
+            "Bk",
+            "Cf",
+            "Es",
+            "Fm",
+            "Md",
+            "No",
+            "Lr",
+            "Rf",
+            "Db",
+            "Sg",
+            "Bh",
+            "Hs",
+            "Mt",
+            "Ds",
+            "Rg",
+            "Cn",
+            "Nh",
+            "Fl",
+            "Mc",
+            "Lv",
+            "Ts",
+            "Og"
+          ],
+          "native_type_indices": {
+            "Al": 12,
+            "Ti": 21
+          },
+          "estimated_batch_hours": 2.291236000652942,
+          "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+          "frozen_sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380",
+          "protocol_sha256": "8f7606c9281b35ff3d2d6dc94f21bd2fd20b027818cb6429ebfbf4c83865e55d",
+          "versions": {
+            "deepmd-kit": "3.2.0",
+            "torch": "2.11.0",
+            "numpy": "2.5.3",
+            "ase": "3.29.0"
+          }
+        },
+        "progress.json": {
+          "status": "running",
+          "phase": "analysis",
+          "job_id": "20988268",
+          "unix": 1793967989.5589104,
+          "composition": "Ti_2000K",
+          "n_replicas": 5
+        },
+        "analysis/latest_Ti_2000K.json": {
+          "temperature_K": 2000,
+          "n_replicas": 5,
+          "points": [
+            {
+              "id": "Ti_2000K",
+              "temperature_K": 2000,
+              "x_Al": 0.0,
+              "n_replicas": 5,
+              "windows": {
+                "40ps": {
+                  "eta_mPa_s": 3.582155620222624,
+                  "eta_std_mPa_s": 0.1922968492554358,
+                  "relative_std": 0.05368188030967926,
+                  "neff": 69.94591866047745,
+                  "tau_exp_ps": 0.1774617769946662,
+                  "tau_int_ps": 0.1222323600597763,
+                  "cost_z": -0.7859810377968969,
+                  "criterion_z": -0.26576839524831386
+                },
+                "first20ps": {
+                  "eta_mPa_s": 3.610259928363966,
+                  "eta_std_mPa_s": 0.2890406824052764,
+                  "relative_std": 0.08006090645563539,
+                  "neff": 30.014049862741448,
+                  "tau_exp_ps": 0.20629663198741963,
+                  "tau_int_ps": 0.1252113204398079,
+                  "cost_z": 0.21713436168997272,
+                  "criterion_z": -0.23838196941086406
+                },
+                "second20ps": {
+                  "eta_mPa_s": 3.54837935287058,
+                  "eta_std_mPa_s": 0.2424930883345721,
+                  "relative_std": 0.06833911039934307,
+                  "neff": 43.554782601776864,
+                  "tau_exp_ps": 0.1494677714564416,
+                  "tau_int_ps": 0.11915942225400737,
+                  "cost_z": -0.4505131601379746,
+                  "criterion_z": 0.08498161274893164
+                }
+              },
+              "sources": [
+                {
+                  "replica": 1,
+                  "stress_file": "states/Ti_2000K/replicas/replica_0001/attempt_001/production/stress.npz",
+                  "sha256": "98a3313c1f5c53a1196c505a677da968ce84db64cc975026d7a305ae3ef2eb77"
+                },
+                {
+                  "replica": 2,
+                  "stress_file": "states/Ti_2000K/replicas/replica_0002/attempt_001/production/stress.npz",
+                  "sha256": "6f7af362221c8f6fbef745555c68cc885782c990c9e1efe4e175bddc693994f6"
+                },
+                {
+                  "replica": 3,
+                  "stress_file": "states/Ti_2000K/replicas/replica_0003/attempt_001/production/stress.npz",
+                  "sha256": "09164ef23426a969bb9f39c1fafe04dc901ddd02886a7ae3c5b4c6e15a40217a"
+                },
+                {
+                  "replica": 4,
+                  "stress_file": "states/Ti_2000K/replicas/replica_0004/attempt_001/production/stress.npz",
+                  "sha256": "0ec08fb1ef484b4ed4a4d7b194f25a2a7f7fa54658edbd02b87ccf6e2ac090bf"
+                },
+                {
+                  "replica": 5,
+                  "stress_file": "states/Ti_2000K/replicas/replica_0005/attempt_001/production/stress.npz",
+                  "sha256": "fde52a0dce4f5efa5f9b7afae71302c5434c7353bfe1cdda87f0f7743c267f54"
+                }
+              ],
+              "combined_20ps": {
+                "eta_mPa_s": 3.424412382779482,
+                "eta_std_mPa_s": 0.11985678031236514,
+                "relative_std": 0.03500068534826444,
+                "neff": 31.009386516240994,
+                "cost_z": -0.6198584283531297,
+                "criterion_z": 0.1668147151181658,
+                "formal_std_mPa_s": 0.11985678031236514,
+                "cluster_jackknife_std_mPa_s": 0.09728185315996346,
+                "legacy_replicas": 15,
+                "new_40ps_replicas": 5,
+                "replica_clusters": 20,
+                "windows_20ps": 25,
+                "leave_one_replica_out_mPa_s": [
+                  3.4274540200309223,
+                  3.4265833355298065,
+                  3.4058345293458148,
+                  3.4333717215156296,
+                  3.4461946308847202,
+                  3.4686910591989135,
+                  3.4114347535179803,
+                  3.431766313321089,
+                  3.4508721224050123,
+                  3.436797740101064,
+                  3.408488674253686,
+                  3.4103529852428567,
+                  3.4416817506208526,
+                  3.445043882617598,
+                  3.3944872512588042,
+                  3.4148316291806653,
+                  3.4146571826234218,
+                  3.430062393212442,
+                  3.363459833966185,
+                  3.421636231716476
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-sequential-refinement-v2"
+              },
+              "legacy_manifest_sha256": "8f1cc9bc650c2f7e0ac865e6070cc66361e9927a15401aee5736dc16e020cd15",
+              "new_batch_40ps": {
+                "eta_mPa_s": 3.582155620222624,
+                "eta_std_mPa_s": 0.1922968492554358,
+                "relative_std": 0.05368188030967926,
+                "neff": 69.94591866047745,
+                "tau_exp_ps": 0.1774617769946662,
+                "tau_int_ps": 0.1222323600597763,
+                "cost_z": -0.7859810377968969,
+                "criterion_z": -0.26576839524831386
+              },
+              "new_batch_20ps": {
+                "eta_mPa_s": 3.5911364272732014,
+                "eta_std_mPa_s": 0.19613589727842107,
+                "relative_std": 0.054616665573841684,
+                "neff": 34.43965288284851,
+                "cost_z": -0.27680136674131367,
+                "criterion_z": -0.1587829355658144,
+                "formal_std_mPa_s": 0.19613589727842107,
+                "cluster_jackknife_std_mPa_s": 0.12718277401580919,
+                "legacy_replicas": 0,
+                "new_40ps_replicas": 5,
+                "replica_clusters": 5,
+                "windows_20ps": 10,
+                "leave_one_replica_out_mPa_s": [
+                  3.622781179860728,
+                  3.617412494419908,
+                  3.637968140027635,
+                  3.4667567050300003,
+                  3.6208757417471436
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-sequential-refinement-v2"
+              },
+              "previous_accumulated_20ps": {
+                "eta_mPa_s": 3.297652830525588,
+                "eta_std_mPa_s": 0.14403026618163328,
+                "relative_std": 0.043676600777492205,
+                "neff": 33.80446759596214,
+                "cost_z": -0.7575778558252809,
+                "criterion_z": -0.09490693543728021,
+                "formal_std_mPa_s": 0.14403026618163328,
+                "cluster_jackknife_std_mPa_s": 0.11483421510159215,
+                "legacy_replicas": 15,
+                "new_40ps_replicas": 0,
+                "replica_clusters": 15,
+                "windows_20ps": 15,
+                "leave_one_replica_out_mPa_s": [
+                  3.3004510012063744,
+                  3.2826262718205594,
+                  3.270085606976477,
+                  3.2991612153200465,
+                  3.3321144048214473,
+                  3.360723991431657,
+                  3.263533905959848,
+                  3.2995299356512136,
+                  3.3314067490932597,
+                  3.313775309538706,
+                  3.2579751597020357,
+                  3.2701760974122123,
+                  3.315876799665004,
+                  3.3237240594961373,
+                  3.252218141482867
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-legacy20-new40-v1"
+              },
+              "new_batch_z": 1.2060674722859879
+            }
+          ],
+          "unix": 1793968031.2599976,
+          "protocol_sha256": "8f7606c9281b35ff3d2d6dc94f21bd2fd20b027818cb6429ebfbf4c83865e55d",
+          "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+          "checks": [
+            {
+              "id": "Ti_2000K",
+              "flags": {
+                "combined_precision": false,
+                "combined_last_three_stability": false,
+                "combined_cost": true,
+                "combined_cutoff": true,
+                "new_batch_consistency": true
+              },
+              "passed": false,
+              "last_three_relative_range": null,
+              "max_20_40_relative_difference": 0.009429034060207897,
+              "new40_diagnostics": {
+                "40ps": {
+                  "relative_std": 0.05368188030967926,
+                  "neff": 69.94591866047745,
+                  "cost_z": -0.7859810377968969,
+                  "criterion_z": -0.26576839524831386
+                },
+                "first20ps": {
+                  "relative_std": 0.08006090645563539,
+                  "neff": 30.014049862741448,
+                  "cost_z": 0.21713436168997272,
+                  "criterion_z": -0.23838196941086406
+                },
+                "second20ps": {
+                  "relative_std": 0.06833911039934307,
+                  "neff": 43.554782601776864,
+                  "cost_z": -0.4505131601379746,
+                  "criterion_z": 0.08498161274893164
+                }
+              }
+            }
+          ],
+          "all_passed": false,
+          "pass_streak": 0,
+          "stop_recommended": false,
+          "review_required": false,
+          "assessment_pending": true,
+          "legacy_replicas": 15,
+          "total_replica_clusters": 20,
+          "sampling_extension": "Only the explicit versioned plan determines additional blocks; no mandatory Nnew quota.",
+          "caveats": [
+            "Cumulative and20/40ps estimates are correlated.",
+            "Combined20ps includes legacy20ps and both halves of each new40ps; both halves are one uncertainty cluster.",
+            "AdoptedSE=max(formalSE,whole-replica jackknifeSE); unequal cluster lengths and reservoir dependence limit its interpretation.",
+            "Legacy and new preparation differ; no PBE trajectories are pooled.",
+            "Finite refinement plan controls new blocks; diagnostics do not impose a new30-replica quota; errors exclude model/protocol bias."
+          ]
+        }
+      },
+      "protocol_text": "{\n  \"run_id\": \"r2scan-sequential-2000-20261106-02\",\n  \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_2000K\",\n  \"checkpoint\": {\n    \"functional\": \"r2SCAN\",\n    \"step\": 23200,\n    \"local_path\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\DPA4-checkpoints\\\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\\\output_model\\\\ckpt\\\\model.ckpt-23200.pt\",\n    \"sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\",\n    \"path\": \"/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt\",\n    \"article_checkpoint\": true\n  },\n  \"frozen_model\": {\n    \"path\": \"/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2\",\n    \"sha256\": \"bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380\"\n  },\n  \"states\": [\n    {\n      \"id\": \"Ti_2000K\",\n      \"temperature_K\": 2000,\n      \"x_Al\": 0.0,\n      \"c_Ti\": 1.0,\n      \"actual_x_Al\": 0.0,\n      \"counts\": {\n        \"Al\": 0,\n        \"Ti\": 512\n      },\n      \"initial_file\": \"initial.data\",\n      \"initial_sha256\": \"d0b16bd69c6af4149680935c45097741c8b461ee3d5004f88d5323be61fdc34b\",\n      \"initial_source\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\results-scripts-logs\\\\Ti-viscosity-r2SCAN\\\\scan_2000K_wsl2\\\\scan\\\\03_stress_autocorr\\\\c_Ti_1.00\\\\visc1\\\\mol.data\",\n      \"seed\": 611200000\n    }\n  ],\n  \"pressure_bar\": 1,\n  \"atoms\": 512,\n  \"dt_ps\": 0.001,\n  \"initial_npt_steps\": 20000,\n  \"reservoir_spacing_steps\": 5000,\n  \"nvt_equil_steps\": 1000,\n  \"production_steps\": 40000,\n  \"matched_window_steps\": 20000,\n  \"preparation_Tdamp_ps\": 0.1,\n  \"preparation_Pdamp_ps\": 0.5,\n  \"production_Tdamp_ps\": 0.2,\n  \"masses\": [\n    26.98,\n    47.88\n  ],\n  \"elements\": [\n    \"Al\",\n    \"Ti\"\n  ],\n  \"batch_size\": 5,\n  \"allocation\": {\n    \"partition\": \"v100\",\n    \"node\": null,\n    \"account\": \"imet-2026-2\",\n    \"qos\": \"normal\",\n    \"gpu\": \"a100:1\",\n    \"cpus\": 6,\n    \"md_threads\": 4,\n    \"analysis_threads\": 2,\n    \"memory\": \"32G\",\n    \"walltime\": \"20:00:00\"\n  },\n  \"convergence\": {\n    \"max_relative_std\": 0.03,\n    \"max_last_three_range\": 0.02,\n    \"max_cost_z\": 2,\n    \"max_criterion_z\": 2,\n    \"max_new_batch_z\": 2.5,\n    \"required_consecutive_passes\": 2,\n    \"interpretation\": \"Diagnostic reference for accumulated legacy+new estimates; no automatic new-replica quota or mandatory recalculation. The current sampling plan is finite and ends for assessment.\"\n  },\n  \"duration_policy\": \"Primary refinement starts from verified legacy20ps spectra and adds two20ps windows per new40ps trajectory. Own volume and temperature for every replica; never temporal concatenation. Separate new40/first20/second20 diagnostics do not enforce a new30-replica series.\",\n  \"restart_policy\": \"Only inherited single ID20988268 can requeue before20h; no new sbatch. All other previous temperature jobs superseded.\",\n  \"preparation_note\": \"New independent seeded reservoir from archived pureTi configuration,20psNPT then5psNPT+1psNVT+40psNVT per newreplica;legacy preparation remains separately identified.\",\n  \"scheduling\": {\n    \"batch_size\": 5,\n    \"policy\": \"Single job round-robin; external versioned plan specifies which five-replica blocks to add to existing statistics. No compulsory new replica quota.\"\n  },\n  \"functional\": \"r2SCAN\",\n  \"legacy\": {\n    \"manifest\": \"legacy/manifest.json\",\n    \"sha256\": \"8f1cc9bc650c2f7e0ac865e6070cc66361e9927a15401aee5736dc16e020cd15\",\n    \"n_replicas\": 15,\n    \"duration_ps\": 20\n  },\n  \"pooling\": {\n    \"version\": \"r2scan-sequential-refinement-v2\",\n    \"primary\": \"Pooled20ps spectrum;old20ps+two20pswindows from each new40ps\",\n    \"weight\": \"Equal-length20ps channels pooled without temporal concatenation;ownV/(kB*T),fivechannels\",\n    \"uncertainty\": \"max(formalSE,delete-one-whole-replica cluster jackknifeSE);both halves removed together for newreplicas\",\n    \"required_model_pressure_max_error_bar\": 20,\n    \"additional_stop_gates\": [\n      \"pooled20cost/cutoffZ<2\",\n      \"pooled20conservativeSE<=3%\",\n      \"pooled20last3range<=2%\"\n    ],\n    \"legacy_model_validation\": \"All archived zero-step pressures must match checkpoint23200 before submission\",\n    \"extension_policy\": \"No Nnew>=30 requirement. Primary statistics start with all verified legacy replicas. Each added block is analyzed immediately; new40ps windows are additional diagnostics. Extension beyond the current plan requires a new recorded sampling decision.\"\n  },\n  \"previous_model_audit\": {\n    \"source\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\Ti_2000K\\\\prequeue-validation.json\",\n    \"sha256\": \"a47721196778e4b01d5388e44bc6e534523e52c578446a8e0e37b8f545e65f12\",\n    \"same_legacy_manifest_sha256\": \"8f1cc9bc650c2f7e0ac865e6070cc66361e9927a15401aee5736dc16e020cd15\",\n    \"same_checkpoint_sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\"\n  }\n}\n",
+      "runtime_checks": "PASS"
+    },
+    "Ti_2100K": {
+      "completed": 5,
+      "metadata": {
+        "preflight.json": {
+          "status": "passed",
+          "device": {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "visible": "0",
+            "job_id": "20988268"
+          },
+          "checks": [
+            {
+              "composition": "Ti_2100K",
+              "E_diff_eV_atom": 5.983749495896973e-08,
+              "F_diff_rms_eV_A": 1.7529406195740783e-06,
+              "pressure_diff_max_GPa": 4.8811705451953454e-06
+            }
+          ],
+          "seconds_per_step": [
+            0.03585208559408784
+          ],
+          "native_type_map": [
+            "H",
+            "He",
+            "Li",
+            "Be",
+            "B",
+            "C",
+            "N",
+            "O",
+            "F",
+            "Ne",
+            "Na",
+            "Mg",
+            "Al",
+            "Si",
+            "P",
+            "S",
+            "Cl",
+            "Ar",
+            "K",
+            "Ca",
+            "Sc",
+            "Ti",
+            "V",
+            "Cr",
+            "Mn",
+            "Fe",
+            "Co",
+            "Ni",
+            "Cu",
+            "Zn",
+            "Ga",
+            "Ge",
+            "As",
+            "Se",
+            "Br",
+            "Kr",
+            "Rb",
+            "Sr",
+            "Y",
+            "Zr",
+            "Nb",
+            "Mo",
+            "Tc",
+            "Ru",
+            "Rh",
+            "Pd",
+            "Ag",
+            "Cd",
+            "In",
+            "Sn",
+            "Sb",
+            "Te",
+            "I",
+            "Xe",
+            "Cs",
+            "Ba",
+            "La",
+            "Ce",
+            "Pr",
+            "Nd",
+            "Pm",
+            "Sm",
+            "Eu",
+            "Gd",
+            "Tb",
+            "Dy",
+            "Ho",
+            "Er",
+            "Tm",
+            "Yb",
+            "Lu",
+            "Hf",
+            "Ta",
+            "W",
+            "Re",
+            "Os",
+            "Ir",
+            "Pt",
+            "Au",
+            "Hg",
+            "Tl",
+            "Pb",
+            "Bi",
+            "Po",
+            "At",
+            "Rn",
+            "Fr",
+            "Ra",
+            "Ac",
+            "Th",
+            "Pa",
+            "U",
+            "Np",
+            "Pu",
+            "Am",
+            "Cm",
+            "Bk",
+            "Cf",
+            "Es",
+            "Fm",
+            "Md",
+            "No",
+            "Lr",
+            "Rf",
+            "Db",
+            "Sg",
+            "Bh",
+            "Hs",
+            "Mt",
+            "Ds",
+            "Rg",
+            "Cn",
+            "Nh",
+            "Fl",
+            "Mc",
+            "Lv",
+            "Ts",
+            "Og"
+          ],
+          "native_type_indices": {
+            "Al": 12,
+            "Ti": 21
+          },
+          "estimated_batch_hours": 2.290549912955612,
+          "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+          "frozen_sha256": "bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380",
+          "protocol_sha256": "68927b710f3283e48dafcb80d3893101a29ba6734d179744c9e55913d6f5e766",
+          "versions": {
+            "deepmd-kit": "3.2.0",
+            "torch": "2.11.0",
+            "numpy": "2.5.3",
+            "ase": "3.29.0"
+          }
+        },
+        "progress.json": {
+          "status": "running",
+          "phase": "analysis",
+          "job_id": "20988268",
+          "unix": 1793977088.772779,
+          "composition": "Ti_2100K",
+          "n_replicas": 5
+        },
+        "analysis/latest_Ti_2100K.json": {
+          "temperature_K": 2100,
+          "n_replicas": 5,
+          "points": [
+            {
+              "id": "Ti_2100K",
+              "temperature_K": 2100,
+              "x_Al": 0.0,
+              "n_replicas": 5,
+              "windows": {
+                "40ps": {
+                  "eta_mPa_s": 3.1276964137521097,
+                  "eta_std_mPa_s": 0.18189421529135558,
+                  "relative_std": 0.05815596887587566,
+                  "neff": 71.06281454991408,
+                  "tau_exp_ps": 0.168540770649709,
+                  "tau_int_ps": 0.11019820594136404,
+                  "cost_z": 1.9421801513499348,
+                  "criterion_z": 1.3594387114150626
+                },
+                "first20ps": {
+                  "eta_mPa_s": 2.695758440580779,
+                  "eta_std_mPa_s": 0.25461045590251086,
+                  "relative_std": 0.09444854259555135,
+                  "neff": 77.72640547043599,
+                  "tau_exp_ps": 0.1146315830404627,
+                  "tau_int_ps": 0.09592849038417343,
+                  "cost_z": 2.5167325369788984,
+                  "criterion_z": 3.8972551580939094
+                },
+                "second20ps": {
+                  "eta_mPa_s": 3.2083403141733466,
+                  "eta_std_mPa_s": 0.2499358605168203,
+                  "relative_std": 0.07790191689226028,
+                  "neff": 45.76937496908024,
+                  "tau_exp_ps": 0.1564444885520409,
+                  "tau_int_ps": 0.11193151087129283,
+                  "cost_z": 0.2580134655714199,
+                  "criterion_z": 1.0736212010339068
+                }
+              },
+              "sources": [
+                {
+                  "replica": 1,
+                  "stress_file": "states/Ti_2100K/replicas/replica_0001/attempt_001/production/stress.npz",
+                  "sha256": "f0e25b4b9458e07781d96638a4389247209776156c74b77b8293061b18afe42e"
+                },
+                {
+                  "replica": 2,
+                  "stress_file": "states/Ti_2100K/replicas/replica_0002/attempt_001/production/stress.npz",
+                  "sha256": "21bdf515770075df083978796cdbfb90c3a35ed3d52b6c8388fca59c56fc8140"
+                },
+                {
+                  "replica": 3,
+                  "stress_file": "states/Ti_2100K/replicas/replica_0003/attempt_001/production/stress.npz",
+                  "sha256": "a845d0091c2947f7e47bf478d214910ac8c2505267abb27e6d06796026a5bb01"
+                },
+                {
+                  "replica": 4,
+                  "stress_file": "states/Ti_2100K/replicas/replica_0004/attempt_001/production/stress.npz",
+                  "sha256": "d97ab8d42b4962eae044017293094a82d8befbfc5dbcdbafd46e7f8643f5c1eb"
+                },
+                {
+                  "replica": 5,
+                  "stress_file": "states/Ti_2100K/replicas/replica_0005/attempt_001/production/stress.npz",
+                  "sha256": "b55d3458f3a1f014fae5a4cc06e16446c92065495c5ffc6456277bd43b92e252"
+                }
+              ],
+              "combined_20ps": {
+                "eta_mPa_s": 3.0590327691472416,
+                "eta_std_mPa_s": 0.1535261867985703,
+                "relative_std": 0.05018782026364771,
+                "neff": 30.063280738751704,
+                "cost_z": 0.9639572101424693,
+                "criterion_z": 0.31335380199482804,
+                "formal_std_mPa_s": 0.10462309696996358,
+                "cluster_jackknife_std_mPa_s": 0.1535261867985703,
+                "legacy_replicas": 15,
+                "new_40ps_replicas": 5,
+                "replica_clusters": 20,
+                "windows_20ps": 25,
+                "leave_one_replica_out_mPa_s": [
+                  3.068079833437701,
+                  3.038630204468348,
+                  3.0942835016711094,
+                  3.084098767773164,
+                  3.1015538930864865,
+                  3.0411168536354216,
+                  3.0650639914961118,
+                  3.0747586533213265,
+                  3.065184796520879,
+                  3.0463418303239056,
+                  3.0629564439993104,
+                  3.0721678578593883,
+                  3.0237422768886373,
+                  3.0273938365644684,
+                  3.059936400391601,
+                  3.0105381630013137,
+                  3.10020888152417,
+                  3.0908392799801168,
+                  3.095602585243893,
+                  2.9541537900175725
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-sequential-refinement-v2"
+              },
+              "legacy_manifest_sha256": "b03c65ccb405a862591f1f0a89a883056f037f23714769e52190949bf5659c6c",
+              "new_batch_40ps": {
+                "eta_mPa_s": 3.1276964137521097,
+                "eta_std_mPa_s": 0.18189421529135558,
+                "relative_std": 0.05815596887587566,
+                "neff": 71.06281454991408,
+                "tau_exp_ps": 0.168540770649709,
+                "tau_int_ps": 0.11019820594136404,
+                "cost_z": 1.9421801513499348,
+                "criterion_z": 1.3594387114150626
+              },
+              "new_batch_20ps": {
+                "eta_mPa_s": 3.1402612837140227,
+                "eta_std_mPa_s": 0.423882334048867,
+                "relative_std": 0.13498314176823417,
+                "neff": 32.61178872617615,
+                "cost_z": 2.4109552553253457,
+                "criterion_z": 0.9883300765529428,
+                "formal_std_mPa_s": 0.18585487772709477,
+                "cluster_jackknife_std_mPa_s": 0.423882334048867,
+                "legacy_replicas": 0,
+                "new_40ps_replicas": 5,
+                "replica_clusters": 5,
+                "windows_20ps": 10,
+                "leave_one_replica_out_mPa_s": [
+                  2.9961426763063144,
+                  3.320235930281689,
+                  3.286583568933817,
+                  3.239857379568474,
+                  2.7635557840221434
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-sequential-refinement-v2"
+              },
+              "previous_accumulated_20ps": {
+                "eta_mPa_s": 2.9943408613114526,
+                "eta_std_mPa_s": 0.12679807173457383,
+                "relative_std": 0.04234590436007983,
+                "neff": 33.48620390695944,
+                "cost_z": -0.3584931798370875,
+                "criterion_z": -0.39716333239075086,
+                "formal_std_mPa_s": 0.12379301505735524,
+                "cluster_jackknife_std_mPa_s": 0.12679807173457383,
+                "legacy_replicas": 15,
+                "new_40ps_replicas": 0,
+                "replica_clusters": 15,
+                "windows_20ps": 15,
+                "leave_one_replica_out_mPa_s": [
+                  3.0084209821465913,
+                  2.958035424627139,
+                  3.0482204337844827,
+                  3.0229720499383173,
+                  3.051370464377864,
+                  2.9694232324852394,
+                  2.9800069911907836,
+                  3.0127102965152557,
+                  3.0016178864062044,
+                  2.970122269173103,
+                  3.008744742701892,
+                  3.0177757580547357,
+                  2.9392122829416976,
+                  2.939026380308139,
+                  2.9856158478818635
+                ],
+                "uncertainty": "max(formal,whole-replica-cluster-jackknife)",
+                "pooling_version": "r2scan-legacy20-new40-v1"
+              },
+              "new_batch_z": 0.32980768659726384
+            }
+          ],
+          "unix": 1793977136.5397606,
+          "protocol_sha256": "68927b710f3283e48dafcb80d3893101a29ba6734d179744c9e55913d6f5e766",
+          "checkpoint_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+          "checks": [
+            {
+              "id": "Ti_2100K",
+              "flags": {
+                "combined_precision": false,
+                "combined_last_three_stability": false,
+                "combined_cost": true,
+                "combined_cutoff": true,
+                "new_batch_consistency": true
+              },
+              "passed": false,
+              "last_three_relative_range": null,
+              "max_20_40_relative_difference": 0.13810099064351344,
+              "new40_diagnostics": {
+                "40ps": {
+                  "relative_std": 0.05815596887587566,
+                  "neff": 71.06281454991408,
+                  "cost_z": 1.9421801513499348,
+                  "criterion_z": 1.3594387114150626
+                },
+                "first20ps": {
+                  "relative_std": 0.09444854259555135,
+                  "neff": 77.72640547043599,
+                  "cost_z": 2.5167325369788984,
+                  "criterion_z": 3.8972551580939094
+                },
+                "second20ps": {
+                  "relative_std": 0.07790191689226028,
+                  "neff": 45.76937496908024,
+                  "cost_z": 0.2580134655714199,
+                  "criterion_z": 1.0736212010339068
+                }
+              }
+            }
+          ],
+          "all_passed": false,
+          "pass_streak": 0,
+          "stop_recommended": false,
+          "review_required": false,
+          "assessment_pending": true,
+          "legacy_replicas": 15,
+          "total_replica_clusters": 20,
+          "sampling_extension": "Only the explicit versioned plan determines additional blocks; no mandatory Nnew quota.",
+          "caveats": [
+            "Cumulative and20/40ps estimates are correlated.",
+            "Combined20ps includes legacy20ps and both halves of each new40ps; both halves are one uncertainty cluster.",
+            "AdoptedSE=max(formalSE,whole-replica jackknifeSE); unequal cluster lengths and reservoir dependence limit its interpretation.",
+            "Legacy and new preparation differ; no PBE trajectories are pooled.",
+            "Finite refinement plan controls new blocks; diagnostics do not impose a new30-replica quota; errors exclude model/protocol bias."
+          ]
+        }
+      },
+      "protocol_text": "{\n  \"run_id\": \"r2scan-sequential-2100-20261106-02\",\n  \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_2100K\",\n  \"checkpoint\": {\n    \"functional\": \"r2SCAN\",\n    \"step\": 23200,\n    \"local_path\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\DPA4-checkpoints\\\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\\\output_model\\\\ckpt\\\\model.ckpt-23200.pt\",\n    \"sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\",\n    \"path\": \"/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt\",\n    \"article_checkpoint\": true\n  },\n  \"frozen_model\": {\n    \"path\": \"/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2\",\n    \"sha256\": \"bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380\"\n  },\n  \"states\": [\n    {\n      \"id\": \"Ti_2100K\",\n      \"temperature_K\": 2100,\n      \"x_Al\": 0.0,\n      \"c_Ti\": 1.0,\n      \"actual_x_Al\": 0.0,\n      \"counts\": {\n        \"Al\": 0,\n        \"Ti\": 512\n      },\n      \"initial_file\": \"initial.data\",\n      \"initial_sha256\": \"387cde0723ee3c89a0b707be11857fd1346fa739ef3f1e0f20639beff72300ab\",\n      \"initial_source\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\results-scripts-logs\\\\models_check_cluster\\\\results\\\\viscosity\\\\dpa4\\\\neo\\\\finetune\\\\AlTi\\\\2100K\\\\scan\\\\03_stress_autocorr\\\\c_Ti_1.00\\\\visc1\\\\mol.data\",\n      \"seed\": 611210000\n    }\n  ],\n  \"pressure_bar\": 1,\n  \"atoms\": 512,\n  \"dt_ps\": 0.001,\n  \"initial_npt_steps\": 20000,\n  \"reservoir_spacing_steps\": 5000,\n  \"nvt_equil_steps\": 1000,\n  \"production_steps\": 40000,\n  \"matched_window_steps\": 20000,\n  \"preparation_Tdamp_ps\": 0.1,\n  \"preparation_Pdamp_ps\": 0.5,\n  \"production_Tdamp_ps\": 0.2,\n  \"masses\": [\n    26.98,\n    47.88\n  ],\n  \"elements\": [\n    \"Al\",\n    \"Ti\"\n  ],\n  \"batch_size\": 5,\n  \"allocation\": {\n    \"partition\": \"v100\",\n    \"node\": null,\n    \"account\": \"imet-2026-2\",\n    \"qos\": \"normal\",\n    \"gpu\": \"a100:1\",\n    \"cpus\": 6,\n    \"md_threads\": 4,\n    \"analysis_threads\": 2,\n    \"memory\": \"32G\",\n    \"walltime\": \"20:00:00\"\n  },\n  \"convergence\": {\n    \"max_relative_std\": 0.03,\n    \"max_last_three_range\": 0.02,\n    \"max_cost_z\": 2,\n    \"max_criterion_z\": 2,\n    \"max_new_batch_z\": 2.5,\n    \"required_consecutive_passes\": 2,\n    \"interpretation\": \"Diagnostic reference for accumulated legacy+new estimates; no automatic new-replica quota or mandatory recalculation. The current sampling plan is finite and ends for assessment.\"\n  },\n  \"duration_policy\": \"Primary refinement starts from verified legacy20ps spectra and adds two20ps windows per new40ps trajectory. Own volume and temperature for every replica; never temporal concatenation. Separate new40/first20/second20 diagnostics do not enforce a new30-replica series.\",\n  \"restart_policy\": \"Only inherited single ID20988268 can requeue before20h; no new sbatch. All other previous temperature jobs superseded.\",\n  \"preparation_note\": \"New independent seeded reservoir from archived pureTi configuration,20psNPT then5psNPT+1psNVT+40psNVT per newreplica;legacy preparation remains separately identified.\",\n  \"scheduling\": {\n    \"batch_size\": 5,\n    \"policy\": \"Single job round-robin; external versioned plan specifies which five-replica blocks to add to existing statistics. No compulsory new replica quota.\"\n  },\n  \"functional\": \"r2SCAN\",\n  \"legacy\": {\n    \"manifest\": \"legacy/manifest.json\",\n    \"sha256\": \"b03c65ccb405a862591f1f0a89a883056f037f23714769e52190949bf5659c6c\",\n    \"n_replicas\": 15,\n    \"duration_ps\": 20\n  },\n  \"pooling\": {\n    \"version\": \"r2scan-sequential-refinement-v2\",\n    \"primary\": \"Pooled20ps spectrum;old20ps+two20pswindows from each new40ps\",\n    \"weight\": \"Equal-length20ps channels pooled without temporal concatenation;ownV/(kB*T),fivechannels\",\n    \"uncertainty\": \"max(formalSE,delete-one-whole-replica cluster jackknifeSE);both halves removed together for newreplicas\",\n    \"required_model_pressure_max_error_bar\": 20,\n    \"additional_stop_gates\": [\n      \"pooled20cost/cutoffZ<2\",\n      \"pooled20conservativeSE<=3%\",\n      \"pooled20last3range<=2%\"\n    ],\n    \"legacy_model_validation\": \"All archived zero-step pressures must match checkpoint23200 before submission\",\n    \"extension_policy\": \"No Nnew>=30 requirement. Primary statistics start with all verified legacy replicas. Each added block is analyzed immediately; new40ps windows are additional diagnostics. Extension beyond the current plan requires a new recorded sampling decision.\"\n  },\n  \"previous_model_audit\": {\n    \"source\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\Ti_2100K\\\\prequeue-validation.json\",\n    \"sha256\": \"d7c089953a0507a2ae2f77ccbad51fe3096ea41bdd44e2ba482450aa34be4c97\",\n    \"same_legacy_manifest_sha256\": \"b03c65ccb405a862591f1f0a89a883056f037f23714769e52190949bf5659c6c\",\n    \"same_checkpoint_sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\"\n  }\n}\n",
+      "runtime_checks": "PASS"
+    }
+  },
+  "checked_unix": 1793978386.0879378,
+  "scontrol": "",
+  "scontrol_returncode": 1,
+  "active_registry_text": "{\n  \"run_id\": \"r2scan-ti-sequential-refinement-20261106-02\",\n  \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02\",\n  \"execution_mode\": \"single_slurm_job\",\n  \"job_id\": \"20988268\",\n  \"dispatcher_remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K\",\n  \"superseded_job_ids\": [\n    \"20988269\",\n    \"20988270\",\n    \"20988271\"\n  ],\n  \"checkpoint\": {\n    \"functional\": \"r2SCAN\",\n    \"step\": 23200,\n    \"local_path\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\DPA4-checkpoints\\\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\\\output_model\\\\ckpt\\\\model.ckpt-23200.pt\",\n    \"sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\",\n    \"path\": \"/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt\",\n    \"article_checkpoint\": true\n  },\n  \"frozen_model\": {\n    \"path\": \"/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2\",\n    \"sha256\": \"bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380\"\n  },\n  \"runs\": {\n    \"Ti_1873K\": {\n      \"temperature_K\": 1873,\n      \"local\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\single_job_transition\\\\Ti_1873K\",\n      \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1873K\",\n      \"protocol_sha256\": \"f5c7202e32f96f56a2b81461ae21606f5a2e1e0aec4500e382e7a28f41bd3490\",\n      \"legacy_replicas\": 30,\n      \"job_id\": \"20988268\"\n    },\n    \"Ti_1941K\": {\n      \"temperature_K\": 1941,\n      \"local\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\single_job_transition\\\\Ti_1941K\",\n      \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1941K\",\n      \"protocol_sha256\": \"63786d8ccd671a68954ead5caa85fc1ba1950fab6de190d6c98b0b051074d394\",\n      \"legacy_replicas\": 15,\n      \"job_id\": \"20988268\"\n    },\n    \"Ti_2000K\": {\n      \"temperature_K\": 2000,\n      \"local\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\single_job_transition\\\\Ti_2000K\",\n      \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_2000K\",\n      \"protocol_sha256\": \"8f7606c9281b35ff3d2d6dc94f21bd2fd20b027818cb6429ebfbf4c83865e55d\",\n      \"legacy_replicas\": 15,\n      \"job_id\": \"20988268\"\n    },\n    \"Ti_2100K\": {\n      \"temperature_K\": 2100,\n      \"local\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\single_job_transition\\\\Ti_2100K\",\n      \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_2100K\",\n      \"protocol_sha256\": \"68927b710f3283e48dafcb80d3893101a29ba6734d179744c9e55913d6f5e766\",\n      \"legacy_replicas\": 15,\n      \"job_id\": \"20988268\"\n    }\n  }\n}\n",
+  "active_protocol_text": "{\n  \"version\": \"r2scan-single-job-refinement-v2\",\n  \"run_id\": \"r2scan-ti-sequential-refinement-20261106-02\",\n  \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02\",\n  \"job_id\": \"20988268\",\n  \"dispatcher_remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K\",\n  \"allocation\": {\n    \"gpu\": \"a100:1\",\n    \"cpus\": 6,\n    \"memory\": \"32G\",\n    \"walltime\": \"20:00:00\"\n  },\n  \"temperature_order_K\": [\n    1873,\n    1941,\n    2000,\n    2100\n  ],\n  \"batch_size\": 5,\n  \"states\": {\n    \"Ti_1873K\": {\n      \"temperature_K\": 1873,\n      \"local\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\single_job_transition\\\\Ti_1873K\",\n      \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1873K\",\n      \"protocol_sha256\": \"f5c7202e32f96f56a2b81461ae21606f5a2e1e0aec4500e382e7a28f41bd3490\",\n      \"legacy_replicas\": 30,\n      \"job_id\": \"20988268\"\n    },\n    \"Ti_1941K\": {\n      \"temperature_K\": 1941,\n      \"local\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\single_job_transition\\\\Ti_1941K\",\n      \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_1941K\",\n      \"protocol_sha256\": \"63786d8ccd671a68954ead5caa85fc1ba1950fab6de190d6c98b0b051074d394\",\n      \"legacy_replicas\": 15,\n      \"job_id\": \"20988268\"\n    },\n    \"Ti_2000K\": {\n      \"temperature_K\": 2000,\n      \"local\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\single_job_transition\\\\Ti_2000K\",\n      \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_2000K\",\n      \"protocol_sha256\": \"8f7606c9281b35ff3d2d6dc94f21bd2fd20b027818cb6429ebfbf4c83865e55d\",\n      \"legacy_replicas\": 15,\n      \"job_id\": \"20988268\"\n    },\n    \"Ti_2100K\": {\n      \"temperature_K\": 2100,\n      \"local\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Documents\\\\ChatGPT\\\\TiAl\\\\audit\\\\nov06\\\\r2scan_ti_temperature\\\\single_job_transition\\\\Ti_2100K\",\n      \"remote\": \"/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/Ti_2100K\",\n      \"protocol_sha256\": \"68927b710f3283e48dafcb80d3893101a29ba6734d179744c9e55913d6f5e766\",\n      \"legacy_replicas\": 15,\n      \"job_id\": \"20988268\"\n    }\n  },\n  \"checkpoint\": {\n    \"functional\": \"r2SCAN\",\n    \"step\": 23200,\n    \"local_path\": \"C:\\\\Users\\\\Roman Ryltsev\\\\Desktop\\\\STARTUPS\\\\Ti-Al-X\\\\TiAl-Project\\\\DPA4-checkpoints\\\\TiAl_tune_scan_Neo_DPA4_shard_20260919_153828\\\\output_model\\\\ckpt\\\\model.ckpt-23200.pt\",\n    \"sha256\": \"8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309\",\n    \"path\": \"/home6/u3129/tial-testsets/all-xc-checkpoint-audit-20261025-01/models/r2SCAN-23200.pt\",\n    \"article_checkpoint\": true\n  },\n  \"frozen_model\": {\n    \"path\": \"/misc/home6/u3129/tial-testsets/r2scan-ti-temperature-sequential-20261106-02/gpu_export/attempt_0001/model_23200_cuda.pt2\",\n    \"sha256\": \"bdcc00c3880104e5309bdb6160496d36ef1a0157c2c3c4eb2d416cefbd2f9380\"\n  },\n  \"sampling_policy\": \"Refine all existing75 legacy trajectories by explicit5-replica blocks; first finite cycle adds5perT,20new total. No forced30new perT. Assess updated statistics before another plan.\",\n  \"inventory_sha256\": \"25f3ab961d6c8de23bc170a0a068efd54b58423b6d2ef4a24ff86ad49e999ce0\"\n}\n",
+  "runtime_checks": "PASS"
+}

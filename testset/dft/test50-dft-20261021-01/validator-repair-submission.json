@@ -1,0 +1,23 @@
+{
+  "job_id": "20957923",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=2G",
+    "--time=00:10:00",
+    "--no-requeue",
+    "--job-name=t50-validator-repair",
+    "--chdir=/home6/u3129/tial-testsets/test50-dft-20261021-01",
+    "--output=/home6/u3129/tial-testsets/test50-dft-20261021-01/validator-repair-%j.out",
+    "--dependency=afterany:20957366_2:20957366_3:20957369_2:20957369_4",
+    "--wrap=/home6/u3129/tial-phonons/envs/phonopy-4.8.2/bin/python /home6/u3129/tial-testsets/test50-dft-20261021-01/repair_validation.py"
+  ],
+  "unix": 1792579684.503888,
+  "purpose": "Revalidate four already-running processes that loaded the old parser; no VASP rerun."
+}

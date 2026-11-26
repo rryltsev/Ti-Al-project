@@ -1,0 +1,154 @@
+{
+  "source_T_K": 1000.0,
+  "N": 288,
+  "shape": "6x6x4",
+  "W_max": 0.4,
+  "axial_free": 1,
+  "pressure_GPa": 0.0,
+  "source_fields": [
+    3.266,
+    3.28
+  ],
+  "lambda2": 0.9656949733968165,
+  "field_bounds": [
+    3.245,
+    3.47
+  ],
+  "Q_bandwidth": 0.04,
+  "manifests": [
+    "solvus_1000/series/s288w40a/windows.csv",
+    "solvus_1000/series/s288w40b/windows.csv"
+  ],
+  "notes": "Local temperature reweighting with unbiased total E. Secondary check only. Disconnected or low-ESS phases and fields far outside the source windows can give spurious roots.",
+  "temperatures": [
+    {
+      "T_K": 1000.0,
+      "roots": {
+        "Ti_rich": {
+          "equal_height_field": 3.287952574212097,
+          "beta_barrier": 2.1681643620748865,
+          "Q_modes": [
+            0.1175,
+            0.8925000000000001
+          ],
+          "Q_cut": 0.5225,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 14.753763713251951,
+              "mean_Q": 0.1767570506715917,
+              "effective_frames_time_corrected": 54.18211957031441
+            },
+            {
+              "mean_x_atpct": 21.90980535867605,
+              "mean_Q": 0.8386366218139233,
+              "effective_frames_time_corrected": 38.04290097780724
+            }
+          ],
+          "single_variant": {
+            "mu_eV": 3.2939280663243196,
+            "width_pp": 7.222496186843131,
+            "phases": [
+              {
+                "mean_x_atpct": 15.19372637462806,
+                "mean_Q": 0.19562490224603765,
+                "effective_frames_time_corrected": 42.47798420470387
+              },
+              {
+                "mean_x_atpct": 22.41622256147119,
+                "mean_Q": 0.8670220342272476,
+                "effective_frames_time_corrected": 23.018648239729483
+              }
+            ]
+          }
+        },
+        "Al_rich": null
+      }
+    },
+    {
+      "T_K": 1050.0,
+      "roots": {
+        "Ti_rich": {
+          "equal_height_field": 3.3127269175754455,
+          "beta_barrier": 2.0738877913850597,
+          "Q_modes": [
+            0.1175,
+            0.8875
+          ],
+          "Q_cut": 0.4425,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 15.943793241865118,
+              "mean_Q": 0.1664961420398062,
+              "effective_frames_time_corrected": 2.572587780796358
+            },
+            {
+              "mean_x_atpct": 21.823353413768316,
+              "mean_Q": 0.8129680149073046,
+              "effective_frames_time_corrected": 11.739325219680833
+            }
+          ],
+          "single_variant": {
+            "mu_eV": 3.3189877779153765,
+            "width_pp": 6.0844836588435065,
+            "phases": [
+              {
+                "mean_x_atpct": 16.29098718059684,
+                "mean_Q": 0.1751880627064662,
+                "effective_frames_time_corrected": 1.5988960418097307
+              },
+              {
+                "mean_x_atpct": 22.375470839440347,
+                "mean_Q": 0.8485021397624335,
+                "effective_frames_time_corrected": 8.24414594225391
+              }
+            ]
+          }
+        },
+        "Al_rich": null
+      }
+    },
+    {
+      "T_K": 1100.0,
+      "roots": {
+        "Ti_rich": {
+          "equal_height_field": 3.340963123315048,
+          "beta_barrier": 2.497170722578928,
+          "Q_modes": [
+            0.1225,
+            0.8374999999999999
+          ],
+          "Q_cut": 0.4275,
+          "height_phase_stats": [
+            {
+              "mean_x_atpct": 16.910989235645015,
+              "mean_Q": 0.16122866188670112,
+              "effective_frames_time_corrected": 0.2573559091965729
+            },
+            {
+              "mean_x_atpct": 21.835385246292883,
+              "mean_Q": 0.7929473103580374,
+              "effective_frames_time_corrected": 0.8550493432827777
+            }
+          ],
+          "single_variant": {
+            "mu_eV": 3.347091348008089,
+            "width_pp": 5.164178124401755,
+            "phases": [
+              {
+                "mean_x_atpct": 17.108928198133057,
+                "mean_Q": 0.1658690710003669,
+                "effective_frames_time_corrected": 0.2052045642672985
+              },
+              {
+                "mean_x_atpct": 22.273106322534815,
+                "mean_Q": 0.8232725253604686,
+                "effective_frames_time_corrected": 0.7700065562692963
+              }
+            ]
+          }
+        },
+        "Al_rich": null
+      }
+    }
+  ]
+}

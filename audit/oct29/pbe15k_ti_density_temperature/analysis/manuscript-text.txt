@@ -1,0 +1,1666 @@
+Assessing exchange-correlation eﬀects in Ti–Al alloys with ﬁne-tuned
+foundation interatomic potentials
+N. N. Katkov, 1 E. O. Khazieva, 1 and R. E. Ryltsev 1, 2, a)
+1)Vatolin Institute of Metallurgy of the Ural Branch of the Russian Academy of Sciences, Amundsena Street 101,
+Yekaterinburg 620016, Russia
+2)Ural Federal University, 620002 Ekaterinburg, Russia
+(Dated: Draft – 29 October 2026)
+Machine-learning interatomic potentials inherit the exchange-correlation approximation used to generate their
+reference data, but its eﬀect on ﬁnite-temperature alloy properties remains diﬃcult to assess systematically.
+We compare Ti–Al potentials obtained by ﬁne-tuning the DPA4-Neo foundation model on PBE, PBEsol, and
+r2SCAN datasets derived from a common pool of 1000 selected conﬁgurations. Common DFT labeling and
+ﬁne-tuning settings support comparisons across lattice dynamics, density, melting, liquid mixing thermody-
+namics, and viscosity. The clearest improvement with r2SCAN is found for the melting temperature of Ti:
+the coexistence estimate increases from approximately 1750–1760 K for the GGA-based potentials to 1855 K,
+reducing the deviation from the experimental value of 1943 K from about 9–10% to 4.5%. The r2SCAN model
+also improves the overall description of the liquid mixing enthalpy at 2000 K, although its broad minimum
+near xAl = 0 .5–0.6 is somewhat too exothermic. These gains do not extend uniformly to other observables:
+PBE gives closer agreement with the liquid-density references and the two alloy-viscosity measurements at
+matched compositions, while harmonic phonons and pure-Ti viscosity show no uniform functional ranking.
+The results identify relative phase and mixing energetics as promising areas for r2SCAN-based Ti–Al po-
+tentials and demonstrate why exchange-correlation choices must be assessed against several complementary
+properties.
+I. INTRODUCTION
+Titanium aluminides combine low density with high
+speciﬁc strength and creep resistance at elevated tem-
+peratures, making them attractive for lightweight com-
+ponents in aircraft and automotive engines. 1 The binary
+Ti–Al system provides the chemical basis for these al-
+loys and contains several ordered compounds, including
+γ-TiAl and α2-Ti3Al. Their processing and performance
+involve both crystalline phases and the liquid state. In
+particular, simulations of melting and solidiﬁcation re-
+quire an accurate description of phase stability, while
+the density, mixing thermodynamics, and viscosity of
+the melt provide complementary information about its
+behavior during processing. Developing an atomistic de-
+scription that remains reliable across compositions and
+phases is therefore an important problem for Ti–Al al-
+loys.
+Considerable eﬀort has already been devoted to con-
+structing interatomic potentials for this system. Es-
+tablished approaches include the embedded-atom po-
+tentials of Zope and Mishin 2 and the second-nearest-
+neighbor modiﬁed embedded-atom potential of Kim et
+al.3 Machine-learning interatomic potentials (MLIPs)
+have subsequently expanded the ﬂexibility of the rep-
+resentation and the range of reference conﬁgurations
+that can be included in training. Examples include the
+polynomial-invariant potentials of Seko for binary Ti–
+Al,4 the neuroevolution potential developed by Zhao et
+a)Electronic mail: rrylcev@mail.ru
+al. for Ti–Al–Nb, 5 and the Ti–Al neuroevolution po-
+tential of Shen et al. 6 Recent work has also examined
+the transferability of broadly trained potentials to Al–
+Ti melts, including their composition-dependent thermo-
+physical and transport properties. 7,8 These studies estab-
+lish a substantial basis for atomistic modeling of Ti–Al
+and make the accuracy of the underlying reference de-
+scription an increasingly relevant question.
+The three system-speciﬁc MLIP studies cited above use
+density-functional theory (DFT) reference calculations
+with the Perdew–Burke–Ernzerhof (PBE) exchange-
+correlation functional. 4–6,9 Agreement with such refer-
+ence data measures how accurately a potential repro-
+duces the selected DFT approximation; agreement with
+experiment also depends on the physical accuracy of that
+approximation. The melting temperature of elemental
+Ti provides a particularly clear example. Zhao et al.
+report a value of 1671 ± 5 K, compared with their ex-
+perimental reference of 1941 K, 5 whereas Shen et al. ob-
+tain 1611 K against 1943 K. 6 Both models reproduce a
+range of crystalline properties, yet their Ti melting tem-
+peratures are lower than experiment by approximately
+14–17%. These discrepancies motivate an explicit ex-
+amination of exchange-correlation eﬀects. Diﬀerences in
+training coverage, ﬁtting errors, and simulation protocols
+must also be considered when comparing the predictions
+of distinct MLIPs.
+Melting and liquid transport are demanding tests be-
+cause they probe aspects of the potential-energy surface
+that are not fully characterized by equilibrium crystal
+properties. The melting temperature depends on the
+free-energy balance between the solid and liquid, and
+viscosity depends on the relaxation of microscopic stress
+2
+ﬂuctuations. Consequently, small regression errors for
+energies and forces do not by themselves establish quanti-
+tative accuracy for either observable. First-principles cal-
+culations accelerated by machine-learned force ﬁelds have
+shown that predicted melting temperatures depend ap-
+preciably on the exchange-correlation approximation. 10
+For alloy liquids, this dependence can additionally vary
+with composition, making a comparison over the binary
+composition range more informative than a test of the
+pure elements alone.
+Our recent study of Al–Cu melts demonstrated the
+practical importance of this issue. 11 PBE-based poten-
+tials described a broad set of properties but failed to
+reproduce the measured composition dependence of vis-
+cosity in the Cu-rich region. Fine-tuning on reference
+data calculated with PBEsol or r2SCAN substantially
+improved the description of thermodynamic and trans-
+port properties; the r2SCAN potential reproduced the
+experimentally observed viscosity maximum. That work
+also showed that transfer learning can reduce the amount
+of reference data needed to construct potentials at a dif-
+ferent level of electronic-structure theory. These results
+motivate a corresponding assessment for Ti–Al, where
+the balance between crystalline and liquid properties, and
+its variation with composition, remains to be established
+for alternative functionals.
+PBEsol and r2SCAN provide two distinct alterna-
+tives to PBE for this comparison. PBEsol modiﬁes the
+generalized-gradient approximation to improve the de-
+scription of densely packed solids and their surfaces, 12
+whereas r2SCAN is a regularized, constraint-restored
+meta-generalized-gradient approximation.13 Their diﬀer-
+ent constructions oﬀer an opportunity to examine how
+changes in the reference electronic-structure approxima-
+tion aﬀect crystalline and liquid observables within a
+common MLIP framework. Improved agreement for one
+property need not imply an equivalent improvement for
+the others, so the assessment must include several inde-
+pendent physical benchmarks.
+Foundation interatomic models make such compar-
+isons more accessible. Pretraining on broad chemical
+and structural datasets provides representations that
+can be adapted to a particular system using a com-
+paratively compact reference dataset. 14 Transfer learn-
+ing can then be used to change both the material do-
+main and the electronic-structure level represented by the
+potential.11 The recently introduced DPA4 architecture
+provides an equivariant, energy-conserving framework for
+this purpose. 15 Its forces are obtained as derivatives of
+the predicted energy, and pretrained DPA4 models are
+available in several sizes. Here we use DPA4-Neo as the
+common starting model for ﬁne-tuning. Using the same
+pretrained backbone and conﬁguration-selection strategy
+provides a consistent basis for examining the eﬀect of
+changing the DFT reference functional.
+In this work, we develop Ti–Al MLIPs using PBE,
+PBEsol, and r2SCAN reference calculations and com-
+pare their predictions for crystalline and liquid states.
+The reference conﬁgurations are selected from a com-
+mon pool generated by foundation-model molecular dy-
+namics and structural relaxation, and are used to ﬁne-
+tune the DPA4-Neo model. We assess lattice dynamics,
+temperature-dependent density, the melting temperature
+of Ti, and the composition dependence of liquid density
+and mixing enthalpy. Liquid viscosity provides an addi-
+tional comparison between the PBE- and r2SCAN-based
+models. The combined benchmarks allow us to deter-
+mine which improvements persist across observables and
+which depend on composition or phase. The resulting as-
+sessment addresses the choice of electronic-structure ref-
+erence data for Ti–Al MLIPs and the use of foundation-
+model ﬁne-tuning as a practical route to that compari-
+son.
+II. COMPUTATIONAL METHODS
+A. Conﬁguration generation and selection
+The reference database was constructed in two stages:
+exploration of Ti–Al conﬁgurations with a pretrained po-
+tential, followed by DFT labeling of a compact represen-
+tative subset. The medium MACE-MPA-0 foundation
+model was used for the exploration stage, 14 with molec-
+ular dynamics and structural optimization implemented
+through the Atomic Simulation Environment (ASE). 16
+The conﬁguration pool combined liquid trajectories, con-
+ﬁgurations sampled during relaxation from liquid snap-
+shots, and trajectories initiated from substitutional solid
+solutions. The crystalline parent structures included hcp
+and bcc Ti, γ-TiAl, and α2-Ti3Al. Oﬀ-stoichiometric
+conﬁgurations were generated by randomly replacing
+atomic species on the parent lattices. These structures
+were random substitutional realizations; no optimization
+of special quasirandom structures was performed.
+The solid-solution sampling runs were carried out at
+1000 K for 10 ps, whereas the liquid-generation scripts
+used 2000 K and included alternating MD and relaxation
+stages. The exploration dynamics used a 1 fs time step
+and a target pressure of 1 bar. Relaxation trajectories
+supplemented the ﬁnite-temperature conﬁgurations with
+lower-energy local environments. MACE energies and
+forces were used to generate this pool; the targets for
+ﬁne-tuning were subsequently obtained from DFT.
+Representative structures were selected with ASAP 17
+using smooth overlap of atomic positions (SOAP)
+descriptors.18 The SOAP expansion used a radial cut-
+oﬀ of 3.2 Å, a Gaussian width of 0.4 Å, four radial basis
+functions, and angular terms up to l = 3 , with Ti–Al
+cross-species contributions included. Atomic descriptors
+were averaged over each periodic conﬁguration. Farthest-
+point sampling in this descriptor space reduced the pool
+to 1000 conﬁgurations. The selected set contained 880
+structures with 216 atoms, 104 with 250 atoms, and 16
+with 256 atoms, and included both pure elements and
+alloy compositions.
+3
+TABLE I. Numbers of conﬁgurations in the ﬁne-tuning
+datasets. The selected pool contains 1000 conﬁgurations.
+Reference Total Training Validation
+PBE 999 850 149
+PBEsol 998 849 149
+r2SCAN 993 845 148
+B. Electronic-structure reference calculations
+Single-point DFT calculations were performed at the
+selected geometries using V ASP 19 and the projector
+augmented-wave method. 20,21 Three reference descrip-
+tions were considered: PBE, PBEsol, and r2SCAN. The
+supplied PA W datasets were Ti_pv, with ten valence
+electrons, and Al, with three valence electrons. All three
+reference datasets were generated with a common nu-
+merical protocol in V ASP 6.3.2 using non-spin-polarized
+calculations, a plane-wave cutoﬀ of 550 eV, and an
+electronic convergence threshold of 10−6 eV. First-order
+Methfessel–Paxton smearing with a width of 0.1 eV was
+employed. The calculations used the Accurate precision
+setting, automatic real-space projection, and nonspheri-
+cal contributions to the PA W exchange-correlation terms.
+Explicit conﬁguration-dependent reciprocal-space grids
+contained 8–12 full-grid points, reduced to 4–6 points in
+the supplied KPOINTS ﬁles. These grids excluded Γ and
+were identical for a given conﬁguration across all three
+functionals. The ions and simulation cells were held ﬁxed
+during labeling.
+The resulting datasets supplied total energies, atomic
+forces, and virials for ﬁne-tuning. Their sizes and train-
+ing/validation partitions are listed in Table I. All re-
+tained structures could be matched to the common set
+of 1000 selected conﬁgurations; 992 conﬁgurations were
+present in all three labeled datasets. There was no con-
+ﬁguration overlap between the training and validation
+subsets of an individual functional. The partitions were
+constructed separately, however, and were not identical
+across functionals. Accordingly, errors on these valida-
+tion subsets characterize approximation of the respective
+DFT datasets and are not treated as errors on a shared
+independent test set.
+C. Fine-tuning DPA4-Neo
+The three Ti–Al potentials were initialized from the
+pretrained DPA4-Neo model, 15 using the checkpoint
+DPA4-Neo-OMat24-v20260805.pt. Training used the
+PyTorch implementation in DeePMD-kit. All three ﬁne-
+tuning runs used the same hyperparameters, with a 6.0 Å
+cutoﬀ, two interaction blocks, 32 channels, 16 radial func-
+tions, and maximum angular order lmax = 3 . Energy-
+derived forces preserve the conservative form of the po-
+tential during adaptation.
+Low-rank adaptation (LoRA) 22 was enabled with rank
+16 and scaling parameter 16. The training schedule com-
+prised 50 epochs, with a cosine learning-rate decay from
+10−4 to 10−6. The warm-up occupied 0.3% of the sched-
+ule and started at 0.2 times the initial learning rate.
+Optimization used HybridMuon with a weight decay of
+0.01 and gradient-norm clipping at 5. The loss combined
+mean-absolute-error terms for energy, forces, and virial,
+with constant prefactors of 20, 20, and 5, respectively;
+the force-norm option was enabled. Automatic batch siz-
+ing was set to auto:128. The model parameters used
+single precision, with automatic mixed precision enabled
+for training. Source-checkpoint and frozen-export identi-
+ties are recorded by cryptographic hashes for the held-out
+evaluation.
+For PBE, the checkpoint at 15 000 optimization steps
+(15k) was selected for the updated physical-property cal-
+culations as a compromise between training/validation
+accuracy and the harmonic dynamics of hcp Ti. Its en-
+ergy and force errors on the complete training and vali-
+dation sets are lower than at 5k, while it gives the closest
+integral agreement with the PBE DFT phonon density of
+states among the ﬁve saved checkpoints. This is a joint
+error-and-property criterion, not early stopping at a min-
+imum of validation loss: later checkpoints further reduce
+energy error. For the DFT-reference benchmark reported
+here, we use the 20 000-step checkpoint (20k), which gives
+smaller energy errors and nearly unchanged force errors
+relative to 15k. This choice followed inspection of the
+test results; it is not a blind post-selection evaluation,
+although no parameters or energy oﬀsets were ﬁtted to
+the holdout. The ﬁnal PBEsol and r2SCAN checkpoints,
+at 23 100 and 23 200 steps, are used throughout.
+The PBE physical-property results use 15k for α-Ti
+phonons, mixing enthalpy, density and excess volume
+at 1873 K, liquid-Ti density at 2000 K, Ti coexistence,
+and all viscosity points shown in the main article. The
+Ti3Al phonons retain the archived 5k calculations. Fig-
+ure 3 retains the complete 5k thermal-density series and
+adds completed 15k recalculations, with checkpoint iden-
+tities shown explicitly for this comparison. Elsewhere we
+use the label PBE without repeating checkpoint indices;
+this allocation and the detailed provenance are recorded
+here and in the Supporting Materials. Learning curves,
+complete-set errors, and the phonon diagnostics support-
+ing model selection are also provided there. The DFT
+phonon diagnostic forms part of selection, whereas the
+main-text lattice-dynamics comparison uses experimen-
+tal dispersions.
+D. Common held-out DFT benchmark
+A ﬁxed 50-conﬁguration holdout was selected indepen-
+dently of model errors: 25 conﬁgurations from a sepa-
+rate 200-structure liquid archive and 25 from trajecto-
+ries initialized as hcp, bcc, and γ-TiAl solid solutions
+(8, 9, and 8 conﬁgurations, respectively). Selection used
+4
+composition-balanced farthest-point sampling of normal-
+ized, conﬁguration-averaged SOAP descriptors within
+each family, with a 5 Å cutoﬀ, Gaussian width 0.5 Å, four
+radial functions, and lmax = 3 . No selected geometry
+matched the supplied training or validation geometries
+under species-preserving periodic matching, atom permu-
+tations, and common translations, using a 5×10−5 Å tol-
+erance and ﬁxed cell axes. An additional near-duplicate
+screen used a 0.1 Å RMSD threshold together with less
+than 1% cell deformation. This establishes a geometri-
+cal holdout from the ﬁne-tuning data; independence of
+the underlying liquid trajectories and absence of overlap
+with foundation-model pretraining are not established.
+The liquid designation records the source pool, rather
+than a single equilibrium temperature.
+The test conﬁgurations were labeled without relax-
+ation using V ASP 6.6.1, a 550 eV cutoﬀ, 10−6 eV elec-
+tronic convergence, and ﬁrst-order Methfessel–Paxton
+smearing of width 0.1 eV. The PA W datasets were
+unchanged; reciprocal-space grids were generated with
+kpLib 1.1.1 using a minimum-distance criterion of 35 Å.
+For each geometry, all three functionals used identical
+PA W ﬁles and reciprocal-space grids. These test calcula-
+tions retain the principal numerical settings of the label-
+ing protocol, while the V ASP and grid-generator versions
+diﬀer from those of the original datasets. Only conﬁgura-
+tions with converged labels for all three functionals enter
+a comparison, with geometry and ﬁle identities checked
+before analysis. The three ﬁne-tuned models were evalu-
+ated on the same geometries; the unchanged pretrained
+model was evaluated once and its predictions compared
+separately with each functional. No model parameters or
+energy oﬀsets were ﬁtted to the holdout.
+Energy errors compare raw model energies with V ASP
+free energies ( TOTEN), divided by the number of atoms.
+Force MAE and RMSE pool all Cartesian components;
+stress errors pool the six independent tensor entries in
+GPa, with model stress obtained as minus virial divided
+by volume. Descriptive 95% percentile intervals use 2000
+bootstrap resamples of whole conﬁgurations, retaining
+the force components within each conﬁguration together
+and using matched draws across functionals. These in-
+tervals are conditional on the currently completed subset
+and do not account for unknown trajectory correlations
+or repeated inspection as the test set grows.
+E. Thermal density and liquid mixing thermodynamics
+Density and mixing thermodynamics were evaluated
+using periodic NPT simulations in ASE with the ﬁne-
+tuned potentials. The integration time step was 1 fs and
+the external pressure was 1 bar. The stored MD imple-
+mentation used the Melchionna NPT integrator, a ther-
+mostat time parameter of 25 fs, and isotropic cell ﬂuctu-
+ations. The barostat parameter was set to Bτ 2, where
+τ = 25 fs and B was the bulk-modulus estimate supplied
+by the workﬂow. For liquid Ti–Al mixtures, this estimate
+was interpolated between 110 GPa for Ti and 76 GPa for
+Al.
+For the temperature-dependent density of Ti, 250-
+atom cells were initialized from α-Ti at 300, 500, 700,
+900, and 1100 K and from β-Ti at 1200, 1400, 1600, 1800,
+and 1900 K. The stored solid-state runs comprised 20 ps
+of equilibration and 30 ps of production. Liquid Ti was
+simulated in 200-atom cells between 2000 and 2500 K in
+100 K increments. Liquid preparation involved 10 ps at
+1.5T , followed by 30 ps at the target temperature and a
+further 30 ps of production. Production conﬁgurations
+were saved every 0.1 ps. The initial crystalline phase la-
+bels specify the preparation procedure; interpretation of
+a high-temperature density point also requires checking
+whether that phase persisted during the trajectory.
+For the additional PBE 15k temperature scan, the liq-
+uid starting cell is taken from the completed 2000 K
+production trajectory and equilibrated independently for
+30 ps at each target temperature, followed by 30 ps of pro-
+duction. The 250-atom α and β starting cells are built
+from their respective 15k static equilibrium lattice pa-
+rameters and use 20 ps of equilibration followed by 30 ps
+of production. Velocities and thermostat variables are
+reset at the production boundary. Scalar observables are
+saved every 10 fs and conﬁgurations every 0.1 ps. Only
+completed production windows enter Fig. 3; density is
+the mean instantaneous mass divided by volume, and its
+SEM is the largest estimate from 3, 5, and 6 ps blocks.
+The thermostat targets 3(N − 1) kinetic degrees of free-
+dom, whereas the unconstrained ASE temperature uses
+3N ; the logged temperature is corrected for this distinc-
+tion when checking the target.
+For the alloy liquids, we deﬁne the composition as the
+Al atomic fraction,
+x = xAl = NAl
+NAl + NTi
+. (1)
+Alloy-liquid calculations used 200 atoms at x =
+0, 0.1, . . . ,1. The composition-dependent density and
+excess-volume comparison uses 1873 K, whereas the
+mixing-enthalpy comparison uses 2000 K. Density and
+mixing enthalpy were originally obtained from the same
+production trajectories. For the PBE mixing-enthalpy se-
+ries at 2000 K, each of the 11 compositions was initialized
+from the ﬁnal conﬁguration of a previously equilibrated
+liquid and propagated for 30 ps of equilibration plus 30 ps
+of production. Velocities and the NPT integrator were
+reinitialized at the stage boundary. Scalar observables
+were recorded every 10 fs and full conﬁgurations every
+100 fs. The 30 ps production interval is the primary es-
+timate; an extended 49 ps window is assessed only as a
+sensitivity check in the Supporting Materials. The PBE
+density and excess-volume series at 1873 K uses the same
+30 ps equilibration plus 30 ps production protocol for
+all 11 compositions, initialized from the corresponding
+archived 1873 K liquids. The pure-Ti endpoints at 1873
+and 2000 K also enter the temperature-dependent liquid-
+density ﬁgure. These two updated density estimates use
+5
+the 10 fs scalar logs rather than the 100 fs conﬁguration
+sampling used for the retained series. The mass density
+was calculated as the time average ρ = ⟨M/V ⟩, where M
+is the total mass of the simulated cell.
+For each model, the molar enthalpy was evaluated as
+Hm(T, p, x) = NA
+N [⟨Epot + Ekin⟩ + pext⟨V ⟩] , (2)
+where NA is A vogadro’s constant and N is the number
+of atoms. The mixing enthalpy is
+∆Hmix(T, p, x) = Hm(T, p, x)
+− xH Al
+m (T, p) − (1 − x)H Ti
+m (T, p).
+(3)
+The pure-liquid reference values were evaluated with the
+same potential at the same temperature and pressure.
+Equation ( 2) uses the prescribed external pressure; the
+ASE stress convention is p = −Trσ/3. The enthalpies
+were reprocessed from the stored energies and volumes
+using this deﬁnition. At a common temperature the clas-
+sical kinetic contribution cancels in the thermodynamic
+mixing limit. The excess molar volume was calculated
+analogously from Vm = NA⟨V ⟩/N:
+V ex
+m (x) = Vm(x) − xV Al
+m − (1 − x)V Ti
+m . (4)
+Liquid-state values below the corresponding liquidus de-
+scribe undercooled liquids and must be distinguished
+from stable equilibrium phase mixtures.
+Statistical variability was assessed by subdividing pro-
+duction trajectories into contiguous time blocks. The
+PBEsol enthalpy estimates and the retained density se-
+ries use six 5 ps blocks. For r2SCAN mixing enthalpy
+at 2000 K, every composition and both pure-component
+references were extended by 30 ps from the ﬁnal coor-
+dinates, cell, and momenta, giving 60 ps of accumulated
+production. The duplicate boundary frame was excluded;
+thermostat and barostat variables were reinitialized at
+the continuation. The main estimate uses twelve 5 ps
+blocks, with block-length and restart sensitivity assessed
+in the Supporting Materials. For the PBE series, the con-
+servative standard error of each trajectory mean is the
+maximum obtained with 3, 5, and 6 ps blocks, requiring
+at least four blocks; these errors are propagated to the
+mixing enthalpy and excess molar volume. Additional
+block lengths and averaging windows are examined in the
+Supporting Materials. Uncertainty in a mixing quantity
+includes the uncertainties of both pure-component ref-
+erence values; reuse of these references also correlates
+errors between compositions. The ﬁnal uncertainty esti-
+mates require stabilization with respect to block length
+and sampling time.
+F. Harmonic lattice dynamics
+Harmonic phonons of α-Ti and α2-Ti3Al were calcu-
+lated using ﬁnite displacements in ASE. The PBE α-Ti
+calculation independently optimizes a and c at zero exter-
+nal stress and uses a 9×9×9 supercell (1458 atoms), cen-
+tral displacements of ±0.01 Å, the Frederiksen force cor-
+rection, three symmetrization iterations, and the acous-
+tic sum rule. The PBEsol and r2SCAN α-Ti calculations
+use 5 × 5 × 5 supercells (250 atoms); Ti 3Al calculations
+use 1000 atoms. For these calculations, BFGS relaxation
+preserves crystal symmetry and allows hydrostatic cell
+strain, with a force convergence target of 10−4 eV Å−1.
+Positive and negative Cartesian displacements of 0.01 Å
+were used to construct force constants, followed by en-
+forcement of the acoustic sum rule. Dispersions were ob-
+tained from the corresponding dynamical matrices and
+compared with digitized room-temperature experimental
+points reproduced in Ref. 23. The calculations are har-
+monic spectra about optimized structures; they do not
+include ﬁnite-temperature anharmonic renormalization.
+Numerical convergence and the separate diagnostics used
+for model selection are documented in the Supporting
+Materials.
+G. Solid–liquid coexistence and melting of Ti
+The melting temperature of Ti was estimated by di-
+rect solid–liquid coexistence simulations in LAMMPS. 24
+A periodic 1296-atom cell, approximately 20 × 20 × 59 Å3
+at the beginning of production, contained a bcc solid slab
+and a liquid slab separated along z. Periodic boundaries
+produced two interfaces. The preparation included 5 or
+10 ps of initial equilibration, 20 ps of heating one half of
+the sample to 1.5T , and 10 ps of cooling that region to
+the target temperature while retaining a crystalline seed.
+The complete system was then propagated in the NPT
+ensemble at zero external pressure. The PBE series uses
+10+20+10 ps preparation and 50 ps production at 1700,
+1750, 1800, and 1850 K; the additional 1775 K trajectory
+extends production to 100 ps. The retained PBEsol and
+r2SCAN production trajectories are 50 ps long. The time
+step was 1 fs; thermostat and barostat damping times
+were 0.1 and 1 ps, respectively. The three box lengths
+were allowed to ﬂuctuate independently. Conﬁgurations
+were saved every 0.1 ps for PBE and every 0.5 ps for the
+retained trajectories; structural analysis uses a common
+0.5 ps interval.
+The direction of interface motion was determined
+from spatially resolved structural order and the evolu-
+tion of the solid-like fraction. For a quantitative check,
+neighbor-averaged bond-order parameters ¯q6 were calcu-
+lated following Lechner and Dellago, 25 using the 14 near-
+est neighbors. A threshold of ¯q6 > 0.25 was used to
+identify solid-like atoms, with alternative thresholds and
+a bond-correlation criterion used to assess classiﬁcation
+sensitivity. Proﬁles were evaluated along the reduced co-
+ordinate z/Lz to separate interface motion from changes
+in box length. Growth and recession of the crystalline
+layer were used to bracket the melting temperature, with
+complete crystallization or melting providing additional
+6
+endpoint checks. The resulting temperature intervals de-
+scribe the observed behavior of this ﬁnite cell over 50 ps;
+their half-widths are not interpreted as full statistical un-
+certainties.
+H. Liquid viscosity
+Shear viscosity was calculated from equilibrium stress
+ﬂuctuations using the Green–Kubo relation. The al-
+loy simulations used 512-atom periodic cells and the
+PBE- and r2SCAN-based potentials. The PBE compo-
+sition series at 1873 K contains pure Ti and three al-
+loys at nominal xAl = 0 .20, 0.45, and 0.80; the corre-
+sponding ﬁnite-cell Al fractions are 103/512, 231/512,
+and 410/512. The r2SCAN series covers cTi =
+0.1, 0.2, 0.3, 0.4, 0.5, 0.55, 0.6, 0.7, 0.8, 0.9, and 1, where
+cTi = 1 − xAl. Pure Al is not included.
+Each PBE alloy was equilibrated for 20 ps in NPT at
+1873 K and 1 bar. Starting snapshots were drawn from a
+continuing NPT reservoir at 5 ps intervals, assigned ve-
+locities, and equilibrated for 1 ps in NVT before produc-
+tion at the snapshot’s ﬁxed volume. Preparation thermo-
+stat and barostat damping times were 0.1 and 0.5 ps; the
+production thermostat damping time was 0.2 ps. The
+reported alloy estimates use 15 replicas per composition,
+each with 40 ps of production and a 1 fs time step. The
+stress tensor was recorded at every step; the ﬁrst and
+second 20 ps windows were analyzed separately as diag-
+nostics. These windows and cumulative replica estimates
+are correlated, and the reported ensemble size does not
+by itself establish convergence.
+The PBE pure-Ti estimates at 1873 and 2000 K use
+25 and 20 replicas, respectively, with 20 ps of stress data
+sampled at 1 fs. Their supplied exports contain sam-
+pling and estimator metadata; limitations in the avail-
+able preparation provenance are documented in the Sup-
+porting Materials. For r2SCAN, starting snapshots were
+drawn from a 5 ps NPT preparation at the target temper-
+ature and 1 bar, followed by velocity assignment and 1 ps
+NVT equilibration. Production used 20 ps per replica
+and a 0.2 ps thermostat damping time. At 1873 K there
+are 50 replicas per alloy except the equiatomic case (15);
+pure Ti uses 30 replicas. The additional r2SCAN pure-Ti
+points at 1941, 2000, and 2100 K use 15 replicas each.
+For an isotropic liquid, deﬁne ﬁve equivalent shear
+channels,
+Q1 = Pxy, Q 2 = Pxz, Q 3 = Pyz ,
+Q4 = 1
+2 (Pyy − Pzz ),
+Q5 = Pxx − 1
+2 (Pyy + Pzz )√
+3 . (5)
+The viscosity of a ﬁxed-volume trajectory can then be
+expressed as
+η = V
+5kBT
+5∑
+a=1
+∫ ∞
+0
+⟨δQa(0)δQa(t)⟩ dt, (6)
+where δQa = Qa − ⟨Qa⟩ and the pressure tensor includes
+both kinetic and conﬁgurational contributions.
+The primary estimates were obtained with STACIE
+(STable AutoCorrelation Integral Estimator). 26 The ﬁve
+channels from each trajectory were combined using
+its own prefactor V /(kBT ). Pressure and time were
+converted to SI units before spectral analysis. The
+low-frequency spectrum was modeled using the STA-
+CIE LorentzModel; the viscosity follows from its zero-
+frequency limit. Original estimates were reproduced with
+STACIE 1.3.0; expanded-ensemble estimates use the sup-
+plied outputs. Reported estimator standard deviations
+describe uncertainty within that spectral estimation pro-
+cedure and do not include all ﬁnite-size, thermostat,
+preparation, or MLIP errors.
+A time-decomposition analysis based on the approach
+of Zhang et al. 27 was used for comparison. This anal-
+ysis averaged the three oﬀ-diagonal stress autocorrela-
+tion functions and ﬁtted the running Green–Kubo inte-
+gral with a weighted two-exponential form. Comparisons
+between the two estimators used matching state points
+and trajectory sets. Eﬀective spectral sample size and
+sensitivity to trajectory subdivisions were examined as
+convergence diagnostics. The additional 1773 K series
+currently has only time-decomposition estimates and is
+kept separate from the principal STACIE dataset.
+Draft note. Replica and trajectory-length convergence checks
+continue for the PBE alloy viscosities. The Supporting Ma-
+terials report the diagnostics for the 15-replica estimates used
+here.
+III. RESULTS
+A. Accuracy relative to the DFT references
+We assess accuracy relative to the DFT references us-
+ing common held-out geometries for all three functionals.
+The test design contains 50 conﬁgurations: 25 liquids and
+25 structures from hcp-, bcc-, and γ-TiAl-based solid-
+solution pools. Figure 1 and Table II compare the ﬁne-
+tuned models with their corresponding DFT references
+and with one unchanged pretrained DPA4-Neo baseline.
+The ﬁne-tuned energy MAEs are 1.14, 1.45, and
+1.36 meV/atom for PBE, PBEsol, and r2SCAN, respec-
+tively; the corresponding RMSEs are 1.51, 1.77, and
+1.60 meV/atom. Descriptive 95% structure-bootstrap in-
+tervals for these RMSEs are 1.05–1.97, 1.33–2.19, and
+1.32–1.87 meV/atom. PBE has a mean energy resid-
+ual of +0.53 meV/atom and a largest absolute resid-
+ual of 4.42 meV/atom. Its energy MAE and RMSE
+are both smaller than the pretrained values of 2.68 and
+3.16 meV/atom.
+Fine-tuned force-component RMSEs are 0.0638,
+0.0633, and 0.0731 eV/Å, compared with 0.0737, 0.0842,
+and 0.1027 eV/Å for the pretrained model against PBE,
+PBEsol, and r2SCAN, respectively. The central val-
+7
+TABLE II. Errors on 30 completed common geometries from the 50-conﬁguration test design: 20 liquid, four hcp, three bcc,
+and three γ-TiAl structures. Energy errors use raw energies per atom; forces pool Cartesian components and stresses pool six
+independent tensor entries. The pretrained rows compare one unchanged model with each functional. No energy oﬀsets are
+ﬁtted.
+Energy (meV/atom) Force (eV/Å) Stress (GPa)
+Reference Model MAE RMSE MAE RMSE MAE RMSE
+PBE Fine-tuned 1.14 1.51 0.0469 0.0638 0.055 0.082
+PBE Pretrained 2.68 3.16 0.0542 0.0737 0.072 0.103
+PBEsol Fine-tuned 1.45 1.77 0.0466 0.0633 0.053 0.079
+PBEsol Pretrained 416.37 420.70 0.0621 0.0842 1.467 2.151
+r2SCAN Fine-tuned 1.36 1.60 0.0537 0.0731 0.057 0.083
+r2SCAN Pretrained 4173.70 4216.27 0.0776 0.1027 0.614 0.883
+ues decrease by approximately 13%, 25%, and 29% af-
+ter ﬁne-tuning. The force-RMSE bootstrap intervals are
+0.0572–0.0701, 0.0569–0.0697, and 0.0655–0.0804 eV/Å;
+their overlap cautions against a strong ranking of the
+three ﬁts. Stress RMSEs are 0.082, 0.079, and 0.083 GPa.
+These pooled Cartesian-component errors diﬀer from the
+force-vector quantities printed in the training logs.
+Raw pretrained energy RMSEs are approximately
+421 meV/atom against PBEsol and 4216 meV/atom
+against r2SCAN. They include diﬀerences in elemental
+energy references and exchange-correlation descriptions,
+and therefore do not measure conﬁguration-dependent
+errors alone. Force and stress comparisons provide com-
+plementary evidence because constant elemental energy
+shifts leave these derivatives unchanged.
+B. Lattice dynamics and thermal density of Ti
+The harmonic phonon dispersions of α-Ti are shown
+in Fig. 2. All three models produce acoustic branches
+approaching zero at Γ and positive frequencies along
+the sampled path, apart from residual negative values
+smaller than 3 × 10−4 THz. This supports harmonic
+stability along the tested directions. The comparison
+with room-temperature experimental points reproduced
+by Souvatzis et al. 23 shows that agreement depends on
+the branch and wave vector. In particular, the r2SCAN
+model does not provide a uniform improvement over
+PBE.
+At Γ, the PBE optical frequencies are approximately
+3.82 THz for the nearly degenerate pair and 5.00 THz
+for the remaining mode. The corresponding PBEsol val-
+ues are 3.77 and 5.01 THz. For r2SCAN, the optical
+frequencies are instead approximately 4.21 THz and a
+nearly degenerate pair at 4.56 THz. The change there-
+fore involves a rearrangement of the optical frequencies,
+rather than a common upward shift of the spectrum. At
+the same time, the maximum frequency along the sam-
+pled path increases from 8.34 THz for PBE to 8.74 THz
+for PBEsol and 9.00 THz for r2SCAN. Diﬀerences in re-
+laxed geometry and force-constant sampling also enter
+this comparison.
+The α2-Ti3Al calculations likewise have no appreciable
+imaginary frequencies along the sampled Γ–M–K– Γ–A–
+L–H–A path; the largest residual negative magnitude is
+below 10−3 THz. Their maximum frequencies are 9.14,
+9.48, and 9.58 THz for PBE, PBEsol, and r2SCAN, re-
+spectively. These results characterize model diﬀerences
+for the compound; the experimental dispersion compari-
+son in Fig. 2 concerns elemental α-Ti. Neither the har-
+monic calculations nor the room-temperature comparison
+determine the temperature-renormalized phonon spec-
+trum near melting.
+The temperature-dependent density of elemental Ti
+provides a complementary test of the equilibrium vol-
+ume (Fig. 3). At 300 K, PBE and r2SCAN give very
+similar densities, 4.559 and 4.565 g/cm 3, whereas PBEsol
+gives 4.737 g/cm 3. The solid-state reference is the tab-
+ulation by Zinov’ev, 28 obtained from thermal-expansion
+data and the room-temperature density. Relative to its
+300 K value of 4.50 g/cm 3, the deviations are approx-
+imately +1.3%, +1.5%, and +5.3% for PBE, r2SCAN,
+and PBEsol, respectively. The higher PBEsol density
+persists over the temperature range considered. The
+crystalline branches were obtained from separately pre-
+pared α-Ti and β-Ti cells at 300–1100 and 1200–1900 K,
+respectively, rather than by heating a single crystal
+through the α– β transition. Figure 3(a) marks the exper-
+imental transition temperatures, approximately 1155 K
+for α– β and 1943 K for melting, as reference guides
+rather than predictions of the models. The two crys-
+talline phases have very similar densities: the solid-state
+tabulation gives 4.37 and 4.38 g/cm 3 for α- and β-Ti
+near the transition, a diﬀerence of only about 0.2%. This
+small density change is barely visible on the scale of the
+ﬁgure, and the simulated branches likewise show no pro-
+nounced discontinuity between the neighboring 1100 and
+1200 K points. The temperature grid does not resolve the
+transition jump itself. Within each preparation series
+the density generally decreases with temperature. The
+solid-initialized PBE and PBEsol series exhibit a marked
+decrease between 1600 and 1800 K, while the r2SCAN
+series retains a higher density at 1800–1900 K. This high-
+8
+−7 −6 −5 −4
+DFT energy (eV/atom)
+−7
+−6
+−5
+−4
+Model energy (eV/atom)
+(a) PBE
+Fine-tuned
+Pretrained
+−8 −6 −4
+DFT energy (eV/atom)
+−8
+−7
+−6
+−5
+−4
+(b) PBEsol
+−12.5 −10.0 −7.5 −5.0
+DFT energy (eV/atom)
+−12
+−10
+−8
+−6
+−4
+(c) r2SCAN
+−5.0 −2.5 0.0 2.5 5.0
+DFT force (eV/Å)
+−6
+−4
+−2
+0
+2
+4
+Model force (eV/Å)
+(d) PBE
+−5.0 −2.5 0.0 2.5 5.0
+DFT force (eV/Å)
+−4
+−2
+0
+2
+4
+(e) PBEsol
+−5.0 −2.5 0.0 2.5 5.0
+DFT force (eV/Å)
+−6
+−4
+−2
+0
+2
+4
+(f) r2SCAN
+Liquid pool hcp bcc γ-TiAl
+FIG. 1. Parity plots for 30 completed common geometries from the 50-conﬁguration test design. Panels (a)–(c) compare raw
+energies per atom and (d)–(f) Cartesian force components against PBE, PBEsol, and r2SCAN, respectively. Blue denotes the
+ﬁne-tuned model; orange denotes the unchanged pretrained model, with open energy symbols. Marker shapes identify liquid
+(circles), hcp (squares), bcc (triangles), and γ-TiAl (diamonds) source families. Force statistics contain 20 532 components. No
+energy-reference oﬀsets are ﬁtted or applied.
+temperature decrease is separate from the α– β transition
+and motivates the coexistence analysis below, but a den-
+sity change in a short, initially homogeneous simulation
+is not itself an equilibrium melting-temperature measure-
+ment.
+For liquid Ti, we use the experimental reference corre-
+lation of Ntonti et al. ,29
+ρref (T ) = 4 .2221 − 3.952 × 10−4(T − 1941), (7)
+where ρref is in g/cm 3 and T is in kelvin. This corre-
+lation applies at 0.1 MPa over 1941–3520 K and has a
+reported expanded uncertainty of 2.0% at 95% coverage.
+It covers the six liquid temperatures from 2000 to 2500 K
+without extrapolation; the PBE point at 1873 K lies be-
+low its stated range and is not compared with an ex-
+trapolated correlation. Figure 3(b) also shows individual
+liquid-Ti measurements from electromagnetic levitation
+by Reiplinger and Brillo, 30 digitized with their reported
+error bars from the published vector graphic. These mea-
+surements span approximately 1858–2088 K and include
+undercooled liquid; their experimental error bars are dis-
+tinct from the expanded uncertainty band of the Ntonti
+correlation. The PBE 15k liquid densities are 4.2828 ±
+0.0008 g/cm3 at 1873 K and 4.2606 ± 0.0011 g/cm3 at
+2000 K, with block standard errors. At 2000 K, the refer-
+ence correlation gives 4.199 g/cm 3, compared with 4.261,
+4.322, and 4.457 g/cm 3 for PBE, r2SCAN, and PBEsol:
+deviations of +1.5%, +2.9%, and +6.1%. The archived
+2100–2500 K series decrease less steeply with tempera-
+ture than the reference; at 2500 K the deviations are
++4.4% for PBE 5k, +5.9% for r2SCAN, and +9.1% for
+PBEsol. Within this archived high-temperature compar-
+ison, PBE is closest to the central reference; the PBE
+15k value at 2000 K also lies within the reference uncer-
+tainty band. The original PBE 5k points remain visible
+alongside completed 15k calculations. Their diﬀerence
+9
+Γ K M Γ A
+0
+2
+4
+6
+8
+10Frequency (THz)
+(a) PBE Experiment
+Γ K M Γ A
+0
+2
+4
+6
+8
+10Frequency (THz)
+(b) PBEsol
+Γ K M Γ A
+0
+2
+4
+6
+8
+10Frequency (THz)
+(c) r2SCAN
+FIG. 2. Harmonic dispersions of α-Ti along Γ–K–M– Γ–A:
+(a) PBE, (b) PBEsol, and (c) r2SCAN. Black symbols are
+digitized room-temperature experimental points reproduced
+in Ref. 23, attributed there to Stassis et al. The curves are
+harmonic calculations at the respective optimized geometries;
+their numerical settings are speciﬁed in Sec. II F.
+includes sensitivity to the recording interval and should
+not be attributed solely to the checkpoint change. Thus,
+the liquid-density comparison does not support a uniform
+advantage of r2SCAN over PBE. This ordering describes
+deviations from the central correlation and does not by
+itself establish statistical separation of the models.
+C. Solid–liquid coexistence and melting
+The coexistence trajectories provide a clearer distinc-
+tion between the models. Figure 4 shows the evolution
+of the solid-like atom fraction near the temperature at
+TABLE III. Ti melting estimates and brackets from opposite
+single-phase outcomes. PBE uses 50 ps at 1750 K and 100 ps
+at 1775 K; the other models use 50 ps trajectories. The PBE
+estimate is a rounded representative value within its 25 K
+bracket. The reference value is 1943 K, as used in Ref. 31.
+Brackets are protocol-dependent observations, not conﬁdence
+intervals.
+Model Estimate (K) Bracket (K) Bias (%)
+PBE ∼ 1760 1750–1775 −9.4
+PBEsol ∼ 1750 1730–1770 −9.9
+r2SCAN ∼ 1855 1850–1860 −4.5
+which the direction of interface motion changes. For
+PBE, the crystal grows at 1750 K and the liquid layer
+ceases to be resolved at approximately 11 ps. At 1775 K,
+both interfaces retreat into the solid, which disappears at
+approximately 12 ps; the system remains liquid through
+100 ps. The 1800 K trajectory also melts, with the
+crystalline layer disappearing at approximately 13.5 ps.
+Opposite single-phase outcomes therefore give a working
+bracket of 1750–1775 K.
+For PBEsol, crystallization occurs at 1730 K and com-
+plete melting at 1770 K. At 1750 K, the solid fraction ﬂuc-
+tuates and decreases overall, but the solid slab survives
+to the end of the run. We therefore retain 1730–1770 K
+as the conservative bracket. The r2SCAN trajectories
+yield a narrower observed bracket: the crystal grows in
+both preparations at 1850 K, whereas the solid layer dis-
+appears at 1860 K. Changing the structural-order thresh-
+old or using the bond-correlation criterion preserves the
+principal distinction between growth and retreat.
+The working estimates are approximately 1760, 1750,
+and 1855 K for PBE, PBEsol, and r2SCAN, respec-
+tively (Table III). Relative to 1943 K, the r2SCAN model
+reduces the underestimation from about 180–190 K to
+88 K. Using 1941 K as the experimental reference would
+not change this ranking. The approximately 100 K sepa-
+ration between r2SCAN and the two GGA-based poten-
+tials exceeds the widths of their observed brackets. This
+makes melting the clearest improvement obtained with
+r2SCAN in the present set of tests. The 1850–1860 K
+bracket must nevertheless not be interpreted as a total
+uncertainty of ±5 K: ﬁnite cell size, interface interactions,
+preparation dependence, and ﬁnite observation time re-
+main unquantiﬁed.
+D. Liquid density and mixing thermodynamics
+We next compare properties across composition, us-
+ing xAl = NAl/(NAl + NTi) throughout. At 1873 K,
+all models predict a monotonic decrease in density as Ti
+is replaced by Al (Fig. 5). PBE gives the lowest den-
+sities and PBEsol generally the highest, with r2SCAN
+between them. The comparison uses the densities tabu-
+lated at 1873 K by Brillo et al. 32 PBE is closest overall
+10
+400 600 800 1000 1200 1400 1600 1800 2000
+T emperature (K)
+4.2
+4.3
+4.4
+4.5
+4.6
+4.7
+4.8
+Density (g cm−3)
+α-β: 1155 K
+Tm: 1943 K
+(a) α- and β-Ti starting cells
+PBE 5k
+PBEsol
+r2SCAN
+Zinov'ev (1989)
+1900 2000 2100 2200 2300 2400 2500
+T emperature (K)
+4.0
+4.2
+4.4
+4.6
+4.8
+Density (g cm−3)
+(b) Separately prepared liquid
+PBE 5k
+PBEsol
+r2SCAN
+±2% (95% coverage)
+Ntonti et al. (2024)
+PBE 15k
+Reiplinger & Brillo (2022)
+FIG. 3. Temperature-dependent density of elemental Ti compared with experiment. (a) Circles and triangles denote simulations
+initialized from separately prepared α-Ti and β-Ti cells, respectively; these symbols specify preparation, not persistence of the
+crystalline phase. Vertical lines mark the experimental α– β transition (approximately 1155 K) and melting (1943 K). Black
+diamonds are the solid densities in Table 65 of Zinov’ev, 28 derived from thermal expansion and room-temperature density;
+dotted lines connect values within each phase. (b) Separately prepared liquids (colored squares). Open black circles and
+error bars are measurements from Fig. 4 of Reiplinger and Brillo, 30 digitized from the published graphic, including undercooled
+liquid. The black line is the Ntonti et al. 29 correlation, shown within its stated temperature range; shading is its ±2% expanded
+uncertainty at 95% coverage. This band is distinct from the measurement error bars and does not describe MLIP uncertainty.
+Open blue symbols and dashed lines retain all PBE 5k points; ﬁlled blue symbols show completed PBE 15k points with block
+SEM bars. Blue solid segments join adjacent completed temperatures within the same preparation series. PBEsol and r2SCAN
+retain their original series.
+to this reference set. Using equal weight for each of the
+11 common compositions and averaging multiple pub-
+lished entries at the same composition gives mean abso-
+lute deviations of 0.112, 0.246, and 0.189 g/cm 3 for PBE,
+PBEsol, and r2SCAN, respectively. The correspond-
+ing mean absolute relative deviations are 3.3%, 7.5%,
+and 5.8%. These are descriptive discrepancies against
+the tabulated values, rather than statistically weighted
+goodness-of-ﬁt measures.
+All three models predict negative excess molar vol-
+umes at the sampled interior compositions. At 1873 K,
+the discrete minima are approximately −0.96 cm3/mol
+at xAl = 0 .6 for PBE, −0.83 cm3/mol at xAl = 0 .6 for
+PBEsol, and −1.02 cm3/mol at xAl = 0 .6 for r2SCAN.
+Thus, mixing produces substantial volume contraction
+relative to each model’s pure-liquid reference volumes.
+The published densities also imply a pronounced con-
+traction over much of the intermediate and Al-rich com-
+position range, but yield appreciable scatter and positive
+excess volumes at some Ti-rich compositions. The mod-
+els therefore capture the principal contraction without
+reproducing all features of the reference data. Absolute
+density and excess volume probe diﬀerent combinations
+of pure-component and alloy errors; agreement in one
+does not guarantee agreement in the other.
+Draft note. The density comparison currently uses the
+printed 1873 K column of Table 7 in Ref. 32. At least one
+equiatomic entry is inconsistent with its listed temperature-ﬁt
+coeﬃcients. Resolve the reference convention before ﬁnalizing
+numerical error metrics. Some values are extrapolated, and
+Ti-rich liquids at 1873 K are below the experimental liquidus.
+The mixing enthalpy gives a diﬀerent ranking (Fig. 6).
+At 2000 K, all three models predict strongly exother-
+mic mixing and a broad minimum near intermediate
+composition. The PBE and PBEsol minima are −25.0
+and −25.4 kJ/mol at xAl = 0 .5. The extended 60 ps
+r2SCAN series gives −31.66 ± 0.19 kJ/mol at xAl =
+0.5 and −31.74 ± 0.20 kJ/mol at 0.6. Although the
+latter is the numerical minimum, their diﬀerence is
+only −0.081 ± 0.263 kJ/mol, including the shared pure-
+component covariance, so its position is not resolved
+between these compositions. The PBE minimum is
+−25.01 ± 0.30 kJ/mol. The quoted errors are propa-
+gated block standard errors; the longer r2SCAN sampling
+changes the mean curve by at most 0.39 kJ/mol and does
+not uniformly reduce these errors. The values reported
+here use the thermodynamic enthalpy at the imposed ex-
+11
+0 20 40 60 80 100
+Time (ps)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0Solid-like fraction
+(a) PBE
+1750 K
+1775 K
+1800 K
+0 10 20 30 40 50
+Time (ps)
+(b) PBEsol
+1730 K
+1750 K
+1770 K
+0 10 20 30 40 50
+Time (ps)
+(c) r2SCAN
+1850 K
+1850 K (2)
+1860 K
+FIG. 4. Solid-like fraction in representative 1296-atom Ti coexistence trajectories, using ¯q6 > 0.25. For PBE, the 1775 K
+trajectory extends to 100 ps and the 1750/1800 K trajectories to 50 ps. PBEsol and r2SCAN trajectories are 50 ps long;
+panel time ranges diﬀer accordingly. The two r2SCAN trajectories at 1850 K have diﬀerent preparation histories; the dashed
+curve denotes the second preparation. The fraction diagnoses growth or retreat of the crystalline slab, rather than an exact
+thermodynamic phase fraction.
+0.0 0.2 0.4 0.6 0.8 1.0
+xAl
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+ρ (g cm−3)
+(a) Density, 1873 K
+PBE
+PBEsol
+r2SCAN
+Published densities
+0.0 0.2 0.4 0.6 0.8 1.0
+xAl
+−1.0
+−0.8
+−0.6
+−0.4
+−0.2
+0.0
+0.2
+0.4
+0.6
+Vex
+m  (cm3 mol−1)
+(b) Excess volume, 1873 K
+PBE
+PBEsol
+r2SCAN
+From published densities
+FIG. 5. Liquid density (a) and excess molar volume (b) at 1873 K. The PBE series uses 30 ps production after 30 ps
+equilibration; PBEsol and r2SCAN retain their original series. Black symbols in (a) are the printed densities in Table 7 of
+Ref. 32; separate entries at the same composition are shown individually. Reference excess volumes in (b) are recomputed
+from those densities and their pure-component endpoints. Each MLIP excess volume uses its own pure-liquid references. Some
+experimental reference values represent extrapolated or undercooled-liquid states.
+ternal pressure, as deﬁned in Sec. II E, and consistent
+pure-liquid reference calculations.
+The experimental comparison is based on calorimetric
+points reproduced in Fig. 7 of Witusiewicz et al. 33 Their
+CALPHAD curve is not used as an experimental dataset.
+The reproduced points indicate a minimum of approxi-
+mately −29.5 to −30 kJ/mol near xAl = 0 .5–0.6. PBE
+and PBEsol underestimate the depth of this minimum,
+whereas r2SCAN overestimates it. Across nine digitized
+interior compositions, the provisional mean absolute de-
+viations are approximately 3.6, 3.1, and 1.5 kJ/mol for
+PBE, PBEsol, and r2SCAN, respectively. Consequently,
+r2SCAN better reproduces the overall composition de-
+pendence under this metric, although it is not uniformly
+closer at every composition.
+These results quantify a diﬀerence in the energetic pref-
+12
+0.0 0.2 0.4 0.6 0.8 1.0
+xAl
+−35
+−30
+−25
+−20
+−15
+−10
+−5
+0
+ΔHmix (kJ mol−1)
+2000 K
+Calorimetry (reproduced)
+PBE
+PBEsol
+r2SCAN
+FIG. 6. Liquid mixing enthalpy at 2000 K compared with
+calorimetric points reproduced in Ref. 33. Reference points
+are a provisional digitization of calorimetric symbols. PBE
+error bars propagate the maximum block SEM over 3, 5, and
+6 ps blocks; PBEsol uses six 5 ps blocks and r2SCAN uses
+twelve 5 ps blocks from 60 ps production. Both pure-liquid
+references are included. These are diagnostic standard errors,
+not ﬁnal conﬁdence intervals. Lines connect sampled compo-
+sitions.
+erence for the alloy relative to its pure liquids. They do
+not, by themselves, identify a particular electronic mech-
+anism or establish chemical short-range order.
+Draft note. The original calorimetric reports behind Ref. 33
+are unavailable. The current digitization has an estimated
+reading tolerance of about 0.2 kJ/mol, which is not an exper-
+imental uncertainty. Finalize the digitization and trajectory
+uncertainty analysis before treating the quoted deviations as
+publication-ready metrics.
+E. Liquid viscosity
+The STACIE results compare PBE and r2SCAN trans-
+port properties (Fig. 7). At 1873 K, PBE gives 3.216 ±
+0.109 mPa s for pure Ti and 3.985 ± 0.135, 4.725 ± 0.175,
+and 1.826 ± 0.054 mPa s at xAl = 0 .20, 0.45, and 0.80,
+respectively. The alloy estimates use 15 replicas of 40 ps
+each. They show an enhancement at intermediate com-
+position, with the largest sampled value at xAl = 0 .45;
+the sampled grid does not locate a continuous maximum
+precisely. The r2SCAN viscosities exceed the PBE values
+at all four matched compositions and form a broad high-
+viscosity region over approximately xAl = 0.40–0.60. The
+largest sampled r2SCAN value is 7.19 ± 0.28 mPa s at
+xAl = 0.45, close to 7.05 ± 0.26 mPa s at 0.40.
+The higher r2SCAN alloy viscosity does not improve
+agreement at the two compositions for which both PBE
+and experimental values are available. At xAl = 0 .45,
+the Takeda correlation gives 5.30 mPa s, compared with
+4.73 for PBE and 7.19 for r2SCAN. At xAl = 0 .80, the
+corresponding values are 1.764, 1.826, and 2.528 mPa s.
+PBE is closer at both compositions. The value at 0.45
+involves a 3 K extrapolation beyond the stated measure-
+ment range; the value at 0.80 is interpolated. The exper-
+imental alloy series does not extend below xAl = 0.45, so
+it cannot conﬁrm the predicted increase on the Ti-rich
+side.
+For pure Ti, PBE decreases from 3.216 ± 0.109 mPa s
+at 1873 K to 2.724±0.092 mPa s at 2000 K. The r2SCAN
+series decreases from 3.70 mPa s at 1873 K to 2.99 mPa s
+at 2100 K, with 3.30 mPa s at 2000 K. Against the provi-
+sional Ishikawa correlation, PBE and r2SCAN are almost
+equally far from the central value at 1873 K, on oppo-
+site sides (approximately −7% and +7%). At 2000 K,
+r2SCAN is closer. These pure-Ti comparisons do not
+establish a uniform functional ranking across the liquid
+states studied.
+The statistical interpretation remains sensitive to
+stress-correlation sampling. For the PBE alloys, accu-
+mulated estimates and separate 20 ps windows reveal
+residual replica and spectral-cutoﬀ sensitivity, detailed
+in the Supporting Materials. The estimator error bars
+do not include all preparation, ﬁnite-size, or model un-
+certainties and do not establish complete convergence at
+15 replicas. An archived comparison of 25 matched tra-
+jectory ensembles gave a median absolute TDM–STACIE
+diﬀerence of 10.6% and a maximum of 32.2%; this is a
+methodological diagnostic, not an additional error bar for
+the present estimates. STACIE is used consistently for
+the main comparison, and TDM-only estimates at 1773 K
+are kept separate.
+Draft note. Verify the provisional pure-Ti correlation and
+its uncertainty against the full Ishikawa paper before ﬁnalizing
+this comparison.
+Taken together, the present benchmarks show that the
+beneﬁt of changing the reference functional depends on
+the observable. The r2SCAN potential raises the Ti melt-
+ing temperature toward experiment and improves the
+overall mixing-enthalpy comparison, but these gains do
+not extend uniformly to lattice dynamics, liquid density,
+or viscosity. The diﬀerent rankings are the central out-
+come of the multi-property assessment and motivate a
+separate discussion of reference-functional eﬀects, resid-
+ual ﬁtting errors, and sampling limitations.
+IV. DISCUSSION
+The most consistent gains obtained with r2SCAN con-
+cern two thermodynamic diﬀerences: the balance be-
+tween solid and liquid Ti, and the enthalpy of an alloy
+liquid relative to its pure components. The melting esti-
+mate moves toward experiment, and the overall mixing-
+enthalpy discrepancy decreases, although the broad min-
+imum near equiatomic composition becomes too deep.
+Density, phonons, and viscosity do not follow the same
+13
+0.0 0.2 0.4 0.6 0.8 1.0
+xAl
+0
+1
+2
+3
+4
+5
+6
+7
+8η (mPa s)
+(a) Composition dependence, 1873 K
+T akeda fit
+Fit extrapolated by 3 K
+PBE
+r2SCAN
+1850 1900 1950 2000 2050 2100
+T emperature (K)
+2.25
+2.50
+2.75
+3.00
+3.25
+3.50
+3.75
+4.00
+4.25η (mPa s)
+(b) Pure Ti
+Ishikawa fit*
+PBE
+r2SCAN
+FIG. 7. STACIE viscosity versus composition at 1873 K (a) and temperature for pure Ti (b). The three PBE alloy points use
+15 replicas of 40 ps each; its pure-Ti point in (a) is the same 1873 K estimate as in (b). Error bars are estimator standard
+errors; lines connect sampled states. Black squares in (a) are values of the experimental correlations of Takeda et al. 34; open
+squares require a 3 K extrapolation. The dashed curve with an asterisk in (b) is a provisional transcription of the Ishikawa et
+al.35 correlation; shading denotes its reported 10.3% uncertainty, not a speciﬁed conﬁdence level.
+ranking. These observations suggest that the beneﬁt of
+r2SCAN is associated with how it distinguishes compet-
+ing atomic environments, rather than with a uniform im-
+provement of all features of the potential-energy surface.
+A. The solid–liquid free-energy balance
+At ﬁxed pressure, melting occurs when the Gibbs free
+energies of the solid and liquid are equal. Let gA
+s and gA
+l
+denote these free energies per atom for a reference poten-
+tial A, and let δgi = gB
+i − gA
+i be the change on replacing
+it by potential B. Linearization about the melting point
+of A gives
+δTm ≃ δgl(T A
+m, p) − δgs(T A
+m, p)
+∆sA
+fus
+, (8)
+where ∆sA
+fus = sA
+l − sA
+s > 0 is the entropy of fusion per
+atom, evaluated at that point. Thus, a positive change
+in the liquid–solid free-energy diﬀerence raises the melt-
+ing temperature. The approximately 95 K increase from
+the representative PBE estimate to r2SCAN is consis-
+tent with greater relative stability of the crystal near co-
+existence. It does not determine whether this change is
+predominantly energetic or entropic, since both contribu-
+tions enter gl − gs. We have not calculated the fusion en-
+thalpy or entropy separately and therefore do not assign
+a numerical free-energy correction to this temperature
+shift.
+This distinction is particularly relevant for Ti. Its high-
+temperature bcc phase is stabilized by ﬁnite-temperature
+lattice dynamics, which cannot be described by the un-
+stable zero-temperature harmonic spectrum alone. 36 Our
+coexistence calculations start from a bcc slab and sample
+ionic motion explicitly. Their melting behavior depends
+on the full potential-energy surface explored by the two
+phases, including anharmonic contributions. The har-
+monic α-Ti spectra characterize a diﬀerent phase and a
+local curvature of that surface. Their mixed ranking is
+therefore compatible with the clearer improvement of the
+r2SCAN melting estimate.
+The density results likewise show why a simple as-
+sociation between a smaller equilibrium volume and a
+higher melting point is insuﬃcient. PBEsol gives the
+largest Ti densities but the lowest working melting esti-
+mate, whereas the PBE and r2SCAN densities at 300 K
+are nearly identical. The PBE and r2SCAN models also
+diﬀer appreciably in melting temperature despite much
+smaller relative diﬀerences in liquid density. Volume
+probes the pressure derivative of the free energy; melting
+probes the diﬀerence between two free energies. Errors in
+these quantities need not vary together. Related sensitiv-
+ity of melting predictions to the reference functional has
+been demonstrated in ﬁrst-principles calculations acceler-
+ated by machine-learned force ﬁelds. 10 Here, the remain-
+ing underestimation of approximately 88 K by r2SCAN
+also shows that its improved balance is still imperfect.
+14
+B. Mixing energetics and a possible electronic origin
+The mixing enthalpy isolates another diﬀerence be-
+tween environments. Deﬁning δHm = H B
+m − H A
+m at com-
+mon temperature and pressure, Eq. ( 3) gives
+δ∆Hmix(x) = δHm(x) − x δH Al
+m
+− (1 − x) δH Ti
+m . (9)
+Any constant energy oﬀsets assigned separately to Ti and
+Al cancel in this expression. The change therefore re-
+ﬂects the treatment of alloy environments relative to the
+elemental liquids, including the diﬀerent structures sam-
+pled by the models. At x = 0 .5 and 2000 K, replacing
+PBE by r2SCAN lowers the calculated mixing enthalpy
+by approximately 6.65 kJ/mol, or 69 meV/atom. This is
+a substantial change in the energetic preference for mix-
+ing. It brings much of the composition curve closer to the
+reproduced calorimetric points, while overshooting their
+minimum. The provisional overall improvement conse-
+quently supports a more favorable description of this par-
+ticular energy diﬀerence, without implying that increas-
+ingly exothermic mixing is always more accurate.
+The construction of r2SCAN oﬀers a plausible rea-
+son for changes of this kind. Unlike a GGA, the SCAN
+family uses the orbital kinetic-energy density in addition
+to the electron density and its gradient. This extra in-
+gredient distinguishes electronic environments associated
+with diﬀerent bonding regimes. 37 The regularization and
+constraint restoration in r2SCAN improve numerical be-
+havior while retaining much of this ﬂexibility. 13 In Ti–
+Al, changes in chemical coordination and crystal order
+can therefore receive diﬀerent exchange-correlation cor-
+rections even when average density changes are modest.
+This provides a physical basis for expecting shifts in rel-
+ative energies, but does not prescribe their sign or guar-
+antee improved agreement.
+Existing electronic-structure studies illustrate why Ti
+environments deserve particular attention. Calculations
+for crystalline TiAl ﬁnd a substantial Ti- 3d contribution
+near the Fermi level.38 Moreover, Song et al. 39 found that
+the alternating Ti and Al planes in γ-TiAl strengthen
+particular directional Ti–Ti bonding states relative to
+hypothetical fcc Ti. Thus, adding Al can modify the
+Ti-derived bonding network as well as introduce unlike
+neighbors. Changes in Ti–Al hybridization and Ti–Ti
+bonding are plausible microscopic contributions to the
+functional dependence of mixing. The crystalline results
+motivate this interpretation; they do not establish that
+the same redistribution persists in a disordered liquid.
+Our thermodynamic data contain no direct measurement
+of orbital occupations, charge transfer, or bond-resolved
+energies. An attribution of the r2SCAN improvement
+to a speciﬁc electronic redistribution therefore remains a
+hypothesis.
+The two favorable thermodynamic shifts also cannot be
+reduced to a single assertion of stronger bonding. Rais-
+ing the melting point of pure Ti concerns environments
+containing only Ti, whereas making alloy mixing more
+exothermic concerns the alloy relative to both elemental
+liquids. Neither shift logically requires the other. Their
+coexistence is consistent with improved environment-
+dependent energy diﬀerences, but a common microscopic
+cause has not been demonstrated. Broad benchmarks re-
+inforce this qualiﬁcation: r2SCAN improves many solid-
+state formation enthalpies, yet PBE remains competi-
+tive and can have smaller average errors for intermetallic
+subsets.40 Those benchmarks concern crystalline forma-
+tion energies, rather than liquid mixing, but show that
+the meta-GGA level alone does not establish superiority
+for a given alloy.
+C. Consequences for validation and transfer learning
+The other observables help delimit the thermodynamic
+interpretation. At 2000 K, PBE is closer than r2SCAN
+to the central experimental liquid-Ti density correlation;
+PBE also gives smaller overall discrepancies for the al-
+loy densities at 1873 K. More exothermic mixing and
+stronger volume contraction are therefore not suﬃcient
+criteria for choosing the most accurate model. Like-
+wise, the higher alloy viscosity predicted by r2SCAN
+does not improve agreement at the two experimentally
+covered compositions shared with the PBE calculations.
+Viscosity depends on the amplitude and relaxation time
+of stress ﬂuctuations, with additional sensitivity to den-
+sity and liquid structure. A more accurate mixing en-
+thalpy alone cannot determine these dynamical quan-
+tities. Chemical short-range order could help connect
+energetics and transport, but would require partial pair
+correlations or explicit chemical-order parameters; it is
+not established by the enthalpy minimum.
+This outcome diﬀers from our Al–Cu study, where
+changing from PBE to r2SCAN improved the composi-
+tion dependence of viscosity as well as several thermody-
+namic properties. 11 Together, the two systems support
+testing alternative reference functionals, while showing
+that a favorable ranking in one alloy does not transfer
+automatically to another. Foundation-model ﬁne-tuning
+makes such comparisons practical by using a common
+starting representation for the separate DFT datasets.
+The present work demonstrates this use of DPA4-Neo,
+without a separate benchmark of training cost against
+models trained from scratch.
+A quantitative attribution to exchange-correlation
+physics must still separate functional eﬀects from
+potential-ﬁtting and sampling errors. The common-
+geometry benchmark in Sec. III A gives comparable
+energy- and force-error scales for the three ﬁts, but these
+pooled errors do not constrain systematic solid–liquid
+free-energy biases directly. This cautions against at-
+tributing every property diﬀerence to the reference func-
+tional alone. Further targeted tests should include com-
+mon snapshots of hot bcc Ti and the liquid states rel-
+evant to coexistence. Comparisons at common geome-
+15
+try and volume would isolate electronic-energy and stress
+changes; separate equilibrium ensembles would reveal the
+contribution of structural relaxation. Free-energy per-
+turbation or thermodynamic integration, with adequate
+ensemble overlap, could then test the melting interpre-
+tation in Eq. ( 8). Ensemble-averaged projected densities
+of states and bond-resolved analyses could examine the
+proposed electronic origin, but would need to be related
+to these energy diﬀerences.
+These checks would reﬁne the causal interpretation.
+The coexistence and liquid-density calculations show a
+property-dependent pattern: r2SCAN improves the Ti
+coexistence melting estimate and the provisional overall
+mixing-enthalpy comparison, whereas PBE is closer to
+the available liquid-density references. The pure-Ti vis-
+cosity comparison does not establish a uniform transport
+ranking. The ﬁnite-size and observation-time limitations
+of coexistence, the indirect calorimetric reference, and
+the pending viscosity checks set the precision with which
+this pattern can presently be quantiﬁed.
+V. CONCLUSIONS
+We developed Ti–Al interatomic potentials by ﬁne-
+tuning DPA4-Neo on PBE, PBEsol, and r2SCAN
+datasets derived from a common pool of selected con-
+ﬁgurations. Their comparison across lattice dynamics,
+density, melting, mixing thermodynamics, and viscosity
+shows that exchange-correlation choices have property-
+dependent consequences. The DFT-reference benchmark
+gives energy RMSEs of 1.51, 1.77, and 1.60 meV/atom
+for PBE, PBEsol, and r2SCAN, respectively, with force
+RMSEs of 0.063–0.073 eV/Å. These ﬁtting errors provide
+context for the property comparison, but do not deter-
+mine the errors in phase free-energy diﬀerences.
+The clearest improvement with r2SCAN is the melt-
+ing temperature of Ti. PBE trajectories crystallize at
+1750 K and melt at 1775 K, giving a working bracket of
+1750–1775 K. Representative melting estimates are ap-
+proximately 1760 K for PBE, 1750 K for PBEsol, and
+1855 K for r2SCAN, reducing the discrepancy from ex-
+periment from about 9–10% to 4.5%. These brackets are
+ﬁnite-size and ﬁnite-time observations, not conﬁdence in-
+tervals. For liquid mixing at 2000 K, the extended 60 ps
+r2SCAN series has the smallest provisional overall dis-
+crepancy from the reproduced calorimetric data, approx-
+imately 1.5 kJ/mol compared with 3.6 and 3.1 kJ/mol for
+PBE and PBEsol. Its broad minimum at xAl = 0 .5–0.6
+remains too exothermic; the two sampled compositions
+are not statistically distinguished as the location of the
+minimum.
+The gains are selective. PBE is closer overall to the
+tabulated liquid densities at 1873 K, with a mean ab-
+solute deviation of 0.112 g/cm 3, compared with 0.246
+and 0.189 g/cm 3 for PBEsol and r2SCAN. PBE also
+gives closer alloy viscosities at the two matched exper-
+imental compositions, xAl = 0 .45 and 0.80. The 15-
+replica alloy estimates retain sampling limitations, and
+neither the pure-Ti viscosity comparison nor the experi-
+mental phonon dispersions provide a uniform ranking of
+the functionals.
+The thermodynamic results are consistent with im-
+proved relative energies of selected environments under
+r2SCAN. They do not identify a unique electronic mech-
+anism; testing changes in Ti-derived bonding requires
+direct electronic-structure and free-energy comparisons.
+Foundation-model ﬁne-tuning provides a practical frame-
+work for exploring these diﬀerences. The electronic-
+structure reference should therefore be assessed against
+several observables and the intended range of phases,
+temperatures, and compositions.
+SUPPLEMENTARY MATERIAL
+See the Supporting Materials for learning curves, train-
+ing/validation/test errors, numerical lattice-dynamics
+diagnostics, mixing-enthalpy and viscosity sampling
+checks, density and coexistence analyses, and data prove-
+nance.
+1H. Clemens and S. Mayer, “Design, Processing, Microstructure,
+Properties, and Applications of Advanced Intermetallic TiAl Al-
+loys,” Adv. Eng. Mater. 15, 191–215 (2013) .
+2R. R. Zope and Y. Mishin, “Interatomic potentials for atom-
+istic simulations of the Ti-Al system,” Phys. Rev. B 68, 024102
+(2003).
+3Y.-K. Kim, H.-K. Kim, W.-S. Jung, and B.-J. Lee, “Atomistic
+modeling of the Ti–Al binary system,” Comput. Mater. Sci. 119,
+1–8 (2016) .
+4A. Seko, “Machine learning potentials for multicomponent sys-
+tems: The Ti-Al binary system,” Phys. Rev. B 102, 174104
+(2020).
+5Z. Zhao, M. Yi, W. Guo, and Z. Zhang, “General-purpose neural
+network potential for Ti-Al-Nb alloys towards large-scale molecu-
+lar dynamics with ab initio accuracy,” Phys. Rev. B 110, 184115
+(2024).
+6G. Shen, T. Gao, Q. Chen, Q. Xiao, B. Wang, J. Huang, Y. Ruan,
+S. Zhang, and S. Li, “Neuroevolution potential-driven accurate
+and eﬃcient discovery of mechanical behavior and nanocluster
+dynamics in TiAl alloys,” J. Mater. Chem. C 13, 21812–21825
+(2025).
+7K. Song, R. Zhao, J. Liu, Y. Wang, E. Lindgren, Y. Wang,
+S. Chen, K. Xu, T. Liang, P. Ying, N. Xu, Z. Zhao, J. Shi,
+J. Wang, S. Lyu, Z. Zeng, S. Liang, H. Dong, L. Sun, Y. Chen,
+Z. Zhang, W. Guo, P. Qian, J. Sun, P. Erhart, T. Ala-Nissila,
+Y. Su, and Z. Fan, “General-purpose machine-learned potential
+for 16 elemental metals and their alloys,” Nat. Commun. 15,
+10208 (2024) .
+8Y. Kato, J. Brillo, D. Holland-Moritz, F. Yang, T. C. Hansen,
+T. Voigtmann, and L. Heitmeier, “Molecular Dynamics simula-
+tions of Al-Ti metallic alloy melts using a transferable machine-
+learning potential,” (2026), preprint, arXiv:2604.26362 [cond-
+mat.mtrl-sci].
+9J. P. Perdew, K. Burke, and M. Ernzerhof, “Generalized Gradient
+Approximation Made Simple,” Phys. Rev. Lett. 77, 3865–3868
+(1996).
+10R. Jinnouchi, F. Karsai, and G. Kresse, “On-the-ﬂy machine
+learning force ﬁeld generation: Application to melting points,”
+Phys. Rev. B 100, 014105 (2019) .
+11E. O. Khazieva, N. M. Chtchelkatchev, and R. E. Ryltsev,
+“Transfer learning for accurate description of atomic transport
+in Al–Cu melts,” J. Chem. Phys. 161, 174101 (2024) .
+16
+12J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E.
+Scuseria, L. A. Constantin, X. Zhou, and K. Burke, “Restoring
+the Density-Gradient Expansion for Exchange in Solids and Sur-
+faces,” Phys. Rev. Lett. 100, 136406 (2008) .
+13J. W. Furness, A. D. Kaplan, J. Ning, J. P. Perdew, and J. Sun,
+“Accurate and Numerically Eﬃcient r2SCAN Meta-Generalized
+Gradient Approximation,” J. Phys. Chem. Lett. 11, 8208–8215
+(2020).
+14I. Batatia, P. Benner, Y. Chiang, A. M. Elena, D. P. Kovács,
+J. Riebesell, X. R. Advincula, M. Asta, M. A vaylon, W. J.
+Baldwin, F. Berger, N. Bernstein, A. Bhowmik, F. Bigi, S. M.
+Blau, V. Cărare, M. Ceriotti, S. Chong, J. P. Darby, S. De,
+F. Della Pia, V. L. Deringer, R. Elijošius, Z. El-Machachi,
+E. Fako, F. Falcioni, A. C. Ferrari, J. L. A. Gardner, M. J.
+Gawkowski, A. Genreith-Schriever, J. George, R. E. A. Goodall,
+J. Grandel, C. P. Grey, P. Grigorev, S. Han, W. Handley, H. H.
+Heenen, K. Hermansson, C. H. Ho, S. Hofmann, C. Holm, J. Jaa-
+far, K. S. Jakob, H. Jung, V. Kapil, A. D. Kaplan, N. Karimi-
+tari, J. R. Kermode, P. Kourtis, N. Kroupa, J. Kullgren, M. C.
+Kuner, D. Kuryla, G. Liepuoniute, C. Lin, J. T. Margraf, I.-
+B. Magdău, A. Michaelides, J. H. Moore, A. A. Naik, S. P.
+Niblett, S. W. Norwood, N. O’Neill, C. Ortner, K. A. Persson,
+K. Reuter, A. S. Rosen, L. A. M. Rosset, L. L. Schaaf, C. Schran,
+B. X. Shi, E. Sivonxay, T. K. Stenczel, C. Sutton, V. Svahn,
+T. D. Swinburne, J. Tilly, C. van der Oord, S. Vargas, E. Varga-
+Umbrich, T. Vegge, M. Vondrák, Y. Wang, W. C. Witt, T. Wolf,
+F. Zills, and G. Csányi, “A foundation model for atomistic ma-
+terials chemistry,” J. Chem. Phys. 163, 184110 (2025) .
+15T. Li, W. Li, A. Peng, J. Xue, L. Zhang, D. Zhang, and H. Wang,
+“DPA4: Pushing the Accuracy-Cost Frontier of Interatomic Po-
+tentials with EMF A SO(2) Convolution,” (2026), preprint, ver-
+sion 4, arXiv:2606.02419 [physics.chem-ph].
+16A. Hjorth Larsen, J. Jørgen Mortensen, J. Blomqvist, I. E.
+Castelli, R. Christensen, M. Dułak, J. Friis, M. N. Groves,
+B. Hammer, C. Hargus, E. D. Hermes, P. C. Jennings,
+P. Bjerre Jensen, J. Kermode, J. R. Kitchin, E. Leonhard Kolsb-
+jerg, J. Kubal, K. Kaasbjerg, S. Lysgaard, J. Bergmann Marons-
+son, T. Maxson, T. Olsen, L. Pastewka, A. Peterson, C. Ros-
+tgaard, J. Schiøtz, O. Schütt, M. Strange, K. S. Thygesen,
+T. Vegge, L. Vilhelmsen, M. Walter, Z. Zeng, and K. W. Ja-
+cobsen, “The atomic simulation environment—a Python library
+for working with atoms,” J. Phys.: Condens. Matter 29, 273002
+(2017).
+17B. Cheng, R.-R. Griﬃths, S. Wengert, C. Kunkel, T. Stenczel,
+B. Zhu, V. L. Deringer, N. Bernstein, J. T. Margraf, K. Reuter,
+and G. Csanyi, “Mapping Materials and Molecules,” Acc. Chem.
+Res. 53, 1981–1991 (2020) .
+18A. P. Bartók, R. Kondor, and G. Csányi, “On representing chem-
+ical environments,” Phys. Rev. B 87, 184115 (2013) .
+19G. Kresse and J. Furthmüller, “Eﬃcient iterative schemes for
+ab initio total-energy calculations using a plane-wave basis set,”
+Phys. Rev. B 54, 11169–11186 (1996) .
+20P. E. Blöchl, “Projector augmented-wave method,” Phys. Rev. B
+50, 17953–17979 (1994) .
+21G. Kresse and D. Joubert, “From ultrasoft pseudopotentials to
+the projector augmented-wave method,” Phys. Rev. B 59, 1758–
+1775 (1999) .
+22E. J. Hu, Y. Shen, P. Wallis, Z. Allen-Zhu, Y. Li, S. Wang,
+L. Wang, and W. Chen, “LoRA: Low-Rank Adaptation of Large
+Language Models,” (2021), arXiv:2106.09685 [cs.CL] .
+23P. Souvatzis, O. Eriksson, and M. I. Katsnelson, “Anomalous
+Thermal Expansion in α-Titanium,” Phys. Rev. Lett. 99, 015901
+(2007).
+24A. P. Thompson, H. M. Aktulga, R. Berger, D. S. Bolintineanu,
+W. M. Brown, P. S. Crozier, P. J. in ’t Veld, A. Kohlmeyer, S. G.
+Moore, T. D. Nguyen, R. Shan, M. J. Stevens, J. Tranchida,
+C. Trott, and S. J. Plimpton, “LAMMPS - a ﬂexible simulation
+tool for particle-based materials modeling at the atomic, meso,
+and continuum scales,” Comput. Phys. Commun. 271, 108171
+(2022).
+25W. Lechner and C. Dellago, “Accurate determination of crystal
+structures based on averaged local bond order parameters,” J.
+Chem. Phys. 129, 114707 (2008) .
+26G. Toraman, D. Fauconnier, and T. Verstraelen, “STable Auto-
+Correlation Integral Estimator: Robust and Accurate Transport
+Properties from Molecular Dynamics Simulations,” J. Chem. Inf.
+Model. 65, 10445–10464 (2025) .
+27Y. Zhang, A. Otani, and E. J. Maginn, “Reliable Viscosity Cal-
+culation from Equilibrium Molecular Dynamics Simulations: A
+Time Decomposition Method,” J. Chem. Theory Comput. 11,
+3537–3546 (2015) .
+28V. E. Zinov’ev, Thermophysical Properties of Metals at High
+Temperatures (Metallurgiya, Moscow, 1989) in Russian; Table
+65 and accompanying text, pp. 219–221.
+29E. Ntonti, S. Sotiriadou, M. J. Assael, M. L. Huber, B. Wilthan,
+and M. Watanabe, “Reference Correlations for the Density and
+Thermal Conductivity, and Review of the Viscosity Measure-
+ments, of Liquid Titanium, Zirconium, Hafnium, Vanadium, Nio-
+bium, Tantalum, Chromium, Molybdenum, and Tungsten,” Int.
+J. Thermophys. 45, 18 (2024) .
+30B. Reiplinger and J. Brillo, “Density and excess volume of the
+liquid Ti–V system measured in electromagnetic levitation,” J.
+Mater. Sci. 57, 7954–7964 (2022) .
+31H. Wang, S. Yang, and B. Wei, “Density and structure of under-
+cooled liquid titanium,” Chin. Sci. Bull. 57, 719–723 (2012) .
+32J. Brillo, J. J. Harpur, H. Kobatake, and H. Fukuyama, “Ther-
+mophysical Properties of Al–Ti Binary Liquid Alloys,” Int. J.
+Thermophys. 46, 188 (2025) .
+33V. T. Witusiewicz, A. A. Bondar, U. Hecht, S. Rex, and T. Y.
+Velikanova, “The Al–B–Nb–Ti system: III. Thermodynamic re-
+evaluation of the constituent binary system Al–Ti,” J. Alloys
+Compd. 465, 64–77 (2008) .
+34O. Takeda, H. Yoneda, and Y. Sato, “Viscosity of Molten Al–Ti
+Alloys,” Int. J. Thermophys. 46, 154 (2025) .
+35T. Ishikawa, P.-F. Paradis, J. T. Okada, and Y. Watanabe, “Vis-
+cosity measurements of molten refractory metals using an elec-
+trostatic levitator,” Meas. Sci. Technol. 23, 025305 (2012) .
+36P. Souvatzis, O. Eriksson, M. I. Katsnelson, and S. P. Rudin,
+“Entropy Driven Stabilization of Energetically Unstable Crystal
+Structures Explained from First Principles Theory,” Phys. Rev.
+Lett. 100, 095901 (2008) .
+37J. Sun, A. Ruzsinszky, and J. P. Perdew, “Strongly Constrained
+and Appropriately Normed Semilocal Density Functional,” Phys.
+Rev. Lett. 115, 036402 (2015) .
+38A. Hussain, S. S. Hayat, and M. A. Choudhry, “Ab-initio calcula-
+tions of electronic structure and optical properties of TiAl alloy,”
+Physica B 406, 1961–1965 (2011) .
+39Y. Song, S. P. Tang, J. H. Xu, O. N. Mryasov, A. J. Freeman, and
+C. Woodward, “Ti–Ti Bonding in γ-TiAl and f.c.c. Ti,” Philos.
+Mag. B 70, 987–1002 (1994) .
+40M. Kothakonda, A. D. Kaplan, E. B. Isaacs, C. J. Bartel, J. W.
+Furness, J. Ning, C. Wolverton, J. P. Perdew, and J. Sun, “Test-
+ing the r2SCAN Density Functional for the Thermodynamic Sta-
+bility of Solids with and without a van der Waals Correction,”
+ACS Mater. Au 3, 102–111 (2023) .

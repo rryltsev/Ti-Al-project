@@ -1,0 +1,12 @@
+{
+  "train": "20991808",
+  "postprocess": "20991810",
+  "cases": 8,
+  "seeds": [
+    20,
+    30
+  ],
+  "XC": "PBE",
+  "GPU_concurrency": 1,
+  "postprocess_dependency": "afterany; missing/failed models explicitly reported"
+}

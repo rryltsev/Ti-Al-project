@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-28T16:28:39.871038+00:00",
+  "job_id": "20962927",
+  "old_guard_pid": "4193916",
+  "old_reserve_seconds": 28800,
+  "new_minimum_reserve_seconds": 21600,
+  "reason": "Measured first PBEsol force result finalization 2002 seconds; last-8 SCF maximum 2481 seconds. Six-hour minimum also retains 2*max(SCF)+3h dynamic bound.",
+  "sha256": "be33ada055a94aa1ecdd02323d057a718cfe6e304b03ccd5737df278eb48b5d2",
+  "allocation": "JobId=20962927 JobName=ti2-PBEsol-force-002 UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=898 Nice=0 Account=imet-2026-2 QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=11:51:30 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-10-28T09:12:56 EligibleTime=2026-10-28T09:12:56 AccrueTime=2026-10-28T09:12:56 StartTime=2026-10-28T09:36:55 EndTime=2026-10-29T05:36:55 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-28T09:36:55 Scheduler=Main Partition=apollo AllocNode:Sid=umt:82201 ReqNodeList=(null) ExcNodeList=tesla-a101 NodeList=apollo[11,28] BatchHost=apollo11 NumNodes=2 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=64,mem=480G,node=2,billing=11264 AllocTRES=cpu=64,mem=480G,node=2,billing=11264 Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=240G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v8.sbatch WorkDir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01 StdErr=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol-production04-force-002-20962927.out StdIn=/dev/null StdOut=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBEsol-production04-force-002-20962927.out Power= \n"
+}

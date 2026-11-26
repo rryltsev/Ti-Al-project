@@ -1,0 +1,269 @@
+{
+  "id": "grace-pbe-n694-20261110-01",
+  "model": "GRACE-2L-OMAT-medium-base-fp64",
+  "source_checkpoint": "/home6/u3129/tial-fm-research/grace-2l-preparation-20261107-01/checkpoint",
+  "source_hashes": {
+    "checkpoint.data-00000-of-00001": "b0edbae73335e32b55e8bb64c7f4fe3cac4d5b01ea277dc5db1ac61a0d1231e5",
+    "checkpoint.index": "e6b88f7815fb91bc8687079fc177e4d88ba4640528101855e7c6eff61a4939d1",
+    "model.yaml": "9d2c48d499253916fc02189f3dbee87c079dfdf87d86770a986315e073c0c15c"
+  },
+  "cases": [
+    {
+      "name": "PBE-full-N694-seed10",
+      "XC": "PBE",
+      "method": "full",
+      "N": 694,
+      "validation": 149,
+      "seed": 10,
+      "epochs": 50,
+      "steps": 34700,
+      "expected_trainable": 21764956
+    },
+    {
+      "name": "PBE-restricted_radial-N694-seed10",
+      "XC": "PBE",
+      "method": "restricted_radial",
+      "N": 694,
+      "validation": 149,
+      "seed": 10,
+      "epochs": 50,
+      "steps": 34700,
+      "trainable_patterns": [
+        "I2/reducing_",
+        "rho/reducing_",
+        "I1/reducing_",
+        "R_Linear_",
+        "R1_Linear_"
+      ],
+      "expected_trainable": 21144842,
+      "expected_trainable_tensors": 18
+    },
+    {
+      "name": "PBE-full-N694-seed20",
+      "XC": "PBE",
+      "method": "full",
+      "N": 694,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "steps": 34700,
+      "expected_trainable": 21764956
+    },
+    {
+      "name": "PBE-restricted_radial-N694-seed20",
+      "XC": "PBE",
+      "method": "restricted_radial",
+      "N": 694,
+      "validation": 149,
+      "seed": 20,
+      "epochs": 50,
+      "steps": 34700,
+      "trainable_patterns": [
+        "I2/reducing_",
+        "rho/reducing_",
+        "I1/reducing_",
+        "R_Linear_",
+        "R1_Linear_"
+      ],
+      "expected_trainable": 21144842,
+      "expected_trainable_tensors": 18
+    },
+    {
+      "name": "PBE-full-N694-seed30",
+      "XC": "PBE",
+      "method": "full",
+      "N": 694,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "steps": 34700,
+      "expected_trainable": 21764956
+    },
+    {
+      "name": "PBE-restricted_radial-N694-seed30",
+      "XC": "PBE",
+      "method": "restricted_radial",
+      "N": 694,
+      "validation": 149,
+      "seed": 30,
+      "epochs": 50,
+      "steps": 34700,
+      "trainable_patterns": [
+        "I2/reducing_",
+        "rho/reducing_",
+        "I1/reducing_",
+        "R_Linear_",
+        "R1_Linear_"
+      ],
+      "expected_trainable": 21144842,
+      "expected_trainable_tensors": 18
+    }
+  ],
+  "precision": "float64",
+  "test_access": false,
+  "new_DFT": false,
+  "max_concurrent_GPU_jobs": 1,
+  "recipe": "Adam LR1e-3 ->1e-4 cosine, Huber E/F/stress16/32/128, batch1, 50epochs, noEMA, fixed final checkpoint; same XC train-only alignment across full/restricted.",
+  "restricted_patterns": [
+    "I2/reducing_",
+    "rho/reducing_",
+    "I1/reducing_"
+  ],
+  "training_selection": "Fixed final epoch50 / step34700; fresh foundation weights, discarded smoke",
+  "parents": [
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02",
+      "case": {
+        "name": "PBE-full-N200-seed10",
+        "XC": "PBE",
+        "method": "full",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "ti3al_name": "GRACE-full-N200-seed10",
+      "ti3al_root": "/home6/u3129/tial-fm-research/ti3al-pbe-phonons-20261109-02"
+    },
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-n200-mask-ablation-20261109-01",
+      "case": {
+        "name": "PBE-restricted_radial-N200-seed10",
+        "XC": "PBE",
+        "method": "restricted_radial",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "R_Linear_",
+          "R1_Linear_"
+        ],
+        "expected_trainable": 21144842,
+        "expected_trainable_tensors": 18
+      },
+      "ti3al_name": "GRACE-restricted_radial-N200-seed10",
+      "ti3al_root": "/home6/u3129/tial-fm-research/ti3al-pbe-phonons-20261109-02"
+    },
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01",
+      "case": {
+        "name": "PBE-full-N200-seed20",
+        "XC": "PBE",
+        "method": "full",
+        "N": 200,
+        "validation": 149,
+        "seed": 20,
+        "epochs": 50,
+        "steps": 10000,
+        "expected_trainable": 21764956
+      },
+      "ti3al_root": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01/ti3al",
+      "ti3al_name": "PBE-full-N200-seed20"
+    },
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01",
+      "case": {
+        "name": "PBE-restricted_radial-N200-seed20",
+        "XC": "PBE",
+        "method": "restricted_radial",
+        "N": 200,
+        "validation": 149,
+        "seed": 20,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "R_Linear_",
+          "R1_Linear_"
+        ],
+        "expected_trainable": 21144842,
+        "expected_trainable_tensors": 18
+      },
+      "ti3al_root": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01/ti3al",
+      "ti3al_name": "PBE-restricted_radial-N200-seed20"
+    },
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01",
+      "case": {
+        "name": "PBE-full-N200-seed30",
+        "XC": "PBE",
+        "method": "full",
+        "N": 200,
+        "validation": 149,
+        "seed": 30,
+        "epochs": 50,
+        "steps": 10000,
+        "expected_trainable": 21764956
+      },
+      "ti3al_root": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01/ti3al",
+      "ti3al_name": "PBE-full-N200-seed30"
+    },
+    {
+      "root": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01",
+      "case": {
+        "name": "PBE-restricted_radial-N200-seed30",
+        "XC": "PBE",
+        "method": "restricted_radial",
+        "N": 200,
+        "validation": 149,
+        "seed": 30,
+        "epochs": 50,
+        "steps": 10000,
+        "trainable_patterns": [
+          "I2/reducing_",
+          "rho/reducing_",
+          "I1/reducing_",
+          "R_Linear_",
+          "R1_Linear_"
+        ],
+        "expected_trainable": 21144842,
+        "expected_trainable_tensors": 18
+      },
+      "ti3al_root": "/home6/u3129/tial-fm-research/grace-pbe-seeds-20261110-01/ti3al",
+      "ti3al_name": "PBE-restricted_radial-N200-seed30"
+    }
+  ],
+  "ti3al_parent": "/home6/u3129/tial-fm-research/ti3al-pbe-phonons-20261109-02",
+  "active_XC": [
+    "PBE"
+  ],
+  "paused_XC": [
+    "r2SCAN"
+  ],
+  "matched_batches": "Within XC and seed; production must match own discarded smoke.",
+  "comparison_design": "N200 versus N694 at equal epochs, not equal updates; train-only offsets fitted separately.",
+  "controlled_changes": {
+    "PBE-full-N694-seed10": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "979635c5b8fdb45503fe1a33c016f7fc000f33be9ac0a4d6ba241d698b89b0f1"
+    },
+    "PBE-restricted_radial-N694-seed10": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "aee54040d2d76138693cbdaa41bb266b32d7d2a94b86bc602d5f0d5e08bcf65d"
+    },
+    "PBE-full-N694-seed20": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "4f670fff1ff34eb55f6e0720221b6a79e530ce8798e33ee3c05fa0a9dc724707"
+    },
+    "PBE-restricted_radial-N694-seed20": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "0aeda25c574e518b0aedba9dc11522d61f502f72d711065d110ef0d7694617be"
+    },
+    "PBE-full-N694-seed30": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "e17ab43ae226387702615bcb8a23e5f7ed0c4dfad3c20554df694ef1ac23d1f4"
+    },
+    "PBE-restricted_radial-N694-seed30": {
+      "recipe_identical_except_seed_and_data_paths": true,
+      "input_sha256": "89968a8dbce8128351898ab313065e1b3c91da69a38843231b255d96a74e76a6"
+    }
+  }
+}

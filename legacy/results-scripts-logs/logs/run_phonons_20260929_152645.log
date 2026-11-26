@@ -1,0 +1,246 @@
+Using GPU device(s): 1, GPU: RTX 3050
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   air
+  Use type:  pretrained
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/ml_models/deepmd/dpa4/models
+  Name:      DPA4-Air-OMat24-v20260805.pt
+  Full path: /home/katkoff/ml_models/deepmd/dpa4/models/DPA4-Air-OMat24-v20260805.pt
+==========================================
+Model found: /home/katkoff/ml_models/deepmd/dpa4/models/DPA4-Air-OMat24-v20260805.pt
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained/alpha2_AlTi3
+==========================================
+Activated: ase_deepmd_dpa4
+Python: /home/katkoff/miniconda3/envs/ase_deepmd_dpa4/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained/alpha2_AlTi3/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained/alpha2_AlTi3/.triton
+==========================================
+==========================================
+Phonon calculation (WSL2)
+==========================================
+Date:          Tue Sep 29 15:26:45 +05 2026
+System:        alpha2_AlTi3
+Mode:          dpa4-air-pretrained
+Model path:    /home/katkoff/ml_models/deepmd/dpa4/models/DPA4-Air-OMat24-v20260805.pt
+CIF file:      /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Supercell:     8,8,8
+Delta:         0.01
+Kpts DOS:      50,50,50
+DOS width:     0.0002
+DOS npts:      1000
+Band path:     GMKGALHA
+Band npoints:  200
+Use THz:       true
+Fmax:          0.0001
+Max steps:     1000
+Pressure:      0.0
+Workdir:       /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained/alpha2_AlTi3
+Log file:      /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_152645.log
+==========================================
+/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py:82: UserWarning: Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  structure = parser.parse_structures(primitive=False)[0]
+Output directory: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained/alpha2_AlTi3
+==================================================
+PHONON CALCULATION WORKFLOW
+==================================================
+Loading structure from /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Loaded 8 atoms
+Setting up calculator: deepmd
+Calculator ready
+Starting relaxation...
+Relaxation finished: 7 steps, 2.55 sec, converged=True
+Starting phonon calculation...
+Traceback (most recent call last):
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 126, in execute
+    n_batch, result = callable(max(batch_nframes, 1), start_index)
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 199, in execute_with_batch_size
+    return (end_index - start_index), callable(
+                                      ~~~~~~~~^
+        *[
+        ^^
+    ...<20 lines>...
+        },
+        ^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/infer/deep_eval.py", line 730, in _eval_model
+    batch_output = model(
+        coord_input,
+    ...<5 lines>...
+        charge_spin=charge_spin_input,
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/train/wrapper.py", line 201, in forward
+    model_pred = self._forward_without_loss(task_key, input_dict)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/train/wrapper.py", line 249, in _forward_without_loss
+    model_pred = self.model[task_key](**input_dict)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/model/sezm_model.py", line 833, in forward
+    model_ret = self.forward_common(
+        coord,
+    ...<7 lines>...
+        charge_spin=charge_spin,
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/model/sezm_model.py", line 1051, in forward_common
+    return self.forward_common_lower(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        edge_schema.coord,
+        ^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        atomic_output_only=atomic_output_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/model/sezm_model.py", line 1257, in forward_common_lower
+    model_predict = self.core_compute(
+        coord,
+    ...<13 lines>...
+        atomic_output_only=atomic_output_only,
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/model/sezm_model.py", line 1556, in core_compute
+    descriptor, _ = descriptor_model.forward_with_edges(
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        extended_coord=coord,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        nloc=nloc,
+        ^^^^^^^^^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/descriptor/sezm.py", line 1636, in forward_with_edges
+    x = self._forward_blocks(
+        x, edge_cache, rad_feat_per_block, comm_dict=comm_dict
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/descriptor/sezm.py", line 1693, in _forward_blocks
+    x, _, _, _ = block(
+                 ~~~~~^
+        x,
+        ^^
+    ...<2 lines>...
+        comm_dict=self._block_comm(i, comm_dict),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/descriptor/sezm_nn/block.py", line 715, in forward
+    return self._forward_impl(x, edge_cache, radial_feat, unit_history, comm_dict)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/descriptor/sezm_nn/block.py", line 894, in _forward_with_residual_shortcuts
+    so2_unit_output = self._run_so2_unit(x, edge_cache, radial_feat, comm_dict)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/descriptor/sezm_nn/block.py", line 795, in _run_so2_unit
+    return self._run_so2_unit_impl(x, edge_cache, radial_feat)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/descriptor/sezm_nn/block.py", line 809, in _run_so2_unit_impl
+    so2_unit_output = self.so2_conv(
+        x_pre.reshape(n_node, x_so2.shape[1], channels), edge_cache, radial_feat
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/descriptor/sezm_nn/so2.py", line 1680, in forward
+    x_message, rad_feat = self.so2_message(x, edge_cache, radial_feat)
+                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/model/descriptor/sezm_nn/so2.py", line 2200, in so2_message
+    x_message = x_message * self.rotate_inv_rescale_full.view(1, -1, 1)
+                ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 898.00 MiB. GPU 0 has a total capacity of 8.00 GiB of which 0 bytes is free. Process 369771 has 17179869184.00 GiB memory in use. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 21.19 GiB is allocated by PyTorch, and 766.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 455, in <module>
+    main()
+    ~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 451, in main
+    phonon_calc.run()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 395, in run
+    self.calculate_phonons()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 155, in calculate_phonons
+    self.ph.run()
+    ~~~~~~~~~~~^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/phonons.py", line 186, in run
+    output = self.calculate(atoms_N, eq_disp)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/phonons.py", line 323, in calculate
+    forces = self(atoms_N)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/phonons.py", line 320, in __call__
+    return atoms_N.get_forces()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/atoms.py", line 2015, in get_forces
+    forces = self._calc.get_forces(self)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/calculators/abc.py", line 31, in get_forces
+    return self.get_property('forces', atoms)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/calculators/calculator.py", line 517, in get_property
+    self.calculate(atoms, [name], system_changes)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/calculator.py", line 143, in calculate
+    e, f, v = self.dp.eval(
+              ~~~~~~~~~~~~^
+        coords=coord,
+        ^^^^^^^^^^^^^
+    ...<4 lines>...
+        charge_spin=charge_spin,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )[:3]
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/infer/deep_pot.py", line 206, in eval
+    results = self.deep_eval.eval(
+        coords,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/infer/deep_eval.py", line 556, in eval
+    out = self._eval_func(self._eval_model, numb_test, natoms)(
+        coords, cells, atom_types, fparam, aparam, request_defs, charge_spin
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt/infer/deep_eval.py", line 637, in eval_func
+    return self.auto_batch_size.execute_all(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        inner_func, numb_test, natoms, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 228, in execute_all
+    n_batch, result = self.execute(execute_with_batch_size, index, natoms)
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 138, in execute
+    raise OutOfMemoryError(
+        "The callable still throws an out-of-memory (OOM) error even when batch size is 1!"
+    ) from e
+deepmd.utils.errors.OutOfMemoryError: The callable still throws an out-of-memory (OOM) error even when batch size is 1!
+==========================================
+Phonon calculation finished
+==========================================
+Exit code: 1
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/pretrained/alpha2_AlTi3
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_152645.log
+==========================================
+❌ ERROR: Calculation failed with code 1
+Check log: tail -100 /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_152645.log
+==========================================

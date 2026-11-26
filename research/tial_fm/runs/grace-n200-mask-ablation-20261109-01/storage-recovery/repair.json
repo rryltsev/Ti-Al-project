@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "failed_job": "20990675",
+  "preserved_success_index": 0,
+  "restarted_indices": [
+    1,
+    2,
+    3
+  ],
+  "restart": "fresh aligned checkpoint and fresh Adam; failed epoch-one attempts archived",
+  "new_files": {
+    "grace_pilot_train.py": "4a3d1d838a861d0bce27f297c2369fde1ea741b9803d0a18a9326ee480d76dbf",
+    "grace_storage_guard.py": "34f285f130ddab2cf727044a0833120bde72dcd864e5483957c1211dd6e76ba6",
+    "STORAGE_POLICY.json": "6a23508d0a4a203a06bad0a70662918e3b2af32fac14fe24ab48ca0a0a4c046f",
+    "storage-probe.sbatch": "24aa362bcf827103b86494965bb6840d36a8261e77fba5a20db9446121aa2e08"
+  },
+  "accounting": "20990675_0|COMPLETED|0:0\n20990675_1|FAILED|1:0\n20990675_2|FAILED|1:0\n20990675_3|FAILED|1:0\n"
+}

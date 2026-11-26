@@ -1,0 +1,90 @@
+{
+  "status": "frozen",
+  "model_sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+  "protocol": {
+    "status": "predeclared_before_training_predictions",
+    "created_unix": 1792641940.3403106,
+    "authorization": "User requested training-only energy alignment on 2026-10-22 after inspecting raw test results.",
+    "model_sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+    "formula": "E_aligned = E_pretrained + n_Al*c_Al + n_Ti*c_Ti",
+    "elements": [
+      "Al",
+      "Ti"
+    ],
+    "fit": "Unregularized rank-2 least squares of per-atom energy residuals; equal weight per training frame.",
+    "target": "(energy.npy - pretrained total energy)/n_atoms",
+    "selection": "All frames in training_systems.json, separately for each functional; no validation/test labels, no outlier removal.",
+    "constraints": "Fit once then freeze. Forces, stresses and pretrained weights unchanged. Retain raw metrics. Do not change stopping heuristic.",
+    "test_geometry_manifest_sha256": "71f2f057f45141fb6456cbbe16e306c8abf80f2100728def25e24d5dd298d088"
+  },
+  "fitting_script_sha256": "c1c5750b3d2cccfc61a3a404eb9e10f5e8d195c2e6404fd0288afe211b42b8f5",
+  "preparation_script_sha256": "99bd3cc1e4d8c41d8cfdfeef4b29943c0042e6c8f5fbf8f572b7d73f96e14be8",
+  "inference_script_sha256": "8a23873617a83a17ee9aa2958cbdb0ae04239c46ac76a9bc0a33b6cb53996013",
+  "functionals": {
+    "PBE": {
+      "coefficients_eV_per_atom": {
+        "Al": 0.002489863656859891,
+        "Ti": 0.0016176639070594222
+      },
+      "n_training_frames": 850,
+      "rank": 2,
+      "condition_number": 1.790461003145505,
+      "train_raw_rmse_meV_atom": 2.786075849327506,
+      "train_aligned_rmse_meV_atom": 1.8967188558990196,
+      "train_aligned_mae_meV_atom": 1.348183187654241,
+      "normal_equation_max_abs": 3.9454117056747506e-16
+    },
+    "PBEsol": {
+      "coefficients_eV_per_atom": {
+        "Al": -0.31442983565866583,
+        "Ti": -0.4871098566672269
+      },
+      "n_training_frames": 849,
+      "rank": 2,
+      "condition_number": 1.7878519060778861,
+      "train_raw_rmse_meV_atom": 410.61741395823384,
+      "train_aligned_rmse_meV_atom": 20.564570992780638,
+      "train_aligned_mae_meV_atom": 16.733772669652364,
+      "normal_equation_max_abs": 8.433416454328019e-14
+    },
+    "r2SCAN": {
+      "coefficients_eV_per_atom": {
+        "Al": -2.960383325338634,
+        "Ti": -5.103372898472025
+      },
+      "n_training_frames": 845,
+      "rank": 2,
+      "condition_number": 1.7878102105845695,
+      "train_raw_rmse_meV_atom": 4164.517598333949,
+      "train_aligned_rmse_meV_atom": 21.474456598320852,
+      "train_aligned_mae_meV_atom": 17.61111652594666,
+      "normal_equation_max_abs": 8.209804364112117e-13
+    }
+  },
+  "input_hashes": {
+    "protocol.json": "7405e95197bf3f9745fc7b82acfbe6c3832a8b3add774d14f010ad9b3f87083d",
+    "input-audit.json": "f424ecf0e858dd51a289a56da439174d6954dcb8fd7526bb5199fb3cdcf5d8cd",
+    "training-labels.json": "2c4e99f05f47d894955763f3d8d767c80267f89e66a7a7e6d4c684abb55091e3",
+    "training-geometries.npz": "99e7fb0ccdaa4e942ea35801b277eb9de9f7b6a84a46d431ac7b74ff55f971ec",
+    "result-0.json": "3773f4d9b12f5137bcea035236a4dffdf45e28a76f41c6e501ac745ed162ef98",
+    "result-1.json": "1a30ad62a8ca68a5b469af3c4b93a80aafde8b482d3b424eba6cd37fd6b8ea40",
+    "result-2.json": "d7053834054444d0864006f4db95387fe147f89c7d3ba0cd38f920df49167156",
+    "result-3.json": "79d26cf9e5f57fbf0caa07de4ecd9c237796b3a998e5b873daca81d2e5c43fcd",
+    "result-4.json": "086376c04e9b140e60618df1bce9385a5d3b93630c40c90fb9a413d721e7e6e3",
+    "result-5.json": "ef8432e1a05bb3b7fea472e6751d7a408fd75c3bf5c3785c1daf2e5b9d252365",
+    "result-6.json": "99ffd18a569947c42b20fe2d73f2d674bb6495ab698e726ac278a26e7277166a",
+    "result-7.json": "c6afc3dbcdec2f98868ccb29578ffcd842dfdbb68fdc91157cee2ff1e305e600"
+  },
+  "inference_jobs": [
+    "20958510",
+    "20958511",
+    "20958512",
+    "20958513",
+    "20958515",
+    "20958516",
+    "20958517",
+    "20958509"
+  ],
+  "uncertainty": "Test bootstrap intervals condition on these fixed coefficients; calibration uncertainty is not included.",
+  "selection_caveat": "This analysis variant was requested after raw Test50 inspection; it is not a pre-registered blind model comparison."
+}

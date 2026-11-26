@@ -1,0 +1,83 @@
+{
+  "id": "grace-precision-20261107-01",
+  "model": "GRACE-2L-OMAT-medium-base",
+  "revision": "4aff666029967745f7993f348eb87a804d625cff",
+  "checkpoints": {
+    "fp32": {
+      "path": "/home6/u3129/tial-fm-research/grace-precision-20261107-01/checkpoint-fp32",
+      "source_kind": "controlled_cast",
+      "source_archive_sha256": "763b7e5679c81ea82d39e595e701d0c9f6565064393f705cbe76663c9583d0aa"
+    },
+    "fp64": {
+      "path": "/home6/u3129/tial-fm-research/grace-2l-preparation-20261107-01/checkpoint",
+      "archive_sha256": "763b7e5679c81ea82d39e595e701d0c9f6565064393f705cbe76663c9583d0aa",
+      "file_hashes": {
+        "model.yaml": "9d2c48d499253916fc02189f3dbee87c079dfdf87d86770a986315e073c0c15c",
+        "checkpoint.index": "e6b88f7815fb91bc8687079fc177e4d88ba4640528101855e7c6eff61a4939d1",
+        "checkpoint.data-00000-of-00001": "b0edbae73335e32b55e8bb64c7f4fe3cac4d5b01ea277dc5db1ac61a0d1231e5"
+      }
+    }
+  },
+  "panel_source": "Eight fixed N200-train IDs, each at native PBE and r2SCAN coordinates; three established probes plus all four structural families. No validation/test used for this numerical comparison.",
+  "panel_ids": [
+    "PBE-tial-selected-0070",
+    "PBE-tial-selected-0687",
+    "PBE-tial-selected-0299",
+    "PBE-tial-selected-0004",
+    "PBE-tial-selected-0297",
+    "PBE-tial-selected-0028",
+    "PBE-tial-selected-0047",
+    "PBE-tial-selected-0001",
+    "r2SCAN-tial-selected-0070",
+    "r2SCAN-tial-selected-0687",
+    "r2SCAN-tial-selected-0299",
+    "r2SCAN-tial-selected-0004",
+    "r2SCAN-tial-selected-0297",
+    "r2SCAN-tial-selected-0028",
+    "r2SCAN-tial-selected-0047",
+    "r2SCAN-tial-selected-0001"
+  ],
+  "finite_difference": {
+    "geometry_id": "PBE-tial-selected-0004",
+    "component": [
+      96,
+      2
+    ],
+    "selection": "Largest absolute DFT force component; fixed before model predictions"
+  },
+  "timing_cases": {
+    "cpu": [
+      "Ti96",
+      "TiAl216",
+      "TiAl432"
+    ],
+    "gpu": [
+      "Ti96",
+      "TiAl216",
+      "TiAl432",
+      "TiAl864"
+    ]
+  },
+  "timing_order": [
+    "fp32-block0",
+    "fp64-block0",
+    "fp64-block1",
+    "fp32-block1"
+  ],
+  "warmup_calls": {
+    "cpu": 2,
+    "gpu": 5
+  },
+  "measured_calls_per_case": {
+    "cpu": 6,
+    "gpu": 30
+  },
+  "backend": "TensorPotential0.6.1/TensorFlow2.20.0; source TPModel ASE diverse engine. Main compute XLA off on CPU, on on GPU. UQ/TF32 off. Fresh processes; CUDA results synchronized by numpy conversion. Not a LAMMPS/Kokkos throughput claim.",
+  "CPU_threads": 4,
+  "GPU_count": 1,
+  "GPU_dependency": "afterany:20989407; no GPU overlap with the eight new N694 training repetitions",
+  "decision": "Compare precision-induced E/F/stress and phonon changes to the DFT model error, then weigh measured throughput/memory. Keep GRACE precision provisional until GPU measurements.",
+  "no_new_DFT": true,
+  "no_training": true,
+  "test_access": false
+}

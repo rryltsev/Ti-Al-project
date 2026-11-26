@@ -1,0 +1,170 @@
+Using GPU device(s): 1, GPU: RTX 3050
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   air
+  Use type:  finetune
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAlZrSi_Air_DPA4_20260925_160833/output_model
+  Name:      model_frozen.pt2
+  Full path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAlZrSi_Air_DPA4_20260925_160833/output_model/model_frozen.pt2
+==========================================
+Model found: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAlZrSi_Air_DPA4_20260925_160833/output_model/model_frozen.pt2
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/finetune/alpha2_AlTi3
+==========================================
+Activated: ase_deepmd_dpa4
+Python: /home/katkoff/miniconda3/envs/ase_deepmd_dpa4/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/finetune/alpha2_AlTi3/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/finetune/alpha2_AlTi3/.triton
+==========================================
+==========================================
+Phonon calculation (WSL2)
+==========================================
+Date:          Tue Sep 29 16:04:44 +05 2026
+System:        alpha2_AlTi3
+Mode:          dpa4-air-finetune
+Model path:    /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAlZrSi_Air_DPA4_20260925_160833/output_model/model_frozen.pt2
+CIF file:      /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Supercell:     5,5,5
+Delta:         0.01
+Kpts DOS:      50,50,50
+DOS width:     0.0002
+DOS npts:      1000
+Band path:     GMKGALHA
+Band npoints:  200
+Use THz:       true
+Fmax:          0.0001
+Max steps:     1000
+Pressure:      0.0
+Workdir:       /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/finetune/alpha2_AlTi3
+Log file:      /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_160444.log
+==========================================
+/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py:82: UserWarning: Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  structure = parser.parse_structures(primitive=False)[0]
+W0929 16:04:46.484000 672576 site-packages/torch/_inductor/package/package.py:120] Loading outdated pt2 file. Please regenerate your package.
+Error: CUDA driver error: no kernel image is available for execution on the device
+Error: CUDA driver error: no kernel image is available for execution on the device
+Error: CUDA driver error: no kernel image is available for execution on the device
+Error: CUDA driver error: no kernel image is available for execution on the device
+Error: CUDA driver error: no kernel image is available for execution on the device
+Error: CUDA driver error: no kernel image is available for execution on the device
+Error: CUDA driver error: no kernel image is available for execution on the device
+Error: CUDA driver error: no kernel image is available for execution on the device
+Output directory: /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/finetune/alpha2_AlTi3
+==================================================
+PHONON CALCULATION WORKFLOW
+==================================================
+Loading structure from /home/katkoff/deepmd_check_pipline/models_check/structures/alpha2_AlTi3.cif
+Loaded 8 atoms
+Setting up calculator: deepmd
+Calculator ready
+Starting relaxation...
+Traceback (most recent call last):
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 126, in execute
+    n_batch, result = callable(max(batch_nframes, 1), start_index)
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 199, in execute_with_batch_size
+    return (end_index - start_index), callable(
+                                      ~~~~~~~~^
+        *[
+        ^^
+    ...<20 lines>...
+        },
+        ^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt_expt/infer/deep_eval.py", line 1961, in _eval_model
+    model_ret = self._pt2_runner(*model_inputs)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/torch/export/pt2_archive/_package.py", line 733, in __call__
+    flat_outputs = self.loader.boxed_run(flat_inputs)
+RuntimeError: run_func_( container_handle_, input_handles.data(), input_handles.size(), output_handles.data(), output_handles.size(), reinterpret_cast<AOTInductorStreamHandle>(stream_handle), proxy_executor_handle_) API call failed at /pytorch/torch/csrc/inductor/aoti_runner/model_container_runner.cpp, line 144
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 455, in <module>
+    main()
+    ~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 451, in main
+    phonon_calc.run()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 394, in run
+    self.relax_structure()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/deepmd_check_pipline/models_check/scripts/phonon_calculator.py", line 122, in relax_structure
+    converged = dyn.run(fmax=self.args.fmax, steps=self.args.max_steps)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/optimize/optimize.py", line 506, in run
+    return Dynamics.run(self, steps=steps)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/optimize/optimize.py", line 375, in run
+    for converged in Dynamics.irun(self, steps=steps):
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/optimize/optimize.py", line 322, in irun
+    gradient = self.optimizable.get_gradient()
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/filters.py", line 31, in get_gradient
+    return -self.filterobj.get_forces().ravel()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/filters.py", line 602, in get_forces
+    stress = self.atoms.get_stress(**kwargs)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/atoms.py", line 2050, in get_stress
+    stress = self._calc.get_stress(self)
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/calculators/abc.py", line 34, in get_stress
+    return self.get_property('stress', atoms)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/ase/calculators/calculator.py", line 517, in get_property
+    self.calculate(atoms, [name], system_changes)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/calculator.py", line 143, in calculate
+    e, f, v = self.dp.eval(
+              ~~~~~~~~~~~~^
+        coords=coord,
+        ^^^^^^^^^^^^^
+    ...<4 lines>...
+        charge_spin=charge_spin,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )[:3]
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/infer/deep_pot.py", line 206, in eval
+    results = self.deep_eval.eval(
+        coords,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt_expt/infer/deep_eval.py", line 1319, in eval
+    out = self._eval_func(self._eval_model, numb_test, natoms)(
+        coords,
+    ...<5 lines>...
+        charge_spin,
+    )
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/pt_expt/infer/deep_eval.py", line 1358, in eval_func
+    return self.auto_batch_size.execute_all(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        inner_func, numb_test, natoms, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 228, in execute_all
+    n_batch, result = self.execute(execute_with_batch_size, index, natoms)
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/katkoff/miniconda3/envs/ase_deepmd_dpa4/lib/python3.13/site-packages/deepmd/utils/batch_size.py", line 138, in execute
+    raise OutOfMemoryError(
+        "The callable still throws an out-of-memory (OOM) error even when batch size is 1!"
+    ) from e
+deepmd.utils.errors.OutOfMemoryError: The callable still throws an out-of-memory (OOM) error even when batch size is 1!
+==========================================
+Phonon calculation finished
+==========================================
+Exit code: 1
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/phonons/dpa4/air/finetune/alpha2_AlTi3
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_160444.log
+==========================================
+❌ ERROR: Calculation failed with code 1
+Check log: tail -100 /home/katkoff/deepmd_check_pipline/logs/run_phonons_20260929_160444.log
+==========================================

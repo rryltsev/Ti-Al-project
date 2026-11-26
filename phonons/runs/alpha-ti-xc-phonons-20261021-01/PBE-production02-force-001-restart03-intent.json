@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-23T08:12:03.369885+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=32",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=300G",
+    "--time=20:00:00",
+    "--job-name=ti4-PBE-f001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-restart03-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v4.sbatch",
+    "restart_step_v2.py",
+    "PBE",
+    "force-001",
+    "20958089"
+  ],
+  "replaces": "20959188",
+  "parent_job": "20958089",
+  "wrapper_sha256": "93ae456a5f2ad5a1ba6062e0fc478ace6651ab06c90580dc86a9c81300a95251"
+}

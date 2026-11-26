@@ -1,0 +1,16 @@
+load xyz file:  TiAl_liq-relax_ASAP-desc.xyz , a total of  104571 frames , a total of  24235336 atoms , with elements:  [13, 22] .
+Find the following descriptor names that match the specifications:  ['SOAP-n4-l3-c3.2-g0.4']
+Use global descriptor matrix with shape:  (104571, 144)
+0
+Remove raw desciptors..
+removing the global descriptors from output xyz with the names:  ['SOAP-n4-l3-c3.2-g0.4']
+removing the atomic descriptors from output xyz with the names:  []
+Perform standard scaling of the design matrix. To turn it off use `--no-scale`
+Using PCA ...
+Start PCA for a design matrix with shape  (104571, 144)
+StandardScaler()
+computing covariance matrix with shape: (144, 144)
+  And now we build a projection 
+Done, super quick. 
+Using scatter plot ...
+Using annotation plot ...

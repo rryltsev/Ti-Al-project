@@ -1,0 +1,52 @@
+{
+  "run_id": "grace-2l-restricted-r2scan-n200-seed10",
+  "state": "blocked",
+  "hypothesis": "Compare adaptation freedom at fixed initialization, data IDs and development budget",
+  "control_group": "GRACE-2L/r2SCAN/200",
+  "architecture": "GRACE-2L",
+  "functional": "r2SCAN",
+  "adaptation": "restricted",
+  "train_size": 200,
+  "training_seed": 10,
+  "data_selection_seed": 20261106,
+  "model_hash": null,
+  "split_hash": null,
+  "target_geometry_ids": null,
+  "new_DFT_jobs": 0,
+  "max_initial_lr_candidates": 3,
+  "base_lr": null,
+  "epochs": null,
+  "rank": null,
+  "alpha": null,
+  "trainable_mask": null,
+  "planned_resources": {
+    "partition": "v100",
+    "account": "imet-2026-2",
+    "qos": "normal",
+    "gpus": 1,
+    "gpu_type": "a100",
+    "cpus": 4,
+    "memory_GiB": 32,
+    "planning_wall_cap_hours": 2
+  },
+  "estimated_cost": {
+    "kind": "provisional_reservation_cap_not_measured_forecast",
+    "GPU_hours_cap": 2,
+    "CPU_hours_cap": 8,
+    "wall_estimate_hours": null
+  },
+  "actual_cost": {
+    "GPU_hours": 0,
+    "CPU_hours": 0
+  },
+  "launch_ready": false,
+  "blocked_by": [
+    "grouped_split_and_parent_provenance",
+    "Gate_B0",
+    "Gate_H0",
+    "allocation_budget",
+    "runtime_mask",
+    "pinned_GRACE_2L_checkpoint"
+  ],
+  "next_step": "Do not submit. Resolve inputs and gates, then profile one short run and replace provisional caps with measured estimates."
+}

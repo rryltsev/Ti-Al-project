@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "active_functionals": [
+    "PBE"
+  ],
+  "paused_functionals": [
+    "r2SCAN"
+  ],
+  "pause_scope": "New property tests; historical results and models retained.",
+  "tests": [
+    {
+      "id": "gamma-TiAl-phonons",
+      "status": "existing",
+      "properties": [
+        "bands",
+        "DOS",
+        "Gamma optical modes",
+        "imaginary modes"
+      ],
+      "geometry": "fixed XC-native DFT cell"
+    },
+    {
+      "id": "Ti3Al-archived-Cmcm-phonons",
+      "status": "complete",
+      "run": "ti3al-pbe-phonons-20261109-02",
+      "properties": [
+        "total DOS",
+        "Al/Ti projected DOS",
+        "imaginary modes",
+        "residual forces",
+        "residual stress",
+        "displacement sensitivity",
+        "ASR sensitivity",
+        "q-mesh sensitivity"
+      ],
+      "geometry": "fixed archived Cmcm cell; nominal D019",
+      "reference": "PBE archived DOS only",
+      "missing_reference": "DFT force constants and band arrays",
+      "interpretation": "Development diagnostic; not certified independent holdout",
+      "DFT_supercell_convergence": "not established",
+      "models": "all16 completed PBE FT checkpoints",
+      "comparison": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\ti3al-pbe-phonons-20261109-02\\comparison-local\\comparison.json"
+    }
+  ]
+}

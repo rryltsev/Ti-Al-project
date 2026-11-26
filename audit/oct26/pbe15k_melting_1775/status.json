@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "progress-0.json": {
+      "status": "completed",
+      "completed_temperatures": [
+        1775
+      ],
+      "unix": 1793030562.8445542
+    },
+    "preflight.json": {
+      "status": "passed",
+      "device": {
+        "name": "NVIDIA A100-PCIE-40GB",
+        "visible": "0",
+        "job": "20961138"
+      },
+      "checks": [
+        {
+          "input": "initial.data",
+          "E_diff_eV_atom": 8.140447346109502e-08,
+          "F_diff_rms_eV_A": 3.264287806640409e-07,
+          "F_diff_max_eV_A": 1.1582334499549152e-06,
+          "pressure_diff_max_GPa": 1.1295439612922565e-05
+        },
+        {
+          "input": "reference_two_phase.data",
+          "E_diff_eV_atom": 8.986686270311762e-08,
+          "F_diff_rms_eV_A": 1.5179088354306486e-06,
+          "F_diff_max_eV_A": 7.1780884667305145e-06,
+          "pressure_diff_max_GPa": 5.566142345196567e-06
+        }
+      ],
+      "benchmark_100_steps_seconds": 8.917299499735236,
+      "projected_worker_hours": 3.4678386943414807,
+      "checkpoint_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "pt2_sha256": "1a59af825e47b585d3b49789f65bed0ac1fce0286630f9484f0687cbac3d0f65",
+      "protocol_sha256": "07788907276acdd3658d33110a1090a4c0d497353e80e8a4a9c2647b0f2b63cc",
+      "versions": {
+        "deepmd-kit": "3.2.0",
+        "torch": "2.11.0",
+        "numpy": "2.5.3",
+        "ase": "3.29.0"
+      }
+    },
+    "preflight-progress.json": [
+      {
+        "input": "initial.data",
+        "E_diff_eV_atom": 8.140447346109502e-08,
+        "F_diff_rms_eV_A": 3.264287806640409e-07,
+        "F_diff_max_eV_A": 1.1582334499549152e-06,
+        "pressure_diff_max_GPa": 1.1295439612922565e-05
+      },
+      {
+        "input": "reference_two_phase.data",
+        "E_diff_eV_atom": 8.986686270311762e-08,
+        "F_diff_rms_eV_A": 1.5179088354306486e-06,
+        "F_diff_max_eV_A": 7.1780884667305145e-06,
+        "pressure_diff_max_GPa": 5.566142345196567e-06
+      }
+    ]
+  },
+  "logs": {
+    "preflight.log": "load model from: /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 to gpu 0\nWARNING: This .pt2 uses the deprecated edge_vec lower schema (pt-backend SeZM/DPA4 freeze). Support will be removed in a future release; refreeze the checkpoint with the pt_expt backend (graph schema).\n  >>> Info of model(s):\n  using   1 model(s): /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 \n  rcut in model:      6\n  ntypes in model:    118\nload model from: /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 to gpu 0\nWARNING: This .pt2 uses the deprecated edge_vec lower schema (pt-backend SeZM/DPA4 freeze). Support will be removed in a future release; refreeze the checkpoint with the pt_expt backend (graph schema).\n  >>> Info of model(s):\n  using   1 model(s): /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 \n  rcut in model:      6\n  ntypes in model:    118\n{\"status\": \"passed\", \"device\": {\"name\": \"NVIDIA A100-PCIE-40GB\", \"visible\": \"0\", \"job\": \"20961138\"}, \"checks\": [{\"input\": \"initial.data\", \"E_diff_eV_atom\": 8.140447346109502e-08, \"F_diff_rms_eV_A\": 3.264287806640409e-07, \"F_diff_max_eV_A\": 1.1582334499549152e-06, \"pressure_diff_max_GPa\": 1.1295439612922565e-05}, {\"input\": \"reference_two_phase.data\", \"E_diff_eV_atom\": 8.986686270311762e-08, \"F_diff_rms_eV_A\": 1.5179088354306486e-06, \"F_diff_max_eV_A\": 7.1780884667305145e-06, \"pressure_diff_max_GPa\": 5.566142345196567e-06}], \"benchmark_100_steps_seconds\": 8.917299499735236, \"projected_worker_hours\": 3.4678386943414807, \"checkpoint_sha256\": \"39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf\", \"pt2_sha256\": \"1a59af825e47b585d3b49789f65bed0ac1fce0286630f9484f0687cbac3d0f65\", \"protocol_sha256\": \"07788907276acdd3658d33110a1090a4c0d497353e80e8a4a9c2647b0f2b63cc\", \"versions\": {\"deepmd-kit\": \"3.2.0\", \"torch\": \"2.11.0\", \"numpy\": \"2.5.3\", \"ase\": \"3.29.0\"}}\n",
+    "worker-0.log": "load model from: /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 to gpu 0\nWARNING: This .pt2 uses the deprecated edge_vec lower schema (pt-backend SeZM/DPA4 freeze). Support will be removed in a future release; refreeze the checkpoint with the pt_expt backend (graph schema).\n  >>> Info of model(s):\n  using   1 model(s): /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 \n  rcut in model:      6\n  ntypes in model:    118\nCOMPLETED_STAGE 1775 equil\nload model from: /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 to gpu 0\nWARNING: This .pt2 uses the deprecated edge_vec lower schema (pt-backend SeZM/DPA4 freeze). Support will be removed in a future release; refreeze the checkpoint with the pt_expt backend (graph schema).\n  >>> Info of model(s):\n  using   1 model(s): /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 \n  rcut in model:      6\n  ntypes in model:    118\nCOMPLETED_STAGE 1775 heat\nload model from: /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 to gpu 0\nWARNING: This .pt2 uses the deprecated edge_vec lower schema (pt-backend SeZM/DPA4 freeze). Support will be removed in a future release; refreeze the checkpoint with the pt_expt backend (graph schema).\n  >>> Info of model(s):\n  using   1 model(s): /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 \n  rcut in model:      6\n  ntypes in model:    118\nCOMPLETED_STAGE 1775 cool\nload model from: /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 to gpu 0\nWARNING: This .pt2 uses the deprecated edge_vec lower schema (pt-backend SeZM/DPA4 freeze). Support will be removed in a future release; refreeze the checkpoint with the pt_expt backend (graph schema).\n  >>> Info of model(s):\n  using   1 model(s): /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/model_15000.pt2 \n  rcut in model:      6\n  ntypes in model:    118\nCOMPLETED_STAGE 1775 melt\n",
+    "allocation-20961138.log": ""
+  },
+  "stage_logs": {
+    "T1775K/heat/log.lammps": "87     -9007.5806      4360.8086     -166.79106      9665.7109      3583.5059      24494.257      20.376747      19.638184      61.210808      3667.7539      1745.6257    \nLoop time of 1746.59 on 4 procs for 20000 steps with 1296 atoms\n\nPerformance: 0.989 ns/day, 24.258 hours/ns, 11.451 timesteps/s, 14.840 katom-step/s\n98.1% CPU use with 1 MPI tasks x 4 OpenMP threads\n\nMPI task timing breakdown:\nSection |  min time  |  avg time  |  max time  |%varavg| %total\n---------------------------------------------------------------\nPair    | 1728.6     | 1728.6     | 1728.6     |   0.0 | 98.97\nNeigh   | 2.3349     | 2.3349     | 2.3349     |   0.0 |  0.13\nComm    | 0.47024    | 0.47024    | 0.47024    |   0.0 |  0.03\nOutput  | 0.58488    | 0.58488    | 0.58488    |   0.0 |  0.03\nModify  | 14.155     | 14.155     | 14.155     |   0.0 |  0.81\nOther   |            | 0.4459     |            |       |  0.03\n\nNlocal:           1296 ave        1296 max        1296 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nNghost:           3933 ave        3933 max        3933 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nNeighs:              0 ave           0 max           0 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nFullNghs:       147944 ave      147944 max      147944 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\n\nTotal # of neighbors = 147944\nAve neighs/atom = 114.15432\nNeighbor list builds = 532\nDangerous builds = 0\nwrite_data /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/T1775K/heat/final.data\nSystem init for write_data ...\nGenerated 0 of 0 mixed pair_coeff terms from geometric mixing rule\nwrite_restart /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/T1775K/heat/final.restart\nSystem init for write_restart ...\nGenerated 0 of 0 mixed pair_coeff terms from geometric mixing rule\n\nTotal wall time: 0:29:06\n",
+    "T1775K/cool/log.lammps": "68     -9338.2818     -1773.8866     -1947.5806     -1997.5251     -1376.5539      23851.54       20.140125      19.609385      60.393512      1823.5227      1780.8275    \nLoop time of 869.376 on 4 procs for 10000 steps with 1296 atoms\n\nPerformance: 0.994 ns/day, 24.149 hours/ns, 11.503 timesteps/s, 14.907 katom-step/s\n98.7% CPU use with 1 MPI tasks x 4 OpenMP threads\n\nMPI task timing breakdown:\nSection |  min time  |  avg time  |  max time  |%varavg| %total\n---------------------------------------------------------------\nPair    | 857.45     | 857.45     | 857.45     |   0.0 | 98.63\nNeigh   | 1.1721     | 1.1721     | 1.1721     |   0.0 |  0.13\nComm    | 0.23638    | 0.23638    | 0.23638    |   0.0 |  0.03\nOutput  | 0.29409    | 0.29409    | 0.29409    |   0.0 |  0.03\nModify  | 9.9763     | 9.9763     | 9.9763     |   0.0 |  1.15\nOther   |            | 0.2422     |            |       |  0.03\n\nNlocal:           1296 ave        1296 max        1296 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nNghost:           3956 ave        3956 max        3956 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nNeighs:              0 ave           0 max           0 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nFullNghs:       152762 ave      152762 max      152762 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\n\nTotal # of neighbors = 152762\nAve neighs/atom = 117.87191\nNeighbor list builds = 267\nDangerous builds = 0\nwrite_data /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/T1775K/cool/final.data\nSystem init for write_data ...\nGenerated 0 of 0 mixed pair_coeff terms from geometric mixing rule\nwrite_restart /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/T1775K/cool/final.restart\nSystem init for write_restart ...\nGenerated 0 of 0 mixed pair_coeff terms from geometric mixing rule\n\nTotal wall time: 0:14:29\n",
+    "T1775K/equil/log.lammps": "     -9405.8661      2854.3373      209.24948      1381.1102      6972.6522      23553.844      20.098429      19.875055      58.964599      1829.7444      1735.7401    \nLoop time of 904.004 on 4 procs for 10000 steps with 1296 atoms\n\nPerformance: 0.956 ns/day, 25.111 hours/ns, 11.062 timesteps/s, 14.336 katom-step/s\n98.2% CPU use with 1 MPI tasks x 4 OpenMP threads\n\nMPI task timing breakdown:\nSection |  min time  |  avg time  |  max time  |%varavg| %total\n---------------------------------------------------------------\nPair    | 894.86     | 894.86     | 894.86     |   0.0 | 98.99\nNeigh   | 1.0516     | 1.0516     | 1.0516     |   0.0 |  0.12\nComm    | 0.28619    | 0.28619    | 0.28619    |   0.0 |  0.03\nOutput  | 0.29128    | 0.29128    | 0.29128    |   0.0 |  0.03\nModify  | 7.3098     | 7.3098     | 7.3098     |   0.0 |  0.81\nOther   |            | 0.2093     |            |       |  0.02\n\nNlocal:           1296 ave        1296 max        1296 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nNghost:           3886 ave        3886 max        3886 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nNeighs:              0 ave           0 max           0 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nFullNghs:       155728 ave      155728 max      155728 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\n\nTotal # of neighbors = 155728\nAve neighs/atom = 120.16049\nNeighbor list builds = 221\nDangerous builds = 0\nwrite_data /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/T1775K/equil/final.data\nSystem init for write_data ...\nGenerated 0 of 0 mixed pair_coeff terms from geometric mixing rule\nwrite_restart /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/T1775K/equil/final.restart\nSystem init for write_restart ...\nGenerated 0 of 0 mixed pair_coeff terms from geometric mixing rule\n\nTotal wall time: 0:15:05\n",
+    "T1775K/melt/log.lammps": "     -9263.34       -504.9713      -1301.3929     -245.33771      31.816715      24024.412      21.838316      19.578427      56.189586      1750.9066      1854.2461    \nLoop time of 8610.12 on 4 procs for 100000 steps with 1296 atoms\n\nPerformance: 1.003 ns/day, 23.917 hours/ns, 11.614 timesteps/s, 15.052 katom-step/s\n97.6% CPU use with 1 MPI tasks x 4 OpenMP threads\n\nMPI task timing breakdown:\nSection |  min time  |  avg time  |  max time  |%varavg| %total\n---------------------------------------------------------------\nPair    | 8541.6     | 8541.6     | 8541.6     |   0.0 | 99.20\nNeigh   | 10.097     | 10.097     | 10.097     |   0.0 |  0.12\nComm    | 2.016      | 2.016      | 2.016      |   0.0 |  0.02\nOutput  | 2.9056     | 2.9056     | 2.9056     |   0.0 |  0.03\nModify  | 52.351     | 52.351     | 52.351     |   0.0 |  0.61\nOther   |            | 1.167      |            |       |  0.01\n\nNlocal:           1296 ave        1296 max        1296 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nNghost:           3966 ave        3966 max        3966 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nNeighs:              0 ave           0 max           0 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\nFullNghs:       150706 ave      150706 max      150706 min\nHistogram: 1 0 0 0 0 0 0 0 0 0\n\nTotal # of neighbors = 150706\nAve neighs/atom = 116.28549\nNeighbor list builds = 2240\nDangerous builds = 0\nwrite_data /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/T1775K/melt/final.data\nSystem init for write_data ...\nGenerated 0 of 0 mixed pair_coeff terms from geometric mixing rule\nwrite_restart /misc/home6/u3129/tial-testsets/pbe15k-melting-1775-20261026-01/T1775K/melt/final.restart\nSystem init for write_restart ...\nGenerated 0 of 0 mixed pair_coeff terms from geometric mixing rule\n\nTotal wall time: 2:23:30\n"
+  }
+}

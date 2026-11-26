@@ -1,0 +1,16 @@
+---
+name: vcsgc-binodal
+description: Compute binary solid coexistence on a common parent lattice from MFA and variance-constrained semigrand Monte Carlo windows, with chemical-potential integration, common tangents and finite-size checks.
+---
+
+# Binary solid coexistence from a cluster Hamiltonian
+
+Use one energy convention across the compared methods. For static CE use the reference-volume static coefficients. In HA use static plus vibrational coefficients at the requested temperature before sampling. In isotropic QHA evaluate the effective coefficients at the sampled volume and retain their volume-dependent affine terms.
+
+* **D019 mean field.** Write the Al content as `c=(q+3r)/4`. Factor each orbit expectation into its sublattice mean spins. Minimize the effective energy per atom plus `kBT [h(q)+3h(r)]/4`, where `h(x)=x ln(x)+(1−x) ln(1−x)`, over physical occupancies at fixed c. Compare ordered and disordered branches, including boundary minima. For QHA also minimize over volume. Build the lower convex envelope and refine the tangent on the homogeneous branches.
+* **VCSGC windows.** Use `Heff − N Δμ0 c + N kBT κ(c−c0)²`. Each sweep makes N site-flip proposals with the full finite-step change of the bias. In the spin convention s=±1, a spin tilt −μspin Σs corresponds to Δμ0=2μspin. Validate the implementation against both a direct full-energy recomputation and the exact occupation distribution of a finite ideal lattice with the bias. Record mean composition from samples, N, tilt, κ, temperature, seed, sweeps and occupations. For D019 record the difference between the largest sublattice occupancy and the mean of the remaining three for each frame.
+* **Volume relaxation.** Specify the measure and proposal used by the lattice model. A flat scalar volume coordinate admits symmetric proposals with zero acceptance outside the fitted domain. Record probability at the grid boundaries. In explicit-atom NPT the integration measure is different. At coexistence, the macroscopic phases may reach different volumes at the same pressure.
+* **Coexistence.** At fixed T, compute `Δμ(c̄)=Δμ0−2 kBT κ(c̄−c0)`. Sort the measured c̄, integrate in composition and identify a supporting line touching distinct compositions. Check slope agreement and that the integrated curve lies above the line throughout the sampled domain. Report all viable ties, edges and unresolved widths with the interpolation and resolution used. Do not infer a critical temperature from the last resolved pair.
+* **Uncertainty.** Block each stationary window in time, resample paired composition and chemical potential through integration and tangent construction, and report the fraction of resamples resolving a pair. Measure slow correlations in the ordering observable as well as composition. Where histogram overlap is connected, compare with WHAM. Compare more than one cell size and window spacing near the endpoint. Identify separately the systematic uncertainty from energy fitting or digitized coefficients.
+
+The Ti–Al worked example in `phase_reproduction/mc` and `phase_reproduction/thermo` includes a C++11 sampler, analytic equilibrium check, MFA and isotherm analysis. Resolve the directory from the TiAl project. The worked 768- and 5120-site grids are paper-specific. Choose sizes, restraint and spacing for the target Hamiltonian.

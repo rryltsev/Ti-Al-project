@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "model": "/misc/home6/u3129/tial-fm-research/dpa4-n694-seeds-20261107-01/training-plan01/cases/PBE-full-N694-seed20/merged/34700.pt",
+  "sha256": "d09767c591dba180b8b7c62e90b14c4e60324a20f34c92eec94377e6bb7b5272",
+  "job_id": "20990447",
+  "checks": [
+    {
+      "id": "tial-selected-0070",
+      "symmetries": {
+        "permutation": {
+          "energy_eV_atom": 9.106265174018013e-09,
+          "force_max_eV_A": 3.84073630607662e-07,
+          "virial_max_eV": 4.087938691554882e-06
+        },
+        "translation_PBC": {
+          "energy_eV_atom": 2.483526865641276e-09,
+          "force_max_eV_A": 4.440613094458534e-07,
+          "virial_max_eV": 2.236710514580409e-06
+        },
+        "rotation": {
+          "energy_eV_atom": 2.2075794361255786e-09,
+          "force_max_eV_A": 1.8508826602064987e-06,
+          "virial_max_eV": 2.2072946624263068e-05
+        }
+      },
+      "force_FD": [
+        {
+          "h_A": 0.01,
+          "analytic": -0.6220253945470541,
+          "numeric": -0.6221592426300049,
+          "error": 0.00013384808295080486
+        },
+        {
+          "h_A": 0.003,
+          "analytic": -0.6220253945470541,
+          "numeric": -0.6220837434132894,
+          "error": 5.8348866235347074e-05
+        },
+        {
+          "h_A": 0.001,
+          "analytic": -0.6220253945470541,
+          "numeric": -0.6220638751983643,
+          "error": 3.848065131017986e-05
+        }
+      ],
+      "virial_FD": [
+        {
+          "strain": 0.003,
+          "analytic": -22.599852168772316,
+          "numeric": -22.569964329401653,
+          "error": 0.029887839370662306
+        },
+        {
+          "strain": 0.001,
+          "analytic": -22.599852168772316,
+          "numeric": -22.599399089813232,
+          "error": 0.0004530789590830864
+        },
+        {
+          "strain": 0.0003,
+          "analytic": -22.599852168772316,
+          "numeric": -22.608041763305668,
+          "error": 0.008189594533352107
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "tial-selected-0687",
+      "symmetries": {
+        "permutation": {
+          "energy_eV_atom": 2.034008412010735e-08,
+          "force_max_eV_A": 1.5845432628225353e-06,
+          "virial_max_eV": 1.625224885160037e-05
+        },
+        "translation_PBC": {
+          "energy_eV_atom": 1.911073923110962e-08,
+          "force_max_eV_A": 1.3948369002036998e-06,
+          "virial_max_eV": 1.0804422668542202e-05
+        },
+        "rotation": {
+          "energy_eV_atom": 2.2485852241516112e-08,
+          "force_max_eV_A": 3.5310166727822723e-06,
+          "virial_max_eV": 6.103377604205207e-05
+        }
+      },
+      "force_FD": [
+        {
+          "h_A": 0.01,
+          "analytic": -2.9858905904527306,
+          "numeric": -2.98627857118845,
+          "error": 0.00038798073571921776
+        },
+        {
+          "h_A": 0.003,
+          "analytic": -2.9858905904527306,
+          "numeric": -2.9850822562972703,
+          "error": 0.0008083341554603329
+        },
+        {
+          "h_A": 0.001,
+          "analytic": -2.9858905904527306,
+          "numeric": -2.987893298268318,
+          "error": 0.0020027078155875344
+        }
+      ],
+      "virial_FD": [
+        {
+          "strain": 0.003,
+          "analytic": -14.361080414087485,
+          "numeric": -14.323650859296322,
+          "error": 0.03742955479116361
+        },
+        {
+          "strain": 0.001,
+          "analytic": -14.361080414087485,
+          "numeric": -14.353484846651554,
+          "error": 0.007595567435931372
+        },
+        {
+          "strain": 0.0003,
+          "analytic": -14.361080414087485,
+          "numeric": -14.363682518402737,
+          "error": 0.002602104315251097
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "tial-selected-0299",
+      "symmetries": {
+        "permutation": {
+          "energy_eV_atom": 7.450580596923828e-09,
+          "force_max_eV_A": 1.1450818675484697e-06,
+          "virial_max_eV": 9.099817994240311e-06
+        },
+        "translation_PBC": {
+          "energy_eV_atom": 9.313225746154785e-09,
+          "force_max_eV_A": 1.0690993850204222e-06,
+          "virial_max_eV": 3.285463382951548e-05
+        },
+        "rotation": {
+          "energy_eV_atom": 5.122274160385132e-09,
+          "force_max_eV_A": 3.822743081000057e-06,
+          "virial_max_eV": 6.545049217265841e-05
+        }
+      },
+      "force_FD": [
+        {
+          "h_A": 0.01,
+          "analytic": -0.9005758904890229,
+          "numeric": -0.900346040725708,
+          "error": 0.00022984976331485996
+        },
+        {
+          "h_A": 0.003,
+          "analytic": -0.9005758904890229,
+          "numeric": -0.8995532989501953,
+          "error": 0.0010225915388275553
+        },
+        {
+          "h_A": 0.001,
+          "analytic": -0.9005758904890229,
+          "numeric": -0.8997917175292969,
+          "error": 0.0007841729597259928
+        }
+      ],
+      "virial_FD": [
+        {
+          "strain": 0.003,
+          "analytic": -43.54529599672595,
+          "numeric": -43.48154862721761,
+          "error": 0.06374736950833437
+        },
+        {
+          "strain": 0.001,
+          "analytic": -43.54529599672595,
+          "numeric": -43.53910684585571,
+          "error": 0.006189150870234528
+        },
+        {
+          "strain": 0.0003,
+          "analytic": -43.54529599672595,
+          "numeric": -43.543577194213874,
+          "error": 0.0017188025120731254
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "scope": "Identical numerical tolerances and probes as original B0; no test labels used."
+}

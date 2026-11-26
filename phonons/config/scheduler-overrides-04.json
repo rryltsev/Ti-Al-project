@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23",
+  "scope": "In-place scheduler changes for the three pending jobs only; historical driver policies remain immutable",
+  "observed_partition_max_walltime": "3-07:00:00",
+  "requested_walltime": "2-00:00:00",
+  "memory_GiB_per_node": 240,
+  "memory_basis": "Measured largest per-rank MaxRSS 7025940 KiB; 32 times this is approximately 214.4 GiB per node, below 240 GiB. This is an observed bound, not a guarantee for future SCF steps.",
+  "jobs": {
+    "PBE": {"job_id": "20959336", "partition": "v100", "nodes": 1, "ranks": 32, "KPAR": 4, "NCORE": 4},
+    "r2SCAN": {"job_id": "20959337", "partition": "apollo", "nodes": 1, "ranks": 32, "KPAR": 4, "NCORE": 4},
+    "PBEsol": {"job_id": "20959338", "partition": "apollo", "nodes": 2, "ranks": 64, "KPAR": 8, "NCORE": 4}
+  },
+  "binary": "Same CPU vasp_std compiled with portable SSE4.2; no GPU port",
+  "scientific_changes": [],
+  "provenance": "runs/alpha-ti-xc-phonons-20261021-01/resource-optimization-20261023-applied.json",
+  "notes": "Job IDs and submission/eligible times preserved. Guards read the actual Slurm EndTime. Scheduler settings override old resource fields in immutable driver policies/status files. Tesla/all projected later; debug too short; nompi shares hardware and was not used to bypass MPI partition conventions. v100 has 24 physical CPU cores / 48 hardware threads, so earlier launch is established by forecast, not improved SCF throughput."
+}

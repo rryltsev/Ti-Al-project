@@ -1,0 +1,615 @@
+Using GPU device(s): 0, GPU: RTX 5060 Ti
+Device: cuda, Dtype: float32
+==========================================
+Parsed MODE:
+  Family:    dpa4
+  Variant:   neo
+  Use type:  finetune
+==========================================
+==========================================
+Model configuration:
+  Path:      /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model
+  Name:      model_frozen.pt2
+  Full path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2
+==========================================
+Model found: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2
+==========================================
+Results directory:
+  /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan
+==========================================
+Activated: ase_deepmd_dpa4
+Python: /home/katkoff/miniconda3/envs/ase_deepmd_dpa4/bin/python
+==========================================
+Cache directories (DeepMD):
+  XDG_CACHE_HOME: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/.cache
+  TRITON_HOME:    /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/.triton
+==========================================
+==========================================
+Mixing enthalpy calculation (WSL2)
+==========================================
+Date:          Tue Oct 13 14:38:17 +05 2026
+System:        AlTi
+Mode:          dpa4-neo-finetune
+Model path:    /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2
+DFT method:    scan
+Step:          0.1
+T measure:     2000 K
+N atoms:       200
+Seed:          42
+R min:         2.0
+Relax fmax:    0.001
+Relax steps:   10000
+MD timestep:   1.0
+MD ttime:      25.0
+MD pressure:   1.0
+Melt steps:    20000
+Equil steps:   30000
+Prod steps:    30000
+Melt factor:   1.5
+Equil factor:  1.0
+Log interval:  100
+Workdir:       /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan
+Log file:      /home/katkoff/deepmd_check_pipline/logs/run_mixing_enthalpy_20261013_143816.log
+==========================================
+WARNING:__main__:FORCE CLEAR: removing contents of /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan
+INFO:__main__:  Skipping cache dir: .triton
+INFO:__main__:  Skipping cache dir: .cache
+INFO:__main__:Tasks: {'Ti': 2000.0, 'Al0.1Ti0.9': 2000.0, 'Al0.2Ti0.8': 2000.0, 'Al0.3Ti0.7': 2000.0, 'Al0.4Ti0.6': 2000.0, 'Al0.5Ti0.5': 2000.0, 'Al0.6Ti0.4': 2000.0, 'Al0.7Ti0.3': 2000.0, 'Al0.8Ti0.2': 2000.0, 'Al0.9Ti0.1': 2000.0, 'Al': 2000.0}
+INFO:__main__:============================================================
+INFO:__main__:MIXING ENTHALPY CALCULATOR
+INFO:__main__:============================================================
+INFO:__main__:Calculator: deepmd
+INFO:__main__:Mode: dpa4-neo-finetune
+INFO:__main__:System: AlTi
+INFO:__main__:Device: cuda, dtype: float32, GPU: RTX 5060 Ti
+INFO:__main__:T_measure: 2000.0 K
+INFO:__main__:Tasks: 11
+INFO:__main__:Output: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan
+INFO:__main__:============================================================
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Ti | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:LiquidStructureManager initialized
+INFO:utils.liquid_manager:  Output: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures
+INFO:utils.liquid_manager:  n_atoms: 200
+INFO:utils.liquid_manager:  r_min: 2.0 Å
+INFO:utils.liquid_manager:Generating liquid Ti (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Ti.vasp (composition: {'Ti': 200})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Ti.vasp
+INFO:__main__:  Composition: {'Ti': 200}
+INFO:__main__:
+Step 2: Bulk modulus = 110.0 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.calculator:=== DEEPMD DP CREATION START ===
+INFO:utils.calculator:model_path: /home/katkoff/finetune_deepmd_dpa4/run_fits/TiAl_tune_scan_Neo_DPA4_shard_20260919_153828/output_model/model_frozen.pt2
+INFO:utils.calculator:device: cuda
+INFO:utils.calculator:default_dtype: float32
+INFO:utils.calculator:DeepMD DP imported successfully
+INFO:utils.calculator:Calling DP(...)
+W1013 14:38:23.827000 1254 site-packages/torch/_inductor/package/package.py:120] Loading outdated pt2 file. Please regenerate your package.
+INFO:utils.calculator:DP(...) returned successfully
+INFO:utils.calculator:calculator type: <class 'deepmd.calculator.DP'>
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -12.800768 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Ti_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Ti_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Ti
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -12.460830 eV/atom
+INFO:__main__:  H     = -1176.89 kJ/mol
+INFO:__main__:  T_avg = 1983.1 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Ti_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.1Ti0.9 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.1Ti0.9 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.1Ti0.9.vasp (composition: {'Al': 20, 'Ti': 180})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.1Ti0.9.vasp
+INFO:__main__:  Composition: {'Al': 20, 'Ti': 180}
+INFO:__main__:
+Step 2: Bulk modulus = 106.6 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -12.275293 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.1Ti0.9_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.1Ti0.9_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.1Ti0.9
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -11.929939 eV/atom
+INFO:__main__:  H     = -1126.08 kJ/mol
+INFO:__main__:  T_avg = 1987.7 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.1Ti0.9_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.2Ti0.8 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.2Ti0.8 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.2Ti0.8.vasp (composition: {'Al': 40, 'Ti': 160})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.2Ti0.8.vasp
+INFO:__main__:  Composition: {'Al': 40, 'Ti': 160}
+INFO:__main__:
+Step 2: Bulk modulus = 103.2 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -11.746807 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.2Ti0.8_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.2Ti0.8_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.2Ti0.8
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -11.388320 eV/atom
+INFO:__main__:  H     = -1073.82 kJ/mol
+INFO:__main__:  T_avg = 1994.7 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.2Ti0.8_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.3Ti0.7 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.3Ti0.7 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.3Ti0.7.vasp (composition: {'Al': 60, 'Ti': 140})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.3Ti0.7.vasp
+INFO:__main__:  Composition: {'Al': 60, 'Ti': 140}
+INFO:__main__:
+Step 2: Bulk modulus = 99.8 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -11.194569 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.3Ti0.7_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.3Ti0.7_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.3Ti0.7
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -10.843544 eV/atom
+INFO:__main__:  H     = -1021.70 kJ/mol
+INFO:__main__:  T_avg = 1973.1 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.3Ti0.7_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.4Ti0.6 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.4Ti0.6 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.4Ti0.6.vasp (composition: {'Al': 80, 'Ti': 120})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.4Ti0.6.vasp
+INFO:__main__:  Composition: {'Al': 80, 'Ti': 120}
+INFO:__main__:
+Step 2: Bulk modulus = 96.4 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -10.616573 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.4Ti0.6_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.4Ti0.6_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.4Ti0.6
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -10.272655 eV/atom
+INFO:__main__:  H     = -966.19 kJ/mol
+INFO:__main__:  T_avg = 1989.9 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.4Ti0.6_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.5Ti0.5 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.5Ti0.5 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.5Ti0.5.vasp (composition: {'Al': 100, 'Ti': 100})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.5Ti0.5.vasp
+INFO:__main__:  Composition: {'Al': 100, 'Ti': 100}
+INFO:__main__:
+Step 2: Bulk modulus = 93.0 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -10.029418 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.5Ti0.5_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.5Ti0.5_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.5Ti0.5
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -9.688667 eV/atom
+INFO:__main__:  H     = -910.29 kJ/mol
+INFO:__main__:  T_avg = 1988.0 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.5Ti0.5_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.6Ti0.4 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.6Ti0.4 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.6Ti0.4.vasp (composition: {'Al': 120, 'Ti': 80})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.6Ti0.4.vasp
+INFO:__main__:  Composition: {'Al': 120, 'Ti': 80}
+INFO:__main__:
+Step 2: Bulk modulus = 89.6 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -9.429955 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.6Ti0.4_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.6Ti0.4_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.6Ti0.4
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -9.061193 eV/atom
+INFO:__main__:  H     = -849.54 kJ/mol
+INFO:__main__:  T_avg = 1993.2 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.6Ti0.4_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.7Ti0.3 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.7Ti0.3 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.7Ti0.3.vasp (composition: {'Al': 140, 'Ti': 60})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.7Ti0.3.vasp
+INFO:__main__:  Composition: {'Al': 140, 'Ti': 60}
+INFO:__main__:
+Step 2: Bulk modulus = 86.2 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -8.781295 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.7Ti0.3_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.7Ti0.3_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.7Ti0.3
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -8.406122 eV/atom
+INFO:__main__:  H     = -786.79 kJ/mol
+INFO:__main__:  T_avg = 1986.0 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.7Ti0.3_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.8Ti0.2 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.8Ti0.2 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.8Ti0.2.vasp (composition: {'Al': 160, 'Ti': 40})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.8Ti0.2.vasp
+INFO:__main__:  Composition: {'Al': 160, 'Ti': 40}
+INFO:__main__:
+Step 2: Bulk modulus = 82.8 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -8.088457 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.8Ti0.2_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.8Ti0.2_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.8Ti0.2
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -7.707986 eV/atom
+INFO:__main__:  H     = -719.29 kJ/mol
+INFO:__main__:  T_avg = 1979.6 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.8Ti0.2_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al0.9Ti0.1 | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al0.9Ti0.1 (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.9Ti0.1.vasp (composition: {'Al': 180, 'Ti': 20})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al0.9Ti0.1.vasp
+INFO:__main__:  Composition: {'Al': 180, 'Ti': 20}
+INFO:__main__:
+Step 2: Bulk modulus = 79.4 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -7.357731 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al0.9Ti0.1_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al0.9Ti0.1_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al0.9Ti0.1
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -6.987196 eV/atom
+INFO:__main__:  H     = -649.95 kJ/mol
+INFO:__main__:  T_avg = 1989.7 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al0.9Ti0.1_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:COMPOSITION: Al | T_measure = 2000.0 K
+INFO:__main__:============================================================
+INFO:__main__:
+Step 1: Loading structure...
+INFO:utils.liquid_manager:Generating liquid Al (200 atoms)...
+INFO:utils.liquid_manager:  Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al.vasp (composition: {'Al': 200})
+INFO:__main__:  Structure: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/initial_structures/Al.vasp
+INFO:__main__:  Composition: {'Al': 200}
+INFO:__main__:
+Step 2: Bulk modulus = 76.0 GPa
+INFO:__main__:
+Step 3: Temperatures
+INFO:__main__:  T_melt = 3000 K (1.5×T_measure)
+INFO:__main__:  T_equil = 2000 K (1.0×T_measure)
+INFO:__main__:  T_prod = 2000 K
+INFO:__main__:
+Step 5: Relax...
+INFO:utils.md_runner:  --- RELAX ---
+INFO:utils.md_runner:    Relax done, E_pot = -6.631493 eV/atom
+INFO:__main__:  Relax cached: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/cache/Al_relaxed.traj
+INFO:__main__:
+Step 6: Melt at 3000 K...
+INFO:utils.md_runner:  --- MELT ---
+INFO:utils.md_runner:    T = 3000.0 K, P = 1.0 bar, steps = 20000
+INFO:__main__:
+Step 7: Equilibrate at 2000 K...
+INFO:utils.md_runner:  --- EQUIL ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:__main__:
+Step 8: Production at 2000 K...
+INFO:utils.md_runner:  --- PROD ---
+INFO:utils.md_runner:    T = 2000.0 K, P = 1.0 bar, steps = 30000
+INFO:utils.md_runner:    Trajectory saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/Al_2000K.traj
+INFO:__main__:
+Step 9: Analyzing trajectory...
+INFO:__main__:
+============================================================
+INFO:__main__:RESULTS: Al
+INFO:__main__:============================================================
+INFO:__main__:  E_pot = -6.251580 eV/atom
+INFO:__main__:  H     = -577.65 kJ/mol
+INFO:__main__:  T_avg = 1986.7 K
+INFO:__main__:  Frames: 301
+INFO:utils.checkpoint_manager:Checkpoint saved: Al_T2000K
+INFO:__main__:
+============================================================
+INFO:__main__:ALL DONE! 11 results
+INFO:__main__:Results: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/summary.json
+INFO:__main__:============================================================
+INFO:__main__:
+============================================================
+INFO:__main__:COMPUTING MIXING ENTHALPY
+INFO:__main__:============================================================
+INFO:__main__:System elements: x-axis = Al, y-axis = Ti
+INFO:__main__:Reference enthalpies:
+INFO:__main__:  H_Al = -577.65 kJ/mol, E_Al = -6.251580 eV/atom
+INFO:__main__:  H_Ti = -1176.89 kJ/mol, E_Ti = -12.460830 eV/atom
+INFO:__main__:Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/mixing_enthalpy.json
+INFO:__main__:Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/mixing_enthalpy.csv
+INFO:__main__:Saved: /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan/mixing_enthalpy.png
+INFO:__main__:============================================================
+INFO:__main__:Mixing enthalpy: status=complete, points=11
+INFO:__main__:============================================================
+==========================================
+Mixing enthalpy calculation finished
+==========================================
+Exit code: 0
+Results:   /home/katkoff/deepmd_check_pipline/models_check/results/mixing_enthalpy/dpa4/neo/finetune/AlTi/2000K/scan
+Log file:  /home/katkoff/deepmd_check_pipline/logs/run_mixing_enthalpy_20261013_143816.log
+==========================================
+✅ SUCCESS!
+==========================================

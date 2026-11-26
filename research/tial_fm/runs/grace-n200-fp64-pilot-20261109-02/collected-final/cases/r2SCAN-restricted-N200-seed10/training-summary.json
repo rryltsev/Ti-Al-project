@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "r2SCAN-restricted-N200-seed10",
+    "XC": "r2SCAN",
+    "method": "restricted",
+    "N": 200,
+    "validation": 149,
+    "seed": 10,
+    "epochs": 50,
+    "steps": 10000
+  },
+  "steps": 10000,
+  "epochs": 50,
+  "training_seconds": 559.517725892365,
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/grace-n200-fp64-pilot-20261109-02/cases/r2SCAN-restricted-N200-seed10/final-checkpoint/checkpoint",
+  "hashes": {
+    "checkpoint.index": "b62b7967cbaea29de7edc1732af1ede9dbda0fc30815112eaf74ba58f7fe13e8",
+    "checkpoint.data-00000-of-00001": "365b7df8d0b8494295b1fe2c0c15c6e379c70375ccbb8c3366c00ebcefaa3a83"
+  },
+  "test_access": false,
+  "selection": "fixed final epoch50",
+  "GPU_memory": {
+    "current": 565334272,
+    "peak": 2110308864
+  }
+}

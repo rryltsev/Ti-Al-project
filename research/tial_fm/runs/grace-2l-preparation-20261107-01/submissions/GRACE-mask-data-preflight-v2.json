@@ -1,0 +1,19 @@
+{
+  "key": "GRACE-mask-data-preflight-v2",
+  "job_id": "20989422",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--partition=apollo",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:10:00",
+    "--job-name=TiAl-GRACE-prep-v2",
+    "--output=preflight-v2-%j.log",
+    "preflight-v2.sbatch"
+  ],
+  "utc": "2026-11-07T15:56:45.861590+00:00"
+}

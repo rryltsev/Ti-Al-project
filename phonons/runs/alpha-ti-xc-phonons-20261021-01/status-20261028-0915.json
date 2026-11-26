@@ -1,0 +1,120 @@
+{
+  "checked_utc": "2026-10-28T04:15:38.072074+00:00",
+  "queue": "20962927|PENDING|0:00|(Resources)\n20959753|RUNNING|13:08:08|apollo11\n20960773|RUNNING|4:44:44|apollo13\n",
+  "accounting": "20958089|COMPLETED|18:06:33|0:0|2086176\n20958090|TIMEOUT|20:00:05|0:0|2304160\n20958091|COMPLETED|17:17:55|0:0|1992800\n20958709|CANCELLED by 13129|00:00:00|0:0|0\n20958710|CANCELLED by 13129|00:00:00|0:0|0\n20958711|CANCELLED by 13129|00:00:00|0:0|0\n20959187|CANCELLED by 13129|00:00:00|0:0|0\n20959188|FAILED|00:00:00|2:0|0\n20959189|FAILED|00:00:00|2:0|0\n20959336|CANCELLED by 13129|06:22:01|0:0|733472\n20959337|COMPLETED|15:19:14|0:0|1764928\n20959338|COMPLETED|08:31:00|0:0|1962240\n20959747|CANCELLED by 13129|00:00:00|0:0|0\n20959753|RUNNING|13:07:57|0:0|1512864\n20960773|RUNNING|04:44:33|0:0|546336\n20962927|PENDING|00:00:00|0:0|0\n",
+  "jobs": {
+    "PBE": {
+      "status": {
+        "xc": "PBE",
+        "step": "force-001",
+        "job_id": "20959753",
+        "parent_job": "20958089",
+        "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE/production-02/force-001",
+        "state": "running",
+        "parent_scheduler": "20958089|COMPLETED\n",
+        "checkpoint_electrons": 960.0001207787624,
+        "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 42519596  104857600 104857600          347570       0       0        \n"
+      },
+      "recent_scf_lines": [
+        "DAV:  12    -0.749265238609E+03    0.20973E-04   -0.21639E-05160040   0.895E-03    0.277E-02",
+        "DAV:  13    -0.749265231117E+03    0.74927E-05   -0.49158E-06173544   0.477E-03    0.205E-02",
+        "DAV:  14    -0.749265224150E+03    0.69661E-05   -0.42990E-06159816   0.479E-03    0.131E-02",
+        "DAV:  15    -0.749265220272E+03    0.38780E-05   -0.22363E-06171216   0.340E-03    0.830E-03",
+        "DAV:  16    -0.749265215298E+03    0.49749E-05   -0.32634E-06157320   0.373E-03    0.178E-03"
+      ],
+      "ediff_reached": false,
+      "normal_termination": false,
+      "checkpoint-request.json": {
+        "job_id": "20959753",
+        "checked_epoch": 1793156866.864917,
+        "deadline_epoch": 1793185644.0,
+        "reserve_seconds": 28800,
+        "state": "stop_requested"
+      },
+      "files": {
+        "CHGCAR": {
+          "bytes": 127578746
+        },
+        "WAVECAR": {
+          "bytes": 0
+        },
+        "OUTCAR": {
+          "bytes": 110929,
+          "mtime_epoch": 1793159523.461235,
+          "age_seconds": 1411.7870376110077
+        },
+        "vasp.stdout": {
+          "bytes": 4483,
+          "mtime_epoch": 1793157885.0629334,
+          "age_seconds": 3050.186297893524
+        },
+        "OSZICAR": {
+          "bytes": 1528,
+          "mtime_epoch": 1793157885.0629334,
+          "age_seconds": 3050.187477350235
+        },
+        "vasprun.xml": {
+          "bytes": 54039,
+          "mtime_epoch": 1793157885.0629334,
+          "age_seconds": 3050.1879494190216
+        }
+      },
+      "fatal_indicators": []
+    },
+    "r2SCAN": {
+      "status": {
+        "xc": "r2SCAN",
+        "step": "force-001",
+        "job_id": "20960773",
+        "parent_job": "20959337",
+        "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-01",
+        "state": "running",
+        "parent_scheduler": "20959337|COMPLETED\n",
+        "checkpoint_electrons": 960.0000918301452,
+        "quota_before_copy": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 42904936  104857600 104857600          350385       0       0        \n",
+        "wavecar_storage_bound_bytes": 50401041888,
+        "quota_required_additional_bytes": 56534609756
+      },
+      "recent_scf_lines": [
+        "DAV:   1     0.139245604320E+05    0.13925E+05   -0.51642E+05129960   0.205E+03",
+        "DAV:   2    -0.121768142105E+03   -0.14046E+05   -0.13835E+05129024   0.694E+02",
+        "DAV:   3    -0.114588782968E+04   -0.10241E+04   -0.96029E+03187416   0.169E+02"
+      ],
+      "ediff_reached": false,
+      "normal_termination": false,
+      "checkpoint-request.json": null,
+      "files": {
+        "CHGCAR": {
+          "bytes": 127578746
+        },
+        "TAUCAR": {
+          "bytes": 127374170
+        },
+        "WAVECAR": {
+          "bytes": 0
+        },
+        "OUTCAR": {
+          "bytes": 85763,
+          "mtime_epoch": 1793156739.828379,
+          "age_seconds": 4195.451429843903
+        },
+        "vasp.stdout": {
+          "bytes": 2647,
+          "mtime_epoch": 1793156739.828379,
+          "age_seconds": 4195.452349185944
+        },
+        "OSZICAR": {
+          "bytes": 332,
+          "mtime_epoch": 1793156739.828379,
+          "age_seconds": 4195.453249692917
+        },
+        "vasprun.xml": {
+          "bytes": 50428,
+          "mtime_epoch": 1793156739.828379,
+          "age_seconds": 4195.453755140305
+        }
+      },
+      "fatal_indicators": []
+    }
+  }
+}

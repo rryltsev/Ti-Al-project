@@ -1,0 +1,219 @@
+{
+  "source_T_K": 1245.0,
+  "N": 1400,
+  "shape": "10x10x7",
+  "cap": 0.4,
+  "axial_free": 1,
+  "time_part": "early",
+  "seed": 31292026,
+  "Q_divider": 0.37,
+  "Q_bandwidth": 0.04,
+  "search_T_mu": [
+    1200.0,
+    1280.0,
+    3.47,
+    3.62
+  ],
+  "draws": 0,
+  "converged": 0,
+  "min_blocks": 1,
+  "one_block_runs": 1,
+  "central": {
+    "T_K": 1240.5635466955541,
+    "mu_eV": 3.5439760711280477,
+    "x_atpct": 27.138784979944226,
+    "latent_meV_atom": 28.465946623280985,
+    "jump_Q": 0.6424618792487616,
+    "phases": [
+      {
+        "x_atpct": 27.138784979944226,
+        "mean_Q": 0.1377545366174815,
+        "semigrand_meV_atom": 12.99173241989718,
+        "effective_frames": 45.59430086137373
+      },
+      {
+        "x_atpct": 27.138784979944226,
+        "mean_Q": 0.7802164158662431,
+        "semigrand_meV_atom": -15.474214203383804,
+        "effective_frames": 60.513788981687874
+      }
+    ],
+    "profile": {
+      "Q_modes": [
+        0.0975,
+        0.8175000000000001
+      ],
+      "Q_valley": 0.3925,
+      "lower_barrier": 1.8444363093197615
+    }
+  },
+  "conditional_95": {},
+  "divider_sensitivity": [
+    {
+      "Q_divider": 0.32,
+      "root": {
+        "T_K": 1240.7312126304726,
+        "mu_eV": 3.54415386129029,
+        "x_atpct": 27.146387942724328,
+        "latent_meV_atom": 28.297678799024272,
+        "jump_Q": 0.6453383040415324,
+        "phases": [
+          {
+            "x_atpct": 27.146387942724328,
+            "mean_Q": 0.1291257403696128,
+            "semigrand_meV_atom": 13.208862380659149,
+            "effective_frames": 42.59855685210483
+          },
+          {
+            "x_atpct": 27.146387942724328,
+            "mean_Q": 0.7744640444111451,
+            "semigrand_meV_atom": -15.088816418365123,
+            "effective_frames": 62.20327781607643
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0975,
+            0.8175000000000001
+          ],
+          "Q_valley": 0.3925,
+          "lower_barrier": 1.8541236385402877
+        }
+      }
+    },
+    {
+      "Q_divider": 0.37,
+      "root": {
+        "T_K": 1240.563546695554,
+        "mu_eV": 3.5439760711280477,
+        "x_atpct": 27.138784979944226,
+        "latent_meV_atom": 28.465946623281,
+        "jump_Q": 0.6424618792487617,
+        "phases": [
+          {
+            "x_atpct": 27.138784979944226,
+            "mean_Q": 0.1377545366174815,
+            "semigrand_meV_atom": 12.991732419897177,
+            "effective_frames": 45.59430086137372
+          },
+          {
+            "x_atpct": 27.138784979944216,
+            "mean_Q": 0.7802164158662432,
+            "semigrand_meV_atom": -15.474214203383822,
+            "effective_frames": 60.513788981687824
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0975,
+            0.8175000000000001
+          ],
+          "Q_valley": 0.3925,
+          "lower_barrier": 1.8444363093197607
+        }
+      }
+    },
+    {
+      "Q_divider": 0.3925,
+      "root": {
+        "T_K": 1240.4953602259504,
+        "mu_eV": 3.5438331210478844,
+        "x_atpct": 27.133226324649435,
+        "latent_meV_atom": 28.525179624574754,
+        "jump_Q": 0.6406517669208177,
+        "phases": [
+          {
+            "x_atpct": 27.133226324649435,
+            "mean_Q": 0.14177734715886584,
+            "semigrand_meV_atom": 12.890618470198639,
+            "effective_frames": 46.945553172279425
+          },
+          {
+            "x_atpct": 27.133226324649442,
+            "mean_Q": 0.7824291140796835,
+            "semigrand_meV_atom": -15.634561154376113,
+            "effective_frames": 59.8291400545204
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0975,
+            0.8175000000000001
+          ],
+          "Q_valley": 0.3925,
+          "lower_barrier": 1.8415181663085942
+        }
+      }
+    },
+    {
+      "Q_divider": 0.42,
+      "root": {
+        "T_K": 1240.4090188929304,
+        "mu_eV": 3.543687136919577,
+        "x_atpct": 27.127441691010983,
+        "latent_meV_atom": 28.560568904766125,
+        "jump_Q": 0.6377201707119163,
+        "phases": [
+          {
+            "x_atpct": 27.127441691010983,
+            "mean_Q": 0.14732851065631103,
+            "semigrand_meV_atom": 12.735650927791022,
+            "effective_frames": 48.70732111148462
+          },
+          {
+            "x_atpct": 27.127441691010993,
+            "mean_Q": 0.7850486813682274,
+            "semigrand_meV_atom": -15.824917976975103,
+            "effective_frames": 58.98899306835049
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0975,
+            0.8175000000000001
+          ],
+          "Q_valley": 0.3875,
+          "lower_barrier": 1.8374216511097377
+        }
+      }
+    },
+    {
+      "Q_divider": 0.47,
+      "root": {
+        "T_K": 1240.2513152811018,
+        "mu_eV": 3.543393392526234,
+        "x_atpct": 27.115995285266255,
+        "latent_meV_atom": 28.579499056422424,
+        "jump_Q": 0.6307990928419549,
+        "phases": [
+          {
+            "x_atpct": 27.115995285266255,
+            "mean_Q": 0.15863516821469587,
+            "semigrand_meV_atom": 12.41727953061001,
+            "effective_frames": 52.12785246001067
+          },
+          {
+            "x_atpct": 27.115995285266266,
+            "mean_Q": 0.7894342610566507,
+            "semigrand_meV_atom": -16.162219525812414,
+            "effective_frames": 57.501141290870684
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0975,
+            0.8225
+          ],
+          "Q_valley": 0.3875,
+          "lower_barrier": 1.8304706784290286
+        }
+      }
+    }
+  ],
+  "replicates": [],
+  "manifests": [
+    "solvus_closure/atomistic/series/zc4514l/windows.csv",
+    "solvus_closure/atomistic/series/zc4514c/windows.csv",
+    "solvus_closure/atomistic/series/zc4514r/windows.csv"
+  ]
+}

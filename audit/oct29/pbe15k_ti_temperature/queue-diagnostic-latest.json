@@ -1,0 +1,115 @@
+{
+  "checked_unix": 1793680508.735181,
+  "commands": {
+    "job": {
+      "cmd": [
+        "scontrol",
+        "show",
+        "job",
+        "20962153",
+        "-dd"
+      ],
+      "returncode": 0,
+      "output": "JobId=20962153 JobName=TiAl-visc15k-iter\n   UserId=u3129(13129) GroupId=users(100) MCS_label=N/A\n   Priority=895 Nice=0 Account=imet-2026-2 QOS=normal\n   JobState=PENDING Reason=Priority Dependency=(null)\n   Requeue=1 Restarts=3 BatchFlag=1 Reboot=0 ExitCode=0:0\n   DerivedExitCode=75:0\n   RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A\n   SubmitTime=2026-10-30T15:34:59 EligibleTime=2026-10-30T15:37:00\n   AccrueTime=2026-10-30T15:37:00\n   StartTime=Unknown EndTime=Unknown Deadline=N/A\n   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-03T09:35:07 Scheduler=Backfill:*\n   Partition=v100 AllocNode:Sid=umt:1602107\n   ReqNodeList=tesla-a101 ExcNodeList=(null)\n   NodeList=\n   NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:*\n   ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1\n   AllocTRES=(null)\n   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*\n   MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0\n   Features=(null) DelayBoot=00:00:00\n   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)\n   Command=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/job.sbatch\n   WorkDir=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01\n   StdErr=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/allocation-20962153.log\n   StdIn=/dev/null\n   StdOut=/home6/u3129/tial-testsets/pbe15k-viscosity-1873-20261027-01/allocation-20962153.log\n   Power=\n   TresPerNode=gres:gpu:a100:1\n   \n\n"
+    },
+    "partition": {
+      "cmd": [
+        "scontrol",
+        "show",
+        "partition",
+        "v100"
+      ],
+      "returncode": 0,
+      "output": "PartitionName=v100\n   AllowGroups=umtv100 AllowAccounts=ALL AllowQos=ALL\n   AllocNodes=ALL Default=NO QoS=N/A\n   DefaultTime=00:30:00 DisableRootJobs=NO ExclusiveUser=NO GraceTime=0 Hidden=NO\n   MaxNodes=1 MaxTime=20:00:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED\n   Nodes=tesla-a101\n   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO\n   OverTimeLimit=NONE PreemptMode=OFF\n   State=UP TotalCPUs=48 TotalNodes=1 SelectTypeParameters=NONE\n   JobDefaults=(null)\n   DefMemPerCPU=1000 MaxMemPerNode=UNLIMITED\n   TRES=cpu=48,mem=254000M,node=1,billing=71808,gres/gpu=2,gres/gpu:a100=2,gres/shard=12\n   TRESBillingWeights=cpu=176,gres/gpu:m2090=1320,gres/gpu:k40m=3520,gres/gpu:v100=10560,gres/gpu:a100=15840,gres/shard=2640\n\n"
+    },
+    "priority": {
+      "cmd": [
+        "sprio",
+        "-j",
+        "20962153",
+        "-l"
+      ],
+      "returncode": 0,
+      "output": "          JOBID PARTITION     USER  ACCOUNT   PRIORITY       SITE        AGE      ASSOC  FAIRSHARE    JOBSIZE  PARTITION    QOSNAME        QOS        NICE                 TRES\n       20962153 v100         u3129 imet-202        895          0          0          0        895          0          0     normal          0           0                     \n"
+    },
+    "estimated_start": {
+      "cmd": [
+        "squeue",
+        "--start",
+        "-j",
+        "20962153"
+      ],
+      "returncode": 0,
+      "output": "             JOBID PARTITION     NAME     USER ST          START_TIME  NODES SCHEDNODES           NODELIST(REASON)\n          20962153      v100 TiAl-vis    u3129 PD                 N/A      1 (null)               (Priority)\n"
+    },
+    "node": {
+      "cmd": [
+        "scontrol",
+        "show",
+        "node",
+        "tesla-a101"
+      ],
+      "returncode": 0,
+      "output": "NodeName=tesla-a101 Arch=x86_64 CoresPerSocket=12 \n   CPUAlloc=32 CPUEfctv=48 CPUTot=48 CPULoad=14.20\n   AvailableFeatures=a100,tesla,bigmem\n   ActiveFeatures=a100,tesla,bigmem\n   Gres=gpu:a100:2,shard:a100:12\n   NodeAddr=tesla-a101 NodeHostName=tesla-a101 Version=23.02.7\n   OS=Linux 4.18.0-193.19.1.el8_2.centos.plus.x86_64 #1 SMP Mon Sep 14 20:42:18 UTC 2020 \n   RealMemory=254000 AllocMem=196608 FreeMem=99788 Sockets=2 Boards=1\n   State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A\n   Partitions=v100 \n   BootTime=2026-06-19T10:14:59 SlurmdStartTime=2026-06-19T10:16:23\n   LastBusyTime=2026-10-26T11:58:04 ResumeAfterTime=None\n   CfgTRES=cpu=48,mem=254000M,billing=71808,gres/gpu=2,gres/gpu:a100=2,gres/shard=12\n   AllocTRES=cpu=32,mem=192G,gres/gpu=2,gres/gpu:a100=2\n   CapWatts=n/a\n   CurrentWatts=0 AveWatts=0\n   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s\n\n"
+    },
+    "node_queue": {
+      "cmd": [
+        "squeue",
+        "-w",
+        "tesla-a101",
+        "-o",
+        "%.18i %.12u %.16a %.10T %.12Q %.12M %.12l %.20S %.20e %.25b %R"
+      ],
+      "returncode": 0,
+      "output": "             JOBID         USER          ACCOUNT      STATE     PRIORITY         TIME   TIME_LIMIT           START_TIME             END_TIME             TRES_PER_NODE NODELIST(REASON)\n          20976222        s0136         students    RUNNING          988      3:48:57     20:00:00  2026-11-03T05:46:11  2026-11-04T01:46:11                gres:gpu:1 tesla-a101\n          20976221        s0136         students    RUNNING          988      4:15:51     20:00:00  2026-11-03T05:19:17  2026-11-04T01:19:17                gres:gpu:1 tesla-a101\n"
+    },
+    "associations": {
+      "cmd": [
+        "sacctmgr",
+        "-nP",
+        "show",
+        "assoc",
+        "where",
+        "user=u3129",
+        "account=imet-2026-2"
+      ],
+      "returncode": 0,
+      "output": "umt|imet-2026-2|u3129||1|||||||||||365-00:00:00||normal||\n"
+    },
+    "qos": {
+      "cmd": [
+        "sacctmgr",
+        "-nP",
+        "show",
+        "qos",
+        "normal"
+      ],
+      "returncode": 0,
+      "output": "normal|0|00:00:00|||cluster|||1.000000|||||||||||cpu=1024,node=1000||2048||||cpu=1\n"
+    },
+    "fairshare": {
+      "cmd": [
+        "sshare",
+        "-A",
+        "imet-2026-2",
+        "-l"
+      ],
+      "returncode": 0,
+      "output": "Account                    User  RawShares  NormShares    RawUsage   NormUsage  EffectvUsage  FairShare                    GrpTRESMins                    TRESRunMins \n-------------------- ---------- ---------- ----------- ----------- ----------- ------------- ---------- ------------------------------ ------------------------------ \nimet-2026-2                              1    0.002611 48807124957    0.139512      0.139512   0.860488                                cpu=75961,mem=233641533,energ+ \n imet-2026-2              u3129          1    0.000522 33677630905    0.096265      0.104915   0.895085                                cpu=65334,mem=147748413,energ+ \n"
+    },
+    "accounting": {
+      "cmd": [
+        "sacct",
+        "-D",
+        "-j",
+        "20962153",
+        "-S",
+        "2026-10-27",
+        "--format=JobID,State,ExitCode,Submit,Eligible,Start,End,Elapsed,Timelimit,AllocTRES",
+        "-Pn"
+      ],
+      "returncode": 0,
+      "output": "20962153|REQUEUED|0:0|2026-10-27T17:10:10|2026-10-27T17:10:10|2026-10-27T18:55:50|2026-10-28T14:07:35|19:11:45|20:00:00|billing=16896,cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.batch|COMPLETED|0:0|2026-10-27T18:55:50|2026-10-27T18:55:50|2026-10-27T18:55:50|2026-10-28T14:07:35|19:11:45||cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.extern|COMPLETED|0:0|2026-10-27T18:55:50|2026-10-27T18:55:50|2026-10-27T18:55:50|2026-10-28T14:07:35|19:11:45||billing=16896,cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.0|FAILED|75:0|2026-10-27T18:55:51|2026-10-27T18:55:51|2026-10-27T18:55:51|2026-10-28T14:07:35|19:11:44||cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=30G,node=1\n20962153|REQUEUED|0:0|2026-10-28T14:07:40|2026-10-28T14:09:41|2026-10-29T04:23:38|2026-10-29T10:22:12|05:58:34|20:00:00|billing=16896,cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.batch|CANCELLED|0:15|2026-10-29T04:23:38|2026-10-29T04:23:38|2026-10-29T04:23:38|2026-10-29T10:22:13|05:58:35||cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.extern|COMPLETED|0:0|2026-10-29T04:23:38|2026-10-29T04:23:38|2026-10-29T04:23:38|2026-10-29T10:22:12|05:58:34||billing=16896,cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.0|CANCELLED|0:15|2026-10-29T04:23:39|2026-10-29T04:23:39|2026-10-29T04:23:39|2026-10-29T10:22:16|05:58:37||cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=30G,node=1\n20962153|REQUEUED|0:0|2026-10-29T10:22:20|2026-10-29T10:24:21|2026-10-29T20:14:52|2026-10-30T15:34:55|19:20:03|20:00:00|billing=16896,cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.batch|COMPLETED|0:0|2026-10-29T20:14:52|2026-10-29T20:14:52|2026-10-29T20:14:52|2026-10-30T15:34:55|19:20:03||cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.extern|COMPLETED|0:0|2026-10-29T20:14:52|2026-10-29T20:14:52|2026-10-29T20:14:52|2026-10-30T15:34:55|19:20:03||billing=16896,cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=32G,node=1\n20962153.0|FAILED|75:0|2026-10-29T20:14:53|2026-10-29T20:14:53|2026-10-29T20:14:53|2026-10-30T15:34:55|19:20:02||cpu=6,gres/gpu:a100=1,gres/gpu=1,mem=30G,node=1\n20962153|PENDING|0:0|2026-10-30T15:34:59|2026-10-30T15:37:00|Unknown|Unknown|00:00:00|20:00:00|\n"
+    }
+  }
+}

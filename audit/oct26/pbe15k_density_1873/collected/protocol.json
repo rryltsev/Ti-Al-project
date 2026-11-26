@@ -1,0 +1,156 @@
+{
+  "remote": "/home6/u3129/tial-testsets/pbe15k-density-1873-20261026-01",
+  "models": {
+    "15000": {
+      "functional": "PBE",
+      "step": 15000,
+      "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-15000.pt",
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "article_checkpoint": false
+    }
+  },
+  "states": [
+    {
+      "composition": "Ti",
+      "x_Al": 0.0,
+      "initial_file": "Ti.traj",
+      "initial_sha256": "386fe0b581ee35fa8c860037b69cca47d086c2f0bf5978563bcbf05c2e4bd43a",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Ti_1873K.traj",
+      "initial_source_sha256": "a90cf6f09e2ee0356a0de0c2678606da2218a92ad6a6fe5c709a67d2dff77a3a",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 110.0,
+      "seed": 20261026
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "x_Al": 0.1,
+      "initial_file": "Al0.1Ti0.9.traj",
+      "initial_sha256": "1e99eb9d97644ef080c985f964df88c192409f7794c56edcac0887bfb3de6cea",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.1Ti0.9_1873K.traj",
+      "initial_source_sha256": "718732a110c99b528026c871732dd2d08ea0ef083d806133e3675e17053af94e",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 106.6,
+      "seed": 20261127
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "x_Al": 0.2,
+      "initial_file": "Al0.2Ti0.8.traj",
+      "initial_sha256": "c5acfeedc654715410dc9cdefae3ceb80fcffa606994ea540062ddde59bee3c6",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.2Ti0.8_1873K.traj",
+      "initial_source_sha256": "9f5323347a9502cb4ddc654edce8f351b7617a47abf555255b2eaed09b801478",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 103.2,
+      "seed": 20261228
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "x_Al": 0.3,
+      "initial_file": "Al0.3Ti0.7.traj",
+      "initial_sha256": "c360b4b08270da7d1443292c9623b75589c0c7b681ca5e02a59422917a161fc3",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.3Ti0.7_1873K.traj",
+      "initial_source_sha256": "0c65fd92a5576fa6bc34555d914bec4159595c99cd18e2ccffa315d1cf1a7be4",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 99.8,
+      "seed": 20261329
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "x_Al": 0.4,
+      "initial_file": "Al0.4Ti0.6.traj",
+      "initial_sha256": "d66d9c0e2dedb234c31a36eab03f936cfa35aafba4a5132c265cced139233b85",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.4Ti0.6_1873K.traj",
+      "initial_source_sha256": "3ee26b7d538a7b7707b47fe4a47cb10ca10db9cb1f317e6bf4920fbdadd809a5",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 96.4,
+      "seed": 20261430
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "x_Al": 0.5,
+      "initial_file": "Al0.5Ti0.5.traj",
+      "initial_sha256": "1cbf60471f70966a42a1d7626f64ef2cfb20bfacb2d91e5be32e4477c2457c8c",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.5Ti0.5_1873K.traj",
+      "initial_source_sha256": "ef92bca96613dac4793fc8fc9aea919ec6790853e7c2fe330706ff134006362c",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 93.0,
+      "seed": 20261531
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "x_Al": 0.6,
+      "initial_file": "Al0.6Ti0.4.traj",
+      "initial_sha256": "ed6dd999629c3ea624ff53985ff8baa60f4b49e5dc43237d03ea1cc58db0dc39",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.6Ti0.4_1873K.traj",
+      "initial_source_sha256": "f5605de033689b6d97a6739b19e0e936069554b3e0ba6cb7f755b6e425618a13",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 89.6,
+      "seed": 20261632
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "x_Al": 0.7,
+      "initial_file": "Al0.7Ti0.3.traj",
+      "initial_sha256": "f45464bb597bf5225c764cff45e56f53f9fa950b14b7d317d534fbf130d93c5e",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.7Ti0.3_1873K.traj",
+      "initial_source_sha256": "395ec59b2d67ca0968ff1e088da43708a96265ae6260a5a985ffaeab24a7a9db",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 86.2,
+      "seed": 20261733
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "x_Al": 0.8,
+      "initial_file": "Al0.8Ti0.2.traj",
+      "initial_sha256": "7f06fb03255934bc5046dd6ed87fa943a16afe657170f1f4d6530376ef74faa6",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.8Ti0.2_1873K.traj",
+      "initial_source_sha256": "78c9ccddc27529ae7591abded6768aa85e31fe4b30049bd64d36e3b46be1f466",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 82.8,
+      "seed": 20261834
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "x_Al": 0.9,
+      "initial_file": "Al0.9Ti0.1.traj",
+      "initial_sha256": "da548b87d9b3dc5699dd519bd4efe03fc7eea108ce6293287c590bd0be8ed39c",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al0.9Ti0.1_1873K.traj",
+      "initial_source_sha256": "ff76a43555bc64b72b82fa3b59a89b81e6255fc97d8f64f4ebf14154bbc82cba",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 79.4,
+      "seed": 20261935
+    },
+    {
+      "composition": "Al",
+      "x_Al": 1.0,
+      "initial_file": "Al.traj",
+      "initial_sha256": "d7cdab4edabaf6e561698571ebc990ab1c370f686f1b5a0d123742d949eaca0e",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\1873K\\pbe\\Al_1873K.traj",
+      "initial_source_sha256": "8ac756dc618965235a4ea33264159c3521108e0595d6429ad50e95f741336694",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 76.0,
+      "seed": 20262036
+    }
+  ],
+  "tasks_sha256": "6ec9eb65ccaadf9342723ae1b2672d3c9ec7bf141970ada92608864b74ee248e",
+  "T_K": 1873,
+  "P_bar": 1,
+  "dt_fs": 1,
+  "ttime_fs": 25,
+  "equil_steps": 30000,
+  "production_steps": 30000,
+  "thermo_interval": 10,
+  "trajectory_interval": 100,
+  "n_atoms": 200,
+  "barostat": "ASE MelchionnaNPT; pfactor=(25 fs)^2 B; fraction_traceless=0",
+  "initialization": "Final archived 5k liquid configuration at 1873 K; new seeded velocities; 30 ps equilibration and 30 ps production. Velocities and NPT integrator reinitialized at the stage boundary, matching the prior 2000 K rerun.",
+  "enthalpy": "Primary H=(Epot+Ekin+P_external*V)/N; also store instantaneous positive-compression P and legacy sign for traceability.",
+  "comparison": "Archived 1873 K density baseline retained. New MD uses checkpoint 15000; no statistical pairing assumed.",
+  "uncertainty": "Conservative SEM from 3, 5 and 6 ps blocks; half-production drift; save full trajectories for liquid-state and convergence assessment.",
+  "scope": "Density versus Al atomic fraction at 1873 K; PBE checkpoint 15000; 11 compositions, one A100, sequential runs.",
+  "gpu_validation": "CPU/GPU predictions on all eleven initial structures before MD. No TF32, AMP, Triton or compile acceleration.",
+  "allocation_wall_hours": 16,
+  "density": "Time average of instantaneous total cell mass divided by volume; g/cm^3.",
+  "validation": "Checkpoint hash and training step, input hashes and composition, CPU/GPU energies/forces/stresses on all 11 starting configurations, timed 100-step pilot."
+}

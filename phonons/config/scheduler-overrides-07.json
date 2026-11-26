@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-25",
+  "supersedes": "scheduler-overrides-06.json",
+  "cpu_vasp_partition": "apollo",
+  "reason": "All three 48h requests had PartitionTimeLimit. Dynamic weekend MaxTime is not a permanent allowance. Updated pending jobs in place to the normal 20h window; no cumulative compute budget.",
+  "requested_walltime": "20:00:00",
+  "observed_partition_max_walltime": "1-21:00:00",
+  "memory_GiB_per_node": 240,
+  "scientific_changes": [],
+  "jobs": {
+    "PBE_old": {
+      "job_id": "20959336",
+      "partition": "v100",
+      "action": "Cancelled by explicit user request; no new checkpoint assumed"
+    },
+    "PBE": {
+      "job_id": "20959753",
+      "partition": "apollo",
+      "nodes": 1,
+      "ranks": 32,
+      "KPAR": 4,
+      "NCORE": 4,
+      "target": "PBE/production-02/force-001-restart-03",
+      "checkpoint_parent": "20958089",
+      "dependency": null
+    },
+    "r2SCAN": {
+      "job_id": "20959337",
+      "partition": "apollo",
+      "nodes": 1,
+      "ranks": 32,
+      "KPAR": 4,
+      "NCORE": 4
+    },
+    "PBEsol": {
+      "job_id": "20959338",
+      "partition": "apollo",
+      "nodes": 2,
+      "ranks": 64,
+      "KPAR": 8,
+      "NCORE": 4
+    },
+    "PBE_softstop_continuation": {
+      "job_id": "20959747",
+      "action": "Cancelled before start; required clean checkpoint from interrupted run"
+    }
+  },
+  "restart_gate": "restart_step_v4.py validates original clean 20958089 checkpoint; does not read cancelled 20959336 outputs. launch_v6.sbatch rejects allocations outside Apollo.",
+  "provenance": "runs/alpha-ti-xc-phonons-20261021-01/apollo-walltime-correction-20261025-result.json",
+  "forbidden_vasp_nodes": [
+    "tesla-a101"
+  ],
+  "checkpoint_guard": "Existing checkpoint_guard_v2.py reads actual Slurm EndTime at launch; minimum 8h reserve remains active. No claim of an automatically queued next restart."
+}

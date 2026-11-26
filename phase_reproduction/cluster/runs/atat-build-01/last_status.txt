@@ -1,0 +1,23 @@
+21020419|COMPLETED|0:0|00:00:08|6|billing=1056,cpu=6,mem=6G,node=1|nompi|tesla40
+21020419.batch|COMPLETED|0:0|00:00:08|6|cpu=6,mem=6G,node=1||tesla40
+21020419.extern|COMPLETED|0:0|00:00:08|6|billing=1056,cpu=6,mem=6G,node=1||tesla40
+g++   -O3    -c -o refine.o refine.cc
+g++   -O3    -c -o gstate.o gstate.cc
+g++   -O3    -c -o mapshelp.o mapshelp.cc
+g++   -O3    -c -o predrs.o predrs.cc
+g++   -O3    -c -o predcs.o predcs.cc
+g++   -O3    -c -o tlambda.o tlambda.cc
+g++   -O3    -c -o ridge.o ridge.cc
+g++   -O3    -c -o maps.o maps.cc
+g++   -O3    -c -o cvhelp.o cvhelp.cc
+g++   -O3    -c -o cv.o cv.cc
+g++    genstr.o headers.o stringo.o parse.o xtalutil.o integer.o findsym.o clus_str.o getvalue.o lattype.o mpiinterf.o  -lm -o genstr
+g++    corrdump.o headers.o stringo.o parse.o xtalutil.o integer.o findsym.o calccorr.o clus_str.o getvalue.o corrdumphelp.o linalg.o linsolve.o lstsqr.o  -lm -o corrdump
+g++    cv.o headers.o linalg.o lstsqr.o linsolve.o integer.o getvalue.o cvhelp.o stringo.o  -lm -o cv
+g++    maps.o headers.o stringo.o parse.o xtalutil.o integer.o findsym.o lattype.o calccorr.o refine.o clus_str.o linalg.o lstsqr.o gstate.o linsolve.o getvalue.o mapshelp.o predrs.o predcs.o tlambda.o ridge.o  -lm -o maps
+rm corrdump.o genstr.o maps.o cv.o
+make: Leaving directory '/tmp/tial-atat-21020419-6lwdXj/atat/src'
+6cfcc53f5ce35bb388ecf73cb3840a8455ec7ecfb160ffbe533bd27efe1a6cd5  genstr
+7ecd21c047aa5a6a7bc12bdf6333e2181558bd0d1c76809a219eaffe8747f6db  corrdump
+9b762d40534c550e12144c2d28fe171bb97688698072b854209d3152450c91c1  maps
+263310dfdd9fff4a429c056f7ad1733afbd73221da9346f3e9fff6f79122b8ca  cv

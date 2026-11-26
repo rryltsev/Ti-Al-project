@@ -1,0 +1,29 @@
+{
+  "id": "pbe-checkpoints-20261025-01",
+  "checkpoints": [
+    "5000",
+    "20000",
+    "23400"
+  ],
+  "models": {
+    "5000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-5000.pt",
+      "sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac"
+    },
+    "20000": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-20000.pt",
+      "sha256": "3b0b4b69f8fca7be5bae4a5f24498aac904efad08f126f4a57de035e0379c67e"
+    },
+    "23400": {
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-23400.pt",
+      "sha256": "ca0dff4ddcadcf36b4d674cbe378f3199b24d9aa3a029aa42774fc92b3e70c65"
+    }
+  },
+  "common_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\phonons\\dpa4\\neo\\finetune\\alpha_Ti\\pbe\\relaxed_structure.cif",
+  "common_sha256": "f04c9dad5d0f15919f7013ff8911937539f4b6ccf6bda30c809c53b27e6e29d3",
+  "relaxation": "Independent a and c at zero stress, hcp symmetry retained; all six stress components <0.005 GPa.",
+  "cases": "Common archived 5k geometry and each native equilibrium geometry; 5^3 delta .01 A; controls 5^3 delta .005 A and 7^3 delta .01 A.",
+  "mass_amu": 47.867,
+  "path": "GKMGA, 200 common reduced q points",
+  "resources": "CPU only, Apollo, 3 tasks x 4 cores, 16 GiB, 30 min each"
+}

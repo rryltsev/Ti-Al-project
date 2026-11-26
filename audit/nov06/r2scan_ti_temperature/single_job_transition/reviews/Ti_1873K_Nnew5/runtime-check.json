@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "unix": 1793953498.7532308,
+  "job_id": "20988268",
+  "one_A100": true,
+  "analyzed_T": 1873,
+  "legacy_replicas": 30,
+  "new_replicas": 5,
+  "replica_clusters": 35,
+  "twenty_ps_windows": 40,
+  "raw_new5": [
+    {
+      "replica": 1,
+      "sha256": "e39e9b1f3e6f84f026c6e3a7d686627d1e5570beec77b015bf40a63ae4477d12",
+      "V_over_kBT": 3.6549056141033357e-07
+    },
+    {
+      "replica": 2,
+      "sha256": "138017b3783c3f4c1da42f1ac742ad870045a829dbede41fa02f4765c6150e85",
+      "V_over_kBT": 3.581704483142134e-07
+    },
+    {
+      "replica": 3,
+      "sha256": "e1663bef373c619afd3cd8c85f225076e7bb1fb1d2d9cc3ceae8c1bb0e22aa04",
+      "V_over_kBT": 3.6098572706262016e-07
+    },
+    {
+      "replica": 4,
+      "sha256": "15953b8d0b292daa759b32c6d3afaf86c690c49de92c89eb0f581ccf6c0dbab4",
+      "V_over_kBT": 3.575320670535529e-07
+    },
+    {
+      "replica": 5,
+      "sha256": "e6ab1ae97897c91de8df1e3d5b8d149dd8567ec9fa347654c94a1f22e779e014",
+      "V_over_kBT": 3.616415998943612e-07
+    }
+  ],
+  "normalization": "OwnV/(kB*T),bar->Pa,five shear channels",
+  "current": {
+    "status": "running",
+    "phase": "production",
+    "job_id": "20988268",
+    "unix": 1793952420.4669492,
+    "composition": "Ti_1941K",
+    "replica": 2,
+    "production_ps": 40
+  },
+  "new_batch40_is_same_as_full40_for_N5": true
+}

@@ -1,0 +1,60 @@
+{
+  "source_sha256": "03591f701e266b9db0e395c53765391183dda38e9c8786d1d0a304a14c5a1644",
+  "scope": "Installed UMT implementation as inspected 2026-11-06; not proven byte-identical to original September training code",
+  "constants": {
+    "_UNFREEZE_LEAF_NAMES": [
+      "adam_ffn_layer_scales",
+      "adam_scale",
+      "adam_so2_layer_scales",
+      "adamw_attn_gate_w",
+      "adamw_attn_logit_w",
+      "adamw_attn_z_bias_raw",
+      "adamw_focus_compete_w",
+      "adamw_pseudo_query",
+      "film_scale_strength_log",
+      "film_shift_strength_log",
+      "focus_compete_bias"
+    ],
+    "_OVERRIDE_FREEZE_LEAF_NAMES": [
+      "adam_freqs",
+      "adam_type_embedding"
+    ],
+    "_UNFREEZE_SUBMODULE_PATHS": [
+      "atomic_model.fitting_net",
+      "atomic_model.dens_fitting_net",
+      "atomic_model.descriptor.radial_embedding",
+      "atomic_model.descriptor.env_seed_embedding",
+      "atomic_model.descriptor.film_scale_norm",
+      "atomic_model.descriptor.film_shift_norm",
+      "atomic_model.descriptor.final_full_attn_res",
+      "atomic_model.descriptor.final_block_attn_res"
+    ],
+    "_UNFREEZE_PER_BLOCK_SUBPATHS": [
+      "full_attn_res_so2",
+      "full_attn_res_ffns",
+      "block_attn_res_so2",
+      "block_attn_res_ffns",
+      "so2_conv.attn_q_proj",
+      "so2_conv.attn_k_proj",
+      "so2_conv.attn_qk_norm",
+      "so2_conv.attn_output_gate_norm",
+      "so2_conv.focus_compete_norm",
+      "so2_conv.radial_hidden_proj",
+      "so2_conv.so2_layer_attn_res"
+    ],
+    "_BLOCKS_PATH": "atomic_model.descriptor.blocks"
+  },
+  "extra_rules": [
+    "Freeze all first; replace every exact SO3Linear/SO2Linear with adapters",
+    "Unfreeze declared entire modules and per-block modules",
+    "Unfreeze listed leaves and any leaf containing bias",
+    "Override-freeze adam_type_embedding and adam_freqs",
+    "Override-freeze all GatedActivation modules"
+  ],
+  "rank": 16,
+  "alpha": 16,
+  "alpha_over_rank": 1.0,
+  "runtime_named_parameter_mask": null,
+  "total_parameters": null,
+  "trainable_parameters": null
+}

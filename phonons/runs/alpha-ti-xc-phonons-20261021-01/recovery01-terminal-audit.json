@@ -1,0 +1,38 @@
+{
+  "checked_local": "2026-10-21T18:43:31+05:00",
+  "overall_state": "incomplete_timeout_no_active_phonon_jobs",
+  "phonon_forces_available": false,
+  "dos_available": false,
+  "used_CPU_hours": 568.9461111111111,
+  "remaining_original_CPU_hours": 7.387222888888914,
+  "observations": {
+    "PBE": {
+      "job_id": "20957996",
+      "state": "TIMEOUT",
+      "completed_scf_iterations": 1,
+      "first_scf_wall_s": 2258.2451,
+      "max_rank_RSS_KiB": 3689340
+    },
+    "PBEsol": {
+      "job_id": "20957997",
+      "state": "TIMEOUT",
+      "completed_scf_iterations": 1,
+      "first_scf_wall_s": 2212.5549,
+      "max_rank_RSS_KiB": 3550076
+    },
+    "r2SCAN": {
+      "job_id": "20957998",
+      "state": "TIMEOUT",
+      "completed_scf_iterations": 0,
+      "max_rank_RSS_KiB": 3696980
+    }
+  },
+  "common": {
+    "NKPTS": 112,
+    "NBANDS": 576,
+    "ranks": 16,
+    "NCORE": 4,
+    "KPAR": 1
+  },
+  "interpretation": "Memory initialization succeeded. CPU time accumulated during SCF, but performance is too slow for current allocation; root cause not yet isolated. Parent status.json is stale after scheduler timeout; scheduler terminal state takes precedence."
+}

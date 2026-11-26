@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-10-22T08:15:45.796127+00:00",
+  "original_jobs": {
+    "PBE": "20958089",
+    "PBEsol": "20958090",
+    "r2SCAN": "20958091"
+  },
+  "dependent_restart_jobs": {
+    "PBE": "20958709",
+    "PBEsol": "20958710",
+    "r2SCAN": "20958711"
+  },
+  "guards_verified_armed": true,
+  "dependency_verified": "afterany, pending Dependency",
+  "slurm_end_local": "2026-10-23T04:35:30+05:00",
+  "minimum_checkpoint_reserve_seconds": 10800,
+  "adaptive_reserve": "max(10800, 2*max(last8 LOOP wall seconds)+1800)",
+  "restart_files": [
+    "CHGCAR",
+    "TAUCAR (r2SCAN)"
+  ],
+  "wavefunctions_preserved": false,
+  "quota_used_KiB": 33498128,
+  "quota_hard_KiB": 104857600,
+  "tests": [
+    "py_compile passed",
+    "guard normal-completion bypass",
+    "guard threshold and long-iteration reserve",
+    "guard STOPCAR intent + content",
+    "quota command on apollo17",
+    "all three guard records armed",
+    "Slurm afterany dependencies verified"
+  ],
+  "limitations": [
+    "Electronic-step completion is required before checkpoint can be written",
+    "Current LWAVE=False means orbitals/mixing history are not preserved",
+    "Full checkpoint parse and restart execution can only be validated after checkpoint exists"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "job_id": "20962153",
+  "composition": "Ti_2100K",
+  "target_replicas": 45,
+  "requested_unix": 1793930997.541795,
+  "current_progress": {
+    "status": "running",
+    "phase": "production",
+    "job_id": "20962153",
+    "unix": 1793930671.0239408,
+    "composition": "Ti_2100K",
+    "replica": 41,
+    "production_ps": 40
+  },
+  "reason": "User2026-11-06 explicitly selected finishing the current five-replica batch",
+  "no_restart": true,
+  "control_armed": true,
+  "guard_pid": 2155240,
+  "armed_unix": 1793937028.3396635,
+  "armed_progress": {
+    "status": "running",
+    "phase": "replica_preparation",
+    "job_id": "20962153",
+    "unix": 1793937027.742494,
+    "composition": "Ti_2100K",
+    "replica": 45
+  }
+}

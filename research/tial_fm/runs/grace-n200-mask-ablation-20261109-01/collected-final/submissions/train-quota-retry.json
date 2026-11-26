@@ -1,0 +1,22 @@
+{
+  "key": "train-quota-retry",
+  "job_id": "20990790",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=v100",
+    "--gres=gpu:a100:1",
+    "--cpus-per-task=4",
+    "--mem=40G",
+    "--time=04:00:00",
+    "--array=1-3%1",
+    "--dependency=afterok:20990789",
+    "--job-name=TiAl-GRACE-mask-retry",
+    "--output=train-retry-%A_%a.log",
+    "train.sbatch"
+  ],
+  "utc": "2026-11-09T11:28:47.602965+00:00"
+}

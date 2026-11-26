@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-01",
+  "supersedes": "scheduler-overrides-14.json",
+  "cpu_vasp_partition": "apollo",
+  "requested_walltime": "20:00:00",
+  "scientific_changes": [],
+  "jobs": {
+    "PBE": {
+      "job_id": "20973061",
+      "step": "force-000",
+      "target": "PBE/production-06/force-000",
+      "policy": "execution-policy-09.json",
+      "driver": "production_step_v9.py",
+      "launcher": "launch_v15.sbatch",
+      "nodes": 2,
+      "ranks": 64,
+      "memory_GiB_per_node": 240,
+      "KPAR": 8,
+      "NCORE": 4,
+      "initialization": "Fresh ISTART0/ICHARG2; unchanged frozen geometry/scientific settings; charge checkpoint enabled"
+    },
+    "r2SCAN": {
+      "job_id": "20973063",
+      "step": "force-000",
+      "target": "r2SCAN/production-06/force-000",
+      "policy": "execution-policy-10.json",
+      "driver": "production_step_v10.py",
+      "launcher": "launch_v15.sbatch",
+      "nodes": 2,
+      "ranks": 64,
+      "memory_GiB_per_node": 240,
+      "KPAR": 8,
+      "NCORE": 4,
+      "seed_job_id": "20972837",
+      "seed_source": "r2SCAN/production-05/force-002",
+      "ISTART": 1,
+      "ICHARG": 1,
+      "LWAVE": true
+    },
+    "PBEsol": {"active_job_id": null, "state": "Base force001/002/000 accepted; parameter checks deferred by user"}
+  },
+  "newly_completed": {
+    "PBE": {"job_id": "20972819", "step": "force-002", "accepted": true, "report": "results/PBE-force002-validation-20261101.json", "scf_steps": 29, "end_local": "2026-11-01T07:48:38+05:00"},
+    "r2SCAN": {"job_id": "20972837", "step": "force-002", "accepted": true, "report": "results/r2SCAN-force002-validation-20261101.json", "scf_steps": 16, "end_local": "2026-11-01T14:19:38+05:00", "checkpoint_request": "Occurred, but final SCF independently reached both EDIFF criteria; normal termination and fresh wavefunctions"}
+  },
+  "storage": {
+    "archived_source": "r2SCAN/production-02/force-001-restart-04/WAVECAR",
+    "archive": "/home1/u3129/tial-phonons-archive/alpha-ti-xc-phonons-20261021-01/r2SCAN/force-001-restart-04/WAVECAR",
+    "bytes": 25201037952,
+    "sha256": "d80676dd9f8d682f70dc1efdc2b66b2845e23e30f04e7480cefc4fffacc6e795",
+    "verified": true,
+    "source_path_preserved_as_symlink": true,
+    "home6_used_KiB_after_archive": 71587856,
+    "home6_limit_KiB": 104857600,
+    "manifest": "r2SCAN-first-wavecar-archive-20261101-result.json"
+  },
+  "checkpoint_guard": "checkpoint_guard_v2.py; minimum8h reserve; dynamic2*maxSCF+3h; actual scheduler deadline",
+  "parameter_checks_hold": "workflow-holds-20261031.json; still enforced until all3XC force001/002/000 accepted",
+  "comparisons": {
+    "PBE": "results/PBE-matched-DFT-DPA4-20261101-01",
+    "r2SCAN": "results/r2SCAN-matched-DFT-DPA4-20261101-01",
+    "all_DFT": "results/three-DFT-DOS-preliminary-20261101",
+    "qualification": "Central-pair spectra use validated +/-displacements. Common reference cancels exactly; reference residual force/stress tests and numerical/supercell convergence still pending. Not final convergence-validated spectra."
+  }
+}

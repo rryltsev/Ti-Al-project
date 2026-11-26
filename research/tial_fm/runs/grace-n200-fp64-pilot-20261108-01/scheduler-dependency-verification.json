@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "JobState": "PENDING",
+    "Reason": "Priority",
+    "Dependency": "(null)"
+  },
+  "H0": {
+    "JobState": "PENDING",
+    "Reason": "Dependency",
+    "Dependency": "afterok:20990460(unfulfilled)"
+  },
+  "optimizer-gate": {
+    "JobState": "PENDING",
+    "Reason": "Dependency",
+    "Dependency": "afterok:20990464_*(unfulfilled)"
+  },
+  "smoke": {
+    "ArrayTaskThrottle": "1",
+    "JobState": "PENDING",
+    "Reason": "Dependency",
+    "Dependency": "afterok:20990461(unfulfilled)"
+  },
+  "train": {
+    "ArrayTaskThrottle": "1",
+    "JobState": "PENDING",
+    "Reason": "Dependency",
+    "Dependency": "afterok:20990465(unfulfilled)"
+  },
+  "trained-harmonics": {
+    "ArrayTaskThrottle": "2",
+    "JobState": "PENDING",
+    "Reason": "Dependency",
+    "Dependency": "afterok:20990466_*(unfulfilled)"
+  }
+}

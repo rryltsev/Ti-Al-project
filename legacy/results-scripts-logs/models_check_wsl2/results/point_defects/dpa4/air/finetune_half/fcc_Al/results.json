@@ -1,0 +1,61 @@
+{
+  "system": "fcc_Al",
+  "calculator": "deepmd",
+  "family": "dpa4",
+  "variant": "air",
+  "use_type": "finetune_half",
+  "e_per_atom_eV": -3.749058,
+  "properties": [
+    {
+      "property": "σ{100}",
+      "type": "surface_energy",
+      "miller": [
+        1,
+        0,
+        0
+      ],
+      "value": 0.9776,
+      "unit": "J/m2",
+      "E_slab_eV": -530.857275,
+      "n_atoms": 144,
+      "surface_area_A2": 73.8113
+    },
+    {
+      "property": "σ{110}",
+      "type": "surface_energy",
+      "miller": [
+        1,
+        1,
+        0
+      ],
+      "value": 0.9911,
+      "unit": "J/m2",
+      "E_slab_eV": -526.94961,
+      "n_atoms": 144,
+      "surface_area_A2": 104.3849
+    },
+    {
+      "property": "σ{111}",
+      "type": "surface_energy",
+      "miller": [
+        1,
+        1,
+        1
+      ],
+      "value": 0.83,
+      "unit": "J/m2",
+      "E_slab_eV": -297.050645,
+      "n_atoms": 81,
+      "surface_area_A2": 63.9224
+    },
+    {
+      "property": "Evf-Al",
+      "type": "vacancy_formation_energy",
+      "element": "Al",
+      "value": 0.7681,
+      "unit": "eV",
+      "E_perfect_eV": -404.89824,
+      "E_vac_eV": -400.38113
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-31T16:39:34.044622+00:00",
+  "status": "preliminary_exported_visually_verified",
+  "result_directory": "phonons\\results\\PBEsol-phonons-preliminary-20261031-02",
+  "script": "phonons/scripts/build_pbesol_phonons.py",
+  "archive": "phonons\\results\\PBEsol-phonons-preliminary-20261031.zip",
+  "archive_sha256": "658950502468339f3ad44fc84b0e41d564ce806949e53a830ceb41177b7de2d9",
+  "mesh_min_frequency_THz": -1.1003972652304784e-07,
+  "mesh_max_frequency_THz": 8.642149315764419,
+  "band_max_frequency_THz": 8.64454215242641,
+  "no_modes_below_minus001THz_mesh_and_path": true,
+  "DOS_integral_per_atom": 3.0000000000000004,
+  "source_jobs": {
+    "force001": "20959338",
+    "force002": "20962927",
+    "force000": "20968907"
+  },
+  "qualification": "PRELIMINARY: ENCUT/kmesh/smearing and supercell convergence unestablished",
+  "failed_attempt_preserved": "PBEsol-phonons-preliminary-20261031-01/failure.json",
+  "cluster_jobs_modified": false
+}

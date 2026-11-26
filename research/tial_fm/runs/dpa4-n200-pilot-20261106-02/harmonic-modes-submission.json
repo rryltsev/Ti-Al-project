@@ -1,0 +1,4 @@
+{
+  "job_id": "20988444",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --dependency=afterok:20988442 --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=8G --time=00:10:00 --job-name=TiAl-H0-modes --output=harmonic-modes-%j.log harmonic-modes.sbatch"
+}

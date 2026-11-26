@@ -1,0 +1,80 @@
+{
+  "cells": [
+    {
+      "N": 768,
+      "vertex_K": 1243.766582003545,
+      "x_at_pct": 27.183431239337352,
+      "jump_Q": 0.5877104478484664,
+      "heat_meV_atom": 27.541117184954466,
+      "barrier_kBT": 1.0437530608281105,
+      "barrier_per_N23": 0.01244582285873513
+    },
+    {
+      "N": 1400,
+      "vertex_K": 1241.7738975608747,
+      "x_at_pct": 27.174714327377732,
+      "jump_Q": 0.6199049997054451,
+      "heat_meV_atom": 27.821926688631034,
+      "barrier_kBT": 1.5718598436894846,
+      "barrier_per_N23": 0.01256015875455157
+    },
+    {
+      "N": 2304,
+      "vertex_K": 1243.6415346867243,
+      "x_at_pct": 27.179077562798497,
+      "jump_Q": 0.6573520179976631,
+      "heat_meV_atom": 27.936187249035413,
+      "barrier_kBT": 2.6361762608903256,
+      "barrier_per_N23": 0.015111913591532846
+    }
+  ],
+  "estimates": [
+    {
+      "inverse_size_exponent": 1.0,
+      "cells": [
+        768,
+        1400,
+        2304
+      ],
+      "intercept_K": 1242.5359934512726,
+      "conditional_bootstrap_025_50_975_K": [
+        1240.4482183316268,
+        1242.5382766646176,
+        1244.6676949932335
+      ]
+    },
+    {
+      "inverse_size_exponent": 1.0,
+      "cells": [
+        1400,
+        2304
+      ],
+      "intercept_K": 1246.5338930674643,
+      "conditional_bootstrap_025_50_975_K": [
+        1242.5089818521162,
+        1246.6355905158537,
+        1250.9536238094643
+      ]
+    },
+    {
+      "inverse_size_exponent": 0.6666666666666666,
+      "cells": [
+        768,
+        1400,
+        2304
+      ],
+      "intercept_K": 1242.4228252150308,
+      "conditional_bootstrap_025_50_975_K": [
+        1239.3923154028944,
+        1242.4463942883212,
+        1245.4738059484212
+      ]
+    }
+  ],
+  "source_files": [
+    "analysis/thermal/pooled_n768.json",
+    "analysis/thermal/pooled_n1400_all.json",
+    "analysis/thermal/direct_1245_n2304.json"
+  ],
+  "note": "Unweighted fits on three sizes or the two largest. The bulk intercept depends on the model for finite-size corrections. The resampling intervals omit inter-source equilibration scatter, the order divider, cell shape and the displacement wall. The inverse-N^(2/3) fit tests sensitivity only. Barrier values refer to the smaller peak at the 4:1 vertex."
+}

@@ -1,0 +1,39 @@
+\subsection{Extended liquid-Ti density for PBEsol and r2SCAN}
+\label{sec:xc_liquid_density_extended}
+The PBEsol 23\,100-step and \rscan{} 23\,200-step models were used, with SHA-256 prefixes \texttt{5a5359a7\allowbreak13848d98} and \texttt{8b2c339b\allowbreak f472564a}, respectively. All 14 points were completed in a single allocation on one A100. Each uses 200 Ti atoms and the final archived liquid configuration at the same temperature and functional. After 10~ps re-equilibration, 90~ps of new production is accumulated with a 1~fs step, a nominal pressure of 1~bar, isotropic Melchionna NPT, a 25~fs thermostat time parameter, and a barostat parameter $B\tau^2$ with $B=110$~GPa. Velocities and integrator variables restart at each stage, so this is not an exact continuation of the archived trajectory.
+
+Density is $\langle M/V\rangle$ over $0<t\leq90$~ps, using 9000 samples at 10~fs spacing; the 901 saved production configurations span 0--90~ps at 100~fs spacing. The archived 30~ps means remain separate. Full model, protocol, workflow and file hashes, CPU/GPU consistency, stage lengths, atom counts, and agreement of density with trajectory volumes were checked. Temperatures corrected to $3(N-1)$ degrees of freedom differ from their targets by less than 0.05~K. The largest absolute differences between production halves and between the last 30~ps and the full mean are 0.00199 and 0.00111~g/cm$^3$, respectively. Decimating the new scalar records to 100~fs changes a mean by up to 0.00764~g/cm$^3$; this sampling-cadence sensitivity is not included in the SEM.
+
+Table~\ref{tab:xc_liquid_density_extended} gives the completed means. The SEM is the maximum estimate over 3, 5, 6, 9, 10, and 15~ps contiguous blocks with at least six blocks; the pressure interval uses the corresponding block Student-$t$ quantile. Mean logged pressures are 7.22--10.47~MPa, and every pressure interval excludes the 0.1~MPa target. Thus, the density SEM describes sampling variability and is not a full error estimate: pressure-offset, model, finite-size and preparation effects remain outside it.
+
+Non-affine displacements are reconstructed from unwrapped fractional-coordinate increments and instantaneous cells, with center-of-mass motion removed. The 10~ps MSD ranges from 26.65 to 56.97~\AA$^2$. Structural checks use neighbor-averaged $\bar q_6$ with 14 nearest neighbors, threshold 0.25, and a separate criterion requiring at least seven correlated bonds. Frames are inspected every 2~ps, including the final frame. At 1873~K, the mean fractions with $\bar q_6>0.25$ over the last 10~ps are 0.001 for PBEsol and zero for \rscan{}, with MSDs 28.25 and 26.65~\AA$^2$, respectively. These diagnostics support liquid behavior over the sampled windows and do not establish equilibrium phase boundaries.
+
+Only the PBEsol and \rscan{} liquid branches in the main thermal-density figure are replaced; all PBE 5k/15k points and solid-initialized series are retained. The composition-dependent density and mixing quantities retain their original matched pure-component references. No fitted smoothing is applied. The machine-readable record \texttt{xc\_liquid\_density\_extended.json} contains the full results, block diagnostics, source identities and archived comparisons.
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Extended liquid-Ti density from 90~ps production. Density errors are block SEM in g/cm$^3$; pressure is the mean and block 95\% interval in MPa. $f_{\rm s}$ is the last-10-ps fraction with $\bar q_6>0.25$.}
+\label{tab:xc_liquid_density_extended}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & $T$ (K) & $\rho\pm\mathrm{SEM}$ & $\bar P$ [95\% interval] & MSD$_{10\,\mathrm{ps}}$ (\AA$^2$) & $f_{\rm s}$\\
+\midrule
+PBEsol & 1873 & $4.48302\pm0.00063$ & 7.41 [4.76, 10.05] & 28.25 & 0.001\\
+PBEsol & 2000 & $4.46110\pm0.00053$ & 9.28 [6.38, 12.19] & 34.65 & 0.000\\
+PBEsol & 2100 & $4.44469\pm0.00049$ & 7.85 [5.18, 10.53] & 38.63 & 0.000\\
+PBEsol & 2200 & $4.42791\pm0.00059$ & 9.04 [6.82, 11.26] & 42.71 & 0.000\\
+PBEsol & 2300 & $4.41081\pm0.00059$ & 9.95 [5.97, 13.93] & 46.55 & 0.000\\
+PBEsol & 2400 & $4.39273\pm0.00065$ & 9.51 [6.15, 12.87] & 50.93 & 0.000\\
+PBEsol & 2500 & $4.37654\pm0.00080$ & 10.47 [7.39, 13.55] & 56.97 & 0.000\\
+\midrule
+\rscan{} & 1873 & $4.33676\pm0.00066$ & 7.22 [4.09, 10.35] & 26.65 & 0.000\\
+\rscan{} & 2000 & $4.31609\pm0.00078$ & 8.36 [5.41, 11.32] & 30.99 & 0.000\\
+\rscan{} & 2100 & $4.29961\pm0.00051$ & 7.56 [4.73, 10.39] & 35.55 & 0.000\\
+\rscan{} & 2200 & $4.28405\pm0.00054$ & 9.70 [6.36, 13.03] & 39.58 & 0.000\\
+\rscan{} & 2300 & $4.26864\pm0.00056$ & 9.99 [6.64, 13.33] & 46.40 & 0.000\\
+\rscan{} & 2400 & $4.25164\pm0.00065$ & 8.78 [5.78, 11.79] & 47.10 & 0.000\\
+\rscan{} & 2500 & $4.23550\pm0.00066$ & 9.05 [5.61, 12.50] & 52.64 & 0.000\\
+\bottomrule
+\end{tabular}
+\end{table}

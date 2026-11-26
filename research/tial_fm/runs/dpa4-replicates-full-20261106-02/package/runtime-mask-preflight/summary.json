@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "results": {
+    "full": {
+      "total": 1124686,
+      "trainable": 1124686,
+      "adapter_trainable": 0
+    },
+    "lora16": {
+      "total": 1410382,
+      "trainable": 325158,
+      "adapter_trainable": 285696
+    }
+  },
+  "backend_hashes": {
+    "training.py": "2ee355877da3ba10bf213b5653b3b858caa7795d846528c47ab1d7881dc3d090",
+    "lora.py": "03591f701e266b9db0e395c53765391183dda38e9c8786d1d0a304a14c5a1644"
+  },
+  "versions": {
+    "torch": "2.11.0",
+    "deepmd-kit": "3.2.0"
+  },
+  "qualification": "Constructed architecture from exact pilot model config using installed backend; zero optimizer steps. Actual Trainer mask is separately asserted and stored inside every GPU job.",
+  "job_id": "20988445"
+}

@@ -1,0 +1,23 @@
+{
+  "key": "N694-training",
+  "job_id": "20988566",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=v100",
+    "--gres=gpu:1",
+    "--cpus-per-task=4",
+    "--mem=40G",
+    "--time=04:00:00",
+    "--array=0-3%1",
+    "--dependency=afterany:20988557",
+    "--job-name=TiAl-N694-control",
+    "--output=training-plan01/N694-%A_%a.log",
+    "training-plan01/train.sbatch",
+    "N694"
+  ],
+  "utc": "2026-11-06T14:09:14.986828+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-28T16:35:54.999485+00:00",
+  "step": "force-001-restart-02",
+  "files": {
+    "CHGCAR": "89676572330c1cd9a47b0a3949caf2bf45cc361c9cc3a946d84c49f9637ac162",
+    "OUTCAR": "202d220284b823f295d9803361082cdb00c956a2400950b97871a5d7944edb37",
+    "vasprun.xml": "5470774347074098f272cb953735ebaa283873d02dba9eeb7b9059c514e9b6df",
+    "INCAR": "ba21eff53163e1ce247bc8fc30b96f5d1d41d82ff28f34ac6644820fa52b0109",
+    "POSCAR": "c3f0600bcab963f148aed2d47ec9ee112277bc59b8ea02e30797f6c56179a4fc",
+    "KPOINTS": "37084cb3e54f6af79e58fc0a5814b2661cd7914536aafe158afc230aee44cfa3",
+    "CONTCAR": "330031b3fbfc94fb772cca5174a1413c777f772c8eba4cd6e281b2f1c8d83c16",
+    "OSZICAR": "82d27b99a0d8f8c241e9f475dc2949c4704270eb174123d0c546f073bc1cd5f4",
+    "vasp.stdout": "f65b73c6f8a13029f0a842508a6d4470d530d9b6a27e00c1178c9d0d2f2fe1fe",
+    "status.json": "baa65f3c1660dab8cb878fdeb0755162238de56477959e769b663d4e651392a5",
+    "input-hashes.json": "36ebf57d50c3f1eacfac2f08f7238f7417735d61c2ad84c76c9edb3ce02f913e",
+    "restart-provenance.json": "c2520a996b4f0cdb74640b66ec188e5c58925d606497c850144ca93cf8d4e09b",
+    "checkpoint-request.json": "bb600d98a13d7884653cd59723daf16af20c695ea3ad91a2170d0b3d96966816",
+    "potcar-provenance.json": "b9a816d4dcf7a6633a80b7e7546b1d1f9ce97af2d30b566cca3ea1a4eb540b88",
+    "TAUCAR": "c54c9da3cb78350f972377858ca2da544e696b9ea6f56f7557b2100df4ad0ae2"
+  },
+  "density_audit": {
+    "CHGCAR": {
+      "grid": [
+        180,
+        180,
+        216
+      ],
+      "values": 6998400,
+      "grid_mean": 960.0000625290387,
+      "augmentation_atoms": 96,
+      "max_cell_rounding_A": 3.9999999934536845e-07,
+      "max_fractional_rounding": 3.333333334909483e-07,
+      "complete": true
+    },
+    "TAUCAR": {
+      "grid": [
+        180,
+        180,
+        216
+      ],
+      "values": 6998400,
+      "grid_mean": 8.023443491896566,
+      "augmentation_atoms": 0,
+      "max_cell_rounding_A": 3.9999999934536845e-07,
+      "max_fractional_rounding": 3.333333334909483e-07,
+      "complete": true
+    }
+  }
+}

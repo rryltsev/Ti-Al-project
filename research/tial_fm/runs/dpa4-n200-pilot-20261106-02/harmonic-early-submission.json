@@ -1,0 +1,5 @@
+{
+  "job_id": "20988449",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=16G --time=00:10:00 --job-name=TiAl-H0-independent --output=harmonic-early-%j.log harmonic-early.sbatch",
+  "reason": "H0 uses only9 reference structures and is independent of the1494 bulk B0 predictions. Evaluate concurrently to remove unnecessary serial waiting."
+}

@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-28T16:34:41.100929+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--exclude=tesla-a101",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=2",
+    "--ntasks=64",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=240G",
+    "--time=20:00:00",
+    "--job-name=ti6-r2SCAN-f001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN-production02-force-001-restart64-20261028-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/launch_v9.sbatch",
+    "restart_step_v6.py",
+    "r2SCAN",
+    "force-001",
+    "20960773"
+  ],
+  "parent_job": "20960773",
+  "parent_scheduler": "20960773|COMPLETED|2026-10-28T19:13:22|0:0\n",
+  "source_hashes": {
+    "restart_step_v6.py": "3ab9c91e1ca1ad396fbe905e3a5d94b2188554c3df09c66a9fc3982ec346d327",
+    "wavecar_check.py": "9481d96ef44db1d508c5443fa2ec7321094a506c7d7c81620edebe9e1abfe9e6",
+    "launch_v9.sbatch": "5d1d468ddf9ac61830e5cb8bd45b4311bfd395a5348d7a399f3268301f1003b9"
+  },
+  "checkpoint_proof": "89676572330c1cd9a47b0a3949caf2bf45cc361c9cc3a946d84c49f9637ac162  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-02/CHGCAR\n202d220284b823f295d9803361082cdb00c956a2400950b97871a5d7944edb37  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-02/OUTCAR\nc54c9da3cb78350f972377858ca2da544e696b9ea6f56f7557b2100df4ad0ae2  /home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-02/TAUCAR\n",
+  "scientific_changes": [],
+  "changes": [
+    "64 MPI, KPAR8; successful PBEsol resource layout",
+    "r2SCAN uses saved WAVECAR with ISTART1; rejects silent fallback to fresh SCF"
+  ],
+  "quota": "Disk quotas for user u3129 (uid 13129): \n     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace\n   stg06:/home6 68376968  104857600 104857600          352289       0       0        \n"
+}

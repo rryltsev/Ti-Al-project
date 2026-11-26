@@ -1,0 +1,3860 @@
+{
+  "definition": "S=max_mu log[P(Q>cut)/(4P(Q<=cut))]. The zero is a finite-cell equal-variant-weight condition only where the fixed separating cut lies in a physical valley between distinct modes. The local slope assumes conditional semi-grand energy at the interior maximum; linear zeros are diagnostic. Temperature interpolation resamples independent isotherms and does not quantify bulk or divider uncertainty.",
+  "records": [
+    {
+      "N": 288,
+      "cut_Q": 0.42,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 288,
+          "mu_eV": 3.49,
+          "x_pct": 25.462985307468756,
+          "S": 13.738295986453057,
+          "field_edge": true,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 0.7914535334459682,
+          "delta_conditional_Q": 0.6448890965847691,
+          "conditional_Q_low_high": [
+            0.31525611292897465,
+            0.9601452095137438
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -45.62410401078689,
+          "estimated_local_dS_dT": -0.12601683771118172,
+          "local_linear_zero_K": 1209.0195265646953,
+          "S_interval_95": [
+            13.41398007648829,
+            13.981169285918735
+          ],
+          "src": "T1100_N288.json",
+          "S_time_halves": {
+            "first": 14.09117512861268,
+            "last": 13.379014671897327
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -45.7452250791136,
+            "last": -45.54154841811637
+          }
+        },
+        {
+          "T_K": 1150.0,
+          "N": 288,
+          "mu_eV": 3.517,
+          "x_pct": 26.08784183460415,
+          "S": 8.630985618092428,
+          "field_edge": true,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 0.24285378433446803,
+          "delta_conditional_Q": 0.6645540862359657,
+          "conditional_Q_low_high": [
+            0.26783984074166733,
+            0.932393926977633
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -43.44943612164391,
+          "estimated_local_dS_dT": -0.10980144682592881,
+          "local_linear_zero_K": 1228.60539061726,
+          "S_interval_95": [
+            8.26686737721164,
+            9.061642362518013
+          ],
+          "src": "T1150_N288.json",
+          "S_time_halves": {
+            "first": 8.087246801471938,
+            "last": 9.170389526290752
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -43.5466984466708,
+            "last": -43.224955349526574
+          }
+        },
+        {
+          "T_K": 1200.0,
+          "N": 288,
+          "mu_eV": 3.5333244583980408,
+          "x_pct": 26.56790664955525,
+          "S": 3.394492937170984,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": -6.626151294319982e-08,
+          "delta_conditional_Q": 0.652410086965642,
+          "conditional_Q_low_high": [
+            0.23540613151563855,
+            0.8878162184812805
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -40.73961316239013,
+          "estimated_local_dS_dT": -0.09455271584158124,
+          "local_linear_zero_K": 1235.9005334427231,
+          "S_interval_95": [
+            3.153397391828764,
+            3.6184730931092353
+          ],
+          "src": "T1200_N288.json",
+          "S_time_halves": {
+            "first": 3.3584216613156777,
+            "last": 3.43014510700802
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -39.50728719877276,
+            "last": -41.95354883201455
+          }
+        },
+        {
+          "T_K": 1237.5,
+          "N": 288,
+          "mu_eV": 3.5436875206155043,
+          "x_pct": 27.098082159811316,
+          "S": 0.2757786231973578,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1875,
+            0.8775
+          ],
+          "barrier_from_lower_peak_kBT": 0.4166383922195638,
+          "valley_Q": 0.4425,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 3.673188586628129e-07,
+          "delta_conditional_Q": 0.5765063628554559,
+          "conditional_Q_low_high": [
+            0.22924221076142898,
+            0.8057485736168848
+          ],
+          "conditional_time_ESS": [
+            135.6719134159184,
+            239.0096038597253
+          ],
+          "curvature_eV_inv2": -433.3961685053748,
+          "semigrand_energy_gap_meV_atom": -31.164190338422223,
+          "estimated_local_dS_dT": -0.06801191944945455,
+          "local_linear_zero_K": 1241.5548572284056,
+          "S_interval_95": [
+            0.12408258423853398,
+            0.4710460154840224
+          ],
+          "src": "T1237p5_N288.json",
+          "S_time_halves": {
+            "first": 0.2861366095431672,
+            "last": 0.26805134110960105
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -30.92192833379951,
+            "last": -31.463043584167565
+          }
+        },
+        {
+          "T_K": 1250.0,
+          "N": 288,
+          "mu_eV": 3.546866835588416,
+          "x_pct": 27.278359066595065,
+          "S": -0.2898485684713952,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.17250000000000001,
+            0.8474999999999999
+          ],
+          "barrier_from_lower_peak_kBT": 0.37382238238104226,
+          "valley_Q": 0.3775,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -6.148082043466729e-10,
+          "delta_conditional_Q": 0.5386092785964143,
+          "conditional_Q_low_high": [
+            0.225791218712584,
+            0.7644004973089983
+          ],
+          "conditional_time_ESS": [
+            117.17602268005835,
+            155.55529782374734
+          ],
+          "curvature_eV_inv2": -436.5446350883621,
+          "semigrand_energy_gap_meV_atom": -29.42495989815543,
+          "estimated_local_dS_dT": -0.06293836438069915,
+          "local_linear_zero_K": 1245.3947235311332,
+          "S_interval_95": [
+            -0.4306462738569182,
+            -0.16196952606850076
+          ],
+          "src": "T1250_N288.json",
+          "S_time_halves": {
+            "first": -0.07573193310062343,
+            "last": -0.5026921594682496
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -29.16912593966421,
+            "last": -29.64619763803122
+          }
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1237.5,
+            1250.0
+          ],
+          "interpolated_T_K": 1243.594531593852,
+          "interpolated_mu_eV": 3.5452376354594417,
+          "interpolated_x_pct": 27.185978424134152,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 1.0,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 1.0,
+          "interval_95_conditional_negative_slope": [
+            1240.4104916050815,
+            1246.550730144522
+          ]
+        }
+      ]
+    },
+    {
+      "N": 768,
+      "cut_Q": 0.42,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 768,
+          "mu_eV": 3.37,
+          "x_pct": 23.734645292807897,
+          "S": 7.411827335146416,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1125,
+            0.9125000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.8800472235439931,
+          "valley_Q": 0.35250000000000004,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 4.68552097839865,
+          "delta_conditional_Q": 0.7199583016083051,
+          "conditional_Q_low_high": [
+            0.18419894180872826,
+            0.9041572434170334
+          ],
+          "conditional_time_ESS": [
+            44.36469428859725,
+            52.22069612206568
+          ],
+          "curvature_eV_inv2": -2629.9508742941925,
+          "semigrand_energy_gap_meV_atom": -39.807283936911325,
+          "estimated_local_dS_dT": -0.2932010405970004,
+          "local_linear_zero_K": 1125.2789939628278,
+          "S_interval_95": [
+            6.739483407125345,
+            8.178983114745071
+          ],
+          "src": "T1100_N768.json",
+          "S_time_halves": {
+            "first": 7.379474859008621,
+            "last": 7.444064125147424
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -38.65302843895993,
+            "last": -40.98618219190761
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -40.9586247774047,
+            -38.614999232807854
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1123.0115926209837,
+            1128.3563400746966
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.6085247206397132,
+            1.3134942850844515
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.300375,
+            0.38175
+          ]
+        },
+        {
+          "T_K": 1150.0,
+          "N": 768,
+          "mu_eV": 3.414,
+          "x_pct": 24.29259322003131,
+          "S": 7.570630410311448,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1175,
+            0.9125000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.27570365631524263,
+          "valley_Q": 0.2475,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 3.122613124143367,
+          "delta_conditional_Q": 0.6827905605338099,
+          "conditional_Q_low_high": [
+            0.21823823798353326,
+            0.9010287985173432
+          ],
+          "conditional_time_ESS": [
+            39.84472375662369,
+            53.7317556239168
+          ],
+          "curvature_eV_inv2": -2352.9630870595715,
+          "semigrand_energy_gap_meV_atom": -39.256856243222465,
+          "estimated_local_dS_dT": -0.2645502449498907,
+          "local_linear_zero_K": 1178.6169850711929,
+          "S_interval_95": [
+            7.063152299859389,
+            8.212143861902762
+          ],
+          "src": "T1150_N768.json",
+          "S_time_halves": {
+            "first": 7.308994350270584,
+            "last": 7.837603340408574
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -39.34983628531445,
+            "last": -39.06788733590286
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -40.408915112871284,
+            -38.196762691310255
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1176.4449109752823,
+            1180.9913556781212
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.07537999718315531,
+            0.6099301219225518
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.2125,
+            0.3675
+          ]
+        },
+        {
+          "T_K": 1200.0,
+          "N": 768,
+          "mu_eV": 3.466,
+          "x_pct": 25.109732483659414,
+          "S": 4.182772784530446,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1225,
+            0.8925000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.6541622588143732,
+          "valley_Q": 0.3125,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 1.5738501554644095,
+          "delta_conditional_Q": 0.6741099895507772,
+          "conditional_Q_low_high": [
+            0.20069803276389925,
+            0.8748080223146764
+          ],
+          "conditional_time_ESS": [
+            19.45421520768357,
+            39.81960476150442
+          ],
+          "curvature_eV_inv2": -2292.406254528749,
+          "semigrand_energy_gap_meV_atom": -37.66858640628235,
+          "estimated_local_dS_dT": -0.23313375656794008,
+          "local_linear_zero_K": 1217.9415149745228,
+          "S_interval_95": [
+            3.4450278092714184,
+            4.889588994004206
+          ],
+          "src": "T1200_N768.json",
+          "S_time_halves": {
+            "first": 4.713833356031049,
+            "last": 3.648676213004496
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -38.173098790852315,
+            "last": -37.08983527237405
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -38.40583645821124,
+            -36.560847841991
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1214.6867580242754,
+            1221.22820327902
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.45378819903646,
+            0.9568857333557704
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.28325,
+            0.42387499999999995
+          ]
+        },
+        {
+          "T_K": 1225.0,
+          "N": 768,
+          "mu_eV": 3.536450530603486,
+          "x_pct": 26.813337576434115,
+          "S": 3.6927082011404515,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1575,
+            0.8625
+          ],
+          "barrier_from_lower_peak_kBT": 0.17356272446180113,
+          "valley_Q": 0.3125,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -5.137201719573881e-07,
+          "delta_conditional_Q": 0.615754157549787,
+          "conditional_Q_low_high": [
+            0.22841648589722444,
+            0.8441706434470114
+          ],
+          "conditional_time_ESS": [
+            100.04868374309103,
+            71.07763808775843
+          ],
+          "curvature_eV_inv2": -1580.631568947369,
+          "semigrand_energy_gap_meV_atom": -32.55100581698735,
+          "estimated_local_dS_dT": -0.19332168258041965,
+          "local_linear_zero_K": 1244.1013659298374,
+          "S_interval_95": [
+            3.273505815266854,
+            4.151489178590223
+          ],
+          "src": "T1225_N768.json",
+          "S_time_halves": {
+            "first": 3.563453306311974,
+            "last": 3.8173509062150437
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -32.357909723209296,
+            "last": -32.728926213452894
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -33.487821651906565,
+            -31.17692035453805
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1241.8243732496198,
+            1246.2742802674127
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.010559764749068914,
+            0.47352984824937955
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.229,
+            0.359625
+          ]
+        },
+        {
+          "T_K": 1240.0,
+          "N": 768,
+          "mu_eV": 3.5435716389835963,
+          "x_pct": 27.130273890844908,
+          "S": 0.36515349572650657,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.8225
+          ],
+          "barrier_from_lower_peak_kBT": 0.7930314295839599,
+          "valley_Q": 0.3625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -3.782544943931043e-07,
+          "delta_conditional_Q": 0.5800127540707195,
+          "conditional_Q_low_high": [
+            0.19449187079312105,
+            0.7745046248638405
+          ],
+          "conditional_time_ESS": [
+            134.7335666845102,
+            135.97817338732335
+          ],
+          "curvature_eV_inv2": -1082.7033510136416,
+          "semigrand_energy_gap_meV_atom": -27.242665065881727,
+          "estimated_local_dS_dT": -0.15790451634698044,
+          "local_linear_zero_K": 1242.3124955775434,
+          "S_interval_95": [
+            -0.09976723654123751,
+            0.73831611769774
+          ],
+          "src": "T1240_N768.json",
+          "S_time_halves": {
+            "first": 0.3531666869539871,
+            "last": 0.3748523363573677
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -28.042250003375777,
+            "last": -26.43335859348037
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -29.221179898427955,
+            -25.55318676520219
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.3469361789935,
+            1244.6986683349223
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.5649629413668691,
+            1.0528565473636815
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.320375,
+            0.389625
+          ]
+        },
+        {
+          "T_K": 1245.0,
+          "N": 768,
+          "mu_eV": 3.5445014102433894,
+          "x_pct": 27.18122187867437,
+          "S": -0.19782471053126094,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.8225
+          ],
+          "barrier_from_lower_peak_kBT": 0.8366876415001238,
+          "valley_Q": 0.4275,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -2.2940323529674345e-07,
+          "delta_conditional_Q": 0.566377689461653,
+          "conditional_Q_low_high": [
+            0.19711315432050916,
+            0.7634908437821621
+          ],
+          "conditional_time_ESS": [
+            193.3387801659229,
+            144.85481271883472
+          ],
+          "curvature_eV_inv2": -1075.4028845163455,
+          "semigrand_energy_gap_meV_atom": -26.900422050457752,
+          "estimated_local_dS_dT": -0.154670938987649,
+          "local_linear_zero_K": 1243.7209962529091,
+          "S_interval_95": [
+            -0.6149529064391182,
+            0.25330054581043393
+          ],
+          "src": "T1245_N768.json",
+          "S_time_halves": {
+            "first": -0.3692139325808872,
+            "last": -0.0022108001325766846
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -24.883249193800992,
+            "last": -28.601717463802295
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -28.15292646008936,
+            -25.77631906298373
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1241.0050165446485,
+            1246.586714341795
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.567552901885664,
+            1.1651966893142895
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.3825,
+            0.454625
+          ]
+        },
+        {
+          "T_K": 1250.0,
+          "N": 768,
+          "mu_eV": 3.547371860362023,
+          "x_pct": 27.3042151463039,
+          "S": -1.1302496669315578,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.7925
+          ],
+          "barrier_from_lower_peak_kBT": 1.376356394327296,
+          "valley_Q": 0.4575,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -1.693052253948224e-07,
+          "delta_conditional_Q": 0.5556480120079116,
+          "conditional_Q_low_high": [
+            0.18038196580821472,
+            0.7360299778161263
+          ],
+          "conditional_time_ESS": [
+            143.98589152650663,
+            218.5181331506454
+          ],
+          "curvature_eV_inv2": -1000.2895471587598,
+          "semigrand_energy_gap_meV_atom": -25.343348744561208,
+          "estimated_local_dS_dT": -0.14455472935749064,
+          "local_linear_zero_K": 1242.181164380057,
+          "S_interval_95": [
+            -1.4487761693237975,
+            -0.8294819778542062
+          ],
+          "src": "T1250_N768.json",
+          "S_time_halves": {
+            "first": -1.0889453576490913,
+            "last": -1.1495104523208928
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -23.855404298101483,
+            "last": -26.70322165583429
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -26.35186484978208,
+            -24.369179582354754
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.7113562740453,
+            1244.35370389124
+          ],
+          "negative_energy_slope_fraction": 1.0
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1240.0,
+            1245.0
+          ],
+          "interpolated_T_K": 1243.2430517883965,
+          "interpolated_mu_eV": 3.5441746982529705,
+          "interpolated_x_pct": 27.16331928345402,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 0.928955078125,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 0.69873046875,
+          "interval_95_conditional_negative_slope": [
+            1236.6589691252418,
+            1251.7766303067613
+          ]
+        }
+      ]
+    },
+    {
+      "N": 96,
+      "cut_Q": 0.42,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 96,
+          "mu_eV": 3.52767365589841,
+          "x_pct": 26.006214452666093,
+          "S": 5.7109704808404835,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": -2.392979370213766e-07,
+          "delta_conditional_Q": 0.6544807127145644,
+          "conditional_Q_low_high": [
+            0.30025497518418615,
+            0.9547356878987506
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -48.91735920590244,
+          "estimated_local_dS_dT": -0.045037676537913233,
+          "local_linear_zero_K": 1226.8042874288358,
+          "S_interval_95": [
+            5.518760682028803,
+            5.871640232810928
+          ],
+          "src": "T1100_N96.json",
+          "S_time_halves": {
+            "first": 5.661456205244004,
+            "last": 5.759895881934785
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -50.821663219296006,
+            "last": -46.96059388140436
+          }
+        },
+        {
+          "T_K": 1150.0,
+          "N": 96,
+          "mu_eV": 3.530226280858675,
+          "x_pct": 26.181190273153415,
+          "S": 3.711142458854656,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 4.928223384936814e-08,
+          "delta_conditional_Q": 0.6483264053042795,
+          "conditional_Q_low_high": [
+            0.28659986903307977,
+            0.9349262743373593
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -46.382548147463616,
+          "estimated_local_dS_dT": -0.039071246554320226,
+          "local_linear_zero_K": 1244.9839789138825,
+          "S_interval_95": [
+            3.504296388205254,
+            3.859531921956538
+          ],
+          "src": "T1150_N96.json",
+          "S_time_halves": {
+            "first": 3.7446763052400023,
+            "last": 3.6765922229826167
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -45.70697898168838,
+            "last": -47.0527911816329
+          }
+        },
+        {
+          "T_K": 1200.0,
+          "N": 96,
+          "mu_eV": 3.5421396260913673,
+          "x_pct": 26.734740878823732,
+          "S": 1.9080821880560885,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": -6.150931375348279e-07,
+          "delta_conditional_Q": 0.6184926260833947,
+          "conditional_Q_low_high": [
+            0.27588670760420186,
+            0.8943793336875966
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -45.405198522974054,
+          "estimated_local_dS_dT": -0.03512702993816282,
+          "local_linear_zero_K": 1254.3194853483217,
+          "S_interval_95": [
+            1.7888332980246797,
+            2.1034440772160483
+          ],
+          "src": "T1200_N96.json",
+          "S_time_halves": {
+            "first": 2.0185188667393597,
+            "last": 1.7978137274270234
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -46.89843272608493,
+            "last": -43.895072827732236
+          }
+        },
+        {
+          "T_K": 1250.0,
+          "N": 96,
+          "mu_eV": 3.557029699738884,
+          "x_pct": 27.519918668239608,
+          "S": 0.28930724584509115,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.3025,
+            0.9375
+          ],
+          "barrier_from_lower_peak_kBT": 0.05274018967134798,
+          "valley_Q": 0.4625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 5.105150746587128e-08,
+          "delta_conditional_Q": 0.5549723237014386,
+          "conditional_Q_low_high": [
+            0.2642053782653496,
+            0.8191777019667882
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -35.12580811391617,
+          "estimated_local_dS_dT": -0.02504405463810291,
+          "local_linear_zero_K": 1261.5519331843707,
+          "S_interval_95": [
+            0.12953687040868833,
+            0.44109005011382263
+          ],
+          "src": "T1250_N96.json",
+          "S_time_halves": {
+            "first": 0.2736480541543609,
+            "last": 0.30624690616233274
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -36.00914674122887,
+            "last": -34.21108301483075
+          }
+        }
+      ],
+      "crossings": []
+    },
+    {
+      "N": 1400,
+      "cut_Q": 0.42,
+      "observed": [
+        {
+          "T_K": 1200.0,
+          "N": 1400,
+          "mu_eV": 3.457,
+          "x_pct": 24.935783131652386,
+          "S": 6.081554196902889,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1075,
+            0.8725
+          ],
+          "barrier_from_lower_peak_kBT": 1.217258039782511,
+          "valley_Q": 0.3325,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 1.8497554500415625,
+          "delta_conditional_Q": 0.6949276123654491,
+          "conditional_Q_low_high": [
+            0.1705116399913106,
+            0.8654392523567597
+          ],
+          "conditional_time_ESS": [
+            28.8148045550398,
+            26.205249389650902
+          ],
+          "curvature_eV_inv2": -3446.671611664576,
+          "semigrand_energy_gap_meV_atom": -36.81577478663131,
+          "estimated_local_dS_dT": -0.41536184440175683,
+          "local_linear_zero_K": 1214.6415812594971,
+          "S_interval_95": [
+            4.9912974566970485,
+            7.324673330552162
+          ],
+          "src": "T1200_N1400.json",
+          "S_time_halves": {
+            "first": 5.799660286058678,
+            "last": 6.353159276499003
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -36.262369491339584,
+            "last": -37.354598368149695
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -37.94955556015318,
+            -35.62947711840356
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1212.1379308034598,
+            1217.6526323919963
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.8038049756433937,
+            1.7522514420980384
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.28825,
+            0.39675
+          ]
+        },
+        {
+          "T_K": 1225.0,
+          "N": 1400,
+          "mu_eV": 3.5378365732315147,
+          "x_pct": 26.873625778538695,
+          "S": 6.201979511236889,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1225,
+            0.8574999999999999
+          ],
+          "barrier_from_lower_peak_kBT": 0.6883869165134577,
+          "valley_Q": 0.3375,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 4.352545823760323e-07,
+          "delta_conditional_Q": 0.6467564199365894,
+          "conditional_Q_low_high": [
+            0.20142748502302274,
+            0.8481839049596122
+          ],
+          "conditional_time_ESS": [
+            75.14175429420645,
+            63.16994671772096
+          ],
+          "curvature_eV_inv2": -2363.001365202233,
+          "semigrand_energy_gap_meV_atom": -33.030387110729876,
+          "estimated_local_dS_dT": -0.35759927770335814,
+          "local_linear_zero_K": 1242.3433781831675,
+          "S_interval_95": [
+            5.209950949930926,
+            7.397729697237999
+          ],
+          "src": "T1225_N1400.json",
+          "S_time_halves": {
+            "first": 6.175681584236944,
+            "last": 6.198300147982312
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -32.56098312917012,
+            "last": -33.54804731583999
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -34.06185066578092,
+            -31.661967377270045
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.4950873985035,
+            1245.912541326108
+          ],
+          "negative_energy_slope_fraction": 1.0
+        },
+        {
+          "T_K": 1240.0,
+          "N": 1400,
+          "mu_eV": 3.541857226275448,
+          "x_pct": 27.059350467040154,
+          "S": 0.3468882846893282,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1075,
+            0.8225
+          ],
+          "barrier_from_lower_peak_kBT": 1.7343768388912035,
+          "valley_Q": 0.4425,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -5.818512338606752e-09,
+          "delta_conditional_Q": 0.6331329830872418,
+          "conditional_Q_low_high": [
+            0.15665624607154569,
+            0.7897892291587875
+          ],
+          "conditional_time_ESS": [
+            148.20299524619836,
+            114.97367698812434
+          ],
+          "curvature_eV_inv2": -2112.438462309372,
+          "semigrand_energy_gap_meV_atom": -29.23531946897448,
+          "estimated_local_dS_dT": -0.30890121773792806,
+          "local_linear_zero_K": 1241.1229748047922,
+          "S_interval_95": [
+            -0.44850835025777386,
+            1.1660651737376522
+          ],
+          "src": "T1240_N1400.json",
+          "S_time_halves": {
+            "first": 0.40701572819310905,
+            "last": 0.30096824469105
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -29.66343622719959,
+            "last": -28.871583064261372
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -30.576755309090977,
+            -27.867027734041407
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1238.5042508841268,
+            1243.6519536010048
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.2989570929788998,
+            2.337152948952508
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.360375,
+            0.474625
+          ]
+        },
+        {
+          "T_K": 1245.0,
+          "N": 1400,
+          "mu_eV": 3.545866088769311,
+          "x_pct": 27.240847646393178,
+          "S": -0.8311474400899888,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0975,
+            0.8025
+          ],
+          "barrier_from_lower_peak_kBT": 1.7779942543907548,
+          "valley_Q": 0.4275,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 1.317237097175905e-07,
+          "delta_conditional_Q": 0.602597883881141,
+          "conditional_Q_low_high": [
+            0.15134227170764797,
+            0.7539401555887889
+          ],
+          "conditional_time_ESS": [
+            76.69340195128335,
+            141.59334617036504
+          ],
+          "curvature_eV_inv2": -2060.640907230705,
+          "semigrand_energy_gap_meV_atom": -26.444147581003005,
+          "estimated_local_dS_dT": -0.27716986870391164,
+          "local_linear_zero_K": 1242.001306657262,
+          "S_interval_95": [
+            -1.4360203904832158,
+            -0.3401969485175804
+          ],
+          "src": "T1245_N1400.json",
+          "S_time_halves": {
+            "first": -1.319889946235971,
+            "last": -0.3553324442090504
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -26.019998270894686,
+            "last": -26.75688751061524
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -27.96990241628965,
+            -24.6821545742869
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.6497404235079,
+            1243.7464086987743
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.4652611910463955,
+            2.06353841705413
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.385375,
+            0.47750000000000004
+          ]
+        },
+        {
+          "T_K": 1247.5,
+          "N": 1400,
+          "mu_eV": 3.5480036505876584,
+          "x_pct": 27.332596015146066,
+          "S": -1.3494730351322575,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0975,
+            0.7825
+          ],
+          "barrier_from_lower_peak_kBT": 1.9288227258055854,
+          "valley_Q": 0.47250000000000003,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 7.108860722304655e-08,
+          "delta_conditional_Q": 0.5836776826090937,
+          "conditional_Q_low_high": [
+            0.1527216931829814,
+            0.736399375792075
+          ],
+          "conditional_time_ESS": [
+            98.3570368169784,
+            156.62036367488378
+          ],
+          "curvature_eV_inv2": -1800.0316939209952,
+          "semigrand_energy_gap_meV_atom": -25.685444246660477,
+          "estimated_local_dS_dT": -0.2681397003280268,
+          "local_linear_zero_K": 1242.467276261287,
+          "S_interval_95": [
+            -1.9005684948968995,
+            -0.8379932911108957
+          ],
+          "src": "T1247p5_N1400.json",
+          "S_time_halves": {
+            "first": -0.9651067669800317,
+            "last": -1.7263349147231233
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -26.26090925519353,
+            "last": -25.09768138204066
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -26.591903666539782,
+            -23.86109732507262
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1240.1009686062976,
+            1244.4091396472631
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.3835445616498077,
+            2.20830794336449
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.4375,
+            0.51175
+          ]
+        },
+        {
+          "T_K": 1250.0,
+          "N": 1400,
+          "mu_eV": 3.5493403565030204,
+          "x_pct": 27.39500309190689,
+          "S": -2.3744919082127858,
+          "field_edge": false,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.0925,
+            0.7625
+          ],
+          "barrier_from_lower_peak_kBT": 1.3640865065404268,
+          "valley_Q": 0.4625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 2.43785031051047e-07,
+          "delta_conditional_Q": 0.5685178314793525,
+          "conditional_Q_low_high": [
+            0.13637190527293994,
+            0.7048897367522925
+          ],
+          "conditional_time_ESS": [
+            76.32186522040986,
+            82.34727071087306
+          ],
+          "curvature_eV_inv2": -1761.3298305593169,
+          "semigrand_energy_gap_meV_atom": -23.825108861394312,
+          "estimated_local_dS_dT": -0.2477251011468437,
+          "local_linear_zero_K": 1240.4148110255276,
+          "S_interval_95": [
+            -3.0413041149414006,
+            -1.7352178530964326
+          ],
+          "src": "T1250_N1400.json",
+          "S_time_halves": {
+            "first": -2.3982515958515442,
+            "last": -2.3330958034885008
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -25.273243052452184,
+            "last": -22.43241040810647
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -25.43288358150357,
+            -21.86304163717175
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1236.7792222424227,
+            1243.2417149001778
+          ],
+          "negative_energy_slope_fraction": 1.0
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1240.0,
+            1245.0
+          ],
+          "interpolated_T_K": 1241.472316490038,
+          "interpolated_mu_eV": 3.54303768914665,
+          "interpolated_x_pct": 27.11279472505153,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 0.9912109375,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 0.815185546875,
+          "interval_95_conditional_negative_slope": [
+            1233.1242912496089,
+            1243.4435039421057
+          ]
+        }
+      ]
+    },
+    {
+      "N": 2304,
+      "cut_Q": 0.42,
+      "observed": [
+        {
+          "T_K": 1245.0,
+          "N": 2304,
+          "mu_eV": 3.5448023065396637,
+          "x_pct": 27.21263248388442,
+          "S": -0.6734910868028023,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0825,
+            0.7925
+          ],
+          "barrier_from_lower_peak_kBT": 2.83885541790417,
+          "valley_Q": 0.4375,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 8.851636645879069e-08,
+          "delta_conditional_Q": 0.6464762221093375,
+          "conditional_Q_low_high": [
+            0.11811697839180114,
+            0.7645932005011387
+          ],
+          "conditional_time_ESS": [
+            155.13574881697366,
+            139.59973810384218
+          ],
+          "curvature_eV_inv2": -3317.131812618735,
+          "semigrand_energy_gap_meV_atom": -27.2673949513368,
+          "estimated_local_dS_dT": -0.4703428339852283,
+          "local_linear_zero_K": 1243.568084728545,
+          "S_interval_95": [
+            -1.5151169772658912,
+            0.1181701200510064
+          ],
+          "src": "T1245_N2304.json",
+          "S_time_halves": {
+            "first": -1.1383190641777678,
+            "last": -0.2107432990361262
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -27.29092279015082,
+            "last": -27.225890033758816
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -28.82691210248588,
+            -26.179223555918078
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1241.8574073081943,
+            1245.2522055740835
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            2.2244858293072354,
+            3.4345536190042987
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.375375,
+            0.4625
+          ]
+        }
+      ],
+      "crossings": []
+    },
+    {
+      "N": 288,
+      "cut_Q": 0.47,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 288,
+          "mu_eV": 3.49,
+          "x_pct": 25.462985307468756,
+          "S": 13.253790381200037,
+          "field_edge": true,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 0.7567395565479362,
+          "delta_conditional_Q": 0.5936903509113791,
+          "conditional_Q_low_high": [
+            0.3664549447247885,
+            0.9601452956361676
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -43.94818258410425,
+          "estimated_local_dS_dT": -0.1213878302375659,
+          "local_linear_zero_K": 1209.1854954097234,
+          "S_interval_95": [
+            12.91378420287285,
+            13.513370694611572
+          ],
+          "src": "T1100_N288.json",
+          "S_time_halves": {
+            "first": 13.596371830562052,
+            "last": 12.908277125657921
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -44.28204571954484,
+            "last": -43.75115216534113
+          }
+        },
+        {
+          "T_K": 1150.0,
+          "N": 288,
+          "mu_eV": 3.517,
+          "x_pct": 26.08784183460415,
+          "S": 8.329945855960492,
+          "field_edge": true,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 0.22681412958061586,
+          "delta_conditional_Q": 0.6178065923124969,
+          "conditional_Q_low_high": [
+            0.31459493134076305,
+            0.93240152365326
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -41.963130575071915,
+          "estimated_local_dS_dT": -0.10604539118962303,
+          "local_linear_zero_K": 1228.550757958594,
+          "S_interval_95": [
+            7.961475786132656,
+            8.7590669679137
+          ],
+          "src": "T1150_N288.json",
+          "S_time_halves": {
+            "first": 7.806933462608885,
+            "last": 8.847616521122763
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -42.25195635749713,
+            "last": -41.537442704766505
+          }
+        },
+        {
+          "T_K": 1200.0,
+          "N": 288,
+          "mu_eV": 3.53237546310557,
+          "x_pct": 26.54609279733678,
+          "S": 3.2073432749400617,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": -5.03270525253896e-07,
+          "delta_conditional_Q": 0.6178405292350526,
+          "conditional_Q_low_high": [
+            0.2709474463283465,
+            0.8887879755633992
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -39.49913943912697,
+          "estimated_local_dS_dT": -0.09167369588139838,
+          "local_linear_zero_K": 1234.9865165149392,
+          "S_interval_95": [
+            2.97596266977006,
+            3.4131265841662715
+          ],
+          "src": "T1200_N288.json",
+          "S_time_halves": {
+            "first": 3.158354491174638,
+            "last": 3.2556747719312007
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -38.43993690630484,
+            "last": -40.57287369803374
+          }
+        },
+        {
+          "T_K": 1237.5,
+          "N": 288,
+          "mu_eV": 3.542883468751762,
+          "x_pct": 27.07135196672523,
+          "S": 0.15166837315704051,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1875,
+            0.8775
+          ],
+          "barrier_from_lower_peak_kBT": 0.41930697754236795,
+          "valley_Q": 0.4425,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -1.3308798507694064e-10,
+          "delta_conditional_Q": 0.5635289167721702,
+          "conditional_Q_low_high": [
+            0.2501603299913262,
+            0.8136892467634964
+          ],
+          "conditional_time_ESS": [
+            149.55020246254375,
+            231.10553713035017
+          ],
+          "curvature_eV_inv2": -439.6957510761751,
+          "semigrand_energy_gap_meV_atom": -31.22336628737551,
+          "estimated_local_dS_dT": -0.06814106350324999,
+          "local_linear_zero_K": 1239.7257999121161,
+          "S_interval_95": [
+            -0.00034458512424584377,
+            0.34365606677377447
+          ],
+          "src": "T1237p5_N288.json",
+          "S_time_halves": {
+            "first": 0.15834181506034306,
+            "last": 0.14805098579346443
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -30.904168278357144,
+            "last": -31.60288660136177
+          }
+        },
+        {
+          "T_K": 1250.0,
+          "N": 288,
+          "mu_eV": 3.545575271577217,
+          "x_pct": 27.231103947999973,
+          "S": -0.4348865081341804,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.17250000000000001,
+            0.8525
+          ],
+          "barrier_from_lower_peak_kBT": 0.379266221233885,
+          "valley_Q": 0.3775,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -5.268066594066312e-07,
+          "delta_conditional_Q": 0.5299159907833486,
+          "conditional_Q_low_high": [
+            0.24752509966516112,
+            0.7774410904485097
+          ],
+          "conditional_time_ESS": [
+            126.79465486674002,
+            148.72645575192254
+          ],
+          "curvature_eV_inv2": -435.3341655251615,
+          "semigrand_energy_gap_meV_atom": -29.715826179573817,
+          "estimated_local_dS_dT": -0.06356051129506478,
+          "local_linear_zero_K": 1243.1579136279233,
+          "S_interval_95": [
+            -0.576836459147911,
+            -0.301609976554454
+          ],
+          "src": "T1250_N288.json",
+          "S_time_halves": {
+            "first": -0.21611113691121964,
+            "last": -0.6536764747181214
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -29.34116268620128,
+            "last": -30.083288797673955
+          }
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1237.5,
+            1250.0
+          ],
+          "interpolated_T_K": 1240.7321863220873,
+          "interpolated_mu_eV": 3.5435795014136975,
+          "interpolated_x_pct": 27.112659820229435,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 1.0,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 0.9583333333333334,
+          "interval_95_conditional_negative_slope": [
+            1237.4408415148837,
+            1243.6227001137142
+          ]
+        }
+      ]
+    },
+    {
+      "N": 768,
+      "cut_Q": 0.47,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 768,
+          "mu_eV": 3.37,
+          "x_pct": 23.734645292807897,
+          "S": 7.307235949320191,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1125,
+            0.9125000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.8800472235439931,
+          "valley_Q": 0.35250000000000004,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 4.584581703839547,
+          "delta_conditional_Q": 0.6939644347829751,
+          "conditional_Q_low_high": [
+            0.21020043496748483,
+            0.90416486975046
+          ],
+          "conditional_time_ESS": [
+            48.67136238637672,
+            52.21895758945297
+          ],
+          "curvature_eV_inv2": -3023.6062233334583,
+          "semigrand_energy_gap_meV_atom": -39.057685178002096,
+          "estimated_local_dS_dT": -0.2876798616969094,
+          "local_linear_zero_K": 1125.400582113109,
+          "S_interval_95": [
+            6.6624444521854125,
+            8.055157513846456
+          ],
+          "src": "T1100_N768.json",
+          "S_time_halves": {
+            "first": 7.28637663053777,
+            "last": 7.327123146742874
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -38.03696822761235,
+            "last": -40.08234696403265
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -40.22151915546451,
+            -37.80422259530304
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1123.064095475445,
+            1128.5686139919333
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.6085247206397132,
+            1.3134942850844515
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.300375,
+            0.38175
+          ]
+        },
+        {
+          "T_K": 1150.0,
+          "N": 768,
+          "mu_eV": 3.414,
+          "x_pct": 24.29259322003131,
+          "S": 7.411904720059898,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1175,
+            0.9125000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.27570365631524263,
+          "valley_Q": 0.2475,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 3.0340682443928904,
+          "delta_conditional_Q": 0.649256218984247,
+          "conditional_Q_low_high": [
+            0.25178264484667867,
+            0.9010388638309257
+          ],
+          "conditional_time_ESS": [
+            45.92291152791612,
+            53.72937453594208
+          ],
+          "curvature_eV_inv2": -2412.714134969081,
+          "semigrand_energy_gap_meV_atom": -38.04298291859735,
+          "estimated_local_dS_dT": -0.256370005468204,
+          "local_linear_zero_K": 1178.9109668134681,
+          "S_interval_95": [
+            6.925233392699451,
+            8.050298120833464
+          ],
+          "src": "T1150_N768.json",
+          "S_time_halves": {
+            "first": 7.163758821850369,
+            "last": 7.664881475925899
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -38.22352032599748,
+            "last": -37.76992858378841
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -39.3277680545793,
+            -36.98633572620243
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1176.6760459406478,
+            1181.3542092955488
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.07537999718315531,
+            0.6099301219225518
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.2125,
+            0.3675
+          ]
+        },
+        {
+          "T_K": 1200.0,
+          "N": 768,
+          "mu_eV": 3.466,
+          "x_pct": 25.109732483659414,
+          "S": 4.068629691827585,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1225,
+            0.8925000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.6541622588143732,
+          "valley_Q": 0.3125,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 1.5213582664967196,
+          "delta_conditional_Q": 0.6480536078143914,
+          "conditional_Q_low_high": [
+            0.2269518686371599,
+            0.8750054764515512
+          ],
+          "conditional_time_ESS": [
+            21.248540948377038,
+            39.78321954803281
+          ],
+          "curvature_eV_inv2": -2358.2422506707526,
+          "semigrand_energy_gap_meV_atom": -36.77278169872991,
+          "estimated_local_dS_dT": -0.22758955285478677,
+          "local_linear_zero_K": 1217.8770494550054,
+          "S_interval_95": [
+            3.3496413345543035,
+            4.710247965370598
+          ],
+          "src": "T1200_N768.json",
+          "S_time_halves": {
+            "first": 4.565722014876858,
+            "last": 3.5610725209021616
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -36.83799523309146,
+            "last": -36.53498536779407
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -37.546311312862926,
+            -35.26756256143944
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1214.6005444760283,
+            1221.2427999684555
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.45378819903646,
+            0.9568857333557704
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.28325,
+            0.42387499999999995
+          ]
+        },
+        {
+          "T_K": 1225.0,
+          "N": 768,
+          "mu_eV": 3.536574605108862,
+          "x_pct": 26.816666215338053,
+          "S": 3.502463993064513,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1575,
+            0.8625
+          ],
+          "barrier_from_lower_peak_kBT": 0.1725066962207998,
+          "valley_Q": 0.3125,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -4.6369530437573303e-07,
+          "delta_conditional_Q": 0.5788198577738357,
+          "conditional_Q_low_high": [
+            0.2658287995969362,
+            0.8446486573707719
+          ],
+          "conditional_time_ESS": [
+            102.3554714388732,
+            70.88879750576628
+          ],
+          "curvature_eV_inv2": -1476.4909415053635,
+          "semigrand_energy_gap_meV_atom": -31.38385435852148,
+          "estimated_local_dS_dT": -0.1863899249245914,
+          "local_linear_zero_K": 1243.791058553629,
+          "S_interval_95": [
+            3.1156671290341387,
+            3.928431277757672
+          ],
+          "src": "T1225_N768.json",
+          "S_time_halves": {
+            "first": 3.395853690161605,
+            "last": 3.6048500632561833
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -31.454848101499067,
+            "last": -31.27205755390183
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -32.288149993350586,
+            -30.073929927066885
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1241.4572456424662,
+            1245.968164429343
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.009807169958484274,
+            0.47221893559579153
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.229,
+            0.359625
+          ]
+        },
+        {
+          "T_K": 1240.0,
+          "N": 768,
+          "mu_eV": 3.542914085778154,
+          "x_pct": 27.107636186848698,
+          "S": 0.25457972129621376,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.8225
+          ],
+          "barrier_from_lower_peak_kBT": 0.7950345677142764,
+          "valley_Q": 0.3625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 3.667749826075095e-07,
+          "delta_conditional_Q": 0.5637464959459454,
+          "conditional_Q_low_high": [
+            0.21677083583850373,
+            0.7805173317844492
+          ],
+          "conditional_time_ESS": [
+            150.58616688298105,
+            132.1963066556364
+          ],
+          "curvature_eV_inv2": -1065.7851083746439,
+          "semigrand_energy_gap_meV_atom": -26.926203763667452,
+          "estimated_local_dS_dT": -0.15607023659689595,
+          "local_linear_zero_K": 1241.6311868735982,
+          "S_interval_95": [
+            -0.2134555131324205,
+            0.620588869504859
+          ],
+          "src": "T1240_N768.json",
+          "S_time_halves": {
+            "first": 0.2577416611544232,
+            "last": 0.2484588878999896
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -27.71083393466568,
+            "last": -26.135357864228897
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -28.921130635650268,
+            -25.420417724772673
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1238.6271646091413,
+            1243.893741911752
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.5671165876235432,
+            1.05502914351568
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.320375,
+            0.389625
+          ]
+        },
+        {
+          "T_K": 1245.0,
+          "N": 768,
+          "mu_eV": 3.543886439010301,
+          "x_pct": 27.159228192681233,
+          "S": -0.2935680506236087,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.8275000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.8418040078799375,
+          "valley_Q": 0.4325,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -2.184086245193839e-09,
+          "delta_conditional_Q": 0.5570895004057914,
+          "conditional_Q_low_high": [
+            0.21422102345451405,
+            0.7713105238603055
+          ],
+          "conditional_time_ESS": [
+            210.81240172381342,
+            138.14918846823213
+          ],
+          "curvature_eV_inv2": -1078.021965697093,
+          "semigrand_energy_gap_meV_atom": -26.918856040521902,
+          "estimated_local_dS_dT": -0.1547769299846364,
+          "local_linear_zero_K": 1243.103282894597,
+          "S_interval_95": [
+            -0.6947136359458348,
+            0.14241929374484066
+          ],
+          "src": "T1245_N768.json",
+          "S_time_halves": {
+            "first": -0.4871891254425156,
+            "last": -0.07957478079156366
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -24.93748127059717,
+            "last": -28.56610918904574
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -28.138230593552546,
+            -25.889431519211517
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1240.518099047986,
+            1245.8957533042635
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.5709510133905688,
+            1.1690699495106136
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.3825,
+            0.454625
+          ]
+        },
+        {
+          "T_K": 1250.0,
+          "N": 768,
+          "mu_eV": 3.546832178277023,
+          "x_pct": 27.282912217137827,
+          "S": -1.217251182987052,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.7925
+          ],
+          "barrier_from_lower_peak_kBT": 1.3807691230738801,
+          "valley_Q": 0.4575,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -1.2094050205746498e-07,
+          "delta_conditional_Q": 0.5553010010400482,
+          "conditional_Q_low_high": [
+            0.1925703992314277,
+            0.7478714002714759
+          ],
+          "conditional_time_ESS": [
+            155.64512277376943,
+            207.60834999353654
+          ],
+          "curvature_eV_inv2": -1021.0637158009888,
+          "semigrand_energy_gap_meV_atom": -25.682445882863348,
+          "estimated_local_dS_dT": -0.14648888950133057,
+          "local_linear_zero_K": 1241.6904880149564,
+          "S_interval_95": [
+            -1.5341745092988341,
+            -0.9132310897095425
+          ],
+          "src": "T1250_N768.json",
+          "S_time_halves": {
+            "first": -1.1800399128433658,
+            "last": -1.233500793900031
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -24.247194544655656,
+            "last": -27.008628150622947
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -26.683389588114476,
+            -24.76813020347215
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.3268901343308,
+            1243.8143229933207
+          ],
+          "negative_energy_slope_fraction": 1.0
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1240.0,
+            1245.0
+          ],
+          "interpolated_T_K": 1242.3221814840601,
+          "interpolated_mu_eV": 3.5433656819124857,
+          "interpolated_x_pct": 27.131597386982666,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 0.926025390625,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 0.626220703125,
+          "interval_95_conditional_negative_slope": [
+            1230.0967489052741,
+            1248.2608840861692
+          ]
+        }
+      ]
+    },
+    {
+      "N": 96,
+      "cut_Q": 0.47,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 96,
+          "mu_eV": 3.5267869024434013,
+          "x_pct": 25.992229835375763,
+          "S": 5.487057233577911,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 1.5896297056450237e-07,
+          "delta_conditional_Q": 0.6256971443169055,
+          "conditional_Q_low_high": [
+            0.32926404633147016,
+            0.9549611906483756
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -47.99904987636695,
+          "estimated_local_dS_dT": -0.04419219920191721,
+          "local_linear_zero_K": 1224.1634798147784,
+          "S_interval_95": [
+            5.307759083545509,
+            5.643772566115593
+          ],
+          "src": "T1100_N96.json",
+          "S_time_halves": {
+            "first": 5.441997158235726,
+            "last": 5.531119673667636
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -49.63482583436381,
+            "last": -46.359493785378035
+          }
+        },
+        {
+          "T_K": 1150.0,
+          "N": 96,
+          "mu_eV": 3.529445646246202,
+          "x_pct": 26.16741108247515,
+          "S": 3.5235093685098597,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": -6.309835764994887e-07,
+          "delta_conditional_Q": 0.6223710862929699,
+          "conditional_Q_low_high": [
+            0.3132888317969462,
+            0.9356599180899161
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -45.72640408472203,
+          "estimated_local_dS_dT": -0.03851853077059432,
+          "local_linear_zero_K": 1241.4756948933205,
+          "S_interval_95": [
+            3.3121467039496304,
+            3.664602109735756
+          ],
+          "src": "T1150_N96.json",
+          "S_time_halves": {
+            "first": 3.5741322748336266,
+            "last": 3.4719599840296205
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -45.25102521889442,
+            "last": -46.1807044174745
+          }
+        },
+        {
+          "T_K": 1200.0,
+          "N": 96,
+          "mu_eV": 3.540080707865603,
+          "x_pct": 26.683560980786545,
+          "S": 1.7452907472640045,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 3.9564634346511696e-07,
+          "delta_conditional_Q": 0.5977794296163073,
+          "conditional_Q_low_high": [
+            0.29999331077783326,
+            0.8977727403941406
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -45.05775810684044,
+          "estimated_local_dS_dT": -0.03485823803115072,
+          "local_linear_zero_K": 1250.068243429411,
+          "S_interval_95": [
+            1.6303296411507715,
+            1.940002739762993
+          ],
+          "src": "T1200_N96.json",
+          "S_time_halves": {
+            "first": 1.8538665765397975,
+            "last": 1.6369555863887764
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -46.499179026204665,
+            "last": -43.61113618820933
+          }
+        },
+        {
+          "T_K": 1250.0,
+          "N": 96,
+          "mu_eV": 3.5549814020659634,
+          "x_pct": 27.449503714556773,
+          "S": 0.14603165170648347,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.3025,
+            0.9425000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.056729713708940886,
+          "valley_Q": 0.4625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 2.1196551736046843e-07,
+          "delta_conditional_Q": 0.5448622815812307,
+          "conditional_Q_low_high": [
+            0.28416278772854386,
+            0.8290250693097746
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -35.263334342040466,
+          "estimated_local_dS_dT": -0.02514210830736362,
+          "local_linear_zero_K": 1255.808250044954,
+          "S_interval_95": [
+            -0.012321374844754684,
+            0.28156579114145597
+          ],
+          "src": "T1250_N96.json",
+          "S_time_halves": {
+            "first": 0.13476255935916392,
+            "last": 0.15848909931978405
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -36.0258993838471,
+            "last": -34.48015189889786
+          }
+        }
+      ],
+      "crossings": []
+    },
+    {
+      "N": 1400,
+      "cut_Q": 0.47,
+      "observed": [
+        {
+          "T_K": 1200.0,
+          "N": 1400,
+          "mu_eV": 3.457,
+          "x_pct": 24.935783131652386,
+          "S": 5.994905361327529,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1075,
+            0.8725
+          ],
+          "barrier_from_lower_peak_kBT": 1.217258039782511,
+          "valley_Q": 0.3325,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 1.8046805451313208,
+          "delta_conditional_Q": 0.6719140835899816,
+          "conditional_Q_low_high": [
+            0.1935467267342169,
+            0.8654608103241985
+          ],
+          "conditional_time_ESS": [
+            32.17869073998618,
+            26.202542163199638
+          ],
+          "curvature_eV_inv2": -3728.939033031613,
+          "semigrand_energy_gap_meV_atom": -36.127453803380945,
+          "estimated_local_dS_dT": -0.40759608978161715,
+          "local_linear_zero_K": 1214.7079560172904,
+          "S_interval_95": [
+            4.9402344447084365,
+            7.148392941040305
+          ],
+          "src": "T1200_N1400.json",
+          "S_time_halves": {
+            "first": 5.697583145085293,
+            "last": 6.282813406657059
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -35.44609784132743,
+            "last": -36.798040903502056
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -37.227354423785044,
+            -34.58124484690931
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1212.1568473042837,
+            1217.7917148335089
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.8038049756433937,
+            1.7522514420980384
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.28825,
+            0.39675
+          ]
+        },
+        {
+          "T_K": 1225.0,
+          "N": 1400,
+          "mu_eV": 3.537146106011456,
+          "x_pct": 26.85514520121658,
+          "S": 6.050949408903453,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1225,
+            0.8574999999999999
+          ],
+          "barrier_from_lower_peak_kBT": 0.6959100807548526,
+          "valley_Q": 0.3375,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -2.4920814856166373e-07,
+          "delta_conditional_Q": 0.6130061642207473,
+          "conditional_Q_low_high": [
+            0.23539862637524625,
+            0.8484047905959935
+          ],
+          "conditional_time_ESS": [
+            83.3207377994368,
+            62.804179749350574
+          ],
+          "curvature_eV_inv2": -2373.222368286208,
+          "semigrand_energy_gap_meV_atom": -32.14833643039857,
+          "estimated_local_dS_dT": -0.34804986839347557,
+          "local_linear_zero_K": 1242.3852943454149,
+          "S_interval_95": [
+            5.107232159979395,
+            7.202840320293458
+          ],
+          "src": "T1225_N1400.json",
+          "S_time_halves": {
+            "first": 5.942105113598874,
+            "last": 6.102334280578365
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -31.34342178763254,
+            "last": -32.92087686665019
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -33.32240274508398,
+            -30.56015336347003
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.4891431928254,
+            1246.0661175991477
+          ],
+          "negative_energy_slope_fraction": 1.0
+        },
+        {
+          "T_K": 1240.0,
+          "N": 1400,
+          "mu_eV": 3.541581720599336,
+          "x_pct": 27.05022924285959,
+          "S": 0.29940852733490986,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1075,
+            0.8225
+          ],
+          "barrier_from_lower_peak_kBT": 1.738204075684186,
+          "valley_Q": 0.4425,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -1.5965492816683025e-07,
+          "delta_conditional_Q": 0.6245896325848542,
+          "conditional_Q_low_high": [
+            0.16788031244332055,
+            0.7924699450281748
+          ],
+          "conditional_time_ESS": [
+            156.6988791309533,
+            112.499409988427
+          ],
+          "curvature_eV_inv2": -2121.9307474392335,
+          "semigrand_energy_gap_meV_atom": -29.094247280720232,
+          "estimated_local_dS_dT": -0.3074106449809949,
+          "local_linear_zero_K": 1240.9739692890382,
+          "S_interval_95": [
+            -0.4925364059730162,
+            1.1063227376746445
+          ],
+          "src": "T1240_N1400.json",
+          "S_time_halves": {
+            "first": 0.35823488217205957,
+            "last": 0.2549930594742513
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -29.494571784976966,
+            "last": -28.7519582608143
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -30.36740454273054,
+            -27.70579745431655
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1238.3570377006026,
+            1243.5035748298858
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.30591252809437,
+            2.3387639577217643
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.3625,
+            0.474625
+          ]
+        },
+        {
+          "T_K": 1245.0,
+          "N": 1400,
+          "mu_eV": 3.545627046387932,
+          "x_pct": 27.23152607142859,
+          "S": -0.8914718495040821,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0975,
+            0.8025
+          ],
+          "barrier_from_lower_peak_kBT": 1.7809612541807667,
+          "valley_Q": 0.4275,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 4.1091892111211337e-07,
+          "delta_conditional_Q": 0.5989602024789559,
+          "conditional_Q_low_high": [
+            0.16217509814857492,
+            0.7611353006275308
+          ],
+          "conditional_time_ESS": [
+            82.13595043414239,
+            136.07193948821381
+          ],
+          "curvature_eV_inv2": -2079.6792199039824,
+          "semigrand_energy_gap_meV_atom": -26.588856086521314,
+          "estimated_local_dS_dT": -0.2786866064755486,
+          "local_linear_zero_K": 1241.8011672294617,
+          "S_interval_95": [
+            -1.4951179561017036,
+            -0.4070999462109217
+          ],
+          "src": "T1245_N1400.json",
+          "S_time_halves": {
+            "first": -1.372879582171233,
+            "last": -0.4269234532624997
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -26.32458944768632,
+            "last": -26.718106541683593
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -27.982171874360795,
+            -24.99049559344664
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.4930016410326,
+            1243.506592653881
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.4674542777245374,
+            2.065399710924645
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.385375,
+            0.47750000000000004
+          ]
+        },
+        {
+          "T_K": 1247.5,
+          "N": 1400,
+          "mu_eV": 3.547713652233444,
+          "x_pct": 27.32088873485754,
+          "S": -1.4103813721009801,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0975,
+            0.7875000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 1.9320019610180819,
+          "valley_Q": 0.47250000000000003,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -6.067595870185016e-08,
+          "delta_conditional_Q": 0.5842111062171785,
+          "conditional_Q_low_high": [
+            0.1614083428343601,
+            0.7456194490515387
+          ],
+          "conditional_time_ESS": [
+            104.05233098117964,
+            150.09118120689894
+          ],
+          "curvature_eV_inv2": -1833.189611834887,
+          "semigrand_energy_gap_meV_atom": -25.947648192367208,
+          "estimated_local_dS_dT": -0.27087694274250324,
+          "local_linear_zero_K": 1242.293276393991,
+          "S_interval_95": [
+            -1.9716838166981214,
+            -0.9002465660184594
+          ],
+          "src": "T1247p5_N1400.json",
+          "S_time_halves": {
+            "first": -1.0291687929678017,
+            "last": -1.7863080222002583
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -26.378013156340803,
+            "last": -25.491814956387664
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -26.764048307455813,
+            -24.231234530050294
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.984777630343,
+            1244.175367604013
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.3887975155421197,
+            2.2101171189346513
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.4375,
+            0.51175
+          ]
+        },
+        {
+          "T_K": 1250.0,
+          "N": 1400,
+          "mu_eV": 3.5489368010721303,
+          "x_pct": 27.377002770233467,
+          "S": -2.4379562793634726,
+          "field_edge": false,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.0925,
+            0.7625
+          ],
+          "barrier_from_lower_peak_kBT": 1.3697665883303591,
+          "valley_Q": 0.4625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -1.3538614673791471e-10,
+          "delta_conditional_Q": 0.5762380465742208,
+          "conditional_Q_low_high": [
+            0.14133392664508057,
+            0.7175719732193014
+          ],
+          "conditional_time_ESS": [
+            80.53914676966515,
+            78.37244099796096
+          ],
+          "curvature_eV_inv2": -1859.9028744999553,
+          "semigrand_energy_gap_meV_atom": -24.377210595528275,
+          "estimated_local_dS_dT": -0.2534656607693561,
+          "local_linear_zero_K": 1240.3815125411331,
+          "S_interval_95": [
+            -3.1314293081888676,
+            -1.7933572606691892
+          ],
+          "src": "T1250_N1400.json",
+          "S_time_halves": {
+            "first": -2.454707828973053,
+            "last": -2.4022370422058508
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -25.821869771770576,
+            "last": -22.95567920843427
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -25.667080154523678,
+            -22.742339754814108
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1236.9316208091136,
+            1243.1132929284834
+          ],
+          "negative_energy_slope_fraction": 1.0
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1240.0,
+            1245.0
+          ],
+          "interpolated_T_K": 1241.2570890122888,
+          "interpolated_mu_eV": 3.5425987875193305,
+          "interpolated_x_pct": 27.095810493090966,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 0.99169921875,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 0.76904296875,
+          "interval_95_conditional_negative_slope": [
+            1232.925115407219,
+            1243.267704658695
+          ]
+        }
+      ]
+    },
+    {
+      "N": 2304,
+      "cut_Q": 0.47,
+      "observed": [
+        {
+          "T_K": 1245.0,
+          "N": 2304,
+          "mu_eV": 3.544703234588639,
+          "x_pct": 27.208954674491853,
+          "S": -0.6969516429871045,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0825,
+            0.7925
+          ],
+          "barrier_from_lower_peak_kBT": 2.8402946436429426,
+          "valley_Q": 0.4375,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -1.1752364637018786e-07,
+          "delta_conditional_Q": 0.6440221388822268,
+          "conditional_Q_low_high": [
+            0.12315192811714337,
+            0.7671740669993702
+          ],
+          "conditional_time_ESS": [
+            159.69849581265717,
+            137.49213986247173
+          ],
+          "curvature_eV_inv2": -3329.585509670501,
+          "semigrand_energy_gap_meV_atom": -27.29227854301946,
+          "estimated_local_dS_dT": -0.4707720579375949,
+          "local_linear_zero_K": 1243.5195560542816,
+          "S_interval_95": [
+            -1.5321443781366861,
+            0.08501345593573158
+          ],
+          "src": "T1245_N2304.json",
+          "S_time_halves": {
+            "first": -1.157659402222485,
+            "last": -0.240009664120876
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -27.37067788290923,
+            "last": -27.180004592589174
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -28.814092688219947,
+            -26.2313645022118
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1241.8333854272153,
+            1245.1819614248273
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            2.2261650929030448,
+            3.4357722902651044
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.375375,
+            0.4625
+          ]
+        }
+      ],
+      "crossings": []
+    },
+    {
+      "N": 288,
+      "cut_Q": 0.5,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 288,
+          "mu_eV": 3.49,
+          "x_pct": 25.462985307468756,
+          "S": 12.805156915362563,
+          "field_edge": true,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 0.701109880652398,
+          "delta_conditional_Q": 0.5498876789360962,
+          "conditional_Q_low_high": [
+            0.4102577339897749,
+            0.9601454129258712
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -42.056464271491954,
+          "estimated_local_dS_dT": -0.11616277728004651,
+          "local_linear_zero_K": 1210.2345967890535,
+          "S_interval_95": [
+            12.481419927370368,
+            13.070248493297411
+          ],
+          "src": "T1100_N288.json",
+          "S_time_halves": {
+            "first": 13.12483495003055,
+            "last": 12.482706972856253
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -42.19704408172291,
+            "last": -42.043409898572484
+          }
+        },
+        {
+          "T_K": 1150.0,
+          "N": 288,
+          "mu_eV": 3.517,
+          "x_pct": 26.08784183460415,
+          "S": 8.081581384075864,
+          "field_edge": true,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 0.2546893697881414,
+          "delta_conditional_Q": 0.5799442172924401,
+          "conditional_Q_low_high": [
+            0.3524648807421808,
+            0.9324090980346209
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -40.49167794679208,
+          "estimated_local_dS_dT": -0.10232687049194111,
+          "local_linear_zero_K": 1228.9780958337071,
+          "S_interval_95": [
+            7.705595513808721,
+            8.525633257690716
+          ],
+          "src": "T1150_N288.json",
+          "S_time_halves": {
+            "first": 7.596475754067985,
+            "last": 8.55605116829047
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -41.158556842321374,
+            "last": -39.69734048917764
+          }
+        },
+        {
+          "T_K": 1200.0,
+          "N": 288,
+          "mu_eV": 3.531376785531679,
+          "x_pct": 26.52324973274028,
+          "S": 3.070401356539964,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": -4.5969203998907915e-07,
+          "delta_conditional_Q": 0.5916844453675333,
+          "conditional_Q_low_high": [
+            0.29790860673739517,
+            0.8895930521049285
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -38.5769288235737,
+          "estimated_local_dS_dT": -0.0895333339213836,
+          "local_linear_zero_K": 1234.2933879714117,
+          "S_interval_95": [
+            2.847509125983358,
+            3.261555868213025
+          ],
+          "src": "T1200_N288.json",
+          "S_time_halves": {
+            "first": 3.001121424381143,
+            "last": 3.137235829930237
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -37.62693860212342,
+            "last": -39.57420278599354
+          }
+        },
+        {
+          "T_K": 1237.5,
+          "N": 288,
+          "mu_eV": 3.5427974716533357,
+          "x_pct": 27.068497948508597,
+          "S": 0.07909602609098365,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1875,
+            0.8775
+          ],
+          "barrier_from_lower_peak_kBT": 0.41959549358317,
+          "valley_Q": 0.4425,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 2.76068895521675e-07,
+          "delta_conditional_Q": 0.5544017998335902,
+          "conditional_Q_low_high": [
+            0.2636910680762021,
+            0.8180928679097923
+          ],
+          "conditional_time_ESS": [
+            156.09688671868895,
+            226.3652288148093
+          ],
+          "curvature_eV_inv2": -442.92125185913005,
+          "semigrand_energy_gap_meV_atom": -31.13126240831725,
+          "estimated_local_dS_dT": -0.06794005839015486,
+          "local_linear_zero_K": 1238.6642030926257,
+          "S_interval_95": [
+            -0.0811052282005766,
+            0.2743157583013105
+          ],
+          "src": "T1237p5_N288.json",
+          "S_time_halves": {
+            "first": 0.07823214757344865,
+            "last": 0.08289383149355367
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -30.882725530902768,
+            "last": -31.436926407001373
+          }
+        },
+        {
+          "T_K": 1250.0,
+          "N": 288,
+          "mu_eV": 3.5447010940620642,
+          "x_pct": 27.199180110985367,
+          "S": -0.5245298574962864,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.17250000000000001,
+            0.8525
+          ],
+          "barrier_from_lower_peak_kBT": 0.38304556386956734,
+          "valley_Q": 0.3775,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -3.8708144467491934e-07,
+          "delta_conditional_Q": 0.5233586224298981,
+          "conditional_Q_low_high": [
+            0.26199719202351607,
+            0.7853558144534142
+          ],
+          "conditional_time_ESS": [
+            133.6417597589486,
+            144.1775531879244
+          ],
+          "curvature_eV_inv2": -436.6836002277156,
+          "semigrand_energy_gap_meV_atom": -29.84645218488447,
+          "estimated_local_dS_dT": -0.0638399131072777,
+          "local_linear_zero_K": 1241.7836689938024,
+          "S_interval_95": [
+            -0.6682512934741582,
+            -0.39078184457152554
+          ],
+          "src": "T1250_N288.json",
+          "S_time_halves": {
+            "first": -0.311042175152078,
+            "last": -0.7384972041040603
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -29.41673486817728,
+            "last": -30.271716670453483
+          }
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1237.5,
+            1250.0
+          ],
+          "interpolated_T_K": 1239.1379356038572,
+          "interpolated_mu_eV": 3.5430469125269,
+          "interpolated_x_pct": 27.085621865845376,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 1.0,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 0.7708333333333334,
+          "interval_95_conditional_negative_slope": [
+            1234.505447892544,
+            1242.115235794587
+          ]
+        }
+      ]
+    },
+    {
+      "N": 768,
+      "cut_Q": 0.5,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 768,
+          "mu_eV": 3.37,
+          "x_pct": 23.734645292807897,
+          "S": 7.220706506822236,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1125,
+            0.9125000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.8800472235439931,
+          "valley_Q": 0.35250000000000004,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 4.487408962665865,
+          "delta_conditional_Q": 0.6710572254738972,
+          "conditional_Q_low_high": [
+            0.23311396999599135,
+            0.9041711954698886
+          ],
+          "conditional_time_ESS": [
+            49.604077383084125,
+            52.21737546628616
+          ],
+          "curvature_eV_inv2": -3508.395142961665,
+          "semigrand_energy_gap_meV_atom": -38.24441333600384,
+          "estimated_local_dS_dT": -0.2816896979183396,
+          "local_linear_zero_K": 1125.6335484051515,
+          "S_interval_95": [
+            6.598223909499714,
+            7.944259750859211
+          ],
+          "src": "T1100_N768.json",
+          "S_time_halves": {
+            "first": 7.20802545770567,
+            "last": 7.231871396176924
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -37.294513103532545,
+            "last": -39.18739212585387
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -39.4909221205526,
+            -36.84118622792721
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1123.208920043726,
+            1128.9462950970012
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.6085247206397132,
+            1.3134942850844515
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.300375,
+            0.38175
+          ]
+        },
+        {
+          "T_K": 1150.0,
+          "N": 768,
+          "mu_eV": 3.414,
+          "x_pct": 24.29259322003131,
+          "S": 7.268166909163863,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1175,
+            0.9125000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.27570365631524263,
+          "valley_Q": 0.2475,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 2.9397801104016352,
+          "delta_conditional_Q": 0.6178707931602274,
+          "conditional_Q_low_high": [
+            0.28317775000855205,
+            0.9010485431687795
+          ],
+          "conditional_time_ESS": [
+            45.37684463447072,
+            53.72686714449297
+          ],
+          "curvature_eV_inv2": -2547.0500389831236,
+          "semigrand_energy_gap_meV_atom": -36.781470045638784,
+          "estimated_local_dS_dT": -0.2478687251445599,
+          "local_linear_zero_K": 1179.3226461100528,
+          "S_interval_95": [
+            6.788162173969299,
+            7.877319393932003
+          ],
+          "src": "T1150_N768.json",
+          "S_time_halves": {
+            "first": 7.052478411686746,
+            "last": 7.484186209575629
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -37.374708137404106,
+            "last": -36.06270516042551
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -38.355452954224845,
+            -35.312830228314404
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1176.9552935187596,
+            1182.1035379590726
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.07537999718315531,
+            0.6099301219225518
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.2125,
+            0.3675
+          ]
+        },
+        {
+          "T_K": 1200.0,
+          "N": 768,
+          "mu_eV": 3.466,
+          "x_pct": 25.109732483659414,
+          "S": 3.9832097304057648,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1225,
+            0.8925000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.6541622588143732,
+          "valley_Q": 0.3125,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 1.4855013410424918,
+          "delta_conditional_Q": 0.6270742527681028,
+          "conditional_Q_low_high": [
+            0.24807885832942922,
+            0.875153111097532
+          ],
+          "conditional_time_ESS": [
+            22.951126826087183,
+            39.753164670477794
+          ],
+          "curvature_eV_inv2": -2365.974893913924,
+          "semigrand_energy_gap_meV_atom": -35.94257290793535,
+          "estimated_local_dS_dT": -0.22245132727748232,
+          "local_linear_zero_K": 1217.9059832061023,
+          "S_interval_95": [
+            3.27717626066192,
+            4.56957686396695
+          ],
+          "src": "T1200_N768.json",
+          "S_time_halves": {
+            "first": 4.450269023489941,
+            "last": 3.499125694531944
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -35.785430165175896,
+            "last": -35.9084844592215
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -36.99302709089441,
+            -34.18979700417873
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1214.5871973871388,
+            1221.3738449778884
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.45378819903646,
+            0.9568857333557704
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.28325,
+            0.42387499999999995
+          ]
+        },
+        {
+          "T_K": 1225.0,
+          "N": 768,
+          "mu_eV": 3.5363641640356684,
+          "x_pct": 26.81102133516117,
+          "S": 3.369974155422458,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1575,
+            0.8625
+          ],
+          "barrier_from_lower_peak_kBT": 0.17430073398244547,
+          "valley_Q": 0.3125,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 3.20687765231753e-07,
+          "delta_conditional_Q": 0.5523968834757143,
+          "conditional_Q_low_high": [
+            0.2926990335378281,
+            0.8450959170135424
+          ],
+          "conditional_time_ESS": [
+            97.76731083106893,
+            70.74899933747082
+          ],
+          "curvature_eV_inv2": -1415.1740220138515,
+          "semigrand_energy_gap_meV_atom": -30.439088044964244,
+          "estimated_local_dS_dT": -0.18077892124596254,
+          "local_linear_zero_K": 1243.6414109133739,
+          "S_interval_95": [
+            2.982453643064327,
+            3.7831336172689376
+          ],
+          "src": "T1225_N768.json",
+          "S_time_halves": {
+            "first": 3.272566426851089,
+            "last": 3.4647762798922237
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -30.673971301740476,
+            "last": -30.177857063623616
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -31.333751549635757,
+            -29.122787969302596
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1241.278414433379,
+            1245.9300205163088
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.010635513146272087,
+            0.4721988102731929
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.229,
+            0.359625
+          ]
+        },
+        {
+          "T_K": 1240.0,
+          "N": 768,
+          "mu_eV": 3.5425382711351325,
+          "x_pct": 27.094724643681083,
+          "S": 0.1847566932359508,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.8225
+          ],
+          "barrier_from_lower_peak_kBT": 0.7962296618539132,
+          "valley_Q": 0.3625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 2.763494988400339e-09,
+          "delta_conditional_Q": 0.5522379964727002,
+          "conditional_Q_low_high": [
+            0.23190244662289158,
+            0.7841404430955918
+          ],
+          "conditional_time_ESS": [
+            159.03267815246707,
+            129.67902283591613
+          ],
+          "curvature_eV_inv2": -1066.1713104622772,
+          "semigrand_energy_gap_meV_atom": -26.66381909397515,
+          "estimated_local_dS_dT": -0.15454939697770195,
+          "local_linear_zero_K": 1241.1954539897856,
+          "S_interval_95": [
+            -0.2768877823115783,
+            0.5419008345623828
+          ],
+          "src": "T1240_N768.json",
+          "S_time_halves": {
+            "first": 0.1971054833671,
+            "last": 0.1689335277915982
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -27.421804876057454,
+            "last": -25.89566810821284
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -28.66553210964281,
+            -25.1203043326415
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1238.2248191475753,
+            1243.411440613378
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.5685439994663878,
+            1.0562821537156053
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.320375,
+            0.39175
+          ]
+        },
+        {
+          "T_K": 1245.0,
+          "N": 768,
+          "mu_eV": 3.543416201857886,
+          "x_pct": 27.142444206384063,
+          "S": -0.351807422108539,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.8275000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.8459247328601185,
+          "valley_Q": 0.4325,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 2.1209161094049023e-07,
+          "delta_conditional_Q": 0.5503716122225435,
+          "conditional_Q_low_high": [
+            0.22548223053813043,
+            0.7758538427606739
+          ],
+          "conditional_time_ESS": [
+            221.3340827388901,
+            133.90271180517212
+          ],
+          "curvature_eV_inv2": -1089.1774111536674,
+          "semigrand_energy_gap_meV_atom": -26.887489648157572,
+          "estimated_local_dS_dT": -0.15459658079343988,
+          "local_linear_zero_K": 1242.7243518562768,
+          "S_interval_95": [
+            -0.7455502443946314,
+            0.08119826664493869
+          ],
+          "src": "T1245_N768.json",
+          "S_time_halves": {
+            "first": -0.5574903663062647,
+            "last": -0.1275946115915294
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -24.99214702288486,
+            "last": -28.47084365241764
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -28.102467404783944,
+            -25.879260505142543
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1240.2064344745343,
+            1245.512170008888
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.5737420481754719,
+            1.1726991038885026
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.3825,
+            0.454625
+          ]
+        },
+        {
+          "T_K": 1250.0,
+          "N": 768,
+          "mu_eV": 3.5464356948961324,
+          "x_pct": 27.26727145285776,
+          "S": -1.270685965316115,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1275,
+            0.7925
+          ],
+          "barrier_from_lower_peak_kBT": 1.3840839089290151,
+          "valley_Q": 0.4575,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 2.3547006566815298e-07,
+          "delta_conditional_Q": 0.5540144017350754,
+          "conditional_Q_low_high": [
+            0.20063949981659218,
+            0.7546539015516677
+          ],
+          "conditional_time_ESS": [
+            163.24941838397027,
+            200.76986057766717
+          ],
+          "curvature_eV_inv2": -1028.5256563290204,
+          "semigrand_energy_gap_meV_atom": -25.83986448496818,
+          "estimated_local_dS_dT": -0.14738678202739156,
+          "local_linear_zero_K": 1241.378562257503,
+          "S_interval_95": [
+            -1.590144624003986,
+            -0.9654924178583733
+          ],
+          "src": "T1250_N768.json",
+          "S_time_halves": {
+            "first": -1.2382640893248966,
+            "last": -1.281765100317951
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -24.3814859303194,
+            "last": -27.175512171900518
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -26.840928056945327,
+            -24.94598762330433
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.0769796885543,
+            1243.4668518439448
+          ],
+          "negative_energy_slope_fraction": 1.0
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1240.0,
+            1245.0
+          ],
+          "interpolated_T_K": 1241.721664643165,
+          "interpolated_mu_eV": 3.542840571592035,
+          "interpolated_x_pct": 27.111156060459688,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 0.923095703125,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 0.615234375,
+          "interval_95_conditional_negative_slope": [
+            1224.535552356914,
+            1246.4070851710326
+          ]
+        }
+      ]
+    },
+    {
+      "N": 96,
+      "cut_Q": 0.5,
+      "observed": [
+        {
+          "T_K": 1100.0,
+          "N": 96,
+          "mu_eV": 3.5273590459009205,
+          "x_pct": 26.00124315243777,
+          "S": 5.2733115593694855,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 6.393556573058845e-07,
+          "delta_conditional_Q": 0.5951714076461768,
+          "conditional_Q_low_high": [
+            0.3598278903983947,
+            0.9549992980445715
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -46.955341818803866,
+          "estimated_local_dS_dT": -0.04323126863126472,
+          "local_linear_zero_K": 1221.979107399033,
+          "S_interval_95": [
+            5.093609563599161,
+            5.3866098325415415
+          ],
+          "src": "T1100_N96.json",
+          "S_time_halves": {
+            "first": 5.2428243596727135,
+            "last": 5.302960841537608
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -48.949124441186825,
+            "last": -44.96365821534488
+          }
+        },
+        {
+          "T_K": 1150.0,
+          "N": 96,
+          "mu_eV": 3.5290707399067283,
+          "x_pct": 26.16081517188782,
+          "S": 3.3326341655858194,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": 2.669826582035739e-07,
+          "delta_conditional_Q": 0.5931363894950141,
+          "conditional_Q_low_high": [
+            0.34326904803694586,
+            0.93640543753196
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -44.59017737821172,
+          "estimated_local_dS_dT": -0.03756140798271888,
+          "local_linear_zero_K": 1238.7249532051378,
+          "S_interval_95": [
+            3.1232671328824275,
+            3.4708436833089173
+          ],
+          "src": "T1150_N96.json",
+          "S_time_halves": {
+            "first": 3.404163316727665,
+            "last": 3.2609275846750414
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -44.333331421986486,
+            "last": -44.82140459313786
+          }
+        },
+        {
+          "T_K": 1200.0,
+          "N": 96,
+          "mu_eV": 3.537739660143447,
+          "x_pct": 26.62604191435083,
+          "S": 1.5874811446101058,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": null,
+          "barrier_from_lower_peak_kBT": null,
+          "valley_Q": null,
+          "divider_separates_modes": false,
+          "delta_conditional_x_pp": -1.2157446716010156e-07,
+          "delta_conditional_Q": 0.5758659838326967,
+          "conditional_Q_low_high": [
+            0.32542075679800053,
+            0.9012867406306972
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -44.74085485499999,
+          "estimated_local_dS_dT": -0.034613070729233336,
+          "local_linear_zero_K": 1245.8636321818556,
+          "S_interval_95": [
+            1.4796972438559108,
+            1.7688821654231508
+          ],
+          "src": "T1200_N96.json",
+          "S_time_halves": {
+            "first": 1.6987568169302885,
+            "last": 1.4768745784998496
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -46.20149894196715,
+            "last": -43.29832271644176
+          }
+        },
+        {
+          "T_K": 1250.0,
+          "N": 96,
+          "mu_eV": 3.553108219152696,
+          "x_pct": 27.385483961356265,
+          "S": 0.0073865215484085756,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.2975,
+            0.9425000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 0.06054491507966559,
+          "valley_Q": 0.4625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 3.1881214335172103e-08,
+          "delta_conditional_Q": 0.5334302954776922,
+          "conditional_Q_low_high": [
+            0.30528772304870083,
+            0.8387180185263929
+          ],
+          "conditional_time_ESS": [
+            null,
+            null
+          ],
+          "curvature_eV_inv2": null,
+          "semigrand_energy_gap_meV_atom": -35.25255464616456,
+          "estimated_local_dS_dT": -0.025134422582621784,
+          "local_linear_zero_K": 1250.2938806938623,
+          "S_interval_95": [
+            -0.16244665354524215,
+            0.14045248520242598
+          ],
+          "src": "T1250_N96.json",
+          "S_time_halves": {
+            "first": -0.010460302037205826,
+            "last": 0.026443432444164694
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -35.92163875298077,
+            "last": -34.532079775649024
+          }
+        }
+      ],
+      "crossings": []
+    },
+    {
+      "N": 1400,
+      "cut_Q": 0.5,
+      "observed": [
+        {
+          "T_K": 1200.0,
+          "N": 1400,
+          "mu_eV": 3.457,
+          "x_pct": 24.935783131652386,
+          "S": 5.926355199406839,
+          "field_edge": true,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.1075,
+            0.8725
+          ],
+          "barrier_from_lower_peak_kBT": 1.217258039782511,
+          "valley_Q": 0.3325,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 1.7694862922019883,
+          "delta_conditional_Q": 0.6526126041590685,
+          "conditional_Q_low_high": [
+            0.21286499614615545,
+            0.8654776003052239
+          ],
+          "conditional_time_ESS": [
+            34.42324354159261,
+            26.20022835697206
+          ],
+          "curvature_eV_inv2": -3839.621454362623,
+          "semigrand_energy_gap_meV_atom": -35.474405051844165,
+          "estimated_local_dS_dT": -0.4002282824899157,
+          "local_linear_zero_K": 1214.8074373018758,
+          "S_interval_95": [
+            4.903275934827103,
+            7.046435190684236
+          ],
+          "src": "T1200_N1400.json",
+          "S_time_halves": {
+            "first": 5.643256047244922,
+            "last": 6.200719032473362
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -34.941175391779915,
+            "last": -36.00544349292358
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -36.84326576143904,
+            -33.53566654625834
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1212.184145718671,
+            1217.9880866440453
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            0.8038049756433937,
+            1.7522514420980384
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.28825,
+            0.39675
+          ]
+        },
+        {
+          "T_K": 1225.0,
+          "N": 1400,
+          "mu_eV": 3.5362398211732686,
+          "x_pct": 26.830954613951125,
+          "S": 5.9262533221494245,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1225,
+            0.8574999999999999
+          ],
+          "barrier_from_lower_peak_kBT": 0.7056260693714136,
+          "valley_Q": 0.3375,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -3.812808124781242e-07,
+          "delta_conditional_Q": 0.5847885691996084,
+          "conditional_Q_low_high": [
+            0.26388011949066953,
+            0.8486686886902779
+          ],
+          "conditional_time_ESS": [
+            84.44906811761223,
+            62.09962449503679
+          ],
+          "curvature_eV_inv2": -2343.7742564764867,
+          "semigrand_energy_gap_meV_atom": -31.263295705475382,
+          "estimated_local_dS_dT": -0.33846808774677595,
+          "local_linear_zero_K": 1242.5090460125834,
+          "S_interval_95": [
+            5.03030522744294,
+            7.008724089986314
+          ],
+          "src": "T1225_N1400.json",
+          "S_time_halves": {
+            "first": 5.757973181860539,
+            "last": 6.021743254694176
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -30.240619743670617,
+            "last": -32.261891616173294
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -32.59069001362757,
+            -29.562055661539574
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.531850402048,
+            1246.4457241858054
+          ],
+          "negative_energy_slope_fraction": 1.0
+        },
+        {
+          "T_K": 1240.0,
+          "N": 1400,
+          "mu_eV": 3.541487527521951,
+          "x_pct": 27.04711379419274,
+          "S": 0.2749289693723933,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.1075,
+            0.8225
+          ],
+          "barrier_from_lower_peak_kBT": 1.7395234653277518,
+          "valley_Q": 0.4425,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 3.7503020688944844e-07,
+          "delta_conditional_Q": 0.619389441435793,
+          "conditional_Q_low_high": [
+            0.1743202521145627,
+            0.7937096935503557
+          ],
+          "conditional_time_ESS": [
+            161.04651876044858,
+            111.36328110080092
+          ],
+          "curvature_eV_inv2": -2131.605650139024,
+          "semigrand_energy_gap_meV_atom": -28.96957751899376,
+          "estimated_local_dS_dT": -0.30609338072967474,
+          "local_linear_zero_K": 1240.8981865884098,
+          "S_interval_95": [
+            -0.5147450330717134,
+            1.0703990586018488
+          ],
+          "src": "T1240_N1400.json",
+          "S_time_halves": {
+            "first": 0.33638570464191475,
+            "last": 0.22802981309786197
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -29.389281166140304,
+            "last": -28.609102952113595
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -30.22889152442162,
+            -27.600701523224064
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1238.280570055371,
+            1243.4177136591065
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.3081258800329907,
+            2.339691421069701
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.3625,
+            0.474625
+          ]
+        },
+        {
+          "T_K": 1245.0,
+          "N": 1400,
+          "mu_eV": 3.5455005144927147,
+          "x_pct": 27.22659472408425,
+          "S": -0.9287378378664035,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0975,
+            0.8025
+          ],
+          "barrier_from_lower_peak_kBT": 1.7825504045741793,
+          "valley_Q": 0.4275,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -1.8523542699711015e-07,
+          "delta_conditional_Q": 0.5957467430363266,
+          "conditional_Q_low_high": [
+            0.16945545271919885,
+            0.7652021957555254
+          ],
+          "conditional_time_ESS": [
+            85.47963533799869,
+            132.78094300764957
+          ],
+          "curvature_eV_inv2": -2072.4082976871678,
+          "semigrand_energy_gap_meV_atom": -26.639797353692213,
+          "estimated_local_dS_dT": -0.279220538767755,
+          "local_linear_zero_K": 1241.6738197628115,
+          "S_interval_95": [
+            -1.532053804770127,
+            -0.44850043610190904
+          ],
+          "src": "T1245_N1400.json",
+          "S_time_halves": {
+            "first": -1.4018927832783523,
+            "last": -0.4762145647022995
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -26.459739559476265,
+            "last": -26.650519850882997
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -27.990222237858745,
+            -25.025310068948233
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.378232792757,
+            1243.3791870155649
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.4691030091106387,
+            2.067031723238524
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.385375,
+            0.47750000000000004
+          ]
+        },
+        {
+          "T_K": 1247.5,
+          "N": 1400,
+          "mu_eV": 3.5475438953224616,
+          "x_pct": 27.31403815879206,
+          "S": -1.4486630543820433,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0975,
+            0.7875000000000001
+          ],
+          "barrier_from_lower_peak_kBT": 1.9338384463592007,
+          "valley_Q": 0.47250000000000003,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": 1.3970747336777833e-07,
+          "delta_conditional_Q": 0.5834870918131,
+          "conditional_Q_low_high": [
+            0.16737278189828123,
+            0.7508598737113812
+          ],
+          "conditional_time_ESS": [
+            107.40137921521236,
+            146.43820101498542
+          ],
+          "curvature_eV_inv2": -1830.4379130821944,
+          "semigrand_energy_gap_meV_atom": -26.09386335529166,
+          "estimated_local_dS_dT": -0.2724033360411153,
+          "local_linear_zero_K": 1242.1819188214222,
+          "S_interval_95": [
+            -2.013637854744533,
+            -0.9412885828317883
+          ],
+          "src": "T1247p5_N1400.json",
+          "S_time_halves": {
+            "first": -1.0661260299729134,
+            "last": -1.8268142610606242
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -26.454337917552788,
+            "last": -25.715133621544844
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -26.885617380346794,
+            -24.429934791356253
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1239.9161021185446,
+            1244.0304943125263
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            1.391828251241794,
+            2.211137387447381
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.4375,
+            0.51175
+          ]
+        },
+        {
+          "T_K": 1250.0,
+          "N": 1400,
+          "mu_eV": 3.548769880755468,
+          "x_pct": 27.369554559105524,
+          "S": -2.4771303599304524,
+          "field_edge": false,
+          "inside_simulated_fields": false,
+          "modes_Q": [
+            0.0925,
+            0.7625
+          ],
+          "barrier_from_lower_peak_kBT": 1.3720243862096904,
+          "valley_Q": 0.4625,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -3.772173240434995e-07,
+          "delta_conditional_Q": 0.5798806705547783,
+          "conditional_Q_low_high": [
+            0.14467009254188495,
+            0.7245507630966633
+          ],
+          "conditional_time_ESS": [
+            82.7996947216361,
+            75.40753297623903
+          ],
+          "curvature_eV_inv2": -1883.8587886472496,
+          "semigrand_energy_gap_meV_atom": -24.661445314782164,
+          "estimated_local_dS_dT": -0.25642103339687466,
+          "local_linear_zero_K": 1240.339597625377,
+          "S_interval_95": [
+            -3.1831810659170823,
+            -1.8299838631629206
+          ],
+          "src": "T1250_N1400.json",
+          "S_time_halves": {
+            "first": -2.4907469634315724,
+            "last": -2.4435374630474165
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -26.12323901602727,
+            "last": -23.20608806718262
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -25.8298725020563,
+            -23.156425024016297
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1236.9768629855187,
+            1243.014962696427
+          ],
+          "negative_energy_slope_fraction": 1.0
+        }
+      ],
+      "crossings": [
+        {
+          "bracket_T_K": [
+            1240.0,
+            1245.0
+          ],
+          "interpolated_T_K": 1241.1420476485644,
+          "interpolated_mu_eV": 3.542404131988687,
+          "interpolated_x_pct": 27.088108948981688,
+          "both_endpoints_separate_modes": true,
+          "both_fields_within_sampled_range": true,
+          "negative_slope_fraction": 0.99267578125,
+          "fraction_of_all_bootstrap_pairs_bracketing_root": 0.75,
+          "interval_95_conditional_negative_slope": [
+            1232.9114551414482,
+            1243.157391387321
+          ]
+        }
+      ]
+    },
+    {
+      "N": 2304,
+      "cut_Q": 0.5,
+      "observed": [
+        {
+          "T_K": 1245.0,
+          "N": 2304,
+          "mu_eV": 3.5446351930636815,
+          "x_pct": 27.206429732897924,
+          "S": -0.7113481360232854,
+          "field_edge": false,
+          "inside_simulated_fields": true,
+          "modes_Q": [
+            0.0825,
+            0.7925
+          ],
+          "barrier_from_lower_peak_kBT": 2.841287494852082,
+          "valley_Q": 0.4375,
+          "divider_separates_modes": true,
+          "delta_conditional_x_pp": -2.3002492133272767e-07,
+          "delta_conditional_Q": 0.6420072083464251,
+          "conditional_Q_low_high": [
+            0.12657919804459772,
+            0.7685864063910228
+          ],
+          "conditional_time_ESS": [
+            162.49127850693168,
+            136.19661192919537
+          ],
+          "curvature_eV_inv2": -3328.100887358349,
+          "semigrand_energy_gap_meV_atom": -27.28232807343575,
+          "estimated_local_dS_dT": -0.4706004195367928,
+          "local_linear_zero_K": 1243.4884243479353,
+          "S_interval_95": [
+            -1.5419156051629803,
+            0.06252759931478202
+          ],
+          "src": "T1245_N2304.json",
+          "S_time_halves": {
+            "first": -1.1694390097852516,
+            "last": -0.2580779641401152
+          },
+          "delta_U_minus_mu_x_time_halves_meV_atom": {
+            "first": -27.39649974242682,
+            "last": -27.12475927795438
+          },
+          "semigrand_energy_gap_interval_95_meV_atom": [
+            -28.786149879293657,
+            -26.23592561211117
+          ],
+          "local_linear_zero_interval_95_conditional_negative_slope": [
+            1241.817556160854,
+            1245.1342569525452
+          ],
+          "negative_energy_slope_fraction": 1.0,
+          "bootstrap_resolved_mode_pairs": 64,
+          "barrier_from_lower_peak_interval_95_conditional_two_modes": [
+            2.2272507364125556,
+            3.436717825238628
+          ],
+          "valley_Q_interval_95_conditional_two_modes": [
+            0.375375,
+            0.4625
+          ]
+        }
+      ],
+      "crossings": []
+    }
+  ]
+}

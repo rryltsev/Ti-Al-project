@@ -1,0 +1,36 @@
+{
+  "structure_id": "TiAl-test-009",
+  "functional": "PBEsol",
+  "input_sha256": {
+    "POSCAR": "1bb641a7519d5bf24d63e641cf5d481057698fc8df984b1c57bdc8cd32221711",
+    "KPOINTS": "a1b0df77a457b9374546a036508a7cdcc15db544d3bc5fb13e243c7af1017772",
+    "POTCAR": "1dbb183669c65402113b430053bc3e0b2966aae6a4eb45a9c2e2cdf6e4ef6e79",
+    "INCAR": "1196bbaf07dd8d669577b4071e3eb6cc219e86db0a82c179d3ce26e35b726bef"
+  },
+  "incar": {
+    "SYSTEM": "TiAl-test-009 PBEsol",
+    "ENCUT": 550,
+    "PREC": "Accurate",
+    "LREAL": "Auto",
+    "EDIFF": "1E-6",
+    "ISMEAR": 1,
+    "SIGMA": 0.1,
+    "ALGO": "Normal",
+    "NCORE": 6,
+    "KPAR": 1,
+    "NELMIN": 4,
+    "NELM": 100,
+    "NSW": 0,
+    "IBRION": -1,
+    "ISIF": 2,
+    "ISPIN": 1,
+    "ISYM": 2,
+    "ISTART": 0,
+    "ICHARG": 2,
+    "LASPH": ".TRUE.",
+    "NWRITE": 1,
+    "LCHARG": ".FALSE.",
+    "LWAVE": ".FALSE.",
+    "GGA": "PS"
+  }
+}

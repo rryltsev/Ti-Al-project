@@ -1,0 +1,34 @@
+{
+  "model": "GRACE-2L-OMAT-medium-base-fp64",
+  "layers": 2,
+  "pretraining": "OMat24",
+  "precision": "float64",
+  "cutoff_A": 6,
+  "repository": "AMS-ICAMS-RUB/grace-foundation-models",
+  "revision": "4aff666029967745f7993f348eb87a804d625cff",
+  "source_url": "https://huggingface.co/AMS-ICAMS-RUB/grace-foundation-models/resolve/4aff666029967745f7993f348eb87a804d625cff/checkpoints/GRACE-2L-OMAT-medium-base-fp64-checkpoint.tar.gz",
+  "archive_sha256": "763b7e5679c81ea82d39e595e701d0c9f6565064393f705cbe76663c9583d0aa",
+  "archive_bytes": 211681882,
+  "files": {
+    "extracted/GRACE-2L-OMAT-medium-base-fp64/checkpoint.data-00000-of-00001": {
+      "sha256": "b0edbae73335e32b55e8bb64c7f4fe3cac4d5b01ea277dc5db1ac61a0d1231e5",
+      "bytes": 174132878
+    },
+    "extracted/GRACE-2L-OMAT-medium-base-fp64/checkpoint.index": {
+      "sha256": "e6b88f7815fb91bc8687079fc177e4d88ba4640528101855e7c6eff61a4939d1",
+      "bytes": 3286
+    },
+    "extracted/GRACE-2L-OMAT-medium-base-fp64/gmm_artifacts.npz": {
+      "sha256": "02ad0819022d4f63ecb119218be88988163420e8236b0a62e1a7dd31765dd5c8",
+      "bytes": 104200650
+    },
+    "extracted/GRACE-2L-OMAT-medium-base-fp64/model.yaml": {
+      "sha256": "9d2c48d499253916fc02189f3dbee87c079dfdf87d86770a986315e073c0c15c",
+      "bytes": 12625
+    }
+  },
+  "model_yaml": "extracted/GRACE-2L-OMAT-medium-base-fp64/model.yaml",
+  "license": "Academic Software License (installed registry)",
+  "selection_reason": "Current medium 2L OMat24 base fp64 checkpoint supported by installed TensorPotential0.6.1. Official docs deprecate legacy small GRACE-2L-OMAT. OMat24 base avoids extra SMAX or sAlex/MPtrj pretraining and energy-reweighting stages; fp64 supports derivative/phonon checks. No speed claim transferred from FS.",
+  "qualification": "Weights pinned; Ti-Al numerical baseline and harmonic gates not yet passed."
+}

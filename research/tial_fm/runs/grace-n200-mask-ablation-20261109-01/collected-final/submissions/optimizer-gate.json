@@ -1,0 +1,20 @@
+{
+  "key": "optimizer-gate",
+  "job_id": "20990674",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=imet-2026-2",
+    "--nodes=1",
+    "--ntasks=1",
+    "--partition=apollo",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=00:10:00",
+    "--dependency=afterok:20990673",
+    "--job-name=TiAl-GRACE-opt-gate",
+    "--output=optimizer-gate-%j.log",
+    "optimizer-gate.sbatch"
+  ],
+  "utc": "2026-11-09T07:17:12.316722+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "version": 1,
+    "input_hash": "bea2b4fa7c29",
+    "params_hash": "176f79de1f8a",
+    "params_snapshot": {
+      "T": 1873.0,
+      "n_snapshots": 50
+    },
+    "created_at": "2026-10-27T06:25:16.535962",
+    "updated_at": "2026-10-27T06:25:16.976321"
+  },
+  "cases": {
+    "c_Ti_1.00": {
+      "status": "completed",
+      "c_Ti": 1.0,
+      "input_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune_5060ti/AlTi/1873K/pbe/03_stress_autocorr/c_Ti_1.00",
+      "output_dir": "/home/katkoff/deepmd_check_pipline/models_check/results/viscosity/dpa4/neo/finetune_5060ti/AlTi/1873K/pbe/04_viscosity_analysis/c_Ti_1.00",
+      "n_snapshots_requested": 50,
+      "n_snapshots_used": 25,
+      "viscosity_mPa_s": 3.354958694357199,
+      "kinematic_visc_m2_s": 7.841197177219648e-07,
+      "fit_params": {
+        "A": 0.0075237474380546905,
+        "alpha": 3.472468112139696,
+        "tau1": 445.91931652947966,
+        "tau2": 445.92069383567355,
+        "viscosity_mPa_s": 3.354958694357199,
+        "kinematic_visc_m2_s": 7.841197177219648e-07,
+        "cutoff_right": 5000,
+        "A_nw": 0.006662266680585596,
+        "alpha_nw": 3.74368962276093,
+        "tau1_nw": 504.9026409801998,
+        "tau2_nw": 504.90151689967075
+      },
+      "T": 1873.0,
+      "completed_at": "2026-10-27T06:25:16.976312"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-24",
+  "supersedes": "scheduler-overrides-04.json",
+  "cpu_vasp_partition": "apollo",
+  "forbidden_cpu_vasp_nodes": ["tesla-a101"],
+  "reason": "CPU-only VASP on the A100 node consumes host RAM needed by GPU jobs even when no GPU TRES is allocated. Reserve the scarce A100 host for GPU work.",
+  "requested_walltime": "2-00:00:00",
+  "observed_partition_max_walltime": "3-07:00:00",
+  "memory_GiB_per_node": 240,
+  "scientific_changes": [],
+  "jobs": {
+    "PBE_old": {"job_id": "20959336", "partition": "v100", "action": "STOPCAR LABORT requested at 2026-10-24T03:01:26Z; release not yet confirmed"},
+    "PBE": {"job_id": "20959747", "partition": "apollo", "dependency": "afterany:20959336", "nodes": 1, "ranks": 32, "KPAR": 4, "NCORE": 4, "target": "PBE/production-02/force-001-restart-02"},
+    "r2SCAN": {"job_id": "20959337", "partition": "apollo", "nodes": 1, "ranks": 32, "KPAR": 4, "NCORE": 4},
+    "PBEsol": {"job_id": "20959338", "partition": "apollo", "nodes": 2, "ranks": 64, "KPAR": 8, "NCORE": 4}
+  },
+  "restart_gate": "restart_step_v3.py checks parent scheduler, clean termination, checkpoint request, input hashes, finite CHGCAR grid, geometry, charge integral, PAW occupancies and quota before copying density and launching VASP.",
+  "provenance": "runs/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-relocate-apollo-20261024-submission.json"
+}

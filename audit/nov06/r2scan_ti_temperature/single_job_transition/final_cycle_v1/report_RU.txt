@@ -1,0 +1,38 @@
+r2SCAN first finite refinement cycle COMPLETE,Slurm20988268 COMPLETED0:0.75old20ps retained+20new40ps(5perT)=95replica clusters,115spectral20pswindows.
+Main estimator pools legacy20ps and both20ps windows/new40ps without temporal concatenation;adoptedSE=max(formalSE,whole-replica-clusterJK).
+
+T1873:Nold30+Nnew5=Ntotal35,windows40
+old 3.698441421+/-0.118984614;combined 3.797530559+/-0.112374320;formal 0.112374320,cluster 0.103041846;mean change 2.679%,adoptedSE change -5.556%;relativeSE 2.959%
+new5matched20ps 4.049603702+/-0.383887596,formal 0.312881052,cluster 0.383887596,Zvsold 0.873746
+40ps 4.217204555+/-0.302433858;costZ -0.153392,cutoffZ 0.031488
+first20ps 3.599494692+/-0.261877105;costZ -1.410605,cutoffZ 1.828294
+second20ps 3.988326958+/-0.342626380;costZ -1.199890,cutoffZ 2.555664
+Combined costZ -1.301030,cutoffZ -0.312045;new5matched20costZ -1.157911,cutoffZ 1.741922
+
+T1941:Nold15+Nnew5=Ntotal20,windows25
+old 3.559972048+/-0.171550590;combined 3.650366953+/-0.142143066;formal 0.142143066,cluster 0.135147700;mean change 2.539%,adoptedSE change -17.142%;relativeSE 3.894%
+new5matched20ps 3.738258176+/-0.230028052,formal 0.230028052,cluster 0.215706342,Zvsold 0.621306
+40ps 3.708738105+/-0.220839870;costZ 0.113604,cutoffZ -0.081089
+first20ps 2.837093881+/-0.260925497;costZ 0.333701,cutoffZ 4.480084
+second20ps 4.345289520+/-0.415391937;costZ -0.262421,cutoffZ 0.401341
+Combined costZ 0.585637,cutoffZ 0.011049;new5matched20costZ -0.550667,cutoffZ 0.326279
+
+T2000:Nold15+Nnew5=Ntotal20,windows25
+old 3.297652831+/-0.144030266;combined 3.424412383+/-0.119856780;formal 0.119856780,cluster 0.097281853;mean change 3.844%,adoptedSE change -16.784%;relativeSE 3.500%
+new5matched20ps 3.591136427+/-0.196135897,formal 0.196135897,cluster 0.127182774,Zvsold 1.206067
+40ps 3.582155620+/-0.192296849;costZ -0.785981,cutoffZ -0.265768
+first20ps 3.610259928+/-0.289040682;costZ 0.217134,cutoffZ -0.238382
+second20ps 3.548379353+/-0.242493088;costZ -0.450513,cutoffZ 0.084982
+Combined costZ -0.619858,cutoffZ 0.166815;new5matched20costZ -0.276801,cutoffZ -0.158783
+
+T2100:Nold15+Nnew5=Ntotal20,windows25
+old 2.994340861+/-0.126798072;combined 3.059032769+/-0.153526187;formal 0.104623097,cluster 0.153526187;mean change 2.160%,adoptedSE change 21.079%;relativeSE 5.019%
+new5matched20ps 3.140261284+/-0.423882334,formal 0.185854878,cluster 0.423882334,Zvsold 0.329808
+40ps 3.127696414+/-0.181894215;costZ 1.942180,cutoffZ 1.359439
+first20ps 2.695758441+/-0.254610456;costZ 2.516733,cutoffZ 3.897255
+second20ps 3.208340314+/-0.249935861;costZ 0.258013,cutoffZ 1.073621
+Combined costZ 0.963957,cutoffZ 0.313354;new5matched20costZ 2.410955,cutoffZ 0.988330
+
+Diagnostics:all combined cost/cutoff pass,new5vsoldZ<=2.5.Only1873meets3%adoptedprecision;1941=3.894%,2000=3.500%,2100=5.019%.NoT has three accumulated points(baseline+oneblock only);no convergence established.1873second20cutoff2.556;1941first20cutoff4.480;2100first20cost2.517/cutoff3.897,new5matched20cost2.411.2100adoptedSE grows to0.153526 despite formalSE0.104623;old adoptedSE0.126798 differs from publishedformal0.123793.
+The new40/full40 and new_batch40 are identical data atNnew5;do not count as independent confirmations.Whole40psreplicas are clusters;halves are correlated.Adaptivefit,sequentiallooks,different preparations and common reservoir constrain uncertainty interpretation;model systematics excluded.Poorfit does not demonstrate physicaldrift.
+All new data preserved;no PBE restarts,no automatic further blocks,no articleprofile change or article compile.PBE finals already delivered.Next plan requires discussion.

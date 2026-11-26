@@ -1,0 +1,123 @@
+{
+  "reviewed_unix": 1793893502.704635,
+  "temperature_K": 2000,
+  "n_replicas": 30,
+  "summary_sha256": "ce0d0bdb0b297c62d2d2211555424420f267eb20415dc87a03ad1395cf3f51ef",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 2.8032877983082485,
+      "eta_std_mPa_s": 0.059714386053586636,
+      "relative_std": 0.02130155387171577,
+      "neff": 61.3322546647902,
+      "tau_exp_ps": 0.14347924059850303,
+      "tau_int_ps": 0.1085002761517535,
+      "cost_z": -1.4814052110608047,
+      "criterion_z": 0.48763862039882294
+    },
+    "first20ps": {
+      "eta_mPa_s": 2.814367638202444,
+      "eta_std_mPa_s": 0.07881463416077787,
+      "relative_std": 0.028004384747373417,
+      "neff": 36.47676706094607,
+      "tau_exp_ps": 0.132899703878706,
+      "tau_int_ps": 0.10770754672718208,
+      "cost_z": -1.7503733742407828,
+      "criterion_z": -0.26985052627521305
+    },
+    "second20ps": {
+      "eta_mPa_s": 2.7626619325333857,
+      "eta_std_mPa_s": 0.0823856179624361,
+      "relative_std": 0.0298211000746254,
+      "neff": 31.445433264988303,
+      "tau_exp_ps": 0.14507156589128045,
+      "tau_int_ps": 0.1081537399247092,
+      "cost_z": -0.35053735576206474,
+      "criterion_z": 0.5789296891967802
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs_5k_percent": -1.2559914971117747,
+      "vs_historical15k_percent": 2.909846509763514,
+      "vs_previous_percent": -0.14844055860944172,
+      "SE_change_percent": -10.336269149169697
+    },
+    "first20ps": {
+      "vs_5k_percent": -0.8657112678098322,
+      "vs_historical15k_percent": 3.316591983258066,
+      "vs_previous_percent": -0.38001119523295435,
+      "SE_change_percent": -8.847238193338747
+    },
+    "second20ps": {
+      "vs_5k_percent": -2.687011472274936,
+      "vs_historical15k_percent": 1.4184542903344255,
+      "vs_previous_percent": 0.32258451256790277,
+      "SE_change_percent": -8.517569636193977
+    }
+  },
+  "new_batch_40ps": {
+    "eta_mPa_s": 2.7807733737770124,
+    "eta_std_mPa_s": 0.13582235107841706,
+    "relative_std": 0.04884337298365851,
+    "neff": 69.91598326566671,
+    "tau_exp_ps": 0.14001155783875757,
+    "tau_int_ps": 0.10699146601722703,
+    "cost_z": 0.41877023174274164,
+    "criterion_z": -0.6410262545763759
+  },
+  "previous_replicas_40ps": {
+    "eta_mPa_s": 2.8074552004905664,
+    "eta_std_mPa_s": 0.06659815009586306,
+    "relative_std": 0.023721892368656818,
+    "neff": 63.18707458401999,
+    "tau_exp_ps": 0.14429390639942088,
+    "tau_int_ps": 0.10879119780226362,
+    "cost_z": -1.4933119319633317,
+    "criterion_z": 1.7358816557945194
+  },
+  "new_batch_z": 0.17638386104995296,
+  "checks": [
+    {
+      "id": "Ti_2000K",
+      "flags": {
+        "minimum_replicas": true,
+        "precision": true,
+        "last_three_stability": true,
+        "duration_stability": true,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": true,
+        "window_fit_diagnostics": true
+      },
+      "passed": true,
+      "last_three_relative_range": 0.0123275039681211,
+      "max_20_40_relative_difference": 0.014492220812782786
+    }
+  ],
+  "pass_streak": 1,
+  "stop_recommended": false,
+  "review_required": false,
+  "visual_review": {
+    "notes": "All nine diagnostics visually inspected: full40 cutoff weight near1.5THz; first20 near1.7THz; second20 near1.5THz; new5 near1.8THz, unimodal main weight and broad new5 uncertainty. All weighted cost/cutoff Z<2. No physical drift inferred. Minor-axis labels overlap in source extras but modes and diagnostics readable.",
+    "files_sha256": {
+      "convergence.png": "c19a3b416663bc1be20eba2e5310f4f7ca5f5f881fa56fd4b7ac513b8c889268",
+      "40ps/spectrum.png": "60d9e25bf269fc8e21e004acbe11538a46172e44de46c7e6a190af8d91cfde66",
+      "40ps/extras.png": "040620b0328b7fa19c7ced25d3701d70f44d210f243deeec1017286ff0bfd841",
+      "first20ps/spectrum.png": "779569cd5e2b54e52db04637cd121a0bc3c511ea8393f2a8ba8e2cbbf8774067",
+      "first20ps/extras.png": "c30d5cdcdc9b4397ae679d1e4fef28c4f0726b648a602ca056e93c64cb979c6a",
+      "second20ps/spectrum.png": "34ac3c40ba069cdb6077367f49ef548c3c073a6a2455b73f96600524c3f968c6",
+      "second20ps/extras.png": "196a1c1d018ddbfe6d5ad61c7f3ae91bbd5e9fe6be269c814f9119949a9bf72b",
+      "new_batch_40ps/spectrum.png": "6a81064eb944b1731a00e778f36a7f6b5cf3d11a20c8dbb51f8d207792e94da3",
+      "new_batch_40ps/extras.png": "0db0fac55a0d68292885d703fd96144566c1b48b26ea287cb1d102ff0caaf845"
+    }
+  },
+  "runtime_verification": "runtime-check.json: PASS for all five new replicas and all staged/model/GPU/target/normalization checks.",
+  "article_profile_sha256": "8ca5307ab484cf7963593cdd0c36bd6dca3fd2800cb8e1893fa164874365cfe8",
+  "caveats": [
+    "Formal estimator SE; model, protocol and cutoff bias are not included.",
+    "Windows and accumulated estimates are correlated; these stopping criteria are a heuristic.",
+    "5k and historical 15k references remain separate; agreement with 5k is not a stop criterion.",
+    "Fixed article profile is unchanged; only complete analyzed batches are plotted."
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "PBE": {
+    "learning_rate": {
+      "type": "cosine",
+      "start_lr": 0.0001,
+      "stop_lr": 1e-06,
+      "warmup_ratio": 0.003,
+      "warmup_start_factor": 0.2
+    },
+    "loss": {
+      "type": "ener",
+      "loss_func": "mae",
+      "f_use_norm": true,
+      "start_pref_e": 20,
+      "limit_pref_e": 20,
+      "start_pref_f": 20,
+      "limit_pref_f": 20,
+      "start_pref_v": 5,
+      "limit_pref_v": 5
+    },
+    "optimizer": {
+      "type": "HybridMuon",
+      "muon_mode": "slice",
+      "enable_gram": false,
+      "magma_muon": false,
+      "lr_adjust": 0.0,
+      "weight_decay": 0.01
+    },
+    "training": {
+      "stat_file_mode": "update",
+      "num_epochs": 50,
+      "gradient_max_norm": 5,
+      "save_freq": 5000,
+      "save_dir": "./output_model/ckpt",
+      "max_ckpt_keep": 5,
+      "enable_ema": false,
+      "ema_decay": 0.999,
+      "ema_ckpt_keep": 5,
+      "disp_file": "./lcurve.out",
+      "disp_freq": 100,
+      "disp_avg": true,
+      "disp_training": true,
+      "time_training": true,
+      "tensorboard": false,
+      "enable_profiler": false,
+      "tensorboard_freq": 1000,
+      "tensorboard_log_dir": "./tb_log",
+      "profiling": false,
+      "profiling_file": "./timeline.json",
+      "zero_stage": 3,
+      "seed": 10
+    },
+    "training_data": {
+      "batch_size": "auto:128"
+    },
+    "validation_data": {
+      "batch_size": "auto:128",
+      "numb_batch": 128
+    },
+    "validating": {
+      "compiled_infer": false,
+      "tf32_infer": false,
+      "amp_infer": false,
+      "save_best_dir": "./output_model/ckpt_best"
+    },
+    "model_fields": {
+      "type": "SeZM",
+      "lora": {
+        "rank": 16,
+        "alpha": 16.0
+      },
+      "use_compile": false,
+      "enable_tf32": true,
+      "_comment": "that's all"
+    }
+  },
+  "PBEsol": {
+    "learning_rate": {
+      "type": "cosine",
+      "start_lr": 0.0001,
+      "stop_lr": 1e-06,
+      "warmup_ratio": 0.003,
+      "warmup_start_factor": 0.2
+    },
+    "loss": {
+      "type": "ener",
+      "loss_func": "mae",
+      "f_use_norm": true,
+      "start_pref_e": 20,
+      "limit_pref_e": 20,
+      "start_pref_f": 20,
+      "limit_pref_f": 20,
+      "start_pref_v": 5,
+      "limit_pref_v": 5
+    },
+    "optimizer": {
+      "type": "HybridMuon",
+      "muon_mode": "slice",
+      "enable_gram": false,
+      "magma_muon": false,
+      "lr_adjust": 0.0,
+      "weight_decay": 0.01
+    },
+    "training": {
+      "stat_file_mode": "update",
+      "num_epochs": 50,
+      "gradient_max_norm": 5,
+      "save_freq": 5000,
+      "save_dir": "./output_model/ckpt",
+      "max_ckpt_keep": 5,
+      "enable_ema": false,
+      "ema_decay": 0.999,
+      "ema_ckpt_keep": 5,
+      "disp_file": "./lcurve.out",
+      "disp_freq": 100,
+      "disp_avg": true,
+      "disp_training": true,
+      "time_training": true,
+      "tensorboard": false,
+      "enable_profiler": false,
+      "tensorboard_freq": 1000,
+      "tensorboard_log_dir": "./tb_log",
+      "profiling": false,
+      "profiling_file": "./timeline.json",
+      "zero_stage": 3,
+      "seed": 10
+    },
+    "training_data": {
+      "batch_size": "auto:128"
+    },
+    "validation_data": {
+      "batch_size": "auto:128",
+      "numb_batch": 128
+    },
+    "validating": {
+      "compiled_infer": false,
+      "tf32_infer": false,
+      "amp_infer": false,
+      "save_best_dir": "./output_model/ckpt_best"
+    },
+    "model_fields": {
+      "type": "SeZM",
+      "lora": {
+        "rank": 16,
+        "alpha": 16.0
+      },
+      "use_compile": false,
+      "enable_tf32": true,
+      "_comment": "that's all"
+    }
+  },
+  "r2SCAN": {
+    "learning_rate": {
+      "type": "cosine",
+      "start_lr": 0.0001,
+      "stop_lr": 1e-06,
+      "warmup_ratio": 0.003,
+      "warmup_start_factor": 0.2
+    },
+    "loss": {
+      "type": "ener",
+      "loss_func": "mae",
+      "f_use_norm": true,
+      "start_pref_e": 20,
+      "limit_pref_e": 20,
+      "start_pref_f": 20,
+      "limit_pref_f": 20,
+      "start_pref_v": 5,
+      "limit_pref_v": 5
+    },
+    "optimizer": {
+      "type": "HybridMuon",
+      "muon_mode": "slice",
+      "enable_gram": false,
+      "magma_muon": false,
+      "lr_adjust": 0.0,
+      "weight_decay": 0.01
+    },
+    "training": {
+      "stat_file_mode": "update",
+      "num_epochs": 50,
+      "gradient_max_norm": 5,
+      "save_freq": 5000,
+      "save_dir": "./output_model/ckpt",
+      "max_ckpt_keep": 5,
+      "enable_ema": false,
+      "ema_decay": 0.999,
+      "ema_ckpt_keep": 5,
+      "disp_file": "./lcurve.out",
+      "disp_freq": 100,
+      "disp_avg": true,
+      "disp_training": true,
+      "time_training": true,
+      "tensorboard": false,
+      "enable_profiler": false,
+      "tensorboard_freq": 1000,
+      "tensorboard_log_dir": "./tb_log",
+      "profiling": false,
+      "profiling_file": "./timeline.json",
+      "zero_stage": 3,
+      "seed": 10
+    },
+    "training_data": {
+      "batch_size": "auto:128"
+    },
+    "validation_data": {
+      "batch_size": "auto:128",
+      "numb_batch": 128
+    },
+    "validating": {
+      "compiled_infer": false,
+      "tf32_infer": false,
+      "amp_infer": false,
+      "save_best_dir": "./output_model/ckpt_best"
+    },
+    "model_fields": {
+      "type": "SeZM",
+      "lora": {
+        "rank": 16,
+        "alpha": 16.0
+      },
+      "use_compile": false,
+      "enable_tf32": true,
+      "_comment": "that's all"
+    }
+  }
+}

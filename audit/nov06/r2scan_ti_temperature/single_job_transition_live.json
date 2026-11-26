@@ -1,0 +1,41 @@
+{
+  "unix": 1793938616.745236,
+  "jobs": [
+    {
+      "id": "Ti_1873K",
+      "job_id": "20988268",
+      "scontrol": "JobId=20988268 JobName=Ti1873-visc-r2SCAN UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=897 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=Resources Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-06T07:46:57 EligibleTime=2026-11-06T07:46:57 AccrueTime=2026-11-06T07:46:57 StartTime=2026-11-06T11:23:36 EndTime=2026-11-07T07:23:36 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T09:16:50 Scheduler=Backfill:* Partition=v100 AllocNode:Sid=umt:2203327 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=tesla-a101 NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/job.sbatch WorkDir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K Comment=r2scan-ti-1873-20261106-01  StdErr=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-20988268.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1873K/allocation-20988268.log Power= TresPerNode=gres:gpu:a100:1 \n",
+      "error": "",
+      "completed": 0,
+      "progress": null,
+      "final": null
+    },
+    {
+      "id": "Ti_1941K",
+      "job_id": "20988269",
+      "scontrol": "JobId=20988269 JobName=Ti1941-visc-r2SCAN UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=897 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-06T07:46:59 EligibleTime=2026-11-06T07:46:59 AccrueTime=2026-11-06T07:46:59 StartTime=2026-11-07T07:23:00 EndTime=2026-11-08T03:23:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T09:16:50 Scheduler=Backfill:* Partition=v100 AllocNode:Sid=umt:2203482 ReqNodeList=(null) ExcNodeList=(null) NodeList= SchedNodeList=tesla-a101 NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1941K/job.sbatch WorkDir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1941K Comment=r2scan-ti-1941-20261106-01  StdErr=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1941K/allocation-20988269.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_1941K/allocation-20988269.log Power= TresPerNode=gres:gpu:a100:1 \n",
+      "error": "",
+      "completed": 0,
+      "progress": null,
+      "final": null
+    },
+    {
+      "id": "Ti_2000K",
+      "job_id": "20988270",
+      "scontrol": "JobId=20988270 JobName=Ti2000-visc-r2SCAN UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=897 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-06T07:47:01 EligibleTime=2026-11-06T07:47:01 AccrueTime=2026-11-06T07:47:01 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T09:16:50 Scheduler=Backfill:* Partition=v100 AllocNode:Sid=umt:2203569 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K/job.sbatch WorkDir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K Comment=r2scan-ti-2000-20261106-01  StdErr=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K/allocation-20988270.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2000K/allocation-20988270.log Power= TresPerNode=gres:gpu:a100:1 \n",
+      "error": "",
+      "completed": 0,
+      "progress": null,
+      "final": null
+    },
+    {
+      "id": "Ti_2100K",
+      "job_id": "20988271",
+      "scontrol": "JobId=20988271 JobName=Ti2100-visc-r2SCAN UserId=u3129(13129) GroupId=users(100) MCS_label=N/A Priority=897 Nice=0 Account=imet-2026-2 QOS=normal JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=20:00:00 TimeMin=N/A SubmitTime=2026-11-06T07:47:03 EligibleTime=2026-11-06T07:47:03 AccrueTime=2026-11-06T07:47:03 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T09:16:50 Scheduler=Backfill:* Partition=v100 AllocNode:Sid=umt:2203689 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=6 NumTasks=1 CPUs/Task=6 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=6,mem=32G,node=1,billing=16896,gres/gpu=1,gres/gpu:a100=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=6 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K/job.sbatch WorkDir=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K Comment=r2scan-ti-2100-20261106-01  StdErr=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K/allocation-20988271.log StdIn=/dev/null StdOut=/home6/u3129/tial-testsets/r2scan-ti-temperature-20261106-01/Ti_2100K/allocation-20988271.log Power= TresPerNode=gres:gpu:a100:1 \n",
+      "error": "",
+      "completed": 0,
+      "progress": null,
+      "final": null
+    }
+  ]
+}

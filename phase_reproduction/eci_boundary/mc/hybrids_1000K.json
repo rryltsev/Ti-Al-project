@@ -1,0 +1,15 @@
+{
+  "seed_offset": 1426000000,
+  "models": [
+    {"name": "static_paper_to_masked_t334", "base": "paper", "model": "static", "replace": {"effective": ["t334"]}},
+    {"name": "static_paper_to_masked_t123", "base": "paper", "model": "static", "replace": {"effective": ["t123"]}},
+    {"name": "static_paper_to_masked_t334_t123", "base": "paper", "model": "static", "replace": {"effective": ["t334", "t123"]}},
+    {"name": "static_masked_to_paper_t334_t123", "base": "masked", "model": "static", "replace": {"effective": ["t334", "t123"]}},
+    {"name": "static_paper_to_masked_all_pairs", "base": "paper", "model": "static", "replace": {"effective": ["p1", "p2", "p3", "p4", "p5", "p6", "p7"]}},
+    {"name": "HA_paper_to_masked_t334", "base": "paper", "model": "HA", "replace": {"effective": ["t334"]}},
+    {"name": "HA_paper_to_masked_t123", "base": "paper", "model": "HA", "replace": {"effective": ["t123"]}},
+    {"name": "HA_paper_to_masked_t334_t123", "base": "paper", "model": "HA", "replace": {"effective": ["t334", "t123"]}},
+    {"name": "HA_masked_to_paper_t334_t123", "base": "masked", "model": "HA", "replace": {"effective": ["t334", "t123"]}},
+    {"name": "HA_paper_to_masked_all_pairs", "base": "paper", "model": "HA", "replace": {"effective": ["p1", "p2", "p3", "p4", "p5", "p6", "p7"]}}
+  ]
+}

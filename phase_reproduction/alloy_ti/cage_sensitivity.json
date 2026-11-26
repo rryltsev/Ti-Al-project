@@ -1,0 +1,4957 @@
+{
+  "primary_cap": 0.4,
+  "temperature_K": 1000.0,
+  "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+  "geometry": {
+    "parent_nearest_neighbor_A": 2.861976137678654,
+    "mtp_radial_basis_min_dist_A": 1.68052,
+    "primary_lower_bound_A": 1.7171856826071925,
+    "distance_bound": "For parent-site separation d, both scaled Voronoi inequalities along the line of centers imply r_ij >= (1-cap)*d, hence r_min >= (1-cap)*d_parent_min.",
+    "interpretation": "At cap 0.40 the geometric lower bound exceeds the fitted radial basis min_dist. This input parameter is not an experimental or certified validity boundary."
+  },
+  "domain": "max_i,j 2*(r_i-R_i).(R_j-R_i)/|R_j-R_i|^2 < cap for each parent-neighbor plane",
+  "estimator": "Endpoint importance normalization relative to the unrestricted harmonic reference. In every anharmonic shift the matched harmonic normalization uses the identical cap and proposal samples.",
+  "scope": "Fixed-cell, site-confined observables. A wide-domain Student check covers the N8 interlayer orbit. Before targeted resampling, the independent N16 Student check disagreed with the initial Gaussian curvature. See targeted_comparison.json for the final high-statistics estimates at caps 0.35 and 0.40. Extreme tails with ESS close to one do not resolve free energies.",
+  "units": "N16 middle excess = [F3-(F2+F4)/2]*1000/16 meV/atom; cell F is canonical. SE is delete-one independent-group jackknife.",
+  "inputs_sha256": {
+    "cluster\\runs\\alloy-ti-n8-01\\outputs\\draws.tar.gz": "35d861881f341470ab9e72bd7510f9d7f307cd051e93731fb33e09e3c113ca92",
+    "cluster\\runs\\alloy-ti-tail-01\\outputs\\tail_samples.npz": "2252830d8cfba7e85568739865fd11456424011786abfaf233252c48587d321a",
+    "cluster\\runs\\alloy-ti-n16ti-01\\outputs\\n16_draws.tar.gz": "f5dff048770e76c5ce65c521b401a1e49e5e8b0502fad931b4f913913b6e428c",
+    "cluster\\runs\\alloy-ti-n16ref-01\\outputs\\n16_refined_draws.tar.gz": "61be744c3e3e698b9ed5ed4fae2d38e4ba3152c279691c4b1a04a4ad55f38726",
+    "cluster\\runs\\alloy-ti-n8-01\\outputs\\pilot.json": "7cf0b441673cf7a6ab231aa25e509435e277ed66cb7224e7add50f5c1f03a30e",
+    "cluster\\runs\\alloy-ti-n16ref-01\\outputs\\n16_refined.json": "0b1f83f3aab287deb0ae606e2036208093bda2d0c16540f1b5363a0ec08de36c",
+    "alloy_ti\\c46_N8_1000K.json": "ae7ccd9e801c5b6a6030baad3ad178731c8eb2ac1795b3a764be009fa195cb64",
+    "cluster\\runs\\alloy-ti-caged-01\\outputs\\caged_draws.tar.gz": "bb4267439d2adc5013c846b33b6a5a6cce2dcbfeedab5ad5ca52014155324366"
+  },
+  "caps": {
+    "0.35": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.099941345620581,
+          "se": 0.1345880910809203
+        },
+        "student_matched_shift_meV_atom": {
+          "value": 1.9912320045539045,
+          "se": 0.08767247704111271
+        },
+        "student_minus_gaussian_meV_atom": -0.1087093410666764,
+        "difference_se_meV_atom": 0.1606250836305791,
+        "gaussian_ess": 4483.941280859011,
+        "student_ess": 13058.418595763442,
+        "gaussian_largest_weight": 0.005083125582189805,
+        "student_largest_weight": 0.004809398049258225
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.59624828845756,
+              "se": 0.05231542534591956
+            },
+            "target_meV_atom": {
+              "value": 68.10388416787293,
+              "se": 0.15971385009272737
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.507635879415382,
+              "se": 0.13051051835192656
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.89255638915793,
+              "se": 0.0635979097324345
+            },
+            "target_meV_atom": {
+              "value": 90.21792674535867,
+              "se": 0.2090443049393628
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.325370356200729,
+              "se": 0.16472709052473125
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2085419946498135,
+          "se": 0.054072026369603926
+        },
+        "p_d019": {
+          "value": 0.9939590338332723,
+          "se": 8.679318909757878e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 5966.423108118289,
+            "largest_weight": 0.002882683029250789,
+            "accepted_draws": 15341,
+            "reference_probability": 0.9838731180906448,
+            "target_free_rel_global_ha_eV_cell": 0.01965868988411226,
+            "matched_anharmonic_shift_eV_cell": 0.018257654950688484,
+            "matched_shift_SE_eV_cell": 0.0009065969553793679,
+            "minimum_sampled_delta_eV_cell": -0.6219092643571731
+          },
+          "d019": {
+            "target_ess": 7469.573095136619,
+            "largest_weight": 0.0013400944722696466,
+            "accepted_draws": 16091,
+            "reference_probability": 0.9983308602780073,
+            "target_free_rel_global_ha_eV_cell": -0.0016594765778030905,
+            "matched_anharmonic_shift_eV_cell": -0.0018034320846352907,
+            "matched_shift_SE_eV_cell": 0.0004356248132392834,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4483.941280859011,
+            "largest_weight": 0.005083125582189805,
+            "accepted_draws": 15208,
+            "reference_probability": 0.9901836431661175,
+            "target_free_rel_global_ha_eV_cell": 0.01764961818826251,
+            "matched_anharmonic_shift_eV_cell": 0.016799530764964647,
+            "matched_shift_SE_eV_cell": 0.0010767047286473622,
+            "minimum_sampled_delta_eV_cell": -0.6477257369507186
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.59624828845756,
+              "se": 0.05231542534591956
+            },
+            "target_meV_atom": {
+              "value": 68.10388416787293,
+              "se": 0.15971385009272737
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.507635879415382,
+              "se": 0.13051051835192656
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.82356454876528,
+              "se": 0.047134953150954485
+            },
+            "target_meV_atom": {
+              "value": 90.04022556389835,
+              "se": 0.10235746906073465
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.21666101513307,
+              "se": 0.08689049572919576
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2086061888775248,
+          "se": 0.0541280857277347
+        },
+        "p_d019": {
+          "value": 0.993947672712317,
+          "se": 8.426985425355224e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 5966.423108118289,
+            "largest_weight": 0.002882683029250789,
+            "accepted_draws": 15341,
+            "reference_probability": 0.9838731180906448,
+            "target_free_rel_global_ha_eV_cell": 0.01965868988411226,
+            "matched_anharmonic_shift_eV_cell": 0.018257654950688484,
+            "matched_shift_SE_eV_cell": 0.0009065969553793679,
+            "minimum_sampled_delta_eV_cell": -0.6219092643571731
+          },
+          "d019": {
+            "target_ess": 7469.573095136619,
+            "largest_weight": 0.0013400944722696466,
+            "accepted_draws": 16091,
+            "reference_probability": 0.9983308602780073,
+            "target_free_rel_global_ha_eV_cell": -0.0016594765778030905,
+            "matched_anharmonic_shift_eV_cell": -0.0018034320846352907,
+            "matched_shift_SE_eV_cell": 0.0004356248132392834,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 13058.418595763442,
+            "largest_weight": 0.004809398049258225,
+            "accepted_draws": 56955,
+            "reference_probability": 0.9965460602086157,
+            "target_free_rel_global_ha_eV_cell": 0.01622800873658517,
+            "matched_anharmonic_shift_eV_cell": 0.015929856036431236,
+            "matched_shift_SE_eV_cell": 0.0007013798163289016,
+            "minimum_sampled_delta_eV_cell": -1.0354152243433115
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7900220916881,
+              "se": 0.0006297796956158582
+            },
+            "target_config_eV_cell": {
+              "value": -115.80573818346068,
+              "se": 0.0029881320913096223
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -0.9822557357859196,
+              "se": 0.15591962427979947
+            },
+            "joint_ess": 1661.6577810201165,
+            "worst_ess": 519.0785587320587,
+            "largest_joint_weight": 0.005035041204297632,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52029406710666,
+              "se": 0.00043547815088195655
+            },
+            "target_config_eV_cell": {
+              "value": -112.53551519290701,
+              "se": 0.001773827319389952
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -0.9513203625219901,
+              "se": 0.10265254985156892
+            },
+            "joint_ess": 1307.0615125818574,
+            "worst_ess": 74.58829111443308,
+            "largest_joint_weight": 0.011926222840549502,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.2851719499429,
+              "se": 0.0004582584282097396
+            },
+            "target_config_eV_cell": {
+              "value": -109.31784846072546,
+              "se": 0.0008462726441433128
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.042281923909428,
+              "se": 0.0458789205104755
+            },
+            "joint_ess": 584.0838528965838,
+            "worst_ess": 95.13720823048489,
+            "largest_joint_weight": 0.021560928925886385,
+            "orbit_issues": {
+              "k04_0-1-4-5": {
+                "ess": 95.13720823048489,
+                "largest_weight": 0.10093323420407814
+              }
+            }
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.081434606802656,
+          "se": 0.03243363578438611
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.6423830741283396,
+          "se": 0.07021293552716873
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.5609484673256837,
+          "se": 0.05148313115530293
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03460590741768499,
+          "se": 0.0010378763451003555
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.05255625837210687,
+          "se": 0.002246813936869399
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.01795035095442188,
+          "se": 0.0016474601969696937
+        }
+      }
+    },
+    "0.40": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.054355786359524,
+          "se": 0.14941633022261336
+        },
+        "student_matched_shift_meV_atom": {
+          "value": 1.9712671150822434,
+          "se": 0.08644545041003777
+        },
+        "student_minus_gaussian_meV_atom": -0.08308867127728048,
+        "difference_se_meV_atom": 0.17262113321892933,
+        "gaussian_ess": 4392.742804815779,
+        "student_ess": 13056.746796354199,
+        "gaussian_largest_weight": 0.005037877910925538,
+        "student_largest_weight": 0.004780153553577335
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.5504925309005,
+              "se": 0.05285644229470625
+            },
+            "target_meV_atom": {
+              "value": 68.07434730640338,
+              "se": 0.16373832671698638
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.523854775502876,
+              "se": 0.13050061723974782
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.84535140987782,
+              "se": 0.06197193265000439
+            },
+            "target_meV_atom": {
+              "value": 90.12718589568713,
+              "se": 0.22441000676488312
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.28183448580932,
+              "se": 0.17953012341330343
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.210463025031693,
+          "se": 0.054063541241853544
+        },
+        "p_d019": {
+          "value": 0.9939386442656486,
+          "se": 9.001504487212122e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 5998.069319262448,
+            "largest_weight": 0.002873302340832324,
+            "accepted_draws": 16072,
+            "reference_probability": 0.9883845240729933,
+            "target_free_rel_global_ha_eV_cell": 0.01937781151246764,
+            "matched_anharmonic_shift_eV_cell": 0.018371008608415427,
+            "matched_shift_SE_eV_cell": 0.0008991170621966201,
+            "minimum_sampled_delta_eV_cell": -0.6368298317756027
+          },
+          "d019": {
+            "target_ess": 7476.375169037176,
+            "largest_weight": 0.0013394013271818231,
+            "accepted_draws": 16323,
+            "reference_probability": 0.9986574523238907,
+            "target_free_rel_global_ha_eV_cell": -0.001704060057689807,
+            "matched_anharmonic_shift_eV_cell": -0.0018198295956059754,
+            "matched_shift_SE_eV_cell": 0.0004356699066788622,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4392.742804815779,
+            "largest_weight": 0.005037877910925538,
+            "accepted_draws": 16064,
+            "reference_probability": 0.9948578244616487,
+            "target_free_rel_global_ha_eV_cell": 0.016879107911012752,
+            "matched_anharmonic_shift_eV_cell": 0.01643484629087619,
+            "matched_shift_SE_eV_cell": 0.001195330641780907,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.5504925309005,
+              "se": 0.05285644229470625
+            },
+            "target_meV_atom": {
+              "value": 68.07434730640338,
+              "se": 0.16373832671698638
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.523854775502876,
+              "se": 0.13050061723974782
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.78135348457283,
+              "se": 0.047208676860198716
+            },
+            "target_meV_atom": {
+              "value": 89.98009929910555,
+              "se": 0.10165970929658746
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.198745814532721,
+              "se": 0.08327603629269523
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.21051076125644386,
+          "se": 0.05412799753269287
+        },
+        "p_d019": {
+          "value": 0.9939291747716686,
+          "se": 8.63497254334387e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 5998.069319262448,
+            "largest_weight": 0.002873302340832324,
+            "accepted_draws": 16072,
+            "reference_probability": 0.9883845240729933,
+            "target_free_rel_global_ha_eV_cell": 0.01937781151246764,
+            "matched_anharmonic_shift_eV_cell": 0.018371008608415427,
+            "matched_shift_SE_eV_cell": 0.0008991170621966201,
+            "minimum_sampled_delta_eV_cell": -0.6368298317756027
+          },
+          "d019": {
+            "target_ess": 7476.375169037176,
+            "largest_weight": 0.0013394013271818231,
+            "accepted_draws": 16323,
+            "reference_probability": 0.9986574523238907,
+            "target_free_rel_global_ha_eV_cell": -0.001704060057689807,
+            "matched_anharmonic_shift_eV_cell": -0.0018198295956059754,
+            "matched_shift_SE_eV_cell": 0.0004356699066788622,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 13056.746796354199,
+            "largest_weight": 0.004780153553577335,
+            "accepted_draws": 59950,
+            "reference_probability": 1.000786187533443,
+            "target_free_rel_global_ha_eV_cell": 0.015702415138359408,
+            "matched_anharmonic_shift_eV_cell": 0.015770136920657946,
+            "matched_shift_SE_eV_cell": 0.0006915636032803022,
+            "minimum_sampled_delta_eV_cell": -1.4091423972994406
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7915893888136,
+              "se": 0.0005576743727882254
+            },
+            "target_config_eV_cell": {
+              "value": -115.80971729659173,
+              "se": 0.0018873870775358585
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1329942361326673,
+              "se": 0.0966166100944681
+            },
+            "joint_ess": 1395.6887467999677,
+            "worst_ess": 532.1204765150653,
+            "largest_joint_weight": 0.011676810133809879,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52136798760652,
+              "se": 0.0003920493939953934
+            },
+            "target_config_eV_cell": {
+              "value": -112.53721513566957,
+              "se": 0.001286918662910635
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -0.9904467539403328,
+              "se": 0.07567452631527623
+            },
+            "joint_ess": 1333.8785934494526,
+            "worst_ess": 77.58761746674129,
+            "largest_joint_weight": 0.011693259436008015,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.2854506636821,
+              "se": 0.00041870184289797776
+            },
+            "target_config_eV_cell": {
+              "value": -109.31949171669137,
+              "se": 0.0009154992864826475
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1275658130797126,
+              "se": 0.05688545185211549
+            },
+            "joint_ess": 540.7303703900369,
+            "worst_ess": 104.36410969751788,
+            "largest_joint_weight": 0.021153674742578635,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0720024150829843,
+          "se": 0.027837622719628554
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7118356857488415,
+          "se": 0.09324143460162208
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.6398332706658572,
+          "se": 0.09038460268385604
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.0343040772826555,
+          "se": 0.0008908039270281137
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.05477874194396293,
+          "se": 0.002983725907251907
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02047466466130743,
+          "se": 0.002892307285883393
+        }
+      }
+    },
+    "0.45": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051785642215005,
+          "se": 0.14776164917001472
+        },
+        "student_matched_shift_meV_atom": {
+          "value": 1.954832888645132,
+          "se": 0.09101459141306642
+        },
+        "student_minus_gaussian_meV_atom": -0.09695275356987287,
+        "difference_se_meV_atom": 0.17354296533000102,
+        "gaussian_ess": 4396.648196834916,
+        "student_ess": 13006.622992143286,
+        "gaussian_largest_weight": 0.005034506317703884,
+        "student_largest_weight": 0.0047711252863352205
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54464279672612,
+              "se": 0.05322137283736219
+            },
+            "target_meV_atom": {
+              "value": 68.07149732309092,
+              "se": 0.16392147149084982
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.526854526364808,
+              "se": 0.13057544004582355
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.84089853092247,
+              "se": 0.06187224754169097
+            },
+            "target_meV_atom": {
+              "value": 90.12038914795272,
+              "se": 0.2231811988748768
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.2794906170302554,
+              "se": 0.17856261098992482
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.21066586193629888,
+          "se": 0.054110864978758715
+        },
+        "p_d019": {
+          "value": 0.9939367975777642,
+          "se": 9.007250265842621e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6001.3939254576135,
+            "largest_weight": 0.0028724316600357304,
+            "accepted_draws": 16301,
+            "reference_probability": 0.988938717461891,
+            "target_free_rel_global_ha_eV_cell": 0.019351694930511372,
+            "matched_anharmonic_shift_eV_cell": 0.01839319641239407,
+            "matched_shift_SE_eV_cell": 0.0009008712567483007,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.94137677002,
+            "largest_weight": 0.0013393497761107476,
+            "accepted_draws": 16374,
+            "reference_probability": 0.9986749113577339,
+            "target_free_rel_global_ha_eV_cell": -0.001707376773146997,
+            "matched_anharmonic_shift_eV_cell": -0.0018216397985187165,
+            "matched_shift_SE_eV_cell": 0.0004360375139548107,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4396.648196834916,
+            "largest_weight": 0.005034506317703884,
+            "accepted_draws": 16315,
+            "reference_probability": 0.9952865716790009,
+            "target_free_rel_global_ha_eV_cell": 0.016821417213674122,
+            "matched_anharmonic_shift_eV_cell": 0.01641428513772004,
+            "matched_shift_SE_eV_cell": 0.0011820931933601178,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54464279672612,
+              "se": 0.05322137283736219
+            },
+            "target_meV_atom": {
+              "value": 68.07149732309092,
+              "se": 0.16392147149084982
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.526854526364808,
+              "se": 0.13057544004582355
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77761236171955,
+              "se": 0.047387257348679775
+            },
+            "target_meV_atom": {
+              "value": 89.96015022517945,
+              "se": 0.10389514726707008
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.182537863459899,
+              "se": 0.08704034670491849
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.21072350356554637,
+          "se": 0.05417751082955735
+        },
+        "p_d019": {
+          "value": 0.9939264685485898,
+          "se": 8.660075526525281e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6001.3939254576135,
+            "largest_weight": 0.0028724316600357304,
+            "accepted_draws": 16301,
+            "reference_probability": 0.988938717461891,
+            "target_free_rel_global_ha_eV_cell": 0.019351694930511372,
+            "matched_anharmonic_shift_eV_cell": 0.01839319641239407,
+            "matched_shift_SE_eV_cell": 0.0009008712567483007,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.94137677002,
+            "largest_weight": 0.0013393497761107476,
+            "accepted_draws": 16374,
+            "reference_probability": 0.9986749113577339,
+            "target_free_rel_global_ha_eV_cell": -0.001707376773146997,
+            "matched_anharmonic_shift_eV_cell": -0.0018216397985187165,
+            "matched_shift_SE_eV_cell": 0.0004360375139548107,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 13006.622992143286,
+            "largest_weight": 0.0047711252863352205,
+            "accepted_draws": 61830,
+            "reference_probability": 1.0011513347031185,
+            "target_free_rel_global_ha_eV_cell": 0.015539505831490993,
+            "matched_anharmonic_shift_eV_cell": 0.015638663109161056,
+            "matched_shift_SE_eV_cell": 0.0007281167313045314,
+            "minimum_sampled_delta_eV_cell": -1.5439576028135047
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.79182819910754,
+              "se": 0.0005793696529876067
+            },
+            "target_config_eV_cell": {
+              "value": -115.81010910832605,
+              "se": 0.001812073143095512
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1425568261564933,
+              "se": 0.09199470592314674
+            },
+            "joint_ess": 1406.6026111942465,
+            "worst_ess": 531.6453220601076,
+            "largest_joint_weight": 0.011623838688814192,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52146991039851,
+              "se": 0.0003543965800293129
+            },
+            "target_config_eV_cell": {
+              "value": -112.53747862008197,
+              "se": 0.001150423991801084
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0005443552163484,
+              "se": 0.06797523412938017
+            },
+            "joint_ess": 1337.9832522094903,
+            "worst_ess": 78.30018536123312,
+            "largest_joint_weight": 0.011657560617589957,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547658108691,
+              "se": 0.00041625969822380824
+            },
+            "target_config_eV_cell": {
+              "value": -109.3195733946238,
+              "se": 0.000869520244629789
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.131050846055693,
+              "se": 0.054954636380346006
+            },
+            "joint_ess": 541.6185335733645,
+            "worst_ess": 106.9932310342789,
+            "largest_joint_weight": 0.021133634089689015,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.073904981169882,
+          "se": 0.026271761166767372
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7101644620596268,
+          "se": 0.08448303110382915
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.6362594808897448,
+          "se": 0.08312072395384
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436495939743622,
+          "se": 0.0008406963573365559
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.05472526278590806,
+          "se": 0.002703456995322533
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.020360303388471834,
+          "se": 0.00265986316652288
+        }
+      }
+    },
+    "0.50": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.05129736736214,
+          "se": 0.1476379045271849
+        },
+        "student_matched_shift_meV_atom": {
+          "value": 1.9527793117516266,
+          "se": 0.09136820726571339
+        },
+        "student_minus_gaussian_meV_atom": -0.09851805561051363,
+        "difference_se_meV_atom": 0.17362344355566883,
+        "gaussian_ess": 4397.373366290215,
+        "student_ess": 13009.50627906611,
+        "gaussian_largest_weight": 0.005034065278824973,
+        "student_largest_weight": 0.004770110053577802
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54414312502121,
+              "se": 0.053098037152657075
+            },
+            "target_meV_atom": {
+              "value": 68.069205702038,
+              "se": 0.16309335565886116
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.52506257701679,
+              "se": 0.12962779502176477
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.84044484587383,
+              "se": 0.061844323405752466
+            },
+            "target_meV_atom": {
+              "value": 90.11944723406717,
+              "se": 0.2230538663625945
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.2790023881933408,
+              "se": 0.17847921366107947
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106750926067491,
+          "se": 0.05410771977642225
+        },
+        "p_d019": {
+          "value": 0.9939356017168449,
+          "se": 8.974647317044543e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.944335195124,
+            "largest_weight": 0.002871820159586108,
+            "accepted_draws": 16359,
+            "reference_probability": 0.9889847503762127,
+            "target_free_rel_global_ha_eV_cell": 0.0193333478825416,
+            "matched_anharmonic_shift_eV_cell": 0.018378860449486577,
+            "matched_shift_SE_eV_cell": 0.0008897811927773157,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.943819602947,
+            "largest_weight": 0.0013393495572793016,
+            "accepted_draws": 16381,
+            "reference_probability": 0.9986750702613111,
+            "target_free_rel_global_ha_eV_cell": -0.0017073908526928033,
+            "matched_anharmonic_shift_eV_cell": -0.0018216401666459581,
+            "matched_shift_SE_eV_cell": 0.00043604058727430547,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.373366290215,
+            "largest_weight": 0.005034065278824973,
+            "accepted_draws": 16369,
+            "reference_probability": 0.9953286507819462,
+            "target_free_rel_global_ha_eV_cell": 0.016813867823043827,
+            "matched_anharmonic_shift_eV_cell": 0.016410378938897123,
+            "matched_shift_SE_eV_cell": 0.0011811032362174791,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54414312502121,
+              "se": 0.053098037152657075
+            },
+            "target_meV_atom": {
+              "value": 68.069205702038,
+              "se": 0.16309335565886116
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.52506257701679,
+              "se": 0.12962779502176477
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.7773753395612,
+              "se": 0.047435780547688856
+            },
+            "target_meV_atom": {
+              "value": 89.95785967214331,
+              "se": 0.1035442430229881
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.180484332582111,
+              "se": 0.08701931447488624
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2107338773642553,
+          "se": 0.05417484421685456
+        },
+        "p_d019": {
+          "value": 0.9939251842155794,
+          "se": 8.617830223573954e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.944335195124,
+            "largest_weight": 0.002871820159586108,
+            "accepted_draws": 16359,
+            "reference_probability": 0.9889847503762127,
+            "target_free_rel_global_ha_eV_cell": 0.0193333478825416,
+            "matched_anharmonic_shift_eV_cell": 0.018378860449486577,
+            "matched_shift_SE_eV_cell": 0.0008897811927773157,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.943819602947,
+            "largest_weight": 0.0013393495572793016,
+            "accepted_draws": 16381,
+            "reference_probability": 0.9986750702613111,
+            "target_free_rel_global_ha_eV_cell": -0.0017073908526928033,
+            "matched_anharmonic_shift_eV_cell": -0.0018216401666459581,
+            "matched_shift_SE_eV_cell": 0.00043604058727430547,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 13009.50627906611,
+            "largest_weight": 0.004770110053577802,
+            "accepted_draws": 63040,
+            "reference_probability": 1.0011735238042776,
+            "target_free_rel_global_ha_eV_cell": 0.015521167327658602,
+            "matched_anharmonic_shift_eV_cell": 0.015622234494013013,
+            "matched_shift_SE_eV_cell": 0.0007309456581257071,
+            "minimum_sampled_delta_eV_cell": -3.4333047127482734
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.79183541654228,
+              "se": 0.0005802739862730815
+            },
+            "target_config_eV_cell": {
+              "value": -115.81012561292607,
+              "se": 0.0018081650074552303
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1431372739867385,
+              "se": 0.09201280584181663
+            },
+            "joint_ess": 1407.1320461827345,
+            "worst_ess": 532.9152334423749,
+            "largest_joint_weight": 0.011621612612236737,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147412482628,
+              "se": 0.000354376187459424
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749451796621,
+              "se": 0.0011506886451770593
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0012745712453253,
+              "se": 0.06801451996101636
+            },
+            "joint_ess": 1338.4651244709116,
+            "worst_ess": 78.63058802801889,
+            "largest_joint_weight": 0.011655410144246101,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547706122202,
+              "se": 0.00041624074012651207
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957454116734,
+              "se": 0.0008694353730806468
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310924965822764,
+              "se": 0.05493337574657332
+            },
+            "joint_ess": 541.6329338951666,
+            "worst_ess": 107.13283392377318,
+            "largest_joint_weight": 0.021133352906754287,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0738821284919098,
+          "se": 0.026277957377897697
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.709722442531092,
+          "se": 0.08461456170461375
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.6358403140391822,
+          "se": 0.08337346003056695
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436422811174111,
+          "se": 0.0008408946360927263
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.05471111816099494,
+          "se": 0.00270766597454764
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02034689004925383,
+          "se": 0.0026679507209781423
+        }
+      }
+    },
+    "0.55": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.0513158981344857,
+          "se": 0.14763246618435272
+        },
+        "student_matched_shift_meV_atom": {
+          "value": 1.9527478187016698,
+          "se": 0.0913688032038449
+        },
+        "student_minus_gaussian_meV_atom": -0.09856807943281587,
+        "difference_se_meV_atom": 0.173619132789497,
+        "gaussian_ess": 4397.389617835748,
+        "student_ess": 13009.60176297445,
+        "gaussian_largest_weight": 0.005034055954640525,
+        "student_largest_weight": 0.004770092428779157
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.5440088911785,
+              "se": 0.053084852758162736
+            },
+            "target_meV_atom": {
+              "value": 68.06917917232002,
+              "se": 0.16309180594340242
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.52517028114152,
+              "se": 0.1296677002256706
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.84040642557756,
+              "se": 0.06186898757703489
+            },
+            "target_meV_atom": {
+              "value": 90.11942763231495,
+              "se": 0.22304985192312424
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021206737397,
+              "se": 0.178469552229276
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.21067459360679663,
+          "se": 0.054107738355847076
+        },
+        "p_d019": {
+          "value": 0.9939355873146435,
+          "se": 8.974607413578134e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.974219998571,
+            "largest_weight": 0.0028718129932981335,
+            "accepted_draws": 16381,
+            "reference_probability": 0.9889970806254825,
+            "target_free_rel_global_ha_eV_cell": 0.019333132846900976,
+            "matched_anharmonic_shift_eV_cell": 0.018379719780308775,
+            "matched_shift_SE_eV_cell": 0.0008900521363512673,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.944305078341,
+            "largest_weight": 0.001339349513792987,
+            "accepted_draws": 16383,
+            "reference_probability": 0.9986750760063551,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936505887593,
+            "matched_anharmonic_shift_eV_cell": -0.001821642468815522,
+            "matched_shift_SE_eV_cell": 0.0004360420675279828,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389617835748,
+            "largest_weight": 0.005034055954640525,
+            "accepted_draws": 16382,
+            "reference_probability": 0.9953322066445046,
+            "target_free_rel_global_ha_eV_cell": 0.016813708211130277,
+            "matched_anharmonic_shift_eV_cell": 0.016410527185075886,
+            "matched_shift_SE_eV_cell": 0.0011810597294748218,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.5440088911785,
+              "se": 0.053084852758162736
+            },
+            "target_meV_atom": {
+              "value": 68.06917917232002,
+              "se": 0.16309180594340242
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.52517028114152,
+              "se": 0.1296677002256706
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77736709490736,
+              "se": 0.047435469049718744
+            },
+            "target_meV_atom": {
+              "value": 89.9578202222111,
+              "se": 0.10355456192778269
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.1804531273037497,
+              "se": 0.08702522409799707
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.21073341831989723,
+          "se": 0.0541748426599688
+        },
+        "p_d019": {
+          "value": 0.9939251685054585,
+          "se": 8.617861222816468e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.974219998571,
+            "largest_weight": 0.0028718129932981335,
+            "accepted_draws": 16381,
+            "reference_probability": 0.9889970806254825,
+            "target_free_rel_global_ha_eV_cell": 0.019333132846900976,
+            "matched_anharmonic_shift_eV_cell": 0.018379719780308775,
+            "matched_shift_SE_eV_cell": 0.0008900521363512673,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.944305078341,
+            "largest_weight": 0.001339349513792987,
+            "accepted_draws": 16383,
+            "reference_probability": 0.9986750760063551,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936505887593,
+            "matched_anharmonic_shift_eV_cell": -0.001821642468815522,
+            "matched_shift_SE_eV_cell": 0.0004360420675279828,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 13009.60176297445,
+            "largest_weight": 0.004770092428779157,
+            "accepted_draws": 63800,
+            "reference_probability": 1.0011742958641112,
+            "target_free_rel_global_ha_eV_cell": 0.015520848930299877,
+            "matched_anharmonic_shift_eV_cell": 0.015621982549613358,
+            "matched_shift_SE_eV_cell": 0.0007309504256307592,
+            "minimum_sampled_delta_eV_cell": -3.4333047127482734
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.79183716279694,
+              "se": 0.0005795942080504033
+            },
+            "target_config_eV_cell": {
+              "value": -115.81012736456468,
+              "se": 0.001807711041117802
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.143137610483791,
+              "se": 0.09199081869442037
+            },
+            "joint_ess": 1407.189038577091,
+            "worst_ess": 533.1389897298537,
+            "largest_joint_weight": 0.011621376383024464,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436111156,
+              "se": 0.00035442639021761584
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749540485582,
+              "se": 0.001150585080948405
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0013152340162534,
+              "se": 0.06800794286237624
+            },
+            "joint_ess": 1338.4926309584525,
+            "worst_ess": 78.65569425079431,
+            "largest_joint_weight": 0.011655290188239527,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711762955,
+              "se": 0.00041623077567237243
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957457712078,
+              "se": 0.0008694565055001339
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310912182013197,
+              "se": 0.054933035135399634
+            },
+            "joint_ess": 541.6333858463101,
+            "worst_ess": 107.15254063276973,
+            "largest_joint_weight": 0.021133344089451504,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739236938555052,
+          "se": 0.02627190567205267
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7097228741818071,
+          "se": 0.08462180626861267
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.6357991803263019,
+          "se": 0.08334210039815376
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436555820337617,
+          "se": 0.0008407009815056854
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.05471113197381783,
+          "se": 0.0027078978005956053
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02034557377044166,
+          "se": 0.0026669472127409206
+        }
+      }
+    },
+    "0.60": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051316011526554,
+          "se": 0.14763246241965067
+        },
+        "student_matched_shift_meV_atom": {
+          "value": 1.9526385451897206,
+          "se": 0.09132952199052649
+        },
+        "student_minus_gaussian_meV_atom": -0.09867746633683327,
+        "difference_se_meV_atom": 0.1735984606703286,
+        "gaussian_ess": 4397.389775336285,
+        "student_ess": 13009.849991031097,
+        "gaussian_largest_weight": 0.005034055864485024,
+        "student_largest_weight": 0.0047700440057274725
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.8404061235747,
+              "se": 0.061869016411537144
+            },
+            "target_meV_atom": {
+              "value": 90.11942743953315,
+              "se": 0.22304989355411142
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021315958474,
+              "se": 0.17846958405013363
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106745794590026,
+          "se": 0.05410774198659955
+        },
+        "p_d019": {
+          "value": 0.9939355852243806,
+          "se": 8.974720649944342e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389775336285,
+            "largest_weight": 0.005034055864485024,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9953322349477719,
+            "target_free_rel_global_ha_eV_cell": 0.016813706667841915,
+            "matched_anharmonic_shift_eV_cell": 0.01641052809221243,
+            "matched_shift_SE_eV_cell": 0.0011810596993572053,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.7773670248132,
+              "se": 0.04743546971953992
+            },
+            "target_meV_atom": {
+              "value": 89.95771087443583,
+              "se": 0.10350457195942092
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.1803438496226235,
+              "se": 0.08697316361417219
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.21073348121003477,
+          "se": 0.05417485816395228
+        },
+        "p_d019": {
+          "value": 0.9939251593250354,
+          "se": 8.617712769125083e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 13009.849991031097,
+            "largest_weight": 0.0047700440057274725,
+            "accepted_draws": 64290,
+            "reference_probability": 1.001174302778608,
+            "target_free_rel_global_ha_eV_cell": 0.015519974147057936,
+            "matched_anharmonic_shift_eV_cell": 0.015621108361517765,
+            "matched_shift_SE_eV_cell": 0.0007306361759242119,
+            "minimum_sampled_delta_eV_cell": -4.497289831783581
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7918371717315,
+              "se": 0.0005795886083063963
+            },
+            "target_config_eV_cell": {
+              "value": -115.81013712337996,
+              "se": 0.0018030326939229807
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.143746978028659,
+              "se": 0.09155689916501791
+            },
+            "joint_ess": 1407.4824057502856,
+            "worst_ess": 533.1389923386845,
+            "largest_joint_weight": 0.011620060379097989,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436457804,
+              "se": 0.0003544264832712056
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749544147338,
+              "se": 0.0011505946327694094
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.001317305958871,
+              "se": 0.06800847636994115
+            },
+            "joint_ess": 1338.4937681854558,
+            "worst_ess": 78.65569615156136,
+            "largest_joint_weight": 0.011655285235566757,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711809327,
+              "se": 0.0004162307101597354
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957457838777,
+              "se": 0.0008694573395472192
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.131091268406493,
+              "se": 0.054933071593564156
+            },
+            "joint_ess": 541.633401773418,
+            "worst_ess": 107.18822524296003,
+            "largest_joint_weight": 0.021133343778730235,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739237708965454,
+          "se": 0.026271869259360012
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7100255881552506,
+          "se": 0.08446392695246259
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.6361018172587052,
+          "se": 0.08320231964560627
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.034365560668689454,
+          "se": 0.0008406998162995204
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.05472081882096802,
+          "se": 0.002702845662478803
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.020355258152278566,
+          "se": 0.0026624742286594006
+        }
+      }
+    },
+    "0.65": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051316011526554,
+          "se": 0.14763246241965067
+        },
+        "student_matched_shift_meV_atom": {
+          "value": -2966.039047309009,
+          "se": 2598.303514769103
+        },
+        "student_minus_gaussian_meV_atom": -2968.0903633205357,
+        "difference_se_meV_atom": 2598.303518963252,
+        "gaussian_ess": 4397.389775336285,
+        "student_ess": 1.0,
+        "gaussian_largest_weight": 0.005034055864485024,
+        "student_largest_weight": 1.0
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.8404061235747,
+              "se": 0.061869016411537144
+            },
+            "target_meV_atom": {
+              "value": 90.11942743953315,
+              "se": 0.22304989355411142
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021315958474,
+              "se": 0.17846958405013363
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106745794590026,
+          "se": 0.05410774198659955
+        },
+        "p_d019": {
+          "value": 0.9939355852243806,
+          "se": 8.974720649944342e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389775336285,
+            "largest_weight": 0.005034055864485024,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9953322349477719,
+            "target_free_rel_global_ha_eV_cell": 0.016813706667841915,
+            "matched_anharmonic_shift_eV_cell": 0.01641052809221243,
+            "matched_shift_SE_eV_cell": 0.0011810596993572053,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77736702438065,
+              "se": 0.047435469944746594
+            },
+            "target_meV_atom": {
+              "value": -2878.0339749801965,
+              "se": 2598.249154935696
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2965.811342004577,
+              "se": 2598.281471093542
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -2890.0129580090697,
+          "se": 2529.851225307176
+        },
+        "p_d019": {
+          "value": 3.0595390117900398e-117,
+          "se": 0.8696723872099177
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 1.0,
+            "largest_weight": 1.0,
+            "accepted_draws": 64646,
+            "reference_probability": 1.0011743028188043,
+            "target_free_rel_global_ha_eV_cell": -23.728413512689993,
+            "matched_anharmonic_shift_eV_cell": -23.728312378472072,
+            "matched_shift_SE_eV_cell": 20.786428118152823,
+            "minimum_sampled_delta_eV_cell": -28.93895162977318
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.79183717262556,
+              "se": 0.0005795886087759947
+            },
+            "target_config_eV_cell": {
+              "value": -115.81013712341453,
+              "se": 0.0018030327238288634
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.14374692431074,
+              "se": 0.09155692366345444
+            },
+            "joint_ess": 1407.4824068796013,
+            "worst_ess": 533.1389996290898,
+            "largest_joint_weight": 0.011620060374436391,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436457804,
+              "se": 0.0003544264832712056
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749544147338,
+              "se": 0.0011505946327694094
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.001317305958871,
+              "se": 0.06800847636994115
+            },
+            "joint_ess": 1338.4937681854558,
+            "worst_ess": 78.65569615156136,
+            "largest_joint_weight": 0.011655285235566757,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711812695,
+              "se": 0.00041623069540984247
+            },
+            "target_config_eV_cell": {
+              "value": -109.319574578389,
+              "se": 0.0008694573386014948
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310912663778936,
+              "se": 0.054933072755023495
+            },
+            "joint_ess": 541.6334017887809,
+            "worst_ess": 107.18856354687044,
+            "largest_joint_weight": 0.02113334377843052,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739237998884654,
+          "se": 0.026271861848675353
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7100255892739114,
+          "se": 0.08446392714896682
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.6361017893854459,
+          "se": 0.08320233178152388
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.034365561596430894,
+          "se": 0.0008406995791576113
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.05472081885676516,
+          "se": 0.0027028456687669383
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02035525726033427,
+          "se": 0.002662474617008764
+        }
+      }
+    },
+    "0.70": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051316011526554,
+          "se": 0.14763246241965067
+        },
+        "student_matched_shift_meV_atom": {
+          "value": -2966.0390473083858,
+          "se": 2598.303514769144
+        },
+        "student_minus_gaussian_meV_atom": -2968.0903633199123,
+        "difference_se_meV_atom": 2598.303518963293,
+        "gaussian_ess": 4397.389775336285,
+        "student_ess": 1.0,
+        "gaussian_largest_weight": 0.005034055864485024,
+        "student_largest_weight": 1.0
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.8404061235747,
+              "se": 0.061869016411537144
+            },
+            "target_meV_atom": {
+              "value": 90.11942743953315,
+              "se": 0.22304989355411142
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021315958474,
+              "se": 0.17846958405013363
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106745794590026,
+          "se": 0.05410774198659955
+        },
+        "p_d019": {
+          "value": 0.9939355852243806,
+          "se": 8.974720649944342e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389775336285,
+            "largest_weight": 0.005034055864485024,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9953322349477719,
+            "target_free_rel_global_ha_eV_cell": 0.016813706667841915,
+            "matched_anharmonic_shift_eV_cell": 0.01641052809221243,
+            "matched_shift_SE_eV_cell": 0.0011810596993572053,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77736702375717,
+              "se": 0.04743547006509261
+            },
+            "target_meV_atom": {
+              "value": -2878.0339749801965,
+              "se": 2598.249154935648
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2965.8113420039535,
+              "se": 2598.2814710935822
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -2890.0129580090697,
+          "se": 2529.8512253071767
+        },
+        "p_d019": {
+          "value": 3.0595390117900398e-117,
+          "se": 0.8696723872099177
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 1.0,
+            "largest_weight": 1.0,
+            "accepted_draws": 64880,
+            "reference_probability": 1.0011743028767495,
+            "target_free_rel_global_ha_eV_cell": -23.728413512689993,
+            "matched_anharmonic_shift_eV_cell": -23.728312378467088,
+            "matched_shift_SE_eV_cell": 20.78642811815315,
+            "minimum_sampled_delta_eV_cell": -28.93895162977318
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7918371726256,
+              "se": 0.0005795886087901623
+            },
+            "target_config_eV_cell": {
+              "value": -115.81013712341519,
+              "se": 0.0018030327235217627
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1437469243489318,
+              "se": 0.09155692363665353
+            },
+            "joint_ess": 1407.4824069009474,
+            "worst_ess": 533.1389996290898,
+            "largest_joint_weight": 0.011620060374348243,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436457807,
+              "se": 0.00035442648325671006
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749544147338,
+              "se": 0.0011505946327694094
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0013173059570946,
+              "se": 0.0680084763708408
+            },
+            "joint_ess": 1338.4937681854558,
+            "worst_ess": 78.65569615156136,
+            "largest_joint_weight": 0.011655285235566757,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711813809,
+              "se": 0.0004162306911564268
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957457839232,
+              "se": 0.0008694573387184309
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310912658893955,
+              "se": 0.05493307264041047
+            },
+            "joint_ess": 541.6334018305831,
+            "worst_ess": 107.18856702544632,
+            "largest_joint_weight": 0.021133343777615006,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739238002361873,
+          "se": 0.026271861783128483
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7100255893982563,
+          "se": 0.0844639270832293
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.636101789162069,
+          "se": 0.08320233188600851
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436556160755799,
+          "se": 0.0008406995770601115
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.0547208188607442,
+          "se": 0.002702845666663338
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02035525725318621,
+          "se": 0.0026624746203522723
+        }
+      }
+    },
+    "0.75": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051316011526554,
+          "se": 0.14763246241965067
+        },
+        "student_matched_shift_meV_atom": {
+          "value": -23390.569456752906,
+          "se": 17840.48209716001
+        },
+        "student_minus_gaussian_meV_atom": -23392.620772764432,
+        "difference_se_meV_atom": 17840.482097770848,
+        "gaussian_ess": 4397.389775336285,
+        "student_ess": 1.0,
+        "gaussian_largest_weight": 0.005034055864485024,
+        "student_largest_weight": 1.0
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.8404061235747,
+              "se": 0.061869016411537144
+            },
+            "target_meV_atom": {
+              "value": 90.11942743953315,
+              "se": 0.22304989355411142
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021315958474,
+              "se": 0.17846958405013363
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106745794590026,
+          "se": 0.05410774198659955
+        },
+        "p_d019": {
+          "value": 0.9939355852243806,
+          "se": 8.974720649944342e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389775336285,
+            "largest_weight": 0.005034055864485024,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9953322349477719,
+            "target_free_rel_global_ha_eV_cell": 0.016813706667841915,
+            "matched_anharmonic_shift_eV_cell": 0.01641052809221243,
+            "matched_shift_SE_eV_cell": 0.0011810596993572053,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77736702375717,
+              "se": 0.047435470065433534
+            },
+            "target_meV_atom": {
+              "value": -23302.564384424717,
+              "se": 17840.456647087594
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -23390.341751448475,
+              "se": 17840.441647957883
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -23314.543367453593,
+          "se": 17840.497074868726
+        },
+        "p_d019": {
+          "value": 0.0,
+          "se": 8.731609049439158e-119
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 1.0,
+            "largest_weight": 1.0,
+            "accepted_draws": 65042,
+            "reference_probability": 1.0011743028767959,
+            "target_free_rel_global_ha_eV_cell": -187.12465678824617,
+            "matched_anharmonic_shift_eV_cell": -187.12455565402325,
+            "matched_shift_SE_eV_cell": 142.72385677728008,
+            "minimum_sampled_delta_eV_cell": -196.36084880120143
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7918371726256,
+              "se": 0.0005795886087901623
+            },
+            "target_config_eV_cell": {
+              "value": -115.81013712341519,
+              "se": 0.0018030327235217627
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1437469243489318,
+              "se": 0.09155692363665353
+            },
+            "joint_ess": 1407.4824069009474,
+            "worst_ess": 533.1389996290898,
+            "largest_joint_weight": 0.011620060374348243,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436457807,
+              "se": 0.00035442648325671006
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749544147338,
+              "se": 0.0011505946327694094
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0013173059570946,
+              "se": 0.0680084763708408
+            },
+            "joint_ess": 1338.4937681854558,
+            "worst_ess": 78.65569615156136,
+            "largest_joint_weight": 0.011655285235566757,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711813809,
+              "se": 0.0004162306911564268
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957457839232,
+              "se": 0.0008694573387184309
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310912658893955,
+              "se": 0.05493307264041047
+            },
+            "joint_ess": 541.6334018305831,
+            "worst_ess": 107.18856702544632,
+            "largest_joint_weight": 0.021133343777615006,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739238002361873,
+          "se": 0.026271861783128483
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7100255893982563,
+          "se": 0.0844639270832293
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.636101789162069,
+          "se": 0.08320233188600851
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436556160755799,
+          "se": 0.0008406995770601115
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.0547208188607442,
+          "se": 0.002702845666663338
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02035525725318621,
+          "se": 0.0026624746203522723
+        }
+      }
+    },
+    "0.80": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051316011526554,
+          "se": 0.14763246241965067
+        },
+        "student_matched_shift_meV_atom": {
+          "value": -490267.1258987365,
+          "se": 172685.439522568
+        },
+        "student_minus_gaussian_meV_atom": -490269.17721474805,
+        "difference_se_meV_atom": 172685.4395226311,
+        "gaussian_ess": 4397.389775336285,
+        "student_ess": 1.0,
+        "gaussian_largest_weight": 0.005034055864485024,
+        "student_largest_weight": 1.0
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.8404061235747,
+              "se": 0.061869016411537144
+            },
+            "target_meV_atom": {
+              "value": 90.11942743953315,
+              "se": 0.22304989355411142
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021315958474,
+              "se": 0.17846958405013363
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106745794590026,
+          "se": 0.05410774198659955
+        },
+        "p_d019": {
+          "value": 0.9939355852243806,
+          "se": 8.974720649944342e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389775336285,
+            "largest_weight": 0.005034055864485024,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9953322349477719,
+            "target_free_rel_global_ha_eV_cell": 0.016813706667841915,
+            "matched_anharmonic_shift_eV_cell": 0.01641052809221243,
+            "matched_shift_SE_eV_cell": 0.0011810596993572053,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77736702375717,
+              "se": 0.047435470065433534
+            },
+            "target_meV_atom": {
+              "value": -490179.1208264083,
+              "se": 172685.38516199891
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -490266.8981934321,
+              "se": 172685.4174782965
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -490191.0998094371,
+          "se": 172685.40742612688
+        },
+        "p_d019": {
+          "value": 0.0,
+          "se": 0.0
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 1.0,
+            "largest_weight": 1.0,
+            "accepted_draws": 65161,
+            "reference_probability": 1.0011743028767959,
+            "target_free_rel_global_ha_eV_cell": -3922.137108324115,
+            "matched_anharmonic_shift_eV_cell": -3922.1370071898923,
+            "matched_shift_SE_eV_cell": 1381.483516180544,
+            "minimum_sampled_delta_eV_cell": -3933.0175592315054
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7918371726256,
+              "se": 0.0005795886087901623
+            },
+            "target_config_eV_cell": {
+              "value": -115.81013712341519,
+              "se": 0.0018030327235217627
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1437469243489318,
+              "se": 0.09155692363665353
+            },
+            "joint_ess": 1407.4824069009474,
+            "worst_ess": 533.1389996290898,
+            "largest_joint_weight": 0.011620060374348243,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436457807,
+              "se": 0.00035442648325671006
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749544147338,
+              "se": 0.0011505946327694094
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0013173059570946,
+              "se": 0.0680084763708408
+            },
+            "joint_ess": 1338.4937681854558,
+            "worst_ess": 78.65569615156136,
+            "largest_joint_weight": 0.011655285235566757,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711813809,
+              "se": 0.0004162306911564268
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957457839232,
+              "se": 0.0008694573387184309
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310912658893955,
+              "se": 0.05493307264041047
+            },
+            "joint_ess": 541.6334018305831,
+            "worst_ess": 107.18856702544632,
+            "largest_joint_weight": 0.021133343777615006,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739238002361873,
+          "se": 0.026271861783128483
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7100255893982563,
+          "se": 0.0844639270832293
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.636101789162069,
+          "se": 0.08320233188600851
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436556160755799,
+          "se": 0.0008406995770601115
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.0547208188607442,
+          "se": 0.002702845666663338
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02035525725318621,
+          "se": 0.0026624746203522723
+        }
+      }
+    },
+    "0.85": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051316011526554,
+          "se": 0.14763246241965067
+        },
+        "student_matched_shift_meV_atom": {
+          "value": -1540003.162418118,
+          "se": 918519.0243224958
+        },
+        "student_minus_gaussian_meV_atom": -1540005.2137341294,
+        "difference_se_meV_atom": 918519.0243225077,
+        "gaussian_ess": 4397.389775336285,
+        "student_ess": 1.0,
+        "gaussian_largest_weight": 0.005034055864485024,
+        "student_largest_weight": 1.0
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.8404061235747,
+              "se": 0.061869016411537144
+            },
+            "target_meV_atom": {
+              "value": 90.11942743953315,
+              "se": 0.22304989355411142
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021315958474,
+              "se": 0.17846958405013363
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106745794590026,
+          "se": 0.05410774198659955
+        },
+        "p_d019": {
+          "value": 0.9939355852243806,
+          "se": 8.974720649944342e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389775336285,
+            "largest_weight": 0.005034055864485024,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9953322349477719,
+            "target_free_rel_global_ha_eV_cell": 0.016813706667841915,
+            "matched_anharmonic_shift_eV_cell": 0.01641052809221243,
+            "matched_shift_SE_eV_cell": 0.0011810596993572053,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77736702375717,
+              "se": 0.047435470065433534
+            },
+            "target_meV_atom": {
+              "value": -1539915.1573457895,
+              "se": 918519.009286931
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1540002.9347128135,
+              "se": 918519.0149590215
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -1539927.136328819,
+          "se": 918519.0188446714
+        },
+        "p_d019": {
+          "value": 0.0,
+          "se": 0.0
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 1.0,
+            "largest_weight": 1.0,
+            "accepted_draws": 65244,
+            "reference_probability": 1.0011743028767959,
+            "target_free_rel_global_ha_eV_cell": -12320.025400479166,
+            "matched_anharmonic_shift_eV_cell": -12320.025299344943,
+            "matched_shift_SE_eV_cell": 7348.152194579966,
+            "minimum_sampled_delta_eV_cell": -12334.33835217993
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7918371726256,
+              "se": 0.0005795886087901623
+            },
+            "target_config_eV_cell": {
+              "value": -115.81013712341519,
+              "se": 0.0018030327235217627
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1437469243489318,
+              "se": 0.09155692363665353
+            },
+            "joint_ess": 1407.4824069009474,
+            "worst_ess": 533.1389996290898,
+            "largest_joint_weight": 0.011620060374348243,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436457807,
+              "se": 0.00035442648325671006
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749544147338,
+              "se": 0.0011505946327694094
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0013173059570946,
+              "se": 0.0680084763708408
+            },
+            "joint_ess": 1338.4937681854558,
+            "worst_ess": 78.65569615156136,
+            "largest_joint_weight": 0.011655285235566757,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711813809,
+              "se": 0.0004162306911564268
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957457839232,
+              "se": 0.0008694573387184309
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310912658893955,
+              "se": 0.05493307264041047
+            },
+            "joint_ess": 541.6334018305831,
+            "worst_ess": 107.18856702544632,
+            "largest_joint_weight": 0.021133343777615006,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739238002361873,
+          "se": 0.026271861783128483
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7100255893982563,
+          "se": 0.0844639270832293
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.636101789162069,
+          "se": 0.08320233188600851
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436556160755799,
+          "se": 0.0008406995770601115
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.0547208188607442,
+          "se": 0.002702845666663338
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02035525725318621,
+          "se": 0.0026624746203522723
+        }
+      }
+    },
+    "0.90": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051316011526554,
+          "se": 0.14763246241965067
+        },
+        "student_matched_shift_meV_atom": {
+          "value": -1668562.2566306216,
+          "se": 112489.20076292295
+        },
+        "student_minus_gaussian_meV_atom": -1668564.307946633,
+        "difference_se_meV_atom": 112489.20076301982,
+        "gaussian_ess": 4397.389775336285,
+        "student_ess": 1.0,
+        "gaussian_largest_weight": 0.005034055864485024,
+        "student_largest_weight": 1.0
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.8404061235747,
+              "se": 0.061869016411537144
+            },
+            "target_meV_atom": {
+              "value": 90.11942743953315,
+              "se": 0.22304989355411142
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021315958474,
+              "se": 0.17846958405013363
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106745794590026,
+          "se": 0.05410774198659955
+        },
+        "p_d019": {
+          "value": 0.9939355852243806,
+          "se": 8.974720649944342e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389775336285,
+            "largest_weight": 0.005034055864485024,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9953322349477719,
+            "target_free_rel_global_ha_eV_cell": 0.016813706667841915,
+            "matched_anharmonic_shift_eV_cell": 0.01641052809221243,
+            "matched_shift_SE_eV_cell": 0.0011810596993572053,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77736702375717,
+              "se": 0.047435470065433534
+            },
+            "target_meV_atom": {
+              "value": -1668474.2515582934,
+              "se": 112489.17531271961
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1668562.0289253173,
+              "se": 112489.16031368944
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -1668486.2305413226,
+          "se": 112489.21574059552
+        },
+        "p_d019": {
+          "value": 0.0,
+          "se": 0.0
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 1.0,
+            "largest_weight": 1.0,
+            "accepted_draws": 65306,
+            "reference_probability": 1.0011743028767959,
+            "target_free_rel_global_ha_eV_cell": -13348.498154179197,
+            "matched_anharmonic_shift_eV_cell": -13348.498053044974,
+            "matched_shift_SE_eV_cell": 899.9136061033836,
+            "minimum_sampled_delta_eV_cell": -13359.348315369933
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7918371726256,
+              "se": 0.0005795886087901623
+            },
+            "target_config_eV_cell": {
+              "value": -115.81013712341519,
+              "se": 0.0018030327235217627
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1437469243489318,
+              "se": 0.09155692363665353
+            },
+            "joint_ess": 1407.4824069009474,
+            "worst_ess": 533.1389996290898,
+            "largest_joint_weight": 0.011620060374348243,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436457807,
+              "se": 0.00035442648325671006
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749544147338,
+              "se": 0.0011505946327694094
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0013173059570946,
+              "se": 0.0680084763708408
+            },
+            "joint_ess": 1338.4937681854558,
+            "worst_ess": 78.65569615156136,
+            "largest_joint_weight": 0.011655285235566757,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711813809,
+              "se": 0.0004162306911564268
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957457839232,
+              "se": 0.0008694573387184309
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310912658893955,
+              "se": 0.05493307264041047
+            },
+            "joint_ess": 541.6334018305831,
+            "worst_ess": 107.18856702544632,
+            "largest_joint_weight": 0.021133343777615006,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739238002361873,
+          "se": 0.026271861783128483
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7100255893982563,
+          "se": 0.0844639270832293
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.636101789162069,
+          "se": 0.08320233188600851
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436556160755799,
+          "se": 0.0008406995770601115
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.0547208188607442,
+          "se": 0.002702845666663338
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02035525725318621,
+          "se": 0.0026624746203522723
+        }
+      }
+    },
+    "1.00": {
+      "interlayer_independent_check": {
+        "gaussian_matched_shift_meV_atom": {
+          "value": 2.051316011526554,
+          "se": 0.14763246241965067
+        },
+        "student_matched_shift_meV_atom": {
+          "value": -16042502.768920695,
+          "se": 9085517.136089597
+        },
+        "student_minus_gaussian_meV_atom": -16042504.820236707,
+        "difference_se_meV_atom": 9085517.136089597,
+        "gaussian_ess": 4397.389775336285,
+        "student_ess": 1.0,
+        "gaussian_largest_weight": 0.005034055864485024,
+        "student_largest_weight": 1.0
+      },
+      "N8_gaussian": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.8404061235747,
+              "se": 0.061869016411537144
+            },
+            "target_meV_atom": {
+              "value": 90.11942743953315,
+              "se": 0.22304989355411142
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.279021315958474,
+              "se": 0.17846958405013363
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -0.2106745794590026,
+          "se": 0.05410774198659955
+        },
+        "p_d019": {
+          "value": 0.9939355852243806,
+          "se": 8.974720649944342e-05
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 4397.389775336285,
+            "largest_weight": 0.005034055864485024,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9953322349477719,
+            "target_free_rel_global_ha_eV_cell": 0.016813706667841915,
+            "matched_anharmonic_shift_eV_cell": 0.01641052809221243,
+            "matched_shift_SE_eV_cell": 0.0011810596993572053,
+            "minimum_sampled_delta_eV_cell": -0.7559950628495664
+          }
+        }
+      },
+      "N8_with_student_interlayer": {
+        "gaps_relative_to_d019": {
+          "basal": {
+            "harmonic_meV_atom": {
+              "value": 65.54400411583305,
+              "se": 0.053088038713645105
+            },
+            "target_meV_atom": {
+              "value": 68.0691749797564,
+              "se": 0.1630940670378573
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 2.525170863923343,
+              "se": 0.12966751115217007
+            }
+          },
+          "d019": {
+            "harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": 0.0,
+              "se": 0.0
+            }
+          },
+          "interlayer": {
+            "harmonic_meV_atom": {
+              "value": 87.77736702375717,
+              "se": 0.047435470065433534
+            },
+            "target_meV_atom": {
+              "value": -16042414.763848366,
+              "se": 9085517.081729015
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -16042502.54121539,
+              "se": 9085517.114045314
+            }
+          }
+        },
+        "canonical_anharmonic_shift_meV_atom": {
+          "value": -16042426.742831396,
+          "se": 9085517.10399315
+        },
+        "p_d019": {
+          "value": 0.0,
+          "se": 0.0
+        },
+        "per_orbit": {
+          "basal": {
+            "target_ess": 6002.97888766076,
+            "largest_weight": 0.0028718118754926954,
+            "accepted_draws": 16384,
+            "reference_probability": 0.988997519467141,
+            "target_free_rel_global_ha_eV_cell": 0.019333099305358117,
+            "matched_anharmonic_shift_eV_cell": 0.018379724475926125,
+            "matched_shift_SE_eV_cell": 0.0008900505718940612,
+            "minimum_sampled_delta_eV_cell": -0.6458968434045773
+          },
+          "d019": {
+            "target_ess": 7476.9443052589995,
+            "largest_weight": 0.0013393495137768064,
+            "accepted_draws": 16384,
+            "reference_probability": 0.9986750764049968,
+            "target_free_rel_global_ha_eV_cell": -0.0017073936516298195,
+            "matched_anharmonic_shift_eV_cell": -0.0018216424354587323,
+            "matched_shift_SE_eV_cell": 0.00043604207922792027,
+            "minimum_sampled_delta_eV_cell": -0.606234566642124
+          },
+          "interlayer": {
+            "target_ess": 1.0,
+            "largest_weight": 1.0,
+            "accepted_draws": 65399,
+            "reference_probability": 1.0011743028767959,
+            "target_free_rel_global_ha_eV_cell": -128340.02225249978,
+            "matched_anharmonic_shift_eV_cell": -128340.02215136556,
+            "matched_shift_SE_eV_cell": 72684.13708871677,
+            "minimum_sampled_delta_eV_cell": -128360.92757516784
+          }
+        }
+      },
+      "N16_gaussian": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7918371726256,
+              "se": 0.0005795886087901623
+            },
+            "target_config_eV_cell": {
+              "value": -115.81013712341519,
+              "se": 0.0018030327235217627
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.1437469243489318,
+              "se": 0.09155692363665353
+            },
+            "joint_ess": 1407.4824069009474,
+            "worst_ess": 533.1389996290898,
+            "largest_joint_weight": 0.011620060374348243,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52147436457807,
+              "se": 0.00035442648325671006
+            },
+            "target_config_eV_cell": {
+              "value": -112.53749544147338,
+              "se": 0.0011505946327694094
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.0013173059570946,
+              "se": 0.0680084763708408
+            },
+            "joint_ess": 1338.4937681854558,
+            "worst_ess": 78.65569615156136,
+            "largest_joint_weight": 0.011655285235566757,
+            "orbit_issues": {}
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28547711813809,
+              "se": 0.0004162306911564268
+            },
+            "target_config_eV_cell": {
+              "value": -109.31957457839232,
+              "se": 0.0008694573387184309
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -2.1310912658893955,
+              "se": 0.05493307264041047
+            },
+            "joint_ess": 541.6334018305831,
+            "worst_ess": 107.18856702544632,
+            "largest_joint_weight": 0.021133343777615006,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0739238002361873,
+          "se": 0.026271861783128483
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 1.7100255893982563,
+          "se": 0.0844639270832293
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": 0.636101789162069,
+          "se": 0.08320233188600851
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03436556160755799,
+          "se": 0.0008406995770601115
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.0547208188607442,
+          "se": 0.002702845666663338
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": -0.02035525725318621,
+          "se": 0.0026624746203522723
+        }
+      }
+    }
+  },
+  "independent_N16": {
+    "0.35": {
+      "student": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.78874821044167,
+              "se": 0.0006223739231457629
+            },
+            "target_config_eV_cell": {
+              "value": -115.80428745631666,
+              "se": 0.001305261004876806
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -0.9712028671868822,
+              "se": 0.08235879852683621
+            },
+            "joint_ess": 1138.2500497342742,
+            "worst_ess": 495.87564631355923,
+            "largest_joint_weight": 0.01821260627701984,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52111736924998,
+              "se": 0.0004028560189188412
+            },
+            "target_config_eV_cell": {
+              "value": -112.54319358448757,
+              "se": 0.003791533885561716
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.3797634523493585,
+              "se": 0.23604621286413385
+            },
+            "joint_ess": 307.00210130328634,
+            "worst_ess": 40.43058183998837,
+            "largest_joint_weight": 0.051497574014530964,
+            "orbit_issues": {
+              "k03_0-1-14": {
+                "ess": 40.43058183998837,
+                "largest_weight": 0.15380009270815456
+              }
+            }
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28580365750057,
+              "se": 0.000859730786814873
+            },
+            "target_config_eV_cell": {
+              "value": -109.3089547804583,
+              "se": 0.001465877452814707
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.446945184857995,
+              "se": 0.09089508372814244
+            },
+            "joint_ess": 939.784456914326,
+            "worst_ess": 130.50123468057095,
+            "largest_joint_weight": 0.014351907518465429,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.009910295071137,
+          "se": 0.06179045717721755
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 0.8392208687442171,
+          "se": 0.23864506276697617
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": -0.17068942632691986,
+          "se": 0.23179191395766083
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.03231712944227638,
+          "se": 0.0019772946296709617
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.026855067799814947,
+          "se": 0.007636642008543237
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": 0.0054620616424614354,
+          "se": 0.007417341246645146
+        }
+      },
+      "orbit_contributions": {
+        "k02_0-1": {
+          "student_minus_gaussian_contribution_meV_cell": -0.056790500806902185,
+          "student_ess": 495.87564631355923,
+          "gaussian_ess": 519.0785587320587,
+          "student_largest_weight": 0.017556185913903857,
+          "student_block_weight": [
+            0.26264366159398245,
+            0.23556105384540185,
+            0.24463053842433516,
+            0.2571647461362811
+          ],
+          "largest_student_weight_wall": 0.30226682434906366,
+          "largest_student_weight_excess_eV_cell": -0.3420040538640734
+        },
+        "k02_0-2": {
+          "student_minus_gaussian_contribution_meV_cell": -0.06570355266424258,
+          "student_ess": 638.0738497892722,
+          "gaussian_ess": 615.0063522988346,
+          "student_largest_weight": 0.015344499110593372,
+          "student_block_weight": [
+            0.25279883094585454,
+            0.2538316884158424,
+            0.26272520805330035,
+            0.23064427258500309
+          ],
+          "largest_student_weight_wall": 0.2910729493371679,
+          "largest_student_weight_excess_eV_cell": -0.32497384970584164
+        },
+        "k02_0-4": {
+          "student_minus_gaussian_contribution_meV_cell": 0.09397360691212708,
+          "student_ess": 706.5096889063396,
+          "gaussian_ess": 599.186971238138,
+          "student_largest_weight": 0.01535259333903994,
+          "student_block_weight": [
+            0.2438879163036683,
+            0.24815651034271,
+            0.27367788636752666,
+            0.23427768698609475
+          ],
+          "largest_student_weight_wall": 0.28023857919432077,
+          "largest_student_weight_excess_eV_cell": -0.3195819995820699
+        },
+        "k02_0-6": {
+          "student_minus_gaussian_contribution_meV_cell": 0.9929560805329466,
+          "student_ess": 859.0773873463039,
+          "gaussian_ess": 774.3359810865632,
+          "student_largest_weight": 0.014580254437576391,
+          "student_block_weight": [
+            0.24582802101813211,
+            0.23799490639338755,
+            0.26572891472041654,
+            0.25044815786806485
+          ],
+          "largest_student_weight_wall": 0.27239202906192606,
+          "largest_student_weight_excess_eV_cell": -0.343607224020289
+        },
+        "k02_0-13": {
+          "student_minus_gaussian_contribution_meV_cell": 0.4862915100686903,
+          "student_ess": 539.4466935740228,
+          "gaussian_ess": 833.5084756186105,
+          "student_largest_weight": 0.027797787474372112,
+          "student_block_weight": [
+            0.2421824904422878,
+            0.25354648295983323,
+            0.2603934717648291,
+            0.24387755483304963
+          ],
+          "largest_student_weight_wall": 0.3288279843977176,
+          "largest_student_weight_excess_eV_cell": -0.39303500267789104
+        },
+        "k03_0-1-2": {
+          "student_minus_gaussian_contribution_meV_cell": 0.010775193408496834,
+          "student_ess": 113.99364069840479,
+          "gaussian_ess": 517.1930530236166,
+          "student_largest_weight": 0.07552142620927378,
+          "student_block_weight": [
+            0.3206463514403084,
+            0.21712395211310154,
+            0.2462504057509159,
+            0.21597929069567373
+          ],
+          "largest_student_weight_wall": 0.3490935840406225,
+          "largest_student_weight_excess_eV_cell": -0.5357339415974991
+        },
+        "k03_0-1-4": {
+          "student_minus_gaussian_contribution_meV_cell": 0.006453048404230953,
+          "student_ess": 660.0278315735791,
+          "gaussian_ess": 689.5038995518826,
+          "student_largest_weight": 0.01378518239260663,
+          "student_block_weight": [
+            0.24635310069227498,
+            0.2640393434045808,
+            0.23803084524276896,
+            0.25157671066037574
+          ],
+          "largest_student_weight_wall": 0.29945206039171074,
+          "largest_student_weight_excess_eV_cell": -0.3158661032847334
+        },
+        "k03_0-1-6": {
+          "student_minus_gaussian_contribution_meV_cell": 0.02993621773129791,
+          "student_ess": 545.5366845717209,
+          "gaussian_ess": 501.0296211527773,
+          "student_largest_weight": 0.02474996859818615,
+          "student_block_weight": [
+            0.2832068724810525,
+            0.24512871939169428,
+            0.24058030719129503,
+            0.23108410093595866
+          ],
+          "largest_student_weight_wall": 0.285603758073107,
+          "largest_student_weight_excess_eV_cell": -0.4559459295079762
+        },
+        "k03_0-1-12": {
+          "student_minus_gaussian_contribution_meV_cell": -0.12628497357492266,
+          "student_ess": 312.18491444129853,
+          "gaussian_ess": 74.58829111443308,
+          "student_largest_weight": 0.03518609627915282,
+          "student_block_weight": [
+            0.24588086910344492,
+            0.26807638459239386,
+            0.27352945531352013,
+            0.21251329099064106
+          ],
+          "largest_student_weight_wall": 0.3179962974893259,
+          "largest_student_weight_excess_eV_cell": -0.49471848166594157
+        },
+        "k03_0-1-14": {
+          "student_minus_gaussian_contribution_meV_cell": 8.767197514149085,
+          "student_ess": 40.43058183998837,
+          "gaussian_ess": 335.1666276316993,
+          "student_largest_weight": 0.15380009270815456,
+          "student_block_weight": [
+            0.21470258083918367,
+            0.23075425135344932,
+            0.35471359956583365,
+            0.19982956824153264
+          ],
+          "largest_student_weight_wall": 0.2904458313047363,
+          "largest_student_weight_excess_eV_cell": -0.8161981531968365
+        },
+        "k03_0-2-4": {
+          "student_minus_gaussian_contribution_meV_cell": -0.010739513374105662,
+          "student_ess": 800.8039144592707,
+          "gaussian_ess": 586.4052299452906,
+          "student_largest_weight": 0.009194519067847823,
+          "student_block_weight": [
+            0.24875182931012574,
+            0.2473467044619594,
+            0.253145389067034,
+            0.250756077160881
+          ],
+          "largest_student_weight_wall": 0.25602163553421886,
+          "largest_student_weight_excess_eV_cell": -0.2869664333689883
+        },
+        "k03_0-2-13": {
+          "student_minus_gaussian_contribution_meV_cell": 7.014311689363653,
+          "student_ess": 790.5065939939706,
+          "gaussian_ess": 856.5711089452659,
+          "student_largest_weight": 0.009459638658326894,
+          "student_block_weight": [
+            0.2742953426071143,
+            0.23876842777928944,
+            0.24043833000817688,
+            0.24649789960542
+          ],
+          "largest_student_weight_wall": 0.3409332701319083,
+          "largest_student_weight_excess_eV_cell": -0.5632702448840661
+        },
+        "k03_0-4-8": {
+          "student_minus_gaussian_contribution_meV_cell": -0.00020469432256425653,
+          "student_ess": 524.4280514154457,
+          "gaussian_ess": 323.2346763110572,
+          "student_largest_weight": 0.014181691301184964,
+          "student_block_weight": [
+            0.26594814459195737,
+            0.23673174994342167,
+            0.24495497015531384,
+            0.25236513530930615
+          ],
+          "largest_student_weight_wall": 0.3002658345558681,
+          "largest_student_weight_excess_eV_cell": -0.3381979892284903
+        },
+        "k03_0-4-10": {
+          "student_minus_gaussian_contribution_meV_cell": -0.33466132067785154,
+          "student_ess": 932.6130430385386,
+          "gaussian_ess": 239.70797196789812,
+          "student_largest_weight": 0.009713433654940576,
+          "student_block_weight": [
+            0.2549437222316048,
+            0.23971431138866173,
+            0.24536162755105784,
+            0.2599803388286764
+          ],
+          "largest_student_weight_wall": 0.28379424771977224,
+          "largest_student_weight_excess_eV_cell": -0.3194811705799623
+        },
+        "k04_0-1-2-3": {
+          "student_minus_gaussian_contribution_meV_cell": -3.8644387131834825e-06,
+          "student_ess": 349.88698031073807,
+          "gaussian_ess": 517.0110927307436,
+          "student_largest_weight": 0.024209554469592814,
+          "student_block_weight": [
+            0.23756777618212233,
+            0.22077468615831186,
+            0.2733002962450788,
+            0.2683572414144882
+          ],
+          "largest_student_weight_wall": 0.29666386743765744,
+          "largest_student_weight_excess_eV_cell": -0.4150102479861886
+        },
+        "k04_0-1-2-4": {
+          "student_minus_gaussian_contribution_meV_cell": -0.00011689181812735856,
+          "student_ess": 515.5584333539979,
+          "gaussian_ess": 547.3316182625277,
+          "student_largest_weight": 0.022713275586697064,
+          "student_block_weight": [
+            0.2666358933103632,
+            0.24319868427840857,
+            0.23270573160722227,
+            0.257459690804006
+          ],
+          "largest_student_weight_wall": 0.3106941463713457,
+          "largest_student_weight_excess_eV_cell": -0.39488547750652003
+        },
+        "k04_0-1-2-5": {
+          "student_minus_gaussian_contribution_meV_cell": 4.443358110701194e-06,
+          "student_ess": 626.0829019575008,
+          "gaussian_ess": 223.33197875015688,
+          "student_largest_weight": 0.014367417039964733,
+          "student_block_weight": [
+            0.27801404003753405,
+            0.2389060495844372,
+            0.238587921000445,
+            0.2444919893775833
+          ],
+          "largest_student_weight_wall": 0.31055724432448173,
+          "largest_student_weight_excess_eV_cell": -0.3051835232944171
+        },
+        "k04_0-1-2-7": {
+          "student_minus_gaussian_contribution_meV_cell": 1.7230850292373996e-05,
+          "student_ess": 606.3267875141645,
+          "gaussian_ess": 547.1324153582908,
+          "student_largest_weight": 0.013500431148071493,
+          "student_block_weight": [
+            0.23169150445545195,
+            0.2655336830972601,
+            0.23288933274069062,
+            0.26988547970659776
+          ],
+          "largest_student_weight_wall": 0.19704911624434385,
+          "largest_student_weight_excess_eV_cell": -0.3153897859168353
+        },
+        "k04_0-1-2-12": {
+          "student_minus_gaussian_contribution_meV_cell": 0.00041947364777283343,
+          "student_ess": 658.80630971484,
+          "gaussian_ess": 330.31774584862757,
+          "student_largest_weight": 0.01921930884314759,
+          "student_block_weight": [
+            0.24700717182272156,
+            0.24539000509469566,
+            0.26880386436661563,
+            0.23879895871596746
+          ],
+          "largest_student_weight_wall": 0.27357647446681493,
+          "largest_student_weight_excess_eV_cell": -0.4074512022367145
+        },
+        "k04_0-1-2-13": {
+          "student_minus_gaussian_contribution_meV_cell": -0.0006624391729825444,
+          "student_ess": 628.1527944887287,
+          "gaussian_ess": 692.7286754708717,
+          "student_largest_weight": 0.01357965927061944,
+          "student_block_weight": [
+            0.24639080268459915,
+            0.26392122833772763,
+            0.25841825935234203,
+            0.23126970962533006
+          ],
+          "largest_student_weight_wall": 0.3090944780317978,
+          "largest_student_weight_excess_eV_cell": -0.3384540042056159
+        },
+        "k04_0-1-2-15": {
+          "student_minus_gaussian_contribution_meV_cell": -0.01786772248986123,
+          "student_ess": 649.0105883865397,
+          "gaussian_ess": 548.2849761175278,
+          "student_largest_weight": 0.017297781721858422,
+          "student_block_weight": [
+            0.2580721699681854,
+            0.24895526914092878,
+            0.25170416022643044,
+            0.24126840066445518
+          ],
+          "largest_student_weight_wall": 0.276049562082123,
+          "largest_student_weight_excess_eV_cell": -0.4853224405479182
+        },
+        "k04_0-1-4-5": {
+          "student_minus_gaussian_contribution_meV_cell": 1.0677479170793998e-06,
+          "student_ess": 502.7929453003375,
+          "gaussian_ess": 95.13720823048489,
+          "student_largest_weight": 0.01942834222119771,
+          "student_block_weight": [
+            0.247259108514541,
+            0.2594505896370446,
+            0.22709722045683783,
+            0.2661930813915767
+          ],
+          "largest_student_weight_wall": 0.2718109662220723,
+          "largest_student_weight_excess_eV_cell": -0.3821996534252463
+        },
+        "k04_0-1-4-7": {
+          "student_minus_gaussian_contribution_meV_cell": -1.5266004234026208e-05,
+          "student_ess": 216.7473290791775,
+          "gaussian_ess": 507.0599400518335,
+          "student_largest_weight": 0.050557332158379764,
+          "student_block_weight": [
+            0.27644509900436637,
+            0.21351238717315657,
+            0.24730448643655928,
+            0.26273802738591845
+          ],
+          "largest_student_weight_wall": 0.2983297941627063,
+          "largest_student_weight_excess_eV_cell": -0.4983700753023612
+        },
+        "k04_0-1-4-8": {
+          "student_minus_gaussian_contribution_meV_cell": 3.913130103189094e-07,
+          "student_ess": 487.32484437039045,
+          "gaussian_ess": 386.7630446174494,
+          "student_largest_weight": 0.025623822158496342,
+          "student_block_weight": [
+            0.2612446901233638,
+            0.24088644693440098,
+            0.25554549936981663,
+            0.2423233635724189
+          ],
+          "largest_student_weight_wall": 0.32699629467288854,
+          "largest_student_weight_excess_eV_cell": -0.6551114789648977
+        },
+        "k04_0-1-4-9": {
+          "student_minus_gaussian_contribution_meV_cell": 7.162072702430942e-05,
+          "student_ess": 520.8031103671982,
+          "gaussian_ess": 530.9286569600628,
+          "student_largest_weight": 0.023015123143783414,
+          "student_block_weight": [
+            0.2599750200829738,
+            0.21039149507045493,
+            0.2646606760443406,
+            0.26497280880222973
+          ],
+          "largest_student_weight_wall": 0.3308448551701532,
+          "largest_student_weight_excess_eV_cell": -0.36127091639444586
+        },
+        "k04_0-1-4-10": {
+          "student_minus_gaussian_contribution_meV_cell": -2.379339511975765e-05,
+          "student_ess": 144.86933677586921,
+          "gaussian_ess": 469.45033560500815,
+          "student_largest_weight": 0.07638863224733104,
+          "student_block_weight": [
+            0.23248258504332187,
+            0.2408532506512712,
+            0.30153235694599,
+            0.22513180735941718
+          ],
+          "largest_student_weight_wall": 0.31553822680826354,
+          "largest_student_weight_excess_eV_cell": -0.5195405152256143
+        },
+        "k04_0-1-4-11": {
+          "student_minus_gaussian_contribution_meV_cell": 0.000692909783492165,
+          "student_ess": 242.75513865778885,
+          "gaussian_ess": 176.7761516058511,
+          "student_largest_weight": 0.04244607062543845,
+          "student_block_weight": [
+            0.2585956458238383,
+            0.2804672980044674,
+            0.2117423846421441,
+            0.24919467152955022
+          ],
+          "largest_student_weight_wall": 0.33786767848433236,
+          "largest_student_weight_excess_eV_cell": -0.4298101263298548
+        },
+        "k04_0-1-4-12": {
+          "student_minus_gaussian_contribution_meV_cell": 8.479599921956291e-06,
+          "student_ess": 597.7579365115805,
+          "gaussian_ess": 653.5660580576293,
+          "student_largest_weight": 0.016236534732002424,
+          "student_block_weight": [
+            0.2668806856025384,
+            0.26992260746544094,
+            0.22397426298542708,
+            0.23922244394659392
+          ],
+          "largest_student_weight_wall": 0.2837530782480095,
+          "largest_student_weight_excess_eV_cell": -0.4708293925640987
+        },
+        "k04_0-1-4-14": {
+          "student_minus_gaussian_contribution_meV_cell": 0.006249941551517955,
+          "student_ess": 760.6139991766338,
+          "gaussian_ess": 568.6852802126135,
+          "student_largest_weight": 0.013253252954608576,
+          "student_block_weight": [
+            0.24496858520292286,
+            0.23157365740211686,
+            0.2901972203904937,
+            0.23326053700446753
+          ],
+          "largest_student_weight_wall": 0.2396276392054963,
+          "largest_student_weight_excess_eV_cell": -0.3683833250386783
+        },
+        "k04_0-1-6-7": {
+          "student_minus_gaussian_contribution_meV_cell": 8.298813966372824e-05,
+          "student_ess": 498.352463895616,
+          "gaussian_ess": 453.862501499569,
+          "student_largest_weight": 0.030839620681077606,
+          "student_block_weight": [
+            0.24111626557215027,
+            0.22598440314173687,
+            0.2383266233416463,
+            0.2945727079444668
+          ],
+          "largest_student_weight_wall": 0.3351333504892591,
+          "largest_student_weight_excess_eV_cell": -0.9177086978722997
+        },
+        "k04_0-1-6-11": {
+          "student_minus_gaussian_contribution_meV_cell": -0.006760927611165194,
+          "student_ess": 130.50123468057095,
+          "gaussian_ess": 466.4563545088551,
+          "student_largest_weight": 0.07163876778218273,
+          "student_block_weight": [
+            0.20484841400454604,
+            0.2603942484615934,
+            0.2342714842103796,
+            0.300485853323482
+          ],
+          "largest_student_weight_wall": 0.32158528925731256,
+          "largest_student_weight_excess_eV_cell": -0.5479908604196737
+        },
+        "k04_0-1-6-12": {
+          "student_minus_gaussian_contribution_meV_cell": 0.0071201360147060255,
+          "student_ess": 243.94126014189987,
+          "gaussian_ess": 709.0436577436108,
+          "student_largest_weight": 0.05331384702848141,
+          "student_block_weight": [
+            0.22439037863717076,
+            0.23875249327958603,
+            0.32020943461433676,
+            0.21664769346890744
+          ],
+          "largest_student_weight_wall": 0.29147802129190176,
+          "largest_student_weight_excess_eV_cell": -0.45072060470799613
+        },
+        "k04_0-1-12-13": {
+          "student_minus_gaussian_contribution_meV_cell": 0.00014537830015387586,
+          "student_ess": 665.6277018422045,
+          "gaussian_ess": 340.28656594418,
+          "student_largest_weight": 0.01516120877776442,
+          "student_block_weight": [
+            0.2508131845838094,
+            0.21963860545490155,
+            0.25549965126197727,
+            0.2740485586993118
+          ],
+          "largest_student_weight_wall": 0.2316400569859009,
+          "largest_student_weight_excess_eV_cell": -0.3106811719397484
+        },
+        "k04_0-1-12-14": {
+          "student_minus_gaussian_contribution_meV_cell": -0.006153055048237704,
+          "student_ess": 569.5457796795447,
+          "gaussian_ess": 782.4891689888299,
+          "student_largest_weight": 0.02437993105489991,
+          "student_block_weight": [
+            0.2550952589826604,
+            0.25912481361329165,
+            0.26159508667984893,
+            0.22418484072419997
+          ],
+          "largest_student_weight_wall": 0.22753299850393824,
+          "largest_student_weight_excess_eV_cell": -0.38143972251299374
+        },
+        "k04_0-1-12-15": {
+          "student_minus_gaussian_contribution_meV_cell": -0.009715674156858856,
+          "student_ess": 737.4685770633955,
+          "gaussian_ess": 882.4242473455821,
+          "student_largest_weight": 0.012501248052690532,
+          "student_block_weight": [
+            0.2717156878192587,
+            0.23879243225708766,
+            0.2515584153630488,
+            0.23793346456060477
+          ],
+          "largest_student_weight_wall": 0.2573435569678895,
+          "largest_student_weight_excess_eV_cell": -0.36602528258262623
+        },
+        "k04_0-1-14-15": {
+          "student_minus_gaussian_contribution_meV_cell": 0.10252627435191117,
+          "student_ess": 355.98212610790586,
+          "gaussian_ess": 480.3495411050593,
+          "student_largest_weight": 0.043272149993916174,
+          "student_block_weight": [
+            0.2231239739454148,
+            0.294773372962602,
+            0.21910895484300244,
+            0.26299369824898183
+          ],
+          "largest_student_weight_wall": 0.3249810595317396,
+          "largest_student_weight_excess_eV_cell": -0.5101003075003945
+        },
+        "k04_0-2-4-6": {
+          "student_minus_gaussian_contribution_meV_cell": 2.0042019705838197e-05,
+          "student_ess": 632.6493428937854,
+          "gaussian_ess": 3837.074361294551,
+          "student_largest_weight": 0.011281987516853444,
+          "student_block_weight": [
+            0.25043279666126617,
+            0.23745194127362296,
+            0.2538957037938071,
+            0.25821955827130455
+          ],
+          "largest_student_weight_wall": 0.2676974362483859,
+          "largest_student_weight_excess_eV_cell": -0.2805199457866365
+        },
+        "k04_0-2-4-8": {
+          "student_minus_gaussian_contribution_meV_cell": -0.0001254015428873619,
+          "student_ess": 204.62053618053167,
+          "gaussian_ess": 292.76039505888116,
+          "student_largest_weight": 0.04619845893272569,
+          "student_block_weight": [
+            0.25217165151054727,
+            0.2510584082553937,
+            0.2447370797441432,
+            0.25203286048991624
+          ],
+          "largest_student_weight_wall": 0.3092371363784385,
+          "largest_student_weight_excess_eV_cell": -0.8026852902531516
+        },
+        "k04_0-2-4-10": {
+          "student_minus_gaussian_contribution_meV_cell": -7.545756011930703e-05,
+          "student_ess": 723.356661872221,
+          "gaussian_ess": 624.058826286715,
+          "student_largest_weight": 0.015493547875494255,
+          "student_block_weight": [
+            0.25590840436009876,
+            0.2662301297087168,
+            0.2393791751471327,
+            0.2384822907840506
+          ],
+          "largest_student_weight_wall": 0.25738865768231023,
+          "largest_student_weight_excess_eV_cell": -0.3252273983296021
+        },
+        "k04_0-2-13-15": {
+          "student_minus_gaussian_contribution_meV_cell": 8.817409487126723,
+          "student_ess": 866.3375203401143,
+          "gaussian_ess": 541.6914389702947,
+          "student_largest_weight": 0.014953504064596819,
+          "student_block_weight": [
+            0.2396229148317831,
+            0.2525824185690667,
+            0.24745993902897426,
+            0.26033472757017473
+          ],
+          "largest_student_weight_wall": 0.21749803848919913,
+          "largest_student_weight_excess_eV_cell": -0.35213249445399697
+        },
+        "k04_0-4-8-12": {
+          "student_minus_gaussian_contribution_meV_cell": -8.678206277405543e-09,
+          "student_ess": 421.0117767906763,
+          "gaussian_ess": 588.999183131857,
+          "student_largest_weight": 0.021778308385973284,
+          "student_block_weight": [
+            0.23953494769397357,
+            0.26439904000273806,
+            0.24130812175445687,
+            0.2547578905488306
+          ],
+          "largest_student_weight_wall": 0.2960827421206709,
+          "largest_student_weight_excess_eV_cell": -0.3595519093659192
+        },
+        "k04_0-4-8-14": {
+          "student_minus_gaussian_contribution_meV_cell": -0.00010790595547642506,
+          "student_ess": 710.355780125196,
+          "gaussian_ess": 596.7746073267217,
+          "student_largest_weight": 0.012620705745385137,
+          "student_block_weight": [
+            0.2491728891995833,
+            0.23881957071621504,
+            0.2664640300494393,
+            0.24554351003476274
+          ],
+          "largest_student_weight_wall": 0.30131756274582067,
+          "largest_student_weight_excess_eV_cell": -0.30476040472825616
+        },
+        "k04_0-4-10-14": {
+          "student_minus_gaussian_contribution_meV_cell": 0.0005388105095437722,
+          "student_ess": 772.982741854232,
+          "gaussian_ess": 421.3155647302288,
+          "student_largest_weight": 0.014370827895778789,
+          "student_block_weight": [
+            0.23234274512861974,
+            0.25201850190439445,
+            0.2694881829845308,
+            0.24615056998245405
+          ],
+          "largest_student_weight_wall": 0.299421847112896,
+          "largest_student_weight_excess_eV_cell": -0.32595286594639106
+        }
+      }
+    },
+    "0.40": {
+      "student": {
+        "compositions": {
+          "2": {
+            "harmonic_config_eV_cell": {
+              "value": -115.7905973976742,
+              "se": 0.0006569844614940614
+            },
+            "target_config_eV_cell": {
+              "value": -115.80689286011047,
+              "se": 0.0011127296762797655
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.018466402266327,
+              "se": 0.07825833464778514
+            },
+            "joint_ess": 1181.1763820740368,
+            "worst_ess": 516.0147282380956,
+            "largest_joint_weight": 0.01767019905406801,
+            "orbit_issues": {}
+          },
+          "3": {
+            "harmonic_config_eV_cell": {
+              "value": -112.52208334945341,
+              "se": 0.0004495855474094819
+            },
+            "target_config_eV_cell": {
+              "value": -112.54584915933609,
+              "se": 0.0041908809560565275
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.4853631176672266,
+              "se": 0.2540179668178674
+            },
+            "joint_ess": 294.72888325142884,
+            "worst_ess": 41.360491224089515,
+            "largest_joint_weight": 0.04993479396353454,
+            "orbit_issues": {
+              "k03_0-1-14": {
+                "ess": 41.360491224089515,
+                "largest_weight": 0.15204080481891835
+              }
+            }
+          },
+          "4": {
+            "harmonic_config_eV_cell": {
+              "value": -109.28606047262755,
+              "se": 0.0009146875351660768
+            },
+            "target_config_eV_cell": {
+              "value": -109.30983806435502,
+              "se": 0.0012858904665920279
+            },
+            "target_minus_matched_harmonic_meV_atom": {
+              "value": -1.4860994829666296,
+              "se": 0.07135389757647224
+            },
+            "joint_ess": 936.0471770909169,
+            "worst_ess": 115.90601161597728,
+            "largest_joint_weight": 0.014205550627657187,
+            "orbit_issues": {}
+          }
+        },
+        "middle_excess_harmonic_meV_atom": {
+          "value": 1.0153491060918007,
+          "se": 0.06702676931864944
+        },
+        "middle_excess_target_meV_atom": {
+          "value": 0.7822689310410524,
+          "se": 0.2730832372246386
+        },
+        "middle_excess_anharmonic_shift_meV_atom": {
+          "value": -0.2330801750507483,
+          "se": 0.2633619418509968
+        },
+        "central_second_difference_harmonic_eV": {
+          "value": -0.032491171394937624,
+          "se": 0.002144856618196782
+        },
+        "central_second_difference_target_eV": {
+          "value": -0.025032605793313678,
+          "se": 0.008738663591188436
+        },
+        "central_second_difference_anharmonic_shift_eV": {
+          "value": 0.0074585656016239454,
+          "se": 0.008427582139231898
+        }
+      },
+      "orbit_contributions": {
+        "k02_0-1": {
+          "student_minus_gaussian_contribution_meV_cell": -0.057944593711872126,
+          "student_ess": 516.0147282380956,
+          "gaussian_ess": 532.1204765150653,
+          "student_largest_weight": 0.016885145877162316,
+          "student_block_weight": [
+            0.2684505926913565,
+            0.24108904393895403,
+            0.23890407553439236,
+            0.2515562878352968
+          ],
+          "largest_student_weight_wall": 0.30226682434906366,
+          "largest_student_weight_excess_eV_cell": -0.3420040538640734
+        },
+        "k02_0-2": {
+          "student_minus_gaussian_contribution_meV_cell": -0.04528484386381054,
+          "student_ess": 646.4985666855798,
+          "gaussian_ess": 640.9948755800358,
+          "student_largest_weight": 0.01494050699669048,
+          "student_block_weight": [
+            0.25427978468777934,
+            0.24946360608144846,
+            0.2600211287176622,
+            0.23623548051310994
+          ],
+          "largest_student_weight_wall": 0.2910729493371679,
+          "largest_student_weight_excess_eV_cell": -0.32497384970584164
+        },
+        "k02_0-4": {
+          "student_minus_gaussian_contribution_meV_cell": 0.09344243750919462,
+          "student_ess": 635.7847428366118,
+          "gaussian_ess": 567.2764188118191,
+          "student_largest_weight": 0.014481581652735427,
+          "student_block_weight": [
+            0.24785052278620978,
+            0.2521851229783331,
+            0.27388377396308383,
+            0.22608058027237274
+          ],
+          "largest_student_weight_wall": 0.28023857919432077,
+          "largest_student_weight_excess_eV_cell": -0.3195819995820699
+        },
+        "k02_0-6": {
+          "student_minus_gaussian_contribution_meV_cell": 0.7806258195361907,
+          "student_ess": 816.4311307255678,
+          "gaussian_ess": 706.5614441819026,
+          "student_largest_weight": 0.013919113169565083,
+          "student_block_weight": [
+            0.2499458228008541,
+            0.23306027693517417,
+            0.2641956565258978,
+            0.252798243738073
+          ],
+          "largest_student_weight_wall": 0.27239202906192606,
+          "largest_student_weight_excess_eV_cell": -0.343607224020289
+        },
+        "k02_0-13": {
+          "student_minus_gaussian_contribution_meV_cell": 2.053597661796915,
+          "student_ess": 558.3352784152736,
+          "gaussian_ess": 692.9560207319232,
+          "student_largest_weight": 0.02717211831683164,
+          "student_block_weight": [
+            0.24601999997942564,
+            0.25381447003050844,
+            0.2589139322162804,
+            0.24125159777378513
+          ],
+          "largest_student_weight_wall": 0.3288279843977176,
+          "largest_student_weight_excess_eV_cell": -0.39303500267789104
+        },
+        "k03_0-1-2": {
+          "student_minus_gaussian_contribution_meV_cell": 0.012516697417914422,
+          "student_ess": 121.05713761830705,
+          "gaussian_ess": 533.7025192213753,
+          "student_largest_weight": 0.07236912831490816,
+          "student_block_weight": [
+            0.3276811286424779,
+            0.2155640541561141,
+            0.24620884343927893,
+            0.21054597376212947
+          ],
+          "largest_student_weight_wall": 0.3490935840406225,
+          "largest_student_weight_excess_eV_cell": -0.5357339415974991
+        },
+        "k03_0-1-4": {
+          "student_minus_gaussian_contribution_meV_cell": 0.006925026653889159,
+          "student_ess": 683.4465303448272,
+          "gaussian_ess": 711.4803057502535,
+          "student_largest_weight": 0.01340442794367608,
+          "student_block_weight": [
+            0.24626973403627164,
+            0.26512908666353463,
+            0.240153379524245,
+            0.24844779977594875
+          ],
+          "largest_student_weight_wall": 0.29945206039171074,
+          "largest_student_weight_excess_eV_cell": -0.3158661032847334
+        },
+        "k03_0-1-6": {
+          "student_minus_gaussian_contribution_meV_cell": 0.010266566632946466,
+          "student_ess": 553.3016984047648,
+          "gaussian_ess": 519.3087607306882,
+          "student_largest_weight": 0.024043095501838134,
+          "student_block_weight": [
+            0.2839938738176212,
+            0.24363575250412678,
+            0.244825641382179,
+            0.22754473229607353
+          ],
+          "largest_student_weight_wall": 0.285603758073107,
+          "largest_student_weight_excess_eV_cell": -0.4559459295079762
+        },
+        "k03_0-1-12": {
+          "student_minus_gaussian_contribution_meV_cell": -0.11032770595798544,
+          "student_ess": 324.4096528117624,
+          "gaussian_ess": 77.58761746674129,
+          "student_largest_weight": 0.03421301032662184,
+          "student_block_weight": [
+            0.2447413112283829,
+            0.2664915745145304,
+            0.2766263036720094,
+            0.21214081058507792
+          ],
+          "largest_student_weight_wall": 0.3179962974893259,
+          "largest_student_weight_excess_eV_cell": -0.49471848166594157
+        },
+        "k03_0-1-14": {
+          "student_minus_gaussian_contribution_meV_cell": 8.217729321064718,
+          "student_ess": 41.360491224089515,
+          "gaussian_ess": 347.2361047333098,
+          "student_largest_weight": 0.15204080481891835,
+          "student_block_weight": [
+            0.21539474976457068,
+            0.23072485253821656,
+            0.3528020061047741,
+            0.20107839159243815
+          ],
+          "largest_student_weight_wall": 0.2904458313047363,
+          "largest_student_weight_excess_eV_cell": -0.8161981531968365
+        },
+        "k03_0-2-4": {
+          "student_minus_gaussian_contribution_meV_cell": -0.012727911428784591,
+          "student_ess": 816.4316172436727,
+          "gaussian_ess": 602.2687913415464,
+          "student_largest_weight": 0.009042243689732086,
+          "student_block_weight": [
+            0.24858864535785158,
+            0.24635306575983582,
+            0.25496639535684834,
+            0.250091893525463
+          ],
+          "largest_student_weight_wall": 0.25602163553421886,
+          "largest_student_weight_excess_eV_cell": -0.2869664333689883
+        },
+        "k03_0-2-13": {
+          "student_minus_gaussian_contribution_meV_cell": 9.473395553925496,
+          "student_ess": 497.89773319424546,
+          "gaussian_ess": 865.3109976520645,
+          "student_largest_weight": 0.02891303791803162,
+          "student_block_weight": [
+            0.2954518456015499,
+            0.2322436088739822,
+            0.2342978577182287,
+            0.23800668780624004
+          ],
+          "largest_student_weight_wall": 0.392557343961547,
+          "largest_student_weight_excess_eV_cell": -0.523921058659937
+        },
+        "k03_0-4-8": {
+          "student_minus_gaussian_contribution_meV_cell": -8.857501181525502e-05,
+          "student_ess": 454.16876180420167,
+          "gaussian_ess": 330.87467119069487,
+          "student_largest_weight": 0.020157238091467435,
+          "student_block_weight": [
+            0.262177257287176,
+            0.25385160472548635,
+            0.23376509751492608,
+            0.25020604047241124
+          ],
+          "largest_student_weight_wall": 0.3939693174949901,
+          "largest_student_weight_excess_eV_cell": -0.5036595471782874
+        },
+        "k03_0-4-10": {
+          "student_minus_gaussian_contribution_meV_cell": -0.32964164025755677,
+          "student_ess": 944.6284900602432,
+          "gaussian_ess": 247.81771204350773,
+          "student_largest_weight": 0.009520781188137657,
+          "student_block_weight": [
+            0.2559803197333639,
+            0.23757086840289743,
+            0.24222279395467475,
+            0.2642260179090651
+          ],
+          "largest_student_weight_wall": 0.28379424771977224,
+          "largest_student_weight_excess_eV_cell": -0.3194811705799623
+        },
+        "k04_0-1-2-3": {
+          "student_minus_gaussian_contribution_meV_cell": -3.711321972919628e-06,
+          "student_ess": 364.2590593967931,
+          "gaussian_ess": 494.41057375918996,
+          "student_largest_weight": 0.02322944371168667,
+          "student_block_weight": [
+            0.23542578544680692,
+            0.21452993495349815,
+            0.27292299764853856,
+            0.2771212819511555
+          ],
+          "largest_student_weight_wall": 0.29666386743765744,
+          "largest_student_weight_excess_eV_cell": -0.4150102479861886
+        },
+        "k04_0-1-2-4": {
+          "student_minus_gaussian_contribution_meV_cell": -0.00015095431785259994,
+          "student_ess": 414.002240785427,
+          "gaussian_ess": 570.7566177371509,
+          "student_largest_weight": 0.0245000370918356,
+          "student_block_weight": [
+            0.258405157815033,
+            0.23608797038825774,
+            0.23122267607680003,
+            0.2742841957199093
+          ],
+          "largest_student_weight_wall": 0.3556411191228972,
+          "largest_student_weight_excess_eV_cell": -0.5752937788643777
+        },
+        "k04_0-1-2-5": {
+          "student_minus_gaussian_contribution_meV_cell": 3.1341988839645417e-06,
+          "student_ess": 624.7572232467086,
+          "gaussian_ess": 234.91632185021433,
+          "student_largest_weight": 0.013560146899891578,
+          "student_block_weight": [
+            0.273371108202532,
+            0.24564094549228754,
+            0.23971896564305545,
+            0.24126898066212388
+          ],
+          "largest_student_weight_wall": 0.31055724432448173,
+          "largest_student_weight_excess_eV_cell": -0.3051835232944171
+        },
+        "k04_0-1-2-7": {
+          "student_minus_gaussian_contribution_meV_cell": 4.837829776885273e-05,
+          "student_ess": 615.0786552474882,
+          "gaussian_ess": 372.5209015361055,
+          "student_largest_weight": 0.01313411804334682,
+          "student_block_weight": [
+            0.23267594791429008,
+            0.26817394076546164,
+            0.23282510822160268,
+            0.26632500309864543
+          ],
+          "largest_student_weight_wall": 0.19704911624434385,
+          "largest_student_weight_excess_eV_cell": -0.3153897859168353
+        },
+        "k04_0-1-2-12": {
+          "student_minus_gaussian_contribution_meV_cell": 0.00017919205496486364,
+          "student_ess": 635.4798619000958,
+          "gaussian_ess": 339.5870991879185,
+          "student_largest_weight": 0.018537100584183563,
+          "student_block_weight": [
+            0.24912735286006701,
+            0.24622391738300384,
+            0.262106839326689,
+            0.2425418904302398
+          ],
+          "largest_student_weight_wall": 0.27357647446681493,
+          "largest_student_weight_excess_eV_cell": -0.4074512022367145
+        },
+        "k04_0-1-2-13": {
+          "student_minus_gaussian_contribution_meV_cell": -0.00019067243962926623,
+          "student_ess": 638.6185864205781,
+          "gaussian_ess": 695.1438963423335,
+          "student_largest_weight": 0.013357937029286112,
+          "student_block_weight": [
+            0.24545566716288206,
+            0.26360461103087396,
+            0.2588277461169949,
+            0.23211197568924963
+          ],
+          "largest_student_weight_wall": 0.3090944780317978,
+          "largest_student_weight_excess_eV_cell": -0.3384540042056159
+        },
+        "k04_0-1-2-15": {
+          "student_minus_gaussian_contribution_meV_cell": 0.011391487244805385,
+          "student_ess": 662.9449187708251,
+          "gaussian_ess": 288.6831250347546,
+          "student_largest_weight": 0.01705613971645202,
+          "student_block_weight": [
+            0.2587365972962704,
+            0.25167197970516436,
+            0.24986456970655652,
+            0.23972685329200738
+          ],
+          "largest_student_weight_wall": 0.276049562082123,
+          "largest_student_weight_excess_eV_cell": -0.4853224405479182
+        },
+        "k04_0-1-4-5": {
+          "student_minus_gaussian_contribution_meV_cell": 1.1719696001513106e-06,
+          "student_ess": 530.3928287670144,
+          "gaussian_ess": 104.36410969751788,
+          "student_largest_weight": 0.0186340316317355,
+          "student_block_weight": [
+            0.24478179885878862,
+            0.2651668739264058,
+            0.2249049181479432,
+            0.26514640906686154
+          ],
+          "largest_student_weight_wall": 0.2718109662220723,
+          "largest_student_weight_excess_eV_cell": -0.3821996534252463
+        },
+        "k04_0-1-4-7": {
+          "student_minus_gaussian_contribution_meV_cell": -5.804759265653322e-05,
+          "student_ess": 115.90601161597728,
+          "gaussian_ess": 523.8970490460752,
+          "student_largest_weight": 0.0692329624475025,
+          "student_block_weight": [
+            0.33035278420205383,
+            0.19373570439338433,
+            0.22567934997174482,
+            0.2502321614328169
+          ],
+          "largest_student_weight_wall": 0.3727872173949903,
+          "largest_student_weight_excess_eV_cell": -0.7702535678069466
+        },
+        "k04_0-1-4-8": {
+          "student_minus_gaussian_contribution_meV_cell": 6.53566244237419e-07,
+          "student_ess": 504.89573019027205,
+          "gaussian_ess": 329.75536631450393,
+          "student_largest_weight": 0.024899268501662228,
+          "student_block_weight": [
+            0.261890840425409,
+            0.2384221168117513,
+            0.2536462862651726,
+            0.24604075649766627
+          ],
+          "largest_student_weight_wall": 0.32699629467288854,
+          "largest_student_weight_excess_eV_cell": -0.6551114789648977
+        },
+        "k04_0-1-4-9": {
+          "student_minus_gaussian_contribution_meV_cell": 6.61460180115713e-05,
+          "student_ess": 509.44922986358176,
+          "gaussian_ess": 553.4245086942972,
+          "student_largest_weight": 0.022174669007700338,
+          "student_block_weight": [
+            0.25409984276076,
+            0.22253878018366927,
+            0.26209918990848,
+            0.2612621871470918
+          ],
+          "largest_student_weight_wall": 0.3308448551701532,
+          "largest_student_weight_excess_eV_cell": -0.36127091639444586
+        },
+        "k04_0-1-4-10": {
+          "student_minus_gaussian_contribution_meV_cell": -0.00020326039797040324,
+          "student_ess": 132.540424453631,
+          "gaussian_ess": 482.03550719864626,
+          "student_largest_weight": 0.0715917548194647,
+          "student_block_weight": [
+            0.2705559548489518,
+            0.22755177954055214,
+            0.28679751077399857,
+            0.21509475483649831
+          ],
+          "largest_student_weight_wall": 0.31553822680826354,
+          "largest_student_weight_excess_eV_cell": -0.5195405152256143
+        },
+        "k04_0-1-4-11": {
+          "student_minus_gaussian_contribution_meV_cell": 0.0008430964178268097,
+          "student_ess": 251.36944063769184,
+          "gaussian_ess": 185.05623354993145,
+          "student_largest_weight": 0.04155350836267701,
+          "student_block_weight": [
+            0.2605307017982821,
+            0.2768751694310031,
+            0.21018968522468934,
+            0.252404443546025
+          ],
+          "largest_student_weight_wall": 0.33786767848433236,
+          "largest_student_weight_excess_eV_cell": -0.4298101263298548
+        },
+        "k04_0-1-4-12": {
+          "student_minus_gaussian_contribution_meV_cell": -3.755781226301725e-06,
+          "student_ess": 609.5610286387646,
+          "gaussian_ess": 669.425936859886,
+          "student_largest_weight": 0.01551051090563642,
+          "student_block_weight": [
+            0.26190284191373703,
+            0.26917735765344497,
+            0.22709564814385041,
+            0.24182415228896792
+          ],
+          "largest_student_weight_wall": 0.2837530782480095,
+          "largest_student_weight_excess_eV_cell": -0.4708293925640987
+        },
+        "k04_0-1-4-14": {
+          "student_minus_gaussian_contribution_meV_cell": 0.008094084712354115,
+          "student_ess": 755.5435634155278,
+          "gaussian_ess": 587.7876702127928,
+          "student_largest_weight": 0.013050823526865003,
+          "student_block_weight": [
+            0.24460261093815108,
+            0.2293353205840305,
+            0.2874418490468532,
+            0.2386202194309656
+          ],
+          "largest_student_weight_wall": 0.2396276392054963,
+          "largest_student_weight_excess_eV_cell": -0.3683833250386783
+        },
+        "k04_0-1-6-7": {
+          "student_minus_gaussian_contribution_meV_cell": 9.860789699832178e-05,
+          "student_ess": 515.6788765065256,
+          "gaussian_ess": 465.2245641354482,
+          "student_largest_weight": 0.030048130118740198,
+          "student_block_weight": [
+            0.24110214870225963,
+            0.22636397060507066,
+            0.23874936279950404,
+            0.29378451789316506
+          ],
+          "largest_student_weight_wall": 0.3351333504892591,
+          "largest_student_weight_excess_eV_cell": -0.9177086978722997
+        },
+        "k04_0-1-6-11": {
+          "student_minus_gaussian_contribution_meV_cell": -0.010553128853460566,
+          "student_ess": 127.75661448950156,
+          "gaussian_ess": 483.96529267207177,
+          "student_largest_weight": 0.0687243078182889,
+          "student_block_weight": [
+            0.2011599554719436,
+            0.2519575884118179,
+            0.25611740953841006,
+            0.290765046577828
+          ],
+          "largest_student_weight_wall": 0.32158528925731256,
+          "largest_student_weight_excess_eV_cell": -0.5479908604196737
+        },
+        "k04_0-1-6-12": {
+          "student_minus_gaussian_contribution_meV_cell": 0.008415334817350996,
+          "student_ess": 250.4395860434759,
+          "gaussian_ess": 716.5047281063062,
+          "student_largest_weight": 0.052470340423967615,
+          "student_block_weight": [
+            0.22306951941873687,
+            0.23822411672221694,
+            0.31839654347438495,
+            0.22030982038466163
+          ],
+          "largest_student_weight_wall": 0.29147802129190176,
+          "largest_student_weight_excess_eV_cell": -0.45072060470799613
+        },
+        "k04_0-1-12-13": {
+          "student_minus_gaussian_contribution_meV_cell": -4.191517785633496e-05,
+          "student_ess": 186.85339603200453,
+          "gaussian_ess": 350.5914906738937,
+          "student_largest_weight": 0.06372634592495643,
+          "student_block_weight": [
+            0.234228155908144,
+            0.20667453125534163,
+            0.2995466791679809,
+            0.25955063366853337
+          ],
+          "largest_student_weight_wall": 0.35404923938121224,
+          "largest_student_weight_excess_eV_cell": -0.5369460738165515
+        },
+        "k04_0-1-12-14": {
+          "student_minus_gaussian_contribution_meV_cell": -0.01695422506935205,
+          "student_ess": 526.2688140242751,
+          "gaussian_ess": 784.2967674736333,
+          "student_largest_weight": 0.02367885795531932,
+          "student_block_weight": [
+            0.24904703955936222,
+            0.27280670250582856,
+            0.2580302644320938,
+            0.22011599350271488
+          ],
+          "largest_student_weight_wall": 0.22753299850393824,
+          "largest_student_weight_excess_eV_cell": -0.38143972251299374
+        },
+        "k04_0-1-12-15": {
+          "student_minus_gaussian_contribution_meV_cell": -0.007087022726515119,
+          "student_ess": 742.3535906152432,
+          "gaussian_ess": 734.1868832414236,
+          "student_largest_weight": 0.01230591075126672,
+          "student_block_weight": [
+            0.26866719408797646,
+            0.24209130808167456,
+            0.25032036880349146,
+            0.23892112902685803
+          ],
+          "largest_student_weight_wall": 0.2573435569678895,
+          "largest_student_weight_excess_eV_cell": -0.36602528258262623
+        },
+        "k04_0-1-14-15": {
+          "student_minus_gaussian_contribution_meV_cell": 0.10993402937749298,
+          "student_ess": 362.50822649472326,
+          "gaussian_ess": 493.3273029627376,
+          "student_largest_weight": 0.04281431147030527,
+          "student_block_weight": [
+            0.22176715003770298,
+            0.29262885704723385,
+            0.21991496336821725,
+            0.26568902954684637
+          ],
+          "largest_student_weight_wall": 0.3249810595317396,
+          "largest_student_weight_excess_eV_cell": -0.5101003075003945
+        },
+        "k04_0-2-4-6": {
+          "student_minus_gaussian_contribution_meV_cell": 5.6888564546482916e-06,
+          "student_ess": 607.9233958467795,
+          "gaussian_ess": 3937.906044169923,
+          "student_largest_weight": 0.01162754065930769,
+          "student_block_weight": [
+            0.255592114489441,
+            0.23816486025179828,
+            0.25231129812601993,
+            0.25393172713274115
+          ],
+          "largest_student_weight_wall": 0.37766485425059654,
+          "largest_student_weight_excess_eV_cell": -0.28806057688734654
+        },
+        "k04_0-2-4-8": {
+          "student_minus_gaussian_contribution_meV_cell": -7.280564462555131e-05,
+          "student_ess": 209.4491419006195,
+          "gaussian_ess": 251.8275133144764,
+          "student_largest_weight": 0.04562623231577081,
+          "student_block_weight": [
+            0.2544680657802233,
+            0.2506668701133347,
+            0.24479839662819258,
+            0.2500666674782491
+          ],
+          "largest_student_weight_wall": 0.3092371363784385,
+          "largest_student_weight_excess_eV_cell": -0.8026852902531516
+        },
+        "k04_0-2-4-10": {
+          "student_minus_gaussian_contribution_meV_cell": 5.487722439546527e-06,
+          "student_ess": 729.9511072469978,
+          "gaussian_ess": 627.3378374965229,
+          "student_largest_weight": 0.015275568201206914,
+          "student_block_weight": [
+            0.25568937659453056,
+            0.26459420265930045,
+            0.24319688077290988,
+            0.23651953997325925
+          ],
+          "largest_student_weight_wall": 0.25738865768231023,
+          "largest_student_weight_excess_eV_cell": -0.3252273983296021
+        },
+        "k04_0-2-13-15": {
+          "student_minus_gaussian_contribution_meV_cell": 9.549568709598535,
+          "student_ess": 862.241424179511,
+          "gaussian_ess": 501.1756671138373,
+          "student_largest_weight": 0.014806707871807488,
+          "student_block_weight": [
+            0.2429808985016061,
+            0.25147626795077893,
+            0.2454223435348598,
+            0.2601204900127539
+          ],
+          "largest_student_weight_wall": 0.21749803848919913,
+          "largest_student_weight_excess_eV_cell": -0.35213249445399697
+        },
+        "k04_0-4-8-12": {
+          "student_minus_gaussian_contribution_meV_cell": -1.8371454434249154e-08,
+          "student_ess": 369.3205425806345,
+          "gaussian_ess": 614.2552424240945,
+          "student_largest_weight": 0.02043210199962433,
+          "student_block_weight": [
+            0.22843535174196627,
+            0.29477416848035676,
+            0.22676607367180376,
+            0.25002440610587395
+          ],
+          "largest_student_weight_wall": 0.36191663851759315,
+          "largest_student_weight_excess_eV_cell": -0.3843980149644466
+        },
+        "k04_0-4-8-14": {
+          "student_minus_gaussian_contribution_meV_cell": -7.304322874581546e-05,
+          "student_ess": 722.1942721968761,
+          "gaussian_ess": 610.1724738962889,
+          "student_largest_weight": 0.012501392456711755,
+          "student_block_weight": [
+            0.24873342730418002,
+            0.23913037390169412,
+            0.2669428681092194,
+            0.24519333068490662
+          ],
+          "largest_student_weight_wall": 0.30131756274582067,
+          "largest_student_weight_excess_eV_cell": -0.30476040472825616
+        },
+        "k04_0-4-10-14": {
+          "student_minus_gaussian_contribution_meV_cell": 0.0003896945222879514,
+          "student_ess": 757.0492989086313,
+          "gaussian_ess": 430.9726487209225,
+          "student_largest_weight": 0.014014367628709355,
+          "student_block_weight": [
+            0.23288708399043195,
+            0.259471712565723,
+            0.2641640028930511,
+            0.24347720055079336
+          ],
+          "largest_student_weight_wall": 0.299421847112896,
+          "largest_student_weight_excess_eV_cell": -0.32595286594639106
+        }
+      }
+    }
+  }
+}

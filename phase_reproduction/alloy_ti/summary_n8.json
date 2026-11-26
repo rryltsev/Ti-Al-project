@@ -1,0 +1,118 @@
+{
+  "temperature_K": 1000.0,
+  "degeneracies": {
+    "d019": 4,
+    "interlayer": 12,
+    "basal": 12
+  },
+  "scope": "Initial two-Gaussian proposal. The anharmonic W<1 estimates only describe the sampled neighborhood.",
+  "validation": "An independent broad proposal found collapsed Ti-Ti configurations. Use cage_sensitivity.json for defined HCP basins and the report for the standalone reproduction.",
+  "gaps_and_probabilities": {
+    "C46_static": {
+      "gaps_meV_atom": {
+        "d019": 0.0,
+        "interlayer": 110.60890515534716,
+        "basal": 78.59895940430484
+      },
+      "probability_D019": 0.9978673677939224
+    },
+    "direct_static": {
+      "gaps_meV_atom": {
+        "d019": 0.0,
+        "interlayer": 112.91682683662518,
+        "basal": 84.10353101012547
+      },
+      "probability_D019": 0.9986980552509442
+    },
+    "C46_bulk_qHA": {
+      "gaps_meV_atom": {
+        "d019": 0.0,
+        "interlayer": 85.65986428599982,
+        "basal": 61.01252071805341
+      },
+      "probability_D019": 0.9886702085353679
+    },
+    "direct_bulk_qHA": {
+      "gaps_meV_atom": {
+        "d019": 0.0,
+        "interlayer": 86.4390965997286,
+        "basal": 65.4329869334287
+      },
+      "probability_D019": 0.9921777389985057
+    },
+    "direct_bulk_classical_HA": {
+      "gaps_meV_atom": {
+        "d019": 0.0,
+        "interlayer": 86.61530446884846,
+        "basal": 65.54888171820483
+      },
+      "probability_D019": 0.9922661415228117
+    },
+    "direct_N8_classical_HA": {
+      "gaps_meV_atom": {
+        "d019": 0.0,
+        "interlayer": 87.80428989959965,
+        "basal": 65.4391133601333
+      },
+      "probability_D019": 0.9922966727563984
+    },
+    "direct_N8_quantum_HA": {
+      "gaps_meV_atom": {
+        "d019": 0.0,
+        "interlayer": 87.62454143481423,
+        "basal": 65.3198739223253
+      },
+      "probability_D019": 0.9922067426925463
+    },
+    "direct_N8_classical_anharmonic": {
+      "gaps_meV_atom": {
+        "d019": 0.0,
+        "interlayer": 90.11942743953315,
+        "basal": 68.0691749797564
+      },
+      "probability_D019": 0.9939355852244861
+    }
+  },
+  "gaps_anharmonic_SE_meV_atom": {
+    "d019": 0.0,
+    "interlayer": 0.22304989355411142,
+    "basal": 0.1630940670378573
+  },
+  "probability_anharmonic_SE": 8.974720648158937e-05,
+  "importance_sampling": {
+    "d019": {
+      "draws": 16384,
+      "ess_min": 7476.944305258997,
+      "max_weight": 0.0013393495137768064,
+      "excluded": 0,
+      "near_wall": 0.0,
+      "correction_meV_atom": -0.21342420645372745,
+      "quadrature_minus_endpoint_meV_atom": -4.348569944957162e-05,
+      "delta16_vs_64_intervals_meV_atom": -0.000651429259534525,
+      "step_change_meV_atom": -0.0005167530681490964
+    },
+    "interlayer": {
+      "draws": 16384,
+      "ess_min": 4397.389775336287,
+      "max_weight": 0.005034055864485024,
+      "excluded": 0,
+      "near_wall": 0.0,
+      "correction_meV_atom": 2.101713333480239,
+      "quadrature_minus_endpoint_meV_atom": -7.343532017634741e-05,
+      "delta16_vs_64_intervals_meV_atom": -0.0011017258277723312,
+      "step_change_meV_atom": -0.0028770849087526008
+    },
+    "basal": {
+      "draws": 16384,
+      "ess_min": 6002.978887660762,
+      "max_weight": 0.0028718118754926954,
+      "excluded": 0,
+      "near_wall": 0.0,
+      "correction_meV_atom": 2.4166374131697648,
+      "quadrature_minus_endpoint_meV_atom": -3.959136717687078e-06,
+      "delta16_vs_64_intervals_meV_atom": -5.902083830087307e-05,
+      "step_change_meV_atom": -0.0019368526032173727
+    }
+  },
+  "canonical_anharmonic_minus_classical_HA_meV_atom": -0.1956480147802253
+}

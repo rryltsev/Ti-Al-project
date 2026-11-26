@@ -1,0 +1,25 @@
+PBE 5k -> 15k: CPU property screening, 2026-10-25
+All changes below are model differences; they are not DFT errors.
+EOS equilibrium: pressure root, hcp shape relaxed; cubic symmetry retained for bcc/fcc.
+Phase: V5 / V15 (A^3/atom), B5 / B15 (GPa), delta V (%)
+Ti_hcp: 17.305971 / 17.327691, 109.724 / 111.560, +0.1255%
+Ti_bcc: 17.147574 / 17.143950, 109.378 / 109.985, -0.0211%
+Al_fcc: 16.611361 / 16.579419, 78.801 / 77.408, -0.1923%
+bcc-hcp equilibrium energy gaps (meV/atom): {"5000": 111.8430495262146, "15000": 102.72997617721558}
+Liquid 2000 K: 50 spaced frames per state, same geometries for both models.
+x_Al: delta E, endpoint-corrected delta E (meV/atom), delta P (GPa), force difference RMS (eV/A), relative RMS (%)
+0.0: -9.2606, +0.0000 +/- 0.0000, +0.08830 +/- 0.00118, 0.01962, 2.16
+0.1: -6.4031, +2.2580 +/- 0.0826, +0.06356 +/- 0.00143, 0.01887, 2.01
+0.3: -1.5860, +5.8759 +/- 0.0859, +0.03009 +/- 0.00062, 0.01775, 1.79
+0.5: +1.6683, +7.9311 +/- 0.0721, +0.01475 +/- 0.00063, 0.01619, 1.60
+1.0: -3.2651, +0.0000 +/- 0.0000, -0.06679 +/- 0.00076, 0.00913, 1.08
+Uncertainties are block SEM, not confidence intervals, and do not capture independent-trajectory variability.
+The endpoint-corrected liquid energy shift is not a recalculated equilibrium mixing enthalpy.
+Pressure is configurational, positive in compression; kinetic contribution cancels in the paired comparison.
+The bcc-hcp static gap is not a melting-temperature prediction.
+Archive consistency (native 5k minus stored predictions):
+x_Al=0: {"delta_E_meV_atom_mean": 4.03523422143337e-05, "delta_E_meV_atom_max_abs": 0.00011920928688624599, "delta_F_RMS_eV_A": 1.4864619242648674e-06, "delta_P_GPa_max_abs": 5.382907886763988e-06}
+x_Al=0.1: {"delta_E_meV_atom_mean": 2.077957388380014e-05, "delta_E_meV_atom_max_abs": 0.00011941417810135135, "delta_F_RMS_eV_A": 1.4516710200676272e-06, "delta_P_GPa_max_abs": 6.99726822656066e-06}
+x_Al=0.3: {"delta_E_meV_atom_mean": 2.0520273125157473e-06, "delta_E_meV_atom_max_abs": 7.785856936948221e-05, "delta_F_RMS_eV_A": 1.3871271762783028e-06, "delta_P_GPa_max_abs": 6.898073381611525e-06}
+x_Al=0.5: {"delta_E_meV_atom_mean": -7.489698496954134e-06, "delta_E_meV_atom_max_abs": 6.869435509315736e-05, "delta_F_RMS_eV_A": 1.3027254218125168e-06, "delta_P_GPa_max_abs": 7.713451916413483e-06}
+x_Al=1: {"delta_E_meV_atom_mean": -1.3530237019665492e-06, "delta_E_meV_atom_max_abs": 4.3213365774619206e-05, "delta_F_RMS_eV_A": 7.1674993881583e-07, "delta_P_GPa_max_abs": 4.1557411544213e-06}

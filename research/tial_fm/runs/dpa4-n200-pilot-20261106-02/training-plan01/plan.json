@@ -1,0 +1,92 @@
+{
+  "cases": [
+    {
+      "name": "PBE-lora16",
+      "XC": "PBE",
+      "method": "lora16",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "4bdede956acbbed78ada8cd04da67f922fe80778a4ea42c9da8ca1d9a9793ce3",
+      "intent": "Fixed 50 epochs; single GPU, no distributed sharding; native historical HybridMuon and loss recipe; N200-only statistics; test not supplied to trainer or checkpoint selection."
+    },
+    {
+      "name": "PBE-full",
+      "XC": "PBE",
+      "method": "full",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "62b4a621e6050ca9fe9612f363a8a0cf4c90ec8d86c4390d854380eee4e40488",
+      "intent": "Fixed 50 epochs; single GPU, no distributed sharding; native historical HybridMuon and loss recipe; N200-only statistics; test not supplied to trainer or checkpoint selection."
+    },
+    {
+      "name": "r2SCAN-lora16",
+      "XC": "r2SCAN",
+      "method": "lora16",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "799895520cf03a5b8d26a5a109a786005d909ce04658a42d2797700a03502c6e",
+      "intent": "Fixed 50 epochs; single GPU, no distributed sharding; native historical HybridMuon and loss recipe; N200-only statistics; test not supplied to trainer or checkpoint selection."
+    },
+    {
+      "name": "r2SCAN-full",
+      "XC": "r2SCAN",
+      "method": "full",
+      "N": 200,
+      "validation": 149,
+      "seed": 10,
+      "source": {
+        "path": "/home6/u3129/tial-testsets/pretrained-neo-20261022-01/DPA4-Neo-OMat24-v20260805.pt",
+        "sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989"
+      },
+      "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+      "subsets_sha256": "5bfeb1cc450d9044b7b28eab1e102ffa093b9086d8e4dd3277308525b5ecf02c",
+      "source_recipe_sha256": "6ad392448f4b67b04731c3ce4b2680089d16d674440422e8b64f93e9e9031d89",
+      "configuration_sha256": "f4b2b11fc339d333c99efe102b7ed2993a5ae0ae0e86900420a2a1bf7fd0a960",
+      "intent": "Fixed 50 epochs; single GPU, no distributed sharding; native historical HybridMuon and loss recipe; N200-only statistics; test not supplied to trainer or checkpoint selection."
+    }
+  ],
+  "resource_request": {
+    "partition": "v100",
+    "account": "imet-2026-2",
+    "gpus": 1,
+    "cpus": 4,
+    "mem": "40G",
+    "time": "04:00:00",
+    "array": "0-3%1"
+  },
+  "epochs": 50,
+  "estimated_steps_each": 10000,
+  "estimate_note": "Batch auto:128 implies one frame for 216-256 atoms; actual scheduler steps and frame/atom exposures recorded. Walltime estimate updated at first100steps. Four-hour allocation is a per-job scheduler ceiling, not expected duration.",
+  "gates": [
+    "B0 PASS",
+    "H0 PASS",
+    "zero-step source restoration up to composition energy bias",
+    "live vs merged equivalence",
+    "runtime mask and frozen weights check"
+  ],
+  "test_access": false
+}

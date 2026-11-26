@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "r2SCAN-restricted_mlp-N200-seed10",
+    "XC": "r2SCAN",
+    "method": "restricted_mlp",
+    "N": 200,
+    "validation": 149,
+    "seed": 10,
+    "epochs": 50,
+    "steps": 10000,
+    "trainable_patterns": [
+      "I2/reducing_",
+      "rho/reducing_",
+      "I1/reducing_",
+      "LinMLPOut2ScalarTarget_"
+    ],
+    "expected_trainable": 21112778,
+    "expected_trainable_tensors": 14
+  },
+  "steps": 10000,
+  "epochs": 50,
+  "training_seconds": 509.2156488317996,
+  "final_checkpoint": "/misc/home6/u3129/tial-fm-research/grace-n200-mask-ablation-20261109-01/cases/r2SCAN-restricted_mlp-N200-seed10/final-checkpoint/checkpoint",
+  "hashes": {
+    "checkpoint.index": "111099bb458813efb49f3d5da389dd3b0ec62f00d741f7c7d4daa76de07a2a38",
+    "checkpoint.data-00000-of-00001": "f6000d656c8ea13a0cae567264fc2a13a8709cc66779403d0baa4e6290a9445c"
+  },
+  "test_access": false,
+  "selection": "fixed final epoch50",
+  "GPU_memory": {
+    "current": 565351936,
+    "peak": 2110310144
+  }
+}

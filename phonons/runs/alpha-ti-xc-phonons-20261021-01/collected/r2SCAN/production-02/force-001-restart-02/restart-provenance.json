@@ -1,0 +1,19 @@
+{
+  "parent_job": "20959337",
+  "source": "/misc/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/r2SCAN/production-02/force-001-restart-01",
+  "checkpoints": {
+    "CHGCAR": {
+      "sha256": "ea41596d3a38ed8b883c7bae2ad637bdb712c85b01044906c061579d1d78418a",
+      "bytes": 127578746
+    },
+    "TAUCAR": {
+      "sha256": "d1e39c7e4677ebe9d3b36ab059dcec6957334d717890d83d791f67555caf47ef",
+      "bytes": 127374170
+    }
+  },
+  "changes": [
+    "ICHARG=1; ISTART=0 (no parent WAVECAR)",
+    "LWAVE=.TRUE.; preserve orbitals for subsequent continuation; scientific settings unchanged"
+  ],
+  "driver_sha256": "e8f8b3789e4c0fa657197a84062d64e2361600d3f76181baa6ebc609de03746a"
+}

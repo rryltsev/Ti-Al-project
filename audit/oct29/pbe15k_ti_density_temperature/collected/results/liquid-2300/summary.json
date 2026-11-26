@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "state": {
+    "id": "liquid-2300",
+    "phase": "liquid",
+    "T_K": 2300,
+    "N": 200,
+    "initial_file": "liquid.traj",
+    "initial_sha256": "5867059f10168d6da453689055c7b641eab1930459ff21bd1df25564a3b77ee8",
+    "bulk_modulus_GPa": 110.0,
+    "seed": 202610324,
+    "equil_steps": 30000,
+    "production_steps": 30000
+  },
+  "job_id": "20964836",
+  "device": {
+    "name": "NVIDIA A100-PCIE-40GB",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "deepmd_device": "cuda:0"
+  },
+  "model_sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+  "protocol_sha256": "7232566e3a2da201a4aa44a9c4f1bf4113b02aff615c0689500980dc6577521f",
+  "worker_sha256": "534ee3f6037ca44e2641f8bd8d3d05d5f2d5111fe7278d90c605bd0cd207e621",
+  "common_sha256": "2adbb9dfb057750db7b6f5319a68c3451d1c9096fcfabad33ad0ddfde7f0fc51",
+  "wall_seconds": 2510.793163135648,
+  "equil_seconds": 1255.8129173200577,
+  "production_seconds": 1254.8172304723412,
+  "rho_g_cm3": 4.206407732660377
+}

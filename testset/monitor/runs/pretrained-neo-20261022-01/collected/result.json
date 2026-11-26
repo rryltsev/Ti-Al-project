@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "job_id": "20958504",
+  "model_sha256": "fd7f34ae28f921201e4a0328ddf56179892752084f8363e7796038201471c989",
+  "architecture_comparison": {
+    "channels": {
+      "pretrained": 32,
+      "finetuned": 32
+    },
+    "n_radial": {
+      "pretrained": 16,
+      "finetuned": 16
+    },
+    "lmax": {
+      "pretrained": 3,
+      "finetuned": 3
+    },
+    "mmax": {
+      "pretrained": 1,
+      "finetuned": 1
+    },
+    "n_blocks": {
+      "pretrained": 2,
+      "finetuned": 2
+    },
+    "mixing_layers": {
+      "pretrained": 3,
+      "finetuned": 3
+    },
+    "rcut": {
+      "pretrained": 6.0,
+      "finetuned": 6.0
+    },
+    "n_focus": {
+      "pretrained": 2,
+      "finetuned": 2
+    },
+    "n_atten_head": {
+      "pretrained": 1,
+      "finetuned": 1
+    }
+  },
+  "unix": 1792640985.7669458,
+  "derivative_check": {
+    "force_eV_A": -2.506418933554344,
+    "virial_xx_eV": -105.01864545878259,
+    "finite_differences": [
+      {
+        "step": 0.003,
+        "force_eV_A": -2.507176250219345,
+        "virial_xx_eV": -104.9870029091835
+      },
+      {
+        "step": 0.001,
+        "force_eV_A": -2.5060512125492096,
+        "virial_xx_eV": -105.01497238874435
+      },
+      {
+        "step": 0.0003,
+        "force_eV_A": -2.5101254383722944,
+        "virial_xx_eV": -105.02785444259645
+      }
+    ]
+  },
+  "predictions": 50,
+  "versions": {
+    "numpy": "2.5.3",
+    "deepmd-kit": "3.2.0",
+    "torch": "2.11.0",
+    "python": "3.12.14"
+  },
+  "finished_unix": 1792641069.403393
+}

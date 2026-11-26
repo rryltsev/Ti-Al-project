@@ -1,0 +1,1165 @@
+{
+  "status": "PASS",
+  "job_id": "20988553",
+  "results": {
+    "PBE": {
+      "DFT": {
+        "Gamma": {
+          "singlet_c_THz": 5.408169221658617,
+          "doublet_basal_THz": [
+            3.9641054916557077,
+            3.9641054934760582
+          ],
+          "c_polarization_singlet": 1.0000000000000007,
+          "singlet_below_doublet": false
+        },
+        "acoustics": {
+          "Gamma-M": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3361.7284250396187,
+                3370.745902369326,
+                5862.755115841514
+              ],
+              [
+                3361.726630931532,
+                3370.7431270337943,
+                5862.755394960905
+              ],
+              [
+                3361.7194875422974,
+                3370.732026913073,
+                5862.756513636465
+              ],
+              [
+                3361.6909202328607,
+                3370.6876270307566,
+                5862.760983653801
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              5.336864902582462e-07,
+              8.233601395980072e-07,
+              4.7608909350529816e-08
+            ]
+          },
+          "Gamma-K": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3361.728224484854,
+                3370.7487535894884,
+                5862.753334151562
+              ],
+              [
+                3361.7258397524906,
+                3370.7545247942767,
+                5862.748262395652
+              ],
+              [
+                3361.716316137261,
+                3370.777606872729,
+                5862.727973149694
+              ],
+              [
+                3361.6782271152206,
+                3370.8699062850137,
+                5862.646815541616
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              7.093774081829697e-07,
+              1.7121403370780816e-06,
+              8.650816447757319e-07
+            ]
+          },
+          "Gamma-A": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3161.4622960007564,
+                3161.462313377005,
+                6543.887675984747
+              ],
+              [
+                3161.4615567284513,
+                3161.4615599699546,
+                6543.886798034664
+              ],
+              [
+                3161.458577562201,
+                3161.4585794447025,
+                6543.883345258574
+              ],
+              [
+                3161.446661726649,
+                3161.4466640067153,
+                6543.869537673153
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              2.3383877734681144e-07,
+              2.3830972992490277e-07,
+              1.3416339710920583e-07
+            ]
+          }
+        },
+        "projection": {
+          "raw": {
+            "mesh_min_THz": 0.002815148169281941,
+            "imaginary_modes_weighted": 0
+          },
+          "central": {
+            "mesh_min_THz": -1.1108426405204167e-08,
+            "imaginary_modes_weighted": 0
+          },
+          "ASR": {
+            "mesh_min_THz": 2.983077834617128e-08,
+            "imaginary_modes_weighted": 0
+          }
+        }
+      },
+      "original": {
+        "Gamma": {
+          "singlet_c_THz": 5.365255531454071,
+          "doublet_basal_THz": [
+            2.9273633352827124,
+            2.9273633369445493
+          ],
+          "c_polarization_singlet": 0.9999999999999993,
+          "singlet_below_doublet": false
+        },
+        "acoustics": {
+          "Gamma-M": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                2161.555598976013,
+                3055.865619140649,
+                5696.204738764437
+              ],
+              [
+                2161.5568616845558,
+                3055.8632545709297,
+                5696.204307793893
+              ],
+              [
+                2161.5619126253737,
+                3055.853819461521,
+                5696.202585381528
+              ],
+              [
+                2161.5821111279824,
+                3055.816086360218,
+                5696.195686604096
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              5.84166239326784e-07,
+              7.73781259914334e-07,
+              7.565924963149187e-08
+            ]
+          },
+          "Gamma-K": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                2161.564757621354,
+                3055.8653575631115,
+                5696.201272641422
+              ],
+              [
+                2161.593494207719,
+                3055.862208487949,
+                5696.19043235854
+              ],
+              [
+                2161.7084188741956,
+                3055.8496292226446,
+                5696.14707290687
+              ],
+              [
+                2162.1678411481826,
+                3055.7993194843407,
+                5695.973631145886
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              1.3294167678443525e-05,
+              1.0305029964491174e-06,
+              1.9030759260244873e-06
+            ]
+          },
+          "Gamma-A": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                2827.239196115388,
+                2827.239209533992,
+                5983.318080800615
+              ],
+              [
+                2827.2389851767084,
+                2827.2389901887414,
+                5983.317872306739
+              ],
+              [
+                2827.2381346263883,
+                2827.238137636129,
+                5983.3170775737035
+              ],
+              [
+                2827.234730954092,
+                2827.234733264375,
+                5983.313911403833
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              7.46094266297039e-08,
+              7.758284719896465e-08,
+              3.484586304060364e-08
+            ]
+          }
+        },
+        "projection": {
+          "raw": {
+            "mesh_min_THz": -1.238575728483264,
+            "imaginary_modes_weighted": 2028
+          },
+          "central": {
+            "mesh_min_THz": -1.2385757284832613,
+            "imaginary_modes_weighted": 2028
+          },
+          "ASR": {
+            "mesh_min_THz": -1.238575728591789,
+            "imaginary_modes_weighted": 2028
+          }
+        },
+        "sorted_RMSE_THz": 0.6978719999795606,
+        "overlap_matched_RMSE_THz": 0.7348890437432385,
+        "isolated_overlap_min": 0.8983189715698313,
+        "degenerate_projector_fidelity_min": 0.9999999999999951,
+        "relative_dynamical_matrix_Frobenius_error": 0.2745835251087998,
+        "relative_FC_Frobenius_error": 0.24901152088099576,
+        "DOS_L1_modes_per_atom": 1.5208075986454612,
+        "singlet_eigenvalue_ratio_to_DFT": 0.9841930128615624
+      },
+      "lora16": {
+        "Gamma": {
+          "singlet_c_THz": 5.333634062640252,
+          "doublet_basal_THz": [
+            3.7571745287227944,
+            3.757174530514576
+          ],
+          "c_polarization_singlet": 1.0,
+          "singlet_below_doublet": false
+        },
+        "acoustics": {
+          "Gamma-M": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3296.1806067882835,
+                3364.0247534910145,
+                6195.648969765951
+              ],
+              [
+                3296.1791385938013,
+                3364.023282970104,
+                6195.6474739725845
+              ],
+              [
+                3296.1732667743727,
+                3364.017414567152,
+                6195.641492521894
+              ],
+              [
+                3296.149774808049,
+                3363.993944811782,
+                6195.617563954908
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              4.4542314614984474e-07,
+              4.371316090349973e-07,
+              2.4142648086198986e-07
+            ]
+          },
+          "Gamma-K": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3296.180447459277,
+                3364.029064968866,
+                6195.646378365518
+              ],
+              [
+                3296.178489555801,
+                3364.0405302580866,
+                6195.637095999979
+              ],
+              [
+                3296.170659465137,
+                3364.086394082988,
+                6195.599967952368
+              ],
+              [
+                3296.139337024584,
+                3364.2697870426846,
+                6195.451455338085
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              5.939919460724565e-07,
+              3.4081899779737785e-06,
+              1.498210013872605e-06
+            ]
+          },
+          "Gamma-A": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3185.638639111685,
+                3185.6386569617357,
+                6324.148475241574
+              ],
+              [
+                3185.6384947676934,
+                3185.6385001760123,
+                6324.14853266432
+              ],
+              [
+                3185.63791543339,
+                3185.6379183558074,
+                6324.148756176846
+              ],
+              [
+                3185.635601205183,
+                3185.6356039176385,
+                6324.149644493938
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              4.531085108624343e-08,
+              4.9216420331126895e-08,
+              9.079917362925602e-09
+            ]
+          }
+        },
+        "projection": {
+          "raw": {
+            "mesh_min_THz": -1.8726451212192166e-07,
+            "imaginary_modes_weighted": 0
+          },
+          "central": {
+            "mesh_min_THz": -9.212003597064179e-08,
+            "imaginary_modes_weighted": 0
+          },
+          "ASR": {
+            "mesh_min_THz": 4.492847880728237e-08,
+            "imaginary_modes_weighted": 0
+          }
+        },
+        "sorted_RMSE_THz": 0.2160964452103435,
+        "overlap_matched_RMSE_THz": 0.2243740705203753,
+        "isolated_overlap_min": 0.9562300672005216,
+        "degenerate_projector_fidelity_min": 0.999999999999996,
+        "relative_dynamical_matrix_Frobenius_error": 0.08378254876253546,
+        "relative_FC_Frobenius_error": 0.06248454725086594,
+        "DOS_L1_modes_per_atom": 0.43333117899897733,
+        "singlet_eigenvalue_ratio_to_DFT": 0.9726260271144984
+      },
+      "full": {
+        "Gamma": {
+          "singlet_c_THz": 5.069218918844559,
+          "doublet_basal_THz": [
+            3.7920736855056165,
+            3.7920736873478504
+          ],
+          "c_polarization_singlet": 0.9999999999999999,
+          "singlet_below_doublet": false
+        },
+        "acoustics": {
+          "Gamma-M": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3236.2947562278327,
+                3446.7217402285605,
+                6084.473061978677
+              ],
+              [
+                3236.293122378055,
+                3446.719248294652,
+                6084.472451893732
+              ],
+              [
+                3236.2865637538716,
+                3446.7092907229394,
+                6084.47001519696
+              ],
+              [
+                3236.2603249891295,
+                3446.6694628891437,
+                6084.460264720594
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              5.04852223147805e-07,
+              7.229872028863322e-07,
+              1.0026916053301992e-07
+            ]
+          },
+          "Gamma-K": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3236.29457859848,
+                3446.725716239923,
+                6084.470590287845
+              ],
+              [
+                3236.2923964091997,
+                3446.735148754672,
+                6084.46255246924
+              ],
+              [
+                3236.2836513684724,
+                3446.772881943977,
+                6084.43040588235
+              ],
+              [
+                3236.2486662818433,
+                3446.923761517389,
+                6084.301819447572
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              6.742868112106179e-07,
+              2.736652032195229e-06,
+              1.3210400319745584e-06
+            ]
+          },
+          "Gamma-A": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                2976.6904180632837,
+                2976.690434342937,
+                6184.768987264851
+              ],
+              [
+                2976.6903657022417,
+                2976.690370833622,
+                6184.769214922738
+              ],
+              [
+                2976.6901585420137,
+                2976.6901619532605,
+                6184.770085716662
+              ],
+              [
+                2976.6893381108102,
+                2976.6893411907427,
+                6184.773556319632
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              1.75903555787277e-08,
+              2.133554612739162e-08,
+              3.680943931283164e-08
+            ]
+          }
+        },
+        "projection": {
+          "raw": {
+            "mesh_min_THz": -8.091786431376564e-08,
+            "imaginary_modes_weighted": 0
+          },
+          "central": {
+            "mesh_min_THz": -7.596619596775257e-08,
+            "imaginary_modes_weighted": 0
+          },
+          "ASR": {
+            "mesh_min_THz": -1.6236255849288217e-07,
+            "imaginary_modes_weighted": 0
+          }
+        },
+        "sorted_RMSE_THz": 0.1798641121101012,
+        "overlap_matched_RMSE_THz": 0.18583352530485908,
+        "isolated_overlap_min": 0.9787625671294026,
+        "degenerate_projector_fidelity_min": 0.9999999999999918,
+        "relative_dynamical_matrix_Frobenius_error": 0.06576623424201586,
+        "relative_FC_Frobenius_error": 0.05212851231577331,
+        "DOS_L1_modes_per_atom": 0.382979488638869,
+        "singlet_eigenvalue_ratio_to_DFT": 0.8785804791608043
+      }
+    },
+    "r2SCAN": {
+      "DFT": {
+        "Gamma": {
+          "singlet_c_THz": 5.189323501615234,
+          "doublet_basal_THz": [
+            4.586615641085146,
+            4.586615643092965
+          ],
+          "c_polarization_singlet": 1.0000000000000002,
+          "singlet_below_doublet": false
+        },
+        "acoustics": {
+          "Gamma-M": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3577.262058393479,
+                3850.477289367816,
+                6351.692874300214
+              ],
+              [
+                3577.260274819731,
+                3850.473665095182,
+                6351.692399594073
+              ],
+              [
+                3577.253113983008,
+                3850.4591796704217,
+                6351.690510394891
+              ],
+              [
+                3577.2244664318296,
+                3850.4012392060154,
+                6351.682951005878
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              4.985865190255973e-07,
+              9.412537130234251e-07,
+              7.473695361839741e-08
+            ]
+          },
+          "Gamma-K": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3577.2618569756874,
+                3850.47992024132,
+                6351.690971337944
+              ],
+              [
+                3577.2594754658207,
+                3850.484209322975,
+                6351.684813069087
+              ],
+              [
+                3577.249927107511,
+                3850.5013678085816,
+                6351.66018384957
+              ],
+              [
+                3577.2117304600997,
+                3850.569979981439,
+                6351.561667807106
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              6.657358469360147e-07,
+              1.1139070884840172e-06,
+              9.695488737269355e-07
+            ]
+          },
+          "Gamma-A": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3853.502709386007,
+                3853.5027172283803,
+                6352.50698031908
+              ],
+              [
+                3853.5017414878266,
+                3853.5017421903285,
+                6352.50683255881
+              ],
+              [
+                3853.497881063485,
+                3853.4978831884887,
+                6352.506207711051
+              ],
+              [
+                3853.4824486902407,
+                3853.4824511225897,
+                6352.503699460071
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              2.5117367149806016e-07,
+              2.530264982482282e-07,
+              2.326015129228967e-08
+            ]
+          }
+        },
+        "projection": {
+          "raw": {
+            "mesh_min_THz": -0.004448791147980003,
+            "imaginary_modes_weighted": 2
+          },
+          "central": {
+            "mesh_min_THz": 5.0436097894016816e-08,
+            "imaginary_modes_weighted": 0
+          },
+          "ASR": {
+            "mesh_min_THz": 7.420416038058362e-08,
+            "imaginary_modes_weighted": 0
+          }
+        }
+      },
+      "original": {
+        "Gamma": {
+          "singlet_c_THz": 5.439034018494151,
+          "doublet_basal_THz": [
+            2.9299337248740085,
+            2.929933726788912
+          ],
+          "c_polarization_singlet": 1.0000000000000002,
+          "singlet_below_doublet": false
+        },
+        "acoustics": {
+          "Gamma-M": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                2128.8525319944006,
+                3062.5102810070775,
+                5681.783190314608
+              ],
+              [
+                2128.853938357313,
+                3062.5079303825883,
+                5681.782894134994
+              ],
+              [
+                2128.859556250195,
+                3062.498538477753,
+                5681.781704261854
+              ],
+              [
+                2128.8820209393293,
+                3062.4609707359023,
+                5681.776933772681
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              6.606197292396701e-07,
+              7.67548866065407e-07,
+              5.212793573088937e-08
+            ]
+          },
+          "Gamma-K": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                2128.861937971282,
+                3062.5100156992553,
+                5681.7796853681375
+              ],
+              [
+                2128.891565096459,
+                3062.506884270383,
+                5681.7688910210745
+              ],
+              [
+                2129.0100524927366,
+                3062.494360871472,
+                5681.725707975093
+              ],
+              [
+                2129.4837136521,
+                3062.444271326689,
+                5681.552970344918
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              1.391669057411229e-05,
+              1.0225050883149393e-06,
+              1.8998215643796758e-06
+            ]
+          },
+          "Gamma-A": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                2821.5895494850633,
+                2821.589562094197,
+                6000.094696155301
+              ],
+              [
+                2821.589354743438,
+                2821.5893600688455,
+                6000.094516757995
+              ],
+              [
+                2821.5885408714826,
+                2821.5885440370457,
+                6000.093834806423
+              ],
+              [
+                2821.5852761804244,
+                2821.5852788342136,
+                6000.091107022323
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              6.901841511305467e-08,
+              7.159984166601335e-08,
+              2.98990800152753e-08
+            ]
+          }
+        },
+        "projection": {
+          "raw": {
+            "mesh_min_THz": -1.3460259815568567,
+            "imaginary_modes_weighted": 2616
+          },
+          "central": {
+            "mesh_min_THz": -1.3460259815568543,
+            "imaginary_modes_weighted": 2616
+          },
+          "ASR": {
+            "mesh_min_THz": -1.3460259815636773,
+            "imaginary_modes_weighted": 2616
+          }
+        },
+        "sorted_RMSE_THz": 1.0102129931911685,
+        "overlap_matched_RMSE_THz": 1.0619191951295357,
+        "isolated_overlap_min": 0.8942766327935476,
+        "degenerate_projector_fidelity_min": 0.9999999999998952,
+        "relative_dynamical_matrix_Frobenius_error": 0.3528805264352225,
+        "relative_FC_Frobenius_error": 0.3303957880522024,
+        "DOS_L1_modes_per_atom": 1.9879895781816983,
+        "singlet_eigenvalue_ratio_to_DFT": 1.0985556434595698
+      },
+      "lora16": {
+        "Gamma": {
+          "singlet_c_THz": 5.114657236174714,
+          "doublet_basal_THz": [
+            4.171237602306887,
+            4.171237604357302
+          ],
+          "c_polarization_singlet": 0.9999999999999996,
+          "singlet_below_doublet": false
+        },
+        "acoustics": {
+          "Gamma-M": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3417.3819118132947,
+                3491.9007043617685,
+                6437.435112510383
+              ],
+              [
+                3417.3806074606723,
+                3491.8995803483035,
+                6437.433844045293
+              ],
+              [
+                3417.3753977905067,
+                3491.8950731844566,
+                6437.428764730919
+              ],
+              [
+                3417.354564085628,
+                3491.8770418479626,
+                6437.408442551488
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              3.816819875163758e-07,
+              3.218916922140128e-07,
+              1.9704514575785822e-07
+            ]
+          },
+          "Gamma-K": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3417.381762016338,
+                3491.9054867565765,
+                6437.432301878498
+              ],
+              [
+                3417.3800243759856,
+                3491.91870874758,
+                6437.422623516848
+              ],
+              [
+                3417.3730791694466,
+                3491.9715923413646,
+                6437.383902391755
+              ],
+              [
+                3417.3453013080043,
+                3492.1830587252957,
+                6437.22901563176
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              5.084715015994534e-07,
+              3.7864544126407316e-06,
+              1.5034528903923256e-06
+            ]
+          },
+          "Gamma-A": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3382.948508928115,
+                3382.948537108922,
+                6496.747417268309
+              ],
+              [
+                3382.94835111309,
+                3382.948359405898,
+                6496.747610500482
+              ],
+              [
+                3382.9476473849754,
+                3382.9476520437693,
+                6496.748390358137
+              ],
+              [
+                3382.9448179617634,
+                3382.9448214966105,
+                6496.751514221422
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              4.66501431879976e-08,
+              5.2529038404592724e-08,
+              2.9742908993486523e-08
+            ]
+          }
+        },
+        "projection": {
+          "raw": {
+            "mesh_min_THz": 7.518129826742487e-08,
+            "imaginary_modes_weighted": 0
+          },
+          "central": {
+            "mesh_min_THz": -1.0453310565702988e-07,
+            "imaginary_modes_weighted": 0
+          },
+          "ASR": {
+            "mesh_min_THz": -8.588597359203069e-08,
+            "imaginary_modes_weighted": 0
+          }
+        },
+        "sorted_RMSE_THz": 0.22294560642228486,
+        "overlap_matched_RMSE_THz": 0.2331238250736392,
+        "isolated_overlap_min": 0.9432631991169035,
+        "degenerate_projector_fidelity_min": 0.9999999999999969,
+        "relative_dynamical_matrix_Frobenius_error": 0.08276774306150898,
+        "relative_FC_Frobenius_error": 0.0628322874022567,
+        "DOS_L1_modes_per_atom": 0.3603094300479684,
+        "singlet_eigenvalue_ratio_to_DFT": 0.971430148878186
+      },
+      "full": {
+        "Gamma": {
+          "singlet_c_THz": 4.895969580593097,
+          "doublet_basal_THz": [
+            4.347389806423916,
+            4.347389808445273
+          ],
+          "c_polarization_singlet": 1.0000000000000004,
+          "singlet_below_doublet": false
+        },
+        "acoustics": {
+          "Gamma-M": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3357.2156893529873,
+                3746.1087955762296,
+                6409.015145946119
+              ],
+              [
+                3357.214230320647,
+                3746.1060044325855,
+                6409.014193182525
+              ],
+              [
+                3357.208413266738,
+                3746.0948396653735,
+                6409.010383719891
+              ],
+              [
+                3357.1851476667453,
+                3746.050181218339,
+                6408.995142310971
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              4.345961384168343e-07,
+              7.450786605650322e-07,
+              1.4865992898090472e-07
+            ]
+          },
+          "Gamma-K": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3357.21551865943,
+                3746.112622453198,
+                6409.012612271282
+              ],
+              [
+                3357.2135794147193,
+                3746.1213335527887,
+                6409.00407608132
+              ],
+              [
+                3357.20582433282,
+                3746.1561672548646,
+                6408.969933336951
+              ],
+              [
+                3357.174804298716,
+                3746.2954582095053,
+                6408.833362517072
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              5.776351920457591e-07,
+              2.3253650415711996e-06,
+              1.3319058406819961e-06
+            ]
+          },
+          "Gamma-A": {
+            "q_fraction_scales": [
+              0.0005,
+              0.001,
+              0.002,
+              0.004
+            ],
+            "phase_velocity_m_s": [
+              [
+                3212.6128129473477,
+                3212.6128338939934,
+                6422.996688461222
+              ],
+              [
+                3212.612750754661,
+                3212.612752633798,
+                6422.996878854869
+              ],
+              [
+                3212.612468027392,
+                3212.612470196934,
+                6422.9976590082315
+              ],
+              [
+                3212.611337522086,
+                3212.6113405375627,
+                6423.000781006999
+              ]
+            ],
+            "relative_change_two_smallest_q": [
+              1.9358911687454898e-08,
+              2.5294114622258485e-08,
+              2.9642493983111043e-08
+            ]
+          }
+        },
+        "projection": {
+          "raw": {
+            "mesh_min_THz": -6.920769800113489e-08,
+            "imaginary_modes_weighted": 0
+          },
+          "central": {
+            "mesh_min_THz": -9.349590999440657e-08,
+            "imaginary_modes_weighted": 0
+          },
+          "ASR": {
+            "mesh_min_THz": -9.245702158449967e-08,
+            "imaginary_modes_weighted": 0
+          }
+        },
+        "sorted_RMSE_THz": 0.18131114748349375,
+        "overlap_matched_RMSE_THz": 0.18715399042471603,
+        "isolated_overlap_min": 0.9810226277624391,
+        "degenerate_projector_fidelity_min": 0.9999999999999951,
+        "relative_dynamical_matrix_Frobenius_error": 0.06167070485686992,
+        "relative_FC_Frobenius_error": 0.05286815749117669,
+        "DOS_L1_modes_per_atom": 0.3599805250626813,
+        "singlet_eigenvalue_ratio_to_DFT": 0.8901351087515101
+      }
+    }
+  },
+  "input_sha256": {
+    "harmonics/PBE/DFT/bands.npz": "5ae42dd66c4c7bf37baa7968b83843033b7dcb5820e4f438f6129f744b6c17c1",
+    "harmonics/PBE/DFT/dos.npz": "19bacf095b0a6a4a6c1785520498e28ab2bf40de7733e641c91ad21259656096",
+    "harmonics/PBE/DFT/phonopy_params.yaml": "2c77693bbbeebf8f145e191380f2a097462b9f65c2cb2160228145f91efca210",
+    "harmonics/PBE/DFT/force_constants_raw.npy": "07c99f99dd95aae5de9aa8165b8e3ae075fc14e86890711d8bd6d17f64c5e027",
+    "harmonics/PBE/DFT/force_constants_central.npy": "7f8925ce797463309982ab1dcf00e106dc7e006932076ed1f66bd2471cdb7010",
+    "harmonics/PBE/DFT/force_constants_ASR.npy": "fd36fc56689a1f87e453f1545592f87a1d0a56b98a5a05fa0649182334644fd9",
+    "harmonics/PBE/original/bands.npz": "45a90bef71f4d0a80e71184411ab72a577af52e8125e7d269ad0c27aacaa57e2",
+    "harmonics/PBE/original/dos.npz": "11e388ae20870e7633cdc961d2b314a5f4dc71efbc5bc6f10086a67aa6aa1d7b",
+    "harmonics/PBE/original/phonopy_params.yaml": "0273ecab8d96b769e0b1f2597e45133ccfd2d9ecfdae70177df48db67db212c8",
+    "harmonics/PBE/original/force_constants_raw.npy": "38d9bf844b493a63fe021ffaa0fd0898ee561885b62948ad975ecb287060c8b3",
+    "harmonics/PBE/original/force_constants_central.npy": "0e59fe5624c118f9febb55cbd67560ad7732dab5a4963a7bd9289a6534f079d6",
+    "harmonics/PBE/original/force_constants_ASR.npy": "601e6acf8eafaff2a5a021dd6598e23c5566ec9e9c2740096ac80cf4e4834075",
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/bands.npz": "b3b0147796104f65e405fda2b2ba486a8abaecb76a9e7b28f98b7a6fced37e76",
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/dos.npz": "b575f6378a6de55d38e2dc5a1a9f90256bc6608a5e249b5319cef3efe2ac4d58",
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/phonopy_params.yaml": "554446b686a914a0bf2ecc55c4b1ee271a8964a3ea2acf8f8b3d34138618ae2a",
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/force_constants_raw.npy": "5a02c24f5b307bc6f4bf5686d59eb181dbe4bd5cdb46d793efa4998250ac530f",
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/force_constants_central.npy": "60a80f095fc76f40f80bf43505079d2bc522dc35aefe4d00ac5722a02f1f2d57",
+    "training-plan01/cases/PBE-lora16/evaluation/harmonics/force_constants_ASR.npy": "7c02dcb2bac6efe8a79b55972a34cb9f7cb079cdfb5b5787a2ae017fb5cbda97",
+    "training-plan01/cases/PBE-full/evaluation/harmonics/bands.npz": "b76804737c8ea31d6326325616b161ddbf6e7111f8ce85341d2217e699ec4cdf",
+    "training-plan01/cases/PBE-full/evaluation/harmonics/dos.npz": "f9633edbbace159a440e1851b517344d0775525cc7e6e8dd29513eeaca0db3f7",
+    "training-plan01/cases/PBE-full/evaluation/harmonics/phonopy_params.yaml": "b7c669ef656801e1f6dbab6036cac7e3093cdd182134dd574aa960e38a78abfa",
+    "training-plan01/cases/PBE-full/evaluation/harmonics/force_constants_raw.npy": "f8e55f28e982fa8abb1375551b4b8a4f338f8a26680341247932261310b18d5e",
+    "training-plan01/cases/PBE-full/evaluation/harmonics/force_constants_central.npy": "90c5d78555407ae811e2ba0e44245d884a5e1faeaa841c3d2eb13438928e97a3",
+    "training-plan01/cases/PBE-full/evaluation/harmonics/force_constants_ASR.npy": "9078333d422aff7cf2914aea17f6b215dd88cec5d3b21dfd9c5acf2be8025d6b",
+    "harmonics/r2SCAN/DFT/bands.npz": "3110c85662a5e5a19ddfc9b31feeb2e1358c920eca0be3fe9889984118c73124",
+    "harmonics/r2SCAN/DFT/dos.npz": "49e2db4bef18857c6aee6d52150da81dde1844ee3ad4f17300843deae72af88a",
+    "harmonics/r2SCAN/DFT/phonopy_params.yaml": "b03810df615561bc85ccbf0ff8b9c39199b2cb1bdddc2788bf64026cccdba054",
+    "harmonics/r2SCAN/DFT/force_constants_raw.npy": "73b874319f8210865a85a8394d0eb605a7aef652d8110d6764ebe0dcb1776cd7",
+    "harmonics/r2SCAN/DFT/force_constants_central.npy": "7cdf9fdf763e8820142484b5d16a7eac8cfeb6fd8fc1bfb438a01df7ec434f5d",
+    "harmonics/r2SCAN/DFT/force_constants_ASR.npy": "a324032b984382784feb53e30ada9a93a6d44973e1c3599f26ad585e65f41da9",
+    "harmonics/r2SCAN/original/bands.npz": "7d61fddb4e057ed2b993e1b9f9d8f00dd2205ef52a9d32f08a80a53ca645d328",
+    "harmonics/r2SCAN/original/dos.npz": "416a85d2f589b5502d005b54f788fadf8530197a3c638117cfb609d9cc3d09ef",
+    "harmonics/r2SCAN/original/phonopy_params.yaml": "409105e21898ebcc7b6f6dae022e1ac157ff6ab6cb626056be45d67b5a401b8a",
+    "harmonics/r2SCAN/original/force_constants_raw.npy": "26165a20ad0e65ec7812af49fda7cf0ef74da6957406345375151bd6e4464136",
+    "harmonics/r2SCAN/original/force_constants_central.npy": "4ae9ab2ec6f0397b7092fe1607196076ad386c163fae86a320a54a51ab2758c9",
+    "harmonics/r2SCAN/original/force_constants_ASR.npy": "2dacec1c4736815a2436d8e6e9d5ec99b19e826ccc37b0dcefd08f2c03f0e188",
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/bands.npz": "fded8a8d9ef1f870b4bbcfc4b5bedb3cece5f8ce9c034b5fbfcd74a87466c3cf",
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/dos.npz": "878d55717be1ccc8948a349f62c264e1925bbaf004e141bbcf151c829c5c34cf",
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/phonopy_params.yaml": "55632d5b58ad4cb1caad3f639d572b139186fcac642e77362ca428a976d688f5",
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/force_constants_raw.npy": "3cbbdea8dd0ddb785121d3ed962aaa09b52c3c92f88aaef327ea0f2b8bb8d338",
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/force_constants_central.npy": "9763b3b79d2ca6e75f43485e8d5305da25dc272f3144aac982fda183a02048a9",
+    "training-plan01/cases/r2SCAN-lora16/evaluation/harmonics/force_constants_ASR.npy": "c80d8c977bcf8dab64ac6b2281ed5d2cd2ab547d22830e053037f407b525d71a",
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/bands.npz": "1042e69a043fdae9b731d21ad89252650d68e24892cb09f0d293ce3e8fdc440f",
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/dos.npz": "35f98a5b25a32a75494b57ac0374bef0341c0a608ccf3f5225f581e2ae54caea",
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/phonopy_params.yaml": "6e9d4d3ffcc6ba6b6bda28552d1947c08f9c72f428a01db183d09b0c8fe11c99",
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/force_constants_raw.npy": "4c90c4c1ed49811502b96bd7735ba96771550d55eea8892b2c147131a89e152c",
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/force_constants_central.npy": "841fdc11d83087863f9bcce3434fa58ffd473257a2071e7271656d1f94cf6c2c",
+    "training-plan01/cases/r2SCAN-full/evaluation/harmonics/force_constants_ASR.npy": "9e54909ce612643f49cf88b1c2d1134a4c7036bdf85efd91c2b6f81c427d624f"
+  },
+  "interpretation": "Per-q eigenvector correspondence, with degenerate reference projectors (1e-4 THz); not continuous branch tracking. Acoustic q convergence applies only to fixed FCs, not supercell/DFT convergence. Raw projection diagnostics include uncorrected numerical drift."
+}

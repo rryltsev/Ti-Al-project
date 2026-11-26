@@ -1,0 +1,313 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-09T06:57:16.922230+00:00",
+  "cases": {
+    "PBE-full-N200-seed10": {
+      "case": {
+        "name": "PBE-full-N200-seed10",
+        "XC": "PBE",
+        "method": "full",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 2.4719803617569456,
+          "E_aligned_RMSE_meV_atom": 1.2863139108290338,
+          "F_RMSE_eV_A": 0.06929818733487743,
+          "stress_RMSE_GPa": 0.07880678822303672
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 2.5596425984610263,
+          "E_aligned_RMSE_meV_atom": 1.317504245403436,
+          "F_RMSE_eV_A": 0.07589893462661669,
+          "stress_RMSE_GPa": 0.06999628229595291
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.2261937991911517,
+        "band_max_error_THz": 0.6018984613513547,
+        "gamma_doublet_THz": 3.7199724104921064,
+        "gamma_singlet_THz": 5.437465359682339,
+        "gamma_doublet_abs_error_THz": 0.24413308207378281,
+        "gamma_singlet_abs_error_THz": 0.029296138023673812,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -6.113318258034954e-08,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "6c5f9359bcd3ae68a73c267a8a0b57f4f6a238c65af481be75056317cfd9754b",
+        "checkpoint.data-00000-of-00001": "32c7edf94f3c0fb560b21aec2b3d6d69b8613b3f670ad24a124f40f0c4ca755d"
+      },
+      "trainable": 21764956,
+      "training_seconds": 622.4939034003764,
+      "GPU_job_seconds": 764,
+      "GPU_peak_GiB": 2.5001559257507324,
+      "checks": 11
+    },
+    "PBE-restricted-N200-seed10": {
+      "case": {
+        "name": "PBE-restricted-N200-seed10",
+        "XC": "PBE",
+        "method": "restricted",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 1.411622844017403,
+          "E_aligned_RMSE_meV_atom": 1.2666572471994175,
+          "F_RMSE_eV_A": 0.07432583343549566,
+          "stress_RMSE_GPa": 0.08487766725654627
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 1.402383399742997,
+          "E_aligned_RMSE_meV_atom": 1.2947532584114263,
+          "F_RMSE_eV_A": 0.07817254392821155,
+          "stress_RMSE_GPa": 0.07711019720604818
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.31394340251324987,
+        "band_max_error_THz": 1.05782626761936,
+        "gamma_doublet_THz": 3.7160217533568822,
+        "gamma_singlet_THz": 6.465995489278025,
+        "gamma_doublet_abs_error_THz": 0.24808373920900717,
+        "gamma_singlet_abs_error_THz": 1.05782626761936,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -1.460838667236441e-07,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "6c9e1b5d409bc5551a1f262c42ac4cf584a54d36f7036e9af7f76ef83cab7857",
+        "checkpoint.data-00000-of-00001": "58e721390c661423fdabf8e81d6ed032c55ca5339c884c67e818d091ea73cb41"
+      },
+      "trainable": 21111690,
+      "training_seconds": 557.1373295802623,
+      "GPU_job_seconds": 695,
+      "GPU_peak_GiB": 1.9653782844543457,
+      "checks": 11
+    },
+    "r2SCAN-full-N200-seed10": {
+      "case": {
+        "name": "r2SCAN-full-N200-seed10",
+        "XC": "r2SCAN",
+        "method": "full",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 2.79137875461882,
+          "E_aligned_RMSE_meV_atom": 1.4623557181256577,
+          "F_RMSE_eV_A": 0.07839057649267259,
+          "stress_RMSE_GPa": 0.08699537466679262
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 2.979795611976845,
+          "E_aligned_RMSE_meV_atom": 1.5352917004762925,
+          "F_RMSE_eV_A": 0.08608483964387834,
+          "stress_RMSE_GPa": 0.08046888369421357
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.2605938357535526,
+        "band_max_error_THz": 0.6707954621139534,
+        "gamma_doublet_THz": 4.015350230473886,
+        "gamma_singlet_THz": 5.293613184662899,
+        "gamma_doublet_abs_error_THz": 0.5712654116151916,
+        "gamma_singlet_abs_error_THz": 0.10428968304764119,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -7.695571579495351e-08,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "c9f81311dff5f0080701931887de5cd61920fa0fda08bf3aa781171a07090642",
+        "checkpoint.data-00000-of-00001": "1f1665143dd3b6b4fa108a052c4b82f9ff1fc7d18d139d2b9e8be023f3ab5d52"
+      },
+      "trainable": 21764956,
+      "training_seconds": 636.3151567429304,
+      "GPU_job_seconds": 779,
+      "GPU_peak_GiB": 2.538159132003784,
+      "checks": 11
+    },
+    "r2SCAN-restricted-N200-seed10": {
+      "case": {
+        "name": "r2SCAN-restricted-N200-seed10",
+        "XC": "r2SCAN",
+        "method": "restricted",
+        "N": 200,
+        "validation": 149,
+        "seed": 10,
+        "epochs": 50,
+        "steps": 10000
+      },
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 1.5919260372114152,
+          "E_aligned_RMSE_meV_atom": 1.4199073819945989,
+          "F_RMSE_eV_A": 0.08452972043128089,
+          "stress_RMSE_GPa": 0.09132898290925619
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 1.608322513039213,
+          "E_aligned_RMSE_meV_atom": 1.4602589531955885,
+          "F_RMSE_eV_A": 0.08893654038022056,
+          "stress_RMSE_GPa": 0.08631535211380054
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.3919910417914041,
+        "band_max_error_THz": 1.4813767774382693,
+        "gamma_doublet_THz": 3.992983995243069,
+        "gamma_singlet_THz": 6.670700279053527,
+        "gamma_doublet_abs_error_THz": 0.5936316468460088,
+        "gamma_singlet_abs_error_THz": 1.4813767774382693,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": 6.038159897927595e-08,
+        "DOS_integral": 2.999999999999999
+      },
+      "checkpoint_hashes": {
+        "checkpoint.index": "b62b7967cbaea29de7edc1732af1ede9dbda0fc30815112eaf74ba58f7fe13e8",
+        "checkpoint.data-00000-of-00001": "365b7df8d0b8494295b1fe2c0c15c6e379c70375ccbb8c3366c00ebcefaa3a83"
+      },
+      "trainable": 21111690,
+      "training_seconds": 559.517725892365,
+      "GPU_job_seconds": 699,
+      "GPU_peak_GiB": 1.9653782844543457,
+      "checks": 11
+    }
+  },
+  "baseline": {
+    "PBE": {
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 4.937765084140979,
+          "E_aligned_RMSE_meV_atom": 3.235798927140845,
+          "F_RMSE_eV_A": 0.08193489550668225,
+          "stress_RMSE_GPa": 0.1258187855105756
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 4.900408595218767,
+          "E_aligned_RMSE_meV_atom": 2.737443313909715,
+          "F_RMSE_eV_A": 0.08273193452994312,
+          "stress_RMSE_GPa": 0.1197358973263089
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.4670310711037983,
+        "band_max_error_THz": 1.086728925908366,
+        "gamma_doublet_THz": 3.0250133826128143,
+        "gamma_singlet_THz": 5.628429818944982,
+        "gamma_doublet_abs_error_THz": 0.9390921099530751,
+        "gamma_singlet_abs_error_THz": 0.22026059728631697,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -1.1101894622645299e-07,
+        "DOS_integral": 2.999999999999999
+      }
+    },
+    "r2SCAN": {
+      "metrics": {
+        "train": {
+          "E_raw_RMSE_meV_atom": 4134.767983796929,
+          "E_aligned_RMSE_meV_atom": 23.35451039073557,
+          "F_RMSE_eV_A": 0.10549059785167716,
+          "stress_RMSE_GPa": 0.9123051807036998
+        },
+        "validation": {
+          "E_raw_RMSE_meV_atom": 4165.12178459573,
+          "E_aligned_RMSE_meV_atom": 20.621342100514035,
+          "F_RMSE_eV_A": 0.10610049061946415,
+          "stress_RMSE_GPa": 0.8715474006427898
+        }
+      },
+      "phonons": {
+        "band_RMSE_THz": 0.7814053390326349,
+        "band_max_error_THz": 1.5652938574974575,
+        "gamma_doublet_THz": 3.0213217847314615,
+        "gamma_singlet_THz": 5.719951020563422,
+        "gamma_doublet_abs_error_THz": 1.5652938573576163,
+        "gamma_singlet_abs_error_THz": 0.5306275189481644,
+        "imaginary_modes_weighted": 0,
+        "mesh_min_THz": -1.4711814161669509e-07,
+        "DOS_integral": 2.999999999999999
+      }
+    }
+  },
+  "paired": {
+    "PBE": {
+      "E_raw_RMSE_meV_atom": {
+        "full": 2.5596425984610263,
+        "restricted": 1.402383399742997,
+        "full_reduction_percent": -82.52088543903973
+      },
+      "E_aligned_RMSE_meV_atom": {
+        "full": 1.317504245403436,
+        "restricted": 1.2947532584114263,
+        "full_reduction_percent": -1.7571677726398338
+      },
+      "F_RMSE_eV_A": {
+        "full": 0.07589893462661669,
+        "restricted": 0.07817254392821155,
+        "full_reduction_percent": 2.908449933115631
+      },
+      "stress_RMSE_GPa": {
+        "full": 0.06999628229595291,
+        "restricted": 0.07711019720604818,
+        "full_reduction_percent": 9.225647408326553
+      },
+      "band_RMSE_THz": {
+        "full": 0.2261937991911517,
+        "restricted": 0.31394340251324987,
+        "full_reduction_percent": 27.95077157845186
+      }
+    },
+    "r2SCAN": {
+      "E_raw_RMSE_meV_atom": {
+        "full": 2.979795611976845,
+        "restricted": 1.608322513039213,
+        "full_reduction_percent": -85.27351248388537
+      },
+      "E_aligned_RMSE_meV_atom": {
+        "full": 1.5352917004762925,
+        "restricted": 1.4602589531955885,
+        "full_reduction_percent": -5.138317907005763
+      },
+      "F_RMSE_eV_A": {
+        "full": 0.08608483964387834,
+        "restricted": 0.08893654038022056,
+        "full_reduction_percent": 3.2064444199770503
+      },
+      "stress_RMSE_GPa": {
+        "full": 0.08046888369421357,
+        "restricted": 0.08631535211380054,
+        "full_reduction_percent": 6.773381879829243
+      },
+      "band_RMSE_THz": {
+        "full": 0.2605938357535526,
+        "restricted": 0.3919910417914041,
+        "full_reduction_percent": 33.52046144660974
+      }
+    }
+  },
+  "checks": {
+    "collected_files": 314,
+    "final_models": 4,
+    "parameter_checks": 44,
+    "validation149_identical": true,
+    "train200_only_alignment": true,
+    "test_access": false,
+    "seed_count": 1,
+    "seed": 10
+  },
+  "GPU_job_hours": 0.8158333333333333
+}

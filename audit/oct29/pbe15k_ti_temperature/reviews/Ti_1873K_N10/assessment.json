@@ -1,0 +1,128 @@
+{
+  "reviewed_unix": 1793323852.8340688,
+  "temperature_K": 1873,
+  "n_replicas": 10,
+  "summary_sha256": "8efe7efd592fa9a76bfa474155ee45e121e20fd8d10ddda8e51952baf12bf4ff",
+  "windows": {
+    "40ps": {
+      "eta_mPa_s": 3.128183958501201,
+      "eta_std_mPa_s": 0.11789756376000246,
+      "relative_std": 0.037688820518244216,
+      "neff": 66.52074721599739,
+      "tau_exp_ps": 0.1628585347997631,
+      "tau_int_ps": 0.11824138421820336,
+      "cost_z": -0.20303992364544024,
+      "criterion_z": 0.32756155712021556
+    },
+    "first20ps": {
+      "eta_mPa_s": 3.0923652706378735,
+      "eta_std_mPa_s": 0.15412255718001497,
+      "relative_std": 0.049839699935649434,
+      "neff": 34.461254081881286,
+      "tau_exp_ps": 0.14907722022628345,
+      "tau_int_ps": 0.11673380445888626,
+      "cost_z": -0.6491946269733953,
+      "criterion_z": 0.6665528945507665
+    },
+    "second20ps": {
+      "eta_mPa_s": 3.167868802453317,
+      "eta_std_mPa_s": 0.18336074168183372,
+      "relative_std": 0.05788141905997882,
+      "neff": 30.12727386839361,
+      "tau_exp_ps": 0.18590085773005682,
+      "tau_int_ps": 0.11989893139902878,
+      "cost_z": -1.6306277554151212,
+      "criterion_z": 0.4190080363176049
+    }
+  },
+  "comparisons": {
+    "40ps": {
+      "vs_N5_percent": 2.85853305518069,
+      "SE_change_percent": -27.910725911743818,
+      "vs_5k_percent": -4.011831105562125,
+      "vs_historical15k_percent": -2.716245354358937,
+      "cutoff_z_N5": 1.091402521627038,
+      "cutoff_z_N10": 0.32756155712021556
+    },
+    "first20ps": {
+      "vs_N5_percent": 1.5930077967980072,
+      "SE_change_percent": -36.51064829840872,
+      "vs_5k_percent": -5.110925757863061,
+      "vs_historical15k_percent": -3.8301748700304783,
+      "cutoff_z_N5": 0.5732464051672848,
+      "cutoff_z_N10": 0.6665528945507665
+    },
+    "second20ps": {
+      "vs_N5_percent": 16.437783266116558,
+      "SE_change_percent": -22.9922378420669,
+      "vs_5k_percent": -2.7941036463208113,
+      "vs_historical15k_percent": -1.482081803428259,
+      "cutoff_z_N5": 4.1013209350097535,
+      "cutoff_z_N10": 0.4190080363176049
+    }
+  },
+  "new_batch_40ps": {
+    "eta_mPa_s": 3.1788642220537815,
+    "eta_std_mPa_s": 0.1640235816992668,
+    "relative_std": 0.05159817162410776,
+    "neff": 68.04392644547144,
+    "tau_exp_ps": 0.16319732530863423,
+    "tau_int_ps": 0.12011741137512824,
+    "cost_z": -0.5305841444040696,
+    "criterion_z": 0.30679285698944253
+  },
+  "previous_replicas_40ps": {
+    "eta_mPa_s": 3.041248854699317,
+    "eta_std_mPa_s": 0.16354383540561793,
+    "relative_std": 0.053775223015016055,
+    "neff": 78.22348363518276,
+    "tau_exp_ps": 0.15246557486468784,
+    "tau_int_ps": 0.11499327983411012,
+    "cost_z": -0.6121325846320458,
+    "criterion_z": 1.091402521627038
+  },
+  "new_batch_z": 0.5941290251007534,
+  "new_batch_vs_previous_percent": 4.5249624062109195,
+  "checks": [
+    {
+      "id": "Ti_1873K",
+      "flags": {
+        "minimum_replicas": false,
+        "precision": false,
+        "last_three_stability": false,
+        "duration_stability": true,
+        "spectral_points": true,
+        "cost": true,
+        "cutoff": true,
+        "new_batch_consistency": true,
+        "window_fit_diagnostics": true
+      },
+      "passed": false,
+      "last_three_relative_range": null,
+      "max_20_40_relative_difference": 0.012686224492734155
+    }
+  ],
+  "pass_streak": 0,
+  "visual_review": {
+    "files": [
+      "convergence.png",
+      "40ps/spectrum.png",
+      "40ps/extras.png",
+      "first20ps/spectrum.png",
+      "first20ps/extras.png",
+      "second20ps/spectrum.png",
+      "second20ps/extras.png",
+      "new_batch_40ps/spectrum.png",
+      "new_batch_40ps/extras.png",
+      "figure7_current.png"
+    ],
+    "notes": "N10 full40ps and first20ps select cutoff around1.6THz; second20ps around1.4THz. All windows and newest5 have cost/cutoff Z<2. Prior second20ps high-cutoff mode no longer dominates; spectrum/extras consistent with improved diagnostic. Second20ps eta rose16.44% sinceN5; cannot infer physical drift from old unreliable cutoff estimate. Max20/40difference now1.27%. Full40ps extras has crowded minor tick labels, but curves/selected region remain readable. Figure7 readable; concentration panel fixed; historical series separate."
+  },
+  "verification": "SingleA100, preflight/model/protocol hashes PASS. Ti512 atoms. Remote2000K preparation actual NPT2000K,20000steps; V/(kB*T) uses each state temperature. No current failure.",
+  "article_compile": "PASS",
+  "caveats": [
+    "Cumulative and20/40ps estimates are correlated.",
+    "Historical5k and exported15k not pooled.",
+    "Sampling stopping rule is heuristic; errors exclude model/protocol bias."
+  ]
+}

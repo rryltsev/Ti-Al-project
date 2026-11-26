@@ -1,0 +1,22 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=4",
+    "--mem=12G",
+    "--time=00:30:00",
+    "--array=0-1%2",
+    "--no-requeue",
+    "--job-name=pbe-sweep-pilot",
+    "--chdir=/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01",
+    "--output=/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/pilot-%A_%a.out",
+    "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/job.sbatch",
+    "pilot"
+  ],
+  "unix": 1792902889.8088956
+}

@@ -1,0 +1,618 @@
+{
+  "status": "passed",
+  "job_id": "20958501",
+  "export_run": "/home6/u3129/tial-testsets/model-export-20261022-02-cpu",
+  "models": {
+    "PBE": {
+      "type_map": [
+        "H",
+        "He",
+        "Li",
+        "Be",
+        "B",
+        "C",
+        "N",
+        "O",
+        "F",
+        "Ne",
+        "Na",
+        "Mg",
+        "Al",
+        "Si",
+        "P",
+        "S",
+        "Cl",
+        "Ar",
+        "K",
+        "Ca",
+        "Sc",
+        "Ti",
+        "V",
+        "Cr",
+        "Mn",
+        "Fe",
+        "Co",
+        "Ni",
+        "Cu",
+        "Zn",
+        "Ga",
+        "Ge",
+        "As",
+        "Se",
+        "Br",
+        "Kr",
+        "Rb",
+        "Sr",
+        "Y",
+        "Zr",
+        "Nb",
+        "Mo",
+        "Tc",
+        "Ru",
+        "Rh",
+        "Pd",
+        "Ag",
+        "Cd",
+        "In",
+        "Sn",
+        "Sb",
+        "Te",
+        "I",
+        "Xe",
+        "Cs",
+        "Ba",
+        "La",
+        "Ce",
+        "Pr",
+        "Nd",
+        "Pm",
+        "Sm",
+        "Eu",
+        "Gd",
+        "Tb",
+        "Dy",
+        "Ho",
+        "Er",
+        "Tm",
+        "Yb",
+        "Lu",
+        "Hf",
+        "Ta",
+        "W",
+        "Re",
+        "Os",
+        "Ir",
+        "Pt",
+        "Au",
+        "Hg",
+        "Tl",
+        "Pb",
+        "Bi",
+        "Po",
+        "At",
+        "Rn",
+        "Fr",
+        "Ra",
+        "Ac",
+        "Th",
+        "Pa",
+        "U",
+        "Np",
+        "Pu",
+        "Am",
+        "Cm",
+        "Bk",
+        "Cf",
+        "Es",
+        "Fm",
+        "Md",
+        "No",
+        "Lr",
+        "Rf",
+        "Db",
+        "Sg",
+        "Bh",
+        "Hs",
+        "Mt",
+        "Ds",
+        "Rg",
+        "Cn",
+        "Nh",
+        "Fl",
+        "Mc",
+        "Lv",
+        "Ts",
+        "Og"
+      ],
+      "equivalence": [
+        {
+          "structure_id": "TiAl-test-001",
+          "max_abs_E_F_V": [
+            1.9520518890203675e-06,
+            2.377213074278295e-06,
+            1.5914478822764977e-05
+          ],
+          "energy_error_per_atom_eV": 9.037277263983182e-09
+        },
+        {
+          "structure_id": "TiAl-test-002",
+          "max_abs_E_F_V": [
+            1.078844081803254e-05,
+            1.4064293826776542e-06,
+            3.571259108525737e-05
+          ],
+          "energy_error_per_atom_eV": 4.994648526866917e-08
+        },
+        {
+          "structure_id": "TiAl-test-003",
+          "max_abs_E_F_V": [
+            3.3378598800481996e-06,
+            2.793765947028959e-06,
+            2.361805479722534e-05
+          ],
+          "energy_error_per_atom_eV": 1.5453055000223147e-08
+        },
+        {
+          "structure_id": "TiAl-test-004",
+          "max_abs_E_F_V": [
+            8.963048458099365e-06,
+            3.24357575109957e-06,
+            4.402733844699469e-05
+          ],
+          "energy_error_per_atom_eV": 4.149559471342299e-08
+        },
+        {
+          "structure_id": "TiAl-test-005",
+          "max_abs_E_F_V": [
+            7.6293943038763246e-06,
+            2.3463098002274307e-06,
+            3.066818845809394e-05
+          ],
+          "energy_error_per_atom_eV": 3.532126992535335e-08
+        },
+        {
+          "structure_id": "TiAl-test-006",
+          "max_abs_E_F_V": [
+            6.25848997515277e-07,
+            1.7506163363378846e-06,
+            9.738343414333883e-06
+          ],
+          "energy_error_per_atom_eV": 2.897449062570727e-09
+        }
+      ],
+      "derivative_check": {
+        "atom": 117,
+        "axis": 1,
+        "force_eV_A": -2.5490644117084216,
+        "virial_xx_eV": -108.28920301663827,
+        "finite_differences": [
+          {
+            "step": 0.003,
+            "force_eV_A": -2.549042304356893,
+            "virial_xx_eV": -108.25711985429128
+          },
+          {
+            "step": 0.001,
+            "force_eV_A": -2.54710391163826,
+            "virial_xx_eV": -108.29369351267815
+          },
+          {
+            "step": 0.0003,
+            "force_eV_A": -2.5528048475583396,
+            "virial_xx_eV": -108.29593986272813
+          }
+        ],
+        "stress_convention": "ASE tensile-positive = -virial/volume"
+      },
+      "status": "verified"
+    },
+    "PBEsol": {
+      "type_map": [
+        "H",
+        "He",
+        "Li",
+        "Be",
+        "B",
+        "C",
+        "N",
+        "O",
+        "F",
+        "Ne",
+        "Na",
+        "Mg",
+        "Al",
+        "Si",
+        "P",
+        "S",
+        "Cl",
+        "Ar",
+        "K",
+        "Ca",
+        "Sc",
+        "Ti",
+        "V",
+        "Cr",
+        "Mn",
+        "Fe",
+        "Co",
+        "Ni",
+        "Cu",
+        "Zn",
+        "Ga",
+        "Ge",
+        "As",
+        "Se",
+        "Br",
+        "Kr",
+        "Rb",
+        "Sr",
+        "Y",
+        "Zr",
+        "Nb",
+        "Mo",
+        "Tc",
+        "Ru",
+        "Rh",
+        "Pd",
+        "Ag",
+        "Cd",
+        "In",
+        "Sn",
+        "Sb",
+        "Te",
+        "I",
+        "Xe",
+        "Cs",
+        "Ba",
+        "La",
+        "Ce",
+        "Pr",
+        "Nd",
+        "Pm",
+        "Sm",
+        "Eu",
+        "Gd",
+        "Tb",
+        "Dy",
+        "Ho",
+        "Er",
+        "Tm",
+        "Yb",
+        "Lu",
+        "Hf",
+        "Ta",
+        "W",
+        "Re",
+        "Os",
+        "Ir",
+        "Pt",
+        "Au",
+        "Hg",
+        "Tl",
+        "Pb",
+        "Bi",
+        "Po",
+        "At",
+        "Rn",
+        "Fr",
+        "Ra",
+        "Ac",
+        "Th",
+        "Pa",
+        "U",
+        "Np",
+        "Pu",
+        "Am",
+        "Cm",
+        "Bk",
+        "Cf",
+        "Es",
+        "Fm",
+        "Md",
+        "No",
+        "Lr",
+        "Rf",
+        "Db",
+        "Sg",
+        "Bh",
+        "Hs",
+        "Mt",
+        "Ds",
+        "Rg",
+        "Cn",
+        "Nh",
+        "Fl",
+        "Mc",
+        "Lv",
+        "Ts",
+        "Og"
+      ],
+      "equivalence": [
+        {
+          "structure_id": "TiAl-test-001",
+          "max_abs_E_F_V": [
+            3.054735771002015e-07,
+            2.5079621366330684e-06,
+            3.8580341225724624e-05
+          ],
+          "energy_error_per_atom_eV": 1.4142295236120441e-09
+        },
+        {
+          "structure_id": "TiAl-test-002",
+          "max_abs_E_F_V": [
+            2.4437900947305025e-06,
+            1.421205962970351e-06,
+            2.9795812167776603e-05
+          ],
+          "energy_error_per_atom_eV": 1.1313843031159734e-08
+        },
+        {
+          "structure_id": "TiAl-test-003",
+          "max_abs_E_F_V": [
+            8.10623146207945e-06,
+            3.5549556094416346e-06,
+            3.306859261442696e-05
+          ],
+          "energy_error_per_atom_eV": 3.752884936147893e-08
+        },
+        {
+          "structure_id": "TiAl-test-004",
+          "max_abs_E_F_V": [
+            3.077089786529541e-06,
+            3.036274590861865e-06,
+            3.3011728731935364e-05
+          ],
+          "energy_error_per_atom_eV": 1.4245786048747875e-08
+        },
+        {
+          "structure_id": "TiAl-test-005",
+          "max_abs_E_F_V": [
+            1.0013580322265625e-05,
+            2.107840145981754e-06,
+            1.5114677482053196e-05
+          ],
+          "energy_error_per_atom_eV": 4.6359168158637154e-08
+        },
+        {
+          "structure_id": "TiAl-test-006",
+          "max_abs_E_F_V": [
+            3.3080578987210174e-06,
+            1.8370327055095004e-06,
+            8.057382615334063e-06
+          ],
+          "energy_error_per_atom_eV": 1.5315082864449154e-08
+        }
+      ],
+      "derivative_check": {
+        "atom": 17,
+        "axis": 0,
+        "force_eV_A": -2.463748732885348,
+        "virial_xx_eV": -171.05422283763437,
+        "finite_differences": [
+          {
+            "step": 0.003,
+            "force_eV_A": -2.463937426606814,
+            "virial_xx_eV": -171.0213099916776
+          },
+          {
+            "step": 0.001,
+            "force_eV_A": -2.463044598698616,
+            "virial_xx_eV": -171.05994559824467
+          },
+          {
+            "step": 0.0003,
+            "force_eV_A": -2.4657199780146284,
+            "virial_xx_eV": -171.05105643471083
+          }
+        ],
+        "stress_convention": "ASE tensile-positive = -virial/volume"
+      },
+      "status": "verified"
+    },
+    "r2SCAN": {
+      "type_map": [
+        "H",
+        "He",
+        "Li",
+        "Be",
+        "B",
+        "C",
+        "N",
+        "O",
+        "F",
+        "Ne",
+        "Na",
+        "Mg",
+        "Al",
+        "Si",
+        "P",
+        "S",
+        "Cl",
+        "Ar",
+        "K",
+        "Ca",
+        "Sc",
+        "Ti",
+        "V",
+        "Cr",
+        "Mn",
+        "Fe",
+        "Co",
+        "Ni",
+        "Cu",
+        "Zn",
+        "Ga",
+        "Ge",
+        "As",
+        "Se",
+        "Br",
+        "Kr",
+        "Rb",
+        "Sr",
+        "Y",
+        "Zr",
+        "Nb",
+        "Mo",
+        "Tc",
+        "Ru",
+        "Rh",
+        "Pd",
+        "Ag",
+        "Cd",
+        "In",
+        "Sn",
+        "Sb",
+        "Te",
+        "I",
+        "Xe",
+        "Cs",
+        "Ba",
+        "La",
+        "Ce",
+        "Pr",
+        "Nd",
+        "Pm",
+        "Sm",
+        "Eu",
+        "Gd",
+        "Tb",
+        "Dy",
+        "Ho",
+        "Er",
+        "Tm",
+        "Yb",
+        "Lu",
+        "Hf",
+        "Ta",
+        "W",
+        "Re",
+        "Os",
+        "Ir",
+        "Pt",
+        "Au",
+        "Hg",
+        "Tl",
+        "Pb",
+        "Bi",
+        "Po",
+        "At",
+        "Rn",
+        "Fr",
+        "Ra",
+        "Ac",
+        "Th",
+        "Pa",
+        "U",
+        "Np",
+        "Pu",
+        "Am",
+        "Cm",
+        "Bk",
+        "Cf",
+        "Es",
+        "Fm",
+        "Md",
+        "No",
+        "Lr",
+        "Rf",
+        "Db",
+        "Sg",
+        "Bh",
+        "Hs",
+        "Mt",
+        "Ds",
+        "Rg",
+        "Cn",
+        "Nh",
+        "Fl",
+        "Mc",
+        "Lv",
+        "Ts",
+        "Og"
+      ],
+      "equivalence": [
+        {
+          "structure_id": "TiAl-test-001",
+          "max_abs_E_F_V": [
+            5.6959693210956175e-06,
+            2.424095612241217e-06,
+            5.4958522326842285e-05
+          ],
+          "energy_error_per_atom_eV": 2.6370228338405637e-08
+        },
+        {
+          "structure_id": "TiAl-test-002",
+          "max_abs_E_F_V": [
+            1.013278938444273e-05,
+            1.3813656388750317e-06,
+            4.2987664244265034e-05
+          ],
+          "energy_error_per_atom_eV": 4.6911061965012645e-08
+        },
+        {
+          "structure_id": "TiAl-test-003",
+          "max_abs_E_F_V": [
+            5.006790615880163e-06,
+            3.636384889094124e-06,
+            6.357276373591958e-05
+          ],
+          "energy_error_per_atom_eV": 2.3179586184630386e-08
+        },
+        {
+          "structure_id": "TiAl-test-004",
+          "max_abs_E_F_V": [
+            4.339963425081805e-06,
+            2.9091686624127533e-06,
+            7.429839675410221e-05
+          ],
+          "energy_error_per_atom_eV": 2.0092423264267617e-08
+        },
+        {
+          "structure_id": "TiAl-test-005",
+          "max_abs_E_F_V": [
+            1.418590591129032e-05,
+            2.1870476376584236e-06,
+            2.377271130171721e-05
+          ],
+          "energy_error_per_atom_eV": 6.567549033004778e-08
+        },
+        {
+          "structure_id": "TiAl-test-006",
+          "max_abs_E_F_V": [
+            1.6927718888837262e-05,
+            1.7593600887266803e-06,
+            1.593679877487375e-05
+          ],
+          "energy_error_per_atom_eV": 7.836906892980214e-08
+        }
+      ],
+      "derivative_check": {
+        "atom": 117,
+        "axis": 1,
+        "force_eV_A": -2.7403838865124444,
+        "virial_xx_eV": -139.64975534054187,
+        "finite_differences": [
+          {
+            "step": 0.003,
+            "force_eV_A": -2.740665494153897,
+            "virial_xx_eV": -139.61609515051046
+          },
+          {
+            "step": 0.001,
+            "force_eV_A": -2.74018757045269,
+            "virial_xx_eV": -139.65527061372995
+          },
+          {
+            "step": 0.0003,
+            "force_eV_A": -2.7370732277631764,
+            "virial_xx_eV": -139.6734577914079
+          }
+        ],
+        "stress_convention": "ASE tensile-positive = -virial/volume"
+      },
+      "status": "verified"
+    }
+  },
+  "started_unix": 1792637883.1642978,
+  "finished_unix": 1792637942.2154732
+}

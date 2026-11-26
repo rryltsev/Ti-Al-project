@@ -1,0 +1,20 @@
+{
+  "functional": "PBEsol",
+  "force_steps_accepted": [
+    "force-001",
+    "force-002",
+    "force-000"
+  ],
+  "atoms": 96,
+  "reference_max_force_eV_A": 2.973785466371103e-06,
+  "opposite_displacement_even_force_max_norm_eV_A": 0.00031703412832848087,
+  "odd_restoring_force_max_norm_eV_A": 0.06680965745768142,
+  "reference_force_component_sum_eV_A": [
+    -1.9999999999999914e-08,
+    3.9999999999996547e-08,
+    4.235164736271502e-22
+  ],
+  "max_even_to_max_odd_ratio": 0.0047453338393374745,
+  "processing_plan": "Use reference-force subtraction, remove per-configuration translational force drift, then phonopy force constants and documented ASR. Record raw and corrected results. This is a planned operation, not yet applied.",
+  "qualification": "Electronic/geometry audit accepted; cutoff/kmesh/smearing and supercell convergence remain unestablished. Reference supercell maxstress0.204908kbar recorded separately from validated primitive equilibrium."
+}

@@ -1,0 +1,75 @@
+{
+  "checked_unix": 1793680540.063739,
+  "commands": {
+    "account_limits": {
+      "cmd": [
+        "sacctmgr",
+        "-P",
+        "show",
+        "assoc",
+        "where",
+        "account=imet-2026-2",
+        "format=Cluster,Account,User,Partition,ParentName,Fairshare,GrpJobs,GrpSubmitJobs,GrpWall,GrpTRES,GrpTRESMins,GrpTRESRunMins,MaxJobs,MaxSubmitJobs,MaxWall,MaxTRES,MaxTRESMins,MaxTRESRunMins,QOS,DefaultQOS"
+      ],
+      "returncode": 0,
+      "output": "Cluster|Account|User|Partition|ParentName|Share|GrpJobs|GrpSubmit|GrpWall|GrpTRES|GrpTRESMins|GrpTRESRunMins|MaxJobs|MaxSubmit|MaxWall|MaxTRES|MaxTRESMins|MaxTRESRunMinsPU|QOS|Def QOS\numt|imet-2026-2|||root|1|||||||||365-00:00:00||||normal|\numt|imet-2026-2|u2626|||1|||||||||365-00:00:00||||normal|\numt|imet-2026-2|u2715|||1|||||||||365-00:00:00||||normal|\numt|imet-2026-2|u3129|||1|||||||||365-00:00:00||||normal|\numt|imet-2026-2|u3130|||1|||||||||365-00:00:00||||normal|\numt|imet-2026-2|u3160|||1|||||||||365-00:00:00||||normal|\n"
+    },
+    "root_limits": {
+      "cmd": [
+        "sacctmgr",
+        "-P",
+        "show",
+        "assoc",
+        "where",
+        "account=root",
+        "format=Cluster,Account,User,ParentName,GrpWall,GrpTRES,GrpTRESMins,GrpTRESRunMins,MaxWall,MaxTRESMins,QOS"
+      ],
+      "returncode": 0,
+      "output": "Cluster|Account|User|ParentName|GrpWall|GrpTRES|GrpTRESMins|GrpTRESRunMins|MaxWall|MaxTRESMins|QOS\numt|root|||||||365-00:00:00||normal\numt|root|root||||||365-00:00:00||normal\n"
+    },
+    "qos_limits": {
+      "cmd": [
+        "sacctmgr",
+        "-P",
+        "show",
+        "qos",
+        "where",
+        "name=normal,cluster",
+        "format=Name,Priority,Flags,GrpWall,GrpTRES,GrpTRESMins,GrpTRESRunMins,MaxWall,MaxTRESMins,MaxTRESPU,MaxJobsPU,MaxSubmitJobsPU"
+      ],
+      "returncode": 0,
+      "output": "Name|Priority|Flags|GrpWall|GrpTRES|GrpTRESMins|GrpTRESRunMins|MaxWall|MaxTRESMins|MaxTRESPU|MaxJobsPU|MaxSubmitPU\nnormal|0||||||||cpu=1024,node=1000||2048\n"
+    },
+    "partition_queue": {
+      "cmd": [
+        "squeue",
+        "-p",
+        "v100",
+        "-t",
+        "PD,R",
+        "--sort=-p",
+        "-o",
+        "%.18i %.12u %.16a %.10T %.12Q %.12M %.12l %.20V %.25b %R"
+      ],
+      "returncode": 0,
+      "output": "             JOBID         USER          ACCOUNT      STATE     PRIORITY         TIME   TIME_LIMIT          SUBMIT_TIME             TRES_PER_NODE NODELIST(REASON)\n          20976222        s0136         students    RUNNING          988      3:49:30     20:00:00  2026-11-02T07:05:18                gres:gpu:1 tesla-a101\n          20976221        s0136         students    RUNNING          988      4:16:24     20:00:00  2026-11-02T07:05:17                gres:gpu:1 tesla-a101\n          20976223        s0136         students    PENDING          987         0:00     20:00:00  2026-11-02T07:05:18                gres:gpu:1 (Resources)\n          20976225        s0136         students    PENDING          987         0:00     20:00:00  2026-11-02T07:05:18                gres:gpu:1 (Priority)\n          20976224        s0136         students    PENDING          987         0:00     20:00:00  2026-11-02T07:05:18                gres:gpu:1 (Priority)\n          20978162        u2787       ifm-2026-2    PENDING          976         0:00     20:00:00  2026-11-02T20:40:48           gres:gpu:a100:1 (Priority)\n  20969252_[5-8%1]        u2792      imet-2026-3    PENDING          960         0:00     20:00:00  2026-10-30T07:30:53           gres:gpu:a100:1 (Priority)\n 20969253_[0-17%1]        u2792      imet-2026-3    PENDING          960         0:00     20:00:00  2026-10-30T07:30:53           gres:gpu:a100:1 (Dependency)\n          20962153        u3129      imet-2026-2    PENDING          895         0:00     20:00:00  2026-10-30T15:34:59           gres:gpu:a100:1 (Priority)\n"
+    },
+    "config": {
+      "cmd": [
+        "scontrol",
+        "show",
+        "config"
+      ],
+      "returncode": 0,
+      "output": "AccountingStorageEnforce = associations,limits,qos,safe\nEnforcePartLimits       = NO\nPreemptMode             = OFF\nPreemptParameters       = (null)\nPreemptType             = preempt/none\nPreemptExemptTime       = 00:00:00\nPriorityParameters      = (null)\nPrioritySiteFactorParameters = (null)\nPrioritySiteFactorPlugin = (null)\nPriorityDecayHalfLife   = 7-00:00:00\nPriorityCalcPeriod      = 00:01:00\nPriorityFavorSmall      = No\nPriorityFlags           = NO_FAIR_TREE\nPriorityMaxAge          = 7-00:00:00\nPriorityUsageResetPeriod = NONE\nPriorityType            = priority/multifactor\nPriorityWeightAge       = 0\nPriorityWeightAssoc     = 0\nPriorityWeightFairShare = 1000\nPriorityWeightJobSize   = 0\nPriorityWeightPartition = 0\nPriorityWeightQOS       = 1000\nPriorityWeightTRES      = (null)\nSchedulerParameters     = bf_interval=10,nohold_on_prolog_fail,bf_max_job_test=200,bf_max_job_user=50"
+    },
+    "clock": {
+      "cmd": [
+        "date",
+        "--iso-8601=seconds"
+      ],
+      "returncode": 0,
+      "output": "2026-11-03T09:35:41+05:00\n"
+    }
+  }
+}

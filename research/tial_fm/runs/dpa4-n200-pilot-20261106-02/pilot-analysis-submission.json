@@ -1,0 +1,5 @@
+{
+  "job_id": "20988460",
+  "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --dependency=aftercorr:20988454 --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=4G --time=00:05:00 --array=0-3 --job-name=TiAl-pilot-metrics --output=pilot-metrics-%A_%a.log pilot-analysis.sbatch",
+  "scope": "After each corresponding successful GPU task, calculate train/development-only metrics and conservative-group confidence intervals; test remains excluded."
+}

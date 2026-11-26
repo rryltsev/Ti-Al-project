@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "calculator": "deepmd",
+    "model_type": "dpa4-neo-finetune",
+    "family": "dpa4",
+    "variant": "neo",
+    "use_type": "finetune",
+    "dft_method": "scan",
+    "system": "AlTi",
+    "x_element": "Al",
+    "y_element": "Ti",
+    "T_measure_K": 2000.0,
+    "n_atoms": 200,
+    "step": 0.1,
+    "seed": 42,
+    "r_min": 2.0,
+    "timestamp": "2026-10-15T12:22:40"
+  },
+  "points": [
+    {
+      "x_Al": 0.0,
+      "composition": "Ti",
+      "density_g_cm3": 4.3139,
+      "density_kg_m3": 4313.94,
+      "density_atoms_A3": 0.054274,
+      "V_average_A3": 3685.412,
+      "mass_total_amu": 9573.4,
+      "T_average_K": 1983.1,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.1,
+      "composition": "Al0.1Ti0.9",
+      "density_g_cm3": 4.1427,
+      "density_kg_m3": 4142.73,
+      "density_atoms_A3": 0.054497,
+      "V_average_A3": 3670.193,
+      "mass_total_amu": 9155.6908,
+      "T_average_K": 1987.7,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.2,
+      "composition": "Al0.2Ti0.8",
+      "density_g_cm3": 3.9673,
+      "density_kg_m3": 3967.33,
+      "density_atoms_A3": 0.054685,
+      "V_average_A3": 3657.61,
+      "mass_total_amu": 8737.9815,
+      "T_average_K": 1994.7,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.3,
+      "composition": "Al0.3Ti0.7",
+      "density_g_cm3": 3.7919,
+      "density_kg_m3": 3791.89,
+      "density_atoms_A3": 0.054891,
+      "V_average_A3": 3644.012,
+      "mass_total_amu": 8320.2723,
+      "T_average_K": 1973.1,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.4,
+      "composition": "Al0.4Ti0.6",
+      "density_g_cm3": 3.6036,
+      "density_kg_m3": 3603.62,
+      "density_atoms_A3": 0.054923,
+      "V_average_A3": 3641.928,
+      "mass_total_amu": 7902.5631,
+      "T_average_K": 1989.9,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.5,
+      "composition": "Al0.5Ti0.5",
+      "density_g_cm3": 3.4137,
+      "density_kg_m3": 3413.68,
+      "density_atoms_A3": 0.054931,
+      "V_average_A3": 3641.359,
+      "mass_total_amu": 7484.8538,
+      "T_average_K": 1988.0,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.6,
+      "composition": "Al0.6Ti0.4",
+      "density_g_cm3": 3.1984,
+      "density_kg_m3": 3198.42,
+      "density_atoms_A3": 0.05451,
+      "V_average_A3": 3669.534,
+      "mass_total_amu": 7067.1446,
+      "T_average_K": 1993.2,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.7,
+      "composition": "Al0.7Ti0.3",
+      "density_g_cm3": 2.9701,
+      "density_kg_m3": 2970.1,
+      "density_atoms_A3": 0.053798,
+      "V_average_A3": 3718.179,
+      "mass_total_amu": 6649.4354,
+      "T_average_K": 1986.0,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.8,
+      "composition": "Al0.8Ti0.2",
+      "density_g_cm3": 2.7019,
+      "density_kg_m3": 2701.86,
+      "density_atoms_A3": 0.05222,
+      "V_average_A3": 3830.668,
+      "mass_total_amu": 6231.7262,
+      "T_average_K": 1979.6,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 0.9,
+      "composition": "Al0.9Ti0.1",
+      "density_g_cm3": 2.4176,
+      "density_kg_m3": 2417.61,
+      "density_atoms_A3": 0.050083,
+      "V_average_A3": 3994.103,
+      "mass_total_amu": 5814.0169,
+      "T_average_K": 1989.7,
+      "n_frames": 301
+    },
+    {
+      "x_Al": 1.0,
+      "composition": "Al",
+      "density_g_cm3": 2.1228,
+      "density_kg_m3": 2122.76,
+      "density_atoms_A3": 0.047379,
+      "V_average_A3": 4222.193,
+      "mass_total_amu": 5396.3077,
+      "T_average_K": 1986.7,
+      "n_frames": 301
+    }
+  ],
+  "status": "complete",
+  "missing_density": [],
+  "missing_compositions": [],
+  "n_compositions": 11
+}

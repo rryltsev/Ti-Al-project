@@ -1,0 +1,44 @@
+{
+  "system": "D022_Al3Ti",
+  "calculator": "deepmd",
+  "family": "dpa4",
+  "variant": "neo",
+  "use_type": "pretrained",
+  "e_per_atom_eV": -5.142309,
+  "properties": [
+    {
+      "property": "σ{001}",
+      "type": "surface_energy",
+      "miller": [
+        0,
+        0,
+        1
+      ],
+      "value": 1.7758,
+      "unit": "J/m2",
+      "E_slab_eV": -2932.824024,
+      "n_atoms": 576,
+      "surface_area_A2": 131.4838
+    },
+    {
+      "property": "Evf-Ti",
+      "type": "vacancy_formation_energy",
+      "element": "Ti",
+      "value": 2.1731,
+      "unit": "eV",
+      "E_perfect_eV": -1110.738629,
+      "E_vac_eV": -1100.785108,
+      "removed_atom_index": 27
+    },
+    {
+      "property": "Evf-Al",
+      "type": "vacancy_formation_energy",
+      "element": "Al",
+      "value": 2.2656,
+      "unit": "eV",
+      "E_perfect_eV": -1110.738622,
+      "E_vac_eV": -1104.733459,
+      "removed_atom_index": 135
+    }
+  ]
+}

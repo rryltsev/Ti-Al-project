@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "model_sha256": "ff175f3622427943aecf9364fcdee805673ce7c332d6cc1dbdc42c45bf2c4816",
+  "export_sha256": "e0dfe9f5e91dc73cfd3d3ab21e3e0003085116886c50537acb920909dc11dc7a",
+  "export_checks": [
+    {
+      "id": "tial-selected-0070",
+      "energy_eV_atom": 3.670100917824365e-08,
+      "force_max_eV_A": 2.274696686649369e-06,
+      "virial_max_eV": 8.47846908129668e-05
+    },
+    {
+      "id": "tial-selected-0687",
+      "energy_eV_atom": 4.463084223971236e-08,
+      "force_max_eV_A": 5.127126994408648e-06,
+      "virial_max_eV": 0.00019315162271027475
+    },
+    {
+      "id": "tial-selected-0299",
+      "energy_eV_atom": 1.816079553407235e-08,
+      "force_max_eV_A": 5.8531039464071455e-06,
+      "virial_max_eV": 0.0001790028414347944
+    }
+  ],
+  "train_evaluated": 200,
+  "validation_evaluated": 149,
+  "seed": 30,
+  "N": 200,
+  "test_access": false,
+  "harmonic_geometry": "same XC-specific DFT geometry",
+  "job_id": "20988843"
+}

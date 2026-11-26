@@ -1,0 +1,44 @@
+{
+  "path": "Gamma-K-M-Gamma-A",
+  "ticks": [
+    0.0,
+    0.3520552196007837,
+    0.5280828294011755,
+    0.8329715931103634,
+    1.0
+  ],
+  "experimental_source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_checkpoint_phonons\\reference-data.csv",
+  "experimental_sha256": "a5e52223850078582f71e61c4524de37eea63d64d3a918bc67343af3b95315c9",
+  "experimental_count": 77,
+  "citation": "Stassis et al., room-temperature measurements reproduced in Souvatzis et al., Phys. Rev. Lett. 99, 015901 (2007), doi:10.1103/PhysRevLett.99.015901",
+  "coordinate_mapping": "Experimental x/y retained without edits. Computed path segments mapped linearly between the archived normalized Gamma/K/M/Gamma/A ticks; no frequency shifts or experimental fitting.",
+  "checkpoints": {
+    "PBE": 15000,
+    "PBEsol": 23100,
+    "r2SCAN": 23200
+  },
+  "PBE15k_job": "20973104",
+  "sources": {
+    "PBE-DFT.yaml": {
+      "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\PBE-matched-DFT-DPA4-20261101-01\\DFT\\phonopy_params.yaml",
+      "sha256": "f2673b78af5306892840d71fd2863ab4f53aafcb5a683930e807e8ccb245f30c"
+    },
+    "PBEsol-DFT.yaml": {
+      "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\PBEsol-matched-DFT-DPA4-20261031-02\\DFT\\phonopy_params.yaml",
+      "sha256": "eb9d546d3652881167fbe751d1078f67807bff63c8d3696229dd70cae9c4b1ad"
+    },
+    "PBEsol-DPA4.yaml": {
+      "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\PBEsol-matched-DFT-DPA4-20261031-02\\DPA4\\phonopy_params.yaml",
+      "sha256": "d8d4fb211d144668c06632182b07c9d1b2d8eaa0df578d1e14c46a9e6217cd53"
+    },
+    "r2SCAN-DFT.yaml": {
+      "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\r2SCAN-matched-DFT-DPA4-20261101-01\\DFT\\phonopy_params.yaml",
+      "sha256": "c31ed6b77708371f0290e80ab80db1cb548017d8d6ffa882cca0fcb9054369fa"
+    },
+    "r2SCAN-DPA4.yaml": {
+      "source": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\phonons\\results\\r2SCAN-matched-DFT-DPA4-20261101-01\\DPA4\\phonopy_params.yaml",
+      "sha256": "537a57a9b36edb6c275ad518101d45ddf09009790eea9253cf29db0385476969"
+    }
+  },
+  "qualification": "Draft at current converged SCF settings. Reference diagnostics and electronic/supercell convergence remain pending."
+}

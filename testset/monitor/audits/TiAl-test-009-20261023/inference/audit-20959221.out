@@ -1,0 +1,5 @@
+To get the best performance, it is recommended to adjust the number of threads by setting the environment variables OMP_NUM_THREADS, DP_INTRA_OP_PARALLELISM_THREADS, and DP_INTER_OP_PARALLELISM_THREADS. See https://deepmd.rtfd.io/parallelism/ for more information.
+You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.
+W1023 10:27:37.961000 1026076 /misc/home4/u3129/miniconda3/envs/lammps_deepmd_dpa4/lib/python3.12/site-packages/torch/_inductor/package/package.py:120] Loading outdated pt2 file. Please regenerate your package.
+You can use the environment variable DP_INFER_BATCH_SIZE tocontrol the inference batch size (nframes * natoms). The default value is 1024.
+{"status": "passed", "job_id": "20959221", "energies": {"checkpoint": -1519.153734309777, "frozen": -1519.1537383032883}}

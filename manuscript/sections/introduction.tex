@@ -1,0 +1,55 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Titanium aluminides combine low density with high specific strength and creep resistance at elevated temperatures, making them attractive for lightweight components in aircraft and automotive engines.\cite{Clemens2013}
+The binary Ti--Al system provides the chemical basis for these alloys and contains several ordered compounds, including $\gamma$-TiAl and $\alpha_2$-Ti$_3$Al.
+Their processing and performance involve both crystalline phases and the liquid state.
+In particular, simulations of melting and solidification require an accurate description of phase stability, while the density, mixing thermodynamics, and viscosity of the melt provide complementary information about its behavior during processing.
+Developing an atomistic description that remains reliable across compositions and phases is therefore an important problem for Ti--Al alloys.
+
+Considerable effort has already been devoted to constructing interatomic potentials for this system.
+Established approaches include the embedded-atom potentials of Zope and Mishin\cite{Zope2003} and the second-nearest-neighbor modified embedded-atom potential of Kim \textit{et al.}\cite{Kim2016}
+Machine-learning interatomic potentials (MLIPs) have subsequently expanded the flexibility of the representation and the range of reference configurations that can be included in training.
+Examples include the polynomial-invariant potentials of Seko for binary Ti--Al,\cite{Seko2020} the neuroevolution potential developed by Zhao \textit{et al.} for Ti--Al--Nb,\cite{Zhao2024} and the Ti--Al neuroevolution potential of Shen \textit{et al.}\cite{Shen2025}
+Recent work has also examined the transferability of broadly trained potentials to Al--Ti melts, including their composition-dependent thermophysical and transport properties.\cite{Song2024,Kato2026}
+These studies establish a substantial basis for atomistic modeling of Ti--Al and make the accuracy of the underlying reference description an increasingly relevant question.
+
+The three system-specific MLIP studies cited above use density-functional theory (DFT) reference calculations with the Perdew--Burke--Ernzerhof (PBE) exchange-correlation functional.\cite{Seko2020,Zhao2024,Shen2025,Perdew1996}
+Agreement with such reference data measures how accurately a potential reproduces the selected DFT approximation; agreement with experiment also depends on the physical accuracy of that approximation.
+The melting temperature of elemental Ti provides a particularly clear example.
+Zhao \textit{et al.} report a value of $1671\pm5$~K, compared with their experimental reference of 1941~K,\cite{Zhao2024} whereas Shen \textit{et al.} obtain 1611~K against 1943~K.\cite{Shen2025}
+Both models reproduce a range of crystalline properties, yet their Ti melting temperatures are lower than experiment by approximately 14--17\%.
+These discrepancies motivate an explicit examination of exchange-correlation effects.
+Differences in training coverage, fitting errors, and simulation protocols must also be considered when comparing the predictions of distinct MLIPs.
+
+Melting and liquid transport are demanding tests because they probe aspects of the potential-energy surface that are not fully characterized by equilibrium crystal properties.
+The melting temperature depends on the free-energy balance between the solid and liquid, and viscosity depends on the relaxation of microscopic stress fluctuations.
+Consequently, small regression errors for energies and forces do not by themselves establish quantitative accuracy for either observable.
+First-principles calculations accelerated by machine-learned force fields have shown that predicted melting temperatures depend appreciably on the exchange-correlation approximation.\cite{Jinnouchi2019}
+For alloy liquids, this dependence can additionally vary with composition, making a comparison over the binary composition range more informative than a test of the pure elements alone.
+
+Our recent study of Al--Cu melts demonstrated the practical importance of this issue.\cite{Khazieva2024}
+PBE-based potentials described a broad set of properties but failed to reproduce the measured composition dependence of viscosity in the Cu-rich region.
+Fine-tuning on reference data calculated with PBEsol or \rscan{} substantially improved the description of thermodynamic and transport properties; the \rscan{} potential reproduced the experimentally observed viscosity maximum.
+That work also showed that transfer learning can reduce the amount of reference data needed to construct potentials at a different level of electronic-structure theory.
+These results motivate a corresponding assessment for Ti--Al, where the balance between crystalline and liquid properties, and its variation with composition, remains to be established for alternative functionals.
+
+PBEsol and \rscan{} provide two distinct alternatives to PBE for this comparison.
+PBEsol modifies the generalized-gradient approximation to improve the description of densely packed solids and their surfaces,\cite{Perdew2008} whereas \rscan{} is a regularized, constraint-restored meta-generalized-gradient approximation.\cite{Furness2020}
+Their different constructions offer an opportunity to examine how changes in the reference electronic-structure approximation affect crystalline and liquid observables within a common MLIP framework.
+Improved agreement for one property need not imply an equivalent improvement for the others, so the assessment must include several independent physical benchmarks.
+
+Foundation interatomic models make such comparisons more accessible.
+Pretraining on broad chemical and structural datasets provides representations that can be adapted to a particular system using a comparatively compact reference dataset.\cite{Batatia2025}
+Transfer learning can then be used to change both the material domain and the electronic-structure level represented by the potential.\cite{Khazieva2024}
+The recently introduced DPA4 architecture provides an equivariant, energy-conserving framework for this purpose.\cite{Li2026DPA4}
+Its forces are obtained as derivatives of the predicted energy, and pretrained DPA4 models are available in several sizes.
+Here we use DPA4-Neo as the common starting model for fine-tuning.
+Using the same pretrained backbone and configuration-selection strategy provides a consistent basis for examining the effect of changing the DFT reference functional.
+
+In this work, we develop Ti--Al MLIPs using PBE, PBEsol, and \rscan{} reference calculations and compare their predictions for crystalline and liquid states.
+The reference configurations are selected from a common pool generated by foundation-model molecular dynamics and structural relaxation, and are used to fine-tune the DPA4-Neo model.
+We assess lattice dynamics, temperature-dependent density, the melting temperature of Ti, and the composition dependence of liquid density and mixing enthalpy.
+Liquid viscosity provides an additional comparison between the PBE- and \rscan{}-based models.
+The combined benchmarks allow us to determine which improvements persist across observables and which depend on composition or phase.
+The resulting assessment addresses the choice of electronic-structure reference data for Ti--Al MLIPs and the use of foundation-model fine-tuning as a practical route to that comparison.

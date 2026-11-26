@@ -1,0 +1,6093 @@
+[
+  {
+    "temperature_K": 1273.15,
+    "N": 288,
+    "shape": "6x6x4",
+    "cap": 0.35,
+    "axial_free": 1,
+    "pressure_GPa": 0.0,
+    "direction": 1,
+    "conditional_gap_note": "At a given sampled field, any partition of P(x) into groups of weights 1/5 and 4/5 satisfies |mean_x1-mean_x2| <= 2.5 sd(x), by the law of total variance. This is a bound for that finite-cell distribution, not an uncertainty on a bulk phase boundary.",
+    "n_runs": 16,
+    "searched_mu_range_eV": [
+      3.42,
+      3.51
+    ],
+    "scan": {
+      "grid": [
+        {
+          "mu_eV": 3.42,
+          "x_Al": 0.2124183235222892,
+          "mean_Q": 0.19347577592277485,
+          "dx_dmu_eV_inv": 0.5443771021677728,
+          "composition_sd": 0.014400577623728194,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036001444059320487,
+          "Nvar_Q": 5.932773962572425,
+          "Al_fraction_ranked_sublattices": [
+            0.3575251554643704,
+            0.2168255037442472,
+            0.162481438863315,
+            0.11284119601722435
+          ],
+          "mean_V_A3_atom": 17.508921272100537,
+          "mean_c_a": 1.598354622267835,
+          "effective_frames": 1130.898638996685,
+          "effective_frames_with_time_correlation": 15.123321922036085,
+          "local_modes_Q_and_density": [
+            [
+              0.1225,
+              4.049507310655576
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.421125,
+          "x_Al": 0.21303219598527,
+          "mean_Q": 0.1956493181845885,
+          "dx_dmu_eV_inv": 0.5469209088142319,
+          "composition_sd": 0.014434184465466652,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03608546116366663,
+          "Nvar_Q": 6.125156454556379,
+          "Al_fraction_ranked_sublattices": [
+            0.35976918462371177,
+            0.21697661319659384,
+            0.1625643622358853,
+            0.11281862388488967
+          ],
+          "mean_V_A3_atom": 17.50729545899506,
+          "mean_c_a": 1.5983954137820149,
+          "effective_frames": 1239.6468376921187,
+          "effective_frames_with_time_correlation": 16.59089399276587,
+          "local_modes_Q_and_density": [
+            [
+              0.1225,
+              4.024913537279447
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.42225,
+          "x_Al": 0.2136488274407608,
+          "mean_Q": 0.19788501409919632,
+          "dx_dmu_eV_inv": 0.5492830552302737,
+          "composition_sd": 0.014465321437132873,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03616330359283218,
+          "Nvar_Q": 6.325116138521499,
+          "Al_fraction_ranked_sublattices": [
+            0.362062588015158,
+            0.21711258169010653,
+            0.1626314062969915,
+            0.11278873376078712
+          ],
+          "mean_V_A3_atom": 17.5056839714165,
+          "mean_c_a": 1.5984374403319448,
+          "effective_frames": 1357.3123235958315,
+          "effective_frames_with_time_correlation": 18.175956247809594,
+          "local_modes_Q_and_density": [
+            [
+              0.1225,
+              3.9998233419431704
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.423375,
+          "x_Al": 0.21426801720877717,
+          "mean_Q": 0.20018410592545346,
+          "dx_dmu_eV_inv": 0.5514701398232063,
+          "composition_sd": 0.014494091168587967,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036235227921469916,
+          "Nvar_Q": 6.532776889137837,
+          "Al_fraction_ranked_sublattices": [
+            0.3644060966528672,
+            0.217232750729519,
+            0.16268218003285795,
+            0.11275104141986428
+          ],
+          "mean_V_A3_atom": 17.504085910123273,
+          "mean_c_a": 1.598480746900975,
+          "effective_frames": 1484.2768914332248,
+          "effective_frames_with_time_correlation": 19.882500640118085,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.975158076541325
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4245,
+          "x_Al": 0.21488957215748947,
+          "mean_Q": 0.20254784195933806,
+          "dx_dmu_eV_inv": 0.5534889670694161,
+          "composition_sd": 0.01452059698744948,
+          "maximum_conditional_mean_gap_at_odds_four": 0.0363014924686237,
+          "Nvar_Q": 6.748251356778826,
+          "Al_fraction_ranked_sublattices": [
+            0.36680045362699293,
+            0.2173364655614694,
+            0.16271630272262824,
+            0.11270506671886735
+          ],
+          "mean_V_A3_atom": 17.502500350431692,
+          "mean_c_a": 1.5985253754186997,
+          "effective_frames": 1620.8819438649693,
+          "effective_frames_with_time_correlation": 21.713767689273936,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.9501806271241584
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.425625,
+          "x_Al": 0.2155133068807586,
+          "mean_Q": 0.20497747142258532,
+          "dx_dmu_eV_inv": 0.5553464509517555,
+          "composition_sd": 0.0145449418121412,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036362354530353,
+          "Nvar_Q": 6.971639276388995,
+          "Al_fraction_ranked_sublattices": [
+            0.36924641044769757,
+            0.21742307639627179,
+            0.1627334047825371,
+            0.112650335896528
+          ],
+          "mean_V_A3_atom": 17.50092635070304,
+          "mean_c_a": 1.5985713646567565,
+          "effective_frames": 1767.4199728482467,
+          "effective_frames_with_time_correlation": 23.67212681274158,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.9246829348437635
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4267499999999997,
+          "x_Al": 0.21613904376711218,
+          "mean_Q": 0.2074742384204309,
+          "dx_dmu_eV_inv": 0.5570495187279363,
+          "composition_sd": 0.014567227053680444,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03641806763420111,
+          "Nvar_Q": 7.203025680616031,
+          "Al_fraction_ranked_sublattices": [
+            0.37174472258243546,
+            0.21749193981536352,
+            0.1627331287411952,
+            0.11258638392945469
+          ],
+          "mean_V_A3_atom": 17.499362960657866,
+          "mean_c_a": 1.5986187501456348,
+          "effective_frames": 1924.1262728590696,
+          "effective_frames_with_time_correlation": 25.758966374565833,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.898665895118361
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.427875,
+          "x_Al": 0.21676661296124256,
+          "mean_Q": 0.21003937495381395,
+          "dx_dmu_eV_inv": 0.5586050163085763,
+          "composition_sd": 0.014587551539523047,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03646887884880762,
+          "Nvar_Q": 7.442479028934267,
+          "Al_fraction_ranked_sublattices": [
+            0.37429614417660306,
+            0.21754242038029434,
+            0.162715130355237,
+            0.11251275693283566
+          ],
+          "mean_V_A3_atom": 17.497809229449157,
+          "mean_c_a": 1.5986675641105568,
+          "effective_frames": 2091.1711376517824,
+          "effective_frames_with_time_correlation": 27.9745978526323,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.8721305288261245
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.429,
+          "x_Al": 0.21739585222055377,
+          "mean_Q": 0.21267409298521114,
+          "dx_dmu_eV_inv": 0.5600196165033665,
+          "composition_sd": 0.014606010472845474,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036515026182113684,
+          "Nvar_Q": 7.690049267220513,
+          "Al_fraction_ranked_sublattices": [
+            0.3769014219594622,
+            0.21757389245623598,
+            0.16267907987209115,
+            0.1124290145944257
+          ],
+          "mean_V_A3_atom": 17.496264213436064,
+          "mean_c_a": 1.598717835424451,
+          "effective_frames": 2268.652789689369,
+          "effective_frames_with_time_correlation": 30.31817822646152,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.845078001270494
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.430125,
+          "x_Al": 0.2180266066706718,
+          "mean_Q": 0.21537957557196985,
+          "dx_dmu_eV_inv": 0.5612997313578948,
+          "composition_sd": 0.014622694440530758,
+          "maximum_conditional_mean_gap_at_odds_four": 0.0365567361013269,
+          "Nvar_Q": 7.945765835017192,
+          "Al_fraction_ranked_sublattices": [
+            0.37956128834964925,
+            0.2175857422596007,
+            0.16262466344382065,
+            0.11233473262961671
+          ],
+          "mean_V_A3_atom": 17.494726983605634,
+          "mean_c_a": 1.5987695895757175,
+          "effective_frames": 2456.591274930993,
+          "effective_frames_with_time_correlation": 32.78765411448982,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.8175096527888766
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.43125,
+          "x_Al": 0.21865872846518816,
+          "mean_Q": 0.21815696709636279,
+          "dx_dmu_eV_inv": 0.5624514297529937,
+          "composition_sd": 0.014637688482836595,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036594221207091486,
+          "Nvar_Q": 8.20963564047564,
+          "Al_fraction_ranked_sublattices": [
+            0.38227645378746017,
+            0.21757737013560977,
+            0.1625515846929462,
+            0.1122295052447365
+          ],
+          "mean_V_A3_atom": 17.493196632600128,
+          "mean_c_a": 1.5988228486485643,
+          "effective_frames": 2654.9235251526293,
+          "effective_frames_with_time_correlation": 35.37973035834362,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.7894270409398265
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.432375,
+          "x_Al": 0.2192920763561861,
+          "mean_Q": 0.22100736263743337,
+          "dx_dmu_eV_inv": 0.563480361373686,
+          "composition_sd": 0.014651071237252174,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03662767809313044,
+          "Nvar_Q": 8.481641025667553,
+          "Al_fraction_ranked_sublattices": [
+            0.38504759833426117,
+            0.21754819306751996,
+            0.16245956642791992,
+            0.11211294759504353
+          ],
+          "mean_V_A3_atom": 17.491672281313484,
+          "mean_c_a": 1.598877631313565,
+          "effective_frames": 2863.499746372338,
+          "effective_frames_with_time_correlation": 38.089864701471036,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.760831993932881
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4335,
+          "x_Al": 0.2199265151832999,
+          "mean_Q": 0.22393179654580248,
+          "dx_dmu_eV_inv": 0.5643916880767781,
+          "composition_sd": 0.014662914168392965,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03665728542098241,
+          "Nvar_Q": 8.761737747519929,
+          "Al_fraction_ranked_sublattices": [
+            0.3878753625926517,
+            0.2174976474148084,
+            0.16234835250252636,
+            0.11198469822321325
+          ],
+          "mean_V_A3_atom": 17.49015308502906,
+          "mean_c_a": 1.5989339528262132,
+          "effective_frames": 3082.081237339669,
+          "effective_frames_with_time_correlation": 40.91228900268943,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.7317266746968683
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.434625,
+          "x_Al": 0.22056191529017,
+          "mean_Q": 0.2269312302987392,
+          "dx_dmu_eV_inv": 0.565190023595679,
+          "composition_sd": 0.014673280894939193,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03668320223734798,
+          "Nvar_Q": 9.04985300200559,
+          "Al_fraction_ranked_sublattices": [
+            0.3907603380142243,
+            0.21742519187298487,
+            0.16221770981001446,
+            0.11184442146345655
+          ],
+          "mean_V_A3_atom": 17.488638239076916,
+          "mean_c_a": 1.598991825031371,
+          "effective_frames": 3310.3396795668605,
+          "effective_frames_with_time_correlation": 43.84005614217072,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.7021136547217157
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.43575,
+          "x_Al": 0.22119815187815103,
+          "mean_Q": 0.23000653972870116,
+          "dx_dmu_eV_inv": 0.5658793824187099,
+          "composition_sd": 0.014682226623593909,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03670556655898477,
+          "Nvar_Q": 9.345883521337212,
+          "Al_fraction_ranked_sublattices": [
+            0.393703056674677,
+            0.21733031064291117,
+            0.16206743039924926,
+            0.1116918097957668
+          ],
+          "mean_V_A3_atom": 17.487126983995854,
+          "mean_c_a": 1.599051256371668,
+          "effective_frames": 3547.8578740043426,
+          "effective_frames_with_time_correlation": 46.865110510119784,
+          "local_modes_Q_and_density": [
+            [
+              0.1275,
+              3.6719959965613405
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4368749999999997,
+          "x_Al": 0.22183510430801404,
+          "mean_Q": 0.2331585017339945,
+          "dx_dmu_eV_inv": 0.5664631385639147,
+          "composition_sd": 0.014689797698828137,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03672449424707034,
+          "Nvar_Q": 9.6496937756964,
+          "Al_fraction_ranked_sublattices": [
+            0.39670398060851003,
+            0.21721251679264764,
+            0.16189733369669718,
+            0.11152658613420133
+          ],
+          "mean_V_A3_atom": 17.48561861019059,
+          "mean_c_a": 1.5991122518982301,
+          "effective_frames": 3794.1318337124,
+          "effective_frames_with_time_correlation": 49.97837881206751,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.641520612476686
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4379999999999997,
+          "x_Al": 0.22247265536112618,
+          "mean_Q": 0.2363877805948929,
+          "dx_dmu_eV_inv": 0.5669439948497504,
+          "composition_sd": 0.014696031275799826,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036740078189499564,
+          "Nvar_Q": 9.961114312406654,
+          "Al_fraction_ranked_sublattices": [
+            0.3997634908072957,
+            0.21707135578998135,
+            0.1617072688146685,
+            0.11134850603255894
+          ],
+          "mean_V_A3_atom": 17.484112462079608,
+          "mean_c_a": 1.5991748132823227,
+          "effective_frames": 4048.574081445045,
+          "effective_frames_with_time_correlation": 53.16987696837075,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.611398038048935
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4391249999999998,
+          "x_Al": 0.22311069047218343,
+          "mean_Q": 0.2396949140322094,
+          "dx_dmu_eV_inv": 0.5673239631278705,
+          "composition_sd": 0.014700955122294124,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03675238780573531,
+          "Nvar_Q": 10.279940266352401,
+          "Al_fraction_ranked_sublattices": [
+            0.4028818759963404,
+            0.21690640917901574,
+            0.16149711692301583,
+            0.11115735979036144
+          ],
+          "mean_V_A3_atom": 17.482607941732912,
+          "mean_c_a": 1.5992389388268557,
+          "effective_frames": 4310.517950390153,
+          "effective_frames_with_time_correlation": 56.42882820311835,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.580770052830515
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.44025,
+          "x_Al": 0.22374909694603565,
+          "mean_Q": 0.2430802991577407,
+          "dx_dmu_eV_inv": 0.5676043558024507,
+          "composition_sd": 0.014704587553852462,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03676146888463115,
+          "Nvar_Q": 10.605930075795962,
+          "Al_fraction_ranked_sublattices": [
+            0.4060593213143409,
+            0.2167172983696113,
+            0.1612667936584888,
+            0.11095297444170132
+          ],
+          "mean_V_A3_atom": 17.481104512002865,
+          "mean_c_a": 1.5993046234770831,
+          "effective_frames": 4579.222649230461,
+          "effective_frames_with_time_correlation": 59.74378706070907,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.5496429823304725
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.441375,
+          "x_Al": 0.22438776317140624,
+          "mean_Q": 0.2465441784767585,
+          "dx_dmu_eV_inv": 0.5677857888109716,
+          "composition_sd": 0.01470693750445574,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036767343761139354,
+          "Nvar_Q": 10.938804437465775,
+          "Al_fraction_ranked_sublattices": [
+            0.4092958970289748,
+            0.2165036885041134,
+            0.16101625154323013,
+            0.11073521560930606
+          ],
+          "mean_V_A3_atom": 17.479601699153392,
+          "mean_c_a": 1.599371858830121,
+          "effective_frames": 4853.878832036033,
+          "effective_frames_with_time_correlation": 63.102764080621355,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.518024036789602
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4425,
+          "x_Al": 0.22502657784442887,
+          "mean_Q": 0.2500866261117098,
+          "dx_dmu_eV_inv": 0.5678681960854767,
+          "composition_sd": 0.014708004733230948,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03677001183307737,
+          "Nvar_Q": 11.278245533843496,
+          "Al_fraction_ranked_sublattices": [
+            0.4125915474282113,
+            0.21626529236182992,
+            0.16074548238154995,
+            0.11050398920612488
+          ],
+          "mean_V_A3_atom": 17.478099094995407,
+          "mean_c_a": 1.5994406331433544,
+          "effective_frames": 5133.6144108969165,
+          "effective_frames_with_time_correlation": 66.49334619685642,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.485921411504006
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.443625,
+          "x_Al": 0.2256654292148536,
+          "mean_Q": 0.25370753442310817,
+          "dx_dmu_eV_inv": 0.5678508553523525,
+          "composition_sd": 0.014707780165687172,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03676945041421793,
+          "Nvar_Q": 11.623896563903118,
+          "Al_fraction_ranked_sublattices": [
+            0.4159460800321846,
+            0.21600187425816417,
+            0.16045451960217327,
+            0.1102592429668921
+          ],
+          "mean_V_A3_atom": 17.47659635853735,
+          "mean_c_a": 1.599510931342105,
+          "effective_frames": 5417.500364898421,
+          "effective_frames_with_time_correlation": 69.90280857440449,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.4533443842551166
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.44475,
+          "x_Al": 0.22630420436751594,
+          "mean_Q": 0.2574066012080726,
+          "dx_dmu_eV_inv": 0.5677324249644611,
+          "composition_sd": 0.01470624636599082,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036765615914977054,
+          "Nvar_Q": 11.975361606126496,
+          "Al_fraction_ranked_sublattices": [
+            0.41935915527357054,
+            0.21571325389229837,
+            0.1601434405116978,
+            0.11000096779249735
+          ],
+          "mean_V_A3_atom": 17.475093217161163,
+          "mean_c_a": 1.599582735027308,
+          "effective_frames": 5704.556331914316,
+          "effective_frames_with_time_correlation": 73.31821449341739,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.420303407739028
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.445875,
+          "x_Al": 0.2269427885512395,
+          "mean_Q": 0.2611833176588405,
+          "dx_dmu_eV_inv": 0.567510991293974,
+          "composition_sd": 0.014703378134794968,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03675844533698742,
+          "Nvar_Q": 12.332205839416915,
+          "Al_fraction_ranked_sublattices": [
+            0.4228302767953699,
+            0.21539931009491103,
+            0.15981236842406782,
+            0.10972919889060961
+          ],
+          "mean_V_A3_atom": 17.473589467334737,
+          "mean_c_a": 1.5996560224842586,
+          "effective_frames": 5993.755817372762,
+          "effective_frames_with_time_correlation": 76.72650096794183,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.386810194929264
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.447,
+          "x_Al": 0.22758106456670216,
+          "mean_Q": 0.26503695726265736,
+          "dx_dmu_eV_inv": 0.5671841260499011,
+          "composition_sd": 0.014699143225182173,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036747858062955434,
+          "Nvar_Q": 12.693956143560518,
+          "Al_fraction_ranked_sublattices": [
+            0.4263587825136951,
+            0.21505998442569818,
+            0.1594614746305149,
+            0.10944401669690063
+          ],
+          "mean_V_A3_atom": 17.47208497487213,
+          "mean_c_a": 1.5997307686937536,
+          "effective_frames": 6284.030913232033,
+          "effective_frames_with_time_correlation": 80.11454895615012,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.3528777953900697
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.448125,
+          "x_Al": 0.2282189122240016,
+          "mean_Q": 0.26896656582057926,
+          "dx_dmu_eV_inv": 0.5667489527237636,
+          "composition_sd": 0.014693503167402287,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036733757918505715,
+          "Nvar_Q": 13.060102096169864,
+          "Al_fraction_ranked_sublattices": [
+            0.4299438365894359,
+            0.21469528456951378,
+            0.1590909801746688,
+            0.10914554756238773
+          ],
+          "mean_V_A3_atom": 17.470579674753616,
+          "mean_c_a": 1.5998069453471948,
+          "effective_frames": 6574.276486745195,
+          "effective_frames_with_time_correlation": 83.46923819779006,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.3185206606803157
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4492499999999997,
+          "x_Al": 0.22885620787966865,
+          "mean_Q": 0.2729709527557933,
+          "dx_dmu_eV_inv": 0.5662022212130652,
+          "composition_sd": 0.014686414191325284,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03671603547831321,
+          "Nvar_Q": 13.430097377634981,
+          "Al_fraction_ranked_sublattices": [
+            0.43358442244651385,
+            0.21430528747980926,
+            0.15870115739844728,
+            0.10883396419390445
+          ],
+          "mean_V_A3_atom": 17.469073570517875,
+          "mean_c_a": 1.599884520867413,
+          "effective_frames": 6863.353867638055,
+          "effective_frames_with_time_correlation": 86.77748782274,
+          "local_modes_Q_and_density": [
+            [
+              0.1325,
+              3.2837546971496065
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.45,
+          "x_Al": 0.2292807022000731,
+          "mean_Q": 0.27568138955095356,
+          "dx_dmu_eV_inv": 0.5657740170421366,
+          "composition_sd": 0.014680859662361762,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036702149155904404,
+          "Nvar_Q": 13.678614135993968,
+          "Al_fraction_ranked_sublattices": [
+            0.43604174436328835,
+            0.21403130596725478,
+            0.15843069585230435,
+            0.10861906261744485
+          ],
+          "mean_V_A3_atom": 17.468069086655017,
+          "mean_c_a": 1.5999369979676183,
+          "effective_frames": 7054.847030831285,
+          "effective_frames_with_time_correlation": 88.95075819731657,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.26036755377031
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4503749999999997,
+          "x_Al": 0.22949282406172644,
+          "mean_Q": 0.27704868387203485,
+          "dx_dmu_eV_inv": 0.5655403895283768,
+          "composition_sd": 0.014677828233921643,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036694570584804104,
+          "Nvar_Q": 13.803361589580444,
+          "Al_fraction_ranked_sublattices": [
+            0.4372793369657526,
+            0.21389014221878735,
+            0.1582923312258793,
+            0.1085094858364862
+          ],
+          "mean_V_A3_atom": 17.46756673323899,
+          "mean_c_a": 1.599963460437062,
+          "effective_frames": 7150.094129428061,
+          "effective_frames_with_time_correlation": 90.02628484431658,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.2489321318119906
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.4515,
+          "x_Al": 0.23012862919008345,
+          "mean_Q": 0.28119807570951577,
+          "dx_dmu_eV_inv": 0.5647597113592959,
+          "composition_sd": 0.014667694017665144,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03666923504416286,
+          "Nvar_Q": 14.179282485777792,
+          "Al_fraction_ranked_sublattices": [
+            0.44102718597222035,
+            0.2134500724453259,
+            0.15786488015423777,
+            0.10817237818855004
+          ],
+          "mean_V_A3_atom": 17.46605930010191,
+          "mean_c_a": 1.6000437260365536,
+          "effective_frames": 7433.30112132589,
+          "effective_frames_with_time_correlation": 93.20270342964965,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.214371733890131
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.452625,
+          "x_Al": 0.2307634873981143,
+          "mean_Q": 0.28541719162968393,
+          "dx_dmu_eV_inv": 0.5638563281606767,
+          "composition_sd": 0.014655958184557547,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036639895461393866,
+          "Nvar_Q": 14.557218607527412,
+          "Al_fraction_ranked_sublattices": [
+            0.4448263811203774,
+            0.21298537850426658,
+            0.15741923692470391,
+            0.10782295304310947
+          ],
+          "mean_V_A3_atom": 17.46455147259057,
+          "mean_c_a": 1.6001252764934248,
+          "effective_frames": 7711.754457495746,
+          "effective_frames_with_time_correlation": 96.29391839135376,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.1794457566205807
+            ]
+          ],
+          "two_well_profile": null
+        },
+        {
+          "mu_eV": 3.45375,
+          "x_Al": 0.23139725845971057,
+          "mean_Q": 0.2897038397410904,
+          "dx_dmu_eV_inv": 0.5628263643266387,
+          "composition_sd": 0.014642566469529852,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03660641617382463,
+          "Nvar_Q": 14.936502308330407,
+          "Al_fraction_ranked_sublattices": [
+            0.44867513826552846,
+            0.21249643907413923,
+            0.15695588884827041,
+            0.10746156765090446
+          ],
+          "mean_V_A3_atom": 17.463043514304136,
+          "mean_c_a": 1.600208067545051,
+          "effective_frames": 7984.212707018495,
+          "effective_frames_with_time_correlation": 99.28721665067884,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.144175488007036
+            ],
+            [
+              0.8175000000000001,
+              0.3949006892262886
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1375,
+              0.8175000000000001
+            ],
+            "valley_Q": 0.7925,
+            "barrier_from_smaller_peak_kBT": 0.0015647587638679098,
+            "ordered_side_weight": 0.054909353370957995
+          }
+        },
+        {
+          "mu_eV": 3.454875,
+          "x_Al": 0.23202979782443706,
+          "mean_Q": 0.2940555727570357,
+          "dx_dmu_eV_inv": 0.5616660239490889,
+          "composition_sd": 0.014627464896304088,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03656866224076022,
+          "Nvar_Q": 15.31644314540245,
+          "Al_fraction_ranked_sublattices": [
+            0.45257147739221365,
+            0.21198371233472024,
+            0.1564753777666286,
+            0.10708862380418555
+          ],
+          "mean_V_A3_atom": 17.461535748418008,
+          "mean_c_a": 1.600292051916413,
+          "effective_frames": 8249.417048104782,
+          "effective_frames_with_time_correlation": 102.17001047891966,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.1085836460713745
+            ],
+            [
+              0.8225,
+              0.4139196765470965
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1375,
+              0.8225
+            ],
+            "valley_Q": 0.7875000000000001,
+            "barrier_from_smaller_peak_kBT": 0.005263951816924286,
+            "ordered_side_weight": 0.05944680208883394
+          }
+        },
+        {
+          "mu_eV": 3.456,
+          "x_Al": 0.2326609567617098,
+          "mean_Q": 0.29846968985176237,
+          "dx_dmu_eV_inv": 0.560371687612579,
+          "composition_sd": 0.014610600978420278,
+          "maximum_conditional_mean_gap_at_odds_four": 0.0365265024460507,
+          "Nvar_Q": 15.696331608405915,
+          "Al_fraction_ranked_sublattices": [
+            0.45651322415053147,
+            0.2114477366210156,
+            0.15597829963235213,
+            0.10670456664294009
+          ],
+          "mean_V_A3_atom": 17.4600285548085,
+          "mean_c_a": 1.6003771794145127,
+          "effective_frames": 8506.095652164344,
+          "effective_frames_with_time_correlation": 104.92985614067693,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.0726943425018662
+            ],
+            [
+              0.8225,
+              0.4336877183568733
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1375,
+              0.8225
+            ],
+            "valley_Q": 0.7825,
+            "barrier_from_smaller_peak_kBT": 0.010190516031975003,
+            "ordered_side_weight": 0.0642847451724647
+          }
+        },
+        {
+          "mu_eV": 3.457125,
+          "x_Al": 0.23329058261315339,
+          "mean_Q": 0.30294324055609956,
+          "dx_dmu_eV_inv": 0.5589400076605279,
+          "composition_sd": 0.01459192490805601,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03647981227014002,
+          "Nvar_Q": 16.075443148885487,
+          "Al_fraction_ranked_sublattices": [
+            0.460498013030228,
+            0.21088913053618208,
+            0.15546530369767173,
+            0.10630988318853168
+          ],
+          "mean_V_A3_atom": 17.458522366860965,
+          "mean_c_a": 1.6004633970407267,
+          "effective_frames": 8752.969046398615,
+          "effective_frames_with_time_correlation": 107.5544811603549,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.0365330290196497
+            ],
+            [
+              0.8275000000000001,
+              0.4540914416441652
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1375,
+              0.8275000000000001
+            ],
+            "valley_Q": 0.7775000000000001,
+            "barrier_from_smaller_peak_kBT": 0.015908673772117903,
+            "ordered_side_weight": 0.07142053415192916
+          }
+        },
+        {
+          "mu_eV": 3.45825,
+          "x_Al": 0.23391851915054498,
+          "mean_Q": 0.30747303070619264,
+          "dx_dmu_eV_inv": 0.5573680003808574,
+          "composition_sd": 0.014571390715495392,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03642847678873848,
+          "Nvar_Q": 16.453042467477147,
+          "Al_fraction_ranked_sublattices": [
+            0.46452329218018934,
+            0.21030859250252232,
+            0.15493709130648517,
+            0.10590510061298307
+          ],
+          "mean_V_A3_atom": 17.45701766798419,
+          "mean_c_a": 1.600550649122149,
+          "effective_frames": 8988.756667733514,
+          "effective_frames_with_time_correlation": 110.03182284137404,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              3.0001264268347216
+            ],
+            [
+              0.8275000000000001,
+              0.4751200596552256
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1375,
+              0.8275000000000001
+            ],
+            "valley_Q": 0.7725,
+            "barrier_from_smaller_peak_kBT": 0.022286259124146206,
+            "ordered_side_weight": 0.07687981139291598
+          }
+        },
+        {
+          "mu_eV": 3.4593749999999996,
+          "x_Al": 0.23454460703502336,
+          "mean_Q": 0.3120556304306974,
+          "dx_dmu_eV_inv": 0.5556531336027472,
+          "composition_sd": 0.014548957382635896,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03637239345658974,
+          "Nvar_Q": 16.82838801020601,
+          "Al_fraction_ranked_sublattices": [
+            0.4685863298580464,
+            0.2097068997368334,
+            0.15439441428981143,
+            0.10549078425540219
+          ],
+          "mean_V_A3_atom": 17.455514987855658,
+          "mean_c_a": 1.6006388774626261,
+          "effective_frames": 9212.184767227627,
+          "effective_frames_with_time_correlation": 112.35007992214894,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              2.9635024398613696
+            ],
+            [
+              0.8325,
+              0.49670783755413295
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1375,
+              0.8325
+            ],
+            "valley_Q": 0.7725,
+            "barrier_from_smaller_peak_kBT": 0.029146283402908764,
+            "ordered_side_weight": 0.08063011401079732
+          }
+        },
+        {
+          "mu_eV": 3.4604999999999997,
+          "x_Al": 0.23516868437158855,
+          "mean_Q": 0.316687384133225,
+          "dx_dmu_eV_inv": 0.5537934082706448,
+          "composition_sd": 0.014524589894745924,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03631147473686481,
+          "Nvar_Q": 17.20073662027152,
+          "Al_fraction_ranked_sublattices": [
+            0.47268422247150743,
+            0.20908490664397256,
+            0.15383807297061533,
+            0.10506753540025912
+          ],
+          "mean_V_A3_atom": 17.45401489842466,
+          "mean_c_a": 1.6007280215138264,
+          "effective_frames": 9421.99575466489,
+          "effective_frames_with_time_correlation": 114.49777839527779,
+          "local_modes_Q_and_density": [
+            [
+              0.1375,
+              2.9266900526477744
+            ],
+            [
+              0.6275,
+              0.511518647339527
+            ],
+            [
+              0.6825000000000001,
+              0.5116216600774325
+            ],
+            [
+              0.8325,
+              0.5189601400417715
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1375,
+              0.8325
+            ],
+            "valley_Q": 0.7675000000000001,
+            "barrier_from_smaller_peak_kBT": 0.03680462560945918,
+            "ordered_side_weight": 0.08649345714605844
+          }
+        },
+        {
+          "mu_eV": 3.4616249999999997,
+          "x_Al": 0.2357905873513533,
+          "mean_Q": 0.3213644223983837,
+          "dx_dmu_eV_inv": 0.5517874326659827,
+          "composition_sd": 0.014498260215784708,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03624565053946177,
+          "Nvar_Q": 17.569348287790078,
+          "Al_fraction_ranked_sublattices": [
+            0.4768139041501413,
+            0.20844354263034487,
+            0.15326891378962576,
+            0.10463598883530148
+          ],
+          "mean_V_A3_atom": 17.452518009702626,
+          "mean_c_a": 1.600818018566319,
+          "effective_frames": 9616.958990965377,
+          "effective_frames_with_time_correlation": 116.46385159184845,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.8900077408592084
+            ],
+            [
+              0.6925000000000001,
+              0.526128727239544
+            ],
+            [
+              0.8325,
+              0.5416678006305828
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8325
+            ],
+            "valley_Q": 0.7625,
+            "barrier_from_smaller_peak_kBT": 0.04470735196727337,
+            "ordered_side_weight": 0.09271526812225608
+          }
+        },
+        {
+          "mu_eV": 3.4627499999999998,
+          "x_Al": 0.23641015097258972,
+          "mean_Q": 0.32608267572224864,
+          "dx_dmu_eV_inv": 0.549634488079466,
+          "composition_sd": 0.01446994817394469,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03617487043486173,
+          "Nvar_Q": 17.93349093716853,
+          "Al_fraction_ranked_sublattices": [
+            0.4809721577642762,
+            0.20778380934695848,
+            0.15268782656936428,
+            0.1041968102097602
+          ],
+          "mean_V_A3_atom": 17.45102496537186,
+          "mean_c_a": 1.6009088039602009,
+          "effective_frames": 9795.882945393556,
+          "effective_frames_with_time_correlation": 118.23773368929386,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.8538495786894846
+            ],
+            [
+              0.7025,
+              0.5410307363321312
+            ],
+            [
+              0.8374999999999999,
+              0.5648510839137496
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8374999999999999
+            ],
+            "valley_Q": 0.5825,
+            "barrier_from_smaller_peak_kBT": 0.060220830185116626,
+            "ordered_side_weight": 0.19494171872583316
+          }
+        },
+        {
+          "mu_eV": 3.463875,
+          "x_Al": 0.2370272098303571,
+          "mean_Q": 0.3308378899419119,
+          "dx_dmu_eV_inv": 0.5473345848947203,
+          "composition_sd": 0.014439642245645956,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03609910561411489,
+          "Nvar_Q": 18.292445190199253,
+          "Al_fraction_ranked_sublattices": [
+            0.48515562728679096,
+            0.20710677737958752,
+            0.15209574143894763,
+            0.10375069321610222
+          ],
+          "mean_V_A3_atom": 17.44953643824696,
+          "mean_c_a": 1.601000311314521,
+          "effective_frames": 9957.62854022174,
+          "effective_frames_with_time_correlation": 119.80946488791636,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.817573857131027
+            ],
+            [
+              0.7075,
+              0.5562621653784229
+            ],
+            [
+              0.8374999999999999,
+              0.5886823281303883
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8374999999999999
+            ],
+            "valley_Q": 0.5775,
+            "barrier_from_smaller_peak_kBT": 0.08364235883699862,
+            "ordered_side_weight": 0.20448619848858593
+          }
+        },
+        {
+          "mu_eV": 3.465,
+          "x_Al": 0.2376415989634125,
+          "mean_Q": 0.33562564321465904,
+          "dx_dmu_eV_inv": 0.5448885082237985,
+          "composition_sd": 0.014407340227964555,
+          "maximum_conditional_mean_gap_at_odds_four": 0.036018350569911387,
+          "Nvar_Q": 18.645509042679166,
+          "Al_fraction_ranked_sublattices": [
+            0.4893608313744067,
+            0.20641358241121663,
+            0.15149362544719194,
+            0.10329835662083471
+          ],
+          "mean_V_A3_atom": 17.448053125623165,
+          "mean_c_a": 1.6010924727742197,
+          "effective_frames": 10101.123413122657,
+          "effective_frames_with_time_correlation": 121.16980566696158,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.7812116585353532
+            ],
+            [
+              0.7175,
+              0.5718579493364654
+            ],
+            [
+              0.8374999999999999,
+              0.6129090294141425
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8374999999999999
+            ],
+            "valley_Q": 0.5725,
+            "barrier_from_smaller_peak_kBT": 0.10723514189917291,
+            "ordered_side_weight": 0.21361295829039936
+          }
+        },
+        {
+          "mu_eV": 3.466125,
+          "x_Al": 0.23825315474627015,
+          "mean_Q": 0.34044136437579126,
+          "dx_dmu_eV_inv": 0.5422978524324576,
+          "composition_sd": 0.014373049791374687,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03593262447843672,
+          "Nvar_Q": 18.992002393377565,
+          "Al_fraction_ranked_sublattices": [
+            0.4935841780281136,
+            0.20570542088919083,
+            0.1508824788960502,
+            0.10284054117172596
+          ],
+          "mean_V_A3_atom": 17.446575744549474,
+          "mean_c_a": 1.6011852192730875,
+          "effective_frames": 10225.376743076455,
+          "effective_frames_with_time_correlation": 122.31035682198676,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.744794491638228
+            ],
+            [
+              0.8374999999999999,
+              0.63750311023476
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8374999999999999
+            ],
+            "valley_Q": 0.5625,
+            "barrier_from_smaller_peak_kBT": 0.13116510446767277,
+            "ordered_side_weight": 0.22598274205229774
+          }
+        },
+        {
+          "mu_eV": 3.46725,
+          "x_Al": 0.23886171581362411,
+          "mean_Q": 0.3452803524855881,
+          "dx_dmu_eV_inv": 0.5395650441031014,
+          "composition_sd": 0.014336788906683662,
+          "maximum_conditional_mean_gap_at_odds_four": 0.035841972266709154,
+          "Nvar_Q": 19.331271366495233,
+          "Al_fraction_ranked_sublattices": [
+            0.49782198017781526,
+            0.20498354523615592,
+            0.15026333143031115,
+            0.10237800641021422
+          ],
+          "mean_V_A3_atom": 17.445105027062908,
+          "mean_c_a": 1.601278480810798,
+          "effective_frames": 10329.494214961645,
+          "effective_frames_with_time_correlation": 123.22368144230408,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.708354139380338
+            ],
+            [
+              0.8374999999999999,
+              0.662435153989628
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8374999999999999
+            ],
+            "valley_Q": 0.5525,
+            "barrier_from_smaller_peak_kBT": 0.15547519191766287,
+            "ordered_side_weight": 0.237632697062463
+          }
+        },
+        {
+          "mu_eV": 3.468375,
+          "x_Al": 0.23946712400398576,
+          "mean_Q": 0.35013779736089384,
+          "dx_dmu_eV_inv": 0.5366933532006705,
+          "composition_sd": 0.014298586142095735,
+          "maximum_conditional_mean_gap_at_odds_four": 0.035746465355239336,
+          "Nvar_Q": 19.662692372318006,
+          "Al_fraction_ranked_sublattices": [
+            0.5020704720246563,
+            0.20424925864984775,
+            0.1496372379227349,
+            0.10191152741870425
+          ],
+          "mean_V_A3_atom": 17.443641715423322,
+          "mean_c_a": 1.6013721867418664,
+          "effective_frames": 10412.69264676118,
+          "effective_frames_with_time_correlation": 123.9034246434268,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.671922503107973
+            ],
+            [
+              0.8425,
+              0.6878773698725227
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8425
+            ],
+            "valley_Q": 0.5375000000000001,
+            "barrier_from_smaller_peak_kBT": 0.1809556403930283,
+            "ordered_side_weight": 0.25204427919709504
+          }
+        },
+        {
+          "mu_eV": 3.4695,
+          "x_Al": 0.2400692253092257,
+          "mean_Q": 0.3550088008755397,
+          "dx_dmu_eV_inv": 0.5336868924257073,
+          "composition_sd": 0.014258480828409194,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03564620207102299,
+          "Nvar_Q": 19.985675855469385,
+          "Al_fraction_ranked_sublattices": [
+            0.5063258259658806,
+            0.2035039095418854,
+            0.14900527419627654,
+            0.1014418915328605
+          ],
+          "mean_V_A3_atom": 17.442186557385792,
+          "mean_c_a": 1.6014662660740764,
+          "effective_frames": 10474.31377602169,
+          "effective_frames_with_time_correlation": 124.34442674702497,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.6355314452101175
+            ],
+            [
+              0.8425,
+              0.7136800657231832
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8425
+            ],
+            "valley_Q": 0.5125,
+            "barrier_from_smaller_peak_kBT": 0.20874426737313867,
+            "ordered_side_weight": 0.27672368586380197
+          }
+        },
+        {
+          "mu_eV": 3.470625,
+          "x_Al": 0.24066787081682886,
+          "mean_Q": 0.3598883988065639,
+          "dx_dmu_eV_inv": 0.5305506049538824,
+          "composition_sd": 0.014216523092388746,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03554130773097187,
+          "Nvar_Q": 20.299669685885167,
+          "Al_fraction_ranked_sublattices": [
+            0.5105841699217517,
+            0.2027488856699013,
+            0.14836853262675803,
+            0.10096989504890437
+          ],
+          "mean_V_A3_atom": 17.44074030154873,
+          "mean_c_a": 1.6015606477737516,
+          "effective_frames": 10513.836701993558,
+          "effective_frames_with_time_correlation": 124.54282570906577,
+          "local_modes_Q_and_density": [
+            [
+              0.14250000000000002,
+              2.599212632226741
+            ],
+            [
+              0.8425,
+              0.7397358100180723
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.14250000000000002,
+              0.8425
+            ],
+            "valley_Q": 0.5025,
+            "barrier_from_smaller_peak_kBT": 0.2381417583493674,
+            "ordered_side_weight": 0.29002690312741974
+          }
+        },
+        {
+          "mu_eV": 3.4717499999999997,
+          "x_Al": 0.24126291763200236,
+          "mean_Q": 0.3647715830000394,
+          "dx_dmu_eV_inv": 0.5272902409667379,
+          "composition_sd": 0.014172773760317985,
+          "maximum_conditional_mean_gap_at_odds_four": 0.035431934400794965,
+          "Nvar_Q": 20.604162154200843,
+          "Al_fraction_ranked_sublattices": [
+            0.5148416048820321,
+            0.2019856080204645,
+            0.14772811767021707,
+            0.10049633995529594
+          ],
+          "mean_V_A3_atom": 17.439303692813624,
+          "mean_c_a": 1.6016552610750934,
+          "effective_frames": 10530.888508081494,
+          "effective_frames_with_time_correlation": 124.49614493021114,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.563376478787837
+            ],
+            [
+              0.8425,
+              0.7660103854591495
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8425
+            ],
+            "valley_Q": 0.4975,
+            "barrier_from_smaller_peak_kBT": 0.26788927590155387,
+            "ordered_side_weight": 0.2996557643132579
+          }
+        },
+        {
+          "mu_eV": 3.4728749999999997,
+          "x_Al": 0.24185422976734947,
+          "mean_Q": 0.36965332363130093,
+          "dx_dmu_eV_inv": 0.5239123235692761,
+          "composition_sd": 0.014127304135587292,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03531826033896823,
+          "Nvar_Q": 20.898684540479994,
+          "Al_fraction_ranked_sublattices": [
+            0.5190942224908252,
+            0.2012155245023103,
+            0.14708514135920525,
+            0.10002203071705695
+          ],
+          "mean_V_A3_atom": 17.437877467991363,
+          "mean_c_a": 1.601750035790763,
+          "effective_frames": 10525.25264510938,
+          "effective_frames_with_time_correlation": 124.2033631207209,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.5281345219348474
+            ],
+            [
+              0.8425,
+              0.7924688744878087
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8425
+            ],
+            "valley_Q": 0.4925,
+            "barrier_from_smaller_peak_kBT": 0.29762040257325423,
+            "ordered_side_weight": 0.31050236740672205
+          }
+        },
+        {
+          "mu_eV": 3.4739999999999998,
+          "x_Al": 0.2424416789885787,
+          "mean_Q": 0.37452859133928357,
+          "dx_dmu_eV_inv": 0.5204241048616717,
+          "composition_sd": 0.014080195655876033,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03520048913969008,
+          "Nvar_Q": 21.182813232910544,
+          "Al_fraction_ranked_sublattices": [
+            0.5233381224930412,
+            0.2004401035103302,
+            0.14644071881154694,
+            0.09954777113939636
+          ],
+          "mean_V_A3_atom": 17.43646235158715,
+          "mean_c_a": 1.601844902620797,
+          "effective_frames": 10496.874736580887,
+          "effective_frames_with_time_correlation": 123.66496360054953,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.4930281567948103
+            ],
+            [
+              0.8425,
+              0.8190758141258584
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8425
+            ],
+            "valley_Q": 0.4875,
+            "barrier_from_smaller_peak_kBT": 0.3271402830298068,
+            "ordered_side_weight": 0.319942122052837
+          }
+        },
+        {
+          "mu_eV": 3.475125,
+          "x_Al": 0.24302514560568347,
+          "mean_Q": 0.37939237902351447,
+          "dx_dmu_eV_inv": 0.5168335130809161,
+          "composition_sd": 0.014031539437014542,
+          "maximum_conditional_mean_gap_at_odds_four": 0.035078848592536356,
+          "Nvar_Q": 21.45617138105709,
+          "Al_fraction_ranked_sublattices": [
+            0.5275694298733196,
+            0.1996608274206237,
+            0.1457959637935186,
+            0.09907436133527243
+          ],
+          "mean_V_A3_atom": 17.435059051794013,
+          "mean_c_a": 1.6019397934570574,
+          "effective_frames": 10445.865567753352,
+          "effective_frames_with_time_correlation": 122.8829612476253,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.4580863262547243
+            ],
+            [
+              0.8474999999999999,
+              0.8458366066837762
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.4875,
+            "barrier_from_smaller_peak_kBT": 0.3565194723293105,
+            "ordered_side_weight": 0.32754614976647256
+          }
+        },
+        {
+          "mu_eV": 3.47625,
+          "x_Al": 0.24360451920011053,
+          "mean_Q": 0.3842397231044728,
+          "dx_dmu_eV_inv": 0.5131490918506856,
+          "composition_sd": 0.013981435711938984,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03495358927984746,
+          "Nvar_Q": 21.718430076253554,
+          "Al_fraction_ranked_sublattices": [
+            0.5317843115284653,
+            0.19887918607570076,
+            0.1451519843771501,
+            0.09860259481912603
+          ],
+          "mean_V_A3_atom": 17.433668256721084,
+          "mean_c_a": 1.6020346416804447,
+          "effective_frames": 10372.501134481849,
+          "effective_frames_with_time_correlation": 121.86090620871035,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.4233371584744035
+            ],
+            [
+              0.8474999999999999,
+              0.872893892970282
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.4825,
+            "barrier_from_smaller_peak_kBT": 0.3857880908310423,
+            "ordered_side_weight": 0.3371706237152695
+          }
+        },
+        {
+          "mu_eV": 3.477375,
+          "x_Al": 0.24417969927967478,
+          "mean_Q": 0.3890657240634115,
+          "dx_dmu_eV_inv": 0.5093799326719914,
+          "composition_sd": 0.013929993174262842,
+          "maximum_conditional_mean_gap_at_odds_four": 0.034824982935657105,
+          "Nvar_Q": 21.969309059564193,
+          "Al_fraction_ranked_sublattices": [
+            0.5359789923272336,
+            0.19809667031671327,
+            0.1445098787284459,
+            0.09813325574630669
+          ],
+          "mean_V_A3_atom": 17.432290630880203,
+          "mean_c_a": 1.6021293824482976,
+          "effective_frames": 10277.219747911236,
+          "effective_frames_with_time_correlation": 120.60386439896084,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.3888078515422366
+            ],
+            [
+              0.8474999999999999,
+              0.8999953056073644
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.4825,
+            "barrier_from_smaller_peak_kBT": 0.414684536538294,
+            "ordered_side_weight": 0.3447149499875535
+          }
+        },
+        {
+          "mu_eV": 3.4785,
+          "x_Al": 0.24475059585428444,
+          "mean_Q": 0.3938655660957008,
+          "dx_dmu_eV_inv": 0.5055356018521193,
+          "composition_sd": 0.013877328236872013,
+          "maximum_conditional_mean_gap_at_odds_four": 0.034693320592180034,
+          "Nvar_Q": 22.20857696523089,
+          "Al_fraction_ranked_sublattices": [
+            0.54014977042606,
+            0.1973147656164726,
+            0.14387073105985773,
+            0.09766711631474731
+          ],
+          "mean_V_A3_atom": 17.43092681194963,
+          "mean_c_a": 1.6022239529695512,
+          "effective_frames": 10160.616309276393,
+          "effective_frames_with_time_correlation": 119.11837568032473,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.354524568418791
+            ],
+            [
+              0.8474999999999999,
+              0.9271036210129489
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47750000000000004,
+            "barrier_from_smaller_peak_kBT": 0.4430837651983121,
+            "ordered_side_weight": 0.3561626396218319
+          }
+        },
+        {
+          "mu_eV": 3.479625,
+          "x_Al": 0.2453171299269053,
+          "mean_Q": 0.39863453573185764,
+          "dx_dmu_eV_inv": 0.5016260631048731,
+          "composition_sd": 0.013823564216602946,
+          "maximum_conditional_mean_gap_at_odds_four": 0.034558910541507365,
+          "Nvar_Q": 22.43605111449624,
+          "Al_fraction_ranked_sublattices": [
+            0.5442930317257986,
+            0.19653494586308942,
+            0.1432356077764242,
+            0.09720493434230888
+          ],
+          "mean_V_A3_atom": 17.42957740783056,
+          "mean_c_a": 1.60231829276546,
+          "effective_frames": 10023.43397769372,
+          "effective_frames_with_time_correlation": 117.41239137261063,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.3205123429666927
+            ],
+            [
+              0.8474999999999999,
+              0.9541817649482451
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47750000000000004,
+            "barrier_from_smaller_peak_kBT": 0.471161264735301,
+            "ordered_side_weight": 0.3636297860108751
+          }
+        },
+        {
+          "mu_eV": 3.48,
+          "x_Al": 0.24550499315389832,
+          "mean_Q": 0.40021653400790363,
+          "dx_dmu_eV_inv": 0.5003101622175199,
+          "composition_sd": 0.013805420835464523,
+          "maximum_conditional_mean_gap_at_odds_four": 0.0345135520886613,
+          "Nvar_Q": 22.509230361040927,
+          "Al_fraction_ranked_sublattices": [
+            0.5456673936598258,
+            0.1962757215896522,
+            0.1430249756181387,
+            0.09705188174797624
+          ],
+          "mean_V_A3_atom": 17.42913091019568,
+          "mean_c_a": 1.6023496780024822,
+          "effective_frames": 9973.281949434495,
+          "effective_frames_with_time_correlation": 116.79629864615747,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.30923932329418
+            ],
+            [
+              0.8474999999999999,
+              0.9631947391728676
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47750000000000004,
+            "barrier_from_smaller_peak_kBT": 0.4803880071921485,
+            "ordered_side_weight": 0.3661066359262334
+          }
+        },
+        {
+          "mu_eV": 3.48075,
+          "x_Al": 0.2458792338956019,
+          "mean_Q": 0.40336803930214327,
+          "dx_dmu_eV_inv": 0.497661597061957,
+          "composition_sd": 0.013768830456486636,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03442207614121659,
+          "Nvar_Q": 22.65159688100016,
+          "Al_fraction_ranked_sublattices": [
+            0.5484052633722091,
+            0.19575866733948233,
+            0.14260555384073456,
+            0.09674745102998131
+          ],
+          "mean_V_A3_atom": 17.428242994007977,
+          "mean_c_a": 1.6024123439139923,
+          "effective_frames": 9866.553546232197,
+          "effective_frames_with_time_correlation": 115.4951933713967,
+          "local_modes_Q_and_density": [
+            [
+              0.1475,
+              2.2867949976494737
+            ],
+            [
+              0.8474999999999999,
+              0.9811929511179411
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1475,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47750000000000004,
+            "barrier_from_smaller_peak_kBT": 0.4986425953299825,
+            "ordered_side_weight": 0.37104043847298934
+          }
+        },
+        {
+          "mu_eV": 3.4818749999999996,
+          "x_Al": 0.24643685186386222,
+          "mean_Q": 0.4080616191433354,
+          "dx_dmu_eV_inv": 0.49365271891505547,
+          "composition_sd": 0.013713261397243673,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03428315349310918,
+          "Nvar_Q": 22.855126654476138,
+          "Al_fraction_ranked_sublattices": [
+            0.5524830662213638,
+            0.19498736293886101,
+            0.14198158937736452,
+            0.09629538891785956
+          ],
+          "mean_V_A3_atom": 17.426924111223133,
+          "mean_c_a": 1.6025060512762264,
+          "effective_frames": 9690.980912586034,
+          "effective_frames_with_time_correlation": 113.37729759353599,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.2539639347309013
+            ],
+            [
+              0.8474999999999999,
+              1.0081008124204474
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47250000000000003,
+            "barrier_from_smaller_peak_kBT": 0.5255424593346045,
+            "ordered_side_weight": 0.38040331912143094
+          }
+        },
+        {
+          "mu_eV": 3.4829999999999997,
+          "x_Al": 0.24698993985777543,
+          "mean_Q": 0.4127109684695358,
+          "dx_dmu_eV_inv": 0.4896100953632121,
+          "composition_sd": 0.013656995609710475,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03414248902427619,
+          "Nvar_Q": 23.046598434138996,
+          "Al_fraction_ranked_sublattices": [
+            0.5565231662099274,
+            0.1942224366507678,
+            0.1413647065328124,
+            0.09584945003759425
+          ],
+          "mean_V_A3_atom": 17.42562126346125,
+          "mean_c_a": 1.602599362703433,
+          "effective_frames": 9497.833077035835,
+          "effective_frames_with_time_correlation": 111.07034472794193,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.2215690596618978
+            ],
+            [
+              0.8474999999999999,
+              1.0348695239737618
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47250000000000003,
+            "barrier_from_smaller_peak_kBT": 0.5521117284798238,
+            "ordered_side_weight": 0.3876747773094667
+          }
+        },
+        {
+          "mu_eV": 3.4841249999999997,
+          "x_Al": 0.2475384659498983,
+          "mean_Q": 0.4173119448519935,
+          "dx_dmu_eV_inv": 0.48554446197337553,
+          "composition_sd": 0.013600174799681786,
+          "maximum_conditional_mean_gap_at_odds_four": 0.034000436999204464,
+          "Nvar_Q": 23.2260140869026,
+          "Al_fraction_ranked_sublattices": [
+            0.5605224245888937,
+            0.1934652583464779,
+            0.1407558666023203,
+            0.09541031426190204
+          ],
+          "mean_V_A3_atom": 17.42433491625383,
+          "mean_c_a": 1.6026922292237424,
+          "effective_frames": 9288.323120817893,
+          "effective_frames_with_time_correlation": 108.58698133580221,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.1895021902291045
+            ],
+            [
+              0.8474999999999999,
+              1.0614639172007019
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47250000000000003,
+            "barrier_from_smaller_peak_kBT": 0.5780690208629249,
+            "ordered_side_weight": 0.3948678463959172
+          }
+        },
+        {
+          "mu_eV": 3.4852499999999997,
+          "x_Al": 0.24808241029088235,
+          "mean_Q": 0.42186058227567713,
+          "dx_dmu_eV_inv": 0.48146654197691047,
+          "composition_sd": 0.0135429427962905,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03385735699072625,
+          "Nvar_Q": 23.393417308382556,
+          "Al_fraction_ranked_sublattices": [
+            0.5644778469976403,
+            0.19271715888669164,
+            0.14015599743041585,
+            0.09497863784878155
+          ],
+          "mean_V_A3_atom": 17.42306549529289,
+          "mean_c_a": 1.602784605207799,
+          "effective_frames": 9063.744613214642,
+          "effective_frames_with_time_correlation": 105.94073423366402,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.157782129857221
+            ],
+            [
+              0.8474999999999999,
+              1.0878495844190235
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47250000000000003,
+            "barrier_from_smaller_peak_kBT": 0.6034129211664354,
+            "ordered_side_weight": 0.4019763123125203
+          }
+        },
+        {
+          "mu_eV": 3.486375,
+          "x_Al": 0.24862176505097924,
+          "mean_Q": 0.4263531017618356,
+          "dx_dmu_eV_inv": 0.47738696742512327,
+          "composition_sd": 0.013485444534536407,
+          "maximum_conditional_mean_gap_at_odds_four": 0.033713611336341015,
+          "Nvar_Q": 23.548891326513633,
+          "Al_fraction_ranked_sublattices": [
+            0.5683865913723561,
+            0.19197942556858372,
+            0.1395659910876275,
+            0.09455505217534976
+          ],
+          "mean_V_A3_atom": 17.42181338534886,
+          "mean_c_a": 1.602876448512823,
+          "effective_frames": 8825.455868106683,
+          "effective_frames_with_time_correlation": 103.14588083093058,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.1264263249292457
+            ],
+            [
+              0.8474999999999999,
+              1.113992973541999
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.47250000000000003,
+            "barrier_from_smaller_peak_kBT": 0.6281419912121105,
+            "ordered_side_weight": 0.4089942781842946
+          }
+        },
+        {
+          "mu_eV": 3.4875,
+          "x_Al": 0.24915653427456974,
+          "mean_Q": 0.4307859205661438,
+          "dx_dmu_eV_inv": 0.47331620351638587,
+          "composition_sd": 0.013427825041947181,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03356956260486795,
+          "Nvar_Q": 23.69255638860318,
+          "Al_fraction_ranked_sublattices": [
+            0.5722459746991777,
+            0.19125329792360887,
+            0.13898670182172954,
+            0.09414016265376286
+          ],
+          "mean_V_A3_atom": 17.420578929483558,
+          "mean_c_a": 1.6029677206050774,
+          "effective_frames": 8574.864424216306,
+          "effective_frames_with_time_correlation": 100.21731771547572,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.0954508483327
+            ],
+            [
+              0.8474999999999999,
+              1.1398614726520386
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.652355160271745,
+            "ordered_side_weight": 0.42226787390518367
+          }
+        },
+        {
+          "mu_eV": 3.488625,
+          "x_Al": 0.24968673365166755,
+          "mean_Q": 0.43515565998047767,
+          "dx_dmu_eV_inv": 0.46926447678993344,
+          "composition_sd": 0.013370228438631579,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03342557109657895,
+          "Nvar_Q": 23.824567072784806,
+          "Al_fraction_ranked_sublattices": [
+            0.5760534786370256,
+            0.19053996387203617,
+            0.1384189442780899,
+            0.09373454781951833
+          ],
+          "mean_V_A3_atom": 17.419362428544964,
+          "mean_c_a": 1.603058386660759,
+          "effective_frames": 8313.412062648727,
+          "effective_frames_with_time_correlation": 97.1704293294875,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.064870392962277
+            ],
+            [
+              0.8474999999999999,
+              1.1654234843595042
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.6760399922597842,
+            "ordered_side_weight": 0.4291055558788131
+          }
+        },
+        {
+          "mu_eV": 3.48975,
+          "x_Al": 0.2502123902110979,
+          "mean_Q": 0.4394591517829383,
+          "dx_dmu_eV_inv": 0.46524170776076107,
+          "composition_sd": 0.013312796959195163,
+          "maximum_conditional_mean_gap_at_odds_four": 0.0332819923979879,
+          "Nvar_Q": 23.945109464223084,
+          "Al_fraction_ranked_sublattices": [
+            0.5798067540483017,
+            0.1898405562351617,
+            0.1378634919803228,
+            0.0933387585806056
+          ],
+          "mean_V_A3_atom": 17.418164140930486,
+          "mean_c_a": 1.6031484156457996,
+          "effective_frames": 8042.560605894838,
+          "effective_frames_with_time_correlation": 94.02095809715433,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.034698274493999
+            ],
+            [
+              0.8525,
+              1.1907418238175533
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.6991701442914536,
+            "ordered_side_weight": 0.4358381575700159
+          }
+        },
+        {
+          "mu_eV": 3.490875,
+          "x_Al": 0.2507335419406034,
+          "mean_Q": 0.44369344339503514,
+          "dx_dmu_eV_inv": 0.46125744844952155,
+          "composition_sd": 0.013255670004154927,
+          "maximum_conditional_mean_gap_at_odds_four": 0.033139175010387316,
+          "Nvar_Q": 24.054398235128055,
+          "Al_fraction_ranked_sublattices": [
+            0.5835036244868798,
+            0.18915614960156535,
+            0.13732107605949864,
+            0.09295331761446982
+          ],
+          "mean_V_A3_atom": 17.41698428260194,
+          "mean_c_a": 1.6032377803750852,
+          "effective_frames": 7763.7786695812665,
+          "effective_frames_with_time_correlation": 90.78487690108486,
+          "local_modes_Q_and_density": [
+            [
+              0.1525,
+              2.0049464426601356
+            ],
+            [
+              0.8525,
+              1.215737181451842
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1525,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.7216979879744698,
+            "ordered_side_weight": 0.4424614262219478
+          }
+        },
+        {
+          "mu_eV": 3.492,
+          "x_Al": 0.25125023733958834,
+          "mean_Q": 0.4478558018169674,
+          "dx_dmu_eV_inv": 0.4573208251442339,
+          "composition_sd": 0.013198983227637,
+          "maximum_conditional_mean_gap_at_odds_four": 0.0329974580690925,
+          "Nvar_Q": 24.15267366577538,
+          "Al_fraction_ranked_sublattices": [
+            0.5871420887023138,
+            0.18848775753973004,
+            0.1367923842176976,
+            0.09257871889861166
+          ],
+          "mean_V_A3_atom": 17.41582302733552,
+          "mean_c_a": 1.603326457551928,
+          "effective_frames": 7478.5294669968425,
+          "effective_frames_with_time_correlation": 87.4782643962022,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.975766601181277
+            ],
+            [
+              0.8525,
+              1.2403254465008524
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.7435748519427358,
+            "ordered_side_weight": 0.44897146818971523
+          }
+        },
+        {
+          "mu_eV": 3.493125,
+          "x_Al": 0.25176253491052525,
+          "mean_Q": 0.4519437164215516,
+          "dx_dmu_eV_inv": 0.45344048661946595,
+          "composition_sd": 0.013142867667289717,
+          "maximum_conditional_mean_gap_at_odds_four": 0.032857169168224294,
+          "Nvar_Q": 24.240198641392908,
+          "Al_fraction_ranked_sublattices": [
+            0.5907203222266891,
+            0.18783633014587015,
+            0.1362780599096985,
+            0.09221542735984359
+          ],
+          "mean_V_A3_atom": 17.414680507188653,
+          "mean_c_a": 1.603414427788724,
+          "effective_frames": 7188.259701248858,
+          "effective_frames_with_time_correlation": 84.11718333258266,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.9473795296784102
+            ],
+            [
+              0.8525,
+              1.2644782363647755
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.7647988469227912,
+            "ordered_side_weight": 0.45536475116996866
+          }
+        },
+        {
+          "mu_eV": 3.4942499999999996,
+          "x_Al": 0.25227050259523515,
+          "mean_Q": 0.4559549006945423,
+          "dx_dmu_eV_inv": 0.44962455793587086,
+          "composition_sd": 0.013087448921513145,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03271862230378286,
+          "Nvar_Q": 24.31725565707509,
+          "Al_fraction_ranked_sublattices": [
+            0.5942366781161419,
+            0.18720275191293406,
+            0.13577870172510254,
+            0.09186387862676224
+          ],
+          "mean_V_A3_atom": 17.41355681316503,
+          "mean_c_a": 1.6035016756098228,
+          "effective_frames": 6894.389524432081,
+          "effective_frames_with_time_correlation": 80.71756185740458,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.9194164843857726
+            ],
+            [
+              0.8525,
+              1.2881684079595113
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.7853681018364989,
+            "ordered_side_weight": 0.46163810495058666
+          }
+        },
+        {
+          "mu_eV": 3.4953749999999997,
+          "x_Al": 0.25277421716235526,
+          "mean_Q": 0.45988729301400866,
+          "dx_dmu_eV_inv": 0.44588059985015605,
+          "composition_sd": 0.013032846378309587,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03258211594577397,
+          "Nvar_Q": 24.384143859927885,
+          "Al_fraction_ranked_sublattices": [
+            0.5976896869228618,
+            0.18658783990450956,
+            0.13529486295217916,
+            0.09152447886987067
+          ],
+          "mean_V_A3_atom": 17.412451996059943,
+          "mean_c_a": 1.6035881894378374,
+          "effective_frames": 6598.303500087129,
+          "effective_frames_with_time_correlation": 77.29507769488694,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.8918852193241669
+            ],
+            [
+              0.8525,
+              1.31137008040445
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.80528078519596,
+            "ordered_side_weight": 0.4677887208349053
+          }
+        },
+        {
+          "mu_eV": 3.4964999999999997,
+          "x_Al": 0.2532737635522745,
+          "mean_Q": 0.4637390565639657,
+          "dx_dmu_eV_inv": 0.4422155737841492,
+          "composition_sd": 0.012979172499311168,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03244793124827792,
+          "Nvar_Q": 24.441176154519162,
+          "Al_fraction_ranked_sublattices": [
+            0.6010780559752487,
+            0.18599234221571906,
+            0.13482705130417777,
+            0.0911976047139523
+          ],
+          "mean_V_A3_atom": 17.41136606746727,
+          "mean_c_a": 1.6036739615645543,
+          "effective_frames": 6301.3424761085835,
+          "effective_frames_with_time_correlation": 73.86504516367243,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.8647923073658934
+            ],
+            [
+              0.8525,
+              1.3340586500698743
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.8245351297370372,
+            "ordered_side_weight": 0.4738141498965299
+          }
+        },
+        {
+          "mu_eV": 3.4976249999999998,
+          "x_Al": 0.2537692341857355,
+          "mean_Q": 0.4675085784780474,
+          "dx_dmu_eV_inv": 0.43863581223223375,
+          "composition_sd": 0.012926532161847385,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03231633040461846,
+          "Nvar_Q": 24.488676394512886,
+          "Al_fraction_ranked_sublattices": [
+            0.604400668044271,
+            0.18541693670216097,
+            0.13437572878874732,
+            0.09088360320776245
+          ],
+          "mean_V_A3_atom": 17.410299000930777,
+          "mean_c_a": 1.6037589881077154,
+          "effective_frames": 6004.796260686435,
+          "effective_frames_with_time_correlation": 70.4423051724286,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.8381431778543038
+            ],
+            [
+              0.8525,
+              1.3562107986351803
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.8431294602134638,
+            "ordered_side_weight": 0.4797123002193219
+          }
+        },
+        {
+          "mu_eV": 3.49875,
+          "x_Al": 0.2542607282421168,
+          "mean_Q": 0.4711944683074656,
+          "dx_dmu_eV_inv": 0.4351469944296326,
+          "composition_sd": 0.012875022061286327,
+          "maximum_conditional_mean_gap_at_odds_four": 0.032187555153215815,
+          "Nvar_Q": 24.526976680167824,
+          "Al_fraction_ranked_sublattices": [
+            0.6076565794727161,
+            0.1848622299575103,
+            0.13394131170142107,
+            0.09058279183681979
+          ],
+          "mean_V_A3_atom": 17.40925073322227,
+          "mean_c_a": 1.603843268954879,
+          "effective_frames": 5709.896993381074,
+          "effective_frames_with_time_correlation": 67.0411186136033,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.81194215680536
+            ],
+            [
+              0.8525,
+              1.377804494837207
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.8610622242334179,
+            "ordered_side_weight": 0.4854814332725216
+          }
+        },
+        {
+          "mu_eV": 3.499875,
+          "x_Al": 0.2547483509132094,
+          "mean_Q": 0.47479555590436845,
+          "dx_dmu_eV_inv": 0.43175412705963623,
+          "composition_sd": 0.012824730175318912,
+          "maximum_conditional_mean_gap_at_odds_four": 0.032061825438297276,
+          "Nvar_Q": 24.556414778262962,
+          "Al_fraction_ranked_sublattices": [
+            0.6108450178414858,
+            0.1843287565204916,
+            0.1335241707248236,
+            0.0902954585660368
+          ],
+          "mean_V_A3_atom": 17.408221165732076,
+          "mean_c_a": 1.6039268076956759,
+          "effective_frames": 5417.81311560542,
+          "effective_frames_with_time_correlation": 63.6750639184154,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.7861925089437805
+            ],
+            [
+              0.8525,
+              1.3988189906031674
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.8783320259793732,
+            "ordered_side_weight": 0.491120159563904
+          }
+        },
+        {
+          "mu_eV": 3.501,
+          "x_Al": 0.25523221263799173,
+          "mean_Q": 0.47831088880686895,
+          "dx_dmu_eV_inv": 0.428461529745467,
+          "composition_sd": 0.01277573529135595,
+          "maximum_conditional_mean_gap_at_odds_four": 0.031939338228389874,
+          "Nvar_Q": 24.5773316780158,
+          "Al_fraction_ranked_sublattices": [
+            0.6139653792431436,
+            0.18381697829249793,
+            0.13312463111626133,
+            0.09002186190006442
+          ],
+          "mean_V_A3_atom": 17.40721016595564,
+          "mean_c_a": 1.6040096115434945,
+          "effective_frames": 5129.643867374809,
+          "effective_frames_with_time_correlation": 60.3569399020226,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.7608964808784784
+            ],
+            [
+              0.8525,
+              1.4192348122647496
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.8949376626099528,
+            "ordered_side_weight": 0.49662743370426904
+          }
+        },
+        {
+          "mu_eV": 3.502125,
+          "x_Al": 0.2557124283236596,
+          "mean_Q": 0.48173972920601665,
+          "dx_dmu_eV_inv": 0.425272825051602,
+          "composition_sd": 0.012728106597774336,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03182026649443584,
+          "Nvar_Q": 24.59006929374743,
+          "Al_fraction_ranked_sublattices": [
+            0.6170172252281722,
+            0.18332728414820088,
+            0.13274297296770218,
+            0.08976223095056347
+          ],
+          "mean_V_A3_atom": 17.4062175690645,
+          "mean_c_a": 1.6040916912478758,
+          "effective_frames": 4846.4142672310845,
+          "effective_frames_with_time_correlation": 57.098675370723655,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.736055344782394
+            ],
+            [
+              0.8525,
+              1.4390337475412351
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.9108781630999649,
+            "ordered_side_weight": 0.5020025490052094
+          }
+        },
+        {
+          "mu_eV": 3.50325,
+          "x_Al": 0.25618911655780263,
+          "mean_Q": 0.48508155056770946,
+          "dx_dmu_eV_inv": 0.42219093270874497,
+          "composition_sd": 0.012681903339372145,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03170475834843036,
+          "Nvar_Q": 24.59496832243376,
+          "Al_fraction_ranked_sublattices": [
+            0.6200002794835848,
+            0.18285998972287787,
+            0.13237943152368745,
+            0.08951676550106044
+          ],
+          "mean_V_A3_atom": 17.405243179548453,
+          "mean_c_a": 1.6041730609985012,
+          "effective_frames": 4569.070566341519,
+          "effective_frames_with_time_correlation": 53.911247238031514,
+          "local_modes_Q_and_density": [
+            [
+              0.1575,
+              1.711669442007387
+            ],
+            [
+              0.8525,
+              1.4581988289601477
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1575,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.9261528292323985,
+            "ordered_side_weight": 0.5072451317188968
+          }
+        },
+        {
+          "mu_eV": 3.5043749999999996,
+          "x_Al": 0.25666239881632436,
+          "mean_Q": 0.48833603397453146,
+          "dx_dmu_eV_inv": 0.41921806777546844,
+          "composition_sd": 0.012637174537072289,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03159293634268072,
+          "Nvar_Q": 24.592366261905656,
+          "Al_fraction_ranked_sublattices": [
+            0.6229144242972229,
+            0.18241533736195345,
+            0.132034197544497,
+            0.08928563606162401
+          ],
+          "mean_V_A3_atom": 17.404286772918795,
+          "mean_c_a": 1.6042537383217745,
+          "effective_frames": 4298.476202249644,
+          "effective_frames_with_time_correlation": 50.80460906341068,
+          "local_modes_Q_and_density": [
+            [
+              0.1625,
+              1.687768023873508
+            ],
+            [
+              0.8525,
+              1.4767143143563353
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1625,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.9407612784145062,
+            "ordered_side_weight": 0.5123551350143158
+          }
+        },
+        {
+          "mu_eV": 3.5054999999999996,
+          "x_Al": 0.2571323986713793,
+          "mean_Q": 0.491503064243774,
+          "dx_dmu_eV_inv": 0.4163557424563466,
+          "composition_sd": 0.012593958771640233,
+          "maximum_conditional_mean_gap_at_odds_four": 0.031484896929100586,
+          "Nvar_Q": 24.582595593321763,
+          "Al_fraction_ranked_sublattices": [
+            0.6257596968542096,
+            0.18199349622025343,
+            0.13170741770380476,
+            0.08906898390724924
+          ],
+          "mean_V_A3_atom": 17.403348097463418,
+          "mean_c_a": 1.6043337439708185,
+          "effective_frames": 4035.408309009438,
+          "effective_frames_with_time_correlation": 47.78763195619587,
+          "local_modes_Q_and_density": [
+            [
+              0.1625,
+              1.6646549632077412
+            ],
+            [
+              0.8525,
+              1.4945656650551828
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1625,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.9547034879498869,
+            "ordered_side_weight": 0.517332832769055
+          }
+        },
+        {
+          "mu_eV": 3.5066249999999997,
+          "x_Al": 0.2575992410032861,
+          "mean_Q": 0.49458272586872026,
+          "dx_dmu_eV_inv": 0.4136047713099428,
+          "composition_sd": 0.01255228403094762,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03138071007736905,
+          "Nvar_Q": 24.565982129644986,
+          "Al_fraction_ranked_sublattices": [
+            0.6285362854048259,
+            0.18159456250068576,
+            0.13139919501208888,
+            0.08886692109554324
+          ],
+          "mean_V_A3_atom": 17.402426876045958,
+          "mean_c_a": 1.6044131018096202,
+          "effective_frames": 3780.554865200075,
+          "effective_frames_with_time_correlation": 44.8680596607532,
+          "local_modes_Q_and_density": [
+            [
+              0.1625,
+              1.6419815432527123
+            ],
+            [
+              0.8525,
+              1.5117395223043166
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1625,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.9679798403604015,
+            "ordered_side_weight": 0.5221788132398105
+          }
+        },
+        {
+          "mu_eV": 3.5077499999999997,
+          "x_Al": 0.25806305122009365,
+          "mean_Q": 0.4975752988209146,
+          "dx_dmu_eV_inv": 0.41096527959882084,
+          "composition_sd": 0.012512167620110783,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03128041905027696,
+          "Nvar_Q": 24.542843530200926,
+          "Al_fraction_ranked_sublattices": [
+            0.6312445253357796,
+            0.18121855982440402,
+            0.13110958925915592,
+            0.08867953046103504
+          ],
+          "mean_V_A3_atom": 17.401522807942484,
+          "mean_c_a": 1.6044918386919342,
+          "effective_frames": 3534.5125769510446,
+          "effective_frames_with_time_correlation": 42.05247935590736,
+          "local_modes_Q_and_density": [
+            [
+              0.1625,
+              1.619745858883776
+            ],
+            [
+              0.8525,
+              1.5282236824723288
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1625,
+              0.8525
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.9805911693169032,
+            "ordered_side_weight": 0.5268939726586221
+          }
+        },
+        {
+          "mu_eV": 3.5088749999999997,
+          "x_Al": 0.258523954488188,
+          "mean_Q": 0.5004812542416245,
+          "dx_dmu_eV_inv": 0.40843671455652186,
+          "composition_sd": 0.012473616133654657,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03118404033413664,
+          "Nvar_Q": 24.51348797997186,
+          "Al_fraction_ranked_sublattices": [
+            0.6338848951694064,
+            0.1808654397269297,
+            0.13083861747125133,
+            0.08850686558516452
+          ],
+          "mean_V_A3_atom": 17.400635570708836,
+          "mean_c_a": 1.6045699843353265,
+          "effective_frames": 3297.785597859848,
+          "effective_frames_with_time_correlation": 39.3463092769385,
+          "local_modes_Q_and_density": [
+            [
+              0.1625,
+              1.5979452501104967
+            ],
+            [
+              0.8474999999999999,
+              1.5442029130827264
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1625,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 0.9926656374963119,
+            "ordered_side_weight": 0.5314795087855462
+          }
+        },
+        {
+          "mu_eV": 3.51,
+          "x_Al": 0.25898207497714043,
+          "mean_Q": 0.5033012500415315,
+          "dx_dmu_eV_inv": 0.40601785937184376,
+          "composition_sd": 0.012436625488691032,
+          "maximum_conditional_mean_gap_at_odds_four": 0.03109156372172758,
+          "Nvar_Q": 24.478213031075548,
+          "Al_fraction_ranked_sublattices": [
+            0.6364580125082892,
+            0.18053508227717538,
+            0.13058625438036273,
+            0.08834895074273472
+          ],
+          "mean_V_A3_atom": 17.399764822076758,
+          "mean_c_a": 1.60464757119097,
+          "effective_frames": 3070.785180828343,
+          "effective_frames_with_time_correlation": 36.7538037312294,
+          "local_modes_Q_and_density": [
+            [
+              0.1625,
+              1.5765763343177746
+            ],
+            [
+              0.8474999999999999,
+              1.5595290207789245
+            ]
+          ],
+          "two_well_profile": {
+            "peaks_Q": [
+              0.1625,
+              0.8474999999999999
+            ],
+            "valley_Q": 0.4675,
+            "barrier_from_smaller_peak_kBT": 1.004112765850205,
+            "ordered_side_weight": 0.535936914432735
+          }
+        }
+      ],
+      "weakest_tree_Bhattacharyya": 0.5907608109948594,
+      "mbar_second_eigenvalue": 0.9538251200173135,
+      "direct_windows": [
+        {
+          "run": "at1273-n288-tight-h00q00",
+          "start": "window",
+          "seed": 2294587650,
+          "spec": [
+            3.45,
+            20.0,
+            0.02
+          ],
+          "frames": 850,
+          "blocks": 4,
+          "statistical_inefficiency": 87.22380509233919,
+          "inefficiency_by_observable": {
+            "k": 1.9979306849519105,
+            "code": 2.6557557794411513,
+            "v": 12.170810694763887,
+            "ca": 87.22380509233919
+          },
+          "mean_x": 0.22377859477124185,
+          "mean_Q": 0.09491830065359477,
+          "mean_volume_A3_atom": 17.49489974153706,
+          "range_volume_A3_atom": [
+            17.2344536792,
+            17.8366837497
+          ],
+          "range_c_a": [
+            1.57638530068,
+            1.62461895604
+          ],
+          "halves_c_a": [
+            1.5935549050227529,
+            1.6044415422381415
+          ],
+          "halves_volume": [
+            17.47901336930659,
+            17.51078611376753
+          ],
+          "halves_x": [
+            0.2247875816993464,
+            0.22276960784313724
+          ],
+          "halves_q": [
+            0.09200435729847495,
+            0.0978322440087146
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.2344536792000014,
+          "observable_means": {
+            "mean_c_a": 1.598998223630447,
+            "mean_wall": 0.34373519651818124,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.2949673202614379,
+            "Al_fraction_sublattice_rank_2": 0.2502450980392157,
+            "Al_fraction_sublattice_rank_3": 0.20457516339869283,
+            "Al_fraction_sublattice_rank_4": 0.1453267973856209
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            238,
+            247,
+            208,
+            157
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q01",
+          "start": "window",
+          "seed": 2237620689,
+          "spec": [
+            3.45,
+            20.0,
+            0.15428571
+          ],
+          "frames": 850,
+          "blocks": 6,
+          "statistical_inefficiency": 67.43817425070118,
+          "inefficiency_by_observable": {
+            "k": 1.2896549883079778,
+            "code": 3.806253016974691,
+            "v": 8.505013161815771,
+            "ca": 67.43817425070118
+          },
+          "mean_x": 0.22641339869281044,
+          "mean_Q": 0.15042483660130715,
+          "mean_volume_A3_atom": 17.487291592207768,
+          "range_volume_A3_atom": [
+            17.1771550927,
+            17.7784630787
+          ],
+          "range_c_a": [
+            1.58122352608,
+            1.6260979099
+          ],
+          "halves_c_a": [
+            1.5963370117839295,
+            1.6014099634151058
+          ],
+          "halves_volume": [
+            17.49972098987059,
+            17.474862194544944
+          ],
+          "halves_x": [
+            0.22633169934640524,
+            0.2264950980392157
+          ],
+          "halves_q": [
+            0.14763616557734205,
+            0.1532135076252723
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1771550927000014,
+          "observable_means": {
+            "mean_c_a": 1.5988734875995176,
+            "mean_wall": 0.343705955396253,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.33923202614379094,
+            "Al_fraction_sublattice_rank_2": 0.2504575163398693,
+            "Al_fraction_sublattice_rank_3": 0.1876797385620915,
+            "Al_fraction_sublattice_rank_4": 0.12828431372549018
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            267,
+            169,
+            220,
+            194
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q02",
+          "start": "window",
+          "seed": 431426241,
+          "spec": [
+            3.45,
+            20.0,
+            0.28857143
+          ],
+          "frames": 850,
+          "blocks": 9,
+          "statistical_inefficiency": 43.27686139775405,
+          "inefficiency_by_observable": {
+            "k": 2.8022236847379953,
+            "code": 5.56737658995098,
+            "v": 18.296641702422832,
+            "ca": 43.27686139775405
+          },
+          "mean_x": 0.22727941176470587,
+          "mean_Q": 0.2458932461873638,
+          "mean_volume_A3_atom": 17.488582373715765,
+          "range_volume_A3_atom": [
+            17.1936892547,
+            17.9298424758
+          ],
+          "range_c_a": [
+            1.57296730787,
+            1.62654800344
+          ],
+          "halves_c_a": [
+            1.5993802409776237,
+            1.5992291654322823
+          ],
+          "halves_volume": [
+            17.49076476770353,
+            17.486399979728
+          ],
+          "halves_x": [
+            0.2272467320261438,
+            0.22731209150326798
+          ],
+          "halves_q": [
+            0.24096949891067537,
+            0.2508169934640523
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1936892547000006,
+          "observable_means": {
+            "mean_c_a": 1.5993047032049532,
+            "mean_wall": 0.3433395787766259,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.41169934640522876,
+            "Al_fraction_sublattice_rank_2": 0.23008169934640524,
+            "Al_fraction_sublattice_rank_3": 0.1595098039215686,
+            "Al_fraction_sublattice_rank_4": 0.10782679738562093
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            152,
+            187,
+            188,
+            323
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q03",
+          "start": "window",
+          "seed": 3113296805,
+          "spec": [
+            3.45,
+            20.0,
+            0.42285714
+          ],
+          "frames": 850,
+          "blocks": 3,
+          "statistical_inefficiency": 110.64402308767139,
+          "inefficiency_by_observable": {
+            "k": 2.008351291376248,
+            "code": 5.802041650267268,
+            "v": 11.363000125498283,
+            "ca": 110.64402308767139
+          },
+          "mean_x": 0.23048611111111109,
+          "mean_Q": 0.40227124183006535,
+          "mean_volume_A3_atom": 17.449977864596235,
+          "range_volume_A3_atom": [
+            17.1497037332,
+            17.7154412625
+          ],
+          "range_c_a": [
+            1.57232396967,
+            1.63211175835
+          ],
+          "halves_c_a": [
+            1.5956065568586355,
+            1.6051109038670355
+          ],
+          "halves_volume": [
+            17.466907695155058,
+            17.433048034037412
+          ],
+          "halves_x": [
+            0.2290767973856209,
+            0.23189542483660128
+          ],
+          "halves_q": [
+            0.3928649237472767,
+            0.41167755991285404
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.149703733199999,
+          "observable_means": {
+            "mean_c_a": 1.6003587303628355,
+            "mean_wall": 0.34292759223615177,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.5321895424836601,
+            "Al_fraction_sublattice_rank_2": 0.18132352941176472,
+            "Al_fraction_sublattice_rank_3": 0.12503267973856208,
+            "Al_fraction_sublattice_rank_4": 0.08339869281045752
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            850,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q04",
+          "start": "window",
+          "seed": 2650180951,
+          "spec": [
+            3.45,
+            20.0,
+            0.55714286
+          ],
+          "frames": 850,
+          "blocks": 8,
+          "statistical_inefficiency": 52.888664541782305,
+          "inefficiency_by_observable": {
+            "k": 1.2499022174232608,
+            "code": 8.516221240732076,
+            "v": 18.63766044379473,
+            "ca": 52.888664541782305
+          },
+          "mean_x": 0.23604575163398694,
+          "mean_Q": 0.5444880174291938,
+          "mean_volume_A3_atom": 17.437787045552003,
+          "range_volume_A3_atom": [
+            17.1558765958,
+            17.7686509636
+          ],
+          "range_c_a": [
+            1.56373060201,
+            1.62407140739
+          ],
+          "halves_c_a": [
+            1.6027804940203294,
+            1.600072884328988
+          ],
+          "halves_volume": [
+            17.446286037393882,
+            17.429288053710117
+          ],
+          "halves_x": [
+            0.23566176470588232,
+            0.23642973856209148
+          ],
+          "halves_q": [
+            0.5312309368191721,
+            0.5577450980392157
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.155876595799999,
+          "observable_means": {
+            "mean_c_a": 1.6014266891746587,
+            "mean_wall": 0.3431707991965824,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.6444117647058824,
+            "Al_fraction_sublattice_rank_2": 0.14305555555555557,
+            "Al_fraction_sublattice_rank_3": 0.09558823529411764,
+            "Al_fraction_sublattice_rank_4": 0.061127450980392156
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            850,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q05",
+          "start": "window",
+          "seed": 1194524911,
+          "spec": [
+            3.45,
+            20.0,
+            0.69142857
+          ],
+          "frames": 850,
+          "blocks": 9,
+          "statistical_inefficiency": 46.63064251921488,
+          "inefficiency_by_observable": {
+            "k": 1.909589587787064,
+            "code": 7.955900777351404,
+            "v": 8.63837452252015,
+            "ca": 46.63064251921488
+          },
+          "mean_x": 0.2416176470588235,
+          "mean_Q": 0.6915686274509805,
+          "mean_volume_A3_atom": 17.39706465753553,
+          "range_volume_A3_atom": [
+            17.1254343672,
+            17.6253891486
+          ],
+          "range_c_a": [
+            1.58774849386,
+            1.63303782687
+          ],
+          "halves_c_a": [
+            1.6099612942461885,
+            1.6047380861781178
+          ],
+          "halves_volume": [
+            17.41834824689388,
+            17.375781068177176
+          ],
+          "halves_x": [
+            0.24128267973856207,
+            0.24195261437908497
+          ],
+          "halves_q": [
+            0.6923202614379086,
+            0.6908169934640523
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1254343672000005,
+          "observable_means": {
+            "mean_c_a": 1.607349690212153,
+            "mean_wall": 0.3414243145920824,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.7602941176470588,
+            "Al_fraction_sublattice_rank_2": 0.09818627450980394,
+            "Al_fraction_sublattice_rank_3": 0.06624183006535948,
+            "Al_fraction_sublattice_rank_4": 0.0417483660130719
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            850,
+            0,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q06",
+          "start": "window",
+          "seed": 160392456,
+          "spec": [
+            3.45,
+            20.0,
+            0.82571429
+          ],
+          "frames": 850,
+          "blocks": 11,
+          "statistical_inefficiency": 35.403849698123345,
+          "inefficiency_by_observable": {
+            "k": 2.18022481808172,
+            "code": 7.348898501962225,
+            "v": 8.313403233583085,
+            "ca": 35.403849698123345
+          },
+          "mean_x": 0.24631127450980392,
+          "mean_Q": 0.8084041394335512,
+          "mean_volume_A3_atom": 17.37116860011965,
+          "range_volume_A3_atom": [
+            17.1008229401,
+            17.6649435087
+          ],
+          "range_c_a": [
+            1.58352158076,
+            1.62992985337
+          ],
+          "halves_c_a": [
+            1.6091580254886118,
+            1.6047596447190586
+          ],
+          "halves_volume": [
+            17.376186116032237,
+            17.36615108420706
+          ],
+          "halves_x": [
+            0.24772875816993462,
+            0.24489379084967317
+          ],
+          "halves_q": [
+            0.8193681917211328,
+            0.7974400871459696
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1008229400999987,
+          "observable_means": {
+            "mean_c_a": 1.6069588351038355,
+            "mean_wall": 0.3411996223855518,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.8526143790849673,
+            "Al_fraction_sublattice_rank_2": 0.06648692810457515,
+            "Al_fraction_sublattice_rank_3": 0.04272875816993465,
+            "Al_fraction_sublattice_rank_4": 0.023415032679738563
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            0,
+            850
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q07",
+          "start": "window",
+          "seed": 1800521851,
+          "spec": [
+            3.45,
+            20.0,
+            0.96
+          ],
+          "frames": 850,
+          "blocks": 8,
+          "statistical_inefficiency": 47.46280193346607,
+          "inefficiency_by_observable": {
+            "k": 1.7045409328192846,
+            "code": 6.326563501009073,
+            "v": 13.290910352830243,
+            "ca": 47.46280193346607
+          },
+          "mean_x": 0.24960784313725493,
+          "mean_Q": 0.8840087145969499,
+          "mean_volume_A3_atom": 17.347880806440823,
+          "range_volume_A3_atom": [
+            17.0658663605,
+            17.6386501856
+          ],
+          "range_c_a": [
+            1.58708372201,
+            1.62518077462
+          ],
+          "halves_c_a": [
+            1.6032931786740943,
+            1.6051987147583529
+          ],
+          "halves_volume": [
+            17.358073069643293,
+            17.337688543238354
+          ],
+          "halves_x": [
+            0.2497794117647059,
+            0.2494362745098039
+          ],
+          "halves_q": [
+            0.8837363834422657,
+            0.884281045751634
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.0658663604999994,
+          "observable_means": {
+            "mean_c_a": 1.6042459467162233,
+            "mean_wall": 0.34098354767355765,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.9126143790849672,
+            "Al_fraction_sublattice_rank_2": 0.04673202614379085,
+            "Al_fraction_sublattice_rank_3": 0.026764705882352944,
+            "Al_fraction_sublattice_rank_4": 0.012320261437908498
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            0,
+            850
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q00",
+          "start": "window",
+          "seed": 2780341958,
+          "spec": [
+            3.48,
+            20.0,
+            0.02
+          ],
+          "frames": 850,
+          "blocks": 3,
+          "statistical_inefficiency": 110.31787825521734,
+          "inefficiency_by_observable": {
+            "k": 1.9353082515302487,
+            "code": 1.8841121388004125,
+            "v": 10.191789413431458,
+            "ca": 110.31787825521734
+          },
+          "mean_x": 0.2403472222222222,
+          "mean_Q": 0.09685729847494552,
+          "mean_volume_A3_atom": 17.451859404820706,
+          "range_volume_A3_atom": [
+            16.987095019,
+            17.7691644855
+          ],
+          "range_c_a": [
+            1.57911123357,
+            1.62900713696
+          ],
+          "halves_c_a": [
+            1.6061638557756939,
+            1.5955576050938587
+          ],
+          "halves_volume": [
+            17.442763721065884,
+            17.46095508857553
+          ],
+          "halves_x": [
+            0.24187908496732027,
+            0.23881535947712418
+          ],
+          "halves_q": [
+            0.09453159041394335,
+            0.09918300653594772
+          ],
+          "min_distance_to_lower_volume_A3_atom": 1.9870950190000016,
+          "observable_means": {
+            "mean_c_a": 1.6008607304347762,
+            "mean_wall": 0.3429281389061071,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.3129901960784313,
+            "Al_fraction_sublattice_rank_2": 0.2680065359477124,
+            "Al_fraction_sublattice_rank_3": 0.2190196078431373,
+            "Al_fraction_sublattice_rank_4": 0.16137254901960782
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            254,
+            226,
+            191,
+            179
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q01",
+          "start": "window",
+          "seed": 1601239442,
+          "spec": [
+            3.48,
+            20.0,
+            0.15428571
+          ],
+          "frames": 850,
+          "blocks": 3,
+          "statistical_inefficiency": 106.88246675245841,
+          "inefficiency_by_observable": {
+            "k": 1.5798070442625578,
+            "code": 4.58234411071583,
+            "v": 9.79833750576128,
+            "ca": 106.88246675245841
+          },
+          "mean_x": 0.2411968954248366,
+          "mean_Q": 0.16188997821350762,
+          "mean_volume_A3_atom": 17.461038887902355,
+          "range_volume_A3_atom": [
+            17.1221506577,
+            17.744388639
+          ],
+          "range_c_a": [
+            1.56493385186,
+            1.62905193117
+          ],
+          "halves_c_a": [
+            1.5977028064666587,
+            1.6012400364250117
+          ],
+          "halves_volume": [
+            17.45699606619153,
+            17.465081709613177
+          ],
+          "halves_x": [
+            0.24053104575163398,
+            0.24186274509803923
+          ],
+          "halves_q": [
+            0.16282135076252724,
+            0.16095860566448802
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1221506577000007,
+          "observable_means": {
+            "mean_c_a": 1.5994714214458354,
+            "mean_wall": 0.3433715611212835,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.36261437908496735,
+            "Al_fraction_sublattice_rank_2": 0.2688235294117647,
+            "Al_fraction_sublattice_rank_3": 0.1982843137254902,
+            "Al_fraction_sublattice_rank_4": 0.1350653594771242
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            292,
+            249,
+            183,
+            126
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q02",
+          "start": "window",
+          "seed": 4096197768,
+          "spec": [
+            3.48,
+            20.0,
+            0.28857143
+          ],
+          "frames": 850,
+          "blocks": 5,
+          "statistical_inefficiency": 82.12021747133161,
+          "inefficiency_by_observable": {
+            "k": 1.6887959748116734,
+            "code": 4.958149406962868,
+            "v": 17.772098076314563,
+            "ca": 82.12021747133161
+          },
+          "mean_x": 0.2415890522875817,
+          "mean_Q": 0.26269607843137255,
+          "mean_volume_A3_atom": 17.45359676365447,
+          "range_volume_A3_atom": [
+            17.1507478456,
+            17.7136799521
+          ],
+          "range_c_a": [
+            1.56465976854,
+            1.62239922192
+          ],
+          "halves_c_a": [
+            1.5948050510458354,
+            1.5976730579439764
+          ],
+          "halves_volume": [
+            17.438491927582117,
+            17.468701599726824
+          ],
+          "halves_x": [
+            0.2418627450980392,
+            0.24131535947712418
+          ],
+          "halves_q": [
+            0.2524183006535948,
+            0.2729738562091503
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1507478456000015,
+          "observable_means": {
+            "mean_c_a": 1.5962390544949059,
+            "mean_wall": 0.34379442130007765,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.4386111111111111,
+            "Al_fraction_sublattice_rank_2": 0.24080065359477124,
+            "Al_fraction_sublattice_rank_3": 0.1704248366013072,
+            "Al_fraction_sublattice_rank_4": 0.11651960784313727
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            33,
+            335,
+            41,
+            441
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q03",
+          "start": "window",
+          "seed": 3644685543,
+          "spec": [
+            3.48,
+            20.0,
+            0.42285714
+          ],
+          "frames": 850,
+          "blocks": 3,
+          "statistical_inefficiency": 136.34818026527907,
+          "inefficiency_by_observable": {
+            "k": 1.515758827549706,
+            "code": 4.935860900765831,
+            "v": 8.590327796375858,
+            "ca": 136.34818026527907
+          },
+          "mean_x": 0.24562908496732025,
+          "mean_Q": 0.40225490196078434,
+          "mean_volume_A3_atom": 17.440557206549766,
+          "range_volume_A3_atom": [
+            17.1499131711,
+            17.7774854646
+          ],
+          "range_c_a": [
+            1.56763688486,
+            1.63365482639
+          ],
+          "halves_c_a": [
+            1.6025568933990353,
+            1.6093595560643061
+          ],
+          "halves_volume": [
+            17.437669511461177,
+            17.44344490163835
+          ],
+          "halves_x": [
+            0.24609477124183005,
+            0.24516339869281048
+          ],
+          "halves_q": [
+            0.4052505446623094,
+            0.3992592592592592
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1499131710999997,
+          "observable_means": {
+            "mean_c_a": 1.6059582247316706,
+            "mean_wall": 0.34266401728170115,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.5473202614379085,
+            "Al_fraction_sublattice_rank_2": 0.19870915032679737,
+            "Al_fraction_sublattice_rank_3": 0.1412745098039216,
+            "Al_fraction_sublattice_rank_4": 0.09521241830065359
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            772,
+            77,
+            1,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q04",
+          "start": "window",
+          "seed": 3051073280,
+          "spec": [
+            3.48,
+            20.0,
+            0.55714286
+          ],
+          "frames": 850,
+          "blocks": 5,
+          "statistical_inefficiency": 74.71684751554696,
+          "inefficiency_by_observable": {
+            "k": 1.8850186805992486,
+            "code": 4.428614492475872,
+            "v": 9.905103033517259,
+            "ca": 74.71684751554696
+          },
+          "mean_x": 0.24870915032679738,
+          "mean_Q": 0.5716993464052288,
+          "mean_volume_A3_atom": 17.412249819562234,
+          "range_volume_A3_atom": [
+            17.0690168867,
+            17.7096376207
+          ],
+          "range_c_a": [
+            1.573636843,
+            1.62695433835
+          ],
+          "halves_c_a": [
+            1.6060968519280472,
+            1.6006679684049647
+          ],
+          "halves_volume": [
+            17.413783078629177,
+            17.410716560495295
+          ],
+          "halves_x": [
+            0.24843137254901962,
+            0.24898692810457515
+          ],
+          "halves_q": [
+            0.5682788671023965,
+            0.575119825708061
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.0690168866999983,
+          "observable_means": {
+            "mean_c_a": 1.603382410166506,
+            "mean_wall": 0.34261320784725996,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.6774836601307189,
+            "Al_fraction_sublattice_rank_2": 0.14898692810457517,
+            "Al_fraction_sublattice_rank_3": 0.10243464052287583,
+            "Al_fraction_sublattice_rank_4": 0.06593137254901961
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            850,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q05",
+          "start": "window",
+          "seed": 659646176,
+          "spec": [
+            3.48,
+            20.0,
+            0.69142857
+          ],
+          "frames": 850,
+          "blocks": 11,
+          "statistical_inefficiency": 37.76403088234503,
+          "inefficiency_by_observable": {
+            "k": 1.4641596808957829,
+            "code": 6.320850437838084,
+            "v": 9.886331901139666,
+            "ca": 37.76403088234503
+          },
+          "mean_x": 0.2514705882352941,
+          "mean_Q": 0.6825925925925925,
+          "mean_volume_A3_atom": 17.400381916834586,
+          "range_volume_A3_atom": [
+            17.1157239601,
+            17.7126682085
+          ],
+          "range_c_a": [
+            1.58102724642,
+            1.6269281348
+          ],
+          "halves_c_a": [
+            1.6011555797002117,
+            1.6067509095257881
+          ],
+          "halves_volume": [
+            17.400680581713175,
+            17.400083251955998
+          ],
+          "halves_x": [
+            0.25071895424836604,
+            0.2522222222222222
+          ],
+          "halves_q": [
+            0.69119825708061,
+            0.6739869281045752
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1157239600999986,
+          "observable_means": {
+            "mean_c_a": 1.6039532446129998,
+            "mean_wall": 0.34178373390901884,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.7634150326797386,
+            "Al_fraction_sublattice_rank_2": 0.11428104575163399,
+            "Al_fraction_sublattice_rank_3": 0.07870915032679737,
+            "Al_fraction_sublattice_rank_4": 0.04947712418300654
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            850,
+            0,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q06",
+          "start": "window",
+          "seed": 2093792011,
+          "spec": [
+            3.48,
+            20.0,
+            0.82571429
+          ],
+          "frames": 850,
+          "blocks": 7,
+          "statistical_inefficiency": 55.16486355023288,
+          "inefficiency_by_observable": {
+            "k": 1.2964327063303722,
+            "code": 9.858403819346021,
+            "v": 9.158834375121794,
+            "ca": 55.16486355023288
+          },
+          "mean_x": 0.25519607843137254,
+          "mean_Q": 0.8273856209150328,
+          "mean_volume_A3_atom": 17.346041877465176,
+          "range_volume_A3_atom": [
+            17.0245085248,
+            17.5880663987
+          ],
+          "range_c_a": [
+            1.58663754605,
+            1.62596663943
+          ],
+          "halves_c_a": [
+            1.6050891532298117,
+            1.6113351477307765
+          ],
+          "halves_volume": [
+            17.329259867729174,
+            17.362823887201174
+          ],
+          "halves_x": [
+            0.25508169934640523,
+            0.25531045751633985
+          ],
+          "halves_q": [
+            0.8199782135076253,
+            0.8347930283224402
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.0245085248000017,
+          "observable_means": {
+            "mean_c_a": 1.608212150480294,
+            "mean_wall": 0.3415050618681259,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.8757352941176471,
+            "Al_fraction_sublattice_rank_2": 0.07143790849673202,
+            "Al_fraction_sublattice_rank_3": 0.046830065359477126,
+            "Al_fraction_sublattice_rank_4": 0.026781045751633988
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            850,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q07",
+          "start": "window",
+          "seed": 404736735,
+          "spec": [
+            3.48,
+            20.0,
+            0.96
+          ],
+          "frames": 850,
+          "blocks": 4,
+          "statistical_inefficiency": 90.74019123743108,
+          "inefficiency_by_observable": {
+            "k": 1.7560404668698641,
+            "code": 4.676323334131304,
+            "v": 6.5214028169654314,
+            "ca": 90.74019123743108
+          },
+          "mean_x": 0.2559926470588235,
+          "mean_Q": 0.8936220043572984,
+          "mean_volume_A3_atom": 17.358786055942705,
+          "range_volume_A3_atom": [
+            17.1197418445,
+            17.6430792121
+          ],
+          "range_c_a": [
+            1.57629559728,
+            1.63771347878
+          ],
+          "halves_c_a": [
+            1.6151094658762823,
+            1.607294411769906
+          ],
+          "halves_volume": [
+            17.35281610846588,
+            17.36475600341953
+          ],
+          "halves_x": [
+            0.25611928104575166,
+            0.2558660130718954
+          ],
+          "halves_q": [
+            0.8940196078431374,
+            0.8932244008714596
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1197418444999983,
+          "observable_means": {
+            "mean_c_a": 1.6112019388230938,
+            "mean_wall": 0.34107492861478944,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.9262091503267974,
+            "Al_fraction_sublattice_rank_2": 0.05137254901960784,
+            "Al_fraction_sublattice_rank_3": 0.03062091503267974,
+            "Al_fraction_sublattice_rank_4": 0.01576797385620915
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            0,
+            850
+          ]
+        }
+      ]
+    },
+    "coexistence": {
+      "N": 288,
+      "mu_reference_eV": 3.465,
+      "n_runs": 16,
+      "frames": 13600,
+      "n_unique_states": 1082,
+      "bandwidth_q": 0.04,
+      "bootstrap_seed": 26713,
+      "bias_specs_mu_K_q0": [
+        [
+          3.45,
+          20.0,
+          0.02
+        ],
+        [
+          3.48,
+          20.0,
+          0.02
+        ],
+        [
+          3.45,
+          20.0,
+          0.15428571
+        ],
+        [
+          3.48,
+          20.0,
+          0.15428571
+        ],
+        [
+          3.45,
+          20.0,
+          0.28857143
+        ],
+        [
+          3.48,
+          20.0,
+          0.28857143
+        ],
+        [
+          3.45,
+          20.0,
+          0.42285714
+        ],
+        [
+          3.48,
+          20.0,
+          0.42285714
+        ],
+        [
+          3.45,
+          20.0,
+          0.55714286
+        ],
+        [
+          3.48,
+          20.0,
+          0.55714286
+        ],
+        [
+          3.45,
+          20.0,
+          0.69142857
+        ],
+        [
+          3.48,
+          20.0,
+          0.69142857
+        ],
+        [
+          3.45,
+          20.0,
+          0.82571429
+        ],
+        [
+          3.48,
+          20.0,
+          0.82571429
+        ],
+        [
+          3.45,
+          20.0,
+          0.96
+        ],
+        [
+          3.48,
+          20.0,
+          0.96
+        ]
+      ],
+      "mbar_offsets": [
+        0.0,
+        -18.259087303592956,
+        -0.7958091899613567,
+        -19.182768035729804,
+        -0.2542752166602563,
+        -18.794379748943236,
+        0.5613473339148409,
+        -18.171613832888866,
+        0.994735506168989,
+        -18.09095754888636,
+        1.163390619901004,
+        -18.246289795734853,
+        1.3630442591222356,
+        -18.356107302673806,
+        2.3583478715311097,
+        -17.575081755485026
+      ],
+      "mbar_overlap": [
+        [
+          0.39066459565096023,
+          0.23421569133810657,
+          0.2011338025052889,
+          0.11599677356007884,
+          0.03671019451568141,
+          0.01980657925909455,
+          0.0009859184320875753,
+          0.0004829138430972147,
+          2.5366787803910754e-06,
+          9.422666788064146e-07,
+          8.65043224814024e-10,
+          2.4573378692113436e-10,
+          5.874713463089007e-14,
+          1.3930288516270211e-14,
+          2.1278625017213044e-18,
+          4.941661984717346e-19
+        ],
+        [
+          0.23421569133810657,
+          0.3748368751911679,
+          0.13181954695299833,
+          0.19518759785875997,
+          0.026233347243651655,
+          0.03597882549464583,
+          0.0007756583264619829,
+          0.0009483075095141334,
+          2.153595574451594e-06,
+          1.9837198034641276e-06,
+          7.765351393099016e-10,
+          5.578823463386729e-10,
+          5.998711310948399e-14,
+          3.485854005649818e-14,
+          2.636517557072495e-18,
+          1.399594739874457e-18
+        ],
+        [
+          0.2011338025052889,
+          0.13181954695299833,
+          0.2580091040101982,
+          0.16224381310169878,
+          0.14102729106548442,
+          0.0837699786903687,
+          0.01423571101221218,
+          0.007524489345823677,
+          0.00016934503389864892,
+          6.651283398809628e-05,
+          2.984751571123084e-07,
+          9.644577727104847e-08,
+          1.3060729258417678e-10,
+          3.757999195184673e-11,
+          2.9226456485461485e-14,
+          8.467378439372036e-15
+        ],
+        [
+          0.11599677356007881,
+          0.19518759785875997,
+          0.16224381310169878,
+          0.2593413353242575,
+          0.09763347149748819,
+          0.14475515360785976,
+          0.010635157608626595,
+          0.013939577783347257,
+          0.0001337709662673805,
+          0.0001328768404404927,
+          2.681918350110791e-07,
+          2.1237255483664537e-07,
+          1.4240348839765177e-10,
+          9.365954493657951e-11,
+          3.975325524538477e-14,
+          2.5218610549990822e-14
+        ],
+        [
+          0.03671019451568141,
+          0.026233347243651655,
+          0.14102729106548442,
+          0.09763347149748819,
+          0.2897297434130927,
+          0.18571523155820413,
+          0.13521905401339018,
+          0.07557190906915243,
+          0.008313706614881811,
+          0.0037142886476316207,
+          9.441495187476921e-05,
+          3.701959328522159e-05,
+          2.5524191586855834e-07,
+          9.161879839211102e-08,
+          3.35440432856403e-10,
+          1.1849595822766752e-10
+        ],
+        [
+          0.01980657925909455,
+          0.03597882549464583,
+          0.0837699786903687,
+          0.14475515360785976,
+          0.18571523155820413,
+          0.29519553741181476,
+          0.09164672826436226,
+          0.12953702150099997,
+          0.006409464342224942,
+          0.007017468985174448,
+          8.832500095743691e-05,
+          7.916198525700686e-05,
+          2.9787784988511226e-07,
+          2.3412428022060629e-07,
+          4.773280292781349e-10,
+          3.52683209929556e-10
+        ],
+        [
+          0.0009859184320875753,
+          0.0007756583264619829,
+          0.01423571101221218,
+          0.010635157608626595,
+          0.13521905401339018,
+          0.09164672826436226,
+          0.3261715639031172,
+          0.2073559775639079,
+          0.12921509600857584,
+          0.07005030724775967,
+          0.009065905759041601,
+          0.004434507562608705,
+          0.00014393854144014646,
+          6.299774531328252e-05,
+          1.0441268779648568e-06,
+          4.341045010447958e-07
+        ],
+        [
+          0.0004829138430972147,
+          0.0009483075095141334,
+          0.007524489345823678,
+          0.013939577783347257,
+          0.07557190906915243,
+          0.12953702150099997,
+          0.2073559775639079,
+          0.3230463473773002,
+          0.09967805547215909,
+          0.12352034793497728,
+          0.008724505794917039,
+          0.009344384181673805,
+          0.00016889704566953813,
+          0.00015461430825850034,
+          1.4419530395849912e-06,
+          1.1951054674650709e-06
+        ],
+        [
+          2.5366787803910754e-06,
+          2.1535955744515938e-06,
+          0.00016934503389864892,
+          0.00013377096626738052,
+          0.008313706614881811,
+          0.006409464342224942,
+          0.12921509600857584,
+          0.09967805547215909,
+          0.3162513554579028,
+          0.21388115727664864,
+          0.130312182597167,
+          0.07772031259751289,
+          0.011419939164932696,
+          0.005882535953928554,
+          0.0004069092596413204,
+          0.00020152384225700576
+        ],
+        [
+          9.422666788064146e-07,
+          1.9837198034641276e-06,
+          6.651283398809628e-05,
+          0.0001328768404404927,
+          0.0037142886476316203,
+          0.007017468985174448,
+          0.07005030724775967,
+          0.12352034793497728,
+          0.21388115727664864,
+          0.31672934608267267,
+          0.10745842270076919,
+          0.13405088991376962,
+          0.011083377466397716,
+          0.011381173017447963,
+          0.0004704286358221864,
+          0.00044042649441564726
+        ],
+        [
+          8.65043224814024e-10,
+          7.765351393099015e-10,
+          2.9847515711230833e-07,
+          2.6819183501107904e-07,
+          9.441495187476921e-05,
+          8.832500095743691e-05,
+          0.009065905759041601,
+          0.008724505794917037,
+          0.130312182597167,
+          0.10745842270076918,
+          0.29638103209834293,
+          0.20804285824731694,
+          0.12758122918169887,
+          0.07828443570505865,
+          0.021116497144449527,
+          0.01284961822912466
+        ],
+        [
+          2.4573378692113436e-10,
+          5.57882346338673e-10,
+          9.644577727104847e-08,
+          2.1237255483664537e-07,
+          3.701959328522159e-05,
+          7.916198525700686e-05,
+          0.004434507562608705,
+          0.009344384181673805,
+          0.07772031259751289,
+          0.13405088991376962,
+          0.20804285824731694,
+          0.2911181753926122,
+          0.10667853341302447,
+          0.1237418214077251,
+          0.0216945984994291,
+          0.023057423424400814
+        ],
+        [
+          5.874713463089007e-14,
+          5.998711310948399e-14,
+          1.3060729258417678e-10,
+          1.4240348839765177e-10,
+          2.5524191586855834e-07,
+          2.9787784988511226e-07,
+          0.00014393854144014646,
+          0.00016889704566953813,
+          0.011419939164932693,
+          0.011083377466397714,
+          0.12758122918169887,
+          0.10667853341302447,
+          0.2551082893260202,
+          0.19233251254380432,
+          0.17079655096974833,
+          0.12468622210407715
+        ],
+        [
+          1.3930288516270211e-14,
+          3.485854005649818e-14,
+          3.757999195184673e-11,
+          9.36595449365795e-11,
+          9.161879839211102e-08,
+          2.3412428022060629e-07,
+          6.299774531328252e-05,
+          0.00015461430825850034,
+          0.005882535953928554,
+          0.011381173017447963,
+          0.07828443570505865,
+          0.1237418214077251,
+          0.19233251254380432,
+          0.25326294222389867,
+          0.15448212957433263,
+          0.18041447997029533
+        ],
+        [
+          2.1278625017213044e-18,
+          2.636517557072495e-18,
+          2.9226456485461485e-14,
+          3.975325524538477e-14,
+          3.35440432856403e-10,
+          4.773280292781349e-10,
+          1.0441268779648568e-06,
+          1.4419530395849912e-06,
+          0.00040690925964132033,
+          0.00047042863582218646,
+          0.021116497144449527,
+          0.021694598499429105,
+          0.17079655096974833,
+          0.15448212957433263,
+          0.3411731591851912,
+          0.2898572455479267
+        ],
+        [
+          4.941661984717346e-19,
+          1.399594739874457e-18,
+          8.467378439372036e-15,
+          2.5218610549990822e-14,
+          1.184959582276675e-10,
+          3.52683209929556e-10,
+          4.341045010447958e-07,
+          1.1951054674650709e-06,
+          0.00020152384225700573,
+          0.0004404264944156472,
+          0.01284961822912466,
+          0.023057423424400814,
+          0.12468622210407715,
+          0.1804144799702953,
+          0.2898572455479267,
+          0.3684914762787565
+        ]
+      ],
+      "joint_histogram_BC": [
+        [
+          1.0,
+          0.8091044617160106,
+          0.8369409662069554,
+          0.6540254849997179,
+          0.3979789650652415,
+          0.2230526384648161,
+          0.024566243671302463,
+          0.025599490493905454,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.8091044617160106,
+          0.9999999999999999,
+          0.7074506619969577,
+          0.7922856565761652,
+          0.35640187617011937,
+          0.28478116842629764,
+          0.02102427243793112,
+          0.02745679358005374,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.8369409662069554,
+          0.7074506619969577,
+          1.0,
+          0.8265185244369685,
+          0.7373467941306496,
+          0.5490093627720702,
+          0.14210595058107395,
+          0.13642531894549445,
+          0.009910801455848635,
+          0.0011764705882352938,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.6540254849997179,
+          0.7922856565761652,
+          0.8265185244369685,
+          1.0,
+          0.6451496493338196,
+          0.6667152186547861,
+          0.11357740493295662,
+          0.16517856904761594,
+          0.005739194326483352,
+          0.0011764705882352938,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.3979789650652415,
+          0.35640187617011937,
+          0.7373467941306496,
+          0.6451496493338196,
+          1.0000000000000004,
+          0.8342696340902582,
+          0.5062747376358443,
+          0.42592931039628545,
+          0.10121090480047486,
+          0.039854680292979644,
+          0.0016637806616154058,
+          0.0035294117647058816,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.2230526384648161,
+          0.28478116842629764,
+          0.5490093627720702,
+          0.6667152186547861,
+          0.8342696340902582,
+          1.0,
+          0.5132895107560467,
+          0.5907608109948594,
+          0.11535877383859743,
+          0.06713411659122452,
+          0.0056805024997014005,
+          0.007344283161316805,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.024566243671302463,
+          0.02102427243793112,
+          0.14210595058107395,
+          0.11357740493295662,
+          0.5062747376358443,
+          0.5132895107560467,
+          1.0000000000000004,
+          0.8118496896996203,
+          0.6220722411180858,
+          0.4253448011926414,
+          0.12254254701087725,
+          0.11665586885615356,
+          0.00799060668353713,
+          0.0016637806616154058,
+          0.0,
+          0.0
+        ],
+        [
+          0.025599490493905454,
+          0.02745679358005374,
+          0.13642531894549445,
+          0.16517856904761594,
+          0.42592931039628545,
+          0.5907608109948594,
+          0.8118496896996203,
+          1.0000000000000002,
+          0.5428385463733999,
+          0.4954366952504764,
+          0.10996768221560722,
+          0.13567197382525226,
+          0.002037706832433973,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.009910801455848635,
+          0.005739194326483352,
+          0.10121090480047486,
+          0.11535877383859743,
+          0.6220722411180858,
+          0.5428385463733999,
+          1.0,
+          0.8420247934106895,
+          0.5997757629394854,
+          0.543993639732798,
+          0.17150435507652262,
+          0.09751768721206516,
+          0.026687756027706736,
+          0.01765977587418393
+        ],
+        [
+          0.0,
+          0.0,
+          0.0011764705882352938,
+          0.0011764705882352938,
+          0.039854680292979644,
+          0.06713411659122452,
+          0.4253448011926414,
+          0.4954366952504764,
+          0.8420247934106895,
+          1.0000000000000002,
+          0.6251026443962933,
+          0.7059580434419886,
+          0.18282716018239953,
+          0.1450069350763839,
+          0.02700946826087597,
+          0.020469236791569905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0016637806616154058,
+          0.0056805024997014005,
+          0.12254254701087725,
+          0.10996768221560722,
+          0.5997757629394854,
+          0.6251026443962933,
+          0.9999999999999998,
+          0.8740882757924215,
+          0.6751704392982742,
+          0.5185881022259413,
+          0.2654379340707128,
+          0.22387830481665688
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0035294117647058816,
+          0.007344283161316805,
+          0.11665586885615356,
+          0.13567197382525226,
+          0.543993639732798,
+          0.7059580434419886,
+          0.8740882757924215,
+          1.0,
+          0.5674711237905683,
+          0.5271377123853088,
+          0.21546862534813935,
+          0.20551192671719026
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.00799060668353713,
+          0.002037706832433973,
+          0.17150435507652262,
+          0.18282716018239953,
+          0.6751704392982742,
+          0.5674711237905683,
+          1.0,
+          0.8906043726998769,
+          0.758352569904859,
+          0.6749669283964547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0016637806616154058,
+          0.0,
+          0.09751768721206516,
+          0.1450069350763839,
+          0.5185881022259413,
+          0.5271377123853088,
+          0.8906043726998769,
+          1.0000000000000002,
+          0.7812007050330603,
+          0.7926755977677794
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.026687756027706736,
+          0.02700946826087597,
+          0.2654379340707128,
+          0.21546862534813935,
+          0.758352569904859,
+          0.7812007050330603,
+          1.0000000000000004,
+          0.9277117806238898
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.01765977587418393,
+          0.020469236791569905,
+          0.22387830481665688,
+          0.20551192671719026,
+          0.6749669283964547,
+          0.7926755977677794,
+          0.9277117806238898,
+          1.0
+        ]
+      ],
+      "joint_histogram_bin_width_x_Q": [
+        0.014433756729740644,
+        0.028867513459481287
+      ],
+      "diagnostics": [
+        {
+          "run": "at1273-n288-tight-h00q00",
+          "start": "window",
+          "seed": 2294587650,
+          "spec": [
+            3.45,
+            20.0,
+            0.02
+          ],
+          "frames": 850,
+          "blocks": 4,
+          "statistical_inefficiency": 87.22380509233919,
+          "inefficiency_by_observable": {
+            "k": 1.9979306849519105,
+            "code": 2.6557557794411513,
+            "v": 12.170810694763887,
+            "ca": 87.22380509233919
+          },
+          "mean_x": 0.22377859477124185,
+          "mean_Q": 0.09491830065359477,
+          "mean_volume_A3_atom": 17.49489974153706,
+          "range_volume_A3_atom": [
+            17.2344536792,
+            17.8366837497
+          ],
+          "range_c_a": [
+            1.57638530068,
+            1.62461895604
+          ],
+          "halves_c_a": [
+            1.5935549050227529,
+            1.6044415422381415
+          ],
+          "halves_volume": [
+            17.47901336930659,
+            17.51078611376753
+          ],
+          "halves_x": [
+            0.2247875816993464,
+            0.22276960784313724
+          ],
+          "halves_q": [
+            0.09200435729847495,
+            0.0978322440087146
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.2344536792000014,
+          "observable_means": {
+            "mean_c_a": 1.598998223630447,
+            "mean_wall": 0.34373519651818124,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.2949673202614379,
+            "Al_fraction_sublattice_rank_2": 0.2502450980392157,
+            "Al_fraction_sublattice_rank_3": 0.20457516339869283,
+            "Al_fraction_sublattice_rank_4": 0.1453267973856209
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            238,
+            247,
+            208,
+            157
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q01",
+          "start": "window",
+          "seed": 2237620689,
+          "spec": [
+            3.45,
+            20.0,
+            0.15428571
+          ],
+          "frames": 850,
+          "blocks": 6,
+          "statistical_inefficiency": 67.43817425070118,
+          "inefficiency_by_observable": {
+            "k": 1.2896549883079778,
+            "code": 3.806253016974691,
+            "v": 8.505013161815771,
+            "ca": 67.43817425070118
+          },
+          "mean_x": 0.22641339869281044,
+          "mean_Q": 0.15042483660130715,
+          "mean_volume_A3_atom": 17.487291592207768,
+          "range_volume_A3_atom": [
+            17.1771550927,
+            17.7784630787
+          ],
+          "range_c_a": [
+            1.58122352608,
+            1.6260979099
+          ],
+          "halves_c_a": [
+            1.5963370117839295,
+            1.6014099634151058
+          ],
+          "halves_volume": [
+            17.49972098987059,
+            17.474862194544944
+          ],
+          "halves_x": [
+            0.22633169934640524,
+            0.2264950980392157
+          ],
+          "halves_q": [
+            0.14763616557734205,
+            0.1532135076252723
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1771550927000014,
+          "observable_means": {
+            "mean_c_a": 1.5988734875995176,
+            "mean_wall": 0.343705955396253,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.33923202614379094,
+            "Al_fraction_sublattice_rank_2": 0.2504575163398693,
+            "Al_fraction_sublattice_rank_3": 0.1876797385620915,
+            "Al_fraction_sublattice_rank_4": 0.12828431372549018
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            267,
+            169,
+            220,
+            194
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q02",
+          "start": "window",
+          "seed": 431426241,
+          "spec": [
+            3.45,
+            20.0,
+            0.28857143
+          ],
+          "frames": 850,
+          "blocks": 9,
+          "statistical_inefficiency": 43.27686139775405,
+          "inefficiency_by_observable": {
+            "k": 2.8022236847379953,
+            "code": 5.56737658995098,
+            "v": 18.296641702422832,
+            "ca": 43.27686139775405
+          },
+          "mean_x": 0.22727941176470587,
+          "mean_Q": 0.2458932461873638,
+          "mean_volume_A3_atom": 17.488582373715765,
+          "range_volume_A3_atom": [
+            17.1936892547,
+            17.9298424758
+          ],
+          "range_c_a": [
+            1.57296730787,
+            1.62654800344
+          ],
+          "halves_c_a": [
+            1.5993802409776237,
+            1.5992291654322823
+          ],
+          "halves_volume": [
+            17.49076476770353,
+            17.486399979728
+          ],
+          "halves_x": [
+            0.2272467320261438,
+            0.22731209150326798
+          ],
+          "halves_q": [
+            0.24096949891067537,
+            0.2508169934640523
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1936892547000006,
+          "observable_means": {
+            "mean_c_a": 1.5993047032049532,
+            "mean_wall": 0.3433395787766259,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.41169934640522876,
+            "Al_fraction_sublattice_rank_2": 0.23008169934640524,
+            "Al_fraction_sublattice_rank_3": 0.1595098039215686,
+            "Al_fraction_sublattice_rank_4": 0.10782679738562093
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            152,
+            187,
+            188,
+            323
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q03",
+          "start": "window",
+          "seed": 3113296805,
+          "spec": [
+            3.45,
+            20.0,
+            0.42285714
+          ],
+          "frames": 850,
+          "blocks": 3,
+          "statistical_inefficiency": 110.64402308767139,
+          "inefficiency_by_observable": {
+            "k": 2.008351291376248,
+            "code": 5.802041650267268,
+            "v": 11.363000125498283,
+            "ca": 110.64402308767139
+          },
+          "mean_x": 0.23048611111111109,
+          "mean_Q": 0.40227124183006535,
+          "mean_volume_A3_atom": 17.449977864596235,
+          "range_volume_A3_atom": [
+            17.1497037332,
+            17.7154412625
+          ],
+          "range_c_a": [
+            1.57232396967,
+            1.63211175835
+          ],
+          "halves_c_a": [
+            1.5956065568586355,
+            1.6051109038670355
+          ],
+          "halves_volume": [
+            17.466907695155058,
+            17.433048034037412
+          ],
+          "halves_x": [
+            0.2290767973856209,
+            0.23189542483660128
+          ],
+          "halves_q": [
+            0.3928649237472767,
+            0.41167755991285404
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.149703733199999,
+          "observable_means": {
+            "mean_c_a": 1.6003587303628355,
+            "mean_wall": 0.34292759223615177,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.5321895424836601,
+            "Al_fraction_sublattice_rank_2": 0.18132352941176472,
+            "Al_fraction_sublattice_rank_3": 0.12503267973856208,
+            "Al_fraction_sublattice_rank_4": 0.08339869281045752
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            850,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q04",
+          "start": "window",
+          "seed": 2650180951,
+          "spec": [
+            3.45,
+            20.0,
+            0.55714286
+          ],
+          "frames": 850,
+          "blocks": 8,
+          "statistical_inefficiency": 52.888664541782305,
+          "inefficiency_by_observable": {
+            "k": 1.2499022174232608,
+            "code": 8.516221240732076,
+            "v": 18.63766044379473,
+            "ca": 52.888664541782305
+          },
+          "mean_x": 0.23604575163398694,
+          "mean_Q": 0.5444880174291938,
+          "mean_volume_A3_atom": 17.437787045552003,
+          "range_volume_A3_atom": [
+            17.1558765958,
+            17.7686509636
+          ],
+          "range_c_a": [
+            1.56373060201,
+            1.62407140739
+          ],
+          "halves_c_a": [
+            1.6027804940203294,
+            1.600072884328988
+          ],
+          "halves_volume": [
+            17.446286037393882,
+            17.429288053710117
+          ],
+          "halves_x": [
+            0.23566176470588232,
+            0.23642973856209148
+          ],
+          "halves_q": [
+            0.5312309368191721,
+            0.5577450980392157
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.155876595799999,
+          "observable_means": {
+            "mean_c_a": 1.6014266891746587,
+            "mean_wall": 0.3431707991965824,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.6444117647058824,
+            "Al_fraction_sublattice_rank_2": 0.14305555555555557,
+            "Al_fraction_sublattice_rank_3": 0.09558823529411764,
+            "Al_fraction_sublattice_rank_4": 0.061127450980392156
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            850,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q05",
+          "start": "window",
+          "seed": 1194524911,
+          "spec": [
+            3.45,
+            20.0,
+            0.69142857
+          ],
+          "frames": 850,
+          "blocks": 9,
+          "statistical_inefficiency": 46.63064251921488,
+          "inefficiency_by_observable": {
+            "k": 1.909589587787064,
+            "code": 7.955900777351404,
+            "v": 8.63837452252015,
+            "ca": 46.63064251921488
+          },
+          "mean_x": 0.2416176470588235,
+          "mean_Q": 0.6915686274509805,
+          "mean_volume_A3_atom": 17.39706465753553,
+          "range_volume_A3_atom": [
+            17.1254343672,
+            17.6253891486
+          ],
+          "range_c_a": [
+            1.58774849386,
+            1.63303782687
+          ],
+          "halves_c_a": [
+            1.6099612942461885,
+            1.6047380861781178
+          ],
+          "halves_volume": [
+            17.41834824689388,
+            17.375781068177176
+          ],
+          "halves_x": [
+            0.24128267973856207,
+            0.24195261437908497
+          ],
+          "halves_q": [
+            0.6923202614379086,
+            0.6908169934640523
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1254343672000005,
+          "observable_means": {
+            "mean_c_a": 1.607349690212153,
+            "mean_wall": 0.3414243145920824,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.7602941176470588,
+            "Al_fraction_sublattice_rank_2": 0.09818627450980394,
+            "Al_fraction_sublattice_rank_3": 0.06624183006535948,
+            "Al_fraction_sublattice_rank_4": 0.0417483660130719
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            850,
+            0,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q06",
+          "start": "window",
+          "seed": 160392456,
+          "spec": [
+            3.45,
+            20.0,
+            0.82571429
+          ],
+          "frames": 850,
+          "blocks": 11,
+          "statistical_inefficiency": 35.403849698123345,
+          "inefficiency_by_observable": {
+            "k": 2.18022481808172,
+            "code": 7.348898501962225,
+            "v": 8.313403233583085,
+            "ca": 35.403849698123345
+          },
+          "mean_x": 0.24631127450980392,
+          "mean_Q": 0.8084041394335512,
+          "mean_volume_A3_atom": 17.37116860011965,
+          "range_volume_A3_atom": [
+            17.1008229401,
+            17.6649435087
+          ],
+          "range_c_a": [
+            1.58352158076,
+            1.62992985337
+          ],
+          "halves_c_a": [
+            1.6091580254886118,
+            1.6047596447190586
+          ],
+          "halves_volume": [
+            17.376186116032237,
+            17.36615108420706
+          ],
+          "halves_x": [
+            0.24772875816993462,
+            0.24489379084967317
+          ],
+          "halves_q": [
+            0.8193681917211328,
+            0.7974400871459696
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1008229400999987,
+          "observable_means": {
+            "mean_c_a": 1.6069588351038355,
+            "mean_wall": 0.3411996223855518,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.8526143790849673,
+            "Al_fraction_sublattice_rank_2": 0.06648692810457515,
+            "Al_fraction_sublattice_rank_3": 0.04272875816993465,
+            "Al_fraction_sublattice_rank_4": 0.023415032679738563
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            0,
+            850
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h00q07",
+          "start": "window",
+          "seed": 1800521851,
+          "spec": [
+            3.45,
+            20.0,
+            0.96
+          ],
+          "frames": 850,
+          "blocks": 8,
+          "statistical_inefficiency": 47.46280193346607,
+          "inefficiency_by_observable": {
+            "k": 1.7045409328192846,
+            "code": 6.326563501009073,
+            "v": 13.290910352830243,
+            "ca": 47.46280193346607
+          },
+          "mean_x": 0.24960784313725493,
+          "mean_Q": 0.8840087145969499,
+          "mean_volume_A3_atom": 17.347880806440823,
+          "range_volume_A3_atom": [
+            17.0658663605,
+            17.6386501856
+          ],
+          "range_c_a": [
+            1.58708372201,
+            1.62518077462
+          ],
+          "halves_c_a": [
+            1.6032931786740943,
+            1.6051987147583529
+          ],
+          "halves_volume": [
+            17.358073069643293,
+            17.337688543238354
+          ],
+          "halves_x": [
+            0.2497794117647059,
+            0.2494362745098039
+          ],
+          "halves_q": [
+            0.8837363834422657,
+            0.884281045751634
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.0658663604999994,
+          "observable_means": {
+            "mean_c_a": 1.6042459467162233,
+            "mean_wall": 0.34098354767355765,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.9126143790849672,
+            "Al_fraction_sublattice_rank_2": 0.04673202614379085,
+            "Al_fraction_sublattice_rank_3": 0.026764705882352944,
+            "Al_fraction_sublattice_rank_4": 0.012320261437908498
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            0,
+            850
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q00",
+          "start": "window",
+          "seed": 2780341958,
+          "spec": [
+            3.48,
+            20.0,
+            0.02
+          ],
+          "frames": 850,
+          "blocks": 3,
+          "statistical_inefficiency": 110.31787825521734,
+          "inefficiency_by_observable": {
+            "k": 1.9353082515302487,
+            "code": 1.8841121388004125,
+            "v": 10.191789413431458,
+            "ca": 110.31787825521734
+          },
+          "mean_x": 0.2403472222222222,
+          "mean_Q": 0.09685729847494552,
+          "mean_volume_A3_atom": 17.451859404820706,
+          "range_volume_A3_atom": [
+            16.987095019,
+            17.7691644855
+          ],
+          "range_c_a": [
+            1.57911123357,
+            1.62900713696
+          ],
+          "halves_c_a": [
+            1.6061638557756939,
+            1.5955576050938587
+          ],
+          "halves_volume": [
+            17.442763721065884,
+            17.46095508857553
+          ],
+          "halves_x": [
+            0.24187908496732027,
+            0.23881535947712418
+          ],
+          "halves_q": [
+            0.09453159041394335,
+            0.09918300653594772
+          ],
+          "min_distance_to_lower_volume_A3_atom": 1.9870950190000016,
+          "observable_means": {
+            "mean_c_a": 1.6008607304347762,
+            "mean_wall": 0.3429281389061071,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.3129901960784313,
+            "Al_fraction_sublattice_rank_2": 0.2680065359477124,
+            "Al_fraction_sublattice_rank_3": 0.2190196078431373,
+            "Al_fraction_sublattice_rank_4": 0.16137254901960782
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            254,
+            226,
+            191,
+            179
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q01",
+          "start": "window",
+          "seed": 1601239442,
+          "spec": [
+            3.48,
+            20.0,
+            0.15428571
+          ],
+          "frames": 850,
+          "blocks": 3,
+          "statistical_inefficiency": 106.88246675245841,
+          "inefficiency_by_observable": {
+            "k": 1.5798070442625578,
+            "code": 4.58234411071583,
+            "v": 9.79833750576128,
+            "ca": 106.88246675245841
+          },
+          "mean_x": 0.2411968954248366,
+          "mean_Q": 0.16188997821350762,
+          "mean_volume_A3_atom": 17.461038887902355,
+          "range_volume_A3_atom": [
+            17.1221506577,
+            17.744388639
+          ],
+          "range_c_a": [
+            1.56493385186,
+            1.62905193117
+          ],
+          "halves_c_a": [
+            1.5977028064666587,
+            1.6012400364250117
+          ],
+          "halves_volume": [
+            17.45699606619153,
+            17.465081709613177
+          ],
+          "halves_x": [
+            0.24053104575163398,
+            0.24186274509803923
+          ],
+          "halves_q": [
+            0.16282135076252724,
+            0.16095860566448802
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1221506577000007,
+          "observable_means": {
+            "mean_c_a": 1.5994714214458354,
+            "mean_wall": 0.3433715611212835,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.36261437908496735,
+            "Al_fraction_sublattice_rank_2": 0.2688235294117647,
+            "Al_fraction_sublattice_rank_3": 0.1982843137254902,
+            "Al_fraction_sublattice_rank_4": 0.1350653594771242
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            292,
+            249,
+            183,
+            126
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q02",
+          "start": "window",
+          "seed": 4096197768,
+          "spec": [
+            3.48,
+            20.0,
+            0.28857143
+          ],
+          "frames": 850,
+          "blocks": 5,
+          "statistical_inefficiency": 82.12021747133161,
+          "inefficiency_by_observable": {
+            "k": 1.6887959748116734,
+            "code": 4.958149406962868,
+            "v": 17.772098076314563,
+            "ca": 82.12021747133161
+          },
+          "mean_x": 0.2415890522875817,
+          "mean_Q": 0.26269607843137255,
+          "mean_volume_A3_atom": 17.45359676365447,
+          "range_volume_A3_atom": [
+            17.1507478456,
+            17.7136799521
+          ],
+          "range_c_a": [
+            1.56465976854,
+            1.62239922192
+          ],
+          "halves_c_a": [
+            1.5948050510458354,
+            1.5976730579439764
+          ],
+          "halves_volume": [
+            17.438491927582117,
+            17.468701599726824
+          ],
+          "halves_x": [
+            0.2418627450980392,
+            0.24131535947712418
+          ],
+          "halves_q": [
+            0.2524183006535948,
+            0.2729738562091503
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1507478456000015,
+          "observable_means": {
+            "mean_c_a": 1.5962390544949059,
+            "mean_wall": 0.34379442130007765,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.4386111111111111,
+            "Al_fraction_sublattice_rank_2": 0.24080065359477124,
+            "Al_fraction_sublattice_rank_3": 0.1704248366013072,
+            "Al_fraction_sublattice_rank_4": 0.11651960784313727
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            33,
+            335,
+            41,
+            441
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q03",
+          "start": "window",
+          "seed": 3644685543,
+          "spec": [
+            3.48,
+            20.0,
+            0.42285714
+          ],
+          "frames": 850,
+          "blocks": 3,
+          "statistical_inefficiency": 136.34818026527907,
+          "inefficiency_by_observable": {
+            "k": 1.515758827549706,
+            "code": 4.935860900765831,
+            "v": 8.590327796375858,
+            "ca": 136.34818026527907
+          },
+          "mean_x": 0.24562908496732025,
+          "mean_Q": 0.40225490196078434,
+          "mean_volume_A3_atom": 17.440557206549766,
+          "range_volume_A3_atom": [
+            17.1499131711,
+            17.7774854646
+          ],
+          "range_c_a": [
+            1.56763688486,
+            1.63365482639
+          ],
+          "halves_c_a": [
+            1.6025568933990353,
+            1.6093595560643061
+          ],
+          "halves_volume": [
+            17.437669511461177,
+            17.44344490163835
+          ],
+          "halves_x": [
+            0.24609477124183005,
+            0.24516339869281048
+          ],
+          "halves_q": [
+            0.4052505446623094,
+            0.3992592592592592
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1499131710999997,
+          "observable_means": {
+            "mean_c_a": 1.6059582247316706,
+            "mean_wall": 0.34266401728170115,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.5473202614379085,
+            "Al_fraction_sublattice_rank_2": 0.19870915032679737,
+            "Al_fraction_sublattice_rank_3": 0.1412745098039216,
+            "Al_fraction_sublattice_rank_4": 0.09521241830065359
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            772,
+            77,
+            1,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q04",
+          "start": "window",
+          "seed": 3051073280,
+          "spec": [
+            3.48,
+            20.0,
+            0.55714286
+          ],
+          "frames": 850,
+          "blocks": 5,
+          "statistical_inefficiency": 74.71684751554696,
+          "inefficiency_by_observable": {
+            "k": 1.8850186805992486,
+            "code": 4.428614492475872,
+            "v": 9.905103033517259,
+            "ca": 74.71684751554696
+          },
+          "mean_x": 0.24870915032679738,
+          "mean_Q": 0.5716993464052288,
+          "mean_volume_A3_atom": 17.412249819562234,
+          "range_volume_A3_atom": [
+            17.0690168867,
+            17.7096376207
+          ],
+          "range_c_a": [
+            1.573636843,
+            1.62695433835
+          ],
+          "halves_c_a": [
+            1.6060968519280472,
+            1.6006679684049647
+          ],
+          "halves_volume": [
+            17.413783078629177,
+            17.410716560495295
+          ],
+          "halves_x": [
+            0.24843137254901962,
+            0.24898692810457515
+          ],
+          "halves_q": [
+            0.5682788671023965,
+            0.575119825708061
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.0690168866999983,
+          "observable_means": {
+            "mean_c_a": 1.603382410166506,
+            "mean_wall": 0.34261320784725996,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.6774836601307189,
+            "Al_fraction_sublattice_rank_2": 0.14898692810457517,
+            "Al_fraction_sublattice_rank_3": 0.10243464052287583,
+            "Al_fraction_sublattice_rank_4": 0.06593137254901961
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            850,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q05",
+          "start": "window",
+          "seed": 659646176,
+          "spec": [
+            3.48,
+            20.0,
+            0.69142857
+          ],
+          "frames": 850,
+          "blocks": 11,
+          "statistical_inefficiency": 37.76403088234503,
+          "inefficiency_by_observable": {
+            "k": 1.4641596808957829,
+            "code": 6.320850437838084,
+            "v": 9.886331901139666,
+            "ca": 37.76403088234503
+          },
+          "mean_x": 0.2514705882352941,
+          "mean_Q": 0.6825925925925925,
+          "mean_volume_A3_atom": 17.400381916834586,
+          "range_volume_A3_atom": [
+            17.1157239601,
+            17.7126682085
+          ],
+          "range_c_a": [
+            1.58102724642,
+            1.6269281348
+          ],
+          "halves_c_a": [
+            1.6011555797002117,
+            1.6067509095257881
+          ],
+          "halves_volume": [
+            17.400680581713175,
+            17.400083251955998
+          ],
+          "halves_x": [
+            0.25071895424836604,
+            0.2522222222222222
+          ],
+          "halves_q": [
+            0.69119825708061,
+            0.6739869281045752
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1157239600999986,
+          "observable_means": {
+            "mean_c_a": 1.6039532446129998,
+            "mean_wall": 0.34178373390901884,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.7634150326797386,
+            "Al_fraction_sublattice_rank_2": 0.11428104575163399,
+            "Al_fraction_sublattice_rank_3": 0.07870915032679737,
+            "Al_fraction_sublattice_rank_4": 0.04947712418300654
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            850,
+            0,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q06",
+          "start": "window",
+          "seed": 2093792011,
+          "spec": [
+            3.48,
+            20.0,
+            0.82571429
+          ],
+          "frames": 850,
+          "blocks": 7,
+          "statistical_inefficiency": 55.16486355023288,
+          "inefficiency_by_observable": {
+            "k": 1.2964327063303722,
+            "code": 9.858403819346021,
+            "v": 9.158834375121794,
+            "ca": 55.16486355023288
+          },
+          "mean_x": 0.25519607843137254,
+          "mean_Q": 0.8273856209150328,
+          "mean_volume_A3_atom": 17.346041877465176,
+          "range_volume_A3_atom": [
+            17.0245085248,
+            17.5880663987
+          ],
+          "range_c_a": [
+            1.58663754605,
+            1.62596663943
+          ],
+          "halves_c_a": [
+            1.6050891532298117,
+            1.6113351477307765
+          ],
+          "halves_volume": [
+            17.329259867729174,
+            17.362823887201174
+          ],
+          "halves_x": [
+            0.25508169934640523,
+            0.25531045751633985
+          ],
+          "halves_q": [
+            0.8199782135076253,
+            0.8347930283224402
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.0245085248000017,
+          "observable_means": {
+            "mean_c_a": 1.608212150480294,
+            "mean_wall": 0.3415050618681259,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.8757352941176471,
+            "Al_fraction_sublattice_rank_2": 0.07143790849673202,
+            "Al_fraction_sublattice_rank_3": 0.046830065359477126,
+            "Al_fraction_sublattice_rank_4": 0.026781045751633988
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            850,
+            0
+          ]
+        },
+        {
+          "run": "at1273-n288-tight-h01q07",
+          "start": "window",
+          "seed": 404736735,
+          "spec": [
+            3.48,
+            20.0,
+            0.96
+          ],
+          "frames": 850,
+          "blocks": 4,
+          "statistical_inefficiency": 90.74019123743108,
+          "inefficiency_by_observable": {
+            "k": 1.7560404668698641,
+            "code": 4.676323334131304,
+            "v": 6.5214028169654314,
+            "ca": 90.74019123743108
+          },
+          "mean_x": 0.2559926470588235,
+          "mean_Q": 0.8936220043572984,
+          "mean_volume_A3_atom": 17.358786055942705,
+          "range_volume_A3_atom": [
+            17.1197418445,
+            17.6430792121
+          ],
+          "range_c_a": [
+            1.57629559728,
+            1.63771347878
+          ],
+          "halves_c_a": [
+            1.6151094658762823,
+            1.607294411769906
+          ],
+          "halves_volume": [
+            17.35281610846588,
+            17.36475600341953
+          ],
+          "halves_x": [
+            0.25611928104575166,
+            0.2558660130718954
+          ],
+          "halves_q": [
+            0.8940196078431374,
+            0.8932244008714596
+          ],
+          "min_distance_to_lower_volume_A3_atom": 2.1197418444999983,
+          "observable_means": {
+            "mean_c_a": 1.6112019388230938,
+            "mean_wall": 0.34107492861478944,
+            "fraction_within_0p25_A3_lower_volume": 0.0,
+            "fraction_within_0p25_A3_upper_volume": 0.0,
+            "fraction_within_0p01_axial_bounds": 0.0,
+            "Al_fraction_sublattice_rank_1": 0.9262091503267974,
+            "Al_fraction_sublattice_rank_2": 0.05137254901960784,
+            "Al_fraction_sublattice_rank_3": 0.03062091503267974,
+            "Al_fraction_sublattice_rank_4": 0.01576797385620915
+          },
+          "first_sweep": 421.0,
+          "last_sweep": 1270.0,
+          "dominant_variants": [
+            0,
+            0,
+            0,
+            850
+          ]
+        }
+      ],
+      "equal_height_separator": null,
+      "equal_single_variant": null,
+      "equal_total_weight": null,
+      "reference_profile": {
+        "q": [
+          0.0025,
+          0.0075,
+          0.0125,
+          0.0175,
+          0.0225,
+          0.0275,
+          0.0325,
+          0.037500000000000006,
+          0.042499999999999996,
+          0.0475,
+          0.052500000000000005,
+          0.057499999999999996,
+          0.0625,
+          0.0675,
+          0.07250000000000001,
+          0.0775,
+          0.0825,
+          0.0875,
+          0.0925,
+          0.0975,
+          0.10250000000000001,
+          0.1075,
+          0.1125,
+          0.1175,
+          0.1225,
+          0.1275,
+          0.1325,
+          0.1375,
+          0.14250000000000002,
+          0.1475,
+          0.1525,
+          0.1575,
+          0.1625,
+          0.1675,
+          0.17250000000000001,
+          0.1775,
+          0.1825,
+          0.1875,
+          0.1925,
+          0.1975,
+          0.2025,
+          0.20750000000000002,
+          0.2125,
+          0.2175,
+          0.2225,
+          0.2275,
+          0.2325,
+          0.2375,
+          0.2425,
+          0.2475,
+          0.2525,
+          0.2575,
+          0.2625,
+          0.2675,
+          0.2725,
+          0.2775,
+          0.28250000000000003,
+          0.2875,
+          0.2925,
+          0.2975,
+          0.3025,
+          0.3075,
+          0.3125,
+          0.3175,
+          0.3225,
+          0.3275,
+          0.3325,
+          0.3375,
+          0.3425,
+          0.34750000000000003,
+          0.35250000000000004,
+          0.3575,
+          0.3625,
+          0.3675,
+          0.3725,
+          0.3775,
+          0.3825,
+          0.3875,
+          0.3925,
+          0.3975,
+          0.4025,
+          0.40750000000000003,
+          0.41250000000000003,
+          0.4175,
+          0.4225,
+          0.4275,
+          0.4325,
+          0.4375,
+          0.4425,
+          0.4475,
+          0.4525,
+          0.4575,
+          0.4625,
+          0.4675,
+          0.47250000000000003,
+          0.47750000000000004,
+          0.4825,
+          0.4875,
+          0.4925,
+          0.4975,
+          0.5025,
+          0.5075000000000001,
+          0.5125,
+          0.5175000000000001,
+          0.5225,
+          0.5275000000000001,
+          0.5325,
+          0.5375000000000001,
+          0.5425,
+          0.5475000000000001,
+          0.5525,
+          0.5575000000000001,
+          0.5625,
+          0.5675000000000001,
+          0.5725,
+          0.5775,
+          0.5825,
+          0.5874999999999999,
+          0.5925,
+          0.5974999999999999,
+          0.6025,
+          0.6074999999999999,
+          0.6125,
+          0.6174999999999999,
+          0.6225,
+          0.6275,
+          0.6325000000000001,
+          0.6375,
+          0.6425000000000001,
+          0.6475,
+          0.6525000000000001,
+          0.6575,
+          0.6625000000000001,
+          0.6675,
+          0.6725000000000001,
+          0.6775,
+          0.6825000000000001,
+          0.6875,
+          0.6925000000000001,
+          0.6975,
+          0.7025,
+          0.7075,
+          0.7124999999999999,
+          0.7175,
+          0.7224999999999999,
+          0.7275,
+          0.7324999999999999,
+          0.7375,
+          0.7424999999999999,
+          0.7475,
+          0.7525,
+          0.7575000000000001,
+          0.7625,
+          0.7675000000000001,
+          0.7725,
+          0.7775000000000001,
+          0.7825,
+          0.7875000000000001,
+          0.7925,
+          0.7975000000000001,
+          0.8025,
+          0.8075000000000001,
+          0.8125,
+          0.8175000000000001,
+          0.8225,
+          0.8275000000000001,
+          0.8325,
+          0.8374999999999999,
+          0.8425,
+          0.8474999999999999,
+          0.8525,
+          0.8574999999999999,
+          0.8625,
+          0.8674999999999999,
+          0.8725,
+          0.8775,
+          0.8825000000000001,
+          0.8875,
+          0.8925000000000001,
+          0.8975,
+          0.9025000000000001,
+          0.9075,
+          0.9125000000000001,
+          0.9175,
+          0.9225000000000001,
+          0.9275,
+          0.9325000000000001,
+          0.9375,
+          0.9425000000000001,
+          0.9475,
+          0.9525000000000001,
+          0.9575,
+          0.9624999999999999,
+          0.9675,
+          0.9724999999999999,
+          0.9775,
+          0.9824999999999999,
+          0.9875,
+          0.9924999999999999,
+          0.9975
+        ],
+        "density": [
+          0.744415538000606,
+          0.7604149261064591,
+          0.7920905854354938,
+          0.8387986840197339,
+          0.8996112504880015,
+          0.9733492355652986,
+          1.0585271802580267,
+          1.1535324641946731,
+          1.2566831069166395,
+          1.3660724476372095,
+          1.4798450578501419,
+          1.5961391502672335,
+          1.713168393193689,
+          1.8292336545978038,
+          1.9427884079305273,
+          2.052441860202863,
+          2.156960698960206,
+          2.2552940825582355,
+          2.3465891144464153,
+          2.4301007350161057,
+          2.5052588619874046,
+          2.571700431900626,
+          2.6291069066884676,
+          2.677306320559106,
+          2.7162351728257135,
+          2.7459240937732297,
+          2.766500356824463,
+          2.778167171375706,
+          2.7812116585353532,
+          2.7759851108386924,
+          2.7629226288210282,
+          2.742472726636661,
+          2.7151792804259585,
+          2.6816143165627184,
+          2.642385589920162,
+          2.5981305346890267,
+          2.549499027934636,
+          2.497150996100242,
+          2.441739292297063,
+          2.3839108644779925,
+          2.3242755741138215,
+          2.263408983043838,
+          2.2018359019845684,
+          2.1400394819903372,
+          2.0784073702895123,
+          2.0172782008463646,
+          1.9569801658641666,
+          1.8977110778214192,
+          1.8396526353218312,
+          1.7829400687266184,
+          1.7276740559294674,
+          1.6739372437847486,
+          1.6217817340261589,
+          1.5712422148163474,
+          1.5223252962817733,
+          1.4750456106053955,
+          1.4293589017474002,
+          1.385229156588245,
+          1.342553893174824,
+          1.3013243048591396,
+          1.2613977653950041,
+          1.2226708440180274,
+          1.1850343247705395,
+          1.148392966941,
+          1.1126764065260895,
+          1.07782319258459,
+          1.0438154497254355,
+          1.0106596212680203,
+          0.9783974727034976,
+          0.9470818792520519,
+          0.91678474249927,
+          0.8876575778301152,
+          0.859767814978323,
+          0.8332247281555528,
+          0.8081315626405776,
+          0.7845505069890208,
+          0.7625409365928344,
+          0.7421336081363344,
+          0.723326059362631,
+          0.706082245058625,
+          0.6903582882110033,
+          0.6760750486013447,
+          0.6631333858183853,
+          0.651412744639638,
+          0.6408400833435455,
+          0.6312848066984916,
+          0.6226413435602685,
+          0.6148188389825658,
+          0.6077372596016073,
+          0.6013372276469259,
+          0.5955618673695302,
+          0.5903649374738205,
+          0.5857153270348844,
+          0.5815821485812483,
+          0.5779285455579471,
+          0.5747110992969665,
+          0.5719163334511164,
+          0.5694747340141716,
+          0.5673367190743537,
+          0.565452691986542,
+          0.5637687632293571,
+          0.562236883605355,
+          0.5608147965661512,
+          0.5594715944453303,
+          0.5581818323805375,
+          0.556950122333424,
+          0.5557612569008628,
+          0.5546359389968958,
+          0.5535887895922212,
+          0.5526635336196449,
+          0.5518718685807342,
+          0.5512519529079949,
+          0.5508192350593589,
+          0.550594809410558,
+          0.5505850173069642,
+          0.5507904609502696,
+          0.5511983466041096,
+          0.5517895749713423,
+          0.5525386974873592,
+          0.5534014178565243,
+          0.5543395778112329,
+          0.5553302641168937,
+          0.5563290970826066,
+          0.557311474696668,
+          0.5582576800547357,
+          0.5591624543487417,
+          0.560021238852974,
+          0.5608463877743379,
+          0.5616527111656632,
+          0.5624512281485584,
+          0.5632760431392371,
+          0.5641184378367083,
+          0.5649878790583457,
+          0.5658820092969148,
+          0.5667963476262184,
+          0.5677069221027328,
+          0.5685917332026326,
+          0.5694163575397257,
+          0.5701554073737484,
+          0.5707816149274106,
+          0.5712737029037845,
+          0.5716174061534086,
+          0.571806867551571,
+          0.5718579493364654,
+          0.5717713622582999,
+          0.5715786319369689,
+          0.5713339747786091,
+          0.5710827727222972,
+          0.5708858699081302,
+          0.5708148318296192,
+          0.5709450231609711,
+          0.5713498700601609,
+          0.5720994093487889,
+          0.5732551233734363,
+          0.5748602505723708,
+          0.5769461344943422,
+          0.5795087443784079,
+          0.5825196478449834,
+          0.5859226541229335,
+          0.5896374401753952,
+          0.593547443225079,
+          0.5975162057688667,
+          0.6013876201114146,
+          0.6049883196701065,
+          0.6081314929641644,
+          0.6106271649701148,
+          0.6122838690953327,
+          0.6129090294141425,
+          0.6123160541716169,
+          0.6103295174090428,
+          0.6067801906409248,
+          0.6015418182364939,
+          0.5944833739489204,
+          0.5855138237343024,
+          0.5745757652991319,
+          0.561649338751712,
+          0.5467498633859081,
+          0.5299411457629423,
+          0.5113214177326713,
+          0.4910344411051085,
+          0.46925918340205014,
+          0.44620465276405585,
+          0.42210917721863717,
+          0.39722860475609534,
+          0.37185068406540517,
+          0.3462537860986195,
+          0.320728108058369,
+          0.2955641028245891,
+          0.27104790231210685,
+          0.24745842976520618,
+          0.2250624039988814,
+          0.20411282405932776,
+          0.1848549754654943,
+          0.16749456053046868,
+          0.1522310360493407,
+          0.13923185783398367,
+          0.12865939640546295,
+          0.12062360866791763,
+          0.11521254023863128,
+          0.11249391920766982
+        ],
+        "modes": [
+          0.14250000000000002,
+          0.7175,
+          0.8374999999999999
+        ]
+      },
+      "bandwidth_sensitivity": {
+        "0.03": null,
+        "0.05": null
+      },
+      "divider_sensitivity": {
+        "-0.05": null,
+        "0.05": null
+      },
+      "self_consistent_valley": {
+        "1": {
+          "mu_eV": 3.5017026213365203,
+          "order_cut": 0.4675,
+          "valley_at_target": 0.4675,
+          "basin_mode_q": [
+            0.1575,
+            0.8525
+          ],
+          "x_alpha": 0.2519035131895451,
+          "x_alpha2": 0.2591615917398054,
+          "width": 0.007258078550260283,
+          "phase_volumes_A3_atom": [
+            17.44187013522098,
+            17.371306047641582
+          ],
+          "barrier_kBT": [
+            1.103069984178266,
+            0.9049713724061917
+          ],
+          "phase_Kish_ess_frames": [
+            2085.350900636791,
+            3046.9160634691157
+          ],
+          "phase_weight_ratio": 0.9999999999993429
+        },
+        "4": null
+      },
+      "status": "unresolved"
+    },
+    "time_halves": {
+      "early": null,
+      "late": null
+    }
+  }
+]

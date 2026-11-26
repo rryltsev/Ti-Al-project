@@ -1,0 +1,21 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--chdir=/home6/u3129/tial-testsets/test50-dft-20261021-01",
+    "--job-name=t50-setup-retry1",
+    "--output=/home6/u3129/tial-testsets/test50-dft-20261021-01/setup-retry1-%A_%a.out",
+    "--no-requeue",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=4G",
+    "--time=00:30:00",
+    "/home6/u3129/tial-testsets/test50-dft-20261021-01/setup.sbatch"
+  ],
+  "unix": 1792566677.5064986,
+  "state": "submission_intent"
+}

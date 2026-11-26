@@ -1,0 +1,35 @@
+[
+  {
+    "model": "atat_HA",
+    "T_K": 1000.0,
+    "N": 5120,
+    "windows": 35,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 15.173580694155673,
+        "alpha2_at_pct": 21.657617595418806,
+        "window_edge": false
+      }
+    ],
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "alpha_95": [
+        15.137367876440742,
+        15.208140209631182
+      ],
+      "alpha2_95": [
+        21.572589037072248,
+        21.721334357752173
+      ],
+      "width_95": [
+        6.394547343574099,
+        6.554571532575482
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 35
+    }
+  }
+]

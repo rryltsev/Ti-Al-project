@@ -1,0 +1,51 @@
+{
+  "T_K": 1273.15,
+  "N": 768,
+  "n_windows": 26,
+  "equilibrate": 1500,
+  "production": 4500,
+  "stride": 5,
+  "size_shape": [
+    8,
+    8,
+    6
+  ],
+  "start": "random",
+  "range_x_Al": [
+    0.1400462962962963,
+    0.3685112847222223
+  ],
+  "contact_columns": [
+    "left_Al_at_pct",
+    "right_Al_at_pct",
+    "delta_mu_eV"
+  ],
+  "class_direct_tangent": null,
+  "quantum_reweight_tangent": null,
+  "classical_min_adjacent_dmu_eV": 0.012666354106591005,
+  "raw_classical_facets": [],
+  "classical_all_adjacent_increasing": 384,
+  "bootstrap_draws": 384,
+  "bootstrap_window_block_tau_multiplier": 6,
+  "lowest_number_of_blocks": 20,
+  "class_bootstrap_resolved": 0,
+  "quantum_bootstrap_resolved": 0,
+  "classical_95": null,
+  "quantum_reweighted_95": null,
+  "class_minus_quantum_95": null,
+  "early_late_classical": [
+    null,
+    null
+  ],
+  "quantum_min_window_Kish_fraction": 0.9929440329448921,
+  "maximum_energy_reconstruction_error_eV_atom": 5.206501896282134e-12,
+  "mean_order_range": [
+    0.055756172839499976,
+    0.21752507716048677
+  ],
+  "every_second_window_classical_tangent": null,
+  "maximum_mean_order": {
+    "x_Al": 0.305345775462963,
+    "m": 0.21752507716048677
+  }
+}

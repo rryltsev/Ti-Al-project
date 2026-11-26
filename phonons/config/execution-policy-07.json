@@ -1,0 +1,43 @@
+{
+  "revision": "production-05",
+  "authorization": "Uncapped cumulative compute authorized 2026-10-21; Apollo-only required 2026-10-24; normal job walltime 20h.",
+  "authorized_local_date": "2026-10-21",
+  "maximum_cumulative_CPU_hours": null,
+  "agent_imposed_elapsed_deadline": null,
+  "partition": "apollo",
+  "account": "imet-2026-2",
+  "qos": "normal",
+  "scheduler_max_walltime_per_job": "20:00:00",
+  "standard": {
+    "nodes": 2,
+    "ranks": 64,
+    "ranks_per_node": 32,
+    "memory_GiB_per_node": 320,
+    "KPAR": 8,
+    "NCORE": 4,
+    "NBANDS": 576
+  },
+  "dense_kmesh": {
+    "nodes": 2,
+    "ranks": 64,
+    "ranks_per_node": 32,
+    "memory_GiB_per_node": 240,
+    "KPAR": 4,
+    "NCORE": 4,
+    "NBANDS": 576
+  },
+  "steps": [
+    "check-cutoff"
+  ],
+  "continuation": "Each calculation is a separate Slurm job. Submit subsequent steps after validating completed steps. No cumulative budget gate. Do not repeat failed settings unchanged.",
+  "checkpoint_policy": "PBEsol cutoff guard v5: reserve max(6h,2*recent max SCF+3h).",
+  "scientific_settings_source": "Original immutable remote protocol.json; local protocol.json now records the new resource authorization. Physical settings unchanged.",
+  "reason": "PBEsol reference accepted; cutoff diagnostic needs more memory for plane-wave basis increased from550 to650eV.",
+  "memory_estimate": {
+    "basis_ratio": 1.2847718153745304,
+    "measured_peak_rank_KiB": 7271832,
+    "estimated_node_GiB": 285.1148925701478,
+    "requested_node_GiB": 320,
+    "node_memory_MB_minimum": 385600
+  }
+}

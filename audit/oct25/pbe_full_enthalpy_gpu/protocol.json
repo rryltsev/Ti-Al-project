@@ -1,0 +1,159 @@
+{
+  "remote": "/home6/u3129/tial-testsets/pbe-full-enthalpy-gpu-20261025-01",
+  "models": {
+    "5000": {
+      "functional": "PBE",
+      "step": 5000,
+      "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-5000.pt",
+      "sha256": "59c9a637757b6d3bacc2ba87e78cc8861375ef2b0e75c37384e2e2c9211471ac",
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-5000.pt",
+      "article_checkpoint": true
+    },
+    "15000": {
+      "functional": "PBE",
+      "step": 15000,
+      "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-15000.pt",
+      "sha256": "39506ecf42a49193717af8351521678b8665f662faf8fc374fec121f366feaaf",
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-15000.pt",
+      "article_checkpoint": false
+    },
+    "20000": {
+      "functional": "PBE",
+      "step": 20000,
+      "local_path": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\DPA4-checkpoints\\TiAl_tune_pbe_Neo_DPA4_shard_20260920_140047\\output_model\\ckpt\\model.ckpt-20000.pt",
+      "sha256": "3b0b4b69f8fca7be5bae4a5f24498aac904efad08f126f4a57de035e0379c67e",
+      "path": "/home6/u3129/tial-testsets/pbe-checkpoint-sweep-20261025-01/checkpoint-20000.pt",
+      "article_checkpoint": false
+    }
+  },
+  "states": [
+    {
+      "composition": "Ti",
+      "x_Al": 0.0,
+      "initial_file": "Ti.traj",
+      "initial_sha256": "e4352421249150526a2651078374ddbf74646912f4ae80c7143611eeb1fd4dfd",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Ti_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 110.0,
+      "seed": 20261025
+    },
+    {
+      "composition": "Al",
+      "x_Al": 1.0,
+      "initial_file": "Al.traj",
+      "initial_sha256": "9048fd5052a2e00c69870ac9cea4dcd8cfef9a4507a086714678d8e6de60a090",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 76.0,
+      "seed": 20261126
+    },
+    {
+      "composition": "Al0.1Ti0.9",
+      "x_Al": 0.1,
+      "initial_file": "Al0.1Ti0.9.traj",
+      "initial_sha256": "a49bc0f05810e3feb7789a75492099eb88b229e3f5f46b7680ee3ca64654d83a",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.1Ti0.9_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 106.6,
+      "seed": 20270202
+    },
+    {
+      "composition": "Al0.2Ti0.8",
+      "x_Al": 0.2,
+      "initial_file": "Al0.2Ti0.8.traj",
+      "initial_sha256": "a5052e1656e87938f697f1c80fc4bf3d999188996e6e73969b3eba9bda2f0791",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.2Ti0.8_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 103.2,
+      "seed": 20270303
+    },
+    {
+      "composition": "Al0.3Ti0.7",
+      "x_Al": 0.3,
+      "initial_file": "Al0.3Ti0.7.traj",
+      "initial_sha256": "74519aa939282eb068f68172b15cd7f25e64463d57d1241bdeac411f18f4a404",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.3Ti0.7_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 99.8,
+      "seed": 20261227
+    },
+    {
+      "composition": "Al0.4Ti0.6",
+      "x_Al": 0.4,
+      "initial_file": "Al0.4Ti0.6.traj",
+      "initial_sha256": "bc4d1ca2808d419d3f5ff767e682844e5ae57b580fee285f18a097e121427751",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.4Ti0.6_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 96.4,
+      "seed": 20270505
+    },
+    {
+      "composition": "Al0.5Ti0.5",
+      "x_Al": 0.5,
+      "initial_file": "Al0.5Ti0.5.traj",
+      "initial_sha256": "96c61d6e7981daf1ac31a13f74b687e296b834cfc3c20af8a116708a2c531d35",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.5Ti0.5_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 93.0,
+      "seed": 20261328
+    },
+    {
+      "composition": "Al0.6Ti0.4",
+      "x_Al": 0.6,
+      "initial_file": "Al0.6Ti0.4.traj",
+      "initial_sha256": "baf059363b3cb43e40c03bea12396d639bbddd5b270fe028f02c472f15aca7a1",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.6Ti0.4_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 89.6,
+      "seed": 20270707
+    },
+    {
+      "composition": "Al0.7Ti0.3",
+      "x_Al": 0.7,
+      "initial_file": "Al0.7Ti0.3.traj",
+      "initial_sha256": "fbedddee934e1b8e9a219144040d3a532a9ca4c54e412c00089303385b3cb245",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.7Ti0.3_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 86.2,
+      "seed": 20270808
+    },
+    {
+      "composition": "Al0.8Ti0.2",
+      "x_Al": 0.8,
+      "initial_file": "Al0.8Ti0.2.traj",
+      "initial_sha256": "2066c4362556da8770a741cd1220c78134df5a6f359efc4d8aec13f0c2c47988",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.8Ti0.2_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 82.8,
+      "seed": 20270909
+    },
+    {
+      "composition": "Al0.9Ti0.1",
+      "x_Al": 0.9,
+      "initial_file": "Al0.9Ti0.1.traj",
+      "initial_sha256": "1f546ff785265ebdda3886f2e07c999dfdf4a1dfadb0743e26718fe25dcb9310",
+      "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\mixing_enthalpy\\dpa4\\neo\\finetune\\AlTi\\2000K\\pbe\\Al0.9Ti0.1_2000K.traj",
+      "initial_frame": 300,
+      "bulk_modulus_GPa": 79.4,
+      "seed": 20271010
+    }
+  ],
+  "tasks_sha256": "42613c0351781edcac050ee81a3b4c033ee0ee2219a39b9b5c2a48c2bbde9ba8",
+  "T_K": 2000,
+  "P_bar": 1,
+  "dt_fs": 1,
+  "ttime_fs": 25,
+  "equil_steps": 30000,
+  "production_steps": 30000,
+  "thermo_interval": 10,
+  "trajectory_interval": 100,
+  "n_atoms": 200,
+  "barostat": "ASE MelchionnaNPT; pfactor=(25 fs)^2 B; fraction_traceless=0",
+  "initialization": "Final archived 5k liquid snapshot, new seeded velocities; 30 ps equilibration for each model. Production velocities reinitialized as in the original script.",
+  "enthalpy": "Primary H=(Epot+Ekin+P_external*V)/N; also store instantaneous positive-compression P and legacy sign for traceability.",
+  "comparison": "Archived 5k trajectories reprocessed identically. Same random velocity seeds across checkpoints per composition; trajectories are not statistically paired samples.",
+  "uncertainty": "Five and ten contiguous production blocks; report conservative SEM and half-trajectory drift. One trajectory per composition/model; extend if inconclusive.",
+  "scope": "All eleven compositions at 2000 K for PBE 15k and 20k. One Slurm job, two A100 GPU workers, one checkpoint per GPU, sequential compositions within each worker.",
+  "gpu_validation": "CPU/GPU predictions on all eleven initial structures before MD. No TF32, AMP, Triton or compile acceleration.",
+  "allocation_wall_hours": 24
+}

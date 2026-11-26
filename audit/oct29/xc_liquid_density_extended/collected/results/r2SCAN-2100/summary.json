@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "state": {
+    "id": "r2SCAN-2100",
+    "functional": "r2SCAN",
+    "key": "scan",
+    "checkpoint": 23200,
+    "phase": "liquid",
+    "T_K": 2100,
+    "N": 200,
+    "initial_file": "r2SCAN-2100.traj",
+    "initial_sha256": "b4676540039f7f6b8c113a75de4bf5829be62a3cec4ee6c52e00f05b42d1653b",
+    "initial_source": "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\models_check_wsl2\\results\\density\\dpa4\\neo\\finetune\\Ti\\scan\\liquid\\T_2100K\\trajectory.traj",
+    "source_sha256": "8204472e40e0ebbe32678bcf2e8d77c13bdd2aff3c79219fb678f26afa06a2d3",
+    "archived_last_energy_eV": -2489.2718813143856,
+    "bulk_modulus_GPa": 110.0,
+    "seed": 202610764,
+    "equil_steps": 10000,
+    "production_steps": 90000
+  },
+  "job_id": "20968916",
+  "device": {
+    "name": "NVIDIA A100-PCIE-40GB",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "deepmd_device": "cuda:0"
+  },
+  "model_sha256": "8b2c339bf472564aee4ff62a2b2f390349d2d8fa20617e38d09c63e3d03db309",
+  "protocol_sha256": "d90b9fb94eb608253a6432284c452dd83ca59b284de8ff0e577795a14060adfc",
+  "worker_sha256": "7ae0dcf3bbd1c6e6bb91083f724c9a945eb52083a97e5b535bf3e355020ba1c5",
+  "common_sha256": "be0a57c89c05c08cd90330fd4d59e61baa7a9c490b2e38f6a4a5a5dddad4f567",
+  "wall_seconds": 4168.980041638017,
+  "equil_seconds": 423.2603619284928,
+  "production_seconds": 3745.2729694135487,
+  "rho_g_cm3": 4.299608164633003
+}

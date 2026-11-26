@@ -1,0 +1,121 @@
+[
+  {
+    "model": "atat_static",
+    "T_K": 1600.0,
+    "N": 5120,
+    "windows": 69,
+    "TI_contacts": [
+      {
+        "alpha_at_pct": 23.1289063894184,
+        "alpha2_at_pct": 24.818792864819926,
+        "window_edge": false,
+        "order_left": 0.0702964258667233,
+        "order_right": 0.7728770670339857,
+        "order_direction": "rising",
+        "order_se_left": 0.0034151012854841123,
+        "order_se_right": 0.0013266392900043037,
+        "bootstrap_midpoint_match": {
+          "resolved": 300,
+          "alpha_95": [
+            23.033518520664657,
+            23.229921409515285
+          ],
+          "alpha2_95": [
+            24.767716270016045,
+            24.87209335261119
+          ],
+          "width_95": [
+            1.6198964839789258,
+            1.7398771898194147
+          ]
+        }
+      },
+      {
+        "alpha_at_pct": 31.04837436881489,
+        "alpha2_at_pct": 31.668332720737347,
+        "window_edge": false,
+        "order_left": 0.6345078226550223,
+        "order_right": 0.2791322690551491,
+        "order_direction": "falling",
+        "order_se_left": 0.01744446608853875,
+        "order_se_right": 0.030961499344270626,
+        "bootstrap_midpoint_match": {
+          "resolved": 192,
+          "alpha_95": [
+            30.94055726243129,
+            31.08747870170103
+          ],
+          "alpha2_95": [
+            31.614581387598953,
+            31.784694840556845
+          ],
+          "width_95": [
+            0.524961924962513,
+            0.8460260451587259
+          ]
+        }
+      }
+    ],
+    "min_width_at_pct": 0.5,
+    "largest_unthresholded_interior_width_at_pct": 1.6898864754015257,
+    "bootstrap_conditional": {
+      "draws": 300,
+      "resolved": 300,
+      "blocks_per_replica": 20,
+      "baseline_interior_candidates": 2,
+      "draws_without_interior_contact": 0,
+      "draws_with_one_interior_contact": 108,
+      "draws_with_multiple_interior_contacts": 192,
+      "draws_invalid": 0,
+      "alpha_95": [
+        23.033518520664657,
+        23.229921409515285
+      ],
+      "alpha2_95": [
+        24.767716270016045,
+        24.87209335261119
+      ],
+      "width_95": [
+        1.6198964839789258,
+        1.7398771898194147
+      ]
+    },
+    "WHAM": {
+      "overlap_components": 1,
+      "offset_gradient_max_abs": 1.0489324452372375e-09,
+      "status": "connected",
+      "contacts": [
+        {
+          "alpha_at_pct": 23.06640625,
+          "alpha2_at_pct": 24.74609375,
+          "window_edge": false,
+          "order_left": 0.0672567512217809,
+          "order_right": 0.7663749934731082,
+          "order_direction": "rising",
+          "order_se_left": 0.0022652489146712798,
+          "order_se_right": 0.0014220551500694044
+        },
+        {
+          "alpha_at_pct": 31.25,
+          "alpha2_at_pct": 31.874999999999996,
+          "window_edge": false,
+          "order_left": 0.5291399221974304,
+          "order_right": 0.19909744049025013,
+          "order_direction": "falling",
+          "order_se_left": 0.02392403437645435,
+          "order_se_right": 0.01918674547988851
+        },
+        {
+          "alpha_at_pct": 33.7109375,
+          "alpha2_at_pct": 34.21875,
+          "window_edge": true,
+          "order_left": 0.07614991496741322,
+          "order_right": 0.07356093749999737,
+          "order_direction": "uncertain",
+          "order_se_left": 0.0012249719689452854,
+          "order_se_right": 0.000992481826286209
+        }
+      ]
+    }
+  }
+]

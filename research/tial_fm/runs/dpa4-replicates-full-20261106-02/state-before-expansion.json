@@ -1,0 +1,322 @@
+{
+  "latest_audit_run": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\initial-audit-20261106-01",
+  "status": "B0_H0_passed_PBE_LoRA_running",
+  "new_DFT_jobs": 0,
+  "summary": {
+    "run_id": "initial-audit-20261106-01",
+    "selected": 1000,
+    "sizes": {
+      "250": 104,
+      "216": 880,
+      "256": 16
+    },
+    "matched_label_geometries": 2990,
+    "historical_counts": {
+      "PBE": {
+        "train": 850,
+        "validate": 149
+      },
+      "PBEsol": {
+        "train": 849,
+        "validate": 149
+      },
+      "r2SCAN": {
+        "train": 845,
+        "validate": 148
+      }
+    },
+    "common_label_triples": 992,
+    "common_historical_train": 658,
+    "common_historical_validation": 14,
+    "known_parent_geometries": 120,
+    "unresolved_parent_geometries": 880,
+    "parent_overlap_counts": {
+      "PBE": 11,
+      "PBEsol": 14,
+      "r2SCAN": 11
+    },
+    "common_atoms": 218346,
+    "labels_by_role": {
+      "PBE": {
+        "train": {
+          "geometries": 850,
+          "atoms": 187220
+        },
+        "validate": {
+          "geometries": 149,
+          "atoms": 32740
+        }
+      },
+      "PBEsol": {
+        "train": {
+          "geometries": 849,
+          "atoms": 186982
+        },
+        "validate": {
+          "geometries": 149,
+          "atoms": 32728
+        }
+      },
+      "r2SCAN": {
+        "train": {
+          "geometries": 845,
+          "atoms": 186186
+        },
+        "validate": {
+          "geometries": 148,
+          "atoms": 32410
+        }
+      }
+    },
+    "fixed_external_geometries": 49,
+    "missing_external": {
+      "id": "TiAl-test-025",
+      "reason": "User explicitly requested cancellation of the sole pending r2SCAN task and cessation of Test50 monitoring on 2026-11-04.",
+      "state": "cancelled_before_execution"
+    },
+    "new_DFT_jobs": 0,
+    "new_training_jobs": 0,
+    "new_model_evaluations": 0,
+    "elapsed_seconds": 65.18393030017614,
+    "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "geometry_match_tolerance_A": 5e-05,
+    "baseline_arithmetic": "PASS",
+    "phonon_arithmetic": "PASS",
+    "scientific_gates": {
+      "data": "blocked_parent_independence",
+      "B0": "partial_cached_raw_reproduction",
+      "H0": "partial_FT_only_no_original_FM"
+    }
+  },
+  "updated_local_date": "2026-11-06",
+  "stage": "DPA4_N200_pilot_completed",
+  "new_training_jobs": 4,
+  "external_shared_parent_structures": 24,
+  "installed_lora_policy": "configs/installed_lora_policy.json",
+  "backend_source_permission": "explicit_user_approval_received_and_transfer_verified",
+  "next_actions": [
+    "Repeat both DPA4 adaptation candidates with at least three training seeds before selecting a winner.",
+    "Run the matched full eligible train694 control and compare with N200; currently planned, not submitted.",
+    "Keep new test149 excluded from pilot tuning and keep archived benchmark49 separate."
+  ],
+  "training_launch_ready": true,
+  "git": {
+    "commit": null,
+    "reason": "unborn repository; author identity not configured; no remote"
+  },
+  "reports": [
+    "reports\\00_inventory.md",
+    "reports\\01_baseline_reproduction.md",
+    "reports\\02_phonon_baseline.md",
+    "reports\\07_grouped_split.md",
+    "reports\\08_n200_pilot.md",
+    "reports\\09_energy_field_audit.md",
+    "reports\\10_original_harmonics.md",
+    "reports\\11_baseline_pilot_status.md",
+    "reports\\summary.md",
+    "reports\\summary_initial_20261106.md",
+    "reports/12_n200_pilot_comparison.md"
+  ],
+  "active_dataset": {
+    "version": "common992-grouped-v1-20261106-02",
+    "root": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\datasets\\common992-grouped-v1-20261106-02",
+    "split_sha256": "e42b72b9741dee2b94c197906e6b96d6d2ec8ca6f90caef1e15553a10f89180c",
+    "manifest_sha256": "3c288164cffbd00adedd667ab9a8b85cf2aa21ce41b1d8c8e3cf55fa68d7628d",
+    "counts": {
+      "train": 694,
+      "validation": 149,
+      "test": 149
+    },
+    "verification": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\datasets\\common992-grouped-v1-20261106-02\\verification.json",
+    "paired_label_records": 2976,
+    "guarantee_scope": "Fixed-nTi/fixed-nAl trajectories and their relaxation descendants, per documented scripts",
+    "exact_liquid_trajectory_ids_recovered": false,
+    "old_test49": "archival_diagnostic_only"
+  },
+  "current_run": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02",
+  "N200": {
+    "geometries": 200,
+    "atoms": 44034,
+    "groups": 83,
+    "families": {
+      "unresolved_liquid_relax_pool": 176,
+      "POSCAR_gamma_AlTi_L1_0": 10,
+      "POSCAR_beta-Ti-bcc": 11,
+      "POSCAR_alpha-Ti-hcp_orthogonal": 3
+    },
+    "label_budget_per_XC": {
+      "train": 200,
+      "development": 149,
+      "train_plus_development": 349,
+      "test": 149
+    }
+  },
+  "updated_UTC": "2026-11-06T10:42:57.573827+00:00",
+  "resource_authorization": {
+    "account": "imet-2026-2",
+    "source": "phonons/config/protocol.json",
+    "explicit_current_user_request": true,
+    "cumulative_agent_imposed_limit": null,
+    "concurrent_new_GPU_jobs": 1,
+    "respect_scheduler_and_storage_limits": true
+  },
+  "jobs": {
+    "baseline-continuation-submission": {
+      "job_id": "20988446",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --dependency=afterany:20988440 --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=24G --time=00:45:00 --job-name=TiAl-FM-B0-resume --output=baseline-continuation-%j.log baseline-continuation.sbatch",
+      "reason": "CPU freeze plus native prediction throughput may exceed initial45min. Only a TIMEOUT resumes completed system files; other unexplained failures stop. Already-complete B0 returns without duplicated evaluations."
+    },
+    "baseline-submission": {
+      "job_id": "20988440",
+      "remote_root": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02",
+      "utc": "2026-11-06T09:51:36.490070+00:00",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && test ! -e baseline-submission.txt && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=24G --time=00:45:00 --job-name=TiAl-FM-B0-H0 --output=baseline-%j.log baseline.sbatch | tee baseline-submission.txt"
+    },
+    "harmonic-early-submission": {
+      "job_id": "20988449",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=16G --time=00:10:00 --job-name=TiAl-H0-independent --output=harmonic-early-%j.log harmonic-early.sbatch",
+      "reason": "H0 uses only9 reference structures and is independent of the1494 bulk B0 predictions. Evaluate concurrently to remove unnecessary serial waiting."
+    },
+    "harmonic-modes-submission": {
+      "job_id": "20988444",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --dependency=afterok:20988442 --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=8G --time=00:10:00 --job-name=TiAl-H0-modes --output=harmonic-modes-%j.log harmonic-modes.sbatch"
+    },
+    "harmonic-submission": {
+      "job_id": "20988442",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && test ! -e harmonic-v2-submission.txt && sbatch --parsable --dependency=afterany:20988440 --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=16G --time=00:15:00 --job-name=TiAl-FM-H0 --output=harmonic-v2-%j.log harmonic-v2.sbatch | tee harmonic-v2-submission.txt"
+    },
+    "pilot-analysis-submission": {
+      "job_id": "20988460",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --dependency=aftercorr:20988454 --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=4G --time=00:05:00 --array=0-3 --job-name=TiAl-pilot-metrics --output=pilot-metrics-%A_%a.log pilot-analysis.sbatch",
+      "scope": "After each corresponding successful GPU task, calculate train/development-only metrics and conservative-group confidence intervals; test remains excluded."
+    },
+    "projection-submission": {
+      "job_id": "20988452",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=8G --time=00:05:00 --job-name=TiAl-H0-projection --output=projection-%j.log projection-check.sbatch",
+      "reason": "Newly observed imaginary branches require distinguishing model response from force-constant projection artifacts."
+    },
+    "runtime-mask-submission": {
+      "job_id": "20988445",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=12G --time=00:05:00 --job-name=TiAl-FM-mask --output=runtime-mask-%j.log runtime-mask.sbatch"
+    },
+    "trained-QC-submission": {
+      "final": {
+        "job_id": "20988469",
+        "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=12G --time=00:10:00 --dependency=aftercorr:20988454 --array=0-3 --job-name=TiAl-pilot-QC --output=pilot-QC-%A_%a.log trained-QC.sbatch"
+      },
+      "first_checkpoint": {
+        "job_id": "20988473",
+        "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=12G --time=00:10:00 --job-name=TiAl-LoRA-1000-QC --output=checkpoint1000-QC-%j.log checkpoint1000-QC.sbatch"
+      }
+    },
+    "trainer-zero-submission": {
+      "job_id": "20988447",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=24G --time=00:20:00 --job-name=TiAl-FM-zero --output=trainer-zero-%j.log trainer-zero.sbatch"
+    },
+    "training-submission": {
+      "job_id": "20988454",
+      "remote_root": "/home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02",
+      "dependency_afterok": "20988446",
+      "utc": "2026-11-06T10:36:30.794850+00:00",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02/training-plan01 && test ! -e submission.txt && sbatch --parsable --dependency=afterok:20988446 --account=imet-2026-2 --partition=v100 --gres=gpu:1 --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=40G --time=04:00:00 --array=0-3%1 --job-name=TiAl-N200-pilot --output=pilot-%A_%a.log train-v3.sbatch | tee submission.txt",
+      "gate_policy": "Numerical B0, H0, backend/runtime masks and all four zero-step initializations passed at submission. Array cannot start until bulk B0 continuation succeeds; actual observer rechecks B0 and H0 summary PASS before constructing trainer.",
+      "cases": [
+        "PBE-lora16",
+        "PBE-full",
+        "r2SCAN-lora16",
+        "r2SCAN-full"
+      ],
+      "max_simultaneous_new_GPUs": 1,
+      "optimizer_steps_executed_at_submission": 0
+    },
+    "pilot-physical-diagnostics-v1": {
+      "job_id": "20988553",
+      "command": "cd /home6/u3129/tial-fm-research/dpa4-n200-pilot-20261106-02 && sbatch --parsable --account=imet-2026-2 --partition=apollo --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=8G --time=00:05:00 --job-name=TiAl-pilot-physics --output=pilot-physical-diagnostics-v1-%j.log pilot-physical-diagnostics-v1.sbatch",
+      "source_sha256": {
+        "analyze_pilot_physics_v1.py": "5fd96b717cf21ac219634fdfd54b4f73f6953682d0ed1fc53bcae1016355ce6c",
+        "pilot-physical-diagnostics-v1.sbatch": "563d0973c1d614b8747b802c6d5c8f068cf8695e2a53d17e68dd54866fffa59b"
+      },
+      "scope": "Saved FC postprocessing only; no new model forces or DFT."
+    }
+  },
+  "current_gates": {
+    "B0": "PASS",
+    "H0": "PASS",
+    "FT": "pending_multiseed_and_full_train_confirmation"
+  },
+  "completed_training_jobs": 4,
+  "runtime_masks": {
+    "full_trainable": 1124686,
+    "lora_trainable": 325158,
+    "lora_adapters": 285696
+  },
+  "first_pilot_progress": {
+    "steps": 10000,
+    "frames": 10000,
+    "atoms": 2201898,
+    "training_seconds": 2185.2014177609235,
+    "peak_cuda_allocated_bytes": 3831363072,
+    "peak_cuda_reserved_bytes": 4341104640,
+    "job_id": "20988457"
+  },
+  "first_verified_training_checkpoint": 1000,
+  "completed_CPU_allocated_hours": 4.626111111111112,
+  "latest_progress_snapshot": {
+    "snapshot": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02\\progress-snapshots\\20261106T133122Z.json",
+    "utc": "2026-11-06T13:31:21.799806+00:00"
+  },
+  "label_field_audit": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\label-fields-20261106-02",
+  "baseline_metrics": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02\\baseline-analysis\\metrics.json",
+  "trained_checkpoint_numerical_QC": {
+    "checkpoint": 1000,
+    "status": "PASS",
+    "job_id": "20988473",
+    "evidence_snapshot": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02\\progress-snapshots\\20261106T105701Z.json"
+  },
+  "updated_utc": "2026-11-06T13:41:31.874913+00:00",
+  "pilot_comparison": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02\\comparison-v1\\comparison.json",
+  "final_pilot_numerical_QC": {
+    "PBE-lora16": "PASS",
+    "PBE-full": "PASS",
+    "r2SCAN-lora16": "PASS",
+    "r2SCAN-full": "PASS"
+  },
+  "completed_pilots": {
+    "PBE-lora16": {
+      "status": "completed",
+      "steps": 10000,
+      "slurm_task": "20988454_0",
+      "model_sha256": "43eb4a388b321d882bbb429a5931a1e6447afca6f5ccd0bec05152d8063975c8",
+      "merged_weights": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02\\collected-pilots\\training-plan01\\cases\\PBE-lora16\\merged\\10000.pt"
+    },
+    "PBE-full": {
+      "status": "completed",
+      "steps": 10000,
+      "slurm_task": "20988454_1",
+      "model_sha256": "4060086208e4735e78bd52f3637f0f7fd4a350b883878b6a3d5bfcc564facf73",
+      "merged_weights": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02\\collected-pilots\\training-plan01\\cases\\PBE-full\\merged\\10000.pt"
+    },
+    "r2SCAN-lora16": {
+      "status": "completed",
+      "steps": 10000,
+      "slurm_task": "20988454_2",
+      "model_sha256": "a9a16d1abb76fbca781337601b34abf1abbf873860f0953ddbc3857aebf13c56",
+      "merged_weights": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02\\collected-pilots\\training-plan01\\cases\\r2SCAN-lora16\\merged\\10000.pt"
+    },
+    "r2SCAN-full": {
+      "status": "completed",
+      "steps": 10000,
+      "slurm_task": "20988454_3",
+      "model_sha256": "0e43c963fdf0daa29553800e15d2ff70c4946e88a1a72da42db824d54ce060a6",
+      "merged_weights": "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\research\\tial_fm\\runs\\dpa4-n200-pilot-20261106-02\\collected-pilots\\training-plan01\\cases\\r2SCAN-full\\merged\\10000.pt"
+    }
+  },
+  "pilot_resource_accounting": {
+    "GPU_hours": 2.7530555555555556,
+    "allocated_CPU_hours_training_evaluation_QC": 11.400555555555556,
+    "extra_saved_FC_diagnostic_CPU_hours": 0.008055555555555555,
+    "new_DFT_jobs": 0,
+    "scope": "Four GPU array tasks include training/export/predictions/harmonics, plus four metrics and four numerical-QC tasks. Earlier B0/H0/preflight costs are separate."
+  }
+}

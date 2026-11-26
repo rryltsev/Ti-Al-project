@@ -1,0 +1,46 @@
+{
+  "checked_unix": 1793929371.0318964,
+  "protected_files_unchanged": true,
+  "article_compiled": false,
+  "article_profile_changed": false,
+  "r2scan_unchanged": true,
+  "temperatures": [
+    1873,
+    1941,
+    2000,
+    2100
+  ],
+  "replicas": [
+    35,
+    25,
+    35,
+    40
+  ],
+  "pdf_pages": 1,
+  "labels_without_checkpoint_identifiers": true,
+  "arrhenius_fit_PBE": {
+    "a": -0.7034662641399669,
+    "B_K": 3458.5368299771158,
+    "eta0_mPa_s": 0.494866987749543,
+    "covariance_a_b": [
+      [
+        0.05475511661309026,
+        -0.10891564145414467
+      ],
+      [
+        -0.10891564145414469,
+        0.21706805816037666
+      ]
+    ],
+    "b_definition": "coefficient of 1000/T",
+    "chi2": 2.4341446467601444,
+    "dof": 2,
+    "weight_definition": "(eta/SE)^2 in ln(eta) regression; covariance not rescaled"
+  },
+  "output_sha256": {
+    "png": "ad2f45710d16729a1191ee117656f10d6b190e5a33c10526cbd2fccad6a91e85",
+    "pdf": "30831820db31a306fade483258a8952240dd8c9beea750a8dea698316da7796a",
+    "svg": "47cad62474be0bc33ba25b8cf5a3a5e923c86922471c604ea47f5286cdc03b8d"
+  },
+  "visual_review": "PASS:PNG and rendered PDF inspected;four current PBE points and error bars,reference series and fitted curves visible;no clipped labels."
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "steps": 1,
+  "trainable": 21112778,
+  "changed_tensors": [
+    "0:I1/reducing_A:0",
+    "1:I1/reducing_AA:0",
+    "2:I1/reducing_AAA:0",
+    "3:I1/reducing_AAAA:0",
+    "4:I2/reducing_B:0",
+    "5:I2/reducing_BB:0",
+    "6:I2/reducing_BBB:0",
+    "7:I2/reducing_BBBB:0",
+    "8:LinMLPOut2ScalarTarget_MLP_layer0/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer0__:0",
+    "9:LinMLPOut2ScalarTarget_MLP_layer1/DenseLayer_LinMLPOut2ScalarTarget_MLP_layer1__:0",
+    "10:rho/reducing_A:0",
+    "11:rho/reducing_AA:0",
+    "12:rho/reducing_AAA:0",
+    "13:rho/reducing_AAAA:0"
+  ],
+  "frozen_changed": [],
+  "optimizer_iterations": 1,
+  "fresh_optimizer": true,
+  "recent_step_seconds": [
+    25.582672245800495
+  ],
+  "first5_batch_hashes": [
+    "607d5f04133cbf83e879120a7ae1024102eac924b2be9e7046fa2ee83fd59171"
+  ],
+  "GPU_memory": {
+    "current": 831231232,
+    "peak": 2074609920
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "unix": 1793479915.916475,
+  "clock": {
+    "returncode": 0,
+    "stdout": "2026-11-01T01:51:55+05:00\n",
+    "stderr": ""
+  },
+  "source": "testset\\dft\\scf-check-20261101\\snapshot-1793479915.json",
+  "targets": {
+    "TiAl-test-031": {
+      "last_complete": [],
+      "iteration_in_progress": 40,
+      "last_loops_min": [
+        11.27388,
+        10.640234999999999,
+        8.767536666666667,
+        8.280825,
+        7.183601666666666
+      ],
+      "converged": true,
+      "outcar_age_s": 868.3535711765289,
+      "warnings": [],
+      "slurm": {
+        "JobState": "RUNNING",
+        "RunTime": "08:39:19",
+        "TimeLimit": "20:00:00",
+        "EndTime": "2026-11-01T13:12:36"
+      }
+    },
+    "TiAl-test-039": {
+      "last_complete": [],
+      "iteration_in_progress": 37,
+      "last_loops_min": [
+        12.614471666666667,
+        12.084488333333333,
+        11.113798333333333,
+        9.943258333333334,
+        7.25375
+      ],
+      "converged": true,
+      "outcar_age_s": 551.1235134601593,
+      "warnings": [],
+      "slurm": {
+        "JobState": "RUNNING",
+        "RunTime": "07:47:53",
+        "TimeLimit": "20:00:00",
+        "EndTime": "2026-11-01T14:04:03"
+      }
+    },
+    "TiAl-test-048": {
+      "last_complete": [
+        {
+          "n": 29,
+          "dE_eV": 0.0001492866,
+          "deps_eV": -7.129483e-05
+        },
+        {
+          "n": 30,
+          "dE_eV": 3.599154e-06,
+          "deps_eV": -3.636815e-05
+        },
+        {
+          "n": 31,
+          "dE_eV": 9.238051e-06,
+          "deps_eV": -1.710407e-05
+        },
+        {
+          "n": 32,
+          "dE_eV": 1.469476e-05,
+          "deps_eV": -8.816317e-06
+        },
+        {
+          "n": 33,
+          "dE_eV": 8.615287e-06,
+          "deps_eV": -3.123253e-06
+        }
+      ],
+      "iteration_in_progress": 34,
+      "last_loops_min": [
+        13.587948333333333,
+        13.59848,
+        13.627936666666667,
+        13.471458333333334,
+        13.31422
+      ],
+      "converged": false,
+      "outcar_age_s": 679.2233064174652,
+      "warnings": [],
+      "slurm": {
+        "JobState": "RUNNING",
+        "RunTime": "07:29:20",
+        "TimeLimit": "20:00:00",
+        "EndTime": "2026-11-01T14:22:36"
+      }
+    }
+  },
+  "accounting": {
+    "returncode": 0,
+    "stdout": "JobID|State|ExitCode|Elapsed|Start|End|Timelimit\n20957372_30|RUNNING|0:0|08:39:20|2026-10-31T17:12:36|Unknown|20:00:00\n20957372_38|RUNNING|0:0|07:47:53|2026-10-31T18:04:03|Unknown|20:00:00\n20957372_47|RUNNING|0:0|07:29:20|2026-10-31T18:22:36|Unknown|20:00:00\n",
+    "stderr": ""
+  },
+  "DFT_modified": false
+}

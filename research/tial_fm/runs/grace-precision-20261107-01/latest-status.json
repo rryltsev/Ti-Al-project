@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-07T16:31:48.510386+00:00",
+  "files": {
+    "comparison/cpu/summary.json": {
+      "status": "INCOMPLETE_OR_FAILED",
+      "missing": [
+        "fp32-block0",
+        "fp32-block1",
+        "fp64-block0",
+        "fp64-block1"
+      ]
+    }
+  },
+  "tails": {
+    "CPU-benchmark-20989425.log": [
+      "  File \"/misc/home6/u3129/tial-fm-research/grace-precision-20261107-01/grace_precision_runner.py\", line 46, in main",
+      "    if a.device=='cpu':audit()",
+      "                       ^^^^^^^",
+      "  File \"/misc/home6/u3129/tial-fm-research/grace-precision-20261107-01/grace_precision_runner.py\", line 22, in audit",
+      "    assert name in original.get_variable_to_shape_map(),name",
+      "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "AssertionError: model/instructions/RadialBasis/rc/.ATTRIBUTES/VARIABLE_VALUE",
+      "srun: error: apollo30: task 0: Exited with exit code 1"
+    ],
+    "CPU-analysis-20989426.log": []
+  },
+  "accounting": "JobID|State|Elapsed|ExitCode\n20989425|FAILED|00:00:07|1:0\n20989426|FAILED|00:00:03|1:0\n20989427|PENDING|00:00:00|0:0\n20989428|PENDING|00:00:00|0:0\n",
+  "queue": "             JOBID      STATE       TIME                    NODELIST(REASON)\n          20989428    PENDING       0:00                        (Dependency)\n          20989427    PENDING       0:00          (DependencyNeverSatisfied)\n"
+}

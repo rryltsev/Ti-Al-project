@@ -1,0 +1,255 @@
+{
+  "N": 2304,
+  "shape": "12x12x8",
+  "W": 0.4,
+  "free_axial": 1,
+  "pressure_GPa": 0.0,
+  "source_T_K": [
+    1242.0,
+    1243.0,
+    1244.0,
+    1245.0
+  ],
+  "source_umbrellas": 92,
+  "raw_trajectories": 100,
+  "retained_frames": 12846,
+  "thinning_stride": 8,
+  "T_reference": 1245.0,
+  "configuration_field_reference_eV": 3.545,
+  "Q_divider": 0.37,
+  "search_bounds": [
+    1200.0,
+    1320.0,
+    3.43,
+    3.68
+  ],
+  "gradient_error": 1.86444850072058e-09,
+  "source_overlap_from_rows_to_columns": [
+    [
+      0.4277160784134641,
+      0.14139081190259953,
+      0.2912565058070366,
+      0.13963660387690052
+    ],
+    [
+      0.3162626154525609,
+      0.22289984277671107,
+      0.23947947105204576,
+      0.22135807071868208
+    ],
+    [
+      0.4025465010068345,
+      0.1476670620234354,
+      0.3014294303437712,
+      0.1483570066259586
+    ],
+    [
+      0.307675414987056,
+      0.22468576667083273,
+      0.2404353567116673,
+      0.22720346163044342
+    ]
+  ],
+  "central": {
+    "T_K": 1242.5582302261002,
+    "mu_eV": 3.544650984107679,
+    "x_atpct": 27.176751004439325,
+    "latent_meV_atom": 27.120981542894857,
+    "jump_Q": 0.6421220738295915,
+    "phases": [
+      {
+        "x_atpct": 27.176751004439325,
+        "mean_Q": 0.11659831103244443,
+        "semigrand_meV_atom": 12.094541090288136,
+        "effective_frames": 355.77196267979593
+      },
+      {
+        "x_atpct": 27.17675100443933,
+        "mean_Q": 0.758720384862036,
+        "semigrand_meV_atom": -15.026440452606721,
+        "effective_frames": 353.879184210259
+      }
+    ],
+    "profile": {
+      "Q_modes": [
+        0.0825,
+        0.7925
+      ],
+      "Q_valley": 0.3975,
+      "lower_barrier": 2.5444300228656487
+    }
+  },
+  "divider_sensitivity": [
+    {
+      "cut": 0.32,
+      "estimate": {
+        "T_K": 1242.621366808173,
+        "mu_eV": 3.5447593518377163,
+        "x_atpct": 27.18113603211016,
+        "latent_meV_atom": 27.080886091966818,
+        "jump_Q": 0.644568238177414,
+        "phases": [
+          {
+            "x_atpct": 27.18113603211016,
+            "mean_Q": 0.11104868301145261,
+            "semigrand_meV_atom": 12.242466720756115,
+            "effective_frames": 339.25209899921714
+          },
+          {
+            "x_atpct": 27.181136032110153,
+            "mean_Q": 0.7556169211888667,
+            "semigrand_meV_atom": -14.838419371210705,
+            "effective_frames": 358.5332251907218
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0825,
+            0.7925
+          ],
+          "Q_valley": 0.3975,
+          "lower_barrier": 2.5520749625631733
+        }
+      }
+    },
+    {
+      "cut": 0.37,
+      "estimate": {
+        "T_K": 1242.5582302261002,
+        "mu_eV": 3.544650984107679,
+        "x_atpct": 27.176751004439325,
+        "latent_meV_atom": 27.120981542894857,
+        "jump_Q": 0.6421220738295915,
+        "phases": [
+          {
+            "x_atpct": 27.176751004439325,
+            "mean_Q": 0.11659831103244443,
+            "semigrand_meV_atom": 12.094541090288136,
+            "effective_frames": 355.77196267979593
+          },
+          {
+            "x_atpct": 27.17675100443933,
+            "mean_Q": 0.758720384862036,
+            "semigrand_meV_atom": -15.026440452606721,
+            "effective_frames": 353.879184210259
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0825,
+            0.7925
+          ],
+          "Q_valley": 0.3975,
+          "lower_barrier": 2.5444300228656487
+        }
+      }
+    },
+    {
+      "cut": 0.42,
+      "estimate": {
+        "T_K": 1242.4998418024188,
+        "mu_eV": 3.544544572459945,
+        "x_atpct": 27.172487159975475,
+        "latent_meV_atom": 27.111858049643537,
+        "jump_Q": 0.6385321815869004,
+        "phases": [
+          {
+            "x_atpct": 27.172487159975475,
+            "mean_Q": 0.12275361867769677,
+            "semigrand_meV_atom": 11.921876282841431,
+            "effective_frames": 371.6792334662121
+          },
+          {
+            "x_atpct": 27.17248715997546,
+            "mean_Q": 0.7612858002645971,
+            "semigrand_meV_atom": -15.189981766802106,
+            "effective_frames": 349.7174831266284
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0825,
+            0.7925
+          ],
+          "Q_valley": 0.3925,
+          "lower_barrier": 2.5375800845792007
+        }
+      }
+    },
+    {
+      "cut": 0.47,
+      "estimate": {
+        "T_K": 1242.4392881780393,
+        "mu_eV": 3.5443239428410678,
+        "x_atpct": 27.16414400425759,
+        "latent_meV_atom": 27.054658741141218,
+        "jump_Q": 0.6335994824758971,
+        "phases": [
+          {
+            "x_atpct": 27.16414400425759,
+            "mean_Q": 0.13014030574184401,
+            "semigrand_meV_atom": 11.696359215134219,
+            "effective_frames": 389.26907069773296
+          },
+          {
+            "x_atpct": 27.16414400425759,
+            "mean_Q": 0.7637397882177411,
+            "semigrand_meV_atom": -15.358299526006997,
+            "effective_frames": 346.16407489001904
+          }
+        ],
+        "profile": {
+          "Q_modes": [
+            0.0825,
+            0.7925
+          ],
+          "Q_valley": 0.3925,
+          "lower_barrier": 2.5319666521956083
+        }
+      }
+    }
+  ],
+  "bootstrap_columns": [
+    "T_K",
+    "mu_eV",
+    "x_atpct",
+    "latent_meV_atom",
+    "jump_Q"
+  ],
+  "draws": 0,
+  "seed": 4253129,
+  "resolved": 0,
+  "min_blocks": 3,
+  "one_block_runs": 0,
+  "interval_95": null,
+  "replicates": [],
+  "manifests": [
+    "solvus_cage2304/atomistic/series/cg4042a/windows.csv",
+    "solvus_cage2304/atomistic/series/cg4042b/windows.csv",
+    "solvus_cage2304/atomistic/series/cg4042c/windows.csv",
+    "solvus_cage2304/atomistic/series/cg4043d/windows.csv",
+    "solvus_cage2304/atomistic/series/cg4044a/windows.csv",
+    "solvus_cage2304/atomistic/series/cg4044c/windows.csv",
+    "solvus_cage2304/atomistic/series/cg4045c/windows.csv"
+  ],
+  "pending_at_fit": [
+    "cg4042d",
+    "cg4042e",
+    "cg4043a",
+    "cg4043b",
+    "cg4043c",
+    "cg4043e",
+    "cg4043f",
+    "cg4043g",
+    "cg4044b",
+    "cg4044d",
+    "cg4044e",
+    "cg4045a",
+    "cg4045b",
+    "cg4045d",
+    "cg4045e"
+  ],
+  "historical_windows_allowed": false,
+  "new_ensembles_only": true,
+  "temperature_interpolation": true
+}

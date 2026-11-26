@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-22T08:13:04.522686+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--partition=apollo",
+    "--account=imet-2026-2",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=32",
+    "--ntasks-per-node=32",
+    "--cpus-per-task=1",
+    "--mem=300G",
+    "--time=20:00:00",
+    "--dependency=afterany:20958089",
+    "--kill-on-invalid-dep=yes",
+    "--job-name=tir-PBE-f001",
+    "--chdir=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01",
+    "--output=/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/PBE-production02-force-001-restart01-%j.out",
+    "/home6/u3129/tial-phonons/alpha-ti-xc-phonons-20261021-01/restart-step.sbatch",
+    "PBE",
+    "force-001",
+    "20958089"
+  ],
+  "parent_job": "20958089",
+  "source_hashes": {
+    "checkpoint_guard.py": "dc7f68cc845dff15d5f64e959266a56ec479c57e10e7eeec2a27f783a6e854b2",
+    "restart_step.py": "801b6ac6726c935ae1f864d3acdbeb01a2dc8ccba76a88a675041584c344edfb",
+    "restart-step.sbatch": "5ac5e9079957d597bc45765dead613a8d595fc788dadae301a11d7be44add372"
+  },
+  "job_id": "20958709",
+  "state": "submitted"
+}

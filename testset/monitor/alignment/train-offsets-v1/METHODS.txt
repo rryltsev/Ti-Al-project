@@ -1,0 +1,15 @@
+Training-only elemental reference alignment of DPA4-Neo (2026-10-22)
+
+E_aligned = E_pretrained + N_Al*c_Al + N_Ti*c_Ti; coefficients in eV per atom of each element.
+Unregularized least squares of per-atom training energy residuals, equal weight per frame.
+Original training splits only; validation and Test50 energy labels are excluded. No outlier removal.
+The weights, forces, stresses and raw prediction files are unchanged.
+
+PBE: train N=850, c_Al=0.00248986365685989, c_Ti=0.00161766390705942; current test N=6, aligned MAE=1.709725, RMSE=2.172483 meV/atom.
+PBEsol: train N=849, c_Al=-0.314429835658666, c_Ti=-0.487109856667227; current test N=6, aligned MAE=40.229765, RMSE=44.888702 meV/atom.
+r2SCAN: train N=845, c_Al=-2.96038332533863, c_Ti=-5.10337289847203; current test N=6, aligned MAE=22.570629, RMSE=27.569071 meV/atom.
+
+All current test structures are from the liquid pool; solid transferability is not established.
+Reported bootstrap intervals resample whole test structures and condition on fixed training coefficients.
+This variant was user-requested after raw test inspection; it is not a pre-registered blind comparison.
+Foundation pretraining overlap is unknown. The original fine-tuned stopping heuristic is unchanged.

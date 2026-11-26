@@ -1,0 +1,101 @@
+{
+  "d019": {
+    "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+    "source_cell_sha256": "77cf46ab13fe22c6de3cfe7c470255d3a1034f09deb6b3038475d7bbdbdc6d15",
+    "ideal_cfg_sha256": "77cf46ab13fe22c6de3cfe7c470255d3a1034f09deb6b3038475d7bbdbdc6d15",
+    "structure": "d019.cfg",
+    "n_atoms": 8,
+    "species": [
+      "Al",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Al"
+    ],
+    "volume_A3_atom": 17.288329847774037,
+    "volume_ratio": 1.0,
+    "static_eV_atom": -7.121563813430625,
+    "fmax_eV_A": 1e-06,
+    "minimum_internal_THz": 0.3435352428559065,
+    "stable_mesh": true,
+    "supercell": [
+      5,
+      5,
+      6
+    ],
+    "mesh": 16,
+    "n_displacements": 4,
+    "phonopy_version": "4.8.2",
+    "classical_vib_eV_atom": -0.3295460758194231,
+    "quantum_vib_eV_atom": -0.3285332569756471
+  },
+  "interlayer": {
+    "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+    "source_cell_sha256": "7f500f61321a1f1ce2619f3693aa54d46e7ee254d55575ea289970b6a0e65517",
+    "ideal_cfg_sha256": "7f500f61321a1f1ce2619f3693aa54d46e7ee254d55575ea289970b6a0e65517",
+    "structure": "interlayer.cfg",
+    "n_atoms": 8,
+    "species": [
+      "Al",
+      "Al",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti"
+    ],
+    "volume_A3_atom": 17.288329847774037,
+    "volume_ratio": 1.0,
+    "static_eV_atom": -7.008646986594,
+    "fmax_eV_A": 0.0,
+    "minimum_internal_THz": 0.299858036457994,
+    "stable_mesh": true,
+    "supercell": [
+      5,
+      5,
+      6
+    ],
+    "mesh": 16,
+    "n_displacements": 8,
+    "phonopy_version": "4.8.2",
+    "classical_vib_eV_atom": -0.3558475981872001,
+    "quantum_vib_eV_atom": -0.35501098721254365
+  },
+  "basal": {
+    "model_sha256": "704f7fd900c7446286066b741084c30ebc7fcf26e5b9b8fd2f29a18ba4ffd661",
+    "source_cell_sha256": "386a5e11379f4870f0e80585b91e7d3f58dff66e90c5920e6504819a090ae1db",
+    "ideal_cfg_sha256": "386a5e11379f4870f0e80585b91e7d3f58dff66e90c5920e6504819a090ae1db",
+    "structure": "basal.cfg",
+    "n_atoms": 8,
+    "species": [
+      "Al",
+      "Ti",
+      "Al",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti"
+    ],
+    "volume_A3_atom": 17.288329847774037,
+    "volume_ratio": 1.0,
+    "static_eV_atom": -7.0374602824205,
+    "fmax_eV_A": 0.0,
+    "minimum_internal_THz": 0.27638061282054505,
+    "stable_mesh": true,
+    "supercell": [
+      5,
+      5,
+      6
+    ],
+    "mesh": 16,
+    "n_displacements": 8,
+    "phonopy_version": "4.8.2",
+    "classical_vib_eV_atom": -0.34810072511134366,
+    "quantum_vib_eV_atom": -0.34720380105234416
+  }
+}

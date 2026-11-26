@@ -1,0 +1,25 @@
+{
+  "scope": "Existing N694 train and149 development raw archives only. No DFT launched; immutable NPY labels unchanged.",
+  "PBE": "Raw archive not located; PBE energy field remains unresolved.",
+  "missing": [],
+  "results": {
+    "r2SCAN": {
+      "records": 843,
+      "energy_matches": {
+        "e_fr_energy": 843
+      },
+      "force_max_difference_eV_A": 5.000000005139782e-07,
+      "virial_max_difference_eV": 0.002906381770510613,
+      "non_normal": [],
+      "missing_EDIFF_marker": [],
+      "SCF_reached_NELM": [],
+      "settings_variants": {
+        "{\"EDIFF\": \"0.00000100\", \"ENCUT\": \"550.00000000\", \"GGA\": \"--\", \"ISMEAR\": \"1\", \"LASPH\": \"T\", \"LREAL\": \"T\", \"METAGGA\": \"R2SCAN\", \"NELM\": \"100\", \"SIGMA\": \"0.10000000\"}": 843
+      },
+      "POTCAR_titles": [
+        "PAW_PBE Al 04Jan2001",
+        "PAW_PBE Ti_pv 07Sep2000"
+      ]
+    }
+  }
+}

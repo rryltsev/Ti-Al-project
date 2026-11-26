@@ -1,0 +1,123 @@
+{
+  "summary": {
+    "date": "2026-10-27",
+    "PBE_step": 15000,
+    "rho_Ti_1873": {
+      "mean": 4.282801367758014,
+      "sem": 0.0007609701219138806
+    },
+    "rho_Ti_2000": {
+      "mean": 4.260573106572081,
+      "sem": 0.001137957618253871
+    },
+    "density_reference_metrics": {
+      "pbe5k": {
+        "MAE_g_cm3": 0.11601129397563335,
+        "MARE_percent": 3.3759051983650754,
+        "n_compositions": 11
+      },
+      "pbe15k": {
+        "MAE_g_cm3": 0.11167411264131767,
+        "MARE_percent": 3.261963089537758,
+        "n_compositions": 11
+      },
+      "sol": {
+        "MAE_g_cm3": 0.24604228360474115,
+        "MARE_percent": 7.461122750945483,
+        "n_compositions": 11
+      },
+      "scan": {
+        "MAE_g_cm3": 0.18857797512651028,
+        "MARE_percent": 5.832724669474763,
+        "n_compositions": 11
+      }
+    },
+    "melting_bracket_K": [
+      1750,
+      1775
+    ],
+    "benchmark_common_ids": [
+      "TiAl-test-001",
+      "TiAl-test-002",
+      "TiAl-test-003",
+      "TiAl-test-004",
+      "TiAl-test-005",
+      "TiAl-test-006",
+      "TiAl-test-007",
+      "TiAl-test-008",
+      "TiAl-test-009",
+      "TiAl-test-010",
+      "TiAl-test-011",
+      "TiAl-test-012",
+      "TiAl-test-013",
+      "TiAl-test-014",
+      "TiAl-test-015",
+      "TiAl-test-016",
+      "TiAl-test-017",
+      "TiAl-test-018",
+      "TiAl-test-019",
+      "TiAl-test-020",
+      "TiAl-test-026",
+      "TiAl-test-034",
+      "TiAl-test-043"
+    ],
+    "viscosity_replaced_states": [
+      [
+        1873,
+        "Ti"
+      ],
+      [
+        2000,
+        "Ti"
+      ]
+    ],
+    "remaining_PBE_5k": [
+      "Ti thermal density: solid 300--1900 K, liquid 2100--2500 K",
+      "Ti3Al phonons",
+      "STACIE alloy viscosities at 1873 K; Ti at 1941 and 2100 K; historical TDM"
+    ]
+  },
+  "source_sha256": {
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_density_1873\\analysis\\statistics.json": "137fcc21362bdfdbc2daf8839baa7badbc42760e535c6af595bb37d0b7315aec",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\pbe_full_enthalpy_gpu\\analysis\\statistics.json": "06f5f807aba8ae6ee147780dda2d379af8b413d11edf0eb4bd5b756906e3229f",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct20\\reference_values.json": "a725e49008493f182747e4f283f2b21c50c740a9f2beca48edca46ea489d5a97",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct25\\viscosity\\viscosity_merged.json": "27a2eac348c018fbde2c19576714533de78d04409c56d34beab2a83f25a38554",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct27\\viscosity_5k_vs_15k\\comparison.json": "2595b4c0c5984b40a906466a408cf3a9aa73ad1eb786d5b291bd879598844c94",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipline_PBE-15k_27.10.2026\\results\\AlTi\\1873\\pbe\\c_Ti_1.00\\result.json": "c30d10b017bc4d8a08130816aa5b2e45ffe87ee5ff070a6e4c81ac73e4d86873",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\results-scripts-logs\\stacie_pipline_PBE-15k_27.10.2026\\results\\AlTi\\2000\\pbe\\c_Ti_1.00\\result.json": "e430f7ce16238ba0ad785a9bb7ab6b077760eb513d10084501829bc2c39e18fb",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\figures\\liquid_density_pbe15k.pdf": "2ddae254920bbe5134e80927ed3920de01d5577ea8dd64cf852e7bd456106110",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\manuscript\\figures\\liquid_density_pbe15k.png": "9681cabe398ec2e06fec670dd37fbd614b90f9489472b81e23b80ec40c3097b8",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting\\attempt2\\analysis\\15k_1750.npz": "b7ad9cac2b1dd839ca96f77965fd29041a67bf98ff36326f13cb50bc21078379",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting_1775\\analysis\\15k_1775.npz": "2e0b4eab2344556b536dacc399f5246e44b83a17f089e3bb0dce2e87520580a8",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting\\attempt2\\analysis\\15k_1800.npz": "58a1945c2cb51cd6f3095b5773806cf13258e61dfde4799d32304221110c052d",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\melting\\sol_1730_001.npz": "a18de6acace21848ea7c9373f275cb21605dfa932901430c2accf8c8c7fcc7b8",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\melting\\sol_1750_001.npz": "4db07fafd844e00be22fdfe64865a35489c3527efdf46e56568f6c713a9ab003",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\melting\\sol_1770_001.npz": "3a201aeb4eddcd90e704099e478707800d7d20826a63249f3f9b9ef207cf4e35",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\melting\\scan_1850_001.npz": "8dd5f1508b86e25cf6e0da821a8eaddf1be99fb1ea5098a73518e54246a5ae83",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\melting\\scan_1850_002.npz": "2ef7d8c19a14150bfc5c39fc2dc09c5e0696f18fc2d13b7c67ce749a8dfccf80",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\melting\\scan_1860_001.npz": "49d84c793ef8578d147da8f6e0be4acad1999d4ce11605938ad671f42258c43a",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\density_reference\\references.json": "6c202c08891eb2ec70a32528872ef7dbc2428e8959d67527aae375231600e447",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\density_reference\\reiplinger2022_points.json": "ab2f3b6a057c1176c323db8b68adeb6fe5a6ba390c02515918cb57e1d42a2fb3",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\MD-results\\density_DPA4-neo\\density_scan_pbe.csv": "127951d3890fd074f8d3eaec2afeb2a5ab7e6ba74fe3c1c6f7fe0963ef4a621f",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\MD-results\\density_DPA4-neo\\density_scan_sol.csv": "f889cbc15141f1fc1a98908ad087fb1c44bc68432f11060c4f18e702a18a111b",
+    "C:\\Users\\Roman Ryltsev\\Desktop\\STARTUPS\\Ti-Al-X\\TiAl-Project\\MD-results\\density_DPA4-neo\\density_scan_scan.csv": "508dad8867c007a5b4bd74524ad32bf894b5064aba865981e270131ba53343ce",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting\\attempt2\\analysis\\summary.json": "9dff0fbac23ca1a22ea2d562ea43429e71c351bee55f3e639fa38130d2cbe17b",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting_1775\\analysis\\summary.json": "e98fcfab56fa062d1c377c37b6e50d54fa240354cd0cc096863530a601bbce4a",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting_1775\\analysis\\assessment.json": "d446c7b7769b5831b5a8120c9793bb44bc834c9309712af493f0e2fbaccb873a",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct27\\viscosity_5k_vs_15k\\source_manifest.json": "c9e8e50478bd6c072e109b66bb73968d6c72c617909de5d80ce3397121291420",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_density_1873\\protocol.json": "6b58568cd1be1ee29f3b1158e4e3f3e0ff6f55c13cbf3becc6ccb7d50f9ab685",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting\\attempt2\\protocol.json": "3e3e8335e9be6d40784364b6c612a80322798a38b6c4d04a18cedb61025caf8c",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct26\\pbe15k_melting_1775\\protocol.json": "07788907276acdd3658d33110a1090a4c0d497353e80e8a4a9c2647b0f2b63cc",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\model_registry.json": "841a85129df8ec1c1e7951d6e53b0829c52d2c8dd145ec6cef3b99d95630efea",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\results\\n23-1a6fdc00d4d0b30a\\metrics.json": "7c1138909de0592178042804320fec06f5a830f3e2f70e2b1bc7d95ee746b0cb",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\testset\\monitor\\data\\latest.json": "fd965bef37134fb5a8690670117fb0284cba39c54c4bf294589edbae4cfeb74b",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct27\\manuscript_revision\\prepare_assets.py": "b240dfbb2b789ddec50732056140819ddd0bc58cb441774e6c47a38c549883db",
+    "C:\\Users\\Roman Ryltsev\\Documents\\ChatGPT\\TiAl\\audit\\oct27\\manuscript_revision\\revise_text.py": "3e4c484a74c119daf567b43131c77f363451183151dd18b3f87c4b958b66ec27"
+  },
+  "source_chats": {
+    "density": "01a17751-f175-7570-9d76-aee618df648a",
+    "melting": "01a12c64-36f9-7850-92d2-127c677cbe5f",
+    "viscosity": "01a17b96-45dd-7971-b28e-a55f28b9461c",
+    "holdout": "01a15d2f-8c16-7e71-81e0-44fb533aa0b6"
+  }
+}

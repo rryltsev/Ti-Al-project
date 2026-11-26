@@ -1,0 +1,56 @@
+{
+  "unix": 1793158578.483055,
+  "source": "testset\\dft\\scf-check-20261028\\snapshot-1793158578.json",
+  "targets": {
+    "TiAl-test-027": {
+      "latest_complete": {
+        "n": 9,
+        "dE_eV": -8.652905,
+        "deps_eV": -111.9143
+      },
+      "iteration_in_progress": 10,
+      "recent_loop_minutes": [
+        16.773626666666665,
+        28.487283333333334,
+        31.291333333333334,
+        29.688783333333333,
+        25.495816666666666
+      ],
+      "warnings": []
+    },
+    "TiAl-test-035": {
+      "latest_complete": {
+        "n": 21,
+        "dE_eV": 0.03619258,
+        "deps_eV": -0.01577797
+      },
+      "iteration_in_progress": 22,
+      "recent_loop_minutes": [
+        11.844016666666667,
+        11.913896666666666,
+        11.898863333333333,
+        11.893396666666666,
+        11.85097
+      ],
+      "warnings": []
+    },
+    "TiAl-test-044": {
+      "latest_complete": {
+        "n": 30,
+        "dE_eV": 4.999703e-06,
+        "deps_eV": -4.148412e-06
+      },
+      "iteration_in_progress": 31,
+      "recent_loop_minutes": [
+        8.42101,
+        21.527536666666666,
+        6.260975,
+        6.100203333333334,
+        6.096801666666667
+      ],
+      "warnings": []
+    }
+  },
+  "interpretation": "027 progressed from 7 to 9 completed steps, d eps falls 751 -> 330 -> 112 eV and last step accelerated to 25.5 min; early-stage 20h risk remains uncertain, no new deterioration. 035/044 residuals continue to decrease.",
+  "notification_required": false
+}

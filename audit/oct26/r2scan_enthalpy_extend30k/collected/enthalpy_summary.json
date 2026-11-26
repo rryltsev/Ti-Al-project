@@ -1,0 +1,337 @@
+{
+  "status": "completed",
+  "functional": "r2SCAN",
+  "checkpoint": 23200,
+  "T_K": 2000,
+  "P_bar": 1,
+  "old_steps": 30000,
+  "added_steps": 30000,
+  "total_steps_per_composition": 60000,
+  "all_steps_included": true,
+  "duplicate_boundary_excluded": true,
+  "definition": "H=(Epot+Ekin+P_external V)/N; deltaH=H(x)-x H(Al)-(1-x) H(Ti)",
+  "initialization": "Exact final archived positions, cell and momenta. No velocity reseeding, heating, minimization or equilibration. Thermostat/barostat variables reset because they were not archived.",
+  "uncertainty": "Diagnostic SEM from twelve 5 ps blocks (original t=0 excluded only for blocks); composition runs assumed independent. Shared pure-element references correlate errors between concentrations. Restart sensitivity is separate and does not trim the primary estimate.",
+  "protocol_sha256": "cd4bb17c6c11ecea8279bd3ed9c29e9c77ac5bbb15d492f0e72e1293c3ab1448",
+  "compositions": {
+    "Ti": {
+      "x_Al": 0.0,
+      "H_kJ_mol": -1177.5105843130962,
+      "H_old_kJ_mol": -1177.5533052624305,
+      "H_new_kJ_mol": -1177.4677209605977,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.07945006433928123,
+      "old_block_sem_kJ_mol": 0.11614643098837993,
+      "new_block_sem_kJ_mol": 0.11709022200798973,
+      "new_minus_old_kJ_mol": 0.0757669098122733,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -1177.5105843130962,
+        "1": -1177.4963459681715,
+        "2": -1177.5080372313805,
+        "5": -1177.5236555285
+      },
+      "T_mean_K": 1985.450213838411,
+      "rho_mean_g_cm3": 4.312758988510084,
+      "deltaH_kJ_mol": 0.0,
+      "deltaH_old_kJ_mol": 0.0,
+      "deltaH_new_kJ_mol": 0.0,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.0,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "5": 0.0
+      }
+    },
+    "Al0.1Ti0.9": {
+      "x_Al": 0.1,
+      "H_kJ_mol": -1126.268608914716,
+      "H_old_kJ_mol": -1126.2726190242315,
+      "H_new_kJ_mol": -1126.2645854381688,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.128545208352591,
+      "old_block_sem_kJ_mol": 0.21282702784164534,
+      "new_block_sem_kJ_mol": 0.16553444427584318,
+      "new_minus_old_kJ_mol": 0.008963579746932737,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -1126.268608914716,
+        "1": -1126.2834092409598,
+        "2": -1126.2779447475666,
+        "5": -1126.2785175598844
+      },
+      "T_mean_K": 1989.6918226765433,
+      "rho_mean_g_cm3": 4.142808596920478,
+      "deltaH_kJ_mol": -8.665074501043819,
+      "deltaH_old_kJ_mol": -8.633894447659486,
+      "deltaH_new_kJ_mol": -8.696358487939051,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.14738771507848866,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -8.665074501043819,
+        "1": -8.693290862809135,
+        "2": -8.677569053565776,
+        "5": -8.66621575994941
+      }
+    },
+    "Al0.2Ti0.8": {
+      "x_Al": 0.2,
+      "H_kJ_mol": -1074.1388899822703,
+      "H_old_kJ_mol": -1073.927645892406,
+      "H_new_kJ_mol": -1074.350838219101,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.17397236757604553,
+      "old_block_sem_kJ_mol": 0.1553959230878309,
+      "new_block_sem_kJ_mol": 0.30254478886975833,
+      "new_minus_old_kJ_mol": -0.4182206404218505,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -1074.1388899822703,
+        "1": -1074.1516996948703,
+        "2": -1074.1698078354652,
+        "5": -1074.1959856841345
+      },
+      "T_mean_K": 1995.4993330053962,
+      "rho_mean_g_cm3": 3.9679833607855435,
+      "deltaH_kJ_mol": -16.442405468022116,
+      "deltaH_old_kJ_mol": -16.20350200169264,
+      "deltaH_new_kJ_mol": -16.682105279239295,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.18614898189745807,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -16.442405468022116,
+        "1": -16.46780890674063,
+        "2": -16.477093678843858,
+        "5": -16.495037612764577
+      }
+    },
+    "Al0.3Ti0.7": {
+      "x_Al": 0.3,
+      "H_kJ_mol": -1021.25172548468,
+      "H_old_kJ_mol": -1021.6337775318918,
+      "H_new_kJ_mol": -1020.8683999306439,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.16258874422761285,
+      "old_block_sem_kJ_mol": 0.13878502777749424,
+      "new_block_sem_kJ_mol": 0.1938562026743165,
+      "new_minus_old_kJ_mol": 0.7711869270635816,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -1021.25172548468,
+        "1": -1021.281081909146,
+        "2": -1021.2907370603988,
+        "5": -1021.3280836426845
+      },
+      "T_mean_K": 1978.7300631119645,
+      "rho_mean_g_cm3": 3.7903325544797744,
+      "deltaH_kJ_mol": -23.46229086985602,
+      "deltaH_old_kJ_mol": -23.82421432703734,
+      "deltaH_new_kJ_mol": -23.099161001150264,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.17408269563751674,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -23.46229086985602,
+        "1": -23.50341871103717,
+        "2": -23.5056844411572,
+        "5": -23.538489299879757
+      }
+    },
+    "Al0.4Ti0.6": {
+      "x_Al": 0.4,
+      "H_kJ_mol": -966.5140055363712,
+      "H_old_kJ_mol": -966.3418689563428,
+      "H_new_kJ_mol": -966.6867159049999,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.14009613188429504,
+      "old_block_sem_kJ_mol": 0.15470735385771026,
+      "new_block_sem_kJ_mol": 0.2258635727952686,
+      "new_minus_old_kJ_mol": -0.33778330760799236,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -966.5140055363712,
+        "1": -966.5150997883584,
+        "2": -966.5262519990238,
+        "5": -966.5565281488321
+      },
+      "T_mean_K": 1995.026133104912,
+      "rho_mean_g_cm3": 3.6057083438182325,
+      "deltaH_kJ_mol": -28.631620820971193,
+      "deltaH_old_kJ_mol": -28.446886437346848,
+      "deltaH_new_kJ_mol": -28.816970985874264,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.15257808919693758,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -28.631620820971193,
+        "1": -28.643664180270434,
+        "2": -28.648860917161755,
+        "5": -28.678287534592414
+      }
+    },
+    "Al0.5Ti0.5": {
+      "x_Al": 0.5,
+      "H_kJ_mol": -909.6307452451008,
+      "H_old_kJ_mol": -910.0195747450086,
+      "H_new_kJ_mol": -909.24061964686,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.18193457903639765,
+      "old_block_sem_kJ_mol": 0.15117737356913738,
+      "new_block_sem_kJ_mol": 0.24731542572725923,
+      "new_minus_old_kJ_mol": 0.7849925001828524,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -909.6307452451008,
+        "1": -909.6455713383244,
+        "2": -909.6531552025856,
+        "5": -909.6818471748712
+      },
+      "T_mean_K": 1985.4271528081288,
+      "rho_mean_g_cm3": 3.409360887306818,
+      "deltaH_kJ_mol": -31.6554104291248,
+      "deltaH_old_kJ_mol": -32.03917291187145,
+      "deltaH_new_kJ_mol": -31.27036873810232,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.19192612047347984,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -31.6554104291248,
+        "1": -31.68036332025747,
+        "2": -31.68342565810326,
+        "5": -31.714960289196597
+      }
+    },
+    "Al0.6Ti0.4": {
+      "x_Al": 0.6,
+      "H_kJ_mol": -849.8044418764684,
+      "H_old_kJ_mol": -849.4123009525906,
+      "H_new_kJ_mol": -850.1978899367592,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.18930964628807828,
+      "old_block_sem_kJ_mol": 0.09283546216839034,
+      "new_block_sem_kJ_mol": 0.295945754460407,
+      "new_minus_old_kJ_mol": -0.7841269856522786,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -849.8044418764684,
+        "1": -849.794962870199,
+        "2": -849.8127258151826,
+        "5": -849.8282235060203
+      },
+      "T_mean_K": 1987.7243865478354,
+      "rho_mean_g_cm3": 3.2012679043485193,
+      "deltaH_kJ_mol": -31.73615695991657,
+      "deltaH_old_kJ_mol": -31.346479805312015,
+      "deltaH_new_kJ_mol": -32.12713303836961,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.19988676784379045,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -31.73615695991657,
+        "1": -31.735982442152874,
+        "2": -31.75065780807978,
+        "5": -31.772690348910714
+      }
+    },
+    "Al0.7Ti0.3": {
+      "x_Al": 0.7,
+      "H_kJ_mol": -786.2870617961341,
+      "H_old_kJ_mol": -786.297681210085,
+      "H_new_kJ_mol": -786.2764069841368,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.2005603714766197,
+      "old_block_sem_kJ_mol": 0.31921627536776936,
+      "new_block_sem_kJ_mol": 0.2739630911092042,
+      "new_minus_old_kJ_mol": 0.018118973567197827,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -786.2870617961341,
+        "1": -786.2859795147216,
+        "2": -786.2532570747567,
+        "5": -786.1850339676952
+      },
+      "T_mean_K": 1983.1826586999853,
+      "rho_mean_g_cm3": 2.967598453589869,
+      "deltaH_kJ_mol": -28.125826779006275,
+      "deltaH_old_kJ_mol": -28.146440748665043,
+      "deltaH_new_kJ_mol": -28.10514409611511,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.21218154743591228,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -28.125826779006275,
+        "1": -28.133226676696324,
+        "2": -28.098850605033533,
+        "5": -28.040854539150587
+      }
+    },
+    "Al0.8Ti0.2": {
+      "x_Al": 0.8,
+      "H_kJ_mol": -718.8949077416032,
+      "H_old_kJ_mol": -719.0172894094584,
+      "H_new_kJ_mol": -718.7721181348554,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.10562117356084032,
+      "old_block_sem_kJ_mol": 0.170208399501795,
+      "new_block_sem_kJ_mol": 0.1184261859311811,
+      "new_minus_old_kJ_mol": 0.24677928122230242,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -718.8949077416032,
+        "1": -718.8998665847406,
+        "2": -718.9184069876264,
+        "5": -718.8686433869605
+      },
+      "T_mean_K": 1989.5897825378545,
+      "rho_mean_g_cm3": 2.6985805752330028,
+      "deltaH_kJ_mol": -20.64072262389942,
+      "deltaH_old_kJ_mol": -20.780629633897092,
+      "deltaH_new_kJ_mol": -20.50034925720189,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.1301198794482775,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -20.64072262389942,
+        "1": -20.653341336736275,
+        "2": -20.67166205528295,
+        "5": -20.635817686981028
+      }
+    },
+    "Al0.9Ti0.1": {
+      "x_Al": 0.9,
+      "H_kJ_mol": -649.3023630455133,
+      "H_old_kJ_mol": -649.3462494823992,
+      "H_new_kJ_mol": -649.2583303205046,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.08611358365841004,
+      "old_block_sem_kJ_mol": 0.09615236200628263,
+      "new_block_sem_kJ_mol": 0.15019578473344605,
+      "new_minus_old_kJ_mol": 0.09079462578199582,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -649.3023630455133,
+        "1": -649.3027023750913,
+        "2": -649.2906013333287,
+        "5": -649.2578968027487
+      },
+      "T_mean_K": 1988.6252706192877,
+      "rho_mean_g_cm3": 2.4159179247643725,
+      "deltaH_kJ_mol": -10.955227827233585,
+      "deltaH_old_kJ_mol": -11.024170392696647,
+      "deltaH_new_kJ_mol": -10.88605545321903,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.12028524367200474,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": -10.955227827233585,
+        "1": -10.96240471710783,
+        "2": -10.951517938364859,
+        "5": -10.936424831334378
+      }
+    },
+    "Al": {
+      "x_Al": 1.0,
+      "H_kJ_mol": -578.4400853188557,
+      "H_old_kJ_mol": -578.407498403844,
+      "H_new_kJ_mol": -578.4727808569176,
+      "frames_combined": 601,
+      "diagnostic_block_sem_kJ_mol": 0.09289491891315686,
+      "old_block_sem_kJ_mol": 0.11035081820501395,
+      "new_block_sem_kJ_mol": 0.15923525581784836,
+      "new_minus_old_kJ_mol": -0.06606666705590669,
+      "restart_sensitivity_H_kJ_mol": {
+        "0": -578.4400853188557,
+        "1": -578.4340700679626,
+        "2": -578.4314218575843,
+        "5": -578.4101182428493
+      },
+      "T_mean_K": 1993.7404657339832,
+      "rho_mean_g_cm3": 2.1258804531088007,
+      "deltaH_kJ_mol": 0.0,
+      "deltaH_old_kJ_mol": 0.0,
+      "deltaH_new_kJ_mol": 0.0,
+      "deltaH_diagnostic_SEM_kJ_mol": 0.0,
+      "restart_sensitivity_deltaH_kJ_mol": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "5": 0.0
+      }
+    }
+  }
+}

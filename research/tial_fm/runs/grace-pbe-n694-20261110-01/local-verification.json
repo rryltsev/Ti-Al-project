@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "historical_metric_regression_cases": [
+    "PBE-full-N200-seed10",
+    "PBE-restricted-N200-seed10",
+    "PBE-restricted_mlp-N200-seed10",
+    "PBE-restricted_radial-N200-seed10",
+    "PBE-full-N200-seed20",
+    "PBE-full-N200-seed30",
+    "PBE-restricted-N200-seed20",
+    "PBE-restricted-N200-seed30",
+    "PBE-restricted_mlp-N200-seed20",
+    "PBE-restricted_mlp-N200-seed30",
+    "PBE-restricted_radial-N200-seed20",
+    "PBE-restricted_radial-N200-seed30"
+  ],
+  "case_count": 6,
+  "parent_count": 6,
+  "python_syntax": true,
+  "N200_nested_geometry_and_labels_identical": 200,
+  "scientific_recipe_changes": "N200 to N694 data and training seed; same epoch count50; updated train-only energy alignment"
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "cases": {
+    "PBE-full-N200-seed20": {
+      "parent": "PBE-full-N200-seed10",
+      "source_run": "grace-n200-fp64-pilot-20261109-02",
+      "only_scientific_change": "seed",
+      "input_sha256": "3b5dc8d4438b632152b23c3cbb867050908871fd5f6411d7d2b6a68625e348c8"
+    },
+    "PBE-full-N200-seed30": {
+      "parent": "PBE-full-N200-seed10",
+      "source_run": "grace-n200-fp64-pilot-20261109-02",
+      "only_scientific_change": "seed",
+      "input_sha256": "14927bb9b3138db244c3b6198a401159c393ca1673d38fd9a4d2ae0c03ca0f72"
+    },
+    "PBE-restricted-N200-seed20": {
+      "parent": "PBE-restricted-N200-seed10",
+      "source_run": "grace-n200-fp64-pilot-20261109-02",
+      "only_scientific_change": "seed",
+      "input_sha256": "363406e4250c306cc1f214b2225e7c14eee8694a655f2b57c184805a2b1d37e9"
+    },
+    "PBE-restricted-N200-seed30": {
+      "parent": "PBE-restricted-N200-seed10",
+      "source_run": "grace-n200-fp64-pilot-20261109-02",
+      "only_scientific_change": "seed",
+      "input_sha256": "de9db28c69446e7e6ccb8710fd7f07205cf8ca082bd35f060f6c81183cc9fba2"
+    },
+    "PBE-restricted_mlp-N200-seed20": {
+      "parent": "PBE-restricted_mlp-N200-seed10",
+      "source_run": "grace-n200-mask-ablation-20261109-01",
+      "only_scientific_change": "seed",
+      "input_sha256": "20697cf0fface5f04118f2ce0a29ff7557e24fbd385d3e4c9a39cff01c425db5"
+    },
+    "PBE-restricted_mlp-N200-seed30": {
+      "parent": "PBE-restricted_mlp-N200-seed10",
+      "source_run": "grace-n200-mask-ablation-20261109-01",
+      "only_scientific_change": "seed",
+      "input_sha256": "b0049bcb09dae3cc83259ccf0a6bf03e21025daf22d8815d1487e14cce8e59e6"
+    },
+    "PBE-restricted_radial-N200-seed20": {
+      "parent": "PBE-restricted_radial-N200-seed10",
+      "source_run": "grace-n200-mask-ablation-20261109-01",
+      "only_scientific_change": "seed",
+      "input_sha256": "d225db302984525b9cc607193bf47349c75cc1f150601e67480e00bf419aa20f"
+    },
+    "PBE-restricted_radial-N200-seed30": {
+      "parent": "PBE-restricted_radial-N200-seed10",
+      "source_run": "grace-n200-mask-ablation-20261109-01",
+      "only_scientific_change": "seed",
+      "input_sha256": "fc378769601a3e182a10b034f06414f49728211d21a89eefdf9167ec7f2bbbb7"
+    }
+  },
+  "train200_validation149_unchanged": true,
+  "seed10_baseline_reused": true,
+  "r2SCAN_new_runs": 0
+}

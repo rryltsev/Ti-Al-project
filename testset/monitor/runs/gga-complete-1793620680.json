@@ -1,0 +1,78 @@
+{
+  "checked_unix": 1793620680.6316853,
+  "event": "PBE and PBEsol each fully validated50/50",
+  "validated_counts": {
+    "PBE": 50,
+    "PBEsol": 50,
+    "r2SCAN": 42
+  },
+  "common_count": 42,
+  "fingerprint": "1f5d1997be8ee2e7",
+  "metrics_unchanged_from_delivered_n42": true,
+  "cache_files_verified": 300,
+  "history15k_preserved_hash_verified": true,
+  "history20k_counts": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "queues": {
+    "PBE": {
+      "running": 0,
+      "pending": 0,
+      "pending_reason_counts": {},
+      "running_ids": [],
+      "running_elapsed": {},
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "PBEsol": {
+      "running": 0,
+      "pending": 0,
+      "pending_reason_counts": {},
+      "running_ids": [],
+      "running_elapsed": {},
+      "evidence": "testset/monitor/data/latest.json"
+    },
+    "r2SCAN": {
+      "running": 4,
+      "pending": 4,
+      "pending_reason_counts": {
+        "(JobArrayTaskLimit)": 4
+      },
+      "running_ids": [
+        "TiAl-test-042",
+        "TiAl-test-041",
+        "TiAl-test-050",
+        "TiAl-test-021"
+      ],
+      "running_elapsed": {
+        "TiAl-test-042": "03:04:46",
+        "TiAl-test-041": "07:48:32",
+        "TiAl-test-050": "07:48:32",
+        "TiAl-test-021": "01:45:53"
+      },
+      "evidence": "testset/monitor/data/latest.json"
+    }
+  },
+  "PBE042_accounting": [
+    "COMPLETED",
+    "0:0",
+    "06:02:25"
+  ],
+  "PBEsol042_accounting": [
+    "COMPLETED",
+    "0:0",
+    "06:04:35"
+  ],
+  "new_scheduler_errors": [],
+  "DFT_modified": false,
+  "automation_continues_until_all50_triplets_delivered": true
+}

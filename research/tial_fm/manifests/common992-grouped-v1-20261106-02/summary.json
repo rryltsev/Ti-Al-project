@@ -1,0 +1,117 @@
+{
+  "version": "common992-grouped-v1-20261106-02",
+  "counts": {
+    "train": {
+      "geometries": 694,
+      "groups": 91,
+      "atoms": 152798,
+      "geometry_functional_labels": 2082,
+      "atom_functional_labels": 458394,
+      "source_families": {
+        "liquid_relax": 611,
+        "gamma": 35,
+        "bcc": 36,
+        "hcp": 12
+      },
+      "natoms": {
+        "216": 611,
+        "250": 71,
+        "256": 12
+      },
+      "Al_fraction_bins": {
+        "4": 114,
+        "3": 122,
+        "0": 153,
+        "1": 151,
+        "2": 154
+      },
+      "Al_fraction_range": [
+        0.0,
+        1.0
+      ]
+    },
+    "validation": {
+      "geometries": 149,
+      "groups": 23,
+      "atoms": 32740,
+      "geometry_functional_labels": 447,
+      "atom_functional_labels": 98220,
+      "source_families": {
+        "liquid_relax": 133,
+        "gamma": 7,
+        "hcp": 2,
+        "bcc": 7
+      },
+      "natoms": {
+        "216": 133,
+        "250": 14,
+        "256": 2
+      },
+      "Al_fraction_bins": {
+        "2": 33,
+        "4": 25,
+        "3": 27,
+        "0": 33,
+        "1": 31
+      },
+      "Al_fraction_range": [
+        0.0,
+        0.9305555555555556
+      ]
+    },
+    "test": {
+      "geometries": 149,
+      "groups": 25,
+      "atoms": 32808,
+      "geometry_functional_labels": 447,
+      "atom_functional_labels": 98424,
+      "source_families": {
+        "liquid_relax": 131,
+        "gamma": 9,
+        "hcp": 2,
+        "bcc": 7
+      },
+      "natoms": {
+        "216": 131,
+        "250": 16,
+        "256": 2
+      },
+      "Al_fraction_bins": {
+        "4": 24,
+        "1": 31,
+        "0": 32,
+        "2": 34,
+        "3": 28
+      },
+      "Al_fraction_range": [
+        0.027777777777777776,
+        0.9675925925925926
+      ]
+    }
+  },
+  "conservative_groups_all_pool": 140,
+  "known_parents": 44,
+  "known_parent_cross_split_overlaps": 0,
+  "conservative_group_cross_split_overlaps": 0,
+  "geometry_id_cross_split_overlaps": 0,
+  "original_liquid_trajectory_ids_recovered": false,
+  "new_DFT_jobs": 0,
+  "new_training_jobs": 0,
+  "export": {
+    "geometry_functional_pairs": 2976,
+    "files": 3345,
+    "bytes": 32595300,
+    "type_map": [
+      "Al",
+      "Ti"
+    ],
+    "geometry_policy": "Original native DFT coordinates/cells retained. Only stable species sort; identical permutation applied to forces. No energy shifts, recalculation or precision reduction.",
+    "cross_XC_geometry_identity": "Same verified physical geometry ID; source coordinate rounding retained, not forced to bitwise equality."
+  },
+  "elapsed_seconds": 89.58021639985964,
+  "versions": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}
