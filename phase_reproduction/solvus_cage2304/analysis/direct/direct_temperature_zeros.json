@@ -1,0 +1,1364 @@
+{
+  "method": "Adjacent direct S(T) interpolated linearly. A second estimate applies inverse-bootstrap-variance weighted decreasing isotonic regression before interpolation. For uncertainty, an independent block resample at each temperature is drawn 10000 times. The interval is conditional on a measured sign bracket, and the missing-bracket fraction is reported. Numerical maxima on a simulated-field edge are excluded.",
+  "records": [
+    {
+      "usable_T": [
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0,
+        1254.0,
+        1262.0,
+        1269.0
+      ],
+      "observed": [
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 9.278269829621307,
+          "S_interval_95": [
+            8.613578581804088,
+            10.006457935083693
+          ],
+          "mu_eV": 3.536679301495471,
+          "x_pct": 26.90293640064803,
+          "estimated_local_linear_zero": 1259.109852936013,
+          "delta_h_meV_atom": -31.28630880988466,
+          "file": "final_T1242_W0p35.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 9.134817886223441,
+          "S_interval_95": [
+            8.704497828019854,
+            9.439919061035233
+          ],
+          "mu_eV": 3.5371303919565937,
+          "x_pct": 26.930601520786873,
+          "estimated_local_linear_zero": 1260.3238688273461,
+          "delta_h_meV_atom": -30.471068141599908,
+          "file": "final_T1243_W0p35.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": 9.210572723638473,
+          "S_interval_95": [
+            8.47502648659991,
+            9.68292251927827
+          ],
+          "mu_eV": 3.5358783924740274,
+          "x_pct": 26.87201184186392,
+          "estimated_local_linear_zero": 1260.7536156608853,
+          "delta_h_meV_atom": -31.82066581943649,
+          "file": "final_T1244_W0p35.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": 8.105459217890477,
+          "S_interval_95": [
+            7.620846045117528,
+            8.80130474829931
+          ],
+          "mu_eV": 3.5369101667206926,
+          "x_pct": 26.911132980013242,
+          "estimated_local_linear_zero": 1260.2379064145164,
+          "delta_h_meV_atom": -30.837661722710013,
+          "file": "final_T1245_W0p35.json"
+        },
+        {
+          "T_K": 1254.0,
+          "field_edge": false,
+          "S": 3.741211209660485,
+          "S_interval_95": [
+            3.003340408941524,
+            4.350261849659216
+          ],
+          "mu_eV": 3.5407351840948116,
+          "x_pct": 27.095229569726364,
+          "estimated_local_linear_zero": 1261.809085734042,
+          "delta_h_meV_atom": -28.177179800342603,
+          "file": "final_T1254_W0p35.json"
+        },
+        {
+          "T_K": 1262.0,
+          "field_edge": false,
+          "S": 0.2969160428005673,
+          "S_interval_95": [
+            -0.4696348303445961,
+            0.8749514666137618
+          ],
+          "mu_eV": 3.544078731801678,
+          "x_pct": 27.255716175203965,
+          "estimated_local_linear_zero": 1262.7018219638383,
+          "delta_h_meV_atom": -25.200887305727417,
+          "file": "final_T1262_W0p35.json"
+        },
+        {
+          "T_K": 1269.0,
+          "field_edge": false,
+          "S": -2.070888369267277,
+          "S_interval_95": [
+            -2.6639632531524784,
+            -1.3911204547575369
+          ],
+          "mu_eV": 3.5470218651946768,
+          "x_pct": 27.38595794534452,
+          "estimated_local_linear_zero": 1262.926259050352,
+          "delta_h_meV_atom": -20.535916151214273,
+          "file": "final_T1269_W0p35.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1262.877780398166
+      ],
+      "weighted_monotone_S": [
+        9.278269829621307,
+        9.153002223703341,
+        9.153002223703341,
+        8.105459217890477,
+        3.741211209660485,
+        0.2969160428005673,
+        -2.070888369267277
+      ],
+      "weighted_monotone_crossings": [
+        1262.877780398166
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1260.8451460543902,
+        1264.2379096359211
+      ],
+      "interpolated_mu_eV": 3.5444477924876154,
+      "interpolated_x_pct": 27.27204812846851,
+      "conditional_mu_eV_interval_95": [
+        3.5427118967423175,
+        3.54581137289905
+      ],
+      "conditional_x_pct_interval_95": [
+        27.198152522689536,
+        27.32465740656559
+      ],
+      "bootstrap_fraction_with_bracket": 1.0,
+      "bootstrap_fraction_no_bracket": 0.0,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 1.0
+      },
+      "W": 0.35,
+      "cut_Q": 0.32
+    },
+    {
+      "usable_T": [
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0,
+        1254.0,
+        1262.0,
+        1269.0
+      ],
+      "observed": [
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 9.168933188313181,
+          "S_interval_95": [
+            8.51907324898099,
+            9.88566631816075
+          ],
+          "mu_eV": 3.536504038352574,
+          "x_pct": 26.898140683076537,
+          "estimated_local_linear_zero": 1259.1738278159212,
+          "delta_h_meV_atom": -30.802453431082,
+          "file": "final_T1242_W0p35.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 8.972718338388637,
+          "S_interval_95": [
+            8.565997009677508,
+            9.258794984435223
+          ],
+          "mu_eV": 3.5369094533813534,
+          "x_pct": 26.92447556659466,
+          "estimated_local_linear_zero": 1260.4000727028597,
+          "delta_h_meV_atom": -29.79927126658601,
+          "file": "final_T1243_W0p35.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": 9.089594209327425,
+          "S_interval_95": [
+            8.36952707275555,
+            9.562985721361366
+          ],
+          "mu_eV": 3.5354647519009403,
+          "x_pct": 26.860688935092092,
+          "estimated_local_linear_zero": 1260.821416380774,
+          "delta_h_meV_atom": -31.276137165178895,
+          "file": "final_T1244_W0p35.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": 7.98052376340185,
+          "S_interval_95": [
+            7.514263453076163,
+            8.665715530860071
+          ],
+          "mu_eV": 3.5364822136525005,
+          "x_pct": 26.89881825612871,
+          "estimated_local_linear_zero": 1260.2518018327476,
+          "delta_h_meV_atom": -30.334675837352744,
+          "file": "final_T1245_W0p35.json"
+        },
+        {
+          "T_K": 1254.0,
+          "field_edge": false,
+          "S": 3.6713803894978616,
+          "S_interval_95": [
+            2.9379567756250053,
+            4.275819592252853
+          ],
+          "mu_eV": 3.5404263475841447,
+          "x_pct": 27.08546951478307,
+          "estimated_local_linear_zero": 1261.7549236204384,
+          "delta_h_meV_atom": -27.844366805813465,
+          "file": "final_T1254_W0p35.json"
+        },
+        {
+          "T_K": 1262.0,
+          "field_edge": false,
+          "S": 0.24743104691913925,
+          "S_interval_95": [
+            -0.5092687886807665,
+            0.8132349702816023
+          ],
+          "mu_eV": 3.543811136453792,
+          "x_pct": 27.246269422553155,
+          "estimated_local_linear_zero": 1262.5861334402648,
+          "delta_h_meV_atom": -25.145878750529253,
+          "file": "final_T1262_W0p35.json"
+        },
+        {
+          "T_K": 1269.0,
+          "field_edge": false,
+          "S": -2.1508826010862094,
+          "S_interval_95": [
+            -2.7544074859740664,
+            -1.456602469903173
+          ],
+          "mu_eV": 3.5467932722075406,
+          "x_pct": 27.376148323685616,
+          "estimated_local_linear_zero": 1262.9027206271835,
+          "delta_h_meV_atom": -21.2468362280142,
+          "file": "final_T1269_W0p35.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1262.7221813251467
+      ],
+      "weighted_monotone_S": [
+        9.168933188313181,
+        9.000444559299426,
+        9.000444559299426,
+        7.98052376340185,
+        3.6713803894978616,
+        0.24743104691913925,
+        -2.1508826010862094
+      ],
+      "weighted_monotone_crossings": [
+        1262.7221813251467
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1260.7941835175172,
+        1264.0766984312227
+      ],
+      "interpolated_mu_eV": 3.544118799703851,
+      "interpolated_x_pct": 27.259668867828648,
+      "conditional_mu_eV_interval_95": [
+        3.54241942294326,
+        3.5454479665151175
+      ],
+      "conditional_x_pct_interval_95": [
+        27.187168787574688,
+        27.31030726375805
+      ],
+      "bootstrap_fraction_with_bracket": 1.0,
+      "bootstrap_fraction_no_bracket": 0.0,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 1.0
+      },
+      "W": 0.35,
+      "cut_Q": 0.37
+    },
+    {
+      "usable_T": [
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0,
+        1254.0,
+        1262.0,
+        1269.0
+      ],
+      "observed": [
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 9.042530756873905,
+          "S_interval_95": [
+            8.414234519611032,
+            9.735130461655276
+          ],
+          "mu_eV": 3.5360587614868133,
+          "x_pct": 26.885978158781164,
+          "estimated_local_linear_zero": 1259.3404639479108,
+          "delta_h_meV_atom": -30.085891680252146,
+          "file": "final_T1242_W0p35.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 8.780898756911844,
+          "S_interval_95": [
+            8.402954267318462,
+            9.04965816064441
+          ],
+          "mu_eV": 3.5362880375135144,
+          "x_pct": 26.907274538366032,
+          "estimated_local_linear_zero": 1260.6018790631558,
+          "delta_h_meV_atom": -28.827873556368196,
+          "file": "final_T1243_W0p35.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": 8.918698958303082,
+          "S_interval_95": [
+            8.221087432756283,
+            9.404025149883891
+          ],
+          "mu_eV": 3.534916787517433,
+          "x_pct": 26.84571534054451,
+          "estimated_local_linear_zero": 1261.017406688751,
+          "delta_h_meV_atom": -30.33467190024813,
+          "file": "final_T1244_W0p35.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": 7.806885491646844,
+          "S_interval_95": [
+            7.340935206377616,
+            8.485507739942957
+          ],
+          "mu_eV": 3.5358416819816645,
+          "x_pct": 26.8804519353938,
+          "estimated_local_linear_zero": 1260.3581918429697,
+          "delta_h_meV_atom": -29.46909767535132,
+          "file": "final_T1245_W0p35.json"
+        },
+        {
+          "T_K": 1254.0,
+          "field_edge": false,
+          "S": 3.578979614893368,
+          "S_interval_95": [
+            2.856263052914281,
+            4.153157148394923
+          ],
+          "mu_eV": 3.540135108815416,
+          "x_pct": 27.076279129246476,
+          "estimated_local_linear_zero": 1261.7009192586636,
+          "delta_h_meV_atom": -27.333934030771776,
+          "file": "final_T1254_W0p35.json"
+        },
+        {
+          "T_K": 1262.0,
+          "field_edge": false,
+          "S": 0.20337480930179086,
+          "S_interval_95": [
+            -0.5435194557918287,
+            0.7535947264008267
+          ],
+          "mu_eV": 3.5436990889009055,
+          "x_pct": 27.242315560816778,
+          "estimated_local_linear_zero": 1262.4840195407996,
+          "delta_h_meV_atom": -25.02899361004898,
+          "file": "final_T1262_W0p35.json"
+        },
+        {
+          "T_K": 1269.0,
+          "field_edge": false,
+          "S": -2.211322908087197,
+          "S_interval_95": [
+            -2.823354367378334,
+            -1.5095770803013335
+          ],
+          "mu_eV": 3.546370457755462,
+          "x_pct": 27.3580121808216,
+          "estimated_local_linear_zero": 1262.8860942974534,
+          "delta_h_meV_atom": -21.784474459829433,
+          "file": "final_T1269_W0p35.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1262.589565996133
+      ],
+      "weighted_monotone_S": [
+        9.042530756873905,
+        8.813196051271966,
+        8.813196051271966,
+        7.806885491646844,
+        3.578979614893368,
+        0.20337480930179086,
+        -2.211322908087197
+      ],
+      "weighted_monotone_crossings": [
+        1262.589565996133
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1260.6854668674337,
+        1263.942950423041
+      ],
+      "interpolated_mu_eV": 3.5439240815065878,
+      "interpolated_x_pct": 27.25205995981997,
+      "conditional_mu_eV_interval_95": [
+        3.542250912756109,
+        3.5452335695358177
+      ],
+      "conditional_x_pct_interval_95": [
+        27.18107303616528,
+        27.302236535690692
+      ],
+      "bootstrap_fraction_with_bracket": 1.0,
+      "bootstrap_fraction_no_bracket": 0.0,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 1.0
+      },
+      "W": 0.35,
+      "cut_Q": 0.42
+    },
+    {
+      "usable_T": [
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0,
+        1254.0,
+        1262.0,
+        1269.0
+      ],
+      "observed": [
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 8.816092368859605,
+          "S_interval_95": [
+            8.200469549303504,
+            9.490555099214157
+          ],
+          "mu_eV": 3.5349791032394764,
+          "x_pct": 26.85661347169393,
+          "estimated_local_linear_zero": 1259.7245147577655,
+          "delta_h_meV_atom": -28.696926359044713,
+          "file": "final_T1242_W0p35.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 8.492305359639952,
+          "S_interval_95": [
+            8.152212795092506,
+            8.738470782332948
+          ],
+          "mu_eV": 3.535535296501135,
+          "x_pct": 26.886495304826614,
+          "estimated_local_linear_zero": 1261.002664436842,
+          "delta_h_meV_atom": -27.259726035959467,
+          "file": "final_T1243_W0p35.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": 8.636498193427487,
+          "S_interval_95": [
+            7.982863969263971,
+            9.114434752141051
+          ],
+          "mu_eV": 3.5342554789798237,
+          "x_pct": 26.827681549580895,
+          "estimated_local_linear_zero": 1261.4692664924407,
+          "delta_h_meV_atom": -28.615029067347784,
+          "file": "final_T1244_W0p35.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": 7.561321548151326,
+          "S_interval_95": [
+            7.111749864066868,
+            8.229932573545689
+          ],
+          "mu_eV": 3.5352019597722544,
+          "x_pct": 26.862187674842165,
+          "estimated_local_linear_zero": 1260.642227413156,
+          "delta_h_meV_atom": -28.02387766830977,
+          "file": "final_T1245_W0p35.json"
+        },
+        {
+          "T_K": 1254.0,
+          "field_edge": false,
+          "S": 3.4572369393476645,
+          "S_interval_95": [
+            2.749199893892898,
+            3.990639583727743
+          ],
+          "mu_eV": 3.5397941092760705,
+          "x_pct": 27.06553555969935,
+          "estimated_local_linear_zero": 1261.6656704864968,
+          "delta_h_meV_atom": -26.525555329938737,
+          "file": "final_T1254_W0p35.json"
+        },
+        {
+          "T_K": 1262.0,
+          "field_edge": false,
+          "S": 0.14366229080771867,
+          "S_interval_95": [
+            -0.5869835614766757,
+            0.6720067921823007
+          ],
+          "mu_eV": 3.5434580147377557,
+          "x_pct": 27.23381182379417,
+          "estimated_local_linear_zero": 1262.344828262484,
+          "delta_h_meV_atom": -24.816987244809845,
+          "file": "final_T1262_W0p35.json"
+        },
+        {
+          "T_K": 1269.0,
+          "field_edge": false,
+          "S": -2.2703812943344728,
+          "S_interval_95": [
+            -2.8858419177686745,
+            -1.5683759085961766
+          ],
+          "mu_eV": 3.5461193607130963,
+          "x_pct": 27.34724580591681,
+          "estimated_local_linear_zero": 1262.8460307140513,
+          "delta_h_meV_atom": -22.22066919573521,
+          "file": "final_T1269_W0p35.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1262.4165774146927
+      ],
+      "weighted_monotone_S": [
+        8.816092368859605,
+        8.525703236562277,
+        8.525703236562277,
+        7.561321548151326,
+        3.4572369393476645,
+        0.14366229080771867,
+        -2.2703812943344728
+      ],
+      "weighted_monotone_crossings": [
+        1262.4165774146927
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1260.6274579452795,
+        1263.7614614811998
+      ],
+      "interpolated_mu_eV": 3.543616394255757,
+      "interpolated_x_pct": 27.240562400224306,
+      "conditional_mu_eV_interval_95": [
+        3.541892835296827,
+        3.5449191385580017
+      ],
+      "conditional_x_pct_interval_95": [
+        27.169362476466574,
+        27.290589151317473
+      ],
+      "bootstrap_fraction_with_bracket": 1.0,
+      "bootstrap_fraction_no_bracket": 0.0,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 1.0
+      },
+      "W": 0.35,
+      "cut_Q": 0.47
+    },
+    {
+      "usable_T": [
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0,
+        1254.0,
+        1262.0,
+        1269.0
+      ],
+      "observed": [
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 8.607603050101371,
+          "S_interval_95": [
+            7.991512867405757,
+            9.276167735903197
+          ],
+          "mu_eV": 3.5340038221630747,
+          "x_pct": 26.830235295420835,
+          "estimated_local_linear_zero": 1260.166918798411,
+          "delta_h_meV_atom": -27.33597456148731,
+          "file": "final_T1242_W0p35.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 8.235789573476794,
+          "S_interval_95": [
+            7.918133442739466,
+            8.460593273856484
+          ],
+          "mu_eV": 3.534888956097734,
+          "x_pct": 26.868702731292558,
+          "estimated_local_linear_zero": 1261.366154294753,
+          "delta_h_meV_atom": -25.913118717555236,
+          "file": "final_T1243_W0p35.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": 8.388140106043256,
+          "S_interval_95": [
+            7.78413093888158,
+            8.847677243722432
+          ],
+          "mu_eV": 3.5338297849775073,
+          "x_pct": 26.81609277769308,
+          "estimated_local_linear_zero": 1261.8236441322056,
+          "delta_h_meV_atom": -27.239576316268604,
+          "file": "final_T1244_W0p35.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": 7.356852837654066,
+          "S_interval_95": [
+            6.9228408827921575,
+            8.011494003857258
+          ],
+          "mu_eV": 3.534435590235106,
+          "x_pct": 26.840411679964465,
+          "estimated_local_linear_zero": 1260.901807359207,
+          "delta_h_meV_atom": -26.8209834314705,
+          "file": "final_T1245_W0p35.json"
+        },
+        {
+          "T_K": 1254.0,
+          "field_edge": false,
+          "S": 3.363484781163362,
+          "S_interval_95": [
+            2.66959011776434,
+            3.863238473963258
+          ],
+          "mu_eV": 3.5393592582600855,
+          "x_pct": 27.051862449421364,
+          "estimated_local_linear_zero": 1261.6603196729718,
+          "delta_h_meV_atom": -25.82427040686927,
+          "file": "final_T1254_W0p35.json"
+        },
+        {
+          "T_K": 1262.0,
+          "field_edge": false,
+          "S": 0.09920664849587271,
+          "S_interval_95": [
+            -0.620977802131819,
+            0.6030464638505438
+          ],
+          "mu_eV": 3.543368284904933,
+          "x_pct": 27.230647694746672,
+          "estimated_local_linear_zero": 1262.2401852258333,
+          "delta_h_meV_atom": -24.603880688442867,
+          "file": "final_T1262_W0p35.json"
+        },
+        {
+          "T_K": 1269.0,
+          "field_edge": false,
+          "S": -2.3090630266337384,
+          "S_interval_95": [
+            -2.930738321110367,
+            -1.609367637876459
+          ],
+          "mu_eV": 3.5459618414480856,
+          "x_pct": 27.34049307038575,
+          "estimated_local_linear_zero": 1262.8033908931882,
+          "delta_h_meV_atom": -22.44374598249973,
+          "file": "final_T1269_W0p35.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1262.2883591263233
+      ],
+      "weighted_monotone_S": [
+        8.607603050101371,
+        8.270741050402101,
+        8.270741050402101,
+        7.356852837654066,
+        3.363484781163362,
+        0.09920664849587271,
+        -2.3090630266337384
+      ],
+      "weighted_monotone_crossings": [
+        1262.2883591263233
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1260.5194404606657,
+        1263.6336775739046
+      ],
+      "interpolated_mu_eV": 3.5434751242904836,
+      "interpolated_x_pct": 27.235172682825233,
+      "conditional_mu_eV_interval_95": [
+        3.541774030809728,
+        3.544755811134083
+      ],
+      "conditional_x_pct_interval_95": [
+        27.166607468972654,
+        27.28729920444204
+      ],
+      "bootstrap_fraction_with_bracket": 1.0,
+      "bootstrap_fraction_no_bracket": 0.0,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 1.0
+      },
+      "W": 0.35,
+      "cut_Q": 0.5
+    },
+    {
+      "usable_T": [
+        1239.0,
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0
+      ],
+      "observed": [
+        {
+          "T_K": 1239.0,
+          "field_edge": false,
+          "S": 3.3097246408213783,
+          "S_interval_95": [
+            2.4542143642703342,
+            4.005896244361492
+          ],
+          "mu_eV": 3.5422792587945495,
+          "x_pct": 27.083499698539455,
+          "estimated_local_linear_zero": 1245.3702460429458,
+          "delta_h_meV_atom": -29.831059853048977,
+          "file": "final_T1239_W0p40.json"
+        },
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 1.3018403046816098,
+          "S_interval_95": [
+            0.6410502144617445,
+            2.0793853572063514
+          ],
+          "mu_eV": 3.5441844073742206,
+          "x_pct": 27.158385142542272,
+          "estimated_local_linear_zero": 1244.6146901495579,
+          "delta_h_meV_atom": -28.725730930868124,
+          "file": "final_T1242_W0p40.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 0.5349844120101075,
+          "S_interval_95": [
+            0.12620993455364463,
+            0.8136196088189888
+          ],
+          "mu_eV": 3.5447599222377333,
+          "x_pct": 27.191419014666835,
+          "estimated_local_linear_zero": 1244.1244119001467,
+          "delta_h_meV_atom": -27.49466080292778,
+          "file": "final_T1243_W0p40.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": -0.5655112284324808,
+          "S_interval_95": [
+            -1.098991775688704,
+            -0.03152996312474162
+          ],
+          "mu_eV": 3.545746227241673,
+          "x_pct": 27.228419592122293,
+          "estimated_local_linear_zero": 1242.7775790453268,
+          "delta_h_meV_atom": -26.776365119265247,
+          "file": "final_T1244_W0p40.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": -0.41817561487875726,
+          "S_interval_95": [
+            -0.9951786975081283,
+            0.1347794667921768
+          ],
+          "mu_eV": 3.54675902693911,
+          "x_pct": 27.281252500710224,
+          "estimated_local_linear_zero": 1244.089313798752,
+          "delta_h_meV_atom": -26.620675103232593,
+          "file": "final_T1245_W0p40.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1243.486130423738
+      ],
+      "weighted_monotone_S": [
+        3.3097246408213783,
+        1.3018403046816098,
+        0.5349844120101075,
+        -0.4817783714121155,
+        -0.4817783714121155
+      ],
+      "weighted_monotone_crossings": [
+        1243.5261644315988
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1243.1929844817978,
+        1243.9886308767896
+      ],
+      "interpolated_mu_eV": 3.5452788808495144,
+      "interpolated_x_pct": 27.210887402472512,
+      "conditional_mu_eV_interval_95": [
+        3.5444036347134413,
+        3.54637130426827
+      ],
+      "conditional_x_pct_interval_95": [
+        27.1748172219331,
+        27.258102057017283
+      ],
+      "bootstrap_fraction_with_bracket": 0.9855,
+      "bootstrap_fraction_no_bracket": 0.0145,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 0.9997,
+        "0": 0.0003
+      },
+      "W": 0.4,
+      "cut_Q": 0.32
+    },
+    {
+      "usable_T": [
+        1239.0,
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0
+      ],
+      "observed": [
+        {
+          "T_K": 1239.0,
+          "field_edge": false,
+          "S": 3.26048747363478,
+          "S_interval_95": [
+            2.417323694053944,
+            3.935303038172961
+          ],
+          "mu_eV": 3.5421543814919056,
+          "x_pct": 27.07969078964666,
+          "estimated_local_linear_zero": 1245.3232226847751,
+          "delta_h_meV_atom": -29.605819455839374,
+          "file": "final_T1239_W0p40.json"
+        },
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 1.2698489358997698,
+          "S_interval_95": [
+            0.6138781005201365,
+            2.0428510735836554
+          ],
+          "mu_eV": 3.5440768042066826,
+          "x_pct": 27.154774323041774,
+          "estimated_local_linear_zero": 1244.5585408925476,
+          "delta_h_meV_atom": -28.63474385941264,
+          "file": "final_T1242_W0p40.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 0.4935610934746509,
+          "S_interval_95": [
+            0.09241313141193962,
+            0.7719128494825772
+          ],
+          "mu_eV": 3.544618261119735,
+          "x_pct": 27.186553699037567,
+          "estimated_local_linear_zero": 1244.0400104850642,
+          "delta_h_meV_atom": -27.42432022942845,
+          "file": "final_T1243_W0p40.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": -0.6053780353206969,
+          "S_interval_95": [
+            -1.1378268879416724,
+            -0.07068569946456613
+          ],
+          "mu_eV": 3.5455113704788235,
+          "x_pct": 27.219573589407343,
+          "estimated_local_linear_zero": 1242.6982608170129,
+          "delta_h_meV_atom": -26.917446402057013,
+          "file": "final_T1244_W0p40.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": -0.4522095844335116,
+          "S_interval_95": [
+            -1.0312743095015353,
+            0.10096998497936664
+          ],
+          "mu_eV": 3.5466359170586585,
+          "x_pct": 27.2766232403088,
+          "estimated_local_linear_zero": 1244.0180216777262,
+          "delta_h_meV_atom": -26.69727772043125,
+          "file": "final_T1245_W0p40.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1243.4491250520998
+      ],
+      "weighted_monotone_S": [
+        3.26048747363478,
+        1.2698489358997698,
+        0.4935610934746509,
+        -0.5183885554136599,
+        -0.5183885554136599
+      ],
+      "weighted_monotone_crossings": [
+        1243.4877328570813
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1243.141136390858,
+        1243.924697612232
+      ],
+      "interpolated_mu_eV": 3.545053859899129,
+      "interpolated_x_pct": 27.20265858450813,
+      "conditional_mu_eV_interval_95": [
+        3.5442057279266628,
+        3.5460898177083027
+      ],
+      "conditional_x_pct_interval_95": [
+        27.16872724594847,
+        27.24676487348681
+      ],
+      "bootstrap_fraction_with_bracket": 0.9918,
+      "bootstrap_fraction_no_bracket": 0.0082,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 0.9992,
+        "0": 0.0008
+      },
+      "W": 0.4,
+      "cut_Q": 0.37
+    },
+    {
+      "usable_T": [
+        1239.0,
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0
+      ],
+      "observed": [
+        {
+          "T_K": 1239.0,
+          "field_edge": false,
+          "S": 3.211648037599567,
+          "S_interval_95": [
+            2.383363683612647,
+            3.868616992379374
+          ],
+          "mu_eV": 3.542028342276624,
+          "x_pct": 27.075848322803363,
+          "estimated_local_linear_zero": 1245.2905145805457,
+          "delta_h_meV_atom": -29.313980781520474,
+          "file": "final_T1239_W0p40.json"
+        },
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 1.2397840543430472,
+          "S_interval_95": [
+            0.5889662627696057,
+            2.00768796301542
+          ],
+          "mu_eV": 3.543988614213981,
+          "x_pct": 27.151816115947835,
+          "estimated_local_linear_zero": 1244.510896398042,
+          "delta_h_meV_atom": -28.48727175133654,
+          "file": "final_T1242_W0p40.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 0.4587536417672688,
+          "S_interval_95": [
+            0.06404585863646858,
+            0.7374609338471664
+          ],
+          "mu_eV": 3.544465611531789,
+          "x_pct": 27.181314429408797,
+          "estimated_local_linear_zero": 1243.9705055226952,
+          "delta_h_meV_atom": -27.315816415921038,
+          "file": "final_T1243_W0p40.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": -0.6338825907342629,
+          "S_interval_95": [
+            -1.1659996018142165,
+            -0.10072907726675617
+          ],
+          "mu_eV": 3.5453803142083573,
+          "x_pct": 27.214640518995715,
+          "estimated_local_linear_zero": 1242.6403984484577,
+          "delta_h_meV_atom": -26.98536816884703,
+          "file": "final_T1244_W0p40.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": -0.4820578907020754,
+          "S_interval_95": [
+            -1.0594107624148275,
+            0.07249075242384587
+          ],
+          "mu_eV": 3.5464901804009688,
+          "x_pct": 27.27114441621498,
+          "estimated_local_linear_zero": 1243.954756141822,
+          "delta_h_meV_atom": -26.73687765991855,
+          "file": "final_T1245_W0p40.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1243.419859444636
+      ],
+      "weighted_monotone_S": [
+        3.211648037599567,
+        1.2397840543430472,
+        0.4587536417672688,
+        -0.547628258054973,
+        -0.547628258054973
+      ],
+      "weighted_monotone_crossings": [
+        1243.455844487911
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1243.0856249112655,
+        1243.8800001540508
+      ],
+      "interpolated_mu_eV": 3.5448825737049803,
+      "interpolated_x_pct": 27.19650594365062,
+      "conditional_mu_eV_interval_95": [
+        3.54401879800836,
+        3.545866592429058
+      ],
+      "conditional_x_pct_interval_95": [
+        27.16442924150236,
+        27.237353353170235
+      ],
+      "bootstrap_fraction_with_bracket": 0.9945,
+      "bootstrap_fraction_no_bracket": 0.0055,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 0.9995,
+        "0": 0.0005
+      },
+      "W": 0.4,
+      "cut_Q": 0.42
+    },
+    {
+      "usable_T": [
+        1239.0,
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0
+      ],
+      "observed": [
+        {
+          "T_K": 1239.0,
+          "field_edge": false,
+          "S": 3.1479185826070095,
+          "S_interval_95": [
+            2.3440886232580405,
+            3.7909931990224797
+          ],
+          "mu_eV": 3.5417356792110963,
+          "x_pct": 27.066933313369105,
+          "estimated_local_linear_zero": 1245.263369311306,
+          "delta_h_meV_atom": -28.85682184128248,
+          "file": "final_T1239_W0p40.json"
+        },
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 1.2087554516333419,
+          "S_interval_95": [
+            0.56099940936628,
+            1.9677219115045093
+          ],
+          "mu_eV": 3.543796258828223,
+          "x_pct": 27.145367488404975,
+          "estimated_local_linear_zero": 1244.4654766192546,
+          "delta_h_meV_atom": -28.285975659949965,
+          "file": "final_T1242_W0p40.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 0.4231548005126679,
+          "S_interval_95": [
+            0.034994280932525476,
+            0.701727968292224
+          ],
+          "mu_eV": 3.544292791687756,
+          "x_pct": 27.17538707006673,
+          "estimated_local_linear_zero": 1243.9004106951054,
+          "delta_h_meV_atom": -27.157594453637234,
+          "file": "final_T1243_W0p40.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": -0.6637895640743656,
+          "S_interval_95": [
+            -1.193805629342253,
+            -0.13206123400266126
+          ],
+          "mu_eV": 3.5452549466843264,
+          "x_pct": 27.209923644438387,
+          "estimated_local_linear_zero": 1242.5771530135632,
+          "delta_h_meV_atom": -27.00246406443273,
+          "file": "final_T1244_W0p40.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": -0.5115085760525027,
+          "S_interval_95": [
+            -1.088142228766033,
+            0.043427093848315196
+          ],
+          "mu_eV": 3.546357599811788,
+          "x_pct": 27.26616131367357,
+          "estimated_local_linear_zero": 1243.8901540274908,
+          "delta_h_meV_atom": -26.718946246806453,
+          "file": "final_T1245_W0p40.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1243.3893067707043
+      ],
+      "weighted_monotone_S": [
+        3.1479185826070095,
+        1.2087554516333419,
+        0.4231548005126679,
+        -0.5773719609851402,
+        -0.5773719609851402
+      ],
+      "weighted_monotone_crossings": [
+        1243.4229320162103
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1243.045333762836,
+        1243.8294363412472
+      ],
+      "interpolated_mu_eV": 3.5446997178403623,
+      "interpolated_x_pct": 27.18999369309873,
+      "conditional_mu_eV_interval_95": [
+        3.5438585552593778,
+        3.5456549020752113
+      ],
+      "conditional_x_pct_interval_95": [
+        27.15940516193204,
+        27.229608715715365
+      ],
+      "bootstrap_fraction_with_bracket": 0.9955,
+      "bootstrap_fraction_no_bracket": 0.0045,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 0.999,
+        "0": 0.0006,
+        "2": 0.0004
+      },
+      "W": 0.4,
+      "cut_Q": 0.47
+    },
+    {
+      "usable_T": [
+        1239.0,
+        1242.0,
+        1243.0,
+        1244.0,
+        1245.0
+      ],
+      "observed": [
+        {
+          "T_K": 1239.0,
+          "field_edge": false,
+          "S": 3.098159271243676,
+          "S_interval_95": [
+            2.30868100878918,
+            3.722904559123007
+          ],
+          "mu_eV": 3.5415721948175904,
+          "x_pct": 27.06195762553161,
+          "estimated_local_linear_zero": 1245.254293286086,
+          "delta_h_meV_atom": -28.4418947062306,
+          "file": "final_T1239_W0p40.json"
+        },
+        {
+          "T_K": 1242.0,
+          "field_edge": false,
+          "S": 1.1867313686141578,
+          "S_interval_95": [
+            0.5421149739663975,
+            1.9373099268217764
+          ],
+          "mu_eV": 3.5436782463450545,
+          "x_pct": 27.14141366163422,
+          "estimated_local_linear_zero": 1244.4350275164065,
+          "delta_h_meV_atom": -28.117852914458567,
+          "file": "final_T1242_W0p40.json"
+        },
+        {
+          "T_K": 1243.0,
+          "field_edge": false,
+          "S": 0.39689675376721933,
+          "S_interval_95": [
+            0.013516098967020496,
+            0.6757865304143332
+          ],
+          "mu_eV": 3.5441581048788433,
+          "x_pct": 27.17077060349295,
+          "estimated_local_linear_zero": 1243.8492236757302,
+          "delta_h_meV_atom": -27.007732583809936,
+          "file": "final_T1243_W0p40.json"
+        },
+        {
+          "T_K": 1244.0,
+          "field_edge": false,
+          "S": -0.6835108671343887,
+          "S_interval_95": [
+            -1.2115786640677215,
+            -0.15482145382889806
+          ],
+          "mu_eV": 3.5451652572029313,
+          "x_pct": 27.206550330975748,
+          "estimated_local_linear_zero": 1242.5344736285128,
+          "delta_h_meV_atom": -26.994976946719536,
+          "file": "final_T1244_W0p40.json"
+        },
+        {
+          "T_K": 1245.0,
+          "field_edge": false,
+          "S": -0.5310781849864725,
+          "S_interval_95": [
+            -1.1066773466182769,
+            0.02226694616598489
+          ],
+          "mu_eV": 3.5462386144754157,
+          "x_pct": 27.26169006722261,
+          "estimated_local_linear_zero": 1243.8461380148847,
+          "delta_h_meV_atom": -26.682942109457514,
+          "file": "final_T1245_W0p40.json"
+        }
+      ],
+      "raw_linear_downward_zeros": [
+        1243.3673583433592
+      ],
+      "weighted_monotone_S": [
+        3.098159271243676,
+        1.1867313686141578,
+        0.39689675376721933,
+        -0.5970347457556168,
+        -0.5970347457556168
+      ],
+      "weighted_monotone_crossings": [
+        1243.399320027545
+      ],
+      "conditional_interpolated_T_interval_95": [
+        1243.0130098384698,
+        1243.8249954967177
+      ],
+      "interpolated_mu_eV": 3.54456028097264,
+      "interpolated_x_pct": 27.185058165256933,
+      "conditional_mu_eV_interval_95": [
+        3.5437545796665364,
+        3.5454792898913876
+      ],
+      "conditional_x_pct_interval_95": [
+        27.154961405699996,
+        27.223548295824028
+      ],
+      "bootstrap_fraction_with_bracket": 0.9971,
+      "bootstrap_fraction_no_bracket": 0.0029,
+      "raw_bootstrap_root_number_fraction": {
+        "1": 0.9992,
+        "0": 0.0005,
+        "2": 0.0003
+      },
+      "W": 0.4,
+      "cut_Q": 0.5
+    }
+  ],
+  "W35_minus_W40": [
+    {
+      "cut_Q": 0.32,
+      "conditional_W35_minus_W40_interval_95": [
+        17.32340026238179,
+        20.745812778738774
+      ],
+      "fraction_both_T_bracketed": 0.9855
+    },
+    {
+      "cut_Q": 0.37,
+      "conditional_W35_minus_W40_interval_95": [
+        17.318262891461995,
+        20.604105280275736
+      ],
+      "fraction_both_T_bracketed": 0.9918
+    },
+    {
+      "cut_Q": 0.42,
+      "conditional_W35_minus_W40_interval_95": [
+        17.260232474709937,
+        20.507716604655524
+      ],
+      "fraction_both_T_bracketed": 0.9945
+    },
+    {
+      "cut_Q": 0.47,
+      "conditional_W35_minus_W40_interval_95": [
+        17.185200066369692,
+        20.3788269472484
+      ],
+      "fraction_both_T_bracketed": 0.9955
+    },
+    {
+      "cut_Q": 0.5,
+      "conditional_W35_minus_W40_interval_95": [
+        17.113060776386362,
+        20.288427927372993
+      ],
+      "fraction_both_T_bracketed": 0.9971
+    }
+  ]
+}
